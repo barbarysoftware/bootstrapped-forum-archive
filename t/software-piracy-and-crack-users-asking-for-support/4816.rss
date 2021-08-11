@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Software piracy and crack users asking for support</title>
+    <link>https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816</link>
+    <description>Occasionally there are &quot;users&quot; who have downloaded a pirated version of our software asking for support.
+
+The copy protection is custom, and when it&#39;s stripped, software starts to act odd. The &quot;issues&quot; are very specific and known so that we can confidently conclude that the asker is a software pirate (we occasionally ask for their unlock key just to be sure, but they never respond after that).
+
+How to deal with such people? Currently we only give them a canned response to download the software from our web site (a link) and reinstall. We do not say directly that &quot;all your problems because you&#39;re greedy, do not respect other people&#39;s work and your software copy is a pirated one&quot;. But I start to think maybe should we? They are eating our time, lying, and sometimes they report weird bugs that simply do not exist in the original version (therefore time wasted on checking those false bug reports).
+
+I think about writing an article explaining why software piracy is bad, with some specifics on our software (mention some typical bugs the pirated version has). The page may also get some search traffic. Is it a good idea?</description>
+    
+    <lastBuildDate>Sun, 26 Feb 2017 12:06:10 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Software piracy and crack users asking for support</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>The guidelines are good for those who are just starting - my software is around for 17 years or so <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> The question is how to deal with pirates, especially with their support requests. It’s not technical process that interests me. Do you have a page about cracking your software by the way? I’d like to take a look.</p>
+<p>For the technical implementation, adding hardware locked activation was one of the best things we ever did to fight piracy (especially, casual piracy). It took some time to implement the system that is 100% stable and reliable, that does not interfere with normal usage while completely preventing key sharing. The system paid for itself more than well.</p>
+<p>My advice to anyone who sell desktop software, <strong>if you still do not use hardware locked licenses, you’re losing money</strong>.</p>
+<p>5% discount (or any discount at all) for people who tried to steal the software doesn’t seem honest - why legitimate users have to pay the full price, while pirates have privilege?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/8</link>
+        <pubDate>Sun, 26 Feb 2017 12:06:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4816-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816.rss">Software piracy and crack users asking for support</source>
+      </item>
+      <item>
+        <title>Software piracy and crack users asking for support</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a perennial topic for those of us selling desktop software. Here’s some guidelines:</p>
+<ul>
+<li>
+<strong>Make it easy for people to be honest</strong>. Adding too complicated an anti-piracy system will have false negatives which will frustrate and punish paid customers.</li>
+<li>Do <strong>log license usage</strong>, and regularly check logs for obvious piracy. Err on the side of leniency (eg, some users do legitimate use a wide range of IP addresses)</li>
+<li>Have a simple <strong>system for blocking licenses</strong> that have obviously been shared widely.</li>
+<li>Have a <strong>page on your site designed to attract google searches for " crack"</strong>. Ideally you’ll rank number one for Google. That page should offer a small discount for purchasing (say 5%), and argue against using cracked versions (eg they might have malware).</li>
+<li>
+<strong>Don’t fret too much about the problem</strong>. There will always be people who find ways to pirate your software and you’ll never win.</li>
+</ul>
+<p>Also <a class="mention" href="/u/andy">@Andy</a> wrote about this a long time ago: <a href="https://successfulsoftware.net/2007/07/01/software-piracy/">https://successfulsoftware.net/2007/07/01/software-piracy/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/7</link>
+        <pubDate>Sun, 26 Feb 2017 11:33:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4816-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816.rss">Software piracy and crack users asking for support</source>
+      </item>
+      <item>
+        <title>Software piracy and crack users asking for support</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>ivm</strong>, I don’t agree. I was actually able to convert tens of pirates to buy the software - just explained to them that pirated version will never work as it should, it has bugs that are specific for pirated version only (they did run into those bugs so it was very convincing <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> ).</p>
+<p>There are people who never pay and on the other side people who always pay. But world is not black and white. Many people are in the “gray zone” and we have to push them into using legitimate software. One of the solutions is to make pirated version harder to acquire and if they manage to acquire it, make it unusable.</p>
+<p>Of course it’s a war we can’t win, but that doesn’t mean we should publish software without protection, ignore piracy problem and only “spent on marketing to reach people who will pay”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/6</link>
+        <pubDate>Sun, 26 Feb 2017 09:34:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4816-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816.rss">Software piracy and crack users asking for support</source>
+      </item>
+      <item>
+        <title>Software piracy and crack users asking for support</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for replies! I’ll go with creating a web page explaining why cracks are bad.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/5</link>
+        <pubDate>Sun, 26 Feb 2017 09:26:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4816-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816.rss">Software piracy and crack users asking for support</source>
+      </item>
+      <item>
+        <title>Software piracy and crack users asking for support</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Each hour spent on fighting piracy and complicating life for people who <strong>don’t want</strong> to pay for software could be turned into an hour spent on marketing to reach people who <strong>will pay</strong> for it without a second thought.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/4</link>
+        <pubDate>Sat, 25 Feb 2017 19:45:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4816-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816.rss">Software piracy and crack users asking for support</source>
+      </item>
+      <item>
+        <title>Software piracy and crack users asking for support</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>It could also be a bit of a sales opportunity.</p>
+<p>some users will use pirate software (desktop stuff) because they want to be cheap but also because they think there is no risk involved.</p>
+<p>it’s an opportunity to explain that cracked software quite often contains hidden malware / trojans that can infect their PC and can possibly lead to theft of passwords, online bank details etc.</p>
+<p>Obviously a good amount of these folks won’t buy anyway so you don’t want to burn too much time on them so maybe just expand the canned response to be more explicit on the risks of pirated software.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/3</link>
+        <pubDate>Thu, 23 Feb 2017 15:39:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4816-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816.rss">Software piracy and crack users asking for support</source>
+      </item>
+      <item>
+        <title>Software piracy and crack users asking for support</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>Possible negatives</p>
+<ul>
+<li>You get it wrong and a fully licensed user gets offended being branded a pirate.</li>
+<li>You start an internet war with some pillock who has more time on their hands than sense.</li>
+</ul>
+<p>Generally I think its a good idea though (esp if you make the canned response a light touch ‘it appears you may have a pirated copy, please can we check your purchase to verify’).</p>
+<p>Also maybe you can rank for “PRODUCT X Crack/KeyGen” etc. to capture some people looking for cracks and scare them into legal channels (I remember a regular on here or BoS that did just that).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/2</link>
+        <pubDate>Thu, 23 Feb 2017 09:59:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4816-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816.rss">Software piracy and crack users asking for support</source>
+      </item>
+      <item>
+        <title>Software piracy and crack users asking for support</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>Occasionally there are “users” who have downloaded a pirated version of our software asking for support.</p>
+<p>The copy protection is custom, and when it’s stripped, software starts to act odd. The “issues” are very specific and known so that we can confidently conclude that the asker is a software pirate (we occasionally ask for their unlock key just to be sure, but they never respond after that).</p>
+<p>How to deal with such people? Currently we only give them a canned response to download the software from our web site (a link) and reinstall. We do not say directly that “all your problems because you’re greedy, do not respect other people’s work and your software copy is a pirated one”. But I start to think maybe should we? They are eating our time, lying, and sometimes they report weird bugs that simply do not exist in the original version (therefore time wasted on checking those false bug reports).</p>
+<p>I think about writing an article explaining why software piracy is bad, with some specifics on our software (mention some typical bugs the pirated version has). The page may also get some search traffic. Is it a good idea?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816/1</link>
+        <pubDate>Thu, 23 Feb 2017 09:44:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4816-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/software-piracy-and-crack-users-asking-for-support/4816.rss">Software piracy and crack users asking for support</source>
+      </item>
+  </channel>
+</rss>

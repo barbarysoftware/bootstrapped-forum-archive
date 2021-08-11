@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Preparing for the SCA regulations</title>
+    <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425</link>
+    <description>Quoting from [Stripe&#39;s page on the topic](https://stripe.com/docs/strong-customer-authentication):
+
+&gt; Strong Customer Authentication (SCA), a new rule coming into effect on September 14, 2019, as part of PSD2 regulation in Europe, will require changes to how your European customers authenticate online payments. Card payments will require a different user experience, namely 3D Secure, in order to meet SCA requirements. Transactions that don’t follow the new authentication guidelines may be declined by your customers’ banks.
+&gt; 
+&gt; To prepare for SCA, you should:
+&gt; 
+&gt; 1. Determine if your business is impacted
+&gt; 2. Decide which one of our new SCA-ready products is right for your business
+&gt; 3. Make changes before September 14, 2019, to avoid declined payments
+
+What, if anything are you doing/have you done for this?</description>
+    
+    <lastBuildDate>Mon, 10 Feb 2020 09:40:48 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[jmstfv]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="jmstfv" data-post="18" data-topic="6425">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jmstfv/40/4896_2.png" class="avatar"> jmstfv:</div>
+<blockquote>
+<p>It boiled down to swapping few API primitives with each other</p>
+</blockquote>
+</aside>
+<p>I revisited my integration, and it seems I missed the important piece that is <a href="https://stripe.com/docs/payments/setup-intents">SetupIntents</a>. Basically, you create a SetupIntent on the server, pass its secret to your view, and call <code>confirmCardPayment</code> from there. If a card requires authentication, users will be prompted with a modal asking them to authenticate it right on the spot (i.e. so that you won’t chase them when their subscription is due). <a href="https://stripe.com/docs/payments/save-and-reuse">This guide</a> covers how to set it all up.</p>
+<p>Having said that, I’m looking into migrating to <a href="https://stripe.com/docs/payments/checkout">Stripe Checkout</a> and be done with SCA &amp; friends once for all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/25</link>
+        <pubDate>Mon, 10 Feb 2020 09:40:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="23" data-topic="6425">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>You should let Quaderno know. We’ve found them very responsive when we’ve reported things that were making it hard to deal with the Spanish bureaucracy.</p>
+</blockquote>
+</aside>
+<p>Oh, I did! I wrote this after asking their support and I reported the conclusion.</p>
+<p>I do hope that they can eventually become compliant in Poland, because I have a huge problem with invoicing. Stripe’s idea of invoicing is also very far from EU realities (they assume that an invoice is issued when a payment is due, instead of after a payment is made), which leaves me having to integrate a local solution myself.</p>
+<p>The SAF-T report (<a href="https://en.wikipedia.org/wiki/SAF-T">https://en.wikipedia.org/wiki/SAF-T</a>) is something that will probably be required in many countries. I think Poland has moved very quickly on this, requiring the reports even from small businesses, to crack down on VAT abuses (successfully, BTW), but other countries will likely follow.</p>
+<p>As for dual-language requirement, I would suspect that issue also exists in France, which I think mandates the use of French everywhere. If your country does, and you want your invoices to be in English, you have no other option than to generate dual-language ones.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/24</link>
+        <pubDate>Tue, 17 Sep 2019 08:33:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="22" data-topic="6425">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jwr/40/4806_2.png" class="avatar"> jwr:</div>
+<blockquote>
+<p>The net takeaway is that Quaderno might be great for many countries, but it is not usable in Poland.</p>
+</blockquote>
+</aside>
+<p>You should let Quaderno know. We’ve found them very responsive when we’ve reported things that were making it hard to deal with the Spanish bureaucracy.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/23</link>
+        <pubDate>Tue, 17 Sep 2019 08:17:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>Another update, which could be useful for some bootstrappers in the EU. Since Carlos sometimes recommends Quaderno, I’ve revisited it and re-checked if I can use it (I previously looked in 2016 and it couldn’t do what I needed).</p>
+<p>The net takeaway is that Quaderno might be great for many countries, but it is not usable in Poland. There are two showstoppers:</p>
+<ul>
+<li>
+<p>Quaderno doesn’t generate the <code>JPK_FA</code> invoice report required by tax authorities (this is a digitally signed XML report, a variant of SAF-T used in other EU countries, and any invoicing software must be able to generate it on request),</p>
+</li>
+<li>
+<p>I need invoices to be in two languages (actually, the law says that all documents need to be in Polish, so the only way out is to make dual-language invoices), which is not supported.</p>
+</li>
+</ul>
+<p>There are other issues (such as domestic pricing needing to be VAT-inclusive while everything else is VAT-exclusive) which I think could be worked out given some effort, but these two mean that I can’t use Quaderno.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/22</link>
+        <pubDate>Tue, 17 Sep 2019 07:27:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m using Fastspring, and they promised to take care of SCA (Fastspring acts as a reseller like Paddle).  So in theory I have to do nothing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/21</link>
+        <pubDate>Mon, 16 Sep 2019 19:32:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="19" data-topic="6425">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jwr/40/4806_2.png" class="avatar"> jwr:</div>
+<blockquote>
+<p>In other words, it is all a big mess which doesn’t work at all.</p>
+</blockquote>
+</aside>
+<p>This makes me glad I’ve done nothing so far about SCA.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/20</link>
+        <pubDate>Sat, 14 Sep 2019 09:31:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>Progress report: it is now September 14. I deployed the latest versions of Braintree software. They seem to have problems with Ghostery (and probably other tracker-blockers), because they try to load cross-site elements from Cardinal systems.</p>
+<p>I have no idea if Braintree is ready, because all I hear from them is more of the “get ready for PSD2” propaganda. There is nothing more I can do to “get ready”, and yet it’s the only thing they keep saying. All I can do is use the latest version of their drop-in UI and wait.</p>
+<p>I just tried a payment using my own credit card and the whole thing doesn’t work. I got a “session expired” message seemingly from my bank.</p>
+<p>In other words, it is all a big mess which doesn’t work at all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/19</link>
+        <pubDate>Sat, 14 Sep 2019 09:05:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[jmstfv]]></dc:creator>
+        <description><![CDATA[
+            <p>I integrated Stripe Billing into my web app couple months ago, just when Stripe started announcing upcoming SCA changes. It boiled down to swapping few API primitives with each other:</p>
+<ul>
+<li>Charges API is replaced with PaymentIntents</li>
+<li>Sources, Tokens API is replaced with PaymentMethods</li>
+</ul>
+<p>It has been quite messy at the time since half of Stripe’s docs were still pointing at the <em>older</em> API (Charge, Source, Token) with warnings all over the place. Back then I was still unsure whether I will be affected by SCA, so I decided to future proof my integration and build against these newer API primitives.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/18</link>
+        <pubDate>Fri, 13 Sep 2019 13:20:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>After all, it seems that Sweden is the only country enforcing the new SCA regulations from the official start date of September 14th!</p>
+<p>More info here:<br>
+<a href="https://support.stripe.com/questions/strong-customer-authentication-sca-enforcement-date" class="onebox" target="_blank">https://support.stripe.com/questions/strong-customer-authentication-sca-enforcement-date</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/17</link>
+        <pubDate>Tue, 10 Sep 2019 09:35:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there! I’m Carlos, the founder of Quaderno <img src="https://emoji.discourse-cdn.com/twitter/wave.png?v=9" title=":wave:" class="emoji" alt=":wave:"></p>
+<p>We recently relaunched our Checkout form to make it 100% SCA compliant. It works with Stripe and PayPal so far. It calculates taxes in real time, collect location evidence for VAT MOSS, issue tax receipts automatically, support discount coupons, and generate beautiful tax reports <img src="https://emoji.discourse-cdn.com/twitter/sunglasses.png?v=9" title=":sunglasses:" class="emoji" alt=":sunglasses:"></p>
+<p>You have more info at <a href="https://quaderno.io/checkout/">https://quaderno.io/checkout/</a></p>
+<p>If you have any questions about this or SCA in general, just let me know. Happy to help!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/16</link>
+        <pubDate>Wed, 04 Sep 2019 09:59:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="6425">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Just today I wrote down on my todo list to create a better system for dealing with billing by bank transfer</p>
+</blockquote>
+</aside>
+<p>My “system” is simply a spreadsheet: I figured that up to a certain level (say, 20) I can simply do this myself, and afterwards this work is easily outsourceable, so I don’t think I’ll be building any automation for this anytime soon. Perhaps when I get to hundreds.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/15</link>
+        <pubDate>Thu, 29 Aug 2019 16:41:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SlyBridges]]></dc:creator>
+        <description><![CDATA[
+            <p>Things are looking brighter for us with our Stripe implementation upgrade for SCA. I had mentioned previously that I thought Stripe lacked the possibility to easily outsource to them the management of payment details after a failed payment.</p>
+<p>One week later and after getting lost in Stripe documentation and videos, it turns out this was inaccurate. There is a solution, and quite a simple one. It is not as easy as checking a box in the Dashboard settings but it is still quite straight forward and definitely less complex than managing an SCA-ready payment flow yourself. For those on the same boat with Stripe, you may find some details <a href="https://github.com/stripe/sca-dev-chats/issues/11">here</a> (or contact me if you have questions).</p>
+<p>It is sad that Stripe Customer support couldn’t guide me towards this solution when I contacted them earlier (they told me I had to manage everything myself for my use case).</p>
+<p>We now delegate everything payment-related to Stripe directly, using Checkout and their hosted pay pages. On our end, we only manage the subscription cycle (and display a helpful “payment failed” message that redirects to a Stripe hosted page when a user card gets declined during a renewal). That removed a lot of the complexity from our app around payments while improving PCI compliance paperwork.</p>
+<p>That also means that if another regulation comes in in another country, we’ll be compliant as long as Stripe is compliant, with no additional work. And, as a bonus it <em>should</em> open us to adding new payment channels like IDeal or Bank transfer with just a click of a button in Stripe Admin (yet to be tested though.).</p>
+<p>All in all, quite happy with the overall experience!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/14</link>
+        <pubDate>Wed, 28 Aug 2019 18:05:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="12" data-topic="6425">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jwr/40/4806_2.png" class="avatar"> jwr:</div>
+<blockquote>
+<p>I’ve been transitioning to this type of billing contrary to the usual wisdom (“automate everything”) — it doesn’t actually cost that much to manually process a single invoice + bank payment per year per customer, I save on the 2.5-3% transaction fees, and I stop being 100% dependent on a single payment processor (which worries me quite a bit).</p>
+</blockquote>
+</aside>
+<p>Interesting thought, and relevant to me. Just today I wrote down on my todo list to create a better system for dealing with billing by bank transfer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/13</link>
+        <pubDate>Wed, 28 Aug 2019 15:57:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="6425">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I take solace from your experience so far, in that inaction might actually be the best course at the moment,</p>
+</blockquote>
+</aside>
+<p>Well, that was my takeaway, which I’m not very happy with. But I also tried to estimate the risk and I’m actually not that worried. If SCA starts being enforced in Europe, then only my European new customers will be affected (existing subscriptions do not fall under the SCA requirements). Assuming I can detect failed SCA attempts, I can offer these customers a yearly invoice paid with a wire transfer, which customers in the EU really like (for those outside Europe: wire transfers in the EU are quick, cheap, easy and reliable).</p>
+<p>I’ve been transitioning to this type of billing contrary to the usual wisdom (“automate everything”) — it doesn’t actually cost that much to manually process a single invoice + bank payment per year per customer, I save on the 2.5-3% transaction fees, and I stop being 100% dependent on a single payment processor (which worries me quite a bit).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/12</link>
+        <pubDate>Wed, 28 Aug 2019 14:11:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I have to admit that I’ve done nothing so far for SCA except bug Quaderno from time to time with questions about it.</p>
+<p>I take solace from your experience so far, in that inaction might actually be the best course at the moment,</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/11</link>
+        <pubDate>Wed, 28 Aug 2019 13:43:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>A progress update that might be useful to those using Braintree. I updated the integration to their latest versions, and then went through about three weeks of back-and-forth with Braintree support where their replies were, well, bizarre: they would speak in generalities, or describe flows which were not relevant to my use case. After three weeks I finally understood that Braintree quite simply isn’t ready for SCA, and all their calls to action and E-mails are pretty much a smoke screen. I got them to eventually confirm this.</p>
+<p>The current status quo is that I am waiting for them to get their software ready.</p>
+<p>Based on what I see, I think this whole SCA thing is going to be a terrible mess. I hope the introduction will get delayed.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/10</link>
+        <pubDate>Wed, 28 Aug 2019 13:32:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SlyBridges]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="6425">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I’m currently using Stripe + Quaderno. But I’m thinking very strongly about changing to Paddle, so that it becomes someone else’s problem to keep my payment process up to date with changes like SCA.</p>
+</blockquote>
+</aside>
+<p>If you end up using Paddle, please do share your experience! I really like Stripe (+Octobat for invoice/vat management) but impacts on this new SCA regulation on our payment flow is really not trivial.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/9</link>
+        <pubDate>Fri, 23 Aug 2019 07:06:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>I was told yesterday the introduction of SCA has been delayed in the UK: <a href="https://internetretailing.net/themes/themes/uks-fca-delays-psd2-sca-deadline-to-secure-payments--good-or-bad-news-for-consumers-and-retailers-20068">https://internetretailing.net/themes/themes/uks-fca-delays-psd2-sca-deadline-to-secure-payments--good-or-bad-news-for-consumers-and-retailers-20068</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/8</link>
+        <pubDate>Thu, 22 Aug 2019 16:17:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Dead for me too… there’s now this Quaderno page which seems to be more generic: <a href="https://support.quaderno.io/article/390-strong-customer-authentication-sca">https://support.quaderno.io/article/390-strong-customer-authentication-sca</a></p>
+<p>I’m currently using Stripe + Quaderno. But I’m thinking very strongly about changing to Paddle, so that it becomes someone else’s problem to keep my payment process up to date with changes like SCA.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/7</link>
+        <pubDate>Thu, 22 Aug 2019 12:48:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SlyBridges]]></dc:creator>
+        <description><![CDATA[
+            <p>Looks like the link is dead?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/6</link>
+        <pubDate>Thu, 22 Aug 2019 11:56:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SlyBridges]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,<br>
+We’re in the SCA rollercoaster ride as well. We thought we could get away with it easily by replacing our custom payment form with the new managed Stripe Checkout form. We did just that and everything looked good.<br>
+But then, we started to look at how to manage failed payments during subscription renewal using Checkout. Turns out it is not (yet) possible and we are back to square one having to manage Payment Intents and Payment Authentication ourselves.</p>
+<p>Anybody been through this and may have a simple solution we may have overlooked?</p>
+<p><a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> not using Quaderno right now but will check their solution, thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/5</link>
+        <pubDate>Thu, 22 Aug 2019 11:52:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Done and dusted, just needed to move to the Stripe payment intents API. Took a few days.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/4</link>
+        <pubDate>Mon, 08 Jul 2019 14:19:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>In my case, I marked the E-mail messages from Braintree regarding SCA as IMPORTANT.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/3</link>
+        <pubDate>Sun, 07 Jul 2019 03:41:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>In my case, I’m relying on <a href="https://quaderno.io/blog/quaderno-checkout-and-the-seamless-payment-experience/">Quaderno Checkout</a> to make the necessary changes in time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/2</link>
+        <pubDate>Sat, 06 Jul 2019 17:28:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+      <item>
+        <title>Preparing for the SCA regulations</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Quoting from <a href="https://stripe.com/docs/strong-customer-authentication">Stripe’s page on the topic</a>:</p>
+<blockquote>
+<p>Strong Customer Authentication (SCA), a new rule coming into effect on September 14, 2019, as part of PSD2 regulation in Europe, will require changes to how your European customers authenticate online payments. Card payments will require a different user experience, namely 3D Secure, in order to meet SCA requirements. Transactions that don’t follow the new authentication guidelines may be declined by your customers’ banks.</p>
+<p>To prepare for SCA, you should:</p>
+<ol>
+<li>Determine if your business is impacted</li>
+<li>Decide which one of our new SCA-ready products is right for your business</li>
+<li>Make changes before September 14, 2019, to avoid declined payments</li>
+</ol>
+</blockquote>
+<p>What, if anything are you doing/have you done for this?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425/1</link>
+        <pubDate>Sat, 06 Jul 2019 17:26:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6425-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/preparing-for-the-sca-regulations/6425.rss">Preparing for the SCA regulations</source>
+      </item>
+  </channel>
+</rss>

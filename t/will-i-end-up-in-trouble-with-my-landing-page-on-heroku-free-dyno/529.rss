@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+    <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529</link>
+    <description>Hi all,
+
+Is anyone here hosting their SaaS landing/tease page on Heroku free dyno? Is it fit for the task?
+
+I put up a page for my upcoming SaaS www.upgradebooster.com. As you can see it&#39;s just a static page, but as I&#39;ve never hosted in Heroku before I have no idea how much traffic the free dyno can take. 
+
+So I thought to ask you guys first before making the official announcement. So if you&#39;ve had any problems with free dyno landing pages, please let me know!
+
+Cheers,
+Jaana
+
+</description>
+    
+    <lastBuildDate>Wed, 09 Oct 2013 16:05:54 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[roidrage]]></dc:creator>
+        <description><![CDATA[
+            <p>Our landing page (<a href="http://travis-ci.com" rel="nofollow noopener">http://travis-ci.com</a>) runs on Heroku, currently with a single dyno, just like the rest of our entire stack (though that part involves quite a lot more dynos <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Works a treat, and it’s only a small and fast Sinatra application.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/13</link>
+        <pubDate>Wed, 09 Oct 2013 16:05:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[najafali]]></dc:creator>
+        <description><![CDATA[
+            <p>A bit late to the party but my company website lives on a single heroku dyno and can handle being the top story on both HN and /r/programming without breaking a sweat (though as <a class="mention" href="/u/patio11">@patio11</a> mentioned at MicroConf, this isn’t a <em>huge</em> amount of traffic, around 70,000 uniques in one day overall).</p>
+<p>I do a couple of things to help it along.</p>
+<ul>
+<li>For all blog posts, set the <code>cache-control</code> header to <code>public; max-age=3600</code> so that anything between me and the readers that cares to has the OK to cache each post for an hour. <a href="http://tomayko.com/writings/things-caches-do" rel="nofollow noopener">This post</a> by Ryan Tomayko of Github is a great primer on HTTP caching in general.</li>
+<li>Set up a cloudfront distribution that points to my app as the origin, and then use the cloudfront domain for all my asset (css/js/img links). This cuts down drastically on the work the heroku dyno has to do, bringing the number of HTTP requests per page view down from say nine or ten to just one. More details on how I do this with Rails <a href="http://happybearsoftware.com/use-cloudfront-and-the-rails-asset-pipeline-to-speed-up-your-app.html" rel="nofollow noopener">here</a>.</li>
+</ul>
+<p>Hope that helps!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/12</link>
+        <pubDate>Tue, 08 Oct 2013 08:03:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[kulmala]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everyone!</p>
+<p>Jason, that was most interesting and you aren’t the first I’ve heard of who’s running a production app on free dyno.</p>
+<p>I used to work for a large company who had arranged infrastructure really well. We had automatic testing, deployment, backups, monitoring/profiling tools and all. I’m used to have that and appreciate it enough so I want to have a reliable infrastructure for me and my future customers too. I really hope Heroku will deliver.</p>
+<p>At the end I’m planning to have the sales/landing page on separate server, probably on WordPress (it’s part of the rails app now).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/11</link>
+        <pubDate>Mon, 23 Sep 2013 06:47:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[jasonswett]]></dc:creator>
+        <description><![CDATA[
+            <p>I host Snip on Heroku and I left it on the free, one-dyno plan for a super long time before I bothered to read about the drawbacks, like the “going to sleep” problem. It never ended up being a huge issue for me, though.</p>
+<p>One thing I <em>would</em> recommend giving attention, maybe not now for you but at least at some point, is your database plan. I remember there being some significant differences between Heroku’s production-tier database plans and the free one. For example, I remember the free database plan having a storage limit and, don’t quote me on this, but I think the free tier might not be back-up-able, either. So again, that might not be relevant now, but I myself wish I had been aware of those things earlier.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/10</link>
+        <pubDate>Mon, 23 Sep 2013 02:11:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[chriskottom]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve never done this myself, but it’s possible to host a static page on Amazon S3.  Pros: pages should serve up fast and scale to infinity, you’ll probably spend pennies per month.  Cons: fiddly setup.</p>
+<p>I’ll probably do this for the next landing page I set up, so if I do, I’ll report back.  If you end up using the method, let us know how it goes.</p>
+<p>Amazon how-to: <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html" rel="nofollow noopener">http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html</a><br>
+Non-Amazon how-to: <a href="http://chadthompson.me/2013/05/06/static-web-hosting-with-amazon-s3/" rel="nofollow noopener">http://chadthompson.me/2013/05/06/static-web-hosting-with-amazon-s3/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/9</link>
+        <pubDate>Sat, 21 Sep 2013 07:44:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[tuomasj]]></dc:creator>
+        <description><![CDATA[
+            <p>Heroku is great, you don’t have to worry about the infrastructure.</p>
+<p>I’m hosting my rails project on DigitalOcean VPS – It’s definitely a lot more work than hosting on Heroku, but now I don’t have to worry about the configuration of my rails app turning slowly into heroku-only. (and it’s probably a very minor issue)</p>
+<p>I like to worry about the infrastructure, that’s why I’m using VPS <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/8</link>
+        <pubDate>Thu, 19 Sep 2013 21:33:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[starr]]></dc:creator>
+        <description><![CDATA[
+            <p>Seems weird that there wouldn’t be a free/cheap static web host that let you use your own domain. Not saying you should swap horses midstream or anything.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/7</link>
+        <pubDate>Thu, 19 Sep 2013 16:01:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[kulmala]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everyone!</p>
+<p>So it looks like I might manage with the dyno performance-wise, if I can handle the sleeping. And NewRelic + CloudFlare can help with that.</p>
+<p>I also found this article to set that type of thing up, so it’s probably working: <a href="http://collectiveidea.com/blog/archives/2012/11/26/setup-a-high-volume-site-on-heroku-for-free/" rel="nofollow noopener">http://collectiveidea.com/blog/archives/2012/11/26/setup-a-high-volume-site-on-heroku-for-free/</a></p>
+<p>I appreciate the VPS hosting advice, but I’m planning to go with Heroku at first. I just don’t have extra time or money for server maintenance.</p>
+<p>I’m just trying to delay buying the extra dynos until the actual launch is nearer.</p>
+<p>Thanks again, I really appreciate the help!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/6</link>
+        <pubDate>Thu, 19 Sep 2013 07:49:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[stefan]]></dc:creator>
+        <description><![CDATA[
+            <p>For a purely static site I’d recommend hosting it on S3: you’ll have no problems with scaling and it will be cheap enough.</p>
+<p>If you’re going to use a Heroku dyno then you might be ok but if your visitors are more than an hour apart then the dyno will sleep and I’m not sure how many people would wait for it to come up (I estimate it takes around 6-10s depending on the app). To get around this you can install the free New Relic addon and configure it to ping your app for monitoring purposes every minute, which will then keep it alive 24/7.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/5</link>
+        <pubDate>Thu, 19 Sep 2013 05:05:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[pdebruic]]></dc:creator>
+        <description><![CDATA[
+            <p>Have not used the free Heroku for that.  Wanted to make sure you knew of</p>
+<p><a href="http://www.serverbear.com" class="onebox" target="_blank" rel="nofollow noopener">www.serverbear.com</a></p>
+<p>which aggregates offerings for cheap (and also expensive) VPS servers and may have something you can afford and also not have the ‘sleep’ problem that the free dynos have.  They also aggregate hosting coupons.</p>
+<p>BTW you probably already have this on your list of things to fix but <a href="http://upgradebooster.com" rel="nofollow noopener">http://upgradebooster.com</a> goes to godaddy</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/4</link>
+        <pubDate>Thu, 19 Sep 2013 01:43:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[tuomasj]]></dc:creator>
+        <description><![CDATA[
+            <p>If you are using only one dyno, it will sleep after one hour of inactivity. It will wake up on next http requst, but the boot-up will take few seconds and the user will experience latency.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/3</link>
+        <pubDate>Wed, 18 Sep 2013 20:54:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[dennis]]></dc:creator>
+        <description><![CDATA[
+            <p>Not sure about Heroku, we don’t use that, but you could always run CloudFlare in front of it (a good idea for such pages anyway). If the site is fully static, you should also enable caching for the actual web pages in CloudFlare (else it only caches static assets such as images and JavaScript files on its edge servers, which wouldn’t reduce load on the actual page).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/2</link>
+        <pubDate>Wed, 18 Sep 2013 17:21:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+      <item>
+        <title>Will I end up in trouble with my landing page on Heroku free dyno?</title>
+        <dc:creator><![CDATA[kulmala]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>Is anyone here hosting their SaaS landing/tease page on Heroku free dyno? Is it fit for the task?</p>
+<p>I put up a page for my upcoming SaaS <a href="http://www.upgradebooster.com" rel="nofollow noopener">www.upgradebooster.com</a>. As you can see it’s just a static page, but as I’ve never hosted in Heroku before I have no idea how much traffic the free dyno can take.</p>
+<p>So I thought to ask you guys first before making the official announcement. So if you’ve had any problems with free dyno landing pages, please let me know!</p>
+<p>Cheers,<br>
+Jaana</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529/1</link>
+        <pubDate>Wed, 18 Sep 2013 15:19:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-529-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/will-i-end-up-in-trouble-with-my-landing-page-on-heroku-free-dyno/529.rss">Will I end up in trouble with my landing page on Heroku free dyno?</source>
+      </item>
+  </channel>
+</rss>

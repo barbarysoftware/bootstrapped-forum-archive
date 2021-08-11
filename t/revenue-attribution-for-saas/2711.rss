@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Revenue Attribution for SaaS</title>
+    <link>https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711</link>
+    <description>I built a prototype which links client-side analytics session (e.g. Google Analytics) to server-side e-commerce events (e.g. Stripe). This will finally let SaaS businesses answer the question of *&quot;I spent $X on ads, how much revenue have I made from those visitors?&quot;*
+
+Every analytics ecommerce product I can find is geared for working with things like storefronts, where the purchase event can be recorded in JavaScript. I couldn&#39;t find any way to hook up recurring or delayed payments to browser client analytics. This is something I need for my other bootstrapped service, [Briefmetrics](https://briefmetrics.com) (analytics summary service). I want to be able to answer questions like &quot;how much revenue have I made from bootstrapped.fm referrals?&quot;
+
+If you run a SaaS business, is this something you need? How much would you pay for it?
+
+I have a few alpha users up and running, and I&#39;d like to start onboarding customers as soon as I figure out the pricing plan. Right now it only works with Stripe, Google Analytics, and Heap Analytics. Your Stripe data basically gets imported and linked properly within your analytics service, and now you can properly slice and dice along the ecommerce dimension.</description>
+    
+    <lastBuildDate>Mon, 16 Feb 2015 21:14:30 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Revenue Attribution for SaaS</title>
+        <dc:creator><![CDATA[shazow]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, that’s exactly how it works. You sign in with Stripe, which gives the service (let’s call it RevAttr) to all of your webhooks. When you create a customer object, the RevAttr JavaScript snippet intercepts the token and registers a mapping between the client’s analytics session and the credit card customer token on the RevAttr server. When the invoice webhooks occur, the mapping is looked up and appropriate analytics event is emitted associated with the original client session. Does that make sense?</p>
+<p>(Getting the sense that I need to figure out a way to better explain the value proposition.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/7</link>
+        <pubDate>Mon, 16 Feb 2015 21:14:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2711-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711.rss">Revenue Attribution for SaaS</source>
+      </item>
+      <item>
+        <title>Revenue Attribution for SaaS</title>
+        <dc:creator><![CDATA[jnye131]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t see how it is possible to do it any other way? I may have missed something about your idea.</p>
+<p>I would put this in my webhook for receipt of payment. Or if I have an event based code, listening to the “payment success” event. Anything else wouldn’t handle failed transactions?</p>
+<p>You’ll also need a hook somewhere in your code for when a customer cancels their account.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/6</link>
+        <pubDate>Sat, 14 Feb 2015 20:50:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2711-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711.rss">Revenue Attribution for SaaS</source>
+      </item>
+      <item>
+        <title>Revenue Attribution for SaaS</title>
+        <dc:creator><![CDATA[shazow]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/manuelflara">@manuelflara</a> Right, this is using Google Analytics ecommerce events precisely that way. Unfortunately, if you’re doing a SaaS business with recurring revenue, the one line of JS is not going to get executed month after month.</p>
+<p>But yes, once it’s instrumented properly, then you get to integrate it with AdWords, funnels, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/5</link>
+        <pubDate>Sat, 14 Feb 2015 20:35:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2711-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711.rss">Revenue Attribution for SaaS</source>
+      </item>
+      <item>
+        <title>Revenue Attribution for SaaS</title>
+        <dc:creator><![CDATA[shazow]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/jnye131">@jnye131</a> How do you attribute recurring revenue events to Mixpanel? Whenever it triggers, you need to manually propagate it server-side to Mixpanel. You can instrument that manually, but would be nice if you didn’t have to worry about it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/4</link>
+        <pubDate>Sat, 14 Feb 2015 20:34:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2711-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711.rss">Revenue Attribution for SaaS</source>
+      </item>
+      <item>
+        <title>Revenue Attribution for SaaS</title>
+        <dc:creator><![CDATA[manuelflara]]></dc:creator>
+        <description><![CDATA[
+            <p>Why not use Google Analytics revenue tracking events whenever a customer pays for something? Its one line of JS and you have it integrated with GA, AdWords, can set up funnels, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/3</link>
+        <pubDate>Sat, 14 Feb 2015 15:11:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2711-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711.rss">Revenue Attribution for SaaS</source>
+      </item>
+      <item>
+        <title>Revenue Attribution for SaaS</title>
+        <dc:creator><![CDATA[jnye131]]></dc:creator>
+        <description><![CDATA[
+            <p>Isn’t this what Mixpanel et al provide?</p>
+<p>You able to assign a life-time uid to visitors that has their referral detail attached then when they become paying customers you’re able to see lifetime revenue.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/2</link>
+        <pubDate>Sat, 14 Feb 2015 12:38:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2711-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711.rss">Revenue Attribution for SaaS</source>
+      </item>
+      <item>
+        <title>Revenue Attribution for SaaS</title>
+        <dc:creator><![CDATA[shazow]]></dc:creator>
+        <description><![CDATA[
+            <p>I built a prototype which links client-side analytics session (e.g. Google Analytics) to server-side e-commerce events (e.g. Stripe). This will finally let SaaS businesses answer the question of <em>“I spent $X on ads, how much revenue have I made from those visitors?”</em></p>
+<p>Every analytics ecommerce product I can find is geared for working with things like storefronts, where the purchase event can be recorded in JavaScript. I couldn’t find any way to hook up recurring or delayed payments to browser client analytics. This is something I need for my other bootstrapped service, <a href="https://briefmetrics.com" rel="nofollow noopener">Briefmetrics</a> (analytics summary service). I want to be able to answer questions like “how much revenue have I made from <a href="http://bootstrapped.fm" rel="nofollow noopener">bootstrapped.fm</a> referrals?”</p>
+<p>If you run a SaaS business, is this something you need? How much would you pay for it?</p>
+<p>I have a few alpha users up and running, and I’d like to start onboarding customers as soon as I figure out the pricing plan. Right now it only works with Stripe, Google Analytics, and Heap Analytics. Your Stripe data basically gets imported and linked properly within your analytics service, and now you can properly slice and dice along the ecommerce dimension.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711/1</link>
+        <pubDate>Fri, 13 Feb 2015 01:37:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2711-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/revenue-attribution-for-saas/2711.rss">Revenue Attribution for SaaS</source>
+      </item>
+  </channel>
+</rss>

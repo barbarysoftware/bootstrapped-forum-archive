@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>UK VAT exchange rates API</title>
+    <link>https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928</link>
+    <description>Hi all,
+
+A while back there was a [discussion about accepting multiple currencies](http://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674). This is something that I&#39;ve set up for DataTables sales as well, but, as @rachelandrew indicates in the earlier thread, you need extra information in order to be able to do UK VAT accounting correctly.
+
+To that end I wrote an API for use internally - a backend service consumes the data published by HMRC and stores it in a database that the API can query. I use this for the majority of my invoices now, and I thought some other bootstrappers  in the UK might be able to benefit from it.
+
+Information about the API is [available in my blog](http://datatables.local/blog/2014-08-08) and [its own page](//api.datatables.net/vat), but in summary all you need to do is request the currency you want the published exchange rate for and it gives back a JSON object:
+
+* [https://api.datatables.net/vat/exchange-rate/usd](https://api.datatables.net/vat/exchange-rate/usd)
+* [http://api.datatables.net/vat/exchange-rate/eur/2014-08-01](http://api.datatables.net/vat/exchange-rate/eur/2014-08-01)
+* etc
+
+I hope one or more of you find it of some use!
+
+Allan</description>
+    
+    <lastBuildDate>Mon, 11 Aug 2014 13:28:31 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>UK VAT exchange rates API</title>
+        <dc:creator><![CDATA[theallan]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for spotting that. The data comes straight from HMRC’s own XML file, so I’m not too sure why they break it up like that… I’ll try to find out <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928/3</link>
+        <pubDate>Mon, 11 Aug 2014 13:28:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1928-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928.rss">UK VAT exchange rates API</source>
+      </item>
+      <item>
+        <title>UK VAT exchange rates API</title>
+        <dc:creator><![CDATA[lucaspiller]]></dc:creator>
+        <description><![CDATA[
+            <p>The list of countries you used has some issues: Abu Dhabi and Dubai are listed as separate countries, but they are both part of the United Arab Emirates (ISO 3166-1 alpha-2 code AE).</p>
+<p>Other than that, looks good!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928/2</link>
+        <pubDate>Mon, 11 Aug 2014 13:08:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1928-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928.rss">UK VAT exchange rates API</source>
+      </item>
+      <item>
+        <title>UK VAT exchange rates API</title>
+        <dc:creator><![CDATA[theallan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>A while back there was a <a href="http://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674">discussion about accepting multiple currencies</a>. This is something that I’ve set up for DataTables sales as well, but, as <a class="mention" href="/u/rachelandrew">@rachelandrew</a> indicates in the earlier thread, you need extra information in order to be able to do UK VAT accounting correctly.</p>
+<p>To that end I wrote an API for use internally - a backend service consumes the data published by HMRC and stores it in a database that the API can query. I use this for the majority of my invoices now, and I thought some other bootstrappers  in the UK might be able to benefit from it.</p>
+<p>Information about the API is <a href="http://datatables.local/blog/2014-08-08" rel="nofollow noopener">available in my blog</a> and <a href="//api.datatables.net/vat" rel="nofollow noopener">its own page</a>, but in summary all you need to do is request the currency you want the published exchange rate for and it gives back a JSON object:</p>
+<ul>
+<li><a href="https://api.datatables.net/vat/exchange-rate/usd" rel="nofollow noopener">https://api.datatables.net/vat/exchange-rate/usd</a></li>
+<li><a href="http://api.datatables.net/vat/exchange-rate/eur/2014-08-01" rel="nofollow noopener">http://api.datatables.net/vat/exchange-rate/eur/2014-08-01</a></li>
+<li>etc</li>
+</ul>
+<p>I hope one or more of you find it of some use!</p>
+<p>Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928/1</link>
+        <pubDate>Fri, 08 Aug 2014 14:36:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1928-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928.rss">UK VAT exchange rates API</source>
+      </item>
+  </channel>
+</rss>

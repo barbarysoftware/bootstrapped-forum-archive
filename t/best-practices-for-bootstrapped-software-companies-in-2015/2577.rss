@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+    <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577</link>
+    <description>(I don&#39;t particular like the term &quot;Best Practices&quot; but for want of a good alternative...)
+
+What are the practices that a one- or two-person bootstrapped software company should be performing in 2015? I&#39;ve been trying to find up-to-date books and websites that describe this in some kind of rigour, but I&#39;m getting nowhere.
+
+I guess the [Joel Test][1] is a good starting point albeit a dated one.
+
+
+  [1]: http://www.joelonsoftware.com/articles/fog0000000043.html</description>
+    
+    <lastBuildDate>Fri, 23 Jan 2015 10:50:23 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>I have to agree, that development shouldn’t be the sole focus, but it is necessary. Great marketing + lousy product might be a more viable business than lousy marketing + great product, but it’s hardly the dream. How many of you went in to business saying “I want to deliver a mediocre product that more-or-less does the job, backed by kickass marketing”?</p>
+<p>Here’s my top-of-mind list for an early stage SAAS.</p>
+<ol>
+<li>Do you have at least one customer?</li>
+<li>Can you reach more customers?</li>
+<li>Is the cost of reaching those customers less than LTV? (although, maybe this isn’t an early stage concern)</li>
+<li><a href="http://www.bootstrappedwithkids.com/episode-81-bootstrapping-goals-wicked-smart-way/" rel="nofollow noopener">Do you have SMART goals for 2015? Do you have a plan to achieve them?</a></li>
+<li>Do you have processes for the repetitive tasks involved in running your business?</li>
+<li>Are you outsourcing the repetitive tasks involved in running your business?</li>
+<li>Do you use a PAAS like Heroku?</li>
+<li>Automated build</li>
+<li>Automated test</li>
+</ol>
+<p>The requirement around PAAS might be controversial, but for a one or two man shop it adds so much value that there really isn’t any other way to get. PAAS gives you a 24/7 team of expert devops. That, for me, beats by a country mile either learning to do devops yourself or hiring a single person to do your dev ops.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/9</link>
+        <pubDate>Fri, 23 Jan 2015 10:50:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2577-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss">&quot;Best Practices&quot; for bootstrapped software companies in 2015?</source>
+      </item>
+      <item>
+        <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/johnf">@johnf</a>,</p>
+<p>You make a good point. However with regards to competitors, then it is powerful to be able to produce better software than them, quicker that them. That’s where the best practices come in to effect, IMO.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/8</link>
+        <pubDate>Fri, 23 Jan 2015 07:27:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2577-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss">&quot;Best Practices&quot; for bootstrapped software companies in 2015?</source>
+      </item>
+      <item>
+        <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <p>I think as software developers we tend to come at everything from a software developer mindset but marketing and sales/onboarding/support is far more important.</p>
+<p>Customers will forgive you if you ship a bug by accident.</p>
+<p>Customers you don’t have because you’ve focused too much effort on development and not enough on marketing won’t.</p>
+<p>Sure I’ve got automated backups and continuous integration and deployments and all that jazz but I would never list it is as being important enough to be in a “best practices” list.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/7</link>
+        <pubDate>Thu, 22 Jan 2015 17:16:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2577-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss">&quot;Best Practices&quot; for bootstrapped software companies in 2015?</source>
+      </item>
+      <item>
+        <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+        <dc:creator><![CDATA[staffsquared]]></dc:creator>
+        <description><![CDATA[
+            <p>My mantra for 2015 is: “If we add this feature/make this change to the app, will it attract new customers and/or help retain existing customers”.</p>
+<p>I’m spoiled in a way because I own a software company that was bootstrapped, and have a lot of developer resource available to Staff Squared. As a result it’s incredibly important to make sure that any dev resources I use are aligned with the happiness of our customers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/6</link>
+        <pubDate>Thu, 22 Jan 2015 05:08:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2577-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss">&quot;Best Practices&quot; for bootstrapped software companies in 2015?</source>
+      </item>
+      <item>
+        <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s one that I find invaluable, eg when I made some build-breaking changes this morning:</p>
+<p><strong>Always be building</strong></p>
+<p>Every committed change triggers a new build on a dedicated build server that uses “continuous integration”.</p>
+<ul>
+<li>If you’ve broken anything, you find out in minutes.</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/5</link>
+        <pubDate>Thu, 22 Jan 2015 04:23:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2577-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss">&quot;Best Practices&quot; for bootstrapped software companies in 2015?</source>
+      </item>
+      <item>
+        <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>John, yes, it’s a very incomplete list heavily weighted toward devops tasks.  I thought it would be helpful even with those limitations, so I posted it.  Would love to see your take on the business side.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/4</link>
+        <pubDate>Wed, 21 Jan 2015 23:40:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2577-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss">&quot;Best Practices&quot; for bootstrapped software companies in 2015?</source>
+      </item>
+      <item>
+        <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <p>Steve’s list looks comprehensive but there are best practices for every step of the journey and some may not apply to you depending on where you are.</p>
+<p>I mean are you really going to spend time creating a succession plan before you have your first customer?</p>
+<p>Hmm that list looks very devops too…  and there is no marketing on there?</p>
+<p>Ok maybe the list isn’t good after all.  I have no idea why building your email list isn’t on this but restoring from a backup on your phone is…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/3</link>
+        <pubDate>Wed, 21 Jan 2015 18:19:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2577-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss">&quot;Best Practices&quot; for bootstrapped software companies in 2015?</source>
+      </item>
+      <item>
+        <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>Kinda scared to share this, as I hope to launch a mailing list reminding people to do these sorts of things, but here’s the outline I’ve collected:</p>
+<p>Document procedures</p>
+<p>Test procedures</p>
+<p>Backup</p>
+<p>Verify backups</p>
+<p>Store recovery information offsite</p>
+<p>Take down a subsystem and see how rest of your system handles the problem</p>
+<p>Perform a load test</p>
+<p>Run an intrusion test</p>
+<p>OWASP</p>
+<p>Patch software</p>
+<p>Document all software versions</p>
+<p>Build a hot backup</p>
+<p>Switch to hot backup</p>
+<p>Document your database schema</p>
+<p>Perform a database dump</p>
+<p>Verify you can load your database dump</p>
+<p>Automate manual procedures</p>
+<p>Make a smartphone control panel for your system</p>
+<p>Verify you can recover site using only a smartphone</p>
+<p>Design for scalability</p>
+<p>Design for recoverability</p>
+<p>Evaluate technologies used</p>
+<ul>
+<li>can you easily hire contractors</li>
+<li>is it still being supported</li>
+</ul>
+<p>Prepare support for when you are away</p>
+<p>Have an unannounced vacation/emergency and see what happens</p>
+<p>Evaluate your overall readiness</p>
+<p>Create a business continuity plan</p>
+<p>Create a succession plan</p>
+<p>A/B test</p>
+<p>Review your pricing, segmentation</p>
+<p>Get detailed feedback from a customer</p>
+<p>Think about how you could pivot your product to a different market</p>
+<p>Test your (contact) forms, contact email addresses, etc.</p>
+<p>“Simple exercise: use an actual credit card to buy an actual copy of your product quarterly.  That experience is important but hidden to you.” —Patrick McKenzie <a class="mention" href="/u/patio11">@patio11</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/2</link>
+        <pubDate>Wed, 21 Jan 2015 09:05:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2577-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss">&quot;Best Practices&quot; for bootstrapped software companies in 2015?</source>
+      </item>
+      <item>
+        <title>&quot;Best Practices&quot; for bootstrapped software companies in 2015?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>(I don’t particular like the term “Best Practices” but for want of a good alternative…)</p>
+<p>What are the practices that a one- or two-person bootstrapped software company should be performing in 2015? I’ve been trying to find up-to-date books and websites that describe this in some kind of rigour, but I’m getting nowhere.</p>
+<p>I guess the <a href="http://www.joelonsoftware.com/articles/fog0000000043.html">Joel Test</a> is a good starting point albeit a dated one.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577/1</link>
+        <pubDate>Wed, 21 Jan 2015 05:06:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2577-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-bootstrapped-software-companies-in-2015/2577.rss">&quot;Best Practices&quot; for bootstrapped software companies in 2015?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>On Premise software - license generation, validation, revocation</title>
+    <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137</link>
+    <description>Hi all
+
+Currently looking around for my next &#39;thing&#39;.
+
+I&#39;m researching a market that would be suitable for a &#39;good&#39; software application. The current offerings seem to have various issues with no clear leader.
+
+Anyway, the market or application isn&#39;t important, it&#39;s relatively small but could do with a shake up.
+
+If I proceed, I&#39;m likely to build this as an on premise browser based app written in php (my primary skill set).  I&#39;d implement something like ioncube encoder to protect the ip/source but am wondering about controlling installations via license keys.
+
+I&#39;d be interested to hear what you folks use for generating, validating and revoking licenses. of course also detecting additional installs etc.
+
+Many thanks
+
+Dean</description>
+    
+    <lastBuildDate>Mon, 20 Jun 2016 02:38:16 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="15" data-topic="4137">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/syneryder/40/12_1.png" class="avatar"> syneryder:</div>
+<blockquote>
+<p>As for generating license keys, Brandon Staggs has an excellent article on the basics of key generating algorithms.</p>
+</blockquote>
+</aside>
+<p>Pretty complicated.</p>
+<p>I wonder what are the benefits comparing to signing the license with a private key and including the public key into the code?</p>
+<p>In both cases the cracker can patch the code to work around the check completely, but with the public key cryptography there is no way they can produce a keygen – that would require to generate a matching private key, which is considered out of reach for mere crackers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/16</link>
+        <pubDate>Mon, 20 Jun 2016 02:38:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[syneryder]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="4137">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ian/40/3579_1.png" class="avatar"> ian:</div>
+<blockquote>
+<p>The person who thinks, I don’t want to pay for this and don’t care about support, let me hack it will never buy so don’t think about them.</p>
+</blockquote>
+</aside>
+<p>I did have this happen once.  A customer of an on-premise PHP script I wrote a decade ago downloaded the demo, contacted support a few times during the trial period, ultimately didn’t purchase… which would be fine!  Until I noticed a couple of months later they were still running the software in production, and had deliberately hacked out all my “trial version” code.  I eventually sent a polite “Hey, what’s going on?” email, and they did (eventually) pay up.  But it definitely wasn’t worth the time I spent stressing about it.</p>
+<p>As for generating license keys, <a href="http://www.brandonstaggs.com/2007/07/26/implementing-a-partial-serial-number-verification-system-in-delphi/" rel="nofollow noopener">Brandon Staggs has an excellent article on the basics of key generating algorithms</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/15</link>
+        <pubDate>Sun, 19 Jun 2016 18:05:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the reply, more food for thought <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/14</link>
+        <pubDate>Tue, 14 Jun 2016 14:01:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[unicorm]]></dc:creator>
+        <description><![CDATA[
+            <p>We do desktop software, we had a product that was downloaded as beta about 20k times within 2 weeks and hyped a lot. The beta was not much different from the final software - we thought about software protection early on and that was a good choice. We use LimeLM, it does take away a lot of hassle and it makes sure that “a valid purchase does not get used beyond his intended number of activations”. I think that is important. People are not honest and share keys/access etc. very often. However, I don’t how how it could be integrated into your solution. I would NEVER do a software protection solution on my own. There is so much hassle with all those details like firewalls, security settings, etc. - just doesn’t work.<br>
+I wish I could agree with “keep the honest customers honest and don’t waste energy on the pirates, instead use the time and energy to generate more legit sales” - but people are simply dishonest. If we did not have the software protection, I have no doubt we would have only generated 1/10th of the revenue MAX and we would have been out of business. Don’t take this easy. They will take your work for free, bother you with support tickets and badmouth you on forums. Well, maybe I have been too long in this business <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> At least think about whether you can find out if people use your software through another customer and make sure you can call them up. I have subscribed to a few (paid) newsletters and they tracked down abuses really well and threatened the “sharing party” to cease the subscription. It worked really well - nobody in the “scene” dared to share the newsletters… Have a plan for that at least.</p>
+<p>Cheers<br>
+Jan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/13</link>
+        <pubDate>Tue, 14 Jun 2016 11:51:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="4137">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>then maybe you could get each server to access a .xml file on your server to see if it is running the latest version</p>
+</blockquote>
+</aside>
+<p>It is not that simple in corporate networks. Under Windows you just need to read the proxy settings, but under Unix the proxy must be manually configured, and the hacker won’t do it.</p>
+<p>But there is a workaround – since the application is a browser-based, the “call home” can be made from the browser window, via AJAX. The browser is configured to use proxies, and the call most likely will succeed.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/12</link>
+        <pubDate>Mon, 13 Jun 2016 20:45:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank for the reply Andy.</p>
+<p>It’s just me thinking through everything before i put a huge amount of work in to it.  TBH building the product is the easy bit as I’m sure you know but it’s something that i need to have considered before i start whichever ‘system/tool’ i’m building.</p>
+<p>I am fully down with Ian and Vlad’s philosophy, keep the honest customers honest and don’t waste energy on the pirates, instead use the time and energy to generate more legit sales <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/11</link>
+        <pubDate>Mon, 13 Jun 2016 14:13:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4137">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dlj/40/3317_1.png" class="avatar"> DLJ:</div>
+<blockquote>
+<p>am wondering about controlling installations via license keys.</p>
+</blockquote>
+</aside>
+<p>Honestly, I wouldn’t waste time thinking about this until you have some paying customers.</p>
+<p>If you are really concerned about monitoring installations, then maybe you could get each server to access a .xml file on your server to see if it is running the latest version. At the same time you could log the IP and this will give you an idea of how many servers are being used.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/10</link>
+        <pubDate>Mon, 13 Jun 2016 13:19:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>For sure, you absolutely want to make sure the person you’re dealing with is a licensed customer so that you’re not giving support to stolen installs and what not. That’s their only real impact.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/9</link>
+        <pubDate>Mon, 13 Jun 2016 12:18:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>awesome, I really appreciate the reply, thank you.</p>
+<p>I guess the support is the key rather than hardcore licensing, if you can’t be verified when you need support then you don’t get it.</p>
+<p>many thanks again.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/8</link>
+        <pubDate>Mon, 13 Jun 2016 08:34:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>HelpSpot’s gone 11 years without anything nearly as fancy as you’re thinking.</p>
+<p>We use Ioncube to prevent modified version and the support they require. If you’re dealing with a segment where modification is unlikely you can kill it and it will help sales if you do. We’re likely to kill it in a future release as well by building detection for modification in so support will know, but gotta find time to build that.</p>
+<p>On the licenses, HelpSpot is a just a few bits of data like licensed users, support expiration, trial date expiration, etc in a super weak encrypted text file (many hacks and key gens are available, I ignore all). It’s only encrypted to keep honest people honest, so that in a pinch if they think hey I’ll just up this by 3 licenses for now and buy move later they can’t and have to come buy them. The person who thinks, I don’t want to pay for this and don’t care about support, let me hack it will never buy so don’t think about them.</p>
+<p>We do no revocation.</p>
+<p>We do no installation count checking.</p>
+<p>We don’t do any call home check that could disable the system for any other sort of licensing issue.</p>
+<p>The license is not tied in any way to the servers IP (we don’t use any of the ioncube license stuff).</p>
+<p>The ONLY goal of the license system is to keep honest people honest. Anyone else can very easily get past any security, especially in a PHP application where the code is never truly compiled and cannot be effectively obfuscated or encrypted.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/7</link>
+        <pubDate>Mon, 13 Jun 2016 01:07:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>Pinging <a class="mention" href="/u/ian">@ian</a> on this one, as he might have some valuable input based on experience.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/6</link>
+        <pubDate>Mon, 13 Jun 2016 00:34:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>Great reply, many thanks</p>
+<p>I know if someone is determined to, they will hack/crack the code so there is a limit to the energy and cost to be put in to this.</p>
+<p>cheers</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/5</link>
+        <pubDate>Sun, 12 Jun 2016 19:22:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4137">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dlj/40/3317_1.png" class="avatar"> DLJ:</div>
+<blockquote>
+<p>an on premise browser based app</p>
+</blockquote>
+</aside>
+<p>I’m getting ahead of myself too, but since I’m developing an “on-promise browser-based application” too, I’ll share how I do that.</p>
+<p>I’m watching my first customer internal processes and I realized nobody of that scale is going to steal my software intentionally. What is the real risk is a “casual piracy” as Wyatt calls it – i.e. “we need another installation for that critical project of ours, let’s copy the code to that new server and settle the matter of the license later”. Of course, the “later” never comes - project completes, and the installation silently dies, or, worse yet, continue to be used for other projects where people are not even aware there is no license for it.</p>
+<p>So my licensing scheme is not trying to protect against hackers. I do not even obfuscate my code.</p>
+<p>What I’m doing is:</p>
+<ol>
+<li>I tie my application to a specific server address. The address is specified when the license is generated.</li>
+<li>The license is a simple list of properties, encrypted with my private key and converted into a hex string.</li>
+<li>When the license is placed into the application config, it is decrypted with my public key (kept with the code). If decryption is successful, then the license is not tampered with.</li>
+<li>One of the license properties is the IP the code should listen on.</li>
+<li>If the code is copied to another server, the IP doesn’t match, the license is marked as invalid and the trial is in effect.</li>
+<li>Trial start time is calculated from the time the earliest artifact (file) of the application is found on the file system, i.e. there is no special registry key or anything like that.</li>
+<li>Each Nth page request (the closer to the end of trial the more often) is redirected to the license page where it explains that this is a commercial software, it needs a license, but currently it runs on trial which will expire in XXX days, and urges them to obtain the license before that day.</li>
+<li>I also have a grace period – when the trial is expired and they still did not get a license, I give them some more time, but increase the frequency and urgency of license message. This is because, as I found, even with trial warnings people manage to push that task to the back of their list, especially when their hands are full. So I give them a one more short chance to correct the licensing situation.</li>
+</ol>
+<p>This protection is not perfect, but given what it should prevent, I believe it is satisfactory.</p>
+<p>Would I buy a licensing solution? Not at this stage. It took my about 2 days to implement and test my solution (trial expiration test cases take most of the time), and it is good enough for now. If I ever reach 1000s of customers, I may reconsider - many licensing solutions have much more functionality than just checking the license file - but at this point it is impractical.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/4</link>
+        <pubDate>Sun, 12 Jun 2016 16:48:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the response although it won’t be a SaaS app at least not initially (thanks Ian/helpspot for the model). It will be an on premise thing, server based SQL backend, php/just/HTML/CSS client in the browser.</p>
+<p>Ioncube will encode the source and gives some licensing lockdown but wondered if anyone is using anything else.</p>
+<p>This ‘tech’ question is really the only one I have at the moment as I’m capable of and have built large web applications but not as a sellable product.</p>
+<p>I agree ‘the first’ customer is important and due diligence is underway in that respect, full market research will be done once initial viability questions (tech and business) have been answered.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/3</link>
+        <pubDate>Sun, 12 Jun 2016 12:35:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>I think you are getting way ahead of yourself.</p>
+<p>The most important (and frankly, hardest) part of a startup is getting to the first customer. Anything that doesn’t move you towards that is a distraction and a waste of your time.</p>
+<p>But, to answer your question, for a SaaS app, you can generate a unique cookie  but that will be browser based. I don’t know of a way for the Browser to know something unique about the computer it’s running on.</p>
+<p>We do measure this for our PC subscription (where we CAN get a unique ID for the computer, not just the browser) and it’s not a significant problem (installing on additional computers)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/2</link>
+        <pubDate>Sun, 12 Jun 2016 12:12:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+      <item>
+        <title>On Premise software - license generation, validation, revocation</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all</p>
+<p>Currently looking around for my next ‘thing’.</p>
+<p>I’m researching a market that would be suitable for a ‘good’ software application. The current offerings seem to have various issues with no clear leader.</p>
+<p>Anyway, the market or application isn’t important, it’s relatively small but could do with a shake up.</p>
+<p>If I proceed, I’m likely to build this as an on premise browser based app written in php (my primary skill set).  I’d implement something like ioncube encoder to protect the ip/source but am wondering about controlling installations via license keys.</p>
+<p>I’d be interested to hear what you folks use for generating, validating and revoking licenses. of course also detecting additional installs etc.</p>
+<p>Many thanks</p>
+<p>Dean</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137/1</link>
+        <pubDate>Sat, 11 Jun 2016 21:57:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4137-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/on-premise-software-license-generation-validation-revocation/4137.rss">On Premise software - license generation, validation, revocation</source>
+      </item>
+  </channel>
+</rss>

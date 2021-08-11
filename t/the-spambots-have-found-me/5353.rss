@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The spambots have found me</title>
+    <link>https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353</link>
+    <description>Feature Upvote has started to get a few spam comments everyday, and I suspect it will quickly rise. I expected from day one that sooner or later I&#39;d have to deal with this problem. That&#39;s okay by me - I enjoy a good technical challenge like this.
+
+I&#39;ve been investigating using the Akismet spam detection API to help with dealing with the problem. You send it a newly posted comment via a POST endpoint, and it tells you either &quot;true&quot; or &quot;false&quot;. So far I really like it.
+
+What&#39;s been your experience with dealing with comment spam? And with Akismet in particular?</description>
+    
+    <lastBuildDate>Mon, 16 Oct 2017 09:27:10 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>The spambots have found me</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>After implementing your suggestions, comment spam has stopped. Thanks all!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/8</link>
+        <pubDate>Mon, 16 Oct 2017 09:27:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5353-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353.rss">The spambots have found me</source>
+      </item>
+      <item>
+        <title>The spambots have found me</title>
+        <dc:creator><![CDATA[Leon]]></dc:creator>
+        <description><![CDATA[
+            <p>Totally concur with this. The honeypot technique <a class="mention" href="/u/benjamin_eberlei">@Benjamin_Eberlei</a> lists is far more effective than you’d expect.</p>
+<p>I also punish comments that contain more than 3 links. And I keep a list of “stop words” such a “N*ke shoes” or Printer supplies, that have appeared in spam comments before. I do IP-banning as well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/7</link>
+        <pubDate>Thu, 12 Oct 2017 00:28:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5353-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353.rss">The spambots have found me</source>
+      </item>
+      <item>
+        <title>The spambots have found me</title>
+        <dc:creator><![CDATA[chrisj]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/benjamin_eberlei">@Benjamin_Eberlei</a> has it nailed. We used this method to protect unauthenticated commenting on a very large web portal that was getting 10 million comments a month. Most effective when the fields are set with type of text and hidden with CSS.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/6</link>
+        <pubDate>Wed, 11 Oct 2017 13:08:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5353-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353.rss">The spambots have found me</source>
+      </item>
+      <item>
+        <title>The spambots have found me</title>
+        <dc:creator><![CDATA[syneryder]]></dc:creator>
+        <description><![CDATA[
+            <p>Something I’ve found helpful is to detect the country from the submitting IP (I use Maxmind GeoIP), and watch for trends.  Over the years I’ve found some countries with a 100% spam rate (or at least, 100% unconstructive), and I redirect submissions from countries with high spam rates into a manual review area.  I’m sure that will be controversial, but it’s had the biggest impact on reducing my spam fighting workload.</p>
+<p>Beyond that, I also have a lot of keyword filters for common spam phrases, which I tweak whenever something gets through.</p>
+<p>I also tried IP lookups with Project Honeypot and some other spam blacklists, but I ultimately turned them off for too many false positives.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/5</link>
+        <pubDate>Fri, 06 Oct 2017 10:19:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5353-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353.rss">The spambots have found me</source>
+      </item>
+      <item>
+        <title>The spambots have found me</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/dischwarz">@DiSchwarz</a> and <a class="mention" href="/u/benjamin_eberlei">@Benjamin_Eberlei</a>. Your suggestions are helpful. I like that they don’t require a dependency on a realtime API.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/4</link>
+        <pubDate>Fri, 06 Oct 2017 09:53:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5353-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353.rss">The spambots have found me</source>
+      </item>
+      <item>
+        <title>The spambots have found me</title>
+        <dc:creator><![CDATA[Benjamin_Eberlei]]></dc:creator>
+        <description><![CDATA[
+            <p>Before you use akismet you can add some more simple protection mechanisms that block bots that are not using a full fledged browser (this might change once spambots start using chrome headless):</p>
+<ul>
+<li>Add hidden inputs into the form called “url” “email” if you dont use them yet, check that they are empty on the backend. Only bots would provide values here.</li>
+<li>Render parts of the form with javascript on document ready, for example a hidden input with a hash that is verified on the backend, or change the form action with javascript to another endpoint, then consider comments spam that sent to the original endpoint.</li>
+</ul>
+<p>greetings<br>
+Benjamin</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/3</link>
+        <pubDate>Fri, 06 Oct 2017 08:52:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5353-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353.rss">The spambots have found me</source>
+      </item>
+      <item>
+        <title>The spambots have found me</title>
+        <dc:creator><![CDATA[DiSchwarz]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a> AJAX Control Toolkit provided similar functionality since 2007. The corresponding component was called NoBot. Here is the link <a href="http://www.ajaxcontroltoolkit.com/NoBot/NoBot.aspx" rel="nofollow noopener">http://www.ajaxcontroltoolkit.com/NoBot/NoBot.aspx</a> but it appears to be a bit dysfunctional now.</p>
+<p>“NoBot is a control that attempts to provide CAPTCHA-like bot/spam prevention without requiring any user interaction. This approach is easier to bypass than an implementation that requires actual human intervention, but NoBot has the benefit of being completely invisible.”</p>
+<p>If you are brave enough to dig inside NoBot’s code, you’ll get the job done. Basically it does a bunch of server and client side checks. They all appear to be fully transparent to the human user.</p>
+<p>Works like a charm even now, 10 years later.</p>
+<p>Update: found the relevant source code at <a href="https://github.com/DevExpress/AjaxControlToolkit/tree/master/AjaxControlToolkit/NoBot" rel="nofollow noopener">https://github.com/DevExpress/AjaxControlToolkit/tree/master/AjaxControlToolkit/NoBot</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/2</link>
+        <pubDate>Thu, 05 Oct 2017 21:39:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5353-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353.rss">The spambots have found me</source>
+      </item>
+      <item>
+        <title>The spambots have found me</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Feature Upvote has started to get a few spam comments everyday, and I suspect it will quickly rise. I expected from day one that sooner or later I’d have to deal with this problem. That’s okay by me - I enjoy a good technical challenge like this.</p>
+<p>I’ve been investigating using the Akismet spam detection API to help with dealing with the problem. You send it a newly posted comment via a POST endpoint, and it tells you either “true” or “false”. So far I really like it.</p>
+<p>What’s been your experience with dealing with comment spam? And with Akismet in particular?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353/1</link>
+        <pubDate>Thu, 05 Oct 2017 15:50:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5353-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-spambots-have-found-me/5353.rss">The spambots have found me</source>
+      </item>
+  </channel>
+</rss>

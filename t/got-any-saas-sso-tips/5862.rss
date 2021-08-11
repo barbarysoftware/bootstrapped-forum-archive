@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Got any SaaS SSO tips?</title>
+    <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862</link>
+    <description>Has anyone here used SSO (single sign-on) with a SaaS app? I&#39;m asking from either side - the SaaS vendor or the customer.
+
+Is there any approach in particular that you&#39;d recommend? Did you encounter any frustrations that could have been avoided with a different approach?
+
+I&#39;m keen to hear any tips about how you added SSO.</description>
+    
+    <lastBuildDate>Thu, 24 May 2018 11:19:22 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[buggy]]></dc:creator>
+        <description><![CDATA[
+            <p>If you’re using Rails then look at OmniAuth.</p>
+<p>Offering too many providers can be confusing. Imagine you’re faced with a page that has email + password, Google, Facebook, Twitter, Github, Linkedin, etc. Now I need to remember which one I signed up with so I don’t accidentally create a new account.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/24</link>
+        <pubDate>Thu, 24 May 2018 11:19:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[kir]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, it is possible to use OAuth2 for authentication, but as I understand, it is easy to make a security hole unless you follow some guidelines, and this is what OpenID Connect is trying to provide. The details on how OAuth2 could be problematic for authentication could be seen on <a href="https://security.stackexchange.com/questions/133065/why-is-it-a-bad-idea-to-use-plain-oauth2-for-authentication" rel="nofollow noopener">this post</a>.</p>
+<p>Best,</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/23</link>
+        <pubDate>Wed, 23 May 2018 04:57:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="20" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kir/40/2949_1.png" class="avatar"> kir:</div>
+<blockquote>
+<p>OAuth works only for authorization</p>
+</blockquote>
+</aside>
+<p>Not exactly. It was <em>supposed</em> to be used to provide access only, but to provide an access to a party you need to know the identity of the party, and so any authorization protocol necessarily includes the identity info. Hence some (many?) people decided that they do not want to deal with different protocols for authentication and authorization, and use OAuth as a <a href="https://en.wikipedia.org/wiki/OAuth#OpenID_vs._pseudo-authentication_using_OAuth" rel="nofollow noopener">pseudo-authentication protocol</a>, too.</p>
+<p>At least last time I was playing with public logins with ids from Google, Facebook and Twitter, I only needed OAuth library.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/22</link>
+        <pubDate>Mon, 21 May 2018 01:28:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>OAuth is for B2C kids.</p>
+<p>For B2B especially with “big-ish” customers - use SAML, period.</p>
+<p>P.S. If anyone here uses <code>ASP.NET</code> (which I doubt) we built an open source component for it: <a href="https://github.com/jitbit/AspNetSaml" rel="nofollow noopener">https://github.com/jitbit/AspNetSaml</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/21</link>
+        <pubDate>Sat, 19 May 2018 15:41:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[kir]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Use OAuth which is <a href="https://en.wikipedia.org/wiki/List_of_OAuth_providers" rel="nofollow noopener">supported by everyone now </a>. OpenID is out of use now.</p>
+</blockquote>
+</aside>
+<p>Just in case, OAuth works only for authorization, for authentication of a user you need <a href="http://openid.net/connect/" rel="nofollow noopener">OpenID Connect</a>, which is built on top of OAuth2 protocol. Some more on differences between them are <a href="https://security.stackexchange.com/questions/37818/why-use-openid-connect-instead-of-plain-oauth2" rel="nofollow noopener">here</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/20</link>
+        <pubDate>Sat, 19 May 2018 08:55:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="16" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>For now, I’m only going to offer Azure Active Directory integration.</p>
+</blockquote>
+</aside>
+<p>If your SAML works for one IdP, it should work for any other too - provided that your application is registered to that IdP. In other words, that customer who wants the support for their AD IdP? They need to configure their IdP to accept your app requests, and on your side you just need to configure their URL - minimum work, as I see it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/19</link>
+        <pubDate>Fri, 18 May 2018 15:33:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="15" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/7cd45c/40.png" class="avatar"> unboot:</div>
+<blockquote>
+<p>your client embeds e.g. the user email in the request and signs this request with the secret</p>
+</blockquote>
+</aside>
+<p>While I agree that a widget can be secured, the steps that you list are essentially re-doing of SAML protocol, just poorly <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote no-group" data-post="16" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I’m surprised by how straightforward it was.</p>
+</blockquote>
+</aside>
+<p>Yes, SAML Auth for Web is surprisingly simple, both to implement and troubleshoot.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/18</link>
+        <pubDate>Fri, 18 May 2018 15:30:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>Usually the IT team of a customer will implement SSO, and they’ll have experience.  These are usually not your app users, but the IT staff.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/17</link>
+        <pubDate>Fri, 18 May 2018 09:55:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Using the SAML protocol and Azure Active Directory as the “identity provider”, I’ve got a proof of concept of SSO working. I’m surprised by how straightforward it was. It is quite elegant too.</p>
+<p>For now, I’m only going to offer Azure Active Directory integration.</p>
+<p>I think the real challenge will be how to make it easy for my customers to set up and troubleshoot.</p>
+<p>And edge cases, as mentioned by <a class="mention" href="/u/unboot">@unboot</a>. I’m sure to run into edge cases. As per <a class="mention" href="/u/unboot">@unboot</a>’s suggestion, I’m using SAML SSO libraries.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/16</link>
+        <pubDate>Fri, 18 May 2018 09:53:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>When you use an embeddable widget as a surrogate for SSO, the security usually works like this:</p>
+<ul>
+<li>you give a widget url to your client.</li>
+<li>you give a secret to your client for request signing</li>
+<li>your client embeds this widget into their portal</li>
+<li>your client embeds e.g. the user email in the request and signs this request with the secret</li>
+<li>you verify the request and serve the widget</li>
+</ul>
+<p>AD / SAML SSO should be done with a library i think.  Doing this yourself would be much work (and requires much security knowledge / care of edge cases).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/15</link>
+        <pubDate>Fri, 18 May 2018 09:38:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dominicstpierre/40/2990_1.png" class="avatar"> dominicstpierre:</div>
+<blockquote>
+<p>yes, why would someone do this kind of things,</p>
+</blockquote>
+</aside>
+<p>Unhappy employees do all kinds of stupid, malicious and backstabbing things. Experienced that first-hand.</p>
+<p>Besides, the purpose of security is leave nothing to a good will of any actors; if a resource is secure, even if I want to harm it, I cannot.</p>
+<aside class="quote no-group" data-post="13" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dominicstpierre/40/2990_1.png" class="avatar"> dominicstpierre:</div>
+<blockquote>
+<p>the admin can whitlist certain domain</p>
+</blockquote>
+</aside>
+<p>This can help. However, in the context of corp networks, the hostnames and IPs are not as stable as the internet-facing ones.</p>
+<p>The bottom line - if the client wants authentication against AD, this is their corp security standard, and to convince them to deviate from it is not an easy task.</p>
+<p>On the other hand, a support for SAML Auth takes a SAML library in the HTTP filter (or whatever module can intercept the requests in your language of choice) and a bit of configuration. The application logic is not affected.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/14</link>
+        <pubDate>Fri, 18 May 2018 00:07:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <p>yes, why would someone do this kind of things, plus, the admin can whitlist certain domain where the widget can be embedded, so if you don’t want anyone to embed your widget, you specify which domain are allowed to embed</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/13</link>
+        <pubDate>Thu, 17 May 2018 20:02:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dominicstpierre/40/2990_1.png" class="avatar"> dominicstpierre:</div>
+<blockquote>
+<p>When the portal embed the widget they pass identification metric to the load function, exactly like Intercom receive current logged in user.</p>
+</blockquote>
+</aside>
+<p>So… if I embed the widget to a page on my own server within the corp network, I can pass any “identification metric” to it?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/12</link>
+        <pubDate>Thu, 17 May 2018 19:45:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>How does this widget (its backend server, more specifically) know who am I?</p>
+</blockquote>
+</aside>
+<p>When the portal embed the widget they pass identification metric to the load function, exactly like Intercom receive current logged in user.</p>
+<aside class="quote no-group" data-post="9" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>How does it authenticate that me is me?</p>
+</blockquote>
+</aside>
+<p>This is the responsibility of the “embedder”, they should embed only behind their own authentication mechanism.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/11</link>
+        <pubDate>Thu, 17 May 2018 19:40:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I’ll let you know when I get an answer.</p>
+</blockquote>
+</aside>
+<p>Security folks told me that they do not use AD IdP (Identity Provider) for that, but Siteminder IdP. The protocol however is the same: SAML 2.0 Federated Services.</p>
+<p>One correction they made to my idea of how it works is that IdP won’t accept authentication requests from just any application, because it creates a security risk: “<em>Otherwise one application can get a SAML token and then send it to another web application.</em>” As the result, the application has to be registered with IdP. Among other things, this step involves configuration what user attributes are sent from IdP to application (user FN, LN, id, whatnot).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/10</link>
+        <pubDate>Thu, 17 May 2018 19:02:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="8" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dominicstpierre/40/2990_1.png" class="avatar"> dominicstpierre:</div>
+<blockquote>
+<p>Not at all, it just means that instead of implementing SSO I built a fully embeddable widget.</p>
+</blockquote>
+</aside>
+<p>Yeah, I may be missing something.</p>
+<p>OK, suppose there is an internal corp portal. I’ve logged into it, and I’m on its page. The widget is loaded into a block on that page - from another server, I assume.</p>
+<ul>
+<li>How does this widget (its backend server, more specifically) know who am I?</li>
+<li>How does it authenticate that me is me?</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/9</link>
+        <pubDate>Thu, 17 May 2018 18:48:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <p>Not at all, it just means that instead of implementing SSO I built a fully embeddable widget.</p>
+<p>You can call the widget from anywhere in the world, well of course, that’s the point of a widget.</p>
+<p>When you say do whatever you want. What do you want to do more than what a widget exposes? Of course you can call the endpoints and what not, they are allowing CORS.</p>
+<p>If you’re talking about simulating fake like and what not, just like Feature Upvote there’s throttling and filtering etc.</p>
+<p>Not sure what you’re referring to. Happy to discuss how I implemented this if you have more questions. The goal of a widget, like Intercom’s for example is to be “public”.</p>
+<p>Our users can wildcard domain that can embed the widget, of course.</p>
+<p>Hope that answer the question.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/8</link>
+        <pubDate>Thu, 17 May 2018 18:28:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dominicstpierre/40/2990_1.png" class="avatar"> dominicstpierre:</div>
+<blockquote>
+<p>Instead of handling authentication from our end via SSO, our users can have their roadmap and ideas portal straight into their web application, behind their sign in flow.</p>
+</blockquote>
+</aside>
+<p>Hmm… doesn’t this mean that the widget is not protected? And that I can call that widget from any point in the world (or at least from any point within the corp network) and do whatever I want?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/7</link>
+        <pubDate>Thu, 17 May 2018 18:07:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="5862">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>It turns out they want to be able to integrate our SaaS’s authentication with their existing Active Directory server using the <a href="https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language" rel="nofollow noopener">SAML protocol </a>.</p>
+</blockquote>
+</aside>
+<p>By coincidence, this is in my TODO list as well. I just fired a short email to my clients security folks to ask them what are the required steps.</p>
+<p>My understanding the steps are as follows:</p>
+<ul>
+<li>Trust the AD Identity Manager (essentially obtain its URL and the certificate)</li>
+<li>When an un-authenticated user comes to your page, form a SAML request and redirect to AD page, where the user will be authenticated one way or another, and the SAML will be enriched and signed.</li>
+<li>AD then redirects the user back to the same page on your app, except it now has user properties. (This part is not 100% clear to me - how that XML is passed back?)</li>
+<li>Now you verify the validity of the signature on the properties (that’s why you need the IM cert) and you’ve got the user info.</li>
+</ul>
+<p>It looks much better that the older systems when your server and the IM would have to talk to each other directly, which is not easy over the internet - AD is behind the firewall.</p>
+<p>My use-case is simpler than yours because my users are only coming from inside of the corp network, so I don’t have to decide how to authenticate the users, but this is minor point.</p>
+<p>I’ll let you know when I get an answer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/6</link>
+        <pubDate>Thu, 17 May 2018 18:04:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah…that does sound like a much easier way to achieve SSO! A benefit of an embedded widget I hadn’t thought of before.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/5</link>
+        <pubDate>Thu, 17 May 2018 16:53:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <p>The way we handled this at <a href="https://roadmap.space" rel="nofollow noopener">Roadmap</a> was to have the portal embedded into their own app (web or mobile).</p>
+<p>Maybe something you could consider instead of SSO <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> since we’re kind of on the ~same grand market.</p>
+<p>Instead of handling authentication from our end via SSO, our users can have their roadmap and ideas portal straight into their web application, behind their sign in flow.</p>
+<p>That was done to postpone implementing SSO as far as possible I must admit <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Which we’re also starting to investigate. But at least we saved 1.5 year.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/4</link>
+        <pubDate>Thu, 17 May 2018 09:56:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I assume when you say SSO you mean…</p>
+</blockquote>
+<p>Thanks for the answer. It helps to illustrate that simply requesting SSO is ambiguous.</p>
+<p>Adding SSO to Feature Upvote is currently our most highly requested feature. I suspect different customers want different things which they are all calling SSO.</p>
+<p>I wrote to a specific customer who has been asking for SSO to find out more about what they wanted. It turns out they want to be able to integrate our SaaS’s authentication with their existing Active Directory server using the <a href="https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language">SAML protocol</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/3</link>
+        <pubDate>Thu, 17 May 2018 09:11:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>(I assume when you say SSO you mean “users of other services - Facebook, Twitter, … - can login into your application”, not “I have 2+ applications and want to share users between them”.)</p>
+<p>Use OAuth which is <a href="https://en.wikipedia.org/wiki/List_of_OAuth_providers" rel="nofollow noopener">supported by everyone now</a>. OpenID is out of use now.</p>
+<p>The main annoying thing is that every provider has their own little quirks. However many libraries for OAuth support already deal with these differences, making them invisible for you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/2</link>
+        <pubDate>Wed, 16 May 2018 18:51:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+      <item>
+        <title>Got any SaaS SSO tips?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Has anyone here used SSO (single sign-on) with a SaaS app? I’m asking from either side - the SaaS vendor or the customer.</p>
+<p>Is there any approach in particular that you’d recommend? Did you encounter any frustrations that could have been avoided with a different approach?</p>
+<p>I’m keen to hear any tips about how you added SSO.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862/1</link>
+        <pubDate>Wed, 16 May 2018 09:43:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5862-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-any-saas-sso-tips/5862.rss">Got any SaaS SSO tips?</source>
+      </item>
+  </channel>
+</rss>

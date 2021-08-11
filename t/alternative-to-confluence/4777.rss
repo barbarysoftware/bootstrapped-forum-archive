@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Alternative to Confluence?</title>
+    <link>https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777</link>
+    <description>My company of three people uses Confluence as a wiki. We&#39;re using the cloud version, hosted by Atlassian. Confluence was great in the day, and is cheap and powerful, but I do find it slow and cumbersome.
+
+Can you recommend an alternative company wiki that is also cloud-based? Speed, price, and good search are important to me.</description>
+    
+    <lastBuildDate>Sun, 12 Feb 2017 13:43:12 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Alternative to Confluence?</title>
+        <dc:creator><![CDATA[chh]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s not strictly a Wiki, but we certainly use it in such a way. We use <a href="http://www.quip.com" rel="nofollow noopener">www.quip.com</a> for all our shared documentation within the team and it’s fast, beautiful, and free. It’s made by a couple of people who worked on Google Docs.</p>
+<p>It’s now a Salesforce product, though. But that also means that it should stay around.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777/4</link>
+        <pubDate>Sun, 12 Feb 2017 13:43:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4777-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777.rss">Alternative to Confluence?</source>
+      </item>
+      <item>
+        <title>Alternative to Confluence?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Cloud-based but cheap will always be slow. You’d be squeezed together with hundreds of similar low-tier users, fighting with them for resources.</p>
+<p>Just two days ago I too have had enough with cloud Confluence+JIRA, and installed Redmine from a DigitalOcean image - $5/mo, bugtracker+wiki, unlimited users, fast. Took me 15 minutes to spin up the image and update DNS.</p>
+<p>Then it took me 2 hours to migrate all the milestones, defects and issues to Redmine. Confluence migration is still pending, but I only have a few documents there, so it won’t take long.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777/3</link>
+        <pubDate>Fri, 10 Feb 2017 15:00:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4777-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777.rss">Alternative to Confluence?</source>
+      </item>
+      <item>
+        <title>Alternative to Confluence?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>We use <a href="http://www.mkdocs.org/" rel="nofollow noopener">http://www.mkdocs.org/</a></p>
+<p>It is not cloud-based, just a static site generator from the md (Git markdown) files, so there are extra steps.</p>
+<p>Fully customizable, great built-in search and (obviously) extremely fast.</p>
+<p>We push changes by single click from the Jenkins.</p>
+<p>Probably not for everyone, but worth a look.</p>
+<p><a href="https://etlworks.com/docs/" class="onebox" target="_blank" rel="nofollow noopener">https://etlworks.com/docs/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777/2</link>
+        <pubDate>Fri, 10 Feb 2017 14:45:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4777-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777.rss">Alternative to Confluence?</source>
+      </item>
+      <item>
+        <title>Alternative to Confluence?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>My company of three people uses Confluence as a wiki. We’re using the cloud version, hosted by Atlassian. Confluence was great in the day, and is cheap and powerful, but I do find it slow and cumbersome.</p>
+<p>Can you recommend an alternative company wiki that is also cloud-based? Speed, price, and good search are important to me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777/1</link>
+        <pubDate>Fri, 10 Feb 2017 09:38:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4777-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-to-confluence/4777.rss">Alternative to Confluence?</source>
+      </item>
+  </channel>
+</rss>

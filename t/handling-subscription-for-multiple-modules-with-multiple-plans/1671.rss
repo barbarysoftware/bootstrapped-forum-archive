@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Handling subscription for multiple modules with multiple plans</title>
+    <link>https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671</link>
+    <description>I joined multiple related products in to one SaaS product with multiple modules. Each module has multiple plans. At least free and paid. You could (ideally) activate or upgrade / downgrade each module at any time. Each module has first 30 days of being active on any of the paid plans free.
+
+What would a good system for handling this? I came up with a system that can handle this but it&#39;s quite complex, and by experience, when something is overly complex it means I am missing something.
+
+Does anyone know for any good practice already out there or has suggestion for some simplification that I could do?
+
+(as an additional note small businesses here don&#39;t use CC-s normally, but we all use wire transfers for b2b transaction. WT that comes after the invoice that has to be official etc. (in paper or in e-invoice standard). meaning I can&#39;t charge the customers efficiently for small differences on the spot when they upgrade or change their plans on modules, but would ideally send 1 invoice per month to one user. That&#39;s why I also have options of 3 interval for payments, 1,3 and 6 months.) </description>
+    
+    <lastBuildDate>Tue, 03 Jun 2014 18:05:49 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Handling subscription for multiple modules with multiple plans</title>
+        <dc:creator><![CDATA[refaktor]]></dc:creator>
+        <description><![CDATA[
+            <p>One simplification that I needed to be made (it doesn’t make sense otherwise) was the feature where each plus module has it’s separate free trial period. It clashes with the choice of payment interval (which can be 1,3,6 months). In case user has more than 1 month set for payment interval you can’t really not charge them anything first month and start charging them the second one.</p>
+<p>So now you are if “trial” period for first month after signup and in that period you can use any module free of charge. After that all are billed immediately.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671/4</link>
+        <pubDate>Tue, 03 Jun 2014 18:05:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1671-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671.rss">Handling subscription for multiple modules with multiple plans</source>
+      </item>
+      <item>
+        <title>Handling subscription for multiple modules with multiple plans</title>
+        <dc:creator><![CDATA[refaktor]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks a lot. It’s good to see at least one example with modules to check for basic directions they went in. Using number of users for determining free/paid usage is a good idea as is simplifies it all (for the user also). My app isn’t yet multi-user, but it’s in plans to add that. I will think if I can make some other similar parameter.</p>
+<p>Otherwise my module selection looks like this. (It’s in slovene language). On the left are names of modules, select box is for selecting the plan “disabled/free/paid”, below I have two lines for discount per number of paid plans and selection for payment interval which brings additional discount if it’s 3 or 6 months. At the bottom is the summary “Payment of 32,41 every 3 months”:<br>
+<img src="/uploads/bootstrapped/2378/bd664cc304fab88d.png" width="" height=""></p>
+<p>I intend to handle changing of plans by canceling their current “period” and returning the unused amount relative to days remaining to their account. And creating a new period with new modules and price. Then we bill them for difference of their bill - sum(returns) at the start of each period.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671/3</link>
+        <pubDate>Sun, 01 Jun 2014 13:43:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1671-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671.rss">Handling subscription for multiple modules with multiple plans</source>
+      </item>
+      <item>
+        <title>Handling subscription for multiple modules with multiple plans</title>
+        <dc:creator><![CDATA[joseacta]]></dc:creator>
+        <description><![CDATA[
+            <p>Have a look at the product below. They also have multiple modules and kept things simple by allowing the first two users in for free and charging after that:</p>
+<p><a href="https://www.odoo.com/page/pricing" class="onebox" target="_blank" rel="nofollow noopener">https://www.odoo.com/page/pricing</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671/2</link>
+        <pubDate>Sat, 31 May 2014 01:17:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1671-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671.rss">Handling subscription for multiple modules with multiple plans</source>
+      </item>
+      <item>
+        <title>Handling subscription for multiple modules with multiple plans</title>
+        <dc:creator><![CDATA[refaktor]]></dc:creator>
+        <description><![CDATA[
+            <p>I joined multiple related products in to one SaaS product with multiple modules. Each module has multiple plans. At least free and paid. You could (ideally) activate or upgrade / downgrade each module at any time. Each module has first 30 days of being active on any of the paid plans free.</p>
+<p>What would a good system for handling this? I came up with a system that can handle this but it’s quite complex, and by experience, when something is overly complex it means I am missing something.</p>
+<p>Does anyone know for any good practice already out there or has suggestion for some simplification that I could do?</p>
+<p>(as an additional note small businesses here don’t use CC-s normally, but we all use wire transfers for b2b transaction. WT that comes after the invoice that has to be official etc. (in paper or in e-invoice standard). meaning I can’t charge the customers efficiently for small differences on the spot when they upgrade or change their plans on modules, but would ideally send 1 invoice per month to one user. That’s why I also have options of 3 interval for payments, 1,3 and 6 months.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671/1</link>
+        <pubDate>Fri, 30 May 2014 19:27:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1671-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-subscription-for-multiple-modules-with-multiple-plans/1671.rss">Handling subscription for multiple modules with multiple plans</source>
+      </item>
+  </channel>
+</rss>

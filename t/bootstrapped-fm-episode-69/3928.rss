@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Bootstrapped.fm, episode 69</title>
+    <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928</link>
+    <description>In this episode:
+
+Hating snow blowers, BaconBiz, going to the gym, driving to places you should be flying to, Rocket League, Quintu, Scribbleton, profit-generating companies and VC backing, seeing the path of a company as an outsider, favorite songs.
+
+[**Download the episode**](http://bootstrapped.fm/bootstrapped-episode-69-you-always-pay-for-sticking-to-your-principles/)
+
+Thanks to Linode for sponsoring! [Sign up today and get $20 off](https://linode.com/bootstrappedfm/?utm_source=bootstrapped&amp;utm_medium=podcast&amp;utm_content=20%20dollar&amp;utm_campaign=bootstrapped2016).</description>
+    
+    <lastBuildDate>Wed, 06 Apr 2016 09:48:38 +0000</lastBuildDate>
+    <category>Bootstrapped Podcast</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Bootstrapped.fm, episode 69</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="3928">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andrey/40/1196_1.png" class="avatar"> andrey:</div>
+<blockquote>
+<p>I don’t listen to our own show, so I don’t know.</p>
+</blockquote>
+</aside>
+<p>You obviously have better taste than the rest of us!</p>
+<p><em>Ducks and hides</em></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/5</link>
+        <pubDate>Wed, 06 Apr 2016 09:48:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3928-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928.rss">Bootstrapped.fm, episode 69</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 69</title>
+        <dc:creator><![CDATA[pat]]></dc:creator>
+        <description><![CDATA[
+            <p>I can understand why you wouldn’t listen to your own podcast, but I thought you might be interested in finding out why your service provider is preventing long time subscribers from downloading your podcast.  Isn’t that job 1 for such a partner?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/4</link>
+        <pubDate>Tue, 05 Apr 2016 21:44:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3928-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928.rss">Bootstrapped.fm, episode 69</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 69</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>We switched to <a href="http://simplecast.fm">simplecast.fm</a> a few episodes back. My bet would be that that has something to do with it. I don’t listen to our own show, so I don’t know. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/3</link>
+        <pubDate>Tue, 05 Apr 2016 18:50:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3928-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928.rss">Bootstrapped.fm, episode 69</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 69</title>
+        <dc:creator><![CDATA[pat]]></dc:creator>
+        <description><![CDATA[
+            <p>I do not use iTunes.  I recently noticed that I wasn’t getting any new episodes of the podcast.  When I dug into what was happening with my Python-based podcast downloader, it looks like you changed the service you use to host your podcast downloads, and it is responding with a 403 - Forbidden error when trying to download using the Python urllib2 library.</p>
+<p>When I changed my program from:</p>
+<pre><code>item_file = urllib2.urlopen(item)
+</code></pre>
+<p>to:</p>
+<pre><code>req = urllib2.Request(item, headers={'User-Agent' : "Magic Browser"}) 
+item_file = urllib2.urlopen(req)
+</code></pre>
+<p>It started working again, which suggests to me that your service is blocking the default user agent used by urllib2.</p>
+<p>Any thoughts on this?</p>
+<p>Why would a service which is meant to facilitate file downloads block a common python library used to download files?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/2</link>
+        <pubDate>Tue, 05 Apr 2016 18:19:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3928-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928.rss">Bootstrapped.fm, episode 69</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 69</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>In this episode:</p>
+<p>Hating snow blowers, BaconBiz, going to the gym, driving to places you should be flying to, Rocket League, Quintu, Scribbleton, profit-generating companies and VC backing, seeing the path of a company as an outsider, favorite songs.</p>
+<p><a href="http://bootstrapped.fm/bootstrapped-episode-69-you-always-pay-for-sticking-to-your-principles/"><strong>Download the episode</strong></a></p>
+<p>Thanks to Linode for sponsoring! <a href="https://linode.com/bootstrappedfm/?utm_source=bootstrapped&amp;utm_medium=podcast&amp;utm_content=20%20dollar&amp;utm_campaign=bootstrapped2016">Sign up today and get $20 off</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928/1</link>
+        <pubDate>Mon, 28 Mar 2016 14:40:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3928-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-69/3928.rss">Bootstrapped.fm, episode 69</source>
+      </item>
+  </channel>
+</rss>

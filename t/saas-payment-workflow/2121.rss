@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Saas payment workflow</title>
+    <link>https://discuss.bootstrapped.fm/t/saas-payment-workflow/2121</link>
+    <description>Has anyone ever come across a workflow highlighting each of the possible scenarios and outcomes etc for payment within a subscription based business?
+
+For example, user signs up and enters trial - the following x things happen. Three days before end of trial email gets sent. End of trial email gets sent. If not subscribed then something happens and so on?
+
+We are integrating a payment API and want to ensure the user experience is as good and complete as possible and are struggling to find something which covers the various scenarios so we can test them out and ensure the system deals with them all.</description>
+    
+    <lastBuildDate>Fri, 10 Oct 2014 15:24:26 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/saas-payment-workflow/2121.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Saas payment workflow</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>I wrote something custom for my SAAS. It uses a combination of days since sign up and actions taken by the user to determine which email to send at specific points. I looked for something off the shelf without luck.</p>
+<p>Came across this after I had built mine out <a href="https://www.getdrip.com/docs" rel="nofollow noopener">https://www.getdrip.com/docs</a> might do what you need</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-payment-workflow/2121/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-payment-workflow/2121/2</link>
+        <pubDate>Fri, 10 Oct 2014 15:24:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2121-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-payment-workflow/2121.rss">Saas payment workflow</source>
+      </item>
+      <item>
+        <title>Saas payment workflow</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>Has anyone ever come across a workflow highlighting each of the possible scenarios and outcomes etc for payment within a subscription based business?</p>
+<p>For example, user signs up and enters trial - the following x things happen. Three days before end of trial email gets sent. End of trial email gets sent. If not subscribed then something happens and so on?</p>
+<p>We are integrating a payment API and want to ensure the user experience is as good and complete as possible and are struggling to find something which covers the various scenarios so we can test them out and ensure the system deals with them all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-payment-workflow/2121/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-payment-workflow/2121/1</link>
+        <pubDate>Wed, 08 Oct 2014 19:05:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2121-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-payment-workflow/2121.rss">Saas payment workflow</source>
+      </item>
+  </channel>
+</rss>

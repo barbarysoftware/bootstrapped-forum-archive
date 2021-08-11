@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Want to build your next SaaS in Go, I&#39;m writing a book on that</title>
+    <link>https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852</link>
+    <description>Hi everyone,
+
+I thought some here might be interested in a book I&#39;m currently writing - [Build a SaaS app in Go](https://buildsaasappingo.com/).
+
+The two last startups I built uses Go as back end [Roadmap](https://roadmap.space) and [LeadFuze](https://www.leadfuze.com).
+
+There&#39;s some pretty compelling reasons to consider Go for a startup:
+
+1. Tiny memory usage, so your servers can run your app on the smallest configuration. DigitalOcean&#39;s starting $5/m droplet for example are more than enough for medium-high traffic apps in Go.
+2. Simple deployment via a one file binary. No more scp&#39;ing code to your production servers.
+3. Highly performant and new comer are productive in less than a week.
+4. Safe to refactor and change core part of your application. Great for micro-services.
+
+*Note: I&#39;m not saying or implying that Go is better or the only solution. I&#39;m writing this to present alternative to other things. Learning new language is energizing and increase overall programming skills.*
+
+In any case, I&#39;ve built and run SaaS for the last 10 years and it is hard (for me at least). I wanted to publish a book. SaaS and Go are two things I&#39;m passionate about. Hopefully that picked your curiosity a little.
+
+Any feedback always appreciated :)</description>
+    
+    <lastBuildDate>Sat, 12 May 2018 13:57:04 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Want to build your next SaaS in Go, I&#39;m writing a book on that</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="5852">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dominicstpierre/40/2990_1.png" class="avatar"> dominicstpierre:</div>
+<blockquote>
+<p>vote for which chapter they would want next</p>
+</blockquote>
+</aside>
+<p>Hi Dominic, I’m not bothered about that, I want the book chapter by chapter.</p>
+<p>I think because this isn’t a golang reference book it’ll be hard to do later chapters ahead of the earlier ones as each chapter builds on the code from before as you’ve found with chapter 8.</p>
+<p>I’d just keep going until it’s written then you can focus 100% on the marketing</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/6</link>
+        <pubDate>Sat, 12 May 2018 13:57:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5852-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852.rss">Want to build your next SaaS in Go, I&#39;m writing a book on that</source>
+      </item>
+      <item>
+        <title>Want to build your next SaaS in Go, I&#39;m writing a book on that</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Dean for the comment <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> - One thing I could do is let pre-order buyers vote for which chapter they would want next. That’s a crazy idea but that’s what my SaaS Roadmap is built for, so maybe I’ll try this <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/5</link>
+        <pubDate>Sat, 12 May 2018 11:42:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5852-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852.rss">Want to build your next SaaS in Go, I&#39;m writing a book on that</source>
+      </item>
+      <item>
+        <title>Want to build your next SaaS in Go, I&#39;m writing a book on that</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the reply. I understand your points. Most of the points you listed will be addressed minus:</p>
+<ul>
+<li>
+<p>admin interface -&gt; <em>the book scope is regarding API and related backend stuff, no UI, no frontend</em>. I’m thinking of writing a book on Elm next year (maybe).</p>
+</li>
+<li>
+<p>the convenience of Django Rest Framework including complex logic in serialization, throttling… =&gt; I haven’t used Django, I cannot compare, but the tiny engine we build on chapter 2 (no dependencies, no opinionated framework, a simple 100 lines router, read JSON, write JSON and decoupled architecture feels really good (to me at least). <em>Throttling will be addressed in chapter 7</em></p>
+</li>
+<li>
+<p>cron-invokable periodic management commands =&gt; In chapter 9: Email and background tasks, we build a package similar to Ruby’s sidekiq, but not as comprehensive of course, so cron-less.</p>
+</li>
+<li>
+<p>the readability and concision of ORMs (because 99% of my queries don’t require raw SQL) =&gt; Chapter 4 that I just released two days ago demonstrate how to handle PostgreSQL and MongoDB from one data package. From there your SQL package can use an ORM like <a href="https://github.com/jinzhu/gorm" rel="nofollow noopener">gorm</a> it’s up to you. I’m trying to not enforce choices in my book. Those choices should come from your experiences and what you want to use. The end result API should be agnostic enough of those choices and reader that implement their web app should not have difficulty to add those on top of what the book is building.</p>
+</li>
+<li>
+<p>same for data migration, it’s out of scope of the book and is a choice you make for yourself.</p>
+</li>
+</ul>
+<p>I understand and also would love to have those chapters written yet, but it is 4x harder than what I thought to write a book. I did lots of screencasts (mostly in French) from 2014-2016 and that was easier even with 2 hours editing. I’m writing it as fast as I can and prefer to make sure the content will survive and is interesting.</p>
+<p>The choice of working 1-3 first was required. The web engine we built in chapter 2 is different than what I thought was going to be the web server in the preview chapter 8: Billing when I launched this preview chapter in December. I’ll need to rewrite a good portion of the chapter sadly.</p>
+<p>That being said, I like the comment and I’ll keep that in mind.</p>
+<p>Thank you for the feedback, this is highly appreciated.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/4</link>
+        <pubDate>Sat, 12 May 2018 11:35:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5852-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852.rss">Want to build your next SaaS in Go, I&#39;m writing a book on that</source>
+      </item>
+      <item>
+        <title>Want to build your next SaaS in Go, I&#39;m writing a book on that</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="5852">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/i/b2d939/40.png" class="avatar"> Incertitude:</div>
+<blockquote>
+<p>I haven’t actually pre-ordered though because in your list of chapters you haven’t completed any of the content that I actually want to read. BTW your code on p28 exceeds the page width. Also, I’d question the wisdom of working first on the content I assume is in Ch1-3, as there are already plenty of online resources for those subjects (which, as someone trying to use Go, I’ve already read).</p>
+</blockquote>
+</aside>
+<p>I have bought the ‘pre-order’ book and just got the latest chapter.  not read it yet but 1 to 3 validate stuff that I’ve learned online and also open my eyes a bit to a different way of looking at things.</p>
+<p>Only just getting into Golang as the backend for my new product (<a href="http://WebsiteWatchdog.io" rel="nofollow noopener">WebsiteWatchdog.io</a>) and I’m looking to Dominic’s book to fill in the gaps for a production-ready API that most online tutorials don’t have.</p>
+<p>IMHO if you’re fairly new to Golang and want to peek behind the curtain of what it takes to put something in to production then you can’t go wrong shelling out the few $ on the pre-order</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/3</link>
+        <pubDate>Fri, 11 May 2018 15:17:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5852-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852.rss">Want to build your next SaaS in Go, I&#39;m writing a book on that</source>
+      </item>
+      <item>
+        <title>Want to build your next SaaS in Go, I&#39;m writing a book on that</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh good, this is totally for me. I signed up for your email CTA thingy.</p>
+<p>Right now I’m building a SaaS in Go &amp; Python. The ‘S’ part in Go, and the ‘aaS’ part in Python. I’m using Go because I need the speed and lower memory footprint, but Django for everything other than the actual core app because that’s my traditional stack and I want:</p>
+<ul>
+<li>user accounts</li>
+<li>session management</li>
+<li>admin interface</li>
+<li>receive email for internal errors</li>
+<li>banning too many failed access attempts</li>
+<li>the convenience of Django Rest Framework including complex logic in serialization, throttling…</li>
+<li>cron-invokable periodic management commands</li>
+<li>url routing system that doesn’t resemble a laundry list</li>
+<li>the readability and concision of ORMs (because 99% of my queries don’t require raw SQL)</li>
+<li>database schema migrations</li>
+</ul>
+<p>… in the context of something a little more substantial than hello world. Go’s docs and tutorials are not as good or complete as python, and I suspect the target audience are more knowledgeable, better programmers who can figure these things out quickly, leaving people like me to rely on opinionated frameworks where you’re told “here’s the right way to do X”.</p>
+<p>So yeah, it would be great if you could cover the Golang alternatives to all those points <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>I haven’t actually pre-ordered though because in your list of chapters you haven’t completed any of the content that I actually want to read. BTW your code on p28 exceeds the page width. Also, I’d question the wisdom of working first on the content I assume is in Ch1-3, as there are already plenty of online resources for those subjects (which, as someone trying to use Go, I’ve already read). I’m not trying to buy a complete textbook “as an engineer”, but rather a recipe/roadmap to enjoying all the benefits of Go and knowing how to do all the essential business stuff I listed above “as a business owner who happens to write the code too”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/2</link>
+        <pubDate>Fri, 11 May 2018 12:10:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5852-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852.rss">Want to build your next SaaS in Go, I&#39;m writing a book on that</source>
+      </item>
+      <item>
+        <title>Want to build your next SaaS in Go, I&#39;m writing a book on that</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>I thought some here might be interested in a book I’m currently writing - <a href="https://buildsaasappingo.com/" rel="nofollow noopener">Build a SaaS app in Go</a>.</p>
+<p>The two last startups I built uses Go as back end <a href="https://roadmap.space" rel="nofollow noopener">Roadmap</a> and <a href="https://www.leadfuze.com" rel="nofollow noopener">LeadFuze</a>.</p>
+<p>There’s some pretty compelling reasons to consider Go for a startup:</p>
+<ol>
+<li>Tiny memory usage, so your servers can run your app on the smallest configuration. DigitalOcean’s starting $5/m droplet for example are more than enough for medium-high traffic apps in Go.</li>
+<li>Simple deployment via a one file binary. No more scp’ing code to your production servers.</li>
+<li>Highly performant and new comer are productive in less than a week.</li>
+<li>Safe to refactor and change core part of your application. Great for micro-services.</li>
+</ol>
+<p><em>Note: I’m not saying or implying that Go is better or the only solution. I’m writing this to present alternative to other things. Learning new language is energizing and increase overall programming skills.</em></p>
+<p>In any case, I’ve built and run SaaS for the last 10 years and it is hard (for me at least). I wanted to publish a book. SaaS and Go are two things I’m passionate about. Hopefully that picked your curiosity a little.</p>
+<p>Any feedback always appreciated <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852/1</link>
+        <pubDate>Thu, 10 May 2018 12:29:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5852-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/want-to-build-your-next-saas-in-go-im-writing-a-book-on-that/5852.rss">Want to build your next SaaS in Go, I&#39;m writing a book on that</source>
+      </item>
+  </channel>
+</rss>

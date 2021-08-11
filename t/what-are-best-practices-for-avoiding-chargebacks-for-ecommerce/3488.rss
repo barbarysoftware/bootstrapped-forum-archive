@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What are best practices for avoiding chargebacks for ecommerce?</title>
+    <link>https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488</link>
+    <description>
+
+We do the usual:
+
+ 1. verify CVV and zip code. 
+ 2. They have to verify their email address.
+    (We will start requesting phone number. Our subscription service
+    doesn&#39;t currently do that so we have to add that ourselves) 
+ 3. We track what they do in the program so we have that to report as well.
+
+Merchant Services claims &quot;you&#39;re lucky to get paid for anything&quot;.
+I should have said &#39;Ya&#39; know, I paid for YOUR service online.&quot;
+
+None of this avoids them saying &quot;that wasn&#39;t me&quot;
+
+I wonder when some startup is going to solve this problem.
+
+-clay</description>
+    
+    <lastBuildDate>Thu, 24 Sep 2015 19:33:30 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What are best practices for avoiding chargebacks for ecommerce?</title>
+        <dc:creator><![CDATA[PPG]]></dc:creator>
+        <description><![CDATA[
+            <p>If you wish to eliminate all possible chargeback issues, you need to look at several aspects, beyond the PCI compliance, when looking for a payment solution. Online payments security implies a complex set of features which a payment processor should include in the services offered to clients, such as:</p>
+<ol>
+<li>
+<em>Security of transactions</em> – having a PCI DSS Certificate, with secure order pages (shopping carts).</li>
+<li>
+<em>Customer security</em> - the customer data is securely collected and communicated to the payment gateway, but none of this data is stored anywhere</li>
+<li>
+<em>Fraud management</em> - preventing possible fraud activity through a 24/7 fraud check system for both automatic and manual orders check for possible violations</li>
+<li>
+<em>Chargeback and dispute handling</em> - protecting your company and its brand by resolving customer chargeback, refund requests as well as winning all open disputes</li>
+</ol>
+<p>If you are selling a digital product, you might want to check out <a href="https://payproglobal.com/" rel="nofollow noopener">PayPro Global</a> – we are a worldwide eCommerce solution provider with over 9 years of experience in the industry. We take care of all aspects of your online payments, with particular care for payment &amp; information security. Our one-stop solution for ecommerce is also packed with features &amp; services aimed at preventing and successfully handling chargebacks and other potential types of disputes which may occur. Our services are well detailed on <a href="https://payproglobal.com/" rel="nofollow noopener">our website</a> and we’d love to get in touch and discuss how our team at PayPro Global can support your business growth.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488/4</link>
+        <pubDate>Thu, 24 Sep 2015 19:33:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3488-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488.rss">What are best practices for avoiding chargebacks for ecommerce?</source>
+      </item>
+      <item>
+        <title>What are best practices for avoiding chargebacks for ecommerce?</title>
+        <dc:creator><![CDATA[syneryder]]></dc:creator>
+        <description><![CDATA[
+            <p>What kind of issues are you having, is it high levels of fraud, or customers not recognizing the charge on their card?</p>
+<p>One of the best weapons in your toolkit is an extremely generous refund period.  Since customers can request a chargeback anyway, you may as well spin it to your advantage and proclaim your wonderful 60-day Refund Policy.  Always better to issue a refund than let it escalate to a chargeback fee.</p>
+<p>If the problem is fraud, make sure you’re doing the usual things like blacklisting high fraud countries, checking that the IP matches the customers billing country, seeing if the IP is an anonymous proxy etc.  And remember that none of these alone necessarily mean fraud - there’s lots of folks who buy things while travelling overseas, and an ‘anonymous proxy’ could be someone using a VPN.  If you’re processing the cards yourself through a merchant account, you might want to consider integrating MaxMind’s minFraud product into your card screening process.</p>
+<p><a href="https://www.maxmind.com/en/minfraud-services" class="onebox" target="_blank">https://www.maxmind.com/en/minfraud-services</a></p>
+<p>Most of all, be glad you didn’t get hit with thousands of chargebacks in a single week, like Candy Japan did recently when they got subjected to a testing attack by carders:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.candyjapan.com/static/favicon.png" class="site-icon" width="210" height="210">
+      <a href="https://www.candyjapan.com/behind-the-scenes/candy-japan-hit-with-credit-card-fraud" target="_blank">candyjapan</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/370;"><img src="https://www.candyjapan.com/static/fraud.jpg" class="thumbnail" width="690" height="370"></div>
+
+<h3><a href="https://www.candyjapan.com/behind-the-scenes/candy-japan-hit-with-credit-card-fraud" target="_blank">Candy Japan hit with credit card fraud</a></h3>
+
+<p>What is credit card fraud, how we noticed it and how it impacted our business.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488/3</link>
+        <pubDate>Wed, 23 Sep 2015 13:45:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3488-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488.rss">What are best practices for avoiding chargebacks for ecommerce?</source>
+      </item>
+      <item>
+        <title>What are best practices for avoiding chargebacks for ecommerce?</title>
+        <dc:creator><![CDATA[mj_langford]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://Stripe.com">Stripe.com</a> has a lot of good doc on what to do about this:</p>
+<p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://stripe.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://stripe.com/docs/disputes/prevention" target="_blank">stripe.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="https://stripe.com/img/v3/home/social.png" class="thumbnail" width="690" height="345"></div>
+
+<h3><a href="https://stripe.com/docs/disputes/prevention" target="_blank">Preventing Disputes and Fraud | Stripe Payments</a></h3>
+
+<p>Online payment processing for internet businesses. Stripe is a suite of payment APIs that powers commerce for businesses of all sizes.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://stripe.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://stripe.com/docs/disputes/prevention" target="_blank">stripe.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="https://stripe.com/img/v3/home/social.png" class="thumbnail" width="690" height="345"></div>
+
+<h3><a href="https://stripe.com/docs/disputes/prevention" target="_blank">Preventing Disputes and Fraud | Stripe Payments</a></h3>
+
+<p>Online payment processing for internet businesses. Stripe is a suite of payment APIs that powers commerce for businesses of all sizes.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>It’s also <em>criminally easy</em> to swap to stripe if your vendor doesn’t handle things as well as they do, like afternoon if not &lt;1 hour for many projects</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488/2</link>
+        <pubDate>Fri, 18 Sep 2015 02:41:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3488-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488.rss">What are best practices for avoiding chargebacks for ecommerce?</source>
+      </item>
+      <item>
+        <title>What are best practices for avoiding chargebacks for ecommerce?</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>We do the usual:</p>
+<ol>
+<li>verify CVV and zip code.</li>
+<li>They have to verify their email address.<br>
+(We will start requesting phone number. Our subscription service<br>
+doesn’t currently do that so we have to add that ourselves)</li>
+<li>We track what they do in the program so we have that to report as well.</li>
+</ol>
+<p>Merchant Services claims “you’re lucky to get paid for anything”.<br>
+I should have said ‘Ya’ know, I paid for YOUR service online."</p>
+<p>None of this avoids them saying “that wasn’t me”</p>
+<p>I wonder when some startup is going to solve this problem.</p>
+<p>-clay</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488/1</link>
+        <pubDate>Thu, 17 Sep 2015 22:36:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3488-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-are-best-practices-for-avoiding-chargebacks-for-ecommerce/3488.rss">What are best practices for avoiding chargebacks for ecommerce?</source>
+      </item>
+  </channel>
+</rss>

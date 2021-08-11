@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Mobile to web - where to start?</title>
+    <link>https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776</link>
+    <description>My development origins are actually with the web - coding straight HTML and Javascript in the late 90&#39;s - but things are quite different these days. It seems that to be a modern web developer, you really need to be a polyglot. Many different languages, frameworks, tools - from the perspective of a relative newcomer, it&#39;s fairly daunting.
+
+I&#39;ve been out of the web space for a while - still writing code, but on the hardware/embedded side of things mostly in C/C++ - which I can tell you is a completely different world. As a hobby, I picked up mobile stuff - primarily Objective-C and Cocoa Touch/UIKit, etc for iOS (Cocos2D for games). Getting started with that, I found an abundance of information, tutorials, etc readily available online. The barrier to entry is a compiler and a target device. Debugging is as simple as setting a breakpoint. Xcode/Visual Studio provide things like autocomplete and real-time syntax error tracking.
+
+So I ask - where does a competant developer start to make the jump into web development? Are there any resources you can recommend that aren&#39;t either directed at complete coding newcomers or seasoned veterans? Any tools/IDEs you can recommend that aren&#39;t named VM?
+
+Thanks.</description>
+    
+    <lastBuildDate>Thu, 21 Nov 2013 14:26:40 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Mobile to web - where to start?</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>I had a similar time, insisting on making all the basic mistakes myself, rather than learning from those who’ve gone ahead. If you can at all avoid that path, I’d recommend it. You’ll have plenty of opportunities to hone your skills without deliberately driving your app into the weeds.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776/4</link>
+        <pubDate>Thu, 21 Nov 2013 14:26:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-776-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776.rss">Mobile to web - where to start?</source>
+      </item>
+      <item>
+        <title>Mobile to web - where to start?</title>
+        <dc:creator><![CDATA[ryan]]></dc:creator>
+        <description><![CDATA[
+            <p>I was in a similar situation myself: a back end dev wanting to learn web app dev.</p>
+<p>You’ll need a learning project so you can really dig in. Do you have a project in mind already? If not, just make something up that interests you. For example, I wanted to learn how to implement voting and infinite scrolling a few years ago, so I did <a href="http://winningpic.com" rel="nofollow noopener">winningpic</a> for fun.</p>
+<p>Daniel’s recommendations are good ones. JetBrains stuff has worked well for me (I use WebStorm for js/css/html dev)</p>
+<p>I think trying to use all the new whizbang js frameworks and tools right at first is overwhelming, and you won’t have a good understanding of why they’re necessary. One idea is to start really simple (it’s what I did). It’s not a fast path, but effective I think.</p>
+<ul>
+<li>You have a project in mind.</li>
+<li>Pick a server side tech based on the language you are comfortable with. I’d say node, rails, or .net. Whatever you think is easiest to get your html/css/js served out to the browser. Serve out some plain old, “dumb” html with alot of ids that you’ll hook up to later with jquery.</li>
+<li>On the client, start with no javascript framework other than jquery. Concatenate html strings in your js code. Manually attach event handlers to those ids with jquery. Manually update the dom when your ajax calls finish. These are the easy ways to get started and simple to understand. <strong>Yes, they’re the wrong way</strong>. But, as your learning project grows, you’re going to experience the pains for real: “html in strings is a pain in the ass”, and “Crap, this sucks updating the dom from all these places manually… oops I forgot one!”</li>
+</ul>
+<p>Now you’re in a position to really understand why you might need some of these modern frameworks. You’ll see why you want some kind of html templating and especially why you’ll want some kind of real view model support, so your dom can update by itself based on your model changes.</p>
+<p>This is what happened to me and I’m not sure I’d really get it if someone would have just told me to use frameworks x, y, and z.</p>
+<p>It turned out that the day job ended up using <a href="http://kendoui.com" rel="nofollow noopener">kendo</a> where I first learned to use templates and models. Now I’m ready to go research the other solutions available and I think the choices will more understandable.</p>
+<p>Hope that helps some,<br>
+Ryan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776/3</link>
+        <pubDate>Wed, 20 Nov 2013 14:44:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-776-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776.rss">Mobile to web - where to start?</source>
+      </item>
+      <item>
+        <title>Mobile to web - where to start?</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>I can recommend the <a href="http://www.jetbrains.com/" rel="nofollow noopener">JetBrains</a> IDEs, they’ve got one for all the main languages you’d be interested in (Ruby, Python, PHP, JS, Java) and they work a treat. The JS support especially is great, the autocomplete is pretty solid (although far better if you annotate your code.)</p>
+<p>Seems like the main choices I hear about in terms of server side are:</p>
+<ul>
+<li>Rails (of course)</li>
+<li>Laravel (php)</li>
+<li>Express (Node gets addictive… at first I couldn’t understand the fuss, it’s hard to use anything else now).</li>
+</ul>
+<p>I’d say you could select either Rails or Laravel and be happy. Express/Node - well - how much do you like JS?</p>
+<p>Front end is where it gets much, much harder. It took me only about a year to work out what I should use <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I’m not aware of any good resources to help you make this selection, actually. FWIW:</p>
+<ul>
+<li>I used BackboneJS for about a year. I wouldn’t recommend it for anything major, gets really hard to keep everything under control.</li>
+<li>Now using <a href="http://www.angularjs.org/" rel="nofollow noopener">AngularJS</a> - it’s really good, sometimes very hard to wrap your head around. Unlike with Backbone, where I felt like I had a mess with no hints on how to fix it, the longer I use Angular the tidier I’m able to make my code. Occasionally, it’s been incredibly painful, but the pain is usually worth it in the end.</li>
+<li>
+<a href="http://emberjs.com/" rel="nofollow noopener">Ember</a> &amp; <a href="http://knockoutjs.com/" rel="nofollow noopener">Knockout</a> are in my blind spot. There are people as passionate about Ember/Knockout as Angular, so - grain of salt.</li>
+<li>I also use <a href="http://www.breezejs.com/" rel="nofollow noopener">BreezeJS</a> to handle models client side. It provides a lot of functionality, but it’s written from a .Net perspective, so it can be a bit awkward and sometimes feels bloated. Plus its more difficult to use if you’re not using .Net, and their support model is weird (found a bug? Great! There’s no way to raise an issue unless you pay us money!) Still, despite all that, it has no rival.</li>
+</ul>
+<p>If you do use Angular, then <a href="http://www.breezejs.com/" rel="nofollow noopener">egghead.io</a> has great intro videos. <a href="http://www.packtpub.com/angularjs-web-application-development/book" rel="nofollow noopener">Master Web Application Development with Angular JS</a> is good once you’re a little further along, but it’s already feeling a little outdated, such is the pace of development for Angular. Still, lots of great advice.</p>
+<p>In terms of tools, for front end, you’ll want to use:</p>
+<ul>
+<li>Check out <a href="http://yeoman.io/" rel="nofollow noopener">Yeoman</a>, which will point you towards:</li>
+<li>
+<a href="http://bower.io/" rel="nofollow noopener">Bower</a> for dependency management</li>
+<li>
+<a href="http://gruntjs.com/" rel="nofollow noopener">Grunt</a> for build</li>
+<li>
+<a href="http://sass-lang.com/" rel="nofollow noopener">SASS</a>/<a href="http://learnboost.github.io/stylus/" rel="nofollow noopener">Stylus</a> for CSS (I like Stylus, seems more forgiving, but SASS has more uptake.)</li>
+<li>
+<a href="http://pivotal.github.io/jasmine/" rel="nofollow noopener">Jasmine</a> or <a href="http://visionmedia.github.io/mocha/" rel="nofollow noopener">Mocha</a> for unit testing (I use both, slight preference for Mocha)</li>
+</ul>
+<p>The learning curve is steep, because there’s just so many tools and frameworks to choose from. I think the list above are pretty mainstream and have good communities. Actually integrating it all into your workflow &amp; learning all the tools still takes a while.</p>
+<p>Happy to help if you’ve got questions!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776/2</link>
+        <pubDate>Wed, 20 Nov 2013 10:48:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-776-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776.rss">Mobile to web - where to start?</source>
+      </item>
+      <item>
+        <title>Mobile to web - where to start?</title>
+        <dc:creator><![CDATA[lorenzo]]></dc:creator>
+        <description><![CDATA[
+            <p>My development origins are actually with the web - coding straight HTML and Javascript in the late 90’s - but things are quite different these days. It seems that to be a modern web developer, you really need to be a polyglot. Many different languages, frameworks, tools - from the perspective of a relative newcomer, it’s fairly daunting.</p>
+<p>I’ve been out of the web space for a while - still writing code, but on the hardware/embedded side of things mostly in C/C++ - which I can tell you is a completely different world. As a hobby, I picked up mobile stuff - primarily Objective-C and Cocoa Touch/UIKit, etc for iOS (Cocos2D for games). Getting started with that, I found an abundance of information, tutorials, etc readily available online. The barrier to entry is a compiler and a target device. Debugging is as simple as setting a breakpoint. Xcode/Visual Studio provide things like autocomplete and real-time syntax error tracking.</p>
+<p>So I ask - where does a competant developer start to make the jump into web development? Are there any resources you can recommend that aren’t either directed at complete coding newcomers or seasoned veterans? Any tools/IDEs you can recommend that aren’t named VM?</p>
+<p>Thanks.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776/1</link>
+        <pubDate>Tue, 19 Nov 2013 19:19:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-776-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mobile-to-web-where-to-start/776.rss">Mobile to web - where to start?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Payment Gateways for Credit Card Processing. Multi-currency</title>
+    <link>https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282</link>
+    <description>I know this question has come up before but all of the answers/comments are from a couple of years ago and this is an area that seems to be moving fairly rapidly as new and existing players add additional functionality.
+
+We are a UK based company with bank accounts based in the UK that are set up for GBP, EUR and USD.
+
+We want to offer the option of paying for invoices by credit card in the currency of the purchaser. Typically in our case USD or EUR. We want a simple, cost-effective option to take payments, account for them (our accounts package will do this but it would need to integrate), then transfer the money to the relevant bank account.
+
+At first glance, Stripe seems to be a good option and lots of people recommend. The main trouble with Stripe for us however is that we do not have a US based bank account, (only a UK based one denominated in $). Stripe will not pay $ into a UK account so in order for us to be paid, we have to get our $ transferred into GBP at a rate convenient to Stripe, then we pay them a fee for the transfer. This is VERY expensive.
+
+We&#39;re not looking for recurring billing etc, just the simplest, most efficient way of adding credit card payment onto invoices to facilitate payment. Would welcome any suggestions. Thank you.</description>
+    
+    <lastBuildDate>Tue, 12 Sep 2017 15:24:29 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Payment Gateways for Credit Card Processing. Multi-currency</title>
+        <dc:creator><![CDATA[MarkLittlewood]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting. I am less interested in making swift transfers into the USD based account but the usd borderless to UK USD is the killer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/7</link>
+        <pubDate>Tue, 12 Sep 2017 15:24:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5282-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282.rss">Payment Gateways for Credit Card Processing. Multi-currency</source>
+      </item>
+      <item>
+        <title>Payment Gateways for Credit Card Processing. Multi-currency</title>
+        <dc:creator><![CDATA[MarkLittlewood]]></dc:creator>
+        <description><![CDATA[
+            <p>Very interesting. Will take a look. Thanks Steve.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/6</link>
+        <pubDate>Tue, 12 Sep 2017 15:22:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5282-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282.rss">Payment Gateways for Credit Card Processing. Multi-currency</source>
+      </item>
+      <item>
+        <title>Payment Gateways for Credit Card Processing. Multi-currency</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>etd at a basic level I can use a borderless $ to transfer funds to my normal UK £ business account?</p>
+<p>I just signed up for a borderless account to cut down on stripe exchange fees.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/5</link>
+        <pubDate>Tue, 12 Sep 2017 15:05:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5282-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282.rss">Payment Gateways for Credit Card Processing. Multi-currency</source>
+      </item>
+      <item>
+        <title>Payment Gateways for Credit Card Processing. Multi-currency</title>
+        <dc:creator><![CDATA[etd]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Mark, we’ve got Stripe + the Borderless account working without issues for our UK business.</p>
+<p>The catch is that the USD account they provide can’t accept SWIFT transfers, this means that you can’t send money directly to it from your UK-based USD account. I haven’t been able to make USD (Borderless) to USD (UK-based) transfers either.</p>
+<p>So once the funds are in your USD Borderless, you can use them to pay providers or to do the currency exchange and bring them as GBP or EUR.</p>
+<p>Finally, note that none of the Borderless sub-accounts are not in your company’s name (TransferWise keeps them on your behalf), meaning, they’re not guaranteed by any of the standard safety nets that guarantee bank account deposits in the UK / EU.</p>
+<p>Their Support is great and responsive.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/4</link>
+        <pubDate>Tue, 12 Sep 2017 13:18:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5282-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282.rss">Payment Gateways for Credit Card Processing. Multi-currency</source>
+      </item>
+      <item>
+        <title>Payment Gateways for Credit Card Processing. Multi-currency</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Yip was looking at transfer wise myself. Seems like a good option.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/3</link>
+        <pubDate>Wed, 06 Sep 2017 13:30:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5282-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282.rss">Payment Gateways for Credit Card Processing. Multi-currency</source>
+      </item>
+      <item>
+        <title>Payment Gateways for Credit Card Processing. Multi-currency</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Mark, perhaps a <a href="https://transferwise.com/borderless">TransferWise “Borderless” account</a> is the missing part that you need. You get a USD-denominated account with a real US account number so that Stripe and others can pay you in USD. You also get a EUR-denominated account with (IIRC) a German account number, and a GBP-denominated account with a UK account number. You can then transfer funds between each account at interbank rate + 0.5%, which is the cheapest rate you’ll get outside of opening a foreign exchange trading account.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/2</link>
+        <pubDate>Tue, 05 Sep 2017 23:35:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5282-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282.rss">Payment Gateways for Credit Card Processing. Multi-currency</source>
+      </item>
+      <item>
+        <title>Payment Gateways for Credit Card Processing. Multi-currency</title>
+        <dc:creator><![CDATA[MarkLittlewood]]></dc:creator>
+        <description><![CDATA[
+            <p>I know this question has come up before but all of the answers/comments are from a couple of years ago and this is an area that seems to be moving fairly rapidly as new and existing players add additional functionality.</p>
+<p>We are a UK based company with bank accounts based in the UK that are set up for GBP, EUR and USD.</p>
+<p>We want to offer the option of paying for invoices by credit card in the currency of the purchaser. Typically in our case USD or EUR. We want a simple, cost-effective option to take payments, account for them (our accounts package will do this but it would need to integrate), then transfer the money to the relevant bank account.</p>
+<p>At first glance, Stripe seems to be a good option and lots of people recommend. The main trouble with Stripe for us however is that we do not have a US based bank account, (only a UK based one denominated in <span class="math">). Stripe will not pay </span> into a UK account so in order for us to be paid, we have to get our $ transferred into GBP at a rate convenient to Stripe, then we pay them a fee for the transfer. This is VERY expensive.</p>
+<p>We’re not looking for recurring billing etc, just the simplest, most efficient way of adding credit card payment onto invoices to facilitate payment. Would welcome any suggestions. Thank you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282/1</link>
+        <pubDate>Tue, 05 Sep 2017 15:36:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5282-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-gateways-for-credit-card-processing-multi-currency/5282.rss">Payment Gateways for Credit Card Processing. Multi-currency</source>
+      </item>
+  </channel>
+</rss>

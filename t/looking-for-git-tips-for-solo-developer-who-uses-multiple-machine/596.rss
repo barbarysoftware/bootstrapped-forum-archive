@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Looking for Git tips for solo developer who uses multiple machine</title>
+    <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596</link>
+    <description>I recently switched to Git from Subversion, mainly because I wanted to have a local copy of my repository so that I could compare with history quickly and without a good Internet connection. I&#39;m having to relearn some habits...
+
+Here&#39;s the situation for which I need tips: I work about half the time in my office on an iMac. I work about half the time at home or on the road on a MacBook Pro. I&#39;ve created a private Git repository on GitHub, and cloned it on both machines.
+
+When I move from working at home on a task to working in the office on the same task, I want to easily be able to have the same files in the same state go with me, without having to remember to do a &quot;push&quot;. Does Git accommodate this? Should I get in the habit of automatically pushing after committing? 
+
+I ask because right now I&#39;m in the office, and frustrated that I can&#39;t continue with the task I was doing last night at home, because the current state of the files is not represented in GitHub, because I didn&#39;t &quot;push&quot;.
+
+And in general, what Git tips do you have that will work with my two computers that are not co-located?
+</description>
+    
+    <lastBuildDate>Tue, 03 Dec 2013 01:58:41 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[cmgmyr]]></dc:creator>
+        <description><![CDATA[
+            <p>When I was working on Mac and PC at the same time I set up Dropbox to sync everything. This way you can commit code, or not, and all of your environments would be the same. I’ve made a blog post with the steps <a href="http://www.chrisgmyr.com/2012/11/sync-htdocs-and-mysql-data-with-dropbox/" rel="nofollow noopener">here</a>. You can turn off the sync until you are ready to move to the other computer.</p>
+<p>I’ve since moved to a single Mac laptop setup with a larger second monitor. Working on a single computer is a lot easier. I hope the link helped!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/16</link>
+        <pubDate>Tue, 03 Dec 2013 01:58:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[albuck]]></dc:creator>
+        <description><![CDATA[
+            <p>I think the canonical way to automatically sync two repos is with a commit hook, built into git.  It is very easy to automatically push from local to remote with every commit.  This might be slightly slower, and may litter the repo with too many minor commits.  But as a bullet proof backup, that is the way to go. I can clean up the commit trail later. I haven’t ever implemented the remote hook, as I seem to always remember to do a final push to remote at the end of any coding session. I don’t consider I’m done for the session unless I’ve committed locally and pushed to some remote as a backup.  Belt and suspenders.  I don’t trust any single hard disk.  A couple of weeks ago, I was debugging a WordPress plugin on a VPS, with a local repo on that host.  I would commit and then push to remote at the end of a session.  My “budget” VPS hosting company vanished off the internet without notice recently, but my code was safe.</p>
+<p>I’m pretty cheap, and refuse to pony up for private repos at Github, at least as long as I don’t need any collaboration tools.  For a long time, Assembla was my spot, with unlimited private repos and up to 2GB of storage.  I have 29 private repos there.  Alas, a few months ago they stopped allowing unlimited private repos, though they aren’t throwing existing repos off their service.  I’m migrating to Bitbucket, and “git clone --mirror” is useful for moving a remote repo with all its branches.  I am most comfortable when my repos are backed up on two separate cloud services, and these days there are a lot of free private git repos to chose from:</p>
+<p><a href="https://git.wiki.kernel.org/index.php/GitHosting" rel="nofollow noopener">https://git.wiki.kernel.org/index.php/GitHosting</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/15</link>
+        <pubDate>Tue, 26 Nov 2013 17:58:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[jeremy]]></dc:creator>
+        <description><![CDATA[
+            <p>I clearly must have been doing something wrong all this time. I’ve been on a laptop since my high school graduation present was an awesome Gateway 2000, 386 75mhz DX4 8MB of RAM and the largest screen you could buy, 10.1 inches. All that for a mere $3,500.</p>
+<p>These days it’s a Macbook Air with 8 gigs of RAM, but it’s almost the same thing.</p>
+<p>For the purposes of this discussion. Even though I’m on a single machine to do all my work and don’t work with a team at this time. I pretty much push every time I commit. And also, my working directory is on dropbox, but that is just for additional backupability. For me to lose all my work, github/my laptop/my time machine/and dropbox would all have to fail simultaneously. Not to mention the deployed code on the servers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/14</link>
+        <pubDate>Mon, 25 Nov 2013 15:18:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, the laptops are so powerful now that I’ve moved to the one machine solution and just use the Laptop everyone. Simplifies everything. Less stuff, less backups, less things to break, everything is always with you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/13</link>
+        <pubDate>Mon, 25 Nov 2013 13:44:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[drewm]]></dc:creator>
+        <description><![CDATA[
+            <p>My solution to this situation was a bit different. I had a big screen, keyboard and mouse and both locations and just carried the MacBook Pro between home and office.</p>
+<p>Syncing is such a PITA. I decided I couldn’t deal with that on a daily basis, so just carried one machine with me everywhere.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/12</link>
+        <pubDate>Sun, 24 Nov 2013 08:27:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[sts]]></dc:creator>
+        <description><![CDATA[
+            <p>I just put my files and the git repo in a dropbox folder. That way the files are in the same state all the time on both of my synced machines. I commit and push - to Bitbucket in my case - from both of them. Never had any problems in years.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/11</link>
+        <pubDate>Fri, 22 Nov 2013 08:02:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[jimm]]></dc:creator>
+        <description><![CDATA[
+            <p>A simpler solution for you right now sounds like just pushing after a commit. What is the problem doing that? I used to do that but would forget a push at home and be SOL wherever I was working remotely on it, which is not ideal. My solution is below:</p>
+<p>I’ve been working on a side project where I needed to have my project “ejectable” from my work machine. So I just have it on a USB stick.  I basically just carry it with me wherever I go and am able to pop it into whatever computer I want to work on it.  I’ve had 0 problems.</p>
+<p>The only risk is losing the disk, but you should be pushing regularly anyway.</p>
+<p><strong>Update 12/06/2013:</strong></p>
+<p>Just a note on my reasoning. I work a day job that probably wouldn’t like my working on a side project at work.  GIven that I do not use solutions that require me to log into services that clone files locally (i.e. dropbox). The thumbdrive solution works for me and keeps everything in one place.  I can keep it up to date and pop it in at home and push up to a remote vcs.</p>
+<p>I’m not sure this answers the original question 100% but I’ll just throw it out there for anyone bootstrapping with a day job. Good luck!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/10</link>
+        <pubDate>Thu, 21 Nov 2013 22:49:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[JaapRood]]></dc:creator>
+        <description><![CDATA[
+            <p>Slightly off topic but I think pretty helpful: <a href="http://pcottle.github.io/learnGitBranching/" rel="nofollow noopener">this game to learn Git</a>, and in particular branching. It’s actually a lot of fun and a great way for people who are new to Git to get to grips with it’s concepts. Even when you normally use a GUI, it’s great to know what’s actually going on and what’s actually possible.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/9</link>
+        <pubDate>Mon, 07 Oct 2013 11:03:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[starr]]></dc:creator>
+        <description><![CDATA[
+            <p>If you’re on github, you can easily fork the main repo to create your own private remote. Then you can push and pull from that as much as you want without littering up the main repo. Branches are a simpler way to do this, but everybody else will have access to your WIP.</p>
+<p>I don’t think there’s a way to avoid pushing, unless you use some outside tool. Though once you’ve forked the main repo, you can push early and often.</p>
+<p>In my own experience I’ve found that a normal git workflow involves creating a separate little sandbox for your feature, doing lots of little commits and pushing at the end of each coding session. Whereas back in subversion, people would work on big changes locally for a long time before committing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/8</link>
+        <pubDate>Mon, 07 Oct 2013 02:17:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[lmea]]></dc:creator>
+        <description><![CDATA[
+            <p>I haven’t got one at hand, but I think that something as simple as this may work:</p>
+<pre><code>#!/bin/bash
+# N.B. this script will push all the committed changes to the remote repository
+
+# This is the working copy (on your computer) 
+WORKING_COPY=/home/user/work/project
+
+# The remote name is usually 'origin', probably you won't need to change it
+REMOTE_NAME=origin
+
+# This is the name of the branch on the remote repo 
+# it doesn't need to be equal to the name of the branch on your
+# local repo, but I usually keep the same to make less errors
+# when pushing
+REMOTE_BRANCH=officesync
+
+cd $WORKING_COPY
+git push $REMOTE_NAME $REMOTE_BRANCH
+</code></pre>
+<p>Also you may find useful this script I have to configure the shell prompt <a href="https://gist.github.com/luca/6827108" rel="nofollow noopener">https://gist.github.com/luca/6827108</a><br>
+I use git from the command line and that tells me immediately the branch I’m in and if there’s something to commit ( it puts an asterisk at the end of the branch name )</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/7</link>
+        <pubDate>Fri, 04 Oct 2013 14:41:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="596">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/lmea/40/1422_1.png" class="avatar"> lmea:</div>
+<blockquote>
+<p><a href="http://doneForNow.sh">doneForNow.sh</a></p>
+</blockquote>
+</aside>
+<p><span class="mention">@Imea</span>,</p>
+<p>Do you by chance have a sample <a href="http://doneForNow.sh">doneForNow.sh</a> script I can use?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/6</link>
+        <pubDate>Fri, 04 Oct 2013 10:34:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[lmea]]></dc:creator>
+        <description><![CDATA[
+            <p>Pushing is most safe way to sync through git, and preparing a <a href="http://doneForNow.sh" rel="nofollow noopener">doneForNow.sh</a> script is a nice way to make it easier to not forget it.</p>
+<p>Git also makes it really easy and fast to manage many different branches (I find it also more reliable than subversion when merging), so it is very convenient to have a branch for ongoing work separated from your ‘master’ branch, where you could commit and push partial work. You may push to the working branch as often as you’d like, and use that for synching between the two machines and then merge into the master branch when done.<br>
+Otherwise you may use single feature branches (i.e. have a branch where you just work on a single feature).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/5</link>
+        <pubDate>Fri, 04 Oct 2013 06:44:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, you just have to push. Also, then everything is backed up which is nice. We use Tower which is also nice, some people like the Github mac client. It’s not bad and is one less button push, but lacks some other useful features.</p>
+<p>People do put their code in a dropbox folder, though as is Dropbox sucks a lot of my battery and all that constant checking and uploading of changed states seems like it could cause trouble. I’d also be slightly concerned about the git repo files themselves getting into some odd states if you have one that was synced to dropbox, then work offline on another machine and what happens when they sync up, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/4</link>
+        <pubDate>Thu, 03 Oct 2013 19:38:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[amattn]]></dc:creator>
+        <description><![CDATA[
+            <p>When I was doing this, I had a <a href="http://gohome.sh" rel="nofollow noopener">gohome.sh</a> script that would attempt to push all known git repos.  I would run this every day before going home.</p>
+<p>In your case, getting in the habit of pushing after every commit, and having a <a href="http://doneForNow.sh" rel="nofollow noopener">doneForNow.sh</a> script that attempts to push before you leave your home desk or before you go to sleep etc.</p>
+<p>As a Last Resort, you can do things like set up BackToMyMac or VNC.  Slightly less bandwidth intensive is to have your entire git repo in a Dropbox or similar sync service.</p>
+<p>I would be careful about automatic sync however.  it’s kind of easy to have dropbox hose a git repo, especially when one is a laptop w/ occasional periods of non-connectivity.  a sane dir structure helps:</p>
+<p>$HOME/Dropbox/imac/repo<br>
+$HOME/Dropbox/laptop/repo</p>
+<p>essentially, both repos are synced to both machines.  On the iMac just work out of the imac dir and push pull as required.</p>
+<p>If you find yourself at the office, temporarily drop into the imac dir and you can do a push.  just make sure to pop out back to the laptop dir, especially if working from a coffee shop or somewhere with no internet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/3</link>
+        <pubDate>Thu, 03 Oct 2013 19:38:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>Pushing after committing would be the easiest solution.  You could look at getting a Git GUI such as Tower or Github’s own Mac app if that would make it easier for you.  Your IDE may have Git/Github integration either directly or through a plugin which might make it even easier.</p>
+<p>Another possibility is investigating keeping your local Git repository in a Dropbox folder or even on a USB drive you carry with you.  I’m not sure of all of the ramifications of those, though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/2</link>
+        <pubDate>Thu, 03 Oct 2013 19:06:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+      <item>
+        <title>Looking for Git tips for solo developer who uses multiple machine</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I recently switched to Git from Subversion, mainly because I wanted to have a local copy of my repository so that I could compare with history quickly and without a good Internet connection. I’m having to relearn some habits…</p>
+<p>Here’s the situation for which I need tips: I work about half the time in my office on an iMac. I work about half the time at home or on the road on a MacBook Pro. I’ve created a private Git repository on GitHub, and cloned it on both machines.</p>
+<p>When I move from working at home on a task to working in the office on the same task, I want to easily be able to have the same files in the same state go with me, without having to remember to do a “push”. Does Git accommodate this? Should I get in the habit of automatically pushing after committing?</p>
+<p>I ask because right now I’m in the office, and frustrated that I can’t continue with the task I was doing last night at home, because the current state of the files is not represented in GitHub, because I didn’t “push”.</p>
+<p>And in general, what Git tips do you have that will work with my two computers that are not co-located?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596/1</link>
+        <pubDate>Thu, 03 Oct 2013 11:56:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-596-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596.rss">Looking for Git tips for solo developer who uses multiple machine</source>
+      </item>
+  </channel>
+</rss>

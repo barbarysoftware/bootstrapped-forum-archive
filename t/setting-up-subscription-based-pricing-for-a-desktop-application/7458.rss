@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Setting up subscription based pricing for a desktop application</title>
+    <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458</link>
+    <description>Any help would be great. I have a chrome based browser and would like to offer a free 1 month trial then charge yearly. I was looking at Paddle but I don&#39;t think they will work because I want to offer a no credit card free trial. I also don&#39;t have users or a server that would communicate or integrate with these services. 
+
+Anyone else find a simple solution to this problem?</description>
+    
+    <lastBuildDate>Fri, 19 Feb 2021 11:50:15 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Setting up subscription based pricing for a desktop application</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="Chris_Colburn" data-post="1" data-topic="7458">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chris_colburn/40/5477_2.png" class="avatar"> Chris_Colburn:</div>
+<blockquote>
+<p>I was looking at Paddle but I don’t think they will work because I want to offer a no credit card free trial.</p>
+</blockquote>
+</aside>
+<p>My advice would be to implement your own licensing and payment handling scheme, not depend on 3rd party service features. Use the payment provider only as last step, for taking payments and create subscriptions. This way, free trial period is handled by your own licensing scheme and you can ask for payment when you decide. And switch to any other payment provider without pain in case the need arises (it surely will).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/9</link>
+        <pubDate>Fri, 19 Feb 2021 11:50:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7458-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss">Setting up subscription based pricing for a desktop application</source>
+      </item>
+      <item>
+        <title>Setting up subscription based pricing for a desktop application</title>
+        <dc:creator><![CDATA[SteveB]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 to <a class="mention" href="/u/wyattoday">@wyattoday</a></p>
+<p>I run a subscription based Desktop App which uses LimeLM for licencing and Fastspring for handling payments. All works perfectly.</p>
+<p>Lime has good integration guides for specific payment processors which should get you up and running with your subscription setup in no time.</p>
+<p>Steve</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/8</link>
+        <pubDate>Fri, 19 Feb 2021 08:52:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7458-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss">Setting up subscription based pricing for a desktop application</source>
+      </item>
+      <item>
+        <title>Setting up subscription based pricing for a desktop application</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p>No problem, Chris! You should’ve heard back from us. Let us know if you have any other questions or need clarification.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/7</link>
+        <pubDate>Wed, 17 Feb 2021 15:08:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7458-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss">Setting up subscription based pricing for a desktop application</source>
+      </item>
+      <item>
+        <title>Setting up subscription based pricing for a desktop application</title>
+        <dc:creator><![CDATA[Chris_Colburn]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Wyatt,<br>
+I sent an email to your support team asking more details questions.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/6</link>
+        <pubDate>Tue, 16 Feb 2021 16:16:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7458-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss">Setting up subscription based pricing for a desktop application</source>
+      </item>
+      <item>
+        <title>Setting up subscription based pricing for a desktop application</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/chris_colburn">@Chris_Colburn</a>,</p>
+<p>There are a thousand ways to skin this cat. Our company has <a href="https://wyday.com/limelm/">LimeLM</a> which <a href="https://wyday.com/limelm/help/trials/">offer trials</a> and licensing for apps on all major platforms (macOS, Windows, Linux, BSD). <a href="https://wyday.com/limelm/help/using-turboactivate/">And we support every modern programming language.</a></p>
+<p>We don’t require credit cards for trials. In fact our licensing is completely un-coupled from whatever payment provider you choose. Meaning you can choose how and when to prompt people to pay you. And, you’re not locked in with outrageous rates.</p>
+<p>We’ve been in business for well over a decade (actually closer to 2 decades at this point), and we have clients in every industry and of every size.</p>
+<p>Let me know if you have any questions.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/5</link>
+        <pubDate>Tue, 16 Feb 2021 13:47:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7458-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss">Setting up subscription based pricing for a desktop application</source>
+      </item>
+      <item>
+        <title>Setting up subscription based pricing for a desktop application</title>
+        <dc:creator><![CDATA[Bianca_Dragan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Chris - sorry it took so long to reply.</p>
+<p>Sadly, we have to ask for CC details for free trials. One workaround would be to manage this on your own and open up the Paddle checkout at the stage when your customers are ready to pay.</p>
+<p>Hope this helps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/4</link>
+        <pubDate>Tue, 16 Feb 2021 11:20:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7458-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss">Setting up subscription based pricing for a desktop application</source>
+      </item>
+      <item>
+        <title>Setting up subscription based pricing for a desktop application</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Paging <a class="mention" href="/u/bianca_dragan">@Bianca_Dragan</a> - can you help with this question about Paddle?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/3</link>
+        <pubDate>Sat, 13 Feb 2021 17:31:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7458-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss">Setting up subscription based pricing for a desktop application</source>
+      </item>
+      <item>
+        <title>Setting up subscription based pricing for a desktop application</title>
+        <dc:creator><![CDATA[Atanas_Walker]]></dc:creator>
+        <description><![CDATA[
+            <p>I will need such a thing too, but here is something like that <a href="https://multipub.com/components/subscription-management/">https://multipub.com/components/subscription-management/</a> although I think that for a one-man show it will be easier to make own.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/2</link>
+        <pubDate>Sat, 13 Feb 2021 12:00:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7458-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss">Setting up subscription based pricing for a desktop application</source>
+      </item>
+      <item>
+        <title>Setting up subscription based pricing for a desktop application</title>
+        <dc:creator><![CDATA[Chris_Colburn]]></dc:creator>
+        <description><![CDATA[
+            <p>Any help would be great. I have a chrome based browser and would like to offer a free 1 month trial then charge yearly. I was looking at Paddle but I don’t think they will work because I want to offer a no credit card free trial. I also don’t have users or a server that would communicate or integrate with these services.</p>
+<p>Anyone else find a simple solution to this problem?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458/1</link>
+        <pubDate>Fri, 12 Feb 2021 20:22:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7458-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-subscription-based-pricing-for-a-desktop-application/7458.rss">Setting up subscription based pricing for a desktop application</source>
+      </item>
+  </channel>
+</rss>

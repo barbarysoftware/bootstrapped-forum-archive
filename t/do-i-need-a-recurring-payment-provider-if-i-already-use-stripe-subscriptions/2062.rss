@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+    <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062</link>
+    <description>What are the advantages of using a recurring payment provider e.g. Recurly et al when Stripe (or Paypal for that matter) allow such subscriptions to be set up?
+
+The only thing I can see is that they might offer a nicer user interface - Stripe offers nothing, so I&#39;d have to build one myself.</description>
+    
+    <lastBuildDate>Mon, 26 Sep 2016 08:03:19 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been using Stripe for 2 years without problems, but I manage trials myself and only create a Stripe customer when they activate their subscription. Maybe that’s why I never ran into problems.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/14</link>
+        <pubDate>Mon, 26 Sep 2016 08:03:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[wnm]]></dc:creator>
+        <description><![CDATA[
+            <p>one reason I looked into implementing <a href="https://www.chargebee.com/" rel="nofollow noopener">https://www.chargebee.com/</a> (and probably will do), is because they handle the european VATMESS</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/12</link>
+        <pubDate>Tue, 12 Apr 2016 16:38:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>Chargify does offer white-labeled UIs I believe.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/10</link>
+        <pubDate>Tue, 23 Sep 2014 17:54:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>Recurly is a fee per month AND a cut - $299 per month and 10c + 1.25% per transaction. The two together are hard to swallow! One or the other would be fine but both are too much.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/9</link>
+        <pubDate>Mon, 22 Sep 2014 17:30:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Chargify is flat fee. Recurly does take a cut though. Hard to say if it’s worth it or not, but I know between missed revenue to do issues and dev time spent on fixing, modifying, changing, working around, etc that paying them 1% would be a lot less than it’s cost us so far.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/8</link>
+        <pubDate>Mon, 22 Sep 2014 17:03:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Do the likes of Recurly/Chargify provide a skinnable UI that you can domain redirect to? Would be nice to avoid having to write any UI code.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/7</link>
+        <pubDate>Mon, 22 Sep 2014 16:17:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>Giving 1.25% of revenue to Recurly seems like a little much tough don’t you think?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/6</link>
+        <pubDate>Mon, 22 Sep 2014 01:02:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>One downside of using a service like Chargify: Chargify subscriptions are not Stripe subscriptions, so services that rely on data from Stripe subscriptions to do interesting things (such as Bare Metrics) won’t work.</p>
+<p>On the other hand, having Chargify in front of Stripe was a boon for us when it came time to migrate from <a href="http://Auth.net" rel="nofollow noopener">Auth.net</a>, since Chargify did the majority of the work relinking all customer profiles with Stripe profiles, so there are positives as well.</p>
+<p>Your point is valid though - having a layer here does let you switch later assuming that layer provides the integration for you. The same could be said by making sure you have an internal API layer as well though when you design systems that communicate with the outside world.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/5</link>
+        <pubDate>Sun, 21 Sep 2014 16:45:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>If I was starting from scratch I would use Recurely or Chargify or similar. Dealing with the Stripe API is a nightmare. It’s way more powerful than old school Authorize, but that lets you get into way more trouble. We’ve also encountered many bugs as well as confusing scenarios where we’re sending in something that would seem harmless but in fact does great damage like resetting customers back to trials, etc.</p>
+<p>Using a service in front of Stripe also means it’ll be much easier to do other nice things. For example, try CC up front vs not (requires tons of work to change this if using your own code), accept invoices outside of your standard subscriptions for special cases, enterprise sales, etc, make it easier to move away from Stripe if they go south or get funky.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/4</link>
+        <pubDate>Sat, 20 Sep 2014 23:50:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>Agreed with <a class="mention" href="/u/aeden">@aeden</a>. You don’t need a recurring payment provider if you’re using Stripe.</p>
+<p>On the other side, please let me know if you need to manage tax invoices after getting paid via Stripe. I built a solution to deal with that problem.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/3</link>
+        <pubDate>Sat, 20 Sep 2014 18:42:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>Prior to Stripe it actually made sense to use a recurring payment provider since most of the gateways had very awful, or non-existent, recurring billing services. Now with Stripe, and with the burgeoning marketplace that is forming around Stripe, I don’t think it’s as essential as it used to be.</p>
+<p>I believe Chargify is starting to change its target market a bit away from API integration and more to providing a pre-built but customizable UI so non-devs can set up recurring billing. So maybe it makes sense if you fit into that category, but if you’re a developer then for the moment Stripe is probably your best solution.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/2</link>
+        <pubDate>Fri, 19 Sep 2014 11:58:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+      <item>
+        <title>Do I need a recurring payment provider if I already use Stripe subscriptions?</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>What are the advantages of using a recurring payment provider e.g. Recurly et al when Stripe (or Paypal for that matter) allow such subscriptions to be set up?</p>
+<p>The only thing I can see is that they might offer a nicer user interface - Stripe offers nothing, so I’d have to build one myself.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062/1</link>
+        <pubDate>Fri, 19 Sep 2014 08:05:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2062-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-i-need-a-recurring-payment-provider-if-i-already-use-stripe-subscriptions/2062.rss">Do I need a recurring payment provider if I already use Stripe subscriptions?</source>
+      </item>
+  </channel>
+</rss>

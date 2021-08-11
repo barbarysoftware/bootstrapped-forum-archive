@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Let&#39;s share our onboarding experience hacks</title>
+    <link>https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420</link>
+    <description>Often, a user seemingly &quot;needs&quot; to do perform off-site action(s) before they can experience your product.
+
+For example, a lot of services inherently require the installation of tracking tokens or getting the rest of the &quot;team&quot; invited (etc.) before the value proposition is really communicated.
+
+We concentrate a lot on optimising landing pages (for good reason), but if a newly-registered user never installs your client, they will never turn into a paying customer.
+
+Here are some existing resources:
+
+* https://www.quora.com/What-websites-have-the-best-new-user-onboarding-flows
+* http://uxarchive.com/tasks/onboarding
+
+One immediate question I have: Should these tasks be strictly required before allowing the user to click around the app?
+
+Seem to be positive arguments either way, but disadvantages too (empty apps communicate value poorly, even with example data). Does anyone have some concrete experience here?
+
+Some things that I have noticed elsewhere:
+
+* &quot;Email this tracking code to a developer&quot; button (PerfectAudience)
+* Sending specific and very clear &quot;You have not done X. Please do X. [instructions]&quot; emails after signup - not sure where I read it now (patio11?) but &quot;for each task you need to get the user to do, send exactly one email about that&quot; etc.
+* Sending followups to the above
+* Sending personalised followups to the above, etc.
+
+Anyway, it would be great to get your onboarding tips and tricks. </description>
+    
+    <lastBuildDate>Thu, 09 Jan 2014 03:42:10 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Let&#39;s share our onboarding experience hacks</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m curious to know how people deal with the dreaded ‘on boarding email into spam folder’ problem. It’s something I have noticed with some of the sign ups to my SAAS. Aside from doing everything possible on the server side to make sure it doesn’t look like spam and also notifying the user to check their spam folder any ideas? I had kicked around the idea of determining how a user first comes back to the site, if it’s via a unique link that was emailed in the on boarding email I would know vs a straight url visit and then deal appropriately their first time in.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/8</link>
+        <pubDate>Thu, 09 Jan 2014 03:42:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-420-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420.rss">Let&#39;s share our onboarding experience hacks</source>
+      </item>
+      <item>
+        <title>Let&#39;s share our onboarding experience hacks</title>
+        <dc:creator><![CDATA[benferris]]></dc:creator>
+        <description><![CDATA[
+            <p>We recently set up a tour using the open source Hopscotch javascript library from LinkedIn (<a href="https://github.com/linkedin/hopscotch/" rel="nofollow noopener">https://github.com/linkedin/hopscotch/</a>) which seems to helps folks get more engaged by walking through important conversion activities.  In our case it is a project management web app so they walk through creating a project and a user and some tasks.</p>
+<p>We also set up a sample project for them on signup because even if they skip the tour they get a sample project to check out.</p>
+<p>I think having a tour and/or sample data is absolutely vital to the onboarding process.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/7</link>
+        <pubDate>Sat, 07 Dec 2013 15:49:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-420-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420.rss">Let&#39;s share our onboarding experience hacks</source>
+      </item>
+      <item>
+        <title>Let&#39;s share our onboarding experience hacks</title>
+        <dc:creator><![CDATA[scottw]]></dc:creator>
+        <description><![CDATA[
+            <p>We have tried a lot of things around this. So far, the one that has worked the best is an email 24 hours after a user creates a new page which lists the top 10 things they should have done with the steps already completed checked off.</p>
+<p>This provides a clear list of to-dos and for many a sense of relief since they have already completed many of them.</p>
+<p>Because of the nature of our business, we send this each new page created. We weren’t sure if this was the best approach, but the overall feedback has been great since it reminds even our expert customers to dot the I’s and cross the T’s.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/6</link>
+        <pubDate>Mon, 02 Dec 2013 19:52:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-420-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420.rss">Let&#39;s share our onboarding experience hacks</source>
+      </item>
+      <item>
+        <title>Let&#39;s share our onboarding experience hacks</title>
+        <dc:creator><![CDATA[marcroberts]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve heard a lot of good things about <a href="http://intercom.io" rel="nofollow noopener">Intercom.io</a> specifically around sending emails based on interactions or events rather than fixed time period. Instead of emailing them after 1 day, you can email them after their 3rd login for example, or x days after they last logged if they have no projects (you can log additional data about customers and segment with it).</p>
+<p>We’ve only used it a little and haven’t really dug in to the powerful communication stuff yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/5</link>
+        <pubDate>Fri, 29 Nov 2013 11:19:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-420-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420.rss">Let&#39;s share our onboarding experience hacks</source>
+      </item>
+      <item>
+        <title>Let&#39;s share our onboarding experience hacks</title>
+        <dc:creator><![CDATA[pdebruic]]></dc:creator>
+        <description><![CDATA[
+            <p>this site has interesting teardowns of onboarding processes:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://www.useronboard.com" target="_blank">UserOnboard</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://useronboard.com/imgs/useronboard-logo-hi-round.png" class="thumbnail onebox-avatar" width="500" height="500">
+
+<h3><a href="https://www.useronboard.com" target="_blank">User Onboarding | A frequently-updated compendium of web app first-run...</a></h3>
+
+<p>The ultimate source for User Onboarding teardowns, tips, &amp; thoughts!</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/4</link>
+        <pubDate>Thu, 28 Nov 2013 04:36:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-420-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420.rss">Let&#39;s share our onboarding experience hacks</source>
+      </item>
+      <item>
+        <title>Let&#39;s share our onboarding experience hacks</title>
+        <dc:creator><![CDATA[cemhurturk]]></dc:creator>
+        <description><![CDATA[
+            <p>Sending very specific (and personal) emails during the onboarding process (and during trial process) is a must-have process. Details define the success of these emails. You should plan a message schedule for onboarding, trial and afterwards. Every phase should have its own message schedule.</p>
+<p>For example, once a user signs up, a day later, a personal plain text email from the co-founder will be a great start. In this email, you can introduce yourself and let user know that your team is only one email reply away.</p>
+<p>On the third day, you can send another email if the user hasn’t created a project yet. This email may contain a step-by-step introduction for creating the first project. But if user has created his first project but not invited any team members, you can send a different email asking him to invite team members. This goes on…</p>
+<p>Making these message schedules manually or automated in your app is a time-taking process. You can use a smart emailing service like my service (Sendloop Engage - <a href="http://sendloop.com/engage/" rel="nofollow noopener">http://sendloop.com/engage/</a>) or others and automate the process easily.</p>
+<p>The most difficult thing on “onboarding experience optimization” is to choose what to optimize. First of all, you must sit down and think about what’s the most important thing in your app, what’s the most important value that you provide to your users. Is it managing projects? Or sharing ideas with friends? Is it recording spent time after creating a project? You should guide your users to the right goal. Don’t forget, you should only show one objective to your user at a time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/3</link>
+        <pubDate>Sun, 18 Aug 2013 21:18:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-420-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420.rss">Let&#39;s share our onboarding experience hacks</source>
+      </item>
+      <item>
+        <title>Let&#39;s share our onboarding experience hacks</title>
+        <dc:creator><![CDATA[lamby]]></dc:creator>
+        <description><![CDATA[
+            <ul>
+<li><a href="http://www.slideshare.net/emalone/go-with-the-flow-onboarding-and-virality" rel="nofollow noopener">http://www.slideshare.net/emalone/go-with-the-flow-onboarding-and-virality</a></li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/2</link>
+        <pubDate>Sun, 18 Aug 2013 16:58:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-420-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420.rss">Let&#39;s share our onboarding experience hacks</source>
+      </item>
+      <item>
+        <title>Let&#39;s share our onboarding experience hacks</title>
+        <dc:creator><![CDATA[lamby]]></dc:creator>
+        <description><![CDATA[
+            <p>Often, a user seemingly “needs” to do perform off-site action(s) before they can experience your product.</p>
+<p>For example, a lot of services inherently require the installation of tracking tokens or getting the rest of the “team” invited (etc.) before the value proposition is really communicated.</p>
+<p>We concentrate a lot on optimising landing pages (for good reason), but if a newly-registered user never installs your client, they will never turn into a paying customer.</p>
+<p>Here are some existing resources:</p>
+<ul>
+<li><a href="https://www.quora.com/What-websites-have-the-best-new-user-onboarding-flows" rel="nofollow noopener">https://www.quora.com/What-websites-have-the-best-new-user-onboarding-flows</a></li>
+<li><a href="http://uxarchive.com/tasks/onboarding" rel="nofollow noopener">http://uxarchive.com/tasks/onboarding</a></li>
+</ul>
+<p>One immediate question I have: Should these tasks be strictly required before allowing the user to click around the app?</p>
+<p>Seem to be positive arguments either way, but disadvantages too (empty apps communicate value poorly, even with example data). Does anyone have some concrete experience here?</p>
+<p>Some things that I have noticed elsewhere:</p>
+<ul>
+<li>“Email this tracking code to a developer” button (PerfectAudience)</li>
+<li>Sending specific and very clear “You have not done X. Please do X. [instructions]” emails after signup - not sure where I read it now (patio11?) but “for each task you need to get the user to do, send exactly one email about that” etc.</li>
+<li>Sending followups to the above</li>
+<li>Sending personalised followups to the above, etc.</li>
+</ul>
+<p>Anyway, it would be great to get your onboarding tips and tricks.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420/1</link>
+        <pubDate>Sun, 18 Aug 2013 16:49:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-420-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lets-share-our-onboarding-experience-hacks/420.rss">Let&#39;s share our onboarding experience hacks</source>
+      </item>
+  </channel>
+</rss>

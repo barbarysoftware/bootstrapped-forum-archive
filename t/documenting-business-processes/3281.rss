@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Documenting business processes</title>
+    <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281</link>
+    <description>How do you document your business&#39; processes...
+
+ - Tool of choice?
+ - What&#39;s your template?
+ - What do you document?</description>
+    
+    <lastBuildDate>Thu, 25 Feb 2016 22:09:22 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Lewis]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t find I need to update the same process (template) in multiple locations. If I update my process, I copy the updated version the next time I must complete it. It’s a linear process.</p>
+<p>I assume you are referring to templates and instances like I have come to understand them checking out Process Street. I don’t see the need to update an instance once it is complete. And I have not documented processes that take an extended period of time.</p>
+<p>I think the reason I like Trello so much is because of its flexibility and similarities to Excel. However, I prefer the card visualization and management approach to viewing and manipulating rows in Excel.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/26</link>
+        <pubDate>Tue, 23 Feb 2016 01:28:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>To me one of the killer features of process at seems to be the ability to update a checklist template in one place and apply that to all instances at once.</p>
+<p>You haven’t run into that issue with trello too much?</p>
+<p>I’m still changing my todo lists frequently and have 4 instances of them (will soon be a lot more than that) so it’s come in handy.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/25</link>
+        <pubDate>Tue, 23 Feb 2016 00:41:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback. I am currently hard at work on Hyper Plan v2.0. Which is mostly ironing out the usability rough edges in v1.0. I am hoping to have a beta in a few weeks. But handling concurrency is certainly something I am also thinking about. I think the option to host your own server (rather than SaaS) would be very attractive to some people. Writing some content pages on how to handle a sales pipeline in Hyper Plan is also on the todo. Anyway, don’t want to hijack this thread…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/24</link>
+        <pubDate>Mon, 22 Feb 2016 23:27:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p>If you can find a way to enable collaboration (doesn’t have to be realtime…but we don’t want to use network shares, DropBox etc…rather something more seamless - data stored in the cloud).</p>
+<p>PipeDrive is for managing the sales funnel. I think we’re using it like some people use Excel to write lists ie: we’re not using the full capabilities. However, when one of our sales-people gave me a demo of PipeDrive, I then showed them HyperPlan - they almost fell off their seats. It has so way more capabilities. So, there is a niche landing page to think about. Also, it would really make managing our agile projects easier too.</p>
+<p>HyperPlan has a lot of potential! Well done <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/23</link>
+        <pubDate>Mon, 22 Feb 2016 23:20:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I did it as a desktop app because:</p>
+<p>-richer user interface and less latency for the user<br>
+-differentiation (almost all the competition are web apps)<br>
+-I can develop desktop apps much faster than web apps<br>
+-I don’t like Javascript!</p>
+<p>v1 was really about proving there is a market for the product. I didn’t want to spend time adding complex features like concurrency when I didn’t even know if there was any demand for it. Now I know there is a market, I am thinking about whether to support concurrency, either via a web version or client server. I quite like the idea of a ‘fat’ (native) client that can work standalone or connected to a server.</p>
+<p>I wasn’t aware of PipeDrive.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/22</link>
+        <pubDate>Mon, 22 Feb 2016 23:01:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andy">@Andy</a>, I really love HyperPlan and the only thing holding it back from being implemented across the company where I’m working at the moment is that it’s not a web-app - no team collaboration. I’m sure you’ve put lots of thought into whether to create a web-based version. What are the reasons that you haven’t?</p>
+<p>I was introduced to PipeDrive a few days back…and HyperPlan stomps all over it in terms of capabilities and usefulness to our team.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/21</link>
+        <pubDate>Mon, 22 Feb 2016 18:51:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Lewis]]></dc:creator>
+        <description><![CDATA[
+            <p>Since starting this thread, I’ve been using Trello for so much. I really like its flexibility. I also like how business processes can be organized and then simply copied (I utilize checklists for much of the business processes) into my todo board. Using one app to do it all makes it feel more efficient. I’ve also really become a big fan of the visualization Trello offers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/20</link>
+        <pubDate>Mon, 22 Feb 2016 16:33:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="3281">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>McDonald / Starbucks and other big co. logos with “Business worth millions are built with systems” next to it  - not implying they use sweet process of course…</p>
+</blockquote>
+</aside>
+<p>I wonder how long it will be before they get an email from BigCo lawyers?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/19</link>
+        <pubDate>Mon, 22 Feb 2016 08:51:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="15" data-topic="3281">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>Your competition isn’t just direct competition - its also the next best manual alternative (often Excel!).</p>
+</blockquote>
+</aside>
+<p>The biggest competition for both <a href="http://www.perfecttableplan.com/">http://www.perfecttableplan.com/</a> and <a href="http://www.hyperplan.com">http://www.hyperplan.com</a> is Excel and post-it notes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/18</link>
+        <pubDate>Mon, 22 Feb 2016 08:47:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this thread I’ve discovered Trello - great tool for creating checklists for manual processes. I’ve been using text files before and that was not really convenient <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/17</link>
+        <pubDate>Fri, 19 Feb 2016 14:24:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I get the feeling that services dedicated to process and systems documentation weren’t even around/popular that long ago</p>
+</blockquote>
+<p><a class="mention" href="/u/aaronsransom">@aaronsransom</a>, Yeah same here - not sure how long these things have been around - I did a bit of hunting around their blogs to try to find that out but it wasn’t entirely clear.</p>
+<p>Still though, this seems like <em>such</em> a perfect fit that it seems like the kind of thing that particularly someone with experience doing things manually would immediately recognize as a perfect solution to their problems.</p>
+<p>Kinda like how when people see Slack they immediately recognize that it’s by far the best team chat solution out there and they hop on it right away regardless of how much inertia they have around their existing solutions.</p>
+<p>–</p>
+<blockquote>
+<p>Your competition isn’t just direct competition - its also the next best manual alternative (often Excel!).</p>
+</blockquote>
+<p><a class="mention" href="/u/rhino">@Rhino</a>, Totally!  Someone should built a site called <a href="http://yourcompetitionisexcel.com" rel="nofollow noopener">yourcompetitionisexcel.com</a> and talk about exactly that haha.</p>
+<p>–</p>
+<blockquote>
+<p>but in this sort of situation need to be aware that many will consider word/google docs ‘good enough’</p>
+</blockquote>
+<p>That’s true.  I think I definitely would have fallen into that boat a year or so ago.  I’m much more comfortable now paying for good solutions to problems than I was before.</p>
+<p>Maybe if they had a free tier it would completely change the dynamics of user adoption.  Kinda like slack.  Not that I’m a fan of freemium in general, but it feels like the adoption rate for this type of thing should be significantly higher than it seems to be.</p>
+<blockquote>
+<p>Also - listened to a couple of their podcasts and tellingly both of the interviewees used google docs</p>
+</blockquote>
+<p>Okay that’s hilarious!</p>
+<p>I will say that some things I am still needing to put into spreadsheets.</p>
+<p>But it’s an interesting challenge to try to reframe every task or thing that you do as a part of a checklist.  It’s been a cool challenge to try to do that.</p>
+<p>–</p>
+<p>The other thing is that a big part of the value of these apps that I see is the ability to be flexible when your process is still early on and not super clearly defined.</p>
+<p>So you could always pay for this for a few months while you’re really hammering out your process, and then move to docs once your process is no longer changing (then again that may never happen).</p>
+<p>Also this could explain why more established process-driven people are comfortable with their docs - if their process is to the point where it hardly changes at all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/16</link>
+        <pubDate>Wed, 17 Feb 2016 16:17:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>I think its a good lesson for Bootstrappers evaluating ideas.</p>
+<p>Your competition isn’t just direct competition - its also the next best manual alternative (often Excel!).</p>
+<p>I actually mulled over doing something like that before Process Street came along. Not saying they are fighting a loosing battle but in this sort of situation need to be aware that many will consider word/google docs ‘good enough’ unless you can clearly show how its better and you’ve also got the inertia of customers already having a lot of stuff already in word/g’docs.</p>
+<p>Stalked around SweetProcess a while and they had an onboarding service where they would convert some documents over for you. Also - listened to a couple of their podcasts and tellingly both of the interviewees used google docs!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/15</link>
+        <pubDate>Wed, 17 Feb 2016 08:43:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[aaronsransom]]></dc:creator>
+        <description><![CDATA[
+            <p>I get the feeling that services dedicated to process and systems documentation weren’t even around/popular that long ago.</p>
+<p>So much easier to start early on a system like this than start late and miss the small stuff that’s going to matter when you want to hand it off.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/14</link>
+        <pubDate>Wed, 17 Feb 2016 01:56:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice man that’s awesome. Yeah that’s exactly what it seems like to me re: docs.</p>
+<p>Surprising that a lot of people I know/follow who are heavily into systematizing things don’t use some kind of software for their processes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/13</link>
+        <pubDate>Wed, 17 Feb 2016 01:06:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[aaronsransom]]></dc:creator>
+        <description><![CDATA[
+            <p>I use Process Street and the law firm I work for uses SweetProcess. They’re both great tools and by far better than Google docs. Once you really start getting into it, the docs route becomes messy and it’s not very easy to delegate.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/12</link>
+        <pubDate>Tue, 16 Feb 2016 20:10:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey guys I just ran across process street today and started to use it.</p>
+<p>I’m planning to try to scale a fairly large team for <a href="http://goodlinks.io" rel="nofollow noopener">goodlinks.io</a> so I’m definitely going to need to get SOPs and onboarding dialed in pretty well.</p>
+<p>It seems like a lot of people use spreadsheets and google docs for their sops. Even some of the more process oriented people that I know.</p>
+<p>Seems odd because this software seems pretty awesome.</p>
+<p>Just the basic ability to update a checklist template and immediately apply that update to all active checklists. That would be a huge pain to do with google docs.</p>
+<p>Not to mention the ability to actually manage tasks within the software, comment/mention people.</p>
+<p>I’m imagining that this may be the core app where most people are working out of most of the day.</p>
+<p>Then again I’m only a day into it so far so what do I know <img src="https://emoji.discourse-cdn.com/twitter/slightly_smiling.png?v=5" title=":slightly_smiling:" class="emoji" alt=":slightly_smiling:"></p>
+<p>Would love to hear feedback.</p>
+<p>(Sent from phone)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/11</link>
+        <pubDate>Mon, 15 Feb 2016 03:47:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Christopher]]></dc:creator>
+        <description><![CDATA[
+            <p>I just use whatever issue-tracking software is running in the office at the time.  We’ve used FogBugz, <a href="http://BugTracker.NET" rel="nofollow noopener">BugTracker.NET</a>, BaseCamp (which is PM software but whatever).  I’m not sure the tool matters to long as it is web-accessible &amp; easily updateable.</p>
+<p>[quote=“Rhino, post:6, topic:3281, full:true”]<br>
+Love the very cheeky social proof on SweetProces home page - McDonald / Starbucks and other big co. logos with “Business worth millions are built with systems” next to it  - not implying they use sweet process of course…<br>
+[/quote]Isn’t that great?  <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/10</link>
+        <pubDate>Thu, 16 Jul 2015 22:29:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>This just came up in the mastermind I’m a member of. Just start a high level - documenting the major steps, although perhaps not the nitty gritty for each step. Then if you decide to hand off to someone else you can work with them to clarify the details and vet the process.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/9</link>
+        <pubDate>Wed, 15 Jul 2015 18:34:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[enprojo]]></dc:creator>
+        <description><![CDATA[
+            <p>I created a software program to do just that. Check out <a href="http://enprojo.com" rel="nofollow noopener">enprojo.com</a>. We make it simple to capture everything you need for your business. You can include team members and cofounders or do it solo.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/8</link>
+        <pubDate>Tue, 14 Jul 2015 18:53:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Lewis]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you everyone for the discussion. It seems we have quite a mix of tools and approaches.</p>
+<p>I’m just starting to document processes. I find myself debating on whether or not to document something. I’m currently doing it for myself. I find myself debating what to document… is this a waste of time? Will I really forget it? But of course I will forget it. And there is that additional benefit (some will argue, the whole point) of being able to delegate the processes to others.</p>
+<p>I think I’m going to work with Google docs for now. But I have not settled on a template yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/7</link>
+        <pubDate>Tue, 14 Jul 2015 16:28:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>Love the very cheeky social proof on <a href="http://www.sweetprocess.com/" rel="nofollow noopener">SweetProces</a> home page - McDonald / Starbucks and other big co. logos with “Business worth millions are built with systems” next to it  - not implying they use sweet process of course…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/6</link>
+        <pubDate>Mon, 13 Jul 2015 17:09:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[Kyle]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Mark,</p>
+<p>Documenting is essential for efficiency. Glad you are taking those steps. Maybe more than you need on the subject but I wrote about this last year @ <a href="http://www.softwarebyrob.com/2014/07/22/buy-yourself-time-by-systematizing-your-saas-with-trello/" rel="nofollow noopener">http://www.softwarebyrob.com/2014/07/22/buy-yourself-time-by-systematizing-your-saas-with-trello/</a> and <a href="https://blog.bidsketch.com/everything-else/systematizing/?hvid=3FG8Cf" rel="nofollow noopener">https://blog.bidsketch.com/everything-else/systematizing/?hvid=3FG8Cf</a> and <a href="http://www.kylembrown.com/process/stop-repeating-the-same-task-by-automating-with-documented-processes" rel="nofollow noopener">http://www.kylembrown.com/process/stop-repeating-the-same-task-by-automating-with-documented-processes</a></p>
+<p>Tool of choice?<br>
+Google Docs, Trello works well also and it’s built in notifications are helpful for updating your readers of new or changed content.</p>
+<p>What’s your template?<br>
+Really could depend on your style and needs.</p>
+<p>What do you document?<br>
+Honestly, every task that you perform to run your company. In the event you need to remove yourself from the company to pursue other projects or sell.  Specifically, those task that are repeatable, easy to train, and do not require critical thinking.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/5</link>
+        <pubDate>Sat, 11 Jul 2015 11:25:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Tool of choice?</p>
+</blockquote>
+<p>GitHub wiki.</p>
+<blockquote>
+<p>What’s your template?</p>
+</blockquote>
+<p>None.</p>
+<blockquote>
+<p>What do you document?</p>
+</blockquote>
+<p>Anything that cannot be automated easily and that is multiple steps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/4</link>
+        <pubDate>Sat, 11 Jul 2015 06:17:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[nagar]]></dc:creator>
+        <description><![CDATA[
+            <p>I use a simple google doc and I document the processes that need to be done over and over (and potentially delegated to other people).</p>
+<p>If you want to create more structured procedures (with checklists) <a href="http://process.st/" rel="nofollow noopener">Process street</a> and <a href="http://www.sweetprocess.com/" rel="nofollow noopener">SweetProcess</a></p>
+<p>Here’s an example of a <a href="https://docs.google.com/document/d/19TjNwBg8bGyzXCbwvKOHMLcnFcmyp1bXMh7-_5gnPYk/edit" rel="nofollow noopener">SOD</a> (Strategic Document Operation) from the guys from <a href="http://www.tropicalmba.com/" rel="nofollow noopener">TropicalMBA</a> that you can use as a template.</p>
+<p>Hope this helps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/3</link>
+        <pubDate>Fri, 10 Jul 2015 08:47:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+      <item>
+        <title>Documenting business processes</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Tool of choice: Atlassian’s Confluence</p>
+<p>Template: none</p>
+<p>What I document: anything I need to share with others, done on demand. Tasks I do every three few months or so, where I’m likely to forget the details each time. Critical task with lots of QA steps, such as the fortnightly roll-out of a new update of my software, that requires some tests to make sure all went well, and some promotional steps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documenting-business-processes/3281/2</link>
+        <pubDate>Thu, 09 Jul 2015 23:28:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3281-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documenting-business-processes/3281.rss">Documenting business processes</source>
+      </item>
+  </channel>
+</rss>

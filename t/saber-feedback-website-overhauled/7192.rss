@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Saber Feedback website overhauled</title>
+    <link>https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192</link>
+    <description>*(The story so far: in April 2020 I acquired [Saber Feedback](https://saberfeedback.com/), a B2B SaaS that, in my opinion, was under-performing. Saber Feedback lets you add a feedback button to any website.)*
+
+For the last six months, we&#39;ve worked hard on rebuilding the Saber Feedback website. I thought you might be interested to hear what we&#39;ve done and why and how we&#39;ve done it.
+
+## Home page
+
+We wrote to most of our customers, asking them how they&#39;d describe Saber Feedback, and what they like most about it. In some cases we were able to talk to customers on a call, and ask more detailed questions.
+
+We rewrote the [home page content](https://saberfeedback.com/), using the customer responses as much as possible.
+
+I&#39;m still not happy with our main heading on the home page. It is proving to be difficult to get just right.
+
+## Pricing
+
+We only made small tweaks here, as the pricing page seemed good as it was.
+
+## Customer stories
+
+We wrote up two of the customer interviews into case studies we call [customer stories](https://saberfeedback.com/customers/). The aim with these is to give us more credibility and to offer some stories to read that are somewhat more interesting than usual B2B SaaS website pages.
+
+We&#39;d like more customer stories, and will keep adding more over time.
+
+## &quot;About us&quot; page
+
+Adding an [About us page](https://saberfeedback.com/about-us/) was the first significant change we made to the site. It is a chance to give a human face to who we are, and to make would-be customers feel confident in choosing us by assuring some typical worries (are they profitable? is this an established, reliable product?). It is also a place to put our company name, address, and registration number, which helps assure people they are dealing with a real company. It is all about adding as many signs of credibility as possible.
+
+## Comparison pages
+
+We added or rewrote [several](https://saberfeedback.com/5-alternatives-to-usabilla/) [pages](https://saberfeedback.com/usabilla-alternative/) [comparing](https://saberfeedback.com/12-best-feedback-widgets/) us to competitors or alternative approaches.
+
+These are pure SEO pages, designed to attract Google traffic. We&#39;re still not sure exactly what the best search terms are for us to target. Having these pages up for some months will help us get an idea of what search terms people are using when they want a product like Saber Feedback to add a feedback button to their website.
+
+## Articles highlighting characteristics of Saber Feedback
+
+These are more SEO pages. One in particular is worth mentioning: [ Improve your Zendesk user interface with a simple screenshot tool](https://saberfeedback.com/zendesk-screenshot-integration/).
+
+We would never have thought of creating this page, if it wasn&#39;t for conducting customer interviews. One customer told us they use Saber Feedback with Zendesk because Zendesk is missing a good customer-driven screenshot tool.
+
+Based on that, we knew we had to highlight this on a dedicated webpage, just in case anyone else using Zendesk has the same problem.
+
+## Blog
+
+We&#39;ve removed most of the blog content we inherited, because it was more about the personal business journey of the founder of Saber Feedback, rather than the product. It was no longer relevant now that he isn&#39;t running Saber Feedback. The blog was getting us some traffic but generally not from people actually needing our product. (You can read the [old blog content here](https://blog.mattbearman.com/).)
+
+For now we&#39;re regularly adding content about creating, selling, and running online courses on our blog. This might seem a bit odd, but we&#39;ve discovered (from those customer interviews again!) that 1) a large percentage of our customers have online courses, and 2) they use us to make their courses better. So we want to make sure similar people can learn about us.
+
+This is the most experimental of the content we&#39;ve added.
+
+*(An aside: I half-believe that the era of having a company blog is over. A blog, in its classical incarnation, is a place for you to keep people up-to-date on what you, or your org, is doing. I don&#39;t think anyone is very interested in regularly reading the goings-on at a B2B SaaS. So what to do instead of a blog? Take the content that would be on your blog and just post it as articles on your site, without the framework of being a blog. But I only half-believe this.)*
+
+## One long, long post on &quot;feedback buttons&quot;
+
+Our market is competitive. We have competitors with large marketing budgets creating lots and lots (really, *lots*) of content. Competing head on is hard. We did find, though, via SEO research tools and intuition that 1) the search term &quot;feedback button&quot; has decent, but not huge, search volume and 2) the first page of current search results in Google for this search term are pretty ordinary.
+
+So we&#39;ve created [one bumper page covering just about anything you could possibly want to know about feedback buttons](https://saberfeedback.com/feedback-button/).
+
+The content on the &quot;feedback button&quot; page probably seems overly obvious to you. But for our target audience - not developers but people who want &quot;one of those feedback buttons they saw on another site&quot; and don&#39;t really know how it is done - it might be helpful. We&#39;ll see. 
+
+We want to learn from SEO experts what we can do to ensure this page ranks as highly as possible for our target search term. In fact, I&#39;m interviewing someone soon on the Bootstrapped podcast about how we might do this better.
+
+## Docs
+
+Docs are often a neglected part of a website. There&#39;s value in doing them well.
+
+We moved [Saber Feedback&#39;s docs](https://saberfeedback.com/docs/) from their own separate site to be on our main site. They were hosted on docs.saberfeedback.com and had their own (sparse) template.
+
+Bringing the docs onto our main website is good because:
+* it is one less site to maintain
+* it is one less subdomain to care about
+* apparently it is better for SEO reasons
+
+If we were using a separate content management system for our docs, I&#39;d consider going back to using a subdomain.
+
+Our docs still have a lot of room for improvement.
+
+## &quot;Powered by Saber Feedback&quot; landing page
+
+Our feedback forms have a discreet &quot;Powered by Saber Feedback&quot; link.
+
+![example_of_powered_by|690x411, 50%](upload://lUip60BQgunMwXGMOeCKRacUt3z.png) 
+
+Until recently, this link went to our home page. Now we&#39;ve created a [dedicated landing page for this link](https://saberfeedback.com/powered-by-sf/).
+
+This allows us to write content that takes into account the context of how the site visitor reached us. Chances are they were using a site belonging to one of our customers, and were curious about the feedback button - and perhaps want to know if it is something they could use.
+
+Note that this landing page:
+* has no top navigation bar. Apparently that&#39;s a good thing to omit on a this type of landing page.
+* is excluded from Google search results, because we would rather not have people arrive on that page without the context of having seen us in action.
+
+## The future
+
+Our site is still a work in progress. We&#39;ve only just got the basics all in place, and will be building on this. But we&#39;ve now done enough to be able to learn what works for us and what doesn&#39;t.
+
+I am, of course, all ears if you have feedback on what we could do better.</description>
+    
+    <lastBuildDate>Tue, 13 Oct 2020 16:44:21 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Saber Feedback website overhauled</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>I have some results after two weeks of AB landing page testing.</p>
+<p>The original page has full site navigation:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/c/cf44aed51f96d2d7bd31ea762c2754444af55779.png" data-download-href="/uploads/short-url/tzzZjl4VAMaxotuEXBj7vDDoysp.png?dl=1" title="B"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/c/cf44aed51f96d2d7bd31ea762c2754444af55779_2_690x460.png" alt="B" data-base62-sha1="tzzZjl4VAMaxotuEXBj7vDDoysp" width="690" height="460" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/c/cf44aed51f96d2d7bd31ea762c2754444af55779_2_690x460.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/c/cf44aed51f96d2d7bd31ea762c2754444af55779.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/c/cf44aed51f96d2d7bd31ea762c2754444af55779.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/c/cf44aed51f96d2d7bd31ea762c2754444af55779_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">B</span><span class="informations">1002×669 102 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>Testing page has minimal navigation which links to sections within same page - I’m calling it in-page navigation:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/f/f7bf25f604543a8797af74ac0696c8714ad038b5.png" data-download-href="/uploads/short-url/zlFt2XNF0GxI1Opl15LL1Td1ICF.png?dl=1" title="A"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/f/f7bf25f604543a8797af74ac0696c8714ad038b5_2_690x395.png" alt="A" data-base62-sha1="zlFt2XNF0GxI1Opl15LL1Td1ICF" width="690" height="395" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/f/f7bf25f604543a8797af74ac0696c8714ad038b5_2_690x395.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/f/f7bf25f604543a8797af74ac0696c8714ad038b5.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/f/f7bf25f604543a8797af74ac0696c8714ad038b5.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/f/f7bf25f604543a8797af74ac0696c8714ad038b5_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">A</span><span class="informations">999×572 99.3 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>These are just page headers, there’s more content below and it’s the same on both pages. There’s also bottom navigation and few more links where you can “escape” landing page in both cases. I’m running 3 Google Ads campaigns for 3 different market segments, with varying levels of traffic and conversions. Conversion in this case is a download of QueueExplorer.</p>
+<p><strong>In-page navigation vs Full site navigation:</strong></p>
+<p>Campaign A:<br>
+30.70% : 18.87% (total 220 visits, 55 downloads)</p>
+<p>Campaign B:<br>
+15.91% : 12.20% (total 85 visits, 12 downloads)</p>
+<p>Campaign C:<br>
+12.90% : 16.67% (total 61 visits, 9 downloads)</p>
+<p>So removing full site navigation looks like a clear winner for Campaigns A and B. For campaign C we have the lowest statistical relevance (4 vs 5 downloads - single download can change stats). I’ll switch Campaigns A and B to the new version of the landing page, but leave C for a bit more.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/8</link>
+        <pubDate>Tue, 13 Oct 2020 16:44:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7192-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192.rss">Saber Feedback website overhauled</source>
+      </item>
+      <item>
+        <title>Saber Feedback website overhauled</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Super interesting, thank you! Love the landing-for-backlink idea!</p>
+<aside class="quote no-group" data-username="SteveMcLeod" data-post="1" data-topic="7192">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I half-believe that the era of having a company blog is over. A blog, in its classical incarnation, is a place for you to keep people up-to-date on what you, or your org, is doing. I don’t think anyone is very interested in regularly reading the goings-on at a B2B SaaS. So what to do instead of a blog? Take the content that would be on your blog and just post it as articles on your site, without the framework of being a blog.</p>
+</blockquote>
+</aside>
+<p>Agree, I think the only exception is running an “ecosystem” product where other developers depend on you. Otherwise, a newsletter should be more than enough.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/7</link>
+        <pubDate>Fri, 09 Oct 2020 23:12:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7192-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192.rss">Saber Feedback website overhauled</source>
+      </item>
+      <item>
+        <title>Saber Feedback website overhauled</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks! I hope to do more of these detail-heavy reports.</p>
+<p>Do less us know the result of your A/B test.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/6</link>
+        <pubDate>Sat, 03 Oct 2020 09:21:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7192-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192.rss">Saber Feedback website overhauled</source>
+      </item>
+      <item>
+        <title>Saber Feedback website overhauled</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Steve, I like a lot how you’re giving us all these details, thanks! It’s very inspirational, most of us prefer to slide into code-mode. While we should spend more time working on SEO, which is less tangible but more beneficial than adding some obscure feature no one would know.</p>
+<aside class="quote no-group" data-username="shanelabs" data-post="2" data-topic="7192">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/shanelabs/40/4653_2.png" class="avatar"> shanelabs:</div>
+<blockquote>
+<p>I personally hate a landing page that has navigation removed, yet I’m aware of the common advice. My gut always tells me more information is better, and would rather not force a user in a specific direction.</p>
+</blockquote>
+</aside>
+<p>I’m running an experiment right now, two otherwise identical Google ads pointing to two landing pages, one having top navigation, one not. They both have bottom navigation though. However, with my levels of traffic, it could take weeks for any meaningful conclusion.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/5</link>
+        <pubDate>Sat, 03 Oct 2020 07:12:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7192-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192.rss">Saber Feedback website overhauled</source>
+      </item>
+      <item>
+        <title>Saber Feedback website overhauled</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>There are pros and cons to hiding the powered by page.  If you hide it, you can attach a discount coupon to this page with something like:<br>
+Thank you for being interested in …<br>
+We offer a $50 dollar discount coupon for new users.  Opt in here:  [ask for email]</p>
+<p>This works with some kinds of customers, and might be worth a try.  My impression is that USD50 works much better than 50% off, i.e. offer USD, not %.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/4</link>
+        <pubDate>Fri, 02 Oct 2020 14:05:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7192-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192.rss">Saber Feedback website overhauled</source>
+      </item>
+      <item>
+        <title>Saber Feedback website overhauled</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s a good point about the “powered by” pages being omitted from Google. I’ll need to reconsider that one!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/3</link>
+        <pubDate>Thu, 01 Oct 2020 05:55:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7192-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192.rss">Saber Feedback website overhauled</source>
+      </item>
+      <item>
+        <title>Saber Feedback website overhauled</title>
+        <dc:creator><![CDATA[shanelabs]]></dc:creator>
+        <description><![CDATA[
+            <p>Create stuff here, thanks for detailing it all out.</p>
+<p>The decision to omit the ‘powered by’ landing page from Google is interesting. Since these links are essentially backlinks to your site I would imagine it would help SEO.</p>
+<p>I personally hate a landing page that has navigation removed, yet I’m aware of the common advice. My gut always tells me more information is better, and would rather not force a user in a specific direction.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/2</link>
+        <pubDate>Wed, 30 Sep 2020 17:53:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7192-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192.rss">Saber Feedback website overhauled</source>
+      </item>
+      <item>
+        <title>Saber Feedback website overhauled</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p><em>(The story so far: in April 2020 I acquired <a href="https://saberfeedback.com/">Saber Feedback</a>, a B2B SaaS that, in my opinion, was under-performing. Saber Feedback lets you add a feedback button to any website.)</em></p>
+<p>For the last six months, we’ve worked hard on rebuilding the Saber Feedback website. I thought you might be interested to hear what we’ve done and why and how we’ve done it.</p>
+<h2>Home page</h2>
+<p>We wrote to most of our customers, asking them how they’d describe Saber Feedback, and what they like most about it. In some cases we were able to talk to customers on a call, and ask more detailed questions.</p>
+<p>We rewrote the <a href="https://saberfeedback.com/">home page content</a>, using the customer responses as much as possible.</p>
+<p>I’m still not happy with our main heading on the home page. It is proving to be difficult to get just right.</p>
+<h2>Pricing</h2>
+<p>We only made small tweaks here, as the pricing page seemed good as it was.</p>
+<h2>Customer stories</h2>
+<p>We wrote up two of the customer interviews into case studies we call <a href="https://saberfeedback.com/customers/">customer stories</a>. The aim with these is to give us more credibility and to offer some stories to read that are somewhat more interesting than usual B2B SaaS website pages.</p>
+<p>We’d like more customer stories, and will keep adding more over time.</p>
+<h2>“About us” page</h2>
+<p>Adding an <a href="https://saberfeedback.com/about-us/">About us page</a> was the first significant change we made to the site. It is a chance to give a human face to who we are, and to make would-be customers feel confident in choosing us by assuring some typical worries (are they profitable? is this an established, reliable product?). It is also a place to put our company name, address, and registration number, which helps assure people they are dealing with a real company. It is all about adding as many signs of credibility as possible.</p>
+<h2>Comparison pages</h2>
+<p>We added or rewrote <a href="https://saberfeedback.com/5-alternatives-to-usabilla/">several</a> <a href="https://saberfeedback.com/usabilla-alternative/">pages</a> <a href="https://saberfeedback.com/12-best-feedback-widgets/">comparing</a> us to competitors or alternative approaches.</p>
+<p>These are pure SEO pages, designed to attract Google traffic. We’re still not sure exactly what the best search terms are for us to target. Having these pages up for some months will help us get an idea of what search terms people are using when they want a product like Saber Feedback to add a feedback button to their website.</p>
+<h2>Articles highlighting characteristics of Saber Feedback</h2>
+<p>These are more SEO pages. One in particular is worth mentioning: <a href="https://saberfeedback.com/zendesk-screenshot-integration/"> Improve your Zendesk user interface with a simple screenshot tool</a>.</p>
+<p>We would never have thought of creating this page, if it wasn’t for conducting customer interviews. One customer told us they use Saber Feedback with Zendesk because Zendesk is missing a good customer-driven screenshot tool.</p>
+<p>Based on that, we knew we had to highlight this on a dedicated webpage, just in case anyone else using Zendesk has the same problem.</p>
+<h2>Blog</h2>
+<p>We’ve removed most of the blog content we inherited, because it was more about the personal business journey of the founder of Saber Feedback, rather than the product. It was no longer relevant now that he isn’t running Saber Feedback. The blog was getting us some traffic but generally not from people actually needing our product. (You can read the <a href="https://blog.mattbearman.com/">old blog content here</a>.)</p>
+<p>For now we’re regularly adding content about creating, selling, and running online courses on our blog. This might seem a bit odd, but we’ve discovered (from those customer interviews again!) that 1) a large percentage of our customers have online courses, and 2) they use us to make their courses better. So we want to make sure similar people can learn about us.</p>
+<p>This is the most experimental of the content we’ve added.</p>
+<p><em>(An aside: I half-believe that the era of having a company blog is over. A blog, in its classical incarnation, is a place for you to keep people up-to-date on what you, or your org, is doing. I don’t think anyone is very interested in regularly reading the goings-on at a B2B SaaS. So what to do instead of a blog? Take the content that would be on your blog and just post it as articles on your site, without the framework of being a blog. But I only half-believe this.)</em></p>
+<h2>One long, long post on “feedback buttons”</h2>
+<p>Our market is competitive. We have competitors with large marketing budgets creating lots and lots (really, <em>lots</em>) of content. Competing head on is hard. We did find, though, via SEO research tools and intuition that 1) the search term “feedback button” has decent, but not huge, search volume and 2) the first page of current search results in Google for this search term are pretty ordinary.</p>
+<p>So we’ve created <a href="https://saberfeedback.com/feedback-button/">one bumper page covering just about anything you could possibly want to know about feedback buttons</a>.</p>
+<p>The content on the “feedback button” page probably seems overly obvious to you. But for our target audience - not developers but people who want “one of those feedback buttons they saw on another site” and don’t really know how it is done - it might be helpful. We’ll see.</p>
+<p>We want to learn from SEO experts what we can do to ensure this page ranks as highly as possible for our target search term. In fact, I’m interviewing someone soon on the Bootstrapped podcast about how we might do this better.</p>
+<h2>Docs</h2>
+<p>Docs are often a neglected part of a website. There’s value in doing them well.</p>
+<p>We moved <a href="https://saberfeedback.com/docs/">Saber Feedback’s docs</a> from their own separate site to be on our main site. They were hosted on <a href="http://docs.saberfeedback.com">docs.saberfeedback.com</a> and had their own (sparse) template.</p>
+<p>Bringing the docs onto our main website is good because:</p>
+<ul>
+<li>it is one less site to maintain</li>
+<li>it is one less subdomain to care about</li>
+<li>apparently it is better for SEO reasons</li>
+</ul>
+<p>If we were using a separate content management system for our docs, I’d consider going back to using a subdomain.</p>
+<p>Our docs still have a lot of room for improvement.</p>
+<h2>“Powered by Saber Feedback” landing page</h2>
+<p>Our feedback forms have a discreet “Powered by Saber Feedback” link.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/9/998ac9b70fc7115619948e7afb390cf697d7fa51.png" data-download-href="/uploads/short-url/lUip60BQgunMwXGMOeCKRacUt3z.png?dl=1" title="example_of_powered_by"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/9/998ac9b70fc7115619948e7afb390cf697d7fa51_2_345x205.png" alt="example_of_powered_by" data-base62-sha1="lUip60BQgunMwXGMOeCKRacUt3z" width="345" height="205" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/9/998ac9b70fc7115619948e7afb390cf697d7fa51_2_345x205.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/9/998ac9b70fc7115619948e7afb390cf697d7fa51_2_517x307.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/9/998ac9b70fc7115619948e7afb390cf697d7fa51_2_690x410.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/9/998ac9b70fc7115619948e7afb390cf697d7fa51_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">example_of_powered_by</span><span class="informations">1326×790 32.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>Until recently, this link went to our home page. Now we’ve created a <a href="https://saberfeedback.com/powered-by-sf/">dedicated landing page for this link</a>.</p>
+<p>This allows us to write content that takes into account the context of how the site visitor reached us. Chances are they were using a site belonging to one of our customers, and were curious about the feedback button - and perhaps want to know if it is something they could use.</p>
+<p>Note that this landing page:</p>
+<ul>
+<li>has no top navigation bar. Apparently that’s a good thing to omit on a this type of landing page.</li>
+<li>is excluded from Google search results, because we would rather not have people arrive on that page without the context of having seen us in action.</li>
+</ul>
+<h2>The future</h2>
+<p>Our site is still a work in progress. We’ve only just got the basics all in place, and will be building on this. But we’ve now done enough to be able to learn what works for us and what doesn’t.</p>
+<p>I am, of course, all ears if you have feedback on what we could do better.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192/1</link>
+        <pubDate>Thu, 24 Sep 2020 12:21:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7192-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saber-feedback-website-overhauled/7192.rss">Saber Feedback website overhauled</source>
+      </item>
+  </channel>
+</rss>

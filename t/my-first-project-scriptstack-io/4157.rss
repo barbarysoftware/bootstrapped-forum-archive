@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>My first project: ScriptStack.io</title>
+    <link>https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157</link>
+    <description>Hi there,
+
+I have been a big fan of Bootstrapped.fm over the years but haven&#39;t had an opportunity to post anything until now :)
+
+I have developed my first bootstrapped product which will be launching in beta in August 2016.
+
+It is a tool for developers to help manage 3rd party css and javascript dependencies. It is straight forward to use and it will save time when creating small prototypes or developing large projects.
+
+I would love your feedback and it would be cool to know if anyone would be interested in using such a service.
+
+[scriptstack.io](https://scriptstack.io)
+
+Thank you
+
+Michael</description>
+    
+    <lastBuildDate>Mon, 04 Jul 2016 07:56:53 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>My first project: ScriptStack.io</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4157">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mtkdaly/40/3368_1.png" class="avatar"> mtkdaly:</div>
+<blockquote>
+<p>As we are not planning to offer a trial period, I wanted to offer a way for people to come on board and use the app with very few limitations. If people find the app useful then I hope they will see the benefit of migrating over to one of the paid plans.</p>
+</blockquote>
+</aside>
+<p>Why no trial period? A trial period is great for services of this type.</p>
+<p>I share <a class="mention" href="/u/danielherken">@danielherken</a> concern.  Freemium is always risky for bootstrapped companies. It attracts people who have no intention to spend money. They will create multiple accounts with different emails to use additional stacks, rather than upgrading. You want to attract people who are willing to pay. People who just sign up because it’s free, will not upgrade.</p>
+<p>I would also consider creating your pricing tiers based on page views (or HTTP requests) instead of number of stacks alone. A client with a single website and 1 million visitors/month will gladly give you more money than a client with 20 websites with a few hundred visitors/month.</p>
+<p>Look at <a href="https://trackjs.com/pricing/" rel="nofollow noopener">https://trackjs.com/pricing/</a> for inspiration. If they had a freemium plan for 1 website with unlimited page views, I wouldn’t be paying them, since I only have 1 website that makes money; which is the case for a lot of businesses.</p>
+<p>I hope this helps!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/8</link>
+        <pubDate>Mon, 04 Jul 2016 07:56:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4157-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157.rss">My first project: ScriptStack.io</source>
+      </item>
+      <item>
+        <title>My first project: ScriptStack.io</title>
+        <dc:creator><![CDATA[mtkdaly]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>Thank you for the feedback and raising the valid concerns.</p>
+<p>You are right in saying there is a risk that the business could close down, but I think this a risk shared by most new bootstrapped businesses. Until you reach a good level or MRR, a stable product and a loyal customer base, there will always be that risk.</p>
+<p>I can only say that I will give the business all my efforts, energy and make the best decisions to help it succeed. This project started off as a ‘scratch my own itch’ project and soon turned into a bootstrapped business after talking with friends in the industry.</p>
+<p>It was clear they were experiencing the same frustrations as I was experiencing so I thought it was an ideal time and project to give it a shot and try to build a business out of it.</p>
+<p>To address the concern about a customer having their links stop working if the business shuts down:</p>
+<p>I don’t think a concern should exist as from day 1 there will be a ‘<strong>download stack</strong>’ option for offline/local use. If ScriptStack runs into problems and we had to shut down, I wouldn’t just turn everything off overnight. I would give some notice and a bit of lead time so each customer could make alternative arrangements.</p>
+<p>You also touched on CDN services - ScriptStack works in a similar way to a cdn as it will be served directly to your project, however, ScriptStack allows you to customise certain scripts (like Google Analytics) and add them to your project with just one css and one javascript reference.</p>
+<p>So for example, if we take bootstrap, jquery and google analytics as an example, instead of having to include many css and javascript references like below:</p>
+<pre><code class="lang-auto">&lt;!-- BOOTSTRAP --&gt;
+&lt;!-- Latest compiled and minified CSS --&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"&gt;
+
+&lt;!-- Optional theme --&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"&gt;
+
+&lt;!-- Latest compiled and minified JavaScript --&gt;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"&gt;&lt;/script&gt;
+
+&lt;!-- JQUERY --&gt;
+&lt;script src="https://code.jquery.com/jquery-3.0.0.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- GOOGLE ANALYTICS --&gt;
+&lt;script type="text/javascript"&gt;
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+&lt;/script&gt;
+</code></pre>
+<p>You can just do this instead (which is much easier to include and convenient to remember without having to consult documentation)</p>
+<pre><code class="lang-auto">&lt;link href="https://scriptstack.io/myusername/prototypestack.css"&gt;
+
+&lt;script src="https://scriptstack.io/myusername/prototypestack.js"&gt;&lt;/script&gt;
+</code></pre>
+<p>Another benefit is that you can add/remove scripts straight from our dashboard and not have to change lines of code in the project.</p>
+<p>I don’t think this solution is for everyone and it doesn’t fit all use-cases, however, I do see value in it and I believe a good number of other people will do.</p>
+<p>Thanks again for the feedback, I hope I have addressed most of the concerns you raised.</p>
+<p>Michael</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/7</link>
+        <pubDate>Mon, 04 Jul 2016 07:07:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4157-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157.rss">My first project: ScriptStack.io</source>
+      </item>
+      <item>
+        <title>My first project: ScriptStack.io</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="4157">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mtkdaly/40/3368_1.png" class="avatar"> mtkdaly:</div>
+<blockquote>
+<p>I believe this process can be made even more efficient and help save time in the long term</p>
+</blockquote>
+</aside>
+<p>I’m not a web-developer generally, but I imagine I’d copy and paste the import section from my previous project and be done with it.</p>
+<p>Does it worth to pay for and introduce an extra dependency? Isn’t the problem too small?</p>
+<p>Also, I’d be considering a risk that a new service like that may be shut down at some point, and all my links (including those already delivered to clients) would stop working all at once.</p>
+<p>I would also expect my client to raise a question why the delivered project has an unnecessary dependency. I imagine they’d request to embed the scripts/css into the code or deploy to a content network of their choice.</p>
+<p>It is a neat technical solution, but I doubt it has what it takes to become a business.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/6</link>
+        <pubDate>Mon, 04 Jul 2016 00:44:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4157-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157.rss">My first project: ScriptStack.io</source>
+      </item>
+      <item>
+        <title>My first project: ScriptStack.io</title>
+        <dc:creator><![CDATA[mtkdaly]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback. I need to expand the content on the website to explain in more detail how ScriptStack works and what the benefits are.</p>
+<p>I will work on this over the next week and hopefully get more images and animated gifs to show examples of the app and it’s dashboard.</p>
+<p>In the meantime, I think it’s best to explain what the app does with an example scenario:</p>
+<p><strong>Workflow without ScriptStack</strong></p>
+<ul>
+<li>You are a web developer and create prototypes and client projects regularly</li>
+<li>you utilise similar 3rd party dependencies in each project - e.g. bootstrap, google analytics, jquery, vuejs…</li>
+<li>In order to add these to your project, you have two options:</li>
+</ul>
+<ul>
+<li>Find cdn links or manually download each dependency, add them to your file system and include the style and script references to your project</li>
+<li>or, set up a build tool to help import, build, compile, concatenate and minify you styles and scripts</li>
+</ul>
+<p><strong>Workflow with ScriptStack</strong></p>
+<p>Whilst the above options are quite feasible and have served developers for many years, I believe this process can be made even more efficient and help save time in the long term. This is how ScriptStack can help:</p>
+<ul>
+<li>You will create a new stack in our dashboard (either for a specific client/project, or a common stack to be used in general prototypes)
+<ul>
+<li>a stack is made up of any 3rd party styles or scripts you require.</li>
+<li>as a basic example, you name the stack ‘PrototypeStack’ and you add bootstrap and jquery.</li>
+<li>when you save the stack, our automated process will quickly combine and minify the scripts into one CSS and one JS file.</li>
+</ul>
+</li>
+<li>In your projects, you can easily add the stack by adding the following two references to your template:
+<ul>
+<li>for styles:<br>
+<strong><code>&lt;link href="https://scriptstack.io/myusername/prototypestack.css"&gt;</code></strong>
+</li>
+<li>for scripts:<br>
+<strong><code>&lt;script src="https://scriptstack.io/myusername/prototypestack.js"&gt;&lt;/script&gt;</code></strong>
+</li>
+<li>the stack references are easy to remember as they are composed of your username and the name of the stack followed by a .css or .js.</li>
+</ul>
+</li>
+</ul>
+<p>A key advantage is that ScriptStack manages your dependencies and enables you to edit your stack by adding/removing scripts and having them served directly to your project without changing any of your projects code.</p>
+<p>This provides alot of flexibility and allows you to easily upgrade scripts to new versions without spending time downloading, adding to the file system and pushing them out to the project.</p>
+<p>The scenario explained above is very basic but hopefully you can see the benefit of using such a service, especially whilst working in teams and on larger long term projects.</p>
+<p>I hope this information is useful but don’t hesitate to get in touch if you need more information <a href="mailto:hello@scriptstack.io">hello@scriptstack.io</a></p>
+<p>Thanks</p>
+<p>Michael</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/5</link>
+        <pubDate>Fri, 01 Jul 2016 08:19:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4157-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157.rss">My first project: ScriptStack.io</source>
+      </item>
+      <item>
+        <title>My first project: ScriptStack.io</title>
+        <dc:creator><![CDATA[michaeljamescalkins]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t fully understand what it does from the site’s wording.<br>
+I signed up for the launch to see how it works though!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/4</link>
+        <pubDate>Thu, 30 Jun 2016 16:47:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4157-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157.rss">My first project: ScriptStack.io</source>
+      </item>
+      <item>
+        <title>My first project: ScriptStack.io</title>
+        <dc:creator><![CDATA[mtkdaly]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Daniel,</p>
+<p>Thank you for the feedback!</p>
+<p>I appreciate you signing up for the launch list, I am really excited about getting the product launched and<br>
+I hope you will find it as useful as we did during our proof-of-concept trials.</p>
+<p>Regarding the pricing, I agree that a free plan with no limitations could lead to high maintenance and support costs, however, I thought this was worth the risk as it lowers the barrier to entry for new customers.</p>
+<p>As we are not planning to offer a trial period, I wanted to offer a way for people to come on board and use the app with very few limitations. If people find the app useful then I hope they will see the benefit of migrating over to one of the paid plans.</p>
+<p>It is still early days and nothing is set in concrete so the pricing plans could well change before we launch <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Thanks again for the feedback and I am sure we will speak soon.</p>
+<p>Michael</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/3</link>
+        <pubDate>Wed, 29 Jun 2016 09:33:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4157-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157.rss">My first project: ScriptStack.io</source>
+      </item>
+      <item>
+        <title>My first project: ScriptStack.io</title>
+        <dc:creator><![CDATA[danielherken]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Michael,</p>
+<p>as a web developer I really like the idea and signed up for your launch list.</p>
+<p>As a business owner I would urge you to take a look at your pricing again. Is it really sustainable to offer a free plan with <strong>unlimited sites and unlimited bandwidth</strong>? Couldn’t this get expensive real fast? Maybe I am missing something here <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I would suggest reducing this to 1 site and maybe a limited number of pageviews or whatever to reduce the risk of a pretty high hosting bill for free users.</p>
+<p>Good luck with the launch!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/2</link>
+        <pubDate>Tue, 28 Jun 2016 07:53:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4157-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157.rss">My first project: ScriptStack.io</source>
+      </item>
+      <item>
+        <title>My first project: ScriptStack.io</title>
+        <dc:creator><![CDATA[mtkdaly]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there,</p>
+<p>I have been a big fan of <a href="http://Bootstrapped.fm" rel="nofollow noopener">Bootstrapped.fm</a> over the years but haven’t had an opportunity to post anything until now <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I have developed my first bootstrapped product which will be launching in beta in August 2016.</p>
+<p>It is a tool for developers to help manage 3rd party css and javascript dependencies. It is straight forward to use and it will save time when creating small prototypes or developing large projects.</p>
+<p>I would love your feedback and it would be cool to know if anyone would be interested in using such a service.</p>
+<p><a href="https://scriptstack.io" rel="nofollow noopener">scriptstack.io</a></p>
+<p>Thank you</p>
+<p>Michael</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157/1</link>
+        <pubDate>Mon, 27 Jun 2016 13:46:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4157-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-project-scriptstack-io/4157.rss">My first project: ScriptStack.io</source>
+      </item>
+  </channel>
+</rss>

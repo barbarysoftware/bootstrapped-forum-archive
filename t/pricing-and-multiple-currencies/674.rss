@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pricing and multiple currencies</title>
+    <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674</link>
+    <description>I&#39;ve been thinking a lot about pricing for my upcoming SaaS app lately and one of the issues I always come back to is currencies. I live in Europe and I&#39;m targetting both European and US based customers.
+
+Are there any best practices regarding which currencies to display on the pricing page? One option would be to pick one currency (for example USD) and use that for all pricing-related pages, and only convert to the users currency on checkout. 
+With this approach I&#39;m a bit worried that the pricing would look &quot;foreign&quot; to people who use other currencies and this might affect their decision to buy.
+
+Any thoughts?</description>
+    
+    <lastBuildDate>Mon, 04 Nov 2013 14:46:23 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I put a little US flag next to the dollar price.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/19</link>
+        <pubDate>Mon, 04 Nov 2013 14:46:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh yes, we use FastSpring to handle everything in that area. A decision I made a few years ago, and a decision I’ve never regretted.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/18</link>
+        <pubDate>Fri, 25 Oct 2013 13:11:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[JanLukacs]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> In our case the system is automated and we generate a lot of invoices that go through cetain processes for our accounting firm and the state (for example EU/non-eu invoices need to be separated, EU invoices for companies in VIES don’t need to have VAT etc…). So what i’m saying is, do you have a system that handles this automatically for multiple curriencies? Do your customers get an invoice directly from you or from your payment processor?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/17</link>
+        <pubDate>Fri, 25 Oct 2013 09:09:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Our main product is desktop software that you pay for once (and then optionally for yearly upgrades). So the question is not really relevant, I think, if I understood correctly?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/16</link>
+        <pubDate>Thu, 24 Oct 2013 14:55:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[JanLukacs]]></dc:creator>
+        <description><![CDATA[
+            <p>Showing the price after you click buy now is an interesting approach. In our app (Paymo) we issue invoices directly to each client for each transaction. How do you handle this with multiple currencies?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/15</link>
+        <pubDate>Thu, 24 Oct 2013 13:22:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>it might be better to frustrate a couple of New Zealanders than 100 of<br>
+americans/french/indians/etc</p>
+</blockquote>
+<p>Wikipedia tells me the following countries typically use the “$” sign in front of numbers in their local currency:</p>
+<pre><code>United States, Mexico, Australia, Argentina, New Zealand, Hong Kong, Pacific Island nations, and English-speaking Canada.
+</code></pre>
+<p>Even excluding the US, that’s a combined population of some 200 million or so, I guess. I think this fact  is worth at least considering.</p>
+<p>One’s conclusion might be, “ah heck, I’ll show it in USD anyway.” One’s conclusion might be, “Better put a ‘USD’ label there”. One’s conclusion might be, “Let’s auto-convert based on geo-location to what we think the user’s currency is”. One’s conclusion might be, “Let’s use geo-location to add a USD label if we think the user is in NZ, AU, AR, etc…” And depending on what you are selling and who you are selling it to, any of these conclusions are okay.</p>
+<p>My current approach is to show “Buy now for $79” on the main product page. But once you click “Buy now”, I use <a href="http://www.fastspring.com/">FastSpring</a>’s magic to auto-convert to the user’s probable currency, with dollar sign and currency TLA. eg. “$96.86 NZD”</p>
+<p>I’m currently A/B testing a new product page that doesn’t show the price at all. To see the price the user will need to click on “Buy Now”.</p>
+<p>I could go on all day on the topic of pricing in a global context…would <em>love</em> to see firm data from people who have tested this in various contexts. Where’s <a class="mention" href="/u/patio11">@patio11</a> when you need him, with his encyclopaedic knowledge of this stuff?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/14</link>
+        <pubDate>Thu, 24 Oct 2013 10:24:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[JanLukacs]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/imsickofmaps">@imsickofmaps</a> Mike, that’s a valid argument. However you’re missing the context. I though we’re talking to/about boostrapped businesses/startups that don’t have a lot of resources. I fail to see how your example from a huge corporation applies to a business run by a couple of people with funding &lt;500K usually.</p>
+<p><a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> that’s an annyoing problem to have, maybe a text label on the pricing page that says it’s in USD? it also depends on where the majority of your customers are, it might be better to frustrate a couple of new zellanders than 100 of americans/french/indians/etc… (wait, the french will be pissed of because your site is not fully translated into french).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/13</link>
+        <pubDate>Wed, 23 Oct 2013 09:41:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I’ve worked at one stage for the worlds largest independent software company and I can tell you pricing in local currency made a massive difference to sales.</p>
+</blockquote>
+<p>Data! I like data when making business decisions. Thanks <a class="mention" href="/u/imsickofmaps">@imsickofmaps</a></p>
+<p>In New Zealand (my home country, but not where I live) the currency is called the dollar and and the currency symbol is written as “$”. So when a website says a product is $79, we assume that this means 79 New Zealand dollars. And then you go to pay and find that the price has jumped at checkout to $94. 94 New Zealand dollars. D’oh! So you curse and go looking for an alternative.</p>
+<p>These days we’re used to it, although not inured to it. It still leaves a sense of annoyance with the company.</p>
+<p>Annnnnndddd, I’ve just realised that my own frickin’ product’s website is guilty of this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/12</link>
+        <pubDate>Wed, 23 Oct 2013 09:18:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="JanLukacs" data-post="9" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://avatars.discourse.org/v4/letter/j/bc8723/40.png" class="avatar"> JanLukacs:</div>
+<blockquote>
+<p>i’m just sharing my experience and usually ignore one line trolling</p>
+</blockquote>
+</aside>
+<p>You may not have intended it that way but the original chirp was a kinda one line troll, so I was just responding in kind! Anyways, thanks for breaking your thoughts out further… <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=9" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I’ve worked at one stage for the worlds largest independent software company and I can tell you pricing in local currency made a massive difference to sales. Where we didn’t have local price lists (for example countries in the Eurozone not yet moved to Euro) we would frequently lose out to local competitors who did because their pricing was pegged to local inflation, not to global currency fluctuation.</p>
+<p>This is especially problematic for SaaS because of the continuous nature of the payments. One a smaller scale and a more personal level I now live in South Africa and my company uses a bunch of USD priced and sold SaaS products (probably about $500 in total per month). Look at this chart:</p>
+<p><img src="/uploads/bootstrapped/8/981f47516d874f36.png" width="641" height="450"> </p>
+<p>I’m paying at least 20% more than we were 2 years ago and with some customer that becomes the difference between choosing a USD-based product and a local one. Conversely, if we were selling SaaS solutions in USD (we’re not yet) we’d be making 20% less.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/11</link>
+        <pubDate>Wed, 23 Oct 2013 08:55:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Our product is priced in EUR, USD, and GBP. Once every year or so I check the comparative values of the currency to make sure the prices are not too much out of alignment with each other.</p>
+</blockquote>
+</aside>
+<p>That is the approach I take. If someone can get it slightly cheaper by switching currency, they are happy because they got a discount and I’m happy becuase I got a sale. ;0)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/10</link>
+        <pubDate>Wed, 23 Oct 2013 08:36:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[JanLukacs]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t need to prove anything <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> i’m just sharing my experience and usually ignore one line trolling but if we really need to:<br>
+<aside class="onebox wikipedia">
+  <header class="source">
+      <a href="https://en.wikipedia.org/wiki/International_use_of_the_US_dollar" target="_blank">en.wikipedia.org</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:300/154;"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/DOLLAR_AND_EURO_IN_THE_WORLD.svg/300px-DOLLAR_AND_EURO_IN_THE_WORLD.svg.png" class="thumbnail" width="300" height="154"></div>
+
+<h3><a href="https://en.wikipedia.org/wiki/International_use_of_the_US_dollar" target="_blank">International use of the U.S. dollar</a></h3>
+
+<p>Besides being the main currency of the United States, the American dollar is used as the standard unit of currency in international markets for commodities such as gold and petroleum (the latter, sometimes called petrocurrency, is the source of the term petrodollar). Some non-U.S. companies dealing in globalized markets, such as Airbus, list their prices in dollars.
+ The U.S. dollar is the world's foremost reserve currency. In addition to holdings by central banks and other institutions, there ar...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+The only other currency that you might want to consider would be the Euro but outside of Europe avarage people don’t have a clue what it is.<br>
+Continents that know/use the USD regularly:<br>
+North America (ofcourse)<br>
+South America (alternate currency in a lot of countreis)<br>
+Australia (strong economic ties to the US)<br>
+Asia (might be problematic in a couple of areas, but you have larger problems selling to them then currency anyway. India, Japan, Russia - huge economies that ‘love’ the dollar).</p>
+<p>The fact that the dollar is pretty much being raped by the FED at everyones expense is another discussion <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+If you go down the route of selling in multiple currencies based on geo-location i think will generate more problems then benefits:</p>
+<ul>
+<li>you’ll end up with selling cheaper to some if you use fixed rates for long periods of time, or you will have “dynamic” pricing - might look bad/strange to some customers (geo-location sometimes fails).</li>
+<li>accounting issues</li>
+<li>you’ll need to generate invoices in different currencies (might be a big problems in certain countries)</li>
+</ul>
+<p>ps: i’m from Romania / Europe - no bias for the USD.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/9</link>
+        <pubDate>Wed, 23 Oct 2013 07:50:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Our product is priced in EUR, USD, and GBP. Once every year or so I check the comparative values of the currency to make sure the prices are not too much out of alignment with each other.</p>
+<p>We get told in those Marketing 101 books that we should price at, say $69, or $79, for some sort of psychological reason When the comparable price in EUR is €57.32, well, that doesn’t have quite the same effect.</p>
+<p>But this is just my thought process. I’d love to see conclusions from someone who has tested a global USD price versus a few local currency prices, and has sufficient data to make a meaningful conclusion.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/8</link>
+        <pubDate>Tue, 22 Oct 2013 20:57:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Generally in reasoning, one has to prove that something IS true, not that something is NOT true. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/7</link>
+        <pubDate>Tue, 22 Oct 2013 20:54:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[JanLukacs]]></dc:creator>
+        <description><![CDATA[
+            <p>Feel free to provide examples of how it’s not ture <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+What i’m saying is that we’re selling world wide (from Chile to Japan) for years in USD only and haven’t had ONE single complaint about the currency.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/6</link>
+        <pubDate>Tue, 22 Oct 2013 16:54:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/j/bc8723/40.png" class="avatar"> JanLukacs:</div>
+<blockquote>
+<p>Everyone in the world knows the dollar and they don’t have problems with it.</p>
+</blockquote>
+</aside>
+<p>That’s a broad sweeping statement. Also, not true.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/5</link>
+        <pubDate>Tue, 22 Oct 2013 15:22:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[dennis]]></dc:creator>
+        <description><![CDATA[
+            <p>We accept both USD and EUR, both for our download edition as well as for SaaS subscriptions. We don’t really adjust the pricing based on the current exchange rate regularly though to keep it simple. If you are selling to a global audience and only want to accept a single currency, I would definitely pick USD and let customers / credit card company’s handle the exchange to their local currency.</p>
+<p>For example, Europeans are really used to pay in USD for online services and it’s not an issue (even though we accept both USD and EUR and make this clear on our sign-up pages, our customers often pick USD even if they are from an eurozone country simply because most just don’t care).</p>
+<p>Some customers might not be able to pay you if you don’t accept their local currency though (e.g. government agencies) so in a few cases we made exceptions and accepted GBP for larger orders.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/4</link>
+        <pubDate>Tue, 22 Oct 2013 15:02:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[JanLukacs]]></dc:creator>
+        <description><![CDATA[
+            <p>We just use USD for everyone at the moment and it works great. Everyone in the world knows the dollar and they don’t have problems with it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/3</link>
+        <pubDate>Tue, 22 Oct 2013 14:41:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ve been through this one. We’re in the UK and initially priced just in GBP - we used to show an indicative price in EUR and USD. We now have bank accounts and merchant IDs in all three so we chose to show the price in what we guess is the user’s currency and they can change it. We set the price for each currency as being a low value purchase we don’t lose or gain a huge amount to fluctuations.</p>
+<p>If you are VAT registered it gets a bit tricky as you need to account for VAT in your registered currency (I’m assuming it is the same in other EU countries as in the UK) so we have to know the daily rate even though we don’t convert that day but pay into a dedicated account for that currency.</p>
+<p>We have seen an upturn in American interest since we started to accept dollars, hard to ascertain if that is the only reason though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/2</link>
+        <pubDate>Tue, 22 Oct 2013 13:40:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+      <item>
+        <title>Pricing and multiple currencies</title>
+        <dc:creator><![CDATA[vbsteven]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been thinking a lot about pricing for my upcoming SaaS app lately and one of the issues I always come back to is currencies. I live in Europe and I’m targetting both European and US based customers.</p>
+<p>Are there any best practices regarding which currencies to display on the pricing page? One option would be to pick one currency (for example USD) and use that for all pricing-related pages, and only convert to the users currency on checkout.<br>
+With this approach I’m a bit worried that the pricing would look “foreign” to people who use other currencies and this might affect their decision to buy.</p>
+<p>Any thoughts?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674/1</link>
+        <pubDate>Tue, 22 Oct 2013 12:02:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-674-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674.rss">Pricing and multiple currencies</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Business pricing for a non-SaaS app</title>
+    <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185</link>
+    <description>I&#39;m pondering an idea of a cross-platform application that can be useful both to individuals and businesses.
+
+At the same time, I don&#39;t want to host anything but provide a self-hosted team server. It&#39;s easier both for the launch (MVP could be a personal-only edition with 3rd party cloud sync) and in the long run (no devops for us).
+
+I want my users to own the software, so the app itself will cost a flat-fee + yearly upgrades (like Sketch). But a team server can cost considerably more and be subscription-based.
+
+Is it a good approach for a self-hosted solution? What are some examples of products like this?</description>
+    
+    <lastBuildDate>Mon, 31 Jul 2017 23:35:15 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Business pricing for a non-SaaS app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Atlassian is really flexible, I also like their small team pricing: $10 one-time fee for a self-hosted server for 10 users but $1400 for 10-25.</p>
+<aside class="quote" data-post="8" data-topic="5185">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/cadbloke/40/1341_1.png" class="avatar"> cadbloke:</div>
+<blockquote>
+<p>As for pricing, why not offer customers a choice?</p>
+</blockquote>
+</aside>
+<p>In future – yes, I would like to. But for the start we need to settle down on something. If I remember correctly, Discourse (this forum’s engine) was initially self-hosted only (free), they added a hosted plan later because of the complexity. But I can’t find the source where Jeff Atwood said it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/9</link>
+        <pubDate>Mon, 31 Jul 2017 23:35:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5185-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss">Business pricing for a non-SaaS app</source>
+      </item>
+      <item>
+        <title>Business pricing for a non-SaaS app</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p>Have a look into what Atlassian does / did with Jira and Confluence, they may be a good case-study for you.</p>
+<p>As for pricing, why not offer customers a choice? Autodesk has copped a lot of flak lately for forcing their customers onto subscription plans, their competitors were not slow to take advantage of the customer rage. See <a href="http://discuss.bootstrapped.fm/t/why-is-saas-the-preferred-model-does-anybody-have-experience-with-other-business-models/4857/18?u=cadbloke">Why is SaaS the preferred model? Does anybody have experience with other business models?</a> for more on that, and that whole thread in general.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/8</link>
+        <pubDate>Mon, 31 Jul 2017 23:05:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5185-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss">Business pricing for a non-SaaS app</source>
+      </item>
+      <item>
+        <title>Business pricing for a non-SaaS app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh, this is really insightful. I’m going to reconsider the whole idea then, thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/7</link>
+        <pubDate>Mon, 31 Jul 2017 15:55:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5185-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss">Business pricing for a non-SaaS app</source>
+      </item>
+      <item>
+        <title>Business pricing for a non-SaaS app</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5185">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ivm/40/3798_1.png" class="avatar"> ivm:</div>
+<blockquote>
+<p>It’s easier…no devops for us</p>
+</blockquote>
+</aside>
+<p>Whatever you save by avoiding devops, you might have to do many times over in customer support.</p>
+<p>Software companies starting offering “in-the-cloud” SaaS products as soon as it was viable. That’s because it is a heck of a lot of work supporting self-hosted database-driven web applications. You’ll need technically capable support staff.</p>
+<p>Customers will be running different versions of your product and  different versions of whatever database server you are using. They won’t do backups. They’ll add an additional field to a database table and not tell you. You’ll deliver an update, and this extra field will break your product.</p>
+<p>I don’t mean to say your product is not viable, but it is good to know what to expect.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/6</link>
+        <pubDate>Mon, 31 Jul 2017 15:39:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5185-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss">Business pricing for a non-SaaS app</source>
+      </item>
+      <item>
+        <title>Business pricing for a non-SaaS app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, it’s close to a wiki, like what <a href="https://www.notion.so/" rel="nofollow noopener">Notion</a> tried to implement. For a personal use it can just save everything to Dropbox but in team mode it will require a remote server + database.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/5</link>
+        <pubDate>Mon, 31 Jul 2017 13:29:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5185-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss">Business pricing for a non-SaaS app</source>
+      </item>
+      <item>
+        <title>Business pricing for a non-SaaS app</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5185">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ivm/40/3798_1.png" class="avatar"> ivm:</div>
+<blockquote>
+<p>I don’t want to host anything but provide a self-hosted team server.</p>
+</blockquote>
+</aside>
+<p>When you say “self-hosted”, are you contemplating a product that will require a web server + database?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/4</link>
+        <pubDate>Mon, 31 Jul 2017 10:09:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5185-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss">Business pricing for a non-SaaS app</source>
+      </item>
+      <item>
+        <title>Business pricing for a non-SaaS app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I was looking at JetBrains too but the problem with JetBrains/Sketch “pay once, then extend updates” model – it can’t be transferred from desktop to iOS/Android.</p>
+<p>Many popular Mac/iOS apps historically go with a flat fee and occasional major versions (OmniGroup’s products, Panic’s products, MindNode, Ulysses, etc.). Usually it’s something like $40-60 for Mac and $10-20 for iOS.</p>
+<p>Then there’s <a href="http://www.bear-writer.com/" rel="nofollow noopener">Bear</a> that is completely free unless you want styles and sync – then it’s $15/yr for both iOS and Mac at once (it’s available only on Apple’s App Stores and they don’t have plans for other platforms).</p>
+<p>I kind of like the “completely free” idea because of additional virality. I know that free plans are not recommended for SaaS’es but regular apps don’t suffer that much from free users due to the lack of backend costs.</p>
+<p>So there are 3 ways:</p>
+<ol>
+<li>Traditional: high app cost + version-based upgrade for a smaller fee (users own the app)</li>
+<li>JetBrains/Sketch: average app cost + the same cost each year (users own the app)</li>
+<li>Subscription: small fee each year (users can’t access the app or its Pro features without a payment)</li>
+</ol>
+<p><span class="hashtag">#1</span> is really easy on all platforms and plays nicely with a free version. Students and hobbyists get the basics, professionals pay for Pro features. If there’s a major version – you still can stay with the old app. But it also means maintaining multiple apps in the stores and multiple branches for critical updates.</p>
+<p>The more serious downsides: a high upfront cost scares many customers and the cost on mobile platforms can’t be really high (one-time $10-20 for all these constant iOS/Android updates and fragmentation).</p>
+<p>I like <span class="hashtag">#2</span> but it feels confusing and can’t be implemented in App Store or Google Play. Pricing desktop app in one fashion and mobile ones in another is even more confusing.</p>
+<p><span class="hashtag">#3</span> is ok when it’s just Apple’s platforms but subscription must be implemented separately when you develop apps for other platforms (like Fastspring for desktop, App Store for iOS, Play for Android). Also it requires connection to a backend to check if a subscription is still viable.</p>
+<p>It looks like for now I’m stuck with the traditional approach + a free version. Which is ok for B2C but I envy the “Enterprise” section on each SaaS pricing page. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Developing a team server is not easy and who knows if the app will be successful enough to support its development at all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/3</link>
+        <pubDate>Mon, 31 Jul 2017 06:49:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5185-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss">Business pricing for a non-SaaS app</source>
+      </item>
+      <item>
+        <title>Business pricing for a non-SaaS app</title>
+        <dc:creator><![CDATA[asandvig]]></dc:creator>
+        <description><![CDATA[
+            <p>I think it could be, depending on the application.</p>
+<p>Some examples of companies using this model are JetBrains with their IDEs and Adobe with their PhotoShop, etc. suites. They both used to sell as one-time-purchase with upgrades each year, but they now provide a subscription model where you pay a yearly/monthly fee for access to a given set of applications. I know a lot of people were annyoed by the switch to subscription, but it may be more acceptable now.</p>
+<p>Note that both JetBrains and Adobe have large suites of very feature-rich applications, and they have been around for decades. Not sure how easy it is to do the same with a single new application, but as customers are getting more and more used to the subscription model, it might work quite well.</p>
+<p>Personally, I wouldn’t mind the subscription model as long as the subscription was optional, meaning that I could by version X and stick with that without ever upgrading (if I didn’t want to).</p>
+<p>If you plan to do integrations with third-party cloud storage for back-up/sync etc, you could do subscriptions for those, so one could buy the app itself for a one-time fee, then pay a yearly/monthly subscription for the integrations, in a sort of “plug-in” approach (even though the integrations do not technically need to be plug-ins).</p>
+<p>I know there are some SEO tools that also have a subscription-model, where the app is local but you pay for access to the dataset, which is updated regularly.</p>
+<p>BTW: A nice thing about the JetBrains subscription is that you can pay a fixed amount per year to get access to all their development tools, which is very useful for a multi-platform developer, such as me. I have bought JetBrains licenses in the past, but never bothered to upgrade them, but now that they are subscription-based, it’s cheaper to just buy the whole pack. It’s also nice that they give discounts for the 2nd and 3rd year.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/2</link>
+        <pubDate>Mon, 31 Jul 2017 05:39:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5185-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss">Business pricing for a non-SaaS app</source>
+      </item>
+      <item>
+        <title>Business pricing for a non-SaaS app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m pondering an idea of a cross-platform application that can be useful both to individuals and businesses.</p>
+<p>At the same time, I don’t want to host anything but provide a self-hosted team server. It’s easier both for the launch (MVP could be a personal-only edition with 3rd party cloud sync) and in the long run (no devops for us).</p>
+<p>I want my users to own the software, so the app itself will cost a flat-fee + yearly upgrades (like Sketch). But a team server can cost considerably more and be subscription-based.</p>
+<p>Is it a good approach for a self-hosted solution? What are some examples of products like this?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185/1</link>
+        <pubDate>Sun, 30 Jul 2017 19:09:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5185-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/business-pricing-for-a-non-saas-app/5185.rss">Business pricing for a non-SaaS app</source>
+      </item>
+  </channel>
+</rss>

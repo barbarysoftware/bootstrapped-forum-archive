@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Your opinion about pricing?</title>
+    <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077</link>
+    <description>Hello,
+
+A couple years ago I built a website to help a friend who organises vintage car rallies (regularity rallies) with the registrations. Until then, all the registrations where made using a PDF file, printing it, scanning, sending the PDF by email, etc. I was tired of this &quot;procedure&quot;, so I built an online app to make online registrations, entry lists, etc. This app has been growing, other organizers used it, and at the beginnings of this year the first organizer asked me if I can add credit card payments and that I charge something to him for the service. I&#39;ve added Stripe integration and some other needed features, and now I&#39;m stuck with the pricing: not how much to charge, my problem is HOW?
+
+I mean: in the beginning I was thinking with something like &quot;300€ for each rally&quot;, but a friend of mine, who offers another kind of service to vintage rallies, said me that organizers are more &quot;happy&quot; paying a quantity for each car. So then I moved to &quot;something like 5-6€ per car, and when the payment is with Stripe, the organizer must pay the Stripe fee&quot;. But, I&#39;m unsure... There are organizators who charge 120€ per entry, others who charge 240€, so why not just charge a percentatge (for example, 5% of the registration price), and I assume the Stripe fee? This way, the organizer who carges 120€ knows that every registration will cost him 6€, and the organizator who charges 240€, will know that every registration will cost him 12€, and the payment method that the racer used doesn&#39;t affect him. On the other hand, I think that I offer exactly the same service to both organizators, the one who charges 120€ and the one who charges 240€, so why the latest must pay more?
+
+So, whats your opinion? Should I charge a fixed price per registration (and the organizator pay the Stripe fee), or better take a percentage of the registration price, and assume the Stripe fee?
+
+Thank you!
+
+P.S.: As you can see, this is not a SaaS, it&#39;s just a 2-3 month service.</description>
+    
+    <lastBuildDate>Mon, 31 Aug 2020 20:19:34 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[pier]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m facing this issue too and I’m planning on using Paddle.</p>
+<p>The idea is that they sell to the final customer and take care of everything worldwide (payment, VAT, VAT returns, invoices, fraud, etc). You get your money at the end of the month, much like Apple’s App Store. Obviously you pay for this, but implementing everything myself would be much more expensive and difficult to maintain.</p>
+<p>I don’t know if it would work on your use case though…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/10</link>
+        <pubDate>Mon, 31 Aug 2020 20:19:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi pier,</p>
+<p>Yes, this is a really nice headache… <img src="https://emoji.discourse-cdn.com/twitter/sweat_smile.png?v=9" title=":sweat_smile:" class="emoji" alt=":sweat_smile:"><br>
+Since I’m just charging to the organizer, if he has a VAT ID I shouldn’t charge VAT to him. For the participants, if the organizator charges VAT or not isn’t my problem, teorically, because I just charge the total amount the organizator said. But yes, there can be the case when someone enrolls a rally but pays using his business, so he needs an invoice and, if it’s from a different country, the VAT discount.</p>
+<p>But, as I have said in another message, there is a lot of work to do, just for the Spanish version. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/9</link>
+        <pubDate>Mon, 31 Aug 2020 20:03:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[pier]]></dc:creator>
+        <description><![CDATA[
+            <p>If you intend on opening outside of Spain you should consider other matters.</p>
+<p>For example, how much VAT (IVA) should you charge in other countries? Does the event promoter configure VAT?</p>
+<p>What about invoices (facturas)?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/8</link>
+        <pubDate>Mon, 31 Aug 2020 19:25:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>It’s at <a href="https://www.rallyreg.com">https://www.rallyreg.com</a>, but currently it’s only available in Spanish and Catalan. I currently only know organizators from Spain, so I’m working with this market. In the near future I want to translate the site and the app to English, but there is still a lot of work <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/7</link>
+        <pubDate>Fri, 28 Aug 2020 06:48:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[Kjell-Ake_Gafvelin]]></dc:creator>
+        <description><![CDATA[
+            <p>Where can I find your application so I can check it out?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/6</link>
+        <pubDate>Mon, 24 Aug 2020 12:17:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>The extra services for the expensive rallies it’s really a good idea! Usually organizators just publish a list of the hotels (or recommended hotels) in the town, and the participants has to call the hotels, book, etc. The not expensive rallies usually don’t do this work: if you need a hotel, search it for yourself (it has happened lots of times to me and my wife, who is my codriver). I’ll study this part! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Extras like shirt size, extra food for the team crew or so it’s already in my application.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/5</link>
+        <pubDate>Thu, 20 Aug 2020 08:28:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>Thank you for your opinion. I’ve already though about refunds, and this is not a problem: the way Stripe works, chargebacks and refunds are responsability of the organitzator’s account. Also I have talked with some organizators, and usually there are never refunds.</p>
+<p>Now, at the beginning, I’l be using fixed prices, mainly because I’m working with organizations with low pricings. Maybe in the future I’ll move to a percentage based pricing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/4</link>
+        <pubDate>Thu, 20 Aug 2020 08:24:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[Kjell-Ake_Gafvelin]]></dc:creator>
+        <description><![CDATA[
+            <p>For the more expensive rallies there might be other services included in the price like lodging and/or food. So they might want to have the possiblity for their participants to register for hotel rooms, special food, shirt size and more on the site. I think you should talk some more to the organizers of the more expensive events and find out what extra services you could provide to them and from that create tiers or add-on services to charge extra for.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/3</link>
+        <pubDate>Fri, 07 Aug 2020 11:05:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Don’t forget to think about refunds and chargebacks, you don’t want to be on the hook for 240€ if someone cancels. Percentage based pricing seems fine to me. After all Stripe is using it as well. If you get a customer who charges 1000€ for their event, and complains about 5% being too much, you can always make it customizable per customer and give them discount.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/2</link>
+        <pubDate>Fri, 07 Aug 2020 08:46:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+      <item>
+        <title>Your opinion about pricing?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>A couple years ago I built a website to help a friend who organises vintage car rallies (regularity rallies) with the registrations. Until then, all the registrations where made using a PDF file, printing it, scanning, sending the PDF by email, etc. I was tired of this “procedure”, so I built an online app to make online registrations, entry lists, etc. This app has been growing, other organizers used it, and at the beginnings of this year the first organizer asked me if I can add credit card payments and that I charge something to him for the service. I’ve added Stripe integration and some other needed features, and now I’m stuck with the pricing: not how much to charge, my problem is HOW?</p>
+<p>I mean: in the beginning I was thinking with something like “300€ for each rally”, but a friend of mine, who offers another kind of service to vintage rallies, said me that organizers are more “happy” paying a quantity for each car. So then I moved to “something like 5-6€ per car, and when the payment is with Stripe, the organizer must pay the Stripe fee”. But, I’m unsure… There are organizators who charge 120€ per entry, others who charge 240€, so why not just charge a percentatge (for example, 5% of the registration price), and I assume the Stripe fee? This way, the organizer who carges 120€ knows that every registration will cost him 6€, and the organizator who charges 240€, will know that every registration will cost him 12€, and the payment method that the racer used doesn’t affect him. On the other hand, I think that I offer exactly the same service to both organizators, the one who charges 120€ and the one who charges 240€, so why the latest must pay more?</p>
+<p>So, whats your opinion? Should I charge a fixed price per registration (and the organizator pay the Stripe fee), or better take a percentage of the registration price, and assume the Stripe fee?</p>
+<p>Thank you!</p>
+<p>P.S.: As you can see, this is not a SaaS, it’s just a 2-3 month service.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077/1</link>
+        <pubDate>Fri, 07 Aug 2020 04:52:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7077-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-opinion-about-pricing/7077.rss">Your opinion about pricing?</source>
+      </item>
+  </channel>
+</rss>

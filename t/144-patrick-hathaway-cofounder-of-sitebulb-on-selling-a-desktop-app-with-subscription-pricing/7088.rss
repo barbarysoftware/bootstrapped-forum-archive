@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>#144: Patrick Hathaway, cofounder of Sitebulb on selling a desktop app with subscription pricing</title>
+    <link>https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088</link>
+    <description>Patrick Hathaway is the cofounder of Sitebulb, a website auditing tool for SEO consultants and agencies. Patrick tells us why he made a desktop app when his competitors offer cloud apps.
+
+We also talk about how Patrick uses awesome release notes as a marketing tool.
+
+We finish up with a discussion the pros and cons of using Paddle as a payment processor.
+
+&lt;iframe height=&quot;200px&quot; width=&quot;100%&quot; frameborder=&quot;no&quot; scrolling=&quot;no&quot; seamless src=&quot;https://player.simplecast.com/a96eebb3-bb8f-444d-9d6d-4bb5e8084d2a?dark=false&quot;&gt;&lt;/iframe&gt;
+
+Sitebulb: https://sitebulb.com/
+
+Sitebulb’s release notes: https://sitebulb.com/release-notes/
+
+You can also listen to and download [this episode here](https://bootstrapped.fm/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/).</description>
+    
+    <lastBuildDate>Fri, 28 Aug 2020 21:24:04 +0000</lastBuildDate>
+    <category>Bootstrapped Podcast</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>#144: Patrick Hathaway, cofounder of Sitebulb on selling a desktop app with subscription pricing</title>
+        <dc:creator><![CDATA[stephenjt]]></dc:creator>
+        <description><![CDATA[
+            <p>Very interesting to hear the experiences with Paddle. I started out building against Stripe for <a href="https://app.photoephemeris.com">https://app.photoephemeris.com</a> earlier this year and had the solution (I thought) 80% built until I started digging into the tax side of things. After a week of conversations with TaxJar, Avalara, Taxamo and others, plus a bunch of reading, I ended up switching to Paddle precisely because they take all that on for you.</p>
+<p>As it is, Paddle in production has been excellent. Paddle in development is a different story - testing capabilities still don’t exist, and I found a couple of issues which still remain unaddressed. The reporting and dashboards remain rather limited, but for the basic day to day job of completing transactions, collecting money and paying out to sellers, they’ve been great.</p>
+<p>From a developer/API perspective, Stripe is fabulous, but the lack of an integrated solution for SaaS tax was rather a showstopper, given the number of tax jurisdictions I needed to cover.</p>
+<p>If I’d known more about Quaderno at the time, I might well have gone down the Stripe + Quaderno route.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088/3</link>
+        <pubDate>Fri, 28 Aug 2020 21:24:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7088-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088.rss">#144: Patrick Hathaway, cofounder of Sitebulb on selling a desktop app with subscription pricing</source>
+      </item>
+      <item>
+        <title>#144: Patrick Hathaway, cofounder of Sitebulb on selling a desktop app with subscription pricing</title>
+        <dc:creator><![CDATA[datadavis]]></dc:creator>
+        <description><![CDATA[
+            <p>Insightful interview</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088/2</link>
+        <pubDate>Tue, 18 Aug 2020 10:38:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7088-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088.rss">#144: Patrick Hathaway, cofounder of Sitebulb on selling a desktop app with subscription pricing</source>
+      </item>
+      <item>
+        <title>#144: Patrick Hathaway, cofounder of Sitebulb on selling a desktop app with subscription pricing</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Patrick Hathaway is the cofounder of Sitebulb, a website auditing tool for SEO consultants and agencies. Patrick tells us why he made a desktop app when his competitors offer cloud apps.</p>
+<p>We also talk about how Patrick uses awesome release notes as a marketing tool.</p>
+<p>We finish up with a discussion the pros and cons of using Paddle as a payment processor.</p>
+<iframe height="200px" width="100%" frameborder="no" src="https://player.simplecast.com/a96eebb3-bb8f-444d-9d6d-4bb5e8084d2a?dark=false"></iframe>
+<p>Sitebulb: <a href="https://sitebulb.com/">https://sitebulb.com/</a></p>
+<p>Sitebulb’s release notes: <a href="https://sitebulb.com/release-notes/">https://sitebulb.com/release-notes/</a></p>
+<p>You can also listen to and download <a href="https://bootstrapped.fm/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/">this episode here</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088/1</link>
+        <pubDate>Fri, 14 Aug 2020 21:01:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7088-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/144-patrick-hathaway-cofounder-of-sitebulb-on-selling-a-desktop-app-with-subscription-pricing/7088.rss">#144: Patrick Hathaway, cofounder of Sitebulb on selling a desktop app with subscription pricing</source>
+      </item>
+  </channel>
+</rss>

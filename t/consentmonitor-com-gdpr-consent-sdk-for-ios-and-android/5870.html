@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ConsentMonitor.com - GDPR consent SDK for iOS and Android - Show Bootstrapped - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Hi all. 
+Just wanted to do a quick post to introduce my latest project. Consent Monitor is a GDPR-compliance SDK for iOS and Android developers. 
+If you’re in the mobile space (or even if not), I’d certainly appreciate a&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="5870.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;ConsentMonitor.com - GDPR consent SDK for iOS and Android&#39;" href="5870.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/consentmonitor-com-gdpr-consent-sdk-for-ios-and-android/5870" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/consentmonitor-com-gdpr-consent-sdk-for-ios-and-android/5870" />
+<meta property="og:title" content="ConsentMonitor.com - GDPR consent SDK for iOS and Android" />
+<meta name="twitter:title" content="ConsentMonitor.com - GDPR consent SDK for iOS and Android" />
+<meta property="og:description" content="Hi all.  Just wanted to do a quick post to introduce my latest project. Consent Monitor is a GDPR-compliance SDK for iOS and Android developers.  If you’re in the mobile space (or even if not), I’d certainly appreciate any feedback. Or, if you have any questions and need to reach out to me in private, you can always DM me through this forum or at @andrey_butov.  Thanks in advance!" />
+<meta name="twitter:description" content="Hi all.  Just wanted to do a quick post to introduce my latest project. Consent Monitor is a GDPR-compliance SDK for iOS and Android developers.  If you’re in the mobile space (or even if not), I’d certainly appreciate any feedback. Or, if you have any questions and need to reach out to me in private, you can always DM me through this forum or at @andrey_butov.  Thanks in advance!" />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="11 ❤" />
+<meta property="article:published_time" content="2018-05-21T15:50:15+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="5870.html">ConsentMonitor.com - GDPR consent SDK for iOS and Android</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/show-bootstrapped.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F7941D'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Show Bootstrapped</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/andrey'><span itemprop='name'>andrey</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-05-21T15:50:15Z'>
+              <time itemprop='dateModified' datetime='2018-05-22T20:38:03Z' class='post-time'>
+                May 22, 2018,  8:38pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi all.</p>
+<p>Just wanted to do a quick post to introduce my latest project. <a href="https://consentmonitor.com">Consent Monitor</a> is a GDPR-compliance SDK for iOS and Android developers.</p>
+<p>If you’re in the mobile space (or even if not), I’d certainly appreciate any feedback. Or, if you have any questions and need to reach out to me in private, you can always DM me through this forum or at <a href="https://twitter.com/andrey_butov">@andrey_butov</a>.</p>
+<p>Thanks in advance!</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/unboot'><span itemprop='name'>unboot</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-22T08:03:56Z' class='post-time'>
+                May 22, 2018,  8:03am
+              </time>
+              <meta itemprop='dateModified' content='2018-05-22T08:03:56Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Interesting, but even your home page is not GDPR compliant.</p>
+<ul>
+<li>email collection without unset tick box to receive emails</li>
+<li>loading of Google fonts (may be a problem because Google states they act as a Data Controller, not a Data Processor on your site)</li>
+</ul>
+<p>Offering “GDPR compliance for your mobile apps” is probably inviting legal trouble, as you don’t offer compliance, but just a tool to help with this.</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="3" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/andrey'><span itemprop='name'>andrey</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-22T12:08:16Z' class='post-time'>
+                May 22, 2018, 12:08pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-22T12:08:16Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Great feedback. Thanks! I will address these.</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-22T13:24:40Z' class='post-time'>
+                May 22, 2018,  1:24pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-22T13:24:40Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="2" data-topic="5870">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/7cd45c/40.png" class="avatar"> unboot:</div>
+<blockquote>
+<p>loading of Google fonts (may be a problem because Google states they act as a Data Controller, not a Data Processor on your site)</p>
+</blockquote>
+</aside>
+<p>Hmm. So now it is problematic to load <strong>anything</strong> from <strong>any CDN</strong> unless you 100% sure that CDN doesn’t collect any data? (which it does - logs and whatnot)</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/unboot'><span itemprop='name'>unboot</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-22T14:35:01Z' class='post-time'>
+                May 22, 2018,  2:35pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-22T14:35:01Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="4" data-topic="5870">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Hmm. So now it is problematic to load <strong>anything</strong> from <strong>any CDN</strong> unless you 100% sure that CDN doesn’t collect any data? (which it does - logs and whatnot)</p>
+</blockquote>
+</aside>
+<p>Not necessarily.  GDPR is formulated in such general terms that many experts disagree on specifics.  I mentioned Google fonts for two reasons:</p>
+<ul>
+<li>
+<a class="mention" href="https://discuss.bootstrapped.fm/u/andrey">@andrey</a> wants to offer a compliance service.  Better be careful then.</li>
+<li>Google has specifically stated for Google fonts that they act as a Data Controller (as opposed to e.g. Google Analytics, where you can have a contract with Google where they act as a Data Processor).  This is somewhat problematic, because you send your website visitors automatically to Google fonts, and Google then has Data Controller authority.</li>
+</ul>
+<p>How this all pans out is not yet known (probably the courts will decide).</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/andrey'><span itemprop='name'>andrey</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-22T16:08:31Z' class='post-time'>
+                May 22, 2018,  4:08pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-22T16:08:31Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="5" data-topic="5870">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/7cd45c/40.png" class="avatar"> unboot:</div>
+<blockquote>
+<p>probably the courts will decide</p>
+</blockquote>
+</aside>
+<p>I agree with this 100%. From all my research, everyone who is addressing GDPR right now is basically making a best attempt at what they think is the right thing to do. These kinds of things really only get settled through litigation.</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Rhino.html'><span itemprop='name'>Rhino</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-05-22T18:22:23Z'>
+              <time itemprop='dateModified' datetime='2018-05-23T08:22:03Z' class='post-time'>
+                May 23, 2018,  8:22am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="https://discuss.bootstrapped.fm/u/andrey">@Andrey</a> - surprised you want to do something with GDPR. It’s a damn migraine inducing mess and you’re grumpy enough as it is! <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/asandvig.html'><span itemprop='name'>asandvig</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-22T19:04:31Z' class='post-time'>
+                May 22, 2018,  7:04pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-22T19:04:31Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="2" data-topic="5870">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/7cd45c/40.png" class="avatar"> unboot:</div>
+<blockquote>
+<p>email collection without unset tick box to receive emails</p>
+</blockquote>
+</aside>
+<p>As I understand it, a checkbox is not required, as pressing the submit button is an active action.</p>
+<p>However, it should be made clear that by submitting the form you are accepting that the provided information is processed in accordance with the privacy policy and what the information is specifically used for.</p>
+<p>So, in this case, it can be solved with a few tweaks:</p>
+<ul>
+<li>Put the information text above/before the submit button.</li>
+<li>In the information text, include a sentence like <em>“By submitting this form you are accepting that the provided information may be used, stored and processed in accordance with our privacy policy.”</em>, where the text “privacy policy” should be a link.</li>
+<li>The text should be made more readable (it’s currently somewhat obscured by the background image).</li>
+</ul>
+<aside class="quote no-group" data-post="4" data-topic="5870">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Hmm. So now it is problematic to load <strong>anything</strong> from <strong>any CDN</strong> unless you 100% sure that CDN doesn’t collect any data? (which it does - logs and whatnot)</p>
+</blockquote>
+</aside>
+<p>You can use a CDN, but you must inform users about what data is collected by the CDN, why they are collecting it and what its used for. You must also ensure that the CDN only collects, stores and processes that data in accordance with your privacy policy and the GDPR requirements.</p>
+<p>To be fully compliant, I would suspect you must also have a method of removing or anonymizing said data from the CDN providers logs/databases if a user requests to be “forgotten”. It’s currently unclear (at least to me) whether a users rights to access (and remove/anonymize) their own data also applies to low-level tehnical logs such as server log, database logs, etc. This is made a lot more complicated by the fact that IP addresses are defined by the EEA as personal information and that most web servers log IP addresses by default.</p>
+<p>The simpler solution would just be to host the google fonts (and any other HTTP resources) on your “own” servers.</p>
+<p>I also agree that one should not market a product as GDPR compliant, as GDPR compliance applies to organizations as a whole and not (only) products. Even if an organization uses only “compliant” software, that does not automatically make the organization compliant.</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/andrey'><span itemprop='name'>andrey</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-22T20:58:26Z' class='post-time'>
+                May 22, 2018,  8:58pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-22T20:58:26Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for your feedback guys. I’ve addressed all the issues that you raised here. Cheers!</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Tom_Hammond.html'><span itemprop='name'>Tom_Hammond</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-22T22:05:29Z' class='post-time'>
+                May 22, 2018, 10:05pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-22T22:05:29Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Aren’t you like a little (way, way) late to the game? It seems like this should have been launched a 6-12 months ago? I guess launching this after GDPR takes effect just seems questionable to me.</p>
+<p>GDPR takes effect in 3 days on Friday. That wouldn’t even be enough time to get an iOS update approved.</p>
+<p>I’m pretty sure most ad networks already back GDPR compliance within their own SDKs and I think some networks like I think I saw that IAB may have created a universal solution for other ad networks and developers to use.</p>
+<p>I know we’ve been hard at work getting ready for GDPR for almost a year and have everything baked into our SDK.</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-22T22:46:54Z' class='post-time'>
+                May 22, 2018, 10:46pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-22T22:46:54Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="10" data-topic="5870">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/t/3bc359/40.png" class="avatar"> Tom_Hammond:</div>
+<blockquote>
+<p>It seems like this should have been launched a 6-12 months ago?</p>
+</blockquote>
+</aside>
+<p>Well… If I’m a representative sample, most people are just starting to think how to deal with GDPR.</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/egarbugli.html'><span itemprop='name'>egarbugli</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-23T19:43:43Z' class='post-time'>
+                May 23, 2018,  7:43pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-23T19:43:43Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That’s a really good idea. It would be great if there was the same thing for Web / SaaS apps. GDPR compliance is a pain and needlessly stressful. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/andrey'><span itemprop='name'>andrey</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-23T19:57:09Z' class='post-time'>
+                May 23, 2018,  7:57pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-23T19:57:09Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Maybe eventually, down the road. Right now, we’re just scrambling to put together something solid for the one tech stack I’m most comfortable with. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Rhino.html'><span itemprop='name'>Rhino</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-24T11:33:48Z' class='post-time'>
+                May 24, 2018, 11:33am
+              </time>
+              <meta itemprop='dateModified' content='2018-05-24T11:33:48Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Nice clean and clear site - looks like wordpress, can I ask what theme did you use?</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/andrey'><span itemprop='name'>andrey</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-24T11:46:18Z' class='post-time'>
+                May 24, 2018, 11:46am
+              </time>
+              <meta itemprop='dateModified' content='2018-05-24T11:46:18Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I bought a license to this wordpress theme called LandKit a while back. I ripped out the wordpress stuff from it and used it as a regular HTML site. There isn’t much left from the original template, to be honest, aside from some base CSS.</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-24T13:59:13Z' class='post-time'>
+                May 24, 2018,  1:59pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-24T13:59:13Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I feel a testimonial “<em>It looks like a very interesting solution</em>” has a negative effect, as it is clear the guy did not actually <em>use</em> the solution, so why the heck he’s testifying?</p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/andrey'><span itemprop='name'>andrey</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-24T16:06:28Z' class='post-time'>
+                May 24, 2018,  4:06pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-24T16:06:28Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hmmm. Maybe. Though both testimonials at this point are pre-release testimonials. Since the product hasn’t been released to the public yet, only a few people have tried it. Charles is on the very short list of people to be requested to try it out before it hits release. Very grateful to <a class="mention" href="../../u/dazeend.html">@DazeEnd</a> for the testimonial. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Tom_Hammond.html'><span itemprop='name'>Tom_Hammond</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5870.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-05-25T15:21:05Z' class='post-time'>
+                May 25, 2018,  3:21pm
+              </time>
+              <meta itemprop='dateModified' content='2018-05-25T15:21:05Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Here’s the open source free SDK IAB put out for developers to add in I mentioned for collecting GDPR consent - <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework" rel="nofollow noopener">https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework</a></p>
+        </div>
+
+        <meta itemprop='headline' content='ConsentMonitor.com - GDPR consent SDK for iOS and Android'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

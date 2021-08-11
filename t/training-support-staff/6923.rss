@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Training support staff</title>
+    <link>https://discuss.bootstrapped.fm/t/training-support-staff/6923</link>
+    <description>Wondering if some of you can share your experience together with what you learned/tips regarding your first support hire.
+
+Going to hire the first support person and I&#39;m a bit worried about how quickly I can train them and off-load my work. Reviewing  the last 2000 tickets, many of them are unique or difficult and I don&#39;t see how someone can answer most of them in 1-2 months, without knowing the product internally (from the source code) or having lots of experience using it.
+
+I built a support document with notes and answers to most encountered issues, but they don&#39;t repeat that often as I wanted so I might end up doing more work supporting the support person and customers than when I did all the support myself. Since half of the support is about handling the integration of my script into clients website, the person will be technical and might be able to answer more technical questions, but stiil, won&#39;t have access to app source code for detailed stuff.
+
+I also set up demo accounts to get that person become a power user and I&#39;ll set up daily tasks and questions about it.
+
+Any other things I should be doing?
+
+Also, what&#39;s your experience with this? How did you transition from supporting the clients yourself to the first customer success hire?</description>
+    
+    <lastBuildDate>Thu, 21 May 2020 09:21:49 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/training-support-staff/6923.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Training support staff</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>This can be expensive. People will have to learn your product in deep detail. This knowledge and experience only makes sense while they work for you and with your product, but in this case, they acquire skills that are not suitable for anything else.</p>
+<p>For smal company, another approach could be better - improving API and integrations so that they are easier and require as less human intervention as possible. Big companies can hire lots of people, but small businesses have to automate things and be smarter in the ways they work, so that operating costs are lower.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/training-support-staff/6923/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/training-support-staff/6923/5</link>
+        <pubDate>Thu, 21 May 2020 09:21:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6923-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/training-support-staff/6923.rss">Training support staff</source>
+      </item>
+      <item>
+        <title>Training support staff</title>
+        <dc:creator><![CDATA[Virgil]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for you detailed reply.</p>
+<p>The “hard” questions are because that some users have some different corner cases and they don’t know if they can be achieved with a combination settings and API calls or they need help with the integration.</p>
+<p>Integration part requires a developer because the script is not the usual copy-paste script, it needs to be tied to a signup form for ex and those are implemented and called in many different ways, especially on custom built websites. That’s the part that requires the most technical knowledge and that’s what makes this more difficult.</p>
+<p>I see my bigger competitors hire “integration specialist” that deals only with the integration part, but obviously I’m not there yet, i need someone that’s technical and also likes doing support which is hard to find.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/training-support-staff/6923/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/training-support-staff/6923/4</link>
+        <pubDate>Thu, 21 May 2020 05:23:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6923-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/training-support-staff/6923.rss">Training support staff</source>
+      </item>
+      <item>
+        <title>Training support staff</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>Apart from writing a document containing typical questions and answers, I also asked them to actually use the product, like: here’s the product, you need to have the end result X, find a way to do it, then understand in detail what happens, why something works or not, etc. If possible, they should use the product themselves on a regular basis, this really helps.</p>
+<p>If you have lots of “hard” questions that are only possible to answer by knowing source code base, then it’s time to think about product design, documentation and why there are questions like this at all. Compare that to the products you use yourself, do you ask their authors similar “hard” questions? I doubt that (I talk about end user products, not some developer-for-developer stuff).</p>
+<p>For instance, integrations. We have them in our priduct and from my experience, only two things are needed to make it work:</p>
+<ol>
+<li>Reliability. It must work correctly, with good diagnostics and detailed error messages. No obscure “something went wrong”.</li>
+<li>Documentation with examples for typical cases.</li>
+</ol>
+<p>This way you don’t have to take part in the process. Most people will configure it by themselves. Some will contact support and receive a link to the docs. The few who are still unable to make it work - they either get a refund, or you fix a bug/docs that prevented them from using it, or you explain them that the problem is with the other side of the integration and not with your product.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/training-support-staff/6923/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/training-support-staff/6923/3</link>
+        <pubDate>Wed, 20 May 2020 09:45:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6923-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/training-support-staff/6923.rss">Training support staff</source>
+      </item>
+      <item>
+        <title>Training support staff</title>
+        <dc:creator><![CDATA[Atanas_Walker]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Virgil,</p>
+<p>Your support personal will be Level 1 support and they will gradually build their knowledge base. For questions that are beyond their knowledge they will fall back to you (Level 2 support) and after resolution will update their knowledge base.</p>
+<p>If you are interested I can offer you a quality support staff will good level of English and German for as low as $12/h.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/training-support-staff/6923/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/training-support-staff/6923/2</link>
+        <pubDate>Sun, 17 May 2020 12:16:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6923-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/training-support-staff/6923.rss">Training support staff</source>
+      </item>
+      <item>
+        <title>Training support staff</title>
+        <dc:creator><![CDATA[Virgil]]></dc:creator>
+        <description><![CDATA[
+            <p>Wondering if some of you can share your experience together with what you learned/tips regarding your first support hire.</p>
+<p>Going to hire the first support person and I’m a bit worried about how quickly I can train them and off-load my work. Reviewing  the last 2000 tickets, many of them are unique or difficult and I don’t see how someone can answer most of them in 1-2 months, without knowing the product internally (from the source code) or having lots of experience using it.</p>
+<p>I built a support document with notes and answers to most encountered issues, but they don’t repeat that often as I wanted so I might end up doing more work supporting the support person and customers than when I did all the support myself. Since half of the support is about handling the integration of my script into clients website, the person will be technical and might be able to answer more technical questions, but stiil, won’t have access to app source code for detailed stuff.</p>
+<p>I also set up demo accounts to get that person become a power user and I’ll set up daily tasks and questions about it.</p>
+<p>Any other things I should be doing?</p>
+<p>Also, what’s your experience with this? How did you transition from supporting the clients yourself to the first customer success hire?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/training-support-staff/6923/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/training-support-staff/6923/1</link>
+        <pubDate>Sun, 17 May 2020 09:34:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6923-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/training-support-staff/6923.rss">Training support staff</source>
+      </item>
+  </channel>
+</rss>

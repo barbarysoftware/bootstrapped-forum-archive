@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to start charging for a side project?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427</link>
+    <description>Hi everyone,
+
+I&#39;ve recently taken over a side project that a friend has been running for a few years. The site has gained some traction, and has active users, but he got bored of it and decided last week to shut it down. I told him to give it to me if he&#39;s just going to switch it off, and he did :smiley:
+
+One of the reasons why I think he got bored of it is because he never started charging people (even though I told him from the beginning to let me, as a customer, pay for it), and has been paying the ~$100/mo hosting fees out of his pocket. So I&#39;m wondering how to go about changing that.
+
+For existing users I guess grandfather them into the free plan, however there are a few big users who proportionally cost a lot more than others, and seem like they could afford paying $$$. Should I just eat the costs for them, or get in touch about getting them to start paying?
+
+Compared to other services in the space it&#39;s also lacking (mainly as it hasn&#39;t really been touched in 4 years), so there is also that to bear in mind. I have some good ideas of new features I&#39;d like to add, my day job is as a developer so I can do it myself, however some of the features will bring up the hosting fees quite substantially so I&#39;d like to make it cash-flow positive first.
+
+So I guess my questions are:
+
+1) How do I start charging? Just change the landing page and put in a pricing table? (I already have a registered company and Stripe account I can use for the actual charging)
+2) What should I do about existing customers?
+3) How should I go about pricing, given that the service is a bit lacking compared to competitors?
+
+Thanks in advance!</description>
+    
+    <lastBuildDate>Mon, 03 Oct 2016 14:05:05 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh, geez, is this thing written in Erlang?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/12</link>
+        <pubDate>Mon, 03 Oct 2016 14:05:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="4427">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/lucaspiller/40/1240_1.png" class="avatar"> lucaspiller:</div>
+<blockquote>
+<p>a website uptime monitoring service</p>
+</blockquote>
+</aside>
+<p>Just shut it down and do not waste your time.</p>
+<p>Everyone and their dog are doing that. There is a very little opportunity to differentiate (to make your service address it from an unique angle) - different notification channels? Already covered by all competitors. Reports? Covered. Check frequency? Covered. Checks from all around the world? Covered.</p>
+<aside class="quote" data-post="9" data-topic="4427">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/craigvn/40/2889_1.png" class="avatar"> craigvn:</div>
+<blockquote>
+<p>How about adding SMS notifications function which you charge 10c (or more) for each SMS notification. Using Twilio these will cost you from 2-5c to send depending on country, the difference is profit $$$</p>
+</blockquote>
+</aside>
+<p>Sounds like at least something at first look, but let’s estimate the earnings. Let’s say each site is down 1 time a month. 1 SMS for down, 1 SMS for up. Average profit per SMS is say 6 cents. 2 SMS generate a profit of 12 cents a month.</p>
+<p>To cover the hosting fees (~100 dollars), he’d need to have ~700 SMS-enabled customers.</p>
+<p>To have a $500/mo profits, the number of customers should be around 4000.</p>
+<p>Are those realistic numbers?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/11</link>
+        <pubDate>Mon, 03 Oct 2016 13:52:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p>There is no reason for something like this to be free. If you dont want to scare off existing “customers” (ahem), then:</p>
+<ul>
+<li>Cancel the free tier for new users</li>
+<li>Severely limit it for existing users. Like only 3-4 checks a day, no logs etc</li>
+<li>Logs for only 24 hours</li>
+</ul>
+<p>etc etc</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/10</link>
+        <pubDate>Mon, 03 Oct 2016 12:21:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>Just an idea. I notice you do email notifications when the site is down. How about adding SMS notifications function which you charge 10c (or more) for each SMS notification. Using Twilio these will cost you from 2-5c to send depending on country, the difference is profit $$$ <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/9</link>
+        <pubDate>Mon, 03 Oct 2016 10:39:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[lucaspiller]]></dc:creator>
+        <description><![CDATA[
+            <p>Haha good point <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> I’ve reached out to some of the bigger cust^H^H^H^H users to see why they settled on this service and to find out how they use it, and whether there is anything that can be done differently to help their businesses.</p>
+<p>I’ve starting looking at competitors, and for the most part they all offer the same service, but with vastly different pricing. I’ll put up a pricing page this week and will require new users to select a plan and ‘start a trial’ (where as in the backend it’ll work the same as-is for now - until I get the payments code done).</p>
+<p>Given I want to add new features I’m tempted just to leave the existing free users, and restrict their account so if they want to use it more or use the new features they’ll need to upgrade to a paid plan. It’s only a few that are costing me more than the average, and those I’ve reached out to and can hopefully convert them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/8</link>
+        <pubDate>Mon, 03 Oct 2016 10:07:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="4427">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/lucaspiller/40/1240_1.png" class="avatar"> lucaspiller:</div>
+<blockquote>
+<p>one of the main selling points is it is free</p>
+</blockquote>
+</aside>
+<p>That’s not a viable basis for a business. “selling point” and “free” contradict each other. But you know that, right?</p>
+<blockquote>
+<p>a website uptime monitoring service.</p>
+</blockquote>
+<p>Bad news: that’s a very crowded market.</p>
+<p>Good news: a friend of mine in that very crowded market runs a lean, mean, streamlined one-person operation and earns very good money from it, while also travelling loads and having great adventures.</p>
+<p>Spoiler: this friend of mine charges all of his customers money.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/7</link>
+        <pubDate>Mon, 03 Oct 2016 08:06:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[lucaspiller]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all for the replies! The service is <a href="http://www.watchsumo.com" rel="nofollow noopener">WatchSumo</a> a website uptime monitoring service. As you can see on the front page, one of the main selling points is it is free (in fact the main source of traffic over the last month was from an article “free tools for your website”), so I’m a bit concerned about completely cutting off the free plan.</p>
+<p>Nearly all the competitors offer one, and looking at the user base most users are only monitoring 1 or 2 websites. I’m thinking to keep that much for free, and then charge for more and also for new “premium” features when I add them.</p>
+<aside class="quote" data-post="4" data-topic="4427">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Give all free users three months notice that they’ll need to start paying. Some customers won’t like it, but you are not a charity.</p>
+</blockquote>
+</aside>
+<p>Great advice! The reason I found out my friend was shutting down the service was because he sent an email to everyone saying that - so saying we are staying around but then you’ll need to pay shouldn’t go down too badly.</p>
+<p>I recently received an email from another service I’ve been using for a few years, effectively saying this:</p>
+<p><img src="http://i.imgur.com/w6fZX0M.jpg" alt width="161" height="81"></p>
+<p>I’ll take a look at that book on pricing. At the moment I am completely clueless on how much to charge - myself for personal sites/pet projects I probably wouldn’t get enough value out of the service to justify paying, but for client’s sites I definitely would. I guess I just need to exclude the hobbyist users, but as I said most of the marketing, and I expect most of the current users, are targeted to those.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/6</link>
+        <pubDate>Mon, 03 Oct 2016 04:48:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4427">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Yes, do that. Why not do it today?</p>
+</blockquote>
+</aside>
+<p>Because he can scare off the current users? While the hope is to convert them to the paying customers.</p>
+<p>I’d prepare them first. I’d let them know that I’m BTW just got married, going to have triplets and bought a rather large house. Should make them start thinking “Hmm… I wonder where all those money are going to come from? Speaking of which, shouldn’t he charge for this service? Would be only fair.”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/5</link>
+        <pubDate>Mon, 03 Oct 2016 04:17:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Can you tell us the URL? It makes it easier to answer your question helpfully…</p>
+<p>Here is some generic stuff:</p>
+<ol>
+<li>How do I start charging? Just change the landing page and put in a pricing table? (I already have a registered company and Stripe account I can use for the actual charging)</li>
+</ol>
+<p>Yes, do that. Why not do it today?</p>
+<ol start="2">
+<li>What should I do about existing customers?</li>
+</ol>
+<p>End the free user tier as soon as possible. No new free signups as of now. Don’t ‘grandfather’ anyone into a free plan - that is simply an absurd business decision. Give all free users three months notice that they’ll need to start paying. Some customers won’t like it, but you are not a charity.</p>
+<p>You could let them know what the new price will be, but immediately offer them a generous discount, say 30%, because they’ve already been using it.</p>
+<ol start="3">
+<li>How should I go about pricing, given that the service is a bit lacking compared to competitors?</li>
+</ol>
+<p>Read “Don’t Just Roll the Dice” by Neil Davidson:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.red-gate.com/assets/images/favicon.ico?v=1" class="site-icon" width="16" height="16">
+      <a href="https://www.red-gate.com/library/dont-just-roll-the-dice" target="_blank" rel="nofollow noopener">Redgate Software</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://www.red-gate.com/library/dont-just-roll-the-dice" target="_blank" rel="nofollow noopener">Don't Just Roll the Dice - Redgate Software</a></h3>
+
+<p>Redgate book store - Get your free copy of Don't Just Roll the Dice by Neil Davidson</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/4</link>
+        <pubDate>Sun, 02 Oct 2016 20:03:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p>Depends on what type on an app it is. Is it something that people value, and saves/makes them money?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/3</link>
+        <pubDate>Sun, 02 Oct 2016 19:32:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4427">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/lucaspiller/40/1240_1.png" class="avatar"> lucaspiller:</div>
+<blockquote>
+<ol>
+<li>How do I start charging? Just change the landing page and put in a pricing table? (I already have a registered company and Stripe account I can use for the actual charging)</li>
+<li>What should I do about existing customers?</li>
+<li>How should I go about pricing, given that the service is a bit lacking compared to competitors?</li>
+</ol>
+</blockquote>
+</aside>
+<ol>
+<li>
+<p>That sounds about right to me (once you are confident charging for it)</p>
+</li>
+<li>
+<p>If it is a free service I wouldn’t be grandfathering them in but would tell them all that the free tier is going and if they want to continue using it they need to take up a paid subscription. I think that is fair, they have had free access for a long time and you don’t owe them anything for that. If you were increasing existing pricing I would suggest grandfathering in most cases, but not if it is currently free. See point 3 though before doing this.</p>
+</li>
+<li>
+<p>I would try to arrange calls with as many existing users as possible, ideally the more active ones. Get an understanding for how they view the value they get ("What jobs does this product help you with and how? So it saves you time/makes you more efficient… so how much time/money do you save each month? etc.) From there I would be candid with some of those customers that you plan to start charging, you should hopefully get a feel for what pricing could be and what may be missing in the mind of those users. If you have a lot of people you could also try Sean Ellis’ survey approach to get feedback from people on what would improve it.</p>
+</li>
+</ol>
+<p>I think step 3 is the important one and will show the way on the others. I would definitely expect to start charging existing customers, but only when you have some level of confidence they won’t all disappear to a competitor.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/2</link>
+        <pubDate>Sun, 02 Oct 2016 18:35:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+      <item>
+        <title>How to start charging for a side project?</title>
+        <dc:creator><![CDATA[lucaspiller]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>I’ve recently taken over a side project that a friend has been running for a few years. The site has gained some traction, and has active users, but he got bored of it and decided last week to shut it down. I told him to give it to me if he’s just going to switch it off, and he did <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>One of the reasons why I think he got bored of it is because he never started charging people (even though I told him from the beginning to let me, as a customer, pay for it), and has been paying the ~$100/mo hosting fees out of his pocket. So I’m wondering how to go about changing that.</p>
+<p>For existing users I guess grandfather them into the free plan, however there are a few big users who proportionally cost a lot more than others, and seem like they could afford paying $$$. Should I just eat the costs for them, or get in touch about getting them to start paying?</p>
+<p>Compared to other services in the space it’s also lacking (mainly as it hasn’t really been touched in 4 years), so there is also that to bear in mind. I have some good ideas of new features I’d like to add, my day job is as a developer so I can do it myself, however some of the features will bring up the hosting fees quite substantially so I’d like to make it cash-flow positive first.</p>
+<p>So I guess my questions are:</p>
+<ol>
+<li>How do I start charging? Just change the landing page and put in a pricing table? (I already have a registered company and Stripe account I can use for the actual charging)</li>
+<li>What should I do about existing customers?</li>
+<li>How should I go about pricing, given that the service is a bit lacking compared to competitors?</li>
+</ol>
+<p>Thanks in advance!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427/1</link>
+        <pubDate>Sun, 02 Oct 2016 16:51:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4427-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-start-charging-for-a-side-project/4427.rss">How to start charging for a side project?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Feedback on my security product</title>
+    <link>https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687</link>
+    <description>Hello guys,
+
+I&#39;d love your feedback on Gauntlet.io (https://gauntlet.io), a security product to identify and manage security vulnerabilities using multiple security scanners. There is a free account for one application, so you may use it to find security vulnerabilities in your product before attackers do.
+
+If you could give me feedback of the website or of the user experience in the application itself, I&#39;d love to hear.
+
+Thank you,
+
+Anderson Dadario</description>
+    
+    <lastBuildDate>Fri, 13 Jan 2017 10:31:47 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Feedback on my security product</title>
+        <dc:creator><![CDATA[Anderson_Dadario]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a>,</p>
+<p>Thanks a lot for the feedback and sorry for the trouble you’ve been through. Actually your feedback was very informative and I’ll act upon it. It was first designed to solve my need as a security engineer and then I’ve been adapting for others, but as you said it wasn’t enough yet hehe.</p>
+<p>And don’t worry, the AWS pen test form is the last step. Well, in some sense those authorizations are important for AWS for example mainly because of the bandwidth consumed from the server perspective, even though you pay for the bandwidth anyways. They explicitly deny it for micro instances. However running 1 scanner at a time, at a low speed for example, will result in a traffic similar to a single user, thus won’t affect the bandwidth in practice. In fact attackers run the very same tools without authorization, so defenders are clearly at disadvantage here.</p>
+<p>Such authorization for providers unfortunately aren’t a standard and are hard to control on my end, but the main idea is to inform that scans should not be performed blindly and you should proceed only if you know the consequences of performing a scan.</p>
+<p>It’s not explicit, but there are scanners that doesn’t require this form, for example Knock, to enumerate subdomains. It works by consulting the DNS server and trying to find “<a href="http://mysql.yoursite.com" rel="nofollow noopener">mysql.yoursite.com</a>”, “<a href="http://admin.yoursite.com" rel="nofollow noopener">admin.yoursite.com</a>”, etc …</p>
+<p>Nonetheless thank you Steve, and even the system not being that clear in terms of instructions, you seem to have reached the end of it. I’ll work on improvements for onboarding, thank you very much.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687/3</link>
+        <pubDate>Fri, 13 Jan 2017 10:20:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4687-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687.rss">Feedback on my security product</source>
+      </item>
+      <item>
+        <title>Feedback on my security product</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/anderson_dadario">@Anderson_Dadario</a> I think the concept is good, but onboarding needs a big improvement.</p>
+<p>I gave your site a try but I gave up after going through several steps that were mysterious to me as a new user, and still not even getting a preview of what I might see. After some minutes and feeling my way through, I finally stopped when I found out I need to fill in an AWS pen test form to continue. I understood the necessity, but I have no idea if after that step there are still going to be several more steps.</p>
+<p>A big problem is making a new user have to make several decisions. A new user doesn’t really know how to decide nor what to expect. A new user has no information or experience to help make the decisions. At the very least you should have some one predefined scanner option.</p>
+<p>The concept though, is excellent, and I’m certain that people WILL pay good money for this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687/2</link>
+        <pubDate>Fri, 13 Jan 2017 09:49:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4687-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687.rss">Feedback on my security product</source>
+      </item>
+      <item>
+        <title>Feedback on my security product</title>
+        <dc:creator><![CDATA[Anderson_Dadario]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello guys,</p>
+<p>I’d love your feedback on <a href="http://Gauntlet.io" rel="nofollow noopener">Gauntlet.io</a> (<a href="https://gauntlet.io" rel="nofollow noopener">https://gauntlet.io</a>), a security product to identify and manage security vulnerabilities using multiple security scanners. There is a free account for one application, so you may use it to find security vulnerabilities in your product before attackers do.</p>
+<p>If you could give me feedback of the website or of the user experience in the application itself, I’d love to hear.</p>
+<p>Thank you,</p>
+<p>Anderson Dadario</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687/1</link>
+        <pubDate>Thu, 12 Jan 2017 10:59:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4687-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-on-my-security-product/4687.rss">Feedback on my security product</source>
+      </item>
+  </channel>
+</rss>

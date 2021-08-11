@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>A new technology that allows much better voice quality for mobile audio calling Apps</title>
+    <link>https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526</link>
+    <description>I created a proof of concept audio calling mobile app which provides much better voice quality under bad network conditions than most existing Apps (Skype, Viber, WhatsApp, etc.). It is demonstrably much better than what exists today and fixes those annoying metallic noises you hear when your WiFi connection is bad and you cannot hear your peer properly. With my codec the voice stays almost crystal clear and the other performance characteristics are still very good (low latency, bandwidth used, etc).
+
+The question is what next? I have a pretty busy day job and created this on my spare time on weekends. Now I need to decide what my next steps are.
+
+Some of the options I have:
+
+1. Build a production audio calling App and release it. This requires funding, team, time and infrastructure and I will need to quit my job. Cons: I have no idea how to monetize yet another audio/video calling app (and the world probably doesn’t really need another one).
+
+2. Try to license the technology to existing App vendors. One problem is I don&#39;t know anyone from these companies and don&#39;t know who to approach (likely solvable, I can search my network). Probably need to patent the technology first otherwise not sure I can sell anything; the idea and implementation are not rocket science and if not patented can be re-implemented from clean sheet. I hate software patents but don&#39;t know if I will have any negotiating lever with Big Co without one. Another problem is I have no idea if anyone will want to license what I created.
+
+3. Open-source the technology. Unfortunately doesn&#39;t pay the bills. Plus what I have is just a proof of concept, not a production ready library so I will need to spend even more time on this without being paid anything. This may be my last resort if I don&#39;t find a good way to monetize or build a business on this.
+
+4. Something else?
+
+What would you do?</description>
+    
+    <lastBuildDate>Wed, 06 Dec 2017 12:32:54 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>A new technology that allows much better voice quality for mobile audio calling Apps</title>
+        <dc:creator><![CDATA[asandvig]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree on the tech demo. Even better if you could make it interactive, so you can adjust latency, packet loss, etc. in real time so the user can observe the changes (or absence of changes) in audio quality.</p>
+<p>I don’t have any advice on how to sell the technology or find the right people to approach, but as technical person myself, I know I would prefer to see it “in action” before forming any opinions about the technology or implementation. If I could “explore” it and test the limits of the codec applied in a “real-world” scenario that would also be a big plus.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526/3</link>
+        <pubDate>Wed, 06 Dec 2017 12:32:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5526-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526.rss">A new technology that allows much better voice quality for mobile audio calling Apps</source>
+      </item>
+      <item>
+        <title>A new technology that allows much better voice quality for mobile audio calling Apps</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Option 1 is not feasible - instead of promoting one product (voice library) you’d have to promote 2 - library and the app.</p>
+<p>Option 3 is not that bad if you have time. You can have an open source library with a free license + commercial license. If your lib is really good, it gets used in OSS projects and become known to commercial players at which point you can have a sale or two. But again - it will take much time.</p>
+<p>Re: Option 2. I do not really believe you have to get a patent - I think the patent is important if you plan to sell to more than one vendor. However, IANAL.</p>
+<p>What I would do? Hmm… I’d make a public demo page, comparing the same voice playback over a few of voice applications. You’d have to have some testbed network implementation that has configurable latency and packet drops and whatnot to record that demo. Then I’d send that demo to VPs of the existing voice applications.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526/2</link>
+        <pubDate>Wed, 06 Dec 2017 01:13:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5526-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526.rss">A new technology that allows much better voice quality for mobile audio calling Apps</source>
+      </item>
+      <item>
+        <title>A new technology that allows much better voice quality for mobile audio calling Apps</title>
+        <dc:creator><![CDATA[temp851]]></dc:creator>
+        <description><![CDATA[
+            <p>I created a proof of concept audio calling mobile app which provides much better voice quality under bad network conditions than most existing Apps (Skype, Viber, WhatsApp, etc.). It is demonstrably much better than what exists today and fixes those annoying metallic noises you hear when your WiFi connection is bad and you cannot hear your peer properly. With my codec the voice stays almost crystal clear and the other performance characteristics are still very good (low latency, bandwidth used, etc).</p>
+<p>The question is what next? I have a pretty busy day job and created this on my spare time on weekends. Now I need to decide what my next steps are.</p>
+<p>Some of the options I have:</p>
+<ol>
+<li>
+<p>Build a production audio calling App and release it. This requires funding, team, time and infrastructure and I will need to quit my job. Cons: I have no idea how to monetize yet another audio/video calling app (and the world probably doesn’t really need another one).</p>
+</li>
+<li>
+<p>Try to license the technology to existing App vendors. One problem is I don’t know anyone from these companies and don’t know who to approach (likely solvable, I can search my network). Probably need to patent the technology first otherwise not sure I can sell anything; the idea and implementation are not rocket science and if not patented can be re-implemented from clean sheet. I hate software patents but don’t know if I will have any negotiating lever with Big Co without one. Another problem is I have no idea if anyone will want to license what I created.</p>
+</li>
+<li>
+<p>Open-source the technology. Unfortunately doesn’t pay the bills. Plus what I have is just a proof of concept, not a production ready library so I will need to spend even more time on this without being paid anything. This may be my last resort if I don’t find a good way to monetize or build a business on this.</p>
+</li>
+<li>
+<p>Something else?</p>
+</li>
+</ol>
+<p>What would you do?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526/1</link>
+        <pubDate>Mon, 04 Dec 2017 02:03:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5526-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-new-technology-that-allows-much-better-voice-quality-for-mobile-audio-calling-apps/5526.rss">A new technology that allows much better voice quality for mobile audio calling Apps</source>
+      </item>
+  </channel>
+</rss>

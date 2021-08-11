@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Can&#39;t use stripe or braintree. Recommendation for CC tokenization &amp; processing?</title>
+    <link>https://discuss.bootstrapped.fm/t/cant-use-stripe-or-braintree-recommendation-for-cc-tokenization-processing/5822</link>
+    <description>My business is not in Stripe&#39;s list of supported countries, and I don&#39;t want to deal with Paypal due to the high probability that my funds and payment processing will be frozen without recourse at some point.
+
+I understand that creating a Stripe Atlas business for payment processing is an option, but their &quot;prohibited activities&quot; list makes it sound like the business&#39; sole activity shouldn&#39;t be payment processing for another party (and hence there&#39;s a strong risk of getting cut off).
+
+Can anyone recommend a good CC tokenizer + payment processer with low drama and fees that&#39;s open to dealing with British territories?</description>
+    
+    <lastBuildDate>Fri, 27 Apr 2018 07:30:11 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/cant-use-stripe-or-braintree-recommendation-for-cc-tokenization-processing/5822.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Can&#39;t use stripe or braintree. Recommendation for CC tokenization &amp; processing?</title>
+        <dc:creator><![CDATA[julienma]]></dc:creator>
+        <description><![CDATA[
+            <p>We use <a href="https://paddle.com/" rel="nofollow noopener">Paddle</a>, and are quite satisfied with them.<br>
+Considering you’re asking only for a payment processor, they might be a bit too much — they provide a complete package to sell softwares: checkout, mailing list, license generation, pricing, even an SDK, etc. Though we mostly use them for the JS checkout only.<br>
+I don’t know about British territories, but they’re UK, so might help.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/cant-use-stripe-or-braintree-recommendation-for-cc-tokenization-processing/5822/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/cant-use-stripe-or-braintree-recommendation-for-cc-tokenization-processing/5822/2</link>
+        <pubDate>Fri, 27 Apr 2018 07:30:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5822-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/cant-use-stripe-or-braintree-recommendation-for-cc-tokenization-processing/5822.rss">Can&#39;t use stripe or braintree. Recommendation for CC tokenization &amp; processing?</source>
+      </item>
+      <item>
+        <title>Can&#39;t use stripe or braintree. Recommendation for CC tokenization &amp; processing?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <p>My business is not in Stripe’s list of supported countries, and I don’t want to deal with Paypal due to the high probability that my funds and payment processing will be frozen without recourse at some point.</p>
+<p>I understand that creating a Stripe Atlas business for payment processing is an option, but their “prohibited activities” list makes it sound like the business’ sole activity shouldn’t be payment processing for another party (and hence there’s a strong risk of getting cut off).</p>
+<p>Can anyone recommend a good CC tokenizer + payment processer with low drama and fees that’s open to dealing with British territories?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/cant-use-stripe-or-braintree-recommendation-for-cc-tokenization-processing/5822/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/cant-use-stripe-or-braintree-recommendation-for-cc-tokenization-processing/5822/1</link>
+        <pubDate>Fri, 20 Apr 2018 12:02:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5822-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/cant-use-stripe-or-braintree-recommendation-for-cc-tokenization-processing/5822.rss">Can&#39;t use stripe or braintree. Recommendation for CC tokenization &amp; processing?</source>
+      </item>
+  </channel>
+</rss>

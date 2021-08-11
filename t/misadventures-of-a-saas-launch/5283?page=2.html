@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Misadventures of a SaaS Launch - Show Bootstrapped - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Over the past few months, I built a simple SaaS app for web developers (formtide.com). I launched about a week ago, and here’s the little bit I’ve learned so far. 
+The Product
+TL;DR: Formtide collects your form submissio&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="5283%3Fpage=2.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Misadventures of a SaaS Launch&#39;" href="5283.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283?page=2" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283?page=2" />
+<meta property="og:title" content="Misadventures of a SaaS Launch" />
+<meta name="twitter:title" content="Misadventures of a SaaS Launch" />
+<meta property="og:description" content="I do think that form handling is a useful service in general. My concern is that the market is saturated and that it will be super hard to find some unique features to make it worth the effort.  @twilson mentioned form validation and support for recaptcha. These features are not that hard to implement. It will take a couple of days for the competition to catch up on that." />
+<meta name="twitter:description" content="I do think that form handling is a useful service in general. My concern is that the market is saturated and that it will be super hard to find some unique features to make it worth the effort.  @twilson mentioned form validation and support for recaptcha. These features are not that hard to implement. It will take a couple of days for the competition to catch up on that." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="6 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="8 ❤" />
+<meta property="article:published_time" content="2017-09-08T22:16:55+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="prev" href="5283.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="5283.html">Misadventures of a SaaS Launch</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/show-bootstrapped.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F7941D'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Show Bootstrapped</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jayfk.html'><span itemprop='name'>jayfk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5283.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-08T22:16:55Z' class='post-time'>
+                September 8, 2017, 10:16pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-08T22:16:55Z'>
+          <span itemprop='position'>#21</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I do think that form handling is a useful service in general. My concern is that the market is saturated and that it will be super hard to find some unique features to make it worth the effort.</p>
+<p><a class="mention" href="https://discuss.bootstrapped.fm/u/twilson">@twilson</a> mentioned form validation and support for recaptcha. These features are not that hard to implement. It will take a couple of days for the competition to catch up on that.</p>
+        </div>
+
+        <meta itemprop='headline' content='Misadventures of a SaaS Launch'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/twilson'><span itemprop='name'>twilson</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5283.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-08T22:39:35Z' class='post-time'>
+                September 8, 2017, 10:39pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-08T22:39:35Z'>
+          <span itemprop='position'>#22</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I agree this is difficult, but from what I’ve seen in terms of how often my competition seems to update their features/systems, I wouldn’t expect much in terms of feature matching unless I was considered a threat.  With how things are looking, I’m hoping to be able to bring on a few clients before worrying about this.</p>
+        </div>
+
+        <meta itemprop='headline' content='Misadventures of a SaaS Launch'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5283.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-08T23:08:24Z' class='post-time'>
+                September 8, 2017, 11:08pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-08T23:08:24Z'>
+          <span itemprop='position'>#23</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="21" data-topic="5283">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jayfk/40/3819_1.png" class="avatar"> jayfk:</div>
+<blockquote>
+<p>it will be super hard to find some unique features to make it worth the effort.</p>
+</blockquote>
+</aside>
+<p>(Friday post) I know. Need to create two white-labeled services on the same backend. One boldly claims “I fully support Presedent Trump” and the second one “I denounce so-called ‘President’ Trump!”. 50% of the prospects will sign up for the first one and 50% for another, and this is a feature that competitors won’t dare to match without a risk of losing 50% of their current base.</p>
+        </div>
+
+        <meta itemprop='headline' content='Misadventures of a SaaS Launch'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/swastik.html'><span itemprop='name'>swastik</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5283.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-09-09T19:09:48Z'>
+              <time itemprop='dateModified' datetime='2017-09-09T19:20:21Z' class='post-time'>
+                September 9, 2017,  7:20pm
+              </time>
+          <span itemprop='position'>#24</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think there might be a market for something like this but it’ll be tough to access. I don’t think that cold emailing or paid ads will work in this market though. Cold emails, IMO, are better when you’ve got a product with a decent ARR. You’ve got to find the right kind of prospects, reach out to them, optimize, etc. Paid ads too might be tricky to pull off. Both those mediums will take time to experiment.</p>
+<p>With marketing, the first thing I’d do is figure out use cases for this. What situation would someone be in when they want to use something like FormTide? They might be creating a static site, a blog, maybe with a static site generator. I’d make a list of some popular static site generators and write about how to create forms with them. There’s many of them in many different programming languages, so that might be a good way to access that market.</p>
+<p>Other than that, what common issues does the average person face when creating forms? Connecting them to their CRM? Sending an email after a form submission? Email verification? If you can figure out some of these issues, you can write about how FormTide solves them. That will give you another way to get in front of your market.</p>
+<p>Lastly, there are people who don’t need your service <em>now</em> but might use it in the future if they are aware of it. To get in front of them, you might write on topics that might be of interest to them even if they aren’t directly related to FormTide. For example, you could write about form design, improving form conversion, etc. This won’t drive you immediate business though.</p>
+<p>There’s an absolutely incredible amount of competition in this market though a lot of it looks like abandonware. I found a <a href="http://www.formester.com/home" rel="nofollow noopener">couple of them</a> that are priced very cheaply. To add to that, it’s not just the direct competition that is difficult; even companies like Segment might solve the same problem you’re solving. Marketing is going to be difficult — it is for any business — but it’s worth a shot. <img src="https://emoji.discourse-cdn.com/twitter/grinning.png?v=5" title=":grinning:" class="emoji" alt=":grinning:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Misadventures of a SaaS Launch'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5283.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-09-10T18:33:57Z'>
+              <time itemprop='dateModified' datetime='2017-09-10T18:34:56Z' class='post-time'>
+                September 10, 2017,  6:34pm
+              </time>
+          <span itemprop='position'>#25</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>(hey <a class="mention" href="../../u/swastik.html">@swastik</a>. your cert on <a href="http://enlist.io" rel="nofollow noopener">enlist.io</a> has expired yesterday.)</p>
+        </div>
+
+        <meta itemprop='headline' content='Misadventures of a SaaS Launch'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/swastik.html'><span itemprop='name'>swastik</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5283.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-10T19:04:18Z' class='post-time'>
+                September 10, 2017,  7:04pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-10T19:04:18Z'>
+          <span itemprop='position'>#26</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="https://discuss.bootstrapped.fm/u/rfctr">@rfctr</a> — Whoops, sorry about that! Thanks for letting me know! All great now! <img src="https://emoji.discourse-cdn.com/twitter/grinning.png?v=5" title=":grinning:" class="emoji" alt=":grinning:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Misadventures of a SaaS Launch'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ra00l.html'><span itemprop='name'>ra00l</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5283.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-12T04:33:56Z' class='post-time'>
+                September 12, 2017,  4:33am
+              </time>
+              <meta itemprop='dateModified' content='2017-09-12T04:33:56Z'>
+          <span itemprop='position'>#27</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My 2 cents on this:<br>
+Try to make a wordpress plugin. Might give you access to a bigger market.</p>
+<p>About captcha: avoid as much as possible. It’s really annoying and there are better ways to avoid spam (like if the user clicks on keypresses on the page).</p>
+<p>I also find it a lot more useful to just include a js file that will render the form, would work easier with less technical people</p>
+        </div>
+
+        <meta itemprop='headline' content='Misadventures of a SaaS Launch'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Brian_O_Neill.html'><span itemprop='name'>Brian_O_Neill</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5283.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-12T09:14:22Z' class='post-time'>
+                September 12, 2017,  9:14am
+              </time>
+              <meta itemprop='dateModified' content='2017-09-12T09:14:22Z'>
+          <span itemprop='position'>#28</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>You could call it something like fast forms and make speed your main selling point. Eg quick to integrate and fast static sites are fashionable now so you could concentrate on that market.</p>
+<p>Eg I am currently investigating hosting an entire site on a CDN for speed but because you can’t use dynamic scripts on a CDN a service like yours would work well.</p>
+        </div>
+
+        <meta itemprop='headline' content='Misadventures of a SaaS Launch'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/manish.html'><span itemprop='name'>manish</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5283.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-28T06:43:22Z' class='post-time'>
+                September 28, 2017,  6:43am
+              </time>
+              <meta itemprop='dateModified' content='2017-09-28T06:43:22Z'>
+          <span itemprop='position'>#29</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My observations + feedback:</p>
+<ol>
+<li>
+<p>Show me some form screenshots on your homepage. If your USP is that developers can build their own HTML + CSS and just point the form to you, then show me 3 different form screenshots with a call out “The form submission backend that works with <strong>YOUR</strong> Form Design.”. Although you’re selling only the backend, you still need some pretty visuals on the page.</p>
+</li>
+<li>
+<p>I’ve paid $70 / month in recent past to Typeform for hosting a landing page survey using their PRO+ monthly plan for a couple of months. Why? Because a “survey” can be much more complicated than plain feedback forms, with conditional jumps, etc + validations. So much pain, that developers pay money to offload it to someone else (Typeform, for example). Food for thought.</p>
+</li>
+<li>
+<p>Developers pay money for services that say “done in 2 lines of code!”, but the extensive code example here makes me feel tired already: /guide/advanced-usage . Anyhow, most developers are using jquery / react / vue these days - include examples for these while you’re at it.</p>
+</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Misadventures of a SaaS Launch'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><a rel="prev" itemprop="url" href="5283.html">← previous page</a></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

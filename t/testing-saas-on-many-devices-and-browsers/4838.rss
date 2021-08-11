@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Testing SaaS on many devices and browsers</title>
+    <link>https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838</link>
+    <description>What advice do you have for me for testing [Feature Upvote](https://featureupvote.com/) (a web SaaS) on different OS&#39;s, browsers, and devices?
+
+I&#39;ve heard of [BrowserStack](https://www.browserstack.com/), which calls itself a &quot;Cross Browser Testing Tool&quot;. Is this a good approach? Or should I be using VM&#39;s plus actual devices?
+
+Any particular warnings or shortcuts?
+
+(I have an employee who&#39;ll be doing most of the testing for me, if that influences the answer.)</description>
+    
+    <lastBuildDate>Wed, 08 Mar 2017 09:33:32 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Testing SaaS on many devices and browsers</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>If you need to test website sizing/responsiveness/layouts you are better off using dev tools for the various browsers (Chrome, Firefox, Safari, Explorer) on Mac and IE.</p>
+</blockquote>
+<p>That’s a good point. As it happens, We’re using VMWare extensively for testing with our main product to date (Poker Copilot, a desktop app). It does mean we have this infrastructure in place already for testing across multiple desktop OS’s and browsers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/7</link>
+        <pubDate>Wed, 08 Mar 2017 09:33:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4838-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838.rss">Testing SaaS on many devices and browsers</source>
+      </item>
+      <item>
+        <title>Testing SaaS on many devices and browsers</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Daniel - we’ll take a look at it using the trial period.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/6</link>
+        <pubDate>Wed, 08 Mar 2017 09:30:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4838-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838.rss">Testing SaaS on many devices and browsers</source>
+      </item>
+      <item>
+        <title>Testing SaaS on many devices and browsers</title>
+        <dc:creator><![CDATA[danielherken]]></dc:creator>
+        <description><![CDATA[
+            <p>For desktop browsers you could also use <a href="http://www.browseemall.com" rel="nofollow noopener">http://www.browseemall.com</a> if you prefer using a desktop app. (Drop me a PM if you need a licence, I’m the founder <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> )</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/5</link>
+        <pubDate>Wed, 08 Mar 2017 05:25:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4838-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838.rss">Testing SaaS on many devices and browsers</source>
+      </item>
+      <item>
+        <title>Testing SaaS on many devices and browsers</title>
+        <dc:creator><![CDATA[ezekg]]></dc:creator>
+        <description><![CDATA[
+            <p>I generally use autoprefixer to handle vendor prefixing.CSS, and then test in Chrome, FireFox and Safari locally on my Apple devices (iMac, MBP, iPad, iPhones—geez, makes me sound like a crazy fan). For IE/Edge, I run Windows VMs using VirtualBox. <a href="https://github.com/xdissent/ievms" rel="nofollow noopener">Here’s a good one for IE.</a> I used to use BrowserStack, but if you’re not supporting IE 9 or below, things have gotten consistent enough to not really need it.</p>
+<p>And if worse comes to worse, I go grab coffee and stop by Best Buy to test on their devices.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/4</link>
+        <pubDate>Wed, 08 Mar 2017 03:36:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4838-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838.rss">Testing SaaS on many devices and browsers</source>
+      </item>
+      <item>
+        <title>Testing SaaS on many devices and browsers</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve used <a href="https://multibrowser.com/" rel="nofollow noopener">MultiBrowser</a> before with great success, although I’ve mostly for testing in different browsers, not mobile devices, even though it offers device emulation.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/3</link>
+        <pubDate>Tue, 07 Mar 2017 19:29:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4838-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838.rss">Testing SaaS on many devices and browsers</source>
+      </item>
+      <item>
+        <title>Testing SaaS on many devices and browsers</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>If you need device feature specific testing BrowserStack is a good option.</p>
+<p>If you need to test website sizing/responsiveness/layouts you are better off using dev tools for the various browsers (Chrome, Firefox, Safari, Explorer) on Mac and IE. You can install a quick virtual machine with Virtual Box (<a href="https://www.virtualbox.org/" rel="nofollow noopener">https://www.virtualbox.org/</a>) to test in Windows if you run on Mac. Going that route allows you to watch breakpoints and tweak layouts as needed instead of testing only at set sizes (ala BrowserStack)</p>
+<p>A little self promotion, you can add <a href="https://pageproofer.com" rel="nofollow noopener">PageProofer</a> to help keep track of any bugs and issues you find while testing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/2</link>
+        <pubDate>Tue, 07 Mar 2017 16:06:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4838-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838.rss">Testing SaaS on many devices and browsers</source>
+      </item>
+      <item>
+        <title>Testing SaaS on many devices and browsers</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>What advice do you have for me for testing <a href="https://featureupvote.com/">Feature Upvote</a> (a web SaaS) on different OS’s, browsers, and devices?</p>
+<p>I’ve heard of <a href="https://www.browserstack.com/">BrowserStack</a>, which calls itself a “Cross Browser Testing Tool”. Is this a good approach? Or should I be using VM’s plus actual devices?</p>
+<p>Any particular warnings or shortcuts?</p>
+<p>(I have an employee who’ll be doing most of the testing for me, if that influences the answer.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838/1</link>
+        <pubDate>Tue, 07 Mar 2017 09:31:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4838-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/testing-saas-on-many-devices-and-browsers/4838.rss">Testing SaaS on many devices and browsers</source>
+      </item>
+  </channel>
+</rss>

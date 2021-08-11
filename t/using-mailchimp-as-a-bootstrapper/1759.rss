@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using MailChimp as a bootstrapper</title>
+    <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759</link>
+    <description>For those of you using MailChimp, or thinking about it… Did you get bogged down by issues like this:
+
+Should I have a single list, or multiple lists?
+
+How should I setup signup forms and incentives?
+
+And, why can&#39;t someone signup more than once without getting that maddening _&#39;There are errors below: click here to be dragged through a ridiculous sequence of steps to update your profile&#39;_  error???
+
+MailChimp is so close to being an effective tool for us bootstrappers. The friendly UI and low cost of entry are irresistible. Wouldn&#39;t it be great if there were techniques to get around these issues?
+
+Shortly after I started with MailChimp, I hit these same problems. I&#39;ve been learning how to get around them, and decided to create a guide.
+
+If you&#39;d like to use MailChimp more effectively, check out [The Bootstrapper&#39;s Guide to MailChimp][1].
+
+Thanks,
+Ryan
+
+
+  [1]: http://pocketproduct.com/mailchimpguide</description>
+    
+    <lastBuildDate>Fri, 25 Jul 2014 00:12:20 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using MailChimp as a bootstrapper</title>
+        <dc:creator><![CDATA[gavin]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/tnorthcutt">@tnorthcutt</a> what I’ve found as a shortcut for the double optin and the faster response after filling out the form is using JotForm (or a similar tool) for the subscribe form.</p>
+<p>JotForm allows you to send an immediate email response and adds the person to your list.</p>
+<p>It’s not clean like Drip or you won’t have the reporting all together in Mailchimp but it does allow for the problems you are trying to solve.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/9</link>
+        <pubDate>Fri, 25 Jul 2014 00:12:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1759-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss">Using MailChimp as a bootstrapper</source>
+      </item>
+      <item>
+        <title>Using MailChimp as a bootstrapper</title>
+        <dc:creator><![CDATA[robwalling]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice idea; I signed up for the list.</p>
+<p>This is literally the reason I started <a href="https://www.getdrip.com" rel="nofollow noopener">Drip</a> - to get around the limitations we, and other startups/SaaS folks, were seeing with MailChimp.</p>
+<p>As of a year ago I had 4 MailChimp accounts across different apps and had them running using band-aids and chewing gum to try to work around the issues <a class="mention" href="/u/ryan">@ryan</a> mentioned. I found out our situation was not unique, so we wrote some code.</p>
+<p>Drip gets around all of the issues <a class="mention" href="/u/ryan">@ryan</a> mentioned. The one drawback vs MailChimp is price - MC is free up to 2k subscribers as long as you’re not using autoresponders. Drip is $49/month. But I’ve decided to launch a free plan for pre-launch bootstrappers soon…we have to write code to make that happen, but it’s in the queue.</p>
+<p>Thanks <a class="mention" href="/u/ryan">@ryan</a>, and nice work putting together what looks to be a solid resource.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/8</link>
+        <pubDate>Thu, 24 Jul 2014 01:55:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1759-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss">Using MailChimp as a bootstrapper</source>
+      </item>
+      <item>
+        <title>Using MailChimp as a bootstrapper</title>
+        <dc:creator><![CDATA[brandonhilkert]]></dc:creator>
+        <description><![CDATA[
+            <p>Looks like a cool book. I signed up!</p>
+<p>I was faced with these questions with my email course and newsletter. Between a handful of tools, I’ve managed to piece together something that works really well. I’m wondering if you end up doing the same <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/7</link>
+        <pubDate>Wed, 09 Jul 2014 15:27:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1759-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss">Using MailChimp as a bootstrapper</source>
+      </item>
+      <item>
+        <title>Using MailChimp as a bootstrapper</title>
+        <dc:creator><![CDATA[ryan]]></dc:creator>
+        <description><![CDATA[
+            <p>One thought I had was to send the incentive email (or first part of the course in your case) directly so it happens right away (maybe with sendgrid or mandrill). But I haven’t tried this or looked into it enough yet to know how reasonable it would be to put into the signup process.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/6</link>
+        <pubDate>Tue, 01 Jul 2014 16:53:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1759-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss">Using MailChimp as a bootstrapper</source>
+      </item>
+      <item>
+        <title>Using MailChimp as a bootstrapper</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Ryan, that all makes sense. I saw how you included the link in the confirmation thank you page, that’s a great technique. For my use-case I don’t see a good way to do that (3 part email course), since I want to email people a fairly lengthy email, as opposed to link them to a download. But, good to have in my pocket for other situations.</p>
+<p>I’m a pretty staunch double opt-in hater, but I also see the other point of view <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:">. I do 100% agree with turning off that extra welcome email - with that it’s kind of an initial barrage of emails, and if they’re then waiting on the autoresponder, it’s a barrage without even what they wanted!</p>
+<p>Cheers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/5</link>
+        <pubDate>Tue, 01 Jul 2014 16:40:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1759-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss">Using MailChimp as a bootstrapper</source>
+      </item>
+      <item>
+        <title>Using MailChimp as a bootstrapper</title>
+        <dc:creator><![CDATA[ryan]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Travis. I’ll look at the order of those fields and make the first name required.</p>
+<p>Re: the one hour delay. I haven’t seen a way around it. It is a pain especially when it comes to providing incentives. I didn’t want to have a message like “your free chapter will arrive within the hour”. This is pretty lame.</p>
+<p>So, I include the incentive in the confirmation thank you page (for first time signups), or right inline in the form for subsequent signups. You can see this in action if you just signup again. It’s not perfect, but I think it’s good enough.</p>
+<p>Re: double-optin. I have seen the ability to turn it off in the API, but I have not tried to do so. I guess for now I’m still a fan of the double optin. But I do turn off the extra final welcome email because it seems like too much.</p>
+<p>Thanks again for your comments</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/4</link>
+        <pubDate>Tue, 01 Jul 2014 16:26:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1759-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss">Using MailChimp as a bootstrapper</source>
+      </item>
+      <item>
+        <title>Using MailChimp as a bootstrapper</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>And now that I’ve got my clumsiness out of the way, a few questions about Mailchimp:</p>
+<ol>
+<li>
+<p>Is there any way to get around the up-to-one-hour delay when sending out an autoresponder? This is my biggest issue with Mailchimp, and probably what will drive me away.</p>
+</li>
+<li>
+<p>I see you have double opt-in active. I’m under the impression that you can turn this off if you’re subscribing people via the API, but when I tried that, it seemed to be very buggy (massively delayed subscribes). Do you have any insight into that area?</p>
+</li>
+</ol>
+<p>One more thing: kudos for including a link to a “phone version” of the sample chapter.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/3</link>
+        <pubDate>Tue, 01 Jul 2014 15:55:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1759-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss">Using MailChimp as a bootstrapper</source>
+      </item>
+      <item>
+        <title>Using MailChimp as a bootstrapper</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>Ryan, it looks awesome! One problem: I can’t sign up <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"></p>
+<p><img src="/uploads/bootstrapped/2419/2a6ab2837feaecfa.png" width="448" height="224">  </p>
+<p>Edit:</p>
+<p>DOH! I swapped the fields, my bad <img src="https://emoji.discourse-cdn.com/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"></p>
+<p>But, from a UX perspective, it’s very, very common to have a name field before the email field, but almost never the other way around, so I humbly suggest you consider swapping them. Once you skim over that and do as I did, it becomes very non-obvious what the problem is, since there are no field labels.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/2</link>
+        <pubDate>Tue, 01 Jul 2014 15:50:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1759-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss">Using MailChimp as a bootstrapper</source>
+      </item>
+      <item>
+        <title>Using MailChimp as a bootstrapper</title>
+        <dc:creator><![CDATA[ryan]]></dc:creator>
+        <description><![CDATA[
+            <p>For those of you using MailChimp, or thinking about it… Did you get bogged down by issues like this:</p>
+<p>Should I have a single list, or multiple lists?</p>
+<p>How should I setup signup forms and incentives?</p>
+<p>And, why can’t someone signup more than once without getting that maddening <em>‘There are errors below: click here to be dragged through a ridiculous sequence of steps to update your profile’</em>  error???</p>
+<p>MailChimp is so close to being an effective tool for us bootstrappers. The friendly UI and low cost of entry are irresistible. Wouldn’t it be great if there were techniques to get around these issues?</p>
+<p>Shortly after I started with MailChimp, I hit these same problems. I’ve been learning how to get around them, and decided to create a guide.</p>
+<p>If you’d like to use MailChimp more effectively, check out <a href="http://pocketproduct.com/mailchimpguide" rel="nofollow noopener">The Bootstrapper’s Guide to MailChimp</a>.</p>
+<p>Thanks,<br>
+Ryan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759/1</link>
+        <pubDate>Tue, 01 Jul 2014 13:51:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1759-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-mailchimp-as-a-bootstrapper/1759.rss">Using MailChimp as a bootstrapper</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Better tracking of where your sales come from</title>
+    <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299</link>
+    <description>I am using google analytics but when I look at sources of sales well over half are listed as direct.
+
+This does not make sense as most users are finding us via search engines or links.
+
+I think what could be happening is when you install our desktop app in windows when you are ready to buy users click the buy button in the app and then go direct to the order page.
+
+But I would have thought google would have cookied these users when they originally visited the visit and recognised the cookie when the user came back or does GA not work like this?
+
+Is there a setting in GA I can change or are there any third party tools that better track your sales sources?
+
+Would appreciate any suggestions.</description>
+    
+    <lastBuildDate>Tue, 12 Sep 2017 19:42:39 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>So it would only explain it if you weren’t secure, it is only then (I believe) that search traffic shows up as ‘direct’.</p>
+<p>I guess if the final step is from your app then direct will always show up top in the assisted conversions. But what %s do you get for the next few? Any indication that those are contributing serious amounts of traffic?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/12</link>
+        <pubDate>Tue, 12 Sep 2017 19:42:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes the site is secure. That might explain it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/11</link>
+        <pubDate>Tue, 12 Sep 2017 19:40:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>Are you running on https? I think search traffic shows up as direct if it comes to a http page.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/10</link>
+        <pubDate>Tue, 12 Sep 2017 19:34:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you Robin and Rhino, that’s exactly what I need. In the screenshot, you can see where in GA to find the reports.</p>
+<p>Unfortunately, even with this tool it still shows 75% of my sales as being direct <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=6" title=":frowning:" class="emoji" alt=":frowning:"></p>
+<p>Maybe it is just one of those things that are hard to track.</p>
+<p><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/3/368a6c674116bd3c9be2be04cdfde8e8af782467.png" alt="ga" width="238" height="427"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/9</link>
+        <pubDate>Tue, 12 Sep 2017 15:03:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s been ages since I looked at this so some details might have changed but you will get the general idea and what terms to search for.</p>
+<p>Google by default works on ‘last visit attribution’ where any conversion is attributed to the last referrer.</p>
+<p>E.g. Person visits from Blog A, then sees a re-targeting ad (B) and clicks, then some time later does a Google search © (or your direct link) and converts then the conversion is attributed to the google search.</p>
+<p>But most people want ‘first visit attribution’ - or to know that the customer first found you on Blog A.</p>
+<p><em>(The real pro’s use complicated schemes where it weights the conversion value between all the visits prior to conversion - so Blog A gets some of the credit, as does the re-targeting ad etc.)</em></p>
+<p>Read more on this at <a href="https://support.google.com/analytics/answer/1662518?hl=en&amp;ref_topic=3205717" rel="nofollow noopener">Google Analytics Help - Attribution modeling overview</a></p>
+<p>There are all sorts of things that break this though :-</p>
+<ul>
+<li>Different visits via different devices</li>
+<li>Visits from HTTPS sites (as no referer info passed)</li>
+<li>Conversions 30 days or more after a visit <em>(e.g. if a customer coverts 31 days after visiting from Blog A then even first visit attribution will ‘forget’ that Blog A was involved).</em>
+</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/8</link>
+        <pubDate>Tue, 12 Sep 2017 11:44:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[akash]]></dc:creator>
+        <description><![CDATA[
+            <p>Hmm. Good question. I’m not sure if there is a way to get improvely to override referrals from the desktop apps. Might be worth asking them directly about this scenario.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/7</link>
+        <pubDate>Tue, 12 Sep 2017 11:27:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>also check out the ‘assisted conversions’ in GA on the conversions tab. That will show which sources originally sent users I believe. There is something I saw once which would allow you to choose to attribute the first or last touch for a conversion but I can’t remember where it was and have exhausted my GA knowledge in the last two sentences <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/6</link>
+        <pubDate>Tue, 12 Sep 2017 09:20:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks. In this scenario weere the user clicked on the link in the desktop app would improvely track the sale back to the original search query?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/5</link>
+        <pubDate>Tue, 12 Sep 2017 09:05:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[akash]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>
+<p>Like <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> said, one thing you can do to track visits from the desktop app is to add UTM params to the link from the desktop app. Use the URL builder for this - <a href="https://ga-dev-tools.appspot.com/campaign-url-builder/" rel="nofollow noopener">https://ga-dev-tools.appspot.com/campaign-url-builder/</a> - once done, you should be able to tracks users from your desktop app. I do this for all links that I can control - e.g. links from Facebook/Adwords campaigns or Forum posts</p>
+</li>
+<li>
+<p>Exclude your payment gateway or any other sites that your users visit that you don’t want to track. For example, if your payment gateway is <a href="http://2checkout.com" rel="nofollow noopener">2checkout.com</a>, all the purchases will be shown as referred by <a href="http://2checkout.com" rel="nofollow noopener">2checkout.com</a>. This is not useful to you as you want to find out where those customers originally came to your website from. Here is how you exclude domains - <a href="https://support.google.com/analytics/answer/2795830?hl=en" rel="nofollow noopener">https://support.google.com/analytics/answer/2795830?hl=en</a></p>
+</li>
+<li>
+<p>I also use a paid tool in addition to GA, called Improvely - <a href="https://www.improvely.com/" rel="nofollow noopener">https://www.improvely.com/</a> - no affiliations, just a happy customer.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/4</link>
+        <pubDate>Tue, 12 Sep 2017 08:21:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Steve. Surprised Google don’t track from the original visit but I am sure there is some reason for it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/3</link>
+        <pubDate>Mon, 11 Sep 2017 20:57:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>In Google Analytics, the source is for the current user session, not for the user’s first session to your site. “Direct” would indeed be explained by people clicking a link directly in your app.</p>
+<p><strong>How to track clicks from your desktop app in GA:</strong></p>
+<p>You can add “utm” querystring parameters to the links that you embed in your software.</p>
+<p>eg. <a href="http://www.example.com/?utm_source=desktop_app&amp;utm_campaign=trial_over">http://www.example.com/?utm_source=desktop_app&amp;utm_campaign=trial_over</a></p>
+<p>Now anyone who comes to your site by clicking the link in your app will have source = desktop_app</p>
+<p>Here’s a good starting point to learn more:<br>
+<a href="https://support.google.com/analytics/answer/1033867?hl=en" class="onebox" target="_blank">https://support.google.com/analytics/answer/1033867?hl=en</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/2</link>
+        <pubDate>Mon, 11 Sep 2017 11:09:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+      <item>
+        <title>Better tracking of where your sales come from</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>I am using google analytics but when I look at sources of sales well over half are listed as direct.</p>
+<p>This does not make sense as most users are finding us via search engines or links.</p>
+<p>I think what could be happening is when you install our desktop app in windows when you are ready to buy users click the buy button in the app and then go direct to the order page.</p>
+<p>But I would have thought google would have cookied these users when they originally visited the visit and recognised the cookie when the user came back or does GA not work like this?</p>
+<p>Is there a setting in GA I can change or are there any third party tools that better track your sales sources?</p>
+<p>Would appreciate any suggestions.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299/1</link>
+        <pubDate>Mon, 11 Sep 2017 09:34:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5299-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/better-tracking-of-where-your-sales-come-from/5299.rss">Better tracking of where your sales come from</source>
+      </item>
+  </channel>
+</rss>

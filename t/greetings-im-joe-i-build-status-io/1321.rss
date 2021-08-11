@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Greetings, I&#39;m Joe. I build Status.io</title>
+    <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321</link>
+    <description>Hey fellow bootstrappers!
+
+I&#39;m [Joe][1] and I&#39;m the sole human working on [Status.io][2].
+
+I am pursuing my dream to help ease the end-user frustration during system issues and outages. Status.io builds on my experience of running highly scalable and available systems, along with my addiction to writing code and breaking stuff. 
+
+I created my first status page in 1994 for a dial-up BBS that I sysop&#39;d. Shortly after that I took what I thought was the safe route in life. Fear of failing and caring what other people thought set me back ~20 years. Fuck it, I&#39;m in the game now and will go homeless for this project if need be. Many of your stories have really helped me build the confidence to do it.
+
+I launched 6 months ago and still feel the product is in early beta.
+
+I haven&#39;t had time to focus on any marketing or sales, but a bunch of customers found us and love us. Our recurring revenue has been doubling monthly.
+
+Really looking forward to being a part of the community.
+
+-joe
+
+
+  [1]: http://twitter.com/joet3ch
+  [2]: https://status.io</description>
+    
+    <lastBuildDate>Mon, 24 Mar 2014 09:31:22 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[msmithstubbs]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve tried a couple of iOS SSH clients and I found Prompt the best.</p>
+<p>Any command line work from an iPhone is tricky but it does the job for simple things. If I need to restart a stuck process it’s fine. It also works on the iPad and find that surprisingly usable (and works great with a bluetooth keyboard).</p>
+<p>If I do need to SSH into my servers on a regular basis then something is fundamentally broken. Since I’ve moved to AWS this hasn’t been a problem. A server that has stopped responding is just replaced by the autoscaler.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/14</link>
+        <pubDate>Mon, 24 Mar 2014 09:31:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[mattm]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="12" data-topic="1321">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/msmithstubbs/40/1293_1.png" class="avatar"> msmithstubbs:</div>
+<blockquote>
+<p>I keep my phone with me nearly all the time and have an SSH client installed so I can login to the servers if necessary.</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/msmithstubbs">@msmithstubbs</a> Interesting. How do you like Prompt? Seems like using SSH from the phone would be pretty painful, but I suppose in a jam it could be a life saver. Of course, Panic makes nice stuff generally…</p>
+<p><a class="mention" href="/u/joet3ch">@joet3ch</a> Ah, okay. Good to know. I’ll probably have to set that up at some point. Hopefully my (not-yet-released) product gets enough traction for people to care if/when it goes down!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/13</link>
+        <pubDate>Thu, 20 Mar 2014 15:30:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[msmithstubbs]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve got the same approach as Joe. I keep my phone with me nearly all the time and have an <a href="https://panic.com/prompt/" rel="nofollow noopener">SSH client installed</a> so I can login to the servers if necessary. I used to host on a dedicated machine and it needed manually attention about once or twice a year. I’ve since moved to AWS. If a virtual machine dies now it will just be replaced automatically (that’s the theory, anyway!)</p>
+<p>The amount of effort that is reasonable to expend does depend on the product. Service availability for my customers isn’t as critical as it would be for  <a href="http://Status.io" rel="nofollow noopener">Status.io</a> customers, for example.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/12</link>
+        <pubDate>Thu, 20 Mar 2014 10:02:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[joet3ch]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://aws.amazon.com" rel="nofollow noopener">Amazon Web Services</a>, <a href="https://www.digitalocean.com/?refcode=2fe4b7397112" rel="nofollow noopener">Digital Ocean</a>, <a href="http://rackspace.com" rel="nofollow noopener">Rackspace</a>, <a href="http://ramnode.com" rel="nofollow noopener">RamNode</a>. I also have a few boxes in private DC’s just in case.</p>
+<p>If all of that gets wiped out, and the internet still exists, I have scripts that can provision the entire service on any Linux hosts. In testing, I’ve successfully spun up fresh independent environments in less than 30 minutes.</p>
+<p>DNS is our most vulnerable point of failure. Today we use <a href="http://aws.amazon.com" rel="nofollow noopener">Route53</a> for both primary and secondary but will be adding a secondary provider soon.</p>
+<p>While I’ve invested a lot to ensure we don’t go down – nobody is 100% safe <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/11</link>
+        <pubDate>Wed, 19 Mar 2014 18:12:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[fideloper]]></dc:creator>
+        <description><![CDATA[
+            <p>What infrastructure are you on, so <em>you</em> don’t go down? <img src="https://emoji.discourse-cdn.com/twitter/stuck_out_tongue.png?v=5" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/10</link>
+        <pubDate>Wed, 19 Mar 2014 17:41:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[joet3ch]]></dc:creator>
+        <description><![CDATA[
+            <p>I have an iPhone 5, which has an LTE hotspot built-in. Works like a champ.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/9</link>
+        <pubDate>Wed, 19 Mar 2014 16:46:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[mattm]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="1321">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/joet3ch/40/1309_1.png" class="avatar"> joet3ch:</div>
+<blockquote>
+<p>I keep a phone with me at all times and never go anywhere without a laptop.</p>
+</blockquote>
+</aside>
+<p>Do you have 3G on your laptop? 4G WiFi hotspot? I’m not at that stage yet, but I’m curious how far one goes in being able to fix things from (just about) anywhere.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/8</link>
+        <pubDate>Wed, 19 Mar 2014 13:59:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[misterparker]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Joe,</p>
+<p>I know <a href="http://status.io" rel="nofollow noopener">status.io</a> - good to put a face to the service. I’m always curious of revenues, but also realize it’s usually a sensitive subject for many. I wonder after 6 months of what has seemed (from my perspective) a very successful first 6 months from the users I’ve seen use your service, what kind of revenues are achieved. I am really anxious to get my own service live and in the game too, so I’m always looking for more encouraging stories with as many details as I can get <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Keep up the good work</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/7</link>
+        <pubDate>Wed, 19 Mar 2014 13:39:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[joet3ch]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Matt, Yup I keep a phone with me at all times and never go anywhere without a laptop. I use PagerDuty for emergency alerts and have it set up to continuously call me until I confirm an alert. -joe</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/6</link>
+        <pubDate>Tue, 18 Mar 2014 16:13:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[msmithstubbs]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Joe,</p>
+<p>I couldn’t agree more. I initially spent time worrying about my competitors but really the best strategy  is to focus on the customer. I just try to build the best product I can to solve the customer’s problem.</p>
+<p><a href="http://Status.io" rel="nofollow noopener">Status.io</a> looks great. I’m wondering, as a fellow sole founder, how do you go about keeping your service up 24/7? Presumably availability is is key for your product. Do you just keep a phone near you at all times in case of a downtime alert?</p>
+<p>Matt</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/5</link>
+        <pubDate>Tue, 18 Mar 2014 15:23:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[joet3ch]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Tom, I haven’t tried <a href="http://uptime.ly" rel="nofollow noopener">uptime.ly</a> (or any of the other half dozen competitors) but have seen their websites. I decided early on to not spend any of my time analyzing the competition and instead just focus on following my own vision.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/4</link>
+        <pubDate>Sun, 16 Mar 2014 00:46:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[tompowell]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome! Looks like a cool product.</p>
+<p>Out of curiosity, it seems that you’re providing a similar service to <a href="http://uptime.ly" rel="nofollow noopener">uptime.ly</a>. Are there any particular ways you’re trying to differentiate yourself from them? Or are you going after different customer segments?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/3</link>
+        <pubDate>Sat, 15 Mar 2014 20:31:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[David_Sheeks]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello Joe, nice to meet you!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/2</link>
+        <pubDate>Fri, 14 Mar 2014 02:37:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+      <item>
+        <title>Greetings, I&#39;m Joe. I build Status.io</title>
+        <dc:creator><![CDATA[joet3ch]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey fellow bootstrappers!</p>
+<p>I’m <a href="http://twitter.com/joet3ch" rel="nofollow noopener">Joe</a> and I’m the sole human working on <a href="https://status.io" rel="nofollow noopener">Status.io</a>.</p>
+<p>I am pursuing my dream to help ease the end-user frustration during system issues and outages. <a href="http://Status.io" rel="nofollow noopener">Status.io</a> builds on my experience of running highly scalable and available systems, along with my addiction to writing code and breaking stuff.</p>
+<p>I created my first status page in 1994 for a dial-up BBS that I sysop’d. Shortly after that I took what I thought was the safe route in life. Fear of failing and caring what other people thought set me back ~20 years. Fuck it, I’m in the game now and will go homeless for this project if need be. Many of your stories have really helped me build the confidence to do it.</p>
+<p>I launched 6 months ago and still feel the product is in early beta.</p>
+<p>I haven’t had time to focus on any marketing or sales, but a bunch of customers found us and love us. Our recurring revenue has been doubling monthly.</p>
+<p>Really looking forward to being a part of the community.</p>
+<p>-joe</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321/1</link>
+        <pubDate>Thu, 13 Mar 2014 21:55:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1321-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/greetings-im-joe-i-build-status-io/1321.rss">Greetings, I&#39;m Joe. I build Status.io</source>
+      </item>
+  </channel>
+</rss>

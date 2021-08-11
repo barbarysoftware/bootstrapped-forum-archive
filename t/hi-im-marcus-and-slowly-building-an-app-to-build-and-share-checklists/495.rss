@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+    <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495</link>
+    <description>
+I work full-time at Automattic and building my app in the evenings/weekends. I have had the idea for a few years of an app to build and share checklists to help make processes consistent. 
+
+Time and again I run across the issue of repeatable processes getting bungled because people (me) are relying on their vague memories of what they did last time, which may have been a month ago.  I hope to have it live in the next couple weeks, just a splash page now at &lt;a href=&quot;http://chklst.co/&quot;&gt;chklst.co&lt;/a&gt;
+
+I came across the bootstrapped podcast and binged through all the past episodes in a week or two and it is just getting better every podcast, keep it up @ian and @andrey. I&#39;ll be a little sad when I have to wait a week to hear the next one.
+
+Looking forward to reading and hearing more from everyone here.
+
+    </description>
+    
+    <lastBuildDate>Sun, 22 Sep 2013 15:52:51 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="495">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mkaz/40/1283_1.png" class="avatar"> mkaz:</div>
+<blockquote>
+<p><a class="mention" href="/u/rfctr">@rfctr</a> - can you expand a little on tools not available?</p>
+</blockquote>
+</aside>
+<p>I was leading a deployment team, something that nowadays often referred to as DevOps; though many activities were scripted, much more were not, which consistently lead to human mistakes. We have tried to implement the checklists, but generally failed. The checklists (e.g. “how to configure specific domain for specific application”) change with time, sometimes very fast, and have variations per environment. We needed one and only one copy for each activity that can be shared and concurrently updated by many people. Given that some people worked in Windows, some in Unix and some even in ancient mainframe environment, we couldn’t use neither Word nor Google Docs (though Google Docs would be pretty close to what we want, but security wouldn’t let us).</p>
+<p>We end up documenting steps <strong>where possible</strong> with scripts, i.e. went DevOps way. At least half of the applications in our environment though were not scriptable.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/11</link>
+        <pubDate>Sun, 22 Sep 2013 15:52:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice. Guess it depends how far away you are from that core functionality, and how much extra effort it would take to build some static lists. The sooner you get the lists up though, the sooner you’ll start getting traffic, of course <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/10</link>
+        <pubDate>Mon, 09 Sep 2013 12:35:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[mkaz]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, this is an idea that I’ve been thinking of trying as a strategy. I’m working on the base functionality and setting up of lists and then the next step is how to share, public/private lists and cloning of lists. I’ve been waiting for this functionality before attempting creating lists for others to clone.</p>
+<p>I hadn’t thought of trying it before and using it to drive signups / interest.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/9</link>
+        <pubDate>Mon, 09 Sep 2013 11:39:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[Syl]]></dc:creator>
+        <description><![CDATA[
+            <p>Max, my boss at Pusher is a big fan of checklists and highly praised this book. He wrote a pretty good summary and put it on his blog, <a href="http://blog.maxthelion.me/post/step-1-fly-the-airplane" rel="nofollow noopener">you can read it here</a>. This might something useful for <a class="mention" href="/u/mkaz">@mkaz</a> too.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/8</link>
+        <pubDate>Sun, 08 Sep 2013 11:34:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome <a class="mention" href="/u/mkaz">@mkaz</a>! Have you thought about “building in” a bunch of checklists? Seems like that could be an awesome <a href="http://www.kalzumeus.com/2007/10/21/developing-linkbait-for-a-non-technical-audience/" rel="nofollow noopener">scaleable SEO strategy</a> a la <a class="mention" href="/u/patio11">@patio11</a>… things like checklist for deploying, checklist for completing a sprint, checklist for camping… Nice thing is, you can get started now, perhaps try to use that to get email signups and see if there’s some interest.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/7</link>
+        <pubDate>Fri, 06 Sep 2013 13:28:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[mkaz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="495">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I always try to make a checklist for my repetitive tasks, though the tools are not always available</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/rfctr">@rfctr</a> - can you expand a little on tools not available? This is the crux of the issue I’m trying to solve and curious what you might have used or found lacking in tools.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/6</link>
+        <pubDate>Thu, 05 Sep 2013 12:52:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I remember I was first introduced to the power of checklists by this educational article in New Yorker:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.newyorker.com/verso/static/the-new-yorker/assets/favicon.0c115fcf6bb2ed8491d6f719d237ae1b1e68b08d.ico" class="site-icon" width="32" height="32">
+      <a href="https://www.newyorker.com/magazine/2007/12/10/the-checklist" target="_blank">The New Yorker</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:646/363;"><img src="https://media.newyorker.com/photos/59096d451c7a8e33fb38e4ca/16:9/w_1280,c_limit/071210_r16884_p646.jpg" class="thumbnail" width="646" height="363"></div>
+
+<h3><a href="https://www.newyorker.com/magazine/2007/12/10/the-checklist" target="_blank">A Life-Saving Checklist</a></h3>
+
+<p>If something so simple can transform intensive care, what else can it do?</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>From that time on, I always try to make a checklist for my repetitive tasks, though the tools are not always available.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/5</link>
+        <pubDate>Thu, 05 Sep 2013 02:52:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting idea, I’ll be interested to see how that goes. <a class="mention" href="/u/jaaprood">@JaapRood</a> books looks cool, definitely going to check that out.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/4</link>
+        <pubDate>Thu, 05 Sep 2013 02:47:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[mkaz]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/jaaprood">@JaapRood</a> for the link, I haven’t read the book but saw a bunch of articles when it came out, I’ve ordered it and will read soon. This was one of the reasons I like my idea, though relatively simple, it does have significant impact in improving process and can be really useful.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/3</link>
+        <pubDate>Wed, 04 Sep 2013 12:22:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[JaapRood]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome to the forums Marcus! Out of curiousity, have you read <a href="http://www.amazon.com/The-Checklist-Manifesto-Things-Right/dp/0312430000" rel="nofollow noopener">The Checklist Manifesto</a>? It makes a great case for why checklists, when written well, can be an awesome tool helping battle complexity.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/2</link>
+        <pubDate>Wed, 04 Sep 2013 05:44:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</title>
+        <dc:creator><![CDATA[mkaz]]></dc:creator>
+        <description><![CDATA[
+            <p>I work full-time at Automattic and building my app in the evenings/weekends. I have had the idea for a few years of an app to build and share checklists to help make processes consistent.</p>
+<p>Time and again I run across the issue of repeatable processes getting bungled because people (me) are relying on their vague memories of what they did last time, which may have been a month ago.  I hope to have it live in the next couple weeks, just a splash page now at <a href="http://chklst.co/" rel="nofollow noopener">chklst.co</a></p>
+<p>I came across the bootstrapped podcast and binged through all the past episodes in a week or two and it is just getting better every podcast, keep it up <a class="mention" href="/u/ian">@ian</a> and <a class="mention" href="/u/andrey">@andrey</a>. I’ll be a little sad when I have to wait a week to hear the next one.</p>
+<p>Looking forward to reading and hearing more from everyone here.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495/1</link>
+        <pubDate>Wed, 04 Sep 2013 04:30:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-495-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-marcus-and-slowly-building-an-app-to-build-and-share-checklists/495.rss">Hi, I&#39;m Marcus and (slowly) building an app to build and share checklists</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</title>
+    <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113</link>
+    <description>In this episode, Ian and Andrey talk about Florida, children, stupid teenagers, growing up, stories that go nowhere, growth hackers, hiring a content engineer, unit testing, John Carmack, spending $13,000 on marketing automation software, motorcycles, and baseball tickets.
+
+[Download the episode and view show notes.][1]
+
+
+EDIT: I found a photo of Rebecca, the motorcycle I mentioned in this episode. The rider is Ania. She was a developer at Antair.
+
+&lt;img src=&quot;/uploads/bootstrapped/99/76214d5dcf4a6024.jpg&quot; width=&quot;320&quot; height=&quot;214&quot;&gt; 
+
+
+  [1]: http://bootstrapped.fm/bootstrapped-episode-33-this-is-what-happens-to-growth-hackers/</description>
+    
+    <lastBuildDate>Sun, 09 Feb 2014 16:05:54 +0000</lastBuildDate>
+    <category>Bootstrapped Podcast</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Ian and Andrey,</p>
+<p>I don’t agree with your opinions you offered on unit tests, although it does sound like one of you inherited a unit test catastrophe.</p>
+<p>Even a small, 4-screen app should have a few judicious unit tests. Not to test what happens when a button is clicked - that is not a unit test. And not to interact with a database or other systems.</p>
+<p>The unit tests you have are, for example, to test that the code you have written that can detect which of three possible date formats is used. Or to test that any of several different dates get interpreted correctly. That is, testing a unit of code in the form of a method or function, which is what the “unit” refers to in unit testing.</p>
+<p>Then, when a bug report occurs with a date not being handled correctly, you can add a unit test for the troublesome date, fix the problem, and be confident that your fix did not break the handling of any other dates.</p>
+<p>This approach is beneficial in just about every product, is free of “100%-coverage” mantra, and helps rather than hinders rapid development.</p>
+<p>My mantra is that the whole set of unit tests in your project must run in no more than a few seconds, and must not rely on you introducing major architectural changes to your project.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/7</link>
+        <pubDate>Sun, 09 Feb 2014 16:05:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1113-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113.rss">Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</title>
+        <dc:creator><![CDATA[zsoldosp]]></dc:creator>
+        <description><![CDATA[
+            <p>Being a developer, so far I have been a silent listener. But since Ian and Andrey got technical on the podcast at length, I felt it’s OK to leave a comment that’s also techie in nature <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>To begin with: I absolutely agree with both of them that <a href="https://www.google.com/search?q=cv+driven+development" rel="nofollow noopener">Resume Driven Development</a> is dangerous and that the <em>right tool for the right job</em> expression is there for a reason.</p>
+<p>Yet I have to add a shade of gray to that “unit testing is stealing from the client” sentiment <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I myself am a TDD person, and I have seen people produce equivalent code without automated tests - both approaches have been demonstrated as able to deliver working software, so if there is no requirement/need otherwise (please, <em>do</em> test medical software and car controls!) and it’s a <em>conscious</em> choice, I think you should code whichever way you feel comfortable and productive. After many years of practicing the test first approach, I think I can match the productivity of most non-test first people I’ve worked with - at least I certainly haven’t been fired yet for being less productive <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> TDD, by definition doesn’t have to take longer than the code only approach (if I’m not flamed off after this comment, I’m happy to discuss it in more detail <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:">).</p>
+<p>Love the show, and Andrey is <em>totally great</em> for giving away that motorcycle!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/6</link>
+        <pubDate>Fri, 31 Jan 2014 19:02:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1113-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113.rss">Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Haha, that sounds like it would be a bit of a funny scene. You never know, maybe they were listening in the cars!</p>
+<p>I have to start running so I have more podcast listening time.</p>
+<p>Ah, like the knives. We have to do some kind of physical product.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/5</link>
+        <pubDate>Fri, 31 Jan 2014 13:58:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1113-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113.rss">Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>I had to stop twice while out running this morning because I was laughing so much at this episode. With <a class="mention" href="/u/andrey">@andrey</a> driving around feeding stray cats and <a class="mention" href="/u/ian">@ian</a> potentially hiring a growth hacker in order to make an example of them! <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>The people in cars queuing in traffic along the road I was running must have wondered why this crazy woman was running along (in hi-vis gear because it was still dark) cackling to herself.</p>
+<p>Thinking about the previous episode and physical products you might like <a href="https://cuttingedgeknives.co.uk">https://cuttingedgeknives.co.uk</a> - this is a knife company started by a web design agency, some details of the story here: <a href="http://www.welcomebrand.co.uk/work/cutting-edge-knives/">http://www.welcomebrand.co.uk/work/cutting-edge-knives/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/4</link>
+        <pubDate>Fri, 31 Jan 2014 09:14:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1113-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113.rss">Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, that’s worked pretty well for me also. It helps my wife is pretty technical (though not a programmer). Definitely something you single guys should keep an eye out for <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/3</link>
+        <pubDate>Fri, 31 Jan 2014 02:29:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1113-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113.rss">Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</title>
+        <dc:creator><![CDATA[scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Great episode. Agree with you that too many developers build for cool points instead of what’s best for the business.</p>
+<p>I’ve found this is a good reason to have a non-technical co-founder (in my case, my wife). When I start spinning wheels on stuff-that-doesn’t-matter to potential customers but satiates my geek curiosity, she calls me on it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/2</link>
+        <pubDate>Fri, 31 Jan 2014 00:11:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1113-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113.rss">Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</source>
+      </item>
+      <item>
+        <title>Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>In this episode, Ian and Andrey talk about Florida, children, stupid teenagers, growing up, stories that go nowhere, growth hackers, hiring a content engineer, unit testing, John Carmack, spending $13,000 on marketing automation software, motorcycles, and baseball tickets.</p>
+<p><a href="http://bootstrapped.fm/bootstrapped-episode-33-this-is-what-happens-to-growth-hackers/">Download the episode and view show notes.</a></p>
+<p>EDIT: I found a photo of Rebecca, the motorcycle I mentioned in this episode. The rider is Ania. She was a developer at Antair.</p>
+<p><img src="/uploads/bootstrapped/99/76214d5dcf4a6024.jpg" width="320" height="214"> </p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113/1</link>
+        <pubDate>Thu, 30 Jan 2014 13:27:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1113-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrapped-fm-episode-33-this-is-what-happens-to-growth-hackers/1113.rss">Bootstrapped.fm, episode 33, &quot;This is what happens to growth hackers.&quot;</source>
+      </item>
+  </channel>
+</rss>

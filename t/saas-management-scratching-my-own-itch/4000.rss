@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SAAS Management - scratching my own itch</title>
+    <link>https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000</link>
+    <description>Apologies reposted my post from foundercafe
+
+I run a consulting company and I have a problem Im fixing. My team and I are using Google Apps, DropBox for Business, Xero, Salesforce, WorkflowMax etc etc.
+
+Recently I had a couple of people leave and few starting. 
+
+I forgot to remove the people that left us and ended up paying for their licenses when I didnt need to. I also had new starters and everytime that happens I obviously have to go and create them in each system.
+
+I wrote, (because my client needs it too so i billed them - they shall remain anonymous :slight_smile: ), a dashboard that shows all your current subscriptions, each employee that has it. When they leave (it monitors when an employee leaves through email sent/received from that employee) it will automatically notify me and keep bugging me to remove them from that SAAS system. 
+
+Some SAAS vendors would allow me to automatically add users through their API. I may build that in when I get a chance to the dashboard
+
+I realise Okta/Onelogin do single sign on, but they dont do this...
+
+3 questions:
+Do you experience this pain?
+Would you pay $1/month/employee for us to manage that for you?
+Do you want to trial it?</description>
+    
+    <lastBuildDate>Tue, 26 Apr 2016 08:18:54 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SAAS Management - scratching my own itch</title>
+        <dc:creator><![CDATA[courtz]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah. look if we didn’t have so many consultants it wouldn’t be that useful. But I would say any company with 5 or more employees would struggle with this.</p>
+<p>The pains really are:<br>
+Security - do you want old employees to have access to that system?<br>
+Cost - do you want to be paying for an old employee?</p>
+<p>Well we do. Just wondering if there are enough…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000/3</link>
+        <pubDate>Tue, 26 Apr 2016 08:18:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4000-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000.rss">SAAS Management - scratching my own itch</source>
+      </item>
+      <item>
+        <title>SAAS Management - scratching my own itch</title>
+        <dc:creator><![CDATA[pjc]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t experience it as my company is too small, but it sounds useful. Maybe you can also use the APIs to make switching services easier, like <a href="http://segment.com" rel="nofollow noopener">segment.com</a> for users instead of data.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000/2</link>
+        <pubDate>Tue, 26 Apr 2016 07:54:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4000-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000.rss">SAAS Management - scratching my own itch</source>
+      </item>
+      <item>
+        <title>SAAS Management - scratching my own itch</title>
+        <dc:creator><![CDATA[courtz]]></dc:creator>
+        <description><![CDATA[
+            <p>Apologies reposted my post from foundercafe</p>
+<p>I run a consulting company and I have a problem Im fixing. My team and I are using Google Apps, DropBox for Business, Xero, Salesforce, WorkflowMax etc etc.</p>
+<p>Recently I had a couple of people leave and few starting.</p>
+<p>I forgot to remove the people that left us and ended up paying for their licenses when I didnt need to. I also had new starters and everytime that happens I obviously have to go and create them in each system.</p>
+<p>I wrote, (because my client needs it too so i billed them - they shall remain anonymous <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> ), a dashboard that shows all your current subscriptions, each employee that has it. When they leave (it monitors when an employee leaves through email sent/received from that employee) it will automatically notify me and keep bugging me to remove them from that SAAS system.</p>
+<p>Some SAAS vendors would allow me to automatically add users through their API. I may build that in when I get a chance to the dashboard</p>
+<p>I realise Okta/Onelogin do single sign on, but they dont do this…</p>
+<p>3 questions:<br>
+Do you experience this pain?<br>
+Would you pay $1/month/employee for us to manage that for you?<br>
+Do you want to trial it?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000/1</link>
+        <pubDate>Tue, 26 Apr 2016 06:55:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4000-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-management-scratching-my-own-itch/4000.rss">SAAS Management - scratching my own itch</source>
+      </item>
+  </channel>
+</rss>

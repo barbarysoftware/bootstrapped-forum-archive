@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>A/B testing and tracking landing page performance</title>
+    <link>https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785</link>
+    <description>I&#39;ve recently launched a landing page for a product in development, [listdrop.com](http://listdrop.com).
+
+There are actually 3 different versions with copy that addresses a few different pain points I&#39;ve seen out there.
+
+I looked at unbounce, but it seemed expensive for what I needed. So I just created a static html landing page (well, with a little help from bootstrap). 
+
+Once I had one version I liked, I cloned it two times and tweaked the copy. So I have landing1.html, landing2.html, and landing3.html.
+
+I wanted to A/B test (is it ok to have 3 variants in an A/B test?). So, I wrote a simple node.js app that uses a counter and serves up the next variant in a round robin fashion on each hit on the site. Also keeping total count of how many times each was served.
+
+I wanted to track which landing pages converted best into an email signup. I created a hidden &#39;LandingPage&#39; field in mailchimp, and each landing page has a different value in the signup form. So now I can see in the mailchimp subscribers view what landing page caused the signup.
+
+From the total counts, I can see how many people saw a particular page, then with the field in mailchimp, I can calculate the conversion rate.
+
+Does this seem like a good way to do this? How are you guys doing landing pages and testing them?
+</description>
+    
+    <lastBuildDate>Mon, 02 Dec 2013 19:54:45 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>A/B testing and tracking landing page performance</title>
+        <dc:creator><![CDATA[scottw]]></dc:creator>
+        <description><![CDATA[
+            <p>Big fan of VWO here as well and we have used it quite a bit when testing small content changes.</p>
+<p>Similar to Ryan, when it comes to testing major changes we went with custom code since it made it much easier to do major swaps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/5</link>
+        <pubDate>Mon, 02 Dec 2013 19:54:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-785-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785.rss">A/B testing and tracking landing page performance</source>
+      </item>
+      <item>
+        <title>A/B testing and tracking landing page performance</title>
+        <dc:creator><![CDATA[ryan]]></dc:creator>
+        <description><![CDATA[
+            <p>Google experiments looks good. And would eliminate the need for server side code.</p>
+<p>I just tried it out, and one thing that I don’t like is the url you end up with. I’d really like to have a clean looking url when someone goes to the page.</p>
+<p>Do you get this extra query string in your url? Maybe I setup something wrong?</p>
+<p><img src="/uploads/bootstrapped/16/789bb4ee6bccdd1e.png" width="690" height="66"> </p>
+<p>So, for now, I’ve enhanced my previous solution by using a custom variable in my google analytics js (each page variant has a different value for the variable). I also setup a goal page. So, I can now see the flow from each landing page to the goal in GA. (In the Goal Flow reporting section).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/4</link>
+        <pubDate>Fri, 29 Nov 2013 14:23:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-785-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785.rss">A/B testing and tracking landing page performance</source>
+      </item>
+      <item>
+        <title>A/B testing and tracking landing page performance</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>It is fine to have more than 2 variants in an A/B test. Your implementations sounds ok, but a little labout intensive. I use <a href="http://visualwebsiteoptimizer.com">http://visualwebsiteoptimizer.com</a> , which I think is very good (but not free). I used to use the free Google website optimizer, before they killed it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/3</link>
+        <pubDate>Fri, 29 Nov 2013 09:08:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-785-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785.rss">A/B testing and tracking landing page performance</source>
+      </item>
+      <item>
+        <title>A/B testing and tracking landing page performance</title>
+        <dc:creator><![CDATA[stevecookhk]]></dc:creator>
+        <description><![CDATA[
+            <p>Personally I’m using ‘experiments’ in Google Analytics. It’s handy in the sense that<br>
+a) you should be using GA anyway, and its build on top of GA in a simple way<br>
+b) it automatically tracks and compares the different options and calculates the probability that one version is better than another<br>
+c) you can set up a number of different versions and compare.<br>
+d) you can easily filter your audience in different ways and compare (e.g. new visits vs. returning visits)<br>
+e) its free</p>
+<p>You just need to set up the experiment in the GA dashboard, and then copy/paste some JS code into each page.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/2</link>
+        <pubDate>Fri, 29 Nov 2013 07:48:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-785-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785.rss">A/B testing and tracking landing page performance</source>
+      </item>
+      <item>
+        <title>A/B testing and tracking landing page performance</title>
+        <dc:creator><![CDATA[ryan]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve recently launched a landing page for a product in development, <a href="http://listdrop.com" rel="nofollow noopener">listdrop.com</a>.</p>
+<p>There are actually 3 different versions with copy that addresses a few different pain points I’ve seen out there.</p>
+<p>I looked at unbounce, but it seemed expensive for what I needed. So I just created a static html landing page (well, with a little help from bootstrap).</p>
+<p>Once I had one version I liked, I cloned it two times and tweaked the copy. So I have landing1.html, landing2.html, and landing3.html.</p>
+<p>I wanted to A/B test (is it ok to have 3 variants in an A/B test?). So, I wrote a simple node.js app that uses a counter and serves up the next variant in a round robin fashion on each hit on the site. Also keeping total count of how many times each was served.</p>
+<p>I wanted to track which landing pages converted best into an email signup. I created a hidden ‘LandingPage’ field in mailchimp, and each landing page has a different value in the signup form. So now I can see in the mailchimp subscribers view what landing page caused the signup.</p>
+<p>From the total counts, I can see how many people saw a particular page, then with the field in mailchimp, I can calculate the conversion rate.</p>
+<p>Does this seem like a good way to do this? How are you guys doing landing pages and testing them?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785/1</link>
+        <pubDate>Fri, 22 Nov 2013 14:15:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-785-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-b-testing-and-tracking-landing-page-performance/785.rss">A/B testing and tracking landing page performance</source>
+      </item>
+  </channel>
+</rss>

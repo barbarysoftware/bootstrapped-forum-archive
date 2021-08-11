@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Looking at Recurly and other subscription billing options</title>
+    <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376</link>
+    <description>We&#39;re considering using [Recurly][1] for subscription billing, management and all the dunning management features they offer in a SaaS app we&#39;re building. I know I could integrate Stripe and build out all the subscription processing without a problem. I&#39;m looking at Recurly as one less thing that we have to program and manage when it comes to failed payments, retries, expired cards, etc. Has anyone tried them or is currently using them? 
+
+What have been your experiences with subscription billing in general? Any pitfalls or lessons learned?
+
+  [1]: http://recurly.com/</description>
+    
+    <lastBuildDate>Wed, 16 Nov 2016 10:46:29 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[dszp]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t know much about how it works behind the scenes but as a customer I recall that when I signed up for <a href="http://AngiesList.com" rel="nofollow noopener">AngiesList.com</a> (a somewhat large service ranking company based local to me) the terms (yes I read some terms <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> specifically said I agreed to have my payment details automatically updated with valid information for annual renewals by I think a third party that specializes in this. Must be a similar thing to the discussion here.</p>
+<p>The answer from Chargebee that mentions that Visa/MC have this service is interesting and not surprising. But I assume it’s fine as long as people agree to it in their terms, and you can figure out how to do it or find a service that does.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/40">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/40</link>
+        <pubDate>Tue, 29 Mar 2016 15:53:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-40</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[cbkrish]]></dc:creator>
+        <description><![CDATA[
+            <p>I hear you. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> We have now officially started the implementation, to release multi-currency feature. So I will hopefully post soon with an affirmative answer by end of this quarter, after we release it. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/39">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/39</link>
+        <pubDate>Thu, 28 Jan 2016 07:39:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-39</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>Multi currency - everyone has it on their roadmap for the last x years but no one seems any closer to implementing it!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/38">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/38</link>
+        <pubDate>Mon, 13 Jul 2015 07:52:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-38</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[cbkrish]]></dc:creator>
+        <description><![CDATA[
+            <p>Krish, Cofounder of Chargebee here. It is a two year old thread. Lots of things have changed and wanted to find the needs of the group directly from potential customers. <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>First question about account updater feature - updating expired cards is an opt-in feature on most payment gateways. But it requires merchant level approval with Visa / Master so they will provide you that card update.</p>
+<p>If you are using Stripe / Braintree with Chargebee it is possible to opt-in to the program with them. (I have a feature request that we need to implement to pull the last 4 digits of updated card, but it already works).</p>
+<p>With PCI 3.0 compliance requirements, we see an increased surge in requests for drop-in iframe embed hosted pages or fully configurable hosted payment pages (we support both).</p>
+<p>We hear multi-currency is a big pain and we will be taking it up to make it easier. Right now we compliment deficiency in those features with manual reporting etc., but it is not perfect. So working on it.</p>
+<p>Would love to hear your feedback on where you have the most pain with managing subscriptions and what you would like to see implemented in your ideal system. Thanks.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/37">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/37</link>
+        <pubDate>Mon, 13 Jul 2015 05:32:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-37</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[ValPPG]]></dc:creator>
+        <description><![CDATA[
+            <p>You might want to try out <a href="http://www.payproglobal.com" rel="nofollow noopener">PayPro Global</a>, it’s a fully featured eCommerce platform for software, SaaS and Cloud products.</p>
+<p>The subscription handling mechanism is very flexible and automated, with which you can:</p>
+<ul>
+<li>set up any billing frequency (i.e. daily, weekly, bi-weekly, monthly, trimestrial, semestrial etc)</li>
+<li>delay the first charge (for trials)</li>
+<li>create bundles (combine a plan with an upgrade or an add-on)</li>
+<li>Easily set-up discounts and promotions</li>
+<li>
+<a href="https://www.payproglobal.com/pdf/2013_PayPro_Case_Study_Efficiency_of_Dynamic_Pricing.pdf" rel="nofollow noopener">Price dynamically</a> (you can generate a link with a special price or discount and give it to client)</li>
+<li>Offer upgrades and add-ons through <a href="https://www.payproglobal.com/pdf/2013_PayPro_Case_Study_Smarttweak_Pop-up_Cross-sell.pdf" rel="nofollow noopener">cross-sell pop-up</a> after the order submission at checkout (this increases average shopping cart value and conversion)</li>
+<li>Have full control over your subscription through our API</li>
+</ul>
+<p>When a card is expired or a payment failed, the system retried a payment several times and then we contact the customer to update his payment info. Also we tailor the fraudcheck according to your personal statistics and collaborate closely on chargeback disputes to win them in your favor.</p>
+<p>The integration doesn’t require any effort on your side, as soon as you sign-up, the team designs a fully customized shopping cart according to your product needs (the design would completely match the rest of your site, you can add/remove fields as you wish, you have the full control and full flexibility), also you will be ready to sell in under an hour.</p>
+<p>The set-up and sign-up are free of charge and don’t oblige you to anything. The only fee is 4.9%+$1 per transaction. All tools and services are also offered as a standard at no additional cost.</p>
+<p>You can also ask for a free demo to see how it works in real life before you sign-up</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/36</link>
+        <pubDate>Wed, 18 Jun 2014 09:33:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-36</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[nrcook]]></dc:creator>
+        <description><![CDATA[
+            <p>Godaddy does not already do this.  Directly from their email:</p>
+<blockquote>
+<p>As a participant in Visa’s and Mastercard’s Account Update Services, we are notified by banks of updates to your expiration date and/or card number, allowing for successful domain renewal. To update your credit card information, or to change your automatic renewal status, please log into your account.</p>
+</blockquote>
+<p>This is an auhorized program done through Visa and Mastercard, not something done through Godaddy themselves.</p>
+<p>As a side note, it most certainly would be illegal.  When you agree to a subscription payment with your card it is specifically with that card.  You as the merchant could go after the user if their payments failed, but you as the merchant could not change their payment information without their consent.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/35</link>
+        <pubDate>Tue, 17 Jun 2014 00:20:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-35</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I see an active mind at work, but please tread carefully. You may get into a lot of troubles even before your launch.</p>
+<aside class="quote" data-post="28" data-topic="376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/zulfiqarsyed2/40/1219_1.png" class="avatar"> ZulfiqarSyed2:</div>
+<blockquote>
+<p>I don’t think this is a fraud.</p>
+</blockquote>
+</aside>
+<p>What you think is irrelevant. What lawyers put into the fine print is what is important.</p>
+<p>There are two separate cases (may be more, but that’s what I’m aware of): PAP (pre-authorized payment, with CC in this case, PACC) and payment with CC.</p>
+<p>PAP is different because it is linked not to the credit card number, but to the credit card account in the bank. When someone’s card is expired and the new one is issued, the PAP will continue to go smoothly, because this is how the deal was made. I believe that requires a special bond with the bank, or may be special paperwork.</p>
+<p>The payment with the card itself is bound to its number and expiration date. I do not think CCV is included; at least I do not see that field in the databases I have access to. Thus the pay may be <strong>technically</strong> continued if the payee manages to get the updated expiration date, but is it legal? I cannot tell without reading a lot of fine print. My gut it is <strong>not</strong> without explicit consensus from the cardholder, but I am not a lawyer. You may send a support email to your processor though - I’m sure this is covered in their contract somewhere.</p>
+<p>On the technical side:</p>
+<p>To get the new expiration date for a card, at 5 year extended time, you’d need to fail about 30 times on avarage (5 years x 12 month x 0.5). The bank security software would more certainly mark this activity as suspicious and block the card, issuing a new one to the cardholder, with a different number. Cardholders would be immensely grateful to the service that done it to them for having to call all the businesses where the card is used and update it.</p>
+<p>Your payment gateway would be concerned with the 30-to-1 failure-to-success ration coming from your account, and likely would block it too on the first day of operations.</p>
+<p>May be I’m also wrong about CCV, and then your search space groups 1000x times, i.e. you’d need to do 30K attempts. Not feasible.</p>
+<aside class="quote" data-post="28" data-topic="376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/zulfiqarsyed2/40/1219_1.png" class="avatar"> ZulfiqarSyed2:</div>
+<blockquote>
+<p>Lot of big companies like godaddy already do this.</p>
+</blockquote>
+</aside>
+<p>No company I know of is doing that. They always send a notice “your card is about to expire, please update”. The act of update is, of course, an implicit extension of consent to be charged.</p>
+<aside class="quote" data-post="28" data-topic="376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/zulfiqarsyed2/40/1219_1.png" class="avatar"> ZulfiqarSyed2:</div>
+<blockquote>
+<p>I am trying to find out if this is useful for this forum’s audience and they will pay for it.</p>
+</blockquote>
+</aside>
+<ol>
+<li>This is scary service to use. The chargeback would be the smallest issue. I would be afraid of legal action.</li>
+<li>A simple email to the user asking to update the card when it is about to expire is a much more safer and cheaper option.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/34</link>
+        <pubDate>Mon, 16 Jun 2014 02:34:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-34</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[kulmala]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/mikeroberto">@mikeroberto</a> and <a class="mention" href="/u/natural">@natural</a> - charging a card that you haven’t been authorized to would be a fraud.</p>
+<p>Lots of customers just let their credit card go old instead of canceling, and those people would definitely dispute the payment.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/33</link>
+        <pubDate>Sun, 15 Jun 2014 06:39:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-33</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[dazzler]]></dc:creator>
+        <description><![CDATA[
+            <p>We implemented ChargeBee on top of WorldPay here in New Zealand. Recurly wasn’t available here then, although I’ve just heard that they are now.<br>
+We found ChargeBee to be good &amp; responsive, but Worldpay was a royal pain to apply for - and remotely managing the interface between ChargeBee and Worldpay was really painful.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/32</link>
+        <pubDate>Tue, 20 May 2014 21:34:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-32</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>We definitely would not be interested in this - the potential for chargeback would be massive and that is pain most startups don’t need!</p>
+<p>Whether it can be programmed or not is irrelevant - the issue is the customer would then have a valid reason for disputing the payment. They did not authorise you to charge their new card so, in my mind, you have committed fraud by doing so.</p>
+<p>I think a decent communication process for soon to expire and expiring cards is enough - if, after x emails to the customer, they still do not update their card then it is probably a fair assumption that they do not want you to charge them any longer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/31</link>
+        <pubDate>Tue, 20 May 2014 20:14:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[ZulfiqarSyed2]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Mike. I am hoping that other forum members would give their feedback as well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/30</link>
+        <pubDate>Tue, 20 May 2014 19:55:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[mikeroberto]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d love to hear how you plan on predicting credit card number/expiration/security codes before they are re-issued. If this could be done, it would be a major flaw in the credit industry practices.  Also, GoDaddy only bills customers with credit cards that are valid. Once they expire, they cannot, and do not, charge you.</p>
+<p>I for one, would not use that service because it jeopardizes the trust of my customers by charging them via a payment method that they have not provided to me in full and have not authorized.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/29</link>
+        <pubDate>Tue, 20 May 2014 19:27:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[ZulfiqarSyed2]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="27" data-topic="376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mikeroberto/40/1220_1.png" class="avatar"> mikeroberto:</div>
+<blockquote>
+<p>It’s not a buildable thing</p>
+</blockquote>
+</aside>
+<p>Any thing is buildable. I think I can do it.</p>
+<aside class="quote" data-post="27" data-topic="376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mikeroberto/40/1220_1.png" class="avatar"> mikeroberto:</div>
+<blockquote>
+<p>It’s either trial and error with a lot of failed transactions which no gateway is going to like</p>
+</blockquote>
+</aside>
+<p>I think , I know a way from technology side to do this accurately and painlessly.</p>
+<aside class="quote" data-post="27" data-topic="376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mikeroberto/40/1220_1.png" class="avatar"> mikeroberto:</div>
+<blockquote>
+<ol start="2">
+<li>You don’t have permission to bill them with information you obtained without their consent and will end up crossing the line into fraud.</li>
+</ol>
+</blockquote>
+</aside>
+<p>I don’t think this is a fraud. Lot of big companies like godaddy already do this. This fraud issue could easily be investigated.</p>
+<p>I am trying to find out if this is useful for this forum’s audience and they will pay for it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/28</link>
+        <pubDate>Tue, 20 May 2014 15:18:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[mikeroberto]]></dc:creator>
+        <description><![CDATA[
+            <p>I think the point is though, that you can’t build it. It’s not a buildable thing because:</p>
+<ol>
+<li>It’s either trial and error with a lot of failed transactions which no gateway is going to like or</li>
+<li>You don’t have permission to bill them with information you obtained without their consent and will end up crossing the line into fraud.<br>
+Doesn’t sound like a viable business model to me.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/27</link>
+        <pubDate>Tue, 20 May 2014 03:18:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[ZulfiqarSyed2]]></dc:creator>
+        <description><![CDATA[
+            <p>Mike thanks for getting back to me… Just wanted to check if some one is providing this service. I will check out some more forums and if no one is doing this, then I might build this thing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/26</link>
+        <pubDate>Mon, 19 May 2014 22:39:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[mikeroberto]]></dc:creator>
+        <description><![CDATA[
+            <p>“the application figures out the newly issued credit card to the customer and figures out the new credit card number, expiration date etc. etc.”</p>
+<p>I don’t think this is possible, other than attempting test transactions against every different future expiration date combination. And that doesn’t take into account updated CVV codes. Regardless of that though, I don’t believe you have permission to charge the user’s updated credit card. They haven’t provided that to you, so you shouldn’t be attempting to charge them via a payment method that they have not authorized in full.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/25</link>
+        <pubDate>Mon, 19 May 2014 19:36:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[ZulfiqarSyed2]]></dc:creator>
+        <description><![CDATA[
+            <p>I looked through <a href="http://chargebee.com" rel="nofollow noopener">chargebee.com</a> feature list and they don’t appear to be addressing the expired ccard issue behind the scenes. I would very much like to solve this problem if this is an issue and no one is doing it gracefully.<br>
+Your thoughts?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/24</link>
+        <pubDate>Mon, 19 May 2014 18:10:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[brianknapp]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been trying out <a href="https://www.chargebee.com" rel="nofollow noopener">https://www.chargebee.com</a> lately. I’m still on their sandbox testing account, but I like not having to build my own payment pages. Also, they have some level of reporting which is nice.</p>
+<p>I’ll report back how it goes with chargebee.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/23</link>
+        <pubDate>Mon, 19 May 2014 16:39:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[ZulfiqarSyed2]]></dc:creator>
+        <description><![CDATA[
+            <p>I have read through this thread and seems like customer is being notified when their credit card is about to expire through billing system.<br>
+This is a great idea. But what about the following scenario:</p>
+<ol>
+<li>Vendor charges the customer’s credit card for monthly recurring billing payment.</li>
+<li>The credit card is declined, or is expired, or cancelled etc. etc.</li>
+<li>Behind the scene, the application figures out the newly issued credit card to the customer and figures out the new credit card number, expiration date etc. etc.</li>
+<li>This newly discovered credit card is charged behind the scenes and Vendor’s credit card for that customer is updated with the newly issued customer credit card. And the customer is charged successfully.</li>
+<li>Vendor keeps charging the customer behind the scenes on the new credit card.</li>
+<li>There is no interruption to the vendor payments.</li>
+<li>There is no interruption to the customer on the service.</li>
+<li>Every thing just continues to work automagically behind the scenes.</li>
+</ol>
+<p>Have the above been done before. I googled every where about the above solution and did not see being provided to the bootstrap entreprenuers.</p>
+<p>Your thoughts? Feedback?</p>
+<p>Thanks</p>
+<p>Zulfiqar</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/22</link>
+        <pubDate>Mon, 19 May 2014 15:48:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[rfelix]]></dc:creator>
+        <description><![CDATA[
+            <p>I built Stunning to do dunning in other apps that I run. Making money from helping others to add dunning to their apps is a bonus. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> A lot of the code for Stunning is code that I would have written anyway.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/21</link>
+        <pubDate>Tue, 01 Oct 2013 04:30:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[rfelix]]></dc:creator>
+        <description><![CDATA[
+            <p>Right. Stunning is only one part of a bigger picture. I don’t have all of my eggs in one basket. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/20</link>
+        <pubDate>Tue, 01 Oct 2013 04:25:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[jarkko]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/sean">@sean</a> Thanks, yeah, I didn’t miss it. Been refreshing <a href="https://stripe.com/global" rel="nofollow noopener">https://stripe.com/global</a> nearly constantly since its inception <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Our companies are in Finland and Estonia, though, so their recent EU rollout doesn’t help us yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/19</link>
+        <pubDate>Mon, 02 Sep 2013 15:13:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[sean]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t have any experience with Paymill. In case you missed it, though, Stripe recently opened their <a href="https://stripe.com/global" rel="nofollow noopener">German beta</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/18</link>
+        <pubDate>Mon, 02 Sep 2013 13:18:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[jarkko]]></dc:creator>
+        <description><![CDATA[
+            <p>Does anyone have experience with <a href="https://www.paymill.com" title="Paymill" rel="nofollow noopener">Paymill</a>? They’re basically a German clone of Stripe. As despicable as ripping off Stripe is, the fact is that they’re available around the Europe already and support a wider variety of credit cards than Stripe (Diners, to name one).</p>
+<p>If I understood correctly, they cloned the Stripe API pretty much one-to-one, so they support subscriptions as well and it might be fairly easy to get all the higher level services mentioned here to work with it as well.</p>
+<p>However, this comes with no experience with them whatsoever. So if anyone else has already used them, would be interesting to hear how it went.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/17</link>
+        <pubDate>Mon, 02 Sep 2013 10:37:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+      <item>
+        <title>Looking at Recurly and other subscription billing options</title>
+        <dc:creator><![CDATA[kulmala]]></dc:creator>
+        <description><![CDATA[
+            <p>Good question! In this particular case, I don’t think it’s too risky. People love Stripe, so it’s going to be around for a while.</p>
+<p>What they’ve built here isn’t a huge thing, so even if Stripe would be discontinued some day or would implement this functionality, these guys would have earned nice money with these tools already.</p>
+<p>I wouldn’t build any massive systems on top of other apps though. And I’d bet these guys are spending the extra time/money they get to build more SaaS apps, to make their future more secure.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376/16</link>
+        <pubDate>Sat, 31 Aug 2013 05:58:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-376-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376.rss">Looking at Recurly and other subscription billing options</source>
+      </item>
+  </channel>
+</rss>

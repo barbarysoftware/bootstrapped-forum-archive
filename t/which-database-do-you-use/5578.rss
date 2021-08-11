@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Which database do you use?</title>
+    <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578</link>
+    <description>Hello everyone,
+can you please share your experience with the database you use for your startups answering these simple questions?
+1) Which database is it?
+2) Where do you host it?
+3) What do you lack with the solution you use?
+
+Let me answer my own questions
+
+1) MongoDB
+2) mLab
+3) Lack of the convenient way to create new records; there is no way to use it in iOS apps; sometimes it&#39;s hard to create a query.
+
+Update. Thanks for sharing your database experience! Please keep going and, if you can share, why I choose this specific database, add this information too. Thanks!!</description>
+    
+    <lastBuildDate>Wed, 28 Feb 2018 15:55:10 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[kins]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>MySQL</li>
+<li>DigitalOcean</li>
+<li>Nothing currently</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/29</link>
+        <pubDate>Wed, 28 Feb 2018 15:55:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[Stan_InsightStash]]></dc:creator>
+        <description><![CDATA[
+            <p>At my current startup insightstash(.)com I use combination of Postgres and Redis in front as cache. Since every feedback form needs to be loaded per page load per visitor, it’s not wise to hit postgres on every load, it would be just slow.</p>
+<ol>
+<li>Postgres (Redis as cache)</li>
+<li>Linode</li>
+<li>Simpler backups</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/28</link>
+        <pubDate>Fri, 23 Feb 2018 14:44:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5578">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/moonbeast/40/4074_1.png" class="avatar"> MoonBeast:</div>
+<blockquote>
+<ol>
+<li>Which database is it?</li>
+<li>Where do you host it?</li>
+<li>What do you lack with the solution you use?</li>
+</ol>
+</blockquote>
+</aside>
+<ol>
+<li>MS SQL 2016</li>
+<li>
+<a href="http://ASP.net" rel="nofollow noopener">ASP.net</a> at  <a href="https://www.a2hosting.com/web-hosting/windows" rel="nofollow noopener">https://www.a2hosting.com/web-hosting/windows</a>.  Very happy with them so far - good support, good knowlegebase (so often overlooked), Plesk, automated LetsEncrypt SSL certs, Web Deploy from Visual Studio.</li>
+<li>Latency. I’m in Australia. I moved to a US host because I expect most of my traffic will be from there but using SQL Server across that long wire requires patience. The problem is not theirs, it’s distance.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/27</link>
+        <pubDate>Tue, 06 Feb 2018 07:53:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[mike1]]></dc:creator>
+        <description><![CDATA[
+            <p>TDE = Transparent Data Encryption, i.e., encrypted data at rest</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/26</link>
+        <pubDate>Sat, 03 Feb 2018 22:19:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[Benjamin_Eberlei]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>MySQL, Elasticsearch, Redis, Memcache</li>
+<li>SysEleven, a German hoster</li>
+<li>Its not as automated as AWS Aurora or other managed offerings.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/25</link>
+        <pubDate>Sat, 03 Feb 2018 20:25:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[MoonBeast]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks! What is TDE?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/24</link>
+        <pubDate>Sat, 03 Feb 2018 19:36:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[mike1]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>MS SQL Server</li>
+<li>SmarterAsp hosting</li>
+<li>None</li>
+</ol>
+<p>This is the setup for the private beta of my MVP to see if I have a product worth pursuing. If I do I’ll look into moving over to Azure where I’ll have TDE on the db by default.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/23</link>
+        <pubDate>Sat, 03 Feb 2018 16:31:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[PhilS]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>Microsoft SQL-Server Express Edition</li>
+<li>Virtual Server at Host Europe</li>
+<li>Nothing except direct remote access, which I deliberately disabled for security reasons.<br>
+Well and maybe an integrated backup solution, but I use task scheduler and some <a href="http://codekabinett.com/rdumps.php?Lang=2&amp;targetDoc=automate-sql-server-express-backup" rel="nofollow noopener">scripts to automate my backup</a>.</li>
+</ol>
+<p>Why: Because I’ve got lots of previous experience with it and knew that it satisfies the requirements.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/22</link>
+        <pubDate>Thu, 04 Jan 2018 12:11:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>(1) Mysql<br>
+(2) Digital Ocean<br>
+(3) It is what it is</p>
+<p>(1) PostgreSQL<br>
+(2) AWS<br>
+(3) Umm not sure yet, just getting back in to pgSQL</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/21</link>
+        <pubDate>Wed, 03 Jan 2018 22:08:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>MySQL</li>
+<li>AWS RDS</li>
+<li>It has surprising bugs or limitations. For example, you can only index varchar columns that are emoji-capable if they have a length of 191 or less.</li>
+</ol>
+<p>I wish I had gone with PostgreSQL.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/20</link>
+        <pubDate>Wed, 03 Jan 2018 21:33:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[MoonBeast]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, but even if I didn’t ask the reasons why you choose your database, it would be great to know <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/19</link>
+        <pubDate>Wed, 03 Jan 2018 19:39:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p>I use SQLite with Entity Framework (<a href="https://github.com/msallin/SQLiteCodeFirst" title="This is a great SQLite &lt;-&gt; Entity Framework library" rel="nofollow noopener">code first</a>) for <a href="https://www.tvcad.tv/" rel="nofollow noopener">tvCAD</a>, my Windows desktop app. It’s hosted on the local file system as an adjunct to a user project, they can save and load different snapshot-versions of the same database. SQLite is ephemeral by nature so it doesn’t really suit web-server scenarios but it’s perfect for desktop apps.</p>
+<p>What does it lack? <a href="https://github.com/msallin/SQLiteCodeFirst/issues/4" rel="nofollow noopener">Easy schema migrations</a>, mostly because you can’t delete or rename columns. It doesn’t do JSON natively but storing them as strings and using <a href="https://www.newtonsoft.com/json" rel="nofollow noopener">JSON.NET</a> is surprisingly performant and <a href="https://stackoverflow.com/a/37207034/492" rel="nofollow noopener">works just as well for serialized objects</a> .</p>
+<p>I know the OP didn’t ask “why” but others may like to know, at least for context.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/18</link>
+        <pubDate>Wed, 03 Jan 2018 07:50:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[nevf]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>Mongodb</li>
+<li>Digital Ocean</li>
+<li>Off-line support.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/17</link>
+        <pubDate>Wed, 03 Jan 2018 05:21:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[jcadam]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, on my current SaaS: <a href="https://www.contabulo.com" rel="nofollow noopener">https://www.contabulo.com</a>,<br>
+I’m using Postgres as the main database (it’s pretty much my default choice unless an application cries out for something NoSQL), and Elasticsearch for my search index.  I’m hosting both on VMs running on Linode.  I’m storing user uploads on AWS S3 (which isn’t a database, really, but meh).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/16</link>
+        <pubDate>Wed, 03 Jan 2018 03:05:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>We use SQL Azure (hosted) on Azure and Redis for caching. Also use blob storage for documents and images.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/15</link>
+        <pubDate>Mon, 01 Jan 2018 02:15:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[kehers]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>MongoDb</li>
+<li>Self hosted</li>
+<li>Automated backups/replication (can make provision for this but not yet worth the effort)</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/14</link>
+        <pubDate>Sun, 31 Dec 2017 15:29:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>I use Postgres pretty much exclusively when I need a relational database, and Redis for queuing and short-term storage. Hosting varies: we have managed hardware for our primary databases and use Heroku Postgres for systems deployed to Heroku.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/13</link>
+        <pubDate>Sun, 31 Dec 2017 15:20:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>I keep it simple… Self hosted MySQL for data, Redis for Queues, com and other real time states… … Would need to have a real good reason to change…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/12</link>
+        <pubDate>Sun, 31 Dec 2017 04:06:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p>I just started a new project and will use the new Firebase Database.</p>
+<p>The whole firebase thing doesn’t fit every project but when it does fit, it saves a fair amount of time on basics like auth and db storage.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/11</link>
+        <pubDate>Sat, 30 Dec 2017 04:21:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[Ken]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>Firebase</li>
+<li>The Great Googly Moogly in the Cloud (Google)</li>
+<li>More hours in each a day.</li>
+</ol>
+<p>Edit: explaining why…</p>
+<p>Firebase might seem like an odd choice for someone who uses MSSQL in his day job and has 22 years experience with it (omg has it really been that long?! Since v6.0 in 1995, so yeah).</p>
+<p>But, that is <em>precisely</em> why!</p>
+<p>First, using a fresh database paradigm (and fresh tech stack, bottom to top) for a real app with real, paying customers forces deep, focused learning. Looking at the same problems from a different perspective, and solving those problems with a different toolbelt gives renewed insight into how I look at problems in the old sphere of knowledge.</p>
+<p>Second, a current employer can never rightly lay claim to my work, as the entire stack is entirely novel from what I work with at the 9-5.</p>
+<p>Third, sysops. In my stack, starting with Firebase, sysops are someone else’s concern. Yes, this does come at a price. I build and maintain SaaS apps and eCom sites for a living at the day job, so I know how much care and feeding can be required just to keep the server racks happy and humming along. As a solo founder, I need to delegate as much as possible to leave time to concentrate on more important things like product, customer support, and marketing. Someday, if I can ever burn the boats and concentrate full time on this app, maybe I reconsider this stance, but for now, let someone else cut the lawn, let someone else keep the database running fast. And for all its many shortcomings, Firebase is verifiably and consistently fast.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/10</link>
+        <pubDate>Fri, 29 Dec 2017 21:46:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>Postgres</li>
+<li>AWS</li>
+<li>Nothing.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/9</link>
+        <pubDate>Fri, 29 Dec 2017 14:48:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[filosofikode]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="5578">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/moonbeast/40/4034_1.png" class="avatar"> MoonBeast:</div>
+<blockquote>
+<p>Thanks, where do you host it?</p>
+</blockquote>
+</aside>
+<p>Virtual Private Server. DigitalOcean.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/8</link>
+        <pubDate>Fri, 29 Dec 2017 07:33:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[MoonBeast]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>These random answers won’t help you choose your own DB.</p>
+</blockquote>
+<p>Hmmm… why random? I ask which database do <strong>YOU</strong> use? Do you use any databases for your projects? Which one is it?</p>
+<p>Okay, I think I got your point. But think about my question as about kinda survey, that’s it. The only thing I want to know is just a stats. Numbers. For me currently, it absolutely doesn’t matter why you use that or this database. Just which one.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/7</link>
+        <pubDate>Fri, 29 Dec 2017 06:37:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[MoonBeast]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>RethinkDB</p>
+</blockquote>
+<p>Thanks, where do you host it?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/6</link>
+        <pubDate>Fri, 29 Dec 2017 06:36:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+      <item>
+        <title>Which database do you use?</title>
+        <dc:creator><![CDATA[filosofikode]]></dc:creator>
+        <description><![CDATA[
+            <p>RethinkDB</p>
+<p>Because can’t answer lower than 20 characters, so I write this paragraph.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578/5</link>
+        <pubDate>Fri, 29 Dec 2017 04:55:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5578-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-database-do-you-use/5578.rss">Which database do you use?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SaaS Projections Spreadsheet in Google Sheets</title>
+    <link>https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416</link>
+    <description>I&#39;ve created a Google Sheet for putting together some rough [SaaS projections](https://docs.google.com/spreadsheets/d/1Sht2wDyEa63PXFpxPGP0WMOgRKwy0U8KeoFb-tnF-8U/edit?usp=sharing), and I&#39;d love some feedback for how it could be improved. For now, I don&#39;t want to share it too widely, but I&#39;d love to hear ideas from folks here in the forums.
+
+I&#39;ve made it view only, so you&#39;ll need to duplicate it to create your own version to play with. So I&#39;m definitely interested in hearing about any struggles anyone has using this to kickstart their own sheet in Google Docs.
+
+The spreadsheet helps you think through all of the expenses for starting and running an app for the first two years as well as helping you see how revenue growth plays into it. It&#39;s tough to walk the line between making it super-powerful and accurate and making it simple enough for people to hop in, get a ballpark understanding of how much money they&#39;ll need to get started.</description>
+    
+    <lastBuildDate>Tue, 31 Oct 2017 03:02:59 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SaaS Projections Spreadsheet in Google Sheets</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve made some major updates to it to make it a little more user-friendly. I also fixed a few bugs and added some commentary throughout to hopefully help explain how it all works together. For the time being, I removed any protect cells as well.</p>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/spreadsheets/d/1Sht2wDyEa63PXFpxPGP0WMOgRKwy0U8KeoFb-tnF-8U/edit#gid=0" target="_blank" rel="nofollow noopener">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/spreadsheets/d/1Sht2wDyEa63PXFpxPGP0WMOgRKwy0U8KeoFb-tnF-8U/edit#gid=0" target="_blank" rel="nofollow noopener"><span class="googledocs-onebox-logo g-sheets-logo"></span></a>
+
+<h3><a href="https://docs.google.com/spreadsheets/d/1Sht2wDyEa63PXFpxPGP0WMOgRKwy0U8KeoFb-tnF-8U/edit#gid=0" target="_blank" rel="nofollow noopener">Starting &amp; Sustaining SaaS Budget</a></h3>
+
+<p>Overview
+
+
+ A worksheet to help explore estimated income and expenses for your recurring-revenue SaaS application.
+ Created By, About the Book
+ Garrett Dimon, Visit Starting&amp;amp; Sustaining
+@ garrettdimon,@ start_sustain
+ https:// garrettdimon. com
+...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416/4</link>
+        <pubDate>Tue, 31 Oct 2017 03:02:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5416-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416.rss">SaaS Projections Spreadsheet in Google Sheets</source>
+      </item>
+      <item>
+        <title>SaaS Projections Spreadsheet in Google Sheets</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks! I’ll look into it. Not sure if I’ll be able to test on Excel myself, but I hadn’t even considered downloading it to use on a desktop app. I’ll definitely dig into that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416/3</link>
+        <pubDate>Sun, 29 Oct 2017 15:23:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5416-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416.rss">SaaS Projections Spreadsheet in Google Sheets</source>
+      </item>
+      <item>
+        <title>SaaS Projections Spreadsheet in Google Sheets</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5416">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/garrettdimon/40/3456_1.png" class="avatar"> garrettdimon:</div>
+<blockquote>
+<p>so you’ll need to duplicate it to create your own version to play with</p>
+</blockquote>
+</aside>
+<p>I’ve downloaded it into Excel 2010 (yes, old; works for me tho) and it complains that there some formulas it had to “recover”. Can’t yet say which ones and how big is the damage. Then again, maybe it works fine for newer Excels.</p>
+<p>Huh, I see now. The formulas for customer number got converted into just numbers. I.e. I have changed the number of customers in month 1 to 0, but month 2 still got 11 - because 11 is what Excel has got.</p>
+<p>This is because for Excel the formula should contain the precision:</p>
+<pre><code>=ROUND(F11-(FLOOR(F11*$E$7,1))+(F11*$E$6),0)</code></pre>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416/2</link>
+        <pubDate>Sat, 28 Oct 2017 22:43:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5416-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416.rss">SaaS Projections Spreadsheet in Google Sheets</source>
+      </item>
+      <item>
+        <title>SaaS Projections Spreadsheet in Google Sheets</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve created a Google Sheet for putting together some rough <a href="https://docs.google.com/spreadsheets/d/1Sht2wDyEa63PXFpxPGP0WMOgRKwy0U8KeoFb-tnF-8U/edit?usp=sharing" rel="nofollow noopener">SaaS projections</a>, and I’d love some feedback for how it could be improved. For now, I don’t want to share it too widely, but I’d love to hear ideas from folks here in the forums.</p>
+<p>I’ve made it view only, so you’ll need to duplicate it to create your own version to play with. So I’m definitely interested in hearing about any struggles anyone has using this to kickstart their own sheet in Google Docs.</p>
+<p>The spreadsheet helps you think through all of the expenses for starting and running an app for the first two years as well as helping you see how revenue growth plays into it. It’s tough to walk the line between making it super-powerful and accurate and making it simple enough for people to hop in, get a ballpark understanding of how much money they’ll need to get started.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416/1</link>
+        <pubDate>Sat, 28 Oct 2017 20:30:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5416-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-projections-spreadsheet-in-google-sheets/5416.rss">SaaS Projections Spreadsheet in Google Sheets</source>
+      </item>
+  </channel>
+</rss>

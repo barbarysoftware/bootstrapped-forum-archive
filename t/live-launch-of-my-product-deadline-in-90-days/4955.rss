@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Live launch of my product - deadline in 90 days</title>
+    <link>https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955</link>
+    <description>Greetings all,
+
+So I had an idea on Saturday (2017/04/22) and I decided to go about it another way that I would normally do it, just do it.
+
+I got some inspiration from Russell Westbrook breaking the record for most triple doubles with his statement &quot;Why Not?&quot;
+
+If you are sick of reading blogs and watching training videos, hopefully this thread will give you some inspiration and real life guidance.
+
+So this is a **scratch your own itch product**, it is something need all the time but there is no product out there that really fits the bill for me personally.
+
+I will update this thread as I go, a live launch as you will :slight_smile:
+
+The product name/domain is: [spoiler]not just yet sorry lol[/spoiler]
+
+Timeline:
+
+## April 22nd Saturday
+3:45PM
+&quot;Why not&quot; kind of popped into my head - let&#39;s make a MVP of this thing that I really want to build.  I searched around for a name that I liked and registered the domain name.
+
+So I have been working on this &quot;long-term&quot; SaaS app for about 1 year now on/off, so I have allot of experience will setting things up the way I want it.  And but that I mean AUTOMATION.   I can&#39;t stand to repeat doing things over and over, so b/c of this I was able to get allot of done in a short period of time.
+Here is what I did on saturday.
+
+* find a good domain name/ app name that I like
+* update the DNS to AWS
+* setup the automation of my app&#39;s dns, ec2 servers, database and filesystem.
+* setup SSL on the domain
+* `rails new xxx -T --database=postgresql`
+* fired off an email to rackspace to setup my domain and email
+
+
+## April 23rd Sunday
+Today I wanted to get something live as soon as possible.  I am a very visual person and once I see something *live* - no matter WHAT it is - it gets my creative juices going.  I was able to get my deployment process setup on AWS to push code out to my server.  This is a MVP, lean and mean as it gets so I really didn&#39;t care that my default page was showing the usual rails home#index view content :) 
+
+Now that my app was somewhat setup, I did a git init and setup my git server and pushed my first commit.
+
+I am not a stickler for this project just *yet*, so this is all spike coding with 0 tests!
+## April 24th Monday
+So this is where I can&#39;t really say what I did as it will expose the idea - and I am waiting to get a simple homepage designed / launch page before I will go into more details.
+
+But my app is live, I setup the load balancer with the domain and it is up and running.
+I got to ssh into my box and run some rake tasks/console just to make sure I can connect to the db if need be for one-off emergency tasks.
+
+## April 25th Tuesday
+Today I wanted to get a skeleton structure of the admin section where users will log into.  So I setup and account model and very basic authentication.
+
+&gt; git merge feature/admin_skeleon
+
+## April 26th Wednesday
+
+&gt; git checkout -b feature/themes
+
+Started a new git branch to work on a custom theme engine.  I was able to get allot done in a very short period of time once again b/c I have been mentally going over this for a few months prior :) .
+I have a very rough prototype of it working locally, just going to start working the the admin piece so I can edit themes w/o having to push changes to the app.
+
+
+I hope you guys enjoy this thread, I am pretty excited to publicly commit to this.
+
+P.S
+
+Sorry if this isn&#39;t worded that nicely, I just though of this idea and fired it off :airplane:
+
+More to come....
+
+TODO:
+
+account setup
+plans with stripe
+session handling
+security/permissions
+..
+..
+launch
+..
+..
+profit!</description>
+    
+    <lastBuildDate>Fri, 28 Apr 2017 12:53:03 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Live launch of my product - deadline in 90 days</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>Features that get me paid are classified as important.  This is code I have already written before so there isn’t much discover or wasted time either way.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955/4</link>
+        <pubDate>Fri, 28 Apr 2017 12:53:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4955-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955.rss">Live launch of my product - deadline in 90 days</source>
+      </item>
+      <item>
+        <title>Live launch of my product - deadline in 90 days</title>
+        <dc:creator><![CDATA[Skiltz]]></dc:creator>
+        <description><![CDATA[
+            <p>Why do you need to integrate Stripe? Worry about taking payments later.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955/3</link>
+        <pubDate>Fri, 28 Apr 2017 02:56:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4955-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955.rss">Live launch of my product - deadline in 90 days</source>
+      </item>
+      <item>
+        <title>Live launch of my product - deadline in 90 days</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <h2>April 27th Thursday</h2>
+<p>So I continued working on the git branch feature/themes.  Because this was in the admin section I ended up having to code some mock objects for the admin user who is logged in, along with what account they represent so it loads the correct data for them.</p>
+<p>I was able to pull in the same admin html template from my other project, so I now have a decent looking admin section which again gives me some encouragement (I’m a visual person!).</p>
+<p>Here is a quick screenshot of what the theme editing looks like so far:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/8/8efe717419fc70ccbe638982e06bdfa96adaf44a.png" data-download-href="/uploads/short-url/koYWs7b79Afhz9GNcKMQI2Qzgh4.png?dl=1" title="Screen Shot 2017-04-27 at 7.37.13 PM.png"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/8/8efe717419fc70ccbe638982e06bdfa96adaf44a_2_690x367.png" alt data-base62-sha1="koYWs7b79Afhz9GNcKMQI2Qzgh4" width="690" height="367" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/8/8efe717419fc70ccbe638982e06bdfa96adaf44a_2_690x367.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/8/8efe717419fc70ccbe638982e06bdfa96adaf44a.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/8/8efe717419fc70ccbe638982e06bdfa96adaf44a.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/8/8efe717419fc70ccbe638982e06bdfa96adaf44a_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2017-04-27 at 7.37.13 PM.png</span><span class="informations">910×485 15.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>It isn’t production ready yet but just having a decent looking template goes a long way.</p>
+<p>Next up I think it is time to work on the account, session, permissions and then plans + stripe integration.</p>
+<p>I will probably be going back and forth between those features as the need arises, but I hope to get them done in the coming 2 weeks as allot of the code will be pulled in from my other project.</p>
+<p>Thanks for taking this little journey with me <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955/2</link>
+        <pubDate>Thu, 27 Apr 2017 23:41:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4955-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955.rss">Live launch of my product - deadline in 90 days</source>
+      </item>
+      <item>
+        <title>Live launch of my product - deadline in 90 days</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>Greetings all,</p>
+<p>So I had an idea on Saturday (2017/04/22) and I decided to go about it another way that I would normally do it, just do it.</p>
+<p>I got some inspiration from Russell Westbrook breaking the record for most triple doubles with his statement “Why Not?”</p>
+<p>If you are sick of reading blogs and watching training videos, hopefully this thread will give you some inspiration and real life guidance.</p>
+<p>So this is a <strong>scratch your own itch product</strong>, it is something need all the time but there is no product out there that really fits the bill for me personally.</p>
+<p>I will update this thread as I go, a live launch as you will <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>The product name/domain is: <span class="spoiler">not just yet sorry lol</span></p>
+<p>Timeline:</p>
+<h2>April 22nd Saturday</h2>
+<p>3:45PM<br>
+"Why not" kind of popped into my head - let’s make a MVP of this thing that I really want to build.  I searched around for a name that I liked and registered the domain name.</p>
+<p>So I have been working on this “long-term” SaaS app for about 1 year now on/off, so I have allot of experience will setting things up the way I want it.  And but that I mean AUTOMATION.   I can’t stand to repeat doing things over and over, so b/c of this I was able to get allot of done in a short period of time.<br>
+Here is what I did on saturday.</p>
+<ul>
+<li>find a good domain name/ app name that I like</li>
+<li>update the DNS to AWS</li>
+<li>setup the automation of my app’s dns, ec2 servers, database and filesystem.</li>
+<li>setup SSL on the domain</li>
+<li><code>rails new xxx -T --database=postgresql</code></li>
+<li>fired off an email to rackspace to setup my domain and email</li>
+</ul>
+<h2>April 23rd Sunday</h2>
+<p>Today I wanted to get something live as soon as possible.  I am a very visual person and once I see something <em>live</em> - no matter WHAT it is - it gets my creative juices going.  I was able to get my deployment process setup on AWS to push code out to my server.  This is a MVP, lean and mean as it gets so I really didn’t care that my default page was showing the usual rails home#index view content <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Now that my app was somewhat setup, I did a git init and setup my git server and pushed my first commit.</p>
+<p>I am not a stickler for this project just <em>yet</em>, so this is all spike coding with 0 tests!</p>
+<h2>April 24th Monday</h2>
+<p>So this is where I can’t really say what I did as it will expose the idea - and I am waiting to get a simple homepage designed / launch page before I will go into more details.</p>
+<p>But my app is live, I setup the load balancer with the domain and it is up and running.<br>
+I got to ssh into my box and run some rake tasks/console just to make sure I can connect to the db if need be for one-off emergency tasks.</p>
+<h2>April 25th Tuesday</h2>
+<p>Today I wanted to get a skeleton structure of the admin section where users will log into.  So I setup and account model and very basic authentication.</p>
+<blockquote>
+<p>git merge feature/admin_skeleon</p>
+</blockquote>
+<h2>April 26th Wednesday</h2>
+<blockquote>
+<p>git checkout -b feature/themes</p>
+</blockquote>
+<p>Started a new git branch to work on a custom theme engine.  I was able to get allot done in a very short period of time once again b/c I have been mentally going over this for a few months prior <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> .<br>
+I have a very rough prototype of it working locally, just going to start working the the admin piece so I can edit themes w/o having to push changes to the app.</p>
+<p>I hope you guys enjoy this thread, I am pretty excited to publicly commit to this.</p>
+<p>P.S</p>
+<p>Sorry if this isn’t worded that nicely, I just though of this idea and fired it off <img src="https://emoji.discourse-cdn.com/twitter/airplane.png?v=5" title=":airplane:" class="emoji" alt=":airplane:"></p>
+<p>More to come…</p>
+<p>TODO:</p>
+<p>account setup<br>
+plans with stripe<br>
+session handling<br>
+security/permissions<br>
+…<br>
+…<br>
+launch<br>
+…<br>
+…<br>
+profit!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955/1</link>
+        <pubDate>Wed, 26 Apr 2017 20:54:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4955-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/live-launch-of-my-product-deadline-in-90-days/4955.rss">Live launch of my product - deadline in 90 days</source>
+      </item>
+  </channel>
+</rss>

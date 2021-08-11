@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How do you implement scheduled tasks in your SaaS?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887</link>
+    <description>When running multiple servers in a high availability setup, how did you implement the running of daily scheduled tasks such as sending summary emails or billing?
+
+I&#39;m running Feature Upvote on two identical  AWS servers for high availability. I now want to add daily scheduled tasks (such as typically done with cron, or in my case, with the Java ecosystem&#39;s Quartz Scheduler). However I don&#39;t want BOTH AWS servers to run daily tasks such as sending summary emails, as then customers will get duplicates. Is using a third &quot;worker&quot; server the best solution?</description>
+    
+    <lastBuildDate>Thu, 06 Apr 2017 21:35:56 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>I think SPOF was the reason Steve created this thread.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/25</link>
+        <pubDate>Thu, 06 Apr 2017 21:35:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ll yeah, you do have a potential single point of failure there. One additional point I should’ve mentioned is that (provided what you’re scheduling isn’t particularly time sensitive) you can run more than one cron node and stagger the timings.</p>
+<p>Alternatively you can live with it being a single node and put a heartbeat monitor on it. Cron services tend to be fairly robust anyway and easy to fix or recommission if they do go wrong.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/24</link>
+        <pubDate>Thu, 06 Apr 2017 21:17:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>So what to do if the whole node where cron is running is down?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/23</link>
+        <pubDate>Thu, 06 Apr 2017 12:51:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m probably late to the party, but in case the jury is still out I have a very simple and effective pattern for this:</p>
+<ul>
+<li>implement your job behind an HTTP endpoint so that you can trigger it by posting (with a secret key of course) to a URL in your app.</li>
+<li>set up a cron job to hit that URL through the load balancer. This ensures you only run on one node at a time and that you’re resilient against nodes failing.</li>
+</ul>
+<p>Other advantages:</p>
+<ul>
+<li>It’s all inside your app so you don’t need to manage a separate set of config/db passwords.</li>
+<li>Easy to test because you can trigger the job yourself manually.</li>
+<li>Easy to disable</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/22</link>
+        <pubDate>Thu, 06 Apr 2017 12:29:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a nice approach. It does have the problem that Jenkins is a single point of failure, but I think for those of us running tiny software companies, we can manage that.</p>
+<p>I liked the idea in your blog post that servers are cattle, not pets.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/21</link>
+        <pubDate>Mon, 03 Apr 2017 11:55:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[davedevelopment]]></dc:creator>
+        <description><![CDATA[
+            <p>Just my two cents, I already had Jenkins in service, running deployments via ansible, so I set all my scheduled tasks up on there, write up here <a href="https://davedevelopment.co.uk/2015/06/04/scheduled-tasks-with-jenkins.html" rel="nofollow noopener">https://davedevelopment.co.uk/2015/06/04/scheduled-tasks-with-jenkins.html</a>.</p>
+<p>TLDR, I was already using jenkins and ansible, running scheduled tasks this way gets me tasks that run at a scheduled time, on one of the available servers, console output is logged, success/failure is logged and notifications can go anywhere jenkins can send them (slack for us).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/20</link>
+        <pubDate>Mon, 03 Apr 2017 11:07:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="18" data-topic="4887">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/davidhemphill/40/3354_1.png" class="avatar"> davidhemphill:</div>
+<blockquote>
+<p>I just announced a few days ago that I’ve built a recurring task scheduling service called Crondog which does this.</p>
+</blockquote>
+</aside>
+<p>After my experience last week with this problem I’m quite certain that a market exists for this! Good luck.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/19</link>
+        <pubDate>Sun, 02 Apr 2017 08:45:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[davidhemphill]]></dc:creator>
+        <description><![CDATA[
+            <p>Kind of funny, I just announced a few days ago that I’ve built a recurring task scheduling service called <a href="http://crondog.io" rel="nofollow noopener">Crondog</a> which does this. It will ping a URL I specify with data on a recurring schedule (yearly, monthly, daily at certain time, every minute, etc), which then allows me to handle the task on my server. I can set up these recurring tasks via API or through the interface.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/18</link>
+        <pubDate>Sun, 02 Apr 2017 04:34:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[Skiltz]]></dc:creator>
+        <description><![CDATA[
+            <p>To keep my sanity i use <a href="https://cronitor.io/" rel="nofollow noopener">https://cronitor.io/</a> to ping every time a scheduled task is started/completed.  Cronitor will notify me if something is down.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/17</link>
+        <pubDate>Sun, 02 Apr 2017 02:35:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stympy">@stympy</a> and <a class="mention" href="/u/maximus">@maximus</a> suggested scheduled AWS lambda functions. I investigated this as an alternative to Quartz Scheduler in clustered mode. <strong>Scheduled lambda wins easily</strong>. This solution is flexible, logged and monitored by default. It also really easy to schedule once-off triggers if our normal scheduled event fails.</p>
+<p>Quartz is solid but really feels like Java code from 10 to 15 years ago, when everything needed a ton of configuration just to do the most basic thing. It also serializes the java classes for jobs and gets mightily upset when you refactor between deploys.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/16</link>
+        <pubDate>Fri, 31 Mar 2017 14:41:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="12" data-topic="4887">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Quartz Scheduler</p>
+</blockquote>
+</aside>
+<p>I intended that idea as a joke, but now I do not know what to think anymore.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/15</link>
+        <pubDate>Fri, 31 Mar 2017 01:25:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="11" data-topic="4887">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I see a new SaaS idea:</p>
+<p>Online scheduling of tasks</p>
+</blockquote>
+</aside>
+<p>This seems to already exist. Some say that the existence of competitors validates the idea…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/14</link>
+        <pubDate>Thu, 30 Mar 2017 15:27:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>As far as I remember clustered scheduling in Quartz requires database, but I guess you have it anyway.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/13</link>
+        <pubDate>Thu, 30 Mar 2017 12:47:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all. Your comments helped. It turns out that the Java product I’m using (Quartz Scheduler) does what I want. They call it clustered scheduling, and it was there all along but I didn’t understand the terminology.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/12</link>
+        <pubDate>Thu, 30 Mar 2017 11:29:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I see a new SaaS idea:</p>
+<p>Online scheduling of tasks. At a schedule configured via the UI, the SaaS will ping your URL or call a web service. $5/mo.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/11</link>
+        <pubDate>Thu, 30 Mar 2017 02:38:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4887">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>However I don’t want BOTH AWS servers to run daily tasks such as sending summary emails, as then customers will get duplicates. Is using a third “worker” server the best solution?</p>
+</blockquote>
+</aside>
+<p>No, third one would be a SPOF.</p>
+<p>Once I implemented a similar functionality in a cluster (8 nodes). Every hour all nodes tried to insert a record into a shared DB which had a current date+current hour as an unique key. Obviously, only one of the inserts was successful (the rest were getting constraint violation error). That node was the master for the hourly tasks for that hour, and the rest of nodes went back to sleep.</p>
+<p>Even if one or many nodes are down, at most one node was able to process the hourly tasks.</p>
+<p>A nice side effect of this locking mechanism is that for every date you can tell what node was the master - i.e. the lock record is an audit record, too.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/10</link>
+        <pubDate>Thu, 30 Mar 2017 02:35:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[courtz]]></dc:creator>
+        <description><![CDATA[
+            <p>we use Hangfire as a .NET house:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://www.hangfire.io" target="_blank" rel="nofollow noopener">hangfire.io</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://www.hangfire.io" target="_blank" rel="nofollow noopener">Hangfire – Background jobs and workers for .NET and .NET Core</a></h3>
+
+<p>An easy way to perform fire-and-forget, delayed and recurring tasks in ASP.NET applications. No Windows Service required, backed by persistent storage.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/9</link>
+        <pubDate>Wed, 29 Mar 2017 22:32:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree. For statically scheduled events I absolutely recommend scheduled lambda function, which can call API endpoint.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/8</link>
+        <pubDate>Wed, 29 Mar 2017 17:18:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[stympy]]></dc:creator>
+        <description><![CDATA[
+            <p>We use <a href="https://github.com/zeroXten/consul-do" rel="nofollow noopener">consul-do</a> for this at Honeybadger.  It does the same thing as the redis shared lock already described, but uses <a href="https://www.consul.io" rel="nofollow noopener">consul</a> for lock coordination.  I wouldn’t set up consul just for this use case, but we were already using consul for service discovery, so it was a good fit.</p>
+<p>Another option would be to use a <a href="http://docs.aws.amazon.com/lambda/latest/dg/with-scheduled-events.html" rel="nofollow noopener">scheduled lambda function</a> to either do the work or trigger the task on a randomly-selected server.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/7</link>
+        <pubDate>Wed, 29 Mar 2017 16:18:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>If node misses next health check - it is considered inactive so key can be deleted.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/6</link>
+        <pubDate>Wed, 29 Mar 2017 16:06:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Each node is trying to say “I’m active” by using<br>
+<a href="https://redis.io/commands/setnx" class="onebox" target="_blank" rel="nofollow noopener">https://redis.io/commands/setnx</a></p>
+<p>If setnx returns 0 - slot is already taken by other node.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/5</link>
+        <pubDate>Wed, 29 Mar 2017 16:01:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4887">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/maximus/40/3510_1.png" class="avatar"> maximus:</div>
+<blockquote>
+<p>There is a locking mechanism (based on Redis)</p>
+</blockquote>
+</aside>
+<p>Can you please explain how you did this (or tell me a good keyword to search for; my own attempts at finding a good explanation for doing this are failing)? Is it something built into Redis?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/4</link>
+        <pubDate>Wed, 29 Mar 2017 15:40:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>We run schedulers on all symmetrical nodes behind load balancer in a cluster. Only one scheduler is active at any given time.  Schedulers report statuses to the Redis and check “who is active” every 30 sec. If node goes down, next available scheduler activates itself. There is a locking mechanism (based on Redis) in place to make sure only one scheduler is active at the time. Redis is shared between all nodes (for HA we use master-slave deployment).</p>
+<p>By the way, in our case schedulers don’t actually execute tasks (sending emails in your case). They asynchronously execute rest endpoint on LB, which tunnels request to any node in a cluster.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/3</link>
+        <pubDate>Wed, 29 Mar 2017 15:11:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[ezekg]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, I’ve always used a separate worker server for background and recurring jobs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/2</link>
+        <pubDate>Wed, 29 Mar 2017 14:14:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+      <item>
+        <title>How do you implement scheduled tasks in your SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>When running multiple servers in a high availability setup, how did you implement the running of daily scheduled tasks such as sending summary emails or billing?</p>
+<p>I’m running Feature Upvote on two identical  AWS servers for high availability. I now want to add daily scheduled tasks (such as typically done with cron, or in my case, with the Java ecosystem’s Quartz Scheduler). However I don’t want BOTH AWS servers to run daily tasks such as sending summary emails, as then customers will get duplicates. Is using a third “worker” server the best solution?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887/1</link>
+        <pubDate>Wed, 29 Mar 2017 08:44:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4887-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-implement-scheduled-tasks-in-your-saas/4887.rss">How do you implement scheduled tasks in your SaaS?</source>
+      </item>
+  </channel>
+</rss>

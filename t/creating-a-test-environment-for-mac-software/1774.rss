@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Creating a test environment for Mac software</title>
+    <link>https://discuss.bootstrapped.fm/t/creating-a-test-environment-for-mac-software/1774</link>
+    <description>My company develops commercial Mac software. Our flagship product runs on OS X 10.6.8+. We want to improve our software quality with better and more comprehensive testing.
+
+What hardware and OS&#39;s should we supply our tester with? My thought so far is either a Mac Mini or an iMac with an SSD, lots of RAM, and either Parallels or VMWare so that he can run OS X 10.6.8, OS X 10.7, OS X 10.8, OS X 10.9, and OS X 10.10 in virtual machines.
+
+Is this feasible? Recommended? I&#39;d love to hear your feedback.
+
+(Cross posted here: http://apple.stackexchange.com/questions/137078/creating-a-test-environment-for-mac-software)</description>
+    
+    <lastBuildDate>Sun, 06 Jul 2014 22:12:22 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/creating-a-test-environment-for-mac-software/1774.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Creating a test environment for Mac software</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I support back to Mac OS X 10.5, but my oldest working Mac has 10.8. So I pay the guys at <a href="http://www.testlab2.com">http://www.testlab2.com</a> to test on versions of Mac OS X I don’t have here.</p>
+<p>I’ve never quite understood the licensing situation about running Mac OS X inside a VM.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/creating-a-test-environment-for-mac-software/1774/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/creating-a-test-environment-for-mac-software/1774/2</link>
+        <pubDate>Sun, 06 Jul 2014 22:12:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1774-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/creating-a-test-environment-for-mac-software/1774.rss">Creating a test environment for Mac software</source>
+      </item>
+      <item>
+        <title>Creating a test environment for Mac software</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>My company develops commercial Mac software. Our flagship product runs on OS X 10.6.8+. We want to improve our software quality with better and more comprehensive testing.</p>
+<p>What hardware and OS’s should we supply our tester with? My thought so far is either a Mac Mini or an iMac with an SSD, lots of RAM, and either Parallels or VMWare so that he can run OS X 10.6.8, OS X 10.7, OS X 10.8, OS X 10.9, and OS X 10.10 in virtual machines.</p>
+<p>Is this feasible? Recommended? I’d love to hear your feedback.</p>
+<p>(Cross posted here: <a href="http://apple.stackexchange.com/questions/137078/creating-a-test-environment-for-mac-software">http://apple.stackexchange.com/questions/137078/creating-a-test-environment-for-mac-software</a>)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/creating-a-test-environment-for-mac-software/1774/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/creating-a-test-environment-for-mac-software/1774/1</link>
+        <pubDate>Sat, 05 Jul 2014 13:03:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1774-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/creating-a-test-environment-for-mac-software/1774.rss">Creating a test environment for Mac software</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What was your worst day running your SaaS? Share your experience!</title>
+    <link>https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289</link>
+    <description>Currently, I am having an issue with my SaaS platform - it&#39;s a critical bug that affects the core functionality. Without this working correctly, my revenue is at stake.
+
+The most disturbing is that I did not push any new code - this just suddenly stopped working.
+
+This feels like a nightmare to me because I cannot find a reason why this doesn&#39;t work and I am scared of those emails coming in soon with cancellation requests from my paying users :frowning: 
+
+So while I am struggling here, cheer me up a bit with your nightmare story running your service.
+
+Oh dear, I wish this day could end already...</description>
+    
+    <lastBuildDate>Thu, 07 Sep 2017 16:43:05 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What was your worst day running your SaaS? Share your experience!</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>I lost multiple hours worth of customer data. The <a href="https://sifterapp.com/blog/2011/03/fridays-unscheduled-maintenance-and-data-loss/" rel="nofollow noopener">full post-mortem</a>. Here’s the <a href="https://startingandsustaining.com/chapters/backups/" rel="nofollow noopener">lesson learned chapter</a> of my book. And here’s the <a href="https://startingandsustaining.com/chapters/recovering/" rel="nofollow noopener">draft chapter of advice on how to handle big issues</a>.</p>
+<p>Long story short. Be honest. Be transparent. Treat your customers like you would want to be treated. It won’t be anywhere near as bad as you imagine it will.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289/4</link>
+        <pubDate>Thu, 07 Sep 2017 16:43:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5289-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289.rss">What was your worst day running your SaaS? Share your experience!</source>
+      </item>
+      <item>
+        <title>What was your worst day running your SaaS? Share your experience!</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <p>Not a SaaS, but way back when I was still selling SimplyTweet, my iPhone Twitter app and in the earlier days of Twitter when they did not have the streaming API, I had to poll the Twitter API to support push notifications for mentions and direct messages. It was all going well.</p>
+<p>It was all good for months (or a year?). I was on my honeymoon with my wife. I checked my email and receive an email from Slicehost (remember them?) that I was generating too many DNS lookups and there were suspending my outgoing network traffic immediately. I asked for a few days grace, explaining my situation. I got a flat no. I can’t remember how I fixed it temporarily, but it was a very unhappy afternoon during one of the happier moments of my life.</p>
+<p>That’s why you don’t want to check your email during your honeymoon.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289/3</link>
+        <pubDate>Thu, 07 Sep 2017 07:09:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5289-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289.rss">What was your worst day running your SaaS? Share your experience!</source>
+      </item>
+      <item>
+        <title>What was your worst day running your SaaS? Share your experience!</title>
+        <dc:creator><![CDATA[akash]]></dc:creator>
+        <description><![CDATA[
+            <p>While it might seem like the end of the world, unless you’ve lost customer data, don’t worry too much about it.</p>
+<p>Be honest with your customers about the issue. Let them know something broke in the software and that you are fixing it. You will find that customers can be pretty understanding of such issues, as long as you communicate effectively to them. They can also be quite accomodating of some serious downtime.</p>
+<p>You are going to face issues like this every once in a while - the only surety in software is that “shit happens”. Everytime it will be a different issue you have not faced before - a bug that only is reproduced under specific conditions, a third party api that does not work as expected, a random server crash you cannot diagnose.</p>
+<p>Data backup and restore strategy is your friend. Make sure to test backups for correctness.</p>
+<p>My favorite personal story -  after a straight 14 hour coding session, I inadvertently ran a mysql query on the production server that disabled all customer accounts and then I promptly went to bed. Woke up 12 hours later to a bunch of emails from paying users who were confused why they could not use the software anymore. Fixed data from backup, then replied to each of them with a sincere apology. Not one cancelation - infact not one angry reply.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289/2</link>
+        <pubDate>Wed, 06 Sep 2017 19:52:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5289-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289.rss">What was your worst day running your SaaS? Share your experience!</source>
+      </item>
+      <item>
+        <title>What was your worst day running your SaaS? Share your experience!</title>
+        <dc:creator><![CDATA[unstoppable]]></dc:creator>
+        <description><![CDATA[
+            <p>Currently, I am having an issue with my SaaS platform - it’s a critical bug that affects the core functionality. Without this working correctly, my revenue is at stake.</p>
+<p>The most disturbing is that I did not push any new code - this just suddenly stopped working.</p>
+<p>This feels like a nightmare to me because I cannot find a reason why this doesn’t work and I am scared of those emails coming in soon with cancellation requests from my paying users <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"></p>
+<p>So while I am struggling here, cheer me up a bit with your nightmare story running your service.</p>
+<p>Oh dear, I wish this day could end already…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289/1</link>
+        <pubDate>Wed, 06 Sep 2017 18:29:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5289-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-was-your-worst-day-running-your-saas-share-your-experience/5289.rss">What was your worst day running your SaaS? Share your experience!</source>
+      </item>
+  </channel>
+</rss>

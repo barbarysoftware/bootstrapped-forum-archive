@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Key Actions for GDPR compliance for SaaS Providers</title>
+    <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689</link>
+    <description>I run a SaaS product - https://linkgage.com and have some customers based in the EU. Now the new EU law called GDPR (General Data Protection Regulation) will come into effect as from May 25th. I really want to know what are the key actions that SaaS providers need to do within their application to make them complaint.
+
+E.g
+
+1. Give users ability to delete their profile
+2. Give users ability to export their profile or transactional details
+
+I will really need your input as regard specific things my application needs to do to make it GDPR complaint.
+
+Regards</description>
+    
+    <lastBuildDate>Sat, 05 May 2018 17:59:12 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[Gorby]]></dc:creator>
+        <description><![CDATA[
+            <p>My own take, and the usual caveat IANAL, is no. Just state somewhere in your privacy policy something about what you do and don’t do. You can also state on the form that the name/email is only used for this communication and any responses etc. Be upfront and honest etc.</p>
+<p>However if you later parse your inbox/help system and email them about new stuff etc then you become eligible for trouble.</p>
+<p>It’ll take a while for some precedence and lawsuits to take shape <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/19</link>
+        <pubDate>Sat, 05 May 2018 17:59:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[B2BSoftware]]></dc:creator>
+        <description><![CDATA[
+            <p>About customer consent when making an inquiry:<br>
+I’ve always required the “I agree…” checkbox for a customer to create an account to use our SaaS product; however, I’ve never required it for users to submit a question.</p>
+<p>When a user submits a question on our site, their email is never used for marketing purposes. But, does GDPR require consent when a user from the EU sends in a question which includes their name and email address? Please pardon my ignorance on this subject <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/18</link>
+        <pubDate>Fri, 04 May 2018 20:07:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stanwarri">@stanwarri</a> The thing witth GDPR compliance and your SaaS is that you act both as a data processor and as a data controler.  You are a data controler for your own clients, and probably it is relatively straight forward to apply the GDPR regulations.</p>
+<p>When you place retargeting pixels etc, you probably handle personal data in the EU sense, and the people you retarget must have given consent.  This seems quite hard for me to ensure.  I think your clients must have asked for consent from the users before using linkgage on their users.</p>
+<p>Related to that is the branded call to actions you add to links.  I think this is illegal in some countries, especially Germany.  This does not mean that linkgage is illegal, as I understand this means a German company is not allowed to use linkgage and can run into trouble if prosecuted.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/17</link>
+        <pubDate>Fri, 16 Mar 2018 08:33:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[Virgil]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve talked with a lot of startups about this. Those with funding hire expensive lawyers who spend days or weeks and bill you 5 figures, others(mostly bootstrappers) implement top requirements themselves to show at least good faith</p>
+<p>These are 2 links that I find very helpful and probably I’ll base my compliance on:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://techblog.bozho.net/gdpr-practical-guide-developers/" target="_blank" title="08:19AM - 29 November 2017" rel="nofollow noopener">Bozho's tech blog – 29 Nov 17</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/487;"><img src="https://techblog.bozho.net/digits.jpg" class="thumbnail"></div>
+
+<h3><a href="https://techblog.bozho.net/gdpr-practical-guide-developers/" target="_blank" rel="nofollow noopener">GDPR - A Practical Guide For Developers - Bozho's tech blog</a></h3>
+
+<p>You’ve probably heard about GDPR. The new European data protection regulation that applies practically to everyone. Especially if you are working in a big company, it’s most likely that there’sContinue reading</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://gdprchecklist.io/favicons/favicon-32x32.png" class="site-icon" width="32" height="32">
+      <a href="https://gdprchecklist.io/" target="_blank" rel="nofollow noopener">The GDPR Checklist</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/361;"><img src="https://gdprchecklist.io//static/github.06e3621a.png" class="thumbnail"></div>
+
+<h3><a href="https://gdprchecklist.io/" target="_blank" rel="nofollow noopener">The GDPR Checklist</a></h3>
+
+<p>Achieving GDPR Compliance shouldn't feel like a struggle. This is a basic checklist you can use to harden your GDPR compliancy</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>I’m far from being an expert, but my personal opinion if you are a bootstrapped, one-man show with not so much data about EU citizens, and you implement the points in the links above, I don’t think there are many reasons to worry about.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/16</link>
+        <pubDate>Tue, 13 Mar 2018 20:19:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t believe there are any official certification fees. The lawyer fees may still be fairly cost-prohibitive, though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/15</link>
+        <pubDate>Tue, 13 Mar 2018 19:58:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[stanwarri]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="12" data-topic="5689">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/garrettdimon/40/3456_1.png" class="avatar"> garrettdimon:</div>
+<blockquote>
+<p>That’s normally a 3-4 month process with an external 3rd party for certification. (eTRUST in our case.)</p>
+</blockquote>
+</aside>
+<p>So is it mandatory to have a 3rd party certify your compliance? I’m just wondering if startups can be able to pay for such certification fee.</p>
+<aside class="quote" data-post="13" data-topic="5689">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dlj/40/3317_1.png" class="avatar"> DLJ:</div>
+<blockquote>
+<p>Privacy by Design Framework used by GDPR (thank the Canadians for this one <img src="https://emoji.discourse-cdn.com/twitter/crazy_face.png?v=5" title=":crazy_face:" class="emoji" alt=":crazy_face:"> )</p>
+</blockquote>
+</aside>
+<p>Thanks a lot for providing more details on this</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/14</link>
+        <pubDate>Wed, 28 Feb 2018 12:43:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>just posted these over on the MegaMaker forums but as GDPR is such a pain I thought i’d post here for everyone to see</p>
+<p>Privacy by Design Framework used by GDPR (thank the Canadians for this one <img src="https://emoji.discourse-cdn.com/twitter/crazy_face.png?v=5" title=":crazy_face:" class="emoji" alt=":crazy_face:"> )<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.smashingmagazine.com/images/favicon/favicon.png" class="site-icon" width="16" height="16">
+      <a href="https://www.smashingmagazine.com/2017/07/privacy-by-design-framework/" target="_blank" title="04:56PM - 27 July 2017" rel="nofollow noopener">Smashing Magazine – 27 Jul 17</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:129/115;"><img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/99b4bd3b-ab56-45d6-89dd-b6b9928a3dc2/privacy-by-design-800.png" class="thumbnail"></div>
+
+<h3><a href="https://www.smashingmagazine.com/2017/07/privacy-by-design-framework/" target="_blank" rel="nofollow noopener">How To Protect Your Users With The Privacy By Design Framework</a></h3>
+
+<p>In these politically uncertain times, developers can help to **defend their users’ personal privacy** by adopting the _Privacy by Design (PbD)_ framework. These common-sense steps will become a requirement under the EU's imminent data protection...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>GDPR for developers<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.smashingmagazine.com/images/favicon/favicon.png" class="site-icon" width="16" height="16">
+      <a href="https://www.smashingmagazine.com/2018/02/gdpr-for-web-developers/?ref=webdesignernews.com" target="_blank" title="12:45PM - 27 February 2018" rel="nofollow noopener">Smashing Magazine – 27 Feb 18</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:129/73;"><img src="//cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0dcb43cf-e60e-434b-8f95-e6e5ca9df199/gdpr-illustration.png" class="thumbnail"></div>
+
+<h3><a href="https://www.smashingmagazine.com/2018/02/gdpr-for-web-developers/?ref=webdesignernews.com" target="_blank" rel="nofollow noopener">How GDPR Will Change The Way You Develop</a></h3>
+
+<p>GDPR requires you to be more thoughtful about the sites and services you build, more transparent about the ways you collect and use data, more considerate of your users, and more thorough in your development and documentation processes.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/13</link>
+        <pubDate>Wed, 28 Feb 2018 12:28:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>The lawyer part was generally the more difficult and time-consuming work in the process. This was overall timelines rather dedicated work during the respective periods. And some of it was somewhat easier since we already had Privacy Shield in place. That’s normally a 3-4 month process with an external 3rd party for certification. (eTRUST in our case.)</p>
+<p>Privacy policy: lawyer work 4 weeks, implementation 1 hour<br>
+DPA: lawyer work 3 months, implementation in the app 2-3 weeks<br>
+Check box changes: implementation 2-3 days</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/12</link>
+        <pubDate>Thu, 22 Feb 2018 16:07:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[stanwarri]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks a lot for providing more details. There has been a lot I have been grinning from online resources. I want to ask, how long did it take your to implement those changes on the technical side.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/11</link>
+        <pubDate>Thu, 22 Feb 2018 15:35:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[asandvig]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s awesome! Nice “content marketing” for you guys. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I also recommend people to read the actual GDPR text itself. One should at least be familiar with <a href="https://gdpr-info.eu/chapter-2/" rel="nofollow noopener">Chapter 2 - Principles</a>  and <a href="https://gdpr-info.eu/chapter-3/" rel="nofollow noopener">Chapter 3 - Rights of the data subject</a>. It’s a fairly quick read in (close to) plain English.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/10</link>
+        <pubDate>Tue, 20 Feb 2018 16:44:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>After talking to our product manager at Postmark, he went ahead and wrote up a detailed summary about our decisions and what we’re doing for GDPR in a way that should be useful to other smaller businesses.</p>
+<p><a href="https://postmarkapp.com/blog/gdpr-get-ready" rel="nofollow noopener">GDPR: How small companies can get ready for it (and why you can’t just ignore it)</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/9</link>
+        <pubDate>Tue, 20 Feb 2018 14:59:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[asandvig]]></dc:creator>
+        <description><![CDATA[
+            <p>If you’re a U.S-based IaaS/PaaS/SaaS provider, you should at least make sure you are Privacy Shield-certified, or other companies in the EU/EEA simply cannot use your services unless you have a separate agreement with them. As I understand it, you can self-certify on the Privacy Shield web site.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/8</link>
+        <pubDate>Mon, 19 Feb 2018 19:44:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[asandvig]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="5689" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/duncanm/40/62_1.png" class="avatar"> duncanm:</div>
+<blockquote>
+<p>Q. When you ( <a class="mention" href="/u/termsfeed">@termsfeed</a>  ) say ‘users’ are “the employees of the company that bought and use my software” counted as Users? I am confused about this as I don’t think the managers/executives that buy my software will want users to simply ‘erase their data’ and not participate.</p>
+</blockquote>
+</aside>
+<p>Whether the individuals for which you have collected personal data are users of the system or not is irrelevant. The individual still has the right to have their data erased. Whether the people who buy and/or use your software like that or not is also irrelevant.</p>
+<p>GDPR does not only apply to software systems, but to organizations/companies as a whole and how they collect, process and store data about individuals. For example, if someone calls your company on the phone and you write down their name on a piece of paper, the laws now apply to that piece of paper in the same manner they apply to any personal user data you store in a database.</p>
+<p>The core principle behind GDPR is quite simple: as an individual I have certain rights regarding how my personal data is collected, stored and used. It’s the company’s responsibilty to ensure that my rights are not violated.</p>
+<p>In essence: don’t collect data you don’t need, give (justified) reasons for needing the data you do collect, don’t use an indivudal’s data for anything they did not explicitly consent to, give them acces to their data and delete (or anonymize) their data if they ask you to.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/7</link>
+        <pubDate>Mon, 19 Feb 2018 19:27:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[termsfeed]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m a bit confused about the overall employees part. It may be helpful to go through our presentation for a GDPR Compliance Plan (it’s on our SlideShare official account, <a class="mention" href="/u/termsfeed">@termsfeed</a>). Starting at Slide 17, we have 4 examples of data controllers vs. data processors.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/6</link>
+        <pubDate>Mon, 19 Feb 2018 14:52:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[duncanm]]></dc:creator>
+        <description><![CDATA[
+            <p>Q. When you ( <a class="mention" href="/u/termsfeed">@termsfeed</a>  ) say ‘users’ are “the employees of the company that bought and use my software” counted as Users? I am confused about this as I don’t think the managers/executives that buy my software will want users to simply ‘erase their data’ and not participate.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/5</link>
+        <pubDate>Mon, 19 Feb 2018 14:32:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[stanwarri]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for the feedback and the guide. I will look into it and also do more research on what others are working on.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/4</link>
+        <pubDate>Mon, 19 Feb 2018 10:12:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[termsfeed]]></dc:creator>
+        <description><![CDATA[
+            <p>As a quick summary, GDPR would mean many things to most SaaS apps.</p>
+<p>(But if your app is the data processor for another business, you may also want to look into requiring your customers to comply with GDPR.)</p>
+<ol>
+<li>Identify if you collect Personal Information and/or Sensitive Personal Information. The later may require you to have a DPO.</li>
+<li>Users must give you consent for you to collect personal data (ie. look into clickwrap methods)</li>
+<li>Users must be able to view, update, erase their data they have with you. Users should also be able to export their personal data they have with you in an electronic format.</li>
+<li>There are some additional requirements for data breaches (ie. you must notify within 72 hours) especially for data processors.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/3</link>
+        <pubDate>Fri, 16 Feb 2018 11:33:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>Your best bet is to talk to a lawyer because it’s pretty darn complex, but short of that, this <a href="https://www.cennydd.com/writing/a-techies-rough-guide-to-gdpr" rel="nofollow noopener">guide by Cennydd Bowles</a> is a great place to start to wrap your head around it a bit.</p>
+<p>I haven’t been directly involved with the work we’ve been doing for Postmark, but my interactions with the product manager who has been leading the charge seem to indicate that there’s pretty widespread confusion across the industry. There’s a spectrum of compliance, and a lot of it is focused on your ability to comply when customers make requests.</p>
+<p>For Postmark, we’ve added a whole section to the site dedicated to <a href="https://postmarkapp.com/eu-privacy" rel="nofollow noopener">EU Data Protection, GDPR, and a DPA</a>. We’ve invested quite a bit of effort into making sure we get this right because our customers have been asking for it. So, if you’re not seeing a lot of requests from customers, you may be better off keeping it simple and processing more stuff manually.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/2</link>
+        <pubDate>Tue, 13 Feb 2018 21:33:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+      <item>
+        <title>Key Actions for GDPR compliance for SaaS Providers</title>
+        <dc:creator><![CDATA[stanwarri]]></dc:creator>
+        <description><![CDATA[
+            <p>I run a SaaS product - <a href="https://linkgage.com" rel="nofollow noopener">https://linkgage.com</a> and have some customers based in the EU. Now the new EU law called GDPR (General Data Protection Regulation) will come into effect as from May 25th. I really want to know what are the key actions that SaaS providers need to do within their application to make them complaint.</p>
+<p>E.g</p>
+<ol>
+<li>Give users ability to delete their profile</li>
+<li>Give users ability to export their profile or transactional details</li>
+</ol>
+<p>I will really need your input as regard specific things my application needs to do to make it GDPR complaint.</p>
+<p>Regards</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689/1</link>
+        <pubDate>Tue, 13 Feb 2018 13:40:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5689-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/key-actions-for-gdpr-compliance-for-saas-providers/5689.rss">Key Actions for GDPR compliance for SaaS Providers</source>
+      </item>
+  </channel>
+</rss>

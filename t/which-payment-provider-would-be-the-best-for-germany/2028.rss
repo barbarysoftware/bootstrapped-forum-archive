@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Which payment provider would be the best for germany?</title>
+    <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028</link>
+    <description>Hey,
+
+I hope there are some bootstrappers from Germany.
+Which payment provider you would use for a SaaS product?
+
+The price for the product will be about 10 €. The cost for payment shouldn&#39;t be that high...
+
+Any 	recommendations? 
+
+Greetings,
+Alexander</description>
+    
+    <lastBuildDate>Thu, 11 Jan 2018 12:25:22 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[StellaT]]></dc:creator>
+        <description><![CDATA[
+            <p>If your customers are B2B customers (like stores), make sure to comply with the German habits around online payment. You should for that definitely accept payment methods such as SEPA-Lastschrift, SOFORT, Giropay. And on top of your payment system, think about building an invoice system (e.g. Recurly, Chargebee, ??), because German customers needs physical or electronic invoices to submit to their accountants. And on a legal basis in EU (on contrary to the US), to send invoices to your customers is - according to my knowledge -<br>
+mandatory. In the US, you could ask your customers to go to your platform, log in, and download his invoices. In Europe, you have to send them.</p>
+<p>So far, i can see that STRIPE supports SEPA-Lastschrift, SOFORT, Giropay (+ the classical credit cards, debit cards, etc.). Are there any other competitors supporting them too? Braintree for instance?</p>
+<p>Thanks.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/20</link>
+        <pubDate>Thu, 11 Jan 2018 12:25:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[B2BSoftware]]></dc:creator>
+        <description><![CDATA[
+            <p>Old thread, but I feel compelled to add some feedback about Fastspring, as their service has changed a lot.</p>
+<p>I used to tell people that their slightly higher charges are worth it for the high-end support they provide customers. I looked at them as the “Rackspace” (fanatical support) equivalent for payment providers. Unfortunately, their business model has changed over the past year or two.</p>
+<p>I’m now seeing the same kind of non-sense replies from their support crew that Plimus is known for…short responses which don’t even mention or address any of the customer’s concerns, and then end with “have a nice day” or “let me know if there’s anything else I can help you with”…arghh!! No longer worth the extra fees!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/19</link>
+        <pubDate>Thu, 02 Nov 2017 18:50:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m using ShareIt and Avangate, and since they both originated in Europe, they support bunch of local payment methods. However, I’m using them for one-time high-price (compared to 10$) sales. They do advertise subscription services but I didn’t try that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/18</link>
+        <pubDate>Thu, 09 Feb 2017 15:02:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="16" data-topic="2028">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chh/40/3284_1.png" class="avatar"> chh:</div>
+<blockquote>
+<p>Stripe recently added the “Sources” API which additionally to credit cards supports SEPA Direct Debit, Sofort, iDEAL, Giropay and Bancontact. At least SOFORT and SEPA should make it very usable in Germany (I’m from Austria).</p>
+</blockquote>
+</aside>
+<p>Wow, I had no idea Stripe had added these options. For people using Stripe with a customer base in DE, NL, BE, AU, etc, I’d expect adding these options would boost sales. I’ve added this to my own to-do list.</p>
+<p>Dutch people seem to be especially fond of their iDEAL system.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/17</link>
+        <pubDate>Thu, 09 Feb 2017 13:25:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[chh]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://stripe.com/docs/sources" rel="nofollow noopener">Stripe</a> recently added the “Sources” API which additionally to credit cards supports SEPA Direct Debit, Sofort, iDEAL, Giropay and Bancontact. At least SOFORT and SEPA should make it very usable in Germany (I’m from Austria).</p>
+<p>Here’s the blog post:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://stripe.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://stripe.com/blog/european-payment-methods" target="_blank" rel="nofollow noopener">stripe.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="https://stripe.com/img/v3/home/social.png" class="thumbnail"></div>
+
+<h3><a href="https://stripe.com/blog/european-payment-methods" target="_blank" rel="nofollow noopener">European payment methods</a></h3>
+
+<p>Today, we’re introducing support for five popular payment methods for European businesses: Bancontact, Giropay, iDEAL, SEPA Direct Debit, and SOFORT. You can activate these payment methods from your Dashboard. Additionally, European businesses can...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>PayPal wasn’t that big a hassle to integrate so far. Most libraries already support it pretty well.</p>
+<p>I’ve also dealt with Wirecard before, but there libraries and documentation aren’t really good, but they support the most payment sources, including PayPal via their API. You probably could get a better deal with Wirecard than with Stripe, but Wirecard’s onboarding isn’t quick self service and involves signing a contract with them. You can literally start selling in minutes with Stripe instead and support the most common methods.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/16</link>
+        <pubDate>Thu, 09 Feb 2017 12:42:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[nfelger]]></dc:creator>
+        <description><![CDATA[
+            <p>We have been using <a href="http://payment-services.ingenico.com/int/de/" rel="nofollow noopener">Ogone (now called Ingenico)</a> for years, and while I have nothing positive to say about them in general, their transaction costs have been very cheap. (Which I imagine will be critical at the very low price point you have in mind.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/15</link>
+        <pubDate>Mon, 15 Sep 2014 10:59:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[itengelhardt]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh yeah… I avoid dealing with PayPal like the plague.<br>
+I once tried to receive a payment from a person in the USA and PayPal simply <strong>lost the money</strong>. It sent me an email that I can redeem the money, but wouldn’t let me. In the sender’s account the transfer was marked as “not yet accepted by receiver”.<br>
+Hours on the phone with support didn’t fix the problem. I went through Stripe eventually…</p>
+<p>PayPal: Never again</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/14</link>
+        <pubDate>Sun, 14 Sep 2014 19:17:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[quaffapint]]></dc:creator>
+        <description><![CDATA[
+            <p>I have had issues getting recurring payments with PayPal working for my German customers. They ended up going through Stripe which worked just fine. PayPal would just return a nondescript error and only after much Googling did it basically say what was going on. I haven’t had that issue with other countries.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/13</link>
+        <pubDate>Sun, 14 Sep 2014 17:26:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[AxlF]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you all for your suggestions!</p>
+<p>My app is an online management tool for music teacher. I don’t think that most music teacher have credit cards, especially the younger ones coming from university recently…</p>
+<p>According to this <a href="http://www.ecckoeln.de/News/Online-Payment:-Deutsche-favorisieren-PayPal-%E2%80%93-in-%C3%96sterreich-und-der-Schweiz-dominiert-die-Kreditkarte" rel="nofollow noopener">article</a> germans pay rather with paypal than with credit card.</p>
+<p>I know, 10 €/month is very cheap. Perhaps I should introduce it as early bird discount and do a higher regular pricing. It’s hard to determine the “right” price for the product…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/12</link>
+        <pubDate>Sat, 13 Sep 2014 20:30:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[itengelhardt]]></dc:creator>
+        <description><![CDATA[
+            <p>What kind of product are you selling?<br>
+What’s your target market?</p>
+<p>Also: <strong>Charge. More.</strong> (tm <a class="mention" href="/u/patio11">@patio11</a>)<br>
+10 €/month is not very much and makes it harder to scale customer acquisition (e.g. through AdWords)</p>
+<p>Here are my experiences with choosing a payment provider:</p>
+<p>After I tried to integrate PayMill and not having the stomach to persist through their onboarding experience, I now use Stripe.</p>
+<p>Here’s my chain of thought for choosing Stripe:</p>
+<ul>
+<li>
+<p>You’re going to <strong>loose out on customers</strong> who don’t have CC - that’s a given and you have to adjust for it</p>
+</li>
+<li>
+<p>That being said, almost anyone in Europe now has access to a credit card - at least the younger generation and pretty much everyone who’s doing business</p>
+</li>
+<li>
+<p>Stripe has metered pricing - nice to start off with</p>
+</li>
+<li>
+<p>The API &amp; integration is beautiful</p>
+</li>
+<li>
+<p>The ecosystem is a <em>BIG PLUS</em>: <a href="http://hookfeed.com/" rel="nofollow noopener">HookFeed</a>, <a href="http://koudoku.org" rel="nofollow noopener">Koudoku</a>, <a href="https://github.com/yas4891/stripe_invoice" rel="nofollow noopener">StripeInvoice</a> and a multitude of other products/gems/libraries help you get to market faster and focus on your product - instead of “plumbing”</p>
+</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/11</link>
+        <pubDate>Sat, 13 Sep 2014 05:55:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[itengelhardt]]></dc:creator>
+        <description><![CDATA[
+            <p>Short answer: It isn’t. I tried signing up and just churned somewhere after step 5 or 6.</p>
+<p>Their onboarding is horrendous, an absolute fricking nightmare. After every step you get a message saying “Just one more step” - except it isn’t.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/10</link>
+        <pubDate>Sat, 13 Sep 2014 05:38:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t recommend using Paypal for a SaaS. Their recurring payments system is a disaster.</p>
+<p>Stripe is working on direct debit payments in Germany. You should also consider <a href="https://gocardless.com" rel="nofollow noopener">GoCardless</a> for recurring direct debit payments.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/9</link>
+        <pubDate>Tue, 09 Sep 2014 11:22:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[ValPPG]]></dc:creator>
+        <description><![CDATA[
+            <p>I personally work for PayPro Global and we offer a very flexible and automated subscription billing mechanism with an integrated payment gateway that supports all major European, Asian, South and North American payment methods. With us you can customize your checkout and get a lot of flexibility in managing your sales, marketing and reporting. The set-up is fast and free, there are also no monthly fees or any obligations whatsoever.</p>
+<p>We are headquartered in Canada, with regional offices in London, Tel-Aviv, Bucharest and I personally reside in Berlin.</p>
+<p>you can register <a href="https://www.payproglobal.com/request_demo.aspx" rel="nofollow noopener">here</a> to get a free, personalized demo with one of our representative, who can answer all of your questions.</p>
+<p>best of success in your business</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/8</link>
+        <pubDate>Tue, 09 Sep 2014 10:23:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[danielherken]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m in Germany and currently we are using <a href="http://www.fastspring.com" rel="nofollow noopener">www.fastspring.com</a>. Works like a charm, and nice from a tax accountant point of view (so I’ve been told).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/7</link>
+        <pubDate>Tue, 09 Sep 2014 10:15:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[David]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not in Germany but in The Netherlands.<br>
+I use Stripe, PayPal and Sisow. The latter takes iDEAL (NL), SOFORT Banking (DE and many other EU countries) and Mister Cash (BE) payments. Sisow is located in The Netherlands, and I’m not sure they take German customers. But I think they’re great.</p>
+<p>It’s not so hard to integrate them each, and let the customer choose a payment method when checking out.</p>
+<p>David.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/6</link>
+        <pubDate>Tue, 09 Sep 2014 08:00:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[jacob]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Alexander,</p>
+<p>You may want to consider using <a href="https://www.paymill.com" rel="nofollow noopener">Paymill</a>, which offers an API similar to Stripe.</p>
+<p>When I started using them they where still rather new on the market, and their on-boarding process was a bit tedious, requiring various business documentation and paperwork to be completed.</p>
+<p>I assume that the on-boarding process has improved since then. Once you’re setup Paymill is a breeze, and they are very responsive to answering support questions.</p>
+<p>Regards,<br>
+Jacob</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/5</link>
+        <pubDate>Tue, 09 Sep 2014 07:04:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a bunch of German ecommerce developers on twitter, so I tweeted it out for ya:</p>
+<aside class="onebox twitterstatus">
+  <header class="source">
+      <a href="https://twitter.com/kalenjordan/status/509084906761486336" target="_blank">twitter.com</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://pbs.twimg.com/profile_images/1254905845357391874/-LKOFfvo_400x400.jpg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h4><a href="https://twitter.com/kalenjordan/status/509084906761486336" target="_blank">Kalen Jordan (kalenjordan)</a></h4>
+
+<div class="tweet"> What's the best merchant credit card processor in Germany?  <a href="https://twitter.com/fbrnc" target="_blank">@fbrnc</a> <a href="https://twitter.com/avstudnitz" target="_blank">@avstudnitz</a>
+</div>
+
+<div class="date">
+  <a href="https://twitter.com/kalenjordan/status/509084906761486336" target="_blank">9:04 PM - 8 Sep 2014</a>
+    <span class="retweet">
+      <svg viewBox="0 0 640 512" width="14px" height="16px" aria-hidden="true">
+        <path d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path>
+      </svg> 1
+    </span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Seems like there isn’t really a conclusive answer though <img src="https://emoji.discourse-cdn.com/twitter/confused.png?v=9" title=":confused:" class="emoji" alt=":confused:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/4</link>
+        <pubDate>Mon, 08 Sep 2014 22:23:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[AxlF]]></dc:creator>
+        <description><![CDATA[
+            <p>As far as I understand stripe it handles only credit cards. But I would like to integrate other payment methods like Paypal or DirectDebit.</p>
+<p>Also Braintree does not accept paypal outside US (according to their FAQs)…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/3</link>
+        <pubDate>Mon, 08 Sep 2014 20:52:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Alexander,</p>
+<p>The best way is paying a percentage of your income, not a monthly fee. Try <a href="http://stripe.com" rel="nofollow noopener">Stripe</a> or <a href="https://www.braintreepayments.com" rel="nofollow noopener">Braintree</a>. I worked with both and they’re very easy to integrate.</p>
+<p>Cheers!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/2</link>
+        <pubDate>Mon, 08 Sep 2014 20:28:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+      <item>
+        <title>Which payment provider would be the best for germany?</title>
+        <dc:creator><![CDATA[AxlF]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey,</p>
+<p>I hope there are some bootstrappers from Germany.<br>
+Which payment provider you would use for a SaaS product?</p>
+<p>The price for the product will be about 10 €. The cost for payment shouldn’t be that high…</p>
+<p>Any 	recommendations?</p>
+<p>Greetings,<br>
+Alexander</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028/1</link>
+        <pubDate>Mon, 08 Sep 2014 16:46:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2028-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/which-payment-provider-would-be-the-best-for-germany/2028.rss">Which payment provider would be the best for germany?</source>
+      </item>
+  </channel>
+</rss>

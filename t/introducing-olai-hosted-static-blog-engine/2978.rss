@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Introducing Olai - Hosted Static Blog Engine</title>
+    <link>https://discuss.bootstrapped.fm/t/introducing-olai-hosted-static-blog-engine/2978</link>
+    <description>Hello everyone,
+I have been following the threads in this site for some product ideas. Picking up from [this thread][1], I have developed a hosted static blog engine.
+
+I completed proof-of-concept to validate the technical feasibility of it. Before I go into fully developing it, I want to validate the business feasibility of the idea. I have put up a [landing page][2]. The idea is that you should be able to blog via mobile, desktop or web. The service (which I&#39;m calling as Olai), will generate static pages and push to S3, Github pages or even any plain old servers with FTP capability.
+
+I appreciate any feedback on the business validity and any specific concerns that I should address.
+Cheers,
+Joseph
+
+[1]: http://discuss.bootstrapped.fm/t/hi-im-nico-i-work-on-a-wordpress-to-static-site-service/2281
+[2]: http://www.olai.in</description>
+    
+    <lastBuildDate>Fri, 17 Apr 2015 07:38:03 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/introducing-olai-hosted-static-blog-engine/2978.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Introducing Olai - Hosted Static Blog Engine</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>Consider adding something to the landing page which gives an idea what you will charge for it. Right now the site is very vague but in principle I like basic concept (raw post in -&gt; published post out) but I think you may also run into some hefty challenges (how do you deal with static assets for example, what about SSL, custom domains, etc).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-olai-hosted-static-blog-engine/2978/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-olai-hosted-static-blog-engine/2978/2</link>
+        <pubDate>Fri, 17 Apr 2015 07:38:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2978-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-olai-hosted-static-blog-engine/2978.rss">Introducing Olai - Hosted Static Blog Engine</source>
+      </item>
+      <item>
+        <title>Introducing Olai - Hosted Static Blog Engine</title>
+        <dc:creator><![CDATA[jjude]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello everyone,<br>
+I have been following the threads in this site for some product ideas. Picking up from <a href="http://discuss.bootstrapped.fm/t/hi-im-nico-i-work-on-a-wordpress-to-static-site-service/2281">this thread</a>, I have developed a hosted static blog engine.</p>
+<p>I completed proof-of-concept to validate the technical feasibility of it. Before I go into fully developing it, I want to validate the business feasibility of the idea. I have put up a <a href="http://www.olai.in" rel="nofollow noopener">landing page</a>. The idea is that you should be able to blog via mobile, desktop or web. The service (which I’m calling as Olai), will generate static pages and push to S3, Github pages or even any plain old servers with FTP capability.</p>
+<p>I appreciate any feedback on the business validity and any specific concerns that I should address.<br>
+Cheers,<br>
+Joseph</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-olai-hosted-static-blog-engine/2978/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-olai-hosted-static-blog-engine/2978/1</link>
+        <pubDate>Thu, 16 Apr 2015 16:06:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2978-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-olai-hosted-static-blog-engine/2978.rss">Introducing Olai - Hosted Static Blog Engine</source>
+      </item>
+  </channel>
+</rss>

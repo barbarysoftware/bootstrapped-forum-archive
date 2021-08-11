@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hi, I&#39;m Maksym from Etlworks</title>
+    <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540</link>
+    <description>Hey everyone,
+
+I&#39;m a founder of [Etlworks](https://etlworks.com/) and [Toolsverse](https://www.toolsverse.com/). As many of you I&#39;ve spent a few years on BOS and thought is was time to introduce myself to this group.
+
+We just launched our new SaaS project [Etlworks Integrator](https://etlworks.com/). It is a data integration service which has been in development for quite some time, was soft-launched in August and we actually have a few &quot;enterprisy&quot; customers already.
+
+Happy to be a member of the living community of the bootstrappers again. As usual, any feedback on site and our live demo is very much appreciated.  
+
+Maksym</description>
+    
+    <lastBuildDate>Tue, 22 Nov 2016 18:21:49 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="11" data-topic="4540">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I’ve seen a demo by CA recently where they roll out a product that connects to an arbitrary database and without coding allows to expose its content as WS (SOAP or REST). Kind of CRUD over WS. They felt very optimistic about it.</p>
+</blockquote>
+</aside>
+<p>Well, in reality you cannot update one table without touching a bunch of others. But interesting use-case indeed.</p>
+<p>I think the biggest pain points for db&lt;-&gt;ws integration are change replication and ability to push data to the “integration service” (in opposite to pulling from the db). We natively support first using “change replication” flow and we are working on “listeners” to support the second.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/13</link>
+        <pubDate>Tue, 22 Nov 2016 18:21:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>WSs (REST and SOAP) handled by http connector. You point to the endpoint, specify auth type, payload type and format (json, xml, etc) and Integrator handles the rest. There is a simple example in demo called “Save my GitHub repos into the Excel”. Do you think the message in the web site is not clear?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/12</link>
+        <pubDate>Tue, 22 Nov 2016 17:45:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>My primary daily responsibility is ESB - a integration via web services, that is. Interesting enough, I do not see WSs as a source or a target in your integrations. Your customers do not have a demand for that?</p>
+<p>I’ve seen a demo by CA recently where they roll out a product that connects to an arbitrary database and without coding allows to expose its content as WS (SOAP or REST). Kind of CRUD over WS. They felt very optimistic about it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/11</link>
+        <pubDate>Tue, 22 Nov 2016 17:32:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Updated FAQ to explain how Integrator can work behind the firewall. Thanks for feedback.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/10</link>
+        <pubDate>Tue, 22 Nov 2016 13:11:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="4540">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>en I setup a connector – how do I connect to a DB in my corp network?</p>
+</blockquote>
+</aside>
+<p>For this we have on site agent which runs as a service behind the firewall. It can push data to the Integrator (or back) over http or cloud storage: <a href="https://www.toolsverse.com/products/integration-agent/index.html" rel="nofollow noopener">https://www.toolsverse.com/products/integration-agent/index.html</a></p>
+<p>The alternative is to install Integrator on premise and run it on your own network. We offer several installation options including docker container.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/9</link>
+        <pubDate>Mon, 21 Nov 2016 19:19:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Looking at the demo, and I don’t get it. Your SaaS is in the cloud. When I setup a connector – how do I connect to a DB in my corp network?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/8</link>
+        <pubDate>Mon, 21 Nov 2016 18:50:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Bad commit deleted all css. Fixed now</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/7</link>
+        <pubDate>Mon, 21 Nov 2016 17:24:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks! Just noticed</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/6</link>
+        <pubDate>Mon, 21 Nov 2016 16:48:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Maksym, your site is all broken in Firefox. Just to let you know.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/5</link>
+        <pubDate>Mon, 21 Nov 2016 16:47:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>This - $250/mo - is a pocket change. Some of our integration projects cost us $10k/wk. Not all of the cost is the hardware and implementation, of course; in fact, I think the biggest part is the 24/7 support, but still.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/4</link>
+        <pubDate>Mon, 21 Nov 2016 16:39:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks. Well, our competitors charge much more!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/3</link>
+        <pubDate>Mon, 21 Nov 2016 15:09:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome! I’m curious about a company that charges a significant monthly fee… ($250/month) I WISH I could charge that!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/2</link>
+        <pubDate>Mon, 21 Nov 2016 15:05:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Maksym from Etlworks</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey everyone,</p>
+<p>I’m a founder of <a href="https://etlworks.com/" rel="nofollow noopener">Etlworks</a> and <a href="https://www.toolsverse.com/" rel="nofollow noopener">Toolsverse</a>. As many of you I’ve spent a few years on BOS and thought is was time to introduce myself to this group.</p>
+<p>We just launched our new SaaS project <a href="https://etlworks.com/" rel="nofollow noopener">Etlworks Integrator</a>. It is a data integration service which has been in development for quite some time, was soft-launched in August and we actually have a few “enterprisy” customers already.</p>
+<p>Happy to be a member of the living community of the bootstrappers again. As usual, any feedback on site and our live demo is very much appreciated.</p>
+<p>Maksym</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540/1</link>
+        <pubDate>Mon, 21 Nov 2016 14:22:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4540-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-maksym-from-etlworks/4540.rss">Hi, I&#39;m Maksym from Etlworks</source>
+      </item>
+  </channel>
+</rss>

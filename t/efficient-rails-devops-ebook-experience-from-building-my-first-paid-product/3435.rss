@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Efficient Rails DevOps (ebook) + experience from building my first paid product</title>
+    <link>https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435</link>
+    <description>Hey guys,
+
+last weekend, I finally released [Efficient Rails DevOps][1], my first paid product. It&#39;s an ebook about provisioning Rails servers, deploying applications and managing production environments.
+
+While I would not mind one or the other sell through this post, this is not my goal here. Instead, I want to share my experience in the form of four bullet points:
+
+ - The book initially started out as a 5-day email course but soon grew into an (what I thought) about 10-page ebook. The finished product now has 138 pages (and I think the content is quite to-the-point). Looking back, it covers way too much content for a first-paid-product which I why it took me so long to write (just over a year). Given the nature of the topic, there really is nothing to take away without seriously lessen the book&#39;s value but &quot;start with a small product&quot; really is an advice you should adhere to when building your first product.
+
+ - Building a product is not always fun. There were times when I had to force myself to keep going. So by all means, do not rely on myths such as &quot;motivation&quot; or &quot;momentum&quot; when building your product. In most cases, it is simply a matter of constant effort.
+
+ - I suffer from a chronic illness which means that I have to choose the things in which I invest my energy carefully. Having a dayjob, I wrote the book completely in my spare time so I had to neglect publishing articles on my website and growing my email list while working on it. This means that while I sold a great number of books on the launch weekend (about 4% of my subscribers bought the book), I could have sold way more books if my email list were bigger. As I have more time now, growing my list is my number one goal for the near future but I&#39;d suggest that you do not start working on your first paid product too soon (or at least do not neglect providing value and growing your list while doing it).
+
+ - Being sysadmin and developer for more than a decade, I develop and run all my backend stuff myself. This means not only my websites, but first and foremost an application that ties together Mailchimp, Mandrill, Gumroad, Google Analytics and my websites to create a smooth experience for customers buying the book or joining my email list. There are lots of automations going on in the background and this stuff is rather hard to test (and if it breaks, no-one can subscribe of buy the book). This application existed long before I started working on the book - otherwise I would not have cared to build it but I would have used known-to-work stuff (e.g. a wordpress site with the Mailchimp plugin). I know that developers have a strong tendency to constantly reinvent the wheel, but this is usually not the best idea.
+
+Thanks for reading. I don&#39;t know if this post will be of use for you, but I always love to read stuff like this :-)
+
+Cheers,
+Michael
+@relativkreativ, http://www.relativkreativ.at
+
+  [1]: http://www.efficientrailsdevops.com</description>
+    
+    <lastBuildDate>Thu, 27 Aug 2015 19:23:19 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Efficient Rails DevOps (ebook) + experience from building my first paid product</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Agreed.<br>
+An email newsletter very targeted to the group you are making a product for can get you lots of feedback.<br>
+For example, you could write articles about different problems your product will solve. That lets you test how to market that feature AND might give you an idea of relative demand for different features.</p>
+<p>E.g., with your RoR ebook, if you had an article on SPEED and another on SECURITY and the SPEED one gets more Opens AND more clicks (I’m sure you’re including microConversion events like “did you like this?” and “Learn more”, etc.) then this might clue you in to SPEED being a problem more people are interested in.</p>
+<p>-Clay</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435/4</link>
+        <pubDate>Thu, 27 Aug 2015 19:23:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3435-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435.rss">Efficient Rails DevOps (ebook) + experience from building my first paid product</source>
+      </item>
+      <item>
+        <title>Efficient Rails DevOps (ebook) + experience from building my first paid product</title>
+        <dc:creator><![CDATA[relativkreativ]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="3435">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/shantnu/40/2752_1.png" class="avatar"> shantnu:</div>
+<blockquote>
+<p>I would suggest the opposite. Growing email lists takes time, and if you wait for some “perfect” moment, you will never ship anything.</p>
+</blockquote>
+</aside>
+<p>Good point. I guess what I actually tried to say was:</p>
+<p>Do not start working on your first paid product too soon <em>if this means that you have to neglect growing your email list</em> (because of time, energy, whatever).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435/3</link>
+        <pubDate>Wed, 26 Aug 2015 20:31:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3435-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435.rss">Efficient Rails DevOps (ebook) + experience from building my first paid product</source>
+      </item>
+      <item>
+        <title>Efficient Rails DevOps (ebook) + experience from building my first paid product</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3435">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/relativkreativ/40/2679_1.png" class="avatar"> relativkreativ:</div>
+<blockquote>
+<p>So by all means, do not rely on myths such as “motivation” or “momentum” when building your product.</p>
+</blockquote>
+</aside>
+<p>Yup. If it’s any consolation, the 2nd one is much easier, and quicker.</p>
+<aside class="quote" data-post="1" data-topic="3435">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/relativkreativ/40/2679_1.png" class="avatar"> relativkreativ:</div>
+<blockquote>
+<p>I’d suggest that you do not start working on your first paid product too soon</p>
+</blockquote>
+</aside>
+<p>I would suggest the opposite. Growing email lists takes time, and if you wait for some “perfect” moment, you will never ship anything.</p>
+<p>A few of my subscribers buy my books, but many people who do so are not subscribers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435/2</link>
+        <pubDate>Wed, 26 Aug 2015 20:17:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3435-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435.rss">Efficient Rails DevOps (ebook) + experience from building my first paid product</source>
+      </item>
+      <item>
+        <title>Efficient Rails DevOps (ebook) + experience from building my first paid product</title>
+        <dc:creator><![CDATA[relativkreativ]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey guys,</p>
+<p>last weekend, I finally released <a href="http://www.efficientrailsdevops.com" rel="nofollow noopener">Efficient Rails DevOps</a>, my first paid product. It’s an ebook about provisioning Rails servers, deploying applications and managing production environments.</p>
+<p>While I would not mind one or the other sell through this post, this is not my goal here. Instead, I want to share my experience in the form of four bullet points:</p>
+<ul>
+<li>
+<p>The book initially started out as a 5-day email course but soon grew into an (what I thought) about 10-page ebook. The finished product now has 138 pages (and I think the content is quite to-the-point). Looking back, it covers way too much content for a first-paid-product which I why it took me so long to write (just over a year). Given the nature of the topic, there really is nothing to take away without seriously lessen the book’s value but “start with a small product” really is an advice you should adhere to when building your first product.</p>
+</li>
+<li>
+<p>Building a product is not always fun. There were times when I had to force myself to keep going. So by all means, do not rely on myths such as “motivation” or “momentum” when building your product. In most cases, it is simply a matter of constant effort.</p>
+</li>
+<li>
+<p>I suffer from a chronic illness which means that I have to choose the things in which I invest my energy carefully. Having a dayjob, I wrote the book completely in my spare time so I had to neglect publishing articles on my website and growing my email list while working on it. This means that while I sold a great number of books on the launch weekend (about 4% of my subscribers bought the book), I could have sold way more books if my email list were bigger. As I have more time now, growing my list is my number one goal for the near future but I’d suggest that you do not start working on your first paid product too soon (or at least do not neglect providing value and growing your list while doing it).</p>
+</li>
+<li>
+<p>Being sysadmin and developer for more than a decade, I develop and run all my backend stuff myself. This means not only my websites, but first and foremost an application that ties together Mailchimp, Mandrill, Gumroad, Google Analytics and my websites to create a smooth experience for customers buying the book or joining my email list. There are lots of automations going on in the background and this stuff is rather hard to test (and if it breaks, no-one can subscribe of buy the book). This application existed long before I started working on the book - otherwise I would not have cared to build it but I would have used known-to-work stuff (e.g. a wordpress site with the Mailchimp plugin). I know that developers have a strong tendency to constantly reinvent the wheel, but this is usually not the best idea.</p>
+</li>
+</ul>
+<p>Thanks for reading. I don’t know if this post will be of use for you, but I always love to read stuff like this <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Cheers,<br>
+Michael<br>
+<a class="mention" href="/u/relativkreativ">@relativkreativ</a>, <a href="http://www.relativkreativ.at" rel="nofollow noopener">http://www.relativkreativ.at</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435/1</link>
+        <pubDate>Wed, 26 Aug 2015 11:58:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3435-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/efficient-rails-devops-ebook-experience-from-building-my-first-paid-product/3435.rss">Efficient Rails DevOps (ebook) + experience from building my first paid product</source>
+      </item>
+  </channel>
+</rss>

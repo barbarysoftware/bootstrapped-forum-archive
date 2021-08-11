@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Is Comodo certificate still trusted on WIndows to sign software?</title>
+    <link>https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072</link>
+    <description>I am planning to renew my Comodo certificate, is Comodo still trusted on Windows?</description>
+    
+    <lastBuildDate>Wed, 25 May 2016 01:25:12 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Is Comodo certificate still trusted on WIndows to sign software?</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p>To answer a question on your blog page, no you can’t dual-sign MSIs, they can only be signed once. I tried. Also, Ksign won’t sign MSIs but Mitchell tells me there is a new version on the way that will.</p>
+<p>I followed this tutorial for dual signing: <a href="http://certhelp.ksoftware.net/support/solutions/articles/217399-how-do-i-dual-sign-a-file-" rel="nofollow noopener">http://certhelp.ksoftware.net/support/solutions/articles/217399-how-do-i-dual-sign-a-file-</a></p>
+<p>That knowledge base is a good reference.</p>
+<p>I also use a Comodo cart and it is fine.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072/4</link>
+        <pubDate>Wed, 25 May 2016 01:25:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4072-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072.rss">Is Comodo certificate still trusted on WIndows to sign software?</source>
+      </item>
+      <item>
+        <title>Is Comodo certificate still trusted on WIndows to sign software?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes. I use a Comodo authenticode certificate for Windows software. But as <a class="mention" href="/u/wyattoday">@wyattoday</a> says, you need to be mindful of SHA2. I wrote an article about what to do here:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=32" class="site-icon" width="32" height="32">
+      <a href="https://successfulsoftware.net/2016/01/22/software-sha1-sha2-digital-certificates/" target="_blank" title="08:49PM - 22 January 2016" rel="nofollow noopener">Successful Software – 22 Jan 16</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:439/292;"><img src="https://successfulsoftware.files.wordpress.com/2016/01/digital-certificate-sha11.jpg?fit=440%2C330" class="thumbnail"></div>
+
+<h3><a href="https://successfulsoftware.net/2016/01/22/software-sha1-sha2-digital-certificates/" target="_blank" rel="nofollow noopener">What every software vendor needs to know about SHA1/SHA2 and digital...</a></h3>
+
+<p>TL;DR : If you digitally sign your software you need to make sure you have an SHA2 certificate and use it to dual sign your software with both SHA1 and SHA2 digests. Digital certificates are used t…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072/3</link>
+        <pubDate>Thu, 19 May 2016 17:25:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4072-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072.rss">Is Comodo certificate still trusted on WIndows to sign software?</source>
+      </item>
+      <item>
+        <title>Is Comodo certificate still trusted on WIndows to sign software?</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes. You need to ensure that you’re signing your app with SHA256 certificates, however. SHA1 signed apps are no longer shown as “signed” in modern versions of Windows. This also means you need to use an up-to-date signing utility (i.e. an up-to-date Visual Studio installation).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072/2</link>
+        <pubDate>Thu, 19 May 2016 01:12:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4072-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072.rss">Is Comodo certificate still trusted on WIndows to sign software?</source>
+      </item>
+      <item>
+        <title>Is Comodo certificate still trusted on WIndows to sign software?</title>
+        <dc:creator><![CDATA[rijeka2009]]></dc:creator>
+        <description><![CDATA[
+            <p>I am planning to renew my Comodo certificate, is Comodo still trusted on Windows?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072/1</link>
+        <pubDate>Wed, 18 May 2016 18:05:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4072-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/is-comodo-certificate-still-trusted-on-windows-to-sign-software/4072.rss">Is Comodo certificate still trusted on WIndows to sign software?</source>
+      </item>
+  </channel>
+</rss>

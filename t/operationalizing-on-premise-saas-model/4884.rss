@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Operationalizing on-premise SaaS model</title>
+    <link>https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884</link>
+    <description>As our data integration SaaS grows, we are getting more and more business from the companies that are installing our software on-premise. Which makes sense since corporate databases are typically sitting behind the firewall.
+
+In order to keep everything under control we have added the following elements to the infrastructure:
+
+1. Online license manager (hosted on AWS).
+2. Service, which calls home few times a day and reports key usage metrics.
+3. Option to pay by check or wire transfer. 
+
+Is there anything missing from this list?</description>
+    
+    <lastBuildDate>Tue, 28 Mar 2017 12:32:38 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Operationalizing on-premise SaaS model</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="4884">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>ld you service automatically use corporate web proxy if required? Many copr networks have no direct access to internet.</p>
+</blockquote>
+</aside>
+<p>It supports proxy. Including proxy with NTLM auth., typically used in Microsoft only networks.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884/3</link>
+        <pubDate>Tue, 28 Mar 2017 12:32:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4884-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884.rss">Operationalizing on-premise SaaS model</source>
+      </item>
+      <item>
+        <title>Operationalizing on-premise SaaS model</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4884">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/maximus/40/3510_1.png" class="avatar"> maximus:</div>
+<blockquote>
+<p>Online license manager (hosted on AWS).<br>
+Service, which calls home few times a day and reports key usage metrics</p>
+</blockquote>
+</aside>
+<p>Would you service automatically use corporate web proxy if required? Many copr networks have no direct access to internet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884/2</link>
+        <pubDate>Mon, 27 Mar 2017 20:06:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4884-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884.rss">Operationalizing on-premise SaaS model</source>
+      </item>
+      <item>
+        <title>Operationalizing on-premise SaaS model</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>As our data integration SaaS grows, we are getting more and more business from the companies that are installing our software on-premise. Which makes sense since corporate databases are typically sitting behind the firewall.</p>
+<p>In order to keep everything under control we have added the following elements to the infrastructure:</p>
+<ol>
+<li>Online license manager (hosted on AWS).</li>
+<li>Service, which calls home few times a day and reports key usage metrics.</li>
+<li>Option to pay by check or wire transfer.</li>
+</ol>
+<p>Is there anything missing from this list?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884/1</link>
+        <pubDate>Mon, 27 Mar 2017 18:10:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4884-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operationalizing-on-premise-saas-model/4884.rss">Operationalizing on-premise SaaS model</source>
+      </item>
+  </channel>
+</rss>

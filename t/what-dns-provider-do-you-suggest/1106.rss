@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What DNS Provider do you suggest?</title>
+    <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106</link>
+    <description>There was a thread about Hosting Provider&#39;s, I&#39;m curious to get suggestions for DNS providers.
+
+When I got started, a friend set me up with Office365 for email, which I haven&#39;t like too much. But the real pain is that DNS is required to be managed by them, and they don&#39;t support wildcard DNS or have an API. This is a killer for me when I create new customer accounts as I need to add an entry manually (customer.sharpplm.com, etc.). 
+
+I&#39;ve thought of using Route53. My hosting is on Azure (which I really like), but they don&#39;t have anything like Route53 (that I know of). I&#39;d be curious to know what other people use.
+</description>
+    
+    <lastBuildDate>Sat, 15 Feb 2014 20:30:20 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[Martin]]></dc:creator>
+        <description><![CDATA[
+            <p>For new products I’ve been starting with CloudFlare (free) and then upgrading to Route53 or DynDNS (standard DNS) as needed.</p>
+<p>I’ve wanted to try out CloudFlare’s professional packages for a while though - a little more pricy though.<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.cloudflare.com/favicon.ico" class="site-icon" width="64" height="64">
+      <a href="https://www.cloudflare.com/plans/" target="_blank">Cloudflare</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://www.cloudflare.com/img/cf-facebook-card.png" class="thumbnail onebox-avatar" width="200" height="200">
+
+<h3><a href="https://www.cloudflare.com/plans/" target="_blank">Our Plans | Pricing
+
+ | Cloudflare</a></h3>
+
+<p>Discover which Cloudflare plan is correct for your requirements. Find out more about Cloudflare plan pricing and sign up for Cloudflare here!</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/19</link>
+        <pubDate>Sat, 15 Feb 2014 20:30:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[ilanco]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been using Hurricane Electric (<a href="https://dns.he.net" rel="nofollow noopener">https://dns.he.net</a>) for a couple of projects. They are free and reliable.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/18</link>
+        <pubDate>Sat, 15 Feb 2014 13:05:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[rsh]]></dc:creator>
+        <description><![CDATA[
+            <p>I just launched <a href="https://zoned.io/" rel="nofollow noopener">https://zoned.io/</a> it’s still early days, but it is supporting <a href="http://xp-dev.com" rel="nofollow noopener">xp-dev.com</a>’s DNS traffic. Please do give it a try, and feedback is always welcome!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/17</link>
+        <pubDate>Sat, 15 Feb 2014 12:46:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[tdavies]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree &lt; $100 per year should not be the motivating factor for making a business decision <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>fwiw - my recommendation for DNS Made Easy is not just because it is cheaper.  It is a great service and as an added bonus it is cheaper.</p>
+<p>I think either DNS Made Easy or DNSimple are great options though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/16</link>
+        <pubDate>Tue, 04 Feb 2014 02:31:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[scottw]]></dc:creator>
+        <description><![CDATA[
+            <p>A big recommendation for DNSimple as well. We recently put together a list of all the services we are using: <a href="http://blog.kickofflabs.com/saas-behind-our-saas/" rel="nofollow noopener">http://blog.kickofflabs.com/saas-behind-our-saas/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/15</link>
+        <pubDate>Mon, 03 Feb 2014 22:23:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[patio11]]></dc:creator>
+        <description><![CDATA[
+            <p>I host on Rackspace and just used their bundled DNS management for forever.  My domains were previously at GoDaddy, but recently I decided to migrate off of them.</p>
+<p>The best combination registrar/DNS provider that I saw was DNSimple, as mentioned by several other people.  I picked them partly because they’re good folks, partly because I have a weak aesthetic preference for doing business with small businesses where possible, and partially because I think they’re more robust against a “Some scammer pretends to be Patrick” attack than GoDaddy (precisely because there are only 3 of them).</p>
+<p>General note: I respect enormously the need to conserve money early on, but no software business ever succeeded or failed as a result of &lt; $100 per year in savings on a business expense.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/14</link>
+        <pubDate>Mon, 03 Feb 2014 10:39:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[rbazinet]]></dc:creator>
+        <description><![CDATA[
+            <p>yes, they are bootstrappers.  Anthony does the Strong Businesses podcast - <a href="http://strongbusinessespodcast.com/" rel="nofollow noopener">http://strongbusinessespodcast.com/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/13</link>
+        <pubDate>Sun, 02 Feb 2014 21:20:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[rwillmer]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://dnsmadeeasy.com" rel="nofollow noopener">dnsmadeeasy.com</a>. stable, cheap</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/12</link>
+        <pubDate>Sun, 02 Feb 2014 10:01:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[briannesbitt]]></dc:creator>
+        <description><![CDATA[
+            <p>Been a <a href="http://dnsmadeeasy.com" rel="nofollow noopener">dnsmadeeasy.com</a> customer for a long time now.  Never had any issues (minus their control panel design but I don’t have to look at that very often <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:">  )</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/11</link>
+        <pubDate>Thu, 30 Jan 2014 14:23:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[tdavies]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been using <a href="http://www.dnsmadeeasy.com/" rel="nofollow noopener">DNS Made Easy</a> for years.  They are much cheaper than DNSimple with plans starting at $29.95 per year vs DNSimple’s $96 / year ($8 / month).  They are rock solid and have been around a long time.  Their interface is not as nice as DNSimple but honestly it doesn’t matter to me since I typically setup DNS and never log in again.</p>
+<p>I’ve also used DNSimple.  It does have a nice interface but not nice enough to justify me paying more than double more.</p>
+<p>Note: DNS Made Easy also works with Heroku with ANAME records for the root CNAME and is also recommended by Heroku.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/10</link>
+        <pubDate>Thu, 30 Jan 2014 13:05:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[andycroll]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="1106">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mikeleeorg/40/57_1.png" class="avatar"> mikeleeorg:</div>
+<blockquote>
+<p>And they must have a good bizdev person/team if they were able to get this arrangement with Heroku!</p>
+</blockquote>
+</aside>
+<p>They’ve been Heroku’s ‘DNS people’ of choice for a long time… simply because they enabled a couple of things on the DNS record side that were useful in the less sophisticated days of Heroku… which no other DNS provider did very well (or even at all). Plus great UI.</p>
+<p>Very smart.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/9</link>
+        <pubDate>Thu, 30 Jan 2014 11:12:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[mikeleeorg]]></dc:creator>
+        <description><![CDATA[
+            <p>I use Heroku, and when I needed SSL, they required that I set up a <a href="https://dnsimple.com/" rel="nofollow noopener">DNSimple</a> account. And when I did, I was pretty impressed with their product. They have a great UI.</p>
+<p>And they must have a good bizdev person/team if they were able to get this arrangement with Heroku!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/8</link>
+        <pubDate>Thu, 30 Jan 2014 07:50:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://dnsmadeeasy.com" rel="nofollow noopener">dnsmadeeasy.com</a>. Stable and fast</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/7</link>
+        <pubDate>Thu, 30 Jan 2014 04:17:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[Allan_Branch]]></dc:creator>
+        <description><![CDATA[
+            <p>DNSimple is the best +100</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/6</link>
+        <pubDate>Wed, 29 Jan 2014 22:21:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[andycroll]]></dc:creator>
+        <description><![CDATA[
+            <p>I think they may well be.</p>
+<p><a href="https://dnsimple.com/our-story" class="onebox" target="_blank" rel="nofollow noopener">https://dnsimple.com/our-story</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/5</link>
+        <pubDate>Wed, 29 Jan 2014 21:44:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andycroll">@andycroll</a>, It seems like I’ve come across their site before. Are they bootstrappers as well?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/4</link>
+        <pubDate>Wed, 29 Jan 2014 21:19:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[andycroll]]></dc:creator>
+        <description><![CDATA[
+            <p>Dnsimple: <a href="https://dnsimple.com/r/d2b2734a34b81d" rel="nofollow noopener">https://dnsimple.com/r/d2b2734a34b81d</a> <em>referral link</em></p>
+<p>Simply the bees knees.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/3</link>
+        <pubDate>Wed, 29 Jan 2014 20:28:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve heard good things about <a href="https://pointhq.com/" rel="nofollow noopener">https://pointhq.com/</a> and <a href="http://www.zoneedit.com/" rel="nofollow noopener">http://www.zoneedit.com/</a> - haven’t used them myself though, my registrars’ nameservers are usually sufficient.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/2</link>
+        <pubDate>Wed, 29 Jan 2014 16:15:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+      <item>
+        <title>What DNS Provider do you suggest?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>There was a thread about Hosting Provider’s, I’m curious to get suggestions for DNS providers.</p>
+<p>When I got started, a friend set me up with Office365 for email, which I haven’t like too much. But the real pain is that DNS is required to be managed by them, and they don’t support wildcard DNS or have an API. This is a killer for me when I create new customer accounts as I need to add an entry manually (<a href="http://customer.sharpplm.com" rel="nofollow noopener">customer.sharpplm.com</a>, etc.).</p>
+<p>I’ve thought of using Route53. My hosting is on Azure (which I really like), but they don’t have anything like Route53 (that I know of). I’d be curious to know what other people use.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106/1</link>
+        <pubDate>Wed, 29 Jan 2014 14:58:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1106-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-dns-provider-do-you-suggest/1106.rss">What DNS Provider do you suggest?</source>
+      </item>
+  </channel>
+</rss>

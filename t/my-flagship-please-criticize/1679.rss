@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>My flagship - please criticize!</title>
+    <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679</link>
+    <description>Hey there!
+
+I&#39;ve been around for a little while, but I&#39;ve yet to officially show what I&#39;ve done, so here it is:
+
+[https://hvac.io][1]
+
+I&#39;d really appreciate if some of you could comment on it.
+Is it confusing? Too much/not enough information?
+I&#39;m purposely not explaining anything here, to see if the landing page is sufficient.
+
+As little Bio, I can tell you I have a formation in mechanical engineering... not everyone here is a programmer! Tho I suppose I could consider myself one after all these years spent programming...
+I have years of experience in HVAC controls and I&#39;m an expert of the BACnet protocol.
+
+For those of you interested in this kind of thing: everything is programmed in Clojure and Clojurescript.
+
+Also, I recently discovered that I was using a library from a fellow bootstrapper (hey @theallan ! :smile: )
+
+Cheers!
+
+  [1]: https://hvac.io</description>
+    
+    <lastBuildDate>Tue, 10 Jun 2014 19:16:12 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="13" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/frozenlock/40/1202_1.png" class="avatar"> Frozenlock:</div>
+<blockquote>
+<p>Unlimited in time as well?</p>
+</blockquote>
+</aside>
+<p>Well, only as long as they’re paying you…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/16</link>
+        <pubDate>Tue, 10 Jun 2014 19:16:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[dchesterton]]></dc:creator>
+        <description><![CDATA[
+            <p>Just a small thing but the images on your homepage are very slow to load.</p>
+<p>Make sure you resize the actual image, rather than resizing it with HTML tags. For example you’ve got an image sized 274px x 140px, but the actual image (which the browser needs to download) is 1096px x 530px.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/15</link>
+        <pubDate>Tue, 10 Jun 2014 09:51:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[theallan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi!</p>
+<p>Great to hear that you are getting some good use from DataTables, I even see a screenshot with it on the front page <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I’ve been reading through the other comments on the page and I’d also echo the confusion on the pricing, but I’d add one additional point - the MicroB. Which leads me to a number of questions:</p>
+<ul>
+<li>Presumably they need to buy one of those to install on their network in order to use your analysis tools?</li>
+<li>There is no mention of the MicroB on the product page. Is it free and you post it out to them, or do they need to buy it separately?</li>
+<li>Presumably one per site is needed?</li>
+<li>The MicroB has HDMI out, so does it contain the analysis software, or does it need an internet connection? I’m going to guess not, since your pricing talks about GB of storage.</li>
+<li>If it is local only, can they access their information remotely (surely that is part of the point?).</li>
+<li>If it is remote, what does the HDMI out show, and what good is the web-server on it? Is it not just showing remote data?</li>
+<li>How does the MicroB get software upgrades?</li>
+<li>Is the MicroB PoE, or does it require a plug?</li>
+<li>Presumably the MicroB’s you send out are linked to the customer’s account somehow so when they are plugged in they will show up automatically in the dashboard? Or do they need to enter a client code?</li>
+<li>Can a single MicroB cope with a network of any size? Or do they need multiple for larger installations?</li>
+</ul>
+<p>I’d like to see more information on the home page about the installation flow. Perhaps something like:</p>
+<ol>
+<li>We send out a microB</li>
+<li>You plug it into your network</li>
+<li>View log information and refine usage to create savings!</li>
+</ol>
+<p>(or something like that - assuming I’ve understood the work flow required?).</p>
+<p>I would also show a few more screenshots of their dashboard to see what they can expect. Perhaps annotate it - “Installed MicroB - 1st June”, “Made changes from log data” - “Saved $500/m”.</p>
+<p>Perhaps you could also link the MicroB aspect to the pricing structure. The simplest would be number of MicroB’s per tier. At these prices, a single GB on your hard disks is negligible cost - so personally I wouldn’t scale it by GB. Out of interest, how much data is being recorded?</p>
+<p>One other thing - I just tried to register an account to have a look at your checkout flow and see if I could learn form it to improve my own. I filled in the registration details and then got a blank page at ( <a href="https://hvac.io/registration" rel="nofollow noopener">https://hvac.io/registration</a> ). I’m unable to log in at all now. Also the sign in page says I can use a “Username or email”, but there was no username option in the registration field.</p>
+<p>I would say I know nothing about HVAC (I had to look up the acronym to know what it was) so apologies if I’ve misunderstood anything!</p>
+<p>Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/14</link>
+        <pubDate>Tue, 10 Jun 2014 09:25:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[Frozenlock]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/patio11">@patio11</a>!</p>
+<p>I’ll have much to do in the next few days with everyone giving me so many good advices!</p>
+<aside class="quote" data-post="12" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/patio11/40/1205_1.png" class="avatar"> patio11:</div>
+<blockquote>
+<p>Don’t scale off of the number of GB they need.  That’s really unclear to the end-user, and doesn’t naturally capture the value.  I’d honestly just take it off the pricing grid and let them assume that the representative examples ARE the licensing scheme.</p>
+</blockquote>
+</aside>
+<p>What do you mean by ‘<em>don’t scale off the number of GB they need</em>’? Just give them unlimited? Unlimited in time as well? o_O</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/13</link>
+        <pubDate>Tue, 03 Jun 2014 19:08:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[patio11]]></dc:creator>
+        <description><![CDATA[
+            <p>Great idea for a product.  I deal with a few HVAC companies and, oh boy, you can make them money with software.</p>
+<p>Some brief feedback:</p>
+<ul>
+<li>Creating a purchase order on the pricing page causes you to get redirected to a login page, which is unfortunate.  I have nothing to log into at that point.  Then you ask for Registration below.  This is not what I wanted – I wanted to create a purchase order.  Take me to a form designed for that.  Incorporate the registration flow if necessary, but keep the messaging nice and clear.  (The existing page could belong to ANY Ruby on Rails app.)</li>
+<li>Your H1 on the front page doesn’t speak to concerns that I think the average HVAC company owner has.  Record, Analyze, Improve!  How about impacting that straight to “Increase revenue while decreasing customer support costs”, and then telling a story about how they can do that.</li>
+<li>Want all the money?  Make your higher tiers something that THEY can sell THEIR CLIENTS on, for recurring revenue, something that a lot of HVAC companies lack.  This allows the size of their account to scale with their success, but they’ll perceive it as costing nothing, since using your service immediately generates more than enough money to cover your share.  For example, what they charge <strong>every client</strong> $5k a year for your services and pay you $2k?    You’ll have accounts making you five figures a year, easily, and they’ll be ecstatic to pay it!</li>
+<li>Don’t scale off of the number of GB they need.  That’s really unclear to the end-user, and doesn’t naturally capture the value.  I’d honestly just take it off the pricing grid and let them assume that the representative examples ARE the licensing scheme.</li>
+<li>The headline Pricing is a) too big and b) doesn’t sell the software.  Replace it with something that does.  Continue selling the software under the pricing grid.  Also, put prominent contact information there in case I have questions about what plan is right for me – you should be REALLY HAPPY to talk to people a little bit for these $5k a year accounts you’re selling.</li>
+</ul>
+<p>Anyhow, I love this.  Assuming you get the marketing right and it solves a problem, I see great success in your future.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/12</link>
+        <pubDate>Tue, 03 Jun 2014 18:47:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[sean]]></dc:creator>
+        <description><![CDATA[
+            <p>Haha, thanks! I’ve heard similar feedback before, and it’s good to hear it again. I’m planning to add faceted search in the near future.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/11</link>
+        <pubDate>Tue, 03 Jun 2014 17:12:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[Frozenlock]]></dc:creator>
+        <description><![CDATA[
+            <p>Btw <a class="mention" href="/u/sean">@sean</a>, I’ll also give you my feedback on your functional jobs board <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Here’s what I was looking for:</p>
+<ul>
+<li>Post description / enterprise [x]</li>
+<li>Time required [x]</li>
+<li>When it was posted [x]</li>
+<li>The language [ - ]</li>
+<li>Remote?  [ - ]</li>
+</ul>
+<p>I’m sure you’ve made great efforts to leave the screen uncluttered and with the least amount of columns possible, so this might be useful to you:<br>
+If I’m searching for a remote job, I couldn’t care less if the job is at Chigaco or San Francisco. The whole column is useless to me. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/10</link>
+        <pubDate>Tue, 03 Jun 2014 17:09:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[sean]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/sean/40/1459_1.png" class="avatar"> sean:</div>
+<blockquote>
+<p>Pricing by a proprietary “storage” unit is very confusing. You even admit it on your pricing page! Hide that complexity from the customer by using a surrogate metric–something I would know–like how many buildings or how many a/c units I have.</p>
+</blockquote>
+</aside>
+<p>You could probably get some good ideas for plan differentiation by examining the pricing pages of logging services like <a href="https://papertrailapp.com/plans" rel="nofollow noopener">https://papertrailapp.com/plans</a> and <a href="https://www.loggly.com/plans-and-pricing/" rel="nofollow noopener">https://www.loggly.com/plans-and-pricing/</a>.</p>
+<p>For example, data retention time and the ability to archive data both look like features that might fit your service.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/9</link>
+        <pubDate>Tue, 03 Jun 2014 17:03:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[Frozenlock]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/sean/40/1459_1.png" class="avatar"> sean:</div>
+<blockquote>
+<p>I hope you’ll take that all as constructive criticism. And I hope it helps!</p>
+</blockquote>
+</aside>
+<p>Absolutely, thank you very much!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/8</link>
+        <pubDate>Tue, 03 Jun 2014 16:45:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[sean]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/frozenlock">@Frozenlock</a>.</p>
+<p>We appear to have a few things in common <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I’m a developer by trade, but I also know a bit about HVAC (I’m EPA 608 licensed, and I’m building an unrelated HVAC product). It’s cool to see that you built your product using Clojure/Clojurescript! I happen to run a job board for functional programming languages.</p>
+<p>So, anyways. I came across your website the other day (cool domain!) and, to be honest, I had a hard time understanding what it is and why someone would use it. Here’s a little feedback on your site’s messaging:</p>
+<blockquote>
+<p>Record, Analyze, Improve! - <a href="http://HVAC.io" rel="nofollow noopener">HVAC.io</a> is the easiest way to record, analyze and share your HVAC systems data</p>
+</blockquote>
+<p>Right off the bat, this sounds like work! I don’t want more work. Try focusing on how your product solves my pain. <strong>Highlight benefits, not features.</strong></p>
+<blockquote>
+<p>[featured customer logos]</p>
+</blockquote>
+<p>I don’t even know what this thing is yet, and you’re already showing me social proof. I would look for social proof when I’m closer to making a purchasing decision. The valuable real estate at the top of the page could be better used to <strong>capture my attention and keep me on the page</strong>.</p>
+<blockquote>
+<p>Turnkey solution for recording</p>
+</blockquote>
+<p>This is probably the best block of text (and photo) on the home page. “Turnkey solution” and “plug and play” both make it sound easy to set-up, which is good. The photo of your physical product is great because it helps me to understand what you’re selling.</p>
+<p>The rest of the content on the home page is kind of hard to read through. I found myself not wanting to read it. However, the use cases that you mention are a great start. I would <strong>make the different use cases more obvious and easier to consume</strong>. Remember to focus on the benefits, not features.</p>
+<p>The pricing page is hard to understand, it lacks clarity in many areas.</p>
+<ul>
+<li>I don’t understand who the “Experts” plan is for, and it seems odd that it’s separate but in close proximity to the other plans.</li>
+<li>The actual prices lack clarity. I would suggest using a toggle or tabs to switch prices between monthly/annual.</li>
+<li>Pricing by a proprietary “storage” unit is very confusing. You even admit it on your pricing page! Hide that complexity from the customer by using a surrogate metric–something I would know–like how many buildings or how many a/c units I have.</li>
+<li>The progress indicators are confusing. I don’t understand why they’re there.</li>
+<li>“Purchase Order (PO)” seems like odd text for a Call To Action.</li>
+<li>The short summary text at the bottom of each plan is actually very helpful. I would suggest moving it to right below the plan name.</li>
+</ul>
+<p>I hope you’ll take that all as constructive criticism. And I hope it helps!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/7</link>
+        <pubDate>Tue, 03 Jun 2014 16:42:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/frozenlock/40/1202_1.png" class="avatar"> Frozenlock:</div>
+<blockquote>
+<p>It’s like a huge buffet where some people eat 1kg of food, while others eat 100kg. In addition, some may stay for a single meal, while others stay for a week. Other than by the quantity of food, how would you charge?</p>
+</blockquote>
+</aside>
+<p>Sticking with the analogy, I’d rather run a gourmet restaurant than a buffet <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/6</link>
+        <pubDate>Tue, 03 Jun 2014 16:35:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[Frozenlock]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="1679" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/davidw/40/3888_1.png" class="avatar"> davidw:</div>
+<blockquote>
+<p>Don’t know anything about it, which is kind of a good sign in that maybe you’ve got a good niche!  Maybe the pricing button should be available on the page sooner?</p>
+<p>Do you have customers?</p>
+</blockquote>
+</aside>
+<p>Yes, I do have customers. That’s the point of the ‘featured customers’ section. <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>My selection was like this:</p>
+<ul>
+<li>2 very well known enterprises in the field;</li>
+<li>1 cégep (kinda like a small university) to send the message that yes, their kind may benefit form the service;</li>
+<li>A customer in Europe, to show that I’m <em>International</em> and a force to be reckoned with.</li>
+</ul>
+<p>What would be the point of bringing the pricing page sooner?</p>
+<aside class="quote" data-post="3" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/tnorthcutt/40/1200_1.png" class="avatar"> tnorthcutt:</div>
+<blockquote>
+<p>First reaction to the pricing page: the “storage unit” concept is confusing. Channeling my inner <a class="mention" href="/u/patio11">@patio11</a>: tie pricing tiers to value delivered, not disk space consumed.</p>
+</blockquote>
+</aside>
+<p>Thanks, I’ll look into that.</p>
+<p>I was thinking about adding some sliders to help visualize one’s requirement.</p>
+<aside class="quote" data-post="3" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/tnorthcutt/40/1200_1.png" class="avatar"> tnorthcutt:</div>
+<blockquote>
+<p>If I’m paying monthly, does this mean if I have to <em>(two?)</em> air units, I’ll have to bump to a higher plan in 6 months</p>
+</blockquote>
+</aside>
+<p>That is exactly what it means (if you want to have more than 6 months worth of logs).</p>
+<p>I’ve already thought for a long time about how to price the service. At first I was literally charging the exact storage space, while now it’s a range, it’s “up to a limit”. Turns out it’s much simpler for the customer to estimate prices in advance.</p>
+<p>I’d like to know if you have more concrete pricing suggestions.</p>
+<p>It’s like a huge buffet where some people eat 1kg of food, while others eat 100kg. In addition, some may stay for a single meal, while others stay for a week. Other than by the quantity of food, how would you charge?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/5</link>
+        <pubDate>Tue, 03 Jun 2014 16:17:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>First reaction to the pricing page: the “storage unit” concept is confusing. Channeling my inner <a class="mention" href="/u/patio11">@patio11</a>: tie pricing tiers to value delivered, not disk space consumed.</p>
+<blockquote>
+<p>1 storage unit should be enough to enable you to store around 1 year of a system’s data. For 2 air units, it would be around 6 months. For 2 air units and a heating system, it would be around 4 months…</p>
+</blockquote>
+<p>If I’m paying monthly, does this mean if I have to air units, I’ll have to bump to a higher plan in 6 months, or…? This is super confusing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/3</link>
+        <pubDate>Tue, 03 Jun 2014 15:38:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <p>Don’t know anything about it, which is kind of a good sign in that maybe you’ve got a good niche!  Maybe the pricing button should be available on the page sooner?</p>
+<p>Do you have customers?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/2</link>
+        <pubDate>Tue, 03 Jun 2014 11:42:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+      <item>
+        <title>My flagship - please criticize!</title>
+        <dc:creator><![CDATA[Frozenlock]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey there!</p>
+<p>I’ve been around for a little while, but I’ve yet to officially show what I’ve done, so here it is:</p>
+<p><a href="https://hvac.io" rel="nofollow noopener">https://hvac.io</a></p>
+<p>I’d really appreciate if some of you could comment on it.<br>
+Is it confusing? Too much/not enough information?<br>
+I’m purposely not explaining anything here, to see if the landing page is sufficient.</p>
+<p>As little Bio, I can tell you I have a formation in mechanical engineering… not everyone here is a programmer! Tho I suppose I could consider myself one after all these years spent programming…<br>
+I have years of experience in HVAC controls and I’m an expert of the BACnet protocol.</p>
+<p>For those of you interested in this kind of thing: everything is programmed in Clojure and Clojurescript.</p>
+<p>Also, I recently discovered that I was using a library from a fellow bootstrapper (hey <a class="mention" href="/u/theallan">@theallan</a> ! <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"> )</p>
+<p>Cheers!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679/1</link>
+        <pubDate>Tue, 03 Jun 2014 00:08:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1679-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-flagship-please-criticize/1679.rss">My flagship - please criticize!</source>
+      </item>
+  </channel>
+</rss>

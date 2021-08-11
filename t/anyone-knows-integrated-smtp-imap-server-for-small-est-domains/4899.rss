@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+    <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899</link>
+    <description>Does anyone know an **integrated SMTP+IMAP server for unix** that:
+
+* Supports SMTP over SSL
+* Supports IMAP over SSL
+* Supports multiple email domains, with a small number of accounts in each (support@, me@, ...)
+* Doesn&#39;t have **any** dependencies (databases, external apps, ...)
+* Comes as a single binary, and not 100500 separate applications that I do not know what to do with
+* Supports those email verification things that I do not understand - something to put into DNS or something so that other mail servers trust the sender 
+* I do not need UI for administration; I actually prefer nginx-style config.
+* I&#39;m OK with no spam filter
+
+Couldn&#39;t Google anything similar. The closest one was SMTP+POP3(!), and with no SSL (that is a showstopper).
+
+**Why:**
+
+I have a number of small domains for this and that, and for each of them I have an info@ or support@. About 10 email addresses in total.
+
+Currently they hosted either on fastmail.com, or with the hosting company that hosts the domain WordPress. In pretty much all cases it is extra money (small, but annoying) and extra thing to remember.
+
+Now I&#39;m consolidating my sites into my own DigitalOcean droplet using the static site generators. Issue tracker is hosted there, too - Redmine. So it is logical to have my emails hosted there as well, BUT there is no simple to configure SMTP+IMAP server. :frowning: 
+
+I.e. I&#39;m looking for a simplest in configuration SMTP+IMAP server with modern security and reasonable defaults. I do not have skills and time to configure even Exim, not even mentioning IMAP servers.
+
+...
+
+IDEA! If nobody knows it, maybe @andrey should write it.That&#39;s a C++/portable thing that he&#39;s good at. $50 one-time price will pay off in one year for me.</description>
+    
+    <lastBuildDate>Sat, 27 May 2017 21:55:09 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4899">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/fideloper/40/1329_1.png" class="avatar"> fideloper:</div>
+<blockquote>
+<p>check out dovecot</p>
+</blockquote>
+</aside>
+<p>At first I ignored this advice as I knew that dovecot is IMAP-only server, but then I checked their roadmap and found this:</p>
+<blockquote>
+<p>SMTP submission server: Started</p>
+</blockquote>
+<p>Great! So someone skilled is actually working on this. I just need to wait another year or so - that I can do. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/12</link>
+        <pubDate>Sat, 27 May 2017 21:55:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4899">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Once it is installed, I’m basically left with configuration for all these systems.</p>
+</blockquote>
+</aside>
+<p>No you’re not. You should give a try. It automates everything for you. All you’re left with is a simple Web Admin screen to log into.</p>
+<p>[quote=“rfctr, post:3, topic:4899”]<br>
+I want a configuration that is as dumb as it can be: new domain? add a config entry or better yet - a directory with the same name. Subdirectories are the users for that domain. Password is in a file within each user directory. That kind of configuration[/quote]</p>
+<p>Your description of what you’d like is FAR more complicated than what Mail In A Box requires you to do.</p>
+<p>Stop reading about it. Go pay <a href="http://Linode.com" rel="nofollow noopener">Linode.com</a> $5 for an Ubuntu 14 server. Go buy a new domain at <a href="https://www.gandi.net" rel="nofollow noopener">https://www.gandi.net</a> Run the Mail In A Box installer. Follow the “dumb as it can be” instructions. Log into the Web Admin and add a new account, flip some settings, whatever…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/11</link>
+        <pubDate>Fri, 07 Apr 2017 20:30:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[albuck]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4899">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Once it is installed, I’m basically left with configuration for all these systems.</p>
+<p>I used to be an admin, so I do know my way around the configuration files, but I do not have time to focus on them anymore. I want a configuration that is as dumb as it can be: new domain? add a config entry or better yet - a directory with the same name. Subdirectories are the users for that domain. Password is in a file within each user directory. That kind of configuration - which is I agree limited but is sufficient for little needs of a small domain owner.</p>
+</blockquote>
+</aside>
+<p>I’m getting the impression that you didn’t actually read the setup guide for Mail-in-a-Box, because there is little or no manual maintenance of config files.  It takes over the complete machine and manages everything through a control panel.  The installation guide is written for the non-technical person, not for you as former sysadmin.  If you do change something by hand, it is overwritten on the next update.  They even have a backup scheme and easy way to jump to a new server if/when that becomes necessary. They have both a discussion forum and a slack channel for support.</p>
+<p>The Mail-in-a-Box setup guide also lists more complicated packages if you must get your hands dirty: “try iRedMail, Sovereign, or Modoboa.”</p>
+<p>Can you take yes for an answer? <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/10</link>
+        <pubDate>Wed, 05 Apr 2017 23:06:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[sts]]></dc:creator>
+        <description><![CDATA[
+            <p>Install “Plesk Web Admin Edition” on your droplet. It gives you a nice GUI for everything hosting related, incl. POP, IMAP SMTP, even Webmail. But it’s not free - € 3.75 p. month.<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://scdn7.plesk.com/wp-content/uploads/2017/04/favicon_plesk.png" class="site-icon" width="64" height="64">
+      <a href="https://www.plesk.com/" target="_blank" rel="nofollow noopener">Plesk</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/361;"><img src="https://scdn5.plesk.com/wp-content/uploads/2017/02/plesk_share_image_.png" class="thumbnail"></div>
+
+<h3><a href="https://www.plesk.com/" target="_blank" rel="nofollow noopener">Plesk WebOps platform for applications, websites and hosting</a></h3>
+
+<p>Plesk Onyx is the only tool you'll ever need to build, secure and run websites and applications in the Cloud, faster! Simplify your life and get it now!</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/9</link>
+        <pubDate>Wed, 05 Apr 2017 17:33:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="4899">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/maximus/40/3510_1.png" class="avatar"> maximus:</div>
+<blockquote>
+<p>“mail server in docker”.</p>
+</blockquote>
+</aside>
+<p>Good one. And yet still too complicated, IMHO. Mail-in-the-Box has the same issue, plus the support is… mmm… suboptimal.</p>
+<p>My feeling is that there is reverse tide now - from SaaS to VPS (because the cost of running VPS is so small now, and accumulated cost of various SaaSes is larger, plus your data are in someone’s else hands). So there should be a market for small and simple SMTP+IMAP server for small domain owners.</p>
+<p>I’m thinking there is an option to pay a contractor to build an integral application - wrapper for postfix and dovecot, with extremely simplified configuration. I’m checking with a skillful guy I know how much time would it take.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/8</link>
+        <pubDate>Wed, 05 Apr 2017 01:17:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Google “mail server in docker”.</p>
+<p>We tried a few (don’t know which ones, it was my partner looking), ended up buying subscription for office 365 since we only needed it for the single domain.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/7</link>
+        <pubDate>Sun, 02 Apr 2017 14:53:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>You really want me to become an outcast for cooperating with Russians from Yandex, eh? <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> Which is recursive, too, because I’m Russian myself. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Nah, I dont want to keep my emails sonewhere else.</p>
+<p>Speaking of requirements for a MTA - they just need not be an open relay and support DKIM and SPF.</p>
+<p>DKIM can be delivered out of the box, keeping in mind that the server would have to support strong cryptography for SSL anyway.</p>
+<p>Publishing DKIM public key to DNS is still a manual step, and a rather inconvenient one in case of LetsEncrypt certs that are changing often. For full automation of this step:</p>
+<ul>
+<li>Either DNS hoster should have an API for updating the DKIM record</li>
+<li>Or the server should email the owner every time the LetsEncrypt changes</li>
+<li>Or the domain to use a self-signed key with a multi-year expiration</li>
+<li>Or the server itself should manage its DNS entries, which is too much, but explains why that Mail in the Box has DNS server in it</li>
+</ul>
+<p>SPF is easy to implement and the server may reminder the owner about necessity to do so by checking the DNS record for the domain.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/6</link>
+        <pubDate>Sun, 02 Apr 2017 14:36:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[aveger]]></dc:creator>
+        <description><![CDATA[
+            <p>Use Yandex.mail for domain. It’s free.</p>
+<p>I would not recommend you to use an e-mail server on your own VPS. Your e-mails can easily end up in the spam folder. There are so many things to care about when you host your own server.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/5</link>
+        <pubDate>Sun, 02 Apr 2017 01:25:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[fideloper]]></dc:creator>
+        <description><![CDATA[
+            <p>Doubt this exists, but check out dovecot. Might be close to what you want.</p>
+<p><a href="https://www.dovecot.org" class="onebox" target="_blank" rel="nofollow noopener">https://www.dovecot.org</a></p>
+<p>(I think even if you find something, there are still long term issues of maintenance in terms of keeping deliverability up and spam out).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/4</link>
+        <pubDate>Sat, 01 Apr 2017 22:57:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you. A good attempt, but:</p>
+<blockquote>
+<p>Mail-in-a-Box is based on Postfix, Dovecot, Z-Push, Roundcube, ownCloud, Apache SpamAssassin, Postgrey, Nginx, <span class="mention">@konklone</span>’s nginx config, and more.</p>
+</blockquote>
+<p>Once it is installed, I’m basically left with configuration for all these systems.</p>
+<p>I used to be an admin, so I do know my way around the configuration files, but I do not have time to focus on them anymore. I want a configuration that is as dumb as it can be: new domain? add a config entry or better yet - a directory with the same name. Subdirectories are the users for that domain. Password is in a file within each user directory. That kind of configuration - which is I agree limited but is sufficient for little needs of a small domain owner.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/3</link>
+        <pubDate>Sat, 01 Apr 2017 22:08:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[stympy]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s an option: <a href="https://mailinabox.email" rel="nofollow noopener">https://mailinabox.email</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/2</link>
+        <pubDate>Sat, 01 Apr 2017 19:49:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+      <item>
+        <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Does anyone know an <strong>integrated SMTP+IMAP server for unix</strong> that:</p>
+<ul>
+<li>Supports SMTP over SSL</li>
+<li>Supports IMAP over SSL</li>
+<li>Supports multiple email domains, with a small number of accounts in each (support@, me@, …)</li>
+<li>Doesn’t have <strong>any</strong> dependencies (databases, external apps, …)</li>
+<li>Comes as a single binary, and not 100500 separate applications that I do not know what to do with</li>
+<li>Supports those email verification things that I do not understand - something to put into DNS or something so that other mail servers trust the sender</li>
+<li>I do not need UI for administration; I actually prefer nginx-style config.</li>
+<li>I’m OK with no spam filter</li>
+</ul>
+<p>Couldn’t Google anything similar. The closest one was SMTP+POP3(!), and with no SSL (that is a showstopper).</p>
+<p><strong>Why:</strong></p>
+<p>I have a number of small domains for this and that, and for each of them I have an info@ or support@. About 10 email addresses in total.</p>
+<p>Currently they hosted either on <a href="http://fastmail.com" rel="nofollow noopener">fastmail.com</a>, or with the hosting company that hosts the domain WordPress. In pretty much all cases it is extra money (small, but annoying) and extra thing to remember.</p>
+<p>Now I’m consolidating my sites into my own DigitalOcean droplet using the static site generators. Issue tracker is hosted there, too - Redmine. So it is logical to have my emails hosted there as well, BUT there is no simple to configure SMTP+IMAP server. <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"></p>
+<p>I.e. I’m looking for a simplest in configuration SMTP+IMAP server with modern security and reasonable defaults. I do not have skills and time to configure even Exim, not even mentioning IMAP servers.</p>
+<p>…</p>
+<p>IDEA! If nobody knows it, maybe <a class="mention" href="/u/andrey">@andrey</a> should write it.That’s a C++/portable thing that he’s good at. $50 one-time price will pay off in one year for me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899/1</link>
+        <pubDate>Sat, 01 Apr 2017 18:29:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4899-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899.rss">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</source>
+      </item>
+  </channel>
+</rss>

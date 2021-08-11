@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Introducing Honest Booking</title>
+    <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633</link>
+    <description>Hello,
+
+Introducing my first SaaS app: https://honestbooking.com
+
+A bit of backstory, wanted to do my own SaaS app for months but was looking for ideas. Stumbled upon this article https://medium.com/backchannel/buying-tickets-to-restaurants-114e5b9c768f on 9 December, thinking that it&#39;s a good idea (given that I dined a lot in Melbourne).
+
+Went to my usual barber the week after and had a chat about an online booking system that he wanted to have where customers can book for his service easily whilst avoiding fake / non-genuine bookings.
+
+Put one to one together, and I&#39;ve been spending my nights and weekends developing Honest Booking from mid December (I work full time in a big corp).
+
+It&#39;s developed using the usual stack: Stripe, Heroku, Amazon (Route53, S3, CloudFront, SES), and Twilio. The front-end was a spaghetti of jQuery and a bootstrap template from somewhere (can&#39;t remember). In hindsight, should have gone with Ember, but then, I was looking for a quick solution :smile:
+
+I come from a technical background, so I&#39;m always interested to tackle the technical stuff first. So, I didn&#39;t do the usual startup stuff, i.e. no idea validation, no business model canvas, etc. :wink:
+
+Anyway, hope to hear your feedback.
+
+Kind regards,
+Donny</description>
+    
+    <lastBuildDate>Mon, 16 Mar 2015 11:22:03 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>Choose two or three verticals - hairdressers, dentists etc. Choose ones which are accessible</li>
+<li>Hit the streets and talk to them about what their problems with bookings are</li>
+</ol>
+<ul>
+<li>How they are currently solving it</li>
+<li>How much it costs them</li>
+<li>How much time they lose</li>
+<li>[but don’t lead the conversation, they will tell you what their concerns are]</li>
+</ul>
+<ol>
+<li>Analyse your notes and work out new questions to ask and how your current solution will work for them. If the results are too diverse, need to constrain the problem. Maybe you might see certain markets are more concerned with the problem</li>
+<li>Go see them again</li>
+</ol>
+<ul>
+<li>Dig into your analysis to see if your hypotheses work out</li>
+<li>Ask for a commitment of time to show how your solution works for them</li>
+</ul>
+<p>It’s best to keep the showing of the solution to the end.</p>
+<p>Of course inbound marketing can also help attract some warmer leads.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/11</link>
+        <pubDate>Mon, 16 Mar 2015 11:22:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[tompowell]]></dc:creator>
+        <description><![CDATA[
+            <p>This is awesome, congratulations on getting this up and running.</p>
+<p>Some of my random thoughts:<br>
+Tough nut to crack here is (as usual) 1) Getting customers in the door and 2) Getting them using the product. It sounds like the markets you are going after are not terribly tech savvy and would need all the coaxing/help they can get.  Remember, your work isn’t done even when they start paying: <a href="http://adespresso.com/academy/blog/the-surprising-secret-about-smes-churn/" rel="nofollow noopener">http://adespresso.com/academy/blog/the-surprising-secret-about-smes-churn/</a> The sad truth with small businesses is that unless they are tech savvy (ex. a developer buying a tool to help manage their freelancing business), they are not going to just find and sign up for products. You need to get in their face, convince them that their business will benefit from the product and then push them to sign up and set up.</p>
+<p>How can you niche this down? There are a lot of appointment scheduling solutions out there. Is there a particular market you can go after to dominate (and who run profitable businesses)? The more targeted the better (Pick an industry, size of company, maybe even geographic location, etc). Better to be THE appointment solution for (bad example) hair salons in Australia with 2 to 10 stylists than just “Small business and service providers”. Makes marketing, targeting and on-boarding much more manageable and would help you refine the product for a particular segment.</p>
+<p>Might get some insight/ideas by looking at <a href="http://booker.com" rel="nofollow noopener">booker.com</a>. They are a large, venture backed firm that now does a ton more than just scheduling appointments but which might be instructive.</p>
+<p>You’d probably also benefit from reading up on what Brian Casel has done with his company in terms of promotion and on-boarding: <a href="http://casjam.com/blog/" rel="nofollow noopener">http://casjam.com/blog/</a> and what Patrick McKensie learned building Appointment Reminder: <a href="http://www.kalzumeus.com/2011/04/15/appointment-reminder-update/" rel="nofollow noopener">http://www.kalzumeus.com/2011/04/15/appointment-reminder-update/</a>  <a href="http://www.kalzumeus.com/2014/12/22/kalzumeus-software-year-in-review-2014/" rel="nofollow noopener">http://www.kalzumeus.com/2014/12/22/kalzumeus-software-year-in-review-2014/</a>  <a href="http://www.kalzumeus.com/2012/08/13/doubling-saas-revenue/" rel="nofollow noopener">http://www.kalzumeus.com/2012/08/13/doubling-saas-revenue/</a></p>
+<p>Probably steer clear from using terms like “responsive web” in headers. Does your average barber know what that means?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/10</link>
+        <pubDate>Sat, 14 Mar 2015 21:09:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>That might be be good from some Google Juice.<br>
+I know that Patrick McKenzie (Patio11) created lots of pages, each for a specific “use case” for Bingo Card creator.</p>
+<p>So if someone searches for “make appointment for Hairdresser” you’d rank higher if you had a page for that.</p>
+<p>-Clay</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/9</link>
+        <pubDate>Wed, 04 Feb 2015 16:11:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[donny_k_]]></dc:creator>
+        <description><![CDATA[
+            <p>Mainly so that their customers could do themselves (i.e. client-initiated bookings on the web intro page)…<br>
+But the system allow the service providers to add new appointments (i.e. business-initiated bookings on the web intro page)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/8</link>
+        <pubDate>Wed, 04 Feb 2015 09:25:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Also, is the idea that the Service Provider (hairdresser, etc.) would enter the aptmt, or that their customer could do this themselves?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/7</link>
+        <pubDate>Mon, 02 Feb 2015 14:51:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[donny_k_]]></dc:creator>
+        <description><![CDATA[
+            <p>Hmm… interesting, thanks for the input Clay and Kalen.</p>
+<p>I’ve shown this to some people, e.g. hairdressers, massage therapists. And they immediately get it… that it allows their customers to book appointments or bookings online.</p>
+<p>Hmm… maybe I should give more examples like hairdressers or something like that… on the web site…</p>
+<p>Thanks for the feedback guys</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/6</link>
+        <pubDate>Sat, 31 Jan 2015 07:00:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Same confusion here.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/5</link>
+        <pubDate>Sat, 31 Jan 2015 03:52:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice landing page.<br>
+It wasn’t completely clear to me what “bookings” was.<br>
+Have you shown it to a few prospective customers to see if it’s clear to them?</p>
+<p>What template did you use? it looks nice.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/4</link>
+        <pubDate>Fri, 30 Jan 2015 19:36:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[donny_k_]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Ben. Yeah, going to submit the posts later today.</p>
+<p>Cheers,<br>
+Donny</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/3</link>
+        <pubDate>Thu, 29 Jan 2015 21:23:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[benrmatthews]]></dc:creator>
+        <description><![CDATA[
+            <p>Looks really nice and love the copy on the home page. Perhaps now you have the landing page done (and presumably the app itself), now’s the time to concentrate on user validation? Have you also submitted to places like Product Hunt and Reddit for feedback?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/2</link>
+        <pubDate>Thu, 29 Jan 2015 21:19:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+      <item>
+        <title>Introducing Honest Booking</title>
+        <dc:creator><![CDATA[donny_k_]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>Introducing my first SaaS app: <a href="https://honestbooking.com" rel="nofollow noopener">https://honestbooking.com</a></p>
+<p>A bit of backstory, wanted to do my own SaaS app for months but was looking for ideas. Stumbled upon this article <a href="https://medium.com/backchannel/buying-tickets-to-restaurants-114e5b9c768f" rel="nofollow noopener">https://medium.com/backchannel/buying-tickets-to-restaurants-114e5b9c768f</a> on 9 December, thinking that it’s a good idea (given that I dined a lot in Melbourne).</p>
+<p>Went to my usual barber the week after and had a chat about an online booking system that he wanted to have where customers can book for his service easily whilst avoiding fake / non-genuine bookings.</p>
+<p>Put one to one together, and I’ve been spending my nights and weekends developing Honest Booking from mid December (I work full time in a big corp).</p>
+<p>It’s developed using the usual stack: Stripe, Heroku, Amazon (Route53, S3, CloudFront, SES), and Twilio. The front-end was a spaghetti of jQuery and a bootstrap template from somewhere (can’t remember). In hindsight, should have gone with Ember, but then, I was looking for a quick solution <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I come from a technical background, so I’m always interested to tackle the technical stuff first. So, I didn’t do the usual startup stuff, i.e. no idea validation, no business model canvas, etc. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>Anyway, hope to hear your feedback.</p>
+<p>Kind regards,<br>
+Donny</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633/1</link>
+        <pubDate>Thu, 29 Jan 2015 21:15:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2633-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-honest-booking/2633.rss">Introducing Honest Booking</source>
+      </item>
+  </channel>
+</rss>

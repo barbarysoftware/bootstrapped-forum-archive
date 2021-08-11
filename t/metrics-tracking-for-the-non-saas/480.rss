@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Metrics/Tracking for the non SaaS</title>
+    <link>https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480</link>
+    <description>Our product is a downloadable, self installed CMS and I find a lot of the apps like MixPanel target the SaaS market making it pretty hard for me to get a handle on how best to use them in our situation. I wondered if anyone here had any great ideas for how best we should be tracking the things we can track.
+
+Potential data points are:
+
+ - Someone coming to the site (perhaps from an ad) and watching the video or signing up for a demo
+ - The demo is an online demo, we generate an individual site for people so there are possibilities there
+ - Someone actually buying a license
+ - The usual tracking stuff of which pages they visit and so on
+
+I mostly want to be able to get some sense of our conversion rate, in particular from ads, and whether making changes to the site makes a difference in terms of how many people sign up for a demo. I&#39;d also like to know more about conversion from demo to buying a license. It&#39;s really hard to know what people think when they look at the demo and we find people miss a lot of what is possible with the product because the demo shows only certain aspects. We&#39;ve addressed this a bit by having three versions of the demo but even so, we still get questions that show people haven&#39;t really &quot;got it&quot;.
+
+I&#39;ve looked at MixPanel so far, but I&#39;d be interested in other tools and what people are using.</description>
+    
+    <lastBuildDate>Sat, 31 Aug 2013 00:13:16 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Metrics/Tracking for the non SaaS</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, I’ve had to do a ton of stuff to get mixpanels people stuff to work so that you can track events plus people. I don’t really love it and it all feels kinda rickety. I also don’t think it’s ideal from an actionability standpoint, once I’m done with all this traveling I want to take a closer look and review it all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480/4</link>
+        <pubDate>Sat, 31 Aug 2013 00:13:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-480-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480.rss">Metrics/Tracking for the non SaaS</source>
+      </item>
+      <item>
+        <title>Metrics/Tracking for the non SaaS</title>
+        <dc:creator><![CDATA[dennis]]></dc:creator>
+        <description><![CDATA[
+            <p>We recently improved the tracking of online trials for <a href="http://www.gurock.com/testrail/" rel="nofollow noopener">TestRail</a> and we looked into using either Kissmetrics or Mixpanel but weren’t happy with these tools. We plan to integrate one of them into the online trial of TestRail to better track feature usage, improve the onboarding process etc. and they would work well for that. But for now we mainly wanted to get a better understanding of where exactly specific trial signups were coming from and how campaigns and landing pages perform (in greater detail than what Google Analytics provides).</p>
+<p>We really didn’t want to do this, but we ended up rolling our own trial and referrer tracking as we didn’t find a better solution. We kept this simple and just tag visitors with their source referrer + landing page, record this together with trial sign-ups and added some stats to our back-end system. I wish there was a better way to track this though but most of the available analytic tools just provide general statistics without letting you review the details of specific sign ups.</p>
+<p>For all the other statistics and funnel analysis we just use Google Analytics.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480/3</link>
+        <pubDate>Fri, 30 Aug 2013 13:26:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-480-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480.rss">Metrics/Tracking for the non SaaS</source>
+      </item>
+      <item>
+        <title>Metrics/Tracking for the non SaaS</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m about to wire up the new <a href="http://www.helpspot.com">HelpSpot.com</a> with Mixpanel so I’ll report back on how it goes. We’re using Mixpanel with Snappy and it’s pretty good, but there are tricky parts. On just the website to track visits, downloads, etc it’s not as bad because you can just use the javascript api for everything which is simpler, though it’s still totally up to you what to track.</p>
+<p>I like Mixpanel better than Kissmetrics, but they’re both kinda tricky as they’re highly generic. They also track events separate from people so in Mixpanel for instance if I want to track something a person did and track it as a generic event these are 2 separate things. I think there would be a great market for a more specialized tool that basically had opinionated usage for software than the free for all that these are, but I haven’t found anything like that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480/2</link>
+        <pubDate>Fri, 30 Aug 2013 09:39:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-480-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480.rss">Metrics/Tracking for the non SaaS</source>
+      </item>
+      <item>
+        <title>Metrics/Tracking for the non SaaS</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>Our product is a downloadable, self installed CMS and I find a lot of the apps like MixPanel target the SaaS market making it pretty hard for me to get a handle on how best to use them in our situation. I wondered if anyone here had any great ideas for how best we should be tracking the things we can track.</p>
+<p>Potential data points are:</p>
+<ul>
+<li>Someone coming to the site (perhaps from an ad) and watching the video or signing up for a demo</li>
+<li>The demo is an online demo, we generate an individual site for people so there are possibilities there</li>
+<li>Someone actually buying a license</li>
+<li>The usual tracking stuff of which pages they visit and so on</li>
+</ul>
+<p>I mostly want to be able to get some sense of our conversion rate, in particular from ads, and whether making changes to the site makes a difference in terms of how many people sign up for a demo. I’d also like to know more about conversion from demo to buying a license. It’s really hard to know what people think when they look at the demo and we find people miss a lot of what is possible with the product because the demo shows only certain aspects. We’ve addressed this a bit by having three versions of the demo but even so, we still get questions that show people haven’t really “got it”.</p>
+<p>I’ve looked at MixPanel so far, but I’d be interested in other tools and what people are using.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480/1</link>
+        <pubDate>Fri, 30 Aug 2013 06:29:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-480-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/metrics-tracking-for-the-non-saas/480.rss">Metrics/Tracking for the non SaaS</source>
+      </item>
+  </channel>
+</rss>

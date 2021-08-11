@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Thoughts on Hosted Demos</title>
+    <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792</link>
+    <description>Hey everyone,
+
+Got a little while to go before having to cross this bridge, but I&#39;ve been thinking about various ways to go about providing a demo for a piece of on-premises software I&#39;ve got in the pipeline. 
+
+Having a look at some of the other players in the space, most seem to go for one of 3 options.
+
+ 1. No demo at all
+ 2. Shared demo, periodically reset
+ 3. Download and install with trial license
+
+Each option listed so far has some pretty big downsides. 
+
+ 1. No demo = nothing to play with = no second look.
+ 2. Shared demos can get vandalised or locked out. Potential customers don&#39;t feel like they have any ownership over the data and may not explore its full feature set. Shared environment also precludes showing all leads an effective onboarding process - leaving them thinking it is a daunting configuration task.
+ 3. Downloadable demos are ripe for piracy. While Ioncube/Zend are nice tools to keep low level piracy at bay, providing downloadable demos is the quickest way to seeing a nulled copy finding its way online.
+
+I&#39;m thinking the best option so far is a hybrid approach to #2: Offering a private hosted demo, with little more than a Name/Email field to spin an instance up. It will take a bit more time and effort to get the infrastructure going behind it, but from my point of view the positives seem pretty good:
+
+ - The private instance doubles as a lead generation form
+ - Can gain metrics on feature usage that may not be acceptable to collect from an on-premises install
+
+Are there any other Bootstrappers out there that have tried different approaches and can shed some light/data on the subject?
+
+Cheers</description>
+    
+    <lastBuildDate>Thu, 28 Nov 2013 05:44:54 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>We don’t want to have to make the user do too much stuff to try out Perch (we already get people complaining we ask for their details to set up a demo) so any antispam stuff we’d make transparent - there is a whole bunch of stuff we could do if it gets more clever than it is, but currently just looking for URLs in name fields is enough to stop it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/12</link>
+        <pubDate>Thu, 28 Nov 2013 05:44:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>I get spam right now on my app too, but I have a manual setup, so I just delete the notifications that I get.</p>
+<p>What about using a service like mailgun’s email validation API (it’s free)? Or just sending the user an email to verify the account creation?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/11</link>
+        <pubDate>Thu, 28 Nov 2013 03:38:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah I’d read a bit about this, while it currently states “Please note Docker is currently under heavy developement. It should not be used in production (yet).” I’ll leave it be, as the demo is stable if slower than I would like.</p>
+<p>I think our actual issue is probably to do with resource ordering anyway as we’re essentially just deploying a tarball (all the customizations are in the SQL import which is a template so I can replace bits out). I’ve set up a whole bunch of logging and I can see Puppet checking the state of resources it really doesn’t need to care about, which would explain why it gets slower as more sites are created. This was my first major Puppet deployment, being me I thought I’d throw myself in at the deep end, so the chance of this being a Rachel issue rather than a Puppet issue is pretty high.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/10</link>
+        <pubDate>Wed, 27 Nov 2013 07:11:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="792">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rachelandrew/40/1195_1.png" class="avatar"> rachelandrew:</div>
+<blockquote>
+<p>The current incarnation relies heavily on Puppet and is slower than I would like to provision the things</p>
+</blockquote>
+</aside>
+<p>You might already be looking at it but <a href="http://docker.io">docker.io</a> is looking pretty good for speeding this up. Puppet to create  an image, that you then containerize for usual docker goodness, then use Puppet again to just check when its launched that it’s still fresh (to avoid the problem of drifting Golden image) and configured for the individual client need.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/9</link>
+        <pubDate>Wed, 27 Nov 2013 06:52:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Good point, we do also offer a download demo. I should have added that. We find there are customers very passionate on both sides. Those who must get in soon without going to IT and others who must run it on their own servers before they can evaluate it. I kinda figured download was a given, but it doesn’t have to be I suppose.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/8</link>
+        <pubDate>Tue, 26 Nov 2013 21:04:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[ferranbarba]]></dc:creator>
+        <description><![CDATA[
+            <p>With our product we do 2 (shared demo) and 3 (download and install). The demo doesn’t have all the features for technical reasons (for example, you can’t configure IP address blocking) and is reset every day. The download one is not a trial but a fully functional version with only 2 users and 5 projects (you buy a license for x users and unlimited projects), and also has links to the buy page of our site and little nagging messages.</p>
+<p>The reasoning behind this is: the hosted shared demo allows the visitor to take a quick look. More interested? You have the download version, which has all the features. If you want the product you’ll download and install it. This helps us find installation problems and acts as a filter for those who really want it. We thought about offering a custom hosted demo, but we discarded it for this reason.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/7</link>
+        <pubDate>Tue, 26 Nov 2013 21:01:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ve been having to deal with  bunch of spam creating demos. Luckily it is pretty stupid spam and we can spot it by seeing if the first or last name starts with http:// … the main problem with the spam demos (they aren’t being created so fast a to fill up  server with MySQL databases) is that Puppet has to provision them all, so the Puppet runs start to take an age to complete. So that is something to be aware of if you have fully automated demos as the automated spam just gets into any form on the web.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/6</link>
+        <pubDate>Tue, 26 Nov 2013 19:47:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[drewm]]></dc:creator>
+        <description><![CDATA[
+            <p>To add to what <a class="mention" href="/u/rachelandrew">@rachelandrew</a> said - at first we launched with option 1, no demo.</p>
+<p>We quickly learned that option 1 doesn’t work well for customers. Without a demo, there’s no way for people to try our software before buying it. Without trying it, customers are reluctant to buy.</p>
+<p>I think we held out for about a week before we started work on a demo system. Our initial version was cron jobs, shell scripts and chicken wire, but it worked for 3 years!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/5</link>
+        <pubDate>Tue, 26 Nov 2013 19:32:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>We also use per trial hosted demo’s. Unlike Rachel ours is completely slapped together <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Basically they pick hosted, it goes in a queue, we push a button and a call goes to the server and puts a new HelpSpot instance in place on a single physical server we have and that’s about it.</p>
+<p>It’s speed is basically instant, though we artificially add in a queue to keep sleazy folk out since it is a shared server and kinda on principle. In our market it’s usually not a huge deal if there’s a small delay, but we could automate it as well someday (been saying that for about 6 years)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/4</link>
+        <pubDate>Tue, 26 Nov 2013 19:21:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>Our demo at <a href="http://grabaperch.com/demo">http://grabaperch.com/demo</a> gives each user their own demo to play with - in fact they can sign up for three different ones. Essentially it runs like a shared hosting setup so signing up kicks off a process that provisions one, two or three sites and gives you a unique login. We then shut them down after 3 days and also during the process the user gets an email to ask how they are doing.</p>
+<p>The current incarnation relies heavily on Puppet and is slower than I would like to provision the things but the user gets an email when they are ready.</p>
+<p>I’d like to add some stuff to these to see what people are doing and perhaps kick of some sort of drip email to help them or even a guided walkthrough around the app. However it all takes time!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/3</link>
+        <pubDate>Tue, 26 Nov 2013 17:34:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes. I think <a class="mention" href="/u/rachelandrew">@rachelandrew</a> and <a class="mention" href="/u/drewm">@drewm</a>  went for a while without having any kind of a demo for Perch, but eventually they did implement one over at <a href="http://grabaperch.com/demo">http://grabaperch.com/demo</a></p>
+<p>Rachel and Drew should get a notification of this thread; maybe they’ll chime in.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/2</link>
+        <pubDate>Tue, 26 Nov 2013 17:17:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+      <item>
+        <title>Thoughts on Hosted Demos</title>
+        <dc:creator><![CDATA[elliot]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey everyone,</p>
+<p>Got a little while to go before having to cross this bridge, but I’ve been thinking about various ways to go about providing a demo for a piece of on-premises software I’ve got in the pipeline.</p>
+<p>Having a look at some of the other players in the space, most seem to go for one of 3 options.</p>
+<ol>
+<li>No demo at all</li>
+<li>Shared demo, periodically reset</li>
+<li>Download and install with trial license</li>
+</ol>
+<p>Each option listed so far has some pretty big downsides.</p>
+<ol>
+<li>No demo = nothing to play with = no second look.</li>
+<li>Shared demos can get vandalised or locked out. Potential customers don’t feel like they have any ownership over the data and may not explore its full feature set. Shared environment also precludes showing all leads an effective onboarding process - leaving them thinking it is a daunting configuration task.</li>
+<li>Downloadable demos are ripe for piracy. While Ioncube/Zend are nice tools to keep low level piracy at bay, providing downloadable demos is the quickest way to seeing a nulled copy finding its way online.</li>
+</ol>
+<p>I’m thinking the best option so far is a hybrid approach to <span class="hashtag">#2:</span> Offering a private hosted demo, with little more than a Name/Email field to spin an instance up. It will take a bit more time and effort to get the infrastructure going behind it, but from my point of view the positives seem pretty good:</p>
+<ul>
+<li>The private instance doubles as a lead generation form</li>
+<li>Can gain metrics on feature usage that may not be acceptable to collect from an on-premises install</li>
+</ul>
+<p>Are there any other Bootstrappers out there that have tried different approaches and can shed some light/data on the subject?</p>
+<p>Cheers</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792/1</link>
+        <pubDate>Tue, 26 Nov 2013 13:53:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-792-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-hosted-demos/792.rss">Thoughts on Hosted Demos</source>
+      </item>
+  </channel>
+</rss>

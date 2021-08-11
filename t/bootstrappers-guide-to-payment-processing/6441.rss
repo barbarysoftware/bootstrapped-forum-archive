@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Bootstrapper&#39;s Guide to Payment Processing</title>
+    <link>https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441</link>
+    <description>There are two types of payment processors.
+
+# 1. &quot;Merchant of Record&quot; payment processors
+
+Examples include FastSpring and Paddle.
+
+These handle all the messy details of payments. They make sure the payment system meets regulations in your country and in other countries. They validate tax numbers, and calculate, collect, and remit national and state sales taxes and VAT. They typically allow payment via a number of methods, including credit card, PayPal, and ACH (US bank transfers).
+
+They are called &quot;Merchant of Record&quot; because they act as a reseller of your product, which puts them on record as the merchant who made the sale.
+
+Merchant of Record payment processors:
+
+* typically send you a monthly payment, net of all fees. You can account for this in your bookkeeping as a single line. 
+* charge relatively higher fees
+* offer minimal customisation
+* are easy to get started with
+
+# 2. Stripe-style payment processors
+
+Examples include Stripe and PayPal.
+
+Fundamentally, these payment processors just allow you just to charge a customer&#39;s credit card. It is up to you to work out how to meet laws regarding calculating, collecting, and remitting sales tax and VAT.
+
+Transactional payment processors:
+
+* might require you and your accountant to account for each transaction in your bookkeeping
+* charge relatively lower fees
+* allow high flexibility in your payment workflow
+* put the onus on you for collecting and remitting sales tax and VAT
+
+If you&#39;d like to use multiple transactional payment processors, you need to code the integration manually for each processor.
+
+# Choose between a &quot;merchant of record&quot; or a &quot;transactional&quot; payment processor
+
+Either choice is good, and many successful companies use each choice.
+
+## First time bootstrapper?
+If you are selling your first online product, **consider starting with a merchant of record**. This lets you use your precious time on product development instead of the payment system.
+
+## Is your product a consumer (B2C) product?
+
+Bootstrappers selling B2C products find that many customers want to be able to pay using PayPal and many want to use credit card. A merchant of record offers both of these, and hides you from the troubles of creating a payment system that can cope with both.
+
+## Want full control over the payment workflow?
+If you want fine control over the payment workflow, you&#39;ll need to use a transactional payment processor.
+
+# List of payment processors
+
+(todo: flesh this out, link to each, have fees where known)
+[Stripe](http://stripe.com)
+[FastSpring](http://fastspring.com)
+[PayPal](http://paypal.com)
+[2checkout](http://2checkout.com)
+[Paddle](http://paddle.com)
+[Recurly](http://recurly.com)
+[BMTmicro](http://bmtmicro.com) 
+[PayPro Global](http://payproglobal.com)
+[Braintree](https://www.braintreepayments.com/)
+[MyCommerce](https://www.mycommerce.com/)
+[Chargebee](http://chargebee.com)
+[Payhip](https://payhip.com/)</description>
+    
+    <lastBuildDate>Mon, 29 Jul 2019 17:38:34 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Bootstrapper&#39;s Guide to Payment Processing</title>
+        <dc:creator><![CDATA[SlyBridges]]></dc:creator>
+        <description><![CDATA[
+            <p>I second what Michael said, you can use Stripe along with third party plug-in solutions and get something close to a Merchant of record.</p>
+<p>We use Octobat, that is a solution similar to Quadermo. For each Stripe transaction, it determines if VAT has to be paid, and if so how much (VAT varies for intra European transactions based on the country of the buyer). It also generates and sends a PDF invoice , compliant with EU standards.</p>
+<p>It’s loosely tied up with Stripe, so we can also create manual invoices for transaction outside of Stripe (like bank transfers for our bigger customers).</p>
+<p>Maybe we could add a section about Stripe ecosystem on that page?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/5</link>
+        <pubDate>Mon, 29 Jul 2019 17:08:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6441-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441.rss">Bootstrapper&#39;s Guide to Payment Processing</source>
+      </item>
+      <item>
+        <title>Bootstrapper&#39;s Guide to Payment Processing</title>
+        <dc:creator><![CDATA[drmrking]]></dc:creator>
+        <description><![CDATA[
+            <p>There is a half-way house and that is using a solution like Quaderno - does the VAT / sales tax heavy lifting without taking a % (its fixed fee) and does not do currency conversions so doesn’t sting you on that either. I use Quaderno + Stripe and by paying out of Stripe in multiple currencies it all cuts down my processing costs significantly vs using a merchant of record.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/4</link>
+        <pubDate>Mon, 29 Jul 2019 16:03:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6441-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441.rss">Bootstrapper&#39;s Guide to Payment Processing</source>
+      </item>
+      <item>
+        <title>Bootstrapper&#39;s Guide to Payment Processing</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Added MyCommerce (ex ShareIt)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/3</link>
+        <pubDate>Sat, 27 Jul 2019 23:33:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6441-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441.rss">Bootstrapper&#39;s Guide to Payment Processing</source>
+      </item>
+      <item>
+        <title>Bootstrapper&#39;s Guide to Payment Processing</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Got something to add or correct to this guide? Then edit the article directly!</p>
+<p>The article is a “community wiki”. This allows any registered user to edit the article.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/2</link>
+        <pubDate>Sat, 27 Jul 2019 20:52:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6441-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441.rss">Bootstrapper&#39;s Guide to Payment Processing</source>
+      </item>
+      <item>
+        <title>Bootstrapper&#39;s Guide to Payment Processing</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>There are two types of payment processors.</p>
+<h1>1. “Merchant of Record” payment processors</h1>
+<p>Examples include FastSpring and Paddle.</p>
+<p>These handle all the messy details of payments. They make sure the payment system meets regulations in your country and in other countries. They validate tax numbers, and calculate, collect, and remit national and state sales taxes and VAT. They typically allow payment via a number of methods, including credit card, PayPal, and ACH (US bank transfers).</p>
+<p>They are called “Merchant of Record” because they act as a reseller of your product, which puts them on record as the merchant who made the sale.</p>
+<p>Merchant of Record payment processors:</p>
+<ul>
+<li>typically send you a monthly payment, net of all fees. You can account for this in your bookkeeping as a single line.</li>
+<li>charge relatively higher fees</li>
+<li>offer minimal customisation</li>
+<li>are easy to get started with</li>
+</ul>
+<h1>2. Stripe-style payment processors</h1>
+<p>Examples include Stripe and PayPal.</p>
+<p>Fundamentally, these payment processors just allow you just to charge a customer’s credit card. It is up to you to work out how to meet laws regarding calculating, collecting, and remitting sales tax and VAT.</p>
+<p>Transactional payment processors:</p>
+<ul>
+<li>might require you and your accountant to account for each transaction in your bookkeeping</li>
+<li>charge relatively lower fees</li>
+<li>allow high flexibility in your payment workflow</li>
+<li>put the onus on you for collecting and remitting sales tax and VAT</li>
+</ul>
+<p>If you’d like to use multiple transactional payment processors, you need to code the integration manually for each processor.</p>
+<h1>Choose between a “merchant of record” or a “transactional” payment processor</h1>
+<p>Either choice is good, and many successful companies use each choice.</p>
+<h2>First time bootstrapper?</h2>
+<p>If you are selling your first online product, <strong>consider starting with a merchant of record</strong>. This lets you use your precious time on product development instead of the payment system.</p>
+<h2>Is your product a consumer (B2C) product?</h2>
+<p>Bootstrappers selling B2C products find that many customers want to be able to pay using PayPal and many want to use credit card. A merchant of record offers both of these, and hides you from the troubles of creating a payment system that can cope with both.</p>
+<h2>Want full control over the payment workflow?</h2>
+<p>If you want fine control over the payment workflow, you’ll need to use a transactional payment processor.</p>
+<h1>List of payment processors</h1>
+<p>(todo: flesh this out, link to each, have fees where known)<br>
+<a href="http://stripe.com">Stripe</a><br>
+<a href="http://fastspring.com">FastSpring</a><br>
+<a href="http://paypal.com">PayPal</a><br>
+<a href="http://2checkout.com">2checkout</a><br>
+<a href="http://paddle.com">Paddle</a><br>
+<a href="http://recurly.com">Recurly</a><br>
+<a href="http://bmtmicro.com">BMTmicro</a><br>
+<a href="http://payproglobal.com">PayPro Global</a><br>
+<a href="https://www.braintreepayments.com/">Braintree</a><br>
+<a href="https://www.mycommerce.com/">MyCommerce</a><br>
+<a href="http://chargebee.com">Chargebee</a><br>
+<a href="https://payhip.com/">Payhip</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441/1</link>
+        <pubDate>Sat, 27 Jul 2019 20:50:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6441-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bootstrappers-guide-to-payment-processing/6441.rss">Bootstrapper&#39;s Guide to Payment Processing</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Adding an enormous play button overlay to a YouTube video</title>
+    <link>https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634</link>
+    <description>At the MicroConf Europe conference last weekend, Patrick McKenzie recommended replacing the default play button overlay on a product home page with one that is much, much bigger. He claimed to have measure a significant positive correlation between the size of the play button overlay and # of people viewing.
+
+I&#39;m trying to do this. I&#39;ve made my button as an image, added it to the first frame of my video, and uploaded the video to YouTube. But I&#39;m completely stumped at how to make the default play button overlay not show. Any ideas? Or recommendations for an alternative way to achieve this?
+</description>
+    
+    <lastBuildDate>Thu, 10 Oct 2013 14:51:20 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Adding an enormous play button overlay to a YouTube video</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>So I found a good solution. Switch from YouTube to Wistia for hosting product demo videos.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634/4</link>
+        <pubDate>Thu, 10 Oct 2013 14:51:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-634-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634.rss">Adding an enormous play button overlay to a YouTube video</source>
+      </item>
+      <item>
+        <title>Adding an enormous play button overlay to a YouTube video</title>
+        <dc:creator><![CDATA[yashchandra]]></dc:creator>
+        <description><![CDATA[
+            <p>Not sure if you found <a href="http://stackoverflow.com/questions/15539729/how-to-overlay-a-play-button-over-a-video-thumbnail-image" rel="nofollow noopener">this</a> stackoverflow answer but could be useful</p>
+<p>It points to a <a href="http://jsfiddle.net/shodaburp/9nEua/" rel="nofollow noopener">working sample</a></p>
+<p>Basically, the idea is to take an image of the first frame which should be same size as the video. Then using JS and CSS, you display that image along with the Play button imaged overlayed on top of it. The Play button image will link to the video which should open at the same coordinates as the image.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634/2</link>
+        <pubDate>Wed, 09 Oct 2013 19:10:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-634-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634.rss">Adding an enormous play button overlay to a YouTube video</source>
+      </item>
+      <item>
+        <title>Adding an enormous play button overlay to a YouTube video</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>At the MicroConf Europe conference last weekend, Patrick McKenzie recommended replacing the default play button overlay on a product home page with one that is much, much bigger. He claimed to have measure a significant positive correlation between the size of the play button overlay and # of people viewing.</p>
+<p>I’m trying to do this. I’ve made my button as an image, added it to the first frame of my video, and uploaded the video to YouTube. But I’m completely stumped at how to make the default play button overlay not show. Any ideas? Or recommendations for an alternative way to achieve this?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634/1</link>
+        <pubDate>Wed, 09 Oct 2013 18:51:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-634-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/adding-an-enormous-play-button-overlay-to-a-youtube-video/634.rss">Adding an enormous play button overlay to a YouTube video</source>
+      </item>
+  </channel>
+</rss>

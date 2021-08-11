@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Looking for Cloud Backup</title>
+    <link>https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579</link>
+    <description>I&#39;m looking for a cloud backup solution with the following features:
+
+ - works on Windows
+ - very reliable
+ - keeps previous versions of files, as well as deleted files
+
+For the past years I&#39;ve been using CrashPlan, but I have been encountering two big problems:
+
+ - UI is very bad and not being improved
+ - At the end of your subscription period, they send you a reminder to renew. If you don&#39;t, they delete all your data. This e-mail is sent only 7 days before the subscription runs out! Imagine you&#39;re on vacation without e-mail, come back and all your backup data is gone. This is unacceptable. (Edit: That was not perfectly accurate. See below for correction)
+
+Any recommendations?</description>
+    
+    <lastBuildDate>Thu, 22 Jan 2015 05:51:20 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Looking for Cloud Backup</title>
+        <dc:creator><![CDATA[Richard]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/ltr">@LTR</a> no, it’s just a zip-and-ship long-term backup but CloudBerry will do incremental to Glacier. Definitely sounds like if you have TB’s of backup, CrashPlan or BackBlaze will price better!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/7</link>
+        <pubDate>Thu, 22 Jan 2015 05:51:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2579-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579.rss">Looking for Cloud Backup</source>
+      </item>
+      <item>
+        <title>Looking for Cloud Backup</title>
+        <dc:creator><![CDATA[danh]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/ltr">@LTR</a> That’s good to hear about the renewal. The other way seemed ludicrous <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I didn’t know about the “verify backup selection” issue, but you’re right, I leave the service running 24/7 so it wouldn’t be a problem for me.</p>
+<p>CrashPlan definitely has plenty of negatives, but I haven’t found another service that beats it on price and features. I would love to hear if you find one. My 4 years is up this year I think. Although one thing to consider is your backup history. I was using JungleDisk / S3 before CrashPlan and after I switched and canceled my account, I looked for a lost file and realized it would have been in JungleDisk’s history. Fortunately I found it on an old hard drive, but it was still eye-opening.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/6</link>
+        <pubDate>Wed, 21 Jan 2015 22:43:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2579-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579.rss">Looking for Cloud Backup</source>
+      </item>
+      <item>
+        <title>Looking for Cloud Backup</title>
+        <dc:creator><![CDATA[LTR]]></dc:creator>
+        <description><![CDATA[
+            <p>Fastglazier: Looks like this can’t do incremental backups, can it?</p>
+<p>Will definitely look into BackBlaze and CloudBerry.</p>
+<p><a class="mention" href="/u/danh">@danh</a>: Looks like my CrashPlan complaint wasn’t entirely accurate. I heard back from them. Apparently I had auto-renewal disabled. If you have that enabled and the renewal fails due to billing errors, they keep your data for 45 days. That sounds much better.<br>
+Another CrashPlan complaint I didn’t mention in my first post is that it is possible to misconfigure it in such a way that new files are not detected for several weeks. If you have the “verify backup selection” set to a time in the night where the computer isn’t on, it won’t run. And if you then turn off the service and add some new files, the new files won’t be detected for several weeks. Granted, this is an edge case because most people don’t turn off the service. But still the software should be more robust and alert me to this problem. e.g. “Warning - backup selection not verified for 5 days”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/5</link>
+        <pubDate>Wed, 21 Jan 2015 22:25:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2579-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579.rss">Looking for Cloud Backup</source>
+      </item>
+      <item>
+        <title>Looking for Cloud Backup</title>
+        <dc:creator><![CDATA[danh]]></dc:creator>
+        <description><![CDATA[
+            <p>I use CrashPlan as well, and I agree it has a bad UI, lack of improvement and I’d add that it’s a massive memory hog. It regularly uses over 1GB of RAM on my machine. However, I have 3.5 TB backed up from my desktop and another terabyte on my wife’s, all for around $6/month. Amazon Glacier would cost upwards of $40/month, and that’s just for storing the files. I didn’t even bother to calculate the expense of retrieving it all.</p>
+<p>A few months ago my 2TB drive quit on me and as is often the case, my other backup methods had some issues that I hadn’t noticed. In short, I was able to retrieve everything from my 2TB drive with CrashPlan, including some files that had been deleted accidentally.</p>
+<p>I’ve done quite a bit of research and haven’t found anything better than CrashPlan, but there’s definitely a need for something better.</p>
+<p>Regarding the reminder issue, have you had personal experience with that? Their <a href="http://support.code42.com/Release_Notes/CrashPlan_For_Home/3" rel="nofollow noopener">documentation</a> says, “CrashPlan+ subscriptions now renew automatically, so that you can continue to back up to CrashPlan Central without having to remember to renew.”</p>
+<p>I haven’t reached the 4 year mark yet, but I would be surprised if they willingly gave up customers like that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/4</link>
+        <pubDate>Wed, 21 Jan 2015 18:11:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2579-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579.rss">Looking for Cloud Backup</source>
+      </item>
+      <item>
+        <title>Looking for Cloud Backup</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>Depends a bit on your profile - if you just want to install and forget then I would really rate something like BackBlaze (though pervious / deleted versions limited). I’ve bought it for a few family members and its saved a lot of grief.</p>
+<p>If you want more control (and the responsibility that comes with that) then would recommend Cloudberry.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/3</link>
+        <pubDate>Wed, 21 Jan 2015 17:20:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2579-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579.rss">Looking for Cloud Backup</source>
+      </item>
+      <item>
+        <title>Looking for Cloud Backup</title>
+        <dc:creator><![CDATA[Richard]]></dc:creator>
+        <description><![CDATA[
+            <p>Amazon Glacier with your client of choice, because Glacier is great $/GB, you pay for what you use, their durability seems great [1], and very unlikely to go out of business. I use FastGlacier, which isn’t automatic, but there are a ton of clients out there:</p>
+<p><a href="http://fastglacier.com/" class="onebox" target="_blank">http://fastglacier.com/</a><br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.msp360.com/backup/amazon-s3.aspx/../img/elements/favicon.ico" class="site-icon" width="" height="">
+      <a href="https://www.msp360.com/backup/amazon-s3.aspx" target="_blank">MSP360</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:610/204;"><img src="https://www.msp360.com/img/logos/cbl/CloudBerry-is-now-MSP360-white-bg.svg" class="thumbnail" width="610" height="204"></div>
+
+<h3><a href="https://www.msp360.com/backup/amazon-s3.aspx" target="_blank">Amazon S3 Backup Software | MSP360™ (CloudBerry Lab)</a></h3>
+
+<p>MSP360™ Backup (formerly CloudBerry Backup) for Amazon S3 works on Windows, Mac and Linux. Backup files, folders and system image to Amazon S3. Freeware version available.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://cloudstoragebuzz.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://cloudstoragebuzz.com/amazon/amazon-glacier-clients/" target="_blank" title="07:00PM - 16 February 2014">Cloud Storage Buzz – 16 Feb 14</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:540/359;"><img src="https://cloudstoragebuzz.com/wp-content/uploads/2014/02/mountain-glacier.jpg" class="thumbnail" width="540" height="359"></div>
+
+<h3><a href="https://cloudstoragebuzz.com/amazon/amazon-glacier-clients/" target="_blank">Amazon Glacier Clients</a></h3>
+
+<p>If you like to do things yourself and are setting up your own cloud backup one of the most popular and inexpensive options to use is Amazon Glacier. Amazon Glacier is great for long time archival o…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>Note that it’s meant for last-resort archival storage, not for fast retrieval. You’ll likely wait 4+ hours to get your data out, but that’s fine if your office is still burning or you have to buy a replacement laptop. They also discourage getting your data too soon after storing it - there’s a surcharge. You might have to pay to get it out if there’s a lot of it, but that’s nothing compared to paying a lot monthly.</p>
+<p>[1] “Amazon Glacier is designed to provide average annual durability of 99.999999999% for an archive”<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" class="site-icon" width="16" height="16">
+      <a href="https://aws.amazon.com/glacier/faqs/" target="_blank">Amazon Web Services, Inc.</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/362;"><img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" class="thumbnail" width="690" height="362"></div>
+
+<h3><a href="https://aws.amazon.com/glacier/faqs/" target="_blank">Amazon S3 Glacier FAQs – Amazon Web Services</a></h3>
+
+<p>Read frequently asked questions by customers about Amazon S3 Glacier features and capabilities.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/2</link>
+        <pubDate>Wed, 21 Jan 2015 13:49:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2579-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579.rss">Looking for Cloud Backup</source>
+      </item>
+      <item>
+        <title>Looking for Cloud Backup</title>
+        <dc:creator><![CDATA[LTR]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m looking for a cloud backup solution with the following features:</p>
+<ul>
+<li>works on Windows</li>
+<li>very reliable</li>
+<li>keeps previous versions of files, as well as deleted files</li>
+</ul>
+<p>For the past years I’ve been using CrashPlan, but I have been encountering two big problems:</p>
+<ul>
+<li>UI is very bad and not being improved</li>
+<li>At the end of your subscription period, they send you a reminder to renew. If you don’t, they delete all your data. This e-mail is sent only 7 days before the subscription runs out! Imagine you’re on vacation without e-mail, come back and all your backup data is gone. This is unacceptable. (Edit: That was not perfectly accurate. See below for correction)</li>
+</ul>
+<p>Any recommendations?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579/1</link>
+        <pubDate>Wed, 21 Jan 2015 13:31:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2579-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/looking-for-cloud-backup/2579.rss">Looking for Cloud Backup</source>
+      </item>
+  </channel>
+</rss>

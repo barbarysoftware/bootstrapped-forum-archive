@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What do you use for logging?</title>
+    <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205</link>
+    <description>I am working on a tool for use internally at my day job for logging. If I like using it and it&#39;s helpful, I&#39;d like to make it into a product. It&#39;s basically a live view of your logs.
+
+What do you use and what do you like/not like about it? Frameworks, SaaS, etc. 
+
+What do you log? web server logs, application logs, etc.
+
+We use log4net (.NET SaaS company) among other things, but would like to learn what else is out there.</description>
+    
+    <lastBuildDate>Wed, 05 Aug 2015 02:28:26 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[uberCX]]></dc:creator>
+        <description><![CDATA[
+            <p>I have done architecture design and implementation on ELK stack (logstash + elasticsearch + kibana). One thing, I will recommend, if you need logs to be captured for analysis or sharing, then always install <strong>Logstash</strong> (to be used as agent) on each instance. Then use Logstash output filters to send logs wherever you want to. (even to Logentries). By doing so, you will have flexibility to play around or switch around different log repositories by doing minor changes to already <strong>installed</strong> logstash config file.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/10</link>
+        <pubDate>Wed, 05 Aug 2015 02:28:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[nevf]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m using LogEntries to track Server Errors in real time from my Web App, Clibu. It is ok, but not great. I’ve documented what I’d really like and if I ever get time may develop something.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/9</link>
+        <pubDate>Thu, 18 Jun 2015 22:18:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for all the responses guys. I have more methods and systems to investigate now!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/8</link>
+        <pubDate>Thu, 18 Jun 2015 03:42:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[akshatjiwan]]></dc:creator>
+        <description><![CDATA[
+            <p>couchdb-- for application level logs and file system for server logs.</p>
+<p>I only log errors. Default server logs are stored on file system  and automatically compressed by logrotate .  For application level logs I store them on a separate database created for that purpose.</p>
+<p>I also frequently analyse both application level and server level logs to check if any of the errors are being repeated and get rid of the old records.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/7</link>
+        <pubDate>Tue, 16 Jun 2015 06:13:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>We send everything to Papertrail via rsyslog. The retention rate is relatively short though, so we also send our web application logs to LogEntries.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/6</link>
+        <pubDate>Sat, 13 Jun 2015 13:50:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[bencarlson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve started using ELK stack - Elasticsearch, Logstash and Kibana for logs. Before that I’ve used Loggly, and also Splunk. I log web access and errors, app server access and errors, system level events (CPU, memory, disk I/O, login attempts, etc.) DB events, load balancers, firewalls, etc. Pretty much anything that might be useful in tracking down a bug.</p>
+<p>Depending on the depth of your pockets, you can go crazy, so set the log level to something decent, and be sure to rotate periodically if you don’t want to pay out the wazoo for disk space.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/5</link>
+        <pubDate>Sat, 13 Jun 2015 02:47:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>Serilog is ok but some sinks, like Raygun, have some issues.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/4</link>
+        <pubDate>Fri, 12 Jun 2015 19:23:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>I should try out LogEntries. Looks like a pretty mature product.</p>
+<p>I had never seen Serilog, looks interesting.</p>
+<p>Thanks for the reply!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/3</link>
+        <pubDate>Fri, 12 Jun 2015 19:22:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m everything logging to: Trace, File and to a solution like LogEntries . Errors are also sent to a service like <a href="http://Raygun.io" rel="nofollow noopener">Raygun.io</a> . I’m using Serilog (.Net) these days, it has sinks to everything I’m interested in.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/2</link>
+        <pubDate>Fri, 12 Jun 2015 17:18:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+      <item>
+        <title>What do you use for logging?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>I am working on a tool for use internally at my day job for logging. If I like using it and it’s helpful, I’d like to make it into a product. It’s basically a live view of your logs.</p>
+<p>What do you use and what do you like/not like about it? Frameworks, SaaS, etc.</p>
+<p>What do you log? web server logs, application logs, etc.</p>
+<p>We use log4net (.NET SaaS company) among other things, but would like to learn what else is out there.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205/1</link>
+        <pubDate>Fri, 12 Jun 2015 16:54:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3205-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-for-logging/3205.rss">What do you use for logging?</source>
+      </item>
+  </channel>
+</rss>

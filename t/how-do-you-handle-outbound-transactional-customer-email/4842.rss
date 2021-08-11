@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How do you handle outbound transactional customer email</title>
+    <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842</link>
+    <description>hey folks
+
+just wondering how you all handle sending transactional emails from your multi-tenant SaaS
+
+do you use a service like mailgun / sendgrid and send from your domain on behalf of your customers or do you get your customers to link up one of their own outbound mail accounts.
+
+I see
+
+option 1. send on behalf of your customers from {yourdomain}email1.com to carry a some risk of getting blacklisted etc and hitting all of your customers.
+
+option 2. get your customers to enter details of their own mail account to send from. this carries different risks i.e. barrier to entry plus sensitive creds for external mailboxes
+
+would love to hear everyones thoughts and how they handle things
+
+thanks
+Dean</description>
+    
+    <lastBuildDate>Wed, 31 May 2017 11:18:33 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>thanks for all the answers folks</p>
+<p>postmarkapp does look good and i’ll be investigating more.</p>
+<p>sorry for the delay but day job and continual research / dev of product have sucked up time</p>
+<p>it’s really appreciated that y’all took the time to answer.  thank you</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/20</link>
+        <pubDate>Wed, 31 May 2017 11:18:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Generally speaking, though, teams running their own mail servers doesn’t yield great results without a lot of effort</p>
+</blockquote>
+<p>Uhm… Nope:) More of a “set and forget” kind of thing, haven’t touched the server for months.</p>
+<p>Also, if you’re a b2b and especially if you’re a <em>hipaa-compliant b2b</em> you’re basically required to run your own server.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/19</link>
+        <pubDate>Sun, 19 Mar 2017 08:40:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>AWS and Azure seem to be pretty much permanently blacklisted</p>
+</blockquote>
+<p>Never heard of that nor had any issues. Just make sure you set up rDNS &amp; SPF</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/18</link>
+        <pubDate>Sun, 19 Mar 2017 08:35:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="15" data-topic="4842">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>So we use our own Postfix installed on a t2.Micro Ubuntu machine on AWS. $4/month. hahah.</p>
+</blockquote>
+</aside>
+<p>I looked at this but AWS and Azure seem to be pretty much permanently blacklisted. How did you get around that?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/17</link>
+        <pubDate>Sun, 19 Mar 2017 06:59:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey, Alex. It would defiitely be more expensive, but it wouldn’t be on the order of “tens of thousands per month.” With Postmark, it would be about $1,250 every 1.7 months at a rate of $0.25 per 1,000. Or, if you wanted to pre-pay for a year, it could be even cheaper than that with custom pricing. It’s more likely you’d be in the $5,000-$10,000 per <em>year</em> range rather than “tens of thousands per month.” And we’re generally the most expensive due to better delivery and performance than the other providers.</p>
+<p>Obviously if a custom server is working for you, you’re in great shape, and at your volume, you’d definitely know if you were having issues with lost or delayed emails. Generally speaking, though, teams running their own mail servers doesn’t yield great results without a lot of effort. <a href="https://postmarkapp.com/customers/minecraft" rel="nofollow noopener">Mojang (Minecraft) was also running their own mail server</a> before switching to us and the switch saved them from having to hire additional support people due to delivery issues and operations costs. So it’s definitely not black and white.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/16</link>
+        <pubDate>Fri, 17 Mar 2017 16:29:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Our app sends/receives ~100k emails <strong>every day</strong>. Mailgun, AWS SES or any other IaaS provider would cost us tens of thousands per month.</p>
+<p>So we use our own Postfix installed on a t2.Micro Ubuntu machine on AWS. $4/month. hahah.</p>
+<p>Takes time to build up reputation for an IP address tho, so big email providers “recognize” you (gmail/hotmail/yahoo/office365)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/15</link>
+        <pubDate>Fri, 17 Mar 2017 09:03:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>I use Postmark, works fantastic.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/14</link>
+        <pubDate>Fri, 17 Mar 2017 02:11:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[shanecleveland]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 for Postmark. I use it both for outbound and parsing inbound as json.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/13</link>
+        <pubDate>Thu, 16 Mar 2017 13:39:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>We use combination of SES (<a href="https://aws.amazon.com/ses/" rel="nofollow noopener">https://aws.amazon.com/ses/</a>) and Office 365.</p>
+<p>We are not sending emails on behalf of the customers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/12</link>
+        <pubDate>Thu, 09 Mar 2017 13:32:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>+100 for PostmarkApp, happily giving them money for 3+ years. API is dead simple to work with. No spam issues ever.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/11</link>
+        <pubDate>Thu, 09 Mar 2017 03:23:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ll admit I’m biased, but I’d highly recommend <a href="https://postmarkapp.com" rel="nofollow noopener">Postmark</a> if you care about delivery and customer service. I used them for Sifter, and after selling Sifter, I joined Wildbit (makers of Postmark).  There are a few options for <a href="http://support.postmarkapp.com/article/846-how-can-i-send-on-behalf-of-my-users" rel="nofollow noopener">sending on behalf of your customers</a> with Postmark.</p>
+<p>Ultimately, you should check them all out. Try out their APIs, their status pages, their support. No matter what, make sure you test their deliverability. Everybody claims great deliverability, but based on the customers that come to us after trying all of the budget options, a lot of their claims simply aren’t true.</p>
+<p>The big difference with Postmark is that we don’t allow bulk/promotional emails and focus exclusively on transactional email. The benefit of this is that all of the emails through Postmark see higher engagement, and thus we end up with a stellar reputation with the various inbox providers. Gmail even officially recommends separating transactional and bulk email onto different subdomains and IPs so that your bulk email doesn’t drag down the reputation of your more critical transactional emails.</p>
+<p>That’s really just the tip of the iceberg, but from a deliverability standpoint you have to ask why none of the other providers are willing to share their <a href="https://status.postmarkapp.com" rel="nofollow noopener">delivery statistics on their status pages</a>. Or they ask you to pay more and upgrade to a dedicated IP.</p>
+<p>Another way to gauge any vendor that works great for email is to do some twitter searches. “(vendor) spam”, “(vendor) support”, etc. You’ll get a much more accurate view of how well providers do (or don’t) take care of customers. Or you can just try emailing support a technical question to test them out and see who responds the fastest and with the best answer.</p>
+<p>Email may look like a commodity on the surface, but I promise there’s much more too it than that. I’m more than happy to answer any questions or help out.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/10</link>
+        <pubDate>Thu, 09 Mar 2017 02:07:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[pjc]]></dc:creator>
+        <description><![CDATA[
+            <p>We use <a href="http://postmarkapp.com/" rel="nofollow noopener">http://postmarkapp.com/</a> and for customers that want to send from their own domain, that involves confirming the “sender signature” via clicking a button in an email Postmark sends them. This confirms our “ownership” of that sender signature to Postmark so we can send from it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/9</link>
+        <pubDate>Wed, 08 Mar 2017 14:40:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[swastik]]></dc:creator>
+        <description><![CDATA[
+            <p>We allow both. By default, we send from our own domain (something like <a href="mailto:username@mail.ourapp.com">username@mail.ourapp.com</a>) and if the user sets up their Mailgun credentials, we send it from their domain. We add that domain to our Mailgun account and once the customer verifies all’s good, we switch emails to go out from their domain.</p>
+<p>In our case, our users need to be able to send from their own domains otherwise I wouldn’t do it. It’s just extra hassle. Also: for blacklists, I use a tool like mx-toolbox to monitor if the IP we’re sending from gets blacklisted. I’ve seen it happen a lot (Mailgun offers shared IPs for free; dedicated IPs are $60/month) but the IP often gets whitelisted by itself pretty quickly. In case it doesn’t (had it happen only once so far) I contacted Mailgun and got it changed.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/8</link>
+        <pubDate>Wed, 08 Mar 2017 10:23:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I send from our company domain.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/7</link>
+        <pubDate>Wed, 08 Mar 2017 10:03:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4842">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I use AWS’s SES, aka Amazon Simple Email Service. Which is equivalent to mailgun and sendgrid.</p>
+</blockquote>
+</aside>
+<p>thanks Steve, same question to you as swastik…</p>
+<p>Do you send on behalf of your customer i.e. from your domain or one of their domains/sub-domains.</p>
+<p>I’m thinking reputation etc</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/6</link>
+        <pubDate>Wed, 08 Mar 2017 09:50:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4842">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/swastik/40/3632_1.png" class="avatar"> swastik:</div>
+<blockquote>
+<p>We use a combination of <a href="http://Customer.io" rel="nofollow noopener">Customer.io</a> and Mailgun.</p>
+</blockquote>
+</aside>
+<p>Thanks for the reply, not looked at <a href="http://customer.io" rel="nofollow noopener">customer.io</a> but will do.</p>
+<p>Do you send on behalf of your customer i.e. from your domain or one of their domains/sub-domains.</p>
+<p>I’m thinking reputation etc</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/5</link>
+        <pubDate>Wed, 08 Mar 2017 09:49:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Option 1.</p>
+<p>I use AWS’s SES, aka Amazon Simple Email Service. Which is equivalent to mailgun and sendgrid.</p>
+<p>For ease of onboarding, deliverability, and monitoring, I’d say you really need to use such a service.</p>
+<p>You could perhaps offer the customers the chance to use their own mail server as an optional extra, but I certainly wouldn’t make it the norm.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/4</link>
+        <pubDate>Wed, 08 Mar 2017 09:28:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[swastik]]></dc:creator>
+        <description><![CDATA[
+            <p>We use a combination of <a href="http://Customer.io" rel="nofollow noopener">Customer.io</a> and Mailgun.</p>
+<p>For e-mails that we need insights into (e.g. onboarding stuff, etc.), we use <a href="http://Customer.io" rel="nofollow noopener">Customer.io</a> and for almost everything else, Mailgun. <a href="http://Customer.io" rel="nofollow noopener">Customer.io</a>’s also really good for sending periodic e-mails like monthly updates, etc.</p>
+<p>Mailgun’s also <a href="https://documentation.mailgun.com/api-domains.html#domains" rel="nofollow noopener">got a great API</a> that can be used to add domains, verify them, and send e-mails from those domains. You can build on top of that to send e-mails on behalf of customers’ domains without asking them for their e-mail credentials. The downside here is that it’s a bit more technical (the customer needs to setup some records) but that’s what we’ve been doing and it’s worked well so far.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/3</link>
+        <pubDate>Wed, 08 Mar 2017 06:39:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[dtrejo]]></dc:creator>
+        <description><![CDATA[
+            <p>I was looking into this for a project and it seemed that postmark would do what I needed. I didn’t continue with the project but I’m still looking forward to using postmark at some point.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/2</link>
+        <pubDate>Wed, 08 Mar 2017 06:37:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+      <item>
+        <title>How do you handle outbound transactional customer email</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>hey folks</p>
+<p>just wondering how you all handle sending transactional emails from your multi-tenant SaaS</p>
+<p>do you use a service like mailgun / sendgrid and send from your domain on behalf of your customers or do you get your customers to link up one of their own outbound mail accounts.</p>
+<p>I see</p>
+<p>option 1. send on behalf of your customers from {yourdomain}<a href="http://email1.com" rel="nofollow noopener">email1.com</a> to carry a some risk of getting blacklisted etc and hitting all of your customers.</p>
+<p>option 2. get your customers to enter details of their own mail account to send from. this carries different risks i.e. barrier to entry plus sensitive creds for external mailboxes</p>
+<p>would love to hear everyones thoughts and how they handle things</p>
+<p>thanks<br>
+Dean</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842/1</link>
+        <pubDate>Tue, 07 Mar 2017 22:06:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4842-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-handle-outbound-transactional-customer-email/4842.rss">How do you handle outbound transactional customer email</source>
+      </item>
+  </channel>
+</rss>

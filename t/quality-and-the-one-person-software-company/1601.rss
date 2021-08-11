@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Quality and the one-person software company</title>
+    <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601</link>
+    <description>I&#39;ve never been able to give my main product the full quality treatment I&#39;d like. Possibly like many of you, my main testing strategy is to release an update and await customer feedback.
+
+Code review, apparently, is a really good way to improve software quality, but this isn&#39;t easy to do when there is just one programmer in the company. Rigorous system testing falls by the wayside too, like many useful but tedious parts of running a business when it all depends on you.
+
+After six years, I&#39;ve finally got a QA guy on board for a short term spell, and it is doing wonders for improving my product, Poker Copilot. [I wrote about the experience here][1]. An excerpt:
+
+&gt; Until now, quality control in Poker Copilot has been a combination of unit testing, my own haphazard system testing, and customer feedback. It is clear to me now that this is not enough. Having a person dedicated – even for a few weeks at a time – to quality control is unbeatable for making a software product top-notch.
+
+I&#39;m keen to hear any ideas you have for improving product quality in a sustainable way for the one-person company.
+
+
+  [1]: http://pokercopilot.com/blog/2014/05/better-poker-copilot-via-quality-control</description>
+    
+    <lastBuildDate>Wed, 21 May 2014 20:39:59 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[anon3850446]]></dc:creator>
+        <description><![CDATA[
+            <p>Great ideas <a class="mention" href="/u/michaeljcalkins">@michaeljcalkins</a>! Using automation to the maximum extend can improve software quality – specially for testing &amp; deployment. This reminds me to take some time to write Python scripts to help in my development effort.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/11</link>
+        <pubDate>Wed, 21 May 2014 20:39:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[theallan]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve had this tab open to add a reply this first thing this morning (its not last thing at night), and I feel I should appreciate the irony that I’ve been doing support work all day, but having done a whole day of support, I just can’t bring myself to be amused!</p>
+<p>I’m a library author (<a href="//datatables.net" rel="nofollow noopener">DataTables</a>) so I have a slightly skewed perspective on this possibly. Libraries which your app depends upon should be unit tested - I feel it is my responsibility to ensure that DataTables has certain standards for example, so I think <a class="mention" href="/u/michaeljcalkins">@michaeljcalkins</a>’s point about standing on the shoulders of third party libraries is an excellent point. There is no point in testing if Bootstrap has a 1px border on table cells with a particular class.</p>
+<p>For me, its all about maximising coverage, while minimising effort (and therefore maximising your productivity and therefore profitability). Use some automated testing, use some users as beta testers - find the right balance that minimises support requests and churn, without writing tens of thousands of automated tests that require a full time employee just to maintain. What that balance is, will vary for everyone.</p>
+<p>A good friend of mine is superb at QA - has him to take a look at a system that you think is perfect and he’ll find bugs no problem (might say as much about me as him perhaps :-)), so I ask him to brutalise my new software sometimes.</p>
+<p>What do you all think about of a “Gorilla QA” service? Someone who will spend an hour or six bashing your system around and filing bugs? A service you’d pay for?</p>
+<p>Regards,<br>
+Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/10</link>
+        <pubDate>Thu, 15 May 2014 20:54:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[michaeljcalkins]]></dc:creator>
+        <description><![CDATA[
+            <p>If it wasn’t for the fact that I have a partner who can sit on the outside of development and give me constant feedback our software would be in shambles.</p>
+<p>Code quality is great but when push comes to shove UI/UX is the game changer, because that’s all the customer sees and cares about.  Is it easy to use?</p>
+<p>I use feedback as a chance to improve my codebase incrementally (TDD) along with UI/UX and business goals.  This has at least been my experience and has worked really well for pivoting vast amounts of code.</p>
+<p>Just to note I use a framework w/ automation for just about everything so I’m able to stand on the shoulders of very talented people.</p>
+<ul>
+<li>AWS Beanstalk (Basically your server admin)</li>
+<li>Laravel (powerful framework for server side)</li>
+<li>Composer, Bower, npm (manage all of my packages)</li>
+<li>Grunt (automate everything)</li>
+<li>AngularJS (powerful framework for client side)</li>
+<li>Bootstrap ((powerful framework for css)</li>
+<li>etc.</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/9</link>
+        <pubDate>Tue, 13 May 2014 18:25:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[anon3850446]]></dc:creator>
+        <description><![CDATA[
+            <p>Totally agree with you on this. Over my 22 years developing applications, the best software is the one that gets continuous use as it’s being developed. I am planning to do just like you and have a QA person work with me to help improve the quality of my product.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/8</link>
+        <pubDate>Sun, 11 May 2014 18:52:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Defence in depth:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=32" class="site-icon" width="32" height="32">
+      <a href="https://successfulsoftware.net/2008/07/09/using-defence-in-depth-to-produce-high-quality-software/" target="_blank" title="08:52AM - 09 July 2008">Successful Software – 9 Jul 08</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:200/148;"><img src="https://i0.wp.com/successfulsoftware.wordpress.com/files/2008/07/defence-in-depth.jpg?fit=440%2C330" class="thumbnail" width="200" height="148"></div>
+
+<h3><a href="https://successfulsoftware.net/2008/07/09/using-defence-in-depth-to-produce-high-quality-software/" target="_blank">Using defence in depth to produce high quality software</a></h3>
+
+<p>‘Defence in depth’ is a military strategy where the attacker is allowed to penetrate the defender’s lines, but is then gradually worn down by successive layers of defences. This s…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/7</link>
+        <pubDate>Sun, 11 May 2014 18:32:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a test suite for the stuff I work on.  It’s something that has saved me in too many occasions to not have.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/6</link>
+        <pubDate>Sun, 11 May 2014 13:51:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Would you mind sharing how you found the QA person?</p>
+</blockquote>
+<p>Daniel, I know him from my personal network.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/5</link>
+        <pubDate>Sun, 11 May 2014 09:13:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for sharing your experience Steve, this sounds like a good idea. Would you mind sharing how you found the QA person?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/4</link>
+        <pubDate>Sun, 11 May 2014 08:53:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[jacksonh]]></dc:creator>
+        <description><![CDATA[
+            <p>I definitely feel the same way. Ironically, I am making a <a href="http://codereview.io" rel="nofollow noopener">code review tool</a>. I think the biggest thing you can do is just cut down on the amount of stuff your software does. It’s hard but less surface area means less testing.</p>
+<p>Vocal users are also really helpful. Make sure to communicate that to them, so they keep being vocal.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/3</link>
+        <pubDate>Sat, 10 May 2014 23:57:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="1601">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I’m keen to hear any ideas you have for improving product quality in a sustainable way for the one-person company.</p>
+</blockquote>
+</aside>
+<p>If you have some vocal customers who provide useful feedback, perhaps they can become beta testers for new versions.  Some other suggestions:</p>
+<ul>
+<li>Try using the idea of test-driven development to design new pieces of code from the view of a user of it (consumer of the API).  This helps make consistent APIs which are also testable.  Keeping as much code separate from the GUI layer also keeps it more easily testable.</li>
+<li>Periodically sit down with your app and a notebook, and try to view your app as a new user would.  Note all the confusing bits or places where the app could be better.</li>
+</ul>
+<p>Both of these get easier with practice.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/2</link>
+        <pubDate>Sat, 10 May 2014 15:53:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+      <item>
+        <title>Quality and the one-person software company</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve never been able to give my main product the full quality treatment I’d like. Possibly like many of you, my main testing strategy is to release an update and await customer feedback.</p>
+<p>Code review, apparently, is a really good way to improve software quality, but this isn’t easy to do when there is just one programmer in the company. Rigorous system testing falls by the wayside too, like many useful but tedious parts of running a business when it all depends on you.</p>
+<p>After six years, I’ve finally got a QA guy on board for a short term spell, and it is doing wonders for improving my product, Poker Copilot. <a href="http://pokercopilot.com/blog/2014/05/better-poker-copilot-via-quality-control">I wrote about the experience here</a>. An excerpt:</p>
+<blockquote>
+<p>Until now, quality control in Poker Copilot has been a combination of unit testing, my own haphazard system testing, and customer feedback. It is clear to me now that this is not enough. Having a person dedicated – even for a few weeks at a time – to quality control is unbeatable for making a software product top-notch.</p>
+</blockquote>
+<p>I’m keen to hear any ideas you have for improving product quality in a sustainable way for the one-person company.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601/1</link>
+        <pubDate>Sat, 10 May 2014 14:47:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1601-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/quality-and-the-one-person-software-company/1601.rss">Quality and the one-person software company</source>
+      </item>
+  </channel>
+</rss>

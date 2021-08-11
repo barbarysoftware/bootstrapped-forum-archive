@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Stripe fees in Europe</title>
+    <link>https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441</link>
+    <description>I use Braintree for credit card processing, and over the years I&#39;ve been frustrated by lots of things there. I thought I&#39;d migrate to Stripe, which supposedly was way better.
+
+Well, I just shelved this project.
+
+It turned out that payouts in EUR are fine, but payouts in USD are only possible to a USD account… in the United States. And it&#39;s not possible to have a bank account in the US without having presence there. My SaaS offers pricing in EUR, USD and PLN and I really wanted to process those three currencies, like I do with Braintree today.
+
+But, I thought to myself, I could perhaps live with a conversion from USD to EUR… and then I looked at the fee structure. There is an additional 2% charge for currency conversion, so overall the fees would be: 2.9% international payments, 2% currency conversion, 0.5% Stripe billing. I&#39;m not sure how these percentages are calculated, but they add up to about **5.4%** of posted prices!
+
+I checked my last statement, and Braintree currently charges me nearly 3.1% on USD transactions. I don&#39;t know why it&#39;s 3.1% and not 2.9% which they advertise, but I guess that&#39;s how things go.
+
+I tried to find a justification for paying 5.4% and I couldn&#39;t. Sure, I have a lot of problems with Braintree, but I guess I can live with the inconvenience for that much money. Also, most of Stripe &quot;value added&quot; features in Billing are useless for me anyway (invoices are issued in US-centric &quot;speculative&quot; way *before* the customer is successfully charged, no SAF-T export, insistence on phone numbers in all E-mails, forced formatting of E-mails).
+
+I&#39;d be interested to hear what others in the EU think — if you have a SaaS business, do you use Stripe? Do you just accept a 5.4% commission?</description>
+    
+    <lastBuildDate>Fri, 12 Feb 2021 09:25:26 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Stripe fees in Europe</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok, to summarize my current situation and thinking:</p>
+<ul>
+<li>
+<p>I do not want an intermediary. In other words, I don’t want my customers to get invoices from Paddle, 2Checkout, or any other company.</p>
+</li>
+<li>
+<p>I might be willing to pay &gt;5%, but only for a solution that would completely solve all the issues of: credit card processing, recurring billing, and invoicing.</p>
+</li>
+<li>
+<p>There is no solution out there that does all of the above. Most fail at invoicing: I am in the EU (Poland) and I need dual-language invoicing with compliant (and maintained) SAF-T export for auditing.</p>
+</li>
+<li>
+<p>Stripe gets many things right, but their requirement for USD accounts to be in the US is problematic. Perhaps TransferWise is a solution, but that complicates things even more. Also, Stripe’s idea of invoicing is very US-centric, and the automatic E-mails they provide are a non-starter for me because they can’t be modified (phone number required, seriously? In 2021?).</p>
+</li>
+</ul>
+<p>I’m currently processing with Braintree. They have a number of problems (for example, their recurring billing is unable to switch from a monthly plan to an annual one), and I thought I’d be switching, but it seems I won’t. My current thinking is to stick with them for CC processing and implement recurring billing myself. Invoicing is something I have to do myself anyway, it seems.</p>
+<p>The situation would be a bit different if I had B2C sales, but I don’t plan to. It’s B2B only, so I don’t have to deal with the terrible VAT MOSS system.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/8</link>
+        <pubDate>Fri, 12 Feb 2021 09:25:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7441-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441.rss">Stripe fees in Europe</source>
+      </item>
+      <item>
+        <title>Stripe fees in Europe</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Where do you live? I used transferwise to take stripe deposits. Now I have a euro and dollar account with starling bank in the U.K.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/7</link>
+        <pubDate>Thu, 11 Feb 2021 10:52:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7441-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441.rss">Stripe fees in Europe</source>
+      </item>
+      <item>
+        <title>Stripe fees in Europe</title>
+        <dc:creator><![CDATA[SlyBridges]]></dc:creator>
+        <description><![CDATA[
+            <p>I was wondering the same last week and asked Paddle for a quote. Here is the reply:</p>
+<blockquote>
+<p>Once you’re up and running, there isn’t a monthly fee or minimum commitment: we charge 5% + $0.50 per transaction which includes all payment methods, subscription billing, licensing, sales taxes etc.</p>
+</blockquote>
+<p>Didn’t try to see if they offer volume discounts after a certain revenue threshold.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/6</link>
+        <pubDate>Tue, 09 Feb 2021 09:02:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7441-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441.rss">Stripe fees in Europe</source>
+      </item>
+      <item>
+        <title>Stripe fees in Europe</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>Paddle makes things very simple, because they become the intermediary. But that’s also a big disadvantage.</p>
+<p>What is their pricing for B2B SaaS subscriptions? I tried to find out from their web pages, but all I got to was a “Get your Quote” button…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/5</link>
+        <pubDate>Tue, 09 Feb 2021 08:44:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7441-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441.rss">Stripe fees in Europe</source>
+      </item>
+      <item>
+        <title>Stripe fees in Europe</title>
+        <dc:creator><![CDATA[David]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m in The Netherlands and switched to Paddle a few months ago (just before Brexit). So far it works well and it means a lot less work regarding VAT.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/4</link>
+        <pubDate>Mon, 08 Feb 2021 13:55:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7441-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441.rss">Stripe fees in Europe</source>
+      </item>
+      <item>
+        <title>Stripe fees in Europe</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>These kind of fees make <a href="http://paddle.com">paddle.com</a> look very good, as you don’t need to take care of VAT.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/3</link>
+        <pubDate>Mon, 08 Feb 2021 13:06:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7441-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441.rss">Stripe fees in Europe</source>
+      </item>
+      <item>
+        <title>Stripe fees in Europe</title>
+        <dc:creator><![CDATA[mentalstring]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="jwr" data-post="1" data-topic="7441">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jwr/40/4806_2.png" class="avatar"> jwr:</div>
+<blockquote>
+<p>And it’s not possible to have a bank account in the US without having presence there.</p>
+</blockquote>
+</aside>
+<p>Would using a Transferwise account in USD help with that perhaps? We are based in EU and our Transferwise USD balance is on a US (intermediary) bank account AFAIK. We only used to to make payments but <a href="https://transferwise.com/help/articles/2977935/how-do-i-receive-money-from-stripe">it seems possible</a> to receive Stripe’s balance, and Transferwise’s conversation fees are pretty reasonable.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/2</link>
+        <pubDate>Thu, 04 Feb 2021 13:13:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7441-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441.rss">Stripe fees in Europe</source>
+      </item>
+      <item>
+        <title>Stripe fees in Europe</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>I use Braintree for credit card processing, and over the years I’ve been frustrated by lots of things there. I thought I’d migrate to Stripe, which supposedly was way better.</p>
+<p>Well, I just shelved this project.</p>
+<p>It turned out that payouts in EUR are fine, but payouts in USD are only possible to a USD account… in the United States. And it’s not possible to have a bank account in the US without having presence there. My SaaS offers pricing in EUR, USD and PLN and I really wanted to process those three currencies, like I do with Braintree today.</p>
+<p>But, I thought to myself, I could perhaps live with a conversion from USD to EUR… and then I looked at the fee structure. There is an additional 2% charge for currency conversion, so overall the fees would be: 2.9% international payments, 2% currency conversion, 0.5% Stripe billing. I’m not sure how these percentages are calculated, but they add up to about <strong>5.4%</strong> of posted prices!</p>
+<p>I checked my last statement, and Braintree currently charges me nearly 3.1% on USD transactions. I don’t know why it’s 3.1% and not 2.9% which they advertise, but I guess that’s how things go.</p>
+<p>I tried to find a justification for paying 5.4% and I couldn’t. Sure, I have a lot of problems with Braintree, but I guess I can live with the inconvenience for that much money. Also, most of Stripe “value added” features in Billing are useless for me anyway (invoices are issued in US-centric “speculative” way <em>before</em> the customer is successfully charged, no SAF-T export, insistence on phone numbers in all E-mails, forced formatting of E-mails).</p>
+<p>I’d be interested to hear what others in the EU think — if you have a SaaS business, do you use Stripe? Do you just accept a 5.4% commission?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441/1</link>
+        <pubDate>Tue, 02 Feb 2021 13:22:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7441-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/stripe-fees-in-europe/7441.rss">Stripe fees in Europe</source>
+      </item>
+  </channel>
+</rss>

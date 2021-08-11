@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Tracking from marketing through to purchase and beyond</title>
+    <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518</link>
+    <description>At DNSimple we&#39;ve largely gotten away without a very clear set of analytic data on our customers&#39; behaviors. We have Google Analytics but we can only use it to see a very high level view on the success of specific marketing activities. What we don&#39;t know is what specific marketing initiatives a customer saw before becoming a customer, and how that in turn influences their LTV.
+
+I&#39;m looking for guidance from others who have what they feel are successful systems that integrate their marketing activities through into their sales process, and throughout the remainder of the customer&#39;s time as a customer. An ideal system would be able to track customers through complex, multi-touch marketing initiatives. For example: a prospect sees a tweet by us, follows a link to a blog post, maybe reads a second blog post, and then goes away for a while, only to come back and sign up later without following a link from the blog.
+
+FWIW, I&#39;ve been researching this on Google a bit, but it&#39;s hard to cut through the vague blog posts that say what you should do without actually suggesting how you can do it, so I&#39;m hoping for someone who has had hands-on experience building a successful system that is willing to share details.</description>
+    
+    <lastBuildDate>Thu, 15 Dec 2016 14:43:37 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[brbordallo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>My main project is just what you are asking for, we are still in an early stage but we already are solving some of the problems that you are talking about.</p>
+<p>First let me start talking about our competitors, because it’s not my intention to promote my solution, but help in your needs. You have Mixpanel, KISSMetrics, RJMetrics (if your budget is high), you have Funnel and you have Interstate among other. If you are a GA ninja you could also achieve part of what you need. All those tools could help you.</p>
+<p>We had the same problem and we didn’t find any solution, so we decided to build an internal project, like many others do. But then we decide to focus on it and make it our main project because it was really interesting.</p>
+<p>The problem with many of those tools is that they don’t have in consideration  the spending of your marketing efforts. Without it, you can’t have your CAC or CPA. In <a href="https://tractionboard.com/" rel="nofollow noopener">Tractionboard</a> we are solving this through integrations with the major ads networks (Adwords, Twitter Ads, Facebook Ads, Adroll… etc). Our goal has been to make the implementation as easy as possible. Also to be able to track everything, you need to tag your campaigns properly, this is the most important aspect to start measuring your marketing efforts. Without tags (utm_campaign, utm_source… etc), attribute conversions to any campaigns is really difficult. That’s the problem that you have with what <a class="mention" href="/u/aeden">@aeden</a> asked “a prospect sees a tweet by us”, and  <a class="mention" href="/u/clay_nichols">@Clay_Nichols</a> addressed. If the prospect doesn’t click on the link (and it is well tagged), attribute that a future visit  to that actions is not an easy task (but not impossible, however it wouldn’t be 100% accurate because you would be attributing by probability and based on times… long history).</p>
+<p>About the tagging aspect, our integrations take care of it, because we have noticed that many marketers don’t do it properly.</p>
+<p>Once we have the campaigns tagged and we are able to collect the daily spending, through a tracker in your website (similar to the one from GA), we track your visits, attributing them to the proper campaign. We use different techniques to track the same visitor through different sessions (cookies, fingerprints… etc). Once the visitor convert to user, then our life is easier, because we start working with the id of the user, so it doesn’t matter that the user change the browser, clean cookies, or even change the device, as soon as he is identified, all its tracks are assigned to that user id journey (we do it retrospectively, so we don’t miss the iterations before the identification).</p>
+<p>At this point we have the spending + the different iterations of the user in your website. What you want to measure is up to you, it could be conversion to user, conversion to customer, trial, “feature X enabled”… whatever.</p>
+<p>Currently, how we show the information that we collect is individually per source/campaign. You can choose the conversion goal, the date range of the conversion and the attribution model (first touch, lineal, last touch U-shape… and working on a data driven one), and other options. The view is gonna tell you if a certain campaign is good as an opener, an assistant or a closer.  And you are gonna have the spending of the campaigns attributed to the conversions.</p>
+<p>We also are storing much data to offer in future other information like for example the revenue, the journey of your user… etc. But right now we are focusing in the CPA and the multitouch attribution.</p>
+<p>I’ll be happy to answer any question about the topic.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/19</link>
+        <pubDate>Thu, 15 Dec 2016 14:43:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[Signupper]]></dc:creator>
+        <description><![CDATA[
+            <p>With Mixpanel, Kissmetrics, etc, you can track anonymous individuals. After they provide an email address, you can alias the anonymous identifier with the email address and get a single track of events.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/18</link>
+        <pubDate>Thu, 15 Dec 2016 10:36:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="16" data-topic="4518">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/signupper/40/3551_1.png" class="avatar"> Signupper:</div>
+<blockquote>
+<p>Google Analytics has always been about aggregate stats. They are going in the direction of more anonymity for users. It is not possible to track individuals.</p>
+</blockquote>
+</aside>
+<p>My understanding is that you CAN track individuals but YOU have to identify the user (via a login, etc.) which is true of Mixpanel as well.  Mixpanel is easier to use, IMHO.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/17</link>
+        <pubDate>Thu, 15 Dec 2016 08:49:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[Signupper]]></dc:creator>
+        <description><![CDATA[
+            <p>Aeden,</p>
+<p>A tool like that would be fantastic! I have not found one that captures everything.</p>
+<p>A mix of Google Analytics and Mixpanel (or KISSMetrics) is the best I can come up for now.</p>
+<p>Google Analytics has always been about aggregate stats. They are going in the direction of more anonymity for users. It is not possible to track individuals.</p>
+<p>If you point each of your inbound source at a different landing page, you can track the users individually from there on in Mixpanel. Ideally, you will have a different landing page for each ad. From there on, you can see what your leads, and later on, users, are doing.</p>
+<p>Remember to track post-purchase engagement. You work hard to gain paying customers and unfortunately some leave. Analyzing why people churn will be very helpful. It is often correlated with engagement, and you can use your analytics software to track that in various ways.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/16</link>
+        <pubDate>Wed, 07 Dec 2016 19:59:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[aukevos]]></dc:creator>
+        <description><![CDATA[
+            <p>Is your goal only a conversion when all steps are completed or would every completion of the last step count as a conversion for you?</p>
+<p>If so you could create a second goal which would measure every completed last step, but without the required first steps. This would give you more exact results and you could still use the funnel report to get insights on funnel drop-off.</p>
+<p>Additionally you could look into creating your own funnel report in excel based on user visits on each step. If your users register early on in the funnel you might be able to use the userid feature to nit together sessions and get more complete funnel report.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/15</link>
+        <pubDate>Mon, 05 Dec 2016 17:03:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>To clarify:<br>
+I am talking about a Goal (ga Funnel) where the first Step is Required.<br>
+In that case, if the user does : Step 1, 2,3 …wait 2 days… 4, Finish goal:</p>
+<p>Would this count as a conversion for that Goal?<br>
+Have you personally confirmed this? or do you have a link to more info on that?</p>
+<p>I have asked this question the google Analytics forum and been told that the steps must occur in the same session.<br>
+I.e., doing Step 1,2,3 --wait 2 days-- step 4   will NOT count as a goal conversion.</p>
+<p>I will test this b/c I’m hoping you are right <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I do use the ga Attribution models (a great feature). I don’t see anything on that page suggestion that it changes when a goal is <em>counted</em>, only drilling down to find what sources accounted for that customer visiting your site multiple times before completing the goal.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/14</link>
+        <pubDate>Sun, 04 Dec 2016 15:45:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>Just google <a href="https://www.google.com/search?q=tracking%20customers%20from%20marketing%20to%20sale&amp;rct=j" rel="nofollow noopener">https://www.google.com/search?q=tracking%20customers%20from%20marketing%20to%20sale&amp;rct=j</a> for plenty of examples</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/13</link>
+        <pubDate>Sun, 27 Nov 2016 07:45:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[aukevos]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="4518">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/clay_nichols/40/2698_1.png" class="avatar"> Clay_Nichols:</div>
+<blockquote>
+<p>Google Analytics won’t track a Goal (their idea of a funnel) across the Session boundary.  I.e., if you have 5 steps and step 5 happens the next day, then the funnel shows no success Today.</p>
+</blockquote>
+</aside>
+<p>It does as long as the different sessions are on the same device or when using session unification with user id.</p>
+<p>Take a look at Conversions -&gt; Attribution - &gt;Model comparison tool</p>
+<p>Be sure to look into creating custom attribution models in Google Analytics:<br>
+<a href="https://support.google.com/analytics/answer/6148697?hl=en&amp;ref_topic=3205717#CreateCustomModel" class="onebox" target="_blank" rel="nofollow noopener">https://support.google.com/analytics/answer/6148697?hl=en&amp;ref_topic=3205717#CreateCustomModel</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/12</link>
+        <pubDate>Mon, 21 Nov 2016 20:06:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[kirill_salykin]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/aeden">@aeden</a>,</p>
+<aside class="quote" data-post="1" data-topic="4518">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/aeden/40/1319_1.png" class="avatar"> aeden:</div>
+<blockquote>
+<p>but it’s hard to cut through the vague blog posts that say what you should do without actually suggesting how you can do it</p>
+</blockquote>
+</aside>
+<p>Can you please share this blog posts?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/11</link>
+        <pubDate>Mon, 21 Nov 2016 19:15:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="4518">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Is it even possible? You probably mean: read it and click on it?</p>
+</blockquote>
+</aside>
+<p>Yep, that’s the important part.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/10</link>
+        <pubDate>Sun, 20 Nov 2016 08:57:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you, everyone, for your thoughts on this. I may give Mixpanel a try again and see if I can get it to provide the insight I need without too much of an integration headache. Maybe now that I have a better sense of what I want to know, I can do a better job at deciding what to send in.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/9</link>
+        <pubDate>Sun, 20 Nov 2016 08:56:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Looks like Mixpanel is the best start on this, especially in a longer run, when Mixpanel may add more relevant features?</p>
+<p>I was surprised they have low-cost plans; somehow I thought they are crazy expensive.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/8</link>
+        <pubDate>Thu, 17 Nov 2016 03:39:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m doing this for our own site right now. It’s non trivial.</p>
+<p>Issues</p>
+<ol>
+<li>Google Analytics won’t track a Goal (their idea of a funnel) across the Session boundary.  I.e., if you have 5 steps and step 5 happens the next day, then the funnel shows no success Today.</li>
+<li>Mixpanel can do what you’re asking for but only in terms of tracking Page activity.</li>
+<li>As rfctr said, AFAIK, there is no way to track that they “saw your tweet”. If they click a link then you could see that.</li>
+<li>It has always been hard (neigh on impossible) to track the impact of “brand awareness” ("they saw our tweet and visited our site).  Although I suppose that DIRECT visites (in gAnalytics) is an indication of that.</li>
+</ol>
+<p><strong>Suggestion</strong>:</p>
+<ol>
+<li>Create something of enticing value and try to get any visitor to sign up for that. (make it an unobtrusive popup (is there such a thing ?? <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> .</li>
+<li>Report that to Mixpanel.</li>
+<li>Send all your emails through Mixpanel (that’s it’s KILLER feature over gAnalytics). You’ll be able to track that they clicked on a link.</li>
+<li>In all of your tweets, direct them to a page they can sign up for that resource above.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/7</link>
+        <pubDate>Wed, 16 Nov 2016 21:59:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4518">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/aeden/40/1319_1.png" class="avatar"> aeden:</div>
+<blockquote>
+<p>For example: a prospect sees a tweet by us</p>
+</blockquote>
+</aside>
+<p>Is it even possible? You probably mean: read it and click on it?</p>
+<p>Does Twitter sell the option to include the retargeting pixel or web analytics into tweets? If they don’t, they should.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/6</link>
+        <pubDate>Tue, 15 Nov 2016 03:31:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[blake]]></dc:creator>
+        <description><![CDATA[
+            <p>Ben Orenstein talked about making his own product for this on a recent episode of the Giant Robots podcast: Episode 213: Madness Free.</p>
+<pre><code>http://giantrobots.fm/213
+http://www.benorenstein.com/content-marketing-roi</code></pre>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/5</link>
+        <pubDate>Mon, 14 Nov 2016 20:07:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[paulyoder]]></dc:creator>
+        <description><![CDATA[
+            <p>I would reach out to Brennan Dunn for his opinion. I’m on his email list, and from his recent emails I think he’s doing something very similar.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/4</link>
+        <pubDate>Mon, 14 Nov 2016 19:57:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[kirill_salykin]]></dc:creator>
+        <description><![CDATA[
+            <p>Does ‘Funnel’ from <a href="https://mixpanel.com" rel="nofollow noopener">https://mixpanel.com</a> cover your needs?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/3</link>
+        <pubDate>Mon, 14 Nov 2016 19:13:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been looking for this forever. Never found it. Have sketched out 10 ideas to build it, but it’s such a huge thing it’s really impossible for a small co.</p>
+<p>I think Hubspot has a new thing that’s trying to get at this, but I don’t know if it’s really it. Also, their pricing on stuff generally isn’t good for the lots of small transactions type businesses <a href="http://www.hubspot.com/products/growth-stack">http://www.hubspot.com/products/growth-stack</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/2</link>
+        <pubDate>Mon, 14 Nov 2016 18:58:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+      <item>
+        <title>Tracking from marketing through to purchase and beyond</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>At DNSimple we’ve largely gotten away without a very clear set of analytic data on our customers’ behaviors. We have Google Analytics but we can only use it to see a very high level view on the success of specific marketing activities. What we don’t know is what specific marketing initiatives a customer saw before becoming a customer, and how that in turn influences their LTV.</p>
+<p>I’m looking for guidance from others who have what they feel are successful systems that integrate their marketing activities through into their sales process, and throughout the remainder of the customer’s time as a customer. An ideal system would be able to track customers through complex, multi-touch marketing initiatives. For example: a prospect sees a tweet by us, follows a link to a blog post, maybe reads a second blog post, and then goes away for a while, only to come back and sign up later without following a link from the blog.</p>
+<p>FWIW, I’ve been researching this on Google a bit, but it’s hard to cut through the vague blog posts that say what you should do without actually suggesting how you can do it, so I’m hoping for someone who has had hands-on experience building a successful system that is willing to share details.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518/1</link>
+        <pubDate>Sun, 13 Nov 2016 15:13:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4518-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tracking-from-marketing-through-to-purchase-and-beyond/4518.rss">Tracking from marketing through to purchase and beyond</source>
+      </item>
+  </channel>
+</rss>

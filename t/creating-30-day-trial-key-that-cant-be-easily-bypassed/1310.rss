@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Creating 30-day trial key that can&#39;t be easily bypassed?</title>
+    <link>https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310</link>
+    <description>My desktop app has a 30-day trial period for new users. The first time a user starts the desktop app, the app gets the current date from the computer, adds 30 days to it, and saves this in the preferences.
+
+Some users have worked out that if they set their computer date back in time when starting my software, then changing the time to the current time after it started, they get an indefinite trial.
+
+I don&#39;t usually put much effort into shutting down things like this, but I think there must be a pretty simple solution for this one.
+
+Any suggestions as to an approach I can use that prevents this problem?
+</description>
+    
+    <lastBuildDate>Thu, 20 Mar 2014 12:45:34 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Creating 30-day trial key that can&#39;t be easily bypassed?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>The reason why I even considered this:</p>
+<p>At MicroConf Europe 2013, I was talking to someone who says that every time he releases an update he gets his software to check the license key against a web server that has a list of known cracked keys. If someone is using a known cracked key, then he reports “license invalid. please buy a new one” and it results in a couple of easy sales each time.</p>
+<p>So I got curious about key usage in my software. I started recording key usage at startup, and was surprised to find people with 500 days left in their trial period! Which is how I found that people have been sharing this tip on forums to use my software for free. Which made me think, if I can shut that loophole down easily, then I shall.</p>
+<p>However I’m aware that not only is software piracy an unavoidable occurrence, it is also a sign that your software has <strong><em>made it</em></strong> as a commercial product when people take the effort to pirate it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/5</link>
+        <pubDate>Thu, 20 Mar 2014 12:45:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1310-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310.rss">Creating 30-day trial key that can&#39;t be easily bypassed?</source>
+      </item>
+      <item>
+        <title>Creating 30-day trial key that can&#39;t be easily bypassed?</title>
+        <dc:creator><![CDATA[powertry]]></dc:creator>
+        <description><![CDATA[
+            <p>So one way of doing this is to make a web service that you can call which compares the dates and makes sure its within a permissible range. Though that forces the user to connect to the internet. Pirating this requires fairly sophisticated workarounds to pirate.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/4</link>
+        <pubDate>Thu, 20 Mar 2014 12:21:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1310-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310.rss">Creating 30-day trial key that can&#39;t be easily bypassed?</source>
+      </item>
+      <item>
+        <title>Creating 30-day trial key that can&#39;t be easily bypassed?</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>Your software could periodically poll the system to see if the clock has jumped significantly, then warn and/or shut down - but they could just wait until they stop your software before changing their clock back.</p>
+<p>Going further you could take the time from somewhere on the internet whenever it starts, or generate some sort of unique hash for the installation and send that to your server for it to decide whether they’re in the trial period or not. But I can think of relatively easy ways around those precautions too.</p>
+<p>Ultimately, the goal of preventing piracy is to increase sales, but if someone’s determined to not buy your software, there’s not a lot you can do to convert them to a paying customer. All you can do is put up enough barriers to deter casual piracy - if some are already changing their clock, they may already be beyond reach.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/3</link>
+        <pubDate>Wed, 12 Mar 2014 18:51:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1310-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310.rss">Creating 30-day trial key that can&#39;t be easily bypassed?</source>
+      </item>
+      <item>
+        <title>Creating 30-day trial key that can&#39;t be easily bypassed?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>No doubt there are ways to fix it. But a determined cheat could just keep installing in new VMs. This is one of the reasons I prefer feature limited (not time limited) trials.</p>
+<p>Maybe those people wouldn’t have purchased anyway? In which case you aren’t losing sales. It is hard to know.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/2</link>
+        <pubDate>Wed, 12 Mar 2014 18:14:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1310-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310.rss">Creating 30-day trial key that can&#39;t be easily bypassed?</source>
+      </item>
+      <item>
+        <title>Creating 30-day trial key that can&#39;t be easily bypassed?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>My desktop app has a 30-day trial period for new users. The first time a user starts the desktop app, the app gets the current date from the computer, adds 30 days to it, and saves this in the preferences.</p>
+<p>Some users have worked out that if they set their computer date back in time when starting my software, then changing the time to the current time after it started, they get an indefinite trial.</p>
+<p>I don’t usually put much effort into shutting down things like this, but I think there must be a pretty simple solution for this one.</p>
+<p>Any suggestions as to an approach I can use that prevents this problem?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310/1</link>
+        <pubDate>Wed, 12 Mar 2014 17:39:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1310-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/creating-30-day-trial-key-that-cant-be-easily-bypassed/1310.rss">Creating 30-day trial key that can&#39;t be easily bypassed?</source>
+      </item>
+  </channel>
+</rss>

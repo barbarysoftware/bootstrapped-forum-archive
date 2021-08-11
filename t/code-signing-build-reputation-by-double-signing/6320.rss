@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Code signing - build reputation by double signing?</title>
+    <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320</link>
+    <description>Back when SHA-1 certificates were being phased out, you could double sign an executable using SHA-1 and SHA256 to maintain compatibility with Windows XP validation.
+
+When I renewed my code signing certificate I bought an EV certificate to avoid the period where Windows pops up warnings because it is a new and unknown certificate.
+
+I wondered whether it is possible to get a new certificate overlapping the old one, and maybe double sign the executable so by the time the first one expires the new one has some history? Or maybe distribute executables signed by the new certificate inside the installer signed by the old one?
+
+3 year standard certificates overlapping by e.g.12 months would be a much better proposition than buying EV certificates.
+
+Does anyone know whether this is feasible?</description>
+    
+    <lastBuildDate>Wed, 17 Apr 2019 22:37:27 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Code signing - build reputation by double signing?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="6320">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andrewr/40/4800_2.png" class="avatar"> AndrewR:</div>
+<blockquote>
+<p>Yes, but you pay a lot e.g. $210 for a regular 3 year code signing certificate, $750 for a 3 year EV certificate.</p>
+</blockquote>
+</aside>
+<p>Here’s my thinking:</p>
+<ul>
+<li>Either the warnings cost you sales, and then you can estimate the losses and decide if the cert worth it based on a hard number</li>
+<li>Or the warnings cost you nothing, and then you shouldn’t worry about it</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/9</link>
+        <pubDate>Wed, 17 Apr 2019 22:37:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6320-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss">Code signing - build reputation by double signing?</source>
+      </item>
+      <item>
+        <title>Code signing - build reputation by double signing?</title>
+        <dc:creator><![CDATA[AndrewR]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, the downloaded file builds a reputation for the certificate, which then passes the reputation on to new files signed with the same certificate. In that way new files (e.g. updates to your application) don’t need to build reputation individually.</p>
+<p>When you get a new certificate, the reputation from your old downloads is not carried over so you get warnings, unless you buy an EV certificate.</p>
+<p>More information here:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://blogs.msdn.microsoft.com/ie/wp-content/themes/microsoft-msdn/images/favicon-msdn.png" class="site-icon" width="16" height="16">
+      <a href="https://blogs.msdn.microsoft.com/ie/2012/08/14/microsoft-smartscreen-extended-validation-ev-code-signing-certificates/" target="_blank">IEBlog</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://blogs.msdn.microsoft.com/ie/2012/08/14/microsoft-smartscreen-extended-validation-ev-code-signing-certificates/" target="_blank">Microsoft SmartScreen &amp; Extended Validation (EV) Code Signing Certificates</a></h3>
+
+<p>Today two Certificate Authorities (CAs), Symantec and DigiCert, announced the introduction of EV code signing certificates. Their announcement is a positive development for users and businesses because it helps both sides reduce fraud and increase...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+and here:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://blogs.msdn.microsoft.com/ie/wp-content/themes/microsoft-msdn/images/favicon-msdn.png" class="site-icon" width="16" height="16">
+      <a href="https://blogs.msdn.microsoft.com/ie/2011/03/22/smartscreen-application-reputation-building-reputation/" target="_blank">IEBlog</a>
+  </header>
+  <article class="onebox-body">
+    <img src="http://ie.microsoft.com/testdrive/ieblog/2011/Mar/22_SmartScreenApplicationReputationBuildingReputation_1.png" class="thumbnail onebox-avatar" width="16" height="16">
+
+<h3><a href="https://blogs.msdn.microsoft.com/ie/2011/03/22/smartscreen-application-reputation-building-reputation/" target="_blank">SmartScreen® Application Reputation – Building Reputation</a></h3>
+
+<p>With the Internet Explorer 9 (IE9) beta in September we introduced IE9’s new application reputation feature and more recently we provided a summary of how this fits into the overall layered approach to security. With the final release of IE9 now...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>“<em>As we’ve discussed in the past, SmartScreen builds reputation for both individual</em><br>
+<em>programs and for the certificate used to sign that code. Code signing is important</em><br>
+<em>to our reputation intelligence because this higher level identity allows us to build</em><br>
+<em>reputation across multiple programs signed by a publisher. It is also important</em><br>
+<em>for publishers because signed programs inherit the reputation of the certificate</em><br>
+<em>with which they are signed; this means every program a publisher distributes doesn’t</em><br>
+<em>need to build reputation individually.</em>”</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/8</link>
+        <pubDate>Wed, 17 Apr 2019 12:29:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6320-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss">Code signing - build reputation by double signing?</source>
+      </item>
+      <item>
+        <title>Code signing - build reputation by double signing?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Unfortunately, he didn’t mix it up. Windows will display warnings for a new certificate for some time. In my case it lasted maybe for a few days, probably depends on number of downloads as well. I was downloading like crazy from multiple machines/VMs in a hope to speed up that process <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/7</link>
+        <pubDate>Wed, 17 Apr 2019 10:57:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6320-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss">Code signing - build reputation by double signing?</source>
+      </item>
+      <item>
+        <title>Code signing - build reputation by double signing?</title>
+        <dc:creator><![CDATA[PhilS]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="3" data-topic="6320">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andrewr/40/4800_2.png" class="avatar"> AndrewR:</div>
+<blockquote>
+<p>…or perhaps somehow build the reputation of a new certificate before you use it for the primary signature.</p>
+</blockquote>
+</aside>
+<p>Reputation of a certificate? This is the first time I hear about it. I know there is “reputation” of particular downloaded files for sure, but not of certificates.<br>
+Have you got any sources on that topic? Or is it possible you mixed things up?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/6</link>
+        <pubDate>Wed, 17 Apr 2019 07:29:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6320-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss">Code signing - build reputation by double signing?</source>
+      </item>
+      <item>
+        <title>Code signing - build reputation by double signing?</title>
+        <dc:creator><![CDATA[AndrewR]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, but you pay a lot e.g. $210 for a regular 3 year code signing certificate, $750 for a 3 year EV certificate.</p>
+<p>I had a 3 year regular certificate that worked fine, except for a short time at the start where it was popping up warnings. So it costs $500 just to avoid warnings from a new certificate.</p>
+<p>But you’re right, reputation is important enough that it’s probably worth paying for.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/5</link>
+        <pubDate>Tue, 16 Apr 2019 23:08:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6320-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss">Code signing - build reputation by double signing?</source>
+      </item>
+      <item>
+        <title>Code signing - build reputation by double signing?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="6320">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andrewr/40/4800_2.png" class="avatar"> AndrewR:</div>
+<blockquote>
+<p>To get around that you can pay the extra for an EV certificate</p>
+</blockquote>
+</aside>
+<p>This looks like the most straightforward way to solve it, no?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/4</link>
+        <pubDate>Tue, 16 Apr 2019 15:40:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6320-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss">Code signing - build reputation by double signing?</source>
+      </item>
+      <item>
+        <title>Code signing - build reputation by double signing?</title>
+        <dc:creator><![CDATA[AndrewR]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s not the validity dates that are an issue, it is when you have a new certificate and Windows warns your users, even though the exe is signed. The certificate is no longer enough - you need to build a reputation with the new certificate.</p>
+<p>To get around that you can pay the extra for an EV certificate, or perhaps somehow build the reputation of  a new certificate before you use it for the primary signature.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/3</link>
+        <pubDate>Tue, 16 Apr 2019 09:41:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6320-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss">Code signing - build reputation by double signing?</source>
+      </item>
+      <item>
+        <title>Code signing - build reputation by double signing?</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>The double signing thing was a specific case for XP - don’t overthink it.</p>
+<p>The algo’s check to see if the certificate was valid for the date the exe was signed. So even if my certificate ran out on say 1st Jan 2019 if I’ve an .exe that was signed in July 2018 then it will still be valid today.</p>
+<p>So you don’t need to overlap them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/2</link>
+        <pubDate>Tue, 16 Apr 2019 08:24:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6320-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss">Code signing - build reputation by double signing?</source>
+      </item>
+      <item>
+        <title>Code signing - build reputation by double signing?</title>
+        <dc:creator><![CDATA[AndrewR]]></dc:creator>
+        <description><![CDATA[
+            <p>Back when SHA-1 certificates were being phased out, you could double sign an executable using SHA-1 and SHA256 to maintain compatibility with Windows XP validation.</p>
+<p>When I renewed my code signing certificate I bought an EV certificate to avoid the period where Windows pops up warnings because it is a new and unknown certificate.</p>
+<p>I wondered whether it is possible to get a new certificate overlapping the old one, and maybe double sign the executable so by the time the first one expires the new one has some history? Or maybe distribute executables signed by the new certificate inside the installer signed by the old one?</p>
+<p>3 year standard certificates overlapping by e.g.12 months would be a much better proposition than buying EV certificates.</p>
+<p>Does anyone know whether this is feasible?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320/1</link>
+        <pubDate>Tue, 16 Apr 2019 04:03:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6320-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320.rss">Code signing - build reputation by double signing?</source>
+      </item>
+  </channel>
+</rss>

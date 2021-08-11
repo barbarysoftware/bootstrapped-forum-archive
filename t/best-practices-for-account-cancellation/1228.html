@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Best practices for account cancellation - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="If you have a SAAS with monthly subscriptions (mine uses laravel and stripe), what are you doing when someone cancels an account? Do you let them keep access until the current subscription month is up? do you cancel right away and refund the money back?  If you do let the account run to the end of the paid subscription, how are you handling that from a code standpoint? If you are issuing refunds for time not used, how are you going about that?  Any ideas around this would be helpful.  Thanks!">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1228.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Best practices for account cancellation&#39;" href="1228.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228" />
+<meta property="og:title" content="Best practices for account cancellation" />
+<meta name="twitter:title" content="Best practices for account cancellation" />
+<meta property="og:description" content="If you have a SAAS with monthly subscriptions (mine uses laravel and stripe), what are you doing when someone cancels an account? Do you let them keep access until the current subscription month is up? do you cancel right away and refund the money back?  If you do let the account run to the end of the paid subscription, how are you handling that from a code standpoint? If you are issuing refunds for time not used, how are you going about that?  Any ideas around this would be helpful.  Thanks!" />
+<meta name="twitter:description" content="If you have a SAAS with monthly subscriptions (mine uses laravel and stripe), what are you doing when someone cancels an account? Do you let them keep access until the current subscription month is up? do you cancel right away and refund the money back?  If you do let the account run to the end of the paid subscription, how are you handling that from a code standpoint? If you are issuing refunds for time not used, how are you going about that?  Any ideas around this would be helpful.  Thanks!" />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="1 ❤" />
+<meta property="article:published_time" content="2014-02-23T17:33:32+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1228.html">Best practices for account cancellation</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cityzen.html'><span itemprop='name'>cityzen</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1228.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-02-23T17:33:32Z' class='post-time'>
+                February 23, 2014,  5:33pm
+              </time>
+              <meta itemprop='dateModified' content='2014-02-23T17:33:32Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If you have a SAAS with monthly subscriptions (mine uses laravel and stripe), what are you doing when someone cancels an account? Do you let them keep access until the current subscription month is up? do you cancel right away and refund the money back?</p>
+<p>If you do let the account run to the end of the paid subscription, how are you handling that from a code standpoint? If you are issuing refunds for time not used, how are you going about that?</p>
+<p>Any ideas around this would be helpful.</p>
+<p>Thanks!</p>
+        </div>
+
+        <meta itemprop='headline' content='Best practices for account cancellation'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/natural'><span itemprop='name'>natural</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1228.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-02-23T20:28:26Z' class='post-time'>
+                February 23, 2014,  8:28pm
+              </time>
+              <meta itemprop='dateModified' content='2014-02-23T20:28:26Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Default behaviour is they run until their subscription is up but if they moan about it then just refund them for the whole month there and then as the last thing you want is a chargeback - its a pain but protecting merchant status is more important than a few whiny customers.</p>
+<p>Not sure I understand the question about code - why would they be any different to any other client? Login, check if valid - if not then error message, if yes then give access? Am I missing something?</p>
+        </div>
+
+        <meta itemprop='headline' content='Best practices for account cancellation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cityzen.html'><span itemprop='name'>cityzen</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1228.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-02-24T14:12:30Z' class='post-time'>
+                February 24, 2014,  2:12pm
+              </time>
+              <meta itemprop='dateModified' content='2014-02-24T14:12:30Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the reply. You’re not missing anything, I was just curious how people handle this in terms of setting a cancellation date (end of the current billing cycle) and then what happens to the user’s data. I am using laravel’s Auth::attempt method and it looks like I can extend that fairly easily. Mainly I want to avoid baking in unnecessary stripe API calls and filters if possible.</p>
+        </div>
+
+        <meta itemprop='headline' content='Best practices for account cancellation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/natural'><span itemprop='name'>natural</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1228.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-02-24T14:31:41Z' class='post-time'>
+                February 24, 2014,  2:31pm
+              </time>
+              <meta itemprop='dateModified' content='2014-02-24T14:31:41Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We get the cancellation date from our billing software via an API - every time a user logs in, we query the billing software to check the user’s plan, billing status etc so this means we don’t need to do anything more in the application outside of the ordinary.</p>
+<p>When a client cancels, leave their account in place (but set to inactive) for a while as they may come back unless they explicitly ask for deletion of data or they choose to delete their own account (which they can do via the app) - sometimes people cancel and then realise they actually do need your service or they cancel, try something else and realise you are actually better than the alternatives etc.</p>
+<p>When they cancel, in the cancellation email let them know if they do come back they won’t have to start again for x months and that can be a great way of getting them to come back if their new solution doesn’t meet their needs - at some point you need to make the decision to remove the data and it does depend on the type and size of data but I would never delete it all there and then.</p>
+        </div>
+
+        <meta itemprop='headline' content='Best practices for account cancellation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/camdez.html'><span itemprop='name'>camdez</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1228.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-02-24T14:47:13Z' class='post-time'>
+                February 24, 2014,  2:47pm
+              </time>
+              <meta itemprop='dateModified' content='2014-02-24T14:47:13Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I can’t speak for all subscription payment platforms, but I’ve used <a href="https://spreedly.com/subscriptions" rel="nofollow noopener">Spreedly</a> and I can tell you how I implemented it there: Spreedly has a web hook mechanism whereby you can provide an HTTP endpoint that Spreedly will post to whenever subscription details change. One of the parameters that gets posted to you is the end date for the subscription. So I persist that date and check against it on user login. That saves having to make a request to the payment provider at login time, which is (relatively speaking) slow and possibly unreliable.</p>
+        </div>
+
+        <meta itemprop='headline' content='Best practices for account cancellation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cityzen.html'><span itemprop='name'>cityzen</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1228.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-02-24T16:45:39Z' class='post-time'>
+                February 24, 2014,  4:45pm
+              </time>
+              <meta itemprop='dateModified' content='2014-02-24T16:45:39Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the info. I did it the same basic way you all are handling it. When I send the request to Stripe to cancel, I save the period end date and query that on login. Easy enough, just one of those details I never really considered until I was trying to implement it in a rush on Friday.</p>
+<p>Agreed about leaving user data intact but inactive, at least for a certain amount of time.</p>
+<p>Appreciate the feedback.</p>
+<p>Mike</p>
+        </div>
+
+        <meta itemprop='headline' content='Best practices for account cancellation'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

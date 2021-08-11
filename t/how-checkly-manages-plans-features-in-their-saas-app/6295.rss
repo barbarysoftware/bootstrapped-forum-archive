@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How Checkly manages plans &amp; features in their SaaS app</title>
+    <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295</link>
+    <description>When getting started with my SaaS I found plenty of advice on marketing, pricing, and positioning, but not so much technical info to help with the building.
+
+Tim Nolet from [Checkly](https://checklyhq.com/) encountered the same problem, so decided he&#39;d add the missing content to his blog:
+
+&gt; How do you deal with what a user can do on their account in a SaaS app? Can Jane on the &quot;Starter&quot; plan create another widget when she is near the limit of her plan? What if she&#39;s a trial user?
+&gt; 
+&gt; Turns out this is a mix of things
+&gt; 
+&gt; * Feature toggling
+&gt; * Counting stuff™
+&gt; * Custom API middleware very specific to your situation
+&gt; 
+&gt; Like the topic of our last post in this series on creating a basic SaaS data model there is a lack of clear examples on how to deal with this super common problem.
+
+[Read the whole post here](https://blog.checklyhq.com/how-we-manage-plans-features-in-our-saas-app/).
+
+BTW: I found answers to many technical problems by posting and asking on the Bootstrapped forum!</description>
+    
+    <lastBuildDate>Mon, 01 Apr 2019 20:35:57 +0000</lastBuildDate>
+    <category>Interesting Links</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How Checkly manages plans &amp; features in their SaaS app</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="6295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>On occasion, I’ve done something much worse - I’ve hard-coded an “ <code>if company_id = x then</code> ” statement to make something available to only a specific customer. I know, I know, this is not the right way!</p>
+</blockquote>
+</aside>
+<p>This is something that I would never do in my past days as a corporate developer, guarding the sanctity of my code, unless really pressed by management, and then I hated it. But when you run your own business you get a different perspective on these things. It’s quite often useful, or even necessary, to implement quick&amp;dirty solution asap, and deal with technical debt later on. And you learn that cheap hacks are sometimes good enough and can solve things for years and that no one would care. Of course, you can’t let it ruin stability or performance of your software, but if maintainability is the only thing that suffers, you can pay that price later. Good thing is you don’t have to convince management that it’s necessary to spend some time clean up things when you reach that point.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/9</link>
+        <pubDate>Mon, 01 Apr 2019 20:35:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6295-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss">How Checkly manages plans &amp; features in their SaaS app</source>
+      </item>
+      <item>
+        <title>How Checkly manages plans &amp; features in their SaaS app</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="6295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>On occasion, I’ve done something much worse - I’ve hard-coded an “ <code>if company_id = x then</code> ”</p>
+</blockquote>
+</aside>
+<p>Code rules are pain even if done “right”. Just recently I’ve found that my “grace period is over” check is triggered even if the license is valid. A typo in a validation routine. As the result, the UI refused to make any changes some two months after the personal license activation.</p>
+<p>(I’m 90% sure that the next post will be from Wyatt :D).</p>
+<p>I’m idly considering now that an instance should get the license state with all dates (trial end, grace end) calculated and all flags set from the server, so I can fix that logic on the server ASAP if required. However, my app instances are behind firewalls so that option is not available.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/8</link>
+        <pubDate>Tue, 26 Mar 2019 18:03:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6295-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss">How Checkly manages plans &amp; features in their SaaS app</source>
+      </item>
+      <item>
+        <title>How Checkly manages plans &amp; features in their SaaS app</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the link to the checkly blog.  Quite interesting.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/7</link>
+        <pubDate>Tue, 26 Mar 2019 16:05:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6295-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss">How Checkly manages plans &amp; features in their SaaS app</source>
+      </item>
+      <item>
+        <title>How Checkly manages plans &amp; features in their SaaS app</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="6295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/courtz/40/3927_2.png" class="avatar"> courtz:</div>
+<blockquote>
+<p>Do you use feature flagging <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a>?</p>
+</blockquote>
+</aside>
+<p>Yes, but infrequently. When I want to initially release a new feature only to a few customers, I use a feature flag. I have a “feature_flag” table in my database, but after reading the article I’m considering a denormalised field in the “customer” table.</p>
+<p>On occasion, I’ve done something much worse - I’ve hard-coded an “<code>if company_id = x then</code>” statement to make something available to only a specific customer. I know, I know, this is not the right way!</p>
+<p>Why and when I’ve done this would make a cautionary tale of trying to run a software company while travelling.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/6</link>
+        <pubDate>Tue, 26 Mar 2019 08:50:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6295-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss">How Checkly manages plans &amp; features in their SaaS app</source>
+      </item>
+      <item>
+        <title>How Checkly manages plans &amp; features in their SaaS app</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="6295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/courtz/40/3927_2.png" class="avatar"> courtz:</div>
+<blockquote>
+<p>is feature flagging</p>
+</blockquote>
+</aside>
+<p>That reminds me the enterprise billing and such systems, where each feature and trait has its own code, and the plan is essentially a set of codes. There are unbelievably complex rules for which codes can come with which; codes have activation and expiration dates; can have subcodes etc etc etc.</p>
+<p>Geezus, it is complicated. Very flexible, tho. There are practically no plan situation which you cannot express with those rules - or create a new one in the rule editor.</p>
+<p>There must be a SaaS for that. Host other people’s plans. Provide an easy UI to edit standard plans and users’ plans. Provide an API for plan query and update. Charge users. Deal with expired CCs. Maintain subscriptions.</p>
+<p>This is almost like a payment processor, but it also manages the plans.</p>
+<p>But it would probably fail - the biggest cost center for the aforementioned enterprise systems is the troubleshooting when a plan is expected to do X, but it doesn’t. Now you have to debug the rules, which is very time consuming = expensive.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/5</link>
+        <pubDate>Tue, 26 Mar 2019 00:22:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6295-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss">How Checkly manages plans &amp; features in their SaaS app</source>
+      </item>
+      <item>
+        <title>How Checkly manages plans &amp; features in their SaaS app</title>
+        <dc:creator><![CDATA[courtz]]></dc:creator>
+        <description><![CDATA[
+            <p>The one item there that isn’t spoken about that much generally is feature flagging and its power for rollout strategy.</p>
+<p>Its particularly pertinent only when you have a number of paying customers and you roll out a new feature where for example:</p>
+<ol>
+<li>you’d like only the new customers from a certain date to receive that feature</li>
+<li>you’d like to roll a feature to only a certain subset of customers</li>
+<li>you’d like to experiment - some customers get to see a certain feature, some don’t perhaps based on a set of personal parameters or just at random</li>
+<li>feature gating - perhaps you have an enterprise plan which offers a feature nobody else has!</li>
+</ol>
+<p>There are a couple of tools for this - <a href="http://launchdarkly.com">launchdarkly.com</a>, <a href="http://split.io">split.io</a> etc<br>
+Some build it themselves which if you scale to hundreds of customers/employees becomes a bad idea.</p>
+<p>Do you use feature flagging <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a>?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/4</link>
+        <pubDate>Mon, 25 Mar 2019 21:56:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6295-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss">How Checkly manages plans &amp; features in their SaaS app</source>
+      </item>
+      <item>
+        <title>How Checkly manages plans &amp; features in their SaaS app</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>In a sense, all our plans are custom. You can convert any plan to any plan at any time by enabling or disabling properties.</p>
+<p>Example:</p>
+<ul>
+<li>number of records - number</li>
+<li>number of tenants - number</li>
+<li>number of schedules - number</li>
+<li>available types of schedules - enum</li>
+<li>connector enabled - boolean</li>
+<li>plugin enabled - boolean</li>
+<li>feature enabled - boolean</li>
+</ul>
+<p>Additionally, for “number” properties we set the warning/enforced flag.</p>
+<p>The properties are key/value pairs stored within the account, with the ability to add new properties at will.</p>
+<p>There is no “plan” table but there are templates.</p>
+<p>The trial plan equals to the default “Business” plan, except there is a <em>soft</em> expiration date and we are not enforcing the number of records.</p>
+<p>There is a twist. Our “Enterprise” plan implies a dedicated instance so, there is an extra step.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/3</link>
+        <pubDate>Mon, 25 Mar 2019 17:42:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6295-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss">How Checkly manages plans &amp; features in their SaaS app</source>
+      </item>
+      <item>
+        <title>How Checkly manages plans &amp; features in their SaaS app</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>All pretty standard stuff, IMHO.</p>
+<p>I’d add that a trial is not exactly a boolean. When a trial is getting closer to expire, you may want to increase the number of reminders to the user. Hence the trial is more like “days left until trial expires” value. This also lets to tune a trial’s length individually for different prospects.</p>
+<p>Also, re: DB schema for a plan. It is OKish, but in addition to a FK to a standard plain one may want to have a number of override fields. E.g. the plan has 100 calls, but you promised this particular customer 300 calls. So you link him to 100 calls plan but set the value of CALLS_OVERRIDE to 300 instead of default NULL. The query shouldn’t become more complex because of course, you read the plan via a VIEW, not table, so this and any other future complexity is hidden.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/2</link>
+        <pubDate>Mon, 25 Mar 2019 03:57:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6295-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss">How Checkly manages plans &amp; features in their SaaS app</source>
+      </item>
+      <item>
+        <title>How Checkly manages plans &amp; features in their SaaS app</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>When getting started with my SaaS I found plenty of advice on marketing, pricing, and positioning, but not so much technical info to help with the building.</p>
+<p>Tim Nolet from <a href="https://checklyhq.com/">Checkly</a> encountered the same problem, so decided he’d add the missing content to his blog:</p>
+<blockquote>
+<p>How do you deal with what a user can do on their account in a SaaS app? Can Jane on the “Starter” plan create another widget when she is near the limit of her plan? What if she’s a trial user?</p>
+<p>Turns out this is a mix of things</p>
+<ul>
+<li>Feature toggling</li>
+<li>Counting stuff™</li>
+<li>Custom API middleware very specific to your situation</li>
+</ul>
+<p>Like the topic of our last post in this series on creating a basic SaaS data model there is a lack of clear examples on how to deal with this super common problem.</p>
+</blockquote>
+<p><a href="https://blog.checklyhq.com/how-we-manage-plans-features-in-our-saas-app/">Read the whole post here</a>.</p>
+<p>BTW: I found answers to many technical problems by posting and asking on the Bootstrapped forum!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295/1</link>
+        <pubDate>Sun, 24 Mar 2019 16:22:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6295-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-checkly-manages-plans-features-in-their-saas-app/6295.rss">How Checkly manages plans &amp; features in their SaaS app</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Payment / subscription billing options for SaaS</title>
+    <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309</link>
+    <description>Hi everyone!
+
+This is my first post here, my name is Niko and I&#39;m not *exactly* a bootstrapper: I run tech and product at a small company of 10 (www.eyequant.com). We&#39;re a frugal bunch though, and I&#39;ve always found the bootstrapper&#39;s perspective very helpful and applicable to us.
+
+With that out of that way, my question that I&#39;d like to discuss is: who to choose for SaaS payments and/or subscription billing.
+
+We&#39;re currently with a terrible provider (charges too much, is technically… well, less than ideal, and only settles every *other* month). We&#39;re finally ready to replace them, so I&#39;ve started looking at the options (Stripe/Braintree/Paymill and a long list of others), but I&#39;m not sure who&#39;s best for our situation.
+
+I&#39;ve found 2 [existing](http://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376) [threads](http://discuss.bootstrapped.fm/t/changing-payment-suppliers/137), but I was wondering: do you have any more love stories / war stories to share on specific providers?
+
+Thanks!
+Niko
+
+PS: Here&#39;s a list of constraints / wishes I made for myself, but maybe it gives you a better picture of our situation. Sorry if this is TMI! :smile:
+
+- we&#39;d prefer a hybrid provider that does subscription billing and works as a payment gateway, but I&#39;m open to combos like Recurly+Braintree too
+- we are based in Germany, so providers should produce EU-acceptable invoices, handle VAT deductions and should be US-EU Safe Harbor certified
+- we exclusively sell to businesses
+- we mainly sell SaaS subscriptions, but also have pay-as-you-go packages: both standalone and on top of subscriptions
+- billing cycles are varied: we do monthly, quarterly, semi-annual, and annual bookings, and the odd custom case
+- we have some legacy customers on contracts which we don&#39;t offer to new customers
+- we have customers in Europe, North America, the UK, SE Asia, and Australia
+- we sometimes give leads discounts (probs best implemented as voucher codes)
+- we accept VISA/MC/AMEX
+- we accept payments in USD/EUR/GBP
+- nice to have: taking German ELV and/or EU SEPA direct debit
+- provider should settle at least monthly
+- should offer emailing billing receipts
+- should include self-serve basics like allowing customers to update their credit card details and sending automated expiry reminders to customers
+- should support a billing email address that&#39;s different from the account&#39;s primary address
+- should be able to create subscriptions with manual invoicing / payment
+- nice to have: allow customers to up- or downgrade to a different plan in the middle of a month and calculate pro-rata charges
+- nice to have: allow pausing subscriptions, with self-serve ability to re-activate without entering payment data again</description>
+    
+    <lastBuildDate>Wed, 17 Aug 2016 08:18:20 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[Eric_Warner]]></dc:creator>
+        <description><![CDATA[
+            <p>Payolee offers subscription billing.</p>
+<p><a href="http://www.payolee.com/" class="onebox" target="_blank" rel="nofollow noopener">http://www.payolee.com/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/20</link>
+        <pubDate>Wed, 17 Aug 2016 08:18:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[clintonskakun]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m currently talking to a few people to get their opinion on this:</p>
+<p><a href="http://www.invoily.com/" class="onebox" target="_blank" rel="nofollow noopener">http://www.invoily.com/</a></p>
+<p>Wondering if this does anything to solve your problem?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/19</link>
+        <pubDate>Thu, 15 Jan 2015 15:19:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>I use FastSpring and they are excellent. The cost is more than many others but you get what you pay for I think.  The API is not as nice as others but I have never had a problem.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/18</link>
+        <pubDate>Sun, 04 Jan 2015 00:35:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[seedprod]]></dc:creator>
+        <description><![CDATA[
+            <p>Check out <a href="http://saasy.com" rel="nofollow noopener">http://saasy.com</a> / <a href="http://fastspring.com/" rel="nofollow noopener">http://fastspring.com/</a>, I think they do pretty much everything you are looking for.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/17</link>
+        <pubDate>Sat, 03 Jan 2015 14:59:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[DavidCameron]]></dc:creator>
+        <description><![CDATA[
+            <p>I would like to recommend "Invoicera"an online billing and invoicing solution with features like task management and time tracking. I am also using this software for my  business and its pretty good. And it can fulfill your most of the requirements alone.<br>
+<a href="http://www.invoicera.com" class="onebox" target="_blank" rel="nofollow noopener">www.invoicera.com</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/16</link>
+        <pubDate>Mon, 29 Dec 2014 08:35:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[kulmala]]></dc:creator>
+        <description><![CDATA[
+            <p>I run a SaaS in EU and I went with Stripe. I’m planning to add Quaderno as soon as I need it.</p>
+<p>I would probably have chosen Recurly + Stripe, but… then I wouldn’t have been able to use  <a href="http://www.firstofficer.io" rel="nofollow noopener">FirstOfficer</a> myself, and that’s an impossibility for me. If you use Stripe API through a 3rd part API, you are losing the opportunity to use many of the <a href="https://stripe.com/docs/integrations" rel="nofollow noopener">fab tools built on top of Stripe</a>.</p>
+<p>I think what sets Stripe apart from the other solutions is the rich ecosystem that has developed around it. If you need something, be it dunning, invoicing or analytics, there’s an app for it. In many cases, there are several apps to choose from. I see this as a huge step forward from having to pick a one provider for everything.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/15</link>
+        <pubDate>Sat, 02 Aug 2014 08:11:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[ValPPG]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,<br>
+As a solution that meets most of your requirements, I can suggest PayPro Global:</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>we’d prefer a hybrid provider that does subscription billing and works as a payment gateway, but I’m open to combos like Recurly+Braintree too</p>
+</blockquote>
+</aside>
+<p>We provide this</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>we are based in Germany, so providers should produce EU-acceptable invoices, handle VAT deductions and should be US-EU Safe Harbor certified</p>
+</blockquote>
+</aside>
+<p>Our checkouts support IP geolocation and calculate all the relevant taxes automatically (i.e. VAT in Europe, HST in Canada). Our accounting team can issue W8/9 forms and invoices.<br>
+we are headquartered in Toronto, Canada, with regional offices in New York City, London, UK, Tel-Aviv, Israel and Bucharest, Romania. I, myself, am based in Berlin. We comply with all the US-EU laws and regulations.</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>we exclusively sell to businesses</p>
+</blockquote>
+</aside>
+<p>We serve numerous B2B companies around the world</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>we mainly sell SaaS subscriptions, but also have pay-as-you-go packages: both standalone and on top of subscriptions</p>
+</blockquote>
+</aside>
+<p>We have a very flexible subscription handling mechanism and we support pay per use (you can set it for add-ons of your service, as well as for standalone plans)</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>billing cycles are varied: we do monthly, quarterly, semi-annual, and annual bookings, and the odd custom case</p>
+</blockquote>
+</aside>
+<p>Our subscription handling mechanism can do that too. You can set-up any payment frequency you wish, as well as delay the first payment for trials.</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>we have some legacy customers on contracts which we don’t offer to new customers</p>
+</blockquote>
+</aside>
+<p>This is no problem</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>we have customers in Europe, North America, the UK, SE Asia, and Australia</p>
+</blockquote>
+</aside>
+<p>We accept orders from all over the world and our support is open 24/7 with no days off. We cover all time zones.</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>we sometimes give leads discounts (probs best implemented as voucher codes)</p>
+</blockquote>
+</aside>
+<p>We offer a Lead Management module, for those who abandoned the checkout (it automatically registers the email address and sends it to your database in your PayPro account, then you can create automated remarketing campaign and include a discount). Additionally we have a feature which is called dynamic pricing, where you can generate a link with a discount or create a bundle and securely send it to your lead. Please see the case study on this <a href="https://www.payproglobal.com/pdf/2013_PayPro_Case_Study_Efficiency_of_Dynamic_Pricing.pdf" rel="nofollow noopener">https://www.payproglobal.com/pdf/2013_PayPro_Case_Study_Efficiency_of_Dynamic_Pricing.pdf</a></p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>we accept VISA/MC/AMEX</p>
+</blockquote>
+</aside>
+<p>We have all these along with many more global and local payment methods</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>we accept payments in USD/EUR/GBP</p>
+</blockquote>
+</aside>
+<p>We support over 185 currencies, including USD/EUR/GBP</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>nice to have: taking German ELV and/or EU SEPA direct debit</p>
+</blockquote>
+</aside>
+<p>We are currently implementing this and it will be available soon</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>provider should settle at least monthly</p>
+</blockquote>
+</aside>
+<p>By default, we are issuing the payout every month on the date of 15th. But if you need it more often, this is no problem. (I hope I understood this question correctly)</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>should offer emailing billing receipts</p>
+</blockquote>
+</aside>
+<p>We do this</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>should include self-serve basics like allowing customers to update their credit card details and sending automated expiry reminders to customers</p>
+</blockquote>
+</aside>
+<p>End-users can do this on our website in the Buyer Support section. Also, when a recurring payment fails due to an expired card, we send 3 reminders every 5 days to the customer to update their credit card. This can be changed according to your criteria.</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>should support a billing email address that’s different from the account’s primary address</p>
+</blockquote>
+</aside>
+<p>We support this too.</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>should be able to create subscriptions with manual invoicing / payment</p>
+</blockquote>
+</aside>
+<p>Also possible</p>
+<aside class="quote" data-post="1" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nfelger/40/1339_1.png" class="avatar"> nfelger:</div>
+<blockquote>
+<p>nice to have: allow customers to up- or downgrade to a different plan in the middle of a month and calculate pro-rata charges<br>
+nice to have: allow pausing subscriptions, with self-serve ability to re-activate without entering payment data again</p>
+</blockquote>
+</aside>
+<p>We are launching an update to our system this summer and these features are included in the launch.</p>
+<p>Our sign-up/set-up are free of charge with no obligations and the migration doesn’t require any effort on your side. Our developer team along with graphic designers will tailor the checkout your need (full design customization, also you can add/remove any fields from the forms etc) in a matter of an hour and you will be ready to accept payments the same day. The only effort on your side will be changing the links on your website.</p>
+<p>We don’t have any hidden costs and we don’t force you to sign any exclusivity agreements. We are flexible and we provide custom solutions along with our features. Our only fee is 4.9%+$1 per transaction. For this price you get a complete online sales infrastructure with innovative high yielding tools for your business.</p>
+<p>You can get a free demo and see us in action here</p>
+<p><a href="https://www.payproglobal.com/request_demo.aspx" class="onebox" target="_blank" rel="nofollow noopener">https://www.payproglobal.com/request_demo.aspx</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/14</link>
+        <pubDate>Fri, 11 Jul 2014 11:27:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, you can charge as many different prices as you want.</p>
+<p>Let’s say you have a Basic plan of $10 on your app and your VAT rate is 20% (when applicable). On Stripe you’ll create 2 different plans: Basic Non-VAT of $10 and Basic VAT of $12.</p>
+<p>Then, when you create a new Stripe subscription on your app, you’ll select one of those plans depending on whether or not VAT needs to be included. You can even <a href="http://quaderno.io/#lang-ruby" rel="nofollow noopener">set the VAT rate you want to apply</a>, via subscription’s metadata. And Quaderno will make the rest.</p>
+<p>Can this help you? Please let me know if you have any other question. Happy to help.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/13</link>
+        <pubDate>Thu, 10 Jul 2014 08:39:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[willcom]]></dc:creator>
+        <description><![CDATA[
+            <p>Quardano looks interesting but it looks like a reverse charging solution. Am I right? So everyone would pay the same price for my service but depending on their location etc I would allocate some of it to VAT, or not. Is this correct? Do you have any thoughts as to how this approach compares to deciding at the time of payment whether the customer needs to pay VAT or not - so actually charging a different price depending on whether or not VAT needs to be included?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/12</link>
+        <pubDate>Wed, 09 Jul 2014 22:54:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>In my opinion, Stripe and Braintree are both very good payment gateways. I’ve used both and they’re very easy to integrate in a SaaS, specially Stripe.</p>
+<p>To deal with invoices, VAT, and so on… a few weeks ago we launched <a href="http://quaderno.io" rel="nofollow noopener">Quaderno.io</a>, an invoicing application for Stripe. Every time you make a charge on Stripe, <a href="http://Quaderno.io" rel="nofollow noopener">Quaderno.io</a> automatically creates and sends an invoice to your customer. That’s all! No code. No pain.</p>
+<p>We’re based in the EU, so we know how messy VAT is <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> No problem.<br>
+We detect your customer is in an EU country and we handle VAT deductions.</p>
+<p>Quaderno also allows you to manage pay-as-you-go packages, customize your invoices, or make subscriptions with manual invoicing / payment to have all your invoices (from Stripe or manually entered) in the same application.</p>
+<p>I’d love to hear your feedback.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/11</link>
+        <pubDate>Thu, 05 Jun 2014 17:16:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="1309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/thibaut_barrere/40/1224_1.png" class="avatar"> thibaut_barrere:</div>
+<blockquote>
+<p>For me, using Recurly with Stripe (Recurly for the subscriptions, Stripe as the gateway) is a perfect combo for EU-based SaaS selling internationally</p>
+</blockquote>
+</aside>
+<p>Thanks <a class="mention" href="/u/thibaut_barrere">@thibaut_barrere</a>! I don’t think Recurly offered Stripe when we looked into it almost a year ago but it would probably be my preferred combination now.</p>
+<p>One annoying thing about Recurly: they bundle a free gateway for U.S. customers but don’t give a reduced price if you use your own gateway (which EU customer have to and you’re likely paying for). I know it’s trivial and a bit irrational, but it just feels like I’m being ripped off a bit. <strong>Sidenote</strong>: be careful when giving free things as they can occasionally make your product less attractive</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/10</link>
+        <pubDate>Thu, 13 Mar 2014 15:31:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[nfelger]]></dc:creator>
+        <description><![CDATA[
+            <p>Thibaut, thanks so much for this super-detailed response! <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> Glad to see proof that it’s POSSIBLE to have a payments setup that makes you happy!</p>
+<p>I have a much better (but still far from good enough) understanding of all the different pieces we’ll need: payment gateway, subscription management, invoice generation, payment reminders, retries, reporting, etc.</p>
+<p>Recurly looks like it does much of the heavy lifting for a few of these functions, but one thing I haven’t figured out yet is whether it’s possible to register customers in their system who <em>don’t</em> pay by card (either manual invoicing or direct debit). We’re perfectly happy taking those payments offline, but it’d be great if Recurly could also function as the dashboard where <strong>all</strong> our subscribers are listed, not just those who pay by card. Is that maybe an enterprise feature in Recurly that I can’t see in my trial account?</p>
+<p>Thanks again for your help, this is invaluable info!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/9</link>
+        <pubDate>Thu, 13 Mar 2014 13:54:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[jeremy]]></dc:creator>
+        <description><![CDATA[
+            <p>Also I don’t think I saw it listed above, it it’s worth taking a look at Taylor Otwell’s Cashier for Stripe. <a href="https://github.com/laravel/cashier" rel="nofollow noopener">https://github.com/laravel/cashier</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/8</link>
+        <pubDate>Thu, 13 Mar 2014 13:35:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[thibaut_barrere]]></dc:creator>
+        <description><![CDATA[
+            <p>For me, using <strong>Recurly with Stripe</strong> (Recurly for the subscriptions, Stripe as the gateway) is a perfect combo for EU-based SaaS selling internationally (this is what I use for <a href="https://www.wisecashhq.com" rel="nofollow noopener">WiseCash</a> - and also for freelancing projects).</p>
+<p>Stripe provides a no-paperwork (only ID scanned via the browser, pretty neat!) gateway with a modern API (unlike WireCard), while Recurly provides a feature-rich (VAT handling, PCI SAQ A with Recurly.js, integrated dunning, all kinds of subscription goodies).</p>
+<p>Note that I also investigated Stripe alone, but like it has been pointed out, the VAT implementation alone will be a big PITA (quoting people who did it - and I also did some research).</p>
+<p>And goodies: I have open-sourced a <a href="https://github.com/thbar/rails-recurly-js-sample-application" rel="nofollow noopener">Rails sample app to help out</a>, with a <a href="https://www.wisecashhq.com/blog" rel="nofollow noopener">series of articles</a> (a third one is upcoming soon).</p>
+<p>See below where I address each of your points.</p>
+<blockquote>
+<p>we’d prefer a hybrid provider that does subscription billing and works as a payment gateway, but I’m open to combos like Recurly+Braintree too</p>
+</blockquote>
+<p>I’d recommend Recurly+Stripe (easiest path).</p>
+<blockquote>
+<p>we are based in Germany, so providers should produce EU-acceptable invoices, handle VAT deductions and should be US-EU Safe Harbor certified</p>
+</blockquote>
+<p>Recurly is Safe Harbor compliant (<a href="https://recurly.com/legal/privacy/" rel="nofollow noopener">https://recurly.com/legal/privacy/</a>), will handle VAT (with country auto-selection, and VIES validation to remove the VAT when applicable).</p>
+<p>You can customize the email generated for invoices (not sure about PDF).</p>
+<blockquote>
+<p>we exclusively sell to businesses</p>
+</blockquote>
+<p>Same for me.</p>
+<blockquote>
+<p>we mainly sell SaaS subscriptions, but also have pay-as-you-go packages: both standalone and on top of subscriptions</p>
+</blockquote>
+<p>You can handle one-off purchases, multiple subscriptions by customer (I believe) etc.</p>
+<blockquote>
+<p>billing cycles are varied: we do monthly, quarterly, semi-annual, and annual bookings, and the odd custom case</p>
+</blockquote>
+<p>This is all supported (I use monthly + yearly).</p>
+<blockquote>
+<p>we have some legacy customers on contracts which we don’t offer to new customers</p>
+</blockquote>
+<p>You can display only the currently offered plans, and “sign” the plan code to avoid tampering by the end user (afaik).</p>
+<blockquote>
+<p>we have customers in Europe, North America, the UK, SE Asia, and Australia</p>
+</blockquote>
+<p>I have customers all over the world, no problem so far <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<blockquote>
+<p>we sometimes give leads discounts (probs best implemented as voucher codes)</p>
+</blockquote>
+<p>There is coupon code support (you can limit number of use, redemption limit date, percentage or price discount etc). I used this extensively at some point.</p>
+<blockquote>
+<p>we accept VISA/MC/AMEX</p>
+</blockquote>
+<p>Same, no problem.</p>
+<blockquote>
+<p>we accept payments in USD/EUR/GBP</p>
+</blockquote>
+<p>You will have to go “enterprise” plan, this is more expensive.</p>
+<blockquote>
+<p>nice to have: taking German ELV and/or EU SEPA direct debit</p>
+</blockquote>
+<p>I don’t think this is supported.</p>
+<blockquote>
+<p>provider should settle at least monthly</p>
+</blockquote>
+<p>Stripe send me the sum of today charges in 7 days. I get money sent every day <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Beware that Stripe will (for now) apply a 2% conversion fee if you charge in USD.</p>
+<blockquote>
+<p>should offer emailing billing receipts</p>
+</blockquote>
+<p>Check.</p>
+<blockquote>
+<p>should include self-serve basics like allowing customers to update their credit card details and sending automated expiry reminders to customers</p>
+</blockquote>
+<p>You can generate a billing update form quite easily (integrated in my app).</p>
+<p>I send the reminders myself, but automatic reminders are now supported.</p>
+<blockquote>
+<p>should support a billing email address that’s different from the account’s primary address</p>
+</blockquote>
+<p>The account is identified by a GUID (for me, to remove adherence from the email address).</p>
+<p>There is a billing contact info, which can be different.</p>
+<blockquote>
+<p>should be able to create subscriptions with manual invoicing / payment</p>
+</blockquote>
+<p>Supported but in “enterprise” pricing.</p>
+<blockquote>
+<p>nice to have: allow customers to up- or downgrade to a different plan in the middle of a month and calculate pro-rata charges</p>
+</blockquote>
+<p>Definitely works. I even implemented (for a freelancing client) instant upgrades, but delayed downgrades at end of billing cycle, using web-hooks. Works well.</p>
+<blockquote>
+<p>nice to have: allow pausing subscriptions, with self-serve ability to re-activate without entering payment data again</p>
+</blockquote>
+<p>The billing information is kept on file; I think you can find a way to do that, but not sure exactly how.</p>
+<p>Hope this helps!</p>
+<p>– Thibaut</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/7</link>
+        <pubDate>Thu, 13 Mar 2014 08:34:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[nfelger]]></dc:creator>
+        <description><![CDATA[
+            <p>Haha, we have our share of manually invoiced customers that pay by bank transfer, too. Why anyone would prefer that over credit card payments is lost on me, but a happy customer is a good customer. <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Sounds like quite the pain with Stripe. The more I look at it, Stripe seems not quite up to the task. I mean, they don’t even an address field on customer records!</p>
+<p>Braintree+Recurly is more looking like an option that might be viable, and Paymill is indeed an alternative I’m eyeing closely, but their invoicing offering isn’t too inspiring either.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/6</link>
+        <pubDate>Wed, 12 Mar 2014 17:33:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>With stripe you build that out yourself and access their api. Check out <a href="http://chargify.com" rel="nofollow noopener">chargify.com</a> if you want something that has a UI built out.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/5</link>
+        <pubDate>Wed, 12 Mar 2014 16:58:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not sure that there’s any one service that does all that.</p>
+<p>I’ve previously looked at Recurly, CheddarGetter, Saasy, Charify and PayMill in the past. PayMill might actually be a good solution because they’re based in Germany — though they’re blatantly “inspired” by Stripe. I like Stripe but you do need to build a bit of infrastructure to support it. For example, with VAT you need to <a href="https://support.stripe.com/questions/metered-subscription-billing" rel="nofollow noopener">implement a webhook that adds VAT to each subscription invoice</a> as it’s generated (probably by first checking if your customer needs to pay VAT, which is an art in itself).</p>
+<p>We went with Recurly+Braintree and the paperwork was kinda annoying and took about 2-3 weeks. Oddly, since then we’ve never actually used Recurly and all our payments have been through cheques or bank transfers (enterprise sales, huh!)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/4</link>
+        <pubDate>Wed, 12 Mar 2014 16:37:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[nfelger]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/dgrigg">@dgrigg</a> Thanks! One thing I can’t really tell with Stripe is whether we’d have to build the interface for upgrading/downgrading, changing card details, cancelling, downloading invoices, etc. ourselves. I would prefer to outsource that to someone who has that as their core competency, but that may be asking too much.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/3</link>
+        <pubDate>Wed, 12 Mar 2014 16:10:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not sure about handling EU payments but otherwise it looks like Stripe would meet your requirements. I am using them for recurring payments and as the payment gateway with <a href="http://pageproofer.com" rel="nofollow noopener">http://pageproofer.com</a> and they have been fine to work with. Their rates are competitive, setup is easy and support has been good.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/2</link>
+        <pubDate>Wed, 12 Mar 2014 15:58:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+      <item>
+        <title>Payment / subscription billing options for SaaS</title>
+        <dc:creator><![CDATA[nfelger]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone!</p>
+<p>This is my first post here, my name is Niko and I’m not <em>exactly</em> a bootstrapper: I run tech and product at a small company of 10 (<a href="http://www.eyequant.com" rel="nofollow noopener">www.eyequant.com</a>). We’re a frugal bunch though, and I’ve always found the bootstrapper’s perspective very helpful and applicable to us.</p>
+<p>With that out of that way, my question that I’d like to discuss is: who to choose for SaaS payments and/or subscription billing.</p>
+<p>We’re currently with a terrible provider (charges too much, is technically… well, less than ideal, and only settles every <em>other</em> month). We’re finally ready to replace them, so I’ve started looking at the options (Stripe/Braintree/Paymill and a long list of others), but I’m not sure who’s best for our situation.</p>
+<p>I’ve found 2 <a href="http://discuss.bootstrapped.fm/t/looking-at-recurly-and-other-subscription-billing-options/376">existing</a> <a href="http://discuss.bootstrapped.fm/t/changing-payment-suppliers/137">threads</a>, but I was wondering: do you have any more love stories / war stories to share on specific providers?</p>
+<p>Thanks!<br>
+Niko</p>
+<p>PS: Here’s a list of constraints / wishes I made for myself, but maybe it gives you a better picture of our situation. Sorry if this is TMI! <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<ul>
+<li>we’d prefer a hybrid provider that does subscription billing and works as a payment gateway, but I’m open to combos like Recurly+Braintree too</li>
+<li>we are based in Germany, so providers should produce EU-acceptable invoices, handle VAT deductions and should be US-EU Safe Harbor certified</li>
+<li>we exclusively sell to businesses</li>
+<li>we mainly sell SaaS subscriptions, but also have pay-as-you-go packages: both standalone and on top of subscriptions</li>
+<li>billing cycles are varied: we do monthly, quarterly, semi-annual, and annual bookings, and the odd custom case</li>
+<li>we have some legacy customers on contracts which we don’t offer to new customers</li>
+<li>we have customers in Europe, North America, the UK, SE Asia, and Australia</li>
+<li>we sometimes give leads discounts (probs best implemented as voucher codes)</li>
+<li>we accept VISA/MC/AMEX</li>
+<li>we accept payments in USD/EUR/GBP</li>
+<li>nice to have: taking German ELV and/or EU SEPA direct debit</li>
+<li>provider should settle at least monthly</li>
+<li>should offer emailing billing receipts</li>
+<li>should include self-serve basics like allowing customers to update their credit card details and sending automated expiry reminders to customers</li>
+<li>should support a billing email address that’s different from the account’s primary address</li>
+<li>should be able to create subscriptions with manual invoicing / payment</li>
+<li>nice to have: allow customers to up- or downgrade to a different plan in the middle of a month and calculate pro-rata charges</li>
+<li>nice to have: allow pausing subscriptions, with self-serve ability to re-activate without entering payment data again</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309/1</link>
+        <pubDate>Wed, 12 Mar 2014 14:57:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1309-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payment-subscription-billing-options-for-saas/1309.rss">Payment / subscription billing options for SaaS</source>
+      </item>
+  </channel>
+</rss>

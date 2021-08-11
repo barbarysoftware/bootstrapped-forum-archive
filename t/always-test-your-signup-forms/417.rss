@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Always Test Your Signup Forms</title>
+    <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417</link>
+    <description>Just realized one of our major mailing list signup forms on Harpoon has been busted for who knows how long. Explains the major drop in our conversion rate recently. Ugh. 
+
+Plus we just did an ad campaign with this thing busted. Double ugh. 
+
+And there&#39;s really nothing about the form that makes it obvious it&#39;s broken, so people probably think they&#39;re signed up, but will never hear from us again. Triple ugh.
+
+Excuse me while I go puke.</description>
+    
+    <lastBuildDate>Fri, 30 Aug 2013 17:55:52 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Always Test Your Signup Forms</title>
+        <dc:creator><![CDATA[neiled]]></dc:creator>
+        <description><![CDATA[
+            <p>Testing in production is really hard. Ideally you have a ‘staging’ version of your site which works almost exactly the same as production but would touch a staging database and have mails or other calls to external systems rerouted to a log or something else.<br>
+Again, ideally, your staging database is a reproduction of production with perhaps user emails changed or other identifying information if it’s required by regulations. That way you can safely test new features in the staging system.</p>
+<p>I have had to do functional tests in production though and in this case we hacked a coupon code to give the test user everything for free. Be very careful with things like this though, as I said, ideally you don’t test prod, you test a replica of it…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/9</link>
+        <pubDate>Fri, 30 Aug 2013 17:55:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-417-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss">Always Test Your Signup Forms</source>
+      </item>
+      <item>
+        <title>Always Test Your Signup Forms</title>
+        <dc:creator><![CDATA[smtm]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah I make heavy use of selenium to test those multi step flows from trial to onboarded. The most difficult thing I found when setting it up is how to deal with the email notification - for the verification. I created an action which only works in the development environment to access the verification link as a webpage. So now I can test the whole flow. Also spelling out the wordings and phrases in a selinium test script helps you spot awkward phrases. You might also spot opportunities for A/B testing</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/8</link>
+        <pubDate>Fri, 23 Aug 2013 11:45:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-417-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss">Always Test Your Signup Forms</source>
+      </item>
+      <item>
+        <title>Always Test Your Signup Forms</title>
+        <dc:creator><![CDATA[starr]]></dc:creator>
+        <description><![CDATA[
+            <p>Didn’t know you could set alerts like that in GA. Cool <img src="https://emoji.discourse-cdn.com/twitter/thumbsup.png?v=5" title=":thumbsup:" class="emoji" alt=":thumbsup:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/7</link>
+        <pubDate>Wed, 21 Aug 2013 19:02:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-417-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss">Always Test Your Signup Forms</source>
+      </item>
+      <item>
+        <title>Always Test Your Signup Forms</title>
+        <dc:creator><![CDATA[andyjohnson]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s a great tip too <a class="mention" href="/u/matthias">@matthias</a>, thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/6</link>
+        <pubDate>Wed, 21 Aug 2013 14:11:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-417-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss">Always Test Your Signup Forms</source>
+      </item>
+      <item>
+        <title>Always Test Your Signup Forms</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <p>Related to this we started building some functional tests into our system but one of the problems I had was things like the purchase flow on our production checkout process. How do people check production flows that touch things like inventory and purchasing without messing up all the data with constantly refunding the bot that keeps buying stuff!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/5</link>
+        <pubDate>Wed, 21 Aug 2013 13:25:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-417-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss">Always Test Your Signup Forms</source>
+      </item>
+      <item>
+        <title>Always Test Your Signup Forms</title>
+        <dc:creator><![CDATA[matthias]]></dc:creator>
+        <description><![CDATA[
+            <p>If you have an active running form with consistent conversions, setup a Google Analytics alert that sends you an email when conversion rates drop under a certain percentage.</p>
+<p>I use GA alerts for all sorts of site health checks. Traffic drops from consistent sources. Sudden surges indicating a possible media mention.</p>
+<p>There’s a delay of a day or more, so they shouldn’t be your first indicator of a major problem, but it’s a cheap and easy backup solution if you already use Analytics.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/4</link>
+        <pubDate>Wed, 21 Aug 2013 13:19:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-417-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss">Always Test Your Signup Forms</source>
+      </item>
+      <item>
+        <title>Always Test Your Signup Forms</title>
+        <dc:creator><![CDATA[andyjohnson]]></dc:creator>
+        <description><![CDATA[
+            <p>Great tip <a class="mention" href="/u/steve">@steve</a>. We’ve used automated testing tools on other projects, but didn’t think we needed to go through the hassle with some simple signup forms. Thinking differently about that now. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/3</link>
+        <pubDate>Sun, 18 Aug 2013 13:27:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-417-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss">Always Test Your Signup Forms</source>
+      </item>
+      <item>
+        <title>Always Test Your Signup Forms</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>Do folks here with web apps use an automated testing tool such as <a href="http://docs.seleniumhq.org/" rel="nofollow noopener">Selenium</a> to catch such problems?  We use it at my day job to test new versions of our web app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/2</link>
+        <pubDate>Sun, 18 Aug 2013 13:13:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-417-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss">Always Test Your Signup Forms</source>
+      </item>
+      <item>
+        <title>Always Test Your Signup Forms</title>
+        <dc:creator><![CDATA[andyjohnson]]></dc:creator>
+        <description><![CDATA[
+            <p>Just realized one of our major mailing list signup forms on Harpoon has been busted for who knows how long. Explains the major drop in our conversion rate recently. Ugh.</p>
+<p>Plus we just did an ad campaign with this thing busted. Double ugh.</p>
+<p>And there’s really nothing about the form that makes it obvious it’s broken, so people probably think they’re signed up, but will never hear from us again. Triple ugh.</p>
+<p>Excuse me while I go puke.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417/1</link>
+        <pubDate>Sun, 18 Aug 2013 13:05:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-417-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/always-test-your-signup-forms/417.rss">Always Test Your Signup Forms</source>
+      </item>
+  </channel>
+</rss>

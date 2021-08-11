@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Why make new sign-ups to my SaaS verify their email?</title>
+    <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927</link>
+    <description>We&#39;re currently working on the customer sign-up/&quot;onboarding&quot; for Feature Upvote. We&#39;ve been debating why and how we should do email verification for new customers.
+
+**Pro:**
+So far the main reason I can think of is to ensure that customers entered their correct email so that if they forget their password in three months time they can use the &quot;reset password&quot; option.
+
+**Con:**
+When new signups need to switch to their email, there is a good chance they&#39;ll be distracted by their inbox, and we&#39;ll lose their attention, and they may never continue our onboarding. 
+
+Are there other important reasons for doing email verification? Do you do this in your SaaS?</description>
+    
+    <lastBuildDate>Wed, 12 Jun 2019 10:03:08 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Recently on Twitter, Rob Walling shared his experience on this theme:</p>
+<blockquote>
+<p>I’ve never required email verification. It was never enough of an issue that we needed to add the friction.</p>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/13</link>
+        <pubDate>Wed, 12 Jun 2019 10:03:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>In my app I do not validate E-mails, but I intend to change that. The problem is that many people seem incapable of entering their E-mail correctly, which means that one day they will forget their password and E-mail password reset will not work.</p>
+<p>I would strongly suggest NOT waiting for the E-mail to be delivered, though. Many systems out there use greylisting: delaying the first E-mail from a new source by up to an hour. You really don’t want to make your user wait for an hour, or you might lose that user. So, I’d say let them in, but still try to verify the E-mail.</p>
+<p>Regarding passwords in E-mails: come on, this is a disaster on so many fronts. You shouldn’t even have the user’s password in cleartext, much less send it in an E-mail. Never ever do that. Use SHA512 + salted bcrypt or something comparable for passwords.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/12</link>
+        <pubDate>Mon, 10 Jun 2019 17:11:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>We have a “hidden” email verification for trials at <a href="https://www.jitbit.com/">https://www.jitbit.com/</a> here’s how it works:</p>
+<ul>
+<li>User signs up. A welcome email with a link is sent to them.</li>
+<li>User is redirected to the app immediately, everything works, except for some “dangerous” features that can be used by spammers (you can’t create more than X users, you can’t import a zillion data etc. etc.) and we have a hidden “unverified” flag in the database next to this account.</li>
+<li>Once the user clicks any link in our emails (the “welcome” one or any followups) - the hidden flag is removed from the database and the acount is fully operational.</li>
+</ul>
+<p>this way we don’t disrupt the sign flow AND we keep malicious users and automated trials away.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/11</link>
+        <pubDate>Mon, 10 Jun 2019 13:04:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[jnunemaker]]></dc:creator>
+        <description><![CDATA[
+            <p>Definitely helps a bit with spam, though not as much as captcha or similar. I usually send the email, but let people in right away. The only thing to consider with this approach is to perhaps limit some functionality. For example, on an app I’m working on, we let you create a project and all that, but you can’t start inviting people to collaborate until you validate your email. This prevents spammer signup and spamming tons of addresses by inviting them to the project. We also limit the number of projects and other things you you can do while not validated.</p>
+<p>Like others said above, the pro is people get right in and you get perhaps a little higher “correct” email rate. Also helps a bit against spammers, though good spammers will automate link clicking for email addresses.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/10</link>
+        <pubDate>Tue, 25 Apr 2017 13:25:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[PovilasKorop]]></dc:creator>
+        <description><![CDATA[
+            <p>In my specific case for trying out adminpanel-generator project <a href="https://quickadminpanel.com/" rel="nofollow noopener">https://quickadminpanel.com/</a> for free, I have a real problem/pain with un-verified email.</p>
+<p>For every registered user we create a space for their admin panel - files, folders, database records etc. And for tire-kickers who don’t actually do anything we are still using that space, need to do some cleanup later to not overpay for storage.</p>
+<p>So I’m thinking to introduce email validation, cause more and more free users come just to look around and possibly some of them are even spam bots, still not sure about it yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/9</link>
+        <pubDate>Mon, 24 Apr 2017 07:31:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[Sylver_G]]></dc:creator>
+        <description><![CDATA[
+            <p>The rationale is that users have a tendency to reuse their passwords - and it’s very true, but when you generate a temporary password for the user, this issue is not a legit concern, as you do know for a fact that the user is not using that password for anything else.</p>
+<p>Sending the user their own passwords by email is a major security issue. Sending a newly generated password isn’t exposing anything beyond the user’s access to your own service, which may or may not be an issue.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/8</link>
+        <pubDate>Sat, 22 Apr 2017 00:30:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[Gorby]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m just about to launch my SaaS which is an alert messaging system and that doesn’t require the subscriber to verify, however the contacts have to verify their contact details to ensure we aren’t delivering to the wrong user (typo) and for me to avoid someone spamming someone as a “contact”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/7</link>
+        <pubDate>Thu, 20 Apr 2017 12:47:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[kohanz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="4927">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/maximus/40/3510_1.png" class="avatar"> maximus:</div>
+<blockquote>
+<p>con: cannot think of any.</p>
+</blockquote>
+</aside>
+<p>I don’t feel as strongly about this as the site itself, but it seems that sending a password via e-mail is a viewed as a bad practice: <a href="http://plaintextoffenders.com/faq/devs" rel="nofollow noopener">http://plaintextoffenders.com/faq/devs</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/6</link>
+        <pubDate>Thu, 20 Apr 2017 03:32:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>We don’t have “email verification” per-se but we do auto-generate password and send it to the email in the account. User can change password at any time.</p>
+<p>pro: no spammers, real email address=real lead, “reset password” option.</p>
+<p>con: cannot think of any.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/5</link>
+        <pubDate>Wed, 19 Apr 2017 15:52:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4927">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/l/3e96dc/40.png" class="avatar"> Luis:</div>
+<blockquote>
+<p>There’s an intermediate option where you can continue with your onboarding process without requiring e-mail validation</p>
+</blockquote>
+</aside>
+<p>This I like. We’ve gone ahead and implemented this, and it works nicely.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/4</link>
+        <pubDate>Wed, 19 Apr 2017 11:59:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[Luis]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s an intermediate option where you can continue with your onboarding process without requiring e-mail validation, but then inside your app (is it an app?) keep some kind of alert or notification that their e-mail hasn’t been validated yet and they should click the link you sent to their email when they can. I’ve seen this type of system on other places, but can’t recall where…</p>
+<p>This should give you a bit of both worlds. You’ll still get your customers e-mail validated but don’t break the onboarding flow.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/3</link>
+        <pubDate>Tue, 18 Apr 2017 16:26:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t and haven’t noticed any problems with it. I think for the most part people have it set for auto complete anyway, any positives are out weighed by the negatives of breaking their flow when they are just trying to work out if they can get benefit from your tool or not</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/2</link>
+        <pubDate>Tue, 18 Apr 2017 11:58:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+      <item>
+        <title>Why make new sign-ups to my SaaS verify their email?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>We’re currently working on the customer sign-up/“onboarding” for Feature Upvote. We’ve been debating why and how we should do email verification for new customers.</p>
+<p><strong>Pro:</strong><br>
+So far the main reason I can think of is to ensure that customers entered their correct email so that if they forget their password in three months time they can use the “reset password” option.</p>
+<p><strong>Con:</strong><br>
+When new signups need to switch to their email, there is a good chance they’ll be distracted by their inbox, and we’ll lose their attention, and they may never continue our onboarding.</p>
+<p>Are there other important reasons for doing email verification? Do you do this in your SaaS?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927/1</link>
+        <pubDate>Tue, 18 Apr 2017 11:10:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4927-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-make-new-sign-ups-to-my-saas-verify-their-email/4927.rss">Why make new sign-ups to my SaaS verify their email?</source>
+      </item>
+  </channel>
+</rss>

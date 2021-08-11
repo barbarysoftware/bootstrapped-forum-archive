@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>LocaleData: My first SaaS, built for myself</title>
+    <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502</link>
+    <description>I&#39;ve deployed my first beta version of [LocaleData.com](https://www.localedata.com) - a simple translation management platform for Ruby on Rails apps. It allows developers to import their existing project translations in YAML file format, invite teammates and translators and work collaboratively on project translations.
+
+I&#39;m a full-time software engineer. In our company, we are developing another SaaS app and we are deploying an isolated instance for every customer. We have two pain points: (1) Default YAML files with translations are best for computers, good-enough for programmers, but terrible for translators. And (2) we need a centralized solution for multiple deployments (not a per-deployment-in-database-thing). Yes, there are some other solutions, but they have more features (which we don&#39;t need) and they are too pricey to store and edit just a couple of kilobytes, in my opinion. So, I built LocaleData :slight_smile:.
+
+Why donations instead of subscriptions: To make it legal in my country I would need (A) something like a trade licence (easier to setup, but the liability is not limited, I had to put up all my possessions as a guarantee - and I am afraid to do so) or (B) to create a company (this is a lot of bureaucracy and unnecessary expenses just to try it). So I decided to make the beta version free and... We will see.
+ 
+I&#39;ts my first public SaaS. I&#39;m building it mainly for my own needs, but it would be awesome if it helped other developers, too. It has only the basic functionality, but I&#39;m constantly developing new features.</description>
+    
+    <lastBuildDate>Tue, 27 Feb 2018 21:48:12 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[jkostolansky]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi romikoops. Thanks for your interest, I’m glad you like LocaleData. I think it’s definitely usable in production, because our company is successfully using it <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">. Can you tell me more about your use cases? What problems are you encountering? You can also contact me directly via <a href="mailto:juraj@localedata.com">juraj@localedata.com</a>.</p>
+<p>The gem is still on my todo list, but I’ve a limited amount of time. You can also make a donation to support future development of this project.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/13</link>
+        <pubDate>Tue, 27 Feb 2018 21:48:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[romikoops]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello. Jkostolansky, thanks a lot for your work! Any updates on the gem creation? Without it the app impossible to use in production. Please keep updated.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/12</link>
+        <pubDate>Mon, 26 Feb 2018 08:47:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p>Microsoft has the Multilingual App Toolkit which does this kind of work already. It can perform machine translations but also makes it quite easy for developers to work with external human translators as well. The definition files are XML. It does make use of the Azure translation services for machine translation, although a free account gets you about 2 million translations per month.</p>
+<p>Apart from alerting you to an existing solution, you might also be able to automate the machine translations and offer that as an extra feature. I’ve already automated a lot of the work for machine translations in my own products to suit my custom needs - it’s fairly easy as it’s just XML at the end of the day.</p>
+<p>See: <a href="https://www.microsoft.com/en-us/translator/mat.aspx" rel="nofollow noopener">https://www.microsoft.com/en-us/translator/mat.aspx</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/11</link>
+        <pubDate>Wed, 06 Dec 2017 02:27:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="5502">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jkostolansky/40/3963_1.png" class="avatar"> jkostolansky:</div>
+<blockquote>
+<p>At least it doesn’t seem to be so trustworthy if it’s donation based <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+</blockquote>
+</aside>
+<blockquote>
+<p>And if we get enough donations, it can stay free forever.</p>
+</blockquote>
+<p>You’re almost asking people not to pay you.</p>
+<p>Donations are a sign of desperation to ever make it a product worth paying for. I always hesitate to use donationware because if the author doesn’t believe in themselves, why should I believe in them?</p>
+<p>Fine, you do not want to add payments at this point - then just call it “beta”. Remove that begging for money, it won’t make you any noticeable profits.</p>
+<p>Besides, the service is EFFING useful, and not only for that kids toy RoR - even in large boring corps they have to maintain the translation files for more respectable platforms such as .NET and Java and how do they do that? Why, in Excel files, of course! (Please detect some sarcasm about <em>toy</em> and <em>respectable</em> here). So your service has a potential to expand to other platforms too - you will have to add import/export formats, of course. What I am saying is: get real - this can become big, get rid of that donation stuff, and make a long-term plan to get to more users and profitability.</p>
+<p>Good luck!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/10</link>
+        <pubDate>Wed, 06 Dec 2017 01:26:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[jkostolansky]]></dc:creator>
+        <description><![CDATA[
+            <p>At least it doesn’t seem to be so trustworthy if it’s donation based <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/9</link>
+        <pubDate>Fri, 01 Dec 2017 19:15:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="5502">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jayfk/40/3819_1.png" class="avatar"> jayfk:</div>
+<blockquote>
+<p>You are responsible for all damages your product causes nevertheless, even if you don’t charge for it.</p>
+</blockquote>
+</aside>
+<p>Software EULA usually (always?) contains clause that author is not responsible for damage. However, authors are responsible if the damage is intentional e.g. software contains malicious code.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/8</link>
+        <pubDate>Fri, 01 Dec 2017 09:15:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[jayfk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5502">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jkostolansky/40/3963_1.png" class="avatar"> jkostolansky:</div>
+<blockquote>
+<p>Why donations instead of subscriptions: To make it legal in my country I would need (A) something like a trade licence (easier to setup, but the liability is not limited, I had to put up all my possessions as a guarantee - and I am afraid to do so) or (B) to create a company (this is a lot of bureaucracy and unnecessary expenses just to try it). So I decided to make the beta version free and… We will see.</p>
+</blockquote>
+</aside>
+<p>You are responsible for all damages your product causes nevertheless, even if you don’t charge for it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/7</link>
+        <pubDate>Wed, 29 Nov 2017 22:42:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[jkostolansky]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks! I would like to create a ruby gem to pull/push the translations from a command line. Personally, I don’t like the git-idea. As a developer, I want to add a translation key, test it locally, edit it, etc. and then tell a translator to fill in other lagnuage versions. I don’t want to run “git pull” to download it each time and I don’t want it to mess with my git repo.</p>
+<p>I have a “translate using Google” button on my todo list <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">, but the opposite direction (review using Google) is a nice idea. Maybe in the future…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/6</link>
+        <pubDate>Mon, 27 Nov 2017 17:28:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>This definitely looks interesting. Based on past experience with Sifter, I definitely think that localization is a great potential channel for expanding markets. I don’t have anything to try it on at the moment, but the concept seems attractive.</p>
+<p>The only potential challenge that jumped to my mind is version control integration. Uploading/downloading feels problematic. (If I’m understanding correctly how it works.) But if this could tie into source control with versioning and update through Git, that would make the workflow less error-prone. Maybe if it used a “translation” branch that could be reviewed and merged, that would be pretty powerful.</p>
+<p>Another random thought/fear I’ve always had with translations is accuracy. I’m not sure if it’s possible, but it would be great to be able to review translations with Google Translate. That is, someone does the manual translation, and then Google Translate takes a stab at it for reviewing before committing it and making it live.</p>
+<p>These are both probably pretty significant changes, but they’re the type of thing that would really grab my attention for using this in a production workflow.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/5</link>
+        <pubDate>Mon, 27 Nov 2017 16:10:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice work. Good idea to concentrate on one specific programming language/file format. It makes marketing easier, because you’ve chosen a specific niche.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/4</link>
+        <pubDate>Mon, 27 Nov 2017 12:12:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[jkostolansky]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks. Yes, exactly! In LocaleData, you can give project members different access rights. One of the available roles is a translator, who can only edit the content - not the translation keys.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/3</link>
+        <pubDate>Mon, 27 Nov 2017 08:21:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[mgowski]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve worked with 2 companies previously where this would have been very helpful!</p>
+<p>The biggest issue we always faced was the translators were not technical, so could too easily mess up the formatting or variables if given direct access to the yaml files. Looks like your app fixes that - good luck with it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/2</link>
+        <pubDate>Mon, 27 Nov 2017 06:05:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+      <item>
+        <title>LocaleData: My first SaaS, built for myself</title>
+        <dc:creator><![CDATA[jkostolansky]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve deployed my first beta version of <a href="https://www.localedata.com" rel="nofollow noopener">LocaleData.com</a> - a simple translation management platform for Ruby on Rails apps. It allows developers to import their existing project translations in YAML file format, invite teammates and translators and work collaboratively on project translations.</p>
+<p>I’m a full-time software engineer. In our company, we are developing another SaaS app and we are deploying an isolated instance for every customer. We have two pain points: (1) Default YAML files with translations are best for computers, good-enough for programmers, but terrible for translators. And (2) we need a centralized solution for multiple deployments (not a per-deployment-in-database-thing). Yes, there are some other solutions, but they have more features (which we don’t need) and they are too pricey to store and edit just a couple of kilobytes, in my opinion. So, I built LocaleData <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">.</p>
+<p>Why donations instead of subscriptions: To make it legal in my country I would need (A) something like a trade licence (easier to setup, but the liability is not limited, I had to put up all my possessions as a guarantee - and I am afraid to do so) or (B) to create a company (this is a lot of bureaucracy and unnecessary expenses just to try it). So I decided to make the beta version free and… We will see.</p>
+<p>I’ts my first public SaaS. I’m building it mainly for my own needs, but it would be awesome if it helped other developers, too. It has only the basic functionality, but I’m constantly developing new features.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502/1</link>
+        <pubDate>Sun, 26 Nov 2017 21:44:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5502-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502.rss">LocaleData: My first SaaS, built for myself</source>
+      </item>
+  </channel>
+</rss>

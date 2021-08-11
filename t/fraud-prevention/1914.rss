@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Fraud Prevention</title>
+    <link>https://discuss.bootstrapped.fm/t/fraud-prevention/1914</link>
+    <description>Hello all,
+
+I&#39;ve got an idea for a service based on some conversations I&#39;ve been having with some local small businesses. Basically, it would allow businesses to easily pre-sell services (at a discount) and have consumers redeem them later. Technologically, this is easier than ever with services such as balanced and Stripe.  However, my immediate worry is that a service like this would be very attractive to fraudsters, for numerous reasons. The one that comes to mind immediately is laundering stolen credit cards.
+
+Does anyone here have any insight into preventing fraud in marketplace type businesses? Should this risk scare me off from pursuing this idea further? Seems like this has to be a common issue for anyone accepting payments and issuing payouts.</description>
+    
+    <lastBuildDate>Wed, 06 Aug 2014 06:59:01 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/fraud-prevention/1914.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Fraud Prevention</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>While I can’t speak specifically to preventing fraud in marketplace type businesses, I can tell you a bit about how we’re dealing with fraud.</p>
+<p>At DNSimple we have people who use stolen cards to pay for domains, which we are then on the hook for. Initially we simply waited for the chargebacks and just accepted them as a cost of doing business, however recently we integrated with <a href="https://siftscience.com/" rel="nofollow noopener">https://siftscience.com/</a> and I can say that it has already helped us identify fraudulent customers immediately and use tools that we have built to return the domain name to the registry and refund the stolen card with the charge so we don’t receive the chargeback. This is a big deal since previously we were stuck with the domain purchase price as well as any chargeback fees.</p>
+<p>So that’s my story about fraud and what we’ve done to address it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/fraud-prevention/1914/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/fraud-prevention/1914/2</link>
+        <pubDate>Wed, 06 Aug 2014 06:59:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1914-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/fraud-prevention/1914.rss">Fraud Prevention</source>
+      </item>
+      <item>
+        <title>Fraud Prevention</title>
+        <dc:creator><![CDATA[dwilson86]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello all,</p>
+<p>I’ve got an idea for a service based on some conversations I’ve been having with some local small businesses. Basically, it would allow businesses to easily pre-sell services (at a discount) and have consumers redeem them later. Technologically, this is easier than ever with services such as balanced and Stripe.  However, my immediate worry is that a service like this would be very attractive to fraudsters, for numerous reasons. The one that comes to mind immediately is laundering stolen credit cards.</p>
+<p>Does anyone here have any insight into preventing fraud in marketplace type businesses? Should this risk scare me off from pursuing this idea further? Seems like this has to be a common issue for anyone accepting payments and issuing payouts.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/fraud-prevention/1914/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/fraud-prevention/1914/1</link>
+        <pubDate>Wed, 06 Aug 2014 00:15:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1914-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/fraud-prevention/1914.rss">Fraud Prevention</source>
+      </item>
+  </channel>
+</rss>

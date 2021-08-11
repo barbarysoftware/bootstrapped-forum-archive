@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Why I Hate the SaaS!</title>
+    <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293</link>
+    <description>Major Azure outage causing clients to kill me and me want to cry and drink heavily!</description>
+    
+    <lastBuildDate>Thu, 20 Nov 2014 13:46:00 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="15" data-topic="2293">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/radiac/40/2472_1.png" class="avatar"> radiac:</div>
+<blockquote>
+<p>I don’t see many SaaS products mentioning a SLA or including one in their terms and conditions. They’re really common in the hosting industry, and since running a SaaS is a mix of being a product company and a host, imo you should operate as such - give your customers a clear SLA as part of their agreement</p>
+</blockquote>
+</aside>
+<p>SLA’s really serve a marketing purpose rather than anything else. An effective SLA needs three things:</p>
+<ol>
+<li>clear definitions (e.g. what ‘uptime’, does it include unexpected only or also planned maintenance, over what time period, monthly? rolling 4-week period? etc);</li>
+<li>an external system than can monitor this SLA in the terms you’ve defined and both parties can monitor;</li>
+<li>penalties which ensure compliance and fairly compensate customers for breaches of the agreement.</li>
+</ol>
+<p>The first is relatively easy but time consuming and it’s the sort of thing that enterprise contract lawyers live for<br>
+The second is usually prohibitive for most companies (I’ve built these types of SLA monitoring systems for large telcos but almost no one else can justify them)<br>
+Lastly, the real problem: if your e-commerce store generates $1000/day and the site is down for an hour, should I assume that you’ve lost 1/24th of $1000 ($41), or should I give you 1/24*1/30 of your monthly $50 fee (70c)? Either way, the incentives are generally not aligned and most smart providers will never accept the liability based on your actual business value (“For 1/2 day, my 100 employees couldn’t do X. That’s ~$7k in salary costs that I want back”)</p>
+<p>SLA’s are great for marketing, and they’re an important comforting fact for enterprise sales, but they’re basically worthless to the customer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/17</link>
+        <pubDate>Thu, 20 Nov 2014 13:46:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I understand the frustration. You want to do the best possible job for your customer and you’ve made to look bad by a supplier. But the software I use crashes frequently, websites go down, my Internet connection drops. I’m used to it and I think most other people are too. Good 'ol Microsoft has trained consumers and businesses to expect crashes. ;0)</p>
+<p>As long as your software isn’t safety critical and you haven’t corrupted or lost lots of data, I wouldn’t sweat the occasional bit of downtime.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/16</link>
+        <pubDate>Thu, 20 Nov 2014 11:11:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="14" data-topic="2293">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/lewis/40/142_1.png" class="avatar"> Lewis:</div>
+<blockquote>
+<p>The problems are current expectations, supporting infrastructure etc.</p>
+</blockquote>
+</aside>
+<p>I don’t see many SaaS products mentioning a SLA or including one in their terms and conditions. They’re really common in the hosting industry, and since running a SaaS is a mix of being a product company and a host, imo you should operate as such - give your customers a clear SLA as part of their agreement, and train them to expect and accept that these things happen for the price they’re willing to pay. That way downtime’s a much more manageable problem - keep customers informed and happy, refund in accordance with your agreement if you breach your SLA, and everyone knows where they stand.</p>
+<p>100% uptime is complicated and expensive, and realistically most customers in most markets can cope under a 99.9% SLA. Of course, we’re only talking occasional worst-case; if it’s really 45 minutes every month, then you probably need to find a new provider. If you have a customer or product where that could be a genuine problem, add an enterprise tier with a higher availability SLA, and put the extra money towards upgrading your infrastructure.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/15</link>
+        <pubDate>Thu, 20 Nov 2014 08:50:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[Lewis]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree, but the analogy still serves a point. SaaS isn’t the problem, just like electricity isn’t the problem. The problems are current expectations, supporting infrastructure etc. In other words, SaaS is a great idea/concept but it needs to be refined.  I believe it is still very early in the product lifecycle.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/14</link>
+        <pubDate>Thu, 20 Nov 2014 02:20:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>I hate the electricity.  Hahaha.</p>
+<p>That’s a good analogy, but it doesn’t exactly hold up.  Electricity is very reliable for us and not that many bad things happen in the rare cases when it goes out.</p>
+<p>Maybe a better analogy would be if you’re in a country that has pretty frequent and brutal power outages - would it be better to build a business that relies on that electricity and has a higher profit margin or better recurring revenue vs. a business that somehow doesn’t rely on that electricity (relies on generators maybe and operates at lower energy levels) but has lower profit margin or recurring revenue.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/13</link>
+        <pubDate>Thu, 20 Nov 2014 02:02:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="2293">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/craigvn/40/2889_1.png" class="avatar"> craigvn:</div>
+<blockquote>
+<p>You are right, but some times problems are so hard and expensive to avoid it is frustrating and impractical. Having failover in two data centers of the one platform(Azure) is not enough, you also need failover in totally separate platforms, one in Azure and one in AWS</p>
+</blockquote>
+</aside>
+<p>For 99.99% of web apps, that’s overkill. I didn’t say that you can’t have an outage, I just said that you need to “own” it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/12</link>
+        <pubDate>Thu, 20 Nov 2014 01:20:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="2293" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/lewis/40/142_1.png" class="avatar"> Lewis:</div>
+<blockquote>
+<p>I think we need to put this all in perspective. Don’t get me wrong, it sucks. But you don’t ever hear anyone proclaiming that they hate electricity because the power went out.</p>
+</blockquote>
+</aside>
+<p>You are right, I don’t really hate the SaaS and think going forward it is the only way most applications will be delivered. I actually love the SaaS. Only reason I bought it up is because it is always talked about on the podcast.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/11</link>
+        <pubDate>Wed, 19 Nov 2014 23:53:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[Lewis]]></dc:creator>
+        <description><![CDATA[
+            <p>I think we need to put this all in perspective. Don’t get me wrong, it sucks. But <strong>you don’t ever hear anyone proclaiming that they hate electricity because the power went out</strong>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/10</link>
+        <pubDate>Wed, 19 Nov 2014 23:41:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="2293" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ideasasylum/40/1274_1.png" class="avatar"> ideasasylum:</div>
+<blockquote>
+<p>Azure didn’t have an outage, you did: <a href="http://jamie.ideasasylum.com/2014/11/their-problems-are-your-problems/" rel="nofollow noopener">http://jamie.ideasasylum.com/2014/11/their-problems-are-your-problems/</a></p>
+<p>You’ve got to own those problems, whether they “yours” or a third parties’</p>
+</blockquote>
+</aside>
+<p>You are right, but some times problems are so hard and expensive to avoid it is frustrating and impractical. Having failover in two data centers of the one platform(Azure) is not enough, you also need failover in totally separate platforms, one in Azure and one in AWS. This is actually not too hard for the web front end, but once you start trying to failover databases from one to the other it gets a whole heap harder.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/9</link>
+        <pubDate>Wed, 19 Nov 2014 22:50:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p>I understand your pain, but outages happen everywhere.</p>
+<p>If you were not using AWS/Azure/OpenStack you would still have your server on a datacenter, connected to a network with network gear that you don’t manage. Also, to make the traffic to/from your server you traverse ISP’s routers that you don’t manage, and so on…</p>
+<p>If I can take the suffering from managing some infrastructure away I’ll be happy, although it is really painful when it is down and you can’t do anything about it but wait.</p>
+<p>Hope it makes sense <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/8</link>
+        <pubDate>Wed, 19 Nov 2014 20:57:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Right, but this is why we hate the SaaS <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/7</link>
+        <pubDate>Wed, 19 Nov 2014 14:18:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <p>Azure didn’t have an outage, you did: <a href="http://jamie.ideasasylum.com/2014/11/their-problems-are-your-problems/" rel="nofollow noopener">http://jamie.ideasasylum.com/2014/11/their-problems-are-your-problems/</a></p>
+<p>You’ve got to own those problems, whether they “yours” or a third parties’</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/6</link>
+        <pubDate>Wed, 19 Nov 2014 14:14:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes. I have a server (virtual) that is really just sitting around in another data center,  doing nothing, costing money, waiting for an outage. Unfortunately today’s problem effected every data center, so main and secondary server were both dead!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/5</link>
+        <pubDate>Wed, 19 Nov 2014 13:01:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[fideloper]]></dc:creator>
+        <description><![CDATA[
+            <p>The real shame is how expensive it can be to keep other places (other data centers or cloud companies) ready with a “hot swap” type setup</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/4</link>
+        <pubDate>Wed, 19 Nov 2014 12:38:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>All back online now, but I might be having a few of those soon.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/3</link>
+        <pubDate>Wed, 19 Nov 2014 04:00:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[Lewis]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="2293">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/craigvn/40/2889_1.png" class="avatar"> craigvn:</div>
+<blockquote>
+<p>Major Azure outage causing clients to kill me and me want to cry and drink heavily!</p>
+</blockquote>
+</aside>
+<p>I recommend <a href="http://www.seanminorwines.com/wine/sean-minor-pinot-noir-carneros-2011/2012" rel="nofollow noopener">http://www.seanminorwines.com/wine/sean-minor-pinot-noir-carneros-2011/2012</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/2</link>
+        <pubDate>Wed, 19 Nov 2014 02:54:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+      <item>
+        <title>Why I Hate the SaaS!</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>Major Azure outage causing clients to kill me and me want to cry and drink heavily!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293/1</link>
+        <pubDate>Wed, 19 Nov 2014 02:22:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2293-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/why-i-hate-the-saas/2293.rss">Why I Hate the SaaS!</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Taking on Fraud as a Bootstrapped Business</title>
+    <link>https://discuss.bootstrapped.fm/t/taking-on-fraud-as-a-bootstrapped-business/3255</link>
+    <description>Hi all,
+
+I am currently running a boostrapped startup that generates revenue. It&#39;s basically a simple service that helps others sell digital downloads. We make use of Paypal and Stripe and take a 5% commission as the transaction happens. There is no risk for us as all the money goes to the seller immediately.
+
+However, the Paypal API has lots of limitations and we now feel the need to take ALL payments and pay out to customers every week. But we are afraid of fraud. The limitations are:
+
+ - Turning some customers away based in India, Nigeria etc locations Paypal does not support.
+ - The Paypal API forces us to use the old interface for some reason. Can&#39;t take advantage of the new design that Paypal has
+ - We can&#39;t offer features customers would like, like refunds from within our dashboard. API Limitation.
+ - The code base will be a lot simpler with the newer method as there is lessing moving parts and we can use a unified library
+ - Slightly lower fees for customers if we use this new method 
+
+Does anyone have experience with fraud via payments? Should we stick with what we have or change?</description>
+    
+    <lastBuildDate>Wed, 01 Jul 2015 06:11:18 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/taking-on-fraud-as-a-bootstrapped-business/3255.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Taking on Fraud as a Bootstrapped Business</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>You probably don’t need to worry about implementing tools to protect against fraud until fraud starts to happen, but it’s good that you’re thinking about it early. The reason I say that you don’t need to protect yet is because you don’t really know what it will look like.</p>
+<p>We see a bit of fraud at DNSimple. Initially we had problems where fraudulent users would purchase domains and certificates with no intention of paying for them. We also saw fraud by users who were trying to separate good cards from bad cards. We started by putting in limitations that prevent future purchases once you have one outstanding invoice. This stopped some of the fraud, but not completely.</p>
+<p>After those initial changes, I started using SiftScience to score customers, and based on the scoring I can typically identify a fraudulent account before they do too much damage. I implemented this in steps, initially just using it to identify fraudulent accounts post-purchase, but more recently I started using them to score customers before purchases are made.</p>
+<p>Ultimately fraud just needs to be considered a cost of doing business. For now your approach is probably fine, but you may need to reconsider it once the downsides you mentioned become more of a nuisance.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/taking-on-fraud-as-a-bootstrapped-business/3255/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/taking-on-fraud-as-a-bootstrapped-business/3255/2</link>
+        <pubDate>Wed, 01 Jul 2015 06:11:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3255-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/taking-on-fraud-as-a-bootstrapped-business/3255.rss">Taking on Fraud as a Bootstrapped Business</source>
+      </item>
+      <item>
+        <title>Taking on Fraud as a Bootstrapped Business</title>
+        <dc:creator><![CDATA[mint]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>I am currently running a boostrapped startup that generates revenue. It’s basically a simple service that helps others sell digital downloads. We make use of Paypal and Stripe and take a 5% commission as the transaction happens. There is no risk for us as all the money goes to the seller immediately.</p>
+<p>However, the Paypal API has lots of limitations and we now feel the need to take ALL payments and pay out to customers every week. But we are afraid of fraud. The limitations are:</p>
+<ul>
+<li>Turning some customers away based in India, Nigeria etc locations Paypal does not support.</li>
+<li>The Paypal API forces us to use the old interface for some reason. Can’t take advantage of the new design that Paypal has</li>
+<li>We can’t offer features customers would like, like refunds from within our dashboard. API Limitation.</li>
+<li>The code base will be a lot simpler with the newer method as there is lessing moving parts and we can use a unified library</li>
+<li>Slightly lower fees for customers if we use this new method</li>
+</ul>
+<p>Does anyone have experience with fraud via payments? Should we stick with what we have or change?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/taking-on-fraud-as-a-bootstrapped-business/3255/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/taking-on-fraud-as-a-bootstrapped-business/3255/1</link>
+        <pubDate>Tue, 30 Jun 2015 13:01:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3255-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/taking-on-fraud-as-a-bootstrapped-business/3255.rss">Taking on Fraud as a Bootstrapped Business</source>
+      </item>
+  </channel>
+</rss>

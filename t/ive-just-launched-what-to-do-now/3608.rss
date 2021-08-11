@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>I&#39;ve just launched - What to do now?</title>
+    <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608</link>
+    <description>Hello!
+
+My SaaS is alive. Well, not officially, because I&#39;m waiting for an evaluation from Avangate, but the MVP it&#39;s already &quot;finished&quot; and on the production server.
+
+And I don&#39;t know what to do, technically speaken. I&#39;ve build the MVP using plain PHP and raw SQL because when I started coding it I haven&#39;t enough experience with PHP frameworks, but now, a year later, I have good experience using Symfony 2 (it&#39;s what I&#39;m using at work). I think that my code isn&#39;t perfect, I&#39;ve had a couple of problems when deploying the project to production, and maybe a good idea is to rewrite the project using Symfony, Twig, Doctrine, etc to have an application with better security, cleaner code, a well-tested base, and so.
+
+On the other side, if I rewrite the current project, I won&#39;t be adding new features in the next weeks/months, and I think that I must add more reports, more options, the app must be multilingual (now it&#39;s only in Spanish)...
+
+So, what do you think? Should I start rewriting the just-launched application in a more secure/tested framework? Should I continue with the current codebase and, if the application really grow, then do a rewrite? Should I stop thinking about the code because all this is normal because, as Andy says, [If you aren’t embarrassed by v1.0 you didn’t release it early enough][1]&quot;?
+
+Thanks for your thoughs! :)
+
+  [1]: http://successfulsoftware.net/2007/08/07/if-you-arent-embarrassed-by-v10-you-didnt-release-it-early-enough/</description>
+    
+    <lastBuildDate>Sun, 17 Apr 2016 09:54:10 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="14" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>ACNE? That must be a contender for the worst named technology ever!</p>
+</blockquote>
+</aside>
+<p>Yeah, glad I didn’t name it. It’s an acronym for “Automatic Cable Number Extractor”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/15</link>
+        <pubDate>Sun, 17 Apr 2016 09:54:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>tvCAD is a direct replacement for ACNE</p>
+</blockquote>
+<p>ACNE? That must be a contender for the worst named technology ever!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/14</link>
+        <pubDate>Thu, 14 Apr 2016 08:04:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p>Don’t write any code your customers don’t want. They will let you know where you are headed. Until you have paying customers you know f-all about what works and what doesn’t.</p>
+<p>I’m serious, I am within weeks of launching a desktop app I have been “incubating” for more than 10 years. I ran it at a client site yesterday for the first time and a co-worker made a couple of suggestions that I implemented on-the-spot. This is an app I will use myself all day, every day. I am the SME but an end-user suggested a simple but effective improvement within seconds and gave great reasons for it.</p>
+<p>My case study in “I know nothing”:<br>
+<a href="http://www.cadfindreplace.com" rel="nofollow noopener">www.cadfindreplace.com</a> would cost ~ $100-150 /yr and has a potential market of millions, <a href="http://www.tvCAD.tv" rel="nofollow noopener">www.tvCAD.tv</a> will cost $2500 /yr and has a potential market of dozens at the most. The mailing list for tvCAD has more people on it and they are pestering me daily for a release. CAD find-replace’s list is conspicuously silent.</p>
+<p>CAD find replace’s source has nearly 1000 commits (it works, I use it all the time), tvCAD’s 1st commit was on March 1st. Guess which one will ship first? Why? Because I asked the market and they answered me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/13</link>
+        <pubDate>Tue, 12 Apr 2016 23:28:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="11" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/robinwarren/40/2915_1.png" class="avatar"> robinwarren:</div>
+<blockquote>
+<p>However… you mentioned rewriting for security purposes. I would say that if you have security concerns you should address them</p>
+</blockquote>
+</aside>
+<p>Well, I supose that with any web application one should have always security concerns. The main idea is that I think that Symfony2 (now Symfony3) code is more secure than mine, but I think that my code is enough secure to be in a production environment. Also, before uploading code to production I studied the OWASP guides to find common security problems, and I didn’t found anyone in my application.</p>
+<p>Also remember that this post is a bit old (5 month old), and I’ve rejected the idea of a rewrite of the code. In the future, maybe, I’ll integrate some of the Symfony components, but today I have enough work with documentation, marketing and new features <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/12</link>
+        <pubDate>Fri, 01 Apr 2016 19:49:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>I would add my vote to the voices saying you need to focus on getting customer 1 before writing any more code.</p>
+<p>However… you mentioned rewriting for security purposes. I would say that if you have security concerns you should address them. Once you have a customer, if there are genuinely bad security issues I think you need to have them addressed and I don’t think it’s OK to sell an insecure software service to people. It should be possible to handle that without a big rewrite though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/11</link>
+        <pubDate>Fri, 01 Apr 2016 11:59:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[michaeljamescalkins]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been in a very similar situation before and I think your feeling very normal feelings.</p>
+<ul>
+<li>It really doesn’t matter what it’s written in, as long as it stands on it’s own.</li>
+<li>I took a raw SQL and PHP app and page by page converted it into Laravel over a very long course of time.</li>
+<li>If you already know PHP great I’d recommend learning Laravel, but learning Angular on top of that you’ll never release another update because you’ll be stuck in an endless learning curve unnecessarily. Just focus on delivery value to your customers cause at the end of the day they don’t give a damn what it’s code base looks like.</li>
+</ul>
+<p>Show to people who you’d think would use it as soon as possible so you can know if you’re on to something or not!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/10</link>
+        <pubDate>Thu, 31 Mar 2016 17:11:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[startrinity]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/mcasas">@mcasas</a>, thanks for sharing. Can you give me a link to your new SaaS? What to do now - do the marketing.  Rewrite the project - NO, I agree with <a class="mention" href="/u/andy">@Andy</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/9</link>
+        <pubDate>Sun, 27 Mar 2016 06:17:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>Especially given that they probably come along faster than you can do the rewrite.</p>
+</blockquote>
+</aside>
+<p>This is so true. My wife who is also a geek (developer) try’s to convince me we need to rewrite in Angular or some other flavour of the month, but by the time we finished it would be already old hat. You could go on forever. I have worked at some very successful companies where the code quality was actually really bad. But they knew how to sell!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/8</link>
+        <pubDate>Mon, 16 Nov 2015 20:49:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/m/67e7ee/40.png" class="avatar"> mcasas:</div>
+<blockquote>
+<p>in the PHP world there are lots of opinions about rewriting all with the latest frameworks</p>
+</blockquote>
+</aside>
+<p>Are you trying to impress other programmers or start a business?</p>
+<p>Rewrites using sexy new frameworks are fine if you are a professional programmer who is being paid by the hour and wants to polish his/her CV. If you are a business owner, it’s a terrible idea to rewrite your code every time a new framework comes along. Especially given that they probably come along faster than you can do the rewrite.</p>
+<p>From a business point of view, sub-optimal but shipped beats perfect and unshipped every time.</p>
+<p>Look at my current <a href="http://www.perfecttableplan.com/">http://www.perfecttableplan.com/</a> website. From a programming and design point of view its an embarassment. But it does a fair job at selling my software.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/7</link>
+        <pubDate>Mon, 16 Nov 2015 17:57:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all!</p>
+<p>Thank you for your answers…</p>
+<aside class="quote" data-post="3" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/shantnu/40/2752_1.png" class="avatar"> shantnu:</div>
+<blockquote>
+<p>Do you have paying customers? That’s the only thing that matters.</p>
+<p>If not, why not? Did you do any market research before writing the app?</p>
+</blockquote>
+</aside>
+<p>No, I still haven’t any paying customer. The reason is simple: I still haven’t announced that the application is online, I’ve only uploaded the website and created all the links. And just today I’ve started talking to the interested people that the site is online.</p>
+<p>And yes, I did a small market research before writting the app. The problem is that I started with this idea a couple years ago, and since the I haven’t found any competitor… And I know, this can be very good (no competitors), or really bad (no market). It’s a bit dangerous, I know…</p>
+<aside class="quote" data-post="4" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>NO! No point is polishing something until you are sure it isn’t a turd. Put your effort into promoting it, so you can find out ASAP if anyone wants it.</p>
+</blockquote>
+</aside>
+<p>Thanks you for this. I know it’s obvious, but in the PHP world there are lots of opinions about rewriting all with the latest frameworks, and well… And yes, the application will be more atractive with more reports, languages or features than with a better underlying framework <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<aside class="quote" data-post="5" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Speak for yourself Andy! My code is a marvel of modern-day programming genius…</p>
+</blockquote>
+</aside>
+<p>I understand you… Your code is exactly like mine! The best in the world! <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<aside class="quote" data-post="2" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/lubos/40/2881_1.png" class="avatar"> lubos:</div>
+<blockquote>
+<p>Also, don’t worry about multiple languages but keep that in mind when developing new features. The fact your app is in Spanish language is a plus in my book. English market is extremely saturated wherever you look.</p>
+</blockquote>
+</aside>
+<p>Well, if the application is in Spanish is only because it’s my native language, but I don’t agree that this is a plus. IMHO, the really interesting market is the English, even if it’s saturated.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/6</link>
+        <pubDate>Mon, 16 Nov 2015 16:58:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>I would be willing to bet that no-one on this forum thinks their code is perfect.</p>
+</blockquote>
+</aside>
+<p>Speak for yourself Andy! My code is a marvel of modern-day programming genius…</p>
+<p>…I wish. No, Andy is correct. I shudder when I think that one day someone else might need to maintain my code, and if I’m sitting in the same room as them, I’ll hear them frequently mutter expletives.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/5</link>
+        <pubDate>Mon, 16 Nov 2015 11:05:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/m/67e7ee/40.png" class="avatar"> mcasas:</div>
+<blockquote>
+<p>So, what do you think? Should I start rewriting the just-launched application in a more secure/tested framework?</p>
+</blockquote>
+</aside>
+<p>NO! No point is polishing something until you are sure it isn’t a turd. Put your effort into promoting it, so you can find out ASAP if anyone wants it.</p>
+<p>BTW I would be willing to bet that no-one on this forum thinks their code is perfect. So get used to that feeling.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/4</link>
+        <pubDate>Mon, 16 Nov 2015 10:17:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3608">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/m/67e7ee/40.png" class="avatar"> mcasas:</div>
+<blockquote>
+<p>So, what do you think? Should I start rewriting the just-launched application in a more secure/tested framework? Should I continue with the current codebase and, if the application really grow, then do a rewrite?</p>
+</blockquote>
+</aside>
+<p>Do you have paying customers? That’s the <strong>only</strong> thing that matters.</p>
+<p>If not, why not? Did you do any market research before writing the app?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/3</link>
+        <pubDate>Mon, 16 Nov 2015 08:52:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[lubos]]></dc:creator>
+        <description><![CDATA[
+            <p>Don’t worry about rewrite. By the time you will do the rewrite, you will learn so much more you will feel about your new codebase exactly the same way you feel about it now.</p>
+<p>Also, don’t worry about multiple languages but keep that in mind when developing new features. The fact your app is in Spanish language is a plus in my book. English market is extremely saturated wherever you look.</p>
+<p>What you need to do right now is to get some paying customers. And let me tell you it won’t be easy. It might take 2-3 years to even get to several hundred paying customers. If you can get like 10 paying customers within 3-6 months, consider that a win.</p>
+<p>Keep your burn rate really low. Making a product which is profitable even after paying your salary will feel amazing once you get there.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/2</link>
+        <pubDate>Sun, 15 Nov 2015 23:25:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+      <item>
+        <title>I&#39;ve just launched - What to do now?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello!</p>
+<p>My SaaS is alive. Well, not officially, because I’m waiting for an evaluation from Avangate, but the MVP it’s already “finished” and on the production server.</p>
+<p>And I don’t know what to do, technically speaken. I’ve build the MVP using plain PHP and raw SQL because when I started coding it I haven’t enough experience with PHP frameworks, but now, a year later, I have good experience using Symfony 2 (it’s what I’m using at work). I think that my code isn’t perfect, I’ve had a couple of problems when deploying the project to production, and maybe a good idea is to rewrite the project using Symfony, Twig, Doctrine, etc to have an application with better security, cleaner code, a well-tested base, and so.</p>
+<p>On the other side, if I rewrite the current project, I won’t be adding new features in the next weeks/months, and I think that I must add more reports, more options, the app must be multilingual (now it’s only in Spanish)…</p>
+<p>So, what do you think? Should I start rewriting the just-launched application in a more secure/tested framework? Should I continue with the current codebase and, if the application really grow, then do a rewrite? Should I stop thinking about the code because all this is normal because, as Andy says, <a href="http://successfulsoftware.net/2007/08/07/if-you-arent-embarrassed-by-v10-you-didnt-release-it-early-enough/" rel="nofollow noopener">If you aren’t embarrassed by v1.0 you didn’t release it early enough</a>"?</p>
+<p>Thanks for your thoughs! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608/1</link>
+        <pubDate>Sun, 15 Nov 2015 22:38:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3608-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-just-launched-what-to-do-now/3608.rss">I&#39;ve just launched - What to do now?</source>
+      </item>
+  </channel>
+</rss>

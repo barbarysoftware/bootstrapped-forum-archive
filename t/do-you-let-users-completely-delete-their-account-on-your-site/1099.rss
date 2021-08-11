@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Do you let users completely delete their account on your site?</title>
+    <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099</link>
+    <description>I&#39;ve had one or two requests from users to completely delete their account. However, this can potentially cause issues, e.g. if there is info that we need to keep for audit reasons (like payment history). I notice that some big sites like wordpress.com don&#39;t allow user deletion at all (see here: http://en.support.wordpress.com/deleting-accounts/), but at the same time, there could be PII concerns if you don&#39;t honour a request to delete someones account and all the associated data.
+
+Wonder how others here handle this?</description>
+    
+    <lastBuildDate>Thu, 27 Mar 2014 20:29:15 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="1099">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/shantnu/40/2752_1.png" class="avatar"> shantnu:</div>
+<blockquote>
+<p>If I can’t unsubscribe in 1-2 clicks, I press spam.</p>
+</blockquote>
+</aside>
+<p>If I’m in the right mood, I’ll mark as spam if it takes 2 clicks. Especially if they want me to type in my email address to “confirm” my unsubscribe.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/12</link>
+        <pubDate>Thu, 27 Mar 2014 20:29:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>At DNSimple we currently first present the option for customers to unsubscribe (i.e. to keep their user account, but stop having us resolve their DNS for them). Once they’ve done that then we provide a button that was not previously available to close their account completely.</p>
+<p>For the moment we let people remove their user account along with all attached resources. I’m not sure if we’ll keep things that way forever though, as it does result in confusion in some cases.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/11</link>
+        <pubDate>Thu, 27 Mar 2014 12:41:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[joet3ch]]></dc:creator>
+        <description><![CDATA[
+            <p>When I delete my account at a service, I expect all data to be removed and not just a flag marking my account inactive.</p>
+<p>I do respect the users of my service and the delete button truly deletes all data from our database. Payment history is retained by Stripe and there will always be a trace of the user within application and system logs.</p>
+<p>The dilemma here is backups, I would be shocked to find out that a service is actually purging deleted account data from their historic backups.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/10</link>
+        <pubDate>Thu, 27 Mar 2014 06:35:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <p>No, not without asking.  Otherwise, what can go wrong, would, and someone would lose their work by accident or by doing something stupid.</p>
+<p>From a technical point of view, having a ‘deleted_at’ field in your DB and some kind of automatic logic like a scope in Rails that automatically discards records with that field set might be a good way to go.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/9</link>
+        <pubDate>Sun, 02 Feb 2014 16:04:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[patio11]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t expose a button to delete accounts.  If customers ask me to delete their account, I use the standard unsubscribe feature and then ask whether that is enough.  That keeps their info in our DB but stops service and we won’t bill them again.</p>
+<p>Then I write something like this:</p>
+<blockquote>
+<p>You mentioned that you wanted me to delete your account.  If you would like, I can remove (e.g. your client and appointment information) from our database.  This would make it impossible for you or anyone to get to it.  Is that good enough for you?</p>
+</blockquote>
+<p>Usually they say some variation of “yes.”  I don’t generally explicitly say “Your information will still be in our backups.  We generally don’t go looking for it, but it is theoretically find almost anything ever typed into our service.  We won’t.” because it just confuses people.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/8</link>
+        <pubDate>Sun, 02 Feb 2014 09:36:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[ktaylor]]></dc:creator>
+        <description><![CDATA[
+            <p>With EventWax, we don’t have a delete button for the account level that is accessible to the accountholders. But, we do get about 1 request a month from people who want us to delete the account. We can do this but only if they haven’t sold paid tickets. If they’ve collected money for their tickets (and hence we’ve collected EventWax fees), we cannot delete the account, as we need to keep a record of those transactions.</p>
+<p>But, based on this thread, I think we will create a new “hide” account function that we can use that will make it at least appear that the account is deleted. It will remove any public facing pages, remove the logins, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/7</link>
+        <pubDate>Thu, 30 Jan 2014 15:16:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <p>Great question!</p>
+<p>I struggled with a client over this for a few weeks. We built a HR app together (for annual performance reviews etc) where it was important to maintain some records after a user was gone. In this case, the company is the customer and when they close their account we can export their data and remove it <em>all</em> (payment is done offline). But, for individual employees in the system, we needed to protect the company by keeping an audit trail (i.e., in case that employee sues for unfair dismissal etc).</p>
+<p>Since everything (plans, reviews, surveys, action etc) in the system relates to a user we came up with a simple rule: you can only delete users that haven’t affected the state of the system (no survey responses, committed plans etc); otherwise those users are archived (&amp; hidden). This maintains the audit trail and database integrity, but hides those users that have left the company.</p>
+<p>Having done this work, I can says that it’s <em>much</em> simpler to delete all the account information <em>if at all possible</em>. Keeping some bits and hiding them, de-normalising them or excluding them from “active” queries, is a road straight to “edge case city” <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/6</link>
+        <pubDate>Tue, 28 Jan 2014 11:12:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="1099">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andycroll/40/1235_1.png" class="avatar"> andycroll:</div>
+<blockquote>
+<p>f only LinkedIn, Twitter &amp; Facebook would do this.</p>
+</blockquote>
+</aside>
+<p>Actually, I’ve seen a lot of big and “respectable” companies do this. My patience is very short now- If I can’t unsubscribe in 1-2 clicks, I press spam.</p>
+<p>The worst case was Swaroski. They automatically created an account for (for which I didn’t have a password). To unsubscribe, I had to login to my account, for which I’d have to do the “forgot password send email” dance, and then login to unsubscribe.</p>
+<p>To answer the original question: Whatever you do, keep in mind that if it is seen as unfair (note: <em>seen as</em>), you may end up on Slashdot, with the heading “<a href="http://XYZ.com" rel="nofollow noopener">XYZ.com</a> keeps your personal info forever”. Like <a class="mention" href="/u/andycroll">@andycroll</a> said, be a real human.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/5</link>
+        <pubDate>Tue, 28 Jan 2014 09:41:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[andycroll]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="1099">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grayj/40/2331_1.png" class="avatar"> grayj:</div>
+<blockquote>
+<p>Honor the intent of opt-outs, don’t just invent new categories of email to opt out of every time you want to send to people who told you to stop emailing them.</p>
+</blockquote>
+</aside>
+<p>If only LinkedIn, Twitter &amp; Facebook would do this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/4</link>
+        <pubDate>Tue, 28 Jan 2014 09:27:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[grayj]]></dc:creator>
+        <description><![CDATA[
+            <p>You have to retain some information on the user, if only things like payment history. Imagine if people could “delete their account” with a student loan servicer.</p>
+<p>After ensuring regulatory compliance and a certain level of CYA for liability issues, it really comes down to respecting user intent.</p>
+<ul>
+<li>
+<p>People often reactivate an old account, and for most services they’ll expect to be able to pick up where they left off (it’s an “undo” action).</p>
+</li>
+<li>
+<p>If people “delete” an account, they expect all information you’re serving from/about them online to go away, and they expect never to have to hear from or care about your company again unless <em>they</em> decide to resume the relationship.</p>
+</li>
+</ul>
+<p>Users generally <em>do not</em> have any right to expect you to delete all information about them internally.  But you should be up front about what actually happens, have adequate coverage in your ToS and privacy policy, and you should only retain what you <em>need</em>.</p>
+<p>Here’s a rundown of what might be “best practices” for inactive and deleted accounts.</p>
+<p>Inactive account:</p>
+<ul>
+<li>Stop serving their content if relevant.</li>
+<li>Be able to recover the account and its data with a short wait.</li>
+<li>Possibly send reactivation promos.</li>
+</ul>
+<p>Deleted account:</p>
+<ul>
+<li>Remove their account and content from web servers.</li>
+<li>Retain what you need internally.</li>
+<li>Do not retain data for which you have no valid regulatory, liability, or research interest.</li>
+<li>
+<em>Blacklist</em> their contact for future marketing.</li>
+</ul>
+<p>Personal information:</p>
+<ul>
+<li>Do not retain PII that you don’t need, even for active accounts.</li>
+<li>Encrypt data to the user when it’s sensitive and you don’t need to see it.</li>
+<li>Anonymize anything you want to keep for research but don’t need to link with a human for regulatory or liability reasons.</li>
+</ul>
+<p>Emails to inactive users:</p>
+<ul>
+<li>Don’t screw up and email people on accident, this just isn’t professional.</li>
+<li>Honor the intent of opt-outs, don’t just invent new categories of email to opt out of every time you want to send to people who told you to stop emailing them.</li>
+<li>Don’t have stupid opt-out practices, you will get spam flagged like silly cakes if they have to jump through a bunch of hoops and log in to their inactive account just to unsubscribe from your latest new category of marketing mail.</li>
+<li>Reactivation promos are a thing, and often a useful thing depending on product, market, volume, account value, reason for leaving. Segment appropriately, wait a few months after account inactivation, make it legitimately special <em>to the customer</em> in terms of offer &amp; sending frequency, and don’t send more than ~3 of these total.</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/3</link>
+        <pubDate>Tue, 28 Jan 2014 08:01:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[andycroll]]></dc:creator>
+        <description><![CDATA[
+            <p>I always think delete whatever you can and be a ‘real human’ about it. Do unto others…</p>
+<p>I’d be surprised if you can’t delete all public facing data and <em>definitely</em> never email that person again!</p>
+<p>In the specific case I’m thinking about we had to keep records of invoices/payments but we ‘denormalised’ the user data so that if we subsequently deleted a user the information stayed with the invoice. i.e. In ‘nerd terms’ we copied user address/email onto the payment record in the database, rather than use a foreign id.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/2</link>
+        <pubDate>Tue, 28 Jan 2014 07:03:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+      <item>
+        <title>Do you let users completely delete their account on your site?</title>
+        <dc:creator><![CDATA[stevecookhk]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve had one or two requests from users to completely delete their account. However, this can potentially cause issues, e.g. if there is info that we need to keep for audit reasons (like payment history). I notice that some big sites like <a href="http://wordpress.com" rel="nofollow noopener">wordpress.com</a> don’t allow user deletion at all (see here: <a href="http://en.support.wordpress.com/deleting-accounts/" rel="nofollow noopener">http://en.support.wordpress.com/deleting-accounts/</a>), but at the same time, there could be PII concerns if you don’t honour a request to delete someones account and all the associated data.</p>
+<p>Wonder how others here handle this?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099/1</link>
+        <pubDate>Tue, 28 Jan 2014 05:04:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1099-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-you-let-users-completely-delete-their-account-on-your-site/1099.rss">Do you let users completely delete their account on your site?</source>
+      </item>
+  </channel>
+</rss>

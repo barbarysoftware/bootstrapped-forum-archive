@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Apple app &quot;notarization&quot;</title>
+    <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321</link>
+    <description>So Apple&#39;s latest effort to make software downloads safer while simultaneously making life more difficult for us software vendors is something they called [app &quot;notarization&quot;](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution).
+
+Has anyone been through this process yet? How was it? Should I tremble in fear and despair? Any tips?</description>
+    
+    <lastBuildDate>Mon, 29 Apr 2019 18:04:35 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Apple app &quot;notarization&quot;</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok, that’s an interesting data point… it must be technically possible, therefore.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/9</link>
+        <pubDate>Mon, 29 Apr 2019 18:04:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6321-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss">Apple app &quot;notarization&quot;</source>
+      </item>
+      <item>
+        <title>Apple app &quot;notarization&quot;</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Can you describe how you sign the macOS installer?</p>
+</blockquote>
+<p>Good question. But I don’t know the answer. install4j does the code signing. Perhaps the team that make install4j has re-implemented the macOS code signing in Java.</p>
+<p>From install4j’s website:</p>
+<blockquote>
+<p><strong>Integrated code signing on Windows and Mac OS X</strong> . In the “General Settings” section, install4j now has a “Code signing” tab where you can configure code signing certificates for Windows and Mac OS X. Code signing will be applied to all launchers and installer applications in the corresponding media files. The implementations for code signing are cross-platform, <strong>so you can sign Windows and Mac OS X media files from a Linux build server</strong>, for example.</p>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/8</link>
+        <pubDate>Mon, 29 Apr 2019 15:56:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6321-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss">Apple app &quot;notarization&quot;</source>
+      </item>
+      <item>
+        <title>Apple app &quot;notarization&quot;</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Can you describe how you sign the macOS installer?</p>
+<p>And then maybe add an answer to <a href="https://stackoverflow.com/questions/11736368/how-to-sign-a-mac-os-x-application-in-linux">https://stackoverflow.com/questions/11736368/how-to-sign-a-mac-os-x-application-in-linux</a> which I can accept as the answer…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/7</link>
+        <pubDate>Mon, 29 Apr 2019 15:34:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6321-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss">Apple app &quot;notarization&quot;</source>
+      </item>
+      <item>
+        <title>Apple app &quot;notarization&quot;</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>My cross-platform desktop app is written in Java. I use a tool called install4j to create, package, and sign the macOS-specific and Windows-specific installers. install4j works well and can be run on any OS - including Linux. No need for Xcode.</p>
+<p>Java might not be a great choice for a desktop app, but in this regard it has worked out well for me.</p>
+<p>But notarization is possibly going to destroy my little Java utopia. <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/6</link>
+        <pubDate>Mon, 29 Apr 2019 14:16:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6321-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss">Apple app &quot;notarization&quot;</source>
+      </item>
+      <item>
+        <title>Apple app &quot;notarization&quot;</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Cross platform, including macOS, development is a pain. Because Apple appears to insist you use their software for everything, it makes producing a one-click or  automated build that can be run from other computers very difficult.</p>
+<p>In my case, because I’ve not found a solution to allow me to sign a DMG or <code>.app</code> from Linux, I have to ssh in, do a bunch of frigging about, then copy the resulting signed app back to the build server. A right pain in the a**e!</p>
+<p>And I expect this will just make it more difficult. The assumption of having XCode installed… <img src="https://emoji.discourse-cdn.com/twitter/roll_eyes.png?v=9" title=":roll_eyes:" class="emoji" alt=":roll_eyes:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/5</link>
+        <pubDate>Mon, 29 Apr 2019 13:51:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6321-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss">Apple app &quot;notarization&quot;</source>
+      </item>
+      <item>
+        <title>Apple app &quot;notarization&quot;</title>
+        <dc:creator><![CDATA[Gorby]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been using an app from someone who is well known in the Xojo community. My stuff is written in Xojo and I have one app in the MAS. <a href="https://www.ohanaware.com/appwrapper/">https://www.ohanaware.com/appwrapper/</a></p>
+<p>Works well. v3.9 will cover notarization, the beta went well apparently, not sure when he will formally release. The app can be written in xCode, Xojo or others, AppWrapper doesn’t care.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/4</link>
+        <pubDate>Fri, 26 Apr 2019 15:14:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6321-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss">Apple app &quot;notarization&quot;</source>
+      </item>
+      <item>
+        <title>Apple app &quot;notarization&quot;</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andy">@Andy</a></p>
+<blockquote>
+<p>it is not easy to fully automate in a script</p>
+</blockquote>
+<p>That is a pity. Here’s hoping Apple eventually makes this easier.</p>
+<p>I think I’ll hold notarizing my releases until Apple make it absolutely essential.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/3</link>
+        <pubDate>Sat, 20 Apr 2019 17:10:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6321-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss">Apple app &quot;notarization&quot;</source>
+      </item>
+      <item>
+        <title>Apple app &quot;notarization&quot;</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes. Documentation is not great. But otherwise it is not too bad. I wrote up my experiences here:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=32" class="site-icon" width="16" height="16">
+      <a href="https://successfulsoftware.net/2018/11/16/how-to-notarize-your-software-on-macos/" target="_blank" title="03:50PM - 16 November 2018">Successful Software – 16 Nov 18</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=200&amp;amp;ts=1555777283" class="thumbnail onebox-avatar" width="60" height="60">
+
+<h3><a href="https://successfulsoftware.net/2018/11/16/how-to-notarize-your-software-on-macos/" target="_blank">How to notarize your software on macOS</a></h3>
+
+<p>How to notarize your software on macOS.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/2</link>
+        <pubDate>Sat, 20 Apr 2019 16:21:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6321-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss">Apple app &quot;notarization&quot;</source>
+      </item>
+      <item>
+        <title>Apple app &quot;notarization&quot;</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>So Apple’s latest effort to make software downloads safer while simultaneously making life more difficult for us software vendors is something they called <a href="https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution">app “notarization”</a>.</p>
+<p>Has anyone been through this process yet? How was it? Should I tremble in fear and despair? Any tips?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/apple-app-notarization/6321/1</link>
+        <pubDate>Tue, 16 Apr 2019 17:16:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6321-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/apple-app-notarization/6321.rss">Apple app &quot;notarization&quot;</source>
+      </item>
+  </channel>
+</rss>

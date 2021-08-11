@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Introducing Bubeat aka Business Beat</title>
+    <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048</link>
+    <description>Hi, I&#39;d like to present you all my latest startup: Bubeat. :)
+
+ A few words about it (@bubeatapp): a saas offering relevant business indicators for marketplace and subscription based online businesses , independent of the payment processor (PP) they might use.  While on long term I&#39;m aiming to add more interesting indicators (like LTV cohorts) and unique tools, at this point Bubeat is all about providing relevant (I know this is highly subjective) useful metrics to a decision maker in real time.
+
+I&#39;m aware of my competition (at least regarding the Saas segment) by my USP is that my service works with with any PP so it&#39;s great for businesses using more than one PP or the ones who are using a local PP for which there&#39;s is no dedicated metrics solution. Simply put, Bubeat is a flexible add-on for your business, instead of being an add-on for a PP.
+
+There is still some work to do, but in the meantime I&#39;d appreciate some feedback, especially if you own a Saas or a Marketplace. I&#39;m interested in both UI and functional related feedback. 
+
+You can check it out here : demo.bubeat.com/businesses/listbusiness
+
+And feel free to ask me anything about it. :smile:</description>
+    
+    <lastBuildDate>Mon, 04 May 2015 13:26:54 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>I 'm actually considering to specialize in marketplace analytics as it doesn’t seem there are many options and afaik marketplaces still aren’t loved by Stripe.</p>
+<blockquote>
+<p>I presume the transaction details can be fed via the API which is why you say it’s PP-independent?</p>
+</blockquote>
+<p>If you take a look at the demo marketplace you’ll see in the menu the ‘Add Events’ option . You can see there all the events supported with their details. They are the exact events supported by the API, it;s just another way to add them. You can add a few to see their requirements and their effects in real time (ok, give it a minute or so). And you can go to the ‘Payment Analytics’ to see the marketplace specific indicator “Paid to Sellers” (obviously keeps track of the amount your marketplace paid the service supplier i.e money out, but grouped by payment processor).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/13</link>
+        <pubDate>Mon, 04 May 2015 13:21:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[akevon]]></dc:creator>
+        <description><![CDATA[
+            <p>Very nice <a class="mention" href="/u/sapiensworks">@sapiensworks</a>, I just signed up for the beta, this looks promising and might work quite nicely for us. I’m especially interested in the marketplace analytics, since that’s exactly what we’re building out right now.</p>
+<p>I presume the transaction details can be fed via the API which is why you say it’s PP-independent? If so I think that’s great, in fact I prefer it that way.</p>
+<p>Look forward to trying it and giving you more insightful feedback once we can get into the nitty gritty  <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/12</link>
+        <pubDate>Mon, 04 May 2015 08:18:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Jaana, in my opinion, the 1 click integration is the most attractive USP of any PP add on. I think this is why you can compete with KissMetrics  although I’d say that you’re also offering a <em>different product</em> than KM which just happens to overlap on some feature.</p>
+<p>While I want Bubeat to be more than a metrics solution, at this point is just that and for everyone else is yet another analytics saas that doesn’t even have 1 click integration. But… it <strong>can be used by any sass/marketplace anywhere in the world using any and how many PPs they need</strong> (not everyone has access to Stripe and not every marketplace/saas can use Stripe). And soon it will have cohorts (<em>at least</em> LTV) and projections (different than BM’s or FO’s) too <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:">  .</p>
+<p>About consistency and accuracy I’d say that a push solution <strong>can be</strong> more consistent and more accurate and here’s why: while I don’t know exactly how FO backend works, I think you <em>pull</em> data from Stripe regularly. But unless you’re doing this every minute (which is a hard to scale feature, especially if you support more than one PP) your numbers are out of sync and therefore inconsistent. A PP as data source is consistent but your users are seeing <strong>your</strong> numbers.<br>
+And if you support importing data like BM does, then some numbers will be up to date, others need to be inputed manually or bulk imported (still a manual affair).</p>
+<p>As for accuracy, something coming from the backend is most accurate because your backend knows semantics.I find it strange that when someone looks at Bubeat demo they seem to either never click on a detail or to click on MRR only. If you click on Other Revenue or Total Revenue you would see more accurate data compared to a ‘pull’ solution that  simply can’t get all those details. That information that can be added to a Stripe charge/customer/subscription, but this requires cooperation from your users to put that into metadata (and then it becomes more than 1 click setup).</p>
+<p>Of course these are my biased opinions, but you anyone can easily check which approach is more accurate, just compare each indicator with the same name side by side and see which gives you more information.</p>
+<p>Initially I thought about going the way of ChartMogul but…it isn’t a scalable solution, you can integrate only with <em>some</em> PP and I’d miss anyone not using those PP. And a sass/marketplace might start with stripe then as it grows may switch to a ‘real’ merchant account with a dedicated payment gateway which will cost them less. Using Bubeat they will not only keep their old metrics, they will continue to get metrics for the new PP.</p>
+<p>Btw, a pull solution is very hard to scale compared to a push one. If you’ll get to that point it will be a technical nightmare and very expensive. I know it’s a problem you want to have but, you don’t need to have 10k clients for that, you need just 10 clients with <strong>huge</strong> volume and you’ll get complains of slowness or ‘old’ numbers. And this is for 1 PP only.</p>
+<p>P.S: how come nobody has any feedback about the marketplace analytics?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/11</link>
+        <pubDate>Sun, 03 May 2015 16:19:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[kulmala]]></dc:creator>
+        <description><![CDATA[
+            <p>Woot, you didn’t mention my <a href="https://www.firstofficer.io" rel="nofollow noopener">FirstOfficer.io</a> which is definitely strategic <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>The reason I chose to build on PPs wasn’t one-click integration - it was that they offer a way to consistency-check the data. That’s the reason why we can compete against KISSmetrics (yes, it offers CLTV’s too) and other tools where you just ‘push’ the data via API. Superior accuracy.</p>
+<p>And as was mentioned, ChartMogul already does several gateways. I have plans to do that too, but you know… bootstrapper’s resources. As an accountant, I also have dreams to get the COS and other costs included, maybe read directly from bookkeeping apps. But we all sell what we currently have.</p>
+<p>Good luck to your business!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/10</link>
+        <pubDate>Sun, 03 May 2015 10:09:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, I’ll check it out</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/9</link>
+        <pubDate>Thu, 30 Apr 2015 15:04:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[otravers]]></dc:creator>
+        <description><![CDATA[
+            <p>[quote=“sapiensworks, post:5, topic:3048, full:true”]<br>
+Indeed, changing PPs while keeping all the metrics is a part of the USP, however it seems to me that’s something that’s not very common (compared to using more than one PP)[/quote]</p>
+<p>True, changing or adding Payment Processors is not something all PP users ever do, and even if they do, it’s only something that may occur once every few years. But if and when you do so, it’s a significant endeavor that you don’t want to mess up.</p>
+<p>Flexibility and preventing vendor lock-in are valuable, at least to experienced software buyers who have been through ups and downs with vendors changing pricing, becoming obsolete, shutting down etc. Look for instance at how <a href="http://Segment.com" rel="nofollow noopener">Segment.com</a> markets itself as a tool that lets you plug in new SaaS into your infrastructure easily.</p>
+<p>Of course I’m not saying this should be 100% of your value proposition, just part of it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/8</link>
+        <pubDate>Thu, 30 Apr 2015 13:11:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok, this will be a long post.</p>
+<p>Bubeat is providing business metrics and that includes but it’s not just payment related info. I’m aware that for anyone seeing it, Bubeat (Bb) is basically like ChartMogul without the one click setup, however, my long term vision for Bb is to provide any type of useful business metric (including acquisition costs for example) and clearly a lot of that info isn’t found in a PP or a billing system.</p>
+<p>As a short example if you look at <a href="https://hubstaff.baremetrics.com/dashboard" rel="nofollow noopener">https://hubstaff.baremetrics.com/dashboard</a>  , in the ‘Other Revenue’ indicator you’ll see a very long list of numbers without any meaning. If you look at Bb’s “Other Revenue” you’ll see  a nice table with the name of charges, volume, percentage of total, amount i.e you get more useful information from Bb than from Baremetrics (BM). Why? I can only guess, but I think that BM simply can’t get that information from Stripe. It isn’t available.</p>
+<p>Anyone can use a bicycle , very low maintenance cost, easy to learn etc. And yet, the majority of people are using and preferring cars. Why someone chooses to go with something more expensive, where you need to take exams so that you can use it, instead of going with the easy, cheap bicycle? Well, a car is more flexible and has 3 big advantages: faster, doesn’t rely on human power to run and can carry more.</p>
+<p>BM and similar are bicycles, while Bb is a car. An addon-on for your <strong>backend</strong> not for a specific PP, billing system, CRM etc. It can be very flexible (any PP present and future from any location + any real or virtual currency) but this flexibility comes at a price (integration and thus programming required). But unlike working with something like <a href="http://Keen.io" rel="nofollow noopener">Keen.io</a> where you need to design your events and code the logic required to turn those events into metrics, with Bb you already have the events designed for you and the logic taken care of. You just need to gather the required data and send it.</p>
+<p>Clearly, this is more complicated compared to one click setup, but you do get the flexibility to have an analytics system that works with whatever your backend is integrated with. And in the future, there will be more metrics and tools that a PP specific add-on simply can’t provide.</p>
+<p>Right now, you get data into Bb by either bulk importing it from a file (generated using the ApiClient, this is how I populate the demo metrics) or by having your backend sending events as they happen. Any real PP has the option to notify you about payment stuff, your backend just needs to map the info to one or more Bb events then to send them.</p>
+<p>If you just want some analytics from your PP and are certain you won’t change it/add another one then Bb is indeed too much. However once your business grows and you want to mix PPs or specific Bb metrics/tools, then  Bb becomes attractive.</p>
+<blockquote>
+<p>I get what you are saying but, as it stands, I wouldn’t pay for the system as I already get the data for nothing from my PP</p>
+</blockquote>
+<p>Hm, this sounds strange to me , because if your PP provides you with all the analytics you need then BM, ChartMogul etc wouldn’t have existed. Their existence implies that a  PP doesn’t offer much analytics info. So, not really free.</p>
+<p>About not many people using multiple PPs, I think it’s more common than you think, plenty of users ask for PayPal in addition of credit cards. And maybe not everyone accepting BTC prefers Stripe <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>As you see, ultimately the real USP of Bb is the flexibility of getting and keeping analytics regardless of the 3rd party data provider. And you’re right that I should add the juicy cohort stuff ASAP.</p>
+<p>Btw, if you would have to decide between BM, Bb or ChartMogul strictly on the offered metrics , IMO (biased of course) Bb has more accurate/meaningful numbers (if you check each metric offered by each provider, for some you’ll see a different take on the same metric).To give you an idea, the  MRR in BM is actually Subscription Revenue in Bb, because MRR is expected  revenue and not actual revenue. Different interpretation of the same metric with different results. Also,  the Cash-In Ratio tells you how much of the expected revenue (MRR) became real revenue.</p>
+<p>It’s important to mention that the each provider seems to focus on a different area: Bb is about top down (strategical) business metrics, BM aims for more flashy and “see info per subscriber”  approach (different  long term vision) while ChartMogul seems to focus more on marketing. As a small hint, I hope to bring this kind of competition analysis (profiling, SWOT) as a tool in Bubeat.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/7</link>
+        <pubDate>Wed, 29 Apr 2015 19:03:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote">
+<blockquote>
+<p>Your app backend integrates with Bubeat via an Api Client i.e your backend sends specific events to bubeat (like you would send events to kissmetrics, Stripe etc). There will be an Api documentation detailing every event. While not as easy as a click one button setup, this approach is the only one allowing bubeat’s flexibility.</p>
+</blockquote>
+</aside>
+<p>Makes sense but most of the data is in my billing system and not in my application - for example, how much a user pays me and refunds and so on.</p>
+<aside class="quote">
+<blockquote>
+<p>I’m aware these things are quite attractive, however if I keep adding features, I’ll have a rich feature product with 0 customers as there would be no one doing the selling part.</p>
+</blockquote>
+</aside>
+<p>I get what you are saying but, as it stands, I wouldn’t pay for the system as I already get the data for nothing from my PP - the only way I would pay would be if I used multiple providers but not many do hence you need to offer something I am not already getting elsewhere for free (and without needing any additional integration etc)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/6</link>
+        <pubDate>Wed, 29 Apr 2015 16:44:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>Indeed, changing PPs while keeping all the metrics is a part of the USP, however it seems to me that’s something that’s not very common (compared to using more than one PP)  and thus I prefer to emphasize using multiple PP at once. But, I’ll change the USP and the landing page to reflect the “vendor-agnostic data continuity insurance” part.</p>
+<p>Thanks for the feedback!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/5</link>
+        <pubDate>Wed, 29 Apr 2015 16:13:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback.</p>
+<blockquote>
+<p>I would be interested in finding out how I get data from my PP into your system.</p>
+</blockquote>
+<p>Your app backend integrates with Bubeat via an Api Client i.e your backend sends specific events to bubeat (like you would send events to kissmetrics, Stripe etc). There will be an Api documentation detailing every event. While not as easy as a click one button setup, this approach is the only one allowing bubeat’s flexibility.</p>
+<p>About the benchmarks,it’s a good idea (way too similar to baremetrics’ open initiative though) and I’ve added to my backlog.</p>
+<blockquote>
+<p>I also think you would need thinks like the cohorts etc sooner rather than later as most PP provide the basic MRR etc data within their apps and your value add would be offering those things that they can’t or don’t offer for free.</p>
+</blockquote>
+<p>I’m aware these things are quite attractive, however if I keep adding features, I’ll have a rich feature product with 0 customers as there would be no one doing the selling part.</p>
+<p>About the UI, I’m aware that it’s a hit or miss thing (other people said they like it). My main reason for going dark is that it’s easier on the eye when you stare a long time at the screen. Personally,I’m a fan of dark themes for this reason. The other reason is marketing: everyone (well 99%) is either light or gray so a dark theme simply stands out and maybe<br>
+it makes bubeat easier to remember. And of course, I can do a lot of puns involving the dark side <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<blockquote>
+<p>Maybe also consider making the date ranges a little easier to meet common use cases like compare this week to last week or compare this month to last month without needing to enter actual dates.</p>
+</blockquote>
+<p>There already are some predefined intervals I’ll add more in the future.</p>
+<p>Thanks again, now I have to go and disable the ‘delete business’ option from my demo <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/4</link>
+        <pubDate>Wed, 29 Apr 2015 16:07:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[otravers]]></dc:creator>
+        <description><![CDATA[
+            <p>This makes sense vs. processor-specific solutions, though ChartMogul for one now supports 4 of the most prominent solutions in the recurring payment space. The idea that your analytics may collapse if you migrate to a new solution, or use several processors in parallel, is pretty scary. I migrated my previous business from <a href="http://Auth.net" rel="nofollow noopener">Auth.net</a> to Recurly, having a sense of what the data looked like involved of tedious manual spreadsheeting!</p>
+<p>In some way your pitch could be that you offer a vendor-agnostic data continuity insurance.</p>
+<p>Agreed with <a class="mention" href="/u/natural">@natural</a> that the colors may be jarring. I like the preconfigured date ranges in the period drop down menu.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/3</link>
+        <pubDate>Wed, 29 Apr 2015 15:53:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>I like the idea as it seems most of the competition is geared towards Stripe! I would be interested in finding out how I get data from my PP into your system.</p>
+<p>I would also love to see some sort of benchmark where I can compare my stats against peers maybe by location, company size, number of customers, turnover and so on. There is a lot of data floating around about what is “good” in Saas but to be able to benchmark would be really useful. I also think you would need thinks like the cohorts etc sooner rather than later as most PP provide the basic MRR etc data within their apps and your value add would be offering those things that they can’t or don’t offer for free.</p>
+<p>Personally I don’t like the UI - the colours just don’t work for me. The orange on the dark background just looks dull. Maybe also consider making the date ranges a little easier to meet common use cases like compare this week to last week or compare this month to last month without needing to enter actual dates.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/2</link>
+        <pubDate>Wed, 29 Apr 2015 07:27:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+      <item>
+        <title>Introducing Bubeat aka Business Beat</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, I’d like to present you all my latest startup: Bubeat. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>A few words about it (<span class="mention">@bubeatapp</span>): a saas offering relevant business indicators for marketplace and subscription based online businesses , independent of the payment processor (PP) they might use.  While on long term I’m aiming to add more interesting indicators (like LTV cohorts) and unique tools, at this point Bubeat is all about providing relevant (I know this is highly subjective) useful metrics to a decision maker in real time.</p>
+<p>I’m aware of my competition (at least regarding the Saas segment) by my USP is that my service works with with any PP so it’s great for businesses using more than one PP or the ones who are using a local PP for which there’s is no dedicated metrics solution. Simply put, Bubeat is a flexible add-on for your business, instead of being an add-on for a PP.</p>
+<p>There is still some work to do, but in the meantime I’d appreciate some feedback, especially if you own a Saas or a Marketplace. I’m interested in both UI and functional related feedback.</p>
+<p>You can check it out here : <a href="http://demo.bubeat.com/businesses/listbusiness" rel="nofollow noopener">demo.bubeat.com/businesses/listbusiness</a></p>
+<p>And feel free to ask me anything about it. <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048/1</link>
+        <pubDate>Tue, 28 Apr 2015 20:30:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3048-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-bubeat-aka-business-beat/3048.rss">Introducing Bubeat aka Business Beat</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Side project to open source business?</title>
+    <link>https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932</link>
+    <description>For a while now, I&#39;ve been working on a personal side project to create an extensible wiki system (which is open source - https://github.com/rhinoman/wikifeat) sort of as a scratch-my-own-itch kind of thing (I don&#39;t really like any of the other solutions currently available).  It&#39;s written in Go (backend) with a SPA javascript app on the frontend, uses markdown (instead of wikitext, etc.), and supports [plugins](https://www.wikifeat.org/app/wikis/developer-documentation/pages/plugin-development-guide).  The architecture is designed (microservices) to facilitate extensibility, integration with other services, and scalability. 
+
+I&#39;m using it to host project documentation and the like here: https://www.wikifeat.org
+
+As I get close to being able to release something &#39;usable&#39;, the thought has occurred to me that there might be some monetization possibilities here, specifically:
+
+- Offering hosted instances (SaaS)
+- Selling support / consulting
+- Custom plugin development 
+- Non-free plugins and extensions :)
+- Anything else?
+
+Basically the traditional open source business model.  I know there are several other options available here, both commercial and open source.   Most of the other open source wikis are rather aged (though some continue to see heavy use and are actively maintained), while the commercial options tend to be incredibly bloated. 
+
+I&#39;m wondering what you folks think of a bootstrapped open source business? And also if you think I&#39;d be attempting to enter a way too mature and crowded market?  
+
+Oh, and if you think my project is garbage, feel free to say so :slight_smile:</description>
+    
+    <lastBuildDate>Mon, 04 Apr 2016 01:10:49 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Side project to open source business?</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p>Speaking of wikis, here’s an idea I had that I’m setting free because I have too many ideas: a hosted GitHub wiki editor.</p>
+<p>GitHub has millions of users. They offer wikis for free. However, the editing experience is bad (not even dual-pane preview) and presentation is fixed and not that great.</p>
+<p>The idea: use GitHub API to write a better editor for GitHub’s wiki pages, similar to how people wrote “better UI for managing GitHub issues” like <a href="https://www.zenhub.io" rel="nofollow noopener">https://www.zenhub.io</a>  and “better UI for code reviews” like <a href="https://www.review.ninja" rel="nofollow noopener">https://www.review.ninja</a>.</p>
+<p>There’s a built-in market (GitHub users), a clear marketing message (a better way to do what you’re already doing).</p>
+<p>I would charge GitHub user $5-$10/month to allow editing of all their public repos by any GitHub user (it’s important that you only charge the owner of the repo, not the people who edit it).</p>
+<p>I would charge $10/month per private repo, with $50-$100 max limit. The idea is that those with public repos are individuals and those with private repos are companies, so they can pay. Still, I would put a reasonable limit - you don’t want to penalize a small company that likes to create lots of repos and for a single dev $50/month is a lot anyway).</p>
+<p>In that scheme it’s very important to have the very best editing UI, much better than what you currently have. I would start by stealing the dual-pane UI of this very forum (that’s what I did for my note-taking app <a href="https://quicknotes.io" rel="nofollow noopener">https://quicknotes.io</a>).</p>
+<p>Other features:</p>
+<ul>
+<li>lightning-fast search (you can steal my UI from <a href="https://quicknotes.io/u/w9Yw/kjk" rel="nofollow noopener">https://quicknotes.io/u/w9Yw/kjk</a>, as I think it’s pretty rad)</li>
+<li>allow re-publishing the wiki on your site with different themes (see e.g. how <a href="https://bl.ocks.org/mbostock/4739610f6d96aaad2fb1e78a72b385ab" rel="nofollow noopener">https://bl.ocks.org/mbostock/4739610f6d96aaad2fb1e78a72b385ab</a> is just a GitHub gist re-published with a nicer theme). You can find plenty of themes on Hugo (as a Go programmer you should know what I’m talking about). This is also a reason for the user to pay</li>
+<li>allow vanity domains for re-publishing</li>
+</ul>
+<p>In general: focus on making the editing UI as smooth as possible and add as much customization for publishing as possible.</p>
+<p>There’s also a bit of viral marketing built-in i.e. people who use your service would advertise it to users of their project (as their goal would be to have other people contribute to wikis in their projects and making editing easier helps with that).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/6</link>
+        <pubDate>Sun, 03 Apr 2016 00:26:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3932-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932.rss">Side project to open source business?</source>
+      </item>
+      <item>
+        <title>Side project to open source business?</title>
+        <dc:creator><![CDATA[jcadam]]></dc:creator>
+        <description><![CDATA[
+            <p>I hear what you’re saying, and you’re not the first person to say it.  I did have the thought in my head that I could gradually expand this thing into something of a confluence alternative (and I’ve taken the effort to architect it in such a way to be extensible), but working alone I know it would likely take <em>years</em> (decades?) to get there.</p>
+<p>I did not originally start the project with a business in mind, but more as a vehicle for gaining some deeper knowledge into new technologies and programming techniques (microservices, NoSQL, and others. – yea, it’s a bit over-engineered for a simple wiki), so it’s been a success from that perspective <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> .  And, well, it’s a nice portfolio piece in my github profile, I suppose.  The fact that the project hasn’t picked up additional contributors might be some sort of signal <img src="https://emoji.discourse-cdn.com/twitter/stuck_out_tongue.png?v=5" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"> .</p>
+<p>Figuring out a SaaS product I could spin up an MVP for in a month or two would probably be a better use of my time.  The last one I tried took me a year to release and only got about a dozen subscribers; I learn slowly.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/5</link>
+        <pubDate>Sun, 03 Apr 2016 00:21:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3932-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932.rss">Side project to open source business?</source>
+      </item>
+      <item>
+        <title>Side project to open source business?</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s a decent (if basic) wiki but you’re late to the party by about 10 years.</p>
+<p>There was a staggering number of wikis at some point. One success story is PBwiki, which I used for a while, but it started in 2005 and by now it expanded to much more than wikis, see <a href="http://pbworks.com" rel="nofollow noopener">http://pbworks.com</a>.</p>
+<p>As the success of <a href="http://www.discourse.org" rel="nofollow noopener">http://www.discourse.org</a> shows, there is a place for software that does it better, but yours is not competitive even with the wikis circa 2005.</p>
+<p>After initial wiki hype, I don’t see many wiki companies remaining which hints that there isn’t much of a wiki market. There is a market for a software for collaboratively editing documents in a team (Confluence, Quip, Dropbox’s Paper, various children of Etherpad) but they require 50x more dev work than a simple wiki.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/4</link>
+        <pubDate>Sat, 02 Apr 2016 23:21:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3932-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932.rss">Side project to open source business?</source>
+      </item>
+      <item>
+        <title>Side project to open source business?</title>
+        <dc:creator><![CDATA[jcadam]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback.  Well <em>I</em> think it’s a better wiki, of course <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">  – and I think Wikifeat is better suited for an organizational/corporate wiki than MediaWiki.  I think its extensibility via plugins will be its real strength, though I suppose there won’t be very many of those if the project doesn’t achieve much popularity.</p>
+<p>I haven’t done much in the way of marketing/promotion of this project yet, but I agree I definitely need to put up a decent promotional site.  Right now, <a href="http://wikifeat.org" rel="nofollow noopener">wikifeat.org</a> is more where the project documentation lives.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/3</link>
+        <pubDate>Thu, 31 Mar 2016 01:17:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3932-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932.rss">Side project to open source business?</source>
+      </item>
+      <item>
+        <title>Side project to open source business?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3932">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jcadam/40/3225_1.png" class="avatar"> jcadam:</div>
+<blockquote>
+<p>Basically the traditional open source business model.</p>
+</blockquote>
+</aside>
+<p>The problem with that is, your project must be popular before anyone will pay you. And people on Reddit will attack you for selling out, even if you are offering a tons of free stuff (<em>ask me how I know</em>).</p>
+<p>If you want to run this is as a business, treat it as a business. I went to your project page- it just says its a Wiki, like any other wiki. Why would I want to use this wiki? What’s different about yours? Why don’t I just stick to MediaWiki (the Wikipedia project)?</p>
+<aside class="quote" data-post="1" data-topic="3932">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jcadam/40/3225_1.png" class="avatar"> jcadam:</div>
+<blockquote>
+<p>if you think I’d be attempting to enter a way too mature and crowded market?</p>
+</blockquote>
+</aside>
+<p>You can enter a busy market if you are solving a pain the old companies weren’t that well on. There are 1 million email companies, and yet Nathan and Rob created ConvertKit and Drip, and can still charge premium rates.</p>
+<p>The question is: Do you have something unique? Are you solving a major pain no one else is?</p>
+<p>Finally, read this:  <a href="http://thestartupdude.com/what-do-you-do-if-you-have-created-a-product-but-have-no-idea-how-to-market-it/" rel="nofollow noopener">http://thestartupdude.com/what-do-you-do-if-you-have-created-a-product-but-have-no-idea-how-to-market-it/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/2</link>
+        <pubDate>Wed, 30 Mar 2016 09:21:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3932-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932.rss">Side project to open source business?</source>
+      </item>
+      <item>
+        <title>Side project to open source business?</title>
+        <dc:creator><![CDATA[jcadam]]></dc:creator>
+        <description><![CDATA[
+            <p>For a while now, I’ve been working on a personal side project to create an extensible wiki system (which is open source - <a href="https://github.com/rhinoman/wikifeat" rel="nofollow noopener">https://github.com/rhinoman/wikifeat</a>) sort of as a scratch-my-own-itch kind of thing (I don’t really like any of the other solutions currently available).  It’s written in Go (backend) with a SPA javascript app on the frontend, uses markdown (instead of wikitext, etc.), and supports <a href="https://www.wikifeat.org/app/wikis/developer-documentation/pages/plugin-development-guide" rel="nofollow noopener">plugins</a>.  The architecture is designed (microservices) to facilitate extensibility, integration with other services, and scalability.</p>
+<p>I’m using it to host project documentation and the like here: <a href="https://www.wikifeat.org" rel="nofollow noopener">https://www.wikifeat.org</a></p>
+<p>As I get close to being able to release something ‘usable’, the thought has occurred to me that there might be some monetization possibilities here, specifically:</p>
+<ul>
+<li>Offering hosted instances (SaaS)</li>
+<li>Selling support / consulting</li>
+<li>Custom plugin development</li>
+<li>Non-free plugins and extensions <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">
+</li>
+<li>Anything else?</li>
+</ul>
+<p>Basically the traditional open source business model.  I know there are several other options available here, both commercial and open source.   Most of the other open source wikis are rather aged (though some continue to see heavy use and are actively maintained), while the commercial options tend to be incredibly bloated.</p>
+<p>I’m wondering what you folks think of a bootstrapped open source business? And also if you think I’d be attempting to enter a way too mature and crowded market?</p>
+<p>Oh, and if you think my project is garbage, feel free to say so <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932/1</link>
+        <pubDate>Tue, 29 Mar 2016 23:55:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3932-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/side-project-to-open-source-business/3932.rss">Side project to open source business?</source>
+      </item>
+  </channel>
+</rss>

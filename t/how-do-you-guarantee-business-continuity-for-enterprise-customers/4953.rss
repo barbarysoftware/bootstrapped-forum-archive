@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How do you guarantee Business Continuity for enterprise customers?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953</link>
+    <description>Hi Guys! Long time since my last post here ....
+
+I had a demo call yesterday with a prospective customer for my new application [Docparser](https://docparser.com).  The customer really likes the product and wants to integrate it into their system. They already upgraded to a paid subscription in order to better evaluate the product.
+
+Now here is the catch ... the customer is a rather big company and they would want to rely a big part of their business on Docparser. Understandable, they are concerned about me going out of business or changing my business model one day. 
+
+So the question which came up during the call was: &quot;What happens if you go out of business? How can we secure continuity of operations in this case?&quot;
+
+The customer basically told me I should come up a proposition. I think they would not mind paying extra for a some kind of Technology Escrow service. I&#39;m however not sure if I want to deal with all the overhead associated to such an operation.
+
+Did you guys go through a similar situation already? Are there any best-practises I can follow?</description>
+    
+    <lastBuildDate>Tue, 02 Jul 2019 19:19:37 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[skmurphy]]></dc:creator>
+        <description><![CDATA[
+            <p>Another strategy is to include the full cost of the escrow service in your fees to them. You could offer to spread cost over other folks who request it in years 2, 3, …</p>
+<p>Essentially say yes but since you are the only one asking for it you will need to pay for it. Make sure that you are the one to pay the escrow service firm not them so that in event of a disagreement over whether the escrow release has been triggered the escrow service views you as the customer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/11</link>
+        <pubDate>Tue, 02 Jul 2019 19:19:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="4953">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/thibaut_barrere/40/1224_2.png" class="avatar"> thibaut_barrere:</div>
+<blockquote>
+<p>and made my first sale.</p>
+</blockquote>
+</aside>
+<p>Congrats!</p>
+<blockquote>
+<p>Does anyone has more legal wording to share + concrete solutions that would be cheap to implement, for someone selling software components?</p>
+</blockquote>
+<p>Legal wording, no.</p>
+<p>Concrete solution, yes. What I’ve been doing now for years is this:</p>
+<ul>
+<li>My client and I agreed to use my accountant as a trustworthy third party.</li>
+<li>I created a git account with access to the relevant repo and gave the credentials to my accountant</li>
+<li>I’ve instructed my accountant to pass the credentials to my client in the event of my incapacitation.</li>
+<li>Each month my accountant’s assistant signs into to git, making sure the credentials are still valid.</li>
+<li>She then emails both me and the client to confirm that the sign in was successful.</li>
+</ul>
+<p>Here’s the content of the email I (and my client) receive each month:</p>
+<blockquote>
+<p>Today I successfully signed into the Acme Solutions/Foobar Inc escrow account on github.</p>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/10</link>
+        <pubDate>Tue, 14 May 2019 10:33:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[thibaut_barrere]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this discussion!</p>
+<p>I’m launching a commercial counter-part for an OSS Rubygem (<a href="https://www.kiba-etl.org">https://www.kiba-etl.org</a>) and made my first sale. The first client main concern is continuity in case of troubles at the company. I will add them as GitHub collaborator for now (since this is a cheap way to implement a solution in that case).</p>
+<p>Does anyone has more legal wording to share + concrete solutions that would be cheap to implement, for someone selling software components?</p>
+<p>Also I made some research, and most of the software escrow full-fledged services are quite out of touch for a bootstrapper starting something at a mid-pricing point (Kiba Pro is currently sold 950€/year):</p>
+<ul>
+<li>
+<a href="https://www.logitas.com">https://www.logitas.com</a> (2k€/year)</li>
+<li>
+<a href="https://www.codekeeper.co/pricing.html">https://www.codekeeper.co/pricing.html</a> (1k€/year)</li>
+<li>
+<a href="https://www.escrowtech.com/fees-software-escrow.php">https://www.escrowtech.com/fees-software-escrow.php</a> (expensive as you add beneficiaries)</li>
+</ul>
+<p>(still sharing it in case it could help someone).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/9</link>
+        <pubDate>Sun, 12 May 2019 09:44:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[moritz]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks guys for all the good advice and insights! It seems like the customer will continue using Docparser even without fully guaranteed business continuity (contract + escrow) in place. I think it really helped discussing the topic on the phone and assuring them that we are not planning to shut down operations anytime soon.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/8</link>
+        <pubDate>Thu, 18 May 2017 07:54:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[Cheez]]></dc:creator>
+        <description><![CDATA[
+            <p>This is probably the approach with the lowest headache, unless it can be profitable to steal your code.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/7</link>
+        <pubDate>Sat, 29 Apr 2017 23:48:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>For picky corporate customers we are giving a read-only access to the repos in Bitbucket, as well as instruction how to build and install software. In the software there is an option to backup your own data and import it into any environment.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/5</link>
+        <pubDate>Fri, 28 Apr 2017 12:35:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>This is the wording I’ve recently proposed in a similar situation:</p>
+<blockquote>
+<p><strong>Mitigation against SUPPLIER being unable to fulfil this order</strong></p>
+</blockquote>
+<blockquote>
+<p>If, during the term of this order, SUPPLIER ceases trading or for any other reason is unable to fulfil the terms of this order, CUSTOMER will have the right to:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Take ownership of the Heroku environments for <a href="https://customer.example.com" rel="nofollow noopener">https://customer.example.com</a> for use only by CUSTOMER and its subsidiaries.</li>
+<li>Receive non-exclusive, non-transferable licence to the PRODUCT source code for use only by CUSTOMER and it’s subsidiaries, together with access to the source code.</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>To exercise these rights, a representative of CUSTOMER will contact SUPPLIER and request that access. CUSTOMER will need to provide a Heroku account to take ownership of the environments. SUPPLIER will transfer ownership to the provided account and provide the PRODUCT source code as an archive file. The non-exclusive, non-transferable licence will granted in the act of sending the source code in compliance with this agreement.</p>
+</blockquote>
+<blockquote>
+<p>Under this agreement, SUPPLIER will ensure that at least two members of the SUPPLIER team are able to give effect to this agreement. These contacts are A and B. Their contact details are provided below. SUPPLIER will advice of any change to these contact details as soon as reasonably possible.</p>
+</blockquote>
+<p>It’s currently getting reviewed by their legal team.</p>
+<p>I went this route because I can’t see how escrow would practically work for either of us. Of course, this turns on the customer paying enough for a dedicated environment in the first place.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/4</link>
+        <pubDate>Thu, 27 Apr 2017 21:45:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[moritz]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> for the two links! I searched the forum but apparently I used the wrong terms.</p>
+<p>The first link is very helpful and the answer of <a class="mention" href="/u/patio11">@patio11</a> sums it up pretty well. I think for now, I’ll just tell the customer that the contract volume is just too low to justify setting up the legal framework. That being said, creating a continuity plan for the business is definitely something I will be doing soon.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/3</link>
+        <pubDate>Wed, 26 Apr 2017 15:07:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>An excellent question.</p>
+<p>There were some good responses to a similar question earlier:<br>
+<aside class="quote" data-post="1" data-topic="2234">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.bootstrapped.fm/gravelld/40/2416_1.png" class="avatar">
+    <a href="http://discuss.bootstrapped.fm/t/the-hit-by-a-bus-quandry-for-one-person-saas-companies/2234?source_topic_id=4953" rel="nofollow noopener">The "hit by a bus" quandry for one person SaaS companies</a> <a class="badge-wrapper  bullet" href="/c/discussions"><span class="badge-category-bg" style="background-color: #92278F;"></span><span class="badge-category clear-badge" title="Discussions is the place where the real conversations happen... jump right in">Discussions</span></a>
+  </div>
+  <blockquote>
+    Have you ever had prospective clients question what would happen if you were hit by a bus, or some other disaster, which meant you were no longer able to run or support your SaaS? 
+
+For traditional software firms, a mitigation would be to put source code in ESCROW. But for a SaaS model, where the "service" is all important, I don't think this applies. 
+
+(As an aside, sounds almost like a business idea, to be a contingency fallback "administrator" for SaaS apps with drop-in technical, admin and c…
+  </blockquote>
+</aside>
+</p>
+<p>Some escrow options were discussed here:<br>
+<aside class="quote" data-post="1" data-topic="1853">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar">
+    <a href="http://discuss.bootstrapped.fm/t/software-escrow-service/1853?source_topic_id=4953" rel="nofollow noopener">Software Escrow Service?</a> <a class="badge-wrapper  bullet" href="/c/discussions"><span class="badge-category-bg" style="background-color: #92278F;"></span><span class="badge-category clear-badge" title="Discussions is the place where the real conversations happen... jump right in">Discussions</span></a>
+  </div>
+  <blockquote>
+    We're creating a special version of our software, branded with another company's name, for which they are paying us. They'd like us to put the source code and other project resources in escrow, so that in the worst case scenario (me dying...), they can keep their version of the software going. 
+
+Have you experience with doing this? Do you know a firm or individual that I can trust with this?
+  </blockquote>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/2</link>
+        <pubDate>Wed, 26 Apr 2017 11:08:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+      <item>
+        <title>How do you guarantee Business Continuity for enterprise customers?</title>
+        <dc:creator><![CDATA[moritz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Guys! Long time since my last post here …</p>
+<p>I had a demo call yesterday with a prospective customer for my new application <a href="https://docparser.com" rel="nofollow noopener">Docparser</a>.  The customer really likes the product and wants to integrate it into their system. They already upgraded to a paid subscription in order to better evaluate the product.</p>
+<p>Now here is the catch … the customer is a rather big company and they would want to rely a big part of their business on Docparser. Understandable, they are concerned about me going out of business or changing my business model one day.</p>
+<p>So the question which came up during the call was: “What happens if you go out of business? How can we secure continuity of operations in this case?”</p>
+<p>The customer basically told me I should come up a proposition. I think they would not mind paying extra for a some kind of Technology Escrow service. I’m however not sure if I want to deal with all the overhead associated to such an operation.</p>
+<p>Did you guys go through a similar situation already? Are there any best-practises I can follow?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953/1</link>
+        <pubDate>Wed, 26 Apr 2017 08:38:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4953-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-guarantee-business-continuity-for-enterprise-customers/4953.rss">How do you guarantee Business Continuity for enterprise customers?</source>
+      </item>
+  </channel>
+</rss>

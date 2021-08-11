@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+    <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292</link>
+    <description>Hello!
+
+I had DataSnitch running for months, but to be honest I think I&#39;m quite low both on confidence and motivation. I&#39;m not a coder, so the underlying code has been acquired, but I believe I&#39;m really good managing servers and infrastructure.
+
+[DataSnitch][1] monitors your site on many different ways, from simple ICMP up to content checks. It&#39;s not only useful to measure latency or availability from different parts of the world, but also to check if your site contents have changed overnight (even the JS or CSS files). In case your site is compromised and someone injected malicious code, you&#39;ll know before your customers know.
+
+I would also like to offer my services as a sysadmin and infrastructure consultant to other startups. I&#39;ve got a full time job, but a lot of free time after that :smile:  
+
+Cheers
+Pedro
+
+  [1]: https://www.datasnitch.co.uk</description>
+    
+    <lastBuildDate>Tue, 25 Nov 2014 08:32:51 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[lmea]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="30" data-topic="2292">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I was dreaming about “Dashboard as a Service”.</p>
+</blockquote>
+</aside>
+<p>I agree with  your insights below, but at the same time it sounds a lot like what <a href="https://www.geckoboard.com" rel="nofollow noopener">https://www.geckoboard.com</a> actually is doing with some success, it seems … so I think the market for such a thing is there. Maybe with the right focus on educating the <em>potential</em> users on the benefits of a good business dashboard, it might still be a viable bootstrapped service!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/31</link>
+        <pubDate>Tue, 25 Nov 2014 08:32:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="24" data-topic="2292">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grumpi/40/2609_1.png" class="avatar"> grumpi:</div>
+<blockquote>
+<p>There’s a bunch of things (not uptime-related) I would like to monitor with fancy graphs so I can show them to people.</p>
+</blockquote>
+</aside>
+<p>That was my thinking too.</p>
+<p>I was dreaming about “Dashboard as a Service”.</p>
+<p>Then I had a moment of (bootstrapping) sobriety, and got two insights:</p>
+<p><strong>A. People who can’t build their own dashboard, but know they need it … how many there are of them?</strong></p>
+<p>(This one is actually similar to Pedro’s “clueless people who need monitoring”.)</p>
+<p>I realized that such people are a tiny layer between people who are totally non-tech (and hence do not know they may need a dashboard to track their service), and people who are able to build their own dashboard in a few hours of coding (and enjoy it).</p>
+<p>How many of those small group I realistically can convert? That did not seem promising.</p>
+<p><strong>B. This is not a Dashboard-as-a-Service, but Graph-as-a-Service.</strong></p>
+<p>This is what you just said – “show (the graphs) to people”. Showing means embed into the public side of the site. Suddenly, instead of 3-5 admin users, the service could be exposed to hundreds (or thousands, who knows).</p>
+<p>I realized I will have to design the caching, and master-slave replication, and smart routing, and dynamic allocation of VPS, … into the version 1 – and I was not ready for that. I was hoping my version 1 will be happily running in a single VPS on a single instance of Postgres, in a true bootstrap spirit.</p>
+<p>…</p>
+<p>I keep the domain though. May be I will re-visit the idea, but my copy will not talk about uptime monitoring. I would not want to be compared with Pingdoms of this world. I would write about dashboards and control centers, and such. May be I would even offer a hosted version… enterprises are heterogenous, and it is hard to monitor everything in one place.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/30</link>
+        <pubDate>Tue, 25 Nov 2014 00:22:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice service! It does indeed confirm I’ve got a few issues. I’ll work now on those.</p>
+<p>Thank you!!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/29</link>
+        <pubDate>Mon, 24 Nov 2014 23:22:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[atlet]]></dc:creator>
+        <description><![CDATA[
+            <p>Try with this tool: <a href="http://www.mail-tester.com/" rel="nofollow noopener">http://www.mail-tester.com/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/28</link>
+        <pubDate>Mon, 24 Nov 2014 20:36:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[grumpi]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>The root cause is that the activation e-mail seems to always end on the<br>
+junk mail folder, but the problem is that the process is not clear<br>
+enough and I’m not giving any related error message when you try to<br>
+login with a non-confirmed account.</p>
+</blockquote>
+<p>Yep, that fixed it. It was indeed a problem with the spam folder. The email didn’t even make it to the “advertising” tab, it really went to “spam” on gmail - I can’t say for sure why exactly, but changing the mail server to something reputable might help - also, changing the subject line to something more descriptive can’t hurt, like “Welcome to DataSnitch - Your New Account Is Ready”, or something like that. Changing the sender to something more recognizable (the sender currently just plain displays as “info” for me) would be good, too.</p>
+<p>Any case, good luck, it’s basically just a matter of fixing all the little things step by step (I’m currently doing just the same thing on my own application using the feedback of my early adopters, so I know how it can seem like an endless list of things to fix. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> ).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/27</link>
+        <pubDate>Mon, 24 Nov 2014 16:53:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/grumpi">@grumpi</a>, thanks for your reply!</p>
+<p>The “I’m locked out” issue seems to be common and I’m working to fix it. The root cause is that the activation e-mail seems to always end on the junk mail folder, but the problem is that the process is not clear enough and I’m not giving any related error message when you try to login with a non-confirmed account.</p>
+<p>Have a look at your junk mail / spam folder for our email and let me know if following the provided link fixes the issue. Alternatively drop me an e-mail at info [at] <a href="http://datasnitch.co.uk" rel="nofollow noopener">datasnitch.co.uk</a> with your username and I’ll confirm your account.</p>
+<p>As per your suggestions: You’ve got some nice ideas there. I’ve been really motivated by all you leaving comments here and started working with a developer to tackle the many issues identified on my site/application. He’s just now working on a security stuff I didn’t like at all (basically the passwords were being stored encrypted, which is not a good idea as we should just store a salted hash of the passwords). After that I want to work on the UX: Error messages, sign up process, etc. and finally a revamp of both the public pages and specially the control panel, where I’ll take the “make it simple” suggestions. I’m working on mock ups and might include a simple and an advanced differentiated dashboards for different types of users.</p>
+<p>Of course, all this will almost force me to change my pricing/plans, but all current pro users will benefit from the change.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/26</link>
+        <pubDate>Mon, 24 Nov 2014 12:05:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[grumpi]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d just like to say that… there’s potential in reaching people who are clueless, but for that, you need to educate them. I suspect that it’s pretty unlikely for them to find their way onto your blog because they wouldn’t be searching for monitoring. These are probably more like… the people whose misconfigured CMS sites get hacked - so one place where to pick up your customers seems to be wherever they go when they got hacked and are now looking for a solution that mitigates their risks.</p>
+<p>If you do want to appeal to “people who are clueless about monitoring and currently don’t do it”, I think it would be a good idea to write about the problems these people face: how running any kind of software is at least to some degree a risk - considering hacking or crashes (your customers make an effort to configure their servers right, or they’re using reputable service providers but they simply can’t do anything about vulnerabilities of the systems they use, there’s never a 100% guarantee). While being hacked isn’t an overly huge problem for many sites - as long as it’s discovered quickly and fixed - it’s still something that can damage their reputation and profits. Conclude with a step-by-step guide how to set up your service in a way that they’ll know immediately that they got hacked and can take action. Simplicity is key.</p>
+<p>For the non-technical people, the value is as much in the free education as in the service itself, really. And I do agree that that value is very likely more than what you currently charge.</p>
+<p>I signed up to try the service, but now I’m logged out and can’t log back in. Also, the form for setting up monitoring looked a bit off - some of the fields were all left, while the others were more on the right. The monitoring itself seemed to be working, though. Also, the text on the page where I created the monitoring service said something about a text search field but that field wasn’t there - or I just couldn’t figure out which of the fields it was (maybe it’s available in the paid version?).</p>
+<p>Don’t let that discourage you - on the contrary, I think there’s potential. Actually, I do consider using your monitoring service for my site - I’m currently not using monitoring yet, but I know I should.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/25</link>
+        <pubDate>Sun, 23 Nov 2014 21:26:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[grumpi]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Then on the dashboard page the user would see a graph of this value over<br>
+time, and could setup alerts for high or low values (or specific string<br>
+matches for status-like properties).</p>
+</blockquote>
+<p>I like this. There’s a bunch of things (not uptime-related) I would like to monitor with fancy graphs so I can show them to people. Doing this myself would mean searching for the perfect JavaScript Graph library, writing a script that does the monitoring, etc. And I’m not a sysadmin type of person, so I’d be googling/learning all this from scratch and fiddling with it until it works. I’m more or less a junior developer who is busy coding their actual web application.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/24</link>
+        <pubDate>Sun, 23 Nov 2014 21:21:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/johnf">@johnf</a>  Touché. You got me there!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/23</link>
+        <pubDate>Fri, 21 Nov 2014 17:48:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="19" data-topic="2292">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>That would be an excellent idea, IMHO. Not sure how it may work exactly, but even a mentioning that “oh, and we also monitor your site for security breaches” may have a large effect on conversions.</p>
+</blockquote>
+</aside>
+<p>Lots of value here for me.  I’d certainly pay for something like this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/22</link>
+        <pubDate>Fri, 21 Nov 2014 16:53:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="20" data-topic="2292">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mobiplayer/40/1168_1.png" class="avatar"> mobiplayer:</div>
+<blockquote>
+<p>This people are less tech-savvy hence a bit more scared of trying out stuff like this.</p>
+</blockquote>
+</aside>
+<p>But you think they care about how much their javascript files changed?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/21</link>
+        <pubDate>Fri, 21 Nov 2014 15:21:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rfctr">@rfctr</a> I didn’t explained myself well. It’s not just through the price that I’d like to “be different”.</p>
+<p>I would like to reach all that people that have “this site so important to keep up”, but it didn’t even occurred to them that there’s a service like this. This people are less tech-savvy hence a bit more scared of trying out stuff like this. You are so right in one thing, though: £5/mo wouldn’t probably hurt neither. The point of the “£0.99” was to break any psychological barriers for these people, a bit like the Poundland shops in the UK. You might think twice before spending £5, but £1 is a no-brainer <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Not saying you’re not right no your analysis (and I agree going cheap it is not a competitive advantage as anyone can match it, I see it more like just another feature). Even I do have a free plan myself <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Another option I’m considering is building different services around it. Instead of selling a service with multiple features, keep it simple and cheap, use it as a brand builder maybe and offer other more bespoke services on top.</p>
+<p>As per the security stuff, it is something I’m still thinking about, but DataSnitch has already some small features. It can alert you based on % of change on your site, even on just some files (e.g. javascript). I’m not really sure looking for “suspicious code” would have any value over “mate, your JS has been changed more than X%” or, if it has, if it’s worth the effort. That would get me to design “signatures” like the antivirus companies and I’m not sure I can compete on that (I can’t <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:">).</p>
+<p>Thank you again for your time and insights, I really appreciate it!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/20</link>
+        <pubDate>Fri, 21 Nov 2014 14:14:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="17" data-topic="2292">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mobiplayer/40/1168_1.png" class="avatar"> mobiplayer:</div>
+<blockquote>
+<p>Possibly security-related as it is a field I love</p>
+</blockquote>
+</aside>
+<p>That would be an excellent idea, IMHO. Not sure how it may work exactly, but even a mentioning that “oh, and we also monitor your site for security breaches” may have a large effect on conversions.</p>
+<p>What can you detect? Injections of malicious JS? Known issues in the used frameworks/wordpress versions? You know this field better than me, but it would be a <strong>valuable</strong> feature.</p>
+<p>I believe there are some remote security checks products out there. You may check them out and see what can you implement, too.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/19</link>
+        <pubDate>Fri, 21 Nov 2014 13:50:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="17" data-topic="2292">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mobiplayer/40/1168_1.png" class="avatar"> mobiplayer:</div>
+<blockquote>
+<p>but may find it useful and give it a go because of the low price.</p>
+</blockquote>
+</aside>
+<p><strong>The people who are not using monitoring are not doing it because of price.</strong></p>
+<p>Can you imagine anyone who is thinking “I have this site that is <em>important</em> to me to keep up; but $5/mo is too much money, I can’t afford it; my budget for it is $2”?</p>
+<p>This doesn’t sound realistic, at least to me. At that level of pricing $5 is not different from $2. The price is not a basis for making a decision anymore.</p>
+<p>Besides, big players offer free plans – Pingdom, for example. You cannot compete with them on price.</p>
+<p><strong>You need to raise your prices to have no excuse of thinking about them as your advantage</strong> and then start looking at what <em>real</em> differentiators you may offer.</p>
+<p>For example, since you’re already watching JS versions and such, you may offer a changelog functionality, i.e.</p>
+<pre><code>2014-11-20 CSS has updated the definition of *title* class
+2014-11-15 JS library NNN has changed, new size 114200, old size 89104
+...
+</code></pre>
+<p>I remember someone here was working on a similar idea for github deployments. While I disagree with him that development teams should rely on such tools, small site owners may find it useful, because many still are doing changes without any VCS or CMS.</p>
+<p>Then you may try and target it to web design freelancers or smallest web shops, offering them monitoring of many (up to say 100) sites for one annual fee. The benefit for them is the change tracking AND having the same monitoring system for all their sites controlled from one dashboard.</p>
+<p><strong>Let me repeat it: your low price is not a competitive advantage.</strong></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/18</link>
+        <pubDate>Fri, 21 Nov 2014 13:34:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rfctr">@rfctr</a> Hey buddy, thanks for the advice!</p>
+<p>My idea was to appeal to users that are not yet in the market for a service like this. Small companies, web designers, etc that never thought about getting one of these services, but may find it useful and give it a go because of the low price.</p>
+<p>In any case you’ve got a really good point and I have to somehow differentiate my offering from the others. I’ll think about it and try to build something. Possibly security-related as it is a field I love <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p><a class="mention" href="/u/atlet">@atlet</a> as I was telling <a class="mention" href="/u/rfctr">@rfctr</a> I would like to appeal to customers that are not yet in the market. To be honest, it is not as low as it sounds as it is in £ and, although I offer a big number of monitors/instances, most of the people won’t need more than 10% <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/17</link>
+        <pubDate>Fri, 21 Nov 2014 11:09:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[atlet]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/mobiplayer">@mobiplayer</a> any reason, why so low price?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/16</link>
+        <pubDate>Fri, 21 Nov 2014 08:42:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="mobiplayer" data-post="13" data-topic="2292">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mobiplayer/40/4382_2.png" class="avatar"> mobiplayer:</div>
+<blockquote>
+<p>but didn’t work really well…</p>
+</blockquote>
+</aside>
+<p>This market is saturated. You need to attack the problem at some unique angle.</p>
+<p>I, too, in past was designing a similar service (decided against it when I realized I do not have enough resources, and shut it down). My take on it was not just plain up-down monitoring, but letting my users to point my robot to an XML or JSON page, where any key-value properties could be collected, even related to the inner working of the system.</p>
+<p>For example, a user may have exposed</p>
+<pre><code>{ "jdbc.connections": 12}
+</code></pre>
+<p>and my app would record this value. Then on the dashboard page the user would see a graph of this value over time, and could setup alerts for high or low values (or specific string matches for status-like properties).</p>
+<p>Looked like this (pure JS graphs):</p>
+<p><img src="/uploads/bootstrapped/2654/2a6f9b5f45bce21d.png" width="350" height="200"> </p>
+<p>(Here yellow color is the “NOTICE” alert range, and the orange one is “WARNING”.)</p>
+<p>This way the user may have exposed any number of important parameter to monitor – and it only took to add one line to the JSON or XML reporter.</p>
+<p>Every system is unique, and only the creator knows what parameters are critical and what not. So I gave some control into the hands of user who’s being monitored.</p>
+<p>As I said, I shut it down.</p>
+<p>My point is: your current offer is not different from Pingdom or other big boys. The price is low, but the price alone won’t make me switch. You need to find something that big guys do not offer (and likely won’t offer, because they do not care).</p>
+<p>I believe you shouldn’t worry about your programming skills. Programming is easy. Coming up with what to program is hard.</p>
+<p><strong>Good luck!</strong></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/15</link>
+        <pubDate>Fri, 21 Nov 2014 02:47:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/kalenjordan">@kalenjordan</a> feel free to give <a href="https://www.datasnitch.co.uk" rel="nofollow noopener">DataSnitch</a> a go <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p><a class="mention" href="/u/coreysnipes">@coreysnipes</a> wow, excellent advice. I’ll actually give oDesk a go as there are some things I would like to change.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/14</link>
+        <pubDate>Thu, 20 Nov 2014 17:59:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/atlet">@atlet</a> hey! nice site!</p>
+<p>As per your question… I don’t! that’s the problem! I don’t acquire much customers…! <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"> so far I’ve been doing some poor man’s marketing campaign on Facebook and Twitter (friends <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:">); also tried offering free months in exchange of promotion (for some people with many followers and so on) but didn’t work really well… I wish I could be of more help!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/13</link>
+        <pubDate>Thu, 20 Nov 2014 17:14:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/mobiplayer">@mobiplayer</a> - Non-unique is fine if you serve a real need and execute well.  There’s plenty of market for this.  I have fears like that all over the business (“How on earth would I handle ___?”  )  There’s always that sort of thing, even if you have a deep technical background.</p>
+<p>If you have some idea of how to get help, that’ll go a long way.  If you think it would help to have someone technical who knows the code available, spend a little $$ on oDesk and try out a few contractors on small tasks.  It’ll take some of your time and money, but then at the end you’ll have a relationship with one or two people with strong technical skills who can dive in and help with that sort of thing.  It’s not foolproof, but it gives you better options.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/12</link>
+        <pubDate>Thu, 20 Nov 2014 15:44:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[atlet]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/mobiplayer">@mobiplayer</a>, welcome to the club. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I also created similar service like yours (<a href="http://www.piltek.com" rel="nofollow noopener">www.piltek.com</a>). How do you acquire new customers?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/11</link>
+        <pubDate>Thu, 20 Nov 2014 07:43:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m digging this idea.  Just the other day I was thinking about this.  Something that checks not only for downtime but things like messed up content or javascript.</p>
+<p>I’ve had an issue a few times where I messed up my javascript file by accident.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/10</link>
+        <pubDate>Thu, 20 Nov 2014 02:54:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/coreysnipes">@coreysnipes</a> I think the idea is not bad, but is far from original or innovative. That doesn’t worry me much, though. There’s so many people out there without monitoring that there’s market to grow <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I feel a lack of confidence on some of my skills. E.g. I’m not a coder at all, but I can definitely read code and do minor modifications. I’m scared what would happen if I got a BIG issue that needs rewriting code? It is going to take me time to fix.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/9</link>
+        <pubDate>Wed, 19 Nov 2014 20:53:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>Oops, so it is! It ended up being about $USD 1.60/mo.  Still a pretty good deal I thought.  I do have some suggestions for the signup and admin experience – I’ll set up some monitors later this week and shoot you an email.</p>
+<p>You mentioned your confidence &amp; motivation are lagging.  Does it feel like you’re the only one interested in the product?  Like maybe you’ve got the idea all wrong and nobody’s actually going to buy it?  Or is it something else?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/8</link>
+        <pubDate>Wed, 19 Nov 2014 12:11:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+      <item>
+        <title>Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/coreysnipes">@coreysnipes</a> great, thank you!<br>
+It is one Pound Sterling so more like 1.25€ I believe! could seem like a small difference but it’s actually 25% extra (depending on the daily exchange) <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I’m leveraging different cloud providers for my network and I believe it shall scale (as per my testing) very good for this purpose, hence the price.</p>
+<p>Please bring any feedback. I know it’s not a perfect system and I’m afraid I may be missing errors.</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292/7</link>
+        <pubDate>Wed, 19 Nov 2014 10:51:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2292-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-pedro-from-datasnitch-and-ill-let-you-know-if-your-site-is-down/2292.rss">Hi! I&#39;m Pedro from DataSnitch and I&#39;ll let you know if your site is down</source>
+      </item>
+  </channel>
+</rss>

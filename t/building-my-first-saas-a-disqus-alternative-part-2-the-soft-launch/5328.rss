@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+    <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328</link>
+    <description>First of all, thank you for the incredible feedback on my [first post](http://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306) on this forum.
+
+So what&#39;s changed since the last post?
+
+* The site is live! Link here : https://hostedcomments.com/ The basic functionality is up : adding a website, embedding a small code snippet to add comments to the website, and the actual commenting itself works pretty well. Adding, editing, deleting and replying to comments works. There is also a reddit style voting system. In terms of feature parity with Disqus, a few important pieces are missing : email alerts for comment related notifications, replying to comments by email, anonymous posting of comments. There are also areas that I plan to significantly improve : the look and feel of the website, the moderation tools and optimizations for improved performance. Since this is just an MVP, I decided to leave out the mentioned features. There is also no payment processing built in and will only be added if I manage to get to a point where manually sending invoices becomes a pain.
+
+* I heard all the complaints about pricing, here as well as while talking to potential customers and decided to make the plans more generous. $29/month for 1 million pageviews and $99/month for 5 million pageviews. I believe this is more palatable for potential cutomers. I&#39;ve avoided introducing a lower tier of $5 or $10 per month for now, but depending on the demand from potential customers, it&#39;s something I might rethink.
+
+* I&#39;ve kept the code closed source. This is obviously a controversial topic, but weighing out the pros and cons in my specific case, I decided to keep it closed source.
+
+* No sales yet. No surprises here. I am in discussions with potential customers and learned a few interesting use cases of my platform. People want to integrate a commenting system into existing products using an api. Eg- Managing accounts for users of niche blogging software. Allowing users to manage accounts is something I did not think about when building this product.
+
+* Marketing activites : as of now it&#39;s limited to personal outreach and blogging. People on the previous thread gave some interesting ideas about building a tool to compare performance vs Disqus. It&#39;s something I&#39;ll explore in the future.
+
+* I started using the commenting platform on my site ( example page : https://www.ploggingdev.com/2017/08/building-a-disqus-alternative-part-1--research/ ) and it works great so far. I have an other project ( ploghub.com ) which uses a basic commenting system custom built for that project which I will replace with Hosted Comments&lt;sup&gt;tm&lt;/sup&gt;.
+
+Since I am in beta right now I am not yet charging users, feel free to try out the platform and let me know you think. All feedback is welcome!</description>
+    
+    <lastBuildDate>Wed, 27 Sep 2017 01:38:18 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ll fix the js error, good catch.</p>
+<p>I’ll add either a gif or a video to the home page to show how the comments system works.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/9</link>
+        <pubDate>Wed, 27 Sep 2017 01:38:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5328-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss">Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>
+<p>Thanks for the feedback. I received a lot of criticism regarding the landing page and that’s something I’m going to overhaul completely. Any recommendations on where I can find some good templates?</p>
+</li>
+<li>
+<p>I’ll take a look at the broken links in the about page.</p>
+</li>
+<li>
+<p>Suggestions on how I can show a demo on the home page? I’m considering a gif or a short video explaining how the site works.</p>
+</li>
+<li>
+<p>I’m looking to introduce a $10/month plan for 200,000 pageviews.</p>
+</li>
+<li>
+<p>Social login is on the roadmap.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/8</link>
+        <pubDate>Wed, 27 Sep 2017 01:36:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5328-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss">Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/038baee2ca7e962265b658df6c1dc97d3c0882dc.png" alt="23 PM" width="413" height="130"></p>
+<p>It’s a good idea to use <a href="https://chrome.google.com/webstore/detail/javascript-errors-notifie/jafmfknfnkoekkdocjiaipcnmkklaajd" rel="nofollow noopener">https://chrome.google.com/webstore/detail/javascript-errors-notifie/jafmfknfnkoekkdocjiaipcnmkklaajd</a> extension for Chrome at least for websites you develop.</p>
+<p>Also, you need “see in action” demonstration where I can see how it looks without creating an account.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/7</link>
+        <pubDate>Tue, 26 Sep 2017 19:25:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5328-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss">Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+        <dc:creator><![CDATA[shanelabs]]></dc:creator>
+        <description><![CDATA[
+            <p>Great job on getting something up and running!</p>
+<p>A few (hopefully constructive) criticisms:</p>
+<ol>
+<li>I know this is an MVP, but it doesn’t look professional. Spend $50 on a decent template that will make your site look less beta.</li>
+<li>There are some broken links on your /about page</li>
+<li>I’d like to see a demo and/or some screenshots on your homepage</li>
+<li>I agree with others that $29/mo is a bit high.</li>
+<li>I think the biggest turn off is the user registration (not owner, but commenters). I don’t want my users to have to register with some new site just so they can comment. Either take advantage of public authentication like Disqus, or make it account-less and use a reCaptcha</li>
+</ol>
+<p>Again, great job at getting started - I feel your momentum and it’ll be important to keep at it, as anything like this will take years before it catches on.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/6</link>
+        <pubDate>Tue, 26 Sep 2017 18:16:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5328-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss">Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I would advise introducing a lower tier, possibly single digits.</p>
+</blockquote>
+<p>That’s something I will consider if I don’t manage to make any sales at the current prices. As of now, I have only talked to a few potential customers and most don’t seem to take issue with the current pricing. My target customer is someone who generates income from their blog, so paying $30/month is generally not an issue.</p>
+<p>Regarding the suggestion about limiting number of comments in each plan, this is something I will bring up with potential customers and see what they think. If they find the comments/post based plans more appealing then I’m open to it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/5</link>
+        <pubDate>Tue, 26 Sep 2017 17:18:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5328-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss">Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Beware of feedback within the programming echo chamber</p>
+</blockquote>
+<p>Emphatically agree. When Discourse was at the receiving end of hate from tech forums, Jeff Atwood tweeted something like “they are not real users, just meta commentators”. I can see where he’s coming from.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/4</link>
+        <pubDate>Tue, 26 Sep 2017 17:04:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5328-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss">Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+        <dc:creator><![CDATA[yashchandra]]></dc:creator>
+        <description><![CDATA[
+            <p>I am generally in the “Raise your Price” group but in this case, I am not sure if $29/Month or higher is a good starting point. You are competing with services such as Disqus and Facebook Comments primarily. For any customers who are already on Disqus/fb comments, it will be a real hard sell to switch. If the argument against Disqus is ads, then their premium plan is only $10/Month (no ads).</p>
+<p>I would advise introducing a lower tier, possibly single digits.</p>
+<p>Also, if I am a blog owner, why should I pay based on how many pageviews I am getting ? I would rather pay based on the activity and comments if at all. So if you do want to charge based on activity, why not restrict the number of comments etc. in a lower tier on a specific post ? Something like:</p>
+<ul>
+<li>Up to 10 comments per post in lower tier</li>
+<li>Unlimited comments in higher tier (or choose a higher limit if not unlimited)</li>
+</ul>
+<p>This way, if the blog owner is not getting a lot of activity, they are not forced to pay the higher tier. If they do generate enough activity, they will then be more inclined to upgrade. My 2 cents.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/3</link>
+        <pubDate>Tue, 26 Sep 2017 17:00:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5328-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss">Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p><em>I’ve kept the code closed source. This is obviously a controversial topic, but weighing out the pros and cons in my specific case, I decided to keep it closed source.</em></p>
+<p>Hmmm… I don’t consider this controversial at all. Nobody expects Snickers to make their recipe public.  I think only a minority of programmers would expect it to be open sourced (and everyone else doesn’t even know what we’re talking about). Beware of feedback within the programming echo chamber <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/2</link>
+        <pubDate>Tue, 26 Sep 2017 16:49:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5328-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss">Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <p>First of all, thank you for the incredible feedback on my <a href="http://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306">first post</a> on this forum.</p>
+<p>So what’s changed since the last post?</p>
+<ul>
+<li>
+<p>The site is live! Link here : <a href="https://hostedcomments.com/" rel="nofollow noopener">https://hostedcomments.com/</a> The basic functionality is up : adding a website, embedding a small code snippet to add comments to the website, and the actual commenting itself works pretty well. Adding, editing, deleting and replying to comments works. There is also a reddit style voting system. In terms of feature parity with Disqus, a few important pieces are missing : email alerts for comment related notifications, replying to comments by email, anonymous posting of comments. There are also areas that I plan to significantly improve : the look and feel of the website, the moderation tools and optimizations for improved performance. Since this is just an MVP, I decided to leave out the mentioned features. There is also no payment processing built in and will only be added if I manage to get to a point where manually sending invoices becomes a pain.</p>
+</li>
+<li>
+<p>I heard all the complaints about pricing, here as well as while talking to potential customers and decided to make the plans more generous. $29/month for 1 million pageviews and $99/month for 5 million pageviews. I believe this is more palatable for potential cutomers. I’ve avoided introducing a lower tier of $5 or $10 per month for now, but depending on the demand from potential customers, it’s something I might rethink.</p>
+</li>
+<li>
+<p>I’ve kept the code closed source. This is obviously a controversial topic, but weighing out the pros and cons in my specific case, I decided to keep it closed source.</p>
+</li>
+<li>
+<p>No sales yet. No surprises here. I am in discussions with potential customers and learned a few interesting use cases of my platform. People want to integrate a commenting system into existing products using an api. Eg- Managing accounts for users of niche blogging software. Allowing users to manage accounts is something I did not think about when building this product.</p>
+</li>
+<li>
+<p>Marketing activites : as of now it’s limited to personal outreach and blogging. People on the previous thread gave some interesting ideas about building a tool to compare performance vs Disqus. It’s something I’ll explore in the future.</p>
+</li>
+<li>
+<p>I started using the commenting platform on my site ( example page : <a href="https://www.ploggingdev.com/2017/08/building-a-disqus-alternative-part-1--research/" rel="nofollow noopener">https://www.ploggingdev.com/2017/08/building-a-disqus-alternative-part-1--research/</a> ) and it works great so far. I have an other project ( <a href="http://ploghub.com" rel="nofollow noopener">ploghub.com</a> ) which uses a basic commenting system custom built for that project which I will replace with Hosted Comments<sup>tm</sup>.</p>
+</li>
+</ul>
+<p>Since I am in beta right now I am not yet charging users, feel free to try out the platform and let me know you think. All feedback is welcome!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328/1</link>
+        <pubDate>Tue, 26 Sep 2017 07:58:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5328-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328.rss">Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Feedback for Pile - a reporting tool for startups</title>
+    <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376</link>
+    <description>Hi community,
+
+I&#39;ve been building products and startups for 5 years, and the journey has been fantastic so far! Still, I&#39;ve always faced the same challenges in all the projects:
+
+* Collecting metrics and KPIs by using different services.
+* Maintaining spreadsheets to store all the data. 
+* Producing presentations to report to stakeholders.
+* Developing (weekly, monthly, yearly) reports for stakeholders.
+
+This is often a painful process. It can be problematic, as it takes a huge amount of time and effort out of everyone involved. That&#39;s why I thought about a solution: 
+
+1. Connect your data sources and get a visual dashboard with all your important metrics and KPIs. Have them always accessible in one place.
+2. Export graphs and visuals into reports to share with stakeholders. Easily create stories and updates of your progress.
+
+To validate this, I&#39;ve built www.pilemetrics.com. I&#39;d like you to check it and give me your feedback on:
+
+1. How do you work with your KPIs, goals, and objectives within your team?
+2. Do you use any similar products? If so, which one/s?
+3. What did you understand from the landing page? 
+
+Thanks so much for your time and help!</description>
+    
+    <lastBuildDate>Mon, 17 Oct 2016 08:23:32 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[Megano]]></dc:creator>
+        <description><![CDATA[
+            <p>Exactly <a class="mention" href="/u/rfctr">@rfctr</a>. We thought on the on the platform problem, and how difficult it’s to build it from the ground up.</p>
+<p>This is why we decided to do something else. We’re exploring how to get more quantitative analytics from the documents and presentations you send to possible customers, clients or even investors. A tool for marketers, sales or CEOs of SMBs.</p>
+<p>From what you’ve said in the previous comment, this probably won’t be for you but check it out: <a href="http://pilemetrics.com" rel="nofollow noopener">http://pilemetrics.com</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/11</link>
+        <pubDate>Mon, 17 Oct 2016 08:23:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="4376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/megano/40/3424_1.png" class="avatar"> Megano:</div>
+<blockquote>
+<p>I didn’t specify any data source, because I’m trying to learn to who I can provide more value, and build the integrations that are more useful for them</p>
+</blockquote>
+</aside>
+<p>If you don’t decide,  you’d be building a platform, not an application, and would have to compete against Geckoboard and others (and they will crush you and won’t even notice you).</p>
+<aside class="quote" data-post="7" data-topic="4376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/megano/40/3424_1.png" class="avatar"> Megano:</div>
+<blockquote>
+<p>Which are the data sources you’ll need?<br>
+2- What do you do for a living?<br>
+3- Do you have the problem of having KPIs and metrics in different services and spreadsheets? If so, how you’re solving it?</p>
+</blockquote>
+</aside>
+<p>Well, I’m not one of those SaaS startups guys. I’m within a large enterprise, and my groups needs to collect, query and present to business sponsors ours custom-defined time series. For business we need read-only pages, but for us we need a simple UI for writing queries against the said time series. On premises.</p>
+<p>Currently the data are stored in a snapshot CSV files, read every hour. Thousands and thousands of files. Each containing hundreds or thousands of events. When we need to produce a report for business (“was there anything unusual with traffic on this LOB in this timespan?”), we have to write a custom Perl script that filters the data to import them into Excel.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/10</link>
+        <pubDate>Wed, 28 Sep 2016 02:29:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[Megano]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="4376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/aeden/40/1319_1.png" class="avatar"> aeden:</div>
+<blockquote>
+<p>Our company is small enough so I’d expect each team member to be able to access the dashboards as they see fit and generate reports mainly for sharing particular views with the rest of the team.</p>
+</blockquote>
+</aside>
+<p>Thanks for your answer. Makes complete sense <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I have some questions for you, don’t answer them if you feel you don’t want to!<br>
+1- What do you understand by ‘small’? How many employees?<br>
+2- What the company does?<br>
+3- How the company is structured? By departments, or by teams from different disciplines?</p>
+<p>Thanks for your help!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/9</link>
+        <pubDate>Thu, 22 Sep 2016 07:42:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[Megano]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>What datasources are available?</p>
+</blockquote>
+</aside>
+<p>Here’s my main issue. I didn’t specify any data source, because I’m trying to learn to who I can provide more value, and build the integrations that are more useful for them. e.g. if I’m focus on PMs, they need to have product datasources (Google Analytics, Mixpanel, KISSmetrics, and so on), but marketing people may need other datasources (Social networks, etc) and maybe the board needs another different (or everything!).</p>
+<aside class="quote" data-post="4" data-topic="4376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Can I implement a custom datasource say by submitting data points to some API?</p>
+</blockquote>
+</aside>
+<p>Regarding the creation of a custom data sources it’s out of focus by now. But let’s see how the things evolve <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote" data-post="5" data-topic="4376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>About page lacks the faces. Faces - or sketches thereof - are must-have nowadays. What are you hiding? <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+</blockquote>
+</aside>
+<p>haha! I’m not hiding anything. The only thing is that I’m building also the team. I prefer to wait to be 2/3 onboard rather than put only my face. Soon will be faces in the about section <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<hr>
+<p>Thanks for questions, are really helpful for me! Now, I have a few questions for you:<br>
+1- Which are the data sources you’ll need?<br>
+2- What do you do for a living?<br>
+3- Do you have the problem of having KPIs and metrics in different services and spreadsheets? If so, how you’re solving it?<br>
+4- How do you share the information across the different people/teams/stakeholders of the organization?</p>
+<p>As you can see, I’m in a VERY early stage <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/7</link>
+        <pubDate>Thu, 22 Sep 2016 07:35:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/megano/40/3424_1.png" class="avatar"> Megano:</div>
+<blockquote>
+<p>What about the reporting tool associated to this dashboards? Do you create reports for other stakeholders or teams? How do you do this part?</p>
+</blockquote>
+</aside>
+<p>Our company is small enough so I’d expect each team member to be able to access the dashboards as they see fit and generate reports mainly for sharing particular views with the rest of the team.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/6</link>
+        <pubDate>Wed, 21 Sep 2016 06:02:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>About page lacks the faces. Faces - or sketches thereof - are must-have nowadays. What are you hiding? <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/5</link>
+        <pubDate>Wed, 21 Sep 2016 02:46:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4376">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/megano/40/3424_1.png" class="avatar"> Megano:</div>
+<blockquote>
+<p>Connect your data sources</p>
+</blockquote>
+</aside>
+<p>What datasources are available?</p>
+<p>Can I implement a custom datasource say by submitting data points to some API?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/4</link>
+        <pubDate>Wed, 21 Sep 2016 02:44:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[Megano]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your comment <a class="mention" href="/u/aeden">@aeden</a> !</p>
+<p>I’ve tried other services and I agree with you on that point! We’re trying to make the connection process as seamless as possible. What we’re testing out is the ability to connect a service (Google Analytics for example) and choose from there the metrics you want to have in the dashboard. Thanks for your feedback on this point, this will be a key thing to focus on <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>What about the reporting tool associated to this dashboards? Do you create reports for other stakeholders or teams? How do you do this part?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/3</link>
+        <pubDate>Tue, 20 Sep 2016 07:09:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>I need more details on the “One-click connection”. Time and time again I’ve tried tools for collecting various KPIs in a single location and the hassle of integrating data sources is <em>always</em> the primary issue. Tons of tools offer beautiful dashboards, but getting data into them is just a pain.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/2</link>
+        <pubDate>Mon, 19 Sep 2016 05:43:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+      <item>
+        <title>Feedback for Pile - a reporting tool for startups</title>
+        <dc:creator><![CDATA[Megano]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi community,</p>
+<p>I’ve been building products and startups for 5 years, and the journey has been fantastic so far! Still, I’ve always faced the same challenges in all the projects:</p>
+<ul>
+<li>Collecting metrics and KPIs by using different services.</li>
+<li>Maintaining spreadsheets to store all the data.</li>
+<li>Producing presentations to report to stakeholders.</li>
+<li>Developing (weekly, monthly, yearly) reports for stakeholders.</li>
+</ul>
+<p>This is often a painful process. It can be problematic, as it takes a huge amount of time and effort out of everyone involved. That’s why I thought about a solution:</p>
+<ol>
+<li>Connect your data sources and get a visual dashboard with all your important metrics and KPIs. Have them always accessible in one place.</li>
+<li>Export graphs and visuals into reports to share with stakeholders. Easily create stories and updates of your progress.</li>
+</ol>
+<p>To validate this, I’ve built <a href="http://www.pilemetrics.com" rel="nofollow noopener">www.pilemetrics.com</a>. I’d like you to check it and give me your feedback on:</p>
+<ol>
+<li>How do you work with your KPIs, goals, and objectives within your team?</li>
+<li>Do you use any similar products? If so, which one/s?</li>
+<li>What did you understand from the landing page?</li>
+</ol>
+<p>Thanks so much for your time and help!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376/1</link>
+        <pubDate>Sat, 17 Sep 2016 14:31:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4376-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-for-pile-a-reporting-tool-for-startups/4376.rss">Feedback for Pile - a reporting tool for startups</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Building Your Saas App On Top of WordPress?</title>
+    <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309</link>
+    <description>Yep, I went there.  :)  Let&#39;s hope this doesn&#39;t start a religious war.
+
+So, [SmallSpec][1] is at the very-rough-internal-prototype stage.  My plan has been to develop the product in ASP.NET MVC (Razor), primarily because that stack is in my own personal wheelhouse enough that I can actually review and vouch for the code, even if I didn&#39;t write it myself (which I haven&#39;t, and probably won&#39;t).
+
+But then I got to thinking - if I&#39;m willing to cut the umbilical enough to not write the code, maybe it would be OK for me to not even understand the code?  Maybe it would be OK for me to be purely a businessman on this one, and not be an engineer at all?  It&#39;s still early enough that I could scrap the work we&#39;ve done and go a different direction if there were sufficient benefit to doing so.
+
+And that sort of thinking led me to wonder if it was possible/wise/manageable to build my Saas app on top of WordPress?
+
+The pros, as I see them, are that there&#39;s already a sound membership/user/authentication system in place.  There&#39;s already a sound system in place for plug-ins and extensions.  There&#39;s already a sound system in place for theme-ing (which might come in handy for letting customers theme their spec sites for visiting clients).
+
+But what I don&#39;t know is whether or not all that equates to being a good place to bolt an app onto.
+
+The cons - well, con - is that I have a deeply-held, seething hatred of WordPress.  Every.  Single.  Time.  I try to do anything with WP it seems 10x more difficult and 10x less obvious than it needs to be, despite everyone else marveling at how simple and obvious everything is in WP.  But hey, if I&#39;m not building it, maybe my personal struggles with WP are moot.
+
+So, questions for discussion:
+
+Have any of you built your Saas app on top of WP?  
+How did you do it without customizing any WP core code?
+What kid of troubles did you encounter?   
+What were the primary benefits (as you see them)?  
+Would you do it again?
+
+  [1]: http://www.smallspec.com</description>
+    
+    <lastBuildDate>Mon, 16 Jan 2017 18:15:10 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[ezekg]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve built countless WordPress sites (small brochure to high traffic), and I would not recommend building any type of SaaS on top of it. WordPress is just too bloated for anything not blog-related. Instead of quickly setting up routes/controllers like you would in Rails or Laravel, you would have to create separate post types and page templates just to get the same functionality; what should be a quick and easy job turns into a chore.</p>
+<p>WordPress offers little support for custom routing logic (e.g., redirects) and authentication, all of which end up turning into spaghetti code if you’re not careful. And then let’s not even get started with how you would implement custom models/tables and business logic…</p>
+<p>In the end, it’s faster to set up authentication/subscriptions using a modern framework like Rails paired with Stripe or a similar payments platform than to scour the web for a WP plugin that does the same, but is just opinionated enough to become a headache when implementing the actual SaaS portion of your product.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/39">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/39</link>
+        <pubDate>Mon, 16 Jan 2017 18:09:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-39</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>Any SaaS app where you are just taking some configuration settings from your customers (i.e url, color choices, some input text) you could use WP for.  Hellobar from what I understand is probably doing very much the same thing, and the actual runtime of the app is probably using a CDN and the end user just pastes the .js file on their site.   If you then require some analytics on top of that you could create a 2nd api service to capture that data.  So yes you can WP but like you said it depends what your SaaS is ultimately doing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/38">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/38</link>
+        <pubDate>Mon, 16 Jan 2017 16:20:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-38</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[niallobrien]]></dc:creator>
+        <description><![CDATA[
+            <p>I think the main reason, as discussed above, is to simply leverage the communities of these platforms and possibly get an MVP out the door much more quickly. Sure, perhaps a Craft-based solution might not scale as cost effectively as a homegrown solution, but I would be interested to see financial statistics on how they compare, if such statistics exist.</p>
+<p>On another note, I spent some time in the Meteor community before they pivoted the framework to where it is today (React + GraphQL) and back then people always raised scaling issues with regards to Blaze (the templating library) and its performance and how Meteor managed realtime with MongoDB (they were tailing the oplog; operation log, and doing complex data diffs on the server before pushing updates to the clients instead of just handling it all in the service layer, which would’ve been a much better solution; see Feathers.js) and the community leaders constantly said - scaling isn’t an issue and if it is, then it’s a good problem to have. The other side of that debate was that as soon as you hit scaling issues, you either threw money at the problem (a basic Meteor app easily cost much more to run than a Laravel, Wordpress, Craft etc. based app to begin with) and when money could no longer help with scaling issues, you began to strip out Meteor altogether. Food for thought for sure.</p>
+<p>Another avenue I’m exploring is utilising Firebase. You get realtime &amp; easy, CDN deployments for a very reasonable price and since they’ve been bought by Google, they now offer Google storage and are beta-testing Firebase integration with Google Cloud Functions for when you really need a backend process (much like AWS Lambda). Having all of this functionality under one roof might be beneficial to some and help get to market quicker or simple get an MVP out the door quicker.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/37">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/37</link>
+        <pubDate>Mon, 16 Jan 2017 04:38:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-37</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Craft would be a good start depending on the product. Why would you want to inherit someone else’s code though? Using something like Laravel and Spark might be a better option. You don’t start from scratch but you have a lot more flexibility than starting with a cms</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/36</link>
+        <pubDate>Mon, 16 Jan 2017 03:54:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-36</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[niallobrien]]></dc:creator>
+        <description><![CDATA[
+            <p>Very interesting discussion - I too am thinking of building on top of something like Wordpress, Expression Engine or Craft. Not only could I plugin in membership functionality, but full eCommerce setup, subscriptions etc. Of course this is attractive when you’re trying to build an MVP quickly. But I also have to wonder, would Laravel Spark not be a better solution?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/35</link>
+        <pubDate>Mon, 16 Jan 2017 01:41:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-35</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>What ever works is great… if it brings value to your users and you that’s fantastic. It is more of an ecosystem than an application framework… As a developer, I see the whole blogging backend as a hinderance… I am just about to ditch it even for blogging … that’s how fed up of it I am… lol</p>
+<p>However, if you can find the lego blocks that work for what you need it’s cheap… and if you outgrow it then it becomes a rich man’s problem and income solves everything… you can then get it replaced with a purpose built app…</p>
+<p>I guess we are not saying it is not useful … it can be a great entry point… but it is severely limited in many regards especially if you compare it to something built on a real app framework (which Wordpress is not…).</p>
+<p>Glad it’s working for you…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/34</link>
+        <pubDate>Sun, 18 Dec 2016 03:52:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-34</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[avdi]]></dc:creator>
+        <description><![CDATA[
+            <p>I had my membership site on a hosted platform. For a long time I considered<br>
+(and wrote code for) moving it to a custom-built app of my own.</p>
+<p>Then, earlier this year, I chose to rebuild the site on commodity WordPress<br>
+and (carefully chosen) off-the-shelf plugins.</p>
+<p>It’s one of the best business OR development decisions I’ve ever made.</p>
+<p>I’d say AMA, but I don’t know how much time I’ll have to answer questions.<br>
+Now that I’m not distracted by how I’m going to add new features to the<br>
+site, I’m going pretty full-throttle on growing the business these days <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>EDIT: That said, my service is a membership training site. I can’t speak to building a full-fledged custom app on top of WordPress. Although after the positive experience I’ve had so far, at least the CMS side of any future project I create will probably be WordPress.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/33</link>
+        <pubDate>Thu, 08 Dec 2016 17:05:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-33</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[infocaptor]]></dc:creator>
+        <description><![CDATA[
+            <p>I did consider building infocaptor on top of wordpress and invested significant time learning how to build plugins. My main attraction towards wordpress was the membership portion and thought I could convert each post or page into a dashboard or report so it would be fairly easy. Plugin building turned out easy but in the process I learnt that it has too much overhead for processing each step.</p>
+<p>I wanted the option to sell it as self hosted and that is where the wordpress license killed it. It was simply too much to just use the membership portion.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/32</link>
+        <pubDate>Wed, 07 Dec 2016 14:55:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-32</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="29" data-topic="309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/bharanim/40/3433_1.png" class="avatar"> bharanim:</div>
+<blockquote>
+<p>The perceived benefits of Wordpress’s existing membership/authentication system and the plugin ecosystem is not worth the time and energy you would have to spend to customize &amp; maintain it.</p>
+</blockquote>
+</aside>
+<p>Exactly!</p>
+<p>Most of these membership plugins are ugly, inflexible, and all bring their own baggage. They are so painful to use, writing your own code seems easier in contrast.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/31</link>
+        <pubDate>Tue, 06 Dec 2016 10:05:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[mijustin]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry, here are the updated URLs:</p>
+<ul>
+<li>Building your MVP with WordPress: <a href="http://www.productpeople.tv/3" rel="nofollow noopener">Part 1</a> and <a href="http://www.productpeople.tv/4" rel="nofollow noopener">Part 2</a>
+</li>
+<li><a href="http://www.productpeople.tv/34" rel="nofollow noopener">Interview with Noel Tock</a></li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/30</link>
+        <pubDate>Mon, 05 Dec 2016 22:27:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[bharanim]]></dc:creator>
+        <description><![CDATA[
+            <p>The perceived benefits of Wordpress’s existing membership/authentication system and the plugin ecosystem is not worth the time and energy you would have to spend to customize &amp; maintain it.</p>
+<p>Even if you are using existing plugins, you need to be critical of the code quality. A lot of the free plugins are not optimized properly and definitely not something that you might want to use in a production-level SaaS application.</p>
+<p>You would be much better off starting with Laravel (if you are using PHP) or Rails. Both these frameworks have a healthy gem/package system and you can find a package for almost anything you might want to build. Extending &amp; building things from scratch is also much easier.</p>
+<p>To me, using Wordpress for anything other than a simple CMS/blogging platform feels like trying to fit a square peg in a round hole.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/29</link>
+        <pubDate>Mon, 05 Dec 2016 14:57:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>I guess if you are a non programmer… wp is probably the easiest way to slap parts together to sort a do what you want… but its code usually sucks big time… some of those plugins are very very ugly…</p>
+<p>I can whip out something with Laravel in no time… actually, I prefer starting from scratch than battling the WP code mess… It is also easier to maintain afterwards…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/28</link>
+        <pubDate>Mon, 05 Dec 2016 02:31:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[GregorS]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello <a class="mention" href="/u/mijustin">@mijustin</a></p>
+<p>thx for your reply!</p>
+<p>Both linked videos are not available any more. Would you also be so kind to shed some light on, how did you develop your mvp with wordpress? How does your code architecture look like? Which plugins did you use?</p>
+<p>Thx for your answer in advance!</p>
+<p>-Gregor</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/27</link>
+        <pubDate>Mon, 28 Nov 2016 15:14:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[nsberrow]]></dc:creator>
+        <description><![CDATA[
+            <p>WP is in my opinion the best route for an MVP, why on earth would you build a hugely scaleable product before testing your market??</p>
+<p>I built a relatively complex web app which has workflows, user management and with an ecommerce / subscription facility.</p>
+<p>I did built some custom plugins but overall it’s definitely the cheaper route, my last MVP was on Cakephp, took forever.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/26</link>
+        <pubDate>Thu, 31 Jul 2014 12:46:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[CasJam]]></dc:creator>
+        <description><![CDATA[
+            <p>I run my SaaS on WordPress - <a href="http://RestaurantEngine.com" rel="nofollow noopener">RestaurantEngine.com</a> (same space as Happy Tables).</p>
+<p>My take is WP is a good choice only if publishing / content management is a key part of the app.  Sure, WP <em>can</em> be a platform for many other, non CMS use cases, but those seem more of a stretch and would probably require so much custom code you might as well build it from scratch anyway.</p>
+<p>In my case, WordPress was my bread and butter for years prior to starting Restaurant Engine.  My familiarity with the platform (and how to tailor to my needs) was partly what made launching (and bootstrapping) the product possible.</p>
+<p>If you’re not a fan of WP to begin with, or you’ve had frustrating experiences with it, then it’s not a good choice for you. The last thing you need is an unfamiliar platform getting in the way of you launching – even if technically, it could be a good fit.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/25</link>
+        <pubDate>Sun, 23 Mar 2014 05:03:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[mijustin]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry, I’m late to the game here. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>We actually discussed this twice on the Product People podcast:</p>
+<ol>
+<li><a href="http://productpeople.tv/2012/12/05/episode-3-building-mvp-apps-with-wordpress-part-1/" rel="nofollow noopener">Building your MVP with Wordpress</a></li>
+<li><a href="http://productpeople.tv/2013/07/10/ep34-building-your-app-on-top-of-wordpress-with-noel-tock/" rel="nofollow noopener">Interview with Noel Tock, of Happy Tables</a></li>
+</ol>
+<p>I think building a prototype or MVP with Wordpress actually makes a lot of sense. I was able to build a quick prototype of an Applicant Tracking System (<a href="http://teamscout.me" rel="nofollow noopener">http://teamscout.me</a>) with Wordpress. I was able to show a working demo to potential clients: I quickly realized that it did not solve a major pain point for them.</p>
+<p>That being said, I do run a recurring revenue business on Wordpress: it’s a community site called <a href="http://JFDI.bz" rel="nofollow noopener">JFDI.bz</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/24</link>
+        <pubDate>Fri, 21 Mar 2014 00:16:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[JaapRood]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="309" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ivandevelop/40/1475_1.png" class="avatar"> IvanDevelop:</div>
+<blockquote>
+<p>I know that Happy Tables has grown a pretty successful Saas Business on top of WoorPress but I would recommend something like Laravel. With the number of packages out there you can have the equivalent functionality of a standard WordPress install and a lot more flexibility pretty fast.</p>
+</blockquote>
+</aside>
+<p>I actually ran into an interview with the creator of Happy Tables (<a>Noel Tock</a> on the Product People podcast. He made a pretty good point that Wordpress isn’t suited for a lot of apps, but because Happy Tables basically does what Wordpress does (a tool to host / spawn other websites) it turned out to be quite a nice fit. In <a href="http://productpeople.tv/2013/07/10/ep34-building-your-app-on-top-of-wordpress-with-noel-tock/" rel="nofollow noopener">the podcast</a> he talks about how they went through different ways of customizing it and how they are now pretty happy with the setup.</p>
+<p>Definitely an interesting perspective and worth investigating, even if it’s just to broaden our horizons and think of Wordpress as just that little less shit.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/23</link>
+        <pubDate>Thu, 12 Sep 2013 02:33:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Ha! Just trying to give the people what they want. Wordpress, Facebook, Words with Friends</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/22</link>
+        <pubDate>Thu, 05 Sep 2013 15:29:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <p>Are we still talking about this?</p>
+<p><a href="http://otw.io/g/nooooo.gif">enter link description here</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/21</link>
+        <pubDate>Thu, 05 Sep 2013 06:27:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[Christopher]]></dc:creator>
+        <description><![CDATA[
+            <p>I just interviewed someone for my podcast today who launched a product built on WP.  Granted, the product is a vertical-market site-builder that basically puts WP on rails and strips it down so that even the lowest common denominator user can manage it.</p>
+<p>That makes more sense to me than building something that is not-a-site-builder.  WP and I have been getting along better lately, but it still scares me a bit.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/20</link>
+        <pubDate>Wed, 04 Sep 2013 18:51:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <p>I think that one of the things to mention with a CMS based service is to consider what you are building. Envato builds a news site on a CMS and I find that to be a good fit.</p>
+<p>If you are building more of a “application” experience, I usually find frameworks (laravel, code igniter, rails, sinatra, express, Django) to be a better starting point.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/19</link>
+        <pubDate>Tue, 03 Sep 2013 19:28:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[schutzsmith]]></dc:creator>
+        <description><![CDATA[
+            <p>BTW, I just wanted to mention that I never considered building on top of Wordpress until <a href="http://wpengine.com" rel="nofollow noopener">WP Engine</a> and <a href="http://page.ly" rel="nofollow noopener">Page.ly</a> came along. Both offer super fast load times for their hosted Wordpress sites. (not a sales pitch)</p>
+<p>We build everything on WP Engine and there is no way we’d be able to pull off some of the stuff we’re doing without their infrastructure in place.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/18</link>
+        <pubDate>Fri, 30 Aug 2013 20:49:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[dennisfield]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a great discussion. We recently chose to build our product with ExpressionEngine. We did that for some of the same reasons Ryan mentioned above. The ability for EE to handle some of the things we knew we were going to need pretty easily out of the box as well as the bonus of being familiar with the platform made it a appropriate choice for us.</p>
+<p>How this plays out in the long term? Only time will tell. Our product is primarily focussed on community engagement with some additional features for collaboration. So as the product stands right now, ExpressionEngine has worked out great.</p>
+<p>I want to also point out that this is our first product, and that too drove some of the decisions to use a platform we were familiar with as we transitioned into building products.</p>
+<p>I guess in the end the perspective we took was. “Lets see how things go and get a base prototype up. If we get enough people behind this product that warrants us to look at the technology in more detail, I guess it is a good problem to have.”</p>
+<p>I will say that some days I feel like we should have built Frettie with something more like Laravel, but I am more proud of the fact that we shipped something that users are using today and for our first product, that is great motivation to keep moving forward.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/17</link>
+        <pubDate>Fri, 30 Aug 2013 17:41:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[ryanbattles]]></dc:creator>
+        <description><![CDATA[
+            <p>I recently had a very similar debate when it came to deciding what to power <a href="http://Harpoonapp.com" rel="nofollow noopener">Harpoonapp.com</a> with. I’m not very familiar with Wordpress, but I am very familiar with ExpressionEngine, and basically you can interchange the two for the purpose of this question. I have built a few membership sites in the past with ExpressionEngine, some with paid membership, a couple of job boards, and for the most part, I did it for the reasons you mention, existing auth system, gui wrapper for the database, existing plugins, etc.</p>
+<p>When I sat down to write Harpoon, I initially built the prototype in EE, and was able to do it in about 4 hours.  It felt good, but I knew it wasn’t scalable. Assuming the app takes off and needs to scale, the data tables are not optimized (normalized) properly because I am fitting things into the EE ecosystem. There is also a lot more processing needed to parse a given URL, so keeping things light was going to be difficult, especially if I want to make it AJAX-driven with a lot of requests happening in the background.</p>
+<p>My biggest reason for not going with straight PHP or a framework? Lack of knowledge. It was comfortable to use EE, I had done it for dozens of sites before, I could build sites with it in my sleep. Laravel and Rails were scary, I was nervous I wouldn’t really know what I was doing, and it would take me years to build it in my free time.</p>
+<p>I eventually decided to just dive in come hell or high water, and learn Laravel (BTW, I am a front-end dev for the most part).</p>
+<p>I was pleasantly surprised by the documentation, and while I’m still learning a lot, I feel like I’m over that initial hump and it is just a matter of researching, practice, and bug-hunting from here on out.</p>
+<p>So, in the end, I’m glad I decided to use a framework over a CMS, even though it is taking longer, I have the confidence that it will scale, I’m learning a new skill, and fighting off Alzheimer’s <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">  And who knows, perhaps four years from now I can say that I build Laravel apps in my sleep (wouldn’t that be nice).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/16</link>
+        <pubDate>Fri, 30 Aug 2013 13:55:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+      <item>
+        <title>Building Your Saas App On Top of WordPress?</title>
+        <dc:creator><![CDATA[schutzsmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Build with what you know.</p>
+<p>I’ve built on CakePHP, CodeIgniter, Drupal, Wordpress, Lasso, Coldfusion, and even way back when I was guilty of a few apps for telecom built in Perl.  The big distraction is that as developers, we see a shiny new thing and flock to it.  If you can learn it soon, great! But, usually the reality is that it seems to me that its more important to build your idea quickly so as to not lose momentum. I speak from experience, having literally lost over $80k last year paying developers to do 2 projects in Code Igniter that could have easily been made in a few weeks on Wordpress or Drupal.</p>
+<p>Of course in the end it’s different for everybody, but it seems the focus should be on making the most money possible and spending the least to get there.</p>
+<p><a class="mention" href="/u/christopher">@Christopher</a>, if you can build it in Wordpress, then do it. Laugh all the way to the bank later on, because the reality is that users don’t care what you built it with as long as it runs fast and accomplishes what they want.</p>
+<p>Best of luck!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309/15</link>
+        <pubDate>Fri, 30 Aug 2013 02:23:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-309-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309.rss">Building Your Saas App On Top of WordPress?</source>
+      </item>
+  </channel>
+</rss>

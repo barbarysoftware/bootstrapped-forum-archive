@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Support Tools for SaaS — seeking recommendations</title>
+    <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388</link>
+    <description>I&#39;ve just setup [Intercom](http://intercom.io) to provide some in-app support messaging but we&#39;re also looking for two other support systems:
+
+## A Screen-sharing Tool for Remote Support
+
+We have non-technical enterprise users and frequently it&#39;s easier to remotely view their screen to guide them through a problem. The ideal solution would work like this: we send them a link, they click and with ideally just one confirmation click, it downloads &amp; runs and *BAM!* we can see their screen. It should work on all versions of Windows for the customer and not require admin privileges or any technical knowledge, and ideally be run by either Mac or PC. 
+
+We&#39;re current using join.me but it&#39;s really cumbersome as a support tool (invite to a &quot;meeting&quot;, make them the &quot;presenter&quot;, etc). I&#39;ve looked at TeamViewer (horrible &quot;go there, download this, install, enter code&quot; customer process), LogMeIn Remote (support staff must use PCs), Webex Support (expensive, Windows only for support staff, ugly as ****). We&#39;re thinking of [ScreenConnect](http://screenconnect.com) which looks like powerful self-host solution but the demo process is a nightmare (download &amp; install locally where upon it runs on localhost and is complete useless for testing). Also considering [Fogcreek&#39;s CoPilot][1] though, again, the customer interaction isn&#39;t as clean as I&#39;d like it to be.
+
+## Virtual Phone Support 
+
+We&#39;re currently using Skype (with a local Skype-in number) as our phone support line and have to manually make sure someone is logged into that account. I&#39;m wondering if there&#39;s a better solution that allows our support person to receive calls when they&#39;re working (they only work til about 1pm), divert calls to another person after and outside of 9-5, direct to voicemail. Ideally, it should work with a softphone on Macs &amp; PC and also real desk phones. The kicker: it must work in Ireland so something like Grasshopper and Google Voice is out :frowning: 
+
+Any other recommendations greatly received!
+
+  [1]: https://www.copilot.com</description>
+    
+    <lastBuildDate>Tue, 15 Apr 2014 16:25:51 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[mattm]]></dc:creator>
+        <description><![CDATA[
+            <p>I missed your original post the first time around, but I’m actually working on a product similar to what Olark offers with cobrowsing, but built more as a product feedback and sales tool, rather than a support tool. It’s coming along, should have the beta ready in a couple of weeks.</p>
+<p>I posted about it on here previously, the url is: <a href="http://reallive.co" rel="nofollow noopener">http://reallive.co</a></p>
+<p>It sounds like you’re using Olark’s cobrowsing mainly for support, but I’m interested in your experiences with it (if you have a few minutes). Besides better helpdesk integration, are there any other pain points you’ve experienced with Olark’s tool?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/12</link>
+        <pubDate>Tue, 15 Apr 2014 16:25:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, to me live chat is much more valuable as a sales tool for a small biz than a support one. It’s basically phone support in terms of time on the support side though if you have the time or people it’s great of course.</p>
+<p>I hadn’t seen that <a class="mention" href="/u/ideasasylum">@ideasasylum</a> interesting. It makes perfect sense in live chat since you’re already live with the customer. Not sure how you’d work it in unless the system already had a chat component but that is pretty cool.</p>
+<p>We’ve used Olark with our support products and it’s pretty good about generating an email which sends  into the support tool which is really all you need so you have that history in most cases.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/11</link>
+        <pubDate>Tue, 15 Apr 2014 15:30:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <p>Just the revisit this after a few weeks: Olark’s co-browsing is still incredible — customers love it and we’re even using it for onboarding support calls.</p>
+<p>It’s actually powered by <a href="http://usefirefly.com/" rel="nofollow noopener">Firefly</a> but Olark’s implementation seems both cleaner (no codes to type in) and cheaper (~$17 vs $24)! However, I really wish that a proper helpdesk tool integrated with Firefly in the same way (hint, hint, <a class="mention" href="/u/ian">@ian</a>, pretty please with sugar on top <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> )</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/10</link>
+        <pubDate>Tue, 15 Apr 2014 10:48:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[joet3ch]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve acquired atleast 20% of my customer base by being available on Olark. I really don’t like talking to humans, but I do enjoy dealing with fellow techies and geeks which are my audience. So Olark works out great for me on multiple levels.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/9</link>
+        <pubDate>Wed, 26 Mar 2014 19:39:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="1388" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/joet3ch/40/1309_1.png" class="avatar"> joet3ch:</div>
+<blockquote>
+<p>Olark’s cobrowsing feature is a simple way to provide screen-sharing support and it’s limited to their browser window only. It doesn’t require any downloads or plugins or Java. I love it.</p>
+</blockquote>
+</aside>
+<p>Gobsmacked! Hand over mouth, breath-taking, <em>OMG did that just work</em>? Thanks <a class="mention" href="/u/joet3ch">@joet3ch</a>!</p>
+<p>Not only does it do exactly what I wanted, it works <em>seamlessly</em>. I’ve put it up on a staging server and hidden the chat window by default (we don’t really want to provide chat support). The support operator can see who’s online, click on the person’s name who they’re supporting, type a quick message to get the message box to appear, type !see and with one confirmation they can see the user’s screen. They can even highlight elements within the browser. OMG, <em>it’s so good</em>.</p>
+<p>And the real lesson here? <strong>Olark don’t even mention this feature on their homepage</strong>, bury it almost as a footnote on their features page and only describe it in detail in their documentation. It may be that this co-browsing feature deserves to be its own product because it’s being buried under the “in-app chat” messaging. Perhaps something to look out for in our own products</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/8</link>
+        <pubDate>Wed, 26 Mar 2014 12:44:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[joet3ch]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://olark.com" rel="nofollow noopener">Olark’s</a> <strong>cobrowsing</strong> feature is a simple way to provide screen-sharing support and it’s limited to their browser window only. It doesn’t require any downloads or plugins or Java. I love it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/7</link>
+        <pubDate>Tue, 25 Mar 2014 19:24:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I’m wondering if there’s a better solution that allows our support person to receive calls when they’re working (they only work til about 1pm), divert calls to another person after and outside of 9-5, direct to voicemail. Ideally, it should work with a softphone on Macs &amp; PC and also real desk phones.</p>
+</blockquote>
+<p>If you’re happy to go self-hosted, SIP using asterisk (or trixbox) would be perfect for this. I’ve got mine configured to divert to voicemail outside 9-5, and built a simple web interface to let me override my working hours, or forward it to another line if I’m out. It can also log numbers and call times which is nice for billing, or analysing who is taking your time. Once you’ve got the basic system set up for inbound and outbound calls, it would be fairly straightforward to configure a dialplan to do what you want.</p>
+<p>You would need a SIP gateway to connect to the phone network; I use sipgate in the UK, but I’m sure there will be several providers in Ireland, or you can get cheap boxes or FXO cards to interface with real phone lines. You may be able to find providers in your target countries to get local numbers and better call rates.</p>
+<p>I use it with a desk phone, but my android phone supports SIP natively, and there are several SIP softphones out there for desktop and mobile. Again, you can also get cheap boxes or FXS cards which let you hook up analogue phones.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/6</link>
+        <pubDate>Tue, 25 Mar 2014 12:33:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="1388" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ian/40/3579_1.png" class="avatar"> ian:</div>
+<blockquote>
+<p>We use Ruby Receptionist so that a live person answers the calls and then they can route however you tell them with different rules for different times of day, etc. It’s a little pricey, but much cheaper than a dedicated person and works great.</p>
+</blockquote>
+</aside>
+<p>Cheers. Ruby Receptionist might not work for us in Ireland but perhaps I’ll look at a local alternative. I’d previously just thought of a purely automated solution.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/5</link>
+        <pubDate>Mon, 24 Mar 2014 16:52:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="1388">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/yohnyy/40/2333_1.png" class="avatar"> yohnyy:</div>
+<blockquote>
+<p>I used TeamViewer and it worked ok. You can check it out.</p>
+</blockquote>
+</aside>
+<p>IIRC, my problem with Teamviewer was that you needed to send them to a downloads page, tell them to download a client (and there was a few downloads on that page), install it and then type in a 9 digit code and 4 digit password. Most of that should be done through a single, customised, url. All in all, walking them through that will take considerably longer than walking them through any problem in our app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/4</link>
+        <pubDate>Mon, 24 Mar 2014 16:49:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[yohnyy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi! I used <a href="http://www.teamviewer.com/en/index.aspx?pid=google.r.po.s.desk.vnc&amp;gclid=CIvfo7Ciq70CFY_ItAodZXwAvg" rel="nofollow noopener">TeamViewer</a> and it worked ok. You can check it out.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/3</link>
+        <pubDate>Mon, 24 Mar 2014 13:25:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>We use <a href="http://www.callruby.com/">Ruby Receptionist</a> so that a live person answers the calls and then they can route however you tell them with different rules for different times of day, etc. It’s a little pricey, but much cheaper than a dedicated person and works great.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/2</link>
+        <pubDate>Mon, 24 Mar 2014 13:08:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+      <item>
+        <title>Support Tools for SaaS — seeking recommendations</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve just setup <a href="http://intercom.io" rel="nofollow noopener">Intercom</a> to provide some in-app support messaging but we’re also looking for two other support systems:</p>
+<h2>A Screen-sharing Tool for Remote Support</h2>
+<p>We have non-technical enterprise users and frequently it’s easier to remotely view their screen to guide them through a problem. The ideal solution would work like this: we send them a link, they click and with ideally just one confirmation click, it downloads &amp; runs and <em>BAM!</em> we can see their screen. It should work on all versions of Windows for the customer and not require admin privileges or any technical knowledge, and ideally be run by either Mac or PC.</p>
+<p>We’re current using <a href="http://join.me" rel="nofollow noopener">join.me</a> but it’s really cumbersome as a support tool (invite to a “meeting”, make them the “presenter”, etc). I’ve looked at TeamViewer (horrible “go there, download this, install, enter code” customer process), LogMeIn Remote (support staff must use PCs), Webex Support (expensive, Windows only for support staff, ugly as ****). We’re thinking of <a href="http://screenconnect.com" rel="nofollow noopener">ScreenConnect</a> which looks like powerful self-host solution but the demo process is a nightmare (download &amp; install locally where upon it runs on localhost and is complete useless for testing). Also considering <a href="https://www.copilot.com" rel="nofollow noopener">Fogcreek’s CoPilot</a> though, again, the customer interaction isn’t as clean as I’d like it to be.</p>
+<h2>Virtual Phone Support</h2>
+<p>We’re currently using Skype (with a local Skype-in number) as our phone support line and have to manually make sure someone is logged into that account. I’m wondering if there’s a better solution that allows our support person to receive calls when they’re working (they only work til about 1pm), divert calls to another person after and outside of 9-5, direct to voicemail. Ideally, it should work with a softphone on Macs &amp; PC and also real desk phones. The kicker: it must work in Ireland so something like Grasshopper and Google Voice is out <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"></p>
+<p>Any other recommendations greatly received!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388/1</link>
+        <pubDate>Mon, 24 Mar 2014 13:04:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1388-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/support-tools-for-saas-seeking-recommendations/1388.rss">Support Tools for SaaS — seeking recommendations</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Security accreditation, along with what it takes.. essential?</title>
+    <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753</link>
+    <description>I&#39;ve been freelancing for a growing web application, and they&#39;ve managed to enter into discussions with some fairly big businesses. However, though the application is still running from humble beginnings, these big businesses are asking all kinds of security questions.
+
+I&#39;m not versed on tech law and I don&#39;t specialise in advanced security, but I did read into just what it takes to be accredited, and it seems like a whole bunch of stuff a bootstrapper just isn&#39;t going to be able to achieve.
+
+http://blog.condecosoftware.com/security-and-the-world-of-saas
+
+The post above is about that company&#39;s ISO27001:2013 certification.
+
+How far do you take this? What are the baby steps along the way? I could dump a 100 security-related application topics here, but I can&#39;t possibly cover every single avenue as a lone-developer with no cash. So what do other bootstrappers do?
+
+It seems like this becomes a problem if/when you start to manage your own physical servers?</description>
+    
+    <lastBuildDate>Wed, 14 Mar 2018 11:53:15 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Security accreditation, along with what it takes.. essential?</title>
+        <dc:creator><![CDATA[Damien]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="5753">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/alexhudson/40/4042_1.png" class="avatar"> AlexHudson:</div>
+<blockquote>
+<p>Easy, obvious example: GDPR. Responsibility for compliance there should rest with the CEO or even the board. While the application might be GDPR-compliant, there are plenty of ways that other people in the business can break that compliance, and the only compliance that matters is whether the organisation as a whole is compliant. If you ever embarked on ISO27k1, you’ll see that again and again: the security process applies to the organisation.</p>
+</blockquote>
+</aside>
+<p>Exactly why this is sadly out of my control, and not my battle. But this is all great information as I build my own applications, so appreciate the insight!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/9</link>
+        <pubDate>Wed, 14 Mar 2018 11:53:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5753-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss">Security accreditation, along with what it takes.. essential?</source>
+      </item>
+      <item>
+        <title>Security accreditation, along with what it takes.. essential?</title>
+        <dc:creator><![CDATA[AlexHudson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve done the “small start-up selling B2B SaaS into big enterprise” a few times. Steve is right, often a good security story is enough (although most of the time, I’ve also had certification in place, so I can’t tell you often it would have been good enough).</p>
+<p>However, one red flag from what you’ve said: although security is notionally quite a technical topic, for most large enterprise, it’s an organisational attribute. It’s like Quality - it’s a cross-cutting concern across the entire enterprise.</p>
+<p>So, while you can put together a reasonable technical story for the application itself, that needs to be backed up by an overall organisational approach, and in fact that needs to be put in place by the highest levels of the organisation itself.</p>
+<p>Easy, obvious example: GDPR. Responsibility for compliance there should rest with the CEO or even the board. While the <em>application</em> might be GDPR-compliant, there are plenty of ways that other people in the business can break that compliance, and the only compliance that matters is whether the <em>organisation</em> as a whole is compliant. If you ever embarked on ISO27k1, you’ll see that again and again: the security process applies to the organisation.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/8</link>
+        <pubDate>Wed, 14 Mar 2018 09:24:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5753-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss">Security accreditation, along with what it takes.. essential?</source>
+      </item>
+      <item>
+        <title>Security accreditation, along with what it takes.. essential?</title>
+        <dc:creator><![CDATA[Damien]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="5753">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>If not, they’d probably be happy just to hear that you do have a good security story. That would include things such as:</p>
+</blockquote>
+</aside>
+<p>Hey! Thanks for the advice.</p>
+<p>I am the web application team! <img src="https://emoji.discourse-cdn.com/twitter/stuck_out_tongue.png?v=5" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+<p>The problem is I’ve only been contracting with this company for fewer than 6 months, and they have NO security story. They inform me that they have been in discussions with these potentially big clients, and then get me on a call with them - that’s fine, fairly basic implementation discussion. One of these companies then sends over a couple of comprehensive security questionnaires (at least 50 different questions, and would have required a comprehensive audit to respond), and they all turn to me because I’m the only technical person on the team. The suggested security story you presented would cover perhaps 5% of the questions that were asked.</p>
+<p>Anyway, my question wasn’t really regarding that particular case –  it is certainly NOT my responsibility to build security protocols, processes and documentation (where none exist and at short-notice) just to play ball with some enterprise businesses during premature discussions that hadn’t even taken this kind of stuff into consideration. I imagine they’ve been running on feature development as go go go for the last few years. They also expected this to be somehow addressed (help with/complete the security assessment) over the weekend on top of general development work…  I basically responded with: not possible. You need to do a security audit first, and I’m not a security consultant.</p>
+<p>Being the only tech on the team, I’m already stretched across many different areas, and this is way beyond my pay-grade. All I can do is take responsibility for my own contributions and advise on application security.</p>
+<p>I’m asking this question because this is exactly the kind of stuff I want to avoid when building my own software business <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/7</link>
+        <pubDate>Tue, 13 Mar 2018 17:35:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5753-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss">Security accreditation, along with what it takes.. essential?</source>
+      </item>
+      <item>
+        <title>Security accreditation, along with what it takes.. essential?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Can the web application’s team afford a security consultant for a couple of weeks? If so, it sounds like it would be an excellent investment, given you are getting these questions.</p>
+<p>Are the big businesses asking specifically about ISO27001 certification? If not, they’d probably be happy just to hear that you do have a good security story. That would include things such as:</p>
+<ul>
+<li>“we received an independent security audit and will continue doing so from time to time”</li>
+<li>“we host on AWS and follow their security guidelines”</li>
+<li>“no one has direct access to the production database. access is granted temporarily according to a set of protocols”</li>
+<li>“passwords are stored as salted one-way hashes, using the bcrypt algorithm”</li>
+<li>“we log all successful and failed sign ins, password changes, password resets, and creation of new users”</li>
+<li>“we use a user/role/permission model to limit each user’s access”</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/6</link>
+        <pubDate>Mon, 12 Mar 2018 20:21:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5753-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss">Security accreditation, along with what it takes.. essential?</source>
+      </item>
+      <item>
+        <title>Security accreditation, along with what it takes.. essential?</title>
+        <dc:creator><![CDATA[Damien]]></dc:creator>
+        <description><![CDATA[
+            <p>Great advice, thanks very much Alex! I’ll dig in.</p>
+<p>I’m still at the very beginning, so have minimal amount of sensitive data, and all services I rely on, including storage, are fully-hosted. I’ll go through IASME and get up to speed. I noticed some really basic stuff on Cyber Essentials, but I’m sure there is plenty more I haven’t considered.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/5</link>
+        <pubDate>Mon, 12 Mar 2018 12:29:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5753-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss">Security accreditation, along with what it takes.. essential?</source>
+      </item>
+      <item>
+        <title>Security accreditation, along with what it takes.. essential?</title>
+        <dc:creator><![CDATA[AlexHudson]]></dc:creator>
+        <description><![CDATA[
+            <p>Re: Stripe (or any other fully-hosted system), you will see arguments both ways. The new SAQ-A EP, which is the compliance checklist that covers this situation, says you need to comply with PCI-DSS if you host the <em>redirect</em> to the payment page. The thinking here is that if someone else can control that redirect, they can grab credit card details - so if your system is vulnerable to that, the fact that you use Stripe doesn’t mean you’re PCI-DSS compliant. In practice, your compliance requirement is very, very low, and 99% of other traders on the net don’t check their compliance.</p>
+<p>In terms of places to start, IASME is pretty good. A lot of the documentation and the checklist is freely available, and you can go through that without needing to be a complete expert. If anything obviously doesn’t apply, that’s great - you can cross it off the list. Some stuff you will be confident about being in compliance with, too. The remaining bits, you can then make a call about whether you need some expert advice or not - it’s a risk not to get advice, but it could be an acceptable risk.  I recommend that: www. dot iasme dot co dot uk /where-to-start/</p>
+<p>(I have no affiliation etc. with IASME, it’s just a decent resource, and you don’t need to pay for anything up front)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/4</link>
+        <pubDate>Mon, 12 Mar 2018 12:24:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5753-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss">Security accreditation, along with what it takes.. essential?</source>
+      </item>
+      <item>
+        <title>Security accreditation, along with what it takes.. essential?</title>
+        <dc:creator><![CDATA[Damien]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="5753">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/alexhudson/40/4042_1.png" class="avatar"> AlexHudson:</div>
+<blockquote>
+<p>There are smaller-scale versions of this. In the UK, we have “Cyber Essentials” or IASME - lighter weight programmes that still have lots of good stuff in them, plus if you get the accreditation you potentially save on your business insurance etc. If you’re allowing credit card payment for anything, you need to be PCI-DSS compliant (although your compliance requirement here is likely to be very low), and that’s also a lower but useful bar.</p>
+</blockquote>
+</aside>
+<p>I’m also from UK and will be setting up my business as a Limited company. When you say PCI-DSS is required for allowing credit card payments - that is also the case if I offload this management to Stripe, for example? From their site:</p>
+<p>“Stripe has been audited by an independent PCI Qualified Security Assessor (QSA) and is certified as a PCI Level 1 Service Provider. … When accepting payments, you must do so in a PCI compliant manner. The simplest way for you to be PCI compliant is to never see (or have access to) card data at all.”</p>
+<p>I do think you have a point RE being at an advantage as a smaller, tighter shop. I’ll have to do more digging.</p>
+<p>Any suggestions on places to start? I’m mostly versed in application security, not information security management systems and the rest <img src="https://emoji.discourse-cdn.com/twitter/confused.png?v=5" title=":confused:" class="emoji" alt=":confused:"> though I am more than happy to follow the rabbit-hole as long as it takes for the sake of protecting customers and their data, and building on strong foundations. Perhaps the specs for these smaller-scale versions are a good first step?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/3</link>
+        <pubDate>Mon, 12 Mar 2018 12:05:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5753-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss">Security accreditation, along with what it takes.. essential?</source>
+      </item>
+      <item>
+        <title>Security accreditation, along with what it takes.. essential?</title>
+        <dc:creator><![CDATA[AlexHudson]]></dc:creator>
+        <description><![CDATA[
+            <p>HI Damien. I’ve done this a few times in both large and small enterprises, in heavily regulated environments and not. ISO27k1 (as an example) can be a massive problem to comply with - but actually, in many ways, the bootstrapper has the advantage here.</p>
+<p>First, is it reasonable to expect any business to comply with this stuff? I would personally say, absolutely yes, for a few reasons. Mainly, if you don’t “bake in” security from the start, it’s difficult or impossible to add later - you have to build the discipline in from the start. But also, even at a small scale, you can do massive damage to your customers, and on an individual basis it doesn’t matter what scale the org is - if a customer has their identity stolen, that’s a problem.</p>
+<p>Onto the solutions. I said earlier bootstrappers have an advantage, and I genuinely think this is true. It’s difficult to be a security expert for sure, but it’s very easy to buy into solutions which have excellent security, and so long as you stick to best practice you’re likely doing better than the big orgs. If you use AWS, for example, the standard of compliance is extremely high. Yes, to do ISO 27k1 you have to have a security process, and a lot of compliance, but if your systems are good that’s actually not hard to do. Auditing is costly, relatively.</p>
+<p>There are smaller-scale versions of this. In the UK, we have “Cyber Essentials” or IASME - lighter weight programmes that still have lots of good stuff in them, plus if you get the accreditation you potentially save on your business insurance etc. If you’re allowing credit card payment for anything, you need to be PCI-DSS compliant (although your compliance requirement here is likely to be very low), and that’s also a lower but useful bar.</p>
+<p>It’s difficult to get an outsider in to give you good advice, sadly, but I would definitely take it seriously. I’m happy to help out with any more specific questions.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/2</link>
+        <pubDate>Mon, 12 Mar 2018 11:57:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5753-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss">Security accreditation, along with what it takes.. essential?</source>
+      </item>
+      <item>
+        <title>Security accreditation, along with what it takes.. essential?</title>
+        <dc:creator><![CDATA[Damien]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been freelancing for a growing web application, and they’ve managed to enter into discussions with some fairly big businesses. However, though the application is still running from humble beginnings, these big businesses are asking all kinds of security questions.</p>
+<p>I’m not versed on tech law and I don’t specialise in advanced security, but I did read into just what it takes to be accredited, and it seems like a whole bunch of stuff a bootstrapper just isn’t going to be able to achieve.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://blog.condecosoftware.com/hubfs/condecosoftware/Untitled.png" class="site-icon" width="50" height="51">
+      <a href="http://blog.condecosoftware.com/security-and-the-world-of-saas" target="_blank" rel="nofollow noopener">blog.condecosoftware.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:600/400;"><img src="https://blog.condecosoftware.com/hubfs/_Blog/post_images/2017/iso-27001.jpeg#keepProtocol" class="thumbnail"></div>
+
+<h3><a href="http://blog.condecosoftware.com/security-and-the-world-of-saas" target="_blank" rel="nofollow noopener">Security and the World of SaaS</a></h3>
+
+<p>The easiest way to ensure your cloud-based software is as safe as possible, is to only use SaaS from a provider who is certified according to an Information Security standard.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>The post above is about that company’s ISO27001:2013 certification.</p>
+<p>How far do you take this? What are the baby steps along the way? I could dump a 100 security-related application topics here, but I can’t possibly cover every single avenue as a lone-developer with no cash. So what do other bootstrappers do?</p>
+<p>It seems like this becomes a problem if/when you start to manage your own physical servers?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753/1</link>
+        <pubDate>Mon, 12 Mar 2018 11:20:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5753-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-accreditation-along-with-what-it-takes-essential/5753.rss">Security accreditation, along with what it takes.. essential?</source>
+      </item>
+  </channel>
+</rss>

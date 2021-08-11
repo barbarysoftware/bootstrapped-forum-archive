@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to show a users photo?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464</link>
+    <description>In some web apps they are able to show the users photo when they login. What is the best way to do that? Is it https://en.gravatar.com/site/implement/ or are there other services that can do it?
+
+Thanks</description>
+    
+    <lastBuildDate>Sun, 14 Feb 2021 15:22:12 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to show a users photo?</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks. We have Facebook and google login so it should not be much work to pull in the image.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464/3</link>
+        <pubDate>Sun, 14 Feb 2021 15:22:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7464-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464.rss">How to show a users photo?</source>
+      </item>
+      <item>
+        <title>How to show a users photo?</title>
+        <dc:creator><![CDATA[Mostdefkima3ff]]></dc:creator>
+        <description><![CDATA[
+            <p>Gravitar is the most common way however, if you use social sign-in/register you can get the users avatar from networks like Google and Facebook using their APIs right when the user registers. I personally use Google since most people have a Google profile picture. Not everyone has a proper gravatar set up.</p>
+<p>Google: <a href="https://developers.google.com/identity/sign-in/web/sign-in" class="inline-onebox">Integrating Google Sign-In into your web app</a><br>
+FB: <a href="https://developers.facebook.com/docs/facebook-login/web" class="inline-onebox">Web - Facebook Login - Documentation - Facebook for Developers</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464/2</link>
+        <pubDate>Sat, 13 Feb 2021 22:09:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7464-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464.rss">How to show a users photo?</source>
+      </item>
+      <item>
+        <title>How to show a users photo?</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>In some web apps they are able to show the users photo when they login. What is the best way to do that? Is it <a href="https://en.gravatar.com/site/implement/" class="inline-onebox">Gravatar - Globally Recognized Avatars</a> or are there other services that can do it?</p>
+<p>Thanks</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464/1</link>
+        <pubDate>Sat, 13 Feb 2021 14:30:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7464-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-show-a-users-photo/7464.rss">How to show a users photo?</source>
+      </item>
+  </channel>
+</rss>

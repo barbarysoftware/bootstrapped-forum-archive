@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Allowing customers to buy a subscription with Paypal</title>
+    <link>https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415</link>
+    <description>Hey folks, 
+
+I love Stripe but it doesn&#39;t handle Paypal :(
+I&#39;d like my customers to pay with Paypal, so I am looking for payment processors that handle subscriptions where customers can pay via Paypal or credit cards. The more similar to Stripe, the better (I know it&#39;s not easy :slight_smile: )
+
+So far Gumroad and Braintree look promising. Do you have any experience with any of those? 
+I mean good or bad experiences like fast/slow in replying to tickets, handling refunds. allowing custom UI, flexibility/non flexibility with coupons, etc.
+
+Of course I am open to suggestions about other services. 
+Basically my needs are:
+
+- handle recurring subscriptions (monthly/yearly)
+- handling coupons/discounts
+- transferring funds either to my bank or my Paypal
+- notify me when charge is successful/failed
+- manage customer trials (nice to have, not a strong requirement).
+
+PS. I saw a similar topic has already been discussed but ~3 years ago, so maybe things have changed.</description>
+    
+    <lastBuildDate>Sun, 29 Oct 2017 09:22:59 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Allowing customers to buy a subscription with Paypal</title>
+        <dc:creator><![CDATA[funkyboy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/garrettdimon">@garrettdimon</a>, I’ll check it out.<br>
+Not looking forward to use their APIs (with respect to Stripe’s) but it seems the best option at the moment.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415/3</link>
+        <pubDate>Sun, 29 Oct 2017 09:22:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5415-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415.rss">Allowing customers to buy a subscription with Paypal</source>
+      </item>
+      <item>
+        <title>Allowing customers to buy a subscription with Paypal</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not 100% sure of the best approach, but since Braintree is now owned by PayPal, I believe it makes it fairly easy to set up PayPal (and even Venmo). Having used Braintree for 8 years with Sifter, it’s definitely solid. I probably wouldn’t choose it over Stripe, but if you just want a secondary option to make PayPal easier to offer, then it could be worth exploring. Even after the PayPal acquisition, customer service was solid, and even when I sold Sifter, transferring account ownership was easy enough.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415/2</link>
+        <pubDate>Sat, 28 Oct 2017 14:46:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5415-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415.rss">Allowing customers to buy a subscription with Paypal</source>
+      </item>
+      <item>
+        <title>Allowing customers to buy a subscription with Paypal</title>
+        <dc:creator><![CDATA[funkyboy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey folks,</p>
+<p>I love Stripe but it doesn’t handle Paypal <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"><br>
+I’d like my customers to pay with Paypal, so I am looking for payment processors that handle subscriptions where customers can pay via Paypal or credit cards. The more similar to Stripe, the better (I know it’s not easy <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> )</p>
+<p>So far Gumroad and Braintree look promising. Do you have any experience with any of those?<br>
+I mean good or bad experiences like fast/slow in replying to tickets, handling refunds. allowing custom UI, flexibility/non flexibility with coupons, etc.</p>
+<p>Of course I am open to suggestions about other services.<br>
+Basically my needs are:</p>
+<ul>
+<li>handle recurring subscriptions (monthly/yearly)</li>
+<li>handling coupons/discounts</li>
+<li>transferring funds either to my bank or my Paypal</li>
+<li>notify me when charge is successful/failed</li>
+<li>manage customer trials (nice to have, not a strong requirement).</li>
+</ul>
+<p>PS. I saw a similar topic has already been discussed but ~3 years ago, so maybe things have changed.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415/1</link>
+        <pubDate>Sat, 28 Oct 2017 11:51:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5415-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/allowing-customers-to-buy-a-subscription-with-paypal/5415.rss">Allowing customers to buy a subscription with Paypal</source>
+      </item>
+  </channel>
+</rss>

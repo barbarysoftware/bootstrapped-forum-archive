@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Denizen: Drop-in user management and payments - Show Bootstrapped - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Hi bootstrappers, 
+
+Since many of you are building SaaS apps, you know that building your core product is only a part of the challenge. To actually run the business, your app needs a ton of generic stuff: 
+
+
+user registr&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="2103.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Denizen: Drop-in user management and payments&#39;" href="2103.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103" />
+<meta property="og:title" content="Denizen: Drop-in user management and payments" />
+<meta name="twitter:title" content="Denizen: Drop-in user management and payments" />
+<meta property="og:description" content="Hi bootstrappers,  Since many of you are building SaaS apps, you know that building your core product is only a part of the challenge.  To actually run the business, your app needs a ton of generic stuff:   user registration + email verification forgot-my-password emails add/edit credit card change plan payment invoice/receipt emails “your card failed, login and update so we don’t shut down your account” emails (aka “dunning”)  Frameworks like Rails have components to do pieces of this, but noth..." />
+<meta name="twitter:description" content="Hi bootstrappers,  Since many of you are building SaaS apps, you know that building your core product is only a part of the challenge.  To actually run the business, your app needs a ton of generic stuff:   user registration + email verification forgot-my-password emails add/edit credit card change plan payment invoice/receipt emails “your card failed, login and update so we don’t shut down your account” emails (aka “dunning”)  Frameworks like Rails have components to do pieces of this, but noth..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="4 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2014-10-02T23:08:28+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="2103.html">Denizen: Drop-in user management and payments</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/show-bootstrapped.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F7941D'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Show Bootstrapped</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lynaghk.html'><span itemprop='name'>lynaghk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-02T23:08:28Z' class='post-time'>
+                October 2, 2014, 11:08pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-02T23:08:28Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi bootstrappers,</p>
+<p>Since many of you are building SaaS apps, you know that building your core product is only a part of the challenge.<br>
+To actually run the business, your app needs a ton of generic stuff:</p>
+<ul>
+<li>user registration + email verification</li>
+<li>forgot-my-password emails</li>
+<li>add/edit credit card</li>
+<li>change plan</li>
+<li>payment invoice/receipt emails</li>
+<li>“your card failed, login and update so we don’t shut down your account” emails (aka “dunning”)</li>
+</ul>
+<p>Frameworks like Rails have components to do pieces of this, but nothing comprehensive.<br>
+People using other languages like Go, Node.js, Clojure, or frontend-only stacks are mostly out of luck: They have to roll their own solutions.</p>
+<p>As a bootstrapper, I don’t have the team, time, or resources to do the necessary frontend design and backend server juggling to build custom solutions all the time.<br>
+That is to say, I’ve had a lot of promising lil’ apps and side projects that I never launched because it was just too much work to put 'em online and start charging.</p>
+<p>My friend and I have been working for the past several months to try and factor out all of this stuff and “solve it once and for all” = )<br>
+Our solution is similar to Stripe’s “checkout” button: Give folks a single snippet of JavaScript that provides fully styled, responsive forms and the necessary backend machinery.<br>
+You can see more details on our landing page:</p>
+<p><a href="https://getdenizen.com/" class="onebox" target="_blank" rel="nofollow noopener">https://getdenizen.com/</a></p>
+<p>or this 9-minute zero-to-SaaS app YouTube overview:</p>
+<div class="lazyYT" data-youtube-id="y8gQRqQTHGI" data-youtube-title="9 minute Clojure SaaS app w/ Denizen" data-width="480" data-height="270" data-parameters="feature=oembed&amp;wmode=opaque"></div>
+<p>The basic idea is that you can either spend $10k + 2 weeks to do this boring stuff custom, or you drop in some JS that solves 95% of what you need and get on with shippin’ your core product.</p>
+<p>I’d love to hear what ya’ll think:</p>
+<ul>
+<li>Does this solve a problem you have?</li>
+<li>Could you ship something faster by using Denizen?</li>
+<li>Does Denizen let you ship a lil’ project that otherwise wouldn’t have been worth the effort?</li>
+</ul>
+<p>Are there any features or use cases you’d like Denizen to support?</p>
+<p>cheers,</p>
+<p>kevin</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jnye131.html'><span itemprop='name'>jnye131</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-03T15:24:21Z' class='post-time'>
+                October 3, 2014,  3:24pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-03T15:24:21Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Just had a quick look, it looks good.</p>
+<p>I like the user info is stored in the stripe meta fields - that’s a nice touch.</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jeff.html'><span itemprop='name'>jeff</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-03T15:37:21Z' class='post-time'>
+                October 3, 2014,  3:37pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-03T15:37:21Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The main problem with this concept is this:<br>
+Your app goes down, my app goes down.</p>
+<p>I have heard this idea many times before and the aforementioned issue always comes up.</p>
+<blockquote>
+<p>The basic idea is that you can either spend $10k + 2 weeks to do this boring stuff custom</p>
+</blockquote>
+<p>Ignoring the fact that this is not exactly true as there are a lot of available open source solutions (e.g. just googled “user management node.js”), this particular investment would be worth it. Users, their data and the ability to even login is too fundamental to outsource to a third-party, which isn’t an established company (e.g. fb, google, twitter).</p>
+<p>To recap: Yes, it solves a problem, but the solution is too risky. I personally would never consider using third-party service to authenticate my users.</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lynaghk.html'><span itemprop='name'>lynaghk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-03T15:39:54Z' class='post-time'>
+                October 3, 2014,  3:39pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-03T15:39:54Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks jyne131!<br>
+We didn’t want to rely on “lock in” to force people to keep using our service—putting the user info in the stripe metadata fields lets our customers easily get their users’ info and move to other products or in-house offerings if they grow beyond what Denizen can provide.</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lynaghk.html'><span itemprop='name'>lynaghk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-03T15:49:55Z' class='post-time'>
+                October 3, 2014,  3:49pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-03T15:49:55Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="3" data-topic="2103" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jeff/40/2426_1.png" class="avatar"> jeff:</div>
+<blockquote>
+<p>The main problem with this concept is this:<br>
+Your app goes down, my app goes down.</p>
+</blockquote>
+</aside>
+<p>Hi Jeff,</p>
+<p>I definitely agree—we address this specific issue directly on the landing page.</p>
+<p>Denizen runs on autoscaling servers on EC2 behind a load balancer for zero downtime deployments and redundancy. We’re moving soon to distributing across geographically separate datacenters.</p>
+<p>That said, if your app has high-availability requirements then it’s ultimately your responsibility and third-party services like Denizen may not be suitable.</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/chaddeshon.html'><span itemprop='name'>chaddeshon</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-04T00:33:46Z' class='post-time'>
+                October 4, 2014, 12:33am
+              </time>
+              <meta itemprop='dateModified' content='2014-10-04T00:33:46Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This looks great. I have searched for and thought about building a service like this several times. I ended up using Memberful, which is working ok, but not perfect.</p>
+<p>I have a couple questions:</p>
+<ol>
+<li>
+<p>Do you use Stripe’s subscription feature or do you manually make the charge every month? If you are using Stripe’s subscription feature then I can use Baremetrics, which would be nice.</p>
+</li>
+<li>
+<p>How does your login piece fit with the rest of my site? Can I store custom data in Denizen (and have the user edit it)?</p>
+</li>
+<li>
+<p>One of the great things about Denizen is that it doesn’t require a server-side component. AngularJS and Firebase is my favorite architecture right now. Can I integrate Denizen login into AnguarlJS/Firebase without having to add a server?</p>
+</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lynaghk.html'><span itemprop='name'>lynaghk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-04T18:18:21Z' class='post-time'>
+                October 4, 2014,  6:18pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-04T18:18:21Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/chaddeshon.html">@chaddeshon</a>, thanks!<br>
+Responses in order:</p>
+<ol>
+<li>Yep, Denizen leverages Stripe subscriptions directly. This means:</li>
+</ol>
+<ul>
+<li>Stripe ensures the card charge succeeds before adding them to the plan</li>
+<li>Your plans can have free trial periods setup automatically through Stripe</li>
+<li>You can use Stripe’s dashboard or API to adjust your customers’ plans as necessary for manual overrides or other special cases</li>
+<li>Stripe add-ons like Baremetrics will work just fine</li>
+</ul>
+<ol start="2">
+<li>
+<p>Right now we are not exposing an API to let your server make notes or store other data on customer objects. If you have a specific use case in mind, I’d love to hear about it via private message / email.</p>
+</li>
+<li>
+<p>No, Denizen currently requires that you have a server. This is because we’re modeling our API on Stripe’s, which uses a shared secret key that only your server should have.</p>
+</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/coreysnipes'><span itemprop='name'>coreysnipes</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-06T12:27:06Z' class='post-time'>
+                October 6, 2014, 12:27pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-06T12:27:06Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Stripe-based billing management &amp; reminders would definitely be of value to me (I’m deferring building any of that until I get signup volume at a higher level).  To echo <a class="mention" href="../../u/jeff.html">@jeff</a>… I’d rather keep the user data at home and manage signup/login/password features within my app.</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lynaghk.html'><span itemprop='name'>lynaghk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-06T17:58:40Z' class='post-time'>
+                October 6, 2014,  5:58pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-06T17:58:40Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="https://discuss.bootstrapped.fm/u/coreysnipes">@coreysnipes</a> re: keeping all of the data and managing everything within your app, do you mean that you’d rather have full code rather than use a hosted service?</p>
+<p>E.g., the Rails SaaS starter kit: <a href="https://railskits.com/saas/" rel="nofollow noopener">https://railskits.com/saas/</a> ?</p>
+<p>The advantages/tradeoffs of that approach are very different than using a third party hosted service: On one hand, you can do whatever customizations you need and run all of the infrastructure yourself.<br>
+On the other hand, you <em>have</em> to run all of the infrastructure yourself, which means you’ve got to stay on top of password hashing algorithm strengths, email delivery, responsive templates for login forms, &amp;c.</p>
+<p>Or is there another way that a product could deliver this value beyond this hosted vs. do-it-yourself-kit split?</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/coreysnipes'><span itemprop='name'>coreysnipes</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-07T02:47:24Z' class='post-time'>
+                October 7, 2014,  2:47am
+              </time>
+              <meta itemprop='dateModified' content='2014-10-07T02:47:24Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/lynaghk.html">@lynaghk</a> - sorry, I misspoke.  I’d rather do the user management stuff myself, and use a hosted service just for the payment &amp; subscription handling.  I’m already dealing with email deliverablilty, as we generate a ton of system email for different workflow events, reports, etc.   (Not to downplay it – deliverability is super important.)  Password hashing algorithms falls into that bucket of stuff I consider Nice to Have, or rather Something We’ll Deal With When We Get Big.</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/mmalo.html'><span itemprop='name'>mmalo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-16T22:05:36Z' class='post-time'>
+                October 16, 2014, 10:05pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-16T22:05:36Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi Kevin,</p>
+<p>I like the idea. One thing comes to mind tho, I’m not a programmer so forgive me if this is a foolish question. It sounds like Denizen just does user access/management and onboarding, would that be correct? So, would be useful to control membership access to static content or apps that dont keep user’s data. What about, for example, a project management app? I imagine in the scenario of custom-building a denizen alternative, there would also be server related stuff to separate users’ data, and create new instances each time someone signs up and that kind of thing. What’s Denizen’s approach to this situation?</p>
+<p>Again, I apologize for my layman-speak.</p>
+<p>Thanks!</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lynaghk.html'><span itemprop='name'>lynaghk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-16T22:35:22Z' class='post-time'>
+                October 16, 2014, 10:35pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-16T22:35:22Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/mmalo.html">@mmalo</a>,</p>
+<p>No need to apologize for “layman-speak”: One of the reasons we are building Denizen is so that folks can avoid computering-complexity and get on with shippin’ their core business = )</p>
+<p>The primary mechanism Denizen provides is the ability to associate users with Stripe subscriptions.<br>
+For example, you can make a sign up form in one line of HTML that takes peoples credit cards and signs them up to be on, e.g., “The gold plan”.</p>
+<p>All Denizen does is tell <em>your</em> server about this, and so your server is responsible for serving those people the right page.<br>
+Here’s some example code for a tiny server that controls access to static content:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/lynaghk/denizen-demo-compojure" target="_blank">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars0.githubusercontent.com/u/147919?s=400&amp;v=4" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/lynaghk/denizen-demo-compojure" target="_blank">lynaghk/denizen-demo-compojure</a></h3>
+
+<p>Demo Clojure web app using Denizen for user management - lynaghk/denizen-demo-compojure</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>(In the video linked from the README I show how to update the example to accept credit cards.)</p>
+<p>This is how <a href="https://retouchalot.com/">https://retouchalot.com/</a> uses Denizen to sell several levels of Photoshop tutorial videos.</p>
+<p>Does that answer your question?</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/mmalo.html'><span itemprop='name'>mmalo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-16T22:59:42Z' class='post-time'>
+                October 16, 2014, 10:59pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-16T22:59:42Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the quick response Kevin. Yes, I think that answers my question. So the way I’m understanding it is that for a full fledged web application (as opposed to just needing to serve up the right page based on the ‘subscription’) Denizen saves on some of the work but there would still be required the usual solution be built to manage the users’ data etc. on our servers.</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lynaghk.html'><span itemprop='name'>lynaghk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-16T23:54:52Z' class='post-time'>
+                October 16, 2014, 11:54pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-16T23:54:52Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Right now you’re going to have to have your own server, yeah.<br>
+You won’t always need to store your own data, though—in the case of the Retouchalot site, they are serving pages based on the login info provided by Denizen. There’s no database for that site, just a stateless web server.</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-17T15:54:43Z' class='post-time'>
+                October 17, 2014,  3:54pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-17T15:54:43Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Good idea, I like it.</p>
+<p>I used OpenId and OAuth in a few of my projects, so I’m aware of convenience of getting rid of user management code.</p>
+<p>I’m puzzled by the Stripe vendor lock-in though. What if FastSpring is my choice?</p>
+<p>I understand all the good vibe about Stripe, but they are not going to stay the best provider for long; they will eventually be bought by some old ugly corporation and will start doing ugly things to their small customers.</p>
+<p>Another puzzlement came from the pricing page. There is no charge until a user is charged. Does it mean I can use this solution for a free site forever and for free? Or, quite opposite, I cannot use this solution for a free site at all (because it requires to enter CC into Stripe)?</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lynaghk.html'><span itemprop='name'>lynaghk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-17T19:41:02Z' class='post-time'>
+                October 17, 2014,  7:41pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-17T19:41:02Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks <a class="mention" href="https://discuss.bootstrapped.fm/u/rfctr">@rfctr</a>!</p>
+<aside class="quote" data-post="15" data-topic="2103">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I’m puzzled by the Stripe vendor lock-in though. What if FastSpring is my choice?</p>
+</blockquote>
+</aside>
+<p>Stripe isn’t the best for everyone, but we decided to focus on them first. If Denizen doesn’t get traction on top of Stripe, it’s probably not going to get traction on top of any other payment provider. (Though if we do get traction we’re certainly open to integrating with other provider.)</p>
+<aside class="quote" data-post="15" data-topic="2103">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>There is no charge until a user is charged. Does it mean I can use this solution for a free site forever and for free?</p>
+</blockquote>
+</aside>
+<p>We originally started with per-user charges, but we decided it was confusing and a barrier for potential customers. In response to your question: Yes, you can use Denizen for login and if you don’t charge your users anything we won’t charge you anything. Though if your site has 100k daily visitors we might have to talk =P</p>
+<p>Note that even for a free site, though, you’ll need to connect to a live Stripe account to get production keys.</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/courtz.html'><span itemprop='name'>courtz</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2015-05-18T05:38:05Z' class='post-time'>
+                May 18, 2015,  5:38am
+              </time>
+              <meta itemprop='dateModified' content='2015-05-18T05:38:05Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Every time I sit down to build something I think of this. For those of us not using Rails with its Rails-kit, it makes total sense I think. An easy way to have get your SAAS app going fast.</p>
+<p>I would do exactly what <a href="http://Customer.io" rel="nofollow noopener">Customer.io</a> does, with its api I can track events and send emails to users. I think it would be good to still keep login and session management within my app, but I’d have an easy REST API which I could do:</p>
+<p>User Management (profile management, CRM type stuff)</p>
+<p>Then i’d add all the stuff included that I know have to pay each individual app for:<br>
+Billing management (chargebee, recurly etc)<br>
+Basic helpdesk (zendesk)<br>
+Drip emails (<a href="http://getdrip.com" rel="nofollow noopener">getdrip.com</a>)</p>
+<p>etc</p>
+<p><strong>So Im curious. How is this going? What does the market think?</strong></p>
+<p>I cant think why it wouldn’t work apart from security concerns? But then if you left session management within the app the dev is building and use Denizon as an extension of the user, its surely a winner!</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/buggy.html'><span itemprop='name'>buggy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2015-05-18T23:16:24Z' class='post-time'>
+                May 18, 2015, 11:16pm
+              </time>
+              <meta itemprop='dateModified' content='2015-05-18T23:16:24Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I completely forgot about this and was thinking about building something similar myself, though the implementation would have been very different. I’d also be interested to know how this went?</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lynaghk.html'><span itemprop='name'>lynaghk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2103.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2015-05-29T02:42:38Z' class='post-time'>
+                May 29, 2015,  2:42am
+              </time>
+              <meta itemprop='dateModified' content='2015-05-29T02:42:38Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The uptake has been slow: The segment we are targeting are people who want to build a SaaS app but haven’t yet implemented the user management stuff — it turns out these people are very difficult to find = )</p>
+        </div>
+
+        <meta itemprop='headline' content='Denizen: Drop-in user management and payments'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Minimum Price Calculator</title>
+    <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210</link>
+    <description>OK, I built this thing. And the whole time I was writing it I promised myself I&#39;d show it to the peeps at &quot;discuss.bootstrapped.fm&quot; to ask for feedback.
+
+It&#39;s an interactive calculator for working out the lowest price you can put on your product.
+http://yourfirstproduct.com/tools/pricing
+
+It&#39;s kinda nerdy... it walks you through one off costs, recurring costs and unit costs. 
+
+Then it tells you the minimum price you can set for your product (depending on sales per month). Also shows you a matrix of the annual profit you&#39;ll make at various price/sales combinations.
+
+If you say &quot;Leon, fix this...&quot; I will listen closely. Thanks in advance for any feedback.</description>
+    
+    <lastBuildDate>Wed, 20 Jul 2016 18:49:26 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Minimum Price Calculator</title>
+        <dc:creator><![CDATA[dtrejo]]></dc:creator>
+        <description><![CDATA[
+            <p>Cool! Here’s a calculator I made to sanity-check engineering investment decisions: <a href="http://engineerworth.com" rel="nofollow noopener">http://engineerworth.com</a> - it also uses tangle <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Feedback:<br>
+“If you price the product at $1754 you’ll need to sell 0 per month before you make a single dollar in profit. For every copy after that, you’ll get to keep $1728 from each sale.” - can you make this one increase by $10 increments? Also the number sold per month started negative for me. Also I’d like the tool to focus on ROI as well, not just cost (b/c i don’t care about the cost if I make money overall)</p>
+<p>My personal feel on pricing products: the amy hoy way. $19 if i can’t decide on a price. Otherwise, value pricing. And also tiers: <a href="https://expensiveproblem.com/pricing-curves" rel="nofollow noopener">https://expensiveproblem.com/pricing-curves</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/9</link>
+        <pubDate>Wed, 20 Jul 2016 18:36:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4210-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss">Minimum Price Calculator</source>
+      </item>
+      <item>
+        <title>Minimum Price Calculator</title>
+        <dc:creator><![CDATA[syneryder]]></dc:creator>
+        <description><![CDATA[
+            <p>Aha! Awesome, thank you for linking me to the old version - I see that your second version is much improved, the Tangle sliders are much better than the forms.  v2 lets me think through what-if scenarios more easily.  Funny how when you request features/changes &amp; get to try out what you asked for, sometimes you find “no, actually the product designer was right all along” <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>(FWIW, I’m coming at this from a “Your Seventh Product” perspective rather than “Your First Product”, but I’m getting a ton of value from it. I need to go revise some pricing…)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/8</link>
+        <pubDate>Tue, 19 Jul 2016 14:45:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4210-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss">Minimum Price Calculator</source>
+      </item>
+      <item>
+        <title>Minimum Price Calculator</title>
+        <dc:creator><![CDATA[Leon]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/syneryder">@syneryder</a>. Really appreciate your feedback.</p>
+<blockquote>
+<p>It does go pear-shaped for me after the advertising calculation</p>
+</blockquote>
+<p>Fixed now. Yeh, I was dividing when I should’ve multiplied. Math is even fussier than code. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I’ve deliberately left out payment gateways, VAT/GST and a few other things for now.</p>
+<p>The previous version (<a href="http://yourfirstproduct.com/tools/pricing_original" rel="nofollow noopener">now hidden here</a>) spent a little extra time on “time spent on business” but I cut out the details this time around.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/7</link>
+        <pubDate>Tue, 19 Jul 2016 13:03:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4210-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss">Minimum Price Calculator</source>
+      </item>
+      <item>
+        <title>Minimum Price Calculator</title>
+        <dc:creator><![CDATA[syneryder]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh wow!  I really like this, and wanted to create something like this for myself.</p>
+<p>The interface works, but it’s confusing.  A simpler, graphical interface would be great (something like <a href="http://howmuchtomakeanapp.com" rel="nofollow noopener">http://howmuchtomakeanapp.com</a> would be ideal)… but this works great as an MVP.  And I’d rather see you focus on nailing down the math first before the pretty graphics &amp; forms!</p>
+<p>I <em>love</em> that you’ve included support time cost!  That’s the main feature I wanted to include when creating my own spreadsheet / calculation of this.  I felt it glossed over the “time spent on business” though, and 5 hours a month seems crazy low (even Tim Ferriss had a Four Hour Work Week!)  I’d like to see that broken out a little more, ie time spent on blogging/marketing, time spent on maintenance/upgrades, and then there’s the icky accounting / paperwork stuff.  That’s probably too much detail for some, so a way to switch between hyper-detail and overall ballpark numbers would be good.</p>
+<p>It does go pear-shaped for me after the advertising calculation though.  I’ve spent enough on Adwords &amp; FB to know that it’s mostly a waste of money, so I want to set my number of customers who arrive via ads as zero %… but then I get lots of NaN everywhere.  I need to set my CPC at $0 before I get sensible numbers again.  (And 20% of clicks becoming customers?  That seems crazy high… I’d be more likely to set that at 1%, or even sub 1%.)</p>
+<p>One last thing missing is the e-commerce cut and any VAT.  Google / Apple would be 30%, whereas FastSpring is ~6% and Paypal/Stripe would be ~3%.  VAT/GST would be anywhere from 0 - 25%, I think.  (And if you really want to make hearts sink, add in personal/business tax rate, some of that “profit” goes to the taxman.)</p>
+<p>But well done, I really really like this.  I’d mostly use it to scope back the time spent on development to hit a specific price point (eg how much development time can I afford to spend to hit a $50 price).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/6</link>
+        <pubDate>Mon, 18 Jul 2016 15:48:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4210-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss">Minimum Price Calculator</source>
+      </item>
+      <item>
+        <title>Minimum Price Calculator</title>
+        <dc:creator><![CDATA[Leon]]></dc:creator>
+        <description><![CDATA[
+            <p>Howdy <a class="mention" href="/u/ian">@Ian</a> and <a class="mention" href="/u/rob_race">@rob_race</a>, I’ve given the minimum price calculator a complete overhaul, to change the way it works.</p>
+<p>It’s now an article describing factors that affect costs. And each factor can be dragged up or down to change the result. It uses Bret Victor’s Tangle (<a href="http://worrydream.com/Tangle/" rel="nofollow noopener">http://worrydream.com/Tangle/</a>) to do the magic. I’d been wanting to play with that for a while, so I was happy to have an excuse.</p>
+<p>Check it out at <a href="http://yourfirstproduct.com/tools/pricing" rel="nofollow noopener">http://yourfirstproduct.com/tools/pricing</a>.</p>
+<p>It still includes a lot of detail, probably too much. I could simplify it right down, but wanted to only change one thing at a time because science.</p>
+<p>cheers!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/5</link>
+        <pubDate>Sun, 17 Jul 2016 04:07:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4210-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss">Minimum Price Calculator</source>
+      </item>
+      <item>
+        <title>Minimum Price Calculator</title>
+        <dc:creator><![CDATA[Leon]]></dc:creator>
+        <description><![CDATA[
+            <p>Cheers <a class="mention" href="/u/ian">@ian</a></p>
+<p>Yeh I think you’re right. I’m glad I’ve gone far enough down this rabbit hole that I finally have a good grasp on costs. But I don’t think other people want (or need) to understand their costs in a very detailed way.</p>
+<p>I’ll look for a way to simplify.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/4</link>
+        <pubDate>Sat, 16 Jul 2016 00:31:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4210-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss">Minimum Price Calculator</source>
+      </item>
+      <item>
+        <title>Minimum Price Calculator</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>These sort of things are usually better as guides than actual calculators trying to determine a true number. There’s a lot of questions on here nobody will know the answer to. That I don’t know the answer to about my own 10 year old business! I think you’d be better off trimming this down to 3-4 broad stroke questions and coming up with some sort of range.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/3</link>
+        <pubDate>Fri, 15 Jul 2016 17:31:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4210-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss">Minimum Price Calculator</source>
+      </item>
+      <item>
+        <title>Minimum Price Calculator</title>
+        <dc:creator><![CDATA[rob_race]]></dc:creator>
+        <description><![CDATA[
+            <p>I was a little confused by the whole thing, I am not quite sure what I am calculating in the end. When it got to the calculations, the prices per copy were pretty high, and all of the profit numbers in the table were negative, and getting further negative as more copies were sold.</p>
+<p>Hope that helps</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/2</link>
+        <pubDate>Fri, 15 Jul 2016 14:13:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4210-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss">Minimum Price Calculator</source>
+      </item>
+      <item>
+        <title>Minimum Price Calculator</title>
+        <dc:creator><![CDATA[Leon]]></dc:creator>
+        <description><![CDATA[
+            <p>OK, I built this thing. And the whole time I was writing it I promised myself I’d show it to the peeps at “<a href="http://discuss.bootstrapped.fm">discuss.bootstrapped.fm</a>” to ask for feedback.</p>
+<p>It’s an interactive calculator for working out the lowest price you can put on your product.<br>
+<a href="http://yourfirstproduct.com/tools/pricing" class="onebox" target="_blank" rel="nofollow noopener">http://yourfirstproduct.com/tools/pricing</a></p>
+<p>It’s kinda nerdy… it walks you through one off costs, recurring costs and unit costs.</p>
+<p>Then it tells you the minimum price you can set for your product (depending on sales per month). Also shows you a matrix of the annual profit you’ll make at various price/sales combinations.</p>
+<p>If you say “Leon, fix this…” I will listen closely. Thanks in advance for any feedback.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210/1</link>
+        <pubDate>Fri, 15 Jul 2016 12:27:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4210-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/minimum-price-calculator/4210.rss">Minimum Price Calculator</source>
+      </item>
+  </channel>
+</rss>

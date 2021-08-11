@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Teaser page for my new product: Contabulo</title>
+    <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351</link>
+    <description>https://www.contabulo.com/
+
+So I&#39;ve been working on this for a while.  It&#39;s intended to be a B2B SaaS application (also thinking about selling an on-premises/self-hosted &quot;enterprise&quot; variant) for collaboration/KM.  
+
+I&#39;ve seen a lot of &quot;card-based&quot; PM tools that assume you want to manage a project using Agile/Kanban/etc., and I wanted to create a more &quot;freeform&quot; tool that can be used both as a PM-lite tool and a KMS (sort of wiki-like).  I&#39;m using it myself as both a personal/family organizer and to manage the project itself.  Part of my motivation for doing this was my displeasure with other tools like Trello :)
+
+I&#39;m not sure about pricing yet, and I&#39;ve got a huge backlog of features yet to be implemented, but I believe I&#39;m getting very close to something &quot;Beta-able.&quot;  
+
+_In case you&#39;re curious about the tech stack: Basically, several backend services written in Clojure running behind an nginx proxy.  The main database is PostgreSQL, I&#39;m using Elasticsearch for search functionality and RabbitMQ for inter-service comm.  The front end is just a single page webapp written in ES6 with mithril.js._</description>
+    
+    <lastBuildDate>Wed, 11 Oct 2017 00:21:37 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[jcadam]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="11" data-topic="5351">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I think Keep is mostly abandonware. But it is good someone has seen the need in such a tool - it is an indirect validation, despite it did not work for Google.</p>
+</blockquote>
+</aside>
+<p>Hopefully <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>And Google wouldn’t consider a modestly popular application to be worth its time, whereas I would be thrilled.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/12</link>
+        <pubDate>Wed, 11 Oct 2017 00:21:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="5351">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jcadam/40/3225_1.png" class="avatar"> jcadam:</div>
+<blockquote>
+<p>Hadn’t heard of Google Keep</p>
+</blockquote>
+</aside>
+<p>I think Keep is mostly abandonware. But it is good someone has seen the need in such a tool - it is an indirect validation, despite it did not work for Google.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/11</link>
+        <pubDate>Tue, 10 Oct 2017 00:29:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[jcadam]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I use Google keep and it seems to be a similar free form tool?</p>
+</blockquote>
+<p>Hmm… Hadn’t heard of Google Keep.  On the surface it looks at least somewhat similar and is probably better as a personal organizational tool (I’m not really seeing my product that way), but it doesn’t seem to have as much of an enterprise focus (or support on-premises installs, which is something I would be happy to do).  And of course, being Google, they could just up and decide to shut it off tomorrow (which is why I don’t use any of Google’s other tools - they’ve done it to me twice now).</p>
+<p>The comments I’ve got in this thread (including yours) so far suggest I need to do a better job of targeting this thing, so I’ll focus on that in my marketing <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>As an aside, as someone who’s been forced to use various enterprise software tools over the years, I’ve learned that utility and quality don’t matter as much as you would hope.  Large organizations (esp govt agencies) will pay enormous sums of money for absolute garbage products that don’t even address the problems they purport to solve (e.g., any software sold by IBM or SAP) and tend to shy away from free or open-source solutions due to a (at least perceived) lack of support (this explains why Oracle is still managing to find customers).  So I’m not completely sure what the secret to success in this space is – I’m hoping I’ll stumble onto it amidst all of my flailing around.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/10</link>
+        <pubDate>Sun, 08 Oct 2017 18:44:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Good luck with the new site. I use Google keep and it seems to be a similar free form tool?</p>
+<p>It can be hard to compete against existing solutions especially if they are free like keep.</p>
+<p>But you really don’t know how it will sell until you try it out. Just go for it <img src="https://emoji.discourse-cdn.com/twitter/grinning.png?v=5" title=":grinning:" class="emoji" alt=":grinning:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/9</link>
+        <pubDate>Sun, 08 Oct 2017 18:23:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Also… the screenshot on the first page is clearly not real. “The company needs a new system” <img src="https://emoji.discourse-cdn.com/twitter/roll_eyes.png?v=5" title=":roll_eyes:" class="emoji" alt=":roll_eyes:"> It doesn’t look like any real project plan, and immediately robs you of large piece of trust, because if you cannot find a real-world example of your application use, you clearly have not many users. The social proof then works against you.</p>
+<p>Put something more specific/realistic there - “Q3 2017 our payroll system goes out of support. We need to implement an upgrade or replacement”. Ideally, get a real wording from some real world project.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/8</link>
+        <pubDate>Sun, 08 Oct 2017 17:13:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>P.S. I also do not like the name at all. Yeah, it is smart-ass, I see it, <em>Latin</em>. But I do not have any mental link to any other word in English, except maybe <em>contagious</em> and <em>Ebola</em> which is not what you want.</p>
+<p>How the heck I’m going to spread the word around the cooler? “I’ve seen that awesome tool, it is named… errr… named… C-something… can’t remember right now”. Not good.</p>
+<p>Having said that, Trello wasn’t a good name too. But the google juice accumulated by that time by Joel made it stick.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/7</link>
+        <pubDate>Sun, 08 Oct 2017 17:02:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="5351">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jcadam/40/3225_1.png" class="avatar"> jcadam:</div>
+<blockquote>
+<p>The cards are quite multipurpose</p>
+</blockquote>
+</aside>
+<p>That is a bit worrisome. When a tool can do anything, it is hard to figure out what would I use it for.</p>
+<p>I mean, the B2B guys have specific problems - project management, KB, whatnot. When a tool can be any of these, the chances are it is not the best one for either of them. And your marketing message gets diluted too - should you market it as a PM tool or KB tool?</p>
+<p>Microsoft can affort to market SharePoint as a platform for many potential uses. I’m sure you simply can not.</p>
+<p>I’d choose one use that is most promising, and start focusing features and marketing on that use case only.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/6</link>
+        <pubDate>Sun, 08 Oct 2017 16:55:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[jcadam]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>The first thought I got was “Hmm… so how is this different from Trello? I looks a bit kanban-like like Trello.”</p>
+</blockquote>
+<p>That’s a good point.  I can tell you from using it myself it’s quite different from Trello.  It’s not a kanban board at all.  I simply wanted boards and cards, with no particular usage (kanban, agile, etc.) assumed (I wanted something more versatile).  I’d say it’s more like a combination of Pintrest and a wiki (though no reason why it couldn’t be used as a PM tool).  The cards are quite multipurpose (anything from simple tasks and checklists to whole articles, and I plan to add many more types of ‘card content’ in the future).</p>
+<p>I know – I need to find a way to explain this clearly and succinctly <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/5</link>
+        <pubDate>Sat, 07 Oct 2017 19:08:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[manish]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5351">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jcadam/40/3225_1.png" class="avatar"> jcadam:</div>
+<blockquote>
+<p>Part of my motivation for doing this was my displeasure with other tools like Trello <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>Since you yourself mention this, I suggest you also think in terms of what would users familiar with Trello think of when they look at your screenshot. The first thought I got was “<strong>Hmm… so how is this different from Trello? I looks a bit kanban-like like Trello.</strong>” If you can answer that question somehow in the first fold of the page itself, it will greatly help visitors like me who have tried a ton of enterprise tools in this space.</p>
+<p>All the best!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/4</link>
+        <pubDate>Sat, 07 Oct 2017 14:31:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[jcadam]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry - KMS is Knowledge Management System.  It’s an enterprise software term.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/3</link>
+        <pubDate>Thu, 05 Oct 2017 00:58:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5351">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jcadam/40/3225_1.png" class="avatar"> jcadam:</div>
+<blockquote>
+<p>KMS</p>
+</blockquote>
+</aside>
+<p>What is KMS? The only meaning I know is “Kill MySelf”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/2</link>
+        <pubDate>Thu, 05 Oct 2017 00:48:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+      <item>
+        <title>Teaser page for my new product: Contabulo</title>
+        <dc:creator><![CDATA[jcadam]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://www.contabulo.com/" class="onebox" target="_blank" rel="nofollow noopener">https://www.contabulo.com/</a></p>
+<p>So I’ve been working on this for a while.  It’s intended to be a B2B SaaS application (also thinking about selling an on-premises/self-hosted “enterprise” variant) for collaboration/KM.</p>
+<p>I’ve seen a lot of “card-based” PM tools that assume you want to manage a project using Agile/Kanban/etc., and I wanted to create a more “freeform” tool that can be used both as a PM-lite tool and a KMS (sort of wiki-like).  I’m using it myself as both a personal/family organizer and to manage the project itself.  Part of my motivation for doing this was my displeasure with other tools like Trello <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I’m not sure about pricing yet, and I’ve got a huge backlog of features yet to be implemented, but I believe I’m getting very close to something “Beta-able.”</p>
+<p><em>In case you’re curious about the tech stack: Basically, several backend services written in Clojure running behind an nginx proxy.  The main database is PostgreSQL, I’m using Elasticsearch for search functionality and RabbitMQ for inter-service comm.  The front end is just a single page webapp written in ES6 with mithril.js.</em></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351/1</link>
+        <pubDate>Wed, 04 Oct 2017 21:44:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5351-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teaser-page-for-my-new-product-contabulo/5351.rss">Teaser page for my new product: Contabulo</source>
+      </item>
+  </channel>
+</rss>

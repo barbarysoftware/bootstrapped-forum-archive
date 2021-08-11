@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Changing payment suppliers</title>
+    <link>https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137</link>
+    <description>We&#39;re currently using a payment supplier to handle all of our monthly subscriptions. We&#39;ve been with them for a few years, but there are a couple of issues:
+
+ - Old school XML API (we had to write the API integration ourselves. Ugh)
+ - API does not support daily billing summary. To find out which records were successfully charged each day, we need to log into their website and download the data via CSV. We then run that through an importer on our side.
+ -  PCI Compliance.
+
+These are some significant pain points. 
+
+Oh, one other thing - they have no idea how to migrate someone off their system. Seriously? What? Yes.
+
+The upsides are:
+
+ - Charge is only 2.2% (very good value for money by any comparison)
+ - Super easy to modify the subscription charge for each client. There is no need to subscribe each client to a plan (ala Stripe). This is a pretty big deal for us, because we have quite a few different charges (discounts, coupons, referrals, etc) You just set up a charge record on the fly
+ - Multiple subscriptions per client (Stripe don&#39;t do this, but there are some workarounds: https://support.stripe.com/questions/can-customers-have-multiple-subscriptions)
+
+We&#39;re seriously considering moving to Stripe (we&#39;re in the UK beta) and wanted to get feedback on what you are all using and the pros and cons that you have found.</description>
+    
+    <lastBuildDate>Fri, 02 Aug 2013 14:32:52 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Changing payment suppliers</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <p>If you have an existing merchant account, I think you may like <a href="https://www.braintreepayments.com">Braintree</a>, I know that I’ve talked to some people that use it in conjunction with a merchant account to get lower rates than the standard 2.9% that they offer.</p>
+<p>As far as Stripe goes, I would talk to their support team. I know that my service leverages Stripe and they offer lowered rates for higher traffic customers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137/4</link>
+        <pubDate>Fri, 02 Aug 2013 14:32:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-137-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137.rss">Changing payment suppliers</source>
+      </item>
+      <item>
+        <title>Changing payment suppliers</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <p>One of the start-ups from the co-working space I use here in Cape Town runs a service for handling monthly recurring billing called <a href="http://snapbill.com">Snapbill</a>. You can hook in multiple payment backends and handle lots of variations in “packages” etc. without losing the will to live. I’ll see if I can get the founders to join this forum too. <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137/3</link>
+        <pubDate>Fri, 02 Aug 2013 14:24:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-137-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137.rss">Changing payment suppliers</source>
+      </item>
+      <item>
+        <title>Changing payment suppliers</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>You can hear us rant about our similar service (<a href="http://Authorize.net">Authorize.net</a>) here <a href="http://bootstrapped.fm/bootstrapped-episode-6-authorize-this/">http://bootstrapped.fm/bootstrapped-episode-6-authorize-this/</a> as well as some Stripe talk.</p>
+<p>Overall it’s hard to justify a move until the pain in massive, but now having used Stripe it is so nice to have a clean UI, be able to actually use the admin, be able to actually code things up logically, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137/2</link>
+        <pubDate>Fri, 02 Aug 2013 13:21:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-137-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137.rss">Changing payment suppliers</source>
+      </item>
+      <item>
+        <title>Changing payment suppliers</title>
+        <dc:creator><![CDATA[jontybehr]]></dc:creator>
+        <description><![CDATA[
+            <p>We’re currently using a payment supplier to handle all of our monthly subscriptions. We’ve been with them for a few years, but there are a couple of issues:</p>
+<ul>
+<li>Old school XML API (we had to write the API integration ourselves. Ugh)</li>
+<li>API does not support daily billing summary. To find out which records were successfully charged each day, we need to log into their website and download the data via CSV. We then run that through an importer on our side.</li>
+<li>PCI Compliance.</li>
+</ul>
+<p>These are some significant pain points.</p>
+<p>Oh, one other thing - they have no idea how to migrate someone off their system. Seriously? What? Yes.</p>
+<p>The upsides are:</p>
+<ul>
+<li>Charge is only 2.2% (very good value for money by any comparison)</li>
+<li>Super easy to modify the subscription charge for each client. There is no need to subscribe each client to a plan (ala Stripe). This is a pretty big deal for us, because we have quite a few different charges (discounts, coupons, referrals, etc) You just set up a charge record on the fly</li>
+<li>Multiple subscriptions per client (Stripe don’t do this, but there are some workarounds: <a href="https://support.stripe.com/questions/can-customers-have-multiple-subscriptions" rel="nofollow noopener">https://support.stripe.com/questions/can-customers-have-multiple-subscriptions</a>)</li>
+</ul>
+<p>We’re seriously considering moving to Stripe (we’re in the UK beta) and wanted to get feedback on what you are all using and the pros and cons that you have found.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137/1</link>
+        <pubDate>Fri, 02 Aug 2013 13:18:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-137-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-suppliers/137.rss">Changing payment suppliers</source>
+      </item>
+  </channel>
+</rss>

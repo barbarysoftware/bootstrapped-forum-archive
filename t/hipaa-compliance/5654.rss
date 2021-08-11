@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>HIPAA Compliance</title>
+    <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654</link>
+    <description>I&#39;m a doctor fairly fed-up with some of the software we have to use in my practice. To that end, I built a small SAAS solution to improve our workflows in quality improvement and billing. It may never have much appeal-- but it solves a problem for me. The biggest hurdle to launch is now HIPAA compliance. Ideally, I&#39;ll get there without spending too much money-- the budget&#39;s seriously limited. Unfortunately there&#39;s not much available about what exactly is needed.
+
+Does anyone have experience in this area, or a recommendation for good resources?</description>
+    
+    <lastBuildDate>Mon, 05 Feb 2018 17:53:29 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[DavidLogan]]></dc:creator>
+        <description><![CDATA[
+            <p>If the costs are prohibitive to obtain the HIPAA servers, we can help you crowdfund the capital.  An added benefit is that you would develop a local following for SAAS solution that could ultimately help get other practices to use it.  If you are interested we would be happy to help.   Umergence . com</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/12</link>
+        <pubDate>Mon, 05 Feb 2018 17:53:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[AndyDent]]></dc:creator>
+        <description><![CDATA[
+            <p>I met <a href="https://www.linkedin.com/in/hoalagreevy/" rel="nofollow noopener">Hoala Greevy</a> at a Founder Institute event in San Francisco back in 201. He impressed me than and I’ve since seen steady progress with his Paubox startup which they say <em>is the easiest way to send and receive HIPAA Compliant Email.</em></p>
+<p>From the articles I’ve seen him publish, he’d be an excellent person to talk to. You can tell him Andy Dent from Perth says hi, but he probably won’t remember me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/11</link>
+        <pubDate>Fri, 02 Feb 2018 08:44:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[startupdoc]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the replies. I’d love to be solving another problem and not drudging through HIPAA legalese-- but this one’s close to home. I didn’t even know where to get started, but it looks like HHS is the best source.</p>
+<p><a class="mention" href="/u/patio11">@patio11</a> offered some advice in 2013, <a href="http://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742/5">http://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742/5</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/10</link>
+        <pubDate>Thu, 01 Feb 2018 19:23:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[jdc-cunningham]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve looked into this briefly. The HIPAA servers are very expensive several hundred to above $1K per month.</p>
+<p>If possible you could consider taking a zero-knowledge approach and minimize breach impact by encrypting everything that is stored as well as separating resources.</p>
+<p>Encrypted resources can introduce extra overhead as everything has to be decrypted when searching against for example.</p>
+<p>Just my opinion</p>
+<p>edit: granted these servers are also beast, not a little VPS single core deal</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/9</link>
+        <pubDate>Wed, 31 Jan 2018 07:28:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[mj_langford]]></dc:creator>
+        <description><![CDATA[
+            <p>Aptible came up when looking for a medical server. It seemed to be a fairly turnkey solution for the server level. Their entry option is 1k a month and doesn’t get you past understanding your required behaviors either. We didn’t end up needing one for the project after all though, so that was just the final candidate round in a search we did.</p>
+<p>AWS itself does have a BAA agreement but you do need to learn each of the different things you have to do about logging, encryption at rest, and auditing on your own. Here is the AWS guide which <em>does</em> have list of steps they recommend: <a href="https://d0.awsstatic.com/whitepapers/compliance/AWS_HIPAA_Compliance_Whitepaper.pdf" rel="nofollow noopener">https://d0.awsstatic.com/whitepapers/compliance/AWS_HIPAA_Compliance_Whitepaper.pdf</a></p>
+<p>You will want to look into insurance. DM me if you want some referrals in that direction</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/8</link>
+        <pubDate>Wed, 31 Jan 2018 02:47:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="5654">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ken/40/1350_1.png" class="avatar"> Ken:</div>
+<blockquote>
+<p>Not that you were implying it, but I want to make sure all readers are aware…</p>
+<p>Using HIPAA-compliant hosting doesn’t give you a rubber stamp to then declare yourself or your SaaS HIPAA compliant.</p>
+</blockquote>
+</aside>
+<p>I was kinda implying it being duped by the misleading marketing copy of those hosting providers. <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>How much the true HIPAA-compliance different from just hosting there?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/7</link>
+        <pubDate>Tue, 30 Jan 2018 19:51:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[Ken]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="5654">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/intelligentcoder/40/3416_1.png" class="avatar"> intelligentcoder:</div>
+<blockquote>
+<p>From my experience, HIPAA will consume a lot of time and money. It’s not the ideal type of bootstrapped business</p>
+</blockquote>
+</aside>
+<p>100% agree with this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/6</link>
+        <pubDate>Tue, 30 Jan 2018 19:45:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[Ken]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5654">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/s/8c91f0/40.png" class="avatar"> startupdoc:</div>
+<blockquote>
+<p>Does anyone have experience in this area, or a recommendation for good resources?</p>
+</blockquote>
+</aside>
+<p>I have experience in this area. If you have specific questions, feel free to DM me. There’s really too much to try and give a concise summary in this thread.</p>
+<aside class="quote" data-post="4" data-topic="5654">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>some hosting provider offered “HIPAA-compliant hosting”.</p>
+</blockquote>
+</aside>
+<p>Not that you were implying it, but I want to make sure all readers are aware…</p>
+<p>Using HIPAA-compliant hosting doesn’t give you a rubber stamp to then declare yourself or your SaaS HIPAA compliant.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/5</link>
+        <pubDate>Tue, 30 Jan 2018 19:39:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="5654">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/intelligentcoder/40/3416_1.png" class="avatar"> intelligentcoder:</div>
+<blockquote>
+<p>HIPAA</p>
+</blockquote>
+</aside>
+<p>I remembered vaguely that some hosting provider offered “HIPAA-compliant hosting”.</p>
+<p>Just googled… errr … <a href="https://duckduckgo.com/?q=HIPAA+hosting" rel="nofollow noopener">ddg it</a>, and there are a number of them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/4</link>
+        <pubDate>Tue, 30 Jan 2018 18:48:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p>From my experience, HIPAA will consume a lot of time and money. It’s not the ideal type of bootstrapped business because everything is 3-6 times more expensive. And you’ll also spend a lot of time writing all your policies, documenting your periodic risk assessments, training, etc.</p>
+<p>You will also have to sign a Business Associate Agreement with all your clients, and your service providers (hosting companies, cloud providers, etc.) will have to provide you with a BAA as well.</p>
+<p>I’m not saying it’s impossible, but you will be competing against funded companies that usually have a compliance department.</p>
+<p>HHS is probably the best resource to learn about HIPAA: <a href="https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html" rel="nofollow noopener">https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/3</link>
+        <pubDate>Tue, 30 Jan 2018 16:02:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>I may be mistaken, but I want to say I remember reading somewhere that <a class="mention" href="/u/patio11">@patio11</a> may have dealt with this. Pinging him just in case. Others on here may have had experience with this as well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/2</link>
+        <pubDate>Tue, 30 Jan 2018 02:00:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+      <item>
+        <title>HIPAA Compliance</title>
+        <dc:creator><![CDATA[startupdoc]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m a doctor fairly fed-up with some of the software we have to use in my practice. To that end, I built a small SAAS solution to improve our workflows in quality improvement and billing. It may never have much appeal-- but it solves a problem for me. The biggest hurdle to launch is now HIPAA compliance. Ideally, I’ll get there without spending too much money-- the budget’s seriously limited. Unfortunately there’s not much available about what exactly is needed.</p>
+<p>Does anyone have experience in this area, or a recommendation for good resources?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hipaa-compliance/5654/1</link>
+        <pubDate>Tue, 30 Jan 2018 01:11:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5654-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hipaa-compliance/5654.rss">HIPAA Compliance</source>
+      </item>
+  </channel>
+</rss>

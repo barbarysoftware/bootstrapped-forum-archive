@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+    <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306</link>
+    <description>Hello! I am so glad to have stumbled across this forum. It seems like a great place especially for people like me who envy the participants of Joel Spolsky&#39;s The Business of Software. I heard a lot of great things about that forum. I guess this is version 2 of The Business of Software and hopefully some great startups emerge from this forum as well.
+
+I&#39;ll start with a little back story : I started writing programming related [blog posts](https://www.ploggingdev.com/archive/) around 9 months ago and managed to build up traffic to a few hundred hits every day. It might not seem like much, but it was and still is a big deal to me. Readers used to leave comments with suggestions for improvements, questions or just to say that they appreciate a particular post. Comments were powered by Disqus and all was well. One day I received an email notification from Disqus informing me that someone had left a comment on my blog. A pretty routine notification, so I opened the post and scrolled down to the comments section and noticed...six shady ads with images to accompany them. Without any warning, Disqus enabled ads on my site. Until then I never really bothered with what Disqus was doing in the background, but the ads incident made me curious. I inspected the requests that Disqus was making and it turns out that 100+ http requests, sending tracking data to 10+ external advertisers and 2MB of data transfer was required to display a comments section with 5 comments! That was my breaking point and so I promptly removed Disqus from my blog and deleted my account as well.
+
+I did not spend time looking for an alternative until a week ago. I missed the engagement with readers, so I started searching for an alternative commenting platform. My search for an alternative turned up mainly ad supported Disqus clones or open source self hosted options which were hard to work with. The search for an alternative also made me realize that people were frustrated with Disqus and didn&#39;t want to take the trouble of self hosting and managing an open source alternative. Some were even ready to pay for an alternative. I sense a gap in the market! So I decided to build a Disqus alternative which will be as easy to use as Disqus but without any ads or tracking scripts. I also made a note of all the people who were ready to pay for an alternative and will begin emailing them to see if my product fits their use case.
+
+Excited by the idea of building my first SaaS product, I decided to draw up a pricing table for the SaaS.
+
+* $29/month for 200,000 pageviews
+
+* $149/month for 2,000,000 pageviews
+
+* A Custom plan for sites with greater requirements.
+
+If there&#39;s one piece of advice that all SaaS owners agree upon , it&#39;s : charge more. That&#39;s reflected in the pricing table. It&#39;s hard to build a sustainable business on $5/month plans if you&#39;re bootstrapped.
+Great, I have a pricing table, but how do I charge users? To start with I will use Paypal and handle the subscriptions manually by generating and sending invoices manually, so it won&#39;t be built into the web app. Why? To keep the MVP barebones. If this project shows any signs of life, I will move to Stripe and build the payments flow into the website.
+
+Don&#39;t worry, I did not just bore you with an idea for a SaaS with nothing to show for it. So far I have built the user registration/login flow, the landing page and I am pretty close to completing the actual commenting system itself. There&#39;s also a little secret that I have to tell you : I reused the commenting engine that I built for a previous project. You can see the commenting engine of my previous project in action [here](https://ploghub.com/post/12/admin/virtual-environments-and-package-management-in-python-3/). So I have an unfair advantage : I already built a commenting system that I just need to optimize. 
+
+Here are some screenshots:
+
+![s1|690x257](upload://jL3lbuawoht2Jo8zw31mZDfnLq7.png)![s2|690x322](upload://iiWOiViJ8w7DzyI2i9cAmhnKr7.png)![s3|690x325](upload://9DQHH2yqRYPBngtD8pPgdoGoXun.png)
+
+Fast forward to today, I came across another member of this forum building a similar SaaS. Here&#39;s the [link](http://discuss.bootstrapped.fm/t/remarkbox-is-the-disqus-alternative/4871/11) to the discussion. In a span of five minutes, I went from &quot;I can do this&quot; to &quot;I am rekt&quot; to &quot;huh, I should at least see this project through&quot;. That&#39;s my current status : a few days away from launching, but as confused as ever.
+
+Why did I write this post? Primarily to document the process of going from an idea to actually building something that I can charge for and simultaneously get feedback as I make progress. This is the very first step. I will make a follow up post when I launch the SaaS and share the path from this point to the launch. For all you know, this could be another dud of a project which goes nowhere or it can become a meaningful SaaS in the market, or something in between. I don&#39;t know what&#39;s going to happen, but at the very least my journey can be useful to fellow bootstrappers!
+
+Would love to hear any thoughts or suggestions!
+
+Edit : It looks like new users can&#39;t use links in posts. Is it possible for the mods to lift this restriction? Temporary links : dpaste [dot] de/a5Vq
+
+Edit 2: New user restrictions have been lifted.</description>
+    
+    <lastBuildDate>Tue, 26 Sep 2017 18:53:05 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Russell_Ballestrini]]></dc:creator>
+        <description><![CDATA[
+            <p>So quick update - I have two paying customers who were impatient and wanted to on board ASAP!</p>
+<p>One of the customers is using it on a blog that never had comments before, that was an easy integration.</p>
+<p>The other customer had a custom CMS so I spent a couple weeks writing import facilities from CSV into Remarkbox.  The customer is happy with the outcome!</p>
+<p>Once my Beta list grows to a certain size I’m going to launch to the service privately to the beta people.  For that to happen I need to focus on marketing and building landing pages.  I only have about 15 hours a week to work on Remarkbox so its really tricky to figure out how to spend my time so that the service and marketing efforts work for themselves.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/31</link>
+        <pubDate>Tue, 26 Sep 2017 18:53:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[shanelabs]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Russell - can you give us an update on RemarkBox? It’s been in beta since the last time I looked at it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/30</link>
+        <pubDate>Tue, 26 Sep 2017 18:17:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Yep, that’s what I was going to write.</p>
+<p>Also, I strongly agree with:</p>
+<p><em>In the context of the commenting my metric would be not the pageviews, but comments. Why should I pay for a page with high page views but no comments?</em></p>
+<p>What if, conversely, there is a segment that has a very high comment to pageview ratio.  They are getting more value than average, so you are undercharging them.</p>
+<p>Really… it boils down to what’s EASY for the customer to understand, and, ideally, has a strong correlation between what you charge for and what their benefit is.  BTW, simply making is a SaaS gets you much closer b/c how LONG you use it is proportional to the value value. (Use it 2X as long, you’re getting 2X the value, and paying 2X the cost).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/29</link>
+        <pubDate>Sun, 24 Sep 2017 19:39:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you. I checked out Remarkbox, good job with the site!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/28</link>
+        <pubDate>Sat, 23 Sep 2017 19:24:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Russell_Ballestrini]]></dc:creator>
+        <description><![CDATA[
+            <p>Congrats on your upcoming launch!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/27</link>
+        <pubDate>Sat, 23 Sep 2017 18:27:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>If you and/or Remarkbox ever get to the point where you’re live and stable, I’d love to do some speed testing comparisons between the options out there.</p>
+</blockquote>
+<p>Based on my current estimate, I should be live by tomorrow. I’ll do a followup post on this forum to explain the changes I’ve made based on the feedback I received on this forum as well as others. Some changes : pricing, keeping the code closed source based on weighing out the pros vs cons etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/26</link>
+        <pubDate>Fri, 22 Sep 2017 01:25:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="24" data-topic="5306">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/shanelabs/40/2433_1.png" class="avatar"> shanelabs:</div>
+<blockquote>
+<p>But it’s obvious there is a need for more options.</p>
+</blockquote>
+</aside>
+<p>Personally I don’t think there’s business in commenting system precisely because there are many options already.</p>
+<p>This discussion here is framed as “competing with Disqus” but you would also competing with JetPack, Lifefyre, Intense Debate, Facebook and many, many others.</p>
+<p>Even if this was 2008 and those options didn’t exist, economics don’t support $20/month comment hosting business because acquiring users is not free.</p>
+<p>You can’t just sit and hope users will come to you.</p>
+<p>There’s only so much traffic you can get by promoting in  forums like this one.</p>
+<p>Lacking some genius (and free) marketing strategy, you won’t get enough users to support yourself.</p>
+<p>Disqus (and everyone else who matters in this space) went with free product with ads because of the economics.</p>
+<p>The free product was a marketing strategy and initially it was very costly, which is why they had to raise $10 million in total (<a href="https://www.crunchbase.com/organization/disqus#/entity" rel="nofollow noopener">https://www.crunchbase.com/organization/disqus#/entity</a>) and go big or go home.</p>
+<p>They were lucky and got big but that’s not a route you can replicate.</p>
+<p>Philosophically speaking, if you plan to do something different from everyone else (i.e. do a paid-only business vs. generous free tier with ads or upsell to paid tier as everyone else who’s successful) then either you understand something they don’t about this space or you don’t understand something they do.</p>
+<p>In this particular case I think they understand the economics of this business and you don’t.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/25</link>
+        <pubDate>Fri, 22 Sep 2017 00:40:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[shanelabs]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="5306">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/p/edb3f5/40.png" class="avatar"> ploggingdev:</div>
+<blockquote>
+<p>Regarding the Pingdom results, I think the results are based on loading sites from a datacenter, so the speed is not representative of what a normal user would experience. Even on a reasonably fast connection, Disqus takes between 2 and 6 seconds to load.</p>
+</blockquote>
+</aside>
+<p>You’re absolutely correct about Pingdom’s results not being typical of a real user. <a href="https://www.webpagetest.org/" rel="nofollow noopener">WebPageTest</a> (or <a href="https://www.machmetrics.com/" rel="nofollow noopener">MachMetrics</a> - for recurring speed testing, based on WPT) will give you more realistic results as they use real browser running real OS’s (and can simulate realistic network speed too).</p>
+<p>I was one of the original commenters in the Remarkbox post because I could not stand Disqus’ load time. Made my site crawl. If you and/or Remarkbox ever get to the point where you’re live and stable, I’d love to do some speed testing comparisons between the options out there.</p>
+<p>It’s going to be really hard to compete with Disqus. But it’s obvious there is a need for more options. I hope you (and Russell_Ballestrini) end up seeing it through and launching out of beta.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/24</link>
+        <pubDate>Thu, 21 Sep 2017 21:03:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="22" data-topic="5306">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/p/edb3f5/40.png" class="avatar"> ploggingdev:</div>
+<blockquote>
+<p>Well, I incur costs for pageviews so I want my pricing to scale with pageviews.</p>
+</blockquote>
+</aside>
+<p>Well, users do not really care about <strong>your</strong> cost structure. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/23</link>
+        <pubDate>Tue, 19 Sep 2017 02:55:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Well, they all agree, but I believe it is applicable only when you gained some trust and figured out your niche. If you just waltz into the market flashing a high price, the market will think you’re either a freak or a fraud.</p>
+</blockquote>
+<p>I agree, but I’m definitely not a freak or a fraud <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> . The way I’m approaching building trust is to to do personal outreach and point people at some of my other works online which show that I care about privacy and that I am capable of building and running a product. Nothing too impressive, but it seems to work so far.</p>
+<p>The blogging aspect is already working! I have received 1 promising inbound inquiry from a business who came across my blog post and businesses are not too price sensitive when they are dealing with $30/month subscriptions. I can’t explain how incredible it feels!</p>
+<blockquote>
+<p>Also, price per pageview schema may look good to you, but I have my doubts. In the context of the commenting my metric would be not the pageviews, but comments. Why should I pay for a page with high pageviews but no comments?</p>
+</blockquote>
+<p>Well, I incur costs for pageviews so I want my pricing to scale with pageviews.</p>
+<blockquote>
+<p>P.P.S. I also believe there should be more alternatives to Disqus. And I wonder why there are no more competitors? Some barrier for entry may be there which we are not aware of (aside of the cost of running a HA cluster)</p>
+</blockquote>
+<p>I can only speculate, but most of the current alternatives (excluding fb comments ang g+) don’t really offer much over the paid version of Disqus. There is no real differentiating factor. I am trying to really push the privacy + lightweight message as my selling point.</p>
+<p>Thanks for the feedback.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/22</link>
+        <pubDate>Tue, 19 Sep 2017 02:16:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5306">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/p/edb3f5/40.png" class="avatar"> ploggingdev:</div>
+<blockquote>
+<p>$29/month for 200,000 pageviews<br>
+…<br>
+If there’s one piece of advice that all SaaS owners agree upon , it’s : charge more. That’s reflected in the pricing table.</p>
+</blockquote>
+</aside>
+<p>Well, they all agree, but I believe it is applicable only when you gained some trust and figured out your niche. If you just waltz into the market flashing a high price, the market will think you’re either a freak or a fraud.</p>
+<p>Also, price per pageview schema may look good to you, but I have my doubts. In the context of the commenting my metric would be not the pageviews, but comments. Why should I pay for a page with high pageviews but no comments?</p>
+<p>P.S. Does Disqus allow to tag commenters in say Drip? I’d see every comment as an inbound marketing piece, and look for ways for the hosting site to use that info. Then charging per comment would make more sense, too.</p>
+<p>P.P.S. I also believe there should be more alternatives to Disqus. And I wonder why there are no more competitors? Some barrier for entry may be there which we are not aware of (aside of the cost of running a HA cluster).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/21</link>
+        <pubDate>Tue, 19 Sep 2017 01:54:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <p>So I’ve just started sending emails to potential customers and am waiting for replies, so I’m afraid I don’t have an answer yet. But at $20/month I don’t imagine a lot of people would complain. It’s still 2x more expensive than Disqus, but I guess being bootstrapped, there’s no way to compete on price with Disqus.</p>
+<p>Regarding sites with low traffic, it doesn’t make sense for them to buy a subscription to my product. I might consider allowing a limited number of such sites to use my product if only as a way to promote my commenting engine. I certainly won’t be able to extend it to any site that wants in since I don’t make any revenue of off them unlike Disqus, which serves ads.</p>
+<blockquote>
+<p>Hmmm… the “click if you are a human” CAPTCHA doesn’t handle the Spam comments?</p>
+</blockquote>
+<p>That prevents bots from signing up but it does not prevent users from posting trash/toxic comments or using abusive language. So the api I was talking about uses machine learning to classify such comments as being toxic so I can just hide such comments by default. More info here : <a href="https://www.perspectiveapi.com/" rel="nofollow noopener">https://www.perspectiveapi.com/</a></p>
+<blockquote>
+<p>Think of it this way: how much would you pay for traffic? $.50/click?</p>
+</blockquote>
+<p>Yup, I am guessing even lower since there’s practically no competition. I’ll have to experiment with Adwords to see what the conversion rates are.</p>
+<p>Thanks for the feedback.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/20</link>
+        <pubDate>Mon, 18 Sep 2017 17:58:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Low thousands is actually quite a lot.</p>
+<p>Think of it this way: how much would you pay for traffic?  $.50/click?</p>
+<p>If there is little competition you can easily rank <span class="hashtag">#1</span>. And there is a HUGE tipping effect.<br>
+And in my experience Google under reports the traffic. Perhaps they are reporting how many CLICKS you could get.</p>
+<p><span class="hashtag">#1</span> spot usually gets about 80-90% of traffic. I did that with a very focused therapy technique (that our software uses). Google said there were only 30 searches/ month. I now get <a href="https://www.screencast.com/t/e8jzAOLhtawl" rel="nofollow noopener">500  visits to that page per month</a>.  Not bad for a 10 hour investment (I spent Wayyyyy too much time on the artwork, etc.) I just checked. It’s the <span class="hashtag">#1</span> page on our blog.   It’s essentially getting me $250 /month of traffic (IF I can monetize it!)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/19</link>
+        <pubDate>Mon, 18 Sep 2017 17:49:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>MIGHT be worth a “subtle” post where you just layout the problems with Discus.  I.e., if I use Discus I am not interested in hearing about you developing an alt until I know WHY I shouldn’t use Discuss.</p>
+<p>My$.02</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/18</link>
+        <pubDate>Mon, 18 Sep 2017 17:41:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Hmmm… the “click if you are a human” CAPTCHA doesn’t handle the Spam comments?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/17</link>
+        <pubDate>Mon, 18 Sep 2017 17:40:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there a correlation between “perceived value” and price?</p>
+<p>I.e., as someone else said, if I only had 1,000 views a month I wouldn’t spend $20/m on comments.<br>
+That’s certainly my case.<br>
+But if you find folks with 10K views/month and 100 comments, what do THEY think of the pricing.</p>
+<p>You could ignore the low end of the market  <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:">  or figure some other way to monetize it like link backs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/16</link>
+        <pubDate>Mon, 18 Sep 2017 17:38:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I think there is a lot of work here you are not factoring in:<br>
+Supporting signup with social media<br>
+dealing with spam/abuse<br>
+moderation tools<br>
+Syncing comments back into wordpress<br>
+Scaling your servers to cope with load<br>
+etc etc</p>
+</blockquote>
+<p>I don’t know whether privacy conscious users would want social media login, but if there’s demand I can add it. Regarding dealing with spam/abuse, Disqus recently switched to an experimental api offering from Google’s Jigsaw that uses machine learning to classify spammy comments. I will apply to that program soon so I can keep spam at bay. Regarding moderation tools, scaling servers etc, yes it’s a lot of work, but it’s manageable since I expect to operate at a much smaller scale than Disqus. I’m certainly under no illusion that I will compete with Disqus head on. I am targeting a subset of their audience who care about privacy. My biggest worries are not really technical, but the sales and marketing aspect of the SaaS since I don’t have much experience in those departments.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/15</link>
+        <pubDate>Mon, 18 Sep 2017 16:03:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Hmmm… what if you wrote a simple blog article about your frustrations w/ Discus and how you’d like an alternative. Post it on relevent FB groups. MAYBE have a signup for “would you be interested in an alternative”?</p>
+</blockquote>
+<p>I’ve written the first post on my <a href="https://www.ploggingdev.com/2017/08/building-a-disqus-alternative-part-1--research/" rel="nofollow noopener">blog</a> and have posted tweaked versions of that message on various forums. People are interested in such an offering, but I’ve gotten push back on the pricing. So that’s something I’m rethinking. I will continue writing posts as a form of content marketing and tweak the style to one that connects to readers on a personal level instead of reading like technical documentation.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/14</link>
+        <pubDate>Mon, 18 Sep 2017 15:49:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Have you done any SEO reasearch on searches for “Discus alternative” or “Discus speed” ?</p>
+</blockquote>
+<p>It’s pretty low volume for “disqus alternative”, in the low thousands and not much competition. In fact my post about building a Disqus alternative ranks on page 3. There are broader keywords I can target such as “blog comments” or “wordpress comments” which have much higher volume.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/13</link>
+        <pubDate>Mon, 18 Sep 2017 15:32:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>I think there is a lot of work here you are not factoring in:<br>
+Supporting signup with social media<br>
+dealing with spam/abuse<br>
+moderation tools<br>
+Syncing comments back into wordpress<br>
+Scaling your servers to cope with load<br>
+etc etc</p>
+<p>Disqus is a big company, i think you are going to find it hard to compete.</p>
+<p>Disqus is not perfect but for most customers they work fine so I don’t think there is a massive market of users out their looking an alternative.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/12</link>
+        <pubDate>Mon, 18 Sep 2017 14:07:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Hmmm… what if you wrote a simple blog article about your frustrations w/ Discus and how you’d like an alternative. Post it on relevent FB <em>groups</em>.  MAYBE have a signup for “would you be interested in an alternative”?</p>
+<p>I figure that’ll take 3h max, let you “think in writing” about the problem (good practice),. test the waters, and start gathering some beta testers.</p>
+<p>BTW, one thought: part of Discus’s marketing plan is a free version. Then when you reach the level of traffic to be worth their while, they hit you with ads (or get you to start paying $10/m or whatever). That might be a good marketing strategy IN THE FUTURE.</p>
+<p>I’m being selfish here: I wouldn’t pay $10/m b/c I have maybe one comment a month.  Not enough value for me. BUT my blog is growing. Maybe one day I’ll get to enough comments that it IS worth my time.</p>
+<p>BTW, I can tell you’ve really though through the validation phase. bravo! Most startups have failed before they start b/c they skip that part. I’ve seen it even with veteran, successful folks.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/11</link>
+        <pubDate>Mon, 18 Sep 2017 13:27:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>I disagree. You’re much better off, in most cases, selling a Hosted SaaS</p>
+<p>I can see the appeal of fixed price to an <em>engineer</em> but I’ve found most people don’t do that Depreciation calculation in their head (oh, it’s $100, that’s only $5/m over the next 2 years, that’s a deal).  I think you’ll do better with a subscription.Lower barrier to selling. It’s easier to sell a $10/m service than a one time purchase of $150. And odds are you’ll make more money (if you are delivering value) on the monthly.  It also aligns the cost with the value. You make more money the longer they use it.</p>
+<p>Also, I suspect self-hosting is going to limit you to a smaller (although more lucrative) audience. I suspect most people are using a Hosted version of Wordpress. Look at the success of WPCurve to see how many people don’t have a WP person on staff to handle simple things.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/10</link>
+        <pubDate>Mon, 18 Sep 2017 13:21:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Would link backs to your site get you some SEO juice?</p>
+<p>If so, even cheap plan (or even a free plan, it it truly costs You nothing) would give you some value.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/9</link>
+        <pubDate>Mon, 18 Sep 2017 13:16:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>GREAT idea to start with What Doesn’t Scale (advice from Ycombinator).<br>
+Then, if you confirm that approach works, you can automate part of it with a “test your speed”</p>
+<p>Q: What’s a good way for ME to test the impact of Discus?</p>
+<p>Hey, maybe that would be a start, write a short blog post about how something like Pingdom is not completely accurate and a  signup for a Free Report on how to test how fast your blog <em>really</em> is?</p>
+<p>I’d think that would only take a few hours. Have you done any SEO reasearch on searches for “Discus alternative” or “Discus speed” ?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/8</link>
+        <pubDate>Mon, 18 Sep 2017 13:15:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+      <item>
+        <title>Building my first SaaS, a Disqus alternative - Part 1</title>
+        <dc:creator><![CDATA[ploggingdev]]></dc:creator>
+        <description><![CDATA[
+            <p>Completely agree with you, I’m going to have to rethink the pricing strategy since literally everyone I talk to says it’s too expensive.</p>
+<p>Here’s my thought process for a new pricing model : since comments are more of an afterthought for most site owners and are treated like a commodity, I think I’ll narrow it down to two plans:</p>
+<ul>
+<li>
+<p>$20/month for upto 1,000,000 pageviews</p>
+</li>
+<li>
+<p>A custom plan for sites with more traffic.</p>
+</li>
+</ul>
+<p>Would love to hear your thoughts and anyone else’s thoughts on the pricing model.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306/7</link>
+        <pubDate>Mon, 18 Sep 2017 10:32:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5306-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306.rss">Building my first SaaS, a Disqus alternative - Part 1</source>
+      </item>
+  </channel>
+</rss>

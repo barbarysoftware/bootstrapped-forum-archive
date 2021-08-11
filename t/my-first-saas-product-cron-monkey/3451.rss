@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>My first Saas product - Cron Monkey</title>
+    <link>https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451</link>
+    <description>I just released the first version of my first saas product. 
+
+Its an easy way to create/run cron jobs online. Its super light weight so far (v1). Took me about a month to make after hours. Let me know what you guys think? Feedback and feature requests are welcome. Particularly from people who use cron jobs online.
+
+Thanks!!</description>
+    
+    <lastBuildDate>Thu, 03 Sep 2015 07:00:59 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>My first Saas product - Cron Monkey</title>
+        <dc:creator><![CDATA[pjc]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d charge $10/month not $10/year for this. Or $1 per 1000 cron jobs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/7</link>
+        <pubDate>Thu, 03 Sep 2015 07:00:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3451-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451.rss">My first Saas product - Cron Monkey</source>
+      </item>
+      <item>
+        <title>My first Saas product - Cron Monkey</title>
+        <dc:creator><![CDATA[akash]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="3451">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/arajendiran/40/3093_1.png" class="avatar"> arajendiran:</div>
+<blockquote>
+<p>cronmonkey</p>
+</blockquote>
+</aside>
+<p>First of all, <strong>congratulations</strong> on launching and asking for feedback. Most folks never get here.</p>
+<p>Now for some suggestions in no particular order -</p>
+<ul>
+<li>Have a simple “How it works” page with a link at the top.</li>
+<li>Home Page - instead of showing “<a href="http://www.google.com" rel="nofollow noopener">http://www.google.com</a>” inside<br>
+the textbox, enter something like<br>
+"<a href="http://yourwebsite.com/yourcronscript.php" rel="nofollow noopener">http://yourwebsite.com/yourcronscript.php</a>" - this will instantly<br>
+tell users that they can execute their cron scripts from here. Having<br>
+<a href="http://google.com" rel="nofollow noopener">google.com</a> there is confusing.</li>
+<li>Pricing Page - Remove the free plan. Ideally you    want to validate this as soon as<br>
+possible. You want to know whether    people will pay $X/year and you want to know what $X is. If the<br>
+justification for the free plan is to    let people try the service,<br>
+you are better off letting people have a    long trial - 30 to 60 days</li>
+<li>Increase your pricing - pricing should be based on the value provided and not how much it costs you to provide the service. If I am depending on your service to run my cronjobs for me, I definitely expect to pay much more than $0.83/mo and if I am not ready to pay you more than $0.83/mo, then you definitely do not want me as a customer. You can always A/B test prices. I prefer starting with a price much higher than I feel comfortable with and then lowering it only after 10 potential customers have said that it is too high. [If a large number of people are not complaining about your price being too high, it is too low]</li>
+<li>Pricing Page - Daily executions for the Pro Plan is 10,800. I spent a few minutes trying to figure out why that specific number. You do not want your customers to be spending brain cycles on this. Just round it down to 10,000 or if it is calculated based on one cron every 10 mins or something like that, then you can simply say exactly that - “one cron every x min”</li>
+<li>Pricing Page - Have a small help icon next to each of the features list on the pricing page. I’m not sure what daily executions means, especially with relation to minimum interval. I suspect one of them is redundant to have,</li>
+<li>Let user try your service with the least number of hurdles - When a user enters a url on your homepage and clicks the CTA button, you can execute the script, instead of asking him to signup. Once the script has executed and he sees the result, you can then ask him to signup in order to save the results (or url). You can also then change the CTA button text to “Run Script” (or something more applicable).</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/6</link>
+        <pubDate>Thu, 03 Sep 2015 02:27:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3451-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451.rss">My first Saas product - Cron Monkey</source>
+      </item>
+      <item>
+        <title>My first Saas product - Cron Monkey</title>
+        <dc:creator><![CDATA[mattt]]></dc:creator>
+        <description><![CDATA[
+            <p>Nah, I think I understand.  I remember seeing people cron’ing curls to PHP scripts, etc.  I’m guessing this is to do something similar?  It would probably be worthwhile going into a bit more detail as to why you’d use this service or what problems it can solve.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/5</link>
+        <pubDate>Wed, 02 Sep 2015 21:43:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3451-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451.rss">My first Saas product - Cron Monkey</source>
+      </item>
+      <item>
+        <title>My first Saas product - Cron Monkey</title>
+        <dc:creator><![CDATA[mattt]]></dc:creator>
+        <description><![CDATA[
+            <p>What does it do?  I don’t get it.  <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/4</link>
+        <pubDate>Wed, 02 Sep 2015 21:31:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3451-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451.rss">My first Saas product - Cron Monkey</source>
+      </item>
+      <item>
+        <title>My first Saas product - Cron Monkey</title>
+        <dc:creator><![CDATA[arajendiran]]></dc:creator>
+        <description><![CDATA[
+            <p>Oops missed the link. cronmonkey (dot) com</p>
+<p>Thanks</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/3</link>
+        <pubDate>Wed, 02 Sep 2015 21:30:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3451-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451.rss">My first Saas product - Cron Monkey</source>
+      </item>
+      <item>
+        <title>My first Saas product - Cron Monkey</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3451">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/arajendiran/40/3093_1.png" class="avatar"> arajendiran:</div>
+<blockquote>
+<p>Feedback and feature requests are welcome.</p>
+</blockquote>
+</aside>
+<p>Is there supposed to be a link??</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/2</link>
+        <pubDate>Wed, 02 Sep 2015 20:55:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3451-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451.rss">My first Saas product - Cron Monkey</source>
+      </item>
+      <item>
+        <title>My first Saas product - Cron Monkey</title>
+        <dc:creator><![CDATA[arajendiran]]></dc:creator>
+        <description><![CDATA[
+            <p>I just released the first version of my first saas product.</p>
+<p>Its an easy way to create/run cron jobs online. Its super light weight so far (v1). Took me about a month to make after hours. Let me know what you guys think? Feedback and feature requests are welcome. Particularly from people who use cron jobs online.</p>
+<p>Thanks!!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451/1</link>
+        <pubDate>Wed, 02 Sep 2015 16:03:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3451-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-first-saas-product-cron-monkey/3451.rss">My first Saas product - Cron Monkey</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Changing prices and grandfathering</title>
+    <link>https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558</link>
+    <description>We doubled prices in December and decided not to grandfather our customers. Licenses are annual and when it comes time for renewal, customers have to choose from the new pricing. They don&#39;t have the option to renew their old license. We do offer a 30% discount for renewing early so that it doesn&#39;t seem like they&#39;re buying all over again though.
+
+We thought about giving customers the option to stay on their current license and pricing, but decided against it for two main reasons:
+
+ 1. We have added a lot of value to the product since launch and feel people should pay for that extra value we&#39;re delivering
+ 2. Nowhere did we say &quot;lifetime&quot; or that prices would not change
+
+I guess I don&#39;t really believe in grandfathering unless something was promised into the future, like a price freeze guarantee or a lifetime license. And I guess I&#39;ll have a better idea of whether or not it was the right decision once we&#39;ve been processing renewals and upgrades for a few months.
+
+Would love to hear other people&#39;s thoughts on and experiences with grandfathering.</description>
+    
+    <lastBuildDate>Sun, 01 Jun 2014 10:15:41 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Changing prices and grandfathering</title>
+        <dc:creator><![CDATA[buggy]]></dc:creator>
+        <description><![CDATA[
+            <p>Something that I never really thought about until Patrick’s 2013 MicroConf talk is that if you’re doing SaaS then plans should be models in the application and include limits or flags to enable features. This makes it really easy to grandfather in old customers and encourage them to upgrade by telling them you can have the old price but you don’t get &lt;insert new feature&gt;. They can then choose to stay with the old pricing minus the new feature or upgrade to new pricing to get the new feature.</p>
+<p>With downloaded software you might be able to pull of something similar by introducing editions but I think I’d just raise the price and offer them renewal discount as you’ve done. Depending on your business model and how strictly your software enforces the end of the licence you can always email them after the licence expires to offer a further discount.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/6</link>
+        <pubDate>Sun, 01 Jun 2014 10:15:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1558-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558.rss">Changing prices and grandfathering</source>
+      </item>
+      <item>
+        <title>Changing prices and grandfathering</title>
+        <dc:creator><![CDATA[bradt]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Patrick! I didn’t manage to break through the swarm around you at MicroConf to chat, so this is great! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I just <a href="http://www.wpelevation.com/2014/04/episode-29-ruben-gamez/" rel="nofollow noopener">listened to Ruben</a> say exactly what you’ve said in <span class="hashtag">#2</span> and it’s making a lot more sense to me. If I was to do it over, I would keep people on the package they purchased but offer them a nice discount to upgrade to the new package and get the new features.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/5</link>
+        <pubDate>Sat, 24 May 2014 13:12:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1558-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558.rss">Changing prices and grandfathering</source>
+      </item>
+      <item>
+        <title>Changing prices and grandfathering</title>
+        <dc:creator><![CDATA[patio11]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s my opinions on grandfathering.  Take them with a grain of salt.</p>
+<ol>
+<li>
+<p>Most customers are in your future, not your past.  Your revenue for the next few months is dominated by existing customers, but your revenue for 3 years from now is dominated by new customers.  It costs you less than you think long-term to adopt grandfathering.</p>
+</li>
+<li>
+<p>Your oldest customers are in many cases the folks who provided you with word of mouth which you needed or who put up with your software when it was not as solid as it was today.  I appreciate that you’ve added lots of value since they bought it, but think it is nice to reward them for their loyalty, too.</p>
+</li>
+<li>
+<p>It is always, always, always to your advantage to announce price increases 4 to 6 weeks in advance and tell people that if they’re price sensitive they should buy now.  This is an easy, obvious, and totally aboveboard way to juice your sales for the next few weeks.  It isn’t repeatable on a monthly basis but, hey, that money can pay your rent for a year.</p>
+</li>
+<li>
+<p>If you’re not going to offer universal grandfathering, consider the option to buy grandfathering.  For example, your current license term is year-to-year.  You could tell customers that you’ll let them lock in their current pricing by signing a 3 year contract. This partially is for getting contracts signed (non-zero value for you), but mostly so that folks don’t think “He raised his prices on me!” but rather “Oh, I had an option for getting the low price, but I picked flexibility over that, and flexibility <em>always</em> costs more, naturally.”  (If your software is below five figures, I would consider asking for 3 year pre-pay rather than 3 year contracts.  Like, you can keep your $4k per year pricing if you want to pay for 3 years of it right now, or we can start charging you $5k a year.  Both of these options are a mutual win – heads you get great cash flow, tails you get a mostly guilt-free price increase on that account.)</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/4</link>
+        <pubDate>Sat, 24 May 2014 10:04:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1558-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558.rss">Changing prices and grandfathering</source>
+      </item>
+      <item>
+        <title>Changing prices and grandfathering</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>That makes sense, monthly subscriptions should be grandfathered.   But you could always (potentially) put a time limit on the “grandfathering” where you say that your original pricing is frozen for x months.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/3</link>
+        <pubDate>Fri, 23 May 2014 20:17:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1558-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558.rss">Changing prices and grandfathering</source>
+      </item>
+      <item>
+        <title>Changing prices and grandfathering</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Brad, I believe we met at Microconf. Nice to see you here.</p>
+<p>I am going through something very similar. I raised my prices 36% and didn’t grandfather anybody in the normal sense.</p>
+<p>My product is very seasonal, my users pay annually and renew manually. Usually the highest sales month of the year is May.</p>
+<p>On March 31 I announced the price increase, but I gave a time-limited discount to every account on the system: they can renew for the old price until the end of April (that’s today, actually).</p>
+<p>My main reason for not grandfathering anybody is that I have added tons of value over the years and frankly I make most of my money from renewals so I want to make sure they get on that new price sooner or later.</p>
+<p>I figured the time-limited discount would help me see how badly my users want to pay the old price, based on how many people pay up in April rather than the usual May. So far it seems a LOT of people rushed to avoid the new price. The question now is whether the remaining users will happily pay the new price in May/June, or if they’ll be price-induced churn…</p>
+<p>I think grandfathering makes sense if you charge a monthly subscription. I don’t think you can legitimately change the price on those without approval, and forcing them to make a choice is far more likely to result in churn than in a higher revenue customer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/2</link>
+        <pubDate>Wed, 30 Apr 2014 16:47:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1558-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558.rss">Changing prices and grandfathering</source>
+      </item>
+      <item>
+        <title>Changing prices and grandfathering</title>
+        <dc:creator><![CDATA[bradt]]></dc:creator>
+        <description><![CDATA[
+            <p>We doubled prices in December and decided not to grandfather our customers. Licenses are annual and when it comes time for renewal, customers have to choose from the new pricing. They don’t have the option to renew their old license. We do offer a 30% discount for renewing early so that it doesn’t seem like they’re buying all over again though.</p>
+<p>We thought about giving customers the option to stay on their current license and pricing, but decided against it for two main reasons:</p>
+<ol>
+<li>We have added a lot of value to the product since launch and feel people should pay for that extra value we’re delivering</li>
+<li>Nowhere did we say “lifetime” or that prices would not change</li>
+</ol>
+<p>I guess I don’t really believe in grandfathering unless something was promised into the future, like a price freeze guarantee or a lifetime license. And I guess I’ll have a better idea of whether or not it was the right decision once we’ve been processing renewals and upgrades for a few months.</p>
+<p>Would love to hear other people’s thoughts on and experiences with grandfathering.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558/1</link>
+        <pubDate>Wed, 30 Apr 2014 15:50:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1558-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-prices-and-grandfathering/1558.rss">Changing prices and grandfathering</source>
+      </item>
+  </channel>
+</rss>

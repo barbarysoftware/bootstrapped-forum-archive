@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Alternative pricing models for desktop software</title>
+    <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574</link>
+    <description>Hi all I have a traditional desktop product at https://documentconverter.pro/
+
+I am looking at putting out a new version but I am thinking of pricing models. I normally just keep it simple and have a discount for existing users to upgrade to major versions (minor updates are free). But I was thinking of changing it to either:
+
+When the user buys they get 1 year of free upgrades, after the year they need to renew to upgrade. This model seems popular.
+
+Offer a subscription model like Adobe Creative Cloud or Microsoft Office 365. The advantage of this is I could have a lower monthly price, as you know subscriptions are popular these days. The disadvantage is I sell a lot of bigger companies and they may not want the hassle. 
+
+Does anyone have a view or alternative suggestions?</description>
+    
+    <lastBuildDate>Tue, 15 Oct 2019 12:16:11 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[DiSchwarz]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Are you guys using some CRM which helps with that? Or is custom solution the way to go?</p>
+</blockquote>
+<p>We establish customer identity by an existing license key or by an email, whichever triggers first. Works reasonably well.</p>
+<p>A general way to overcome that dilemma is to introduce a concept of accounts. However the necessity to create an account before or during the purchase may lower the conversion. Hence we stick to an “adhoc” identity mode I described above.</p>
+<p>P.S. Good discussion, everyone</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/12</link>
+        <pubDate>Tue, 15 Oct 2019 12:16:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>My customers are asking for years whether licensing is perpetual or subscription for my desktop software. B2B seems to be accustomed to subscriptions, while I’m stuck in old mindset - major upgrades only. Maybe it’s a time to change. There are few things to consider though.</p>
+<p>For start, if you switch to full subscription mode, it will stabilize long time revenue. But in the short time, if you switch from let’s say $100 perpetual to $30 yearly subscription, short time revenue will drop significantly in the start. That scares me a lot, even if customers don’t complain about changes.</p>
+<p>Another issue is, I’m not limiting bug fixes and minor upgrades. In fact, if there’s a bug in very old version I tend to fix it as well. It’s against my ethic to deny user a bug fix if they didn’t renew a subscription. Nor I’d like to deny them support. Also, I consider that kind of feedback very valuable, and in my opinion has significant business value. I.e. if one user complains, there are probably 10 who stay silent but don’t buy. If I switch to full subscription model, that could be an issue.</p>
+<p>So I’m more considering a “soft” subscription mode - one time full price as it is now, but push yearly subscriptions (20-25% of price) more prominently. I.e. send yearly reminders to customers that it would be wise to renew their licenses. But don’t deny them anything if they don’t take on that offer. One drawback is there’ll still be an incentive to gather major features to major releases, instead of regular updates you could have with a full subscription.</p>
+<p>There are logistical issues with reminding users. As anyone dealing with B2B know, orders database is a mess:</p>
+<ul>
+<li>Multiple orders in different months/years so it’s hard to consolidate it in single yearly fee</li>
+<li>Different company names for the same customer - some brought through a reseller, some directly, in one place it’s a “Company”, in another one “Company ltd”, in third “My Company”, etc.</li>
+<li>Also multiple contact persons from a single company, who is still there, who is primary contact, etc.</li>
+</ul>
+<p>For start, I’ve created united database of all orders in the cloud, and used payment processors APIs to insert new orders as they come. So orders are here, but it’s not yet easy to get unique customers from that. Are you guys using some CRM which helps with that? Or is custom solution the way to go?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/11</link>
+        <pubDate>Tue, 15 Oct 2019 09:03:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[Stephen]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve also sold a desktop app for around 10 years now. Starting about 4 years ago we moved to perpetual license with one year of support, then license renewal route over the traditional Big Version releases with upgrade discounts.</p>
+<p>Generally speaking, I like what it does as a developer. However, I’ve definitely gotten significant blow-back from a certain percentage of my customer base - but this is mostly due to my product being both B2B and B2C. B2B expects renewals and support, but B2C customers sometimes have some interesting ideas about being getting free updates forever…<br>
+YMMV</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/10</link>
+        <pubDate>Tue, 15 Oct 2019 02:59:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>If they don’t renew, the application goes back to a trial state. They can still read all of their data, but they can’t create more than 5 pages. They’re never locked out of any of their data.</p>
+<p>Our server issues and validates a key code, yes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/9</link>
+        <pubDate>Fri, 11 Oct 2019 11:16:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>What happens if they don’t review, do they loss access to their data?</p>
+<p>Did you custom code a system to check for an active subscription before the app starts?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/8</link>
+        <pubDate>Fri, 11 Oct 2019 08:18:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p>I offer both subscription and perpetual plus annual support for my software. I don’t think we should refuse the user’s money because we have a preference in how we want to receive it.<br>
+In my pricing model the annual subscription overtakes the LTV of the perpetual+support in the 3rd year. I don’t offer monthly subscriptions any more. I considered  offering quarterly subscriptions but meh. Yes I know I am contradicting myself but double-meh, I think it would attract the freetards.</p>
+<p>I haven’t sold enough to give you any numbers of statistical significance but anecdotally I can tell you I am glad I offered both perpetual and subscription  models. I’m also glad I charge annual support. My stuff is B2B so they want to know they are supported.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/7</link>
+        <pubDate>Thu, 10 Oct 2019 09:18:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>One of our products is a traditional desktop app (<a href="http://scribbleton.com">scribbleton.com</a>). It’s offered as an annual subscription, and that’s been working really well for us. We also had a mobile app (before the app stores were a thing), that was also offered as an annual subscription; also worked really well for us.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/6</link>
+        <pubDate>Sat, 05 Oct 2019 16:09:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>I think the best way is more rooted in your market and the problem you are solving rather than the architecture of your app.</p>
+<p>I moved to one-off purchase (with free upgrades for a year) then yearly subscription packages a few years ago. It worked well. But it’s B2C and it’s hard to link customer success to price because the customer does not make revenue… therefore I think it’s a lot harder to get away with monthly plans for the consumer market, but I’m sure not impossible.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/5</link>
+        <pubDate>Fri, 04 Oct 2019 13:04:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Steve, I could message sitebulb and ask how it is working out for them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/4</link>
+        <pubDate>Fri, 04 Oct 2019 10:46:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Take a look at <a href="https://sitebulb.com/subscriptions/pricing/index/">Sitebulb’s pricing model</a>.</p>
+<p>It is a traditional desktop app, with modern subscription pricing.</p>
+<p>They offer monthly and yearly pricing. So it is similar to Adobe Creative Cloud and MS Office 365.</p>
+<p>I offer Sitebulb as an example to show that us smaller players can also do the traditional-desktop-app-with-subscription-billing model.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/3</link>
+        <pubDate>Thu, 03 Oct 2019 19:43:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[matrixfailure]]></dc:creator>
+        <description><![CDATA[
+            <p>What if your users would buy your subscription just for 1 month and then unsubscribe?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/2</link>
+        <pubDate>Thu, 03 Oct 2019 19:37:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+      <item>
+        <title>Alternative pricing models for desktop software</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all I have a traditional desktop product at <a href="https://documentconverter.pro/">https://documentconverter.pro/</a></p>
+<p>I am looking at putting out a new version but I am thinking of pricing models. I normally just keep it simple and have a discount for existing users to upgrade to major versions (minor updates are free). But I was thinking of changing it to either:</p>
+<p>When the user buys they get 1 year of free upgrades, after the year they need to renew to upgrade. This model seems popular.</p>
+<p>Offer a subscription model like Adobe Creative Cloud or Microsoft Office 365. The advantage of this is I could have a lower monthly price, as you know subscriptions are popular these days. The disadvantage is I sell a lot of bigger companies and they may not want the hassle.</p>
+<p>Does anyone have a view or alternative suggestions?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574/1</link>
+        <pubDate>Thu, 03 Oct 2019 09:19:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6574-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/alternative-pricing-models-for-desktop-software/6574.rss">Alternative pricing models for desktop software</source>
+      </item>
+  </channel>
+</rss>

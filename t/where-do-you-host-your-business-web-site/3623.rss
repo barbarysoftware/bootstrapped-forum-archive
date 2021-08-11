@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Where do you host your business web site?</title>
+    <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623</link>
+    <description>I use unmanaged dedicated server, but I&#39;m not completely happy with it... Interesting to know what other prople use.</description>
+    
+    <lastBuildDate>Wed, 02 Dec 2015 10:14:01 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Static site on S3, cached with CloudFront. Works well, and is fast. Obviously imposes a few limitations because server side code isn’t possible.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/20</link>
+        <pubDate>Wed, 02 Dec 2015 10:14:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>AWS for static sites and Digital Ocean for the main app. Both services are great.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/19</link>
+        <pubDate>Tue, 01 Dec 2015 13:52:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[jeremy]]></dc:creator>
+        <description><![CDATA[
+            <p>Digital Ocean + Forge. Greatest combo ever. (maybe Linode + Forge a close second)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/18</link>
+        <pubDate>Sun, 29 Nov 2015 01:36:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s similar to what I do - I have a remote hot spare (cheap dedicated rather than cloud, but the priciple’s the same) and rely on manual DNS failover using a low TTL - it’s a reasonable trade-off for cost vs reliability, although be aware that your TTL can often be ignored and records can be cached for longer for some visitors, so it’s not perfect.</p>
+<p>A high availability setup is something you can sink a lot of time and money into and never need; it’s effectively an insurance policy against downtime, so it’s about finding a solution that is time- and cost-effective compared to the likelihood of worst-case failure, and the resulting loss of revenue. With my provider and setup I assume I’ll be able to replace my main server within a couple of days of it totally failing, and would be unlucky to have to do so more than once every five years; realistically I doubt I’d face significant long-term financial impact or loss of reputation from that, even without any failover, so slow DNS propagation for the handful of visitors it may affect in that time isn’t much of a concern to me.</p>
+<p>Another approach would be to use a reverse proxy service like cloudflare, but then they become your new spof; you could also have your hot spare next to your live server with a shared IP for failover, but you still depend on your provider’s power and network; or you could have a mix of the above, which would make you significantly more reliable than all the large businesses who disappear whenever AWS goes down.</p>
+<p>Beyond that, fast reliable failover means cutting out DNS and being able to move your IP between independent dcs, which means BGP - but that puts you in a different league (and price range) when talking to any provider, and probably isn’t worth the cost and effort for most businesses.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/17</link>
+        <pubDate>Sat, 28 Nov 2015 09:12:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>[quote=“radiac, post:15, topic:3623”]<br>
+is it that you’re concerned about the single point of failure? It is a risk, but you do get failures everywhere - AWS has had a lot more downtime than my dedis over the years<br>
+[/quote]Yes, the main concern is single point of failure and chance that the site and services it provides may become unavailable. As “cloud” servers do not guarantee 100% uptime, I think I’ll use a combined solution after all, just duplicate essential services on a cloud server.</p>
+<p>Thanks for the information provided.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/16</link>
+        <pubDate>Fri, 27 Nov 2015 14:50:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>What makes you unhappy with your unmanaged dedicated server? From what you’re asking, is it that you’re concerned about the single point of failure? It is a risk, but you do get failures everywhere - AWS has had a lot more downtime than my dedis over the years, for example. A lot’s down to your monitoring and your provider.</p>
+<p>The main practical difference between a dedi, vps and cloud is setup time and minimum contract period. Dedis can take a while to be provisioned (especially if your provider orders them in on demand), vps is usually faster (sometimes automated, but often not), but in the cloud the physical hardware is already powered up, so you have direct and immediate control over when you use them - with automated tools it’s a matter of minutes from requesting it to it being live. That means you can quickly add more resources to meet demand, using things like elastic ips and load balancing; it just tends to work out a bit more expensive than an equivalent dedi/vps if you run them all the time. Also, like a VPS, you don’t need to worry about monitoring the hardware. All the options are otherwise essentially identical - you pick what OS image you want, get root and go in to set it up, and you should still have separate backups and a dr plan.</p>
+<p>Regarding Heroku, that’s a bit different: AWS EC2 is IaaS but Heroku is PaaS, which means it’s more like a locked down managed server - you basically send your app to them and they run it on AWS for you, swapping a bit of control for convenience. I think AWS elastic beanstalk is similar, but haven’t used it yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/15</link>
+        <pubDate>Thu, 26 Nov 2015 09:19:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="3623">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/shantnu/40/2752_1.png" class="avatar"> shantnu:</div>
+<blockquote>
+<p>Famous last words!</p>
+<p>Anything not regularly updated is open to a hack attack.</p>
+</blockquote>
+</aside>
+<p>Well, What I was trying to say is that using an UPDATED standard distribution it’s difficult to be hacked, but when you install regular software (Joomla, WordPress, etc), it’s when you can have problems, because updates of this software is not centralized with the distribution. Sorry for my really bad explanation <img src="https://emoji.discourse-cdn.com/twitter/stuck_out_tongue.png?v=5" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/14</link>
+        <pubDate>Wed, 25 Nov 2015 18:26:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[Basilakis]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey,</p>
+<p>for WordPress sites, I am using <a href="http://hosting.io" rel="nofollow noopener">http://hosting.io</a> which offers also managed version, uptime monitor and backup.<br>
+I have there almost 10 sites and I am 100% satisfied.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/13</link>
+        <pubDate>Wed, 25 Nov 2015 16:15:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everyone for responses. Those virtual “cloud” servers look interesting. I’ve only been using VPS or dedicated servers, unmanaged, but I totally lack any experience with cloud servers. How virtual cloud servers, like mentioned here Heroku, AWS instances, Linode, and others, compare to a dedicated hardware server, in terms of</p>
+<ul>
+<li>uptime/accessibility/ping</li>
+<li>hardware performance</li>
+<li>network performance</li>
+<li>OS features - can I have SSH root with full access, install anything I want etc</li>
+<li>overall reliability (how stable is performance and network)</li>
+</ul>
+<p>How often are there any problems like the server is totally inaccessible due to some network problem in the DC (happens from time to time with any dedicated server provider I’ve used, no matter what price was paid), or server is poorly accessible from some locations, or “bad neighborhood” makes your instance run painfully slow?</p>
+<p>The point is, I’m exploring alternatives to find the most reliable hosting solution for a web site that sells products. As everyone here knows, in online sales world web site downtime costs lots of money…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/12</link>
+        <pubDate>Wed, 25 Nov 2015 15:39:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>We use a variety of hosting options, including Heroku, Digital Ocean, AWS (specifically CloudFront), and managed hardware distributed in several data centers.</p>
+<p>We use Heroku first, when possible, because it is easy to deploy to and get up and running fast.</p>
+<p>Next, if it doesn’t fit on Heroku (because it needs access to OS features that we can’t use on Heroku, for example), then we run it on a droplet.</p>
+<p>Static sites go to AWS CloudFront.</p>
+<p>Finally we have managed hardware for our primary application and database, as well as for our name server network.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/11</link>
+        <pubDate>Wed, 25 Nov 2015 15:06:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="3623">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I’ve happily given up on managing my own server.</p>
+</blockquote>
+</aside>
+<p>Do AWS keep the system up to date?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/10</link>
+        <pubDate>Wed, 25 Nov 2015 11:29:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="3623">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/m/67e7ee/40.png" class="avatar"> mcasas:</div>
+<blockquote>
+<p>I think that with a standard distribution (like Debian, Ubuntu, CentOS, etc) it’s difficult to be hacked.</p>
+</blockquote>
+</aside>
+<p>Famous last words!</p>
+<p>Anything not regularly updated is open to a hack attack.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/9</link>
+        <pubDate>Wed, 25 Nov 2015 11:28:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="3623">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I ran my own server on SliceHost (and then RackSpace after they acquired SliceHost). I always feared the day I’d be hacked via whatever latest security hole was discovered and not know about it. I’ve happily given up on managing my own server.</p>
+</blockquote>
+</aside>
+<p>I think that with a standard distribution (like Debian, Ubuntu, CentOS, etc) it’s difficult to be hacked. IMHO the big problem is the “added” software like, in my case, Joomla. Because you can be on a managed server, but if you’ve installed an old software/script (an old Wordpress, for example), or your website is buggy, you can also be hacked.</p>
+<p>Anyway, tomorrow I’ll reinstall the server with Ubuntu, and I hope that it will run fine for another 5 years <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/8</link>
+        <pubDate>Tue, 24 Nov 2015 22:10:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>So, if you rent a non-managed server:</p>
+<ul>
+<li>Stay always up-to-date (I’m still using Debian 6…)</li>
+</ul>
+</blockquote>
+<p>I ran my own server on SliceHost (and then RackSpace after they acquired SliceHost). I always feared the day I’d be hacked via whatever latest security hole was discovered and not know about it. I’ve happily given up on managing my own server.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/7</link>
+        <pubDate>Tue, 24 Nov 2015 22:04:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a non-managed Linode. I have it since late 2010, when my daughter was born and having a server 24/7 at home wasn’t a good idea.</p>
+<p>In all that time I’ve only had one problem: TODAY. Someone used a Joomla security hole and uploaded some scripts to send spam, lots of spam (when I noticed it, there were 14000+ emails in Postfix queue). Tomorrow I’ll redeploy it, destroying all the current content.</p>
+<p>So, if you rent a non-managed server:</p>
+<ul>
+<li>Stay always up-to-date (I’m still using Debian 6…)</li>
+<li>Don’t run your own email server. You can have a simple account at Zoho Email which is free when you have up to 10 addresses, and a mail server is a pain (spam, security, blacklists, etc).</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/6</link>
+        <pubDate>Tue, 24 Nov 2015 20:31:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[shanelabs]]></dc:creator>
+        <description><![CDATA[
+            <p>Softlayer or AWS. Have tried many others, these are the two that are the most reliable.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/5</link>
+        <pubDate>Tue, 24 Nov 2015 19:21:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>I like the simplicity of Digital Ocean… I can create instances in a few seconds and they are cheep and reliable… The back end is a little simple though but once running I get in with SSH and forget they are virtual… lol</p>
+<p>But you have to be willing to use raw, unmanaged instances… Although you could leave the management to companies like Server Pilot if you are running mysql and wordpress…</p>
+<p>Hosting is not that big a deal as it used to be…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/4</link>
+        <pubDate>Tue, 24 Nov 2015 15:00:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I use AWS’s Elastic Beanstalk to host our website. The website is coded in Java with a MySQL database.</p>
+<p>For static sites, I’d consider using AWS S3 static website hosting. A rather neat solution for maximum high performance.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/3</link>
+        <pubDate>Tue, 24 Nov 2015 14:35:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[gregnavis]]></dc:creator>
+        <description><![CDATA[
+            <p>What kind of website do you have in mind? Just a bunch of static file? A WordPress website? A custom application?</p>
+<p>For Ruby on Rails apps that I work on - I use Heroku. My <a href="http://www.gregnavis.com/scaling-rails-on-heroku/" rel="nofollow noopener">consulting sales page</a> is hosted on MyDevil (a FreeBSD shell account) but could be hosted absolutely everywhere (just a bunch of static files). If I were to host a WordPress site I would go with a commercial provider and spent the time saved on growing my business.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/2</link>
+        <pubDate>Tue, 24 Nov 2015 14:00:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+      <item>
+        <title>Where do you host your business web site?</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>I use unmanaged dedicated server, but I’m not completely happy with it… Interesting to know what other prople use.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/1</link>
+        <pubDate>Tue, 24 Nov 2015 12:35:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3623-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623.rss">Where do you host your business web site?</source>
+      </item>
+  </channel>
+</rss>

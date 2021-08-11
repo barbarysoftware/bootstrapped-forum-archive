@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Help with code signing error</title>
+    <link>https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850</link>
+    <description>I got a new Comodo code signing certificate and am trying to sign my executable using the following command:
+
+&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86\signtool&quot; sign /fd sha256 /td sha256 /f &quot;C:\Blah\CodeSigningCert_2018.pfx&quot; /p myPassword  /tr http://timestamp.comodoca.com/rfc3161 /v &quot;C:\Blah\MyApp.exe&quot;
+
+But, that gives me the following error:
+
+_SignTool Error: An unexpected internal error has occurred._
+_Error information: &quot;Error: Store::ImportCertObject() failed.&quot; (-2146885630/0x80092002)_
+
+Searching on the internet did turn up many results for this, but, nothing pointed  to a definite answer and nothing has worked for me so far.
+
+I would appreciate any help towards fixing this.
+
+Thank you.</description>
+    
+    <lastBuildDate>Sat, 12 May 2018 22:41:57 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Help with code signing error</title>
+        <dc:creator><![CDATA[Victory]]></dc:creator>
+        <description><![CDATA[
+            <p>For the benefit of anyone else running into this:</p>
+<p>The error turned out to be a bug in Mozilla Firefox browser as multiple have reported in the following thread.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://bugzilla.mozilla.org/extensions/BMO/web/images/favicon.ico" class="site-icon" width="16" height="16">
+      <a href="https://bugzilla.mozilla.org/show_bug.cgi?format=default&amp;id=1439939" target="_blank" rel="nofollow noopener">bugzilla.mozilla.org</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://bugzilla.mozilla.org/show_bug.cgi?format=default&amp;id=1439939" target="_blank" rel="nofollow noopener">1439939 – Exported p12 client certificate fails to load in Powershell and IE</a></h3>
+
+<p>UNCONFIRMED (nobody) in NSS - Libraries. Last updated 2018-04-16.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>For now, I used the DigiCertUtil work-around one of the posters on that thread mentioned.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850/4</link>
+        <pubDate>Sat, 12 May 2018 22:41:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5850-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850.rss">Help with code signing error</source>
+      </item>
+      <item>
+        <title>Help with code signing error</title>
+        <dc:creator><![CDATA[DarrenZ]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m also using the 8.1 sdk. Is your Comodo address correct?</p>
+<p>This is what I’m using:</p>
+<p><code>"C:\Program Files (x86)\Windows Kits\8.1\bin\x64\signtool.exe" sign /fd SHA256 /a /f "C:\Folder\2015.pfx" /p PASSWORD /t http://timestamp.comodoca.com /v "C:\Folder\app.exe"</code></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850/3</link>
+        <pubDate>Wed, 09 May 2018 14:59:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5850-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850.rss">Help with code signing error</source>
+      </item>
+      <item>
+        <title>Help with code signing error</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Are you using Windows 7? Newer version of signtool I’m using doesn’t work there. Also, I remember trying  different versions of signtool from various SDKs until I found one working for my use case. I’m using the one from Windows 8.1 SDK and I sign on Win 8.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850/2</link>
+        <pubDate>Wed, 09 May 2018 13:05:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5850-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850.rss">Help with code signing error</source>
+      </item>
+      <item>
+        <title>Help with code signing error</title>
+        <dc:creator><![CDATA[Victory]]></dc:creator>
+        <description><![CDATA[
+            <p>I got a new Comodo code signing certificate and am trying to sign my executable using the following command:</p>
+<p>“C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86\signtool” sign /fd sha256 /td sha256 /f “C:\Blah\CodeSigningCert_2018.pfx” /p myPassword  /tr <a href="http://timestamp.comodoca.com/rfc3161" rel="nofollow noopener">http://timestamp.comodoca.com/rfc3161</a> /v “C:\Blah\MyApp.exe”</p>
+<p>But, that gives me the following error:</p>
+<p><em>SignTool Error: An unexpected internal error has occurred.</em><br>
+<em>Error information: “Error: Store::ImportCertObject() failed.” (-2146885630/0x80092002)</em></p>
+<p>Searching on the internet did turn up many results for this, but, nothing pointed  to a definite answer and nothing has worked for me so far.</p>
+<p>I would appreciate any help towards fixing this.</p>
+<p>Thank you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850/1</link>
+        <pubDate>Wed, 09 May 2018 03:03:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5850-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/help-with-code-signing-error/5850.rss">Help with code signing error</source>
+      </item>
+  </channel>
+</rss>

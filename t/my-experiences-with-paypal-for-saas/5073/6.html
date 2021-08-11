@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My experiences with PayPal for SaaS - #6 by mherrmann - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="I recently had to integrate PayPal for the SaaS-like subscription model of my app. It was a wild ride and I wrote a blog post about the experience. Maybe some of you are thinking of integrating PayPal for their SaaS app,&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../5073.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;My experiences with PayPal for SaaS&#39;" href="../5073.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/6" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/6" />
+<meta property="og:title" content="My experiences with PayPal for SaaS" />
+<meta name="twitter:title" content="My experiences with PayPal for SaaS" />
+<meta property="og:description" content="😕 we’ll see how many more hours of my life PayPal will suck out of me. I’ve already noticed a small uptick in sales; People do seem to like PayPal." />
+<meta name="twitter:description" content="😕 we’ll see how many more hours of my life PayPal will suck out of me. I’ve already noticed a small uptick in sales; People do seem to like PayPal." />
+<meta property="article:published_time" content="2017-06-07T09:09:16+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="../5073%3Fpage=2.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../5073.html">My experiences with PayPal for SaaS</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/mherrmann.html'><span itemprop='name'>mherrmann</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-06-05T04:35:02Z'>
+              <time itemprop='dateModified' datetime='2017-06-05T04:35:40Z' class='post-time'>
+                June 5, 2017,  4:35am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I recently had to integrate PayPal for the SaaS-like subscription model of my <a href="https://fman.io" rel="nofollow noopener">app</a>. It was a wild ride and I wrote a <a href="https://fman.io/blog/paypal-for-saas-99-problems/" rel="nofollow noopener">blog post</a> about the experience. Maybe some of you are thinking of integrating PayPal for their SaaS app, or have already set up PayPal and want to hear someone else’s experiences. The TL;DR: It’s a pain to set up. Only do it if your customers are consumers who perceive PayPal as “secure”.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Luis.html'><span itemprop='name'>Luis</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-05T08:27:06Z' class='post-time'>
+                June 5, 2017,  8:27am
+              </time>
+              <meta itemprop='dateModified' content='2017-06-05T08:27:06Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>“Braintree Direct” supposedly lets you “start accepting payments with just a snippet of code”. Sounds great too! But you don’t know who or what Braintree is, so decide to go with the former.</p>
+</blockquote>
+<p>Well, Braintree was purchased by Paypal in 2013 for $800M and you should really have used Braintree’s API integration instead since that would be the only integration that you could potentially even compare with Stripe’s.</p>
+<p>I honestly don’t know why would anybody even still use Paypal’s old api’s for subscriptions when there is Braintree with much better documentation, libraries and examples available in several languages, including python. With about 1 or 2 lines of code you could have added Paypal support to your Braintree integration.</p>
+<p>Still a good and informative post, but you made life a bit harder for yourself <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/mherrmann.html'><span itemprop='name'>mherrmann</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-05T13:32:45Z' class='post-time'>
+                June 5, 2017,  1:32pm
+              </time>
+              <meta itemprop='dateModified' content='2017-06-05T13:32:45Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="2" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/l/3e96dc/40.png" class="avatar"> Luis:</div>
+<blockquote>
+<p>you should really have used Braintree’s API</p>
+</blockquote>
+</aside>
+<p><img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"> Next time I will know. It’s just so unclear from PayPal’s web sites.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/craigvn'><span itemprop='name'>craigvn</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-06T05:59:54Z' class='post-time'>
+                June 6, 2017,  5:59am
+              </time>
+              <meta itemprop='dateModified' content='2017-06-06T05:59:54Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="3" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mherrmann/40/3775_1.png" class="avatar"> mherrmann:</div>
+<blockquote>
+<p>Next time I will know. It’s just so unclear from PayPal’s web sites.</p>
+</blockquote>
+</aside>
+<p>I do agree with this, PayPal does have a mish mash of API’s and it is not immediately clear which one you should use.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-07T08:45:44Z' class='post-time'>
+                June 7, 2017,  8:45am
+              </time>
+              <meta itemprop='dateModified' content='2017-06-07T08:45:44Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="3" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mherrmann/40/3775_1.png" class="avatar"> mherrmann:</div>
+<blockquote>
+<p>It’s just so unclear from PayPal’s web sites.</p>
+</blockquote>
+</aside>
+<p>100% agree. I also found it confusing knowing which one of PayPal’s payment setups was what I wanted. Stripe really nailed this, I think: making it easy for developers to work out how to get started quickly.</p>
+<p>Your PayPal headaches might not be over yet: I spent a couple of days just trying to understand which PayPal option I wanted. A few weeks after I implemented PayPal integration I recall something went wrong as the PayPal dev docs had completely omitted to mention a response code that could occur.</p>
+<hr>
+<p><strong>PS:</strong> Please do let us know if you see a significant uptick in sales in the weeks ahead, now that you have a PayPal payment option.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/mherrmann.html'><span itemprop='name'>mherrmann</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-07T09:09:16Z' class='post-time'>
+                June 7, 2017,  9:09am
+              </time>
+              <meta itemprop='dateModified' content='2017-06-07T09:09:16Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><img src="https://emoji.discourse-cdn.com/twitter/confused.png?v=5" title=":confused:" class="emoji" alt=":confused:"> we’ll see how many more hours of my life PayPal will suck out of me. I’ve already noticed a small uptick in sales; People do seem to like PayPal.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../paypal-vs-stripe-for-small-businesses-in-2019-fman-blog/6301/3.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://discuss.bootstrapped.fm/t/paypal-vs-stripe-for-small-businesses-in-2019-fman-blog/6301/3'>
+                      <span itemprop='name'>PayPal vs Stripe for small businesses in 2019 - fman Blog</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Luis.html'><span itemprop='name'>Luis</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-06-08T16:49:42Z'>
+              <time itemprop='dateModified' datetime='2017-06-08T16:50:58Z' class='post-time'>
+                June 8, 2017,  4:50pm
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="6" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mherrmann/40/3775_1.png" class="avatar"> mherrmann:</div>
+<blockquote>
+<p>People do seem to like PayPal</p>
+</blockquote>
+</aside>
+<p>Yeah, even if you don’t make it a priority integrating Paypal for your business or service, it’s usually a worthwhile inclusion and worth the development time, especially if your service is global and not specific to some large 1st country market.</p>
+<p>Everybody knows Paypal and is under the (somewhat correct) impression that they’ll protect them and their purchases from fraud, identity theft, etc. It’s not as easy to transmit that kind of “peace-of-mind” with a regular credit card form, even if it’s indicated that it’s by Stripe, Braintree or any other processors.</p>
+<p>I’d still recommend using Braintree’s integration over Paypal’s own any day even though I haven’t bothered to look and see if they’ve improved over the years, your blog post was enough to make me believe that they didn’t.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/intelligentcoder'><span itemprop='name'>intelligentcoder</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-08T20:31:28Z' class='post-time'>
+                June 8, 2017,  8:31pm
+              </time>
+              <meta itemprop='dateModified' content='2017-06-08T20:31:28Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Does integrating with Braintree’s API allow your clients to subscribe using their PayPal accounts? If it does, I will totally look into it.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/mherrmann.html'><span itemprop='name'>mherrmann</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-11T11:44:40Z' class='post-time'>
+                June 11, 2017, 11:44am
+              </time>
+              <meta itemprop='dateModified' content='2017-06-11T11:44:40Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="https://discuss.bootstrapped.fm/u/intelligentcoder">@intelligentcoder</a> I’m sorry, I don’t know.</p>
+<p>Another thing I just learned: PayPal doesn’t support subscriptions for customers based in Germany. These people get a message “Automatic payments are not supported in your country”. Apparently, larger PayPal merchant can get an exception for this. But I’m still too small to qualify. Some people on the internet also say that it is possible with some of PayPal’s older APIs. Sigh…</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/gravelld.html'><span itemprop='name'>gravelld</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-12T11:09:15Z' class='post-time'>
+                June 12, 2017, 11:09am
+              </time>
+              <meta itemprop='dateModified' content='2017-06-12T11:09:15Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think PP is very worthwhile for your market <a class="mention" href="../../../u/mherrmann.html">@mherrmann</a></p>
+<p>Here’s my experience and unscientific findings: <a href="http://www.elstensoftware.com/blog/2014/08/18/paypal-versus-stripe-customer-survey-surprising-result/" rel="nofollow noopener">http://www.elstensoftware.com/blog/2014/08/18/paypal-versus-stripe-customer-survey-surprising-result/</a></p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/mherrmann.html'><span itemprop='name'>mherrmann</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-12T12:56:57Z' class='post-time'>
+                June 12, 2017, 12:56pm
+              </time>
+              <meta itemprop='dateModified' content='2017-06-12T12:56:57Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/gravelld.html">@gravelld</a> interesting, thanks!</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Luis.html'><span itemprop='name'>Luis</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-06-22T12:41:00Z'>
+              <time itemprop='dateModified' datetime='2017-06-22T12:42:11Z' class='post-time'>
+                June 22, 2017, 12:42pm
+              </time>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>hey <a class="mention" href="https://discuss.bootstrapped.fm/u/intelligentcoder">@intelligentcoder</a> and <a class="mention" href="../../../u/mherrmann.html">@mherrmann</a>, sorry for the delay answering this but yes it does.</p>
+<p>Basically the integration setups a paypal button that when pressed pops up a paypal login that you can use to associate to the service. Other than that you just have to associate your paypal account to your braintree account and that’s done on your braintree account dashboard.</p>
+<p>You guys can check out some more details about using it for subscriptions on the following url:</p>
+<p><a href="https://developers.braintreepayments.com/guides/paypal/vault/javascript/v3" class="onebox" target="_blank" rel="nofollow noopener">https://developers.braintreepayments.com/guides/paypal/vault/javascript/v3</a></p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/TroyChristmas.html'><span itemprop='name'>TroyChristmas</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-07-02T04:06:29Z' class='post-time'>
+                July 2, 2017,  4:06am
+              </time>
+              <meta itemprop='dateModified' content='2017-07-02T04:06:29Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for this post.  Given the Braintree supports subscriptions, discounts and PCI compliance both with direct CC payments and via Paypal, Apple Pay, etc., what is the use case for Gumroad, Paddle, Fastspring and Sendowl, which I was previous considering to add on top of Stripe/Paypal?</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Tan_Nguyen.html'><span itemprop='name'>Tan_Nguyen</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-07-02T19:34:33Z' class='post-time'>
+                July 2, 2017,  7:34pm
+              </time>
+              <meta itemprop='dateModified' content='2017-07-02T19:34:33Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <ul>
+<li>I’ve used Gumroad and they <strong>banned my account and refunded all of my revenue</strong> and said that there is some <em>fraud</em> payments. I’ll never use it in the future.</li>
+<li>FastSpring have best support ever but their fee is quite high for small business. In order to use their Subscription feature, you’ll need to pay $199 per month, and fee per transaction quite hight also (they’ll send you a custom quote based on your monthly revenue and average transaction amount).</li>
+<li>I’m currently using Paddle, their UX for subscription is the best, the fee is acceptable (5% + $0.5), no monthly fee BUT their embed overlay stopped sometimes, I’ll have to pay $39 for payout fee to transfer to Paypal. I live in Vietnam so I can’t use Stripe or Braintree, that’s why I decided to switch to Paypal. They have great support!</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/mherrmann.html'><span itemprop='name'>mherrmann</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-07-14T15:45:28Z' class='post-time'>
+                July 14, 2017,  3:45pm
+              </time>
+              <meta itemprop='dateModified' content='2017-07-14T15:45:28Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Update: A month has passed since I integrated PayPal. More than half of my customers choose to pay with PayPal. So it was good I implemented it!</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-07-14T19:30:31Z' class='post-time'>
+                July 14, 2017,  7:30pm
+              </time>
+              <meta itemprop='dateModified' content='2017-07-14T19:30:31Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That’s great to hear. Has that more than doubled your sales? Or would many of them have persevered with credit card? Hard to tell, I guess.</p>
+<p>I might use your experience as an anecdote in an upcoming blog post, if that’s alright with you.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/mherrmann.html'><span itemprop='name'>mherrmann</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-07-14T19:44:10Z' class='post-time'>
+                July 14, 2017,  7:44pm
+              </time>
+              <meta itemprop='dateModified' content='2017-07-14T19:44:10Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, it’s hard to tell. Sure! Wouldn’t mind if you linked to <a href="http://fman.io" rel="nofollow noopener">fman.io</a> then <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/unstoppable.html'><span itemprop='name'>unstoppable</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-01-26T14:22:15Z' class='post-time'>
+                January 26, 2018,  2:22pm
+              </time>
+              <meta itemprop='dateModified' content='2018-01-26T14:22:15Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="2" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/l/3e96dc/40.png" class="avatar"> Luis:</div>
+<blockquote>
+<p>I honestly don’t know why would anybody even still use Paypal’s old api’s for subscriptions when there is Braintree with much better documentation, libraries and examples available in several languages, including python. With about 1 or 2 lines of code you could have added Paypal support to your Braintree integration.</p>
+<p>Still a good and informative post, but you made life a bit harder for yourself <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>Because you are just starting up and don’t want to incorporate just yet before hitting XX in revenue? Braintree works only with registered businesses.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Luis.html'><span itemprop='name'>Luis</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-01-26T17:01:03Z'>
+              <time itemprop='dateModified' datetime='2018-01-26T17:01:43Z' class='post-time'>
+                January 26, 2018,  5:01pm
+              </time>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That’s probably a new policy or something to do with the country you’re in because I didn’t need that.</p>
+<p>In fact, it was much more advantageous for people starting up to go with braintree since they gave away the first 50k free of fees.</p>
+<p>I did register a couple of years ago I think, so things have most likely changed since then.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kamparia.html'><span itemprop='name'>kamparia</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../5073.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-02-04T15:44:15Z' class='post-time'>
+                February 4, 2018,  3:44pm
+              </time>
+              <meta itemprop='dateModified' content='2018-02-04T15:44:15Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for sharing. I was about to go the same route for my product because I felt more people have Paypal accounts.</p>
+        </div>
+
+        <meta itemprop='headline' content='My experiences with PayPal for SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="../5073%3Fpage=2.html">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

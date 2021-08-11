@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Accept payment by non-user</title>
+    <link>https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982</link>
+    <description>We have customers who request if they can pay for someone else&#39;s subscription.   Do you think it would be a good idea to implement a feature where a person can pay for another person&#39;s subscription? 
+
+Do you know of a product that has this type of feature?</description>
+    
+    <lastBuildDate>Fri, 03 Jul 2020 15:25:30 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Accept payment by non-user</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t know how your app is setup. In LimeLM we have specific roles and permissions. So, a CFO (or someone in a department that handles outgoing cash) can be added to an account in order to keep the account funded, and they can have their permissions set so they only have access to billing and invoicing details.</p>
+<p>So, it sounds like you’ll need to do a bit of work to add permissions / roles to handle usage in corporations.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982/4</link>
+        <pubDate>Fri, 03 Jul 2020 15:25:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6982-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982.rss">Accept payment by non-user</source>
+      </item>
+      <item>
+        <title>Accept payment by non-user</title>
+        <dc:creator><![CDATA[levon]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/wyattoday">@wyattoday</a>  thank you for your answer. We currently have a “team” subscription that allows for <em>a user of the app</em> to pay for multiple accounts. This scenario is a bit different. In this case, a person <em>without an account</em> will need a way to pay for accounts.  From what you mentioned this is a common scenario and our app should accommodate for that.</p>
+<p>I’m still curious about how an online SaaS app does this. Should an app have an option to “have someone upgrade my account” which will forwarding an invoice (in our case a link to the Stripe invoice)  to a person who will pay?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982/3</link>
+        <pubDate>Thu, 02 Jul 2020 12:03:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6982-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982.rss">Accept payment by non-user</source>
+      </item>
+      <item>
+        <title>Accept payment by non-user</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, in companies you often have a “billing” departments that handle incoming / outgoing money. So, you might have a case where a person in the company wants your product to be used in the company, but they can’t (often legally, even if they have a company card) pay for the software.</p>
+<p>Long story short: this is typical behavior. For licensed apps, just let them buy it (presuming you have good licensing). For SaaS apps, create multi-user accounts where the billing person can enter their details.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982/2</link>
+        <pubDate>Thu, 02 Jul 2020 10:48:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6982-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982.rss">Accept payment by non-user</source>
+      </item>
+      <item>
+        <title>Accept payment by non-user</title>
+        <dc:creator><![CDATA[levon]]></dc:creator>
+        <description><![CDATA[
+            <p>We have customers who request if they can pay for someone else’s subscription.   Do you think it would be a good idea to implement a feature where a person can pay for another person’s subscription?</p>
+<p>Do you know of a product that has this type of feature?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982/1</link>
+        <pubDate>Wed, 01 Jul 2020 11:08:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6982-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accept-payment-by-non-user/6982.rss">Accept payment by non-user</source>
+      </item>
+  </channel>
+</rss>

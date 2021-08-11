@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Desktop Software-Acceptable Launch Time</title>
+    <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181</link>
+    <description>Hi,
+
+My Desktop application takes ~3.30 Seconds for initial start after installation (Launch from setup).
+Next Normal start takes places within ~2.51 to 2.71 Seconds. 
+
+There is no loading screen appearing during this time.
+
+Is this launch time acceptable? 
+
+ISVs owning Desktop Softwares .. please let me know your software launch time.
+
+Thanks</description>
+    
+    <lastBuildDate>Thu, 03 Aug 2017 08:57:57 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[Zka]]></dc:creator>
+        <description><![CDATA[
+            <p>My windows app starts up instantly. If it would start up in more than ~2 seconds, I would use a small splash screen. Some users have really crappy hardware, their startup time could be much longer. Make sure it’s impossible to start multiple times at once - immediately create/check a mutex at the start.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/17</link>
+        <pubDate>Thu, 03 Aug 2017 08:57:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[nicki]]></dc:creator>
+        <description><![CDATA[
+            <p>I put up with waiting for apps but I do think poorly of the ones that make me wait.</p>
+<p>As <a class="mention" href="/u/asandvig">@asandvig</a> mentioned, consider the frequency your users are opening your app. If they leave it open all the time, fine. But if they are opening and closing it more than once a day, annoyance will build up. Do your users have older computers (even a 2 yr old computer can feel slow!) or limited battery? Then they might close your app a lot, especially if it takes up a lot of CPU and energy.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/16</link>
+        <pubDate>Mon, 31 Jul 2017 23:12:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[maxtrixman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your input. Do you use any packer/Obfuscation Tools to protect the assembly?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/15</link>
+        <pubDate>Sat, 29 Jul 2017 04:53:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[maxtrixman]]></dc:creator>
+        <description><![CDATA[
+            <p>okay…thanks…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/14</link>
+        <pubDate>Sat, 29 Jul 2017 04:52:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[Darren]]></dc:creator>
+        <description><![CDATA[
+            <p>One of our recent apps has a 3+ second load time. And that’s on a fast machine - God knows how slow it is on an older consumer PC. Gotta love .Net and those heavy duty DevExpress dlls.</p>
+<p>At first, we were looking at an 8 second load time, but we cut it down by installing dlls into the GAC, and a few other tricks to shave off the seconds. Now we show a very tasteful splash screen and nobody copmplains about the few seconds.</p>
+<p>Compare your load time against MS Word from a  cold start - and that’s an app people generally use every day. 3 seconds is nothing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/13</link>
+        <pubDate>Fri, 28 Jul 2017 19:26:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[asandvig]]></dc:creator>
+        <description><![CDATA[
+            <p>It may not be worth the effort in your case, but a way to solve the packer/decrypter loading issue could be to split the application into a separate launcher (not packed/encrypted) and let the launcher load your application as a dynamically linked library. The launcher could then display the splash screen while loading/decrypting the main application.</p>
+<p>Alternatively, if your packer supports it, you could have yuor code display the splash screen before the packer unpacks the rest of the application (and have only one executable).</p>
+<p>Personally, I get somewhat annoyed with applications that load slow or don’t display proper progress during loading, but I still use them (if they are useful to me). As long as the appliction is stable it does not matter much if it’s slow to start up, as I can just keep it running.</p>
+<p>Unless customers complain abour slow load times I doubt it’s worth the effort to do anything about it in your case (with regards to sales/revenue, that is).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/12</link>
+        <pubDate>Fri, 28 Jul 2017 19:04:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[maxtrixman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your input.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/11</link>
+        <pubDate>Fri, 28 Jul 2017 18:14:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[maxtrixman]]></dc:creator>
+        <description><![CDATA[
+            <p>Some packers that i use is slowing the app down,i dont want to compromise security(…if there is any) for improving the load time.Since the load time is acceptable,i will test on other machines and may be change the packer or something (but not on priority basis … may be in the next update or so).I don’t think there is a need to start the application again and again eg:like a text editor in a single start up.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/10</link>
+        <pubDate>Fri, 28 Jul 2017 18:13:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[maxtrixman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for sharing… makes me feel better <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/9</link>
+        <pubDate>Fri, 28 Jul 2017 18:08:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[maxtrixman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your answer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/8</link>
+        <pubDate>Fri, 28 Jul 2017 18:08:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[maxtrixman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/luis">@Luis</a> Thanks a lot for sharing the information.Yes,its the time taken to launch the software on my machine.I think i have better launch time compared to the old version.For the older version,i guess sales was not affected by launch time.<br>
+So since  the new version has slightly better launch time,i guess i needn’t bother …</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/7</link>
+        <pubDate>Fri, 28 Jul 2017 18:06:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[asandvig]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t think a ~5 sec load time will affect sales or customer satisfaction unless the user is starting your application very frequently.</p>
+<p>I would probably use a splash screen for any application that doesn’t load “instantly” though (ref. <a href="https://www.nngroup.com/articles/response-times-3-important-limits/" rel="nofollow noopener">Response Times: The 3 Important Limits (Jakob Nielsen)</a>).</p>
+<p>The 0.1/1/10 sec limits are not as significant at program start-up as during use, but considering a splash screen is (hopefully) trivial to implement, I would do it anyway.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/6</link>
+        <pubDate>Fri, 28 Jul 2017 16:59:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>How I learnt that slow startup time wasn’t affecting my sales.</strong></p>
+<p>My desktop product, Poker Copilot, has a Mac version and a Windows version. I mostly use Mac for development, so I don’t notice Windows-specific problems firsthand. When trying to solve a Windows-only issue, I discovered in some cases Poker Copilot could take <em>minutes</em> before it even showed the splash screen! The more data a customer had, the longer it took.</p>
+<p>I fixed the issue, released an update, and watched sales for the Windows version stay more or less the same as a percentage of all sales.</p>
+<p>(The cause was a partial file system scan Poker Copilot does at startup to add some helpful info to the log file. Java’s File.lastModified takes microseconds on Mac but milliseconds on Windows.)</p>
+<p>File under <a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food">We should be eating our own dogfood</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/5</link>
+        <pubDate>Fri, 28 Jul 2017 10:50:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[nohaberia]]></dc:creator>
+        <description><![CDATA[
+            <p>My desktop products start instantly.</p>
+<p>I use a bunch of desktop apps with slow loading times. Sometimes I get annoyed when I’m in a hurry, but I’m mostly ok with the slow startup speed. These apps are some of my workhorse tools and are important for my business.</p>
+<p>However, I would get super annoyed by a simple text editor that loads in 3 seconds. I expect these to load instantly. So, it probably depends on your specific market.</p>
+<p>I don’t think the 3 second starup speed would affect your sales unless you’re selling insanely high numbers of some B2C app.</p>
+<p>It’s interesting that <strong>page</strong> loading speed is believed to be affecting revenue (at least in big ecommerce sites). A Walmart study reported that every second they slashed from page loading time improved their conversion rate by about 2% and every 100ms decrease in page loading time improved revenue by up to 1%.</p>
+<p>With desktop apps I wouldn’t believe startup speed to be affecting revenue until proven otherwise.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/4</link>
+        <pubDate>Fri, 28 Jul 2017 10:34:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p>If the functionality is desired, it won’t matter (and you can add a splash screen to reduce perceived startup time).</p>
+<p>If the functionality isn’t desired, it doesn’t help but probably wouldn’t matter if it launched in 0.1 sec.</p>
+<p>Either way, it doesn’t matter.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/3</link>
+        <pubDate>Fri, 28 Jul 2017 09:57:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[Luis]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there,</p>
+<p>Well I’m not an ISV and haven’t built desktop software except at school a long time ago and those were pretty much just learning exercises.</p>
+<p>But I can give you my opinion as a user. I see absolutely nothing wrong with a piece of software taking ~3 or 4 seconds to start. (I’m guessing the time you measured represents the time to load on your computer but that will depend on what kind of computer the software will run on)</p>
+<p>As a comparison, the desktop software I personally use the most are Netbeans, Photoshop, Illustrator, Chrome, Firefox, Spotify, foobar2k, keepass, Steam, and a few other here and there.Most of these take over 3 seconds to cold start and I’m fine with it. Once it starts, it’s running for a long time and as long as the app is responsive and useful once it’s running I don’t think there’s any issues with it.</p>
+<p>Now, If you had a webapp that took 3 seconds to load each page, then I’d have some harsh criticism for you.</p>
+<p>Still, if there’s any way to make your app significantly faster, then go ahead and do that. Or maybe add a loading image at startup. But I think your time would be better spent getting customers, adding features or starting your next app.</p>
+<p>Good luck.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/2</link>
+        <pubDate>Fri, 28 Jul 2017 09:23:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+      <item>
+        <title>Desktop Software-Acceptable Launch Time</title>
+        <dc:creator><![CDATA[maxtrixman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>My Desktop application takes ~3.30 Seconds for initial start after installation (Launch from setup).<br>
+Next Normal start takes places within ~2.51 to 2.71 Seconds.</p>
+<p>There is no loading screen appearing during this time.</p>
+<p>Is this launch time acceptable?</p>
+<p>ISVs owning Desktop Softwares … please let me know your software launch time.</p>
+<p>Thanks</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181/1</link>
+        <pubDate>Fri, 28 Jul 2017 04:29:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5181-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-software-acceptable-launch-time/5181.rss">Desktop Software-Acceptable Launch Time</source>
+      </item>
+  </channel>
+</rss>

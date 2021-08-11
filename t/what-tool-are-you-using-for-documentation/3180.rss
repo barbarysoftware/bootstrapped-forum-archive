@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What tool are you using for documentation?</title>
+    <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180</link>
+    <description>Which tool are you using to create a manual for your software? (I guess this probably applies mainly for who is selling a downloadable piece of software).
+
+I&#39;m currently using help and manual and you can check here how the manual look http://www.phraseexpander.com/help/
+
+The problem is that it&#39;s not very seo friendy and uses frames!
+
+I&#39;d like to create something similar to the [help manual of Helpscout][1]
+
+How can I create something like that that is more SEO friendly? My manual is pretty long and creating pages one by one in wordpress would be quite painful.
+
+Thanks.
+Andrea
+
+
+  [1]: http://developer.helpscout.net/help-desk-api/</description>
+    
+    <lastBuildDate>Sun, 21 Jun 2015 04:51:08 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[Victory]]></dc:creator>
+        <description><![CDATA[
+            <p>I had this same question a couple of months ago when I started writing the documentation for my software. After experimenting with and researching a few options, I recently settled with Sphinx (<a href="http://sphinx-doc.org/" rel="nofollow noopener">http://sphinx-doc.org/</a>). I am really pleased with it.</p>
+<ul>
+<li>It is free.</li>
+<li>It maintains the plain readability of Markdown to a very good extent. But, it has many more constructs than a typical Markdown dialect when you need them.</li>
+<li>On the surface, it may appear that it is geared towards documenting software written in Python. This made me ignore it in my first round of search. But, upon closer look, it turned out that it is very for writing documents in general.</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/13</link>
+        <pubDate>Sun, 21 Jun 2015 04:51:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[nagar]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Dennis.</p>
+<p>I remember your tool but I’d see the cost of switching to another solution too high. I think we’ll either use Manula or check the new Help&amp;Manual v.6 as it looks like they have improved a number of things. It’s probably the solution with less friction for us.<br>
+Thanks.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/12</link>
+        <pubDate>Thu, 18 Jun 2015 15:30:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[Dennis_Crane]]></dc:creator>
+        <description><![CDATA[
+            <p>Andrea,</p>
+<p>Several years ago we were communicating regarding our help tool Dr.Explain. Since then we we had several important releases and I invite you and other Bootstrappers to look at the recent release at <a href="http://www.drexplain.com/" rel="nofollow noopener">http://www.drexplain.com/</a></p>
+<p>You can check some online manual samples made in our tool at <a href="http://www.drexplain.com/help_authoring_samples/" rel="nofollow noopener">http://www.drexplain.com/help_authoring_samples/</a><br>
+There are no frames, no problems with SEO. Our own manual made in our tool receives many visits from search engines.</p>
+<p>I’ll be glad to answer any question here or privately.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/11</link>
+        <pubDate>Fri, 12 Jun 2015 19:07:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[AndyDent]]></dc:creator>
+        <description><![CDATA[
+            <p>I have used Doxygen for many years. Most people who know the tool think of it as being about documenting code with comments in headers.</p>
+<p>However, Doxygen includes an expanded Markdown  as well as DOT (Graphviz). Using DOT lets you create simple box and arrow diagrams directly in your docs, using plain text. These render and layout automatically.</p>
+<p>So using Doxygen can be more like writing in a Wiki and because both the diagrams and (Markdown) content are plain text, work very well with version control.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/10</link>
+        <pubDate>Thu, 11 Jun 2015 18:13:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[smtm]]></dc:creator>
+        <description><![CDATA[
+            <p>One of the benefits of working with markdown, as the primary master publishing format, is that you can use a framework like leanpub ( <a href="https://leanpub.com/help/manual" rel="nofollow noopener">https://leanpub.com/help/manual</a>) to create a “Book” or PDF or E-Book later if you want to.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/9</link>
+        <pubDate>Mon, 08 Jun 2015 15:35:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[nagar]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/joseacta">@joseacta</a> Thanks for pointing this out. One of the main problem I have is that my software is a downloadable version and when a new major is released I need to update a number of pages and tracking all this with wordpress is a nightmare (and I also need to be able to generate a PDF file). I fear that working directly in wordpress is not an option.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/8</link>
+        <pubDate>Mon, 08 Jun 2015 14:16:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[joseacta]]></dc:creator>
+        <description><![CDATA[
+            <p>I think you’ll need to balance things out. If you want something SEO friendly then a plug in for WordPress would be better. Yes, creating page by page on is going to be painful but one piece of the puzzle with SEO is having lots of pages with long content. Below a couple of plug ins for WordPress</p>
+<p><a href="http://themeforest.net/item/knowhow-responsive-wordpress-theme/3356732" class="onebox" target="_blank">http://themeforest.net/item/knowhow-responsive-wordpress-theme/3356732</a></p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://codecanyon.net/item/docs-online-product-documentation-wordpress-plugin/5653664" target="_blank">CodeCanyon</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://s3.envato.com/files/277539816/thumbnail_80x80.png" class="thumbnail onebox-avatar" width="80" height="80">
+
+<h3><a href="https://codecanyon.net/item/docs-online-product-documentation-wordpress-plugin/5653664" target="_blank">Docs Online Product Documentation WordPress Plugin</a></h3>
+
+<p>WHAT IS DOCUMENT
+Document WordPress plugin helps you to build and maintain online documentation for products or services in minutes. Our customers use document plugin as product or service manual...</p>
+
+  <p><span class="label1">Price: $27 USD</span>
+    </p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/7</link>
+        <pubDate>Mon, 08 Jun 2015 14:00:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[smtm]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi. I have started using trello as the source for my documentation. The nice thing is that I can really structure the content well in a way that makes sense to describe partially complex scenarios. It also forces you to make real good headings, which can help you in longtail SEO. When the trello doc is pretty much clean I get the JSON of the trello board and convert it to markdown.</p>
+<p>I love markdown. Markdown keeps your content very clean. So a trello board represents an article in the igumbi documentation. To do the markdown conversion I have this small `<a href="https://gist.github.com/smtm/508c63bda54a6960ec9f" rel="nofollow noopener">ruby script (GIST)</a>.<br>
+I have just recently started with this process, but I am really liking it. Especially as you can invite others to contribute to your trello board, so the documentation will evolve without too much pain (I hope)</p>
+<p>See some examples  of the support articles (in German): <a href="https://www.igumbi.com/de/handbuch/anzahlung" rel="nofollow noopener">“Anzahlung Verwalten”</a> or a lengthy one without screenshots, still prepping them ): <a href="https://www.igumbi.com/de/support/channel-manager-mit-hotelsoftware-verbinden" rel="nofollow noopener">“Channel Manager mit igumbi Hotelsoftware verbinden”</a></p>
+<p>For screenshots/images my CMS has a tag, so I can reference them in the Markdown Texts I enter in trello.</p>
+<p>The nice thing is that I can later repurpose the Markdown Files to compile a PDF Version using Marked (A Mac Markdown tool.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/6</link>
+        <pubDate>Mon, 08 Jun 2015 12:12:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[nagar]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the info Steve.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/5</link>
+        <pubDate>Mon, 08 Jun 2015 10:38:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>The previously standard way to create help manuals for Mac software would be to create a “Apple Help Book” within your App bundle: <a href="https://developer.apple.com/library/mac/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html">https://developer.apple.com/library/mac/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html</a></p>
+<p>It’s a set of HTML pages in a well-defined folder structure.</p>
+<p>But these days I feel that most products simply link from the Help menu to an online user guide. Apps made by Apple still use Apple Help.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/4</link>
+        <pubDate>Sun, 07 Jun 2015 23:33:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[nagar]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steve,</p>
+<p>Thanks for the info. I was leaning toward a desktop solution (with no recurring fees) but Manula could potentially be an interesting option if I can quickly import my Help &amp; Manual file.<br>
+I’ll test it out.</p>
+<p>I see you are doing Mac software. What’s the standard way to create help manuals on the Mac. Web manual?</p>
+<p>Thanks a lot.<br>
+Andrea</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/3</link>
+        <pubDate>Sat, 06 Jun 2015 20:17:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I use Manula: <a href="http://www.manula.com">http://www.manula.com</a></p>
+<p>I’m content with it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/2</link>
+        <pubDate>Sat, 06 Jun 2015 19:48:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+      <item>
+        <title>What tool are you using for documentation?</title>
+        <dc:creator><![CDATA[nagar]]></dc:creator>
+        <description><![CDATA[
+            <p>Which tool are you using to create a manual for your software? (I guess this probably applies mainly for who is selling a downloadable piece of software).</p>
+<p>I’m currently using help and manual and you can check here how the manual look <a href="http://www.phraseexpander.com/help/" rel="nofollow noopener">http://www.phraseexpander.com/help/</a></p>
+<p>The problem is that it’s not very seo friendy and uses frames!</p>
+<p>I’d like to create something similar to the <a href="http://developer.helpscout.net/help-desk-api/" rel="nofollow noopener">help manual of Helpscout</a></p>
+<p>How can I create something like that that is more SEO friendly? My manual is pretty long and creating pages one by one in wordpress would be quite painful.</p>
+<p>Thanks.<br>
+Andrea</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180/1</link>
+        <pubDate>Sat, 06 Jun 2015 13:13:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3180-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-tool-are-you-using-for-documentation/3180.rss">What tool are you using for documentation?</source>
+      </item>
+  </channel>
+</rss>

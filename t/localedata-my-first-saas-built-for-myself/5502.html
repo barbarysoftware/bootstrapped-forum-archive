@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LocaleData: My first SaaS, built for myself - Show Bootstrapped - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="I’ve deployed my first beta version of LocaleData.com - a simple translation management platform for Ruby on Rails apps. It allows developers to import their existing project translations in YAML file format, invite team&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="5502.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;LocaleData: My first SaaS, built for myself&#39;" href="5502.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/localedata-my-first-saas-built-for-myself/5502" />
+<meta property="og:title" content="LocaleData: My first SaaS, built for myself" />
+<meta name="twitter:title" content="LocaleData: My first SaaS, built for myself" />
+<meta property="og:description" content="I’ve deployed my first beta version of LocaleData.com - a simple translation management platform for Ruby on Rails apps. It allows developers to import their existing project translations in YAML file format, invite teammates and translators and work collaboratively on project translations.  I’m a full-time software engineer. In our company, we are developing another SaaS app and we are deploying an isolated instance for every customer. We have two pain points: (1) Default YAML files with transl..." />
+<meta name="twitter:description" content="I’ve deployed my first beta version of LocaleData.com - a simple translation management platform for Ruby on Rails apps. It allows developers to import their existing project translations in YAML file format, invite teammates and translators and work collaboratively on project translations.  I’m a full-time software engineer. In our company, we are developing another SaaS app and we are deploying an isolated instance for every customer. We have two pain points: (1) Default YAML files with transl..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="6 ❤" />
+<meta property="article:published_time" content="2017-11-26T21:44:46+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="5502.html">LocaleData: My first SaaS, built for myself</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/show-bootstrapped.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F7941D'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Show Bootstrapped</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jkostolansky.html'><span itemprop='name'>jkostolansky</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-26T21:44:46Z' class='post-time'>
+                November 26, 2017,  9:44pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-26T21:44:46Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve deployed my first beta version of <a href="https://www.localedata.com" rel="nofollow noopener">LocaleData.com</a> - a simple translation management platform for Ruby on Rails apps. It allows developers to import their existing project translations in YAML file format, invite teammates and translators and work collaboratively on project translations.</p>
+<p>I’m a full-time software engineer. In our company, we are developing another SaaS app and we are deploying an isolated instance for every customer. We have two pain points: (1) Default YAML files with translations are best for computers, good-enough for programmers, but terrible for translators. And (2) we need a centralized solution for multiple deployments (not a per-deployment-in-database-thing). Yes, there are some other solutions, but they have more features (which we don’t need) and they are too pricey to store and edit just a couple of kilobytes, in my opinion. So, I built LocaleData <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">.</p>
+<p>Why donations instead of subscriptions: To make it legal in my country I would need (A) something like a trade licence (easier to setup, but the liability is not limited, I had to put up all my possessions as a guarantee - and I am afraid to do so) or (B) to create a company (this is a lot of bureaucracy and unnecessary expenses just to try it). So I decided to make the beta version free and… We will see.</p>
+<p>I’ts my first public SaaS. I’m building it mainly for my own needs, but it would be awesome if it helped other developers, too. It has only the basic functionality, but I’m constantly developing new features.</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/mgowski.html'><span itemprop='name'>mgowski</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-27T06:05:35Z' class='post-time'>
+                November 27, 2017,  6:05am
+              </time>
+              <meta itemprop='dateModified' content='2017-11-27T06:05:35Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve worked with 2 companies previously where this would have been very helpful!</p>
+<p>The biggest issue we always faced was the translators were not technical, so could too easily mess up the formatting or variables if given direct access to the yaml files. Looks like your app fixes that - good luck with it.</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jkostolansky.html'><span itemprop='name'>jkostolansky</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-27T08:21:31Z' class='post-time'>
+                November 27, 2017,  8:21am
+              </time>
+              <meta itemprop='dateModified' content='2017-11-27T08:21:31Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks. Yes, exactly! In LocaleData, you can give project members different access rights. One of the available roles is a translator, who can only edit the content - not the translation keys.</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-27T12:12:17Z' class='post-time'>
+                November 27, 2017, 12:12pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-27T12:12:17Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Nice work. Good idea to concentrate on one specific programming language/file format. It makes marketing easier, because you’ve chosen a specific niche.</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/garrettdimon.html'><span itemprop='name'>garrettdimon</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-27T16:10:52Z' class='post-time'>
+                November 27, 2017,  4:10pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-27T16:10:52Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This definitely looks interesting. Based on past experience with Sifter, I definitely think that localization is a great potential channel for expanding markets. I don’t have anything to try it on at the moment, but the concept seems attractive.</p>
+<p>The only potential challenge that jumped to my mind is version control integration. Uploading/downloading feels problematic. (If I’m understanding correctly how it works.) But if this could tie into source control with versioning and update through Git, that would make the workflow less error-prone. Maybe if it used a “translation” branch that could be reviewed and merged, that would be pretty powerful.</p>
+<p>Another random thought/fear I’ve always had with translations is accuracy. I’m not sure if it’s possible, but it would be great to be able to review translations with Google Translate. That is, someone does the manual translation, and then Google Translate takes a stab at it for reviewing before committing it and making it live.</p>
+<p>These are both probably pretty significant changes, but they’re the type of thing that would really grab my attention for using this in a production workflow.</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jkostolansky.html'><span itemprop='name'>jkostolansky</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-11-27T17:28:24Z'>
+              <time itemprop='dateModified' datetime='2017-11-27T17:30:36Z' class='post-time'>
+                November 27, 2017,  5:30pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks! I would like to create a ruby gem to pull/push the translations from a command line. Personally, I don’t like the git-idea. As a developer, I want to add a translation key, test it locally, edit it, etc. and then tell a translator to fill in other lagnuage versions. I don’t want to run “git pull” to download it each time and I don’t want it to mess with my git repo.</p>
+<p>I have a “translate using Google” button on my todo list <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">, but the opposite direction (review using Google) is a nice idea. Maybe in the future…</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jayfk.html'><span itemprop='name'>jayfk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-29T22:42:30Z' class='post-time'>
+                November 29, 2017, 10:42pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-29T22:42:30Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="1" data-topic="5502">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jkostolansky/40/3963_1.png" class="avatar"> jkostolansky:</div>
+<blockquote>
+<p>Why donations instead of subscriptions: To make it legal in my country I would need (A) something like a trade licence (easier to setup, but the liability is not limited, I had to put up all my possessions as a guarantee - and I am afraid to do so) or (B) to create a company (this is a lot of bureaucracy and unnecessary expenses just to try it). So I decided to make the beta version free and… We will see.</p>
+</blockquote>
+</aside>
+<p>You are responsible for all damages your product causes nevertheless, even if you don’t charge for it.</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Dmitry.html'><span itemprop='name'>Dmitry</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-12-01T09:15:18Z' class='post-time'>
+                December 1, 2017,  9:15am
+              </time>
+              <meta itemprop='dateModified' content='2017-12-01T09:15:18Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="7" data-topic="5502">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jayfk/40/3819_1.png" class="avatar"> jayfk:</div>
+<blockquote>
+<p>You are responsible for all damages your product causes nevertheless, even if you don’t charge for it.</p>
+</blockquote>
+</aside>
+<p>Software EULA usually (always?) contains clause that author is not responsible for damage. However, authors are responsible if the damage is intentional e.g. software contains malicious code.</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jkostolansky.html'><span itemprop='name'>jkostolansky</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-12-01T19:15:55Z' class='post-time'>
+                December 1, 2017,  7:15pm
+              </time>
+              <meta itemprop='dateModified' content='2017-12-01T19:15:55Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>At least it doesn’t seem to be so trustworthy if it’s donation based <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-12-06T01:26:14Z' class='post-time'>
+                December 6, 2017,  1:26am
+              </time>
+              <meta itemprop='dateModified' content='2017-12-06T01:26:14Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="9" data-topic="5502">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jkostolansky/40/3963_1.png" class="avatar"> jkostolansky:</div>
+<blockquote>
+<p>At least it doesn’t seem to be so trustworthy if it’s donation based <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+</blockquote>
+</aside>
+<blockquote>
+<p>And if we get enough donations, it can stay free forever.</p>
+</blockquote>
+<p>You’re almost asking people not to pay you.</p>
+<p>Donations are a sign of desperation to ever make it a product worth paying for. I always hesitate to use donationware because if the author doesn’t believe in themselves, why should I believe in them?</p>
+<p>Fine, you do not want to add payments at this point - then just call it “beta”. Remove that begging for money, it won’t make you any noticeable profits.</p>
+<p>Besides, the service is EFFING useful, and not only for that kids toy RoR - even in large boring corps they have to maintain the translation files for more respectable platforms such as .NET and Java and how do they do that? Why, in Excel files, of course! (Please detect some sarcasm about <em>toy</em> and <em>respectable</em> here). So your service has a potential to expand to other platforms too - you will have to add import/export formats, of course. What I am saying is: get real - this can become big, get rid of that donation stuff, and make a long-term plan to get to more users and profitability.</p>
+<p>Good luck!</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Gareth.html'><span itemprop='name'>Gareth</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-12-06T02:27:39Z' class='post-time'>
+                December 6, 2017,  2:27am
+              </time>
+              <meta itemprop='dateModified' content='2017-12-06T02:27:39Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Microsoft has the Multilingual App Toolkit which does this kind of work already. It can perform machine translations but also makes it quite easy for developers to work with external human translators as well. The definition files are XML. It does make use of the Azure translation services for machine translation, although a free account gets you about 2 million translations per month.</p>
+<p>Apart from alerting you to an existing solution, you might also be able to automate the machine translations and offer that as an extra feature. I’ve already automated a lot of the work for machine translations in my own products to suit my custom needs - it’s fairly easy as it’s just XML at the end of the day.</p>
+<p>See: <a href="https://www.microsoft.com/en-us/translator/mat.aspx" rel="nofollow noopener">https://www.microsoft.com/en-us/translator/mat.aspx</a></p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/romikoops.html'><span itemprop='name'>romikoops</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-02-26T08:47:40Z' class='post-time'>
+                February 26, 2018,  8:47am
+              </time>
+              <meta itemprop='dateModified' content='2018-02-26T08:47:40Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello. Jkostolansky, thanks a lot for your work! Any updates on the gem creation? Without it the app impossible to use in production. Please keep updated.</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jkostolansky.html'><span itemprop='name'>jkostolansky</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5502.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-02-27T21:48:12Z' class='post-time'>
+                February 27, 2018,  9:48pm
+              </time>
+              <meta itemprop='dateModified' content='2018-02-27T21:48:12Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi romikoops. Thanks for your interest, I’m glad you like LocaleData. I think it’s definitely usable in production, because our company is successfully using it <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">. Can you tell me more about your use cases? What problems are you encountering? You can also contact me directly via <a href="mailto:juraj@localedata.com">juraj@localedata.com</a>.</p>
+<p>The gem is still on my todo list, but I’ve a limited amount of time. You can also make a donation to support future development of this project.</p>
+        </div>
+
+        <meta itemprop='headline' content='LocaleData: My first SaaS, built for myself'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using FastSpring&#39;s In-App Purchasing for Desktop Software</title>
+    <link>https://discuss.bootstrapped.fm/t/using-fastsprings-in-app-purchasing-for-desktop-software/1408</link>
+    <description>I&#39;ve been using [FastSpring][1] for handling my desktop software product&#39;s purchase process since 2008. Yesterday a FastSpring marketing guy emailed me this suggestion &quot;in order to maximize your revenue through your FastSpring e-commerce store&quot;:
+
+&gt; 2. In-App Purchasing via Embedded Store SDK – While FastSpring&#39;s focus is online stores, we also offer a comprehensive cross-platform (Windows and Mac) solution allowing your customers to make a purchase within your software application itself. Our embedded store improves free trial conversions, reduces support costs by allowing you to store registration codes/serial numbers without requiring user interaction, and reduces the risk that the customer gets sidetracked or runs into any web-based issues while browsing your web store. You can learn more about our embedded store functionality here:
+&gt; https://support.fastspring.com/entries/234307-embedded-web-store-sdk
+
+On the face of it this sounds good, especially as we have an add-on feature that currently requires people to go to our website to purchase as an upgrade for US$40.
+
+Before I commit time into trying this, do you have experiences to share from trying this, or something similar? If so, did you get higher sales? Did the work justify the gain? Was the in-app store reliable and smooth?
+
+  [1]: http://www.fastspring.com/</description>
+    
+    <lastBuildDate>Sun, 06 Mar 2016 12:53:03 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/using-fastsprings-in-app-purchasing-for-desktop-software/1408.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using FastSpring&#39;s In-App Purchasing for Desktop Software</title>
+        <dc:creator><![CDATA[SoullessDreamer]]></dc:creator>
+        <description><![CDATA[
+            <p>essentially its just a shiny marketing name, it doesn’t  work any different than any iframe in your application of an order page will. in addition a good recommendation before you potentially get yourself into legal trouble is to check if the SDK is PA-DDS certified, otherwise you illegally accept payments inside of your application. (from quick google I didn’t find them either PCI level 1 certified nor owning PA-DDS certification on this SDK</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-fastsprings-in-app-purchasing-for-desktop-software/1408/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-fastsprings-in-app-purchasing-for-desktop-software/1408/2</link>
+        <pubDate>Wed, 26 Mar 2014 20:25:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1408-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-fastsprings-in-app-purchasing-for-desktop-software/1408.rss">Using FastSpring&#39;s In-App Purchasing for Desktop Software</source>
+      </item>
+      <item>
+        <title>Using FastSpring&#39;s In-App Purchasing for Desktop Software</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been using <a href="http://www.fastspring.com/">FastSpring</a> for handling my desktop software product’s purchase process since 2008. Yesterday a FastSpring marketing guy emailed me this suggestion “in order to maximize your revenue through your FastSpring e-commerce store”:</p>
+<blockquote>
+<ol start="2">
+<li>In-App Purchasing via Embedded Store SDK – While FastSpring’s focus is online stores, we also offer a comprehensive cross-platform (Windows and Mac) solution allowing your customers to make a purchase within your software application itself. Our embedded store improves free trial conversions, reduces support costs by allowing you to store registration codes/serial numbers without requiring user interaction, and reduces the risk that the customer gets sidetracked or runs into any web-based issues while browsing your web store. You can learn more about our embedded store functionality here:<br>
+<a href="https://support.fastspring.com/entries/234307-embedded-web-store-sdk">https://support.fastspring.com/entries/234307-embedded-web-store-sdk</a>
+</li>
+</ol>
+</blockquote>
+<p>On the face of it this sounds good, especially as we have an add-on feature that currently requires people to go to our website to purchase as an upgrade for US$40.</p>
+<p>Before I commit time into trying this, do you have experiences to share from trying this, or something similar? If so, did you get higher sales? Did the work justify the gain? Was the in-app store reliable and smooth?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-fastsprings-in-app-purchasing-for-desktop-software/1408/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-fastsprings-in-app-purchasing-for-desktop-software/1408/1</link>
+        <pubDate>Wed, 26 Mar 2014 15:31:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1408-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-fastsprings-in-app-purchasing-for-desktop-software/1408.rss">Using FastSpring&#39;s In-App Purchasing for Desktop Software</source>
+      </item>
+  </channel>
+</rss>

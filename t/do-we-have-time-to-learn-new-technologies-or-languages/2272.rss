@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Do we have time to learn new technologies or languages?</title>
+    <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272</link>
+    <description>I&#39;ve been a bootstrapper for 4 years now, more or less full-time.
+
+So far, I&#39;ve used C# for everything - for the main product (Desktop software), for tools, and for a small web app.
+
+I&#39;m very familiar with it, I have my own libraries, and I&#39;m very quick in C#.
+
+Now I&#39;m developing my second product, a SaaS app. I&#39;m on the fence which technology to pick.
+On one hand, I know I&#39;ll launch sooner if I continue using C#.
+On the other hand, I&#39;m feeling that in order to progress as a software developer, I really should try out new technologies.
+
+Any thoughts on that?
+Do we, as fulltime bootstrappers, have time to learn new technologies?
+Is it wise to start a commercial project in a new language you have no experience in?
+Will it hold back my progress as a developer if I do all my projects on the same technology stack?</description>
+    
+    <lastBuildDate>Fri, 02 Jan 2015 15:14:31 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[andres]]></dc:creator>
+        <description><![CDATA[
+            <p>For a SaaS platform you need to know frontend. In terms of usability and UX, the expectations people have for web applications today is on par with native apps. Thus whatever SaaS you have it will likely have an admin frontend such that the user can interface with the platform and access analytics, at minimum.</p>
+<p>To achieve a native-like experience you need JavaScript. React, Angular, Ember, etc. will all do for building the front-end.</p>
+<p>You gotta keep learning so you can deliver solutions that best competitors, or at worst match them. Some technologies don’t see that much of a change. You can write your backend in C++ if you’d like. Others do change, like the front-end.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/12</link>
+        <pubDate>Fri, 02 Jan 2015 15:14:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[kyb0rg]]></dc:creator>
+        <description><![CDATA[
+            <p>Are you building a product or are you playing with languages? It’s that simple.</p>
+<p>Unless you’re considering to green field a project based on MS DOS and Turbo C 1.5 you shouldn’t switch tech just because “it’s new”. I’m not seeing C# and .NET going away in the next decades so stick with it and focus on business domain problems instead of fighting a new language and unknown frameworks.</p>
+<p>You can always play with new tech in your free time though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/11</link>
+        <pubDate>Tue, 30 Dec 2014 11:30:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[Mark_Nemtsas]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t see how you have time not to.  Since I started out way back when (VB6) I’ve had to learn <a href="http://VB.NET" rel="nofollow noopener">VB.NET</a>, c#, the full LAMP stack, and various Javascript libraries.  I’m hardly an expert in any of them but productive enough to be useful.  It’s easiest if you have a real project to work on where you can incorporate the learning experience.  This year I’ve spent many hours working my way around WordPress (fun) and next I’m doing my best to pick up some new Javascript  libraries to see how use them in my existing SAAS product.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/10</link>
+        <pubDate>Fri, 26 Dec 2014 22:19:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[markh]]></dc:creator>
+        <description><![CDATA[
+            <p>I find the only way to learn a new technology is by using it in a real project. It can bite you sometimes and I suppose the way to avoid that is to create a prototype first. While I like learning new technologies, it has to be right for the project. I try to introduce only one new technology in a project so the learning curve isn’t overwhelming. When choosing technologies I tend to go for stuff that’s fairly mainstream in case the project gets bigger and I need to hire a developer.</p>
+<p>Being able to choose frameworks/languages is one of the perks of doing your own thing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/9</link>
+        <pubDate>Fri, 26 Dec 2014 20:54:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m in the same boat with C# - I love it, and I’m very productive using combination of Visual Studio and Resharper. Since .Net is now open source, and with existing support for mobile platforms by Xamarin - it can get you pretty far whatever you want to do.</p>
+<p>Concerning learning new stuff it’s inevitable even if you stick to C# and .Net. Since you’re moving to SAAS it will bring too much new stuff, especially on the front end, that choosing a new platform on the back end will inevitably slow you down in first few months.</p>
+<p>On the other hand, if new platform looks sexy and exciting - it could motivate you and give additional push on psychological level. It could even have business sense regardless of theoretical productivity losses if in practice new and interesting things make you look forward to each day of work. After all, you don’t have a boss, it’s ok to change things for change sake if it makes you happy.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/8</link>
+        <pubDate>Thu, 25 Dec 2014 21:21:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="2272">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/coreysnipes/40/2432_1.png" class="avatar"> coreysnipes:</div>
+<blockquote>
+<p>I play upright bass, and take a little time each week to study jazz</p>
+</blockquote>
+</aside>
+<p>Good point! If you have a desire to learn something, go for a real-world things. I started my boxing classes last month, and I tell you this thing is “stronger than Goethe’s Faust” ©!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/7</link>
+        <pubDate>Tue, 18 Nov 2014 19:04:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="2272">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/j/7cd45c/40.png" class="avatar"> jasonforrest:</div>
+<blockquote>
+<p>You could learn new technologies in your “free” time and apply the learning back into your business and you’d be no worse off.</p>
+</blockquote>
+</aside>
+<p>I share <a class="mention" href="/u/jasonforrest">@jasonforrest</a> 's perspective on this.  I consider new technologies &amp; platforms a risk to the core business, so I largely avoid them or try it out on low-risk, peripheral stuff.  If it’s valuable to your overall happiness, go for it – but treat it like a hobby.  (I play upright bass, and take a little time each week to study jazz.  It obviously doesn’t help the business, but it’s part of my “balanced life” scheme, and makes the whole picture sustainable.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/6</link>
+        <pubDate>Tue, 18 Nov 2014 18:51:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[jabeuy]]></dc:creator>
+        <description><![CDATA[
+            <p>I would stick with the language/tech I know. But maybe have side projects using a new tech stack.<br>
+This way you get to try out something new and develop your skills, but have your important business code in something your comfortable in case you need to move fast (not have to learn how to something new).</p>
+<p>That said, I think I would learn the new stuff faster if  I went all in.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/5</link>
+        <pubDate>Tue, 18 Nov 2014 17:37:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[mpemberton5]]></dc:creator>
+        <description><![CDATA[
+            <p>Learning/using a new technology for a new product isn’t necessarily a bad thing.  Just depends on what your expectations are.  If you’re not driven on a fast timeline to launch date, then it certainly is possible.  However, I would not let this decision ride based solely on the NEED to learn other technologies.</p>
+<p>I think it is beneficial for a developer to understand some basics of other technologies.  For example, I’ve tinkered with angularJs a bit, just to see what it can do.  I’ve chosen not to use it in my web app because 1) I’m not comfortable with it and 2) it is still highly evolving as a language.  But maybe I’ll use it as it matures and as I get more comfortable with it.  Continue to learn new technologies as time permits, and use them as you see fit.</p>
+<p>With your C# experience, if you simply continue to develop that experience, I don’t see you becoming obsolete anytime soon. .NET development has established itself and continues to grow.  As you move toward developing SAAS apps, you’ll certainly get familiar with other languages (CSS, javascript, etc) as well as new development methodologies that you may not have experienced in your desktop app (i.e. MVC).</p>
+<p>Good luck and don’t be afraid to learn something new!  Just use it wisely.  <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/4</link>
+        <pubDate>Mon, 17 Nov 2014 20:07:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[jasonforrest]]></dc:creator>
+        <description><![CDATA[
+            <p>You could learn new technologies in your “free” time and apply the learning back into your business and you’d be no worse off.</p>
+<p>Personally, I don’t want to try new technology in my business’s code. I want it to be reliable, and I want to be able to reliably fix it when bad things happen. New technology is for play time and one-offs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/3</link>
+        <pubDate>Sat, 15 Nov 2014 00:54:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="2272">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ltr/40/3362_1.png" class="avatar"> LTR:</div>
+<blockquote>
+<p>On the other hand, I’m feeling that in order to progress as a software developer</p>
+</blockquote>
+</aside>
+<p>I thought you’re decided to progress as a bootstrapper?</p>
+<p>Learning new fads that are not useful in your business is a waste of time. You may convince yourself that learning this or that new technology will help you down the road, but it unlikely will happen.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/2</link>
+        <pubDate>Sat, 15 Nov 2014 00:31:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+      <item>
+        <title>Do we have time to learn new technologies or languages?</title>
+        <dc:creator><![CDATA[LTR]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been a bootstrapper for 4 years now, more or less full-time.</p>
+<p>So far, I’ve used C# for everything - for the main product (Desktop software), for tools, and for a small web app.</p>
+<p>I’m very familiar with it, I have my own libraries, and I’m very quick in C#.</p>
+<p>Now I’m developing my second product, a SaaS app. I’m on the fence which technology to pick.<br>
+On one hand, I know I’ll launch sooner if I continue using C#.<br>
+On the other hand, I’m feeling that in order to progress as a software developer, I really should try out new technologies.</p>
+<p>Any thoughts on that?<br>
+Do we, as fulltime bootstrappers, have time to learn new technologies?<br>
+Is it wise to start a commercial project in a new language you have no experience in?<br>
+Will it hold back my progress as a developer if I do all my projects on the same technology stack?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272/1</link>
+        <pubDate>Fri, 14 Nov 2014 23:01:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2272-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-we-have-time-to-learn-new-technologies-or-languages/2272.rss">Do we have time to learn new technologies or languages?</source>
+      </item>
+  </channel>
+</rss>

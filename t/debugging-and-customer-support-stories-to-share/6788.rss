@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Debugging and Customer Support stories to share?</title>
+    <link>https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788</link>
+    <description>I like to produce some quality content for this service-based business. The service is High-Tech Customer Support and Bug Fixing (mainly for GUI-heavy software products).
+
+To come up with ideas for content I like to ask everyone whether you have any stories or experiences about customer support or bug fixing that you like to share.
+
+What you learnt from the experience, what was particularily difficult about the support case or the bug, what tools or techniques you used, what was the outcome whether positive or negative and what you would do if you were in that situation in hindsight?</description>
+    
+    <lastBuildDate>Mon, 17 Feb 2020 15:16:22 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Debugging and Customer Support stories to share?</title>
+        <dc:creator><![CDATA[jmstfv]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="RaminZaghi" data-post="3" data-topic="6788">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/raminzaghi/40/5070_2.png" class="avatar"> RaminZaghi:</div>
+<blockquote>
+<p>One question I would ask in your case is, did you eventually implement the method browsers implement (downloading missing intermediary certificates to complete the chain automatically)?</p>
+</blockquote>
+</aside>
+<p>This is something that I’d love to tackle in the near future, but I’m not keen on implementing the AIA extension myself. There are two ways to work around it:</p>
+<ul>
+<li>
+<p>Periodically download intermediate certificates and update the certificate store on all servers. This is more of a brute-force approach, and it will probably work if I could get my hands on those certificates.</p>
+</li>
+<li>
+<p>Running a <a href="https://github.com/puppeteer/puppeteer">headless browser</a>. Why reinvent the wheel if the Chromium &amp; friends has already implemented it? On top of that, running a browser has benefits such as advanced rendering engine (unlike curl) and accurate request timings. The downside is that it is operationally harder and more expensive to run a fleet of headless browsers than a fleet of Sidekiq workers performing curl requests. I’d think thrice before introducing such complexity.</p>
+</li>
+</ul>
+<aside class="quote no-group" data-username="RaminZaghi" data-post="3" data-topic="6788">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/raminzaghi/40/5070_2.png" class="avatar"> RaminZaghi:</div>
+<blockquote>
+<p>These stuff sound simple on the surface but get very complicated very soon.</p>
+</blockquote>
+</aside>
+<p>Oh, I have the same sentiment about a lot of things on the Internets. SMTP, IMAP, SSL/TLS, OpenVPN, rendering engines (e.g. Gecko, Webkit). Heck, something trivial like favicons quickly gets out of hand once you start factoring in various devices and operating systems.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788/4</link>
+        <pubDate>Mon, 17 Feb 2020 15:16:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6788-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788.rss">Debugging and Customer Support stories to share?</source>
+      </item>
+      <item>
+        <title>Debugging and Customer Support stories to share?</title>
+        <dc:creator><![CDATA[RaminZaghi]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting story <a class="mention" href="/u/jmstfv">@jmstfv</a>. Thanks for sharing <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I happen to have worked and be working with a client at visualSilicon on this very subject of certificate chains and digital signature validation and I happen to have this problem of missing certificates in the chain because actually the product in this case is supposed to verify when it is offline and to come up with a positive user experience while keeping the security intact is hard. These stuff sound simple on the surface but get very complicated very soon.</p>
+<p>One question I would ask in your case is, did you eventually implement the method browsers implement (downloading missing intermediary certificates to complete the chain automatically)?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788/3</link>
+        <pubDate>Sun, 16 Feb 2020 20:42:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6788-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788.rss">Debugging and Customer Support stories to share?</source>
+      </item>
+      <item>
+        <title>Debugging and Customer Support stories to share?</title>
+        <dc:creator><![CDATA[jmstfv]]></dc:creator>
+        <description><![CDATA[
+            <p>I remember someone signing up to <a href="https://tryhexadecimal.com">Hexadecimal</a> and adding 19 websites in a very short time. One of them was marked <em>down</em> straight ahead. What threw me off was that the website was accessible from the browser but not the command line (unlike anything I saw before). So something along these lines:</p>
+<pre><code>curl -v https://incomplete-chain.badssl.com
+
+curl: (60) SSL certificate problem: unable to get local issuer certificate
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it.
+</code></pre>
+<p>After trawling through various mailing lists for about 2 hours and poking around the command line, I found out that their web server was misconfigured such that it had a missing (intermediate) certificate in the chain. Browsers can work around this by using the Authority Information Access extension (AIA) <a href="https://serverfault.com/a/660520">to download missing certificates</a> in the chain, while curl (and OpenSSL) <a href="https://github.com/curl/curl/commit/727c3fb680349b5e11d49bbff1c3d583806331c7">can’t do that</a>. I had to manually add the missing certificate to all my servers and update the certificate store before the problem was gone.</p>
+<p>Soon after I found about the issue, I shoot them an email letting them know that I’m working on it. After I solved it, I prepared a short postmortem describing what went wrong.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788/2</link>
+        <pubDate>Sun, 16 Feb 2020 19:18:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6788-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788.rss">Debugging and Customer Support stories to share?</source>
+      </item>
+      <item>
+        <title>Debugging and Customer Support stories to share?</title>
+        <dc:creator><![CDATA[RaminZaghi]]></dc:creator>
+        <description><![CDATA[
+            <p>I like to produce some quality content for this service-based business. The service is High-Tech Customer Support and Bug Fixing (mainly for GUI-heavy software products).</p>
+<p>To come up with ideas for content I like to ask everyone whether you have any stories or experiences about customer support or bug fixing that you like to share.</p>
+<p>What you learnt from the experience, what was particularily difficult about the support case or the bug, what tools or techniques you used, what was the outcome whether positive or negative and what you would do if you were in that situation in hindsight?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788/1</link>
+        <pubDate>Sun, 16 Feb 2020 15:46:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6788-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/debugging-and-customer-support-stories-to-share/6788.rss">Debugging and Customer Support stories to share?</source>
+      </item>
+  </channel>
+</rss>

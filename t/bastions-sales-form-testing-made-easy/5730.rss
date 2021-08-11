@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Bastions - Sales form testing made easy</title>
+    <link>https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730</link>
+    <description>**Bastions**
+[https://bastions.co](https://bastions.co)
+
+I&#39;ve been working on bootstrapping my first SaaS product, bastions, for a few months now. Bastions is a helpful QA platform that enables non-technical webmasters in creating automated tests for their online sales forms. The need derives from my own experiences in which client websites with business-generating sales forms (typically Salesforce Web-to-Lead forms) would break unexpectedly. With so many moving parts in online sales pipelines today, it was difficult to detect a break, figure out where it was broken once detected, and then determine when the form actually broke to help estimate how much business was lost. Sometimes, forms would be broken for months before noticed.
+
+Bastions helps mitigate this by allowing you to easily automate testing routines for your CRM-backed sales forms. It uses Selenium to test your form just like a user would, keeping watch for any errors or failed assertions (a feature that you control), and proceeds to look for the new lead in your CRM (if integrated) to ensure it arrived at its destination.
+
+This is my first attempt at bootstrapping anything, so I&#39;d love your feedback. I&#39;m constantly improving the product (new features enabling more use-cases, creating new integrations for more CRM&#39;s, etc.) and I&#39;m working towards getting an initial round of users.</description>
+    
+    <lastBuildDate>Fri, 02 Mar 2018 20:22:20 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Bastions - Sales form testing made easy</title>
+        <dc:creator><![CDATA[kins]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the advice Bob! You’ve touched on two points that I’ve thought about experimenting with (the “+plus” managed service and the pricing), and now I think I just might <img src="https://emoji.discourse-cdn.com/twitter/grinning.png?v=5" title=":grinning:" class="emoji" alt=":grinning:">.</p>
+<p>I’m always afraid of saying too much with web content, because I typically ramble in real life, so I will do some experimenting on creating better content that conveys all of this information and update the website soon.</p>
+<p>I just realized that the page doesn’t mention bastions testing schedule at all, but right now the tests run everyday. I will be expanding to hourly testing soon though, so I’ll include that spec in the content just to be safe.</p>
+<p>I appreciate it! This place is great.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/5</link>
+        <pubDate>Fri, 02 Mar 2018 20:22:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5730-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730.rss">Bastions - Sales form testing made easy</source>
+      </item>
+      <item>
+        <title>Bastions - Sales form testing made easy</title>
+        <dc:creator><![CDATA[Bobwalsh]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok, NOW I understand what you’re selling, and why non-technical Sales Managers need a way to set up automated testing.</p>
+<p>3 points:</p>
+<ul>
+<li>If you are targeting non-technical Sales Managers, you can definitely find a market - but you may want a +plus service where they give you the info you need, and you set it up for them (for a charge of course <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> ).</li>
+<li>The other is making a customer click to find out your pricing is never good. You will lose customers that way. Instead you can say something like, “Starting as little as $x per month, Bastions can doublecheck your sales process forms so that you don’t have to.”</li>
+<li>Your price is too low. If you are selling to business, your absolute lowest price should be in the US $10/month. Five bucks is a coffee - barely.</li>
+<li>And one other point, when does Bastions test, and how does it notify?</li>
+</ul>
+<p>Cheers,<br>
+Bob</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/4</link>
+        <pubDate>Fri, 02 Mar 2018 20:01:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5730-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730.rss">Bastions - Sales form testing made easy</source>
+      </item>
+      <item>
+        <title>Bastions - Sales form testing made easy</title>
+        <dc:creator><![CDATA[kins]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback! I will adjust my messaging to make sure I’m getting the point across better.</p>
+<p>By sales form I mean any lead-generating form. Contact Us forms, Request an Appointment forms, and any form on a website that results in a lead/prospect for the company.</p>
+<p>They are important to test because, with so many moving parts, critical breaks are going to happen at some point or another. If there is no process in place to routinely test these forms, the result will be lost revenue for the amount of time that the break is present.</p>
+<p>Bastions enables those without immense technical knowledge to setup an automated testing routine for their forms (which also integrate with their CRM to test the pipeline end-to-end).</p>
+<p>Did that explain it well? I think that explaining the product, and conveying its value, is my weakest point. Any pointers on what specifically I could do to get my point across?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/3</link>
+        <pubDate>Fri, 02 Mar 2018 19:40:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5730-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730.rss">Bastions - Sales form testing made easy</source>
+      </item>
+      <item>
+        <title>Bastions - Sales form testing made easy</title>
+        <dc:creator><![CDATA[Bobwalsh]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there,</p>
+<p>Had a look at your site, but can’t get what you are selling. Testing? Sales Forms? And what is a sales form?</p>
+<p>I think you need to 1) give examples of what you mean by sales forms, 2) Why it’s important to perform automated testing on these forms, 3) the benefits of Bastions compared to other approaches.</p>
+<p>Makes sense?</p>
+<p>Cheers,<br>
+Bob</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/2</link>
+        <pubDate>Fri, 02 Mar 2018 19:04:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5730-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730.rss">Bastions - Sales form testing made easy</source>
+      </item>
+      <item>
+        <title>Bastions - Sales form testing made easy</title>
+        <dc:creator><![CDATA[kins]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Bastions</strong><br>
+<a href="https://bastions.co" rel="nofollow noopener">https://bastions.co</a></p>
+<p>I’ve been working on bootstrapping my first SaaS product, bastions, for a few months now. Bastions is a helpful QA platform that enables non-technical webmasters in creating automated tests for their online sales forms. The need derives from my own experiences in which client websites with business-generating sales forms (typically Salesforce Web-to-Lead forms) would break unexpectedly. With so many moving parts in online sales pipelines today, it was difficult to detect a break, figure out where it was broken once detected, and then determine when the form actually broke to help estimate how much business was lost. Sometimes, forms would be broken for months before noticed.</p>
+<p>Bastions helps mitigate this by allowing you to easily automate testing routines for your CRM-backed sales forms. It uses Selenium to test your form just like a user would, keeping watch for any errors or failed assertions (a feature that you control), and proceeds to look for the new lead in your CRM (if integrated) to ensure it arrived at its destination.</p>
+<p>This is my first attempt at bootstrapping anything, so I’d love your feedback. I’m constantly improving the product (new features enabling more use-cases, creating new integrations for more CRM’s, etc.) and I’m working towards getting an initial round of users.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730/1</link>
+        <pubDate>Fri, 02 Mar 2018 17:07:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5730-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/bastions-sales-form-testing-made-easy/5730.rss">Bastions - Sales form testing made easy</source>
+      </item>
+  </channel>
+</rss>

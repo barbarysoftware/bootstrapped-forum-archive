@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Remote customer support options</title>
+    <link>https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504</link>
+    <description>Hi all.
+
+One thing I love about a SaaS is how much easier it is for me to remotely support than a desktop app. But a problem I still occasionally encounter is trying to support users hardware, such as printers. For example my software prints to receipt printers via a POS screen.
+
+But sometimes users just can&#39;t manage to configure the hardware themselves and get it running. How do other people typically manage this? Do you remote desktop into users computers, keeping in mind they have a mix of Mac and PC&#39;s? If so what software do you use? Any other hints for managing this?
+
+One thing I am trying to do is set up a network of resellers so there will hopefully people locally to major cities who can come in and personally help out the users (for a price).
+
+Craig
+
+
+</description>
+    
+    <lastBuildDate>Tue, 15 Apr 2014 13:34:43 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Remote customer support options</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I try to avoid remote access if at all possible.</p>
+<ol>
+<li>It uses up your time.</li>
+<li>The user might then blame you for something unrelated that goes wrong afterwards.</li>
+<li>The user might start to regard you as a free IT support desk.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504/4</link>
+        <pubDate>Tue, 15 Apr 2014 13:34:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1504-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504.rss">Remote customer support options</source>
+      </item>
+      <item>
+        <title>Remote customer support options</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Steve. I tend to agree that the documentation approach is the best one. Every time a support question comes in I view it as a opportunity to improve the documentation or software to avoid the same question in the future.</p>
+<p>Having to remote in is a real time sink that doesn’t really scale.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504/3</link>
+        <pubDate>Tue, 15 Apr 2014 10:17:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1504-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504.rss">Remote customer support options</source>
+      </item>
+      <item>
+        <title>Remote customer support options</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s my approach:</p>
+<ul>
+<li>First, make sure you have excellent docs. eg. A how-to page for each specific printer problem with screenshots. The steps need to be clear, detailed, and illustrated with a screenshot for each step.</li>
+<li>Second, create how-to videos showing the steps clearly. Making a good how-to video is an art: you need to be concise, and speak slowly and clearly, and resist that urge to move the mouse cursor maniacally over the screen in a rapid pace.</li>
+<li>Third (and in answer to your specific question), use remote desktop software. I’ve tried <a href="https://www.copilot.com/">Copilot</a> and <a href="http://www.teamviewer.com/en/index.aspx">Team Viewer</a>. Both work well on Mac and Windows.</li>
+</ul>
+<p><strong>Granting remote access is scary for some users. It is also a time sink.</strong> So once you’ve used remote desktop software to trouble-shoot a specific problem, do whatever you can to make sure it isn’t necessary again. That leads to the next step:</p>
+<ul>
+<li>
+<p>Fourth, modify your software to do the diagnostics/set-up stuff that you had to do manually. We’ve added a diagnostics screen to our flagship product, Poker Copilot, modelled on OS X’s “Network Preferences” dialog. It checks a few things on the computer, and for each, gives the user a green light or red light. For each red light, steps to solve the problem are given. This has reduced our support load, and has also given us a way to double-check that the user has followed each step properly. In your case, you could have a “help me print” part of your software, which walks the user through printing a test page.</p>
+</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504/2</link>
+        <pubDate>Tue, 15 Apr 2014 10:02:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1504-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504.rss">Remote customer support options</source>
+      </item>
+      <item>
+        <title>Remote customer support options</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all.</p>
+<p>One thing I love about a SaaS is how much easier it is for me to remotely support than a desktop app. But a problem I still occasionally encounter is trying to support users hardware, such as printers. For example my software prints to receipt printers via a POS screen.</p>
+<p>But sometimes users just can’t manage to configure the hardware themselves and get it running. How do other people typically manage this? Do you remote desktop into users computers, keeping in mind they have a mix of Mac and PC’s? If so what software do you use? Any other hints for managing this?</p>
+<p>One thing I am trying to do is set up a network of resellers so there will hopefully people locally to major cities who can come in and personally help out the users (for a price).</p>
+<p>Craig</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504/1</link>
+        <pubDate>Tue, 15 Apr 2014 05:12:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1504-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/remote-customer-support-options/1504.rss">Remote customer support options</source>
+      </item>
+  </channel>
+</rss>

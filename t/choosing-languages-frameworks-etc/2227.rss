@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Choosing languages, frameworks, etc?</title>
+    <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227</link>
+    <description>What should one take into account when choosing languages and other tools for a project?
+
+Specifically, I&#39;m building an ecommerce site for selling custom-printed physical products. I&#39;ll also need to write software for streamlining the process of printing, shipping, etc., and doing this well is really important in differentiating our service from competitors, so being able to add on custom-coded things easily is important. I see that there are some out-of-box solutions for this, too, but I&#39;m uncertain about using them because I&#39;m not sure how flexible they&#39;d be.
+
+PHP looks like it has the most complete and long-lived ecommerce software, including some WordPress plugins like WooCommerce that don&#39;t require touching the code much at all (but might be too expensive, if we end up needing lots of plugins). I&#39;m familiar with WordPress, but don&#39;t like writing for it all that much. I also worry about being constrained by out-of-box software that can&#39;t be made to do what I need it to.
+
+Python was the only other language I looked at that had current and mature ecommerce frameworks. There are a lot of different options within Python, mostly based on the Django framework, and I&#39;m not sure how to decide between them when there&#39;s no clear winner. I know I like this general approach better, but I worry a lot about not being able to code fast enough to keep up with what the business needs. (I&#39;m a student now, and don&#39;t know how much time I&#39;ll have when I start working in a few months.)
+
+I also notice that a lot of other bootstrappers are building product sites in WordPress and apps in PHP. Is having fewer bootstrapper-friendly tools available because of software choices something I should worry about? (For example, not being able to use the WordPress-specific A/B testing plugins.)
+
+I&#39;d appreciate some advice on what to do in this situation, but I&#39;m also curious what things you think about when choosing tools in general. Which factors are the most important? Are there any that I didn&#39;t think of here?</description>
+    
+    <lastBuildDate>Wed, 05 Nov 2014 13:30:54 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Choosing languages, frameworks, etc?</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>That sounds like a perfect approach, especially since your customers are inherently comfortable with Paypal.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/9</link>
+        <pubDate>Wed, 05 Nov 2014 13:30:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2227-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss">Choosing languages, frameworks, etc?</source>
+      </item>
+      <item>
+        <title>Choosing languages, frameworks, etc?</title>
+        <dc:creator><![CDATA[mare_of_night]]></dc:creator>
+        <description><![CDATA[
+            <p>I just had a really productive conversation with my co-founder. We decided to push off the problem of making a formal storefront, like some of you suggested, and do this from a simple static site, email and PayPal. (Our target market are used to receiving money through PayPal email addresses, so they probably won’t mind.) He also figured out a way around having to buy much equipment up front, so we should be able to “launch” in the next few weeks.</p>
+<p>Thanks again for all your advice, and for the reminder to keep things simple.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/8</link>
+        <pubDate>Tue, 04 Nov 2014 19:14:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2227-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss">Choosing languages, frameworks, etc?</source>
+      </item>
+      <item>
+        <title>Choosing languages, frameworks, etc?</title>
+        <dc:creator><![CDATA[mare_of_night]]></dc:creator>
+        <description><![CDATA[
+            <p>After reading the responses, I think part of the trouble I’m having is not being sure which approach is the one that allows getting started quickly. I think I might just pick something that feels ok, and turn back and try something else if it seems inordinately time-consuming. At least get something out there, that way.</p>
+<p><a class="mention" href="/u/jasonforrest">@jasonforrest</a> and <a class="mention" href="/u/rachelandrew">@rachelandrew</a> Thanks for reminding me about the “not having customers yet” problem XD We’re working on that one too. I think I need to talk to my cofounder again about how formal we really need to be - we can probably do at least some of this from just email and a paypal account. (There’s still some investment in materials required to make the product - and I think that’s also part of the reason why we’re hesitating. But having the website isn’t going to fix that problem. I can think of some ways to address why we’re holding off and find out how long it makes sense to wait, though.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/7</link>
+        <pubDate>Tue, 04 Nov 2014 16:41:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2227-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss">Choosing languages, frameworks, etc?</source>
+      </item>
+      <item>
+        <title>Choosing languages, frameworks, etc?</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>If you are just starting out I would get something up and running using whatever will get you to launch quickest.</p>
+<p>You can always iterate on your platform and infrastructure later and at that point you’ll have real information about what you really need. You can get a long way by pulling together third party solutions. Remember that your first version you build won’t be what you need if you are successful. There really isn’t any point getting too hung up on the fact you are using something that won’t scale in the future. Get it working, once you have customers you can start planning version 2 of the solution that draws on everything you learn from using the off the shelf stuff.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/6</link>
+        <pubDate>Tue, 04 Nov 2014 06:23:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2227-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss">Choosing languages, frameworks, etc?</source>
+      </item>
+      <item>
+        <title>Choosing languages, frameworks, etc?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>It doesn’t matter, any of the popular platforms, PHP, Rails, Python, Java, .NET are all capable of doing the job. Much more important is what you are comfortable with, people are more important than tools.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/5</link>
+        <pubDate>Tue, 04 Nov 2014 02:57:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2227-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss">Choosing languages, frameworks, etc?</source>
+      </item>
+      <item>
+        <title>Choosing languages, frameworks, etc?</title>
+        <dc:creator><![CDATA[buggy]]></dc:creator>
+        <description><![CDATA[
+            <p>If you’re going to be working on something for the next 10 or 20 years then I’d find a language/platform that you enjoy coding in that isn’t brand new or obscure. If you need to integrate with third parties that provide SDK’s then I would also consider what languages they provide SDK’s for.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/4</link>
+        <pubDate>Tue, 04 Nov 2014 00:18:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2227-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss">Choosing languages, frameworks, etc?</source>
+      </item>
+      <item>
+        <title>Choosing languages, frameworks, etc?</title>
+        <dc:creator><![CDATA[jasonforrest]]></dc:creator>
+        <description><![CDATA[
+            <p>Most of the time, worrying about tools is just a form of procrastination.</p>
+<p>A lot of the problems you are imagining are in the category of “nice problem to have”. Most people don’t have problems like that when they start out. They have problems with <em>not having any customers</em>.</p>
+<p>If you streamline everything and write a ton of code before you try to sell anything, you might find that you have wasted a lot of time.</p>
+<p>If I were you, I’d be more worried about trying to sell/market first. A lot of the processes you are talking about can be done manually at first. Once you get too many sales to keep up with and you figure out what is slowing you down, you can address those problems then.</p>
+<p>One of the nice things about having actual sales is you can afford to hire people to help you solve your problems at that point if you need help. You also know the development time will actually earn money.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/3</link>
+        <pubDate>Tue, 04 Nov 2014 00:07:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2227-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss">Choosing languages, frameworks, etc?</source>
+      </item>
+      <item>
+        <title>Choosing languages, frameworks, etc?</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <p>You want to build as little as possible, using what’s out there that works well and is easy to get set up.  The tricky bit is customization, because that can start getting more complex with some existing codebase.</p>
+<p>It also depends on where you want to go and what you want to accomplish.  If it’s just selling something online, maybe a site like Shopify?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/2</link>
+        <pubDate>Mon, 03 Nov 2014 20:59:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2227-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss">Choosing languages, frameworks, etc?</source>
+      </item>
+      <item>
+        <title>Choosing languages, frameworks, etc?</title>
+        <dc:creator><![CDATA[mare_of_night]]></dc:creator>
+        <description><![CDATA[
+            <p>What should one take into account when choosing languages and other tools for a project?</p>
+<p>Specifically, I’m building an ecommerce site for selling custom-printed physical products. I’ll also need to write software for streamlining the process of printing, shipping, etc., and doing this well is really important in differentiating our service from competitors, so being able to add on custom-coded things easily is important. I see that there are some out-of-box solutions for this, too, but I’m uncertain about using them because I’m not sure how flexible they’d be.</p>
+<p>PHP looks like it has the most complete and long-lived ecommerce software, including some WordPress plugins like WooCommerce that don’t require touching the code much at all (but might be too expensive, if we end up needing lots of plugins). I’m familiar with WordPress, but don’t like writing for it all that much. I also worry about being constrained by out-of-box software that can’t be made to do what I need it to.</p>
+<p>Python was the only other language I looked at that had current and mature ecommerce frameworks. There are a lot of different options within Python, mostly based on the Django framework, and I’m not sure how to decide between them when there’s no clear winner. I know I like this general approach better, but I worry a lot about not being able to code fast enough to keep up with what the business needs. (I’m a student now, and don’t know how much time I’ll have when I start working in a few months.)</p>
+<p>I also notice that a lot of other bootstrappers are building product sites in WordPress and apps in PHP. Is having fewer bootstrapper-friendly tools available because of software choices something I should worry about? (For example, not being able to use the WordPress-specific A/B testing plugins.)</p>
+<p>I’d appreciate some advice on what to do in this situation, but I’m also curious what things you think about when choosing tools in general. Which factors are the most important? Are there any that I didn’t think of here?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227/1</link>
+        <pubDate>Mon, 03 Nov 2014 20:44:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2227-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/choosing-languages-frameworks-etc/2227.rss">Choosing languages, frameworks, etc?</source>
+      </item>
+  </channel>
+</rss>

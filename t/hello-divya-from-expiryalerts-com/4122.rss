@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hello, Divya from expiryalerts.com</title>
+    <link>https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122</link>
+    <description>Hi folks,
+
+I&#39;m a developer residing in NYC building cool things in my spare time.
+
+I have some product ideas but I usually don&#39;t end up finishing and launching them.
+
+I&#39;ve spent a few weeks on my latest idea and hopefully I can launch it soon.
+
+Looking forward to chatting with you all.
+
+Divya</description>
+    
+    <lastBuildDate>Thu, 30 Jun 2016 16:42:41 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hello, Divya from expiryalerts.com</title>
+        <dc:creator><![CDATA[michaeljamescalkins]]></dc:creator>
+        <description><![CDATA[
+            <p>Usually I see the “inside firewall” stuff setup as enterprise pricing.</p>
+<p>This thing is awesome!  I don’t think I would pay for it yet but it seems very useful so far.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/7</link>
+        <pubDate>Thu, 30 Jun 2016 16:42:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4122-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122.rss">Hello, Divya from expiryalerts.com</source>
+      </item>
+      <item>
+        <title>Hello, Divya from expiryalerts.com</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>I do agree that you could benefit from a way to get info from inside firewalls (though perhaps its not essential for the MVP) but IMHO a SharePoint ‘plugin’ may not be the right way to go.</p>
+<ul>
+<li>I imagine that to do this you’re creating a service/agent that you can deploy inside a customers firewall but that communicates with your site (basically a deploy-able version of whatever you use for externally accessible sites).</li>
+<li>If you make it run inside SharePoint then you’re limiting yourself then to customers who have SharePoint (on premises not 365) servers AND are willing to install extra software on them - but then the question is why unless the UI is also surfaced via SharePoint (which of course means duplicating all the UI / alerting logic as well).</li>
+<li>Of course some companies would appreciate a non SaaS app - something where they can run everything internally without worrying about - what is this agent doing when its communicating with this outside website. But I think this is pretty much a separate product.</li>
+</ul>
+<p>In summary, I personally would :-</p>
+<ul>
+<li>Keep it as is until you’ve proven a market</li>
+<li>Think about adding an agent that can be deployed inside firewall if there is demand.</li>
+<li>Later think about a totally self contained ‘on premises’ version if you get demand.</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/6</link>
+        <pubDate>Thu, 30 Jun 2016 10:38:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4122-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122.rss">Hello, Divya from expiryalerts.com</source>
+      </item>
+      <item>
+        <title>Hello, Divya from expiryalerts.com</title>
+        <dc:creator><![CDATA[divya]]></dc:creator>
+        <description><![CDATA[
+            <p>Good idea. I haven’t written to Sharepoint before but I’ll take a look.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/5</link>
+        <pubDate>Tue, 28 Jun 2016 05:04:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4122-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122.rss">Hello, Divya from expiryalerts.com</source>
+      </item>
+      <item>
+        <title>Hello, Divya from expiryalerts.com</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4122">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/d/13edae/40.png" class="avatar"> divya:</div>
+<blockquote>
+<p>I have a lot of domains/certs that I manage and I needed a simple way to keep track of their SSL expiry.</p>
+</blockquote>
+</aside>
+<p>Imagine how big is this problem within corporate networks, with hundreds and thousands of TLS-protected endpoints. Unfortunately, your service won’t work for them, as most of the endpoints are not exposed to outer worlds. You may think of a hosted solution tho - may be a plugin for Sharepoint?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/4</link>
+        <pubDate>Mon, 27 Jun 2016 22:34:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4122-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122.rss">Hello, Divya from expiryalerts.com</source>
+      </item>
+      <item>
+        <title>Hello, Divya from expiryalerts.com</title>
+        <dc:creator><![CDATA[divya]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/shantnu">@shantnu</a> Sorry for being delayed. I didn’t want to share something I might not have finished.</p>
+<p>It’s somewhat ready now – here you go <a href="https://expiryalerts.com" rel="nofollow noopener">https://expiryalerts.com</a></p>
+<p>I have a lot of domains/certs that I manage and I needed a simple way to keep track of their SSL expiry. The site sends alerts to phone/email or slack; 30, 14 and 1 day before expiry.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/3</link>
+        <pubDate>Mon, 27 Jun 2016 04:21:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4122-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122.rss">Hello, Divya from expiryalerts.com</source>
+      </item>
+      <item>
+        <title>Hello, Divya from expiryalerts.com</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome Divya. Whats the idea about?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/2</link>
+        <pubDate>Tue, 07 Jun 2016 08:40:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4122-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122.rss">Hello, Divya from expiryalerts.com</source>
+      </item>
+      <item>
+        <title>Hello, Divya from expiryalerts.com</title>
+        <dc:creator><![CDATA[divya]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi folks,</p>
+<p>I’m a developer residing in NYC building cool things in my spare time.</p>
+<p>I have some product ideas but I usually don’t end up finishing and launching them.</p>
+<p>I’ve spent a few weeks on my latest idea and hopefully I can launch it soon.</p>
+<p>Looking forward to chatting with you all.</p>
+<p>Divya</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122/1</link>
+        <pubDate>Tue, 07 Jun 2016 05:09:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4122-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-divya-from-expiryalerts-com/4122.rss">Hello, Divya from expiryalerts.com</source>
+      </item>
+  </channel>
+</rss>

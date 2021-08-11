@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Website hosting</title>
+    <link>https://discuss.bootstrapped.fm/t/website-hosting/4669</link>
+    <description>I am considering creating a new and updated website for 2017 that makes it easier for me to update, do SEO etc. Currently my website is just a hand built one, HTML/CSS etc. 
+
+I considered WordPress, but found it very clunky and my site was infested with WordPress viruses within a week, so that put put off. 
+
+What about SquareSpace, has anyone used it? How flexible is it for a largish site? 
+
+What are other good options? If I can&#39;t find one I might end up just building a new site from scratch again but it seems like a waste.</description>
+    
+    <lastBuildDate>Fri, 27 Jan 2017 02:49:36 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>Ended up just creating a normal site, no Wordpress. Preview here <a href="http://youreontime-website.azurewebsites.net/" rel="nofollow noopener">http://youreontime-website.azurewebsites.net/</a> <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/12</link>
+        <pubDate>Fri, 27 Jan 2017 02:49:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="4669">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/aeden/40/1319_1.png" class="avatar"> aeden:</div>
+<blockquote>
+<p><a href="https://blog.dnsimple.com/2016/04/publish-static-via-travis-to-cloudfront/" rel="nofollow noopener">https://blog.dnsimple.com/2016/04/publish-static-via-travis-to-cloudfront/</a></p>
+</blockquote>
+</aside>
+<p>That’s a nice writeup, thanks for sharing that!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/11</link>
+        <pubDate>Thu, 05 Jan 2017 16:41:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>One of our team members wrote this up a while back on how we publish sites to S3 automatically after a Travis build completes: <a href="https://blog.dnsimple.com/2016/04/publish-static-via-travis-to-cloudfront/" rel="nofollow noopener">https://blog.dnsimple.com/2016/04/publish-static-via-travis-to-cloudfront/</a></p>
+<p>May be useful.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/10</link>
+        <pubDate>Thu, 05 Jan 2017 05:48:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>static hosting with a CDN is explained here:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://help.dreamhost.com//p13.zdassets.com/hc/settings_assets/808026/200152607/JK4jz2sT0sx9E9gXEvW3Lw-favicon.ico" class="site-icon" width="" height="">
+      <a href="https://help.dreamhost.com/hc/en-us/articles/235747747-How-to-create-static-websites-with-DreamObjects" target="_blank" rel="nofollow noopener">DreamHost</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:436/60;"><img src="http://p13.zdassets.com/hc/settings_assets/808026/200152607/kJxJoX5gpag1lVsuGhRONg-dh_logo-a-2014.png" class="thumbnail"></div>
+
+<h3><a href="https://help.dreamhost.com/hc/en-us/articles/235747747-How-to-create-static-websites-with-DreamObjects" target="_blank" rel="nofollow noopener">How to host static website files with DreamObjects</a></h3>
+
+<p>You can configure a DreamObjects bucket to serve static web pages created with HTML, CSS, and JavaScript. This allows you to host an entire website that is simple to build and very inexpensive.
+Sta...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>However, I found WP easier to update and with forms and 3rd party plugins.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/9</link>
+        <pubDate>Wed, 04 Jan 2017 21:40:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>Garrett, funny I just logged into aws after a while and noticed they created a wizard like setup for S3 hosting.  I agree AWS is getting more complicated but it looks like they are creating helpful wizards around the underlying setup to make it easier.  But I’m sure in the end you should understand what is going on under the covers as you will have to modify things as you go.</p>
+<p>I used jekyll with <a href="https://github.com/laurilehmijoki/s3_website" rel="nofollow noopener">s3website</a> in the past to setup s3 hosting.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/8</link>
+        <pubDate>Wed, 04 Jan 2017 20:18:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>Not really. The main issues I found were that the blog posts out there about it were simply outdated. AWS is moving fast and changing quickly. So the AWS documentation is your best bet. The biggest problem I ran into was caching with CloudFront. When you’re tinkering, make sure to set the cache expiration really low. Then, when you start deploying, cache invalidation can be somewhat troublesome, but there are some good tools out there to script that from the command line so that site updates also explicitly do the cache invalidation.</p>
+<p>That said, it does seem that they recently added a feature to automate the setup of a static web site with S3 + CloudFront(CDN) + Route53(DNS) + Certificate Management. So it’s probably much easier than when I did it. I’d suggest giving that a try first.</p>
+<p>I remember seeing it when I logged in recently, but I didn’t need it, so I didn’t do much more than click around a little.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/7</link>
+        <pubDate>Wed, 04 Jan 2017 18:21:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4669">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/garrettdimon/40/3456_1.png" class="avatar"> garrettdimon:</div>
+<blockquote>
+<p>I’m hosting a couple of small sites on S3 with https and Cloudfront (their CDN) for $1.50/mo total. They don’t get much traffic, and the configuration took a night or two of tweaking, but now it’s a breeze.</p>
+</blockquote>
+</aside>
+<p>I’ve been wanting to try stuff like this. Do you have any good resources (links) that helped you get going and could possibly reduce the night or two of tweaking?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/6</link>
+        <pubDate>Wed, 04 Jan 2017 17:46:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>We’re using just <a href="https://m.do.co/c/ea4b05d7d4f4" rel="nofollow noopener">Digital Ocean</a> $5/m droplet with Nginx (don’t use Apache, it wastes so much time to config!) and <a href="http://getbootstrap.com" rel="nofollow noopener">Bootstrap 3</a> static site. You can get many inexpensive Bootstrap themes or templates at sites like <a href="https://wrapbootstrap.com" rel="nofollow noopener">Wrap Bootstrap</a> or <a href="http://www.creative-tim.com" rel="nofollow noopener">Creative Tim</a> and rearrange them a bit (fonts, colors, images) to get a unique look.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/5</link>
+        <pubDate>Wed, 04 Jan 2017 16:06:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve really been enjoying using <a href="http://jekyllrb.com" rel="nofollow noopener">Jekyll</a> with sites these days. Depending on what you’re creating, the static nature may be a non-starter, but the upsides are that security becomes a minimal concern and the resulting static files are blazingly fast. <a href="https://middlemanapp.com" rel="nofollow noopener">Middleman</a> is a similar static site generator using Ruby that I’ve heard good things about as well.</p>
+<p>I’m hosting a couple of small sites on S3 with https and Cloudfront (their CDN) for $1.50/mo total. They don’t get much traffic, and the configuration took a night or two of tweaking, but now it’s a breeze.</p>
+<p>On top of that, <a href="https://www.siteleaf.com" rel="nofollow noopener">SiteLeaf</a> has been great for filling the gap between static and hosted CMS by providing a web interface for writing posts and managing the content.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/4</link>
+        <pubDate>Wed, 04 Jan 2017 12:50:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>I am a programmer <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>It was hosted on Azure, I didn’t do anything special, but it seems to be a pretty common problem<br>
+<a href="https://www.google.com.au/search?pws=0&amp;q=wordpress+malware" class="onebox" target="_blank" rel="nofollow noopener">https://www.google.com.au/search?pws=0&amp;q=wordpress+malware</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/3</link>
+        <pubDate>Wed, 04 Jan 2017 05:05:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Wordpress viruses? Darn… where did you host that?</p>
+<p>Wordpress although is not my favorite can be a viable solution to host a website… I have several sites running with no viruses… lol You need a good host, some simple security principles applied and you are done…</p>
+<p>Are you a programmer?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/2</link>
+        <pubDate>Wed, 04 Jan 2017 03:31:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+      <item>
+        <title>Website hosting</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>I am considering creating a new and updated website for 2017 that makes it easier for me to update, do SEO etc. Currently my website is just a hand built one, HTML/CSS etc.</p>
+<p>I considered WordPress, but found it very clunky and my site was infested with WordPress viruses within a week, so that put put off.</p>
+<p>What about SquareSpace, has anyone used it? How flexible is it for a largish site?</p>
+<p>What are other good options? If I can’t find one I might end up just building a new site from scratch again but it seems like a waste.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/website-hosting/4669/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/website-hosting/4669/1</link>
+        <pubDate>Tue, 03 Jan 2017 21:19:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4669-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/website-hosting/4669.rss">Website hosting</source>
+      </item>
+  </channel>
+</rss>

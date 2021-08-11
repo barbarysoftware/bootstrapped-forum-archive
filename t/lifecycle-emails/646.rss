@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Lifecycle emails</title>
+    <link>https://discuss.bootstrapped.fm/t/lifecycle-emails/646</link>
+    <description>Hi,
+
+@patio11 &#39;s talk at MicroConf inspired me to dedicate some time to improving LiberWriter&#39;s emails.  I think our users should be pretty receptive to those techniques, with a bit of modification.
+
+About the first thing I ran into is that I have a confirmation email.  Should I also make that be the welcome email, or should that be a second one? Seems excessive, but like Patrick said, what we want in terms of email communications is not necessarily what the average person wants or responds well to.  I don&#39;t really have the volume of people nor the time to test it at the time being.  Any advice or experience?
+
+Thanks!</description>
+    
+    <lastBuildDate>Wed, 16 Oct 2013 20:58:41 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/lifecycle-emails/646.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Lifecycle emails</title>
+        <dc:creator><![CDATA[kulmala]]></dc:creator>
+        <description><![CDATA[
+            <p>Steve, I think your approach is just fine for desktop apps - people have different expectations for them.</p>
+<p>I think that with desktop apps many people still consider targeted emails as spying and might not appreciate customization. With web apps, it’s more natural that the app tracks what you do.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lifecycle-emails/646/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lifecycle-emails/646/6</link>
+        <pubDate>Wed, 16 Oct 2013 20:58:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-646-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lifecycle-emails/646.rss">Lifecycle emails</source>
+      </item>
+      <item>
+        <title>Lifecycle emails</title>
+        <dc:creator><![CDATA[thibaut_barrere]]></dc:creator>
+        <description><![CDATA[
+            <p>A little thing that worked well for me in “your trial is about to expire email” - I just do this:</p>
+<p>Your trial period ends on XXX (around midnight UTC), at which point your credit-card will be billed.<br>
+If you need more time to decide though, reply to this email and we’ll gladly extend your trial!</p>
+<p>It allows people that have interest in the product yet did not actually had the time to use it, to stay longer.</p>
+<p>I once extended a trial for one month or so.</p>
+<p>I track the usage as well via <a href="http://intercom.io" rel="nofollow noopener">intercom.io</a> custom data.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lifecycle-emails/646/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lifecycle-emails/646/5</link>
+        <pubDate>Tue, 15 Oct 2013 21:50:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-646-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lifecycle-emails/646.rss">Lifecycle emails</source>
+      </item>
+      <item>
+        <title>Lifecycle emails</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I  hope you are not sending Day 7 email to everyone, just the<br>
+customers who haven’t used feature X</p>
+</blockquote>
+<p>That would be nice…but it is desktop software, and the tracking and integration required to do this is something I’m not motivated to do. Good point though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lifecycle-emails/646/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lifecycle-emails/646/4</link>
+        <pubDate>Tue, 15 Oct 2013 10:38:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-646-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lifecycle-emails/646.rss">Lifecycle emails</source>
+      </item>
+      <item>
+        <title>Lifecycle emails</title>
+        <dc:creator><![CDATA[kulmala]]></dc:creator>
+        <description><![CDATA[
+            <p>I hope you are not sending Day 7 email to everyone, just the customers who haven’t used feature X… And that you only send the Day 14 mail to customer who are actually using the feature Y.</p>
+<p>One thing I hate is to get lifecycle emails that advertise/recommend a feature that I’m already using.</p>
+<p>They give me the impression that:<br>
+A. Sender’s lifecycle email system is broken, you should know what I did or didn’t do -&gt; low quality sw<br>
+B. Sender doesn’t care that my time is wasted -&gt; the sw probably doesn’t optimize for my time usage (or usability) either</p>
+<p>In both cases, my perception of your app quality will be lower - even though I logically know that the messaging system quality doesn’t have direct connection to your app quality.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lifecycle-emails/646/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lifecycle-emails/646/3</link>
+        <pubDate>Mon, 14 Oct 2013 09:33:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-646-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lifecycle-emails/646.rss">Lifecycle emails</source>
+      </item>
+      <item>
+        <title>Lifecycle emails</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t know about “should” or what works best. But for (my) ease, I send a confirmation email, and then a separate “welcome” email, within a few minutes of the user submitting their email address.</p>
+<p>My whole email structure is as follows:</p>
+<p>Day 0: “Welcome” and a tip for new users, all in one email, to begin the conversation.<br>
+Day 7: “Have you tried feature X? It’s really popular” email. The real aim of this is to remind users who downloaded my software then forgot about it to take another look.<br>
+Day 14: “Did you know you customise feature Y in lots of way?” email<br>
+Day 21: “Some hidden features” email<br>
+Day 28: “Your trial is almost over, write to me with any feedback.” email</p>
+<p>I think it works pretty well. The open rate is high for all of them, but does drop off with each email (except the “hidden features” one… which out-performs the previous email).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lifecycle-emails/646/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lifecycle-emails/646/2</link>
+        <pubDate>Sun, 13 Oct 2013 12:13:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-646-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lifecycle-emails/646.rss">Lifecycle emails</source>
+      </item>
+      <item>
+        <title>Lifecycle emails</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p><a class="mention" href="/u/patio11">@patio11</a> 's talk at MicroConf inspired me to dedicate some time to improving LiberWriter’s emails.  I think our users should be pretty receptive to those techniques, with a bit of modification.</p>
+<p>About the first thing I ran into is that I have a confirmation email.  Should I also make that be the welcome email, or should that be a second one? Seems excessive, but like Patrick said, what we want in terms of email communications is not necessarily what the average person wants or responds well to.  I don’t really have the volume of people nor the time to test it at the time being.  Any advice or experience?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/lifecycle-emails/646/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/lifecycle-emails/646/1</link>
+        <pubDate>Sun, 13 Oct 2013 06:49:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-646-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/lifecycle-emails/646.rss">Lifecycle emails</source>
+      </item>
+  </channel>
+</rss>

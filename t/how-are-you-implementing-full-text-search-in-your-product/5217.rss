@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How are you implementing full-text search in your product?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217</link>
+    <description>I&#39;m using MySQL&#39;s full-text search. It is okay but pretty limited. It doesn&#39;t seem to match &quot;color&quot; with &quot;colour&quot;, nor with &quot;colors&quot; and &quot;coloring&quot;.
+
+Are you using a better search solution in your product?</description>
+    
+    <lastBuildDate>Fri, 18 Aug 2017 08:49:51 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How are you implementing full-text search in your product?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all.</p>
+<p>I spent some time yesterday investigating Algolia. It seems very good. I like its modern approach. I think I’ll use this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/7</link>
+        <pubDate>Fri, 18 Aug 2017 08:49:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5217-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217.rss">How are you implementing full-text search in your product?</source>
+      </item>
+      <item>
+        <title>How are you implementing full-text search in your product?</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>I have used sphinx and haven’t had issues with it<br>
+also rolled my own many years ago before mysql had full text search<br>
+I’d prob look at algolia or sphinx for general searching depending on budget and capacity needed</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/6</link>
+        <pubDate>Thu, 17 Aug 2017 16:03:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5217-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217.rss">How are you implementing full-text search in your product?</source>
+      </item>
+      <item>
+        <title>How are you implementing full-text search in your product?</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>In case anyone from MS camp is reading this: Lucene is nice, it powers StackOverflow search.</p>
+<p>MS SQL fulltext search is also bearable. By the way, MS SQL runs on linux now.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/5</link>
+        <pubDate>Thu, 17 Aug 2017 15:35:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5217-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217.rss">How are you implementing full-text search in your product?</source>
+      </item>
+      <item>
+        <title>How are you implementing full-text search in your product?</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>We’re using <a href="https://www.algolia.com" rel="nofollow noopener">Agolia</a> and it’s very powerful.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/4</link>
+        <pubDate>Thu, 17 Aug 2017 12:43:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5217-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217.rss">How are you implementing full-text search in your product?</source>
+      </item>
+      <item>
+        <title>How are you implementing full-text search in your product?</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>With Sifter, I used <a href="http://sphinxsearch.com" rel="nofollow noopener">Sphinx</a> and Thinking Sphinx. I’m not sure if it’s the leading solution by any means, but it worked really well for us over the years. And Pat Allan, the maintainer of Thinking Sphinx, is about as great of an open-source maintainer as one could ask for.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/3</link>
+        <pubDate>Mon, 14 Aug 2017 17:50:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5217-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217.rss">How are you implementing full-text search in your product?</source>
+      </item>
+      <item>
+        <title>How are you implementing full-text search in your product?</title>
+        <dc:creator><![CDATA[stympy]]></dc:creator>
+        <description><![CDATA[
+            <p>We use solr at Honeybadger.  I’m pretty sure there’s nothing search-related that it can’t do. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/2</link>
+        <pubDate>Sun, 13 Aug 2017 17:11:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5217-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217.rss">How are you implementing full-text search in your product?</source>
+      </item>
+      <item>
+        <title>How are you implementing full-text search in your product?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m using MySQL’s full-text search. It is okay but pretty limited. It doesn’t seem to match “color” with “colour”, nor with “colors” and “coloring”.</p>
+<p>Are you using a better search solution in your product?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217/1</link>
+        <pubDate>Sun, 13 Aug 2017 16:27:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5217-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-are-you-implementing-full-text-search-in-your-product/5217.rss">How are you implementing full-text search in your product?</source>
+      </item>
+  </channel>
+</rss>

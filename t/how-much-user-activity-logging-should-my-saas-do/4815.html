@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How much user activity logging should my SaaS do? - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="For those of you actively running a SaaS, can I pick your brains? 
+
+I&amp;#39;m currently working on the user sign up/sign in/recover password functionality for Feature Upvote. I&amp;#39;m in danger of over-engineering it. I log every s&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="4815.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;How much user activity logging should my SaaS do?&#39;" href="4815.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815" />
+<meta property="og:title" content="How much user activity logging should my SaaS do?" />
+<meta name="twitter:title" content="How much user activity logging should my SaaS do?" />
+<meta property="og:description" content="For those of you actively running a SaaS, can I pick your brains?  I’m currently working on the user sign up/sign in/recover password functionality for Feature Upvote. I’m in danger of over-engineering it. I log every signin failure and success in the application log. I’m recording in the database User table the date/time of the last successful signin and last failed signin, and last modified date.   Should I be recording all sign ins (or recent sign ins) in the database? Should I be recording I..." />
+<meta name="twitter:description" content="For those of you actively running a SaaS, can I pick your brains?  I’m currently working on the user sign up/sign in/recover password functionality for Feature Upvote. I’m in danger of over-engineering it. I log every signin failure and success in the application log. I’m recording in the database User table the date/time of the last successful signin and last failed signin, and last modified date.   Should I be recording all sign ins (or recent sign ins) in the database? Should I be recording I..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="3 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="3 ❤" />
+<meta property="article:published_time" content="2017-02-22T18:17:03+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="4815%3Fpage=2.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="4815.html">How much user activity logging should my SaaS do?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-02-22T18:17:03Z'>
+              <time itemprop='dateModified' datetime='2017-02-22T18:19:47Z' class='post-time'>
+                February 22, 2017,  6:19pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>For those of you actively running a SaaS, can I pick your brains?</p>
+<p>I’m currently working on the user sign up/sign in/recover password functionality for <a href="http://featureupvote.com/">Feature Upvote</a>. I’m in danger of over-engineering it. I log every signin failure and success in the application log. I’m recording in the database User table the date/time of the last successful signin and last failed signin, and last modified date.</p>
+<ul>
+<li>Should I be recording all sign ins (or recent sign ins) in the database?</li>
+<li>Should I be recording IP address and user agent of each sign in?</li>
+</ul>
+<p>My product is not dealing with financial data or anything else that is critical. I want to do things well, but I also don’t want to go overboard.</p>
+<p>My MySQL user table currently looks like this:</p>
+<p>CREATE TABLE user<br>
+(<br>
+user_id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,<br>
+email VARCHAR(200) NOT NULL,<br>
+salted_hash VARCHAR(100) NOT NULL,<br>
+display_name VARCHAR(200),<br>
+date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,<br>
+date_modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP,<br>
+last_signin_success TIMESTAMP,<br>
+last_signin_failure TIMESTAMP<br>
+);<br>
+CREATE UNIQUE INDEX user_email_uindex ON user (email);</p>
+<p>Any tips from someone who has been down this path already? Anything you really wished you had baked into the user system from the beginning?</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/maximus.html'><span itemprop='name'>maximus</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-22T19:00:39Z' class='post-time'>
+                February 22, 2017,  7:00pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-22T19:00:39Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <ul>
+<li>
+<p>Don’t add last_signin_* fields to the user table</p>
+</li>
+<li>
+<p>Create audit_trail table instead (example below):</p>
+</li>
+</ul>
+<blockquote>
+<p>CREATE TABLE audit_trail<br>
+(<br>
+audit_trail_id serial NOT NULL,<br>
+app_name varchar(256),<br>
+method_name varchar(256) NOT NULL,<br>
+tenant_id int4,<br>
+user_name varchar(64) NOT NULL,<br>
+start_date timestamp,<br>
+end_date timestamp,<br>
+params text,<br>
+result bool,<br>
+host_ip varchar(64),<br>
+client_ip varchar(64),<br>
+exception_info varchar(2000),<br>
+exception_detail text,<br>
+partition_date timestamp NOT NULL,<br>
+CONSTRAINT audit_trail_pkey PRIMARY KEY (audit_trail_id)<br>
+);</p>
+</blockquote>
+<p><strong>Make sure you have all required indexes.</strong></p>
+<ul>
+<li>
+<p>Record all important events, such as sign ins, sign ups, sign in attempts, etc. Simply insert into autit_trail</p>
+</li>
+<li>
+<p>If needed - build autit_trail UI within your app to query events</p>
+</li>
+</ul>
+<p>Example: <a href="https://etlworks.com/docs/#statistics" rel="nofollow noopener">https://etlworks.com/docs/#statistics</a></p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/unboot'><span itemprop='name'>unboot</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-22T21:15:40Z' class='post-time'>
+                February 22, 2017,  9:15pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-22T21:15:40Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi,<br>
+not directly related to tracking, but maybe add a column<br>
+canonical_email VARCHAR(200) NOT NULL,<br>
+and make this the downcase of email (and check for uniqueness)</p>
+<p>Otherwise these two “users” can subscribe:</p>
+<p><a href="mailto:Steve@example.com">Steve@example.com</a><br>
+and<br>
+<a href="mailto:steve@example.com">steve@example.com</a></p>
+<p>This can lead to funny situations …</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-22T21:19:04Z' class='post-time'>
+                February 22, 2017,  9:19pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-22T21:19:04Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="1" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Should I be recording all sign ins (or recent sign ins) in the database?</p>
+</blockquote>
+</aside>
+<p>+1</p>
+<p>Audit table is both a cleaner separation of concerns and more flexible.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kohanz.html'><span itemprop='name'>kohanz</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-22T21:53:55Z' class='post-time'>
+                February 22, 2017,  9:53pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-22T21:53:55Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Why not just downcase the original e-mail field when you persist it. Is there a reason to preserve case for e-mails?</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/unboot'><span itemprop='name'>unboot</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-22T22:17:01Z' class='post-time'>
+                February 22, 2017, 10:17pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-22T22:17:01Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>You can do that, obviously.<br>
+But some users/companies prefer emails like: <a href="mailto:S.Smith@example.com">S.Smith@example.com</a>.<br>
+You can then show the original (upcase) email to the user after loging in , for example in the top right corner of your admin panel.  It’s aesthetics / UX mainly.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T02:06:51Z' class='post-time'>
+                February 23, 2017,  2:06am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T02:06:51Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="6" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/7cd45c/40.png" class="avatar"> unboot:</div>
+<blockquote>
+<p>But some users/companies prefer emails like: <a href="mailto:S.Smith@example.com">S.Smith@example.com</a>.</p>
+</blockquote>
+</aside>
+<p>Yes, case-aware but case-insensitive.</p>
+<p>For audit purposes, it is also important to save the data exactly as they were entered by the user - in case this minor difference was sufficient to trigger a defect.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Rhino.html'><span itemprop='name'>Rhino</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T09:53:35Z' class='post-time'>
+                February 23, 2017,  9:53am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T09:53:35Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Whats your defense against brute force attacks on username/password (either random guesses against a single login or random guesses against a bunch of passwords)?</p>
+<p>What language &amp; framework are you using? Is there a commonly agreed ‘best way’ to do this in that particular framework?</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T09:54:49Z' class='post-time'>
+                February 23, 2017,  9:54am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T09:54:49Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks all. This is v helpful.</p>
+<p>So I’ll record all user sign ins in an audit trail table. And I’ll add a canonical email field to my user table.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/DLJ.html'><span itemprop='name'>DLJ</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T15:49:38Z' class='post-time'>
+                February 23, 2017,  3:49pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T15:49:38Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Defo use an audit table/audit db.</p>
+<p>keep ‘working’ tables to the bare minimum you can for the app to work.</p>
+<p>I tend to use auth tables with just login id and hash to check against, everything else inc display name gets put in to a profile table.  usually also have a prefs table too.</p>
+<p>if you are using a framework, look in to throttling/blocking login attempts too as Rhino suggested</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T16:07:55Z' class='post-time'>
+                February 23, 2017,  4:07pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T16:07:55Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I vastly overengineered our logging (I use Mixpanel for this).</p>
+<p>Now the approach I take is just enough logging to spot if there is a general issue in an area.<br>
+So if I want to see if users are logging in OK, I might just log the failures (or enough info so that I know the failure %).</p>
+<p>So… I cast a very wide net with very big holes, looking only for the biggest fish to fry.</p>
+<p>(How’s that for a mixed metaphor??)</p>
+<p>FYI, your site did not come up<br>
+<a href="http://featureupvote.com/" class="onebox" target="_blank" rel="nofollow noopener">http://featureupvote.com/</a></p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T16:56:52Z' class='post-time'>
+                February 23, 2017,  4:56pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T16:56:52Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="8" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>Whats your defense against brute force attacks on username/password (either random guesses against a single login or random guesses against a bunch of passwords)?</p>
+</blockquote>
+</aside>
+<p>Standard practice is to introduce an artificial delay into login. Makes brute-force impractical.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/dgrigg'><span itemprop='name'>dgrigg</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T16:57:05Z' class='post-time'>
+                February 23, 2017,  4:57pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T16:57:05Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Why not save the email as entered but use case insensitive sql for queries. Two versions is redundant. Separate table for audit is the right way to go. Depending on your needs you can even remove old entries to keep it small if needed.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T17:03:22Z' class='post-time'>
+                February 23, 2017,  5:03pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T17:03:22Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="11" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/clay_nichols/40/2698_1.png" class="avatar"> Clay_Nichols:</div>
+<blockquote>
+<p>FYI, your site did not come up <a href="http://featureupvote.com/">http://featureupvote.com/</a></p>
+</blockquote>
+</aside>
+<p>Thanks for the alert. We’re currently setting up a proper production system. It seems that we’re briefly responding to https only…and even then you’ll get an AWS “Welcome” page… Should be better tomorrow.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T17:07:45Z' class='post-time'>
+                February 23, 2017,  5:07pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T17:07:45Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="8" data-topic="4815" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>Whats your defense against brute force attacks on username/password (either random guesses against a single login or random guesses against a bunch of passwords)?</p>
+<p>What language &amp; framework are you using? Is there a commonly agreed ‘best way’ to do this in that particular framework?</p>
+</blockquote>
+</aside>
+<p>Hmmm, I neglected to implement a protection against brute force attacks. I guess I should add per IP address throttling.</p>
+<p>I’m using Java + “Java Spark”, which is a very immature web framework, but oh so enjoyably light compared to most Java frameworks. It looks like I’ll have to add sign in throttling myself.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Rhino.html'><span itemprop='name'>Rhino</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T17:25:28Z' class='post-time'>
+                February 23, 2017,  5:25pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T17:25:28Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I ask as in addition to ip address throttling and random delay an app I’ve been involved with before kept a count of # failed logins against a username (your [user] table) - when &gt; X could block temporarily or big delay, when &gt; Y then could block for manual review. Reset on successful login.</p>
+<p>(Just doing IP throttling won’t pick up a distributed attack focused against an individual - guess that would be very unlikely for your app but for the work involved for # failed logins might be worth it anyway).</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T17:43:55Z' class='post-time'>
+                February 23, 2017,  5:43pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T17:43:55Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="16" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>when &gt; X could block temporarily or big delay, when &gt; Y then could block for manual review</p>
+</blockquote>
+</aside>
+<p>… which unfortunately creates a door for DoS attack against a particular user - just fail their login repeatedly and they won’t be able to login. <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"></p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Salman.html'><span itemprop='name'>Salman</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T18:00:16Z' class='post-time'>
+                February 23, 2017,  6:00pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T18:00:16Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It really depends on what action items you want with this type of logging.</p>
+<p>If you want to see usage patterns, you might use something like mixpanel or statsd (<a href="https://github.com/etsy/statsd" rel="nofollow noopener">https://github.com/etsy/statsd</a>).</p>
+<p>If you are looking to do rate limiting then there is a different approach.</p>
+<p>I was once using this app and I fiddled with the URL i.e. altered the ID in the querystring, and my account was immediately  disabled.  Now that was hard core <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Rhino.html'><span itemprop='name'>Rhino</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T18:01:10Z' class='post-time'>
+                February 23, 2017,  6:01pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T18:01:10Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Good point - depends on the trade offs per application. (e.g. pretty sure most banks do this as always have phone/branch banking as backup).</p>
+<p>I guess things like this is why looking for drop in components that implement all the best practices is maybe futile.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4815.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-23T18:48:59Z' class='post-time'>
+                February 23, 2017,  6:48pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-23T18:48:59Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="19" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>Good point - depends on the trade offs per application.</p>
+</blockquote>
+</aside>
+<p>I believe blocking the user after failed logins is suitable for internal networks, where the security team then can proceed and find an app or person who does that - and eliminate it (cause, not person; tho who knows, these are the hard times).</p>
+<p>In internet the find and eliminate part is simply not working, so the blocking backfires.</p>
+<p>For internet I’d rather temporarily (for 5 minutes) block the IP from which we get a few failed attempts. That would make most script attacks on a user much harder to implement, while at the same time would be largely invisible to real users.</p>
+        </div>
+
+        <meta itemprop='headline' content='How much user activity logging should my SaaS do?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="4815%3Fpage=2.html">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

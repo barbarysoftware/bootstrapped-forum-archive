@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>As an SaaS owner would you pay for</title>
+    <link>https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399</link>
+    <description>a monitoring tool for AWS, which:
+
+* shows inventory across **multiple accounts** (inventory = EC2 instances and other resources)
+* groups inventory by tags (tag = environment)
+* shows basic metrics for the instance (usage, bandwidth, etc)
+* shows billing details across multiple accounts in dynamic (last month, current month, next month, projection for full year)
+* a bunch of bells and whistles such as notifications, etc.
+
+?
+
+There is a single dashboard displaying everything above. 
+
+The tool can be installed on-premise if needed. 
+
+The key here is a fixed pricing model (3 tiers). Similar tools charge $15 per EC2 instance per month, and a little less for managed resources, such as RDS, ELB, etc. Amazon Cloud Watch is (mostly) free but it does not aggregate inventory and billing across multiple accounts in a single dashboard.
+
+We have developed tool internally to manage AWS inventory for one of our client&#39;s (10 accounts, 300 active instances) and it is saving them ~ 100K a year.</description>
+    
+    <lastBuildDate>Tue, 31 Oct 2017 20:40:00 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>As an SaaS owner would you pay for</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Technically, the tool can be hosted anywhere, including our own servers. During sign up we will be asking customers to enter the key and the secret and we will be storing both internally. We will be asking for the minimum level of access, just to retrieve the metadata and metrics. If the customer is interested in billing details (last month, current, next month projection) the credentials for the IAM with an access to billing must be provided.</p>
+<p>Ideally, we would like to host the tool ourselves (true SaaS) but some might not be willing to share AWS credentials with a third-party. Hence question <span class="hashtag">#1</span>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/5</link>
+        <pubDate>Tue, 31 Oct 2017 20:40:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5399-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399.rss">As an SaaS owner would you pay for</source>
+      </item>
+      <item>
+        <title>As an SaaS owner would you pay for</title>
+        <dc:creator><![CDATA[daverodenbaugh]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>
+<p>Not sure how you can independently monitor if you’re NOT running on your AWS instances, but it depends on what kind of access you’re going to require as to whether I “trust” you here or not</p>
+</li>
+<li>
+<p>Price point–see Zoho’s pricing for what I thought was reasonable.  I believe I paid $149/year.</p>
+</li>
+<li>
+<p>Mobile app preferred.  Mobile friendly site is just another step I have to go through…</p>
+</li>
+<li>
+<p>All the above–app health, instance health, queue/notification/database status</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/4</link>
+        <pubDate>Tue, 31 Oct 2017 19:46:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5399-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399.rss">As an SaaS owner would you pay for</source>
+      </item>
+      <item>
+        <title>As an SaaS owner would you pay for</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback. More questions:</p>
+<ol>
+<li>Will you trust us if we will host it on our own AWS instance (in opposite to installable AMI)?</li>
+<li>What price point is acceptable? I was thinking $50 (1 AWS account) -&gt; $150 (5 AWS accounts) -&gt; $500 (unlimited)</li>
+<li>Mobile app or mobile friendly (responsive) web site?</li>
+<li>Health status (up/down). Are you looking at application level health status (configurable health endpoint is not responding) or instance health status (active/inactive/down)?</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/3</link>
+        <pubDate>Tue, 31 Oct 2017 19:21:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5399-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399.rss">As an SaaS owner would you pay for</source>
+      </item>
+      <item>
+        <title>As an SaaS owner would you pay for</title>
+        <dc:creator><![CDATA[daverodenbaugh]]></dc:creator>
+        <description><![CDATA[
+            <p>HI Maximus,</p>
+<p>Yes, I would pay for that because the tools I’ve found so far quite frankly suck.</p>
+<p>Zoho’s Site 24x7 billed itself as a notification  service where I’d be told when things went down–monitoring all kinds of stuff on AWS–SQS, Web pages, EC2 instances…They were supposedly the “top notch provider”.  I’m not impressed.</p>
+<p>It’s been nothing but a disappointment.  Mobile app is flaky.  The notifications are false positives nearly 100% of the time.  When it DOES actually go down (I have specific notifications that email me in AWS), I never see it notify me at all…</p>
+<p>A tool like this must have the following for me:</p>
+<ul>
+<li>Notifications via email and SMS that something has a problem</li>
+<li>A way to look at trends/history on a variety of AWS “things”-queues, uptime, load, CPU/RAM, etc</li>
+<li>Must be mobile accessible</li>
+<li>Must be RELIABLE.  As in very few false positives, otherwise I won’t trust it</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/2</link>
+        <pubDate>Tue, 31 Oct 2017 18:55:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5399-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399.rss">As an SaaS owner would you pay for</source>
+      </item>
+      <item>
+        <title>As an SaaS owner would you pay for</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>a monitoring tool for AWS, which:</p>
+<ul>
+<li>shows inventory across <strong>multiple accounts</strong> (inventory = EC2 instances and other resources)</li>
+<li>groups inventory by tags (tag = environment)</li>
+<li>shows basic metrics for the instance (usage, bandwidth, etc)</li>
+<li>shows billing details across multiple accounts in dynamic (last month, current month, next month, projection for full year)</li>
+<li>a bunch of bells and whistles such as notifications, etc.</li>
+</ul>
+<p>?</p>
+<p>There is a single dashboard displaying everything above.</p>
+<p>The tool can be installed on-premise if needed.</p>
+<p>The key here is a fixed pricing model (3 tiers). Similar tools charge $15 per EC2 instance per month, and a little less for managed resources, such as RDS, ELB, etc. Amazon Cloud Watch is (mostly) free but it does not aggregate inventory and billing across multiple accounts in a single dashboard.</p>
+<p>We have developed tool internally to manage AWS inventory for one of our client’s (10 accounts, 300 active instances) and it is saving them ~ 100K a year.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399/1</link>
+        <pubDate>Wed, 25 Oct 2017 13:24:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5399-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/as-an-saas-owner-would-you-pay-for/5399.rss">As an SaaS owner would you pay for</source>
+      </item>
+  </channel>
+</rss>

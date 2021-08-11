@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Production-grade SaaS infrastructure for $200/month</title>
+    <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791</link>
+    <description>Here&#39;s an article I stumbled upon that describes an infrastructure stack for a new SaaS product:
+
+https://medium.freecodecamp.com/how-your-startup-can-leverage-production-grade-infrastructure-for-less-than-200-month-15c3724038b4#.jlhxhbb65
+
+&gt; Before you can launch a new service, you need infrastructure. You want reliability, scalability, and many other -ilities. But you don’t want to break the bank.
+
+&gt; I’ve gone through the process of launching several new services over the past few years. Each time, I’ve explored the field of options.
+
+&gt; The goal of this article is to help you focus on the value that your solution provides to your users, while minimizing the time and money spent geeking out on infrastructure.
+
+The choices are pretty good, I think.</description>
+    
+    <lastBuildDate>Wed, 06 Sep 2017 12:26:34 +0000</lastBuildDate>
+    <category>Interesting Links</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="23" data-topic="4791">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/q/45deac/40.png" class="avatar"> quicksilver03:</div>
+<blockquote>
+<p>is that bootstrappers often prefers to spend a little more</p>
+</blockquote>
+</aside>
+<p>This statement is self-contradicting a bit.</p>
+<p>Bootstrappers by definition should prefer to spend less.</p>
+<p>However, due to lack of system administration knowledge or lack of time they may be forced to spend more.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/25</link>
+        <pubDate>Wed, 06 Sep 2017 12:26:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="23" data-topic="4791">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/q/45deac/40.png" class="avatar"> quicksilver03:</div>
+<blockquote>
+<p>that bootstrappers often prefers to spend a little more (or much more, depending on the case) and leave the operational details of a production infrastructure to PaaS like Heroku.</p>
+</blockquote>
+</aside>
+<p>This is true. My hosting is around $700 per month which is not cheap, but I can easily spin up new instances, services like Redis cache, new DBs, blob storage, serverless functions and whatever I want for no real effort.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/24</link>
+        <pubDate>Wed, 06 Sep 2017 03:35:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[quicksilver03]]></dc:creator>
+        <description><![CDATA[
+            <p>What I’ve found when researching for <a href="https://www.thecloudhostinghandbook.com/" rel="nofollow noopener">The Cloud Hosting Handbook</a> is that bootstrappers often prefers to spend a little more (or much more, depending on the case) and leave the operational details of a production infrastructure to PaaS like Heroku.</p>
+<p>It ultimately depends on how do you want to spend your time: an experienced sysadmins may have all the necessary knowledge and experience to set up a robust production infrastructure quickly and saving money which would have been spent in services (PaaS, managed hosting) otherwise.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/23</link>
+        <pubDate>Tue, 05 Sep 2017 16:29:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[Virgil]]></dc:creator>
+        <description><![CDATA[
+            <p>I switched from heroku to <a href="http://nanobox.io" rel="nofollow noopener">nanobox.io</a> + linode, I cut my hosting cost by 3 times. Nanobox is like heroku, but it uses docker components and can choose your own hosting. It manages the entire infrastructure for you and also help you scale from the dashboard.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/22</link>
+        <pubDate>Thu, 24 Aug 2017 08:56:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[unstoppable]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="4791">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ezekg/40/3616_1.png" class="avatar"> ezekg:</div>
+<blockquote>
+<p>Logging: Papertrail</p>
+</blockquote>
+</aside>
+<p>The add-on gets pricey as you grow (my log output is 500MB a day now despite the fact I trim/filter out a lot of stuff already). I am looking for alternatives.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/21</link>
+        <pubDate>Thu, 24 Aug 2017 08:02:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>I was using it for a short time during development in a hybrid rails + playframework (scala) app.  I ended up going with ec2 because I wanted more control and also didn’t want to depend on 3rd parties for core infra like memcached.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/20</link>
+        <pubDate>Sun, 19 Feb 2017 01:26:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="17" data-topic="4791">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I checked Heroku free tier, it is a toy of a server (512M). I’m from Java world, and that thing could barely launch HelloWorld.java. <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+</blockquote>
+</aside>
+<p>From what I’ve seen Heroku is very popular with the Rails crowd. Does anyone outside that community use it (in a serious way, not one guy hosting a Django app on it)?</p>
+<p>From what I’ve heard, they charge for every extra, and the costs really add up.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/19</link>
+        <pubDate>Sat, 18 Feb 2017 20:24:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s a little bit of putting the cart before the horse. If you make some smart decisions when first building your service you should be able to reasonably scale it as you grow. I have read more than a few examples of startups that planned for huge growth, spent a lot of time and money solving scale problems they expected to have only to never experience those problems and running out of money.</p>
+<p>The first version of the service I developed was absolute bare bones. Everything was stored in a single database included sessions and job queues. As demand grew it was easy to move sessions out to their own storage and eventually job queue and email processing also. To start it was running on a dirt cheap vps, then over to digital ocean with dedicated resources. As need grew I have increased spend to keep up. Thankfully I leverage a framework that made it easy to grow on demand with plugging in better options as needed.</p>
+<p>Always plan ahead but don’t waste valuable resources executing those plans until you need to.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/18</link>
+        <pubDate>Sat, 18 Feb 2017 16:16:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="15" data-topic="4791">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ezekg/40/3616_1.png" class="avatar"> ezekg:</div>
+<blockquote>
+<p>But almost everything in the article has lower tiers than what’s used in the article, so I’m using essentially the same thing and I’m paying about $40/mo for all of it.</p>
+</blockquote>
+</aside>
+<p>I checked Heroku free tier, it is a toy of a server (512M). I’m from Java world, and that thing could barely launch HelloWorld.java. <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>However, a some $20 VPS (2G-4G) should be able to host a single app server + single DB good - which is enough until The Growth happens, and only at that point it is time to add another VPS to have a cluster of apps servers and migrate DB to a replicated setup. Hopefully there are already paying customers who will cover the costs.</p>
+<p>That is, of course, if we’re bootstrapping. If on the other hand, we’re “serious” about it, then why not, let’s throw some money at it, because we must be in a real business if we spend the money like that, right? <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/17</link>
+        <pubDate>Fri, 17 Feb 2017 22:15:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>For me the key was to learn how to automative your hosting infra, and to make deployment to both staging and production as easy as possible.  Once that is in place, you can confidently start building out your product.   If you go with DO or AWS or Azure is besides the point for many types of SaaS apps.</p>
+<p>Now depending on your budget, type of app, and how serious you are, you can pay $20 to $250/month <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/16</link>
+        <pubDate>Fri, 17 Feb 2017 20:23:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[ezekg]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree, $2,400 is real money. But almost everything in the article has lower tiers than what’s used in the article, so I’m using essentially the same thing and I’m paying about $40/mo for all of it. With Heroku, scaling the tools is painless if it’s ever needed. Really the only things I’m paying for are a standard dyno and Postgres database, everything else is on free tiers until the need arises.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/15</link>
+        <pubDate>Fri, 17 Feb 2017 18:07:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="4791">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/aeden/40/1319_1.png" class="avatar"> aeden:</div>
+<blockquote>
+<p>There are costs associated with operating those home grown solutions, as well as operating your own postgres database, that make them non-free.</p>
+</blockquote>
+</aside>
+<p>In the early days of a SaaS the time of the founder is essentially free.</p>
+<p>Even if this time is released to be spend on, say, marketing - it is not clear that it will ever be more profitable this way, because the founder may not be efficient in the marketing yet. (And because the SaaS may never be profitable at all, of course).</p>
+<p>And $2400/yr are very real money.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/14</link>
+        <pubDate>Fri, 17 Feb 2017 16:38:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>I totally agree, as long as the configuration, ongoing verification, and maintenance of the automation is factored in. Simple things like responding to CVEs and upgrading systems in a timely fashion can quickly suck up hundreds of hours in a year.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/13</link>
+        <pubDate>Fri, 17 Feb 2017 14:39:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Automation helps a lot: provisioning, deployment, backup, disaster recovery, monitoring.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/12</link>
+        <pubDate>Fri, 17 Feb 2017 14:22:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Good point.<br>
+I’d argue that spending $2K/year is also premature if you don’t have any paying customers.</p>
+<p>Do you know that very high uptime is your biggest constraint?<br>
+(i.e., is $200/m a better expenditure than, say, Adwords)?<br>
+Then, yes, this makes good sense.<br>
+I know i’ve spent way too much time solving problems I THINK my customers have and missing ones they I should be working on.</p>
+<p>Now, if you do know that high uptime is critical so success (or at least important to paying (or revenue generating) customers, then, yes, this seems to make sense.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/11</link>
+        <pubDate>Fri, 17 Feb 2017 13:53:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>As far as I understood, linked article was not about scaling, i.e. handling hundreds of customers at once. That would be premature optimization. Instead, it’s about reliability, to get as much uptime and uninterrupted service as possible by using redundant services. It might apply even if you only have handful of customers.</p>
+<p>My products are not Saas, and can live if marketing site is down for few hours per year. I even ok with (good) shared hosting. Also, it depends on nature of Saas application, how mission critical it is for customers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/10</link>
+        <pubDate>Fri, 17 Feb 2017 13:29:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Hmmm… I use Digital Ocean for $20 a month.<br>
+So far no capacity issues. I think I can just spin that droplet up with more capacity if needed.</p>
+<p>I guess our programmer may have spent more time on setup using plain vanilla  LAMP. Not sure.</p>
+<p>I think its seductively easy to <strong>scale prematurely</strong>, thinking " if I build capacity for success, that’s one less obstacle to success". But capacity was never going to be your biggest problem. You can BUY capacity if you are successful.  But success (customers, $) needs to be earned.</p>
+<p>-Clay</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/9</link>
+        <pubDate>Fri, 17 Feb 2017 13:15:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>CFML…wow, I didn’t know that was still around.</p>
+<p>I like the approach espoused in that post, though. It follows the principle of “use the dev stack you know well, even if not trendy.” Which is why my new SaaS product is using boring old Java on the web server.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/8</link>
+        <pubDate>Fri, 17 Feb 2017 08:25:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>There are costs associated with operating those home grown solutions, as well as operating your own postgres database, that make them non-free. It’s too easy to think that operations is free and that the only cost is the server (virtual or otherwise) and the software cost, especially when you’re operating something that is not critical to keeping your business operating. This is a dangerous mindset and I for one would prefer we start considering the real costs of operating our systems.</p>
+<p>And I say this as someone who has operated my own infrastructure many times: it always turns out to be more expensive than I estimated coming in because of people costs and other operating expenses.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/7</link>
+        <pubDate>Fri, 17 Feb 2017 08:06:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Way to complicated… my head hurts… lol</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/6</link>
+        <pubDate>Fri, 17 Feb 2017 03:44:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[dtrejo]]></dc:creator>
+        <description><![CDATA[
+            <p>Pud’s 2011 distrokid setup: <a href="http://pud.com/post/9582597828/why-must-you-laugh-at-my-back-end" rel="nofollow noopener">http://pud.com/post/9582597828/why-must-you-laugh-at-my-back-end</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/5</link>
+        <pubDate>Fri, 17 Feb 2017 03:22:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Good list.</p>
+<p>Having said that, for a bootstrapped system this is not cheap, and most of advanced properties (load-balancing, hot-standby, etc) are probably not required during the first year.</p>
+<p>It is enough just to have the ability to upgrade in the architecture - when (and if) the time comes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/4</link>
+        <pubDate>Fri, 17 Feb 2017 03:03:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Lets see…</p>
+<ul>
+<li>Back-end and Front-end: Chicago VPS ($20/month) or AWS (a lot)</li>
+<li>Database: Postgres (free) or Postgres on RDS ($150+/month)</li>
+<li>K/V storage: Redis (free) or AWS Elasticache ($100+/month)</li>
+<li>Background jobs: java apps deployed as background services (free)</li>
+<li>Transnational email: Office365 ($5/user ~ $30/month total)</li>
+<li>Log collection: Home grown based on elk stack (free)</li>
+<li>Monitoring: Home grown based on elk stack + home grown service registry (free)</li>
+<li>Uptime: Uptimerobot (free)</li>
+<li>SSL: Lets Encrypt (free)<br>
+…<br>
+from $50/month to sky’s the limit</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/3</link>
+        <pubDate>Thu, 16 Feb 2017 18:25:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[ezekg]]></dc:creator>
+        <description><![CDATA[
+            <p>Good stuff. It looks pretty close to my setup:</p>
+<ul>
+<li>Back-end: Heroku (Rails)</li>
+<li>Front-end: Netlify/GitHub Pages</li>
+<li>Database: Heroku Postgres</li>
+<li>Background jobs: Heroku Redis + Sidekiq</li>
+<li>Transactional email: SendGrid (heard mixed opinions, but been great for every project I’ve used them for)</li>
+<li>Logging: Papertrail</li>
+<li>Monitoring: Raygun (over Sentry, since they actually don’t have a free tier on Heroku’s add-on marketplace)</li>
+<li>Uptime: Apex Ping (over Uptimerobot, as Ping also gives you a status page)</li>
+<li>SSL: Lets Encrypt</li>
+</ul>
+<p>Edit: <a href="https://www.librato.com/" rel="nofollow noopener">Librato</a> looks awesome, but not sure I see the benefit if you’re on Heroku.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/2</link>
+        <pubDate>Thu, 16 Feb 2017 14:48:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+      <item>
+        <title>Production-grade SaaS infrastructure for $200/month</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s an article I stumbled upon that describes an infrastructure stack for a new SaaS product:</p>
+<p><a href="https://medium.freecodecamp.com/how-your-startup-can-leverage-production-grade-infrastructure-for-less-than-200-month-15c3724038b4#.jlhxhbb65" class="onebox" target="_blank">https://medium.freecodecamp.com/how-your-startup-can-leverage-production-grade-infrastructure-for-less-than-200-month-15c3724038b4#.jlhxhbb65</a></p>
+<blockquote>
+<p>Before you can launch a new service, you need infrastructure. You want reliability, scalability, and many other -ilities. But you don’t want to break the bank.</p>
+</blockquote>
+<blockquote>
+<p>I’ve gone through the process of launching several new services over the past few years. Each time, I’ve explored the field of options.</p>
+</blockquote>
+<blockquote>
+<p>The goal of this article is to help you focus on the value that your solution provides to your users, while minimizing the time and money spent geeking out on infrastructure.</p>
+</blockquote>
+<p>The choices are pretty good, I think.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791/1</link>
+        <pubDate>Thu, 16 Feb 2017 10:03:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4791-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791.rss">Production-grade SaaS infrastructure for $200/month</source>
+      </item>
+  </channel>
+</rss>

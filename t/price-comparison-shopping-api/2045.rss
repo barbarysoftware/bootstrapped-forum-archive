@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Price comparison shopping API</title>
+    <link>https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045</link>
+    <description>I am planning to work on iOS App that will display price comparison data upon scanning an item bar code. I have been searching on internet, looked all over ProgrammableWeb site for APIs, but could not find any thing useful. I could not find any WebSErvice API, that would return price comparison data in lets say JSON format for a given UPC bard code or any other input.
+
+Does such a thing exist? If it does, I surely am unable to find it.
+
+If this does not exist may be I should create such an API which look like a huge task. 
+
+I look forward to your feedback.</description>
+    
+    <lastBuildDate>Mon, 07 Aug 2017 19:16:37 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Price comparison shopping API</title>
+        <dc:creator><![CDATA[shiondev]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Faisal,</p>
+<p>I know you asked this a really, really long time ago, but maybe my answer will be beneficial to anyone else who comes across your question!</p>
+<p>My company, Datafinti, has built an API that can do exactly what you need.  Our Product Data API lets you query our database of 65 million+ products (and growing) with a UPC (or other identifiers) and get back a ton of information about the product.</p>
+<p>Here’s an example API call that would do this:</p>
+<p><code>https://your_token:@api.datafiniti.co/v3/data/products?q=upc:052100057125</code></p>
+<p>Which will generate a response like this:</p>
+<pre><code>    {
+        "asins": [
+            "B000VDWUAY",
+            "B00KO8E5JK",
+            "B0009P68KM"
+        ],
+        "brand": "McCormick",
+        "categories": [
+            "Barbecue Seasoning",
+            "Meat Seasoning",
+            "Grocery",
+            "Food"
+        ],
+        "dateAdded": "2015-09-13T04:42:06Z",
+        "dateUpdated": "2017-04-12T13:54:07Z",
+        "dimension": "3.05 in x 2.34 in x 5.75 in",
+        "ean": [
+            "0052100057125"
+        ],
+        "keys": [
+            "mccormickgrillmatesmontrealsteakseasoningshaker/b000vdwuay",
+            "052100057125",
+            "mccormickgrillingsaucemontrealsteakseasoningbbqloverssize145ozpackof12/b00ko8e5jk",
+            "mccormickgrillmatesmontrealsteakseasoning/b0009p68km",
+            "superlinedeal/0005210005712",
+            "mccormickgrillmatesmontrealsteakseasoning145oz/009291267",
+            "0052100057125",
+            "superlinedealmontrealsteakgrillmatesseasoning145oz/009291267",
+            "generic/0005210005712"
+        ],
+        "manufacturer": "Generic",
+        "manufacturerNumber": "0005210005712",
+        "name": "McCormick Grill Mates Montreal Steak Seasoning Shaker",
+        "prices": [
+            {
+                "amountMax": 9.15,
+                "amountMin": 9.15,
+                "currency": "USD",
+                "dateAdded": "2017-04-12T13:49:02Z",
+                "dateSeen": [
+                    "2017-04-10T22:33:08.335Z"
+                ],
+                "isSale": "false",
+                "merchant": "Amazon.com",
+                "shipping": "USD 7.09 shipping",
+                "sourceURLs": [
+                    "https://www.amazon.com/McCormick-Grill-Mates-Montreal-Seasoning/dp/B0009P68KM/ref=sr_1_232_s_it/143-3782869-6447600?s=grocery&amp;ie=UTF8&amp;qid=1491842935&amp;sr=1-232&amp;keywords=McCormick"
+                ]
+            },
+            {
+                "amountMax": 6.28,
+                "amountMin": 6.28,
+                "condition": "new",
+                "currency": "USD",
+                "dateAdded": "2016-11-14T01:13:23Z",
+                "dateSeen": [
+                    "2016-02-01T00:00:00Z"
+                ],
+                "isSale": "false",
+                "shipping": "FREE shipping on orders 50 +",
+                "sourceURLs": [
+                    "http://www.walmart.com/ip/Superline-Deal-Montreal-Steak-Grill-Mates-Seasoning-14.5-Oz/10308855"
+                ]
+            }
+        ],
+        "upc": [
+            "052100057125"
+        ],
+        "weight": "1 pounds",
+        "id": "AVpgRDUL1cnluZ0-zAZD"
+    },
+</code></pre>
+<p>You can see that the data includes prices from multiple websites, which means you can provide information about a single product and get all the pricing data from around the web for it.</p>
+<p>We have more extensive documentation available at our Developer Hub.</p>
+<p>Hopefully this helps you or anyone else that comes across this question!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/7</link>
+        <pubDate>Mon, 07 Aug 2017 19:16:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2045-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045.rss">Price comparison shopping API</source>
+      </item>
+      <item>
+        <title>Price comparison shopping API</title>
+        <dc:creator><![CDATA[dust]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been out of this space for a bit but at the time the best publicly available API was <a href="https://www.semantics3.com" rel="nofollow noopener">https://www.semantics3.com</a>.  They get a lot of feeds, scrape a lot of data, and do a lot of matching and the results were pretty good.  I think you can use their links with your own affiliate codes or they have a partnership with <a href="https://twotap.com" rel="nofollow noopener">https://twotap.com</a> to embedded purchasing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/6</link>
+        <pubDate>Fri, 14 Nov 2014 01:49:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2045-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045.rss">Price comparison shopping API</source>
+      </item>
+      <item>
+        <title>Price comparison shopping API</title>
+        <dc:creator><![CDATA[Pooja_Chopra]]></dc:creator>
+        <description><![CDATA[
+            <p>If you want to access india’s online sites data, try price comparison api by PriceTree. <a href="http://www.pricetree.com/price-comparison-api.aspx" rel="nofollow noopener">Here is the link</a> and docuemtnation.<br>
+See video tour also : <a href="http://www.youtube.com/watch?v=MEpHQNt_R2Y" rel="nofollow noopener">http://www.youtube.com/watch?v=MEpHQNt_R2Y</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/5</link>
+        <pubDate>Wed, 12 Nov 2014 06:50:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2045-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045.rss">Price comparison shopping API</source>
+      </item>
+      <item>
+        <title>Price comparison shopping API</title>
+        <dc:creator><![CDATA[buggy]]></dc:creator>
+        <description><![CDATA[
+            <p>If you want to build your own database then a possible source of data is affiliate networks with retailers. There’s a good chance they’ve got product feeds. As a side benefit they’ll also be able to provide you links that allow you to monetize any traffic you generate.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/4</link>
+        <pubDate>Tue, 16 Sep 2014 13:29:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2045-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045.rss">Price comparison shopping API</source>
+      </item>
+      <item>
+        <title>Price comparison shopping API</title>
+        <dc:creator><![CDATA[mbuckbee]]></dc:creator>
+        <description><![CDATA[
+            <p>Most of the easy sources for such data specifically restrict using their data for such purposes, the big one (of course) being Amazon.</p>
+<p>Source, at one point I had built “Flickscan” an IOS app that would read a DVDs UPC barcode and add it to your Netflix Queue. The one surprisingly solid API I found was for BestBuy - who at least at the time had decent terms and call restrictions.</p>
+<p>Even Redlaser (if not the industry leader, one of the first in this field) has de-emphasized their Product comparisons in favor of finding local retailers:</p>
+<p><a href="http://redlaser.com/application/" class="onebox" target="_blank" rel="nofollow noopener">http://redlaser.com/application/</a></p>
+<p>Good Luck,</p>
+<p>Mike</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/3</link>
+        <pubDate>Tue, 16 Sep 2014 03:45:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2045-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045.rss">Price comparison shopping API</source>
+      </item>
+      <item>
+        <title>Price comparison shopping API</title>
+        <dc:creator><![CDATA[buggy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Faisal</p>
+<p>I can’t help with an existing API but I’d strongly recommend that you spend some time looking at existing shopping comparison sites. You’ll quickly discover that most make money from CPC advertising by companies listed (a potential business model for you) and that many merchants use product feeds to exchange the information with the comparison sites (a potential way for you to get the data yourself)</p>
+<p>Good luck.</p>
+<p>Rich</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/2</link>
+        <pubDate>Sat, 13 Sep 2014 11:15:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2045-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045.rss">Price comparison shopping API</source>
+      </item>
+      <item>
+        <title>Price comparison shopping API</title>
+        <dc:creator><![CDATA[FaisalSyed123]]></dc:creator>
+        <description><![CDATA[
+            <p>I am planning to work on iOS App that will display price comparison data upon scanning an item bar code. I have been searching on internet, looked all over ProgrammableWeb site for APIs, but could not find any thing useful. I could not find any WebSErvice API, that would return price comparison data in lets say JSON format for a given UPC bard code or any other input.</p>
+<p>Does such a thing exist? If it does, I surely am unable to find it.</p>
+<p>If this does not exist may be I should create such an API which look like a huge task.</p>
+<p>I look forward to your feedback.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045/1</link>
+        <pubDate>Thu, 11 Sep 2014 19:01:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2045-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/price-comparison-shopping-api/2045.rss">Price comparison shopping API</source>
+      </item>
+  </channel>
+</rss>

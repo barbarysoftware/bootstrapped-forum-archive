@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</title>
+    <link>https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606</link>
+    <description>Hi! My name is Krystian Cybulski. 
+
+I am bootstrapping [Signupper](https://www.signupper.net). It is a SaaS tool for building and managing account signup forms for web applications. If you are feeling any pain with managing your web app signup form, I would like to hear about your troubles.
+
+My passions are travel, food, snowboarding, and building neat things. I&#39;m a software developer by heart and have ran a couple of companies. I love building things that solve people&#39;s problems.
+
+If you have any questions about the tech side of running web applications, I&#39;d love to help.</description>
+    
+    <lastBuildDate>Fri, 09 Dec 2016 21:02:16 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</title>
+        <dc:creator><![CDATA[Signupper]]></dc:creator>
+        <description><![CDATA[
+            <p>Signupper is very similar to Unbounce and LeadPages. The difference is that those services are for landing and squeeze pages for marketers while Signupper is for signup forms for web applications.</p>
+<p>The difference is somewhat nuanced and it is one of the things I am working on expressing clearly. If you have any pointers, I would be grateful!</p>
+<p>A landing page builder like Unbounce is for hosting and managing a signup form on a landing page. The data is collected in an HTML form, some front-end validation is performed, and the data is pushed to some backend service. Most of the time, the data is sent to a mailing list manager like MailChimp, or a CRM tool like SalesForce. The backend service can not do any verification and present errors. While it is possible to send the data to an arbitrary web hook, the information flow is one way. The backend service cannot veto the data and re-display the form. This is OK as the worst that will happen is a contacts database or a mailing list will end up with dupe accounts. For web applications, that validation must happen.</p>
+<p>Furthermore, it is a generally accepted practice that after filling out an account signup form for a web application, the user gets logged into their account seamlessly. It is annoying if, after signup up for a service, I am congratulated and presented with a log in screen. This is friction, and the point of conversion rate optimization is to reduce friction and improve end-user experience.</p>
+<p>Signupper was built specifically to address the needs of a web application signup form. It is very much like Unbounce, but with the ability to host signup forms for web applications.</p>
+<p>It grew out of a need that Unbounce and other services like it could not satisfy. I am now trying to find other companies who have that need and get a good feeling for what feature set is most important for them.</p>
+<p>Looking forward for more questions, critique, and feedback.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/5</link>
+        <pubDate>Fri, 09 Dec 2016 21:02:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4606-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606.rss">Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</source>
+      </item>
+      <item>
+        <title>Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</title>
+        <dc:creator><![CDATA[pjc]]></dc:creator>
+        <description><![CDATA[
+            <p>OK got it. So it’s like LeadPages and Unbounce. I would position your app as landing pages for marketers then, not signup forms.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/4</link>
+        <pubDate>Fri, 09 Dec 2016 16:02:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4606-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606.rss">Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</source>
+      </item>
+      <item>
+        <title>Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</title>
+        <dc:creator><![CDATA[Signupper]]></dc:creator>
+        <description><![CDATA[
+            <p>You are correct that building a single signup form is not a problem for a programmer.</p>
+<p>Problems arise when you have to start changing the form. Marketers need to change account signup forms often if they are doing conversion rate optimization. They needs to add or remove integrations with 3rd parties. They need to tweak wording, adjust colors, or incorporate full page redesigns from design agencies.</p>
+<p>Developers are necessary to implement all these changes. It is frustrating for marketers because their seemingly simple requests take time to implement and deploy. It can be frustrating for developers as they get asked to make changes to the same piece of functionality ver and over again (digging and filling up holes syndrome).</p>
+<p>With Signupper, the marketer can make these changes herself. After the developer has built the initial integration, the marketing person is able to implement all the changes to the signup form by themselves.</p>
+<p>Think of it as a CMS for the signup page.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/3</link>
+        <pubDate>Fri, 09 Dec 2016 15:33:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4606-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606.rss">Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</source>
+      </item>
+      <item>
+        <title>Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</title>
+        <dc:creator><![CDATA[pjc]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome. Not sure I understand the value prop of your app, you want to replace a web form (rather easy to do) with an integration with your app (potentially hard and something new to learn)? Not sure I see the value add as exposing sign-ups to marketers is easy to do for devs by just creating an admin panel, for which most frameworks have gems/libraries already.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/2</link>
+        <pubDate>Fri, 09 Dec 2016 14:41:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4606-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606.rss">Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</source>
+      </item>
+      <item>
+        <title>Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</title>
+        <dc:creator><![CDATA[Signupper]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi! My name is Krystian Cybulski.</p>
+<p>I am bootstrapping <a href="https://www.signupper.net" rel="nofollow noopener">Signupper</a>. It is a SaaS tool for building and managing account signup forms for web applications. If you are feeling any pain with managing your web app signup form, I would like to hear about your troubles.</p>
+<p>My passions are travel, food, snowboarding, and building neat things. I’m a software developer by heart and have ran a couple of companies. I love building things that solve people’s problems.</p>
+<p>If you have any questions about the tech side of running web applications, I’d love to help.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606/1</link>
+        <pubDate>Wed, 07 Dec 2016 19:44:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4606-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/howdy-im-krystian-and-im-bootstrapping-signupper/4606.rss">Howdy! I&#39;m Krystian and I&#39;m bootstrapping Signupper</source>
+      </item>
+  </channel>
+</rss>

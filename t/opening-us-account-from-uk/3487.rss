@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Opening US account from UK</title>
+    <link>https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487</link>
+    <description>Hi all,
+
+On the back of the recent [USD account](http://discuss.bootstrapped.fm/t/opening-a-usd-denominated-bank-account-for-a-eu-based-company/3419/12) discussion, I&#39;m wondering if anyone has any experience opening a business account in the US? It seems to be relatively easy to do for a personal account, but Well Fargo and Citi have both said that the business would need to have a presence in the US to open an account. HSBC haven&#39;t got back to me.
+
+Why? I&#39;ve been noticing that a lot of payments to my Stripe account are being blocked by banks because it is an international payment. It only takes the client a quick call to their bank to clear the payment, but it really isn&#39;t something I want clients to have to do. A US based account would not be &quot;international&quot; and therefore (presumably) not run into that issue.
+
+Allan</description>
+    
+    <lastBuildDate>Tue, 29 Sep 2015 15:23:46 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Opening US account from UK</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been having the same problem (I’m in Canada). US customers who have their credit cards blocked for international transactions get a declined message in my subscription page. I haven’t considered opening a US account because it could possibly have tax implications (I might be wrong).</p>
+<p>What I did was create an alternative PayPal subscription page, which is not ideal because it’s not integrated with the rest of my system; but it was the best workaround. Then, when someone subscribes via Paypal, I manually create a subscription for them in Stripe and give them a 100% discount coupon. In my case, it doesn’t happen often enough for this to be a huge problem.</p>
+<p>I’m interested in seeing if you find a good solution for this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/8</link>
+        <pubDate>Tue, 29 Sep 2015 15:23:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3487-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487.rss">Opening US account from UK</source>
+      </item>
+      <item>
+        <title>Opening US account from UK</title>
+        <dc:creator><![CDATA[allan_jardine]]></dc:creator>
+        <description><![CDATA[
+            <p>All input very welcome! I’m not sure that what I’m doing is the correct thing to do but I think it seems to make sense - particularly in light of Stripe support’s reply.</p>
+<p>It isn’t just a USD account that I’ll be adding but specifically an account based in the US. That means I can add it to Stripe and hopefully they will route it to their own US accounts, making it a domestic transaction.</p>
+<p>Time to e-mail Stripe again and see if this is a valid assumption!</p>
+<p>It isn’t a <em>major</em> problem for me, but it does seem to occur almost daily, which is enough that I think its worth the time to explore how to resolve it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/7</link>
+        <pubDate>Tue, 29 Sep 2015 13:30:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3487-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487.rss">Opening US account from UK</source>
+      </item>
+      <item>
+        <title>Opening US account from UK</title>
+        <dc:creator><![CDATA[julianb]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t really know if a USD account can then help here at all. The payment might still be international, because it goes to your company, which is not US-based. And you registered with Stripe using that information. The account you put in for the money to be transferred to is not really connected to the payments you accept from customers, I would strongly assume. This is just my opinion, sorry if I might be wrong. I’m using Stripe from Germany and did not encounter problems with US-based customers. I did also research a couple of problems in this area a few months ago.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/6</link>
+        <pubDate>Tue, 29 Sep 2015 13:08:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3487-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487.rss">Opening US account from UK</source>
+      </item>
+      <item>
+        <title>Opening US account from UK</title>
+        <dc:creator><![CDATA[allan_jardine]]></dc:creator>
+        <description><![CDATA[
+            <p>Presumably since I’m in the UK the Stripe account it goes to is in the UK (or at least the EU). If Stripe UK only had an account in the US for all payments to go into then all payments, minus those originating in the US, would be international and have this issue.</p>
+<p>I pinged Stripe support about this and they said:</p>
+<blockquote>
+<p>This is a common issue for US customers. Some banks will automatically decline a charge if it’s international because it could be fraudulent. I recommend having your customers contact their banks and set a travel notification or let their banks know they’re going to making an international charge, and they should be good to go!</p>
+</blockquote>
+<p>Not exactly what I wanted to hear…</p>
+<p>I’ve been in touch with RBS who were initially brilliant, although they’ve gone a bit quiet now. Time to pick up the phone again I think.</p>
+<p>Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/5</link>
+        <pubDate>Tue, 29 Sep 2015 10:38:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3487-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487.rss">Opening US account from UK</source>
+      </item>
+      <item>
+        <title>Opening US account from UK</title>
+        <dc:creator><![CDATA[julianb]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3487">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/a/c68b51/40.png" class="avatar"> allan_jardine:</div>
+<blockquote>
+<p>I’ve been noticing that a lot of payments to my Stripe account are being blocked by banks because it is an international payment.</p>
+</blockquote>
+</aside>
+<p>Well, the money first goes to Stripe. So why does it appear as being an international payment? What currencies do you charge in?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/4</link>
+        <pubDate>Tue, 29 Sep 2015 10:06:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3487-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487.rss">Opening US account from UK</source>
+      </item>
+      <item>
+        <title>Opening US account from UK</title>
+        <dc:creator><![CDATA[mj_langford]]></dc:creator>
+        <description><![CDATA[
+            <p>What country are you in? Several Canadian banks, for instance, also have American branches, etc, and may be able to help you. I don’t know if your country has any banks that are also here? RBS for instance, owns some american banks</p>
+<p>Small credit unions may be easier to get accounts in for your business, Lake Michigan Credit union is a fav of mine (they have great CCs, and I don’t live anywhere near there) <a href="https://www.lmcu.org/commercial/checking.aspx" rel="nofollow noopener">https://www.lmcu.org/commercial/checking.aspx</a> (not sure if they do domestic accounts for foreign entities though, but a good place to start)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/3</link>
+        <pubDate>Fri, 18 Sep 2015 02:45:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3487-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487.rss">Opening US account from UK</source>
+      </item>
+      <item>
+        <title>Opening US account from UK</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3487">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/a/c68b51/40.png" class="avatar"> allan_jardine:</div>
+<blockquote>
+<p>HSBC haven’t got back to me.</p>
+</blockquote>
+</aside>
+<p>No suprise there. They made an appointment to meet me to resolve a complaint I made. Its 9 years later and they still haven’t showed up (or apologized).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/2</link>
+        <pubDate>Thu, 17 Sep 2015 19:35:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3487-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487.rss">Opening US account from UK</source>
+      </item>
+      <item>
+        <title>Opening US account from UK</title>
+        <dc:creator><![CDATA[allan_jardine]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>On the back of the recent <a href="http://discuss.bootstrapped.fm/t/opening-a-usd-denominated-bank-account-for-a-eu-based-company/3419/12">USD account</a> discussion, I’m wondering if anyone has any experience opening a business account in the US? It seems to be relatively easy to do for a personal account, but Well Fargo and Citi have both said that the business would need to have a presence in the US to open an account. HSBC haven’t got back to me.</p>
+<p>Why? I’ve been noticing that a lot of payments to my Stripe account are being blocked by banks because it is an international payment. It only takes the client a quick call to their bank to clear the payment, but it really isn’t something I want clients to have to do. A US based account would not be “international” and therefore (presumably) not run into that issue.</p>
+<p>Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487/1</link>
+        <pubDate>Thu, 17 Sep 2015 18:56:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3487-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/opening-us-account-from-uk/3487.rss">Opening US account from UK</source>
+      </item>
+  </channel>
+</rss>

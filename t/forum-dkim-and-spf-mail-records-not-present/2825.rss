@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Forum DKIM and SPF mail records not present</title>
+    <link>https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825</link>
+    <description>I noticed in my emails from here that the DKIM and SPF records in DNS are not set up:
+
+    Received-SPF: permerror (google.com: permanent error in processing during lookup of bootstrapped@userscape.com) client-ip=64.71.148.3;
+    Authentication-Results: mx.google.com;
+           spf=permerror (google.com: permanent error in processing during lookup of bootstrapped@userscape.com) smtp.mail=bootstrapped@userscape.com;
+           dkim=temperror (no key for signature) header.i=@
+
+This means you need to add those DKIM and SPF records for the **userscape.com** domain since that&#39;s the return email address.
+
+https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177
+
+If you&#39;d rather set it up on the bootstrapped.fm domain then change the return email in site settings to `noreply@bootstrapped.fm` or similar.
+
+If you need any assistance with this let me know!</description>
+    
+    <lastBuildDate>Wed, 18 Mar 2015 07:00:13 +0000</lastBuildDate>
+    <category>meta</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Forum DKIM and SPF mail records not present</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <p>It appears between you starting the topic and now the “from address” in settings has been shifted from <a href="mailto:bootstrapped@userscape.com">bootstrapped@userscape.com</a> to <a href="mailto:noreply@bootstrapped.fm">noreply@bootstrapped.fm</a> … <a href="http://userscape.com">userscape.com</a> is fine on SPF now but <a href="http://bootstrapped.fm">bootstrapped.fm</a> isn’t <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>hopefully <a class="mention" href="/u/ian">@ian</a> can sort that out on his side.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/6</link>
+        <pubDate>Wed, 18 Mar 2015 07:00:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2825-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825.rss">Forum DKIM and SPF mail records not present</source>
+      </item>
+      <item>
+        <title>Forum DKIM and SPF mail records not present</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s what the headers look like in the email notifications I got for this topic:</p>
+<pre><code>Received-SPF: none (google.com: noreply@bootstrapped.fm does not designate permitted sender hosts) client-ip=2001:470:1:3c2::b;
+Authentication-Results: mx.google.com;
+       spf=none (google.com: noreply@bootstrapped.fm does not designate permitted sender hosts) smtp.mail=noreply@bootstrapped.fm;
+       dkim=temperror (no key for signature) header.i=@
+</code></pre>
+<p>This means very few emails will get through until DNS is updated <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"> <img src="https://emoji.discourse-cdn.com/twitter/cry.png?v=9" title=":cry:" class="emoji" alt=":cry:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/5</link>
+        <pubDate>Tue, 17 Mar 2015 19:04:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2825-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825.rss">Forum DKIM and SPF mail records not present</source>
+      </item>
+      <item>
+        <title>Forum DKIM and SPF mail records not present</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>If I may assist as I’ve recently been doing a ton of this.</p>
+<p>Looks like the SPF record is correct, and points to <a href="http://mailgun.org" rel="nofollow noopener">mailgun.org</a>. However, the DKIM is separate from SPF. It would have to be set as the documentation states. Since it looks like you’re using Mailgun, I would suggest setting this up as a separate domain from userscape. But either way, you can have multiple DKIM TXT records since they are subdomain specific (discourse._domainkey specifically).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/4</link>
+        <pubDate>Tue, 17 Mar 2015 18:53:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2825-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825.rss">Forum DKIM and SPF mail records not present</source>
+      </item>
+      <item>
+        <title>Forum DKIM and SPF mail records not present</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry - just seen this <a class="mention" href="/u/andrey">@andrey</a> - <a class="mention" href="/u/ian">@ian</a>  will need to address this on his end but I think from my tools that they have an SPF so ¯_(ツ)_/¯</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/3</link>
+        <pubDate>Tue, 17 Mar 2015 14:30:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2825-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825.rss">Forum DKIM and SPF mail records not present</source>
+      </item>
+      <item>
+        <title>Forum DKIM and SPF mail records not present</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>Bump to <a class="mention" href="/u/ian">@ian</a> and <a class="mention" href="/u/imsickofmaps">@imsickofmaps</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/2</link>
+        <pubDate>Thu, 05 Mar 2015 02:20:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2825-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825.rss">Forum DKIM and SPF mail records not present</source>
+      </item>
+      <item>
+        <title>Forum DKIM and SPF mail records not present</title>
+        <dc:creator><![CDATA[system]]></dc:creator>
+        <description><![CDATA[
+            <p>I noticed in my emails from here that the DKIM and SPF records in DNS are not set up:</p>
+<pre><code>Received-SPF: permerror (google.com: permanent error in processing during lookup of bootstrapped@userscape.com) client-ip=64.71.148.3;
+Authentication-Results: mx.google.com;
+       spf=permerror (google.com: permanent error in processing during lookup of bootstrapped@userscape.com) smtp.mail=bootstrapped@userscape.com;
+       dkim=temperror (no key for signature) header.i=@
+</code></pre>
+<p>This means you need to add those DKIM and SPF records for the <strong><a href="http://userscape.com">userscape.com</a></strong> domain since that’s the return email address.</p>
+<p><a href="https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177" class="onebox" target="_blank">https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177</a></p>
+<p>If you’d rather set it up on the bootstrapped.fm domain then change the return email in site settings to <code>noreply@bootstrapped.fm</code> or similar.</p>
+<p>If you need any assistance with this let me know!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825/1</link>
+        <pubDate>Thu, 05 Mar 2015 01:09:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2825-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/forum-dkim-and-spf-mail-records-not-present/2825.rss">Forum DKIM and SPF mail records not present</source>
+      </item>
+  </channel>
+</rss>

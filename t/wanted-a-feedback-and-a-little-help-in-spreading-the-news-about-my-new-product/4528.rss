@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Wanted a feedback and a little help in spreading the news about my new product</title>
+    <link>https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528</link>
+    <description>Problem solving is the essence of an entrepreneurship mindset. We are those group of people who constantly find a problem and try to solve it with many iterations. It necessarily doesn’t mean that the problem should always be a billion dollar idea. We can solve problem for a niche community and still be a profitable company.
+
+**Introducing Deploy-Tantra**
+
+18 months back, I started Tantra-Gyan, a web design company with a vision to provide appropriate and efficient solutions for it’s customers. I can say that we were following best practices for development from day 1. We were using git, writing automated tests and even had a QA engineer. In all of this, our deployments were not efficient. We were transferring files over Ftp or doing a git pull every-time. I was unhappy with the process we had and started finding better solutions. I did find a range of solutions, but they all had 2 inherent problem : Simplicity &amp; Pricing.
+
+**Pricing**
+
+All deployments tools had very reasonable prices, but unfortunately, just didn’t make sense for us at Tantra-Gyan. As much as I like their features, pricing based on number of projects is an unpredictable measure for us and this completely prevents us from considering other tools. Since we’re a consulting company, on many projects, it’s difficult to track and predict how many projects we have going at any given time.
+
+Projects aren’t our asset, our people are. We can easily predict how many employees we have, so we’d much, much rather just pay by the user. It’s the pricing model problem that we tried to solve using Deploy-Tantra : making it affordable. It’s $10/month or $99/year : Unlimited teams and users : All features with no add-ons or limits.
+
+**Simplicity**
+
+In my opinion, average projects like static websites or even small to medium functional applications don’t necessarily require a full CI pipeline. It’s as simple as transferring files to your servers or performing a git pull. Continuous integration is not bad, but it should not be a glorified implementation process for every other project. Deploy-Tantra is focussed on teams who don’t necessarily require a full CI pipeline in all of their deployments.
+
+**Features**
+
+1. Github / Bitbucket / Gitlab integrations
+2. Team based dashboard
+3. Ftp / Sftp / S3 servers
+4. Custom deployment scripts
+5. Push to Deploy
+6. Zero downtime deployments (Coming soon…)
+7. Database and file backups (Coming soon..)
+8. Health Checks (Coming soon...)
+9. Unlimited teams &amp; users
+10. Slack notifications
+11. Simple Pricing : includes everything</description>
+    
+    <lastBuildDate>Wed, 16 Nov 2016 12:09:57 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Wanted a feedback and a little help in spreading the news about my new product</title>
+        <dc:creator><![CDATA[virajkhatavkar]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/dave">@Dave</a>, thanks for the comment <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>As of now, we are not supporting any builds for specific projects. We currently provide option for executing remote commands, transferring changed files or managing configuration files.</p>
+<p>We are currently developing some features which would provide users to use a build server, probably a Docker container to build their assets but nothing more complicated than that.</p>
+<p>Further, some complimentary services which are in development pipeline are like File Backups and Database backups which we would be launching by this month end.</p>
+<p>I want to concentrate on the simplicity part and not over glorify the app to make it a generalized tool.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528/3</link>
+        <pubDate>Wed, 16 Nov 2016 12:09:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4528-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528.rss">Wanted a feedback and a little help in spreading the news about my new product</source>
+      </item>
+      <item>
+        <title>Wanted a feedback and a little help in spreading the news about my new product</title>
+        <dc:creator><![CDATA[Dave]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not in your target market any more, but I have worked for some digital agencies in the past, and this is something I wish I had back then.</p>
+<p>I like the landing page a lot, and I definitely think there is a market for something that fits between ‘copy/paste’ deployments and a full on CI server. There are a few things that claim to fill that void, but in my experience they try to do too much, and end up over complicating things.</p>
+<p>I like the simplicity of creating a project, connecting it up to the git repository and start pushing code straight away.</p>
+<p>The only thing I can’t see on the landing page is what languages you support. Can you build my Go or .NET code, for example? Or are you concentrating on static sites, PHP etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528/2</link>
+        <pubDate>Wed, 16 Nov 2016 08:27:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4528-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528.rss">Wanted a feedback and a little help in spreading the news about my new product</source>
+      </item>
+      <item>
+        <title>Wanted a feedback and a little help in spreading the news about my new product</title>
+        <dc:creator><![CDATA[virajkhatavkar]]></dc:creator>
+        <description><![CDATA[
+            <p>Problem solving is the essence of an entrepreneurship mindset. We are those group of people who constantly find a problem and try to solve it with many iterations. It necessarily doesn’t mean that the problem should always be a billion dollar idea. We can solve problem for a niche community and still be a profitable company.</p>
+<p><strong>Introducing Deploy-Tantra</strong></p>
+<p>18 months back, I started Tantra-Gyan, a web design company with a vision to provide appropriate and efficient solutions for it’s customers. I can say that we were following best practices for development from day 1. We were using git, writing automated tests and even had a QA engineer. In all of this, our deployments were not efficient. We were transferring files over Ftp or doing a git pull every-time. I was unhappy with the process we had and started finding better solutions. I did find a range of solutions, but they all had 2 inherent problem : Simplicity &amp; Pricing.</p>
+<p><strong>Pricing</strong></p>
+<p>All deployments tools had very reasonable prices, but unfortunately, just didn’t make sense for us at Tantra-Gyan. As much as I like their features, pricing based on number of projects is an unpredictable measure for us and this completely prevents us from considering other tools. Since we’re a consulting company, on many projects, it’s difficult to track and predict how many projects we have going at any given time.</p>
+<p>Projects aren’t our asset, our people are. We can easily predict how many employees we have, so we’d much, much rather just pay by the user. It’s the pricing model problem that we tried to solve using Deploy-Tantra : making it affordable. It’s $10/month or $99/year : Unlimited teams and users : All features with no add-ons or limits.</p>
+<p><strong>Simplicity</strong></p>
+<p>In my opinion, average projects like static websites or even small to medium functional applications don’t necessarily require a full CI pipeline. It’s as simple as transferring files to your servers or performing a git pull. Continuous integration is not bad, but it should not be a glorified implementation process for every other project. Deploy-Tantra is focussed on teams who don’t necessarily require a full CI pipeline in all of their deployments.</p>
+<p><strong>Features</strong></p>
+<ol>
+<li>Github / Bitbucket / Gitlab integrations</li>
+<li>Team based dashboard</li>
+<li>Ftp / Sftp / S3 servers</li>
+<li>Custom deployment scripts</li>
+<li>Push to Deploy</li>
+<li>Zero downtime deployments (Coming soon…)</li>
+<li>Database and file backups (Coming soon…)</li>
+<li>Health Checks (Coming soon…)</li>
+<li>Unlimited teams &amp; users</li>
+<li>Slack notifications</li>
+<li>Simple Pricing : includes everything</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528/1</link>
+        <pubDate>Wed, 16 Nov 2016 02:51:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4528-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/wanted-a-feedback-and-a-little-help-in-spreading-the-news-about-my-new-product/4528.rss">Wanted a feedback and a little help in spreading the news about my new product</source>
+      </item>
+  </channel>
+</rss>

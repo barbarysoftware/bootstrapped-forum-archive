@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Code signing - build reputation by double signing? - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Back when SHA-1 certificates were being phased out, you could double sign an executable using SHA-1 and SHA256 to maintain compatibility with Windows XP validation. 
+When I renewed my code signing certificate I bought an&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="6320.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Code signing - build reputation by double signing?&#39;" href="6320.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/code-signing-build-reputation-by-double-signing/6320" />
+<meta property="og:title" content="Code signing - build reputation by double signing?" />
+<meta name="twitter:title" content="Code signing - build reputation by double signing?" />
+<meta property="og:description" content="Back when SHA-1 certificates were being phased out, you could double sign an executable using SHA-1 and SHA256 to maintain compatibility with Windows XP validation.  When I renewed my code signing certificate I bought an EV certificate to avoid the period where Windows pops up warnings because it is a new and unknown certificate.  I wondered whether it is possible to get a new certificate overlapping the old one, and maybe double sign the executable so by the time the first one expires the new o..." />
+<meta name="twitter:description" content="Back when SHA-1 certificates were being phased out, you could double sign an executable using SHA-1 and SHA256 to maintain compatibility with Windows XP validation.  When I renewed my code signing certificate I bought an EV certificate to avoid the period where Windows pops up warnings because it is a new and unknown certificate.  I wondered whether it is possible to get a new certificate overlapping the old one, and maybe double sign the executable so by the time the first one expires the new o..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2019-04-16T04:03:09+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="6320.html">Code signing - build reputation by double signing?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/AndrewR.html'><span itemprop='name'>AndrewR</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-16T04:03:09Z' class='post-time'>
+                April 16, 2019,  4:03am
+              </time>
+              <meta itemprop='dateModified' content='2019-04-16T04:03:09Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Back when SHA-1 certificates were being phased out, you could double sign an executable using SHA-1 and SHA256 to maintain compatibility with Windows XP validation.</p>
+<p>When I renewed my code signing certificate I bought an EV certificate to avoid the period where Windows pops up warnings because it is a new and unknown certificate.</p>
+<p>I wondered whether it is possible to get a new certificate overlapping the old one, and maybe double sign the executable so by the time the first one expires the new one has some history? Or maybe distribute executables signed by the new certificate inside the installer signed by the old one?</p>
+<p>3 year standard certificates overlapping by e.g.12 months would be a much better proposition than buying EV certificates.</p>
+<p>Does anyone know whether this is feasible?</p>
+        </div>
+
+        <meta itemprop='headline' content='Code signing - build reputation by double signing?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Rhino.html'><span itemprop='name'>Rhino</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-16T08:24:17Z' class='post-time'>
+                April 16, 2019,  8:24am
+              </time>
+              <meta itemprop='dateModified' content='2019-04-16T08:24:17Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The double signing thing was a specific case for XP - don’t overthink it.</p>
+<p>The algo’s check to see if the certificate was valid for the date the exe was signed. So even if my certificate ran out on say 1st Jan 2019 if I’ve an .exe that was signed in July 2018 then it will still be valid today.</p>
+<p>So you don’t need to overlap them.</p>
+        </div>
+
+        <meta itemprop='headline' content='Code signing - build reputation by double signing?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/AndrewR.html'><span itemprop='name'>AndrewR</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-16T09:41:17Z' class='post-time'>
+                April 16, 2019,  9:41am
+              </time>
+              <meta itemprop='dateModified' content='2019-04-16T09:41:17Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It’s not the validity dates that are an issue, it is when you have a new certificate and Windows warns your users, even though the exe is signed. The certificate is no longer enough - you need to build a reputation with the new certificate.</p>
+<p>To get around that you can pay the extra for an EV certificate, or perhaps somehow build the reputation of  a new certificate before you use it for the primary signature.</p>
+        </div>
+
+        <meta itemprop='headline' content='Code signing - build reputation by double signing?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-16T15:40:55Z' class='post-time'>
+                April 16, 2019,  3:40pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-16T15:40:55Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="3" data-topic="6320">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andrewr/40/4800_2.png" class="avatar"> AndrewR:</div>
+<blockquote>
+<p>To get around that you can pay the extra for an EV certificate</p>
+</blockquote>
+</aside>
+<p>This looks like the most straightforward way to solve it, no?</p>
+        </div>
+
+        <meta itemprop='headline' content='Code signing - build reputation by double signing?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/AndrewR.html'><span itemprop='name'>AndrewR</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-16T23:08:41Z' class='post-time'>
+                April 16, 2019, 11:08pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-16T23:08:41Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, but you pay a lot e.g. $210 for a regular 3 year code signing certificate, $750 for a 3 year EV certificate.</p>
+<p>I had a 3 year regular certificate that worked fine, except for a short time at the start where it was popping up warnings. So it costs $500 just to avoid warnings from a new certificate.</p>
+<p>But you’re right, reputation is important enough that it’s probably worth paying for.</p>
+        </div>
+
+        <meta itemprop='headline' content='Code signing - build reputation by double signing?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/PhilS.html'><span itemprop='name'>PhilS</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6320.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-04-17T07:29:24Z'>
+              <time itemprop='dateModified' datetime='2019-04-17T07:30:16Z' class='post-time'>
+                April 17, 2019,  7:30am
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group quote-modified" data-post="3" data-topic="6320">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andrewr/40/4800_2.png" class="avatar"> AndrewR:</div>
+<blockquote>
+<p>…or perhaps somehow build the reputation of a new certificate before you use it for the primary signature.</p>
+</blockquote>
+</aside>
+<p>Reputation of a certificate? This is the first time I hear about it. I know there is “reputation” of particular downloaded files for sure, but not of certificates.<br>
+Have you got any sources on that topic? Or is it possible you mixed things up?</p>
+        </div>
+
+        <meta itemprop='headline' content='Code signing - build reputation by double signing?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grujicd.html'><span itemprop='name'>grujicd</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-17T10:57:17Z' class='post-time'>
+                April 17, 2019, 10:57am
+              </time>
+              <meta itemprop='dateModified' content='2019-04-17T10:57:17Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Unfortunately, he didn’t mix it up. Windows will display warnings for a new certificate for some time. In my case it lasted maybe for a few days, probably depends on number of downloads as well. I was downloading like crazy from multiple machines/VMs in a hope to speed up that process <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Code signing - build reputation by double signing?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/AndrewR.html'><span itemprop='name'>AndrewR</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-17T12:29:47Z' class='post-time'>
+                April 17, 2019, 12:29pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-17T12:29:47Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, the downloaded file builds a reputation for the certificate, which then passes the reputation on to new files signed with the same certificate. In that way new files (e.g. updates to your application) don’t need to build reputation individually.</p>
+<p>When you get a new certificate, the reputation from your old downloads is not carried over so you get warnings, unless you buy an EV certificate.</p>
+<p>More information here:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://blogs.msdn.microsoft.com/ie/wp-content/themes/microsoft-msdn/images/favicon-msdn.png" class="site-icon" width="16" height="16">
+      <a href="https://blogs.msdn.microsoft.com/ie/2012/08/14/microsoft-smartscreen-extended-validation-ev-code-signing-certificates/" target="_blank">IEBlog</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://blogs.msdn.microsoft.com/ie/2012/08/14/microsoft-smartscreen-extended-validation-ev-code-signing-certificates/" target="_blank">Microsoft SmartScreen &amp; Extended Validation (EV) Code Signing Certificates</a></h3>
+
+<p>Today two Certificate Authorities (CAs), Symantec and DigiCert, announced the introduction of EV code signing certificates. Their announcement is a positive development for users and businesses because it helps both sides reduce fraud and increase...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+and here:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://blogs.msdn.microsoft.com/ie/wp-content/themes/microsoft-msdn/images/favicon-msdn.png" class="site-icon" width="16" height="16">
+      <a href="https://blogs.msdn.microsoft.com/ie/2011/03/22/smartscreen-application-reputation-building-reputation/" target="_blank">IEBlog</a>
+  </header>
+  <article class="onebox-body">
+    <img src="http://ie.microsoft.com/testdrive/ieblog/2011/Mar/22_SmartScreenApplicationReputationBuildingReputation_1.png" class="thumbnail onebox-avatar" width="16" height="16">
+
+<h3><a href="https://blogs.msdn.microsoft.com/ie/2011/03/22/smartscreen-application-reputation-building-reputation/" target="_blank">SmartScreen® Application Reputation – Building Reputation</a></h3>
+
+<p>With the Internet Explorer 9 (IE9) beta in September we introduced IE9’s new application reputation feature and more recently we provided a summary of how this fits into the overall layered approach to security. With the final release of IE9 now...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>“<em>As we’ve discussed in the past, SmartScreen builds reputation for both individual</em><br>
+<em>programs and for the certificate used to sign that code. Code signing is important</em><br>
+<em>to our reputation intelligence because this higher level identity allows us to build</em><br>
+<em>reputation across multiple programs signed by a publisher. It is also important</em><br>
+<em>for publishers because signed programs inherit the reputation of the certificate</em><br>
+<em>with which they are signed; this means every program a publisher distributes doesn’t</em><br>
+<em>need to build reputation individually.</em>”</p>
+        </div>
+
+        <meta itemprop='headline' content='Code signing - build reputation by double signing?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-17T22:37:27Z' class='post-time'>
+                April 17, 2019, 10:37pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-17T22:37:27Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="5" data-topic="6320">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andrewr/40/4800_2.png" class="avatar"> AndrewR:</div>
+<blockquote>
+<p>Yes, but you pay a lot e.g. $210 for a regular 3 year code signing certificate, $750 for a 3 year EV certificate.</p>
+</blockquote>
+</aside>
+<p>Here’s my thinking:</p>
+<ul>
+<li>Either the warnings cost you sales, and then you can estimate the losses and decide if the cert worth it based on a hard number</li>
+<li>Or the warnings cost you nothing, and then you shouldn’t worry about it</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Code signing - build reputation by double signing?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

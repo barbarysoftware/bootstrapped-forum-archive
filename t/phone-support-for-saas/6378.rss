@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Phone support for SaaS</title>
+    <link>https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378</link>
+    <description>A potential client is asking us to provide a contact person and a phone number as part of their contract. Currently, we handle all of the communication via e-mail.  Is it worth it to also provide phone support?</description>
+    
+    <lastBuildDate>Wed, 05 Jun 2019 01:51:08 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Phone support for SaaS</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="6378">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mpalmer/40/3028_2.png" class="avatar"> mpalmer:</div>
+<blockquote>
+<p>give them a number that goes to voicemail, have the voicemail service e-mail you the messages, and you’re done. Feel free to return their calls whenever it’s convenient</p>
+</blockquote>
+</aside>
+<p>This. But make the message say something like “All operators are busy right now, please leave a message” so they don’t think you’re just ignoring their call. And the statement is not a lie, either. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>BTW, my own website and EULA states that email must be used for all initial contact for issues, but that we’ll call them by voice if the situation can’t be resolved that way. That gives them reassurance that someone will speak to them if need be, but I ensure that all situations are resolved by email anyway. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/6</link>
+        <pubDate>Wed, 05 Jun 2019 01:51:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6378-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378.rss">Phone support for SaaS</source>
+      </item>
+      <item>
+        <title>Phone support for SaaS</title>
+        <dc:creator><![CDATA[mpalmer]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="6378">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/levon/40/4707_2.png" class="avatar"> levon:</div>
+<blockquote>
+<p>A potential client is asking us to provide a contact person and a phone number as part of their contract.</p>
+</blockquote>
+</aside>
+<p>It’s worth getting some clarity around what exactly is being asked for, as what you describe here does not match the title of your topic.  A contact person and phone number is <em>not</em> the same as phone support, necessarily; it’s having an escalation path for when <a href="https://www.theregister.co.uk/2019/05/31/digitalocean_killed_my_company/">everything goes catastrophically wrong</a>.</p>
+<p>Now, if the customer really <em>is</em> asking for phone support, especially 24x7x365 support, you need to be pretty big before it’s feasible to provide that.  Having someone knowledgeable available at all times to answer a phone takes at <em>least</em> four people (168 hours in a week, 40 working hours per week per person), before you account for people taking the occasional holiday, <em>and</em> someone needs to be awake at 4am.  Unless you’ve got a fully-remote, globally-distributed team, it sucks.</p>
+<p>It’s possible that the response SLA is low enough that you could have a service receive the call and contact you, so you can wake up a bit and then call the customer back, which makes the personnel requirement a bit lighter.  But someone still needs to be <em>available</em> at all times to take the callback, so if you’re a solo entrepreneur, that means never going out of cellphone coverage (not necessarily a problem, if you don’t like camping).</p>
+<p>If there’s no SLA around phone support in the agreement, then just give them a number that goes to voicemail, have the voicemail service e-mail you the messages, and you’re done.  Feel free to return their calls whenever it’s convenient.  Or not.  <img src="https://emoji.discourse-cdn.com/twitter/man_shrugging.png?v=9" title=":man_shrugging:" class="emoji" alt=":man_shrugging:"></p>
+<p>In any event, if they want phone support, they need to be able to pay for it.  Factor in both the full costs of providing the service (answering service, extra people, weekend/night bonuses, whatever) as well as the “I hate talking on the phone” factor… and then double the number you came up with.  That’s about how much extra you want to be charging to provide phone support.</p>
+<hr>
+<p>It is, however, entirely possible that they’re not asking for phone <em>support</em>, per se, but merely a means of escalating a Huge Problem, should one occur.  That is a whole different ball game, and as long as the conditions under which they’ll use their contact phone number are clear, <em>and</em> you think they’ll stick to those conditions, then it’s not unreasonable to provide contact details.  I’m definitely in agreement with Steve that you shouldn’t give them your actual cell number – if only because, in five years time, when you have a big team and want to take a holiday, you want that “OMFG!” call to go to someone else, and leaving your personal cell with that someone else probably isn’t what you want to have to do.</p>
+<p>One final piece of advice, from someone who has made this mistake, and who has seen this mistake made: if they do just want an escalation point, and then they turn out to be the sort of customer who then decides that that number is their support line, hold firm <em>every</em> time they misuse the number.  When they call and say, “hey, it’s Bob from BigCo, just had a quick question”, <em>immediately</em> say “is this an outage?” (or whatever conditions they have agreed to for using your contact number), and when they say “no, I just wanted to ask…”, Shut. Them. Down.  Say “sorry, but this phone number is for emergency contact only, please e-mail (address) for support”.  It may feel like you’re shafting a customer to not answer their “quick question”, but if they’re the sort of people who ignore the agreement they’ve made, and then get annoyed by it, you will be dodging a bullet if they cancel, because working with people like that will destroy your soul.</p>
+<p>If you ever, <em>ever</em>, just <em>one</em> time, give in to their need for immediate gratification, you have doomed yourself to an endless hellscape of answering the phone all the time, forever and ever, amen.  It may take multiple rounds of “sorry, this phone number is for emergency contact only” (<em>contact</em>, not <em>support</em>, is a very important distinction) before they get the message, but stay strong, because your future self will thank you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/5</link>
+        <pubDate>Mon, 03 Jun 2019 00:53:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6378-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378.rss">Phone support for SaaS</source>
+      </item>
+      <item>
+        <title>Phone support for SaaS</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>If you’re working alone I’d vote against phone support, unless it’s a contract essential for your business to survive. There are some bad things about being a solo entrepreneur, but of those which are good, a freedom to organize time is on the top of my list. Do you plan on giving phone support while you’re on the vacation, or on a day off? And this is a decision which will affect following years, not a month or two. I do check email every day while on vacation and provide email support, but it’s different if you can do it when it suits you, compared to answering phone on the beach. So yeah, we’re never on 100% vacation, but we can take months per year instead of weeks.</p>
+<p>I was asked for phone support few times but stick to my “email only” guns. You can word it like this - would you prefer phone support with some low-tech “call center style” support person, or to get direct email contact with main developer/business owner?<br>
+Disclaimer, my perspective is based on shrink-wrapped, relatively low cost software. If your software is more expensive, requires some customization and hand holding, you may come to different conclusion.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/4</link>
+        <pubDate>Sun, 02 Jun 2019 06:47:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6378-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378.rss">Phone support for SaaS</source>
+      </item>
+      <item>
+        <title>Phone support for SaaS</title>
+        <dc:creator><![CDATA[levon]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you Steve for your thoughtful answer! That is a good idea to offer it as part of a Premium plan.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/3</link>
+        <pubDate>Sat, 01 Jun 2019 14:27:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6378-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378.rss">Phone support for SaaS</source>
+      </item>
+      <item>
+        <title>Phone support for SaaS</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Is it worth it to also provide phone support?</p>
+</blockquote>
+<p>That depends on the size of the contract and the likeliness of the customer to use the telephone support.</p>
+<p>I’d say definitely try it. If it doesn’t work out well, don’t offer it to anyone else. If it does work out well, you’ve found something to offer on a premium plan.</p>
+<ul>
+<li>Be very clear about what hours they can expect the phone to be answered. e.g. Mon to Fri 9am to 5pm in your timezone, public holidays excluded.</li>
+<li>Use a dedicated phone number. This allows you to discontinue the phone service easily in the future without pain. Skype is one option for getting a dedicated number.</li>
+<li>Consider telling your potential client that telephone support is on your premium plan, which costs an extra $X/month. Make sure $X is high.</li>
+</ul>
+<p>There’s a good chance they’ll never actually call you. They may just like the feeling of safety that comes with the possibility of picking up a phone and calling you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/2</link>
+        <pubDate>Sat, 01 Jun 2019 11:14:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6378-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378.rss">Phone support for SaaS</source>
+      </item>
+      <item>
+        <title>Phone support for SaaS</title>
+        <dc:creator><![CDATA[levon]]></dc:creator>
+        <description><![CDATA[
+            <p>A potential client is asking us to provide a contact person and a phone number as part of their contract. Currently, we handle all of the communication via e-mail.  Is it worth it to also provide phone support?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378/1</link>
+        <pubDate>Sat, 01 Jun 2019 01:47:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6378-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/phone-support-for-saas/6378.rss">Phone support for SaaS</source>
+      </item>
+  </channel>
+</rss>

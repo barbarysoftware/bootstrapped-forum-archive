@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pricing and multiple currencies - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="I’ve been thinking a lot about pricing for my upcoming SaaS app lately and one of the issues I always come back to is currencies. I live in Europe and I’m targetting both European and US based customers.  Are there any best practices regarding which currencies to display on the pricing page? One option would be to pick one currency (for example USD) and use that for all pricing-related pages, and only convert to the users currency on checkout.  With this approach I’m a bit worried that the prici...">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="674.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Pricing and multiple currencies&#39;" href="674.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/pricing-and-multiple-currencies/674" />
+<meta property="og:title" content="Pricing and multiple currencies" />
+<meta name="twitter:title" content="Pricing and multiple currencies" />
+<meta property="og:description" content="I’ve been thinking a lot about pricing for my upcoming SaaS app lately and one of the issues I always come back to is currencies. I live in Europe and I’m targetting both European and US based customers.  Are there any best practices regarding which currencies to display on the pricing page? One option would be to pick one currency (for example USD) and use that for all pricing-related pages, and only convert to the users currency on checkout.  With this approach I’m a bit worried that the prici..." />
+<meta name="twitter:description" content="I’ve been thinking a lot about pricing for my upcoming SaaS app lately and one of the issues I always come back to is currencies. I live in Europe and I’m targetting both European and US based customers.  Are there any best practices regarding which currencies to display on the pricing page? One option would be to pick one currency (for example USD) and use that for all pricing-related pages, and only convert to the users currency on checkout.  With this approach I’m a bit worried that the prici..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="3 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="6 ❤" />
+<meta property="article:published_time" content="2013-10-22T12:02:19+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="674.html">Pricing and multiple currencies</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/vbsteven'><span itemprop='name'>vbsteven</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-22T12:02:19Z' class='post-time'>
+                October 22, 2013, 12:02pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-22T12:02:19Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve been thinking a lot about pricing for my upcoming SaaS app lately and one of the issues I always come back to is currencies. I live in Europe and I’m targetting both European and US based customers.</p>
+<p>Are there any best practices regarding which currencies to display on the pricing page? One option would be to pick one currency (for example USD) and use that for all pricing-related pages, and only convert to the users currency on checkout.<br>
+With this approach I’m a bit worried that the pricing would look “foreign” to people who use other currencies and this might affect their decision to buy.</p>
+<p>Any thoughts?</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="http://discuss.bootstrapped.fm/t/avoiding-cross-cultural-gotchas/681" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='http://discuss.bootstrapped.fm/t/avoiding-cross-cultural-gotchas/681'>
+                      <span itemprop='name'>Avoiding cross-cultural gotchas</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../uk-vat-exchange-rates-api/1928.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='http://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api/1928'>
+                      <span itemprop='name'>UK VAT exchange rates API</span>
+                    </a>
+                    <meta itemprop='position' content='2'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rachelandrew'><span itemprop='name'>rachelandrew</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-22T13:40:35Z' class='post-time'>
+                October 22, 2013,  1:40pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-22T13:40:35Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We’ve been through this one. We’re in the UK and initially priced just in GBP - we used to show an indicative price in EUR and USD. We now have bank accounts and merchant IDs in all three so we chose to show the price in what we guess is the user’s currency and they can change it. We set the price for each currency as being a low value purchase we don’t lose or gain a huge amount to fluctuations.</p>
+<p>If you are VAT registered it gets a bit tricky as you need to account for VAT in your registered currency (I’m assuming it is the same in other EU countries as in the UK) so we have to know the daily rate even though we don’t convert that day but pay into a dedicated account for that currency.</p>
+<p>We have seen an upturn in American interest since we started to accept dollars, hard to ascertain if that is the only reason though.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JanLukacs.html'><span itemprop='name'>JanLukacs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-22T14:41:12Z' class='post-time'>
+                October 22, 2013,  2:41pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-22T14:41:12Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We just use USD for everyone at the moment and it works great. Everyone in the world knows the dollar and they don’t have problems with it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/dennis'><span itemprop='name'>dennis</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-22T15:02:26Z' class='post-time'>
+                October 22, 2013,  3:02pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-22T15:02:26Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We accept both USD and EUR, both for our download edition as well as for SaaS subscriptions. We don’t really adjust the pricing based on the current exchange rate regularly though to keep it simple. If you are selling to a global audience and only want to accept a single currency, I would definitely pick USD and let customers / credit card company’s handle the exchange to their local currency.</p>
+<p>For example, Europeans are really used to pay in USD for online services and it’s not an issue (even though we accept both USD and EUR and make this clear on our sign-up pages, our customers often pick USD even if they are from an eurozone country simply because most just don’t care).</p>
+<p>Some customers might not be able to pay you if you don’t accept their local currency though (e.g. government agencies) so in a few cases we made exceptions and accepted GBP for larger orders.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/imsickofmaps'><span itemprop='name'>imsickofmaps</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-22T15:22:54Z' class='post-time'>
+                October 22, 2013,  3:22pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-22T15:22:54Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="3" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/j/bc8723/40.png" class="avatar"> JanLukacs:</div>
+<blockquote>
+<p>Everyone in the world knows the dollar and they don’t have problems with it.</p>
+</blockquote>
+</aside>
+<p>That’s a broad sweeping statement. Also, not true.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JanLukacs.html'><span itemprop='name'>JanLukacs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-22T16:54:54Z' class='post-time'>
+                October 22, 2013,  4:54pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-22T16:54:54Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Feel free to provide examples of how it’s not ture <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+What i’m saying is that we’re selling world wide (from Chile to Japan) for years in USD only and haven’t had ONE single complaint about the currency.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-22T20:54:17Z' class='post-time'>
+                October 22, 2013,  8:54pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-22T20:54:17Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Generally in reasoning, one has to prove that something IS true, not that something is NOT true. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-22T20:57:25Z' class='post-time'>
+                October 22, 2013,  8:57pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-22T20:57:25Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Our product is priced in EUR, USD, and GBP. Once every year or so I check the comparative values of the currency to make sure the prices are not too much out of alignment with each other.</p>
+<p>We get told in those Marketing 101 books that we should price at, say $69, or $79, for some sort of psychological reason When the comparable price in EUR is €57.32, well, that doesn’t have quite the same effect.</p>
+<p>But this is just my thought process. I’d love to see conclusions from someone who has tested a global USD price versus a few local currency prices, and has sufficient data to make a meaningful conclusion.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JanLukacs.html'><span itemprop='name'>JanLukacs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-23T07:50:27Z' class='post-time'>
+                October 23, 2013,  7:50am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-23T07:50:27Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I don’t need to prove anything <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> i’m just sharing my experience and usually ignore one line trolling but if we really need to:<br>
+<aside class="onebox wikipedia">
+  <header class="source">
+      <a href="https://en.wikipedia.org/wiki/International_use_of_the_US_dollar" target="_blank">en.wikipedia.org</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:300/154;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/DOLLAR_AND_EURO_IN_THE_WORLD.svg/300px-DOLLAR_AND_EURO_IN_THE_WORLD.svg.png" class="thumbnail" width="300" height="154"></div>
+
+<h3><a href="https://en.wikipedia.org/wiki/International_use_of_the_US_dollar" target="_blank">International use of the U.S. dollar</a></h3>
+
+<p>Besides being the main currency of the United States, the American dollar is used as the standard unit of currency in international markets for commodities such as gold and petroleum (the latter, sometimes called petrocurrency, is the source of the term petrodollar). Some non-U.S. companies dealing in globalized markets, such as Airbus, list their prices in dollars.
+ The U.S. dollar is the world's foremost reserve currency. In addition to holdings by central banks and other institutions, there ar...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+The only other currency that you might want to consider would be the Euro but outside of Europe avarage people don’t have a clue what it is.<br>
+Continents that know/use the USD regularly:<br>
+North America (ofcourse)<br>
+South America (alternate currency in a lot of countreis)<br>
+Australia (strong economic ties to the US)<br>
+Asia (might be problematic in a couple of areas, but you have larger problems selling to them then currency anyway. India, Japan, Russia - huge economies that ‘love’ the dollar).</p>
+<p>The fact that the dollar is pretty much being raped by the FED at everyones expense is another discussion <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+If you go down the route of selling in multiple currencies based on geo-location i think will generate more problems then benefits:</p>
+<ul>
+<li>you’ll end up with selling cheaper to some if you use fixed rates for long periods of time, or you will have “dynamic” pricing - might look bad/strange to some customers (geo-location sometimes fails).</li>
+<li>accounting issues</li>
+<li>you’ll need to generate invoices in different currencies (might be a big problems in certain countries)</li>
+</ul>
+<p>ps: i’m from Romania / Europe - no bias for the USD.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Andy.html'><span itemprop='name'>Andy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-23T08:36:22Z' class='post-time'>
+                October 23, 2013,  8:36am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-23T08:36:22Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="8" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Our product is priced in EUR, USD, and GBP. Once every year or so I check the comparative values of the currency to make sure the prices are not too much out of alignment with each other.</p>
+</blockquote>
+</aside>
+<p>That is the approach I take. If someone can get it slightly cheaper by switching currency, they are happy because they got a discount and I’m happy becuase I got a sale. ;0)</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/imsickofmaps'><span itemprop='name'>imsickofmaps</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-23T08:55:59Z' class='post-time'>
+                October 23, 2013,  8:55am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-23T08:55:59Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="JanLukacs" data-post="9" data-topic="674">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://avatars.discourse.org/v4/letter/j/bc8723/40.png" class="avatar"> JanLukacs:</div>
+<blockquote>
+<p>i’m just sharing my experience and usually ignore one line trolling</p>
+</blockquote>
+</aside>
+<p>You may not have intended it that way but the original chirp was a kinda one line troll, so I was just responding in kind! Anyways, thanks for breaking your thoughts out further… <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=9" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I’ve worked at one stage for the worlds largest independent software company and I can tell you pricing in local currency made a massive difference to sales. Where we didn’t have local price lists (for example countries in the Eurozone not yet moved to Euro) we would frequently lose out to local competitors who did because their pricing was pegged to local inflation, not to global currency fluctuation.</p>
+<p>This is especially problematic for SaaS because of the continuous nature of the payments. One a smaller scale and a more personal level I now live in South Africa and my company uses a bunch of USD priced and sold SaaS products (probably about $500 in total per month). Look at this chart:</p>
+<p><img src="https://discuss.bootstrapped.fm/uploads/bootstrapped/8/981f47516d874f36.png" width="641" height="450"> </p>
+<p>I’m paying at least 20% more than we were 2 years ago and with some customer that becomes the difference between choosing a USD-based product and a local one. Conversely, if we were selling SaaS solutions in USD (we’re not yet) we’d be making 20% less.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2013-10-23T09:18:58Z'>
+              <time itemprop='dateModified' datetime='2013-10-23T09:31:51Z' class='post-time'>
+                October 23, 2013,  9:31am
+              </time>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>I’ve worked at one stage for the worlds largest independent software company and I can tell you pricing in local currency made a massive difference to sales.</p>
+</blockquote>
+<p>Data! I like data when making business decisions. Thanks <a class="mention" href="https://discuss.bootstrapped.fm/u/imsickofmaps">@imsickofmaps</a></p>
+<p>In New Zealand (my home country, but not where I live) the currency is called the dollar and and the currency symbol is written as “$”. So when a website says a product is $79, we assume that this means 79 New Zealand dollars. And then you go to pay and find that the price has jumped at checkout to $94. 94 New Zealand dollars. D’oh! So you curse and go looking for an alternative.</p>
+<p>These days we’re used to it, although not inured to it. It still leaves a sense of annoyance with the company.</p>
+<p>Annnnnndddd, I’ve just realised that my own frickin’ product’s website is guilty of this.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JanLukacs.html'><span itemprop='name'>JanLukacs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-23T09:41:06Z' class='post-time'>
+                October 23, 2013,  9:41am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-23T09:41:06Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="https://discuss.bootstrapped.fm/u/imsickofmaps">@imsickofmaps</a> Mike, that’s a valid argument. However you’re missing the context. I though we’re talking to/about boostrapped businesses/startups that don’t have a lot of resources. I fail to see how your example from a huge corporation applies to a business run by a couple of people with funding &lt;500K usually.</p>
+<p><a class="mention" href="https://discuss.bootstrapped.fm/u/stevemcleod">@SteveMcLeod</a> that’s an annyoing problem to have, maybe a text label on the pricing page that says it’s in USD? it also depends on where the majority of your customers are, it might be better to frustrate a couple of new zellanders than 100 of americans/french/indians/etc… (wait, the french will be pissed of because your site is not fully translated into french).</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-24T10:24:09Z' class='post-time'>
+                October 24, 2013, 10:24am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-24T10:24:09Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>it might be better to frustrate a couple of New Zealanders than 100 of<br>
+americans/french/indians/etc</p>
+</blockquote>
+<p>Wikipedia tells me the following countries typically use the “$” sign in front of numbers in their local currency:</p>
+<pre><code>United States, Mexico, Australia, Argentina, New Zealand, Hong Kong, Pacific Island nations, and English-speaking Canada.
+</code></pre>
+<p>Even excluding the US, that’s a combined population of some 200 million or so, I guess. I think this fact  is worth at least considering.</p>
+<p>One’s conclusion might be, “ah heck, I’ll show it in USD anyway.” One’s conclusion might be, “Better put a ‘USD’ label there”. One’s conclusion might be, “Let’s auto-convert based on geo-location to what we think the user’s currency is”. One’s conclusion might be, “Let’s use geo-location to add a USD label if we think the user is in NZ, AU, AR, etc…” And depending on what you are selling and who you are selling it to, any of these conclusions are okay.</p>
+<p>My current approach is to show “Buy now for $79” on the main product page. But once you click “Buy now”, I use <a href="http://www.fastspring.com/">FastSpring</a>’s magic to auto-convert to the user’s probable currency, with dollar sign and currency TLA. eg. “$96.86 NZD”</p>
+<p>I’m currently A/B testing a new product page that doesn’t show the price at all. To see the price the user will need to click on “Buy Now”.</p>
+<p>I could go on all day on the topic of pricing in a global context…would <em>love</em> to see firm data from people who have tested this in various contexts. Where’s <a class="mention" href="https://discuss.bootstrapped.fm/u/patio11">@patio11</a> when you need him, with his encyclopaedic knowledge of this stuff?</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JanLukacs.html'><span itemprop='name'>JanLukacs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-24T13:22:12Z' class='post-time'>
+                October 24, 2013,  1:22pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-24T13:22:12Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Showing the price after you click buy now is an interesting approach. In our app (Paymo) we issue invoices directly to each client for each transaction. How do you handle this with multiple currencies?</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-24T14:55:09Z' class='post-time'>
+                October 24, 2013,  2:55pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-24T14:55:09Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Our main product is desktop software that you pay for once (and then optionally for yearly upgrades). So the question is not really relevant, I think, if I understood correctly?</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JanLukacs.html'><span itemprop='name'>JanLukacs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-25T09:09:53Z' class='post-time'>
+                October 25, 2013,  9:09am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-25T09:09:53Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="https://discuss.bootstrapped.fm/u/stevemcleod">@SteveMcLeod</a> In our case the system is automated and we generate a lot of invoices that go through cetain processes for our accounting firm and the state (for example EU/non-eu invoices need to be separated, EU invoices for companies in VIES don’t need to have VAT etc…). So what i’m saying is, do you have a system that handles this automatically for multiple curriencies? Do your customers get an invoice directly from you or from your payment processor?</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-25T13:11:02Z' class='post-time'>
+                October 25, 2013,  1:11pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-25T13:11:02Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Oh yes, we use FastSpring to handle everything in that area. A decision I made a few years ago, and a decision I’ve never regretted.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Andy.html'><span itemprop='name'>Andy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="674.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-04T14:46:23Z' class='post-time'>
+                November 4, 2013,  2:46pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-04T14:46:23Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I put a little US flag next to the dollar price.</p>
+        </div>
+
+        <meta itemprop='headline' content='Pricing and multiple currencies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

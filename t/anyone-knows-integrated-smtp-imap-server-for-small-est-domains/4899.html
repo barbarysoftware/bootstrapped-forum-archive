@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Anyone knows Integrated SMTP+IMAP server for small(est) domains? - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Does anyone know an integrated SMTP+IMAP server for unix that: 
+
+
+Supports SMTP over SSL
+Supports IMAP over SSL
+Supports multiple email domains, with a small number of accounts in each (support@, me@, ...)
+Doesn&amp;#39;t have a&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="4899.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Anyone knows Integrated SMTP+IMAP server for small(est) domains?&#39;" href="4899.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/anyone-knows-integrated-smtp-imap-server-for-small-est-domains/4899" />
+<meta property="og:title" content="Anyone knows Integrated SMTP+IMAP server for small(est) domains?" />
+<meta name="twitter:title" content="Anyone knows Integrated SMTP+IMAP server for small(est) domains?" />
+<meta property="og:description" content="Does anyone know an integrated SMTP+IMAP server for unix that:   Supports SMTP over SSL Supports IMAP over SSL Supports multiple email domains, with a small number of accounts in each (support@, me@, …) Doesn’t have any dependencies (databases, external apps, …) Comes as a single binary, and not 100500 separate applications that I do not know what to do with Supports those email verification things that I do not understand - something to put into DNS or something so that other mail servers trust..." />
+<meta name="twitter:description" content="Does anyone know an integrated SMTP+IMAP server for unix that:   Supports SMTP over SSL Supports IMAP over SSL Supports multiple email domains, with a small number of accounts in each (support@, me@, …) Doesn’t have any dependencies (databases, external apps, …) Comes as a single binary, and not 100500 separate applications that I do not know what to do with Supports those email verification things that I do not understand - something to put into DNS or something so that other mail servers trust..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2017-04-01T18:29:40+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="4899.html">Anyone knows Integrated SMTP+IMAP server for small(est) domains?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-04-01T18:29:40Z'>
+              <time itemprop='dateModified' datetime='2017-04-01T18:32:27Z' class='post-time'>
+                April 1, 2017,  6:32pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Does anyone know an <strong>integrated SMTP+IMAP server for unix</strong> that:</p>
+<ul>
+<li>Supports SMTP over SSL</li>
+<li>Supports IMAP over SSL</li>
+<li>Supports multiple email domains, with a small number of accounts in each (support@, me@, …)</li>
+<li>Doesn’t have <strong>any</strong> dependencies (databases, external apps, …)</li>
+<li>Comes as a single binary, and not 100500 separate applications that I do not know what to do with</li>
+<li>Supports those email verification things that I do not understand - something to put into DNS or something so that other mail servers trust the sender</li>
+<li>I do not need UI for administration; I actually prefer nginx-style config.</li>
+<li>I’m OK with no spam filter</li>
+</ul>
+<p>Couldn’t Google anything similar. The closest one was SMTP+POP3(!), and with no SSL (that is a showstopper).</p>
+<p><strong>Why:</strong></p>
+<p>I have a number of small domains for this and that, and for each of them I have an info@ or support@. About 10 email addresses in total.</p>
+<p>Currently they hosted either on <a href="http://fastmail.com" rel="nofollow noopener">fastmail.com</a>, or with the hosting company that hosts the domain WordPress. In pretty much all cases it is extra money (small, but annoying) and extra thing to remember.</p>
+<p>Now I’m consolidating my sites into my own DigitalOcean droplet using the static site generators. Issue tracker is hosted there, too - Redmine. So it is logical to have my emails hosted there as well, BUT there is no simple to configure SMTP+IMAP server. <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"></p>
+<p>I.e. I’m looking for a simplest in configuration SMTP+IMAP server with modern security and reasonable defaults. I do not have skills and time to configure even Exim, not even mentioning IMAP servers.</p>
+<p>…</p>
+<p>IDEA! If nobody knows it, maybe <a class="mention" href="https://discuss.bootstrapped.fm/u/andrey">@andrey</a> should write it.That’s a C++/portable thing that he’s good at. $50 one-time price will pay off in one year for me.</p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stympy.html'><span itemprop='name'>stympy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-01T19:49:28Z' class='post-time'>
+                April 1, 2017,  7:49pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-01T19:49:28Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Here’s an option: <a href="https://mailinabox.email" rel="nofollow noopener">https://mailinabox.email</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-01T22:08:53Z' class='post-time'>
+                April 1, 2017, 10:08pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-01T22:08:53Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thank you. A good attempt, but:</p>
+<blockquote>
+<p>Mail-in-a-Box is based on Postfix, Dovecot, Z-Push, Roundcube, ownCloud, Apache SpamAssassin, Postgrey, Nginx, <span class="mention">@konklone</span>’s nginx config, and more.</p>
+</blockquote>
+<p>Once it is installed, I’m basically left with configuration for all these systems.</p>
+<p>I used to be an admin, so I do know my way around the configuration files, but I do not have time to focus on them anymore. I want a configuration that is as dumb as it can be: new domain? add a config entry or better yet - a directory with the same name. Subdirectories are the users for that domain. Password is in a file within each user directory. That kind of configuration - which is I agree limited but is sufficient for little needs of a small domain owner.</p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/fideloper'><span itemprop='name'>fideloper</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-01T22:57:44Z' class='post-time'>
+                April 1, 2017, 10:57pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-01T22:57:44Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Doubt this exists, but check out dovecot. Might be close to what you want.</p>
+<p><a href="https://www.dovecot.org" class="onebox" target="_blank" rel="nofollow noopener">https://www.dovecot.org</a></p>
+<p>(I think even if you find something, there are still long term issues of maintenance in terms of keeping deliverability up and spam out).</p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aveger.html'><span itemprop='name'>aveger</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-04-02T01:25:27Z'>
+              <time itemprop='dateModified' datetime='2017-04-02T01:28:54Z' class='post-time'>
+                April 2, 2017,  1:28am
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Use Yandex.mail for domain. It’s free.</p>
+<p>I would not recommend you to use an e-mail server on your own VPS. Your e-mails can easily end up in the spam folder. There are so many things to care about when you host your own server.</p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-04-02T14:36:19Z'>
+              <time itemprop='dateModified' datetime='2017-04-02T14:36:31Z' class='post-time'>
+                April 2, 2017,  2:36pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>You really want me to become an outcast for cooperating with Russians from Yandex, eh? <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> Which is recursive, too, because I’m Russian myself. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Nah, I dont want to keep my emails sonewhere else.</p>
+<p>Speaking of requirements for a MTA - they just need not be an open relay and support DKIM and SPF.</p>
+<p>DKIM can be delivered out of the box, keeping in mind that the server would have to support strong cryptography for SSL anyway.</p>
+<p>Publishing DKIM public key to DNS is still a manual step, and a rather inconvenient one in case of LetsEncrypt certs that are changing often. For full automation of this step:</p>
+<ul>
+<li>Either DNS hoster should have an API for updating the DKIM record</li>
+<li>Or the server should email the owner every time the LetsEncrypt changes</li>
+<li>Or the domain to use a self-signed key with a multi-year expiration</li>
+<li>Or the server itself should manage its DNS entries, which is too much, but explains why that Mail in the Box has DNS server in it</li>
+</ul>
+<p>SPF is easy to implement and the server may reminder the owner about necessity to do so by checking the DNS record for the domain.</p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/maximus.html'><span itemprop='name'>maximus</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-02T14:53:59Z' class='post-time'>
+                April 2, 2017,  2:53pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-02T14:53:59Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Google “mail server in docker”.</p>
+<p>We tried a few (don’t know which ones, it was my partner looking), ended up buying subscription for office 365 since we only needed it for the single domain.</p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-04-05T01:17:20Z'>
+              <time itemprop='dateModified' datetime='2017-04-05T01:40:32Z' class='post-time'>
+                April 5, 2017,  1:40am
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="7" data-topic="4899">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/maximus/40/3510_1.png" class="avatar"> maximus:</div>
+<blockquote>
+<p>“mail server in docker”.</p>
+</blockquote>
+</aside>
+<p>Good one. And yet still too complicated, IMHO. Mail-in-the-Box has the same issue, plus the support is… mmm… suboptimal.</p>
+<p>My feeling is that there is reverse tide now - from SaaS to VPS (because the cost of running VPS is so small now, and accumulated cost of various SaaSes is larger, plus your data are in someone’s else hands). So there should be a market for small and simple SMTP+IMAP server for small domain owners.</p>
+<p>I’m thinking there is an option to pay a contractor to build an integral application - wrapper for postfix and dovecot, with extremely simplified configuration. I’m checking with a skillful guy I know how much time would it take.</p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/sts.html'><span itemprop='name'>sts</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-04-05T17:33:20Z'>
+              <time itemprop='dateModified' datetime='2017-04-05T17:34:13Z' class='post-time'>
+                April 5, 2017,  5:34pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Install “Plesk Web Admin Edition” on your droplet. It gives you a nice GUI for everything hosting related, incl. POP, IMAP SMTP, even Webmail. But it’s not free - € 3.75 p. month.<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://scdn7.plesk.com/wp-content/uploads/2017/04/favicon_plesk.png" class="site-icon" width="64" height="64">
+      <a href="https://www.plesk.com/" target="_blank" rel="nofollow noopener">Plesk</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/361;"><img src="https://scdn5.plesk.com/wp-content/uploads/2017/02/plesk_share_image_.png" class="thumbnail"></div>
+
+<h3><a href="https://www.plesk.com/" target="_blank" rel="nofollow noopener">Plesk WebOps platform for applications, websites and hosting</a></h3>
+
+<p>Plesk Onyx is the only tool you'll ever need to build, secure and run websites and applications in the Cloud, faster! Simplify your life and get it now!</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/albuck.html'><span itemprop='name'>albuck</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-05T23:06:24Z' class='post-time'>
+                April 5, 2017, 11:06pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-05T23:06:24Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="3" data-topic="4899">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Once it is installed, I’m basically left with configuration for all these systems.</p>
+<p>I used to be an admin, so I do know my way around the configuration files, but I do not have time to focus on them anymore. I want a configuration that is as dumb as it can be: new domain? add a config entry or better yet - a directory with the same name. Subdirectories are the users for that domain. Password is in a file within each user directory. That kind of configuration - which is I agree limited but is sufficient for little needs of a small domain owner.</p>
+</blockquote>
+</aside>
+<p>I’m getting the impression that you didn’t actually read the setup guide for Mail-in-a-Box, because there is little or no manual maintenance of config files.  It takes over the complete machine and manages everything through a control panel.  The installation guide is written for the non-technical person, not for you as former sysadmin.  If you do change something by hand, it is overwritten on the next update.  They even have a backup scheme and easy way to jump to a new server if/when that becomes necessary. They have both a discussion forum and a slack channel for support.</p>
+<p>The Mail-in-a-Box setup guide also lists more complicated packages if you must get your hands dirty: “try iRedMail, Sovereign, or Modoboa.”</p>
+<p>Can you take yes for an answer? <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Chris.html'><span itemprop='name'>Chris</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-07T20:30:14Z' class='post-time'>
+                April 7, 2017,  8:30pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-07T20:30:14Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="3" data-topic="4899">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Once it is installed, I’m basically left with configuration for all these systems.</p>
+</blockquote>
+</aside>
+<p>No you’re not. You should give a try. It automates everything for you. All you’re left with is a simple Web Admin screen to log into.</p>
+<p>[quote=“rfctr, post:3, topic:4899”]<br>
+I want a configuration that is as dumb as it can be: new domain? add a config entry or better yet - a directory with the same name. Subdirectories are the users for that domain. Password is in a file within each user directory. That kind of configuration[/quote]</p>
+<p>Your description of what you’d like is FAR more complicated than what Mail In A Box requires you to do.</p>
+<p>Stop reading about it. Go pay <a href="http://Linode.com" rel="nofollow noopener">Linode.com</a> $5 for an Ubuntu 14 server. Go buy a new domain at <a href="https://www.gandi.net" rel="nofollow noopener">https://www.gandi.net</a> Run the Mail In A Box installer. Follow the “dumb as it can be” instructions. Log into the Web Admin and add a new account, flip some settings, whatever…</p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4899.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-05-27T21:55:09Z' class='post-time'>
+                May 27, 2017,  9:55pm
+              </time>
+              <meta itemprop='dateModified' content='2017-05-27T21:55:09Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="4" data-topic="4899">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/fideloper/40/1329_1.png" class="avatar"> fideloper:</div>
+<blockquote>
+<p>check out dovecot</p>
+</blockquote>
+</aside>
+<p>At first I ignored this advice as I knew that dovecot is IMAP-only server, but then I checked their roadmap and found this:</p>
+<blockquote>
+<p>SMTP submission server: Started</p>
+</blockquote>
+<p>Great! So someone skilled is actually working on this. I just need to wait another year or so - that I can do. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Anyone knows Integrated SMTP+IMAP server for small(est) domains?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

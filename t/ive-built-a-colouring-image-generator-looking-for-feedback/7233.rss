@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>I&#39;ve built a colouring image generator - Looking for feedback!</title>
+    <link>https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233</link>
+    <description>Hey! 👋
+
+[I present to you Colouring!](https://colouring.xyz) A very simple-to-use tool that converts any image into a ready-to-colour image 😀
+
+I thought to myself: there&#39;s probably a lot of parents out there thinking of ways to keep their kids entertained during the lockdown - maybe I can do something to help? So I built this! A one-click web app that converts any image into a colouring one 🎨
+
+Let me know what you think, and any constructive feedback is welcomed! Thanks</description>
+    
+    <lastBuildDate>Wed, 21 Oct 2020 08:22:54 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>I&#39;ve built a colouring image generator - Looking for feedback!</title>
+        <dc:creator><![CDATA[gpirescampos]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback Robert!</p>
+<p>The names I used for the sliders are the same used in the image creation algorithm. Didn’t put much thought into it, but I’ll look into maybe making them more understandable.</p>
+<p>Regarding the live preview, unfortunately, it’s hard to make it any better since I’m trying to maintain a good 50/50 ratio between both images, without breaking the style of the page too much. But I do see where you’re getting at. Maybe doing something like a small preview for the original, and focusing on the output could help? Something like 20/80, or even the original showing on the top left corner or something. Will look into that.</p>
+<p>Currently, I’m not trying to strongly monetise it. This was mostly a side project, although I’ve been tinkering with some ideas. My focus now is trying to increase my DAU, and incorporating as much feedback as possible to make it a tight, and usable, tool <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/5</link>
+        <pubDate>Wed, 21 Oct 2020 08:22:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7233-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233.rss">I&#39;ve built a colouring image generator - Looking for feedback!</source>
+      </item>
+      <item>
+        <title>I&#39;ve built a colouring image generator - Looking for feedback!</title>
+        <dc:creator><![CDATA[robertbalent]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh, seems like I somehow missed it <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> The button is definitely more visible now.</p>
+<p>I tried to tweak few parameters and resulting images are much better.</p>
+<p>I also had few difficulties. I’m not sure what exactly the Threshold means. Also the live preview is pretty small and I can’t see very well how are the parameters affecting resulting image.</p>
+<p>But altogether, It looks really nice. Good job.</p>
+<p>What are your plans with this project? Are you thinking about making some paid features?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/4</link>
+        <pubDate>Wed, 21 Oct 2020 03:22:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7233-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233.rss">I&#39;ve built a colouring image generator - Looking for feedback!</source>
+      </item>
+      <item>
+        <title>I&#39;ve built a colouring image generator - Looking for feedback!</title>
+        <dc:creator><![CDATA[gpirescampos]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey, thanks for trying it out! There’s an advanced mode that allows users to tweak the images, right next to the “Click for magic” button. Maybe it’s not clear that it is a button, and I should make it pop a bit?</p>
+<p>I’m using React for everything. And OpenCV for the image processing!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/3</link>
+        <pubDate>Mon, 19 Oct 2020 21:16:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7233-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233.rss">I&#39;ve built a colouring image generator - Looking for feedback!</source>
+      </item>
+      <item>
+        <title>I&#39;ve built a colouring image generator - Looking for feedback!</title>
+        <dc:creator><![CDATA[robertbalent]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, it’s really nice project. What technologies are you using?</p>
+<p>I think it would be good if you give user some options to tweak few parameters. For example line thickness. I tried few images and lines were too thick. For example the one from your website:</p>
+<p><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/0c3360078e15f3cf4927bfde187bf763d05939dc.png" alt="Colouring" data-base62-sha1="1JVNCrch6OXp8CgWmfLXbE1gtn6" width="500" height="251"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/2</link>
+        <pubDate>Mon, 19 Oct 2020 18:39:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7233-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233.rss">I&#39;ve built a colouring image generator - Looking for feedback!</source>
+      </item>
+      <item>
+        <title>I&#39;ve built a colouring image generator - Looking for feedback!</title>
+        <dc:creator><![CDATA[gpirescampos]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey! <img src="https://emoji.discourse-cdn.com/twitter/wave.png?v=9" title=":wave:" class="emoji" alt=":wave:"></p>
+<p><a href="https://colouring.xyz">I present to you Colouring!</a> A very simple-to-use tool that converts any image into a ready-to-colour image <img src="https://emoji.discourse-cdn.com/twitter/grinning.png?v=9" title=":grinning:" class="emoji" alt=":grinning:"></p>
+<p>I thought to myself: there’s probably a lot of parents out there thinking of ways to keep their kids entertained during the lockdown - maybe I can do something to help? So I built this! A one-click web app that converts any image into a colouring one <img src="https://emoji.discourse-cdn.com/twitter/art.png?v=9" title=":art:" class="emoji" alt=":art:"></p>
+<p>Let me know what you think, and any constructive feedback is welcomed! Thanks</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233/1</link>
+        <pubDate>Sun, 18 Oct 2020 05:24:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7233-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ive-built-a-colouring-image-generator-looking-for-feedback/7233.rss">I&#39;ve built a colouring image generator - Looking for feedback!</source>
+      </item>
+  </channel>
+</rss>

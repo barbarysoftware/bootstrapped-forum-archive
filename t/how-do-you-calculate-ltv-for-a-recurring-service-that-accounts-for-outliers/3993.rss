@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How do you calculate LTV for a Recurring service that accounts for outliers?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993</link>
+    <description>We&#39;ve been testing a Subscription version of our software for a few years now.
+
+I went in and calculated what I think our LTV per customer is.  
+I looked at a group of customers who subscribed in 2013 and then looked at their lifetime value ...so far.
+So I calculated total months, total revenue and then divided by number of customers.
+
+BUT... here&#39;s the kicker:
+About 6% of those users are **still subscribe**d. They could stay subscribed **forever**.
+I don&#39;t have enough data to predict that (based on the math I know :slight_smile:
+
+
+Any suggestions?</description>
+    
+    <lastBuildDate>Sun, 12 Jun 2016 12:26:33 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How do you calculate LTV for a Recurring service that accounts for outliers?</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>True, but I run the risk of missing marketing opportunities. (As you have suggested, I am usually very conservative, but that can lead to missing opportunities)</p>
+<p>Let’s say my conservative LTV is $100 but the true value is $200. And I find that Adwords costs $110 per paying customer.<br>
+If I use the conservative number, I’ll never advertise.  But I might miss out on nearly doubling every dollar of advertising I put into it.</p>
+<p>And… I was calculating LTV wrong. <a class="mention" href="/u/pjc">@pjc</a> correctly pointed out that I need to base it on Churn rate.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993/4</link>
+        <pubDate>Sun, 12 Jun 2016 12:26:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3993-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993.rss">How do you calculate LTV for a Recurring service that accounts for outliers?</source>
+      </item>
+      <item>
+        <title>How do you calculate LTV for a Recurring service that accounts for outliers?</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>Why worry about the outliers? Use your calculated LTV number as a “good enough” number - you’ll be erring on the side of being conservative with it, which will prevent overspending on acquiring customers, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993/3</link>
+        <pubDate>Mon, 25 Apr 2016 17:16:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3993-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993.rss">How do you calculate LTV for a Recurring service that accounts for outliers?</source>
+      </item>
+      <item>
+        <title>How do you calculate LTV for a Recurring service that accounts for outliers?</title>
+        <dc:creator><![CDATA[pjc]]></dc:creator>
+        <description><![CDATA[
+            <p>Calculate monthly churn and extrapolate from there.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993/2</link>
+        <pubDate>Mon, 25 Apr 2016 05:27:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3993-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993.rss">How do you calculate LTV for a Recurring service that accounts for outliers?</source>
+      </item>
+      <item>
+        <title>How do you calculate LTV for a Recurring service that accounts for outliers?</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ve been testing a Subscription version of our software for a few years now.</p>
+<p>I went in and calculated what I think our LTV per customer is.<br>
+I looked at a group of customers who subscribed in 2013 and then looked at their lifetime value …so far.<br>
+So I calculated total months, total revenue and then divided by number of customers.</p>
+<p>BUT… here’s the kicker:<br>
+About 6% of those users are <strong>still subscribe</strong>d. They could stay subscribed <strong>forever</strong>.<br>
+I don’t have enough data to predict that (based on the math I know <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Any suggestions?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993/1</link>
+        <pubDate>Sun, 24 Apr 2016 22:58:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3993-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-calculate-ltv-for-a-recurring-service-that-accounts-for-outliers/3993.rss">How do you calculate LTV for a Recurring service that accounts for outliers?</source>
+      </item>
+  </channel>
+</rss>

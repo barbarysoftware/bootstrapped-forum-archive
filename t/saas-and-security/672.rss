@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SaaS and security</title>
+    <link>https://discuss.bootstrapped.fm/t/saas-and-security/672</link>
+    <description>@ian just posted this in his [twitter stream][1]. I know he&#39;s not going to post it on here, so I will.
+
+&lt;img src=&quot;/uploads/bootstrapped/7/a246d3140814947b.png&quot; width=&quot;495&quot; height=&quot;427&quot;&gt; 
+
+
+Just another thing to worry about when you&#39;re running a SaaS app.
+
+
+  [1]: https://twitter.com/ianlandsman/</description>
+    
+    <lastBuildDate>Fri, 15 Nov 2013 20:17:03 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[smu]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>I just made an account to reply to this thread. I actually am a full-time security researcher and pentester.<br>
+If any of you would like some help with security related issues, some pointers about secure development or you’d like me to have a quick look at your site, just let me know (contact details are in profile).<br>
+If there’s enough interest, I could maybe make a small guide on the subject.</p>
+<p>I’m glad to help!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/13</link>
+        <pubDate>Fri, 15 Nov 2013 20:17:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[najafali]]></dc:creator>
+        <description><![CDATA[
+            <p>Second the recommendation for WAHH. There are vulnerabilities in there that developers will be re-implementing decades from now.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/12</link>
+        <pubDate>Thu, 14 Nov 2013 14:46:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>This reminded me I saw a good presentation at Monitorama in Berlin earlier this year on penetration testing, lots of actionable stuff: <a href="https://vimeo.com/75665772">https://vimeo.com/75665772</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/11</link>
+        <pubDate>Wed, 13 Nov 2013 14:55:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[etd]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there,</p>
+<p>While attracting security researchers and having a /security page is a first good step, you have to remember that this is just relying on the goodwill of the “security researchers”. It is your responsibility to make sure your app is secure and your user’s data is safe.</p>
+<p>I think that information security should be a 1st level concern when it comes to building systems online (but my background is in infosec, so maybe I’m biased). Of course it all depends on the value of the data your app is managing (e.g. stay away from credit cards, do something sensible with your password hashes, etc.), but putting something out there without thinking about security first can be a big problem. And even if you consider that your data / app is not so valuable you can’t minimise the risk of serving as a ‘drive by’ target (somebody compromises your app/server and then attacks someone from there). Or the user-harvesting breaches that we are reading about.</p>
+<p>For those wanting to get a lot deeper into the subject, I’d recommend <a href="http://www.amazon.com/The-Web-Application-Hackers-Handbook/dp/1118026470" rel="nofollow noopener">The Web Application Hacker’s Handbook</a> which is focussed on the attack perspective. Back in the day I tried to make a summary from the developer’s perspective in this guide: <a href="http://www.cpni.gov.uk/documents/publications/2011/2011026-development_and_implementation_of_secure_web%20applications.pdf?epslanguage=en-gb" rel="nofollow noopener">Development and implementation of secure web applications</a>.</p>
+<p>Getting some issue reports by the researcher community is great, having a /security page is indispensable but I think app owners need to be proactive about this.</p>
+<p>My 2c,<br>
+Daniel</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/10</link>
+        <pubDate>Wed, 13 Nov 2013 14:19:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[pdebruic]]></dc:creator>
+        <description><![CDATA[
+            <p>you might check if there is a OWASP chapter near you:</p>
+<p><a href="https://www.owasp.org/" class="onebox" target="_blank" rel="nofollow noopener">https://www.owasp.org/</a></p>
+<p>and they’re on <a href="http://freenode.net" rel="nofollow noopener">freenode.net</a> in the <span class="hashtag">#owasp</span> channel</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/9</link>
+        <pubDate>Sat, 09 Nov 2013 00:43:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>I never asked, if you put up a security page and get any traffic at all they’ll pretty much find you. However, there is a startup around this idea you could list with <a href="https://bugcrowd.com/">https://bugcrowd.com/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/8</link>
+        <pubDate>Wed, 06 Nov 2013 14:36:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[mikesperanza36]]></dc:creator>
+        <description><![CDATA[
+            <p>Where did you ask for help from security researchers? Is there a website/forum?<br>
+I’d like to implement something like that for my SaaS too.<br>
+Many thanks,<br>
+Mike</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/7</link>
+        <pubDate>Wed, 06 Nov 2013 13:36:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, well actually we weren’t really running it right early on. I had no idea what I was doing <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"> If we did it again now there would be a lot less as early I put some up for duplicates, etc but since I already put them up I’m leaving them. At least for now. Most were also extremely minor, but I guess better to list than not.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/6</link>
+        <pubDate>Tue, 22 Oct 2013 20:54:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>wow, that’s quite a list of people in the “Thanks for working with us” section. Scary stuff, how many vulnerabilities just about any site must have, the moment you open the virtual doors for business.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/5</link>
+        <pubDate>Tue, 22 Oct 2013 20:51:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice! Implementing right now.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/4</link>
+        <pubDate>Tue, 22 Oct 2013 20:23:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[najafali]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/ian">@ian</a> only thing I would add to that page is a note saying that while you appreciate any and all attention from security researchers, you really would prefer it if they adhered to a few guidelines. For example:</p>
+<ul>
+<li>
+<p>Refraining from using automated scanning tools, as if for example an access control vulnerability is found this might result in a huge loss/modification of other users data.</p>
+</li>
+<li>
+<p>That they make a best effort not to compromise or modify the data of other users.</p>
+</li>
+</ul>
+<p>Etsy provide it a great example of this on their Responsible Disclosure page: <a href="http://www.etsy.com/uk/help/article/2463" rel="nofollow noopener">http://www.etsy.com/uk/help/article/2463</a></p>
+<p>Hope that helps in some way <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/3</link>
+        <pubDate>Tue, 22 Oct 2013 20:11:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>I will clarify this for you fine folks here though as it may be useful. There’s a group of people these days who test apps (mostly XSS in my experience) simple for challenge, credit and sometimes profit. They’re pretty much “white hat” and if you have a security page for you SaaS app they’ll notify you. Generally with the expectation that you’ll at least list them on a wall of fame. You can see ours here: <a href="http://www.besnappy.com/security">http://www.besnappy.com/security</a></p>
+<p>I did this on the recommendation of <a class="mention" href="/u/patio11">@patio11</a> actually. Now, I will say, it’s pretty stressful when it starts out <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"> as knowing people are trying to hack you is rather scary. It will usually start very heavy. The day it started for us is now forever known as Freakout Friday, named such by my devs. Apparently, I got a little up tight that day!</p>
+<p>Anyway, while it’s occasionally annoying and it totally messes up your stats I think overall it’s pretty useful. While nothing was found that was a huge hole they did find things and better someone who’s willing to tell you finds it then someone who’s going to try and abuse it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/2</link>
+        <pubDate>Mon, 21 Oct 2013 19:28:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+      <item>
+        <title>SaaS and security</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/ian">@ian</a> just posted this in his <a href="https://twitter.com/ianlandsman/">twitter stream</a>. I know he’s not going to post it on here, so I will.</p>
+<p><img src="/uploads/bootstrapped/7/a246d3140814947b.png" width="495" height="427"> </p>
+<p>Just another thing to worry about when you’re running a SaaS app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-and-security/672/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-and-security/672/1</link>
+        <pubDate>Mon, 21 Oct 2013 19:07:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-672-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-and-security/672.rss">SaaS and security</source>
+      </item>
+  </channel>
+</rss>

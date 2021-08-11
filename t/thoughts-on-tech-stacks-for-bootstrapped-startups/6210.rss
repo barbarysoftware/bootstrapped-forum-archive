@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+    <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210</link>
+    <description>Interesting article from @jitbit on tech stacks for bootstrapped startups.  
+
+https://medium.com/@jitbit/thoughts-on-tech-stacks-for-bootstrapped-startups-f3c8f2525837
+
+... and since I hate Medium with a burning passion, here&#39;s the canonical:
+
+https://www.jitbit.com/alexblog/276-thoughts-on-tech-stacks-for-bootstrapped-startups/</description>
+    
+    <lastBuildDate>Tue, 07 May 2019 21:19:40 +0000</lastBuildDate>
+    <category>Interesting Links</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s my 2 cents: I think most discussions about “software stacks” or programming languages neglect to consider the complexity dimension. If your problem domain is fairly simple and can be modelled easily, you can get away with almost anything. But that’s not always the case.</p>
+<p>As a solo-founder with a complex problem domain, I can’t afford to use a “software stack” that doesn’t help me to handle the complexity. Anything which lets me keep things simple is great. In my case this meant going with Clojure (server side) and ClojureScript (client side), because that way most of the model code is shared between client and server and there are not data conversions (no JSON or XML on the way, for example). And I derive a lot of benefit from things in Clojure that help in dealing with complexity: clojure.spec or core.async are good examples.</p>
+<p>I use Semantic-UI for CSS styling, because it is mature and complete. I use React for rendering because it is mature and works (I do not follow the latest developments, as they are mostly unnecessary for ClojureScript).</p>
+<p>I avoid microservices. I recently had to rewrite some of my code as asynchronous, and it is <em>really</em> difficult to get it right, and I haven’t even introduced the “unreliable networking between services” part.</p>
+<p>I use Docker containers, but avoid any “orchestration” solutions: computers are really fast and 2-3 servers are enough for most apps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/12</link>
+        <pubDate>Tue, 07 May 2019 21:19:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>The best tech stack for your startup is the one you know. Facebook was written in PHP, StackOverflow in <a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a> MVC, Basecamp in Rails. Developers like to attribute too much importance to these things, because that is what they find fun. If you are the 1% of startups that gets big, that’s great, you can then hire some devs to sort out any scaling issues while you work on the business.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/11</link>
+        <pubDate>Tue, 05 Feb 2019 23:37:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="6210">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4753_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I tend to agree that microservices is a poorly understood hype. They have their place, but not in a small business.</p>
+</blockquote>
+</aside>
+<p>We had 12 microservices 6 month ago. Only 4 remain now, soon to be merged back to monolith. The app server startup time decreased from almost 5 minutes to less than 30 seconds and the memory footprint went from 630 Mb to just over 200.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/10</link>
+        <pubDate>Tue, 05 Feb 2019 12:05:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="6210">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dominicstpierre/40/2990_2.png" class="avatar"> dominicstpierre:</div>
+<blockquote>
+<p>I think the time where “I should be first in that market” is over.</p>
+</blockquote>
+</aside>
+<p>When I said “move fast”, what I really meant is “build cheap”. If I spend 5 years building something that brings in only $1000/mo, it will never pay for itself before I die. The same thing built over a 2 weeks vacation would become profitable within a year.</p>
+<p>(Here I estimate my costs as lost profits from my contracting work - i.e. if instead of building The Thing I just do my contracting work all the hours I otherwise spend on The Thing).</p>
+<aside class="quote no-group" data-post="6" data-topic="6210">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dominicstpierre/40/2990_2.png" class="avatar"> dominicstpierre:</div>
+<blockquote>
+<p>Microservices and Go (both mentioned in your article <a class="mention" href="/u/jitbit">@jitbit</a> are pretty much established for a loooong time</p>
+</blockquote>
+</aside>
+<p>Nah, not really. Depends on the market, I guess - but I don’t see Go in enterprise, and  microservices, well… I don’t see them either! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=6" title=":slight_smile:" class="emoji" alt=":slight_smile:"> most services have a large, mixed, set of operations; this is because adding another endpoint is more expensive than adding another operation, methinks.</p>
+<p>Every service requires its own build, deployment, support, FW, monitoring, … more services - more overhead. When each service has its own team - it makes sense; when there are fewer people than the operations - a large monolithic service is just less expensive.</p>
+<p>I tend to agree that microservices is a poorly understood hype. They have their place, but not in a small business.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/9</link>
+        <pubDate>Mon, 04 Feb 2019 17:56:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <p>Great, I hear you. But the 2019 thing is of course not what I meant. I meant don’t discard automatically ALL concepts just on the pre-text that they are “new”. To me microservices (among lots of other topic) can still be worth the decision, even FaaS even if the dev had not have experience with it, IF it’s going to truly help what they are trying to do.</p>
+<p>If it’s a CRUD product without much technical challenges, than yes, of course any safe and proven stacks would do. But it’s a decision I think can brings lots of benefits from the start.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/8</link>
+        <pubDate>Mon, 04 Feb 2019 16:28:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>So your point is basically: (1) “because it’s 2019 not 2009” (2) “because I’m sick of the old stuff from doing consulting”</p>
+<ol>
+<li>
+<p>Developing something “like it’s 2019 not 2009” - is exactly the approach I’m fighting with. Picking a tech-stack just “because it’s what 2019 tells us to pick” is what I’m against. Also I’m 100% with DHH on this: <a href="https://m.signalvnoise.com/the-majestic-monolith/" rel="nofollow noopener">https://m.signalvnoise.com/the-majestic-monolith/</a></p>
+</li>
+<li>
+<p>I did mention that using a new cool technology can be a huge motivation factor, so (kinda) agreed.</p>
+</li>
+</ol>
+<p>Actually the thing is - my post actually proves what both <a class="mention" href="/u/dominicstpierre">@dominicstpierre</a> and <a class="mention" href="/u/serge">@Serge</a> are saying, can’t you see? <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=6" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>By “going fast” I didn’t mean “rushing the product”. I meant - “technology shouldn’t be the thing that slows your down”. It should be invisible, neglectable. Exactly <em>because</em> you need more time for the “non-coding” side of things.</p>
+<p><strong>Technology should be the least time consuming step, because you need more time for the non-dev tasks</strong>, like interviewing potential customers, evaluating the idea, researching the market, thinking about customer acquisition. You don’t have time for the new fancy stuff just because it’s new and fancy - that’s the point.</p>
+<p>So we’re on the same side of the fence here.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/7</link>
+        <pubDate>Mon, 04 Feb 2019 15:44:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/serge">@Serge</a></p>
+<p>Also, is going fast, fast is really still important? Maybe nowadays it’s more beneficial to take our times, talk to potential customers and slowly build ~the right thing once we know exactly what they want. I think the time where “I should be first in that market” is over.</p>
+<p>Also, if they are building while consulting or having a 9-5 job to me suggesting to use older stacks / tech might not be appropriate to everyone.</p>
+<p>Again, this depends, and when I built LeadFuze and than Roadmap I was excited and energized by the fact that I was building those in a different stacks/languages than the one I was paid for via consulting since the last 15 years. If I had picked what I was comfortable with, I would not have the energy to develop them I’m certain of it.</p>
+<p>Also I kind of have huge difficulties reading “don’t use microservices” really? Microservices and Go (both mentioned in your article <a class="mention" href="/u/jitbit">@jitbit</a> are pretty much established for a loooong time).</p>
+<p>I do understand the concept of “don’t waste time working on infrastructure and non product related aspects”. But writing a product like if it were 2009 in 2019 kind of does not really make sense to me.</p>
+<p>I would prefer suggesting to new dev-entrepreneur  to instead take their time before building, <strong>don’t build anything</strong> until you know what your potential customers will pay you for, than build it correctly with the right infra and the right stacks to tackle technical problems.</p>
+<p>They need to know how to build a business, suggesting to build quick and monolith could have huge impact when they finally learn what customers will pay for and will have to do a 95% refactoring of their code they crafted way to quickly and without tests etc.</p>
+<p>Time is too valuable to simply go, go, go and build an app that the dev-entrepreneur will dislike 3 months after launch because it’s not flexible enough could be a much time waster than having taken the time to build it with more strategies in the first place.</p>
+<p>There’s ways to create an MVP quickly even when using microservices and JavaScript framework. Once you have more knowledge of the problem you’re trying to solve instead of jumping the gun and building another todo list app, it can be done quickly and with long time maintenance in mind at the same time I think.</p>
+<p>My 2 cents <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=6" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/6</link>
+        <pubDate>Mon, 04 Feb 2019 12:40:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh well, another opinion on the subject…</p>
+<p>As always it depends what you are building. My last project was an offline dispatch application… so no Javascript framework … is a lot of work… (ask me how I know… lol).</p>
+<p>I would say go with what you know… get something working fast… show it a lot. Your biggest problem is going to be selling it, not building it… I always found the building it part easy and fun…</p>
+<p>I mean, you can’t go much wrong with the modern stacks… I mean they work or can be made to work…</p>
+<p>I dunno… those technology decisions are nothing compared to the problem of a software that has no customer…</p>
+<p>I don’t think it’s that important of a decision when you start…</p>
+<p>Just my 2 cents.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/5</link>
+        <pubDate>Mon, 04 Feb 2019 12:05:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="6210">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4753_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Some people may take it seriously <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=6" title=":slight_smile:" class="emoji" alt=":slight_smile:"> On a smartphone? Yeah, right.</p>
+<p>What cities have WiFi in subway, anyway? I know Moscow has it even in tunnels;</p>
+</blockquote>
+</aside>
+<p>I actually did that once <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=6" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Had to RDP to our app-server and edit a config file using my iPhone.</p>
+<p>PS. It was in London back in 2014, on a 3G connection (Virgin). HongKong, Chicago, Barcelona, NYC, Moscow etc. etc. - lot of cities have underground coverage these days (these are just the ones I’ve been to, there’ probably more)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/4</link>
+        <pubDate>Sun, 03 Feb 2019 10:02:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Good article, but: the overall idea seem to be “move fast”, but that idea is kinda muted - it is not even in any of the headers! The whole idea IMHO would come across much clearer if the article is called “Move Fast over Cool Stack” or something like that.</p>
+<blockquote>
+<p>And fixing it using your mobile phone while riding the subway.</p>
+</blockquote>
+<p>Some people may take it seriously <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=6" title=":slight_smile:" class="emoji" alt=":slight_smile:"> On a smartphone? Yeah, right.</p>
+<p>What cities have WiFi in subway, anyway? I know Moscow has it even in tunnels; Toronto has it on a few stations (not in tunnels).</p>
+<blockquote>
+<p>Write tests after fixing bugs</p>
+</blockquote>
+<p>Being pedantic, I have to point out that the test should be written <strong>before</strong> the fix. The failing test proves the defect was in fact reproduced (the root cause and the scenario were found correctly). Then you fix it, and the test passes. Then you run it every build.</p>
+<p>Do it other way around, and you bound to run into fake fixes - the devs report the fix, it goes into PROD… and the defect is still reproducible.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/3</link>
+        <pubDate>Fri, 01 Feb 2019 02:35:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Whoa, thanks for sharing man!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/2</link>
+        <pubDate>Thu, 31 Jan 2019 20:25:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+      <item>
+        <title>Thoughts on Tech Stacks for Bootstrapped Startups</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting article from <a class="mention" href="/u/jitbit">@jitbit</a> on tech stacks for bootstrapped startups.</p>
+<p><a href="https://medium.com/@jitbit/thoughts-on-tech-stacks-for-bootstrapped-startups-f3c8f2525837" class="onebox" target="_blank" rel="nofollow noopener">https://medium.com/@jitbit/thoughts-on-tech-stacks-for-bootstrapped-startups-f3c8f2525837</a></p>
+<p>… and since I hate Medium with a burning passion, here’s the canonical:</p>
+<p><a href="https://www.jitbit.com/alexblog/276-thoughts-on-tech-stacks-for-bootstrapped-startups/" class="onebox" target="_blank" rel="nofollow noopener">https://www.jitbit.com/alexblog/276-thoughts-on-tech-stacks-for-bootstrapped-startups/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210/1</link>
+        <pubDate>Thu, 31 Jan 2019 02:25:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6210-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/thoughts-on-tech-stacks-for-bootstrapped-startups/6210.rss">Thoughts on Tech Stacks for Bootstrapped Startups</source>
+      </item>
+  </channel>
+</rss>

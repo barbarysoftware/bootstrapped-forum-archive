@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Concrete ramifications of Safe Harbor strike down ruling by EU court?</title>
+    <link>https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542</link>
+    <description>Hi there,
+
+The [EU court just invalidated Safe Harbor][1], and I&#39;m trying to figure out the ramifications &amp; the required changes, as an EU-based B2B SaaS bootstrapper.
+
+Many EU-based SaaS bootstrappers leverage all kind of US-based services (think: Mandrill, Mailchimp, Heroku, AWS, EngineYard, and many more), provided that they were Safe Harbor compliant, to make their current work possible.
+
+Since the Snowden revelations occurred, it became clear to me that Safe Harbor wouldn&#39;t hold too long in its current state, since otherwise it would have been a blatant joke. It &quot;just&quot; took one persistent activist (Maximillian Schrems) and we&#39;re there today.
+
+So now as bootstrappers, I&#39;m left with questions such as (brainstorming):
+
+* Are we indeed required by law to stop using US-based services in their current form?
+* Is there a legal way (like asking customers consent explicitely) to still use these services?
+* If we start using local alternatives (sometimes less good, or even less secure in a way), won&#39;t that cause issues later for US-customers (I&#39;d expect US to backfire in a way, maybe in a couple of months / years)?
+
+I hope to start a useful discussion (pragmatic takes, no trolling, no &quot;this is all NSA&#39;s fault&quot; &amp; other opinions - let&#39;s keep this usable), a bit like what @rachelandrew did for EU VAT.
+
+If you have interesting facts or understandings, please share :smile:  
+
+(As a sidenote, I can say I&#39;m seriously considering targeting France only for my next SaaS (at least to get started), because finding Safe Harbor providers, then EU VAT complexities, then now this, is getting tiring).
+
+  [1]: http://arstechnica.com/tech-policy/2015/10/europes-highest-court-strikes-down-safe-harbour-data-sharing-between-eu-and-us/</description>
+    
+    <lastBuildDate>Mon, 06 Jun 2016 12:07:48 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Concrete ramifications of Safe Harbor strike down ruling by EU court?</title>
+        <dc:creator><![CDATA[ThomaslCarney]]></dc:creator>
+        <description><![CDATA[
+            <p>I actually created a mini-website around the impact of Safe Harbour, the implications and a list of European SaaS companies you can switch to if you need an EU legislation-compliant place to put your data.</p>
+<p>You’ll find it at <a href="https://endofsafeharbor.eu" rel="nofollow noopener">https://endofsafeharbor.eu</a></p>
+<p>If you have a SaaS company that hosts its data solely in the EU, I’d be happy to add you to the site!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/7</link>
+        <pubDate>Mon, 06 Jun 2016 12:07:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3542-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542.rss">Concrete ramifications of Safe Harbor strike down ruling by EU court?</source>
+      </item>
+      <item>
+        <title>Concrete ramifications of Safe Harbor strike down ruling by EU court?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m also worried about this. This weekend I had planned to setup my new SaaS application server, a Linode VPS LAMP server hosted at London. But the problem is that currently I’m targeting Spanish users, so I don’t know if I can hire an american server which is located in the UE without breaking UE privacy laws. It’s so difficult… <img src="https://emoji.discourse-cdn.com/twitter/confused.png?v=5" title=":confused:" class="emoji" alt=":confused:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/6</link>
+        <pubDate>Wed, 07 Oct 2015 11:26:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3542-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542.rss">Concrete ramifications of Safe Harbor strike down ruling by EU court?</source>
+      </item>
+      <item>
+        <title>Concrete ramifications of Safe Harbor strike down ruling by EU court?</title>
+        <dc:creator><![CDATA[thibaut_barrere]]></dc:creator>
+        <description><![CDATA[
+            <p>To underline one point, since someone reminded me of that on twitter: I have the feeling that the consequences won’t be the same for B2B and B2C (even if you also happen to store “personal data” at times in B2B, like billing information etc), and that it will be easier to handle B2B.</p>
+<p>Time will tell.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/5</link>
+        <pubDate>Wed, 07 Oct 2015 08:41:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3542-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542.rss">Concrete ramifications of Safe Harbor strike down ruling by EU court?</source>
+      </item>
+      <item>
+        <title>Concrete ramifications of Safe Harbor strike down ruling by EU court?</title>
+        <dc:creator><![CDATA[jnye131]]></dc:creator>
+        <description><![CDATA[
+            <p>At day job - legal is still digesting this and trying to figure it out. So holding fire seems to be what everyone is doing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/4</link>
+        <pubDate>Wed, 07 Oct 2015 08:14:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3542-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542.rss">Concrete ramifications of Safe Harbor strike down ruling by EU court?</source>
+      </item>
+      <item>
+        <title>Concrete ramifications of Safe Harbor strike down ruling by EU court?</title>
+        <dc:creator><![CDATA[thibaut_barrere]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="3542">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>I would hold fire and see how this plays out for now</p>
+</blockquote>
+</aside>
+<p>That’s also my current position - I don’t want to over-react, or react too soon, yet I’m willing to do initial research to get a better understanding, start a discussion, and ultimately do what needs to be done.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/3</link>
+        <pubDate>Wed, 07 Oct 2015 08:11:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3542-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542.rss">Concrete ramifications of Safe Harbor strike down ruling by EU court?</source>
+      </item>
+      <item>
+        <title>Concrete ramifications of Safe Harbor strike down ruling by EU court?</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>I would hold fire and see how this plays out for now - much bigger concerns than ours are effected and this could be huge… or nothing… depending on how its interpreted, enforced and perhaps replaced.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/2</link>
+        <pubDate>Wed, 07 Oct 2015 08:08:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3542-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542.rss">Concrete ramifications of Safe Harbor strike down ruling by EU court?</source>
+      </item>
+      <item>
+        <title>Concrete ramifications of Safe Harbor strike down ruling by EU court?</title>
+        <dc:creator><![CDATA[thibaut_barrere]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there,</p>
+<p>The <a href="http://arstechnica.com/tech-policy/2015/10/europes-highest-court-strikes-down-safe-harbour-data-sharing-between-eu-and-us/" rel="nofollow noopener">EU court just invalidated Safe Harbor</a>, and I’m trying to figure out the ramifications &amp; the required changes, as an EU-based B2B SaaS bootstrapper.</p>
+<p>Many EU-based SaaS bootstrappers leverage all kind of US-based services (think: Mandrill, Mailchimp, Heroku, AWS, EngineYard, and many more), provided that they were Safe Harbor compliant, to make their current work possible.</p>
+<p>Since the Snowden revelations occurred, it became clear to me that Safe Harbor wouldn’t hold too long in its current state, since otherwise it would have been a blatant joke. It “just” took one persistent activist (Maximillian Schrems) and we’re there today.</p>
+<p>So now as bootstrappers, I’m left with questions such as (brainstorming):</p>
+<ul>
+<li>Are we indeed required by law to stop using US-based services in their current form?</li>
+<li>Is there a legal way (like asking customers consent explicitely) to still use these services?</li>
+<li>If we start using local alternatives (sometimes less good, or even less secure in a way), won’t that cause issues later for US-customers (I’d expect US to backfire in a way, maybe in a couple of months / years)?</li>
+</ul>
+<p>I hope to start a useful discussion (pragmatic takes, no trolling, no “this is all NSA’s fault” &amp; other opinions - let’s keep this usable), a bit like what <a class="mention" href="/u/rachelandrew">@rachelandrew</a> did for EU VAT.</p>
+<p>If you have interesting facts or understandings, please share <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>(As a sidenote, I can say I’m seriously considering targeting France only for my next SaaS (at least to get started), because finding Safe Harbor providers, then EU VAT complexities, then now this, is getting tiring).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542/1</link>
+        <pubDate>Wed, 07 Oct 2015 08:01:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3542-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concrete-ramifications-of-safe-harbor-strike-down-ruling-by-eu-court/3542.rss">Concrete ramifications of Safe Harbor strike down ruling by EU court?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>My experiences with PayPal for SaaS</title>
+    <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073</link>
+    <description>I recently had to integrate PayPal for the SaaS-like subscription model of my [app](https://fman.io). It was a wild ride and I wrote a [blog post](https://fman.io/blog/paypal-for-saas-99-problems/) about the experience. Maybe some of you are thinking of integrating PayPal for their SaaS app, or have already set up PayPal and want to hear someone else&#39;s experiences. The TL;DR: It&#39;s a pain to set up. Only do it if your customers are consumers who perceive PayPal as &quot;secure&quot;.</description>
+    
+    <lastBuildDate>Mon, 05 Feb 2018 15:54:35 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[mherrmann]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s another good reason why you’d want to use PayPal as a consumer: It acts as an intermediary between you and the vendor. Especially in the case of subscriptions, this can be useful. When you give a company your credit card info, they can charge you again at any time in the future. If on the other hand you use PayPal, they can’t do that. If they want to bill you for a subscription, they need to set up a “subscription” in PayPal. You see those in your PayPal account and can easily cancel them there.</p>
+<p>Having said that, I really don’t like the user experience of PayPal even as a customer. I always use my credit card instead.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/22</link>
+        <pubDate>Mon, 05 Feb 2018 15:54:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>For a long time, I ignored Paypal as a payer. Always was using my CC. But this week I’ve found the reason why I should have used Paypal.</p>
+<p>I’ve got a CC renewed. I went thru the list of my subscriptions (about two dozens - internet, Netflix, Amazon, cell company, digital ocean, …) and had to spend 5-10 minutes in each updating my CC. An hour wasted.</p>
+<p>If I had used Paypal (and many of those subscriptions allow to use Paypal), I’d only need to update my CC in one place, and it would take me 5 minutes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/21</link>
+        <pubDate>Mon, 05 Feb 2018 15:35:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[kamparia]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for sharing. I was about to go the same route for my product because I felt more people have Paypal accounts.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/20</link>
+        <pubDate>Sun, 04 Feb 2018 15:44:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[Luis]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s probably a new policy or something to do with the country you’re in because I didn’t need that.</p>
+<p>In fact, it was much more advantageous for people starting up to go with braintree since they gave away the first 50k free of fees.</p>
+<p>I did register a couple of years ago I think, so things have most likely changed since then.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/19</link>
+        <pubDate>Fri, 26 Jan 2018 17:01:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[unstoppable]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/l/3e96dc/40.png" class="avatar"> Luis:</div>
+<blockquote>
+<p>I honestly don’t know why would anybody even still use Paypal’s old api’s for subscriptions when there is Braintree with much better documentation, libraries and examples available in several languages, including python. With about 1 or 2 lines of code you could have added Paypal support to your Braintree integration.</p>
+<p>Still a good and informative post, but you made life a bit harder for yourself <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>Because you are just starting up and don’t want to incorporate just yet before hitting XX in revenue? Braintree works only with registered businesses.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/18</link>
+        <pubDate>Fri, 26 Jan 2018 14:22:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[mherrmann]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, it’s hard to tell. Sure! Wouldn’t mind if you linked to <a href="http://fman.io" rel="nofollow noopener">fman.io</a> then <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/17</link>
+        <pubDate>Fri, 14 Jul 2017 19:44:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s great to hear. Has that more than doubled your sales? Or would many of them have persevered with credit card? Hard to tell, I guess.</p>
+<p>I might use your experience as an anecdote in an upcoming blog post, if that’s alright with you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/16</link>
+        <pubDate>Fri, 14 Jul 2017 19:30:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[mherrmann]]></dc:creator>
+        <description><![CDATA[
+            <p>Update: A month has passed since I integrated PayPal. More than half of my customers choose to pay with PayPal. So it was good I implemented it!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/15</link>
+        <pubDate>Fri, 14 Jul 2017 15:45:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[Tan_Nguyen]]></dc:creator>
+        <description><![CDATA[
+            <ul>
+<li>I’ve used Gumroad and they <strong>banned my account and refunded all of my revenue</strong> and said that there is some <em>fraud</em> payments. I’ll never use it in the future.</li>
+<li>FastSpring have best support ever but their fee is quite high for small business. In order to use their Subscription feature, you’ll need to pay $199 per month, and fee per transaction quite hight also (they’ll send you a custom quote based on your monthly revenue and average transaction amount).</li>
+<li>I’m currently using Paddle, their UX for subscription is the best, the fee is acceptable (5% + $0.5), no monthly fee BUT their embed overlay stopped sometimes, I’ll have to pay $39 for payout fee to transfer to Paypal. I live in Vietnam so I can’t use Stripe or Braintree, that’s why I decided to switch to Paypal. They have great support!</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/14</link>
+        <pubDate>Sun, 02 Jul 2017 19:34:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[TroyChristmas]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this post.  Given the Braintree supports subscriptions, discounts and PCI compliance both with direct CC payments and via Paypal, Apple Pay, etc., what is the use case for Gumroad, Paddle, Fastspring and Sendowl, which I was previous considering to add on top of Stripe/Paypal?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/13</link>
+        <pubDate>Sun, 02 Jul 2017 04:06:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[Luis]]></dc:creator>
+        <description><![CDATA[
+            <p>hey <a class="mention" href="/u/intelligentcoder">@intelligentcoder</a> and <a class="mention" href="/u/mherrmann">@mherrmann</a>, sorry for the delay answering this but yes it does.</p>
+<p>Basically the integration setups a paypal button that when pressed pops up a paypal login that you can use to associate to the service. Other than that you just have to associate your paypal account to your braintree account and that’s done on your braintree account dashboard.</p>
+<p>You guys can check out some more details about using it for subscriptions on the following url:</p>
+<p><a href="https://developers.braintreepayments.com/guides/paypal/vault/javascript/v3" class="onebox" target="_blank" rel="nofollow noopener">https://developers.braintreepayments.com/guides/paypal/vault/javascript/v3</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/12</link>
+        <pubDate>Thu, 22 Jun 2017 12:41:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[mherrmann]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/gravelld">@gravelld</a> interesting, thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/11</link>
+        <pubDate>Mon, 12 Jun 2017 12:56:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>I think PP is very worthwhile for your market <a class="mention" href="/u/mherrmann">@mherrmann</a></p>
+<p>Here’s my experience and unscientific findings: <a href="http://www.elstensoftware.com/blog/2014/08/18/paypal-versus-stripe-customer-survey-surprising-result/" rel="nofollow noopener">http://www.elstensoftware.com/blog/2014/08/18/paypal-versus-stripe-customer-survey-surprising-result/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/10</link>
+        <pubDate>Mon, 12 Jun 2017 11:09:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[mherrmann]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/intelligentcoder">@intelligentcoder</a> I’m sorry, I don’t know.</p>
+<p>Another thing I just learned: PayPal doesn’t support subscriptions for customers based in Germany. These people get a message “Automatic payments are not supported in your country”. Apparently, larger PayPal merchant can get an exception for this. But I’m still too small to qualify. Some people on the internet also say that it is possible with some of PayPal’s older APIs. Sigh…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/9</link>
+        <pubDate>Sun, 11 Jun 2017 11:44:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p>Does integrating with Braintree’s API allow your clients to subscribe using their PayPal accounts? If it does, I will totally look into it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/8</link>
+        <pubDate>Thu, 08 Jun 2017 20:31:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[Luis]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mherrmann/40/3775_1.png" class="avatar"> mherrmann:</div>
+<blockquote>
+<p>People do seem to like PayPal</p>
+</blockquote>
+</aside>
+<p>Yeah, even if you don’t make it a priority integrating Paypal for your business or service, it’s usually a worthwhile inclusion and worth the development time, especially if your service is global and not specific to some large 1st country market.</p>
+<p>Everybody knows Paypal and is under the (somewhat correct) impression that they’ll protect them and their purchases from fraud, identity theft, etc. It’s not as easy to transmit that kind of “peace-of-mind” with a regular credit card form, even if it’s indicated that it’s by Stripe, Braintree or any other processors.</p>
+<p>I’d still recommend using Braintree’s integration over Paypal’s own any day even though I haven’t bothered to look and see if they’ve improved over the years, your blog post was enough to make me believe that they didn’t.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/7</link>
+        <pubDate>Thu, 08 Jun 2017 16:49:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[mherrmann]]></dc:creator>
+        <description><![CDATA[
+            <p><img src="https://emoji.discourse-cdn.com/twitter/confused.png?v=5" title=":confused:" class="emoji" alt=":confused:"> we’ll see how many more hours of my life PayPal will suck out of me. I’ve already noticed a small uptick in sales; People do seem to like PayPal.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/6</link>
+        <pubDate>Wed, 07 Jun 2017 09:09:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mherrmann/40/3775_1.png" class="avatar"> mherrmann:</div>
+<blockquote>
+<p>It’s just so unclear from PayPal’s web sites.</p>
+</blockquote>
+</aside>
+<p>100% agree. I also found it confusing knowing which one of PayPal’s payment setups was what I wanted. Stripe really nailed this, I think: making it easy for developers to work out how to get started quickly.</p>
+<p>Your PayPal headaches might not be over yet: I spent a couple of days just trying to understand which PayPal option I wanted. A few weeks after I implemented PayPal integration I recall something went wrong as the PayPal dev docs had completely omitted to mention a response code that could occur.</p>
+<hr>
+<p><strong>PS:</strong> Please do let us know if you see a significant uptick in sales in the weeks ahead, now that you have a PayPal payment option.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/5</link>
+        <pubDate>Wed, 07 Jun 2017 08:45:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mherrmann/40/3775_1.png" class="avatar"> mherrmann:</div>
+<blockquote>
+<p>Next time I will know. It’s just so unclear from PayPal’s web sites.</p>
+</blockquote>
+</aside>
+<p>I do agree with this, PayPal does have a mish mash of API’s and it is not immediately clear which one you should use.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/4</link>
+        <pubDate>Tue, 06 Jun 2017 05:59:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[mherrmann]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="5073">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/l/3e96dc/40.png" class="avatar"> Luis:</div>
+<blockquote>
+<p>you should really have used Braintree’s API</p>
+</blockquote>
+</aside>
+<p><img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"> Next time I will know. It’s just so unclear from PayPal’s web sites.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/3</link>
+        <pubDate>Mon, 05 Jun 2017 13:32:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[Luis]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>“Braintree Direct” supposedly lets you “start accepting payments with just a snippet of code”. Sounds great too! But you don’t know who or what Braintree is, so decide to go with the former.</p>
+</blockquote>
+<p>Well, Braintree was purchased by Paypal in 2013 for $800M and you should really have used Braintree’s API integration instead since that would be the only integration that you could potentially even compare with Stripe’s.</p>
+<p>I honestly don’t know why would anybody even still use Paypal’s old api’s for subscriptions when there is Braintree with much better documentation, libraries and examples available in several languages, including python. With about 1 or 2 lines of code you could have added Paypal support to your Braintree integration.</p>
+<p>Still a good and informative post, but you made life a bit harder for yourself <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/2</link>
+        <pubDate>Mon, 05 Jun 2017 08:27:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+      <item>
+        <title>My experiences with PayPal for SaaS</title>
+        <dc:creator><![CDATA[mherrmann]]></dc:creator>
+        <description><![CDATA[
+            <p>I recently had to integrate PayPal for the SaaS-like subscription model of my <a href="https://fman.io" rel="nofollow noopener">app</a>. It was a wild ride and I wrote a <a href="https://fman.io/blog/paypal-for-saas-99-problems/" rel="nofollow noopener">blog post</a> about the experience. Maybe some of you are thinking of integrating PayPal for their SaaS app, or have already set up PayPal and want to hear someone else’s experiences. The TL;DR: It’s a pain to set up. Only do it if your customers are consumers who perceive PayPal as “secure”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073/1</link>
+        <pubDate>Mon, 05 Jun 2017 04:35:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5073-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-experiences-with-paypal-for-saas/5073.rss">My experiences with PayPal for SaaS</source>
+      </item>
+  </channel>
+</rss>

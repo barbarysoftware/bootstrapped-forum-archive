@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SaaS: server decommission</title>
+    <link>https://discuss.bootstrapped.fm/t/saas-server-decommission/6420</link>
+    <description>I have a SaaS product that is hosted across multiple dedicated servers. Some of the servers are very old and I plan on decommissioning them, moving the few accounts that are left there to other servers. This significantly affects customers, and the action will be required on their part to continue using their accounts in full. Some will surely jump ship in the process.
+
+What are the best practices on doing so? How much in advance should I warn customers about the change? Should I offer compensations, like free months of service? Or maybe I shouldn&#39;t do it at all and accept it as a business cost? (currently those old servers are not really profitable, and they increase administration and support load, making them unprofitable).</description>
+    
+    <lastBuildDate>Fri, 05 Jul 2019 18:34:50 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SaaS: server decommission</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>The service generates links and those links will change after the server is changed. Apart from a couple of hours downtime, it’s the only inconvenience for users: they will have to update the links everywhere (and this can be complicated as there can be lots of places where the links are used).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/5</link>
+        <pubDate>Fri, 05 Jul 2019 18:34:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6420-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420.rss">SaaS: server decommission</source>
+      </item>
+      <item>
+        <title>SaaS: server decommission</title>
+        <dc:creator><![CDATA[shanelabs]]></dc:creator>
+        <description><![CDATA[
+            <p>Ideally your system should be structured in a way that you can migrate servers without the users even knowing it. While this is difficult, most would understand if you need to take the service down for a couple hours (scheduled and notified in advance) for maintenance. During this time you could export database or files on disk, upload to newer servers, remove old servers from use, and then resume service.</p>
+<p>What makes your system complicated enough that you can’t migrate things for them through some scripts that you write?</p>
+<p>I was a customer of a service who did what you were talking about - wanted me to migrated a bunch of things to a newer system of theirs, and after 60 seconds of effort I realized it wasn’t worth my time and I cancelled the service.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/4</link>
+        <pubDate>Fri, 05 Jul 2019 18:10:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6420-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420.rss">SaaS: server decommission</source>
+      </item>
+      <item>
+        <title>SaaS: server decommission</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>This is one of the solutions I have considered. However, while this is possible, moving will involve huge amount of manual work: the move process itself, and, of course, dealing various issues that will inevitably arise. I’d like to avoid that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/3</link>
+        <pubDate>Thu, 04 Jul 2019 11:41:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6420-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420.rss">SaaS: server decommission</source>
+      </item>
+      <item>
+        <title>SaaS: server decommission</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>Not sure if possible in your case, can’t you “just” virtualize the servers, move them somewhere and give the customers the impression that they still use a separate server through DNS settings?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/2</link>
+        <pubDate>Wed, 03 Jul 2019 14:29:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6420-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420.rss">SaaS: server decommission</source>
+      </item>
+      <item>
+        <title>SaaS: server decommission</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a SaaS product that is hosted across multiple dedicated servers. Some of the servers are very old and I plan on decommissioning them, moving the few accounts that are left there to other servers. This significantly affects customers, and the action will be required on their part to continue using their accounts in full. Some will surely jump ship in the process.</p>
+<p>What are the best practices on doing so? How much in advance should I warn customers about the change? Should I offer compensations, like free months of service? Or maybe I shouldn’t do it at all and accept it as a business cost? (currently those old servers are not really profitable, and they increase administration and support load, making them unprofitable).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-server-decommission/6420/1</link>
+        <pubDate>Wed, 03 Jul 2019 11:06:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6420-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-server-decommission/6420.rss">SaaS: server decommission</source>
+      </item>
+  </channel>
+</rss>

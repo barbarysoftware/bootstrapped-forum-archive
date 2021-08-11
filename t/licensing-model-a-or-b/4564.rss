@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Licensing model, A or B?</title>
+    <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564</link>
+    <description>I got tow options for licensing model:
+
+A: Our software will have trial version and full version. Trial version can not be converted to full version. After purchasing, user will get a serial number and then he/she can download the full version on our website with the serial number. Besides the full version downloading, a license code will be generated and user have to use it to activate the license on their PC. No machine binding. User can use it on any machine or limited number of machines.
+
+B: Trial version can be converted to full version. After purchasing, user get a serial number and then have to activate the license with the serial number, automatically or manually. The activation will use the machine&#39;s information and user can install the software on limited number of machines. For offline users, we can provide a floating license server, which has to online and be activated. User can get the activation code on our website and then activate the license by hand if his/her machine is offline.
+
+What do you think about these two? Any comments are welcome!</description>
+    
+    <lastBuildDate>Sat, 03 Dec 2016 17:37:36 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Licensing model, A or B?</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/alanc">@AlanC</a></p>
+<aside class="quote" data-post="4" data-topic="4564">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/alanc/40/3231_1.png" class="avatar"> AlanC:</div>
+<blockquote>
+<p>My point is that a separate file sounds like it will be hardware locked, which puts people off, yet you say it won’t be? So you would risk discouraging sales with zero benefit.</p>
+</blockquote>
+</aside>
+<p>To say well-designed licensing has zero-benefit is ill-informed. The benefit of well-designed hardware-locked licensing is to increase revenue.</p>
+<aside class="quote" data-post="1" data-topic="4564">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/steven/40/3525_1.png" class="avatar"> Steven:</div>
+<blockquote>
+<p>a license code will be generated and user have to use it to activate the license on their PC. No machine binding.</p>
+</blockquote>
+</aside>
+<p>Well, serial-only licensing has the main benefit of being dead-simple to implement (so no need to buy from a third party with real experience in developing licensing solutions).</p>
+<p>The obvious downside is that you have absolutely no control over who uses your software; i.e. lost revenue.</p>
+<aside class="quote" data-post="1" data-topic="4564">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/steven/40/3525_1.png" class="avatar"> Steven:</div>
+<blockquote>
+<p>The activation will use the machine’s information and user can install the software on limited number of machines.</p>
+</blockquote>
+</aside>
+<p>Obviously, I would recommend that. We cover the advantages and disadvantages of hardware-locked licensing vs. serial-only licensing, how properly designed hardware-locked licensing works, etc. in this article: <a href="https://wyday.com/limelm/features/why/" rel="nofollow noopener">https://wyday.com/limelm/features/why/</a></p>
+<aside class="quote" data-post="1" data-topic="4564">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/steven/40/3525_1.png" class="avatar"> Steven:</div>
+<blockquote>
+<p>For offline users, we can provide a floating license server, which has to online and be activated.</p>
+</blockquote>
+</aside>
+<p>You can certainly do that, but with well designed hardware-locked licensing, offline-activated customers don’t <em>need</em> to use floating licensing. We actually cover this in our <strong><a href="https://wyday.com/limelm/help/licensing-types/" rel="nofollow noopener">"Types of software licensing" article</a></strong>.</p>
+<p>A customer can either activate online or activate offline and you don’t need to use floating licensing (or force customers that want to activate offline to use floating licensing). Don’t get me wrong, floating licensing is great (part of LimeLM is our high-speed, low-resource, highly-accurate floating license server: TurboFloat Server). But for the “normal” customer, it requires more steps and can be hassle.</p>
+<p>It sounds like for your product you’d be best off using online activation for customers that are normally connected to the internet (the majority of B2B customer base), and for those on restricted networks just use offline activation (which is different than floating licensing).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/9</link>
+        <pubDate>Thu, 01 Dec 2016 05:29:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4564-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss">Licensing model, A or B?</source>
+      </item>
+      <item>
+        <title>Licensing model, A or B?</title>
+        <dc:creator><![CDATA[joseacta]]></dc:creator>
+        <description><![CDATA[
+            <p>If the licensing server is internal then you shouldn’t have any issues and the offline process should work as you’ve stated.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/8</link>
+        <pubDate>Thu, 01 Dec 2016 03:14:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4564-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss">Licensing model, A or B?</source>
+      </item>
+      <item>
+        <title>Licensing model, A or B?</title>
+        <dc:creator><![CDATA[Steven]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="4564" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/joseacta/40/1505_1.png" class="avatar"> joseacta:</div>
+<blockquote>
+<p>Hi,</p>
+<p>From past experience and having work with a large customer base, the most common approach is option B because having the user install another software after buying is just another hurdle your customers will have to jump through to use the software. You’ll want to make the process as friction less as possible.</p>
+<p>If they’re offline, you can have them email you the hardware ID and then you can send them back a license file. If there’s no hardware locking, then just send them the license. I’m not sure how a floating license mechanism can work in this scenario if the customer is offline.</p>
+<p>We provide a software that can help you with this in case it’s needed: [LicenseSpot]</p>
+</blockquote>
+</aside>
+<p>Floating license is provided by our competitors. User likes this model because they can install the software on all their machines and their employees can use it on any machine within a limited seats. It costs less money. This model also solve the offline issues. User can active the software by the internal licensing sever.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/7</link>
+        <pubDate>Thu, 01 Dec 2016 03:00:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4564-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss">Licensing model, A or B?</source>
+      </item>
+      <item>
+        <title>Licensing model, A or B?</title>
+        <dc:creator><![CDATA[Steven]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4564" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/alanc/40/3231_1.png" class="avatar"> AlanC:</div>
+<blockquote>
+<p>My point is that a separate file sounds like it will be hardware locked, which puts people off, yet you say it won’t be? So you would risk discouraging sales with zero benefit.</p>
+<p>Regarding A or B, it’s hard to say without knowing more about the product and the market you’re selling to. For example a trial version that can be converted can also be pirated with greater ease, though that is far less of an issue in some markets than in others.</p>
+<p>Can you tell us more about the project?</p>
+<p>AC</p>
+</blockquote>
+</aside>
+<p>Our software is sort of file viewer. User just open it, view some files and then close it. And also the software doesn’t need to connect to the internet so we can not force a online activation. May a machine locking schema is a good idea. Thanks for your information.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/6</link>
+        <pubDate>Thu, 01 Dec 2016 02:52:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4564-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss">Licensing model, A or B?</source>
+      </item>
+      <item>
+        <title>Licensing model, A or B?</title>
+        <dc:creator><![CDATA[joseacta]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>From past experience and having work with a large customer base, the most common approach is option B because having the user install another software after buying is just another hurdle your customers will have to jump through to use the software. You’ll want to make the process as friction less as possible.</p>
+<p>If they’re offline, you can have them email you the hardware ID and then you can send them back a license file. If there’s no hardware locking, then just send them the license. I’m not sure how a floating license mechanism can work in this scenario if the customer is offline.</p>
+<p>We provide a software that can help you with this in case it’s needed: <a href="http://www.licensespot.com" rel="nofollow noopener">LicenseSpot</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/5</link>
+        <pubDate>Wed, 30 Nov 2016 21:45:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4564-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss">Licensing model, A or B?</source>
+      </item>
+      <item>
+        <title>Licensing model, A or B?</title>
+        <dc:creator><![CDATA[AlanC]]></dc:creator>
+        <description><![CDATA[
+            <p>My point is that a separate file sounds like it will be hardware locked, which puts people off, yet you say it won’t be? So you would risk discouraging sales with zero benefit.</p>
+<p>Regarding A or B, it’s hard to say without knowing more about the product and the market you’re selling to. For example a trial version that can be converted can also be pirated with greater ease, though that is far less of an issue in some markets than in others.</p>
+<p>Can you tell us more about the project?</p>
+<p>AC</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/4</link>
+        <pubDate>Wed, 30 Nov 2016 16:48:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4564-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss">Licensing model, A or B?</source>
+      </item>
+      <item>
+        <title>Licensing model, A or B?</title>
+        <dc:creator><![CDATA[Steven]]></dc:creator>
+        <description><![CDATA[
+            <p>yes, we can setup a public/private key signing schema to make much more security.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/3</link>
+        <pubDate>Wed, 30 Nov 2016 10:33:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4564-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss">Licensing model, A or B?</source>
+      </item>
+      <item>
+        <title>Licensing model, A or B?</title>
+        <dc:creator><![CDATA[AlanC]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>I’m not sure why, as well as a serial number, they would need a separate license code for A.?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/2</link>
+        <pubDate>Wed, 30 Nov 2016 09:12:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4564-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss">Licensing model, A or B?</source>
+      </item>
+      <item>
+        <title>Licensing model, A or B?</title>
+        <dc:creator><![CDATA[Steven]]></dc:creator>
+        <description><![CDATA[
+            <p>I got tow options for licensing model:</p>
+<p>A: Our software will have trial version and full version. Trial version can not be converted to full version. After purchasing, user will get a serial number and then he/she can download the full version on our website with the serial number. Besides the full version downloading, a license code will be generated and user have to use it to activate the license on their PC. No machine binding. User can use it on any machine or limited number of machines.</p>
+<p>B: Trial version can be converted to full version. After purchasing, user get a serial number and then have to activate the license with the serial number, automatically or manually. The activation will use the machine’s information and user can install the software on limited number of machines. For offline users, we can provide a floating license server, which has to online and be activated. User can get the activation code on our website and then activate the license by hand if his/her machine is offline.</p>
+<p>What do you think about these two? Any comments are welcome!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564/1</link>
+        <pubDate>Wed, 30 Nov 2016 07:46:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4564-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/licensing-model-a-or-b/4564.rss">Licensing model, A or B?</source>
+      </item>
+  </channel>
+</rss>

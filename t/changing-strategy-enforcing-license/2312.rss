@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Changing strategy, enforcing license</title>
+    <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312</link>
+    <description>We&#39;re going to try an experiment. Currently we sell PHP libraries to developers under a subscription plan. 
+
+Current Plan: 75/quarter. full access all packages. flexible license.
+
+This has worked out pretty well for us. It&#39;s straight forward for us, minimal infrastructure required.
+
+It can however be confusing to customers when all they want is one package out of the 40+.
+
+So I am going to run an experiment. I am going to sell our most popular package as a one off. This presents a problem.
+
+The lifetime value of a subscriber is roughly 300/year. Our churn rate is actually pretty darn good. I do however feel we are missing out on sales to those afraid of tying themselves or their company to a subscription.
+
+Thus, I would need to increase the price of a one off sale considerably, or lower the price and restrict the license to a single domain.
+
+My question: 
+
+Is Trust the only thing we have in our toolset here? I don&#39;t want any call home scripts, encryption, etc.
+
+I fear I would lose subscriptions, but increase one off sales. But the one of sales will not equate to a LTV I enjoy with the subscription model.</description>
+    
+    <lastBuildDate>Wed, 26 Nov 2014 21:10:52 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[daverodenbaugh]]></dc:creator>
+        <description><![CDATA[
+            <p>Agreed.  Bundles produce a powerful signal to the buyer that the value of the package far exceeds the price.  If you unbundle, you lose that signal.  You’ve already established that your users LIKE the bundle, the question is how you can you repackage things a bit to increase your revenue on them.</p>
+<p>You’ll always have two kinds of users:</p>
+<ul>
+<li>Cheapskates looking to pay the bare minimum (these are not your best customers, nor do they provide great value)</li>
+<li>Ones who value their time and want to maximize their bang for the buck (these are your best ones, are willing to fork out money when it makes sense, and should make up the bulk of your revenue (&gt;50%))</li>
+</ul>
+<p>The single/bundle option satisfies both.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/10</link>
+        <pubDate>Wed, 26 Nov 2014 21:10:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="2312">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/drsii/40/1466_1.png" class="avatar"> drsii:</div>
+<blockquote>
+<p>The lifetime value of a subscriber is roughly 300/year.</p>
+</blockquote>
+</aside>
+<p>I read this sentance twice before I realized it says nothing about LTV.</p>
+<p>Then what is the LTV? 1500? 2500? A price like that is not considered high for any serious development. It is a cost of a few days of development (max).</p>
+<p>I was always thinking that subscription model is a Graal, because the buyers end up paying much more than they would in a one-time transaction. You, apparently, are trying to go in the opposite direction? I suspect it would cause losses.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/9</link>
+        <pubDate>Sun, 23 Nov 2014 12:51:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[drsii]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi All,</p>
+<p>Can’t thank you enough for the perspectives. I think we came up with a pretty good model and once I finalize my thoughts on it will let you all know what we decided.</p>
+<p>Cheers!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/8</link>
+        <pubDate>Sat, 22 Nov 2014 22:14:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[manuelflara]]></dc:creator>
+        <description><![CDATA[
+            <p>Also, as someone said before, maybe you could offer a subset of your less popular libraries for free, as long as people create an account on your service. This would give you a very good source of leads to pitch your paid libraries, both current ones and new ones you add to your catalog.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/7</link>
+        <pubDate>Sat, 22 Nov 2014 21:30:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[manuelflara]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="2312">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/drsii/40/1466_1.png" class="avatar"> drsii:</div>
+<blockquote>
+<p>Is Trust the only thing we have in our toolset here? I don’t want any call home scripts, encryption, etc.</p>
+</blockquote>
+</aside>
+<p>Don’t you already trust that people will keep paying the subscription as long as they use the libraries, instead of paying one month, downloading them, and then keep using them but cancelling their subscription? Do you have any way to protect against that? If not, what’s the difference in trust model?</p>
+<p>Now, about your pricing question, while I don’t have any specific thoughts about the “one off sale” (I feel I’d be doing too much guessing, and I completely don’t know your audience or business), but I do think you could offer two subscription options:</p>
+<p>Option 1: get the one library you want for $25/month.<br>
+Option 2: get all libraries for your current $75/month.</p>
+<p>This would:</p>
+<ol>
+<li>Give people who only want one library (or two) a cheaper option.</li>
+<li>Change people’s purchasing frame of mind from “should I subscribe to this service?” to “which option should I choose from?”</li>
+<li>Make your current $75 subscription look like a bargain.</li>
+</ol>
+<p>I believe some theme library shop (WooThemes or ThemeForest I think) offer this model. When I went to buy the 1 theme I wanted, I ended up buying them all even though it was something like 3-4x the price, because it felt like a bargain <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Needles to say, I never even used those extra themes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/6</link>
+        <pubDate>Sat, 22 Nov 2014 21:28:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting challenge!  I recently moved my deployed PHP module to the SaaS (love the SaaS) in part to avoid some of the issues that you’re facing.  I know that’s not an option for actual libraries though.</p>
+<p>I’m curious - what do some of the leading library vendors do?  I don’t really know much about paid library vendors.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/5</link>
+        <pubDate>Sat, 22 Nov 2014 03:13:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[pwim]]></dc:creator>
+        <description><![CDATA[
+            <p>Why not just unbundle the libraries? Instead of charging 75/quarter for the whole package, how about charging instead 75/quarter/library? If indeed most people are using just one of the libraries, than you’ve already validated that people are willing to pay that much for a single library.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/4</link>
+        <pubDate>Sat, 22 Nov 2014 00:42:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[drsii]]></dc:creator>
+        <description><![CDATA[
+            <p>I would be willing to do this if I new it would convert. I look through our packages and it’s very true. We have about 10 that could be open sourced. We also do have one popular open source library that still drives a lot of traffic to our site.</p>
+<p>My concern on pricing might simply be a fear of charging to much. I have always gone on the principle of always raise pricing. In fact our strategy calls for a price increase every 6 months until we hit our target quarterly price.</p>
+<p>That said the strategy in that sense may be flawed. Large studios are using the libraries considerably more and thus saving more over. I’ll need to rethink that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/3</link>
+        <pubDate>Fri, 21 Nov 2014 20:41:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t know if this would work <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>However, you might consider another strategy. Mostly likely a few of the 40+ libraries are the truly valuable ones. The ones EVERYONE wants with the subscription. The others are nice to have and useful, but not what drew people in.</p>
+<p>So, why not simply make the other 35 libraries free. In the readme’s and everywhere else you note they’re part of your group of libraries, but they become loss leaders in essence. Driving people to the few that are for sale.</p>
+<p>From there, you focus only on the few libraries that are truly valuable. Probably the best strategy would be to have a few tiers for each library. Basic, just the library option and another with premium support on the library that’s much more expensive. You could also consider making them priced per-dev which is very common and would fairly ramp up the price for larger orgs.</p>
+<p>Trust will be the primary way you enforce it, though companies that pay for support will of course be known to you and as support is expensive you don’t stand to lose much if a few people cheat and share the script. Selling the support and proper licensing is valuable to companies. Companies that steal it almost never would have become customers anyway.</p>
+<p>There’s a number of libraries in HelpSpot we’ve paid thousands of dollars for. For Javascript!?!?</p>
+<p>Basically, you want to ramp up the costs for companies will to pay more and who are getting more value. A company with 100 devs knowns buying that well tested and supported library for $2,000-$5,000 is way cheaper than they could build it.</p>
+<p>The only thing is they probably will require more hand holding. It won’t be as clean and simple as the low cost subscription so that’s something you have to weigh.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/2</link>
+        <pubDate>Fri, 21 Nov 2014 19:12:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+      <item>
+        <title>Changing strategy, enforcing license</title>
+        <dc:creator><![CDATA[drsii]]></dc:creator>
+        <description><![CDATA[
+            <p>We’re going to try an experiment. Currently we sell PHP libraries to developers under a subscription plan.</p>
+<p>Current Plan: 75/quarter. full access all packages. flexible license.</p>
+<p>This has worked out pretty well for us. It’s straight forward for us, minimal infrastructure required.</p>
+<p>It can however be confusing to customers when all they want is one package out of the 40+.</p>
+<p>So I am going to run an experiment. I am going to sell our most popular package as a one off. This presents a problem.</p>
+<p>The lifetime value of a subscriber is roughly 300/year. Our churn rate is actually pretty darn good. I do however feel we are missing out on sales to those afraid of tying themselves or their company to a subscription.</p>
+<p>Thus, I would need to increase the price of a one off sale considerably, or lower the price and restrict the license to a single domain.</p>
+<p>My question:</p>
+<p>Is Trust the only thing we have in our toolset here? I don’t want any call home scripts, encryption, etc.</p>
+<p>I fear I would lose subscriptions, but increase one off sales. But the one of sales will not equate to a LTV I enjoy with the subscription model.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312/1</link>
+        <pubDate>Fri, 21 Nov 2014 18:48:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2312-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-strategy-enforcing-license/2312.rss">Changing strategy, enforcing license</source>
+      </item>
+  </channel>
+</rss>

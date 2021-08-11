@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Advice on analytics and notifications for desktop application</title>
+    <link>https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795</link>
+    <description>Hi Boostrapped Community,
+
+My desktop application runs on Windows and Mac, and I&#39;m looking to add analytics and the ability to target/message users with announcements, promos, etc. I&#39;m having a difficult time finding solutions specifically for desktop apps. Most new analytics solutions only have SDKs for web and iOS/Android apps.
+
+On the analytics front, I&#39;m considering Revulytics, Count.ly and Amplitude. Google Analytics is not an option since it doesn&#39;t provide raw data access. Amplitude doesn&#39;t have desktop SDKs, but they have a REST API.
+
+On the messaging front, there doesn&#39;t seem to be much out there for desktop apps except for Revulytics&#39; ReachOut feature... Maybe I have to build my own...
+
+Does anyone have experience and recommendations with solutions to tackle these two challenges?
+
+Thanks!</description>
+    
+    <lastBuildDate>Fri, 06 Apr 2018 08:21:28 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Advice on analytics and notifications for desktop application</title>
+        <dc:creator><![CDATA[DarrenZ]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="5795">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/danielherken/40/111_1.png" class="avatar"> danielherken:</div>
+<blockquote>
+<p>With GDPR coming in May, our mailing list will be next to useless</p>
+<p>Why is that?</p>
+</blockquote>
+</aside>
+<p>Our customer mailing list was built up over the past 10 years. At its heart was a pre-checked check box asking customers if they consented to receive emails from us in the future. The “pre-checked” part of this falls foul of GDPR, even for existing mailing lists. I would have to email my entire list again and ask them to re-consent in order to use it after May 25th.</p>
+<aside class="quote" data-post="3" data-topic="5795">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/danielherken/40/111_1.png" class="avatar"> danielherken:</div>
+<blockquote>
+<p>Do you think many people will read that? I imagine it distracts from the task they want to accomplish when they opend the application?</p>
+</blockquote>
+</aside>
+<p>I don’t intent for it to be in their faces. A bit like Visual Studio, where a news flag appears on the title bar and clicking it opens the news page.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/7</link>
+        <pubDate>Fri, 06 Apr 2018 08:21:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5795-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795.rss">Advice on analytics and notifications for desktop application</source>
+      </item>
+      <item>
+        <title>Advice on analytics and notifications for desktop application</title>
+        <dc:creator><![CDATA[RonaldKite]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve tried to create a new account at Diskmetrics but it says “Sorry, we are currently not accepting any new customers.”… a bit strange.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/6</link>
+        <pubDate>Thu, 05 Apr 2018 18:55:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5795-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795.rss">Advice on analytics and notifications for desktop application</source>
+      </item>
+      <item>
+        <title>Advice on analytics and notifications for desktop application</title>
+        <dc:creator><![CDATA[danielherken]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I am using a custom tracking integrated in the application to track feature usage.</p>
+<p>I have heard good things about <a href="https://deskmetrics.com/" rel="nofollow noopener">https://deskmetrics.com/</a> as well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/5</link>
+        <pubDate>Thu, 05 Apr 2018 16:01:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5795-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795.rss">Advice on analytics and notifications for desktop application</source>
+      </item>
+      <item>
+        <title>Advice on analytics and notifications for desktop application</title>
+        <dc:creator><![CDATA[maconomist]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/darrenz">@DarrenZ</a> and <a class="mention" href="/u/danielherken">@danielherken</a>. Do you use any analytics solutions within your desktop apps?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/4</link>
+        <pubDate>Thu, 05 Apr 2018 15:15:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5795-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795.rss">Advice on analytics and notifications for desktop application</source>
+      </item>
+      <item>
+        <title>Advice on analytics and notifications for desktop application</title>
+        <dc:creator><![CDATA[danielherken]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="5795">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/darrenz/40/3965_1.png" class="avatar"> DarrenZ:</div>
+<blockquote>
+<p>With GDPR coming in May, our mailing list will be next to useless</p>
+</blockquote>
+</aside>
+<p>Why is that?</p>
+<aside class="quote" data-post="2" data-topic="5795">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/darrenz/40/3965_1.png" class="avatar"> DarrenZ:</div>
+<blockquote>
+<p>This will allow us to populate a news page in the same way that Visual Studio does.</p>
+</blockquote>
+</aside>
+<p>Do you think many people will read that? I imagine it distracts from the task they want to accomplish when they opend the application?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/3</link>
+        <pubDate>Thu, 05 Apr 2018 13:52:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5795-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795.rss">Advice on analytics and notifications for desktop application</source>
+      </item>
+      <item>
+        <title>Advice on analytics and notifications for desktop application</title>
+        <dc:creator><![CDATA[DarrenZ]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5795">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/m/47e85d/40.png" class="avatar"> maconomist:</div>
+<blockquote>
+<p>and the ability to target/message users with announcements, promos, etc.</p>
+</blockquote>
+</aside>
+<p>This is something I’m working on at the moment for two of our desktop apps. With GDPR coming in May, our mailing list will be next to useless and we’re looking for another way of communicating with our users and keeping them up to date on new features, offers, etc.</p>
+<p>We’ve decided to roll our own and are building  a simple news api that will be called from the desktop apps every few days. This will allow us to populate a news page in the same way that Visual Studio does. Very simple, very basic, with a few different types of news items — links to blog  posts, offers of discounts to users who haven’t bought yet, expansion of trial periods, etc.</p>
+<p>My hope is that this will allow us to reach a higher proportion of users than traditional email campaigns. Interested to hear if anyone else is doing something similar.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/2</link>
+        <pubDate>Thu, 05 Apr 2018 13:50:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5795-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795.rss">Advice on analytics and notifications for desktop application</source>
+      </item>
+      <item>
+        <title>Advice on analytics and notifications for desktop application</title>
+        <dc:creator><![CDATA[maconomist]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Boostrapped Community,</p>
+<p>My desktop application runs on Windows and Mac, and I’m looking to add analytics and the ability to target/message users with announcements, promos, etc. I’m having a difficult time finding solutions specifically for desktop apps. Most new analytics solutions only have SDKs for web and iOS/Android apps.</p>
+<p>On the analytics front, I’m considering Revulytics, Count.ly and Amplitude. Google Analytics is not an option since it doesn’t provide raw data access. Amplitude doesn’t have desktop SDKs, but they have a REST API.</p>
+<p>On the messaging front, there doesn’t seem to be much out there for desktop apps except for Revulytics’ ReachOut feature… Maybe I have to build my own…</p>
+<p>Does anyone have experience and recommendations with solutions to tackle these two challenges?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795/1</link>
+        <pubDate>Wed, 04 Apr 2018 23:19:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5795-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-analytics-and-notifications-for-desktop-application/5795.rss">Advice on analytics and notifications for desktop application</source>
+      </item>
+  </channel>
+</rss>

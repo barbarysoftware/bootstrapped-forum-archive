@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hello from Tom in London</title>
+    <link>https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103</link>
+    <description>Hey folks!
+
+I&#39;m arriving here as a first-time bootstrapper, and already I&#39;m very impressed with the quality of the discussion I&#39;ve seen.
+
+I&#39;m a London-based developer, and I&#39;ve just wound down my main client gig so that I can take a few months&#39; run at getting a software testing product off the ground.
+
+For about the last 5 years, I&#39;ve been working on an OSS project called WireMock, which is essentially an API mocking (or &quot;Service Virtualization&quot; according to Gartner et al) tool. Over the last year or two it&#39;s become quite popular - it&#39;s getting quite decent amounts of website traffic, good ranking for relevant search terms with almost no SEO or marketing, and folks are talking about it at conferences and meetups. I&#39;m also seeing increasing numbers of job adverts listing it as a required skill.
+
+So I&#39;m currently trying to figure out how to capitalise on this, and build something that sustainably adds enough value on top of the OSS offering that it&#39;s worth paying for.
+
+For brevity&#39;s sake I&#39;ll leave what I&#39;ve tried so far for another post, but if any of you have experience of selling products to dev teams or using open source as a marketing tactic I&#39;d love to hear about it.
+
+Cheers!</description>
+    
+    <lastBuildDate>Thu, 02 Jun 2016 14:58:19 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hello from Tom in London</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4103">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/tomakehurst/40/3350_1.png" class="avatar"> TomAkehurst:</div>
+<blockquote>
+<p>Agree there are quite a few distinct problems to be solved in this space, so hopefully there’s room for all of us.</p>
+</blockquote>
+</aside>
+<p>Yeah… I have read a summary of “22 immutable laws of marketing” just yesterday, and one thing there lighted a bulb over my head: every (successful) product must own its own category.</p>
+<p>For me (and probably you) it means that I need to focus on one particular use case, or I’d have to compete with monsters such as Smartbear, Rational, CA or even nginx API GW now, on their own field (where they would crush us).</p>
+<p>I’m going to focus on LT/PTE testing. That’s where my most active users are, and what many or most of my features are dictated by. I’m going to change the “3 products” layout from “Personal, Team, LT” to “Localhost, LT, LT Clustered” – i.e. only provide LT-grade products, abandoning non-LT-grade personal and non-LT-grade Team (=DIT/SIT/SFT) options.</p>
+<p>My self-named category then would be “The best mock service for load testing” and claim a benefit of saving on LT-grade test environments.</p>
+<p>If I were you, I’d <em>probably</em> focus on ~“The best mock service library for DEV testing” and promote a benefit of saving on DEV test environment (it is a large costs center, at least in enterprises).</p>
+<p>Just thinking <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103/4</link>
+        <pubDate>Thu, 02 Jun 2016 14:53:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4103-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103.rss">Hello from Tom in London</source>
+      </item>
+      <item>
+        <title>Hello from Tom in London</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, good to meet someone else in the same game as me!</p>
+<p>Agree there are quite a few distinct problems to be solved in this space, so hopefully there’s room for all of us.</p>
+<p>Good luck also!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103/3</link>
+        <pubDate>Mon, 30 May 2016 19:15:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4103-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103.rss">Hello from Tom in London</source>
+      </item>
+      <item>
+        <title>Hello from Tom in London</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome, competitor! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Well, my mock product is aimed at less technical users - QA and PTE testers. And I’m just rolling out the web site, despite it is in a heavy use in some of my large corp clients.</p>
+<p><a href="http://rfctr.com" class="onebox" target="_blank" rel="nofollow noopener">http://rfctr.com</a></p>
+<p>In the recent year there are a number of “service virtualization” products popped up, from SmartBear, IBM, CA and whatnot. Three of them (MockEngine - mine, IBM TSV and CA API Gateway) are used around me, but for very different use cases; so different I’m not sure one product can cover them all.</p>
+<p>If I knew WireMock library exists 2 years ago, I’d use it as a core for MockEngine. But now the code is complete and running, so oh well!</p>
+<p>Good luck!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103/2</link>
+        <pubDate>Mon, 30 May 2016 18:30:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4103-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103.rss">Hello from Tom in London</source>
+      </item>
+      <item>
+        <title>Hello from Tom in London</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey folks!</p>
+<p>I’m arriving here as a first-time bootstrapper, and already I’m very impressed with the quality of the discussion I’ve seen.</p>
+<p>I’m a London-based developer, and I’ve just wound down my main client gig so that I can take a few months’ run at getting a software testing product off the ground.</p>
+<p>For about the last 5 years, I’ve been working on an OSS project called WireMock, which is essentially an API mocking (or “Service Virtualization” according to Gartner et al) tool. Over the last year or two it’s become quite popular - it’s getting quite decent amounts of website traffic, good ranking for relevant search terms with almost no SEO or marketing, and folks are talking about it at conferences and meetups. I’m also seeing increasing numbers of job adverts listing it as a required skill.</p>
+<p>So I’m currently trying to figure out how to capitalise on this, and build something that sustainably adds enough value on top of the OSS offering that it’s worth paying for.</p>
+<p>For brevity’s sake I’ll leave what I’ve tried so far for another post, but if any of you have experience of selling products to dev teams or using open source as a marketing tactic I’d love to hear about it.</p>
+<p>Cheers!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103/1</link>
+        <pubDate>Mon, 30 May 2016 14:21:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4103-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-from-tom-in-london/4103.rss">Hello from Tom in London</source>
+      </item>
+  </channel>
+</rss>

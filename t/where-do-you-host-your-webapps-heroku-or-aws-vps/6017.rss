@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+    <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017</link>
+    <description>Hello,
+
+I&#39;m working in the last bits of my (endless) project, and I&#39;m thinking about where to host it. It&#39;s just a Symfony 3 application (PHP7 + PostgreSQL + Redis for cache). 
+
+Since 2010 I have a VPS at Linode, and I&#39;m managing Linux servers since, at least, 2003-2004, so I already have experience with these works. I know how to setup Apache, domains, SSL, databases, backups, updates, etc. On the other hand, I can host the application on Heroku, pay something like $60 each month, and forgot about servers, backups and so.
+
+What do you recommend for a non user massive web application? I mean that there won&#39;t be a free tier (only 30 days trials or paid accounts), so I don&#39;t think I&#39;ll have something like a bazillion user accounts...</description>
+    
+    <lastBuildDate>Tue, 11 Dec 2018 20:05:28 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[Bobwalsh]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 <a class="mention" href="/u/scottw">@scottw</a> - Heroku is a great solution - and from the sound of it, their smallest plan of $7/month will work fine for you.</p>
+<p>I guess the real answer to your question is are you ready to trade the problems you know and are comfortable with (DevOps) for more uncomfortable problems around getting other people to use your app? (if that’s your intention.)</p>
+<p>Cheers,<br>
+Bob</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/10</link>
+        <pubDate>Tue, 11 Dec 2018 20:05:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[scottw]]></dc:creator>
+        <description><![CDATA[
+            <p>Jumping in late here…I am a huge advocate for Heroku (I have been hosting KickoffLabs there for about 7 years.).</p>
+<p>There is so much else to do launching a business, using Heroku is a great way clear some big tasks off your plate.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/9</link>
+        <pubDate>Tue, 27 Nov 2018 12:02:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s a bit related:  Anybody have experience with <a href="https://nanobox.io" rel="nofollow noopener">https://nanobox.io</a> ?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/8</link>
+        <pubDate>Sat, 29 Sep 2018 13:11:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <p>I use Heroku for my SaaS product which launched just over a year ago and I can’t recommend it highly enough. It’s robust and reliable, the tooling is great and the add-on marketplace has a lot to choose from.</p>
+<p>I can’t honestly fathom why anybody would run a commercial app on their own server these days, unless they have an unusual workload. Time is the scarcest resource when you’re a solo founder, so anything that takes away even  a few hours of grunt work a month is well worth a few extra 10s of $ IMO.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/7</link>
+        <pubDate>Sun, 23 Sep 2018 10:25:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>Thank you for your answers. I’m somewhat surprised because it seems that no one is using managed services, like Heroku. I agree that it’s more expensive than AWS or a simple VPS, but I didn’t though about the vendor lockin. I’ll continue with my Linode and, if/when the users grow, I’ll rent more servers or enlarge the current instance.</p>
+<p>Thank you!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/6</link>
+        <pubDate>Sun, 23 Sep 2018 06:54:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <p>Linode and Digital Ocean VPSes, Postgres, Python, Go, Node, and other specialized open source applications. I don’t use PaaS because it creates vendor lockin, and I’ve had problems with Azure and AWS uptime and AWS API bugs in certain datacenters when I was evaluating them. I also found them very expensive compared to the value they provided; ymmv.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/5</link>
+        <pubDate>Sat, 22 Sep 2018 17:51:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[dominicstpierre]]></dc:creator>
+        <description><![CDATA[
+            <p>To me since I’m using Go, DigitalOcean $5 or $10 droplet can go a long way since the runtime takes literally very few memory and CPU (even if you have tens of thousands of request / seconds). Having a load balancer and 3 droplet $5 will cost you $35 and you can scale this thing with virtually no down-time I would dare say similar to AWS EBS.</p>
+<p>I also prefer having my hand on the servers instead of reading AWS docs and creating config file. Total cost when I was running Roadmap was like ~$60/months for 4-5 servers (this includes the database) and yes it served lots of users <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=6" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I guess it depend if you want a fully managed experience (safer, easier, higher cost, higher learning curve and things to read) or handling yourself and potentially being a rough situation but truly building it like you want and be responsible of choices you decide on <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=6" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I’m running Arch Linux on my desktop, so I pretty much live in Linux full-time, so AWS does not really save me time, YMMV.</p>
+<p>As usual in the tech industry there’s no one answer that fit for all.</p>
+<p>Your best option is to deploy a tiny thing on multiple cloud and see how you feel, GCP is also one I would pick before AWS simply because “to me” their documentation is just easier and I prefer their style.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/4</link>
+        <pubDate>Sat, 22 Sep 2018 13:37:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="6017">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kevinsahin/40/4210_1.png" class="avatar"> kevinsahin:</div>
+<blockquote>
+<p>AWS, I use Elastic Beanstalk + RDS + Redis + Cloudfront + S3</p>
+</blockquote>
+</aside>
+<p>That’s exactly the AWS services I use for Feature Upvote (my tech stack is Java + MySQL). I am 100% happy with it.</p>
+<p>AWS gets a heck of a lot cheaper if you buy “reserved instances” once your infrastructure choices have become stable. I reduced my monthly AWS bill by almost two-thirds.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/3</link>
+        <pubDate>Sat, 22 Sep 2018 10:27:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[kevinsahin]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>For a paid SaaS app, I recommend using AWS.<br>
+My stack is Python + PostgreSQL + Redis for tasks, so similar to yours.<br>
+With AWS, I use Elastic Beanstalk + RDS + Redis + Cloudfront + S3</p>
+<p>With Elastic Beanstalk, you’ll get automatic deployment on EC2, a load balancer, auto scaling, auto updates. With RDS you’ll get automatic backup for your database</p>
+<p>Configuring Elastic Beanstalk is not as easy as a “git push heroku master” because you’ll have some configuration files to write, but honestly it doesn’t take that long (The first time, it took me an afternoon)<br>
+Once everything is setup you’ll deploy with one command (“eb deploy” ) and you’ll get all the advantages of Heroku.</p>
+<p>Plus you’ll pay 80% less than Heroku.</p>
+<p>Heroku is a great plateform though for MVPs / quickly deploying something. But for long term use, the simplicity of deployment is not worth the price imo.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/2</link>
+        <pubDate>Sat, 22 Sep 2018 08:09:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+      <item>
+        <title>Where do you host your webapps, Heroku or AWS/VPS?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>I’m working in the last bits of my (endless) project, and I’m thinking about where to host it. It’s just a Symfony 3 application (PHP7 + PostgreSQL + Redis for cache).</p>
+<p>Since 2010 I have a VPS at Linode, and I’m managing Linux servers since, at least, 2003-2004, so I already have experience with these works. I know how to setup Apache, domains, SSL, databases, backups, updates, etc. On the other hand, I can host the application on Heroku, pay something like $60 each month, and forgot about servers, backups and so.</p>
+<p>What do you recommend for a non user massive web application? I mean that there won’t be a free tier (only 30 days trials or paid accounts), so I don’t think I’ll have something like a bazillion user accounts…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017/1</link>
+        <pubDate>Sat, 22 Sep 2018 06:18:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6017-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/where-do-you-host-your-webapps-heroku-or-aws-vps/6017.rss">Where do you host your webapps, Heroku or AWS/VPS?</source>
+      </item>
+  </channel>
+</rss>

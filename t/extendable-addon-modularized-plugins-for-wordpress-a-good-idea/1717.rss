@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Extendable / Addon / modularized plugins for WordPress a good idea?</title>
+    <link>https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717</link>
+    <description>@bradt asked me to share an email exchange here to benefit everyone so here it goes.
+
+Good morning. A couple of weeks ago, I got my first WP plugin released.
+
+Check it out when you get a chance http://wordpress.org/plugins/step-by-step/ . Any feedback would be appreciated.
+
+Modularized
+Also, I believe you are a fan of modularized / add-on development for plugins as it relates to features where the base plugin is free and the features are modules.
+
+I have had a couple of request in addition to my own ideas for new features which I plan to place into a premium version and am leaning toward modularizing those features.
+
+I understand this may require a bit more effort upfront but can have large benefits later. Also others are able to extend the plugin easier which is an idea that I like.
+
+Can you share any advice here? 
+Can you recommend any best practices in regards to this type of development? 
+How do you handle licensing for this setup?
+
+I understand this may require a bit more effort upfront but can have large benefits later. Also others are able to extend the plugin easier which is an idea that I like.
+
+Can you share any advice here? 
+Can you recommend any best practices in regards to this type of development? 
+How do you handle licensing for this setup?</description>
+    
+    <lastBuildDate>Tue, 10 Jun 2014 20:27:12 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Extendable / Addon / modularized plugins for WordPress a good idea?</title>
+        <dc:creator><![CDATA[Kyle]]></dc:creator>
+        <description><![CDATA[
+            <p>Brad,</p>
+<p>Thanks for the feedback and examples. I really appreciate it!</p>
+<blockquote>
+<p>Instead, I recommend including addons for free with the more expensive licenses, adding more value to the more expensive licenses and giving customers extra incentive to pay more for the product.</p>
+</blockquote>
+<p>So to be clear what you are suggesting here is to develop using the addon architecture BUT license the addons as a bundle instead of individually?</p>
+<blockquote>
+<p>A few other notes…</p>
+</blockquote>
+<blockquote>
+<p>Don’t cram so much copy into your header image on <a href="http://WP.org" rel="nofollow noopener">WP.org</a> – screams SPAM to me. Looks a lot better when it’s something simple:<br>
+<a href="http://wordpress.org/plugins/amazon-s3-and-cloudfront/2" rel="nofollow noopener">http://wordpress.org/plugins/amazon-s3-and-cloudfront/2</a><br>
+<a href="http://wordpress.org/plugins/wp-job-manager/" rel="nofollow noopener">http://wordpress.org/plugins/wp-job-manager/</a></p>
+</blockquote>
+<p>[Kyle] Thanks. I was not going for spam. I am very much a minimalist but always get feedback stating not enough information was provided. Finding that balance is an ongoing process. Do you think that having a reputation helps you pull the minimalist approach off?</p>
+<blockquote>
+<p>Looks like you’re using your own file upload field of images. Why not use the WordPress<br>
+uploader? Maybe take a look at <a href="http://wordpress.org/plugins/custom-field-suite/1" rel="nofollow noopener">http://wordpress.org/plugins/custom-field-suite/1</a> to see how they do<br>
+it.</p>
+</blockquote>
+<p>[Kyle] Although its a very basic feature that WP users expect, I am considering making that a pro feature for a few strategic reasons that may not be clear now.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717/3</link>
+        <pubDate>Tue, 10 Jun 2014 20:27:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1717-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717.rss">Extendable / Addon / modularized plugins for WordPress a good idea?</source>
+      </item>
+      <item>
+        <title>Extendable / Addon / modularized plugins for WordPress a good idea?</title>
+        <dc:creator><![CDATA[bradt]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Kyle,</p>
+<p>Congrats on getting your first plugin out into the wild!</p>
+<p>Yes, I do recommend addon architecture when it comes to free plugins. For example, my Amazon S3 &amp; CloudFront plugin requires the Amazon Web Services plugin. With this setup, I can also create an Amazon SES plugin to offload email sending to Amazon as well.</p>
+<p>However, addon architecture can be tricky when it comes to paid plugins. I wouldn’t recommend going with a free core plugin and paid addons unless most of your addons are essential. For example, with a free ecommerce core plugin, you can have paid payment gateway addons. Without being able to accept payments, an ecommerce plugin is not very useful. If your addons are not essential, people are not going to have much incentive to buy them, and sales will be a struggle. Instead, I recommend including addons for free with the more expensive licenses, adding more value to the more expensive licenses and giving customers extra incentive to pay more for the product. This is the model that was popularized by Gravity Forms and this is how we do it as well.</p>
+<p>I’d recommend Easy Digital Downloads for handling the licensing.</p>
+<p>A few other notes…</p>
+<ul>
+<li>Don’t cram so much copy into your header image on <a href="http://WP.org" rel="nofollow noopener">WP.org</a> – screams SPAM to me. Looks a lot better when it’s something simple:<br>
+<a href="http://wordpress.org/plugins/amazon-s3-and-cloudfront/" rel="nofollow noopener">http://wordpress.org/plugins/amazon-s3-and-cloudfront/</a><br>
+<a href="http://wordpress.org/plugins/wp-job-manager/" rel="nofollow noopener">http://wordpress.org/plugins/wp-job-manager/</a>
+</li>
+<li>Looks like you’re using your own file upload field of images. Why not use the WordPress<br>
+uploader? Maybe take a look at <a href="http://wordpress.org/plugins/custom-field-suite/" rel="nofollow noopener">http://wordpress.org/plugins/custom-field-suite/</a> to see how they do<br>
+it.</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717/2</link>
+        <pubDate>Tue, 10 Jun 2014 18:50:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1717-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717.rss">Extendable / Addon / modularized plugins for WordPress a good idea?</source>
+      </item>
+      <item>
+        <title>Extendable / Addon / modularized plugins for WordPress a good idea?</title>
+        <dc:creator><![CDATA[Kyle]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bradt">@bradt</a> asked me to share an email exchange here to benefit everyone so here it goes.</p>
+<p>Good morning. A couple of weeks ago, I got my first WP plugin released.</p>
+<p>Check it out when you get a chance <a href="http://wordpress.org/plugins/step-by-step/" rel="nofollow noopener">http://wordpress.org/plugins/step-by-step/</a> . Any feedback would be appreciated.</p>
+<p>Modularized<br>
+Also, I believe you are a fan of modularized / add-on development for plugins as it relates to features where the base plugin is free and the features are modules.</p>
+<p>I have had a couple of request in addition to my own ideas for new features which I plan to place into a premium version and am leaning toward modularizing those features.</p>
+<p>I understand this may require a bit more effort upfront but can have large benefits later. Also others are able to extend the plugin easier which is an idea that I like.</p>
+<p>Can you share any advice here?<br>
+Can you recommend any best practices in regards to this type of development?<br>
+How do you handle licensing for this setup?</p>
+<p>I understand this may require a bit more effort upfront but can have large benefits later. Also others are able to extend the plugin easier which is an idea that I like.</p>
+<p>Can you share any advice here?<br>
+Can you recommend any best practices in regards to this type of development?<br>
+How do you handle licensing for this setup?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717/1</link>
+        <pubDate>Tue, 10 Jun 2014 18:18:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1717-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/extendable-addon-modularized-plugins-for-wordpress-a-good-idea/1717.rss">Extendable / Addon / modularized plugins for WordPress a good idea?</source>
+      </item>
+  </channel>
+</rss>

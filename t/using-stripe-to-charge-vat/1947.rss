@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using Stripe to charge VAT</title>
+    <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947</link>
+    <description>Hey everyone, is anyone on the forum using Stripe to charge VAT?
+
+I&#39;ve come to the point in my own ecommerce app, http://inlet.io, where I need to handle (or consider at least) this and I&#39;ve yet to hear of anyone successfully doing so.
+
+I&#39;ve heard of http://quaderno.io, but this isn&#39;t useful to me where I allow users to sell their own products, as I need to display the correct breakdown of VAT prior to checkout. Similarly, I&#39;m aware that http://recurly.com has better VAT handling, but doesn&#39;t entirely cover all cases (where VAT may be reduced in the EU for example).
+
+Anyone able to offer any insight?</description>
+    
+    <lastBuildDate>Fri, 17 Feb 2017 11:31:30 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[jorisw]]></dc:creator>
+        <description><![CDATA[
+            <p>It would appear as if all you need to do to get a stable VIES, is make sure you connect to them over IPv4: <a href="http://stackoverflow.com/questions/15616833/vies-vat-api-soap-error-ipv6" rel="nofollow noopener">http://stackoverflow.com/questions/15616833/vies-vat-api-soap-error-ipv6</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/23</link>
+        <pubDate>Wed, 10 Dec 2014 14:51:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>that looks interesting although it’s possible to deal with it yourself if you don’t want to pay yet another monthly fee to accept payments.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/22</link>
+        <pubDate>Tue, 02 Sep 2014 09:28:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s quite difficult building a service like that, because it’d have to deal with so many different scenarios depending on the service/product type. On <a href="http://quaderno.io/stripe-vat-invoicing/" rel="nofollow noopener">Quaderno.io</a> we opted to use the standard VAT rate by default to automatically create the invoices, and let the customer change it if necessary.</p>
+<p>In your case I see two possible solutions:</p>
+<ul>
+<li>your users specify the VAT of every product</li>
+<li>your users specify the type/category of every product, and then your app automatically calculates the VAT rate</li>
+</ul>
+<p>I think the former is better, because most of the user will need to charge just one VAT rate, and on the other hand, your app won’t have to handle all the possible scenarios and VAT updates, which can be a completely mess.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/21</link>
+        <pubDate>Fri, 22 Aug 2014 14:26:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>Further to this - I’ve just been pointed to <a href="http://taxamo.com" rel="nofollow noopener">http://taxamo.com</a> - seems to be a solution to the EU VAT compliance laws coming in in 2015.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/20</link>
+        <pubDate>Fri, 22 Aug 2014 12:14:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[theallan]]></dc:creator>
+        <description><![CDATA[
+            <p>That request would assume that it is for a digital download of software being sold? As your link above shows VAT rates vary dramatically for the goods / services involved. As an example, the VAT rate for consulting or training provided electronically using the new VAT rules will be at the rate where the supplier has their business (place of supply). For a download purchase however the rate <em>will</em> be where the customer is. So the API would need to capture that potentially.</p>
+<p>Any calculation API would need to capture a lot of fine detail to be 100% accurate, or be very specific about what it was providing rate information for.</p>
+<p>Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/19</link>
+        <pubDate>Fri, 15 Aug 2014 14:48:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[sts]]></dc:creator>
+        <description><![CDATA[
+            <p>The service I imagine would allow to submit the customer’s country and a price value - and you state if this is the net price (what lands in your pockets) or gross price (what the end user has to pay). It would then send back the VAT percentage and amount and the other price (net or gross, what you originally did not submit) so you can use all the correct values in your invoices…<br>
+Request: country=DE&amp;price=15.00&amp;net=net<br>
+Return: vat_percent:19.00,vat_amount:2.85,net_price:15.00,gross_price:17.85</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/18</link>
+        <pubDate>Fri, 15 Aug 2014 13:30:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[theallan]]></dc:creator>
+        <description><![CDATA[
+            <p>VAT calculation as a service sounds attractive, but I have no idea how you would go about writing an API interface for the massive range of VAT rules. Could be a mammoth URI!</p>
+<p>I’ve pinged HMRC a question about this and I’ll update here with what they say. The MOSS document also suggests that there might need to be a new way of calculating the exchange rate for VAT (use the value at the end of the quarter as published by ECB). I’ve queried that as well.</p>
+<p>Running a business is easy. Until you have to deal with VAT across borders…</p>
+<p>Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/17</link>
+        <pubDate>Fri, 15 Aug 2014 13:05:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>Ha, I have that document locally and pondering the same thoughts.</p>
+<p>With regard to doing VAT calculations as a service - I don’t know that it would. After all, once you know whether VAT applies in a particular type / supply / destination situation then there’s no further need to query that information for sometime. You could buy access to such a service and then query every country you’re going to deal with and cache the results until the VAT rules change. Admittedly then you wouldn’t have any support, but still. Probably works better as a downloadable piece of software.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/16</link>
+        <pubDate>Fri, 15 Aug 2014 12:57:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m hoping the “one stop shop” will include that information in an easily consumable format. We’ve already updated our systems to be able to charge the correct % for each country. I’m hoping there will be some easy way to grab the current data and be alerted if anyone changes their rate.</p>
+<p>If I find out anything I’ll post back here - I think it is October when we can register for the one stop shop so hopefully things will become clearer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/15</link>
+        <pubDate>Fri, 15 Aug 2014 12:51:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[sts]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah, come on, it’s easy. Just codify this 29 page long table of rules and exceptions and you’re done:<br>
+<aside class="onebox pdf">
+  <header class="source">
+      <a href="https://ec.europa.eu/taxation_customs/sites/taxation/files/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_en.pdf" target="_blank" rel="nofollow noopener">ec.europa.eu</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://ec.europa.eu/taxation_customs/sites/taxation/files/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_en.pdf" target="_blank" rel="nofollow noopener"><span class="pdf-onebox-logo"></span></a>
+<h3><a href="https://ec.europa.eu/taxation_customs/sites/taxation/files/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_en.pdf" target="_blank" rel="nofollow noopener">vat_rates_en.pdf</a></h3>
+
+<p class="filesize">666.48 KB</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p><img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>Edit: on a more serious note - would VAT calculations work “as a service”?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/14</link>
+        <pubDate>Fri, 15 Aug 2014 12:18:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[theallan]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not aware of any, but to be honest I didn’t look too much. I’m a library author at heart so have a habit of just writing stuff when it is needed (and then wondering what happened to the last month…).</p>
+<p>There are some services that sit on top of Stripe, so there might well be libraries or services that do it.</p>
+<p>I’m currently trying to figure out how to know what VAT rate to charge when the new rules come in. I’m not fancying trawling through the VAT documentation for the member states…</p>
+<p>Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/13</link>
+        <pubDate>Fri, 15 Aug 2014 12:07:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>My main query was to whether there was a one stop shop for implementing VAT on top of Stripe for ecommerce type situations.</p>
+<p>Ideally I’d like to be able to allow my merchants to specify the types of item they are selling and have the “magic VAT software” determine if VAT was applicable for their product type / supply / destination country and at what level. My guess is at this point such software doesn’t exist.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/12</link>
+        <pubDate>Fri, 15 Aug 2014 08:03:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[theallan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>I’m in the same boat as well, accepting USD, EUR and GBP while charing VAT. However, I use the HMRC published exchange rates as I found them to be quite convenient - and recently <a href="http://discuss.bootstrapped.fm/t/uk-vat-exchange-rates-api">published a JSON API to them</a> :-). It does mean tracking two exchange rates (the one for VAT and the one for what hits your bank account in GBP), and possibly taking a hit on the difference between the published VAT rate and the conversion rate from Stripe, but it was fairly simple to set up.</p>
+<p>Like <a class="mention" href="/u/rachelandrew">@rachelandrew</a> I’ve got my software setup to deal with the VAT, so I simply give an figure to Stripe and they deduct that from the card. The invoice then shows the breakdown.</p>
+<p>Interestingly I’ve only ever once had the VIES API flake out on a customer - but perhaps I’m just not trading enough units to hit a problem ;-).</p>
+<p>I haven’t got my head around the changes coming in the new VAT rules yet, but more than happy to answer any questions I can if you have any as well.</p>
+<p>Allan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/11</link>
+        <pubDate>Fri, 15 Aug 2014 07:41:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks - that makes sense.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/10</link>
+        <pubDate>Thu, 14 Aug 2014 15:54:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>If you want to zero rate them then you need to validate first as you have to submit the VAT numbers as part of your EU VAT report each quarter, they won’t go through if they are not valid and so you would be liable for the VAT.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/9</link>
+        <pubDate>Thu, 14 Aug 2014 14:43:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>If you register for the one stop shop you don’t need to register in each state. I think we can register from October.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/8</link>
+        <pubDate>Thu, 14 Aug 2014 14:42:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>As I understand it, you validate prior to sale in order to confirm that you don’t have to charge VAT. Otherwise, I would think there’s little point in checking the number if you’ve already made a sale against it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/7</link>
+        <pubDate>Thu, 14 Aug 2014 14:20:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>Forgive my ignorance, but I’m just learning about VAT: when do you do the validation? Do you validate first and then zero-rate B2B EU sales if they have a valid number, or do you charge them VAT anyway and then validate after the sale for your/HMRC’s records? I presume the answer won’t change with the new rules in 2015?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/6</link>
+        <pubDate>Thu, 14 Aug 2014 14:02:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the pointers on changes in EU VAT. That’s frustrating - so where previously if you were under a threshold you didn’t have to register in each state, now you do for digital supplies? Yay!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/5</link>
+        <pubDate>Thu, 14 Aug 2014 12:27:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>The VIES thing is pretty flaky so we’ve started using this: <a href="https://nephics.com/euvat">https://nephics.com/euvat</a> it helps deal with the unreliability of the underlying service. We were getting a tonne of support requests due to failed VAT number lookups before switching and they have now gone way.</p>
+<p>Yep we only need to worry about software. Are you aware of the EU VAT changes coming in? <a href="http://www.hmrc.gov.uk/posmoss/">http://www.hmrc.gov.uk/posmoss/</a></p>
+<p>We fix our prices but use the Stripe rate as our reporting rate as they do the transfer from USD, EUR to GBP. We had to make a request to HMRC to ok our use of Stripe’s rate. It took about a month to get approval but what it means is that we don’t have to account for any difference in exchange rate when reporting, which makes life a bit simpler.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/4</link>
+        <pubDate>Thu, 14 Aug 2014 08:23:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/rachelandrew">@rachelandrew</a>. Glad to hear somebody in the UK is doing what I need to.</p>
+<p>With regard to checking VAT numbers, are you using the <a href="http://ec.europa.eu/taxation_customs/vies/" rel="nofollow noopener">VIES VAT number validation tool</a> or have you implemented checks your side using some other method?</p>
+<p>I want to allow my merchants to specify what product type they’re selling and calculate the VAT using the rates appropriate for that product. I’d imagine this isn’t a concern for you given Perch is presumably classed as a software product and therefore the VAT rate you’re only ever interested in is that of software?</p>
+<p>I notice that you’re displaying the charges in $, £ and €. Are you using the exchange rates published by HMRC for these calculations?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/3</link>
+        <pubDate>Wed, 13 Aug 2014 16:47:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>We deal with the VAT calculations, checking the EU VAT numbers and so on on our side and then pass the correct amount to Stripe.</p>
+<p>I know lots of boring things about VAT, so happy to help on specific questions.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/2</link>
+        <pubDate>Wed, 13 Aug 2014 15:28:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+      <item>
+        <title>Using Stripe to charge VAT</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey everyone, is anyone on the forum using Stripe to charge VAT?</p>
+<p>I’ve come to the point in my own ecommerce app, <a href="http://inlet.io" rel="nofollow noopener">http://inlet.io</a>, where I need to handle (or consider at least) this and I’ve yet to hear of anyone successfully doing so.</p>
+<p>I’ve heard of <a href="http://quaderno.io" rel="nofollow noopener">http://quaderno.io</a>, but this isn’t useful to me where I allow users to sell their own products, as I need to display the correct breakdown of VAT prior to checkout. Similarly, I’m aware that <a href="http://recurly.com" rel="nofollow noopener">http://recurly.com</a> has better VAT handling, but doesn’t entirely cover all cases (where VAT may be reduced in the EU for example).</p>
+<p>Anyone able to offer any insight?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947/1</link>
+        <pubDate>Wed, 13 Aug 2014 13:07:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1947-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-stripe-to-charge-vat/1947.rss">Using Stripe to charge VAT</source>
+      </item>
+  </channel>
+</rss>

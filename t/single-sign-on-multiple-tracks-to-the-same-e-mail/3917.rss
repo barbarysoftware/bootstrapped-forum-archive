@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Single sign on - multiple tracks to the same e-mail</title>
+    <link>https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917</link>
+    <description>I&#39;m wondering how others here are implementing single sign on using server-side such as Google, Facebook etc. Specifically with regard to conflicts.
+
+Consider for example if you have a local sign in option and the user registers their e-mail address. Then next time they come back they click the &quot;Login with Google&quot; button, which happens to be the same e-mail address. What do you do? Create a separate account? Show an error? The other option would be to log them in, but I feel there are security issues that way (typos in an e-mail and you might have access to someone else&#39;s account for example).
+
+What do you do?</description>
+    
+    <lastBuildDate>Tue, 29 Mar 2016 19:47:59 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Single sign on - multiple tracks to the same e-mail</title>
+        <dc:creator><![CDATA[mithra62]]></dc:creator>
+        <description><![CDATA[
+            <p>Yup! We did EXTENSIVE testing to ensure that things were secure so, yes, Facebook DOES require validation before the email can be used for oAuth <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917/4</link>
+        <pubDate>Tue, 29 Mar 2016 19:47:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3917-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917.rss">Single sign on - multiple tracks to the same e-mail</source>
+      </item>
+      <item>
+        <title>Single sign on - multiple tracks to the same e-mail</title>
+        <dc:creator><![CDATA[allan_jardine]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s really interesting - thanks! Do you have any idea what proportion of your users will login using 2 or more of the different authenticators? Presumably the majority stick to the same one every time.</p>
+<p>I can’t help but feel there is potential for security issues this way - if the e-mail address from the authenticator isn’t validated, then any old Facebook (or whatever) account could be used to log into an account, just by changing the e-mail address. If the authenticator does validation of the e-mail address <em>before</em> it is available via OAuth (or whatever), then that’s probably fine, but otherwise, that’s potentially nasty.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917/3</link>
+        <pubDate>Tue, 29 Mar 2016 15:25:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3917-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917.rss">Single sign on - multiple tracks to the same e-mail</source>
+      </item>
+      <item>
+        <title>Single sign on - multiple tracks to the same e-mail</title>
+        <dc:creator><![CDATA[mithra62]]></dc:creator>
+        <description><![CDATA[
+            <p>The way we do it at VITY is that we base everything off of the email address, first and foremost. So, when a user registers, and we get their email, everything afterwards uses that specific email.</p>
+<p>For example, say you logged in with Twitter first. And since Twitter doesn’t actually provide an email, you enter your email address during the signup process. So we have your email.</p>
+<p>Now, the next time you come to the site, you want to log in with Facebook. So you do. And if your confirmed email stored on Facebook matches the email we have stored, we’ll let you log in as that user. Since we trust Facebook to have validated that email. Which they do.</p>
+<p>But, let’s say your Facebook email DOESN’T match what we have; in that case we assume you’re a new user and register you as a new user. But that can cause problems, if, for example, it IS the same person, but the two accounts have separate email addresses.</p>
+<p>So. To get around THAT, we make it so once you’re already signed up you have the ability to link you other social accounts as a signed in member. And once you’re a signed in member, we now trust that your social link is actually your social account regardless of email.</p>
+<p>That said, yeah, kind of a PITA to implement (I’m the developer), but it’s been the most effective path to date (we’ve found anyway).</p>
+<p>Hope that helps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917/2</link>
+        <pubDate>Tue, 29 Mar 2016 05:56:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3917-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917.rss">Single sign on - multiple tracks to the same e-mail</source>
+      </item>
+      <item>
+        <title>Single sign on - multiple tracks to the same e-mail</title>
+        <dc:creator><![CDATA[allan_jardine]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m wondering how others here are implementing single sign on using server-side such as Google, Facebook etc. Specifically with regard to conflicts.</p>
+<p>Consider for example if you have a local sign in option and the user registers their e-mail address. Then next time they come back they click the “Login with Google” button, which happens to be the same e-mail address. What do you do? Create a separate account? Show an error? The other option would be to log them in, but I feel there are security issues that way (typos in an e-mail and you might have access to someone else’s account for example).</p>
+<p>What do you do?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917/1</link>
+        <pubDate>Wed, 23 Mar 2016 15:26:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3917-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/single-sign-on-multiple-tracks-to-the-same-e-mail/3917.rss">Single sign on - multiple tracks to the same e-mail</source>
+      </item>
+  </channel>
+</rss>

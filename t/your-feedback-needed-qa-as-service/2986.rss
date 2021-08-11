@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Your feedback needed: QA as service</title>
+    <link>https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986</link>
+    <description>I&#39;m thinking about QA as service idea and i&#39;m interested in your feedback.
+
+The service will allow you to enter steps and verify result.
+Something similar to
+ - goto &quot;sign-in&quot;
+ - enter &quot;email@server.com&quot; into &quot;email&quot;
+ - enter &quot;password&quot; into &quot;password&quot;
+ - click &quot;sign in&quot;
+ - verify &quot;hello, user&quot; message present.
+
+Kinda acceptance testing.
+
+Having these steps recorded allows you to run tests repeatedly without your time involved.
+
+Also it can work like a documentation to developer.
+
+What do you think about the idea and approach?
+Will it make your life easier? Are you gonna use it?
+
+Also i have some other questions :smile: :
+- are you doing QAing by yourself or outsource it?
+- is it manual or automated?
+
+Maybe you can propose other points to automate? You&#39;re welcome!
+
+I really appreciate your feedback!</description>
+    
+    <lastBuildDate>Fri, 28 Aug 2015 08:54:21 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Your feedback needed: QA as service</title>
+        <dc:creator><![CDATA[kirill_salykin]]></dc:creator>
+        <description><![CDATA[
+            <p>Totally agreed, same points.</p>
+<p>But initially looked like a good idea.</p>
+<p>Anyway how i can close the topic?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/7</link>
+        <pubDate>Fri, 28 Aug 2015 08:44:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2986-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986.rss">Your feedback needed: QA as service</source>
+      </item>
+      <item>
+        <title>Your feedback needed: QA as service</title>
+        <dc:creator><![CDATA[clintonskakun]]></dc:creator>
+        <description><![CDATA[
+            <p>Wow - I had this exact idea not to long ago. But then I found Node.js frameworks like Phantom and ones extending it. I could easily pay a developer (or do it myself since I’m a dev) to build that in 1hour and add it to a cron on my VM.</p>
+<p>With that in mind, you could offer to non-developers. For me, I’d never pay for it unless it was so easy I couldn’t resist.</p>
+<p>Dunno. I thought the idea would be good to try. I never actually gave it a go. Put up a launch page for it once, but no one was interested.</p>
+<p>The actual problem is here:</p>
+<p>Go to sign up page. -&gt; pay with stripe/paypal (boom—how do I test that?)</p>
+<p>If you can build a service that allows me to test me payment gateways without adding a bunch of crap data and costing me lots of money, I’d pay for it. Otherwise, I’d pay my buddy to write it up in 30 minutes in node.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/6</link>
+        <pubDate>Tue, 28 Apr 2015 01:00:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2986-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986.rss">Your feedback needed: QA as service</source>
+      </item>
+      <item>
+        <title>Your feedback needed: QA as service</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>What you describe is way too simple. Going with your example of a sign-in screen, you describe the path where everything goes right. But what companies like mine need is something to try to find the ways where things can go wrong: does the sign-in screen handle blank usernames, strange letters, loooooong usernames, SQL injections attacks, XSS attacks. If we need to script a series of tests for this, we certainly don’t want to do all the hard work of preparing the scripts, then finally hand them to someone else to execute. We’d want someone who can take a sign-in screen, and, with their expertise in QA, prepare the scripts for us. And THEN execute them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/5</link>
+        <pubDate>Mon, 20 Apr 2015 08:08:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2986-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986.rss">Your feedback needed: QA as service</source>
+      </item>
+      <item>
+        <title>Your feedback needed: QA as service</title>
+        <dc:creator><![CDATA[Virgil]]></dc:creator>
+        <description><![CDATA[
+            <p>There are lots of framework integrated with Selenium that does this automatically. If you are a small team, a good developer knows how how to deal with testing.</p>
+<p>It may be a small market for small/medium project developed over oDesk for example, but the project/update shouldn’t be delivered by the programmer without proper testing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/4</link>
+        <pubDate>Mon, 20 Apr 2015 07:21:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2986-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986.rss">Your feedback needed: QA as service</source>
+      </item>
+      <item>
+        <title>Your feedback needed: QA as service</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Our greatest need is AUTOMATED regression tests especially for screens we might not catch, like or feedback form.<br>
+And the are typos for automating these things but i THINK  they are kinda hard to learn.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/3</link>
+        <pubDate>Sun, 19 Apr 2015 22:36:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2986-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986.rss">Your feedback needed: QA as service</source>
+      </item>
+      <item>
+        <title>Your feedback needed: QA as service</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>Where I’m working has QA, but also uses <a href="http://www.zenergytechnologies.com/" rel="nofollow noopener">http://www.zenergytechnologies.com/</a></p>
+<blockquote>
+<p>Having these steps recorded allows you to run tests repeatedly without your time involved.</p>
+</blockquote>
+<p>Are you familiar with: <a href="https://en.wikipedia.org/wiki/Selenium_%28software%29" rel="nofollow noopener">Selenium</a><br>
+and companies such as <a href="https://saucelabs.com/" rel="nofollow noopener">https://saucelabs.com/</a> ?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/2</link>
+        <pubDate>Sun, 19 Apr 2015 20:21:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2986-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986.rss">Your feedback needed: QA as service</source>
+      </item>
+      <item>
+        <title>Your feedback needed: QA as service</title>
+        <dc:creator><![CDATA[kirill_salykin]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m thinking about QA as service idea and i’m interested in your feedback.</p>
+<p>The service will allow you to enter steps and verify result.<br>
+Something similar to</p>
+<ul>
+<li>goto “sign-in”</li>
+<li>enter <a>"email@server.com</a>" into “email”</li>
+<li>enter “password” into “password”</li>
+<li>click “sign in”</li>
+<li>verify “hello, user” message present.</li>
+</ul>
+<p>Kinda acceptance testing.</p>
+<p>Having these steps recorded allows you to run tests repeatedly without your time involved.</p>
+<p>Also it can work like a documentation to developer.</p>
+<p>What do you think about the idea and approach?<br>
+Will it make your life easier? Are you gonna use it?</p>
+<p>Also i have some other questions <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"> :</p>
+<ul>
+<li>are you doing QAing by yourself or outsource it?</li>
+<li>is it manual or automated?</li>
+</ul>
+<p>Maybe you can propose other points to automate? You’re welcome!</p>
+<p>I really appreciate your feedback!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986/1</link>
+        <pubDate>Sun, 19 Apr 2015 17:18:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2986-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-feedback-needed-qa-as-service/2986.rss">Your feedback needed: QA as service</source>
+      </item>
+  </channel>
+</rss>

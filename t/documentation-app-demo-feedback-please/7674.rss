@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Documentation app demo - feedback please</title>
+    <link>https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674</link>
+    <description>Hi all, some of you may remember me as the former owner of Saber Feedback. I’ve been living the 9-5 life for a couple of years now, but the old side project itch has returned 😊
+
+I realise this community is not long for this world, but I’d really appreciate feedback from you all on my _very_ early stage project. (It’s just a demo video and some basic questions at the moment)
+
+https://forms.gle/aNiw1Wp5gejjqGPy9
+
+Thanks
+Matt</description>
+    
+    <lastBuildDate>Sun, 11 Jul 2021 13:19:30 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Documentation app demo - feedback please</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Looks like an interesting idea. I really like how easy the screen shots/videos are. I think the biggest issue I see would be SEO benefit. The self hosting would get around that but then it’s most setup and moving parts.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674/4</link>
+        <pubDate>Sun, 11 Jul 2021 13:19:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7674-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674.rss">Documentation app demo - feedback please</source>
+      </item>
+      <item>
+        <title>Documentation app demo - feedback please</title>
+        <dc:creator><![CDATA[mattbearman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/serge">@Serge</a>, it’s awesome to get an enterprise perspective. That’s a great point about the people writing the docs not being those creating the screenshots. That’s exactly how it was when I worked at FreeAgent (a 250+ person company).</p>
+<p>I’m primarily aiming at small/1 person web apps, simply because that’s something I know about from running Saber. I found it hard to keep on top of docs, with screenshots and videos taking a lot of time. Of course in those companies it is mostly likely the same person writing the docs and taking screenshots.</p>
+<p>That said if this tool could be useful to large companies that would also be great <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>The demo I’ve built is doesn’t interfere with the customer site at all, and doesn’t require a browser plugin. Instead it loads the site being documented in an iframe. Of course that could be a problem depending on the customer’s <code>Content-Security-Policy</code>, I’m hoping for the majority of users it will be fine as they’ll be able to run the docs app on their own subdomain. Worst case scenario they’ll have to modify their <code>frame-src</code> directive to include that domain.</p>
+<p>When you say yearly licence do you mean for an entirely self-hosted on site version (ie: both the docs <em>and</em> the tool to create them are self-hosted)? As that’s a road I definitely do not want to go down. The back end service is required even if you’re exporting doc’s HTML for self hosting, as the screenshots and videos are initially saved locally as blobs, those blobs need to be uploaded to a server for the rest of the world to see.</p>
+<p>Thanks again for filling in the form, and Open Source Drums looks really cool, I’ll definitely be following that <img src="https://emoji.discourse-cdn.com/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674/3</link>
+        <pubDate>Sat, 10 Jul 2021 05:30:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7674-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674.rss">Documentation app demo - feedback please</source>
+      </item>
+      <item>
+        <title>Documentation app demo - feedback please</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting idea. I gave you some feedback from my Enterprize point of view. Might not be the target customer but the problem exists in large dev shops too. Documentation is always a poor child and the biggest hurdle is that the people writing the documentation are always asking for screen shots…and no one in the team has time to do those screen shot for them… and often times, they don’t have full access to a customer version of the app (we do custom dev too…large enterprises…) Nice also that you can get a movie out of it simply… That is way cool… It should not interfere with our app though, so it is a browser extension? That would be the best…</p>
+<p>I sure would have our doc team look at it. Not sure about the monthly model though. Much easier to get a licence price for it… even if it is for one year maintenance… 300$ per seat is a no brainer… even more is possible I think … I would actually try it at 799$ a seat with enterprise and see what you get…</p>
+<p>Naturally, self hosting is a must for usecases like the one I am talking about. Even if I was documenting one of my own apps, I would want to self host… Splits my brain to have my doc hosted on another host…</p>
+<p>Hope this helps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674/2</link>
+        <pubDate>Fri, 09 Jul 2021 19:34:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7674-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674.rss">Documentation app demo - feedback please</source>
+      </item>
+      <item>
+        <title>Documentation app demo - feedback please</title>
+        <dc:creator><![CDATA[mattbearman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all, some of you may remember me as the former owner of Saber Feedback. I’ve been living the 9-5 life for a couple of years now, but the old side project itch has returned <img src="https://emoji.discourse-cdn.com/twitter/blush.png?v=9" title=":blush:" class="emoji" alt=":blush:"></p>
+<p>I realise this community is not long for this world, but I’d really appreciate feedback from you all on my <em>very</em> early stage project. (It’s just a demo video and some basic questions at the moment)</p>
+<aside class="onebox allowlistedgeneric" data-onebox-src="https://forms.gle/aNiw1Wp5gejjqGPy9">
+  <header class="source">
+      <img src="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png" class="site-icon" width="16" height="16">
+
+      <a href="https://forms.gle/aNiw1Wp5gejjqGPy9" target="_blank" rel="noopener">Google Docs</a>
+  </header>
+
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/362;"><img src="https://lh6.googleusercontent.com/DQMjlyZPy7hM31OXUp6EIyXm3M3fxwjKdaqZkx7eVguzVi8Ka5sHthYnIoDuyORySpw4IWvJ7Lo=w1200-h630-p" class="thumbnail" width="690" height="362"></div>
+
+<h3><a href="https://forms.gle/aNiw1Wp5gejjqGPy9" target="_blank" rel="noopener">Documentation tool research</a></h3>
+
+  <p>I'm currently developing a tool which aims to be the quickest and easiest way to create and manage documentation and knowledge bases for web apps. Basically it's the tool I wish I had when I was running Saber Feedback.
+
+I've got as far as building a...</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>Thanks<br>
+Matt</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674/1</link>
+        <pubDate>Sat, 03 Jul 2021 07:39:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7674-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/documentation-app-demo-feedback-please/7674.rss">Documentation app demo - feedback please</source>
+      </item>
+  </channel>
+</rss>

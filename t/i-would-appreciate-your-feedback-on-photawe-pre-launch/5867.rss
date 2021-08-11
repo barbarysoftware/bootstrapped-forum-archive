@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>I would appreciate your feedback on Photawe Pre-launch</title>
+    <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867</link>
+    <description>Hi guys,
+
+After 1y+ work on this, we want to finally launch [Phot-awe](https://phot-awe.com) on Product Hunt. 
+
+What Phot-awe is: a Photo Viewer, that wants to empower users to spend time enjoying their Best Photos, while minimizing the time spent looking for them.
+
+Our planned date to do the launch is next Tue.
+
+Our pitch would be more or less:
+_We&#39;ve made Phot-Awe to help you make sense of those 25K+ Photos you have on your PC and on your Devices (Phones/Tablets, Cameras, Sticks)._
+
+_We want to empower you to spend time enjoying your Best Photos, while minimizing the time spent looking for them._
+
+_See the Current Photo, while not having to lose sight of surrounding Photos. You choose how many Photos you want to see._
+_Blazingly Fast. Easy. No Wasted Space._
+_Apply Effects while still seeing a full page of Photos._
+_View all your Photos on the World Map. Expand to any World Location for more Accuracy_
+_View all your Photos on the Timeline. Find Your Favorite Moments in no-time!_
+
+Could you let us know if:
+- the text is appealing enough
+- the text is too big
+- the text is too vague
+- any suggestions you may have
+
+Thanks in advance!</description>
+    
+    <lastBuildDate>Mon, 04 Jun 2018 08:39:44 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="33" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>1/ Put <a href="https://www.cloudflare.com/" rel="nofollow noopener">https://www.cloudflare.com/ </a> in front of it</p>
+</blockquote>
+</aside>
+<p>This looks like an awesome idea! Wasn’t aware of it - so will certainly explore this. Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/35</link>
+        <pubDate>Mon, 04 Jun 2018 08:39:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-35</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="33" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>It’s better but still not good.</p>
+</blockquote>
+</aside>
+<p>You’re right, we’re still not there yet. The “/” was paramount. We’ll gradually optimize more and more - I just wanted to make sure the main page is really fast to load. There’s clearly more to do <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> - we’ll look to address all the issues you’ve shown us here.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/34</link>
+        <pubDate>Sun, 03 Jun 2018 08:15:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-34</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s better but still not good. For /features/ page: 37 requests, 5.8 MB, 9.34 sec total, 3 secs until dom loaded.</p>
+<p>Concrete suggestions:</p>
+<p>1/ Put <a href="https://www.cloudflare.com/" rel="nofollow noopener">https://www.cloudflare.com/</a> in front of it</p>
+<p>2/ inline .css in html</p>
+<p>3/ use of external .woff fonts is gratuitious. There are good looking fonts that come with the browser and external fonts delay first paint.</p>
+<p>4/ more image optimization. e.g. logo-light.png is 1112 x 273 image that is shown as 162 x 40 logo. It doesn’t need to be bigger than that. And since it’s a simple graphic, it could be 1k vector svg</p>
+<p>Same for counter_soft*.png</p>
+<p>features.jpg is 115kb that adds very little to the page. Only part of it is shown as a background. You can replace is with some 1kb repeated texture.</p>
+<p>5/ there’s maybe 1kb worth of JavaScript sent as 100kb+ of javascript. Hand code the wanted effects in plain javascript, no need for jquery. Then inline that javascript in .html</p>
+<p>You can run perf audit in Chrome and fix the issue they point out:</p>
+<p><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/182daf77e5e4524f0fb47023073e11a8cb403267.png" alt="35%20PM" width="336" height="500"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/33</link>
+        <pubDate>Sun, 03 Jun 2018 04:27:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-33</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="30" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>The pages should be shown much faster.</p>
+</blockquote>
+</aside>
+<p>I’ve got them waaay faster. Especially the main page - right now, for me it’s instant. I did another test with <a href="http://webpagetest.com" rel="nofollow noopener">webpagetest.com</a>, and it loads in roughly 4s from US. But it seems for a decent computer, where Chrome can go crazy optimizing loading content, it loads pretty much instantly. Please, when/if you have the time, do another test. Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/32</link>
+        <pubDate>Sat, 02 Jun 2018 19:29:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-32</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="30" data-topic="5867" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I’ve been watching the improvements on your site over the last week or so. It is much better now. As they say, “show, don’t tell”. When I first saw your home page, it was “tell” Now, the home page video (shot in Cluj, right?) is doing a great job of showing…</p>
+</blockquote>
+</aside>
+<p>Hi Steve,</p>
+<p>Thanks for the feedback!</p>
+<ol>
+<li>Yes, the video is shot in Cluj, and thanks <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">
+</li>
+<li>You’re probably right about the video - I will talk to my photographer to take another stab at it.</li>
+<li>You’re totally right about the loading animation - that was something we got when we bought the theme <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> I’ve just talked to my web developer, and I hope to have it down to 1s or less (tomorrow).</li>
+</ol>
+<p>It may be that I will have to aim at photographers/hobbyists. It may be a dream, but I’m hoping to win you over with the ease and simplicity that our app give you.</p>
+<p>For instance, take zoom:<br>
+Once you enter zoom mode, just hover over the Current Photo, and it zooms. But you can change the Current Photo, or the current page, or both - and hover again -&gt; and it just zooms.<br>
+You can enter full screen - if you’re in zoom mode, it zooms. You can change the Current Photo while in full screen, and it still zooms.<br>
+You can choose Effects View, and and you can still zoom to see how the effects are applied. In fact, right click on the Current Photo while zooming, and you will see the original photo (before the effects were applied) + zoomed (before effects were applied). Release the right click, and you’re back zooming the Photo with the effects on.</p>
+<p>In addition, by default, the zoomed are does not interfere with the rest of the Photo (it does not overlap).</p>
+<p>This is what we aim to do with all of our features.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/31</link>
+        <pubDate>Thu, 31 May 2018 11:23:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been watching the improvements on your site over the last week or so. It is much better now. As they say, “show, don’t tell”. When I first saw your home page, it was “tell” Now, the home page video (shot in Cluj, right?) is doing a great job of showing.</p>
+<p>However, the video is way too long. I’d recommend 90 seconds max. It currently takes 50 seconds into the video before you even hint at what your product is. Edit, edit, edit. Cut, cut, cut. People on the web have extremely short attention spans. They’re always a click or tab away from leaving your site. So get your message across before they’re gone.</p>
+<p>The page loading animation is pointless. The pages should be shown much faster. I’m using 300 Mbps fibre optic - there is no reason why I should wait more than 1 second before seeing useful info, but currently, it takes several seconds. Speed, speed, speed. Your site is a static marketing site. Technically this means it should faster than 95% of all websites. This is important for not losing fickle website visitors, and, allegedly, for pleasing the great God Google in website ranking.</p>
+<p>I agree with others that you’ll have a really hard time making this product work financially if you aim at general consumers. Perhaps, though, you could aim at hobbyists who spend lots of money on cameras?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/30</link>
+        <pubDate>Wed, 30 May 2018 18:33:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="24" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>A page should load in under a second. This is a perf report for your page.</p>
+</blockquote>
+</aside>
+<p>I got it down to roughly 4.9s (the main page). The features page loads in roughly 11.5s (from US), we’ll figure out improving it. In my tests, the page loads way faster, because the pngs load as the page shows. Anyway, we’ll improve <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+About 3. and 4. - still to do <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+Thanks again!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/29</link>
+        <pubDate>Wed, 30 May 2018 11:17:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="27" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Note: it doesn’t work like that</p>
+</blockquote>
+</aside>
+<p>I do understand what you mean. But “awesome” goes hand in hand with our presentation video. If it won’t work, time will tell.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/28</link>
+        <pubDate>Tue, 29 May 2018 20:16:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="25" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/photawe/40/4181_1.png" class="avatar"> photawe:</div>
+<blockquote>
+<p>Makes me wonder what the “awesome experience” might be, so I’d take a closer look at your product<br>
+…<br>
+To use a very unspecific word, “awesome</p>
+</blockquote>
+</aside>
+<p>Note: it doesn’t work like that. Not in the modern web. We’re so overloaded with “Awesome!”, “Cool!”, “Fantastic!” and other forced emotions that our brains filter them out just like our eyes filter out the banners.</p>
+<p>The way to capture visitors’ attention is to be specific and to the point; if you show that you solve THE problem they have, they’ll click. Nobody clicks on “Awesome” because it says “Awesome”; rather, we expect it to be a lie and a marketing ploy.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/27</link>
+        <pubDate>Tue, 29 May 2018 16:57:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="24" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>Impressive work. But there are nits that are easy to fix</p>
+</blockquote>
+</aside>
+<p>Hi <a class="mention" href="/u/kjk">@kjk</a>,</p>
+<p>First off, many thanks for the detailed feedback!</p>
+<p>1/2. Damn. In Romania, it loads MUCH faster <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> Anyway, you got a really good point - need to talk to my web programmer and make that loading time waaaaay faster!<br>
+3. Indeed, need to fix that too<br>
+4. Yes, the website was created a while ago, and I changed the tagline/description since then - thus, need to update <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+5. It’s on my todo list - i expect to have something ready within 1 - 1.5 months. The idea is that I want to make it awesome <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> - that is, integration with cloud needs to be “WOW” <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Then, I’ll tell people about it <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+6. I’m looking to find a niche that will want to pay for this (it may be photographers, in the end) - it may be hard, but worth it in my view. I wanted something that I would enjoy using - and there was nothing out there. Assuming there’s interest, there are quite a lot more things I will add that people may want to pay for (for instance, I just did a research on collage apps)</p>
+<p>Thanks again for the feedback!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/26</link>
+        <pubDate>Tue, 29 May 2018 09:09:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="23" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/p/9de0a6/40.png" class="avatar"> Paul1970:</div>
+<blockquote>
+<p>Yes, that sounds better to me. Makes me wonder what the “awesome experience” might be, so I’d take a closer look at your product, which is precisely what you want. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>To use a very unspecific word, “awesome” <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"><br>
+Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/25</link>
+        <pubDate>Tue, 29 May 2018 08:55:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p>Impressive work. But there are nits that are easy to fix</p>
+<p>1\ All webpages have a loading indicator and take 6.3 seconds to load on fast desktop (per chrome dev tools).</p>
+<p>Not sure if you just wanted to be cute or is it because you think it’s necessary but no software marketing website shouldn’t make the user wait seconds to display useful information.</p>
+<p>Your no 1 client is Google’s spider. He likes his pages fast, with meaningful text.</p>
+<p>In the worst case cutesy loader animations, unnecessarily dynamic text etc. can prevent your site from indexing.</p>
+<p>A page should load in under a second. This is a perf report for your page. <a href="https://www.webpagetest.org/result/180528_YH_089ee875bdfd1d15fa183bf598c97457/" rel="nofollow noopener">https://www.webpagetest.org/result/180528_YH_089ee875bdfd1d15fa183bf598c97457/</a></p>
+<p>It’s fine to add cutesy animation here and there but remove the in-your-face “revealing my page on startup” animation.</p>
+<p>2\ Optimize your pages, especially your pngs. <a href="https://phot-awe.com/features/" rel="nofollow noopener">https://phot-awe.com/features/</a> loads 17 MB, of which 6.5 MB is a GIANT, unoptimized png. Make them of reasonable size and run through optipng.</p>
+<p>According to <a href="https://webspeedtest.cloudinary.com/results/180528_YH_089ee875bdfd1d15fa183bf598c97457" rel="nofollow noopener">https://webspeedtest.cloudinary.com/results/180528_YH_089ee875bdfd1d15fa183bf598c97457</a> you could reduce the size by 98% by reducing sizes, using the best format and optimizing.</p>
+<p>3\ <a href="https://phot-awe.com/features/" rel="nofollow noopener">https://phot-awe.com/features/</a> looks empty on load.</p>
+<p>Again, it’s the “cutesy animation syndrome”. The screenshots “animate in” on scroll but on initial load the page just looks broken.</p>
+<p>4\ Keyword SEO 101</p>
+<p>I doesn’t look like you’ve picked keywords you want to rank high in Google and did something to help with that.</p>
+<p>Most of what I wrote in <a href="http://discuss.bootstrapped.fm/t/ideas-to-increase-license-sales/5820/3?u=kjk">Ideas to increase license sales</a> applies to your website.</p>
+<p>5\ Online services support.</p>
+<p>I would think that in this day most people with lots of photos keep then on Flickr/smugmug/Google Photos/Facebook/iCloud.</p>
+<p>Consequently I would expect direct support for them would be desired feature. Based on docs there’s nothing of such kind.</p>
+<p>Final advice: apps for end users are hard. This is Picasa, which I used many years ago but only because it was free.</p>
+<p>Clearly you can write high quality software.</p>
+<p>Write something related to jobs, not hobbies.</p>
+<p>It’s much easier for someone to justify spending $80 on a tool that helps them do their job (expense accounts!) than to justify spending $20 on photo organizer.</p>
+<p>I’m certain that if you’ve spent similar amount of time on a good git client (my favorite example), you would be making good money from it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/24</link>
+        <pubDate>Mon, 28 May 2018 21:24:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="18" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/photawe/40/4181_1.png" class="avatar"> photawe:</div>
+<blockquote>
+<p>“You Love taking Photos. We’re giving your Passion an Awesome Experience.”</p>
+</blockquote>
+</aside>
+<p>Yes, that sounds better to me. Makes me wonder what the “awesome experience” might be, so I’d take a closer look at your product, which is precisely what you want. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/23</link>
+        <pubDate>Mon, 28 May 2018 21:11:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="21" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Denial phase see I.</p>
+</blockquote>
+</aside>
+<p>Got it, it’s not set in stone. I will clearly pay attention to what our users and conversion rate will say. If this is not good enough - I will change it (as I changed my original tagline, which was different). Thanks for the feedback!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/22</link>
+        <pubDate>Mon, 28 May 2018 19:32:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="20" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/photawe/40/4181_1.png" class="avatar"> photawe:</div>
+<blockquote>
+<p>We give your Passion (= taking Photos), an Awesome Experience (=Awesome Photo Viewer)</p>
+</blockquote>
+</aside>
+<p>Denial phase see I.</p>
+<p>Passion is very unspecific. Awesome is very unspecific too.</p>
+<p>Imagine me coming to your site and seeing your tag line. Or, better yet, me noticing it on some girl’s t-shirt. Or a bus. Will I be able to grasp instantly what is that you’re doing and how are you special, so I rush to my browser to get to your site ASAP? Nope. It could mean fokking anything, so I won’t even bother.</p>
+<p>As such, this tagline - IMHO, all IMHO - is nothing more than a waste of space and a visitor’s attention saturation.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/21</link>
+        <pubDate>Mon, 28 May 2018 18:33:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="19" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>All the right words, but bug me if I know what they mean.</p>
+</blockquote>
+</aside>
+<p>In a nutshell: We give your Passion (= taking Photos), an Awesome Experience (=Awesome Photo Viewer) <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/20</link>
+        <pubDate>Mon, 28 May 2018 17:27:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="18" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/photawe/40/4181_1.png" class="avatar"> photawe:</div>
+<blockquote>
+<p>We’re giving your Passion an Awesome Experience</p>
+</blockquote>
+</aside>
+<p>All the right words, but bug me if I know what they mean.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/19</link>
+        <pubDate>Mon, 28 May 2018 16:19:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="17" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/p/9de0a6/40.png" class="avatar"> Paul1970:</div>
+<blockquote>
+<p>I don’t like that one. My photos are my personal work, and the thought of someone else “looking” at them with me… you know. Even if you’re not, it comes across that way.</p>
+</blockquote>
+</aside>
+<p>Interesting <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I will need to ponder more on this one, and see what others think. This one came from the guy that made the video. I’ve asked about 25 people (before using it), and they all love/like it.</p>
+<p>LATER EDIT:<br>
+My bad. We ended up using “You Love taking Photos. We’re giving your Passion an Awesome Experience.”<br>
+Does that sound a bit better? <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/18</link>
+        <pubDate>Mon, 28 May 2018 13:17:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="8" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/photawe/40/4181_1.png" class="avatar"> photawe:</div>
+<blockquote>
+<p>You Love taking Photos. We’re right there beside you, accompanying you in your Experience</p>
+</blockquote>
+</aside>
+<p>I don’t like that one. My photos are my personal work, and the thought of someone else “looking” at them with me… you know. Even if you’re not, it comes across that way.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/17</link>
+        <pubDate>Mon, 28 May 2018 12:47:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[umeca74]]></dc:creator>
+        <description><![CDATA[
+            <p>yes, my main business is xplorer2. Glad you like it!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/16</link>
+        <pubDate>Fri, 25 May 2018 06:49:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks a lot for the feedback guys, product is live <a href="https://www.producthunt.com/posts/phot-awe" rel="nofollow noopener">here</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/15</link>
+        <pubDate>Thu, 24 May 2018 13:46:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="12" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Consumers are fickle.</p>
+<p>However, I remember I liked very much that Picasa was organized the albums by dates automatically. If you add location to that and provide default names to it like “At Tim Hortons Feb 22, 2018”, it takes 99% of the work of organizing the albums.</p>
+</blockquote>
+</aside>
+<p>That is something I plan to add in the near future, to my timeline - basically, find out where a specific set of Photos was taken.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/14</link>
+        <pubDate>Thu, 24 May 2018 13:44:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/bcef8e/40.png" class="avatar"> umeca74:</div>
+<blockquote>
+<p>I thought that a map search for pics (at least for a windows app) would sell like hotcakes a few years ago, but as it turns out it doesn’t sell itself as I wished <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+<a href="https://www.zabkat.com/deskrule/gps-photo-search.htm" rel="nofollow noopener">https://www.zabkat.com/deskrule/gps-photo-search.htm</a></p>
+<p>but with a more energetic guy who is prepared to put in the marketing effort, it might work!</p>
+</blockquote>
+</aside>
+<p>He he <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Initially, I thought I was the only one doing this for Windows. Then, while I did not find out about the zabkat app, I did find out about another app that was created 2 years ago I think, with pretty much 1500+ votes on MS Store. Having said that, my app offers it all - besides just finding Photos on the map, you can further filter stuff out, and see only those on the map. Also, you can combine that with favorites and rating. Long story short, lets see what people say <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>PS. Are you the maker of xplorer (zabkat)? If so, I’ve been using your product  for years <img src="https://emoji.discourse-cdn.com/twitter/stuck_out_tongue.png?v=5" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:"> And yes, it’s awesome!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/13</link>
+        <pubDate>Thu, 24 May 2018 13:42:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="5867">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/bcef8e/40.png" class="avatar"> umeca74:</div>
+<blockquote>
+<p>I thought that a map search for pics (at least for a windows app) would sell like hotcakes a few years ago, but as it turns out it doesn’t sell itself as I wished</p>
+</blockquote>
+</aside>
+<p>Consumers are fickle.</p>
+<p>However, I remember I liked very much that Picasa was organized the albums by dates automatically. If you add location to that and provide default names to it like “At Tim Hortons Feb 22, 2018”, it takes 99% of the work of organizing the albums.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/12</link>
+        <pubDate>Thu, 24 May 2018 13:20:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+      <item>
+        <title>I would appreciate your feedback on Photawe Pre-launch</title>
+        <dc:creator><![CDATA[umeca74]]></dc:creator>
+        <description><![CDATA[
+            <p>I thought that a map search for pics (at least for a windows app) would sell like hotcakes a few years ago, but as it turns out it doesn’t sell itself as I wished <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+<a href="https://www.zabkat.com/deskrule/gps-photo-search.htm" class="onebox" target="_blank" rel="nofollow noopener">https://www.zabkat.com/deskrule/gps-photo-search.htm</a></p>
+<p>but with a more energetic guy who is prepared to put in the marketing effort, it might work!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867/11</link>
+        <pubDate>Thu, 24 May 2018 07:43:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5867-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-would-appreciate-your-feedback-on-photawe-pre-launch/5867.rss">I would appreciate your feedback on Photawe Pre-launch</source>
+      </item>
+  </channel>
+</rss>

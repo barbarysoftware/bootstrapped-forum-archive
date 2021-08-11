@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Accounting hassle for online services</title>
+    <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433</link>
+    <description>As I start to use more online services in my business, the task of collecting invoices/receipts for accounting purposes each month is getting somewhat tedious.
+
+Every service has their own method of providing invoices/receipts, and most of them require me to log on to their site and manually download the PDFs. Usuallty they do send a notification via e-mail, but still some manual work is required to get the official documents, which seems a bit strange.
+
+**Why don&#39;t they just send the PDF(s) with the notification e-mail?** E-commerce sites are usually much better at this, but SaaS vendors are lagging behind. Even the big ones, like Amazon, don&#39;t provide PDF receipts with their e-mails.
+
+What&#39;s even worse is that the actual PDFs can be quite tricky to find. For example, on DigitalOcean, there is no *Billing*, *Payments* or *Receipts* choice available via their (top-level) menus. I have to go via *Settings* on the account drop-down (which, of course, I have to re-discover every month, as I keep forgetting where it is).
+
+If you are a SaaS vendor, here are some tips for you:
+
+1. **Always send PDF receipts via e-mail** when you do billing. If you can&#39;t, for whatever reason (technical or other), please make sure your e-mail receipt is legally valid, so I can print it to PDF and use it for accounting purposes.
+
+2. **If your service is cheap, please provide an option to pay anually.** For a $5 service, monthly accounting is costing me more than the service!
+
+3. **Please make it *very* easy to find the billing statments** when I&#39;m logged into your service, even if you send the PDF via e-mail.
+
+**How do other people deal with this hassle?** I only use a few services at the moment, but I can imagine this process getting very annoying (and time-consuming) as the number of services increase.</description>
+    
+    <lastBuildDate>Thu, 09 Nov 2017 14:26:39 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Accounting hassle for online services</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s a tip for making sure your own SaaS’s invoice creation and delivery is great: be a paying customer for your own product.</p>
+<p>Once you do that, each month you’ll experience exactly what your customers do. Is the invoice attached? well-formatted? free of typos? accurate? clear? You’ll know.</p>
+<p>Consider it a type of <a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food">dogfooding</a>. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/9</link>
+        <pubDate>Thu, 09 Nov 2017 14:26:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5433-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss">Accounting hassle for online services</source>
+      </item>
+      <item>
+        <title>Accounting hassle for online services</title>
+        <dc:creator><![CDATA[ianmjones]]></dc:creator>
+        <description><![CDATA[
+            <p>Totally agree, not getting PDF invoices by email is one of those things that <em>helps</em> me procrastinate on reconciling my accounts each month!</p>
+<p>I’ve recently switched a bunch of services to yearly to reduce this hassle, and have definitely considered dropping services because their invoices are either hard to get or virtually non-existent.</p>
+<p>FYI: I get my Amazon Web Services invoice by email each month with a PDF attached, so I guess there’s an option for that somewhere.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/8</link>
+        <pubDate>Thu, 09 Nov 2017 09:34:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5433-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss">Accounting hassle for online services</source>
+      </item>
+      <item>
+        <title>Accounting hassle for online services</title>
+        <dc:creator><![CDATA[asandvig]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="5433">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/holger/40/3639_1.png" class="avatar"> holger:</div>
+<blockquote>
+<p>I can only agree. It is manual work, no automation possible without passing the credentials.<br>
+[…]<br>
+Maybe I should go ahead and build this myself…</p>
+</blockquote>
+</aside>
+<p>Actually, my initial idea was that this would be nice if was provided as a SaaS. If I could log into one place and get all the receipts/invoices for a month in a single place, that would be awesome.</p>
+<p>However, it might be a bit tricky to implement such a service, as you would either need to “fake it”, by logging in to the actual service websites using my credentials (which I would probably not allow), or the service provider would have to have an API for downloading the documents or implement a client for a third-party API for document export. It’s possible, but the service would only be useful if it integrated with the other services that I am also a customer of. Seeing as many (most?) SaaS vendors don’t even bother to implement PDF-receipts in a nice way, I doubt they’d bother to implement such an API (either as a client or a server).</p>
+<p>Ideally, I would want the actual billing to be done by such a service as well, as keeping credit cards up to date all over the internet is also somewhat of a hassle. Would be nice if there was some kind of subscription administration meta-service out there, but I suspect the SaaS vendors might not be so interested in it, as they want to “own” the customer themselves. Maybe someone like Stripe could grow large enough to provide it. At least then it would cover all services that use Stripe for payment processing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/7</link>
+        <pubDate>Wed, 08 Nov 2017 16:06:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5433-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss">Accounting hassle for online services</source>
+      </item>
+      <item>
+        <title>Accounting hassle for online services</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="5433">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/holger/40/3639_1.png" class="avatar"> holger:</div>
+<blockquote>
+<p>Maybe I should go ahead and build this myself…</p>
+</blockquote>
+</aside>
+<p>Maybe you should. There seem to be a demand, and the estimated cost for not having such an application is “more than $5 a month” per SaaS, so you even have some pricing baseline.</p>
+<p>And it should have a Plugin API for other people to add other SaaSes to it so you don’t have to to it yourself.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/6</link>
+        <pubDate>Wed, 08 Nov 2017 14:35:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5433-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss">Accounting hassle for online services</source>
+      </item>
+      <item>
+        <title>Accounting hassle for online services</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m completely with you on this. I’ve felt the frustration myself, so when designing the billing infrastructure for Feature Upvote, I <strong>knew</strong> I needed to:</p>
+<ul>
+<li>send invoices automatically via email as PDF attachments</li>
+<li>make sure Invoices is a top-level navigation item</li>
+</ul>
+<p>That’s two of your three tips for SaaS vendors! And yes, we allow annual billing for convenience.</p>
+<p>I think if you are building a SaaS, it is a very good idea to become a paid user of a few SaaS products first, so that you experience these kind of finer issues of convenience and usability.</p>
+<p>Let me make a quick endorsement for <a href="https://quaderno.io/">Quaderno</a> (run by <a class="mention" href="/u/polimorfico">@polimorfico</a>)  which has made it remarkably easy to ensure our customers get PDF invoices via email that look good and meet all legal requirements for the recipient’s country. Our dashboard -&gt; invoices screen is just a simple veneer over the Quaderno API for listing and retrieving invoices.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/5</link>
+        <pubDate>Wed, 08 Nov 2017 12:44:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5433-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss">Accounting hassle for online services</source>
+      </item>
+      <item>
+        <title>Accounting hassle for online services</title>
+        <dc:creator><![CDATA[holger]]></dc:creator>
+        <description><![CDATA[
+            <p>I can only agree. It is manual work, no automation possible without passing the credentials.</p>
+<p>In an earlier search of a solution I came accross a SaaS (<a href="https://www.getmyinvoices.com" rel="nofollow noopener">https://www.getmyinvoices.com</a>) that does this automation (by remote controlling a browser and using the credentials). That of course has the same security concerns I have when I would pass this to a VA.</p>
+<p>I would have bought it if there was a local/desktop solution where the credentials do not leave my machine.<br>
+Maybe I should go ahead and build this myself…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/4</link>
+        <pubDate>Wed, 08 Nov 2017 12:30:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5433-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss">Accounting hassle for online services</source>
+      </item>
+      <item>
+        <title>Accounting hassle for online services</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with all you’ve said - just send me the PDF dammit! Microsoft Azrue do it this way (after agreeing to a disclaimer that email isn’t secure).</p>
+<p>Normally this is exactly the sort of thing that should be outsourced to low cost VA - but many of these services are just too critical to be passing credentials to other people.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/3</link>
+        <pubDate>Wed, 08 Nov 2017 09:07:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5433-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss">Accounting hassle for online services</source>
+      </item>
+      <item>
+        <title>Accounting hassle for online services</title>
+        <dc:creator><![CDATA[Basilakis]]></dc:creator>
+        <description><![CDATA[
+            <p>There are services like fastspring for example, where the only thing you have to do is to have an integration up and running, nothing else.<br>
+They do invoices, Vat and everything and in the end they just send you money - you invoice them - and end of the deal.<br>
+That is option one there is an other option also, but depends on country you are located.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/2</link>
+        <pubDate>Wed, 08 Nov 2017 08:01:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5433-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss">Accounting hassle for online services</source>
+      </item>
+      <item>
+        <title>Accounting hassle for online services</title>
+        <dc:creator><![CDATA[asandvig]]></dc:creator>
+        <description><![CDATA[
+            <p>As I start to use more online services in my business, the task of collecting invoices/receipts for accounting purposes each month is getting somewhat tedious.</p>
+<p>Every service has their own method of providing invoices/receipts, and most of them require me to log on to their site and manually download the PDFs. Usuallty they do send a notification via e-mail, but still some manual work is required to get the official documents, which seems a bit strange.</p>
+<p><strong>Why don’t they just send the PDF(s) with the notification e-mail?</strong> E-commerce sites are usually much better at this, but SaaS vendors are lagging behind. Even the big ones, like Amazon, don’t provide PDF receipts with their e-mails.</p>
+<p>What’s even worse is that the actual PDFs can be quite tricky to find. For example, on DigitalOcean, there is no <em>Billing</em>, <em>Payments</em> or <em>Receipts</em> choice available via their (top-level) menus. I have to go via <em>Settings</em> on the account drop-down (which, of course, I have to re-discover every month, as I keep forgetting where it is).</p>
+<p>If you are a SaaS vendor, here are some tips for you:</p>
+<ol>
+<li>
+<p><strong>Always send PDF receipts via e-mail</strong> when you do billing. If you can’t, for whatever reason (technical or other), please make sure your e-mail receipt is legally valid, so I can print it to PDF and use it for accounting purposes.</p>
+</li>
+<li>
+<p><strong>If your service is cheap, please provide an option to pay anually.</strong> For a $5 service, monthly accounting is costing me more than the service!</p>
+</li>
+<li>
+<p><strong>Please make it <em>very</em> easy to find the billing statments</strong> when I’m logged into your service, even if you send the PDF via e-mail.</p>
+</li>
+</ol>
+<p><strong>How do other people deal with this hassle?</strong> I only use a few services at the moment, but I can imagine this process getting very annoying (and time-consuming) as the number of services increase.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433/1</link>
+        <pubDate>Wed, 08 Nov 2017 07:01:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5433-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accounting-hassle-for-online-services/5433.rss">Accounting hassle for online services</source>
+      </item>
+  </channel>
+</rss>

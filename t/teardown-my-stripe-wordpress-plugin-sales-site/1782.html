@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Teardown my Stripe WordPress plugin sales site - Show Bootstrapped - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Hey folks, 
+
+I read the great responses you all gave my friend @BradT with his new sales site design for WP Migrate DB Pro, so he suggested I post my teardown in these forums as well. 
+
+http://wpstripe.net 
+
+This is a si&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1782.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Teardown my Stripe WordPress plugin sales site&#39;" href="1782.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/teardown-my-stripe-wordpress-plugin-sales-site/1782" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/teardown-my-stripe-wordpress-plugin-sales-site/1782" />
+<meta property="og:title" content="Teardown my Stripe WordPress plugin sales site" />
+<meta name="twitter:title" content="Teardown my Stripe WordPress plugin sales site" />
+<meta property="og:description" content="Hey folks,  I read the great responses you all gave my friend @BradT with his new sales site design for WP Migrate DB Pro, so he suggested I post my teardown in these forums as well.  http://wpstripe.net  This is a site selling some paid add-on packages to my Stripe Checkout WordPress plugin that’s been gaining traction over the last few months on wordpress.org.  This is currently a test page with only the landing page design and copy done. I plan on launching the entire site in a couple days if..." />
+<meta name="twitter:description" content="Hey folks,  I read the great responses you all gave my friend @BradT with his new sales site design for WP Migrate DB Pro, so he suggested I post my teardown in these forums as well.  http://wpstripe.net  This is a site selling some paid add-on packages to my Stripe Checkout WordPress plugin that’s been gaining traction over the last few months on wordpress.org.  This is currently a test page with only the landing page design and copy done. I plan on launching the entire site in a couple days if..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="3 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2014-07-07T22:25:20+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1782.html">Teardown my Stripe WordPress plugin sales site</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/show-bootstrapped.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F7941D'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Show Bootstrapped</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/philderksen.html'><span itemprop='name'>philderksen</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2014-07-07T22:25:20Z'>
+              <time itemprop='dateModified' datetime='2014-09-22T17:04:11Z' class='post-time'>
+                September 22, 2014,  5:04pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hey folks,</p>
+<p>I read the great responses you all gave my friend <a class="mention" href="../../u/bradt.html">@BradT</a> with his new sales site design for WP Migrate DB Pro, so he suggested I post my teardown in these forums as well.</p>
+<p><a href="http://wpstripe.net" class="onebox" target="_blank" rel="nofollow noopener">http://wpstripe.net</a></p>
+<p>This is a site selling some paid add-on packages to my Stripe Checkout WordPress plugin that’s been gaining traction over the last few months on <a href="http://wordpress.org" rel="nofollow noopener">wordpress.org</a>.</p>
+<p>This is currently a test page with only the landing page design and copy done. I plan on launching the entire site in a couple days if all goes well and it’s “good enough”.</p>
+<p>I’ll take any criticism, so don’t be shy! Thanks everyone.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/derrickreimer.html'><span itemprop='name'>derrickreimer</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2014-07-08T02:18:01Z'>
+              <time itemprop='dateModified' datetime='2014-07-08T04:58:44Z' class='post-time'>
+                July 8, 2014,  4:58am
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hey sir,</p>
+<p>It’s looking good to me. The only thing that jumped out at me was the formatting on the mobile header.</p>
+<p>(<a href="https://www.dropbox.com/s/w1yp8n826oeygik/IMG_1117.PNG" rel="nofollow noopener">https://www.dropbox.com/s/w1yp8n826oeygik/IMG_1117.PNG</a>)</p>
+<p>Probably not a big deal, but the heading is a bit cut off.</p>
+<p>Derrick</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/johnnytee.html'><span itemprop='name'>johnnytee</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-08T13:04:21Z' class='post-time'>
+                July 8, 2014,  1:04pm
+              </time>
+              <meta itemprop='dateModified' content='2014-07-08T13:04:21Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hey Phil,</p>
+<p>Looks great. The only thing that is not clear are the advanced addons. maybe a little more info as to what they are and when they will be released.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bradt.html'><span itemprop='name'>bradt</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-08T13:25:14Z' class='post-time'>
+                July 8, 2014,  1:25pm
+              </time>
+              <meta itemprop='dateModified' content='2014-07-08T13:25:14Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Overall great looking design and a great job on structuring your sales page a few bits of feedback…</p>
+<ol>
+<li>“In just minutes you can start accepting payments with Stripe’s highly optimized forms.” is a bit hard to read</li>
+<li>Remove “test credit card number” link to stripe. The one you have is enough and you don’t want to lose people browsing Stripe’s site.</li>
+<li>The demos kind of blend together. Maybe some more spacing or some kind of delimiters to help separate them.</li>
+<li>Great copy in money back guarantee <img src="https://emoji.discourse-cdn.com/twitter/stuck_out_tongue.png?v=5" title=":stuck_out_tongue:" class="emoji" alt=":stuck_out_tongue:">
+</li>
+<li>Unless you’re planning to implement some kind of scroll tracking to see if people view your pricing, you may want to consider moving the pricing, guarantee, and FAQ to a separate pricing page. I think the analytics on this are going to be tricky though.</li>
+<li>You may also consider a section that makes it clear why you need this plugin in addition to Stripe. Why can’t I just copy Stripe’s embed code and that’s it?</li>
+<li>Some screenshots of the WordPress admin would be good for developer customers.</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/robwalling'><span itemprop='name'>robwalling</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-08T15:41:54Z' class='post-time'>
+                July 8, 2014,  3:41pm
+              </time>
+              <meta itemprop='dateModified' content='2014-07-08T15:41:54Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Overall looking very good. The one thing that hit me was what <a class="mention" href="../../u/bradt.html">@bradt</a> said: “The demos kind of blend together. Maybe some more spacing or some kind of delimiters to help separate them.”</p>
+<p>I think a box around each demo or some spacing would do a lot for this space.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/brianknapp.html'><span itemprop='name'>brianknapp</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-08T20:17:31Z' class='post-time'>
+                July 8, 2014,  8:17pm
+              </time>
+              <meta itemprop='dateModified' content='2014-07-08T20:17:31Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The font color on your headline doesn’t work well with the background photo and when it is responsive at smaller sizes it is a total unreadable mess.</p>
+<p>I would put some kind of semitransparent white box or something like that under the text so that it’s readable. Or, I would kill the image and make it a more subtle background. Either way if I can’t easily read your headline I won’t buy your product.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/johnf'><span itemprop='name'>johnf</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-09T11:35:49Z' class='post-time'>
+                July 9, 2014, 11:35am
+              </time>
+              <meta itemprop='dateModified' content='2014-07-09T11:35:49Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Looks really great.</p>
+<p>You may want to think about the quote about setting up Stripe and your plugin in 5 minutes.  Doesn’t it take a bit longer to setup Stripe and then have to confirm bank accounts before you can start receiving money?</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/philderksen.html'><span itemprop='name'>philderksen</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-10T17:27:19Z' class='post-time'>
+                July 10, 2014,  5:27pm
+              </time>
+              <meta itemprop='dateModified' content='2014-07-10T17:27:19Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks everyone! This has been super helpful.</p>
+<p>I started in on a few of the suggestions and will continue, but decided to go ahead and put it out there since it’s “good enough”.</p>
+<p><a href="http://wpstripe.net" class="onebox" target="_blank" rel="nofollow noopener">http://wpstripe.net</a></p>
+<p>More refinements to come.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/sansmagicc.html'><span itemprop='name'>sansmagicc</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-11T16:19:29Z' class='post-time'>
+                July 11, 2014,  4:19pm
+              </time>
+              <meta itemprop='dateModified' content='2014-07-11T16:19:29Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It looks very good!</p>
+<p>I have a few concerns about the copy, though:</p>
+<blockquote>
+<p>Beautiful Stripe Checkout Forms for WordPress</p>
+</blockquote>
+<p>This isn’t a fashion accessory. Is the most important thing about the forms that they are beautiful? Why not focus on a bigger problem? What is the main reason why your potential customers need your plugin? It’s better to talk about <em>the problem that the plugin solves</em>, not about the plugin itself. Do your customers want to increase their conversion rate? Or is it something else? Figure this out and make it your tagline. Just ask “Why?” for each of your main statements:</p>
+<p>Example. Let’s pretend I’m your potential customer:<br>
+"Beautiful Stripe Checkout Forms for WordPress"<br>
+Why do I need Beautiful Stripe Checkout Forms for WordPress?</p>
+<p>"In just minutes you can start accepting payments with Stripe’s highly optimized forms."<br>
+Why do I want to receive payments through Stripe?<br>
+Why do I need to setup payment through Stripe for Wordpress in just minutes? What other slow and painful solutions are there? Do I need to touch code to implement them? If I know nothing about code and I need to modify code, I will shiver at the thought.</p>
+<p>I agree with what <a class="mention" href="../../u/bradt.html">@bradt</a> said. I just want to expand on one of his points:</p>
+<blockquote>
+<p>You may also consider a section that makes it clear why you need this plugin in addition to Stripe. Why can’t I just copy Stripe’s embed code and that’s it?</p>
+</blockquote>
+<p>I would ask the same question or “Why do I want to use your plugin over other Stripe Wordpress plugins?” The answer to all these questions is benefits.</p>
+<p>You’re only listing features on the entire page. Features come after benefits.</p>
+<p>So, again, I ask the “Why” questions:</p>
+<p>Forms that Convert<br>
+Why do I need forms that convert? Maybe my conversion rate is low.</p>
+<p>Optimized for Mobile<br>
+Why do I need it to be optimized for mobile? Maybe my mobile customers leave at checkout. If you remind me that, say 70%, of my mobile visitors don’t complete the checkout form, whereas on desktop I don’t have such a problem, I will feel the pain. I’m losing customers. I want to do something about it. Then, if you tell me that there is a solution to this problem and that solution is to optimize my Stripe checkout form for mobile, I will be interested. I will ask “How do I optimize it?” Then, you can tell me that you’ve got a ready solution for my problem. I just have to install it on my website in 5 minutes. You prepared me for the sale. You reminded me that I have a problem. You told me that this problem can be solved. And then you offered me the solution.</p>
+<p>I hope this makes sense.</p>
+<p>Best of luck with your business!<br>
+—Gergana</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Kyle.html'><span itemprop='name'>Kyle</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2014-07-14T11:21:05Z'>
+              <time itemprop='dateModified' datetime='2014-07-14T11:21:41Z' class='post-time'>
+                July 14, 2014, 11:21am
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/philderksen.html">@philderksen</a>  My response maybe too late as the original my have been updated. What I see today looks good. Really liked the demos right there on the page. Support pages look good also.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/tnorthcutt'><span itemprop='name'>tnorthcutt</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-17T20:22:03Z' class='post-time'>
+                July 17, 2014,  8:22pm
+              </time>
+              <meta itemprop='dateModified' content='2014-07-17T20:22:03Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>+1 to all of what <a class="mention" href="../../u/sansmagicc.html">@sansmagicc</a> said. Focus on benefits, not features. Talk about the pains people have, and how your product fixes those pains.</p>
+<p>You do some of this around the edges a bit (“highly optimized”, “forms that convert”), but it could be much stronger.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/CasJam.html'><span itemprop='name'>CasJam</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-18T00:44:49Z' class='post-time'>
+                July 18, 2014, 12:44am
+              </time>
+              <meta itemprop='dateModified' content='2014-07-18T00:44:49Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Looks great Phil. Excellent feedback here already, but here a few thoughts.</p>
+<ul>
+<li>
+<p>IPhone image makes me think it’s an iOS Stripe app on first glance. I think an image of a larger computer screen/browser would reinforce this is a WordPress thing.</p>
+</li>
+<li>
+<p>‘Beautiful checkout forms’ isn’t the key benefit/pain point imo. Quick and easy integration is (as opposed to building a custom form or hiring a developer).</p>
+</li>
+<li>
+<p>like others said, demos are hard to navigate. I would box them and maybe go with a grid layout.</p>
+</li>
+<li>
+<p>the Addons seem to be a main selling point, but nearly no info about them. There should be a dedicated section al about the Addons. Slack does a good job of listing upcoming Addons that haven’t been released yet: <a href="https://slack.com/pricing" rel="nofollow noopener">https://slack.com/pricing</a></p>
+</li>
+<li>
+<p>I might differentiate the customer quotes using a serif / italic font. Make it clear it’s a different voice than the other copy.</p>
+</li>
+<li>
+<p>would “Developer” be a better name for the unlimited plan? Seems to be an accepted norm in the premium WP plugin market.</p>
+</li>
+</ul>
+<p>Awesome job. Much needed solution you’re providing here.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/philderksen.html'><span itemprop='name'>philderksen</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-18T06:31:46Z' class='post-time'>
+                July 18, 2014,  6:31am
+              </time>
+              <meta itemprop='dateModified' content='2014-07-18T06:31:46Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/sansmagicc.html">@sansmagicc</a> <a class="mention" href="../../u/kyle.html">@Kyle</a> <a class="mention" href="https://discuss.bootstrapped.fm/u/tnorthcutt">@tnorthcutt</a> <a class="mention" href="https://discuss.bootstrapped.fm/u/casjam">@CasJam</a> Thanks for following up. I went ahead and launched a week ago to start generating sales but am planning on putting a lot of these improvements in place to really fine tune the copy &amp; messaging.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bradt.html'><span itemprop='name'>bradt</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2014-07-19T01:05:09Z'>
+              <time itemprop='dateModified' datetime='2014-08-26T00:17:06Z' class='post-time'>
+                August 26, 2014, 12:17am
+              </time>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I don’t agree with focusing only on benefits when selling to developers. There should be a balance between presenting the benefits and showing off features. Developers often want to dig into the nitty gritty details, look over documentation, check out the API, watch screencasts, etc before making a purchasing decision. Though they may skip all of that if the product has been highly recommended by one or two other developers they respect.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/sansmagicc.html'><span itemprop='name'>sansmagicc</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1782.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-05T07:43:26Z' class='post-time'>
+                August 5, 2014,  7:43am
+              </time>
+              <meta itemprop='dateModified' content='2014-08-05T07:43:26Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is great news! You can possibly A/B test the suggestions you think are most relevant and thus fine tune your sales page.</p>
+<p>Another thing I just noticed: “Try Our Demos”. Why do you have to say they are yours? “Try Demo” should be enough. I know this has been said a 1000 times, but less “I/We/Our” in the copy = better copy.</p>
+        </div>
+
+        <meta itemprop='headline' content='Teardown my Stripe WordPress plugin sales site'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Your business and the heartbleed bug</title>
+    <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491</link>
+    <description>Assuming you run some sort of server-based service that involves credentials (SaaS logins, license key checking, credit card payments, whatever), how have you reacted to the Heartbleed bug? Have you communicated to your users that you were affected/not affected? What kind of language did you use?
+
+I&#39;m struggling thinking of ways to explain the situation in a forthcoming way without causing panic or confusion. In my case my server software did not contain the vulnerability, but 3rd party services I use such as my credit card processing service were vulnerable. My audience is utterly non-technical. Nobody has asked me about it yet, but I&#39;d rather be proactive.
+
+I assume most of your businesses were affected in some way. How are you handling it?</description>
+    
+    <lastBuildDate>Tue, 15 Apr 2014 10:42:39 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <p>Our servers were vulnerable so I patched the servers, recompiled ruby, and reissued certs etc on the Tuesday the Heartbleed story broke (ironically, whilst away at a “Data Protection and Privacy” seminar!).</p>
+<p>I struggled a bit about if/how to communicate this to our users though. We store HR performance plans &amp; reviews so it’s pretty sensitive stuff (though thankfully not SSN, address, payment details etc) and our customers are local banks, small businesses etc. They really care about security (in a theoretical sense) but unfortunately know next-to-nothing about it (<em>cough</em> many are still on Windows XP). In the end, I waited a few days whilst I implemented some necessary features (like letting logged-in users actually change their passwords!) and sent the following email <em>just to the admins for each company</em>.</p>
+<blockquote>
+<p>You may have heard of a recent vulnerability, “HeartBleed”, discovered in a popular encryption library used to secure Internet communications (the “https” in your browser). The flaw allowed an attacker to read parts of a server’s memory — potentially revealing user passwords, secret keys and other private information.</p>
+</blockquote>
+<blockquote>
+<p>It’s estimated that over 60% of all sites on the internet were vulnerable to this flaw including Amazon, Google, Facebook, Yahoo, many online banks, government websites and, unfortunately, WorkCompass. The flaw was discovered early on Tuesday and we fixed our servers a few hours later once the upgraded packages became available for our operating system. Since then, we’ve also reissued our SSL certs, updated other parts of our software and reviewed our logs.</p>
+</blockquote>
+<blockquote>
+<p>There is no evidence that WorkCompass was compromised at any time and there’s no evidence that your company data was accessed improperly.</p>
+</blockquote>
+<blockquote>
+<p>At WorkCompass we take data security and privacy very seriously and respond quickly when issues like this arise. It’s also worth pointing out that our SSL configuration has the highest possible security rating and is stronger than most online banks, including those of AIB and Bank of Ireland.</p>
+</blockquote>
+<blockquote>
+<p>However, out of an abundance of caution, if you want your employees to change their WorkCompass passwords they can do so here:  or from the ‘Admin’ menu in the top-right hand corner.</p>
+</blockquote>
+<blockquote>
+<p>If you have any further queries, don’t hesitate to contact me directly.</p>
+</blockquote>
+<p>In hindsight I should probably have pushed them harder to change their passwords (because none have <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"> ) but at the time I believed that the only people exploiting this bug were the NSA/GCHQ and I have no confidence that I (or, frankly, any small SaaS business) can defend against state-level actors.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/13</link>
+        <pubDate>Tue, 15 Apr 2014 10:42:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[patio11]]></dc:creator>
+        <description><![CDATA[
+            <p>I dropped everything when Heartbleed hit, first verifying that we weren’t using a vulnerable version of the OpenSSL library on any of our servers (they’re… old), then spent a day upgrading lower-priority servers to the latest LTS release of Ubuntu so that if another bug drops we won’t be caught with our pants down.</p>
+<p>I’ll do this on our high-priority servers (<em>cough</em> the product that pays the bills and has legal consequences for data disclosure <em>cough</em>) when I get a day free to do it right.</p>
+<p>I didn’t send an Attn: All Customers email simply because we weren’t vulnerable and I think the average client of my products would be more scared by dodging a bullet than getting hit by one.  That’s unfortunate, but that’s how non-technical people work.  If we had been vulnerable, I would have sent it out immediately after remediation, emphasizing We Are Totally On Top Of This and Your Data Remains Safe.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/12</link>
+        <pubDate>Fri, 11 Apr 2014 16:48:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="1491">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/thibaut_barrere/40/1224_1.png" class="avatar"> thibaut_barrere:</div>
+<blockquote>
+<p>Plus, /you/ are on the MS stack, but what about your dependencies?</p>
+</blockquote>
+</aside>
+<p>Yeah that’s the gotcha. I was all ready to gleefully send a “we’re not affected!” message out, until I realized Braintree Payment Solutions was in fact affected.</p>
+<p>I think it’s bad to not send anything, but it’s worst to send something and then have to backpedal because you forgot about some 3rd party service. Then it looks like you don’t know what you’re doing.</p>
+<p>Some 3rd party services don’t hold any identifiable data from users, so it’s not a problem if you don’t inform them specifically, but payment processors are the elephant in the room. They hold your user’s credit card info. I think informing them specifically about that situation is the right thing to do, even if the reality is nobody really knows how much info has leaked out.</p>
+<p>Looks like Stripe was affected too by the way…</p>
+<p>So after rotating my braintree API keys I posted a message explaining the situation and passing a link to Braintree’s report on the bug. No reaction yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/11</link>
+        <pubDate>Thu, 10 Apr 2014 22:42:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[thibaut_barrere]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="1491">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/johnf/40/1193_1.png" class="avatar"> johnf:</div>
+<blockquote>
+<p>I’m on the MS stack so I’m not effected but should I send a email anyway?</p>
+<p>Thinking that emailing will just raise other questions and I shouldn’t say anything?</p>
+</blockquote>
+</aside>
+<p>Given the criticality + widespread coverage, I think a little email cannot hurt.</p>
+<p>Plus, /you/ are on the MS stack, but what about your dependencies? (eg: DNS provider, email server etc etc?). It’s always good to think this through a bit, the ramifications are somewhat surprising.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/10</link>
+        <pubDate>Thu, 10 Apr 2014 20:41:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[thibaut_barrere]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="fredguth" data-post="5" data-topic="1491">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/fredguth/40/4447_2.png" class="avatar"> fredguth:</div>
+<blockquote>
+<p>What bothers me is that I know we are supposed to change all our passwords, but how can I tell if a specific website has already patched? Should I change all my dozens of passwords and do it again in a few weeks?</p>
+</blockquote>
+</aside>
+<p>For my SaaS I did a lot of googling and twitter search to find out (for services which didn’t immediately send an email, which is most).</p>
+<p>For “regular users”, check out this:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://mashable.com/favicon-32x32.png?v=m2Pmw8zNwl" class="site-icon" width="32" height="32">
+      <a href="https://mashable.com/2014/04/09/heartbleed-bug-websites-affected/" target="_blank" title="12:23AM - 10 April 2014">Mashable – 10 Apr 14</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/360;"><img src="https://mondrian.mashable.com/2015%252F03%252F03%252F17%252FHeartbleedR.ed477.jpg%252F1200x627.jpg?signature=-JHCe6x8i_v5g54vUOPrfIH3AP8=" class="thumbnail" width="690" height="360"></div>
+
+<h3><a href="https://mashable.com/2014/04/09/heartbleed-bug-websites-affected/" target="_blank">The Heartbleed Hit List: The Passwords You Need to Change Right Now</a></h3>
+
+<p>Heartbleed: A look at which companies have issued a security patch to fix the Heartbleed bug.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/9</link>
+        <pubDate>Thu, 10 Apr 2014 20:39:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[thibaut_barrere]]></dc:creator>
+        <description><![CDATA[
+            <p>For <a href="https://www.wisecashhq.com" rel="nofollow noopener">WiseCash</a>, I first verified the situation, and was lucky to see the server itself wasn’t affected (like most people at EngineYard not using an ELB).</p>
+<p>I felt that as a customer myself, I would have loved to be notified, so I sent this (inspired by Honeybadger):</p>
+<blockquote>
+<p>Hi XXX,</p>
+</blockquote>
+<blockquote>
+<p>last night, a severe OpenSSL vulnerability has been disclosed (HeartBleed).</p>
+</blockquote>
+<blockquote>
+<p>Your WiseCash data is safe - we do not use a vulnerable version of OpenSSL.</p>
+</blockquote>
+<blockquote>
+<p>Despite this, I’m in the process of renewing all our keys gradually, because your data safety matters to me.</p>
+</blockquote>
+<blockquote>
+<p>Have a great day,</p>
+</blockquote>
+<blockquote>
+<p>– Thibaut</p>
+</blockquote>
+<blockquote>
+<p>PS: I’ll be adding an annual plan soon (one month free, only one transaction). Reply to this email if interested!</p>
+</blockquote>
+<p>In retrospect (but well tough and tiring day, since I had to handle Heartbleed for my freelancing clients too), I should have phrased it better to be more explicit about the difference between the server and the third-parties I rely on too (which have access to a very little part of the data, but still).</p>
+<p>I then made due diligence again, opened a google spreadsheet, and tracked down literally all the services I’m using (even remotely), writing down who had made a statement, in order to change the credentials /after/ they have fixed their systems. I still have a couple of keys to rotate on non critical bits, because not everyone has yet communicated. I also changed the Rails secret and reissued SSL certificates (even if not useful since the server isn’t vulnerable), mostly to train myself to handle this.</p>
+<p>Later on, I explained what I did in a short <a href="https://www.wisecashhq.com/blog/heartbleed-security-update" rel="nofollow noopener">blog post</a>, which I linked from the <a href="https://www.wisecashhq.com/users/sign_in" rel="nofollow noopener">sign-in form</a> to make sure people would be aware.</p>
+<p>A couple of customers replied, thanked me for the handling of the situation.</p>
+<p>Some asked for the annual plan I proposed in PS too, which is nice <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Looks simple in retrospect, but I’ve been pretty concerned the whole time!</p>
+<p>Hope this helps,</p>
+<p>– Thibaut</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/8</link>
+        <pubDate>Thu, 10 Apr 2014 20:33:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>Honesty is the best policy - the news (in the UK certainly) is full of scare stories and so called experts telling everyone the end of the world is nigh so most are aware something is going on and will appreciate your openness.</p>
+<p>It is only a matter of time until people start asking about it and this way we can tell them our servers were “fixed” on the same day the exploit was announced, we communicated it to our users proactively and, as we have been totally open about it, we have nothing to hide so hopefully this will stop any issues arising.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/7</link>
+        <pubDate>Thu, 10 Apr 2014 17:37:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[grayj]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://chrome.google.com/webstore/detail/chromebleed/eeoekjnjgppnaegdjbcafdggilajhpic" rel="nofollow noopener">Chromebleed</a> is an extension for doing a Heartbleed test against whatever website you have open in Chrome. This runs a simple intrusion test and executes a limited version of the exploit, so it may be legally problematic in some jurisdictions.</p>
+<p>By the same author, there’s also a <a href="https://filippo.io/Heartbleed/" rel="nofollow noopener">web-based tester</a> and a <a href="https://github.com/FiloSottile/Heartbleed" rel="nofollow noopener">GitHub project</a> which can be run locally as a command-line based tester (uses Go). The Chrome extension just wraps these and checks anything you visit.</p>
+<p>Okay, the bad news: those won’t tell you if the site has refreshed their SSL keys. If Heartbleed was used to steal credentials from the site, and they don’t update the keys, then anyone who accessed them could pretend to be the site or access your HTTPS-protected communications.</p>
+<p>For that, the best option I’ve seen yet is LastPass. When you use its security check feature, it now tells you the <a href="http://blog.lastpass.com/2014/04/lastpass-now-checks-if-your-sites-are.html" rel="nofollow noopener">SSL cert status</a> for any sites it’s storing a password for.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/6</link>
+        <pubDate>Thu, 10 Apr 2014 15:26:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[fredguth]]></dc:creator>
+        <description><![CDATA[
+            <p>I even don’t know how to handle this as a user!</p>
+<p>I received some (not many) emails asking to change my password. And as I am aware of the bug, I tend to have a good impression of these services, not the opposite.</p>
+<p>What bothers me is that I know we are supposed to change all our passwords, but how can I tell if a specific website has already patched? Should I change all my dozens of passwords and do it again in a few weeks?</p>
+<p>Yesterday, my wife (she is a doctor) asked me about it and I didn’t know what to answer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/5</link>
+        <pubDate>Thu, 10 Apr 2014 15:01:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[grayj]]></dc:creator>
+        <description><![CDATA[
+            <p>Not sending anything raises questions with customers who are aware of it.</p>
+<blockquote>
+<p>We wanted to reassure you that your account with FooApp <strong>was not vulnerable</strong> to the Heartbleed bug.</p>
+</blockquote>
+<blockquote>
+<p>Many of your other accounts around the web probably were, so it would be a good time to update your passwords and maybe start using a password vault like LastPass, which makes it easy to use strong unique passwords.</p>
+</blockquote>
+<p>Also if users are reusing passwords as many, many users do, and if their email-password pair was compromised somewhere else…you may still see a spike in unauthorized account access. Breaches spread.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/4</link>
+        <pubDate>Thu, 10 Apr 2014 01:54:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <p>Been wondering what to do myself.</p>
+<p>I’m on the MS stack so I’m not effected but should I send a email anyway?</p>
+<p>Thinking that emailing will just raise other questions and I shouldn’t say anything?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/3</link>
+        <pubDate>Thu, 10 Apr 2014 01:38:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[grayj]]></dc:creator>
+        <description><![CDATA[
+            <p>Twilio and IFTTT both actually sent me an email, so that puts them ahead of <em>basically every other website I have an account with.</em> (I think there was a third, I forget who.)</p>
+<p>I’d love to see people hit the giant red “we may have been rooted” button, redeploy servers, and forcibly expire all user credentials. But I seriously doubt we’ll see much of that, even from e.g. banks.</p>
+<p>I mean, crap, I got 2-3 emails tops.</p>
+<p>I did actively contact my financial institutions, and I got boilerplate “our security team has been made aware of this bug” responses. Which I sort of expected. But so much as an email from them cautioning me to reset my passwords? Forced session &amp; password expiration? Nada.</p>
+<p>(P.S. if you have a bank / credit union that actually sent a “reset your passwords” email, and they’re usable from where I live, I’d love to open an account there. I’m not sure I’d care if was Bank of America at this point.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/2</link>
+        <pubDate>Wed, 09 Apr 2014 22:57:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+      <item>
+        <title>Your business and the heartbleed bug</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <p>Assuming you run some sort of server-based service that involves credentials (SaaS logins, license key checking, credit card payments, whatever), how have you reacted to the Heartbleed bug? Have you communicated to your users that you were affected/not affected? What kind of language did you use?</p>
+<p>I’m struggling thinking of ways to explain the situation in a forthcoming way without causing panic or confusion. In my case my server software did not contain the vulnerability, but 3rd party services I use such as my credit card processing service were vulnerable. My audience is utterly non-technical. Nobody has asked me about it yet, but I’d rather be proactive.</p>
+<p>I assume most of your businesses were affected in some way. How are you handling it?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491/1</link>
+        <pubDate>Wed, 09 Apr 2014 22:19:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1491-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/your-business-and-the-heartbleed-bug/1491.rss">Your business and the heartbleed bug</source>
+      </item>
+  </channel>
+</rss>

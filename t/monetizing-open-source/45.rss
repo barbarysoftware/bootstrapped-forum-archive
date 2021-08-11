@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Monetizing Open Source</title>
+    <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45</link>
+    <description>I listened to the bootstrapped podcast with Patio11 and I found the open source part very interesting. In my spare time I have building an open source blogging app named [WardrobeCMS][1]. My reasons for building it to begin with was mainly to scratch my own itch and build something I would like to use. With that said, right now it is geared more for developers since the install requires a few steps not suitable for the masses. Of course this can be changed but hasn&#39;t been a priority right now. 
+
+I had been thinking about ways to just make side money from the app. Something I could do a few hours a night. I was thinking of the common ways such as offering hosting, offer installation service, turn it into a saas app, etc.. But the more I think about it the more I keep thinking that is not the best product for monetizing. 
+
+Why I am thinking this is because blogging platforms are a commodity now with Tumblr, WP, and a slew of others. Plus every CMS has blogging built in. So is this not the best industry or should I build something more niche? 
+
+At any rate I wanted to throw this out and see if anyone had any thoughts and see if you agreed with my thought process.
+
+
+  [1]: http://wardrobecms.com</description>
+    
+    <lastBuildDate>Tue, 06 Aug 2013 10:06:52 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="28" data-topic="45">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dennis/40/1297_1.png" class="avatar"> dennis:</div>
+<blockquote>
+<p>It’s going so far that some of our larger customers explicitly verified that TestRail doesn’t ship with any GPL v3 code</p>
+</blockquote>
+</aside>
+<p>Yep. Corp lawyers rather won’t have any GPL code on their servers than risk fighting FSF over some interpretation of this confusing license.</p>
+<p>Hence I agree that WardrobeCMS’s license better not to be GPL.</p>
+<p>Still, MIT license doesn’t look a good fit too if the intent is to <strong>sell</strong> the software.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/29</link>
+        <pubDate>Tue, 06 Aug 2013 10:06:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[dennis]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="24" data-topic="45">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ian/40/3579_1.png" class="avatar"> ian:</div>
+<blockquote>
+<p>This is because anybody can use your GPL code on servers they control (this also shows how outdated the GPL is) and give nothing back.</p>
+</blockquote>
+</aside>
+<p>With the GPL v3 even using it on your own server is problematic, due to the new patent clauses. It’s going so far that some of our larger customers explicitly verified that TestRail doesn’t ship with any GPL v3 code, even LGPL which would have been unproblematic with v2 (we don’t, of course).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/28</link>
+        <pubDate>Tue, 06 Aug 2013 05:42:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>GPL code can be modified, that’s a core tenant. It explicitly doesn’t require you to release your modified versions so long as you don’t distribute them: <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#GPLRequireSourcePostedPublic">http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#GPLRequireSourcePostedPublic</a></p>
+<p>Also, the fact that the GPL is so confusing and outdated is reason enough not to use it. If you read up on it you’ll see that even today decades after it’s release major sections have 4 or more conflicting interpretations, which is pretty insane if you think about it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/27</link>
+        <pubDate>Tue, 06 Aug 2013 04:02:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I was thinking in what niche a simplest blog software can be useful. And I think there are a few.</p>
+<p>In recent years companies (Microsoft a good example) encourage the employees to write to connect to the customers/users better. I bet smaller companies would follow the example. The employees of those companies do not need much fancy stuff, just basic publishing functionality. White-labeling though could be a must-have requirement, as well as integration with AD and such.</p>
+<p>I also remember a few years ago I setup a blog for my son’s school. They used it to publish all kind of announces, saving tons of paper they otherwise were sending home with kids. It is still up. I distinctly remember though the teachers had difficulties in handling the technology. Offer them a very simple blogging solution – and the schools may buy it. They would need special features I think – something like limit the post distribution to a given set of subscribers (parents of specific classes or grades).</p>
+<p>In short, I do believe a good publishing system can be sold. But it should be a niche one, not just a generic blog platform.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/26</link>
+        <pubDate>Tue, 06 Aug 2013 03:55:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="24" data-topic="45">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ian/40/3579_1.png" class="avatar"> ian:</div>
+<blockquote>
+<p>This is because anybody can use your GPL code on servers they control</p>
+</blockquote>
+</aside>
+<p>(I do not think it is hijacking because it directly relates to “monetizing OSS”.)</p>
+<p>Anyone can run GPL <strong>applications</strong>. When it comes to integration, GPL is pretty much a blocker for any big-corp project because they cannot do an internal modification of the GPL code, and they cannot include GPL code into their projects (the project becomes GPL too).</p>
+<p>Speaking of WardrobeCMS: suppose a big-corp found a way to use it in their process. No matter what OSS license WardrobeCMS has, the big-corp can install it and use it… but soon they will want more. They will want integration with their Active Directory, with their VCS of choice, with their Sharepoint and whatnot. Now, if client library for WardrobeCMS is MIT – no problem, big-corp just does what they want. Even if it is LGPL, it is pretty much the same. But GPL – no way, they cannot. They have to get a dual license.</p>
+<p>The library I have just published on Github is useless unless you deploy it as part of the same project within a very expensive system, where it suddenly becomes very useful. But no big-corp will deploy it like that because GPL will infect their code. If Patrick is right, I will be able to sell a few dual licenses. If he’s not, I’ll have a body of work to show to my prospective clients. Win-win.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/25</link>
+        <pubDate>Tue, 06 Aug 2013 03:39:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>I really don’t want to hijack this thread <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> but I’ll just point out that the GPL in fact empowers big corps. This is because anybody can use your GPL code on servers they control (this also shows how outdated the GPL is) and give nothing back. Meanwhile, any of the bootstrappers on this board who are trying to sell a distributed product are precluded from using your software.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/24</link>
+        <pubDate>Tue, 06 Aug 2013 01:53:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="21" data-topic="45" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ericbarnes/40/1372_1.png" class="avatar"> ericbarnes:</div>
+<blockquote>
+<p>Ryan just to be clear I said I am against GPL.</p>
+</blockquote>
+</aside>
+<aside class="quote" data-post="22" data-topic="45">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rtablada/40/1460_1.png" class="avatar"> rtablada:</div>
+<blockquote>
+<p>Open Source should be open for use, or profit.</p>
+</blockquote>
+</aside>
+<p>Reasons for OSS could be different, and not necessary involve accepting third-party patches.</p>
+<p>For me GPL allows to show my work (i.e. to sell myself) without letting big corps to use it and give nothing back to me. I’m not that interested in support requests (unless I’m offered a fee for it) or change requests (same).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/23</link>
+        <pubDate>Tue, 06 Aug 2013 01:09:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, the second I read MIT, I was told myself “this is the only OS license I will ever use again”.</p>
+<p>Open Source should be open for use, or profit. Just don’t complain to me if I abandon it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/22</link>
+        <pubDate>Tue, 06 Aug 2013 00:28:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[ericbarnes]]></dc:creator>
+        <description><![CDATA[
+            <p>Ryan just to be clear I said I am against GPL.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/21</link>
+        <pubDate>Tue, 06 Aug 2013 00:26:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <p>You stick it with GPL and I’m out of the refactor.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/20</link>
+        <pubDate>Tue, 06 Aug 2013 00:15:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[ericbarnes]]></dc:creator>
+        <description><![CDATA[
+            <p>Wow! Thanks for all the ideas. I need to get it polished up for a 1.0 release and then really sit down and think about all this more.  Off hand I do not like having the core GPL and then paying for a more “open” license. I have lots of reasons for this but the biggest is the license is so restrictive I don’t want to mess with it. If developers want to contribute I’m all for that and I don’t want to infect their code with gpl just because they want to build a feature.</p>
+<p>Thanks again for all the comments!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/19</link>
+        <pubDate>Mon, 05 Aug 2013 20:56:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[dluxem]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="14" data-topic="45">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/salman/40/1206_1.png" class="avatar"> Salman:</div>
+<blockquote>
+<p>You could also have a dual license system where you have a an enterprise version of your product that you charge more for, similiar to how magento does it and which I believe <a href="http://discourse.org" rel="nofollow noopener">discourse.org</a> is also considering.</p>
+</blockquote>
+</aside>
+<p>That is certainly a popular way to go but realize at that point the open source product is really just a marketing tool to sell the commercial version.</p>
+<p>Also, does one entity or person own the copyright for all of the code in the product?  If not, do you have a license from those other sources which allow you to sell the software under a closed/commercial license?  Those are things to be very aware of if selling open source software under a new license.</p>
+<p>Edit: It looks like this doesn’t apply to wardrobe since it is currently under the MIT license and presumable contributions are under the same.  This would be an issue for GPL or other more <strike>restrictive</strike> open licenses.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/18</link>
+        <pubDate>Mon, 05 Aug 2013 20:36:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[patpohler]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s the part II of the 2nd TWiST interview:<br>
+<div class="lazyYT" data-youtube-id="128zQnB4hGc" data-youtube-title="- Startups - Matt Mullenweg Founder of Automattic Part 2" data-width="480" data-height="270" data-parameters="feature=oembed&amp;wmode=opaque"></div></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/17</link>
+        <pubDate>Mon, 05 Aug 2013 20:29:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[patpohler]]></dc:creator>
+        <description><![CDATA[
+            <p>Matt Mullenweg has been interviewed a few times on This Week In Startups. It’s a great series of videos on how to balance open source &amp; commercial success. I highly recommend it</p>
+<p>Since I can’t post more than two links. Here’s <a href="http://www.youtube.com/watch?v=nB_JhKXNmN8" rel="nofollow noopener">Twist #26</a>, <a href="http://www.youtube.com/watch?v=JG3hFrpVCPc" rel="nofollow noopener">2nd Interview Part 1</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/16</link>
+        <pubDate>Mon, 05 Aug 2013 20:29:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <p>I like the idea of creating promoted feature packages that are not free open source. Granted I’m a bit biased as I am a contributor to Wardrobe.</p>
+<p><span class="mention">@dsrii</span> may have some insight from what they learned with Sentry.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/15</link>
+        <pubDate>Mon, 05 Aug 2013 20:18:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="45">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dluxem/40/2511_1.png" class="avatar"> dluxem:</div>
+<blockquote>
+<p>Additionally, there were occasional offers to buy the source code and website, but that essentially defeats the purpose of open source if its going to be closed and sold under a commercial license.</p>
+</blockquote>
+</aside>
+<p>You could also have a dual license system where you have a an enterprise version of your product that you charge more for, similiar to how magento does it and which I believe <a href="http://discourse.org" rel="nofollow noopener">discourse.org</a> is also considering.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/14</link>
+        <pubDate>Mon, 05 Aug 2013 17:09:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[patpohler]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Eric, I want to first say that Wardrobe looks great. A clean open-source platform that gets out of the way could be a great fit.</p>
+<p>I’d shift your thinking away from “Well there are so many other blogging platforms out there” to “what can a user do in Wardrobe that they can’t in other platforms (or at least can’t do well without a billion plugins)”</p>
+<p>Some ideas:</p>
+<ul>
+<li>A member subscription-based content site, blog newsletter, etc</li>
+<li>Easy landing pages, create a/b landing pages without using a SaaS service</li>
+<li>Beautiful gallery or photo blogging, maybe sell prints or charge members a monthly fee for access</li>
+<li>A blogging platform that reminds you to write something every day/week/month and will suggest topics to write about in your area of expertise. <strong>The biggest pain I have with blogging is actually writing on a regular basis</strong>
+</li>
+</ul>
+<p>Diving into a niche and serving that really well can really pay off. People will pay for a CMS (Craft, ExpressionEngine, Statamic, Perch).</p>
+<p>It’s a mental shift, as developers we think “well if users have a multi-purpose tool they’ll just build their own thing,” most people will pay money for the result.</p>
+<p>Honestly, if you’re thinking about selling Wardrobe as a commercial product, <strong>just do it.</strong> And I mean sell the sucker as is (maybe with an installer). What do you have to lose? Get a Gumroad account and offer the following to your customers:</p>
+<ol>
+<li>1 Day SLA priority support (or phone support)</li>
+<li>Non-GPL license (it’s an MIT license, but let companies know they’re not at risk)</li>
+<li>Automated backups / Service / Install (backup could be a shell script or a small plugin your write)</li>
+</ol>
+<p>All these things are minimal or things you already offer and business will pay to have that stuff taken care of for them. Also keep in mind most companies are price insensitive up to $500, after that they have to get approval up the manager food chain.</p>
+<p>I think you have a great product and a good community. If you think Wardrobe is your best idea right now I wouldn’t abandon the notion of selling the product too quickly;</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/13</link>
+        <pubDate>Mon, 05 Aug 2013 15:42:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I was also intrigued with Patrick’s (patio11) suggestion to use <a href="http://www.binpress.com/" rel="nofollow noopener">BinPress</a> to monetize GPL software. As it happens, I just have a piece of code, a useful library for a large enterprise system. It is a code, not a product, so it is hard to sell it.</p>
+<p>Patrick suggests to release it as GPL, and then charge for custom (non-GPL) license for customers who just cannot use GPL (that would be most of enterprise).</p>
+<p>I decided to give it a try. I’m going to release it as GPL into Github, do a Github page with HOW-TO and examples, and spread the word in the specialized forums… and also attach a hefty custom-license price tag to it.</p>
+<p>I’m thinking something around $4,000 (a cost of a week of a regular Canadian contractor).</p>
+<p>The whole thing took some 3 weeks to build, so the savings for a buyer are substantial, not mentioning the fact that the library saves development time in a long run.</p>
+<p>I’m doing some final polishing now, expecting to finish the code in another 10-15 hours. Another 25 hours to write the documentation and examples, and posting to the forums.</p>
+<p>I’ll keep you posted.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/12</link>
+        <pubDate>Mon, 05 Aug 2013 14:41:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[steve228uk]]></dc:creator>
+        <description><![CDATA[
+            <p>Phil seems to be onto a good thing with Pyro. Free open-source but there’s also a commercial aspect. Plugins and themes are always good but they take time.</p>
+<p>If you have a pretty good fanbase (I love Wardrobe by the way), you could try selling tees, stickers or other merch. It’s free advertising for you and people love showing off in Starbucks while sipping their latté.</p>
+<p>A book could also be another route. I’d love to know some of the practices and ways Wardrobe rocks. It also totally suits your audience of devs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/11</link>
+        <pubDate>Fri, 02 Aug 2013 10:14:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <p>Another idea, though the monitization is small would be to add something like <a href="http://carbonads.net">Carbon Ads</a> to the Wardrobe site</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/10</link>
+        <pubDate>Thu, 01 Aug 2013 15:55:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe being internet famous is enough?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/9</link>
+        <pubDate>Thu, 01 Aug 2013 12:26:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[ericbarnes]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everyone. Going to ponder over these suggestions and see what I can do. I am still not 100% sold that this is viable with so many alternatives. But at the end of the day if you don’t try you will never know. <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/8</link>
+        <pubDate>Thu, 01 Aug 2013 11:40:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been fascinated lately by the idea of software being “done”. I’m not sure it’s possible, but it’s a wonderful dream. Perhaps you’re living the dream!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/7</link>
+        <pubDate>Thu, 01 Aug 2013 04:06:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[dluxem]]></dc:creator>
+        <description><![CDATA[
+            <p>Ha, if Liberum is your competition, then you are in great shape! <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Honestly, I haven’t written any code for it the past decade, but I don’t have the heart to put a bullet in it yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/6</link>
+        <pubDate>Thu, 01 Aug 2013 04:04:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+      <item>
+        <title>Monetizing Open Source</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey, this forums is taking a turn in a negative direction for me <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>Also, nice to meet a fellow help desk app chap. I haven’t had the chance to use Liberum, but have certainly been aware of it forever. Welcome aboard.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monetizing-open-source/45/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monetizing-open-source/45/5</link>
+        <pubDate>Thu, 01 Aug 2013 03:57:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-45-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monetizing-open-source/45.rss">Monetizing Open Source</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Building my first SaaS, a Disqus alternative - Part 1 - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Hello! I am so glad to have stumbled across this forum. It seems like a great place especially for people like me who envy the participants of Joel Spolsky’s The Business of Software. I heard a lot of great things about &amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="5306.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Building my first SaaS, a Disqus alternative - Part 1&#39;" href="5306.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/8/8a7af6fa49216687cd6df6b801ee38b7538a93a7_2_1024x382.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/8/8a7af6fa49216687cd6df6b801ee38b7538a93a7_2_1024x382.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-1/5306" />
+<meta property="og:title" content="Building my first SaaS, a Disqus alternative - Part 1" />
+<meta name="twitter:title" content="Building my first SaaS, a Disqus alternative - Part 1" />
+<meta property="og:description" content="Hello! I am so glad to have stumbled across this forum. It seems like a great place especially for people like me who envy the participants of Joel Spolsky’s The Business of Software. I heard a lot of great things about that forum. I guess this is version 2 of The Business of Software and hopefully some great startups emerge from this forum as well.  I’ll start with a little back story : I started writing programming related blog posts around 9 months ago and managed to build up traffic to a few..." />
+<meta name="twitter:description" content="Hello! I am so glad to have stumbled across this forum. It seems like a great place especially for people like me who envy the participants of Joel Spolsky’s The Business of Software. I heard a lot of great things about that forum. I guess this is version 2 of The Business of Software and hopefully some great startups emerge from this forum as well.  I’ll start with a little back story : I started writing programming related blog posts around 9 months ago and managed to build up traffic to a few..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="9 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="8 ❤" />
+<meta property="article:published_time" content="2017-09-17T16:37:19+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="5306%3Fpage=2.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="5306.html">Building my first SaaS, a Disqus alternative - Part 1</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ploggingdev.html'><span itemprop='name'>ploggingdev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+            <link itemprop="image" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/8/8a7af6fa49216687cd6df6b801ee38b7538a93a7.png">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-09-17T16:37:19Z'>
+              <time itemprop='dateModified' datetime='2017-09-18T05:02:01Z' class='post-time'>
+                September 18, 2017,  5:02am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello! I am so glad to have stumbled across this forum. It seems like a great place especially for people like me who envy the participants of Joel Spolsky’s The Business of Software. I heard a lot of great things about that forum. I guess this is version 2 of The Business of Software and hopefully some great startups emerge from this forum as well.</p>
+<p>I’ll start with a little back story : I started writing programming related <a href="https://www.ploggingdev.com/archive/">blog posts</a> around 9 months ago and managed to build up traffic to a few hundred hits every day. It might not seem like much, but it was and still is a big deal to me. Readers used to leave comments with suggestions for improvements, questions or just to say that they appreciate a particular post. Comments were powered by Disqus and all was well. One day I received an email notification from Disqus informing me that someone had left a comment on my blog. A pretty routine notification, so I opened the post and scrolled down to the comments section and noticed…six shady ads with images to accompany them. Without any warning, Disqus enabled ads on my site. Until then I never really bothered with what Disqus was doing in the background, but the ads incident made me curious. I inspected the requests that Disqus was making and it turns out that 100+ http requests, sending tracking data to 10+ external advertisers and 2MB of data transfer was required to display a comments section with 5 comments! That was my breaking point and so I promptly removed Disqus from my blog and deleted my account as well.</p>
+<p>I did not spend time looking for an alternative until a week ago. I missed the engagement with readers, so I started searching for an alternative commenting platform. My search for an alternative turned up mainly ad supported Disqus clones or open source self hosted options which were hard to work with. The search for an alternative also made me realize that people were frustrated with Disqus and didn’t want to take the trouble of self hosting and managing an open source alternative. Some were even ready to pay for an alternative. I sense a gap in the market! So I decided to build a Disqus alternative which will be as easy to use as Disqus but without any ads or tracking scripts. I also made a note of all the people who were ready to pay for an alternative and will begin emailing them to see if my product fits their use case.</p>
+<p>Excited by the idea of building my first SaaS product, I decided to draw up a pricing table for the SaaS.</p>
+<ul>
+<li>
+<p>$29/month for 200,000 pageviews</p>
+</li>
+<li>
+<p>$149/month for 2,000,000 pageviews</p>
+</li>
+<li>
+<p>A Custom plan for sites with greater requirements.</p>
+</li>
+</ul>
+<p>If there’s one piece of advice that all SaaS owners agree upon , it’s : charge more. That’s reflected in the pricing table. It’s hard to build a sustainable business on $5/month plans if you’re bootstrapped.<br>
+Great, I have a pricing table, but how do I charge users? To start with I will use Paypal and handle the subscriptions manually by generating and sending invoices manually, so it won’t be built into the web app. Why? To keep the MVP barebones. If this project shows any signs of life, I will move to Stripe and build the payments flow into the website.</p>
+<p>Don’t worry, I did not just bore you with an idea for a SaaS with nothing to show for it. So far I have built the user registration/login flow, the landing page and I am pretty close to completing the actual commenting system itself. There’s also a little secret that I have to tell you : I reused the commenting engine that I built for a previous project. You can see the commenting engine of my previous project in action <a href="https://ploghub.com/post/12/admin/virtual-environments-and-package-management-in-python-3/">here</a>. So I have an unfair advantage : I already built a commenting system that I just need to optimize.</p>
+<p>Here are some screenshots:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/8/8a7af6fa49216687cd6df6b801ee38b7538a93a7.png" data-download-href="/uploads/short-url/jL3lbuawoht2Jo8zw31mZDfnLq7.png?dl=1" title="s1.png"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/8/8a7af6fa49216687cd6df6b801ee38b7538a93a7_2_690x257.png" alt="s1" data-base62-sha1="jL3lbuawoht2Jo8zw31mZDfnLq7" width="690" height="257" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/8/8a7af6fa49216687cd6df6b801ee38b7538a93a7_2_690x257.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/8/8a7af6fa49216687cd6df6b801ee38b7538a93a7_2_1035x385.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/8/8a7af6fa49216687cd6df6b801ee38b7538a93a7.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/8/8a7af6fa49216687cd6df6b801ee38b7538a93a7_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">s1.png</span><span class="informations">1352×505 48.6 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/0211bbbff6150945e106846bbc626af9eb019be1.png" data-download-href="/uploads/short-url/iiWOiViJ8w7DzyI2i9cAmhnKr7.png?dl=1" title="s2.png"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/0/0211bbbff6150945e106846bbc626af9eb019be1_2_690x322.png" alt="s2" data-base62-sha1="iiWOiViJ8w7DzyI2i9cAmhnKr7" width="690" height="322" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/0/0211bbbff6150945e106846bbc626af9eb019be1_2_690x322.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/0/0211bbbff6150945e106846bbc626af9eb019be1_2_1035x483.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/0211bbbff6150945e106846bbc626af9eb019be1.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/0/0211bbbff6150945e106846bbc626af9eb019be1_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">s2.png</span><span class="informations">1355×633 35.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/4/4394c23faead45629b056ec5563f4039391d1867.png" alt="s3" data-base62-sha1="9DQHH2yqRYPBngtD8pPgdoGoXun" width="690" height="325"></p>
+<p>Fast forward to today, I came across another member of this forum building a similar SaaS. Here’s the <a href="../remarkbox-is-the-disqus-alternative/4871/11.html">link</a> to the discussion. In a span of five minutes, I went from “I can do this” to “I am rekt” to “huh, I should at least see this project through”. That’s my current status : a few days away from launching, but as confused as ever.</p>
+<p>Why did I write this post? Primarily to document the process of going from an idea to actually building something that I can charge for and simultaneously get feedback as I make progress. This is the very first step. I will make a follow up post when I launch the SaaS and share the path from this point to the launch. For all you know, this could be another dud of a project which goes nowhere or it can become a meaningful SaaS in the market, or something in between. I don’t know what’s going to happen, but at the very least my journey can be useful to fellow bootstrappers!</p>
+<p>Would love to hear any thoughts or suggestions!</p>
+<p>Edit : It looks like new users can’t use links in posts. Is it possible for the mods to lift this restriction? Temporary links : dpaste [dot] de/a5Vq</p>
+<p>Edit 2: New user restrictions have been lifted.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="http://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='http://discuss.bootstrapped.fm/t/building-my-first-saas-a-disqus-alternative-part-2-the-soft-launch/5328'>
+                      <span itemprop='name'>Building my first SaaS, a Disqus alternative - Part 2 - The soft launch</span>
+                    </a>
+                    <meta itemprop='position' content='6'>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../gitlab-is-not-the-only-github-alternative/5889/10.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='https://discuss.bootstrapped.fm/t/gitlab-is-not-the-only-github-alternative/5889/10'>
+                      <span itemprop='name'>Gitlab is not the only GitHub alternative</span>
+                    </a>
+                    <meta itemprop='position' content='7'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/DiSchwarz.html'><span itemprop='name'>DiSchwarz</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-17T20:43:10Z' class='post-time'>
+                September 17, 2017,  8:43pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-17T20:43:10Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That’s true, there is a need for such service.</p>
+<blockquote>
+<p>If there’s one piece of advice that all SaaS owners agree upon , it’s : charge more</p>
+</blockquote>
+<p>I run a blog that backups a six-figure software business. However $29 per month sounds like a lot to me. The blog gets about 10,000 impressions per month, so you do the math. Pay-as-you-go would be a much more preferable option.</p>
+<p>Just my 2 cents.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ploggingdev.html'><span itemprop='name'>ploggingdev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-17T23:45:43Z' class='post-time'>
+                September 17, 2017, 11:45pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-17T23:45:43Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>However $29 per month sounds like a lot to me. The blog gets about 10,000 impressions per month, so you do the math. Pay-as-you-go would be a much more preferable option.</p>
+</blockquote>
+<p>Thanks for the feedback. I’m still experimenting with the pricing model, so it’s not set in stone. I’ve talked to a few people and this is the number one feedback I’ve received so far. Maybe it makes sense to introduce a lower tier? $10/month for 50,000 pageviews.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T02:01:31Z' class='post-time'>
+                September 18, 2017,  2:01am
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T02:01:31Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hmmm… is there an other Competitive Advantage other than the lack of Discus ads and extra http/tracking?</p>
+<p>I agree that those sound egregious, although AFAIK, Discus is not slowing down my site. (I just tested my blog. 1 second load time. Faster than 89% of sites per Pingdom) (testing across the country: Atlanta to San Jose).</p>
+<p>Do you think enough of your market is AWARE of this problem? ( I wasn’t, and I’m still not sure I should be worried).<br>
+If not, is there a way to ILLUMINATE that for them?  might be a way to do inbound marketing. Something similar to <a href="http://tools.pingdom.com" rel="nofollow noopener">tools.pingdom.com</a>’s speed test.</p>
+<p>My <a href="https://tools.pingdom.com/#!/eEkZ0X/http://bungalowsoftware.com/blog/Patient2-Research-reveals-stroke-tbi-recovery-myths.html" rel="nofollow noopener">Pingdom results do show something</a> that looks like some ads!</p>
+<p>However, in my case, we get almost no comments on our blog. So I’d probably just discontinue comments if I was concerned about Discus (if they started showing ads, for example!)</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ploggingdev.html'><span itemprop='name'>ploggingdev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T04:42:06Z' class='post-time'>
+                September 18, 2017,  4:42am
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T04:42:06Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The ones you mentioned are pretty much the differentiating factors : privacy, no ads, no tracking scripts and much faster. From my (limited) search of blogging/tech forums and social media, I’ve come across a lot people who are frustrated with Disqus and were even ready to pay for an alternative. These are the people I want to cater to. The target market is mainly people who care about privacy.</p>
+<p>Regarding the Pingdom results, I think the results are based on loading sites from a datacenter, so the speed is not representative of what a normal user would experience. Even on a reasonably fast connection, Disqus takes between 2 and 6 seconds to load.</p>
+<blockquote>
+<p>Do you think enough of your market is AWARE of this problem? ( I wasn’t, and I’m still not sure I should be worried).<br>
+If not, is there a way to ILLUMINATE that for them? might be a way to do inbound marketing. Something similar to pingdom’s speed test.</p>
+</blockquote>
+<p>Interesting idea, maybe a free tool to highlight Disqus’ shortcoming might be effective? To start with though, I am focusing on direct outreach to individuals and organisations who expressed interest in an alternative, along with this, I am writing blog posts as a form of content marketing to highlight the issue. Maybe sometime down the line I’ll consider building some sort of free tool to highlight the issue.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Brian_O_Neill.html'><span itemprop='name'>Brian_O_Neill</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T09:57:53Z' class='post-time'>
+                September 18, 2017,  9:57am
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T09:57:53Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am a heavy Disqus user. One of my sites <a href="http://sluggerotoole.com" rel="nofollow noopener">sluggerotoole.com</a> has over a million comments!</p>
+<p>I like Disqus. The ads issue was annoying, they handled it really badly.</p>
+<p>But now we pay $10 a month to remove the ads and I think that is fair.</p>
+<p>With your system the same level of service would cost me $149. No way are you going to attract customers away from Disqus.</p>
+<p>The only way I see you competing is to offer some kind of self hosted version that you could sell via <a href="https://codecanyon.net/" rel="nofollow noopener">https://codecanyon.net/</a></p>
+<p>If there was a fixed price, this might be more attractive to some users.</p>
+<p>Disqus has its issues, but it works fine which is enough for most people.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ploggingdev.html'><span itemprop='name'>ploggingdev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-09-18T10:32:43Z'>
+              <time itemprop='dateModified' datetime='2017-09-18T10:33:20Z' class='post-time'>
+                September 18, 2017, 10:33am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Completely agree with you, I’m going to have to rethink the pricing strategy since literally everyone I talk to says it’s too expensive.</p>
+<p>Here’s my thought process for a new pricing model : since comments are more of an afterthought for most site owners and are treated like a commodity, I think I’ll narrow it down to two plans:</p>
+<ul>
+<li>
+<p>$20/month for upto 1,000,000 pageviews</p>
+</li>
+<li>
+<p>A custom plan for sites with more traffic.</p>
+</li>
+</ul>
+<p>Would love to hear your thoughts and anyone else’s thoughts on the pricing model.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T13:15:33Z' class='post-time'>
+                September 18, 2017,  1:15pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T13:15:33Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>GREAT idea to start with What Doesn’t Scale (advice from Ycombinator).<br>
+Then, if you confirm that approach works, you can automate part of it with a “test your speed”</p>
+<p>Q: What’s a good way for ME to test the impact of Discus?</p>
+<p>Hey, maybe that would be a start, write a short blog post about how something like Pingdom is not completely accurate and a  signup for a Free Report on how to test how fast your blog <em>really</em> is?</p>
+<p>I’d think that would only take a few hours. Have you done any SEO reasearch on searches for “Discus alternative” or “Discus speed” ?</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T13:16:32Z' class='post-time'>
+                September 18, 2017,  1:16pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T13:16:32Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Would link backs to your site get you some SEO juice?</p>
+<p>If so, even cheap plan (or even a free plan, it it truly costs You nothing) would give you some value.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T13:21:01Z' class='post-time'>
+                September 18, 2017,  1:21pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T13:21:01Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I disagree. You’re much better off, in most cases, selling a Hosted SaaS</p>
+<p>I can see the appeal of fixed price to an <em>engineer</em> but I’ve found most people don’t do that Depreciation calculation in their head (oh, it’s $100, that’s only $5/m over the next 2 years, that’s a deal).  I think you’ll do better with a subscription.Lower barrier to selling. It’s easier to sell a $10/m service than a one time purchase of $150. And odds are you’ll make more money (if you are delivering value) on the monthly.  It also aligns the cost with the value. You make more money the longer they use it.</p>
+<p>Also, I suspect self-hosting is going to limit you to a smaller (although more lucrative) audience. I suspect most people are using a Hosted version of Wordpress. Look at the success of WPCurve to see how many people don’t have a WP person on staff to handle simple things.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T13:27:19Z' class='post-time'>
+                September 18, 2017,  1:27pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T13:27:19Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hmmm… what if you wrote a simple blog article about your frustrations w/ Discus and how you’d like an alternative. Post it on relevent FB <em>groups</em>.  MAYBE have a signup for “would you be interested in an alternative”?</p>
+<p>I figure that’ll take 3h max, let you “think in writing” about the problem (good practice),. test the waters, and start gathering some beta testers.</p>
+<p>BTW, one thought: part of Discus’s marketing plan is a free version. Then when you reach the level of traffic to be worth their while, they hit you with ads (or get you to start paying $10/m or whatever). That might be a good marketing strategy IN THE FUTURE.</p>
+<p>I’m being selfish here: I wouldn’t pay $10/m b/c I have maybe one comment a month.  Not enough value for me. BUT my blog is growing. Maybe one day I’ll get to enough comments that it IS worth my time.</p>
+<p>BTW, I can tell you’ve really though through the validation phase. bravo! Most startups have failed before they start b/c they skip that part. I’ve seen it even with veteran, successful folks.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Brian_O_Neill.html'><span itemprop='name'>Brian_O_Neill</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T14:07:13Z' class='post-time'>
+                September 18, 2017,  2:07pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T14:07:13Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think there is a lot of work here you are not factoring in:<br>
+Supporting signup with social media<br>
+dealing with spam/abuse<br>
+moderation tools<br>
+Syncing comments back into wordpress<br>
+Scaling your servers to cope with load<br>
+etc etc</p>
+<p>Disqus is a big company, i think you are going to find it hard to compete.</p>
+<p>Disqus is not perfect but for most customers they work fine so I don’t think there is a massive market of users out their looking an alternative.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ploggingdev.html'><span itemprop='name'>ploggingdev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T15:32:05Z' class='post-time'>
+                September 18, 2017,  3:32pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T15:32:05Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>Have you done any SEO reasearch on searches for “Discus alternative” or “Discus speed” ?</p>
+</blockquote>
+<p>It’s pretty low volume for “disqus alternative”, in the low thousands and not much competition. In fact my post about building a Disqus alternative ranks on page 3. There are broader keywords I can target such as “blog comments” or “wordpress comments” which have much higher volume.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ploggingdev.html'><span itemprop='name'>ploggingdev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T15:49:24Z' class='post-time'>
+                September 18, 2017,  3:49pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T15:49:24Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>Hmmm… what if you wrote a simple blog article about your frustrations w/ Discus and how you’d like an alternative. Post it on relevent FB groups. MAYBE have a signup for “would you be interested in an alternative”?</p>
+</blockquote>
+<p>I’ve written the first post on my <a href="https://www.ploggingdev.com/2017/08/building-a-disqus-alternative-part-1--research/" rel="nofollow noopener">blog</a> and have posted tweaked versions of that message on various forums. People are interested in such an offering, but I’ve gotten push back on the pricing. So that’s something I’m rethinking. I will continue writing posts as a form of content marketing and tweak the style to one that connects to readers on a personal level instead of reading like technical documentation.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ploggingdev.html'><span itemprop='name'>ploggingdev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T16:03:38Z' class='post-time'>
+                September 18, 2017,  4:03pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T16:03:38Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>I think there is a lot of work here you are not factoring in:<br>
+Supporting signup with social media<br>
+dealing with spam/abuse<br>
+moderation tools<br>
+Syncing comments back into wordpress<br>
+Scaling your servers to cope with load<br>
+etc etc</p>
+</blockquote>
+<p>I don’t know whether privacy conscious users would want social media login, but if there’s demand I can add it. Regarding dealing with spam/abuse, Disqus recently switched to an experimental api offering from Google’s Jigsaw that uses machine learning to classify spammy comments. I will apply to that program soon so I can keep spam at bay. Regarding moderation tools, scaling servers etc, yes it’s a lot of work, but it’s manageable since I expect to operate at a much smaller scale than Disqus. I’m certainly under no illusion that I will compete with Disqus head on. I am targeting a subset of their audience who care about privacy. My biggest worries are not really technical, but the sales and marketing aspect of the SaaS since I don’t have much experience in those departments.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T17:38:58Z' class='post-time'>
+                September 18, 2017,  5:38pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T17:38:58Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Is there a correlation between “perceived value” and price?</p>
+<p>I.e., as someone else said, if I only had 1,000 views a month I wouldn’t spend $20/m on comments.<br>
+That’s certainly my case.<br>
+But if you find folks with 10K views/month and 100 comments, what do THEY think of the pricing.</p>
+<p>You could ignore the low end of the market  <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:">  or figure some other way to monetize it like link backs.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T17:40:11Z' class='post-time'>
+                September 18, 2017,  5:40pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T17:40:11Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hmmm… the “click if you are a human” CAPTCHA doesn’t handle the Spam comments?</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T17:41:31Z' class='post-time'>
+                September 18, 2017,  5:41pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T17:41:31Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>MIGHT be worth a “subtle” post where you just layout the problems with Discus.  I.e., if I use Discus I am not interested in hearing about you developing an alt until I know WHY I shouldn’t use Discuss.</p>
+<p>My$.02</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T17:49:42Z' class='post-time'>
+                September 18, 2017,  5:49pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T17:49:42Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Low thousands is actually quite a lot.</p>
+<p>Think of it this way: how much would you pay for traffic?  $.50/click?</p>
+<p>If there is little competition you can easily rank <span class="hashtag">#1</span>. And there is a HUGE tipping effect.<br>
+And in my experience Google under reports the traffic. Perhaps they are reporting how many CLICKS you could get.</p>
+<p><span class="hashtag">#1</span> spot usually gets about 80-90% of traffic. I did that with a very focused therapy technique (that our software uses). Google said there were only 30 searches/ month. I now get <a href="https://www.screencast.com/t/e8jzAOLhtawl" rel="nofollow noopener">500  visits to that page per month</a>.  Not bad for a 10 hour investment (I spent Wayyyyy too much time on the artwork, etc.) I just checked. It’s the <span class="hashtag">#1</span> page on our blog.   It’s essentially getting me $250 /month of traffic (IF I can monetize it!)</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ploggingdev.html'><span itemprop='name'>ploggingdev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5306.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-18T17:58:57Z' class='post-time'>
+                September 18, 2017,  5:58pm
+              </time>
+              <meta itemprop='dateModified' content='2017-09-18T17:58:57Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>So I’ve just started sending emails to potential customers and am waiting for replies, so I’m afraid I don’t have an answer yet. But at $20/month I don’t imagine a lot of people would complain. It’s still 2x more expensive than Disqus, but I guess being bootstrapped, there’s no way to compete on price with Disqus.</p>
+<p>Regarding sites with low traffic, it doesn’t make sense for them to buy a subscription to my product. I might consider allowing a limited number of such sites to use my product if only as a way to promote my commenting engine. I certainly won’t be able to extend it to any site that wants in since I don’t make any revenue of off them unlike Disqus, which serves ads.</p>
+<blockquote>
+<p>Hmmm… the “click if you are a human” CAPTCHA doesn’t handle the Spam comments?</p>
+</blockquote>
+<p>That prevents bots from signing up but it does not prevent users from posting trash/toxic comments or using abusive language. So the api I was talking about uses machine learning to classify such comments as being toxic so I can just hide such comments by default. More info here : <a href="https://www.perspectiveapi.com/" rel="nofollow noopener">https://www.perspectiveapi.com/</a></p>
+<blockquote>
+<p>Think of it this way: how much would you pay for traffic? $.50/click?</p>
+</blockquote>
+<p>Yup, I am guessing even lower since there’s practically no competition. I’ll have to experiment with Adwords to see what the conversion rates are.</p>
+<p>Thanks for the feedback.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building my first SaaS, a Disqus alternative - Part 1'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="5306%3Fpage=2.html">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

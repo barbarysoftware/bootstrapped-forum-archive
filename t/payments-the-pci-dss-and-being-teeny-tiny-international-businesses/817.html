@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Payments, the PCI DSS and being teeny tiny international businesses - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="I’ve been having something of a rant based on my experiences of the last few days.    Also, an interesting article from Makeshift about trying to build a Gumroad competitor hosted in the UK:  http://writing.makeshift.io/pieces/things-we-learnt-trying-and-failing-to-build-an-e-commerce-platform-for-selling-digital-goods  It’s all probably a bit UK-specific, but it hits up against stuff that I keep pondering in terms of how we end up being exporters, and international businesses despite being tiny...">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="817.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Payments, the PCI DSS and being teeny tiny international businesses&#39;" href="817.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817" />
+<meta property="og:title" content="Payments, the PCI DSS and being teeny tiny international businesses" />
+<meta name="twitter:title" content="Payments, the PCI DSS and being teeny tiny international businesses" />
+<meta property="og:description" content="I’ve been having something of a rant based on my experiences of the last few days.    Also, an interesting article from Makeshift about trying to build a Gumroad competitor hosted in the UK:  http://writing.makeshift.io/pieces/things-we-learnt-trying-and-failing-to-build-an-e-commerce-platform-for-selling-digital-goods  It’s all probably a bit UK-specific, but it hits up against stuff that I keep pondering in terms of how we end up being exporters, and international businesses despite being tiny..." />
+<meta name="twitter:description" content="I’ve been having something of a rant based on my experiences of the last few days.    Also, an interesting article from Makeshift about trying to build a Gumroad competitor hosted in the UK:  http://writing.makeshift.io/pieces/things-we-learnt-trying-and-failing-to-build-an-e-commerce-platform-for-selling-digital-goods  It’s all probably a bit UK-specific, but it hits up against stuff that I keep pondering in terms of how we end up being exporters, and international businesses despite being tiny..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2013-12-13T07:17:54+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="817.html">Payments, the PCI DSS and being teeny tiny international businesses</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rachelandrew'><span itemprop='name'>rachelandrew</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-13T07:17:54Z' class='post-time'>
+                December 13, 2013,  7:17am
+              </time>
+              <meta itemprop='dateModified' content='2013-12-13T07:17:54Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve been having something of a rant based on my experiences of the last few days.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.rachelandrew.co.uk/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://www.rachelandrew.co.uk/archives/2013/12/12/a-hostile-environment-payments-the-pci-dss-and-uk-digital-businesses/" target="_blank">The site of Rachel Andrew, writer, speaker and web developer</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/460;"><img src="http://rachelandrew.co.uk/images/fb_image.jpg" class="thumbnail" width="690" height="460"></div>
+
+<h3><a href="https://www.rachelandrew.co.uk/archives/2013/12/12/a-hostile-environment-payments-the-pci-dss-and-uk-digital-businesses/" target="_blank">A hostile environment: payments, the PCI DSS and UK digital businesses</a></h3>
+
+<p>I believe that the payments and PCI DSS compliance landscape in the UK is hostile to small digital businesses. I’d like to see more transparency from the companies and wonder if we can work together to encourage that?</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Also, an interesting article from Makeshift about trying to build a Gumroad competitor hosted in the UK:</p>
+<p><a href="http://writing.makeshift.io/pieces/things-we-learnt-trying-and-failing-to-build-an-e-commerce-platform-for-selling-digital-goods" class="onebox" target="_blank">http://writing.makeshift.io/pieces/things-we-learnt-trying-and-failing-to-build-an-e-commerce-platform-for-selling-digital-goods</a></p>
+<p>It’s all probably a bit UK-specific, but it hits up against stuff that I keep pondering in terms of how we end up being exporters, and international businesses despite being tiny companies. Certainly in the UK no-one really is set up to deal with a business the size of ours that has so many customers outside of the UK. The banks, HMRC etc. assume that exporter == massive business, with the infrastructure to cope with that. So many of the annoying things I end up on the phone dealing with track back to that core issue.</p>
+<p>I guess related, but have any of you had experience of setting up bank accounts in countries that you are not domiciled? As we have this issue, and also travel a lot I could see a benefit in having our Euro account actually located in the Eurozone, and a US hosted USD account - but I can also imagine that making us look very interesting to the tax man as people do that sort of thing for tax avoidance purposes, rather than nonsense avoidance purposes.</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/louis.html'><span itemprop='name'>louis</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-13T07:49:48Z' class='post-time'>
+                December 13, 2013,  7:49am
+              </time>
+              <meta itemprop='dateModified' content='2013-12-13T07:49:48Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Don’t get me started on this. We use Sagepay + Barclays Merchant Services and have the same issues. I’ve just started updating our SAQ today and I’m already sick of it… and I haven’t even got to the part of paying them for the privilege!</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/ian'><span itemprop='name'>ian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-13T14:02:34Z' class='post-time'>
+                December 13, 2013,  2:02pm
+              </time>
+              <meta itemprop='dateModified' content='2013-12-13T14:02:34Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yeah, I’ve been paying $25 to Wells Fargo for years under some PCI something or other. I gave up forever ago trying to figure it all out. They seem happy taking $25 as some punishment and I’ve never had any other trouble once I agreed to the extortion.</p>
+<p>That was under Authorize, I still have that account open for now in case we need to refund anyone, but soon I’ll be closing it since we moved to stripe.</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/ian'><span itemprop='name'>ian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-13T14:30:06Z' class='post-time'>
+                December 13, 2013,  2:30pm
+              </time>
+              <meta itemprop='dateModified' content='2013-12-13T14:30:06Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Semi-related right now I’m having to build a sales tax report so that we can more easily report the tax we collect for each US state we do business in. This is the most complicated thing I’ve ever had to build <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rachelandrew'><span itemprop='name'>rachelandrew</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-13T16:45:40Z' class='post-time'>
+                December 13, 2013,  4:45pm
+              </time>
+              <meta itemprop='dateModified' content='2013-12-13T16:45:40Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We have the EU VAT Report. If I sell to someone in an EU country other than the UK and they have a valid VAT number I don’t have to charge them the VAT. However every 3 months I have to prepare a report including all of their VAT numbers and the amount of the purchase in GBP (despite the fact the transaction is in Euro) and submit it via an arcane system to Her Majesty’s Revenue and Customs.</p>
+<p>It is for this sort of excitement that I am in business.</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/ian'><span itemprop='name'>ian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-13T17:15:21Z' class='post-time'>
+                December 13, 2013,  5:15pm
+              </time>
+              <meta itemprop='dateModified' content='2013-12-13T17:15:21Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yeah it’s really the worst part. There should be some kind of threshold where if you’re under X employee’s or revenue you don’t have to do all this crap. Imagine how much more more taxes we could generate by selling more if we weren’t burdened with all this paperwork.</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jimm.html'><span itemprop='name'>jimm</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-13T19:59:09Z' class='post-time'>
+                December 13, 2013,  7:59pm
+              </time>
+              <meta itemprop='dateModified' content='2013-12-13T19:59:09Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hmmm. Business opportunity (for masochists)?</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-15T00:33:00Z' class='post-time'>
+                December 15, 2013, 12:33am
+              </time>
+              <meta itemprop='dateModified' content='2013-12-15T00:33:00Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I avoid many of these headaches by using a third-party payment processor. (FastSpring, in my case). Yes, they take a cut of every sale. No, I don’t have to worry about collecting and paying VAT to 28 different EU countries.</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/dgrigg'><span itemprop='name'>dgrigg</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-01-09T03:36:46Z' class='post-time'>
+                January 9, 2014,  3:36am
+              </time>
+              <meta itemprop='dateModified' content='2014-01-09T03:36:46Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am based in Canada but do most of my business with US based companies. On the banking side I have setup a US fund account with my Canadian bank and then I have any US companies either wire into that account or send cheques I can deposit and then convert to Canadian currency as needed (always fun trying to win with exchange rates). I am also using Stripe for my SAAS (<a href="http://pageproofer.com" rel="nofollow noopener">pageproofer.com</a>) and have it setup for both Canadian and US customers. Stripe allows you to use different accounts for different currencies which makes it super convenient. For the article you posted it looks like Stripe wasn’t an option, which is unfortunate.</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/rwillmer.html'><span itemprop='name'>rwillmer</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-01-10T15:25:12Z' class='post-time'>
+                January 10, 2014,  3:25pm
+              </time>
+              <meta itemprop='dateModified' content='2014-01-10T15:25:12Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hey, Rachel, get ready for some more excitement on 01 Jan 2015 (12 months time…)</p>
+<p>The EU has decided that it’s all too simple, so they’re changing the rules on B2C sales for digital services (including ebooks).</p>
+<p>From 01 Jan 2015, for sales in this B2C category to customers in the EU, you will need to charge them the VAT rate applicable in <em>their</em> country, not yours. And then submit a VAT return with a breakdown by country.</p>
+<p>Rachel</p>
+<p>P.S. Thoroughly enjoying the Side Project book!</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rachelandrew'><span itemprop='name'>rachelandrew</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="817.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-01-10T18:02:40Z' class='post-time'>
+                January 10, 2014,  6:02pm
+              </time>
+              <meta itemprop='dateModified' content='2014-01-10T18:02:40Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yeah I already knew about that - I think I have a slide in my workshop that has a moan about it and we’ve already made sure our systems can cope with the change! I know so much boring stuff about VAT.</p>
+<p>Glad you are enjoying the book!</p>
+        </div>
+
+        <meta itemprop='headline' content='Payments, the PCI DSS and being teeny tiny international businesses'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

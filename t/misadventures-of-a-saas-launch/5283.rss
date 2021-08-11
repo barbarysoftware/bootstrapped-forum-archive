@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Misadventures of a SaaS Launch</title>
+    <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283</link>
+    <description>Over the past few months, I built a simple SaaS app for web developers ([formtide.com](https://formtide.com)). I launched about a week ago, and here&#39;s the little bit I&#39;ve learned so far.
+
+## **The Product**
+**TL;DR**: Formtide collects your form submissions and sends them wherever you&#39;d like.  I have a competitor with similar features.
+
+Before I go into the details of the build-up and launch of the product, I&#39;ll give a brief overview.  Formtide is a service that, put simply, allows you to point an HTML form&#39;s action attribute to your unique link to collect your submissions, as well as send email notifications and integrate with Zapier.  My primary competitor in terms of pricing and features provides similar services, apart from one major difference:  validation.  With Formtide, you can set requirements for your input fields (such as requiring valid email addresses, phone numbers, etc.) to prevent invalid data and spam.
+
+## Preparation
+**TL;DR**:  Market validation and early adopters should have been more important to me.
+
+I&#39;ll be honest; I didn&#39;t think market validation was too important until around the time of launch.  I figured there was another product on the market that was doing well, and I&#39;d surely have some space to fill.  I&#39;m still hoping I&#39;ll be able to reach the right people to get this off the ground, but surely I&#39;ll be back with an update within the next few months.
+
+## Marketing
+**TL;DR**:  I suck at marketing.
+
+Marketing: my worst nightmare.  The service is still new, so maybe I just need to give it some time.  However, the amount of paid advertising for each signup is simply terrible.  However, I&#39;d say this is most likely due to my own inexperience, and I&#39;m hoping to figure out something that works.
+I&#39;ve done some cold email marketing, but haven&#39;t been finding much success.  I&#39;m going to keep trying with this, and hope contacting enough people will eventually lead to a few sales, as well as improve my email marketing.
+
+## Pricing
+**TL;DR**:  No clue how to handle pricing, hopefully I&#39;m in a good spot.
+
+My pricing is similar to that of my competitor, but with a lower-tier plan (three forms) available for those looking to power only a few forms, rather than be required to pay for the usage of many more.  I&#39;m hoping I can find the right audience that can easily pass this cost on to their customers, with my service being (in my opinion) very affordable on a per-form level.
+
+## Future Plans
+**TL;DR**:  Formtide&#39;s here to stay.
+
+Regardless of my performance in the market, **Formtide&#39;s not going away any time soon**.  Myself and a few friends find it very useful, and the running costs are absolutely maintainable.  I hope to find my place in the market and improve my advertising/marketing plans, but there are always more projects to be work on, and being my first product, I&#39;ll consider this a learning experience regardless of the outcome.
+As for the next few weeks, I plan to do some more work on the landing page to improve its explanation of the product, and will be adding reCAPTCHA support soon.
+
+Thanks for reading!  I hope to be back with some more updates soon.</description>
+    
+    <lastBuildDate>Thu, 28 Sep 2017 06:43:22 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[manish]]></dc:creator>
+        <description><![CDATA[
+            <p>My observations + feedback:</p>
+<ol>
+<li>
+<p>Show me some form screenshots on your homepage. If your USP is that developers can build their own HTML + CSS and just point the form to you, then show me 3 different form screenshots with a call out “The form submission backend that works with <strong>YOUR</strong> Form Design.”. Although you’re selling only the backend, you still need some pretty visuals on the page.</p>
+</li>
+<li>
+<p>I’ve paid $70 / month in recent past to Typeform for hosting a landing page survey using their PRO+ monthly plan for a couple of months. Why? Because a “survey” can be much more complicated than plain feedback forms, with conditional jumps, etc + validations. So much pain, that developers pay money to offload it to someone else (Typeform, for example). Food for thought.</p>
+</li>
+<li>
+<p>Developers pay money for services that say “done in 2 lines of code!”, but the extensive code example here makes me feel tired already: /guide/advanced-usage . Anyhow, most developers are using jquery / react / vue these days - include examples for these while you’re at it.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/29</link>
+        <pubDate>Thu, 28 Sep 2017 06:43:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>You could call it something like fast forms and make speed your main selling point. Eg quick to integrate and fast static sites are fashionable now so you could concentrate on that market.</p>
+<p>Eg I am currently investigating hosting an entire site on a CDN for speed but because you can’t use dynamic scripts on a CDN a service like yours would work well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/28</link>
+        <pubDate>Tue, 12 Sep 2017 09:14:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[ra00l]]></dc:creator>
+        <description><![CDATA[
+            <p>My 2 cents on this:<br>
+Try to make a wordpress plugin. Might give you access to a bigger market.</p>
+<p>About captcha: avoid as much as possible. It’s really annoying and there are better ways to avoid spam (like if the user clicks on keypresses on the page).</p>
+<p>I also find it a lot more useful to just include a js file that will render the form, would work easier with less technical people</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/27</link>
+        <pubDate>Tue, 12 Sep 2017 04:33:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[swastik]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rfctr">@rfctr</a> — Whoops, sorry about that! Thanks for letting me know! All great now! <img src="https://emoji.discourse-cdn.com/twitter/grinning.png?v=5" title=":grinning:" class="emoji" alt=":grinning:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/26</link>
+        <pubDate>Sun, 10 Sep 2017 19:04:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>(hey <a class="mention" href="/u/swastik">@swastik</a>. your cert on <a href="http://enlist.io" rel="nofollow noopener">enlist.io</a> has expired yesterday.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/25</link>
+        <pubDate>Sun, 10 Sep 2017 18:33:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[swastik]]></dc:creator>
+        <description><![CDATA[
+            <p>I think there might be a market for something like this but it’ll be tough to access. I don’t think that cold emailing or paid ads will work in this market though. Cold emails, IMO, are better when you’ve got a product with a decent ARR. You’ve got to find the right kind of prospects, reach out to them, optimize, etc. Paid ads too might be tricky to pull off. Both those mediums will take time to experiment.</p>
+<p>With marketing, the first thing I’d do is figure out use cases for this. What situation would someone be in when they want to use something like FormTide? They might be creating a static site, a blog, maybe with a static site generator. I’d make a list of some popular static site generators and write about how to create forms with them. There’s many of them in many different programming languages, so that might be a good way to access that market.</p>
+<p>Other than that, what common issues does the average person face when creating forms? Connecting them to their CRM? Sending an email after a form submission? Email verification? If you can figure out some of these issues, you can write about how FormTide solves them. That will give you another way to get in front of your market.</p>
+<p>Lastly, there are people who don’t need your service <em>now</em> but might use it in the future if they are aware of it. To get in front of them, you might write on topics that might be of interest to them even if they aren’t directly related to FormTide. For example, you could write about form design, improving form conversion, etc. This won’t drive you immediate business though.</p>
+<p>There’s an absolutely incredible amount of competition in this market though a lot of it looks like abandonware. I found a <a href="http://www.formester.com/home" rel="nofollow noopener">couple of them</a> that are priced very cheaply. To add to that, it’s not just the direct competition that is difficult; even companies like Segment might solve the same problem you’re solving. Marketing is going to be difficult — it is for any business — but it’s worth a shot. <img src="https://emoji.discourse-cdn.com/twitter/grinning.png?v=5" title=":grinning:" class="emoji" alt=":grinning:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/24</link>
+        <pubDate>Sat, 09 Sep 2017 19:09:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="21" data-topic="5283">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jayfk/40/3819_1.png" class="avatar"> jayfk:</div>
+<blockquote>
+<p>it will be super hard to find some unique features to make it worth the effort.</p>
+</blockquote>
+</aside>
+<p>(Friday post) I know. Need to create two white-labeled services on the same backend. One boldly claims “I fully support Presedent Trump” and the second one “I denounce so-called ‘President’ Trump!”. 50% of the prospects will sign up for the first one and 50% for another, and this is a feature that competitors won’t dare to match without a risk of losing 50% of their current base.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/23</link>
+        <pubDate>Fri, 08 Sep 2017 23:08:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree this is difficult, but from what I’ve seen in terms of how often my competition seems to update their features/systems, I wouldn’t expect much in terms of feature matching unless I was considered a threat.  With how things are looking, I’m hoping to be able to bring on a few clients before worrying about this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/22</link>
+        <pubDate>Fri, 08 Sep 2017 22:39:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[jayfk]]></dc:creator>
+        <description><![CDATA[
+            <p>I do think that form handling is a useful service in general. My concern is that the market is saturated and that it will be super hard to find some unique features to make it worth the effort.</p>
+<p><a class="mention" href="/u/twilson">@twilson</a> mentioned form validation and support for recaptcha. These features are not that hard to implement. It will take a couple of days for the competition to catch up on that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/21</link>
+        <pubDate>Fri, 08 Sep 2017 22:16:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d definitely like to do some advertising on forums, but I’ll probably need to spend some time communicating and getting familiar with the communities before if would be appropriate to advertise my service.  Thanks for letting me know about Hugo, though.  I wasn’t familiar with that one (not sure how I missed it)!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/20</link>
+        <pubDate>Fri, 08 Sep 2017 22:14:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>BTW: a tip for marketing: advertise on forums of static site generators. I for one use Hugo, and it has its own forum. That’s where the people who may be interested in combining their static sites with forms are hanging around.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/19</link>
+        <pubDate>Fri, 08 Sep 2017 21:07:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="16" data-topic="5283">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jayfk/40/3819_1.png" class="avatar"> jayfk:</div>
+<blockquote>
+<p>I’d argue that someone who is able to write some form code will simply use a shared hosting provider for $20/year</p>
+</blockquote>
+</aside>
+<p>The problem is not the cost of hosting. The problem is if you handle your own forms submission, you’re having a much more complicated stack on the server-side - a stack that can execute a code. And then your risks of hacking are way, way higher, and it becomes a constant pain to monitor, update, patch.</p>
+<p>The services like the above provide an alternative - have your site in a static HTML serving by nginx only; and then leave the form handling including the security concerns to a third party.</p>
+<p>$240/year is not an overly large amount for security.</p>
+<p>P.S. In fact, I’ve signed up for Snappy for exactly this reason - to catch the feedback form submissions from static site and the on-premise web application. But I now realize I do not really need a ticket per submission - a weekly report is more than enough. So I put it into my TODO list to investigate this form-submission field more in a month or so when the static site is ready for publishing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/18</link>
+        <pubDate>Fri, 08 Sep 2017 21:04:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>Unfortunately, you may be right.  However, my running costs are manageable, and I do know that at least one of my competitors (targeting the same market of developers) is making significant MRR.  For now, I’ll keep focusing on advertising/marketing, hoping I can find a place in the market.  Regardless of profits, I’m sure this will be a valuable learning experience.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/17</link>
+        <pubDate>Fri, 08 Sep 2017 15:36:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[jayfk]]></dc:creator>
+        <description><![CDATA[
+            <p>I hate to be the naysayer, but I really don’t see a market for this. As already mentioned there’s a lot of competition out there and your differentiation targets the wrong kind of people.</p>
+<p>You are looking for someone who knows markup languages and is willing to spend $240/year just on form submissions. I’d argue that someone who is able to write some form code will simply use a shared hosting provider for $20/year and be done with it <strong>or</strong> use one of the freemium form providers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/16</link>
+        <pubDate>Fri, 08 Sep 2017 15:30:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not looking for much competition with standard form builders, though I may need to work on my marketing to better reflect the differences.  My service is aimed at those familiar enough with HTML and CSS to create their own forms, to allow full customization, rather than use embedded forms that don’t really fit the website design.</p>
+<p>The competitor I was referring to was FormKeep, in which my primary differentiation is form validation and reCAPTCHA support.  Price-wise, I offer similar pricing on a per-form basis, but offer a lower price tier for those in need of only 1-3 forms.</p>
+<p>Despite my quite extensive searching to find competition, I only found Formcarry yesterday.  Again, my only current differentiation would be the validation and reCAPTCHA, though I’m hoping to expand my integrations in the near future.</p>
+<p>Formspree only offers directing your form submissions to your email, lacking an online dashboard, exports, Zapier integration, etc.</p>
+<p>Clearly I’ll need to work on my landing page a bit more to prioritize the more important and unique features.  Hopefully this will help potential customers see the differences more easily and decide which service better suits their needs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/15</link>
+        <pubDate>Thu, 07 Sep 2017 15:35:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,<br>
+congrats to getting started.  I looked at form endpoints before, but I don’t understand how you talk about "“have a competitor with similar features.”</p>
+<p>To me, there is ample competition (which is not bad in itself):</p>
+<ul>
+<li>
+<p>standard form builders like wufoo, google forms, typeform (you must differentiate from them as to not surprise your customers)</p>
+</li>
+<li>
+<p>form endpoints:</p>
+</li>
+</ul>
+<p><a href="https://formkeep.com/" class="onebox" target="_blank" rel="nofollow noopener">https://formkeep.com/</a><br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://formcarry.com/assets/favicon/android-icon-192x192.png" class="site-icon" width="192" height="192">
+      <a href="https://formcarry.com/" target="_blank" rel="nofollow noopener">formcarry.com</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://formcarry.com/" target="_blank" rel="nofollow noopener">Formcarry. | no Javascript no PHP just point your form and chill.</a></h3>
+
+<p>Formcarry is an form endpoint service with Zapier integration and file upload support</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<a href="https://formspree.io/" class="onebox" target="_blank" rel="nofollow noopener">https://formspree.io/</a></p>
+<p>These offerings all look pretty similar to me.  How do you differentiate?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/14</link>
+        <pubDate>Thu, 07 Sep 2017 14:24:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>Hmm, haven’t heard that before.  I’m not sure I could overcome my own stubbornness and capitalize the ‘t’, but maybe a letter spacing increase would help.  I’ll try to work on this, and would absolutely appreciate any recommendations in the future. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>It’s been extraordinarily helpful to get this feedback from you, thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/13</link>
+        <pubDate>Thu, 07 Sep 2017 03:26:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>One more, possibly minor, thing but still - every time I stumble upon the service name in the text, I have to pause to read it - my brain insists on reading it as “Formitude” which is not even a word. If I ever have to recommend it to someone, I’d have a hard time remembering the actual domain name.</p>
+<p>May be you should emphasize the tide part with capitalization, e.g. FormTide?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/12</link>
+        <pubDate>Thu, 07 Sep 2017 02:58:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="5283">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/twilson/40/3806_1.png" class="avatar"> twilson:</div>
+<blockquote>
+<p>but I think this is a good start.</p>
+<p><em>Power your static HTML with contact and feedback forms</em></p>
+</blockquote>
+</aside>
+<p>This certainly explains it to me in 5s or less! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/11</link>
+        <pubDate>Thu, 07 Sep 2017 02:53:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve just finished some large modifications to the landing page, and am hoping I’ve improved the message/pitch.  I have plenty more to do, but I think this is a good start.</p>
+<p>(<a href="https://formtide.com" rel="nofollow noopener">formtide.com</a>)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/10</link>
+        <pubDate>Wed, 06 Sep 2017 23:38:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>As for advantages/comparison to Google Forms, Formtide is intended to be used by designers/developers who create their own form (to maintain full control of the design and functionality), and either need (due to static site limitations) or want to have the form submissions back-end/integration done for them.</p>
+<p>I would like to put a chat box up, and will do so soon.  I’m hoping to get a few more early adopters in to help me with the cost of a service like Intercom.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/9</link>
+        <pubDate>Wed, 06 Sep 2017 23:37:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Suggestion: put a chat box up on the site and talk to as many customers as you can.<br>
+It’s hard to know if your static copy is resonating with your potential customers. Does it address their questions/concerns?</p>
+<p>For me, I’d like to see EXAMPLES of what it can do before I start “playing” with it. You can confirm if this is true for OTHERS by doing the above.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/8</link>
+        <pubDate>Wed, 06 Sep 2017 15:55:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>The animated wave is a nice branding touch.</p>
+<p>Marketing Suggestion:</p>
+<p>Zapier integration is cool, but it would be even easier for a customer if you integrated with a specific service like:</p>
+<ul>
+<li>Google Forms</li>
+<li>Active Campaign or other Email provider.</li>
+</ul>
+<p><strong>Does FormTide have any advantages over Google Forms</strong> (besides the validation, which IS very valuable)?</p>
+<p>USE CASE<br>
+BTW, I have a need for an IF …THEN style Form where I ask a question and then the followup questions are based on the previous answer.  (Are you a Programmer or Designer?  and then questions based on this.)  I suspect that asking for<br>
+"micro commitments" (simple questions) first will lead to greater conversion rate. (Stealing this from The ASK Method )</p>
+<p><strong>I can do this with Google Forms but perhaps Fomtide has advantages?</strong></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/7</link>
+        <pubDate>Wed, 06 Sep 2017 15:53:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>All true, but remember that your differentiation can take many forms:</p>
+<ul>
+<li>Product Features</li>
+<li>Pricing (that’s simplistic. You don’t want to compete on price unless you are able to compete on cost. I.e., the PC was cheaper than the mini computer but it was also less expensive to deliver. So they could maintain their low price competitive edge )</li>
+<li>The “split” between what’s in free vs. full</li>
+<li>Business Model (charging by the form submission, freemium version that includes link to your website (so they are “paying” with links)</li>
+</ul>
+<p>People often overlook the last 2.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/6</link>
+        <pubDate>Wed, 06 Sep 2017 15:48:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+      <item>
+        <title>Misadventures of a SaaS Launch</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>I really appreciate this feedback!  I have a fear of narrowing my target audience (by aiming primarily at static sites, for example).  However, I know I need to work on this problem if I want any success in the market.  I’ll definitely work on this!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283/5</link>
+        <pubDate>Wed, 06 Sep 2017 13:31:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5283-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/misadventures-of-a-saas-launch/5283.rss">Misadventures of a SaaS Launch</source>
+      </item>
+  </channel>
+</rss>

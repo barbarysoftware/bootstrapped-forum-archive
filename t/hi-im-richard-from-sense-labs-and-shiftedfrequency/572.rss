@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</title>
+    <link>https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572</link>
+    <description>I&#39;ve been making things on and off of the web for 15 years. Some successful, some not-so-successful, but I&#39;m always trying to use technology to solve problems for myself and others. I run [Shiftedfrequency][1] and am one half of [Sense Labs][2].
+
+Currently I&#39;m working on: 
+**Are My Sites Up** - http://aremysitesup.com (website monitoring, been around since 2009 and still going strong!)
+
+**Stunning** - http://bestunning.net (adds useful features to Stripe accounts, most notably dealing with billing issues for subscriptions)
+
+**Dispatch** - http://getdispatch.com (the best email parser for sales leads)
+
+**Retained** - http://getretained.com (built based on what I&#39;ve learned from running SaaS apps, helps with user retention)
+
+**Briefly** - http://readbriefly.com (handpicked articles for SaaS founders, published weekly)
+
+You can find me at @rfelix on Twitter.
+
+I&#39;m very excited about being part of this community. If anyone needs help, happy to see where I can lend a hand. Let me know!
+
+
+  [1]: http://shiftedfrequency.net
+  [2]: http://madewithsense.com</description>
+    
+    <lastBuildDate>Wed, 02 Oct 2013 03:19:53 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</title>
+        <dc:creator><![CDATA[dwilson86]]></dc:creator>
+        <description><![CDATA[
+            <p>A very nice set of apps, Richard!  Looking forward to learning from your experience.  Just installed the Briefly app and am enjoying the content.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/6</link>
+        <pubDate>Wed, 02 Oct 2013 03:19:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-572-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572.rss">Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</title>
+        <dc:creator><![CDATA[rfelix]]></dc:creator>
+        <description><![CDATA[
+            <p>Steve-</p>
+<p>If I had to support myself and my family on just the income from that, it would be doable but not ideal. Mostly that’s due to the fact that AMSU was my first real SaaS app, and we got pricing wrong out of the gate. Revenue has always been steady, but now that I’ve fixed the pricing (just over a year ago), the revenue is going up. Luckily, I’ve never put all of my eggs in one basket, and I’ve used the lessons from AMSU to inform pricing and marketing in my other apps.</p>
+<p>I wouldn’t recommend that anyone get into this market though. We launched in 2009, when it was basically just us and one other big competitor. We got major traction by being the alternative, and have had many, many good articles written about our service over the years, which has kept a steady stream of potential customers showing up every day. Right now, though the general market is way too crowded for newcomers. I’d only recommend getting into website monitoring these days if you are going for a specific niche, where you can charge more for each customer and your audience is clear. This will make it easier to find customers and easier to get to a good amount of revenue.</p>
+<p>From the outside, website monitoring seems easy, and at its core, it is: (write a loop that pings a list of sites and sends notifications if the status code is not 200), but it is so much more complex than that, because it has to function in real life <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:">  People have terrible hosting and blame you because you send too many notifications (because their websites time out many times per day), but others say that you send too few notifications because they want to get repeated notifications for the duration of downtime. Then you have to account for the fact that even though all web servers should theoretically respond the same way, they rarely do. Some will have a site that’s obviously down, but not return an error code, etc. It took <em>years</em> to account for all of the different server quirks out there in our codebase. Then you have to worry about scaling/multiple servers around the world so that your site checking works properly no matter where people are. It’s crazy how much work goes in to provide reliable service.</p>
+<p>I’ve seen many companies launch website monitoring for free in recent times. That’s a recipe for disaster for sure. It’s completely unsustainable, because when you promise check times to people, you can only check so many sites with each site checking server that you build. So then you have to expand your service, but using what money? Then you realize that you have to charge or go out of business (most just go out of business, in my experience).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/5</link>
+        <pubDate>Tue, 01 Oct 2013 18:09:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-572-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572.rss">Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</title>
+        <dc:creator><![CDATA[rfelix]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, Mike! I was helped by a few awesome people along the way, and I’m trying to help others in the same way <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/4</link>
+        <pubDate>Tue, 01 Oct 2013 17:48:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-572-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572.rss">Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Richard,</p>
+<p>The market for site monitoring is crowded, so I’m curious to know whether you make enough money from “Are My Sites Up” to support yourself and/or family - if you don’t mind sharing!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/3</link>
+        <pubDate>Tue, 01 Oct 2013 11:07:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-572-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572.rss">Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome! Nice set of apps there so looking forward to your input…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/2</link>
+        <pubDate>Tue, 01 Oct 2013 06:31:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-572-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572.rss">Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</title>
+        <dc:creator><![CDATA[rfelix]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been making things on and off of the web for 15 years. Some successful, some not-so-successful, but I’m always trying to use technology to solve problems for myself and others. I run <a href="http://shiftedfrequency.net" rel="nofollow noopener">Shiftedfrequency</a> and am one half of <a href="http://madewithsense.com" rel="nofollow noopener">Sense Labs</a>.</p>
+<p>Currently I’m working on:<br>
+<strong>Are My Sites Up</strong> - <a href="http://aremysitesup.com" rel="nofollow noopener">http://aremysitesup.com</a> (website monitoring, been around since 2009 and still going strong!)</p>
+<p><strong>Stunning</strong> - <a href="http://bestunning.net" rel="nofollow noopener">http://bestunning.net</a> (adds useful features to Stripe accounts, most notably dealing with billing issues for subscriptions)</p>
+<p><strong>Dispatch</strong> - <a href="http://getdispatch.com" rel="nofollow noopener">http://getdispatch.com</a> (the best email parser for sales leads)</p>
+<p><strong>Retained</strong> - <a href="http://getretained.com" rel="nofollow noopener">http://getretained.com</a> (built based on what I’ve learned from running SaaS apps, helps with user retention)</p>
+<p><strong>Briefly</strong> - <a href="http://readbriefly.com" rel="nofollow noopener">http://readbriefly.com</a> (handpicked articles for SaaS founders, published weekly)</p>
+<p>You can find me at <a class="mention" href="/u/rfelix">@rfelix</a> on Twitter.</p>
+<p>I’m very excited about being part of this community. If anyone needs help, happy to see where I can lend a hand. Let me know!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572/1</link>
+        <pubDate>Tue, 01 Oct 2013 04:23:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-572-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-richard-from-sense-labs-and-shiftedfrequency/572.rss">Hi, I&#39;m Richard from Sense Labs and Shiftedfrequency</source>
+      </item>
+  </channel>
+</rss>

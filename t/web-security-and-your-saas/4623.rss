@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Web Security and your SaaS</title>
+    <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623</link>
+    <description>I&#39;m coding my new product (a SaaS aimed at business customers), and as I progress, I&#39;m aware that I&#39;m probably introducing many security holes. I&#39;m reading up on the state of the art of web security holes and I get a bit frightened that I only need to make one mistake to make my whole application vulnerable to hacking.
+
+As a one- (or two- or three-) person team, how do you take care of web security? Just do your best and hope you get all the known security holes? Or do you outsource to get security audits? If so, how do you find someone affordable and good?</description>
+    
+    <lastBuildDate>Sun, 05 Feb 2017 22:11:44 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>A short write up of the security measures in our SaaS:</p>
+<p><a href="https://etlworks.com/docs/security/" class="onebox" target="_blank" rel="nofollow noopener">https://etlworks.com/docs/security/</a></p>
+<p>Inspired by “do you have a link or doc that describes your security measures for protecting etlworks as a service and any IP/user/passwords place within?”, typical asked by the potential customer during first 10 minutes of the conversation.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/17</link>
+        <pubDate>Sun, 05 Feb 2017 22:11:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[Anderson_Dadario]]></dc:creator>
+        <description><![CDATA[
+            <p>I may be late to this party, but I have some contributions to make:</p>
+<ol>
+<li>
+<p>There is no silver bullet approach for security, but even without resources you can do what we call ‘cyber higiene’. Make sure to use strong password and multi-factor authentication in your accounts, such as AWS, GitHub, don’t commit secrets to your public repositories, get informed of cyber attacks (hacker news / reddit/r/netsec), study security (check OWASP projects) and run automated tools at least. There are some recommendations of such tools here, but you can use Gauntlet (<a href="http://gauntlet.io" rel="nofollow noopener">gauntlet.io</a>) to run multiple tools instead of only one, and for free. Disclaimer: I founded it.</p>
+</li>
+<li>
+<p>I recommend you to read ‘Security for building modern web apps’ <a href="http://dadario.com.br/security-for-building-modern-web-apps/" rel="nofollow noopener">dadario.com.br/security-for-building-modern-web-apps/</a> – this post was somewhat popular on /r/netsec and highlights some security topics that you should worry before/during/after developing your web app.</p>
+</li>
+</ol>
+<p>I work on the field (more about me: <a href="http://dadario.com.br" rel="nofollow noopener">dadario.com.br</a>) and if you have any questions I’d love to help.</p>
+<p>– New users can’t post links, so bad.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/16</link>
+        <pubDate>Thu, 12 Jan 2017 10:12:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/maximus">@maximus</a></p>
+<p>This ties in nicely to my DevOps post… When you start looking at this from a developer perspective, we tend towards simplicity and want to deploy without having to read how to set-up a linux server for the Nth time (not doing it enough to remember everything)… So we go to things like auto  deployment services (Laravel Forge comes to mind) …</p>
+<p>However, when you start playing with your infrastructure’s configuration for security, those automated solutions soon fail… Your suggestion of a reverse proxy breaks all of those actually.</p>
+<p>A reverse proxy is probably the most effective way to isolate your back end from hackers… putting one dense level of obfuscation to the whole process…</p>
+<p>Now what is a developer to do… hire this out or bite the bullet and learn it with the understanding that you might make a mistake as a newbie … Then again, if you do it yourself you get to learn and can debug if something goes wrong…</p>
+<p>I am trying to figure out a good DevOps workflow right now… including email… I hate relying on the big guys and locked in services like some AWS architectures… I like the idea of being able to replicate it on metal if need be…</p>
+<p>If every one on the internet was nice… it would be much simpler… lol</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/15</link>
+        <pubDate>Sun, 25 Dec 2016 21:42:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>They will hit you from where you don’t expect. Deploying Docker containers - here you go, using Redis - they have a trick for this, using databases - make sure you close all ports, etc.</p>
+<p>Simple, managed stacks, such as Google App Engine, help a lot in terms of security but there’s only so much you can do with them.</p>
+<p>From my experience (unless you are really incompetent) none amount of code reviews and automated pen testing will prevent bad guys from hacking your SaaS one way or another.</p>
+<p>On the other hand, following simple operational rules might:</p>
+<ul>
+<li>only https traffic should be allowed</li>
+<li>install proxy server</li>
+<li>regularly install all security patches</li>
+<li>keep only necessary ports open, close everything else</li>
+<li>read about known exploits in all elements of your stack and make sure you are protected</li>
+<li>enforce strong passwords</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/14</link>
+        <pubDate>Fri, 23 Dec 2016 14:29:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> A route can be to do as few server management as possible when you are solo.  So instead of using AWS or digital ocean, try:</p>
+<ul>
+<li>Google AppEngine, tech stack is limited, but server security is provided by google</li>
+<li>
+<a href="http://webfaction.com" rel="nofollow noopener">webfaction.com</a> , a kind of managed server from $10.  Great service, especially when you are starting.  Linux stack only.</li>
+</ul>
+<p>When using the above, you don’t have to worry about the server being down, though you still have to worry about your app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/13</link>
+        <pubDate>Thu, 22 Dec 2016 20:24:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>After running a SaaS for 10 years, here’s what I have to say about security:</p>
+<ol>
+<li>
+<p>Use a web-firewall-enabled CDN. We use Cloudflare. The web-firewall will immediately block all the scans, attacks and kids probing your server for known holes etc. If your customers are using the “<a href="http://cusomerXXX.yoursaasapp.com" rel="nofollow noopener">cusomerXXX.yoursaasapp.com</a>” format for their accounts - you can create those via cloudflare’s API by the way. The $20 a month you spent on cloudflare (or alterntive) - will save you much more on AWS traffic bills, so it’s basically free. They also have a free plan by the way…</p>
+</li>
+<li>
+<p>Run stuff on Windows. Yeah, no kidding. While the consumer side of Windows is full of viruses and malicious tools indeed, on the server side it’s the other way around… 99% websites are based on linux, so 99% of known attacks target *nix-holes. Also, Windows will be more expensive at the beginning but it scales really well. With your 1000th customer - you will still be running the same windows server. Also, .NET is jit-compiled to native code, while all linux stuff is interpreted (python, ruby, php, node.js,  you name it…)</p>
+</li>
+<li>
+<p>The biggest security hole will always be cross-customer isolation. Like, in “DeleteItem.php?ItemID=123” - making sure that that “ItemID” actually belongs to the current customer, not some other customer. Probably, the best way would be to come up with some framework, that intercepts all requests, before they reach business logic, and check, where they belong… (of course, not needed if you spawn a separate DB for every customer)</p>
+</li>
+</ol>
+<p>P.S. once you get “popular” you will get a lot of “white hat hackers” reporting “vulnerabilities” to you, hoping to get paid, even if you don’t have a bug-bounty program. I found, the best way to deal with them is: “thanks-thanks, of course, we will gladly pay you, please provide a formal invoice with your real name and address on it”… You won’t hear form them again hehe</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/12</link>
+        <pubDate>Mon, 19 Dec 2016 21:28:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="4623">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>view or delete private customer info</p>
+</blockquote>
+</aside>
+<p>Re: View - you cannot completely remove this risk. Hence you need to think of the damage control procedures, too.</p>
+<p>Re: Delete - back it up often enough OR implement a session rollback mechanism in your app, and that will be a recoverable situation.</p>
+<p>Re: Costly penetration testing: I shall remind you that not everywhere in the world you have to pay US rate for that job, and the skilled security guys are evenly spread around the world. The only question of course is how to tell a good one from a bad one. Can’t help you with that! <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"> Probably some referrals should work.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/11</link>
+        <pubDate>Mon, 19 Dec 2016 03:47:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>I am a firm believer that security and quality must be baked in … at the design stage… Solid design principles should make managing separation much easier… unless you are recycling old code… then again, how you compartmentalize will is key…</p>
+<p>I would never attempt this on an existing platform like Wordpress for example, way too many unknowns… Too much alien code to curate… I like being in control of everything… Otherwise it is very difficult to assert security.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/10</link>
+        <pubDate>Mon, 19 Dec 2016 00:58:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>That was as big concern of mine. I wrote as many tests as possible to ensure it was secure and then also hammered away with scripted instructions to try and break in various ways to see data I should not. At the end of the day it probably not possible to make something 100% secure if it’s running on the web.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/9</link>
+        <pubDate>Sun, 18 Dec 2016 22:42:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the reponses.</p>
+<p>My concern is that I’ll do everything right, security-speaking, except I’ll leave one hole, just one hole in my app, and someone will find it and use it to view or delete private customer info. I’m not stressing too much, but it did strike me that this is (or should be) a concern for all new SaaS products.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/8</link>
+        <pubDate>Sun, 18 Dec 2016 21:09:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Frameworks help you a lot with regards to the obvious entry points into applications… naturally, you are never immune to coding errors (like showing other customer data in a multi-tennant app… by mistake…). But those, are difficult to catch by reviewing code sometimes… it’s almost like you have to pound the hell out of the app to get some of the fringe cases out…</p>
+<p>Good design is key… and that is also difficult, not to audit but to admit and fix… lol</p>
+<p>Infrastructure wise best practices are plentiful but programming errors are always a possibility…</p>
+<p>I feel your pain… what are you most concerned about?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/7</link>
+        <pubDate>Sun, 18 Dec 2016 04:00:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Data leaking and access you should be able to write code tests for to ensure it’s secure. If you are using frameworks like Rails, Laravel etc that helps to reduce potential issues with things like sql injections, cross site scripting hacks etc. Server security, open ports, root access that would be my biggest concern where experts could help.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/6</link>
+        <pubDate>Sun, 18 Dec 2016 00:59:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[cliffordoravec]]></dc:creator>
+        <description><![CDATA[
+            <p>What’s the biggest thing you’re concerned about?</p>
+<p>Is it leaking data across customers, having people access things they shouldn’t be able to (application-specific), or are you concerned about general infrastructure security?  Or is it something else?</p>
+<p>I know these all might be on your list, but I’m curious what context you’re coming from so I could maybe join in the conversation.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/5</link>
+        <pubDate>Sun, 18 Dec 2016 00:29:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Garrett, thanks for the detailed answer. You should write a book about this SaaS stuff (oh wait, you did!)</p>
+<p>I didn’t think about a bug bounty program, but now I’ll add it to my to-do list.</p>
+<p>I think ideally I’d still find someone to audit the code for security issues, but as you say, it’d be costly.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/4</link>
+        <pubDate>Sat, 17 Dec 2016 08:47:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[brbordallo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a>,</p>
+<p>Check out this: <a href="https://se.cr/" rel="nofollow noopener">https://se.cr/</a> I have been in contact with them and use their solution in our project. They have a top team with two engineers from the MIT.</p>
+<p>Let me know if you want any references.</p>
+<p>Bart.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/3</link>
+        <pubDate>Fri, 16 Dec 2016 17:13:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>The main thing is to stay on top of it as best you can. You can hire teams to do security audits, but that can be a costly investment, especially early on. There are also automated tools that you can integrate into your test suite that will look for some of the most common mistakes. For Rails, there’s <a href="http://brakemanscanner.org" rel="nofollow noopener">Brakeman</a> which can also be run using Code Climate. I’d look for similar tools for your platform and add them to your test suite.</p>
+<p>One of the best ways to improve security is to create a bug bounty program and official security page for responsible disclosure. Here’s an <a href="https://sifterapp.com/policies/security/" rel="nofollow noopener">example security page</a> that I created for Sifter. Once you’ve created a page, you can submit to various places that catalog companies that offer bug bounties, and the reports will come in. The good news is that you don’t have to pay cash for bug bounties. Just offering to give people credit on your security page is often enough.</p>
+<ul>
+<li><a href="https://bugcrowd.com/list-of-bug-bounty-programs/" rel="nofollow noopener">BugCrowd</a></li>
+<li><a href="http://bugsheet.com/directory" rel="nofollow noopener">BugSheet</a></li>
+<li><a href="https://hackerone.com" rel="nofollow noopener">HackerOne</a></li>
+</ul>
+<p>Unfortunately, this is a double-edged sword, and it can be time-consuming to sift through the reports because the vast majority of them will be garbage. While there are a lot of really helpful people that will professionally inform you of vulnerabilities and work with you to put the right fix in place, much more are unprofessional, and some even make vague threats demanding that you acknowledge them even if their report is useless or incomplete. So make sure that you launch the security program on a week where you have set aside time to sort through the first wave of reports.</p>
+<p>One other thing that will inevitably happen is that many people will run automated scanners and tools against your site regularly. While the first pass of these tools is likely to uncover some minor issues, they generally can cause a variety of problems from performance to rapid-fire exceptions in your app. In our guidelines, I explicitly stated that any vulnerabilities discovered with the use of automated tools used without advanced coordination with us were not eligible for acknowledgment.</p>
+<p>To that end, it’s helpful to create a very specific set of guidelines about what is and isn’t valid as well. By explicitly stating that things like subdomain sites hosted by 3rd parties are not eligible, you can reduce some of the noise in the reports. This does a couple of things. It helps filter out the lazy people, but it also helps make it clear when you’re communicating with people whether they’re making an effort. With Sifter, 80% of our reports were from people who never even tried to create an account and login to test the application. They just copied and pasted our marketing site URL into their scanner and hoped to find something.</p>
+<p>The best first line of defense is automation in your test suite. A responsible disclosure program is great as well, and simply a good practice, but you’ll want to make sure you’re ready for that first wave. Then, hiring outside professionals to do a security audit on a regular basis would be the next component as soon as you can afford it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/2</link>
+        <pubDate>Fri, 16 Dec 2016 11:40:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+      <item>
+        <title>Web Security and your SaaS</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m coding my new product (a SaaS aimed at business customers), and as I progress, I’m aware that I’m probably introducing many security holes. I’m reading up on the state of the art of web security holes and I get a bit frightened that I only need to make one mistake to make my whole application vulnerable to hacking.</p>
+<p>As a one- (or two- or three-) person team, how do you take care of web security? Just do your best and hope you get all the known security holes? Or do you outsource to get security audits? If so, how do you find someone affordable and good?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623/1</link>
+        <pubDate>Fri, 16 Dec 2016 10:02:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4623-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623.rss">Web Security and your SaaS</source>
+      </item>
+  </channel>
+</rss>

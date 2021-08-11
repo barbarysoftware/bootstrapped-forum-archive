@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Tips on staying on track: Agile and Git</title>
+    <link>https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240</link>
+    <description>I&#39;ve always been interesting in selling software, but in the past I would get lost in features and loose track.
+
+One tip that really helps staying focused is a combination being &#39;agile&#39; and using Git (or any other version control system, but Git works particularly well).
+
+If you have a hard time staying focused, this usually leads to your codebase having half baked features scattered throughout.  How does this happen?  Well since you have issues with focus, you jump around from feature to feature and before you know it you have lost track of what feature you are working on and what is completed and what isn&#39;t.
+
+Solution?
+
+If you force yourself to **work on a single user story**, and **create a feature branch in git** (branches are cheap with git!), you are guaranteed to have a single change in your branch, and your trunk will have stable version of your project.
+
+You can of course do things in many ways depending on your workflow, but another thing to force yourself to do is **commit early and often**.  Don&#39;t make multiple changes to your codebase and commit things when you have 1.5 changes on the go.
+
+And lastly, setup a dev server on ec2 and ship your app as early as possible, it will really help keep you going during your ups and downs.</description>
+    
+    <lastBuildDate>Tue, 06 Aug 2013 10:53:13 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Tips on staying on track: Agile and Git</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>My git use is fairly basic right now. I just keep to the one single branch, and push it out to multiple heroku sites (staging and early access at the moment). I’ve found heroku really useful. It’s been a real timesaver, not having to spend time setting up machines like you do in AWS, and easily being able to <a href="https://devcenter.heroku.com/articles/multiple-environments" rel="nofollow noopener">clone environments</a>. Particularly as a sole founder, that’s been invaluable.</p>
+<p>I avoid having a whole lot of half-baked features by periodically going through and polishing everything up to the point where I’m happy to deploy it - doesn’t have to be perfect. Normally I do that once a week, but there’s been a bit of a gap recently while I’ve focussed on other things.</p>
+<p>On my list of things to do is implement feature flags so that I can hide features while I’m working on them. Ideally I’d like to move towards a continuous deployment type model.</p>
+<p>That <a href="http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/" rel="nofollow noopener">gitflow</a> plugin looks pretty awesome though, thanks <a class="mention" href="/u/imsickofmaps">@imsickofmaps</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240/3</link>
+        <pubDate>Tue, 06 Aug 2013 10:53:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-240-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240.rss">Tips on staying on track: Agile and Git</source>
+      </item>
+      <item>
+        <title>Tips on staying on track: Agile and Git</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <p><img src="https://emoji.discourse-cdn.com/twitter/+1.png?v=5" title=":+1:" class="emoji" alt=":+1:"> to all that…</p>
+<p>The one thing that’s improved my productivity in the last year is shifting to using a combo of Github Issues capturing a user story and the git-flow tool to automate related branches. <a href="https://gist.github.com/imsickofmaps/6122473">This gist</a> captures it.</p>
+<p>It was the chief engineer of one of our consulting clients that got me started on it by sending me <a href="http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/">this article</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240/2</link>
+        <pubDate>Mon, 05 Aug 2013 17:50:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-240-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240.rss">Tips on staying on track: Agile and Git</source>
+      </item>
+      <item>
+        <title>Tips on staying on track: Agile and Git</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve always been interesting in selling software, but in the past I would get lost in features and loose track.</p>
+<p>One tip that really helps staying focused is a combination being ‘agile’ and using Git (or any other version control system, but Git works particularly well).</p>
+<p>If you have a hard time staying focused, this usually leads to your codebase having half baked features scattered throughout.  How does this happen?  Well since you have issues with focus, you jump around from feature to feature and before you know it you have lost track of what feature you are working on and what is completed and what isn’t.</p>
+<p>Solution?</p>
+<p>If you force yourself to <strong>work on a single user story</strong>, and <strong>create a feature branch in git</strong> (branches are cheap with git!), you are guaranteed to have a single change in your branch, and your trunk will have stable version of your project.</p>
+<p>You can of course do things in many ways depending on your workflow, but another thing to force yourself to do is <strong>commit early and often</strong>.  Don’t make multiple changes to your codebase and commit things when you have 1.5 changes on the go.</p>
+<p>And lastly, setup a dev server on ec2 and ship your app as early as possible, it will really help keep you going during your ups and downs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240/1</link>
+        <pubDate>Mon, 05 Aug 2013 17:29:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-240-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/tips-on-staying-on-track-agile-and-git/240.rss">Tips on staying on track: Agile and Git</source>
+      </item>
+  </channel>
+</rss>

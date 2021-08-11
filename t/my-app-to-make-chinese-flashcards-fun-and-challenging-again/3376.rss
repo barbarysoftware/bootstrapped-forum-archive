@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>My app to make Chinese flashcards fun and challenging again</title>
+    <link>https://discuss.bootstrapped.fm/t/my-app-to-make-chinese-flashcards-fun-and-challenging-again/3376</link>
+    <description>Finally released it!  More about the app itself here: http://www.chinese-forums.com/index.php?/topic/49327-making-flashcards-fun-and-challenging-again-character-recognition-workout/
+
+To the topics which may be more interesting to y&#39;all:
+
+**Pricing:**  I went with cheap &amp; paid ($0.99) for a few reasons.  The non-business reason is that app has some new ideas and I would like users to feel they need to at least try it for a while to get their money&#39;s worth before crapping all over it in a bad review.  The business reasons are I want people to purchase this app in addition to other, more fuller-featured apps, schools can have trouble purchasing IAP, and I didn&#39;t find a good (to me) way to split the app into free+IAP that wouldn&#39;t cause problems with the non-business reason above.  I appreciate the nature of the app combined with the price mean I won&#39;t be paying off my house (or building a real business) with the revenue; I&#39;m just glad I have finished something.
+
+**Support:** The app has extensive help (and the feature most likely to cause support requests is unsupported) so I hope to keep support costs very low.
+
+**Social:** I added features I thought would encourage sharing, and thus additional sales as more people learn about the app.  There&#39;s a two-person competitive mode which encourages people to challenge their classmates.  There are sharing buttons in a couple places, letting people save off flashcard images or share them through Twitter or the like.  A missed opportunity is the lack of Instagram integration (a great fit for the app and the target market), but I ran out of time.
+
+**Engagement/gamification:** People are motivated in various ways.  In the app there is two-person mode for competition, but also configurable (on/off) game-like visual and audio &#39;rewards&#39; when answering a multiple-choice question correctly (and a buzzer sound when getting one wrong).  These is may help in retaining the user&#39;s interest in the app.
+
+**The development process:** Originally I had the idea for an app which would have several games for learning characters (not just variations on flashcards as in the final app) but I wasn&#39;t having much success getting the results I wanted out of the technologies I was trying to use.  As part of the effort I had started playing around with GPUImage (and image processing library for iOS) and that led me to think of the core concept for this app.  It didn&#39;t take much time to make a very simple proof of concept showing a few Chinese characters warped by GPUImage.  After that I made a slightly more fancy POC for iPhone screen sizes only with a fixed set of flashcards and two-player mode.  This is the version that I showed to ~20 students of Chinese to validate the concept.  Then the first hard work began, making a real app out of the POC.  I wrote a bunch of SQL and code to deal with flashcards and the dictionary.  Learning Auto/Adaptive Layout and redoing all my screens was a long process.  I wrote extensive help.  I made long lists of features needed for table stakes, and long lists of bugs to fix as I tested and found them.
+
+During this process I had to figure out how to stay motivated.  The lists I made helped, as I could break giant tasks down into tiny tasks I could accomplish in the hour or two I had after work, so I could make some measurable progress.  Near the end I was working in the morning before my day job, at lunch, and in the evenings, which really helped with momentum.  I also formed a kind of mastermind with a coworker who was working on her first app as well.
+
+**Marketing plans:** I am trying to get the word out on forums, FB, Twitter, etc.  I&#39;m looking to advertise on at least one forum.  I think schools/academic researchers will be interested in the app as well, so I hope to reach out to them over the next month or so.  I think this could be the kind of app which has steady sales instead of a spike and then a rapid fall off, so I&#39;m trying to figure out how to keep a level of interest around the app to make that happen.
+
+**Marketing challenge:** I am struggling to highlight what I think of as the killer feature of my app (that it &#39;transforms&#39; the characters on the flashcards).  Just noting this problem; still something I have to solve.
+
+More when I think of it; feel free to ask questions, offer suggestions, etc.</description>
+    
+    <lastBuildDate>Tue, 04 Aug 2015 00:47:06 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/my-app-to-make-chinese-flashcards-fun-and-challenging-again/3376.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>My app to make Chinese flashcards fun and challenging again</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>Finally released it!  More about the app itself here: <a href="http://www.chinese-forums.com/index.php?/topic/49327-making-flashcards-fun-and-challenging-again-character-recognition-workout/" rel="nofollow noopener">http://www.chinese-forums.com/index.php?/topic/49327-making-flashcards-fun-and-challenging-again-character-recognition-workout/</a></p>
+<p>To the topics which may be more interesting to y’all:</p>
+<p><strong>Pricing:</strong>  I went with cheap &amp; paid ($0.99) for a few reasons.  The non-business reason is that app has some new ideas and I would like users to feel they need to at least try it for a while to get their money’s worth before crapping all over it in a bad review.  The business reasons are I want people to purchase this app in addition to other, more fuller-featured apps, schools can have trouble purchasing IAP, and I didn’t find a good (to me) way to split the app into free+IAP that wouldn’t cause problems with the non-business reason above.  I appreciate the nature of the app combined with the price mean I won’t be paying off my house (or building a real business) with the revenue; I’m just glad I have finished something.</p>
+<p><strong>Support:</strong> The app has extensive help (and the feature most likely to cause support requests is unsupported) so I hope to keep support costs very low.</p>
+<p><strong>Social:</strong> I added features I thought would encourage sharing, and thus additional sales as more people learn about the app.  There’s a two-person competitive mode which encourages people to challenge their classmates.  There are sharing buttons in a couple places, letting people save off flashcard images or share them through Twitter or the like.  A missed opportunity is the lack of Instagram integration (a great fit for the app and the target market), but I ran out of time.</p>
+<p><strong>Engagement/gamification:</strong> People are motivated in various ways.  In the app there is two-person mode for competition, but also configurable (on/off) game-like visual and audio ‘rewards’ when answering a multiple-choice question correctly (and a buzzer sound when getting one wrong).  These is may help in retaining the user’s interest in the app.</p>
+<p><strong>The development process:</strong> Originally I had the idea for an app which would have several games for learning characters (not just variations on flashcards as in the final app) but I wasn’t having much success getting the results I wanted out of the technologies I was trying to use.  As part of the effort I had started playing around with GPUImage (and image processing library for iOS) and that led me to think of the core concept for this app.  It didn’t take much time to make a very simple proof of concept showing a few Chinese characters warped by GPUImage.  After that I made a slightly more fancy POC for iPhone screen sizes only with a fixed set of flashcards and two-player mode.  This is the version that I showed to ~20 students of Chinese to validate the concept.  Then the first hard work began, making a real app out of the POC.  I wrote a bunch of SQL and code to deal with flashcards and the dictionary.  Learning Auto/Adaptive Layout and redoing all my screens was a long process.  I wrote extensive help.  I made long lists of features needed for table stakes, and long lists of bugs to fix as I tested and found them.</p>
+<p>During this process I had to figure out how to stay motivated.  The lists I made helped, as I could break giant tasks down into tiny tasks I could accomplish in the hour or two I had after work, so I could make some measurable progress.  Near the end I was working in the morning before my day job, at lunch, and in the evenings, which really helped with momentum.  I also formed a kind of mastermind with a coworker who was working on her first app as well.</p>
+<p><strong>Marketing plans:</strong> I am trying to get the word out on forums, FB, Twitter, etc.  I’m looking to advertise on at least one forum.  I think schools/academic researchers will be interested in the app as well, so I hope to reach out to them over the next month or so.  I think this could be the kind of app which has steady sales instead of a spike and then a rapid fall off, so I’m trying to figure out how to keep a level of interest around the app to make that happen.</p>
+<p><strong>Marketing challenge:</strong> I am struggling to highlight what I think of as the killer feature of my app (that it ‘transforms’ the characters on the flashcards).  Just noting this problem; still something I have to solve.</p>
+<p>More when I think of it; feel free to ask questions, offer suggestions, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-app-to-make-chinese-flashcards-fun-and-challenging-again/3376/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-app-to-make-chinese-flashcards-fun-and-challenging-again/3376/1</link>
+        <pubDate>Tue, 04 Aug 2015 00:22:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3376-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-app-to-make-chinese-flashcards-fun-and-challenging-again/3376.rss">My app to make Chinese flashcards fun and challenging again</source>
+      </item>
+  </channel>
+</rss>

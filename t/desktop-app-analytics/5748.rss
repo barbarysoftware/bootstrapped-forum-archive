@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Desktop App Analytics</title>
+    <link>https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748</link>
+    <description>Hello everyone,
+
+I&#39;m pretty sure most of us are familiar with and already use Google Analytics on our websites.
+
+I was wondering though, for the devs building desktop apps what solutions, if any, you might be using to track your app&#39;s usage. Obviously taking into account that there are serious privacy concerns at play, that this data must be as anonymous as possible, the option to disable/enable it prominent and be opt-out by default. 
+
+For our Windows c++ app, we&#39;re thinking of introducing anonymous data usage stats though we&#39;re not sure if it&#39;s worth the effort. We&#39;re thinking perhaps the usage insight we gain along with the feedback we&#39;re getting might help with improving the product. We&#39;re currently only tracking successful install + first run by opening a quick start guide page with tips and tricks which is not entirely accurate.
+
+Some options I&#39;ve looked at briefly:
+- Deskmetrics ( deskmetrics.com ), seems perfect but the project looks dead.
+- Revulytics ( https://www.revulytics.com/revulytics-usage-intelligence ), not so sure about this.
+- https://www.starmessagesoftware.com/softmeter, uses GA, haven&#39;t really looked into it.
+
+Still not sure about any of them. What do you think?
+
+Thanks</description>
+    
+    <lastBuildDate>Sat, 10 Mar 2018 18:06:35 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Desktop App Analytics</title>
+        <dc:creator><![CDATA[Penjani]]></dc:creator>
+        <description><![CDATA[
+            <p>You’re probably right, it would be best to use an in-house solution. Just figured it might save a lot development time to use an already existing solution.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748/3</link>
+        <pubDate>Sat, 10 Mar 2018 18:06:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5748-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748.rss">Desktop App Analytics</source>
+      </item>
+      <item>
+        <title>Desktop App Analytics</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>If I needed such a thing, I’d better build it myself. Just collect some stats that are important - how often certain menu items are clicked, what data amount used in certain areas, track software uptime etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748/2</link>
+        <pubDate>Sat, 10 Mar 2018 14:04:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5748-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748.rss">Desktop App Analytics</source>
+      </item>
+      <item>
+        <title>Desktop App Analytics</title>
+        <dc:creator><![CDATA[Penjani]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello everyone,</p>
+<p>I’m pretty sure most of us are familiar with and already use Google Analytics on our websites.</p>
+<p>I was wondering though, for the devs building desktop apps what solutions, if any, you might be using to track your app’s usage. Obviously taking into account that there are serious privacy concerns at play, that this data must be as anonymous as possible, the option to disable/enable it prominent and be opt-out by default.</p>
+<p>For our Windows c++ app, we’re thinking of introducing anonymous data usage stats though we’re not sure if it’s worth the effort. We’re thinking perhaps the usage insight we gain along with the feedback we’re getting might help with improving the product. We’re currently only tracking successful install + first run by opening a quick start guide page with tips and tricks which is not entirely accurate.</p>
+<p>Some options I’ve looked at briefly:</p>
+<ul>
+<li>Deskmetrics ( <a href="http://deskmetrics.com" rel="nofollow noopener">deskmetrics.com</a> ), seems perfect but the project looks dead.</li>
+<li>Revulytics ( <a href="https://www.revulytics.com/revulytics-usage-intelligence" rel="nofollow noopener">https://www.revulytics.com/revulytics-usage-intelligence</a> ), not so sure about this.</li>
+<li>
+<a href="https://www.starmessagesoftware.com/softmeter" rel="nofollow noopener">https://www.starmessagesoftware.com/softmeter</a>, uses GA, haven’t really looked into it.</li>
+</ul>
+<p>Still not sure about any of them. What do you think?</p>
+<p>Thanks</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748/1</link>
+        <pubDate>Sat, 10 Mar 2018 01:07:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5748-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-analytics/5748.rss">Desktop App Analytics</source>
+      </item>
+  </channel>
+</rss>

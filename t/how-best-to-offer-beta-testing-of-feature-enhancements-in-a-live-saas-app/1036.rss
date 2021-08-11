@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How best to offer beta testing of feature enhancements in a live Saas app?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036</link>
+    <description>I am looking for advice on the best way to facilitate beta testing of feature enhancements (i.e. not totally new features which are much easier) in a live Saas app (shared code and one database) without negatively impacting the customers experience?
+
+For example, today we do process A in a certain way but we need to change or enhance the way this is done - we develop and test the change internally and we are happy that it works as expected but now want to get some real customers using it before making it available to all. 
+
+As this is a replacement of the current process, if we simply turn it on for everyone there is a small risk of data corruption/loss and a larger risk of a poor end user experience if it does not work as they expect so how can we allow testing by customers in a live environment with minimal risk?
+
+My current thinking is to create a demo account for each customer with sample data preloaded and then in the code add a check for the demo accounts and, if the user matches the demo list, do process B otherwise continue to do process A?
+
+Twitter, for example, seem to be able to easily roll out new features gradually to users in a controlled way rather than in a big bang - I assume they originally designed their system to accommodate this but are there better ways of me doing this without re architecting the whole environment?</description>
+    
+    <lastBuildDate>Tue, 21 Jan 2014 18:57:26 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How best to offer beta testing of feature enhancements in a live Saas app?</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks - I am using vanilla PHP and had written a simple function which looks up user id in a beta table with a list of beta modules and returns true or false. I then have a bunch of if’s in my code and was hoping maybe there was a “better” way but it appears not!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036/4</link>
+        <pubDate>Tue, 21 Jan 2014 18:57:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1036-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036.rss">How best to offer beta testing of feature enhancements in a live Saas app?</source>
+      </item>
+      <item>
+        <title>How best to offer beta testing of feature enhancements in a live Saas app?</title>
+        <dc:creator><![CDATA[msmithstubbs]]></dc:creator>
+        <description><![CDATA[
+            <p>I use feature flags as well. Here’s roughly my process:</p>
+<ol>
+<li>
+<p>Develop the new feature and test it locally. Once I’m happy with it I merge it into my production code base, but put it behind a feature flag. I’m developing with Ruby, so I use <a href="https://github.com/FetLife/rollout" rel="nofollow noopener">rollout</a> but there’s probably an equivalent for whatever platform you are using. It stores feature flags in redis, which I prefer to adding too many flags in the database. My code essentially looks like this:</p>
+<p>if $rollout.active?(current_user_id, new_account_page)<br>
+// do the new feature<br>
+else<br>
+// just use the existing code</p>
+</li>
+<li>
+<p>I deploy to production, and enable only for my own account and test with that.</p>
+</li>
+<li>
+<p>I then identify a dozen or so customers I have a good relationship with who would benefit from the new feature and send them a message inviting them to try it out. I use <a href="http://intercom.io" rel="nofollow noopener">Intercom</a> to both identify the target users and message them. I make it clear that it’s a beta feature and bugs may exist.</p>
+</li>
+<li>
+<p>Typically a few respond so I enable those accounts. After a certain amount of time I’ll email them for feedback. Did you have any problems? Was the documentation clear?</p>
+</li>
+<li>
+<p>Once I’m happy that it’s running successfully I’ll roll it out - either progressively to a percentage of users, or  to all users. I usually leave a day before I remove the feature flag from the code, in case I hit an unexpected edge case and need to deactivate a specific user.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036/3</link>
+        <pubDate>Mon, 20 Jan 2014 11:48:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1036-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036.rss">How best to offer beta testing of feature enhancements in a live Saas app?</source>
+      </item>
+      <item>
+        <title>How best to offer beta testing of feature enhancements in a live Saas app?</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>When you say create a demo account, do you mean in a separate beta environment running the new version of your code? You could probably manage that in the short-term for a few users, but I’d imagine you could end up with some real headaches when it came time to merge the two.</p>
+<p>The best option is to have feature flags in your live environment. Extend your user model with a new boolean field for each new feature, then in your code check whether a feature is on or off for that user, and run the new or old code accordingly.</p>
+<p>When you want to invite users to beta test something you can opt them in, or give them a button to try the beta (or to leave the beta). You can also use this to transparently opt in a subset of users to A/B test things. When you’re ready for everyone, either strip out the old code and checks, or opt everyone in and strip the code out later if you’re a bit more cautious.</p>
+<p>It does mean a bit more work during development - keeping old code around for a bit longer, making sure it works alongside the new code, wrapping all entry points in conditionals, and possibly maintaining two sets of data when making changes to the database - but it gives you a lot more control over when and how you roll out new features, and makes it easier to reverse it should you discover a problem.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036/2</link>
+        <pubDate>Mon, 20 Jan 2014 09:55:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1036-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036.rss">How best to offer beta testing of feature enhancements in a live Saas app?</source>
+      </item>
+      <item>
+        <title>How best to offer beta testing of feature enhancements in a live Saas app?</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>I am looking for advice on the best way to facilitate beta testing of feature enhancements (i.e. not totally new features which are much easier) in a live Saas app (shared code and one database) without negatively impacting the customers experience?</p>
+<p>For example, today we do process A in a certain way but we need to change or enhance the way this is done - we develop and test the change internally and we are happy that it works as expected but now want to get some real customers using it before making it available to all.</p>
+<p>As this is a replacement of the current process, if we simply turn it on for everyone there is a small risk of data corruption/loss and a larger risk of a poor end user experience if it does not work as they expect so how can we allow testing by customers in a live environment with minimal risk?</p>
+<p>My current thinking is to create a demo account for each customer with sample data preloaded and then in the code add a check for the demo accounts and, if the user matches the demo list, do process B otherwise continue to do process A?</p>
+<p>Twitter, for example, seem to be able to easily roll out new features gradually to users in a controlled way rather than in a big bang - I assume they originally designed their system to accommodate this but are there better ways of me doing this without re architecting the whole environment?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036/1</link>
+        <pubDate>Mon, 20 Jan 2014 09:07:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1036-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-best-to-offer-beta-testing-of-feature-enhancements-in-a-live-saas-app/1036.rss">How best to offer beta testing of feature enhancements in a live Saas app?</source>
+      </item>
+  </channel>
+</rss>

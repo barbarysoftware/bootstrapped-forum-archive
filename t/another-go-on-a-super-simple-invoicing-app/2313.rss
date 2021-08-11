@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Another go on a super-simple invoicing app</title>
+    <link>https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313</link>
+    <description>Hi,
+
+Few years back I built an invoicing app and I even wrote a [post][1] on this forum about it. Since then I kinda lost my mana for it, and moved on to a new shiny projects. 
+
+One day, I decided to learn a new thing on Rails 4.0. One thing led to another, and eventually I had a simple, functioning web app running at [www.tinybill.co][2]
+
+The goal for my app has always been to enable my dad to write invoices in a simple way. This current version is probably the simplest I can do. There are still few issues that need resolving: the only available currency is dollar and it does not save sender&#39;s information into browser&#39;s local storage. And someday it would be nice to get the invoice generated also as PDF.
+
+So, what do you think? Does it has everything to create an valid invoice?
+
+Thanks,
+Tuomas
+
+  [1]: http://discuss.bootstrapped.fm/t/request-for-feedback-my-invoicing-app-mvp/609
+  [2]: http://www.tinybill.co</description>
+    
+    <lastBuildDate>Sun, 30 Nov 2014 08:44:54 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Another go on a super-simple invoicing app</title>
+        <dc:creator><![CDATA[tuomasj]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, in web user interface, it’s a suprisingly thin line between complexity and clear&amp;simple. Those excess fields are something I keep wondering should I remove them. I think it’s best to push a GA event with all filled fields when printing to learn the truth.</p>
+<p>Those apps you shared are great! It’s good to see some benchmark. My dad would happily use either one, but he don’t know english that good. (I’ve also built Finnish version on a different domain)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/5</link>
+        <pubDate>Sun, 30 Nov 2014 08:44:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2313-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313.rss">Another go on a super-simple invoicing app</source>
+      </item>
+      <item>
+        <title>Another go on a super-simple invoicing app</title>
+        <dc:creator><![CDATA[Ramin]]></dc:creator>
+        <description><![CDATA[
+            <p>I think it has everything to create a valid invoice <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"><br>
+That said, it seems almost too many fields for me for a super-simple invoicing app… (Interest on delayed payments, complaints within, etc).</p>
+<p>As is, I would probably do super-simple invoices with <a href="http://invoiceto.me/" rel="nofollow noopener">http://invoiceto.me/</a> or <a href="https://www.free-invoice-generator.com/" rel="nofollow noopener">https://www.free-invoice-generator.com/</a> and the free freshbooks version for something that is a bit more complex.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/4</link>
+        <pubDate>Tue, 25 Nov 2014 03:42:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2313-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313.rss">Another go on a super-simple invoicing app</source>
+      </item>
+      <item>
+        <title>Another go on a super-simple invoicing app</title>
+        <dc:creator><![CDATA[tuomasj]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks!</p>
+<p>I’m looked few PDF generation libraries and they seem to be quite easy, so after I fix the currency limitation (USD only) I might hop on that. Actually, the bank account is the IBAN but currenntly, it’s bit vague on the form.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/3</link>
+        <pubDate>Sat, 22 Nov 2014 13:10:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2313-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313.rss">Another go on a super-simple invoicing app</source>
+      </item>
+      <item>
+        <title>Another go on a super-simple invoicing app</title>
+        <dc:creator><![CDATA[chriskottom]]></dc:creator>
+        <description><![CDATA[
+            <p>The simplicity is really attractive, and I can imagine a lot of freelancers using something like this.  For me to use it, I would need:</p>
+<ul>
+<li>Ability to change the BIC label to SWIFT or IBAN</li>
+<li>Addition of a taxable date (sometimes different than date of issue)</li>
+<li>Variable/intelligent column widths on print view line items table (right now, anything over 2-3 words of description ends up scrolling)</li>
+<li>Ability to save as PDF since I send most invoices via email</li>
+</ul>
+<p>Hope that helps!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/2</link>
+        <pubDate>Sat, 22 Nov 2014 11:28:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2313-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313.rss">Another go on a super-simple invoicing app</source>
+      </item>
+      <item>
+        <title>Another go on a super-simple invoicing app</title>
+        <dc:creator><![CDATA[tuomasj]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>Few years back I built an invoicing app and I even wrote a <a href="http://discuss.bootstrapped.fm/t/request-for-feedback-my-invoicing-app-mvp/609">post</a> on this forum about it. Since then I kinda lost my mana for it, and moved on to a new shiny projects.</p>
+<p>One day, I decided to learn a new thing on Rails 4.0. One thing led to another, and eventually I had a simple, functioning web app running at <a href="http://www.tinybill.co" rel="nofollow noopener">www.tinybill.co</a></p>
+<p>The goal for my app has always been to enable my dad to write invoices in a simple way. This current version is probably the simplest I can do. There are still few issues that need resolving: the only available currency is dollar and it does not save sender’s information into browser’s local storage. And someday it would be nice to get the invoice generated also as PDF.</p>
+<p>So, what do you think? Does it has everything to create an valid invoice?</p>
+<p>Thanks,<br>
+Tuomas</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313/1</link>
+        <pubDate>Fri, 21 Nov 2014 23:16:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2313-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/another-go-on-a-super-simple-invoicing-app/2313.rss">Another go on a super-simple invoicing app</source>
+      </item>
+  </channel>
+</rss>

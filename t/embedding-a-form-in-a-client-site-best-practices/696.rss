@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Embedding a form in a client site: best practices?</title>
+    <link>https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696</link>
+    <description>Hello,
+
+My apologies if this is a question better suited for a tech answer site like SO, but I thought I would ask hear due to the wealth of real world experience here.  
+
+My product needs to embed a form on the user&#39;s web site. It seems to me that there are several ways to approach this:
+
+1. Form builder creates HTML form, user pastes HTML into page. Could add a JS snippet for client side validation.
+**Pros:** Easy to implement, should &quot;blend in&quot; to the client site better.
+**Cons:** requires client to properly embed form, real validation will have to happen on my server, with an error page redirecting the form user back to the original form page, which isn&#39;t user friendly.
+
+2. Form builder creates iframe to embed
+**Pros:** Easy (again) to implement, validation can be handled without the form user leaving page.
+**Cons:** Mobile unfriendly, will likely clash with user&#39;s site. 
+
+3. JavaScript snippet that shows a tab button, launches overlay with form. (See Drip widget at https://getambassador.com/) for one example.
+**Pros:** Should be very simple for user to embed, validation can take place in overlay, can customize for mobile users.
+**Cons:** Will require JavaScript to work at all, complex to implement, supporting JS libraries will add to page load time.
+
+I think I can mitigate some of the installation hassle by offering to do it myself...may not be scalable in the long run, but could work to get things going.  Given that my users are very non-technical, I am leaning towards option #3, but would love to hear your guys&#39; thoughts.</description>
+    
+    <lastBuildDate>Wed, 06 Nov 2013 21:45:02 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Embedding a form in a client site: best practices?</title>
+        <dc:creator><![CDATA[saltvedt]]></dc:creator>
+        <description><![CDATA[
+            <p>I havent actually read the book, but <a href="http://thirdpartyjs.com/" rel="nofollow noopener">Third-Party Javascript</a> seems like it would be a great resource. It’s written by some of the guys behind Disqus.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/8</link>
+        <pubDate>Wed, 06 Nov 2013 21:45:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-696-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696.rss">Embedding a form in a client site: best practices?</source>
+      </item>
+      <item>
+        <title>Embedding a form in a client site: best practices?</title>
+        <dc:creator><![CDATA[shennyg]]></dc:creator>
+        <description><![CDATA[
+            <p>If you are going the custom JS route the following links helped me a lot for building my first real widget:</p>
+<p><a href="http://shootitlive.com/2012/07/developing-an-embeddable-javascript-widget/" rel="nofollow noopener">http://shootitlive.com/2012/07/developing-an-embeddable-javascript-widget/</a> &amp; it’s repo: <a href="https://github.com/shootitlive/widgetloader" rel="nofollow noopener">https://github.com/shootitlive/widgetloader</a></p>
+<p>I used it as a framework to build the widget at the bottom of <a href="http://angrycrafters.com" rel="nofollow noopener">angrycrafters.com</a></p>
+<p>Good luck!</p>
+<p>** as a noob on this forum I can only post 2 links, please let me know if you are interested in a couple other links that helped me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/7</link>
+        <pubDate>Wed, 06 Nov 2013 21:41:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-696-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696.rss">Embedding a form in a client site: best practices?</source>
+      </item>
+      <item>
+        <title>Embedding a form in a client site: best practices?</title>
+        <dc:creator><![CDATA[saltvedt]]></dc:creator>
+        <description><![CDATA[
+            <p>My current side project faces some of the same challenges.</p>
+<p>For now, while I’m still prototyping and validating, I’m going for the super simple iframe solution. But I think you can go a long way just using iframes if the design is responsive, and you allow the user to specify some styles.</p>
+<p>Example:</p>
+<pre><code>&lt;iframe src="http://example.com/iframe.php?bgColor=#fff&amp;fgColor=#000"&gt;&lt;/iframe&gt;
+</code></pre>
+<p>Of course, this isn’t ideal. One issue for me is that the height of the content in the iframe is dynamic and I don’t want scrollbars. <a href="http://stackoverflow.com/questions/819416/adjust-width-height-of-iframe-to-fit-with-content-in-it" rel="nofollow noopener">This can be solved using (non-standard) javascript to adjust the height of the iframe to be the same height as the content in the iframe.</a></p>
+<p>So a psuedo javascript/iframe solution would be to allow the client to embed:</p>
+<pre><code>&lt;script src="http://example.com/js/iframe_builder.js.min"&gt;&lt;/script&gt;
+</code></pre>
+<p>The script then simply does document write of the iframe html, and adjusts the height as in the SO link above.</p>
+<p>The added benefit of doing it this way is that you can make it “backwards compatible”; you could change the javascript to write out the form instead of the iframe.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/6</link>
+        <pubDate>Wed, 06 Nov 2013 21:30:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-696-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696.rss">Embedding a form in a client site: best practices?</source>
+      </item>
+      <item>
+        <title>Embedding a form in a client site: best practices?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I recommend taking a look at <a href="http://www.wufoo.com/">Wufoo</a> and how they allow you to embed a form. As a Wufoo customer (ie the person who needs to embed the form) I’ve been pleased with their approach.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/5</link>
+        <pubDate>Fri, 01 Nov 2013 12:07:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-696-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696.rss">Embedding a form in a client site: best practices?</source>
+      </item>
+      <item>
+        <title>Embedding a form in a client site: best practices?</title>
+        <dc:creator><![CDATA[Charlie]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d go with option 3, with regards to page load and libraries, if your using something popular like jquery from a popular CDN like google it shouldn’t make too much difference as it should be cached by the users browser. Also make some plugins - wordpress(at minimum), joomla, drupal etc, make it as easy as possible for people to add the form to their site.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/4</link>
+        <pubDate>Thu, 31 Oct 2013 21:16:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-696-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696.rss">Embedding a form in a client site: best practices?</source>
+      </item>
+      <item>
+        <title>Embedding a form in a client site: best practices?</title>
+        <dc:creator><![CDATA[msmithstubbs]]></dc:creator>
+        <description><![CDATA[
+            <p>I run a SaaS app with a similar problem - I need to display a form (triggered by a button, just like the Drip widget) on the customer’s site. My audience is also nontechnical. For a non-technical market I think convenience trumps power or flexibility.</p>
+<p>Like Drip, I use option <span class="hashtag">#3</span> - a JavaScript snippet which loads a JS file to create and present the form.</p>
+<p>I’ve generally found that any template editing by nontechnical users leads to more problems and support requests. I briefly experimented with option <span class="hashtag">#1</span> but found most customers were not interested:</p>
+<ul>
+<li>my customers generally haven’t built the site themselves and don’t know HTML, so don’t know where to add the snippet</li>
+<li>there’s no guarantee my generated HTML will match the stylesheet for customer’s site anyway</li>
+<li>any errors (or updates at my end) require editing, publishing and testing.</li>
+</ul>
+<p>Option <span class="hashtag">#3</span> still would require the customer to edit the template, but it’s a lot simpler. It allows me to push out updates as required without involving customers. I have a facility for custom CSS to be included by the customer to style the form to match their site (though most don’t).</p>
+<p><a class="mention" href="/u/phdsolopreneur">@phdsolopreneur</a> makes a good point about technical users wanting flexibility to edit the HTML. For that I’ve found the best way is to expose a JavaScript API - the technical customer can then build any HTML they please and call the API with the data.</p>
+<p>Hope that helps - of course the right answer will depend on your audience and product. Feel free to send me private message if you want to get into any specific technical details.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/3</link>
+        <pubDate>Thu, 31 Oct 2013 09:32:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-696-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696.rss">Embedding a form in a client site: best practices?</source>
+      </item>
+      <item>
+        <title>Embedding a form in a client site: best practices?</title>
+        <dc:creator><![CDATA[phdsolopreneur]]></dc:creator>
+        <description><![CDATA[
+            <p>You could steal some inspiration from products like AWeber (email list provider). It seems that they are respected in that industry (all major bloggers recommend them) and they use method 1.</p>
+<p>So my guess is that in the con that you mention is not as bad as you might thing. Very non technical users don’t know what Javascript is and they might not have the latest browser or a compatible one. So if your third solution doesn’t work, your customer might not be able to use your solution at all. AWeber solves the problem of validation by validating in their servers and giving themselves an <a href="http://www.aweber.com/form-sorry.htm?message=emailinvalid&amp;data=fdsaf" rel="nofollow noopener">error page</a>. The user just needs to push the back button.</p>
+<p>In addition to that, very technical users (like me) will be pissed off because we cannot tweak the html to make it completely blend into our websites.</p>
+<p>I’m not saying that AWeber solution is perfect, but given that people who use them seem happy with that, you might want to reconsider method 1.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/2</link>
+        <pubDate>Thu, 31 Oct 2013 08:57:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-696-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696.rss">Embedding a form in a client site: best practices?</source>
+      </item>
+      <item>
+        <title>Embedding a form in a client site: best practices?</title>
+        <dc:creator><![CDATA[dwilson86]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>My apologies if this is a question better suited for a tech answer site like SO, but I thought I would ask hear due to the wealth of real world experience here.</p>
+<p>My product needs to embed a form on the user’s web site. It seems to me that there are several ways to approach this:</p>
+<ol>
+<li>
+<p>Form builder creates HTML form, user pastes HTML into page. Could add a JS snippet for client side validation.<br>
+<strong>Pros:</strong> Easy to implement, should “blend in” to the client site better.<br>
+<strong>Cons:</strong> requires client to properly embed form, real validation will have to happen on my server, with an error page redirecting the form user back to the original form page, which isn’t user friendly.</p>
+</li>
+<li>
+<p>Form builder creates iframe to embed<br>
+<strong>Pros:</strong> Easy (again) to implement, validation can be handled without the form user leaving page.<br>
+<strong>Cons:</strong> Mobile unfriendly, will likely clash with user’s site.</p>
+</li>
+<li>
+<p>JavaScript snippet that shows a tab button, launches overlay with form. (See Drip widget at <a href="https://getambassador.com/" rel="nofollow noopener">https://getambassador.com/</a>) for one example.<br>
+<strong>Pros:</strong> Should be very simple for user to embed, validation can take place in overlay, can customize for mobile users.<br>
+<strong>Cons:</strong> Will require JavaScript to work at all, complex to implement, supporting JS libraries will add to page load time.</p>
+</li>
+</ol>
+<p>I think I can mitigate some of the installation hassle by offering to do it myself…may not be scalable in the long run, but could work to get things going.  Given that my users are very non-technical, I am leaning towards option <span class="hashtag">#3</span>, but would love to hear your guys’ thoughts.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696/1</link>
+        <pubDate>Wed, 30 Oct 2013 20:43:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-696-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696.rss">Embedding a form in a client site: best practices?</source>
+      </item>
+  </channel>
+</rss>

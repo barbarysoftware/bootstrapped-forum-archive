@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Embedding a form in a client site: best practices? - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Hello,  My apologies if this is a question better suited for a tech answer site like SO, but I thought I would ask hear due to the wealth of real world experience here.  My product needs to embed a form on the user’s web site. It seems to me that there are several ways to approach this:    Form builder creates HTML form, user pastes HTML into page. Could add a JS snippet for client side validation.  Pros: Easy to implement, should “blend in” to the client site better.  Cons: requires client to p...">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="696.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Embedding a form in a client site: best practices?&#39;" href="696.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/embedding-a-form-in-a-client-site-best-practices/696" />
+<meta property="og:title" content="Embedding a form in a client site: best practices?" />
+<meta name="twitter:title" content="Embedding a form in a client site: best practices?" />
+<meta property="og:description" content="Hello,  My apologies if this is a question better suited for a tech answer site like SO, but I thought I would ask hear due to the wealth of real world experience here.  My product needs to embed a form on the user’s web site. It seems to me that there are several ways to approach this:    Form builder creates HTML form, user pastes HTML into page. Could add a JS snippet for client side validation.  Pros: Easy to implement, should “blend in” to the client site better.  Cons: requires client to p..." />
+<meta name="twitter:description" content="Hello,  My apologies if this is a question better suited for a tech answer site like SO, but I thought I would ask hear due to the wealth of real world experience here.  My product needs to embed a form on the user’s web site. It seems to me that there are several ways to approach this:    Form builder creates HTML form, user pastes HTML into page. Could add a JS snippet for client side validation.  Pros: Easy to implement, should “blend in” to the client site better.  Cons: requires client to p..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="1 ❤" />
+<meta property="article:published_time" content="2013-10-30T20:43:56+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="696.html">Embedding a form in a client site: best practices?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/dwilson86.html'><span itemprop='name'>dwilson86</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="696.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-30T20:43:56Z' class='post-time'>
+                October 30, 2013,  8:43pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-30T20:43:56Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello,</p>
+<p>My apologies if this is a question better suited for a tech answer site like SO, but I thought I would ask hear due to the wealth of real world experience here.</p>
+<p>My product needs to embed a form on the user’s web site. It seems to me that there are several ways to approach this:</p>
+<ol>
+<li>
+<p>Form builder creates HTML form, user pastes HTML into page. Could add a JS snippet for client side validation.<br>
+<strong>Pros:</strong> Easy to implement, should “blend in” to the client site better.<br>
+<strong>Cons:</strong> requires client to properly embed form, real validation will have to happen on my server, with an error page redirecting the form user back to the original form page, which isn’t user friendly.</p>
+</li>
+<li>
+<p>Form builder creates iframe to embed<br>
+<strong>Pros:</strong> Easy (again) to implement, validation can be handled without the form user leaving page.<br>
+<strong>Cons:</strong> Mobile unfriendly, will likely clash with user’s site.</p>
+</li>
+<li>
+<p>JavaScript snippet that shows a tab button, launches overlay with form. (See Drip widget at <a href="https://getambassador.com/" rel="nofollow noopener">https://getambassador.com/</a>) for one example.<br>
+<strong>Pros:</strong> Should be very simple for user to embed, validation can take place in overlay, can customize for mobile users.<br>
+<strong>Cons:</strong> Will require JavaScript to work at all, complex to implement, supporting JS libraries will add to page load time.</p>
+</li>
+</ol>
+<p>I think I can mitigate some of the installation hassle by offering to do it myself…may not be scalable in the long run, but could work to get things going.  Given that my users are very non-technical, I am leaning towards option <span class="hashtag">#3</span>, but would love to hear your guys’ thoughts.</p>
+        </div>
+
+        <meta itemprop='headline' content='Embedding a form in a client site: best practices?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/phdsolopreneur.html'><span itemprop='name'>phdsolopreneur</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="696.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-31T08:57:22Z' class='post-time'>
+                October 31, 2013,  8:57am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-31T08:57:22Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>You could steal some inspiration from products like AWeber (email list provider). It seems that they are respected in that industry (all major bloggers recommend them) and they use method 1.</p>
+<p>So my guess is that in the con that you mention is not as bad as you might thing. Very non technical users don’t know what Javascript is and they might not have the latest browser or a compatible one. So if your third solution doesn’t work, your customer might not be able to use your solution at all. AWeber solves the problem of validation by validating in their servers and giving themselves an <a href="http://www.aweber.com/form-sorry.htm?message=emailinvalid&amp;data=fdsaf" rel="nofollow noopener">error page</a>. The user just needs to push the back button.</p>
+<p>In addition to that, very technical users (like me) will be pissed off because we cannot tweak the html to make it completely blend into our websites.</p>
+<p>I’m not saying that AWeber solution is perfect, but given that people who use them seem happy with that, you might want to reconsider method 1.</p>
+        </div>
+
+        <meta itemprop='headline' content='Embedding a form in a client site: best practices?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/msmithstubbs.html'><span itemprop='name'>msmithstubbs</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="696.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-31T09:32:44Z' class='post-time'>
+                October 31, 2013,  9:32am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-31T09:32:44Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I run a SaaS app with a similar problem - I need to display a form (triggered by a button, just like the Drip widget) on the customer’s site. My audience is also nontechnical. For a non-technical market I think convenience trumps power or flexibility.</p>
+<p>Like Drip, I use option <span class="hashtag">#3</span> - a JavaScript snippet which loads a JS file to create and present the form.</p>
+<p>I’ve generally found that any template editing by nontechnical users leads to more problems and support requests. I briefly experimented with option <span class="hashtag">#1</span> but found most customers were not interested:</p>
+<ul>
+<li>my customers generally haven’t built the site themselves and don’t know HTML, so don’t know where to add the snippet</li>
+<li>there’s no guarantee my generated HTML will match the stylesheet for customer’s site anyway</li>
+<li>any errors (or updates at my end) require editing, publishing and testing.</li>
+</ul>
+<p>Option <span class="hashtag">#3</span> still would require the customer to edit the template, but it’s a lot simpler. It allows me to push out updates as required without involving customers. I have a facility for custom CSS to be included by the customer to style the form to match their site (though most don’t).</p>
+<p><a class="mention" href="../../u/phdsolopreneur.html">@phdsolopreneur</a> makes a good point about technical users wanting flexibility to edit the HTML. For that I’ve found the best way is to expose a JavaScript API - the technical customer can then build any HTML they please and call the API with the data.</p>
+<p>Hope that helps - of course the right answer will depend on your audience and product. Feel free to send me private message if you want to get into any specific technical details.</p>
+        </div>
+
+        <meta itemprop='headline' content='Embedding a form in a client site: best practices?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Charlie.html'><span itemprop='name'>Charlie</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="696.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-31T21:16:06Z' class='post-time'>
+                October 31, 2013,  9:16pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-31T21:16:06Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’d go with option 3, with regards to page load and libraries, if your using something popular like jquery from a popular CDN like google it shouldn’t make too much difference as it should be cached by the users browser. Also make some plugins - wordpress(at minimum), joomla, drupal etc, make it as easy as possible for people to add the form to their site.</p>
+        </div>
+
+        <meta itemprop='headline' content='Embedding a form in a client site: best practices?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="696.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-01T12:07:14Z' class='post-time'>
+                November 1, 2013, 12:07pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-01T12:07:14Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I recommend taking a look at <a href="http://www.wufoo.com/">Wufoo</a> and how they allow you to embed a form. As a Wufoo customer (ie the person who needs to embed the form) I’ve been pleased with their approach.</p>
+        </div>
+
+        <meta itemprop='headline' content='Embedding a form in a client site: best practices?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/saltvedt.html'><span itemprop='name'>saltvedt</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="696.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-06T21:30:38Z' class='post-time'>
+                November 6, 2013,  9:30pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-06T21:30:38Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My current side project faces some of the same challenges.</p>
+<p>For now, while I’m still prototyping and validating, I’m going for the super simple iframe solution. But I think you can go a long way just using iframes if the design is responsive, and you allow the user to specify some styles.</p>
+<p>Example:</p>
+<pre><code>&lt;iframe src="http://example.com/iframe.php?bgColor=#fff&amp;fgColor=#000"&gt;&lt;/iframe&gt;
+</code></pre>
+<p>Of course, this isn’t ideal. One issue for me is that the height of the content in the iframe is dynamic and I don’t want scrollbars. <a href="http://stackoverflow.com/questions/819416/adjust-width-height-of-iframe-to-fit-with-content-in-it" rel="nofollow noopener">This can be solved using (non-standard) javascript to adjust the height of the iframe to be the same height as the content in the iframe.</a></p>
+<p>So a psuedo javascript/iframe solution would be to allow the client to embed:</p>
+<pre><code>&lt;script src="http://example.com/js/iframe_builder.js.min"&gt;&lt;/script&gt;
+</code></pre>
+<p>The script then simply does document write of the iframe html, and adjusts the height as in the SO link above.</p>
+<p>The added benefit of doing it this way is that you can make it “backwards compatible”; you could change the javascript to write out the form instead of the iframe.</p>
+        </div>
+
+        <meta itemprop='headline' content='Embedding a form in a client site: best practices?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/shennyg.html'><span itemprop='name'>shennyg</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="696.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-06T21:41:45Z' class='post-time'>
+                November 6, 2013,  9:41pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-06T21:41:45Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If you are going the custom JS route the following links helped me a lot for building my first real widget:</p>
+<p><a href="http://shootitlive.com/2012/07/developing-an-embeddable-javascript-widget/" rel="nofollow noopener">http://shootitlive.com/2012/07/developing-an-embeddable-javascript-widget/</a> &amp; it’s repo: <a href="https://github.com/shootitlive/widgetloader" rel="nofollow noopener">https://github.com/shootitlive/widgetloader</a></p>
+<p>I used it as a framework to build the widget at the bottom of <a href="http://angrycrafters.com" rel="nofollow noopener">angrycrafters.com</a></p>
+<p>Good luck!</p>
+<p>** as a noob on this forum I can only post 2 links, please let me know if you are interested in a couple other links that helped me.</p>
+        </div>
+
+        <meta itemprop='headline' content='Embedding a form in a client site: best practices?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/saltvedt.html'><span itemprop='name'>saltvedt</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="696.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-06T21:45:02Z' class='post-time'>
+                November 6, 2013,  9:45pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-06T21:45:02Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I havent actually read the book, but <a href="http://thirdpartyjs.com/" rel="nofollow noopener">Third-Party Javascript</a> seems like it would be a great resource. It’s written by some of the guys behind Disqus.</p>
+        </div>
+
+        <meta itemprop='headline' content='Embedding a form in a client site: best practices?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

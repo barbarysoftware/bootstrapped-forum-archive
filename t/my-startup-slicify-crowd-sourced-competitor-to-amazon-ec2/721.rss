@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>My startup - Slicify. Crowd-sourced competitor to Amazon EC2</title>
+    <link>https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721</link>
+    <description>Hi All. .a quick post to introduce myself. I&#39;ve been a developer/CTO for many years at small companies, and have launched a couple of startups in the past. 
+
+I&#39;m currently working on a new project that launched our public beta 3 months ago: http://www.slicify.com. 
+
+Slicify is a market for cloud computing. I&#39;ve written software that lets anyone with a Windows PC turn their machine into an on-demand Linux server, and sell it through my website. Our service competes directly with Amazon EC2, by essentially letting buyers crowd-source machines at the lowest rates, rather than having to get them all from one vendor. As a result, buyers will be able to save thousands of dollars a month.
+
+Looking forward to chatting with everyone and getting some honest feedback. I&#39;m particularly interested in trying different growth tactics to bring this exciting technology to a wider audience.
+
+thanks
+Steve</description>
+    
+    <lastBuildDate>Mon, 11 Nov 2013 10:58:29 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>My startup - Slicify. Crowd-sourced competitor to Amazon EC2</title>
+        <dc:creator><![CDATA[stevecookhk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="721">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/steve/40/1204_1.png" class="avatar"> steve:</div>
+<blockquote>
+<p>I think another concern would be scalability, as it sounds like all communication routes through your computers.</p>
+</blockquote>
+</aside>
+<p>Oh I missed this question…</p>
+<p>The answer is “yes and no”. All communication goes through our software, though internet connectivity to each Node is proxied through the local software agent only - so it is not going through our servers.<br>
+The only communication that goes via our servers is the SSH terminal session that is available to basic connectivity to each machine. No real data goes through the terminal though - mostly its just used to download and execute whatever setup script you want to run for your particular app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/8</link>
+        <pubDate>Mon, 11 Nov 2013 10:58:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-721-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721.rss">My startup - Slicify. Crowd-sourced competitor to Amazon EC2</source>
+      </item>
+      <item>
+        <title>My startup - Slicify. Crowd-sourced competitor to Amazon EC2</title>
+        <dc:creator><![CDATA[stevecookhk]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s the link for anyone that doesn’t already have it: <a href="http://aws.amazon.com/ec2/spot-instances/" rel="nofollow noopener">http://aws.amazon.com/ec2/spot-instances/</a></p>
+<p>And here’s an interesting paper that shows that AWS spot prices are basically faked by Amazon, and aren’t supply/demand based: <a href="http://www.mulix.org/pubs/cloud/spotprice-cloudcom.pdf" rel="nofollow noopener">http://www.mulix.org/pubs/cloud/spotprice-cloudcom.pdf</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/7</link>
+        <pubDate>Mon, 11 Nov 2013 10:38:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-721-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721.rss">My startup - Slicify. Crowd-sourced competitor to Amazon EC2</source>
+      </item>
+      <item>
+        <title>My startup - Slicify. Crowd-sourced competitor to Amazon EC2</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="721">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevecookhk/40/1229_1.png" class="avatar"> stevecookhk:</div>
+<blockquote>
+<p>On the problem of nodes coming and going, this is already an aspect of the Amazon spot market, which is what most of our target customers are currently using. So in that sense it is no worse than the competition.</p>
+</blockquote>
+</aside>
+<p>Thanks for your detailed response.  I wasn’t aware of the Amazon spot market; your offering/strategy now makes sense to me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/6</link>
+        <pubDate>Mon, 11 Nov 2013 10:14:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-721-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721.rss">My startup - Slicify. Crowd-sourced competitor to Amazon EC2</source>
+      </item>
+      <item>
+        <title>My startup - Slicify. Crowd-sourced competitor to Amazon EC2</title>
+        <dc:creator><![CDATA[stevecookhk]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback!</p>
+<p>Security is definitely the first thing that people talk about. Both from the buyer and seller side - sellers don’t want their data stolen, malware installed etc. And buyers don’t want the host PC to have access to their data.</p>
+<p>I guess my view on this has several angles:<br>
+a. We’ve built security into the system from the ground up - communications are secured, there are various internal checks that detect potentially rogue clients/intrusion attempts and automatically shutdown and delete files, etc. For the seller, the key security aspects are that the code can only ever be run in a secure virtual machine, and that it has integrated firewall to prevent LAN sniffing etc. Both of these are already covered.</p>
+<p>b. We make it as difficult as possible for the host to get access to the data, however at the end of the day, there is currently no technology in the world that will prevent the host from accessing the data (and this applies regardless of which IaaS provider you use). We just make it sufficiently hard that it requires someone with fairly deep engineering skills to do.</p>
+<p>This is already safer than running your software on a normal IaaS provider Amazon. If you run on EC2, Amazon engineers have full access to your apps and data. And they have a team of 1000 very competent sysadmins, that both wrote the system and have full access. Amazon has had plenty of security breaches in the past too.</p>
+<p>c. The big difference is that with a crowd-sourced solution like Slicify, NO ONE PERSON has access to your full data set. You’re most likely splitting it up and running it over 10-100 different providers. With Amazon by contrast, if you have a security breach, you’ll lose your entire app and data in one go.</p>
+<p>Unfortunately when talking with potential clients, there is also an element which is the same with all startups - that clients prefer the established, larger players, not because they are better, but because they are seen as the ‘safe’ option (“Nobody ever got fired for buying IBM”).</p>
+<p>On the problem of nodes coming and going, this is already an aspect of the Amazon spot market, which is what most of our target customers are currently using. So in that sense it is no worse than the competition.</p>
+<p>At the same time, we’re adding a feature that shows uptime for specific machines. That way buyers can identify machines that are more stable. At the same time, if the machine goes down, they don’t pay for the last hour. So as long as they snapshot their results once per hour, they won’t be losing money - they’d just need to fire up another machine and run it again.</p>
+<p>Regarding usage figures, as of time of writing (beginning Nov 2013) we have 200+ active sellers, and 50+ nodes online at any one time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/5</link>
+        <pubDate>Mon, 11 Nov 2013 08:44:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-721-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721.rss">My startup - Slicify. Crowd-sourced competitor to Amazon EC2</source>
+      </item>
+      <item>
+        <title>My startup - Slicify. Crowd-sourced competitor to Amazon EC2</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>The two things which would initially concern me about this service are 1) security and 2) the problem of nodes coming and going.  Reading a bit of your website, I think another concern would be scalability, as it sounds like all communication routes through your computers.</p>
+<p>Am I right in my understanding that a customer has no assurance the node they access will remain available to them, possibly even shutting down while they are trying to install software or read computation results from the node?  That severely limits the types of jobs for which your service would be appropriate.  Given that most computers sold these days are laptops, which users hibernate instead of leave running, and I’m not sure how large a pool of nodes you will have available.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/4</link>
+        <pubDate>Sat, 09 Nov 2013 19:26:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-721-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721.rss">My startup - Slicify. Crowd-sourced competitor to Amazon EC2</source>
+      </item>
+      <item>
+        <title>My startup - Slicify. Crowd-sourced competitor to Amazon EC2</title>
+        <dc:creator><![CDATA[stevecookhk]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the comments. Yes - security is a big deal for this kind of system, and is the part that I’ve spent the most time and care on with the design.</p>
+<p>However i think the challenge in getting across security as a concept is that it is very technical. I could add a lot of detail about how SSH, proxies, firewalls, etc are implemented, but this probably wouldn’t mean anything for the majority of users. They just want reassurance that it works and is secure, but that is more psychological than technical.</p>
+<p>It’s definitely a tricky concept to get across to the users, especially if they are not that technically minded.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/3</link>
+        <pubDate>Sat, 09 Nov 2013 15:58:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-721-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721.rss">My startup - Slicify. Crowd-sourced competitor to Amazon EC2</source>
+      </item>
+      <item>
+        <title>My startup - Slicify. Crowd-sourced competitor to Amazon EC2</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting product.  I think you should emphasize security much, much more.</p>
+<p>You might want to see if academia would be interested in a version of your product they run themselves for research computing jobs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/2</link>
+        <pubDate>Fri, 08 Nov 2013 12:26:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-721-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721.rss">My startup - Slicify. Crowd-sourced competitor to Amazon EC2</source>
+      </item>
+      <item>
+        <title>My startup - Slicify. Crowd-sourced competitor to Amazon EC2</title>
+        <dc:creator><![CDATA[stevecookhk]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi All. .a quick post to introduce myself. I’ve been a developer/CTO for many years at small companies, and have launched a couple of startups in the past.</p>
+<p>I’m currently working on a new project that launched our public beta 3 months ago: <a href="http://www.slicify.com" rel="nofollow noopener">http://www.slicify.com</a>.</p>
+<p>Slicify is a market for cloud computing. I’ve written software that lets anyone with a Windows PC turn their machine into an on-demand Linux server, and sell it through my website. Our service competes directly with Amazon EC2, by essentially letting buyers crowd-source machines at the lowest rates, rather than having to get them all from one vendor. As a result, buyers will be able to save thousands of dollars a month.</p>
+<p>Looking forward to chatting with everyone and getting some honest feedback. I’m particularly interested in trying different growth tactics to bring this exciting technology to a wider audience.</p>
+<p>thanks<br>
+Steve</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721/1</link>
+        <pubDate>Thu, 07 Nov 2013 14:42:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-721-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-startup-slicify-crowd-sourced-competitor-to-amazon-ec2/721.rss">My startup - Slicify. Crowd-sourced competitor to Amazon EC2</source>
+      </item>
+  </channel>
+</rss>

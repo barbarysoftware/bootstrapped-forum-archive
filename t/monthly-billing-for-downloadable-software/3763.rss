@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Monthly billing for downloadable software?</title>
+    <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763</link>
+    <description>Any of you guys use monthly billing for desktop software? I was doing some data analysis and I just discovered that there is a large company still using my software from 2011. That is, the software was built in 2011 and they have never desired an upgrade.
+
+I guess I should be happy, but it looks like I have left money on the table, at least with this particular customer. The analysis is manual and at a glance, there are other customers like this.
+
+Reasons to switch to pay-as-you-go billing:
+
+* People can use your application for years. You should get paid for that.
+* Low up-front investment for customers
+
+Reasons to remain on a fixed price scheme:
+
+* I don&#39;t like money
+
+This is a little tongue-in-cheek, but perhaps you can give me some of your own experiences.</description>
+    
+    <lastBuildDate>Thu, 28 Jan 2016 20:39:41 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="18" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>How are upgrades are handled? </p>
+</blockquote>
+</aside>
+<p>Still working that one out. Initially it will be reinstalls but I plan on using something like <a href="http://wyday.com/wyupdate/" rel="nofollow noopener">http://wyday.com/wyupdate/</a><br>
+<a href="http://wixtoolset.org/documentation/manual/v3/patching/wix_patching.html" rel="nofollow noopener">http://wixtoolset.org/documentation/manual/v3/patching/wix_patching.html</a> has links for MSI patching. Fun fun fun.<br>
+<a href="https://www.firegiant.com/wix/tutorial/upgrades-and-modularization/patchwork/" rel="nofollow noopener">https://www.firegiant.com/wix/tutorial/upgrades-and-modularization/patchwork/</a> is in (slightly) more human readable form.</p>
+<aside class="quote" data-post="18" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Is the subscription price for the newer version generally higher?</p>
+</blockquote>
+</aside>
+<p>No, my subscription model is basically a clone of <a href="http://store.autodesk.com.au/store/adsk/en_AU/html/pbPage.AU_AutoCAD" rel="nofollow noopener">AutoCAD’s</a> for a variety of reasons, mostly because it is of similar value to my clients. Theirs is very similar to the Adobe thing - download, install, unlock when you want to use it and let it lapse when you don’t, you get the shiny new one for “free”. Where I depart from that is the offer of a perpetual license after 3 continuous years, although I probably won’t shout that out from the rooftops. A full year on my monthly subscription comes to about 150% of the annual price.</p>
+<aside class="quote" data-post="18" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>And other way around: do you force users to migrate to the latest version with each renewal to save on the support costs?</p>
+</blockquote>
+</aside>
+<p>“Force”? No. Insist as the first step of a support process? Yes.<br>
+It has to be ridiculously easy for them to stay up-to-date - make it the path of least-resistance. My clients have told me they value support highly so they are very likely to stay up-to-date.</p>
+<p>The other thing you need to do is make sure they can easily roll-back or re-install an older version in case something breaks for them. I am thinking about keeping the previous version or few hanging around just in case. You can change shortcuts etc or rename things so they can go back to it. Thinking out loud there.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/20</link>
+        <pubDate>Thu, 28 Jan 2016 11:47:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[Fabian]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<blockquote>
+<p>How are upgrades are handled? Is the subscription price for the newer version generally higher?</p>
+</blockquote>
+<p>Customers with non-subscription license can switch to the new version at any time by purchasing an upgrade. This costs 30% of the full price, no matter how many updates they skipped. Simple and fair.</p>
+<p>I send them an upgrade offer via mail whenever a new version is released. Purchasing two upgrades a year is more expensive than the yearly subscription fee, thus the non-subscription license only makes sense if a customer wants to upgrade at maximum one time a year. I guess this is why the majority goes for the subscription.</p>
+<blockquote>
+<p>Do you force users to migrate to the latest version with each renewal to save on the support costs?</p>
+</blockquote>
+<p>You refer to customers who go for the subscription, right? I don’t force them to upgrade, but notify them both via mail and inside the application that an update is available. The majority of them then installs the updates.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/19</link>
+        <pubDate>Mon, 25 Jan 2016 09:35:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a question for both of you guys:</p>
+<aside class="quote" data-post="16" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/fabian/40/3013_1.png" class="avatar"> Fabian:</div>
+<blockquote>
+<p>The one-time-fee version runs “forever” but doesn’t include free updates.</p>
+</blockquote>
+</aside>
+<aside class="quote" data-post="17" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/cadbloke/40/1341_1.png" class="avatar"> cadbloke:</div>
+<blockquote>
+<p>I told them that I can make the license perpetual after 3 years but if they stop paying they stop getting updates and support.</p>
+</blockquote>
+</aside>
+<p>How are upgrades are handled? Is the subscription price for the newer version generally higher?</p>
+<p>And other way around: do you force users to migrate to the latest version with each renewal to save on the support costs?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/18</link>
+        <pubDate>Sun, 24 Jan 2016 21:27:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://www.tvcad.tv" rel="nofollow noopener">www.tvcad.tv</a> will be a monthly / annual subscription. It’s a B2B product, a partner product for AutoCAD in a niche market. I am pricing it the same as <a href="http://store.autodesk.com.au/store/adsk/en_AU/html/pbPage.AU_AutoCAD" rel="nofollow noopener">AutoCAD who are going subscription only</a> at the end of this month (my pricing will match their “advanced support” level. My prospects were far more concerned about ongoing support than owning it. It is also a replacement for a long-unsupported  VB6 app so they have already been educated in the value of support.</p>
+<p>The reason I tell you this is that each market is different, they have different priorities. A couple have asked about perpetual licenses, I told them that I can make the license perpetual after 3 years but if they stop paying they stop getting updates and <strong>support</strong>.</p>
+<p>Something else for you to consider, I have been asked about floating licenses. Thanks, I need that level of complication in my life right now. <img src="https://emoji.discourse-cdn.com/twitter/confused.png?v=5" title=":confused:" class="emoji" alt=":confused:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/17</link>
+        <pubDate>Thu, 21 Jan 2016 11:44:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[Fabian]]></dc:creator>
+        <description><![CDATA[
+            <p>I am offering both an annual subscription and a one-time-fee for my desktop product (<a href="http://www.worksheetcrafter.com" rel="nofollow noopener">www.worksheetcrafter.com</a>). This works very well for me.</p>
+<p>The one-time-fee version runs “forever” but doesn’t include free updates.</p>
+<p>In case of the subscription the application only works while the subscription is active. During that period they do however get all updates for free. Since I am shipping three updates per year, each of them with major improvements and new features, that is quite a benefit for them.</p>
+<p>I don’t get any complaints since people can choose, but the majority goes for the subscription.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/16</link>
+        <pubDate>Wed, 13 Jan 2016 20:31:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p>Something that I’m considering for my desktop product is making it subscription based and timestamping new features.</p>
+<p>A user’s license file has an expiry date (the date that the current subscription ends). They can still use the software forever, and they can even use new versions of the software, but they will not have access to any new features added after their subscription failed.</p>
+<p>Why I’m thinking of doing this is, similar to Microsoft with Windows 10, I don’t want to support old versions at all. Everyone can always install the latest version.</p>
+<p>Of course, when they try to access a new feature, the product will politely inform them that they are trying to use a new paid feature and they will need to renew their subscription.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/15</link>
+        <pubDate>Wed, 13 Jan 2016 19:44:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="13" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/c/3bc359/40.png" class="avatar"> Cheez:</div>
+<blockquote>
+<p>I don’t agree with this. No software is perfect and if you want me to amortize the cost of fixes for every version in the field, that’s going to jack up prices significantly.</p>
+</blockquote>
+</aside>
+<p>Here’s how I see it as a buyer:</p>
+<p>I’m paying for a software that is advertised as doing X. It turns out that it cannot do X in a particular valid situation. I give the seller the benefit of the doubt, and assume they did not do a false advertisement; it is just a bug. But to fulfill their original promise (for which I have already paid for!) the bug should be fixed for free.</p>
+<p>If the defect is unprofitable to fix, well, a free upgrade to a version having no such defect or a money back should be offered.</p>
+<p>There could be exceptions from this rule, however.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/14</link>
+        <pubDate>Wed, 13 Jan 2016 19:44:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[Cheez]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Fixes must be coming for free (for the same version).</p>
+</blockquote>
+</aside>
+<p>I don’t agree with this. No software is perfect and if you want me to amortize the cost of fixes for every version in the field, that’s going to jack up prices significantly. What I’ve done in the past for extreme issues is often just given a one-off license for that day only so the user can download the latest. I don’t let them do it again though. Hasn’t caused a problem yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/13</link>
+        <pubDate>Wed, 13 Jan 2016 18:32:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/tonyedgecombe/40/2727_1.png" class="avatar"> tonyedgecombe:</div>
+<blockquote>
+<p>My guess is within a few years it will be the norm.</p>
+</blockquote>
+</aside>
+<p>Probably for software that costs 100s or 1000s of $. But probably not for $10-50 ‘utility’ software. IMHO.</p>
+<p>BTW I recently bought the Screaming Frog SEO software. It’s quite good. But I was very nearly put off by their £99/year subscription pricing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/12</link>
+        <pubDate>Wed, 13 Jan 2016 18:17:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I was getting a fair few questions about whether my fee was one-off or a sub. So I A/B tested some highlighted text on the buy page emphasizing it was a one-off payment. This made a significant improvement in conversion rates (I can’t remember how much). So, if you have a one-time fee, make it very clear on the buy page.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/11</link>
+        <pubDate>Wed, 13 Jan 2016 18:12:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/tonyedgecombe/40/2727_1.png" class="avatar"> tonyedgecombe:</div>
+<blockquote>
+<p>My guess is within a few years it will be the norm.</p>
+</blockquote>
+</aside>
+<p>It could be just that your pricing page is not clear, eh.</p>
+<p>Subscription, if spread over say 5 years, could be a cheaper option, true. But maintaining the subscription on the client side is extra cost + a risk to overlook the renewal and block the business process that the software supports.</p>
+<p>I’m not sure it is wise for a buyer to switch to subscription.</p>
+<p>On the other hand, why not try to offer both options?</p>
+<ul>
+<li>Outright purchase at price N for a perpetual license</li>
+<li>Annual subscription at price N/5 (if the average time a buyer uses the software is more than 5 years)</li>
+<li>+Upgrade price, too</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/10</link>
+        <pubDate>Wed, 13 Jan 2016 18:11:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[tonyedgecombe]]></dc:creator>
+        <description><![CDATA[
+            <p>I get quite a few support tickets asking whether the software has a perpetual license or is a subscription, it seems many peoples expectation is it will be a subscription.</p>
+<p>My guess is within a few years it will be the norm.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/9</link>
+        <pubDate>Wed, 13 Jan 2016 18:01:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/conradomaggi/40/3163_1.png" class="avatar"> conradomaggi:</div>
+<blockquote>
+<p>Why not going for a yearly license? That’s standard practice in Desktop software.</p>
+</blockquote>
+</aside>
+<p>I’m not sure it is standard.</p>
+<p>There is a standard option to have an annual support license, that is true.</p>
+<p>But annual license for right to use? I’d say it is unusual. I only can remember one desktop software vendor - SmartBear - that tries to sell their SoapUI with this scheme. I do not believe it works well for them.</p>
+<p>What could be a benefit for the consumer to pay every year for the <strong>same</strong> software?</p>
+<p>Updates are coming with the support license.</p>
+<p>Fixes must be coming for free (for the same version).</p>
+<p>So what could be the incentive to pay annually? I do not see any.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/8</link>
+        <pubDate>Wed, 13 Jan 2016 17:58:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>On the topic of going SAAS (rather than just changing to subscription billing), this is at the forefront of my mind too: <a href="http://www.blisshq.com/music-library-management-blog/2015/09/08/big-idea/" rel="nofollow noopener">http://www.blisshq.com/music-library-management-blog/2015/09/08/big-idea/</a></p>
+<p>Other advantages:</p>
+<ul>
+<li>Easier support</li>
+<li>More marketing channels opened up (or are accessible in an easier way)</li>
+<li>More stuff to sell (anonymised aggregated data may be of use)</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/7</link>
+        <pubDate>Wed, 13 Jan 2016 13:10:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/c/3bc359/40.png" class="avatar"> Cheez:</div>
+<blockquote>
+<p>Reasons to remain on a fixed price scheme:</p>
+</blockquote>
+</aside>
+<p>-It is simpler to administer.<br>
+-You get all the cash up front.<br>
+-Some customers prefer it (and may choose you over a competitor with a subscription model).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/6</link>
+        <pubDate>Wed, 13 Jan 2016 09:15:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[GautamJain]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/c/3bc359/40.png" class="avatar"> Cheez:</div>
+<blockquote>
+<p>People can use your application for years. You should get paid for that.</p>
+</blockquote>
+</aside>
+<p>If you want them to pay frequently, then you should add some value to it frequently either by adding new features and selling upgrade licenses or going the SaaS model.  The SaaS model of course should have more benefits than the desktop software. Like, to be able to access from a mobile app, export, share with others etc.</p>
+<p>Since it is a data analysis software, can you provide them with new algorithms, charts? They can also buy new latest data from you, required for analysis.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/5</link>
+        <pubDate>Wed, 13 Jan 2016 07:36:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[akash]]></dc:creator>
+        <description><![CDATA[
+            <p>If you can go SaaS with your desktop app, go for it. However, not all desktop apps can (and maybe should) be SaaSified. In the recent past Adobe and JetBrains had to face a lot of flak from their customers for doing so.</p>
+<p>Few questions that you can ask yourself before going the SaaS route</p>
+<ul>
+<li>
+<p>Does my software add constant value to the customer every month? For example a stock ticker that fetches stock data every day</p>
+</li>
+<li>
+<p>Can hosting the software (or data) add value to the customer - by way of not needing a sys admin to take care of servers.</p>
+</li>
+<li>
+<p>Has my software traditionally been in a one time payment business model and will my customers be mad if I cut them off for not continuing a subscription. Code editors have always been a one time payment. You could charge for upgrades, but you cannot disable a code editor if the subscription ends. (well you technically could - but be prepared for serious bashing)</p>
+</li>
+</ul>
+<p>Even if the answers to the above are not encouraging, you could still be stubborn and go the SaaS route. But then you are vulnerable to any competition that still sticks to the one time business model.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/3</link>
+        <pubDate>Tue, 12 Jan 2016 09:14:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[conradomaggi]]></dc:creator>
+        <description><![CDATA[
+            <p>I think that monthly recurring for a desktop app is hard to explain and justified unless some piece of the software runs on your server (Slack) or you add some cloud feature.</p>
+<p>Microsoft is now charging their downloadable office by month, but they add a few cloud features (Cloud drive, skype, email) so that make sense.</p>
+<p>YNAB switch to a 100% could offering instead of adding MRR to a desktop software</p>
+<p>Why not going for a yearly license? That’s standard practice in Desktop software.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/2</link>
+        <pubDate>Tue, 12 Jan 2016 08:34:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+      <item>
+        <title>Monthly billing for downloadable software?</title>
+        <dc:creator><![CDATA[Cheez]]></dc:creator>
+        <description><![CDATA[
+            <p>Any of you guys use monthly billing for desktop software? I was doing some data analysis and I just discovered that there is a large company still using my software from 2011. That is, the software was built in 2011 and they have never desired an upgrade.</p>
+<p>I guess I should be happy, but it looks like I have left money on the table, at least with this particular customer. The analysis is manual and at a glance, there are other customers like this.</p>
+<p>Reasons to switch to pay-as-you-go billing:</p>
+<ul>
+<li>People can use your application for years. You should get paid for that.</li>
+<li>Low up-front investment for customers</li>
+</ul>
+<p>Reasons to remain on a fixed price scheme:</p>
+<ul>
+<li>I don’t like money</li>
+</ul>
+<p>This is a little tongue-in-cheek, but perhaps you can give me some of your own experiences.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763/1</link>
+        <pubDate>Mon, 11 Jan 2016 23:52:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3763-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/monthly-billing-for-downloadable-software/3763.rss">Monthly billing for downloadable software?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>AB-tests inside of desktop app: what monetization way works better</title>
+    <link>https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270</link>
+    <description>Hello.
+
+Does anyone have the experience of finding what way of monetization works better for Desktop app.
+F.ex. I have a classical desktop shareware product. It works 30 days and then stops to work. I would like to know will it bring more sales if I make a trial period of 15 or 60 days?
+or will it bring more if I will not block work of the software, but will add annoying nag-screen instead?
+
+Did anyone make such tests? 
+Maybe you have read the articles with results of such tests or description of the methodology on how to make it right for a desktop app?</description>
+    
+    <lastBuildDate>Sat, 09 Mar 2019 18:20:22 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>AB-tests inside of desktop app: what monetization way works better</title>
+        <dc:creator><![CDATA[syneryder]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="6270">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rudni4ok/40/2732_2.png" class="avatar"> rudni4ok:</div>
+<blockquote>
+<p>Maybe you have read the articles with results of such tests or description of the methodology on how to make it right for a desktop app?</p>
+</blockquote>
+</aside>
+<p>The classic on this is an article by Thomas Warfield (developer of Pretty Good Solitaire), tucked away in the archives of the ASPects newsletter by the Association Of Shareware Professionals. I’ve forgotten the title, unfortunately. He had his app embed in the buy now link information that contained what day of the trial period the user was on when they bought it (and other information, like which nag screen button they’d clicked on, so he could test which nag screens worked best).  Once he’d had lots of sales, he could chart which trial days people bought his software.</p>
+<p>But you may not need to go to that effort.  For a consumer download product, a lot of sales will occur in the first “golden hour” of trying the software (so make that first hour of use perfect). The majority of sales will probably be on day 1 &amp; day 2 of the trial, with fewer sales each day… and one last spike of sales (small or large) on the day the trial period ends.</p>
+<p>Also, there’s a <em>lot</em> of people who buy software without trying it first.</p>
+<aside class="quote no-group" data-post="1" data-topic="6270">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rudni4ok/40/2732_2.png" class="avatar"> rudni4ok:</div>
+<blockquote>
+<p>will it bring more if I will not block work of the software, but will add annoying nag-screen instead?</p>
+</blockquote>
+</aside>
+<p>Depends on the product. If you just have a nag screen, lots of people will keep using it for free, but maybe they’ll tell their friends. That worked for Sublime Text, but it seems lots of their sales come from businesses who don’t want to risk having unlicensed copies in use.</p>
+<p>It’s probably best to block some features eventually.  Many consumers just won’t pay unless it’s the only way to continue using the software.  I’m sure some older developers here have stories of being on day 427 of their 30 day Paint Shop Pro 4 trial…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270/4</link>
+        <pubDate>Sat, 09 Mar 2019 18:20:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6270-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270.rss">AB-tests inside of desktop app: what monetization way works better</source>
+      </item>
+      <item>
+        <title>AB-tests inside of desktop app: what monetization way works better</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="6270">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rudni4ok/40/2732_2.png" class="avatar"> rudni4ok:</div>
+<blockquote>
+<p>Did anyone make such tests?</p>
+</blockquote>
+</aside>
+<p>It has been many years since I read of people doing tests like this with desktop software, so the results are outdated. If you do the tests yourself, please let us know the results!</p>
+<p>A good starting point is to offer a 14-day trial instead of a 30-day trial.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270/3</link>
+        <pubDate>Thu, 07 Mar 2019 15:22:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6270-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270.rss">AB-tests inside of desktop app: what monetization way works better</source>
+      </item>
+      <item>
+        <title>AB-tests inside of desktop app: what monetization way works better</title>
+        <dc:creator><![CDATA[scottw]]></dc:creator>
+        <description><![CDATA[
+            <p>The only real way to know is to test a couple of ideas yourself.</p>
+<p>Someone may have run similar tests, but there is no guarantee they will apply to your market, customers, and products.</p>
+<p>Something else to consider, what do others in your maker do? What is common in your market? Chances are your competitors have had to make similar choices.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270/2</link>
+        <pubDate>Thu, 07 Mar 2019 12:19:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6270-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270.rss">AB-tests inside of desktop app: what monetization way works better</source>
+      </item>
+      <item>
+        <title>AB-tests inside of desktop app: what monetization way works better</title>
+        <dc:creator><![CDATA[rudni4ok]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello.</p>
+<p>Does anyone have the experience of finding what way of monetization works better for Desktop app.<br>
+F.ex. I have a classical desktop shareware product. It works 30 days and then stops to work. I would like to know will it bring more sales if I make a trial period of 15 or 60 days?<br>
+or will it bring more if I will not block work of the software, but will add annoying nag-screen instead?</p>
+<p>Did anyone make such tests?<br>
+Maybe you have read the articles with results of such tests or description of the methodology on how to make it right for a desktop app?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270/1</link>
+        <pubDate>Tue, 05 Mar 2019 19:01:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6270-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/ab-tests-inside-of-desktop-app-what-monetization-way-works-better/6270.rss">AB-tests inside of desktop app: what monetization way works better</source>
+      </item>
+  </channel>
+</rss>

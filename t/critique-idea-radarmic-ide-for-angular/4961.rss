@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Critique idea: Radarmic: IDE for Angular</title>
+    <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961</link>
+    <description>Hi,
+
+I am thinking about creating an IDE for Angular applications. This would be based on open source Visual Studio Code, have full support for Angular template autocompletion, Typescript code completion, out of the box debugging support, etc.
+
+Does this sound like something you would want to use and would pay for?
+
+Thanks.</description>
+    
+    <lastBuildDate>Mon, 16 Mar 2020 14:29:53 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[michaeljamescalkins]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not trying to be  de-moralizing, for me to buy it you’d have to find a way to be better than Webstorm or other free alternatives.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/13</link>
+        <pubDate>Mon, 08 May 2017 20:35:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>The issue I run into is that I’m using the IDE to navigate the source code, so its by far easiest to be able to put a break point  from THERE. Otherwise you have to open a Chrome (or whatever you’re doing the js debugging in) and find that same bit of code EVERY time you want to make a break point.</p>
+<p>Everything bit of mental housekeeping the IDE can do FOR you frees up precious and limited brain cells to be able to handle more complexe problems or just work faster.</p>
+<aside class="quote" data-post="11" data-topic="4961">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/michaeljamescalkins/40/2565_1.png" class="avatar"> michaeljamescalkins:</div>
+<blockquote>
+<p>Chrome does this itself though.  We give it a sourcemap and you can mark the breakpoints in your code without needing an IDE at all.</p>
+</blockquote>
+</aside>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/12</link>
+        <pubDate>Mon, 08 May 2017 18:15:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[michaeljamescalkins]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes I’ve used Webstorm and PHPStorm quite a bit.<br>
+If I was developing PHP I’d probably use PHPStorm again.</p>
+<ol>
+<li>Yes but it uses the currently open files to guess from instead of scanning your project.</li>
+<li>You need a plugin to make that happen. I usually use the same libraries and haven’t needed third party autocompletion (it is always helpful though)</li>
+<li>If I need step by step debugging I can just use VSCode which does provide breakpoints and debugging.  Chrome does this itself though.  We give it a sourcemap and you can mark the breakpoints in your code without needing an IDE at all.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/11</link>
+        <pubDate>Mon, 08 May 2017 17:29:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Have you used Webstorm?<br>
+If so, how does it compare to Atom?</p>
+<p>Does Atom</p>
+<ol>
+<li>Provide autocomplete for .js including my own User Define functions and variables?</li>
+<li>Autocomlete for third party libraries (like  $)?</li>
+<li>Provide step by step debugging  (or at least let me declare Breakpoints in Atom, which the browser then respects?)</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/10</link>
+        <pubDate>Mon, 08 May 2017 16:35:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[andatigma]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, <a class="mention" href="/u/michaeljamescalkins">@michaeljamescalkins</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/9</link>
+        <pubDate>Sat, 06 May 2017 17:25:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[michaeljamescalkins]]></dc:creator>
+        <description><![CDATA[
+            <p>I work with AngularJS and ReactJS on a daily basis.  I wouldn’t pay for an IDE because Atom does such a good job with JavaScript development already.</p>
+<p>I think there is a need for more useful plugins for existing editors.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/8</link>
+        <pubDate>Tue, 02 May 2017 15:21:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[andatigma]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, there definitely are several very good IDEs one can use to develop Angular apps. I just think it is possible to have a much better out of the box experience (you are right that it may be attractive only for a small population of developers - I am trying to gauge if there is enough strong interest).</p>
+<p>The IDE I envision has exactly the set of features you described except it is for frontend, not backend. Now, I understand that supporting both frontend and backend is more valuable but I want to limit the scope to something I can realistically do in a reasonable time.</p>
+<p>Gomix looks interesting but a bit nontraditional for my taste. I am simply looking at having a classic proper IDE for frontend web development (like e.g. Delphi was in its time).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/7</link>
+        <pubDate>Sun, 30 Apr 2017 23:42:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Ahhh… OK, so you are solving a bigger problem than “IDE for Angular”, right?</p>
+<p>I can certainly see the benefit if someone is OK with all those choices being made FOR them. I, for one, would LOVE that.  I want to write code, not manage a technology stack. However,  In my experience, programmers like to make their own decisions. They seem to love tweaking every little setting.</p>
+<p>How about if you think about what your Value Proposition is?<br>
+Maybe " Pre configured IDE all ready to go out of the box"?  (or whatever you think that is). (BTW, talking to customers and getting THEIR description in their words, of what you are offering, is a great way to confirm your benefit and get the right marketing description.</p>
+<p>Then the key is to see if enough developers want this. It could be just 1% of developers is they REALLY want it.</p>
+<p>I, for one, would love an IDE that comes pre configured and <em>just works</em> and provides the following :</p>
+<ol>
+<li>
+<strong>Tight integration</strong> with the browser allowing step-by-step debugging in the server side code (php is what we use here) AND the browser.</li>
+<li>Syntax <strong>highlighting</strong> an smart <strong>autocomplete</strong> (including autocomplete for my code (my var’s and procedures) and, ideally, as many frameworks as possible (that I use)</li>
+<li>Works out of the box. Ideally, it would just be a VM.  (BTW, FogCreek is doing something like this, <a href="https://medium.com/@anildash/introducing-gomix-aec205c421cb" rel="nofollow noopener">Gomix</a> (formerly HyperDev)  Last I checked it did not have the features above.</li>
+</ol>
+<p>I’ve used phpStorm, and based on what I’ve seen and folks I talked to, it does the best job with 1 and 2, but even there it doesn’t do a good enough job. (I have to debug js in the browser)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/6</link>
+        <pubDate>Sun, 30 Apr 2017 23:16:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[andatigma]]></dc:creator>
+        <description><![CDATA[
+            <p>I put together a landing page to gauge the interest: <a href="http://radarmic.com" rel="nofollow noopener">radarmic.com</a> (it won’t let me put http:// to make this a link)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/5</link>
+        <pubDate>Sun, 30 Apr 2017 22:00:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[andatigma]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rfctr">@rfctr</a>, <a class="mention" href="/u/clay_nichols">@Clay_Nichols</a>, there are many existing solutions for creating modern web apps, the problem is they have a steep learning curve. First, you need to make a framework choice (do I want Angular, React, Vue, blah), then chose a text editor or an IE (there are tons), choose a language (do I want JS, ES5, ES6, TypeScript, or Flow?) then create the boilerplate code using the framework to get started, then configure your build (do I want grunt, webpack, gulp, makefiles, etc?), then configure the IDE of your choice to work with the language and framework of your choice, then configure it to do debugging properly. It adds up to a lot of complexity which is very time consuming and in many cases is a difficult choice unless you are already an expert.<br>
+My idea is you get all this out of the box, all the choices made for you in a way that ensures the chosen combination works without any problems so that you can focus on your task instead of doing tool and framework research for weeks.<br>
+I don’t know if that is major enough pain but it certainly was a pain for me when I was trying to create a single page web app the first time (I am a backend dev).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/4</link>
+        <pubDate>Sun, 30 Apr 2017 21:57:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 for <a class="mention" href="/u/rfctr">@rfctr</a>’s comment.</p>
+<p>I’d add:</p>
+<ol>
+<li>
+<strong>What is the simplest way you can implement this?</strong><br>
+(would a pluggin for existing Visual Studio be easier?  (and you’d be targetting people who have PAID for VS. You also avoid any potential problems with monetizing OSS. Also, you don’t have to build and support the whole IDE, just your pluggin. (I assume paid VS users have some sort of support for the IDE, or at the very least THEY are making sure the IDE is working properly before they even start using your pluggin/addon.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/3</link>
+        <pubDate>Sun, 30 Apr 2017 21:31:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>You probably should ask on Angular forums. I’m sure there are <em>some</em> people who knows Angular here, but not the majority.</p>
+<p>How do Angular folks write the code today? It seems they manage to get the job done, so it doesn’t seem to me that the lack of dedicated IDE is a major pain. Or pain at all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/2</link>
+        <pubDate>Sun, 30 Apr 2017 02:44:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+      <item>
+        <title>Critique idea: Radarmic: IDE for Angular</title>
+        <dc:creator><![CDATA[andatigma]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>I am thinking about creating an IDE for Angular applications. This would be based on open source Visual Studio Code, have full support for Angular template autocompletion, Typescript code completion, out of the box debugging support, etc.</p>
+<p>Does this sound like something you would want to use and would pay for?</p>
+<p>Thanks.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961/1</link>
+        <pubDate>Sat, 29 Apr 2017 16:38:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4961-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/critique-idea-radarmic-ide-for-angular/4961.rss">Critique idea: Radarmic: IDE for Angular</source>
+      </item>
+  </channel>
+</rss>

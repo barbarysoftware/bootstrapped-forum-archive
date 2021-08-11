@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Desktop app updates vs. browser warnings</title>
+    <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221</link>
+    <description>I create desktop apps and update them fairly frequently with new features. I sign the setup and all included files with an EV Code Signing certificate.
+
+The problem that I have is that when I release a new version, browsers warn the user that the setup file is &quot;not commonly downloaded and may be dangerous&quot;. This warning disappears after a while, once enough users have downloaded the new version, however the first &#39;x&#39; number of users (hey Google and Microsoft, what&#39;s the value of &#39;x&#39;???) see the warning message.
+
+In addition, although I test all files with VirusTotal to ensure that no users see any false positives, there seems to be some anti-virus vendors (McAfee&#39;s enterprise products, not their consumer products, and Avast) sometimes display a false positive to users, even though the versions of their products on VirusTotal don&#39;t flag any issues.
+
+McAfee and Avast want me to send files to them for whitelisting every time a new version is published, but their approval process takes a few days, so this is really sub-optimal.
+
+An approach I&#39;ve been contemplating is to create a thin installer that never changes but instead downloads the latest files from the website every time it runs. This means that the version will remain stable.
+
+Has anyone used this approach? Any tools to recommend? Anything else to keep in mind?
+
+An MSI installer is preferable, but I&#39;m open to all suggestions or alternative solutions - thanks!</description>
+    
+    <lastBuildDate>Wed, 21 Oct 2020 18:07:58 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="Paul1970" data-post="9" data-topic="7221">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://avatars.discourse-cdn.com/v4/letter/p/9de0a6/40.png" class="avatar"> Paul1970:</div>
+<blockquote>
+<p>and then submit it to the major AV companies for white-listing</p>
+</blockquote>
+</aside>
+<p>I don’t really like the idea of having to delay the releases because of overly paranoid AVs.</p>
+<p>From my experience with certificates, new certificate gets a warning for the first week or so, after that any releases with this certificate are not flagged.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/14</link>
+        <pubDate>Wed, 21 Oct 2020 18:07:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everyone for your thoughts. I’m going to try this out and report back in the future.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/13</link>
+        <pubDate>Sun, 18 Oct 2020 21:38:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I am about 3 years into my latest authenticode cert (Sectigo, was Comodo) which I use on 3 different desktop products. I can’t remember the last time I saw a "not commonly downloaded and may be dangerous” in testing. And they are very rarely reported by users (which doesn’t mean they don’t happen, of course). But I know other people are plagued by them. Not sure why the apparent difference.</p>
+<p>NB/ I use Inno Setup for the installer and sign both the installer and the exe.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/12</link>
+        <pubDate>Wed, 14 Oct 2020 14:45:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I try to fix bugs in hours or days</p>
+</blockquote>
+<p>I agree with this when it’s for show-stopping bugs. But for lesser bugs with or without temporary workarounds, I don’t like that kind of timeframe and pressure, and feedback from my users is that even one update per month or two is more than enough (it avoids update fatigue for them).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/11</link>
+        <pubDate>Wed, 14 Oct 2020 09:01:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>I try to fix bugs in hours or days, not weeks, if possible. It looks to me that customers appreciate that.<br>
+I only had a single issue with a single AV product for the 15 years I’m running the business, so I never bothered with white-listing. However, if your builds tend to trigger AV heuristics more often, then I understand why you have to do it that way. In my case, it’s a better service for customers to get new releases asap.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/10</link>
+        <pubDate>Wed, 14 Oct 2020 08:27:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>you usually fix bugs after they’re reported by user, not 2 weeks before that</p>
+</blockquote>
+<p>You’re misunderstanding. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I do it like this: users report a bug. I tell them a fix is being made, fix it, and then submit it to the major AV companies for white-listing. When that’s done (say a week or two later), it’s only then that I publically release the fixed version. My customers are none the wiser of the delay and just assume the fix took a week or two to happen.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/9</link>
+        <pubDate>Wed, 14 Oct 2020 08:03:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>If problem is caused by AV then it will most probably scan your other download as well. Real time file system monitoring is a standard AV thing.<br>
+But sometimes you spend a lot of time overanalyzing, thinking whether you should build something or not, evaluating, estimating, and then when you decide to do it it’s finished in few hours. I suspect this downloader could be built very quickly, maybe even to just download from fixed url, not asking server about the latest version, etc. Complications are always possible though - failed downloads, elevating user permissions when you install downloaded part, etc. But even the simplest version should show whether this approach makes a difference for your problem. If so, then it’s not a big deal to invest additional time in downloader afterwards.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/8</link>
+        <pubDate>Tue, 13 Oct 2020 21:23:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, you usually fix bugs after they’re reported by user, not 2 weeks before that <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/7</link>
+        <pubDate>Tue, 13 Oct 2020 21:09:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <p>So submit it two weeks before the official release. Your users don’t know a bug-fix release is coming until you tell them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/6</link>
+        <pubDate>Tue, 13 Oct 2020 20:59:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/paul1970">@Paul1970</a> Thanks. Yes, true, but approval takes up to a week. I often prefer to get bug-fixes into users’ hands faster than that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/5</link>
+        <pubDate>Tue, 13 Oct 2020 20:41:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/grujicd">@grujicd</a> Thanks. Unfortunately I can’t recreate the issue with my installed browsers - I think that some users have an interesting environment. Also, my suspicion is that the alerts are from other security components, such as anti-virus browser extensions or something. I’ll post a URL to a new version shortly.</p>
+<p>I still feel that a different approach to installing from the web would solve these issues and any like it in the future.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/4</link>
+        <pubDate>Tue, 13 Oct 2020 20:40:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>their approval process takes a few days</p>
+</blockquote>
+<p>Tip: You don’t send for approval <em>after</em> release; you do it a few days <em>before</em> release. This means your customers get a release that’s been pre-approved. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/3</link>
+        <pubDate>Tue, 13 Oct 2020 10:44:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m using a cheaper non-EV certificate, and I get these warnings only after renewing a certificate, not after each release. I think I’ve read somewhere that browsers or Microsoft are vetting a certificate, not each executable. But EV certificates shouldn’t have even that initial period, that’s their main selling point.</p>
+<p>Of course, maybe there are some other factors they use for flagging executables that we don’t know about. Could you share your typical download link, and a new one that should trigger warnings?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/2</link>
+        <pubDate>Tue, 13 Oct 2020 06:50:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+      <item>
+        <title>Desktop app updates vs. browser warnings</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p>I create desktop apps and update them fairly frequently with new features. I sign the setup and all included files with an EV Code Signing certificate.</p>
+<p>The problem that I have is that when I release a new version, browsers warn the user that the setup file is “not commonly downloaded and may be dangerous”. This warning disappears after a while, once enough users have downloaded the new version, however the first ‘x’ number of users (hey Google and Microsoft, what’s the value of ‘x’???) see the warning message.</p>
+<p>In addition, although I test all files with VirusTotal to ensure that no users see any false positives, there seems to be some anti-virus vendors (McAfee’s enterprise products, not their consumer products, and Avast) sometimes display a false positive to users, even though the versions of their products on VirusTotal don’t flag any issues.</p>
+<p>McAfee and Avast want me to send files to them for whitelisting every time a new version is published, but their approval process takes a few days, so this is really sub-optimal.</p>
+<p>An approach I’ve been contemplating is to create a thin installer that never changes but instead downloads the latest files from the website every time it runs. This means that the version will remain stable.</p>
+<p>Has anyone used this approach? Any tools to recommend? Anything else to keep in mind?</p>
+<p>An MSI installer is preferable, but I’m open to all suggestions or alternative solutions - thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221/1</link>
+        <pubDate>Mon, 12 Oct 2020 16:54:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7221-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/desktop-app-updates-vs-browser-warnings/7221.rss">Desktop app updates vs. browser warnings</source>
+      </item>
+  </channel>
+</rss>

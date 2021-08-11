@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sub domain usage for application</title>
+    <link>https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081</link>
+    <description>Most Saas companies seem to host their application on a sub domain rather than on a different domain. For example, the sales / marketing site might be hosted at example.com and the application is at app.example.com whereas we use example.com for our sales site and then example.net for our application.
+
+Is this purely a personal preference thing or is there an advantage to hosting on a subdomain?
+
+We were thinking mainly from an SEO perspective, does using the sub domain help? I assume it will make a difference on things like Alexa as it will show more traffic (I know Alexa is flawed) but also if anyone is linking to the application then it will be to a subdomain of our sales site which might help?
+
+Curious to know if there is any benefit to using the subdomain option.</description>
+    
+    <lastBuildDate>Sat, 04 Nov 2017 22:34:39 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Sub domain usage for application</title>
+        <dc:creator><![CDATA[jkostolansky]]></dc:creator>
+        <description><![CDATA[
+            <p>Some advantages:</p>
+<ul>
+<li>If the app goes down, your main marketing website will still be up and you can inform about outage</li>
+<li>Traffic to the marketing site doesn’t affect the performance of your app</li>
+<li>It’s much easier to use different technologies for the marketing site and app</li>
+<li>You can deploy to the website without affecting your app</li>
+<li>Marketing team can be authorized to make changes without breaking your app security</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/6</link>
+        <pubDate>Sat, 04 Nov 2017 22:34:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5081-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081.rss">Sub domain usage for application</source>
+      </item>
+      <item>
+        <title>Sub domain usage for application</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>At <a href="https://wordcleaner.com" rel="nofollow noopener">https://wordcleaner.com</a> we use subdomains for different products or services. For example the main site is a wordpress site on a linux server but our web app for converting word to HTML is on a windows server at <a href="https://convert.wordcleaner.com/" rel="nofollow noopener">https://convert.wordcleaner.com/</a></p>
+<p>It is also useful for things like support. etc</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/5</link>
+        <pubDate>Wed, 07 Jun 2017 15:54:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5081-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081.rss">Sub domain usage for application</source>
+      </item>
+      <item>
+        <title>Sub domain usage for application</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>Most likely your app site is not being indexed, given it probably requires authentication, thus you probably don’t have to worry about SEO value. Other sites that are not your primary marketing site (for example your support knowledge base or things like that) may benefit from being on the same primary domain. There may even be an argument for putting it on a subdomain, however this does make integrating with external services more difficult (although it can be done).</p>
+<p>If you are running an operationally important service, then there is actually at least <em>one</em> thing you should have on a separate domain: your status site. That way if something goes terribly wrong with your primary domain you can at least access your status site to report the issue to customers.</p>
+<p>One thing that can be either a benefit or a drawback, depending on how you use it, is the fact that subdomains have easy access to cookies, whereas I am not sure that is the case across different domains. It can be an advantage for connecting visits across sites together, but it can be a disadvantage if important cookie data leaks from your application over to non-application sites. Example article that talks about it (there are more): <a href="http://erik.io/blog/2014/03/04/definitive-guide-to-cookie-domains/" rel="nofollow noopener">http://erik.io/blog/2014/03/04/definitive-guide-to-cookie-domains/</a></p>
+<p>HTH.</p>
+<p>(For us at DNSimple we just use subdomains except when we want a unique marketable domain, like <a href="https://howdns.works" rel="nofollow noopener">https://howdns.works</a> or other micro-sites, and for our status site.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/4</link>
+        <pubDate>Wed, 07 Jun 2017 14:53:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5081-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081.rss">Sub domain usage for application</source>
+      </item>
+      <item>
+        <title>Sub domain usage for application</title>
+        <dc:creator><![CDATA[stympy]]></dc:creator>
+        <description><![CDATA[
+            <p>We host the app from a subdomain at <a href="https://www.honeybadger.io" rel="nofollow noopener">Honeybadger</a> – it allows us to host the app separately from the web site (www is just a static site, so it can even be hosted at s3), and it allows us to segregate google analytics.  You are getting the same results by hosting on different domains. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/3</link>
+        <pubDate>Wed, 07 Jun 2017 14:04:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5081-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081.rss">Sub domain usage for application</source>
+      </item>
+      <item>
+        <title>Sub domain usage for application</title>
+        <dc:creator><![CDATA[mj_langford]]></dc:creator>
+        <description><![CDATA[
+            <p>Separating out the configuration of routes allows for many different products, some of which are even ran by <em>different companies even</em>, to be used in the totality of execution of the web presence.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/2</link>
+        <pubDate>Wed, 07 Jun 2017 03:46:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5081-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081.rss">Sub domain usage for application</source>
+      </item>
+      <item>
+        <title>Sub domain usage for application</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>Most Saas companies seem to host their application on a sub domain rather than on a different domain. For example, the sales / marketing site might be hosted at <a href="http://example.com" rel="nofollow noopener">example.com</a> and the application is at <a href="http://app.example.com" rel="nofollow noopener">app.example.com</a> whereas we use <a href="http://example.com" rel="nofollow noopener">example.com</a> for our sales site and then <a href="http://example.net" rel="nofollow noopener">example.net</a> for our application.</p>
+<p>Is this purely a personal preference thing or is there an advantage to hosting on a subdomain?</p>
+<p>We were thinking mainly from an SEO perspective, does using the sub domain help? I assume it will make a difference on things like Alexa as it will show more traffic (I know Alexa is flawed) but also if anyone is linking to the application then it will be to a subdomain of our sales site which might help?</p>
+<p>Curious to know if there is any benefit to using the subdomain option.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081/1</link>
+        <pubDate>Tue, 06 Jun 2017 20:12:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5081-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sub-domain-usage-for-application/5081.rss">Sub domain usage for application</source>
+      </item>
+  </channel>
+</rss>

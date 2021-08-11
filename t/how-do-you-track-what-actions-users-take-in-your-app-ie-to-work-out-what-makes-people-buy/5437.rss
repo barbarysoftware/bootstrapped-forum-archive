@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+    <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437</link>
+    <description>Hi All,
+
+So I know I should be tracking what people do in m app and then looking for patterns with those who ultimately become customers. But... what are people actually using to track that? Interested to hear how people are solving this problem now.
+
+Thanks,
+Robin</description>
+    
+    <lastBuildDate>Thu, 16 Nov 2017 18:53:40 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m in love with FullStory: <a href="https://www.fullstory.com" rel="nofollow noopener">https://www.fullstory.com</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/15</link>
+        <pubDate>Thu, 16 Nov 2017 18:53:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[manish]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d second the suggestion for hotjar. Looking at recordings can drastically change your perception of what users spend time doing in your app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/14</link>
+        <pubDate>Thu, 16 Nov 2017 11:27:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[kehers]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to mention, Google analytics has events tracking as well <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/events" rel="nofollow noopener">https://developers.google.com/analytics/devguides/collection/analyticsjs/events</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/13</link>
+        <pubDate>Wed, 15 Nov 2017 10:51:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[AndyDent]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://developer.yahoo.com/flurry/docs/faq/other/#how-much-does-flurry-analytics-cost" rel="nofollow noopener">Flurry is free</a> - I implemented it in one app to provide detailed logging of user activities.</p>
+<p>Basically, most of these packages need you to add a line of code at each point in your app where you want to note something happened. This is not hard compared to most work in app development.</p>
+<p>Some will advertise that they automatically track what happens in your app but that usually requires either something more intrusive be compiled into the app and/or makes assumptions about navigation through the app.</p>
+<p>I have used MixPanel in a friend’s app. The analytics dashboard for MixPanel is pretty easy to use to do things like establish funnels - I used it to quickly demonstrate the fall-off when people where confronted with a login page. It used to be more expensive but now allows 20M data points per month in the free tier.</p>
+<p>It sounds like a huge figure to say 20M data points but if you are logging all events a user generates as they move through screens, especially as you are trying to improve usability, you can easily log hundreds of data points per user per day. Say your average user logs 200 data points per work day, that’s 4,000 per month, that’s roughly 5,000 heavily-engaged users users to hit the end of the free tier. That’s a fairly conservative level of logging.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/12</link>
+        <pubDate>Fri, 10 Nov 2017 04:41:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[piotrk]]></dc:creator>
+        <description><![CDATA[
+            <p>I played with a bunch of solutions and settled on Mixpanel.  It’s worth the time investment to figure out how it works, IMHO.  Its pricing is also one of the most reasonable options as you scale up – I was surprised how expensive the other ones got as soon as you exceeded the free tier.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/11</link>
+        <pubDate>Thu, 09 Nov 2017 22:24:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks guys, useful information.</p>
+<aside class="quote" data-post="8" data-topic="5437">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/blake/40/3975_1.png" class="avatar"> blake:</div>
+<blockquote>
+<p>An example: after signing up how many users updated their profile description?</p>
+</blockquote>
+</aside>
+<p>I am a bit limited in this since my app is a dashboard, so I am more interested in which charts etc they looked at and how often. Possibly if they clicked about on the chart (none of which is persisted in the DB).</p>
+<p>All useful stuff though, Thanks <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/10</link>
+        <pubDate>Thu, 09 Nov 2017 19:58:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[DarrenZ]]></dc:creator>
+        <description><![CDATA[
+            <p>Not applicable to your app, but for a desktop app I use parameters, added to each URL. There are links in the application to the online help, buy page, and the user forum on the website. Users hit these all the time. For trial users I attach two parameters: days remaining in the trial and the version number.</p>
+<p>This isn’t much information to catch, but it makes it very easy to see when in the 10 day trial period users choose to buy — it’s very rarely on the last day of the trial. I’ve been using this mechanism for a couple of products over the past few years, and it’s the reason I’ve reduced the trial period from the traditional 30 days to just 10 days.</p>
+<p>Information like this is only useful if you can access it easily and work out what it means.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/9</link>
+        <pubDate>Thu, 09 Nov 2017 16:42:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[blake]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5437">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/robinwarren/40/2915_1.png" class="avatar"> robinwarren:</div>
+<blockquote>
+<p>what are people actually using to track that?</p>
+</blockquote>
+</aside>
+<p>I think a lot of this you can just track yourself (build a simple report) from your app’s database. An example: after signing up how many users updated their profile description? Or when was the last login of a user? A lot of metrics like this could/should be in your database especially the ones you think are key to getting them to purchase.</p>
+<p>You could also start to look at stats of users that have purchased and look for patterns like they all created 3 widgets. Then maybe you could add an email notification or something to new users after x days to remind them to create a widget, so that they are more likely to sign up because they are actually using your app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/8</link>
+        <pubDate>Thu, 09 Nov 2017 16:18:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>yeah, that’s the problem for me I think, those look like they will do what I want and probably another 100 things besides <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I will probably go that route then, it can’t be too hard. Marketers use them after all <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/7</link>
+        <pubDate>Thu, 09 Nov 2017 15:40:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>i think <a href="https://mixpanel.com/" rel="nofollow noopener">https://mixpanel.com/</a> and <a href="https://heapanalytics.com/" rel="nofollow noopener">https://heapanalytics.com/</a> do that. I tried them but i could not really get my head around them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/6</link>
+        <pubDate>Thu, 09 Nov 2017 15:36:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>thanks, I’ll check it out.</p>
+<p>I think what I am looking for is something which tracks in a way similar to analytics, but I can tag things (URLs/Actions) as meaning someone used a specific feature. Then get reports such as “Show me every one who used feature X”, “…in the 24 hours after they signed up” and “show me the features used by people who became customers” …and show when they used them" etc.</p>
+<p>I would be using this to track accounts getting on boarded but also to see if there are features which aren’t used, to track uptake of new features etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/5</link>
+        <pubDate>Thu, 09 Nov 2017 15:20:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>I use <a href="http://hotjar.com" rel="nofollow noopener">hotjar.com</a> to heatmap and screen record, it is pretty cool.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/4</link>
+        <pubDate>Thu, 09 Nov 2017 15:05:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>web app</p>
+<p>and now some more text to get this over 20 chars!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/3</link>
+        <pubDate>Thu, 09 Nov 2017 13:49:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Do you have a Desktop or web app?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/2</link>
+        <pubDate>Thu, 09 Nov 2017 13:38:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+      <item>
+        <title>How do you track what actions users take in your app (ie to work out what makes people buy)</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi All,</p>
+<p>So I know I should be tracking what people do in m app and then looking for patterns with those who ultimately become customers. But… what are people actually using to track that? Interested to hear how people are solving this problem now.</p>
+<p>Thanks,<br>
+Robin</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437/1</link>
+        <pubDate>Thu, 09 Nov 2017 11:41:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5437-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-track-what-actions-users-take-in-your-app-ie-to-work-out-what-makes-people-buy/5437.rss">How do you track what actions users take in your app (ie to work out what makes people buy)</source>
+      </item>
+  </channel>
+</rss>

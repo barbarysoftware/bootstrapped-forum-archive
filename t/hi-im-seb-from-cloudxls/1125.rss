@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hi, I&#39;m seb from cloudXLS</title>
+    <link>https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125</link>
+    <description>Hi boostrappers,
+
+I&#39;m seb and i bootstrapped cloudXLS.com into private beta beginning of this year. The idea for that tool I had around 3 years ago, when we replaced a full rails app with a daily updated 15mbyte excel report. Huge win for us (got rid of a legacy system) and for the client (all the metrics he needs available instantly and transparently). 
+
+This was quite a turning point - before Excel was always my enemy (no Unicode support for CSV, html-tables-as-xls slow to load, ugly, poor on features, etc) but after that project I saw the potential when fully embracing that tool. 
+
+So, sometime last year I decided to get real and started working on some prototypes in between (Ruby/Rails/JS) consulting projects. After some pivots, I decided my first version to be an API that basically merges your CSV data into your xls files that contain the formatting, charts and formulas. 
+
+So I launched into private beta in January, feature freeze, and focussed on copy, marketing pages, which is kinda challenging for a coder. First customers in, and already pumping out excel files. Now i&#39;m getting ready to open up the private beta.
+
+
+</description>
+    
+    <lastBuildDate>Tue, 04 Feb 2014 05:11:59 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hi, I&#39;m seb from cloudXLS</title>
+        <dc:creator><![CDATA[seb]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/oliver">@Oliver</a> The reverse operation (and more) it is a bit more tricky to get right though. Just waiting for enough people to ask for it.</p>
+<p><a class="mention" href="/u/danielstudds">@danielstudds</a> Thanks, to reduce risk I wipe all data (and all intermediary/temporary files) shortly after download and we only log statistical/useage data. For critical data I decided to sell server licenses so you can run the API completely in your datacenter.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125/4</link>
+        <pubDate>Tue, 04 Feb 2014 05:11:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1125-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125.rss">Hi, I&#39;m seb from cloudXLS</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m seb from cloudXLS</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>This is brilliant!</p>
+<p>I could definitely use this… the security/privacy aspects to worry me a bit, though. I see you have a on-premises option as well, so I guess that addresses that! Have you had much interest in the trial?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125/3</link>
+        <pubDate>Tue, 04 Feb 2014 01:25:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1125-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125.rss">Hi, I&#39;m seb from cloudXLS</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m seb from cloudXLS</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a very interesting space. Many business apps are being rewritten as SaaS web-apps, but most business still have some processes that are Excel-based. By offering this service you make it easier for a web-based service’s customers to integrate with their existing workflow.</p>
+<p>I suspect you could also offer the reverse service: take a complete excel spreadsheet as input and make the data available via API for the web-service.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125/2</link>
+        <pubDate>Mon, 03 Feb 2014 18:04:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1125-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125.rss">Hi, I&#39;m seb from cloudXLS</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m seb from cloudXLS</title>
+        <dc:creator><![CDATA[seb]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi boostrappers,</p>
+<p>I’m seb and i bootstrapped <a href="http://cloudXLS.com" rel="nofollow noopener">cloudXLS.com</a> into private beta beginning of this year. The idea for that tool I had around 3 years ago, when we replaced a full rails app with a daily updated 15mbyte excel report. Huge win for us (got rid of a legacy system) and for the client (all the metrics he needs available instantly and transparently).</p>
+<p>This was quite a turning point - before Excel was always my enemy (no Unicode support for CSV, html-tables-as-xls slow to load, ugly, poor on features, etc) but after that project I saw the potential when fully embracing that tool.</p>
+<p>So, sometime last year I decided to get real and started working on some prototypes in between (Ruby/Rails/JS) consulting projects. After some pivots, I decided my first version to be an API that basically merges your CSV data into your xls files that contain the formatting, charts and formulas.</p>
+<p>So I launched into private beta in January, feature freeze, and focussed on copy, marketing pages, which is kinda challenging for a coder. First customers in, and already pumping out excel files. Now i’m getting ready to open up the private beta.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125/1</link>
+        <pubDate>Mon, 03 Feb 2014 03:09:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1125-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-seb-from-cloudxls/1125.rss">Hi, I&#39;m seb from cloudXLS</source>
+      </item>
+  </channel>
+</rss>

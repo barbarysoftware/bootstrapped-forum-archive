@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Marketing Site: Integrated or Stand alone?</title>
+    <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492</link>
+    <description>Hi all,
+
+This is a bit of an implementation detail, but I find myself kicking different approaches back and forth.  I have my product, a Django app.  I&#39;m currently design/writing the marketing site, and am debating whether I should implement the marketing site as static pages (via Pelican) or integrate it as a part of my Django app (using Mezzanine or something). There are pros and cons to each approach:
+
+**Pros for static site**
+
+ - Very fast for users
+ - Secure and simple to maintain.
+ - Completely de-coupled from app, can launch now without having to make a separate deployment
+
+**Cons for static site**
+
+ - A/B testing could prove tricky
+ - Anything else dynamic would also be an issue
+
+Pros/cons for the integrated site are pretty much the reverse of those for the static site.  
+
+What are you guys doing?  Do you view your marketing site as a totally separate app, or do you bake it into your main product?  Feels like a trivial thing, but I&#39;d like to get things right.  Looking forward to hearing what you guys have to say.
+
+</description>
+    
+    <lastBuildDate>Thu, 05 Sep 2013 21:19:59 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[ryanbattles]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to throw my 2¢, every project that I’ve been a part of has had a separate CMS-driven marketing site. I’ve grown fond of ExpressionEngine, but any will do. I like how a CMS is going to have everything you would ever want for a marketing site, in the form of plugins, so I don’t really have to think much about the implementation of the marketing blog, email signup services, contact form, etc, most are just plug-n-play. The branding, ux, and strategy of the marketing site is what matters, not so much the back-end programming, so I don’t want to spend any more time on it than is necessary…on to the good stuff!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/11</link>
+        <pubDate>Thu, 05 Sep 2013 21:19:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[rsobers]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="492">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dwilson86/40/1263_1.png" class="avatar"> dwilson86:</div>
+<blockquote>
+<p>Simple A/B testing (i.e. button colors, small bits of copy) should be easy enough to handle on a static site, but testing major changes (such as entirely different versions of the page, different design, different copy) would be trickier.</p>
+</blockquote>
+</aside>
+<p>If you use something like Visual Website Optimizer, testing different versions (or designs) of the same page is simple.  You just make <code>index2.html</code> and tell VWO to do a split URL test.  It really makes A/B testing on a static site a complete non-issue.</p>
+<p>There are non-A/B testing reasons to use a CMS, though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/10</link>
+        <pubDate>Thu, 05 Sep 2013 17:21:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <p>There is a bit of a different solution as well. Have the same codebase, and just DNS and have routing rules. Maintainable, shared DB infrastructure for stats and sign ups.</p>
+<p>I lied a bit saying that everything is shared with my service. I do handle my blog and CMS on a separate DB connection from my application - though it’s on the same instance… I would suggest this separation of concerns: there’s no reason that refreshing the blog article you accidentally deleted should risk client data when you do DB backups.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/9</link>
+        <pubDate>Thu, 05 Sep 2013 14:56:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[dwilson86]]></dc:creator>
+        <description><![CDATA[
+            <p>Simple A/B testing (i.e. button colors, small bits of copy) should be easy enough to handle on a static site, but testing major changes (such as entirely different versions of the page, different design, different copy) would be trickier.</p>
+<p>However, I’ve decided I’m going to push my static splash page online here shortly, and worry about switching to a CMS type system (on separate infrastructure) later if I need to.  Thanks for everyone’s advice!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/8</link>
+        <pubDate>Wed, 04 Sep 2013 13:50:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[JanLukacs]]></dc:creator>
+        <description><![CDATA[
+            <p>Stand alone all the way, hosted on different infrastructures. Our marketing site was under DoS a couple of years ago, having in run on the same infrastructure would have brought down everything. If you don’t plan on doing regular updates to the content or you don’t have somone non-technical doing updates i’d go with a static site.<br>
+Why would A/B testing be difficult with static?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/7</link>
+        <pubDate>Wed, 04 Sep 2013 13:21:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[rsobers]]></dc:creator>
+        <description><![CDATA[
+            <p>I vote for standalone.</p>
+<p>Remember, just because the marketing site is standalone doesn’t mean it has to be static, per se.  You can make it dynamic using WordPress or some other CMS that’s decoupled from your Django app.</p>
+<p>That said, my marketing site is purely static.  I haven’t run into any issues.  A/B testing is easy with something like Visual Website Optimizer, which works beautifully with static sites.</p>
+<p>The only thing that is a bit of a pain is updating the header and footer manually on every page when I make a change.  But that makes me want to keep my site small, which is a good thing.  I’ve considered using server-side includes to work around this, but it hasn’t been a bid deal (find and replace is nice).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/6</link>
+        <pubDate>Tue, 03 Sep 2013 23:41:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <p>I actually have gone with both approaches, but overall, I have found that if the Marketing site has access to the application database (through signups or whatever) you will have to address many of the same vulnerabilities that you will have with a fully integrated solution.</p>
+<p>Therefore I usually will go with a integrated solution where the marketing site is in its own module/namespace. This allows me to keep everything under one roof, but if I need to sub-contract or give one part of the app to a developer I can just give them access to “Marketing”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/5</link>
+        <pubDate>Tue, 03 Sep 2013 19:31:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[citadelgrad]]></dc:creator>
+        <description><![CDATA[
+            <p>When they are at the splash page stage I use just static pages. But once I start to have a real product I use Django. I want control and if it’s template driven I might use of the static generators.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/4</link>
+        <pubDate>Tue, 03 Sep 2013 19:05:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[dennisfield]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/jaaprood">@JaapRood</a> Thanks for sharing your insight. Good to see how you are handling this and why. I’m interested on what others say.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/3</link>
+        <pubDate>Tue, 03 Sep 2013 18:22:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[JaapRood]]></dc:creator>
+        <description><![CDATA[
+            <p>For <a href="http://getrallypoint.com" rel="nofollow noopener">Rallypoint</a> we went with the stand alone approach, however the marketing site is not completely static. The reason comes from the world of programming and is just basically a matter of separation of concerns. We don’t ever want to have the risk of breaking the app because of some marketing site changes, or the other way around. They’re even hosted on two different platforms as well (and even written in two different programming languages, Javascript (Node) / PHP), just to make sure that when the one goes down, the other isn’t affected. Especially once you start to do more than just marketing, i.e. showing the status of your app, this is quite advantageous. Any communication between the two will require an API, but luckily we already had those in place by design <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/2</link>
+        <pubDate>Tue, 03 Sep 2013 05:25:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+      <item>
+        <title>Marketing Site: Integrated or Stand alone?</title>
+        <dc:creator><![CDATA[dwilson86]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>This is a bit of an implementation detail, but I find myself kicking different approaches back and forth.  I have my product, a Django app.  I’m currently design/writing the marketing site, and am debating whether I should implement the marketing site as static pages (via Pelican) or integrate it as a part of my Django app (using Mezzanine or something). There are pros and cons to each approach:</p>
+<p><strong>Pros for static site</strong></p>
+<ul>
+<li>Very fast for users</li>
+<li>Secure and simple to maintain.</li>
+<li>Completely de-coupled from app, can launch now without having to make a separate deployment</li>
+</ul>
+<p><strong>Cons for static site</strong></p>
+<ul>
+<li>A/B testing could prove tricky</li>
+<li>Anything else dynamic would also be an issue</li>
+</ul>
+<p>Pros/cons for the integrated site are pretty much the reverse of those for the static site.</p>
+<p>What are you guys doing?  Do you view your marketing site as a totally separate app, or do you bake it into your main product?  Feels like a trivial thing, but I’d like to get things right.  Looking forward to hearing what you guys have to say.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492/1</link>
+        <pubDate>Tue, 03 Sep 2013 02:44:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-492-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/marketing-site-integrated-or-stand-alone/492.rss">Marketing Site: Integrated or Stand alone?</source>
+      </item>
+  </channel>
+</rss>

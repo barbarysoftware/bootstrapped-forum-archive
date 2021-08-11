@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hexadecimal -- website monitoring for businesses</title>
+    <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590</link>
+    <description>Hello folks :wave:
+
+Last month, I launched [Hexadecimal](https://tryhexadecimal.com/) -- a website monitoring for internet businesses. Simply put, Hexadecimal monitors your websites and notifies you when *something goes wrong*. Since *something wrong* can happen for a lot of reasons,  it tries to give you hints (as well as debugging info) on where the problem might be. Here are [some examples](https://slack.com/apps/AN48290UA-hexadecimal).
+
+On top of that, Hexadecimal also monitors your SSL/TLS certificates for expiry and notifies you well in advance.
+
+I do share [my numbers publicly](https://tryhexadecimal.com/costs).
+
+I have been experimenting in keeping a [regular changelog](https://tryhexadecimal.com/changelog) with mixed results. If you keep a changelog for your business, do share. I am still undecided about the language and the overall format.
+
+Your feedback on copy / design / $YOUR_AREA_OF_EXPERTISE is welcome! If you&#39;re already using a monitoring service, I&#39;d like to hear from you as well.
+
+--Jama</description>
+    
+    <lastBuildDate>Tue, 22 Oct 2019 09:55:13 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="10" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jmstfv/40/4896_2.png" class="avatar"> jmstfv:</div>
+<blockquote>
+<blockquote>
+<p>And even if you only need to monitor uptime - the analytics platform which is already installed on the site (be it Google or Clicky or whatever else) already provides this functionality. Why extra service?</p>
+</blockquote>
+<p>I don’t use third-party analytics, so have limited knowledge on this subject matter, but don’t people block those? (I know I do) Especially if you’re catering to the technical audience. Maybe I’m missing something here, but I wouldn’t rely on that on anything other than hobby sites.</p>
+</blockquote>
+</aside>
+<p>Just to expand on this:  this is a “special feature” you have you can tell your customers about (btw. I block google/clicky etc, too).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/11</link>
+        <pubDate>Tue, 22 Oct 2019 09:55:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[jmstfv]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4795_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Great, let’s continue with this answer. If they are not happy with their current provider (why, btw?), why would they be happy with <strong>your</strong> service? What makes it different?</p>
+<p>It would be very hard to attract and retain users if the service is just “me too”.</p>
+</blockquote>
+</aside>
+<p>There are myriad of reasons why <em>they</em> might not be happy with their provider(s): false positives (i.e. site is up but is reported as down), no monitoring for certificate expiry, no support for IPv6, no explanation why downtime happens, no multi-user accounts on smaller plans, clunky interface, mediocre support, etc…</p>
+<p>I tried to cover most of these points on the landing page.</p>
+<aside class="quote no-group" data-post="9" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4795_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Some do, but not for long. One day the users in Denmark complain the login takes forever, but RT is not showing it - on average across the world RT is good. And so they have to monitor transactions now. And so on, and so on. Basic service cuts it, but only for a limited time.</p>
+</blockquote>
+</aside>
+<p>My point was that I don’t have to cater to every <em>hypothetical</em> use case (nor do I want to). Surely, there will be <em>some</em> customers who will outgrow my offering and will have to switch eventually. If I could cover 60%-70% of monitoring cases, that’s already a win in my book. I could leave those <s>hairy bits</s> advanced uses cases for competitors and just focus on a few things.</p>
+<p>And this is the conscious decision on my part. As long as the business could support me and some, I’m completely fine with having fewer customers. I don’t want to grow at all costs.</p>
+<aside class="quote no-group" data-post="9" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4795_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>And even if you only need to monitor uptime - the analytics platform which is already installed on the site (be it Google or Clicky or whatever else) already provides this functionality. Why extra service?</p>
+</blockquote>
+</aside>
+<p>I don’t use third-party analytics, so have limited knowledge on this subject matter, but don’t people block those? (I know I do) Especially if you’re catering to the technical audience. Maybe I’m missing something here, but I wouldn’t rely on that on anything other than hobby sites.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/10</link>
+        <pubDate>Sat, 19 Oct 2019 15:12:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="8" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jmstfv/40/4896_2.png" class="avatar"> jmstfv:</div>
+<blockquote>
+<p>But here’s the thing: not everyone is happy with whatever service they’re using.</p>
+</blockquote>
+</aside>
+<p>Great, let’s continue with this answer. If they are not happy with their current provider (why, btw?), why would they be happy with <strong>your</strong> service? What makes it different?</p>
+<p>It would be very hard to attract and retain users if the service is just “me too”.</p>
+<aside class="quote no-group" data-post="8" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jmstfv/40/4896_2.png" class="avatar"> jmstfv:</div>
+<blockquote>
+<p>That’s the v0.1 of the copy.</p>
+</blockquote>
+</aside>
+<p>So good design, bad copy? Should be other way around.</p>
+<p>Anyway, the copy is just a manifestation of the same question/problem - what makes the service different? Once you decide on that, the copy writes itself.</p>
+<aside class="quote no-group" data-post="8" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jmstfv/40/4896_2.png" class="avatar"> jmstfv:</div>
+<blockquote>
+<p>Some folks simply need an external monitoring service that will keep an eye on uptime/certificates.</p>
+</blockquote>
+</aside>
+<p>Some do, but not for long. One day the users in Denmark complain the login takes forever, but RT is not showing it - on average across the world RT is good. And so they have to monitor transactions now. And so on, and so on. Basic service cuts it, but only for a limited time.</p>
+<p>And even if you only need to monitor uptime - the analytics platform which is already installed on the site (be it Google or Clicky or whatever else) already provides this functionality. Why extra service? Can’t answer that without knowing what makes this service different.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/9</link>
+        <pubDate>Sat, 19 Oct 2019 13:06:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[jmstfv]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4795_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>How is it different from the competitors? Why should I prefer it, and not say <a href="http://pingdom.com">pingdom.com</a>?</p>
+</blockquote>
+</aside>
+<p>If somebody is happy with whatever service they’re using, that’s great! But here’s the thing: not everyone is happy with whatever service they’re using.</p>
+<aside class="quote no-group" data-post="6" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4795_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>The header - “Website monitoring for internet businesses” - is so nondescript as if that was actually the goal. Can’t make it more bland.</p>
+</blockquote>
+</aside>
+<p>That’s the v0.1 of the copy. Right now, there are many <em>known unknowns</em> and <em>unknown unknowns</em> on my plate to produce a meaningful (i.e. targeted) copy, hence generic words.</p>
+<aside class="quote no-group" data-post="7" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4795_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I’m not in that business, but I feel that the remote monitoring along is not big enough pain that justifies long staying with a service. It maybe the first step after a new site is up, but then you need to measure login time, changes in RT over time after specific deployments and whatnot.</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-post="7" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4795_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>In this sense the idea that was valid 10 years ago may not be so valid anymore.</p>
+</blockquote>
+</aside>
+<p>Some folks simply need an external monitoring service that will keep an eye on  uptime/certificates. Not everyone wants to know or cares why TLS handshakes in the last two weeks take 9.42% longer than usual.</p>
+<p>It is trivial to gather timing breakdown for each request. However, building a functional UI on top of this data might take an unknown amount of time. In the very beginning, I’d rather do <em>one thing</em> better than the rest (hint: uptime monitoring) instead of releasing a dozen half-baked features just to cater to every use case under the sun.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/8</link>
+        <pubDate>Sat, 19 Oct 2019 12:16:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jmstfv/40/4896_2.png" class="avatar"> jmstfv:</div>
+<blockquote>
+<p>I knew even before I started that it’d be more of a “sales and marketing game” rather than “idea validation game”.</p>
+</blockquote>
+</aside>
+<p>I’m not in that business, but I feel that the remote monitoring along is not big enough pain that justifies long staying with a service. It maybe the first step after a new site is up, but then you need to measure login time, changes in RT over time after specific deployments and whatnot. Web analytics services eat into this market by providing their own RT tools, making a dedicated remote monitoring account unnecessary.</p>
+<p>That is probably why the older existing monitoring services migrate to higher value areas - transaction monitoring, code error reporting and whatnot.</p>
+<p>In this sense the idea that was valid 10 years ago may not be so valid anymore.</p>
+<p>Then again, much depends on your cost of living. In Sweden you may need more paying users than the service can eventually achieve.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/7</link>
+        <pubDate>Sat, 19 Oct 2019 00:13:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Your site looks great.</p>
+</blockquote>
+</aside>
+<p>And that’s about the only thing that comes to mind after visiting it. <img src="https://emoji.discourse-cdn.com/twitter/confused.png?v=9" title=":confused:" class="emoji" alt=":confused:"></p>
+<p>How is it different from the competitors? Why should I prefer it, and not say <a href="http://pingdom.com">pingdom.com</a>?</p>
+<p>The header - “Website monitoring for internet businesses” - is so nondescript as if that was actually the goal. Can’t make it more bland. Even the old Pingdom that long ago lost its way is trying to differentiate by claiming “… Made Easy” - a pretty silly differentiator, but at least they tried.</p>
+<p>The subheaders do not add any clarity.</p>
+<aside class="quote no-group" data-post="3" data-topic="6590">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jmstfv/40/4896_2.png" class="avatar"> jmstfv:</div>
+<blockquote>
+<p>My biggest mistake to date is that I didn’t pay <em>enough</em> attention to the pre-launch email list.</p>
+</blockquote>
+</aside>
+<p>To benefit from a mail list you need to have something to tell them readers. Something special, something different from other providers. “I will monitor your sites” is not enough.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/6</link>
+        <pubDate>Fri, 18 Oct 2019 23:50:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[jmstfv]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I like your offering and I don’t why.</p>
+</blockquote>
+<p>That’s quite a compliment <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<blockquote>
+<p>I have one question though. How does the security aspect of Slack integration exactly work? Will your app be able to read our messages? Or it can only send them?</p>
+</blockquote>
+<p>When adding a Slack integration, you authorize this app to <strong>only</strong> post to the specific channel. It doesn’t have permissions to write to different channels or read messages from any channel. I use Slack’s <a href="https://api.slack.com/messaging/webhooks">incoming webhooks API</a> for that. See attached screenshots from my Slack workspace to get the sense of what authorizations are requested.</p>
+<blockquote>
+<p>This is important but not covered in documentation in an obvious way.</p>
+</blockquote>
+<p>Thanks for pointing it out. I have added a small paragraph to the docs: <a href="https://tryhexadecimal.com/docs/notifications#slack">https://tryhexadecimal.com/docs/notifications#slack</a></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/017f294e943a7ca1eee5899b8a9644ff2b2432f6.png" data-download-href="/uploads/short-url/deV0eXN0vD6XmzRdSnf8ZTwn5k.png?dl=1" title="slack2.png"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/0/017f294e943a7ca1eee5899b8a9644ff2b2432f6_2_690x391.png" alt="slack2" data-base62-sha1="deV0eXN0vD6XmzRdSnf8ZTwn5k" width="690" height="391" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/0/017f294e943a7ca1eee5899b8a9644ff2b2432f6_2_690x391.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/0/017f294e943a7ca1eee5899b8a9644ff2b2432f6_2_1035x586.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/0/017f294e943a7ca1eee5899b8a9644ff2b2432f6_2_1380x782.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/0/017f294e943a7ca1eee5899b8a9644ff2b2432f6_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">slack2.png</span><span class="informations">2560×1452 136 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/16aef5096fd756ed453b496f2d48f0cdb04b72d7.png" data-download-href="/uploads/short-url/3eFlB86A5BXazCNNX9teKsxZt0X.png?dl=1" title="slack.png"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/16aef5096fd756ed453b496f2d48f0cdb04b72d7_2_689x390.png" alt="slack" data-base62-sha1="3eFlB86A5BXazCNNX9teKsxZt0X" width="689" height="390" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/16aef5096fd756ed453b496f2d48f0cdb04b72d7_2_689x390.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/16aef5096fd756ed453b496f2d48f0cdb04b72d7_2_1033x585.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/16aef5096fd756ed453b496f2d48f0cdb04b72d7_2_1378x780.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/16aef5096fd756ed453b496f2d48f0cdb04b72d7_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">slack.png</span><span class="informations">2558×1448 347 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/5</link>
+        <pubDate>Fri, 18 Oct 2019 20:15:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[DiSchwarz]]></dc:creator>
+        <description><![CDATA[
+            <p>I like your offering and I don’t why.</p>
+<p>I have one question though. How does the security aspect of Slack integration exactly work? Will your app be able to read our messages? Or it can only send them? This is important but  not covered in documentation in an obvious way.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/4</link>
+        <pubDate>Fri, 18 Oct 2019 19:14:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[jmstfv]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback, Steve!</p>
+<blockquote>
+<p>You are in a very crowded space. That’s a negative.</p>
+</blockquote>
+<p>I knew even before I started that it’d be more of a “sales and marketing game” rather than “idea validation game”.</p>
+<blockquote>
+<p>However your customers are likely to stick around for a long time. That’s a positive.</p>
+</blockquote>
+<p>Interesting. I thought the opposite, especially seeing some early customers getting up and running so quickly. Also, there are no proprietary components, thus no vendor lock-in.</p>
+<blockquote>
+<p>On pricing, I think <strong>your plans are way too generous</strong> .</p>
+</blockquote>
+<p>That’s another interesting perspective to hear. I thought that my prices are higher (on average) than those of competitors’, considering that I haven’t reached feature parity with them.</p>
+<blockquote>
+<p>What strategy do you have in mind for getting customers?</p>
+</blockquote>
+<p>Content and SEO in the mid- and long-term.</p>
+<p>In the short-term, I am not sure. I got a few signups from private discussion forums, a couple of signups from the Slack app store, but that’s about it. Paid acquisition is off the table since I have neither the skills nor the budget for that.</p>
+<p>My biggest mistake to date is that I didn’t pay <em>enough</em> attention to the pre-launch email list.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/3</link>
+        <pubDate>Fri, 18 Oct 2019 13:42:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Your site looks great. It has just the right aesthetic for your target market, I think.</p>
+<p>You are in a very crowded space. That’s a negative. However your customers are likely to stick around for a long time. That’s a positive.</p>
+<p>On pricing, I think <strong>your plans are way too generous</strong>. My suggestion: Shift all the limits should all be shifted to a higher plan. That is, make “Agency” have the 20 website limit, “Business” have the 50 website limit, etc. “Indie” should be just two or three sites.</p>
+<p>What strategy do you have in mind for getting customers?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/2</link>
+        <pubDate>Thu, 17 Oct 2019 18:47:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+      <item>
+        <title>Hexadecimal -- website monitoring for businesses</title>
+        <dc:creator><![CDATA[jmstfv]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello folks <img src="https://emoji.discourse-cdn.com/twitter/wave.png?v=9" title=":wave:" class="emoji" alt=":wave:"></p>
+<p>Last month, I launched <a href="https://tryhexadecimal.com/">Hexadecimal</a> – a website monitoring for internet businesses. Simply put, Hexadecimal monitors your websites and notifies you when <em>something goes wrong</em>. Since <em>something wrong</em> can happen for a lot of reasons,  it tries to give you hints (as well as debugging info) on where the problem might be. Here are <a href="https://slack.com/apps/AN48290UA-hexadecimal">some examples</a>.</p>
+<p>On top of that, Hexadecimal also monitors your SSL/TLS certificates for expiry and notifies you well in advance.</p>
+<p>I do share <a href="https://tryhexadecimal.com/costs">my numbers publicly</a>.</p>
+<p>I have been experimenting in keeping a <a href="https://tryhexadecimal.com/changelog">regular changelog</a> with mixed results. If you keep a changelog for your business, do share. I am still undecided about the language and the overall format.</p>
+<p>Your feedback on copy / design / $YOUR_AREA_OF_EXPERTISE is welcome! If you’re already using a monitoring service, I’d like to hear from you as well.</p>
+<p>–Jama</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590/1</link>
+        <pubDate>Wed, 16 Oct 2019 17:43:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6590-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hexadecimal-website-monitoring-for-businesses/6590.rss">Hexadecimal -- website monitoring for businesses</source>
+      </item>
+  </channel>
+</rss>

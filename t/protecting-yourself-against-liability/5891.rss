@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Protecting yourself against liability?</title>
+    <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891</link>
+    <description>I live in Australia, and plan on releasing a product aimed at business users (such as self-employed tax agents, and also contractors) in the coming months. I&#39;m concerned about liability against me (getting sued) if something goes &quot;wrong&quot; with my app (example: they delete something with it, that they needed for their work).
+
+Will my EULA be enough to indemnify and protect me against such claims? The user is required to click &quot;I understand and agree to the above EULA&quot; before the app will run, with this button NOT having the focus by default, so they will have to actively click it and can&#39;t claim they hit Space or Enter on it by mistake. Maybe I should make them type &quot;I agree&quot; instead?
+
+Or is it best to get some sort of insurance? If so, what type? I don&#39;t want to ruin my life if a lawsuit is brought against me. I&#39;m a sole trader, not a registered company.</description>
+    
+    <lastBuildDate>Fri, 15 Jun 2018 19:03:00 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[DanHirsch]]></dc:creator>
+        <description><![CDATA[
+            <p>LLC’s do protect your assets in cases like this.  In the case where they can pierce the veil it is usually situations where the individual has acted maliciously or fraudulently.   So I wouldn’t do any business without an LLC at minimum.  Second, you can purchase E&amp;O insurance on your software.  They will want to know your QA procedures, etc…  but e&amp;o protects against lawsuits due to a malfunction or bug in your software.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/11</link>
+        <pubDate>Fri, 15 Jun 2018 19:03:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[umeca74]]></dc:creator>
+        <description><![CDATA[
+            <p>well obviously a LLC (or LTD) is a good shield against liability, it’s in the name <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"><br>
+whereas as an individual you could be sued for whatever you have, behind a company only the company’s assets are at risk</p>
+<p>but I agree that the odds of getting sued (never mind successfully) are very small. And incorporating has upfront and ongoing costs that may be hard to justify for a small fish. But above a certain income limit it pays to have a 1-man LTD (complicated calculation, depends on the residence)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/10</link>
+        <pubDate>Fri, 15 Jun 2018 09:11:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="8" data-topic="5891" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/d/ba8739/40.png" class="avatar"> danni:</div>
+<blockquote>
+<p>Is there a reason you can’t register as a company? AFAIK, protecting yourself against liability is a big advantage of incorporating.</p>
+</blockquote>
+</aside>
+<p>This is one of those things that people keep repeating as if an LLC is some magic shield that will protect you against lawsuits or personal liability.</p>
+<p>I did some research on this topic and it doesn’t actually protect all that much.</p>
+<p>It’s mostly about protecting your personal assets in case you, as a company, took a big loan and defaulted on it.</p>
+<p>In practice, a bank either will not give you a risky loan or will demand that you co-sign the loan as a person, rendering LLC protection useless.</p>
+<p>Banks have leverage and they have lawyers that understand those rules better than you do.</p>
+<p>Further, there are so many exceptions, known as “piercing corporate veil” (<a href="https://www.lexology.com/library/detail.aspx?g=4ff8ebf0-4bca-426e-8273-758140f6d0eb" rel="nofollow noopener">https://www.lexology.com/library/detail.aspx?g=4ff8ebf0-4bca-426e-8273-758140f6d0eb</a>, <a href="https://www.nolo.com/legal-encyclopedia/personal-liability-piercing-corporate-veil-33006.html" rel="nofollow noopener">https://www.nolo.com/legal-encyclopedia/personal-liability-piercing-corporate-veil-33006.html</a>).</p>
+<p>Here are 2 notable ways:</p>
+<ul>
+<li>whether the corporation or LLC engaged in fraudulent behavior. If you do something illegal, intentionally or not, you’ll be personally liable. Bernie Madoff can’t say “but see, all this fraud was done by a corporation, not me”</li>
+<li>whether one person or a small group of closely related people were in complete control of the corporation or LLC; sounds like a solo business</li>
+</ul>
+<p>In short you can consider “form corporation to shield from liability” as mostly a myth. It’s comforting but in practice mostly useless.</p>
+<p>I would love to know if even a single person out of 2478 users on this forum can say: “Yeah, I would be totally screwed but thank god LLC protected me”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/9</link>
+        <pubDate>Thu, 14 Jun 2018 19:26:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[danni]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there a reason you can’t register as a company? AFAIK, protecting yourself against liability is a big advantage of incorporating.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/8</link>
+        <pubDate>Thu, 14 Jun 2018 01:09:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="5891">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>To file a suit, they have to go to lawyers. Lawyers are not uneducated.</p>
+</blockquote>
+</aside>
+<p>I know lawyers aren’t, but the user may assume that an EULA makes a lawsuit pointless, and thus not engage a lawyer in the first place. So, my reasoning is that an EULA is good for at least that range of people.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/7</link>
+        <pubDate>Tue, 12 Jun 2018 21:22:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="5891">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>I could file the most frivolous lawsuit and you still would have to hire a lawyer to respond to it.</p>
+</blockquote>
+</aside>
+<p>Hear, hear!</p>
+<aside class="quote no-group" data-post="2" data-topic="5891">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>The chances of someone winning “this software did something wrong” are none.</p>
+</blockquote>
+</aside>
+<p>However, I assume the families of died due to Therac-25 accidents did get the compensation. Probably thru a settlement, not a court decision.</p>
+<aside class="quote no-group" data-post="5" data-topic="5891">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/p/9de0a6/40.png" class="avatar"> Paul1970:</div>
+<blockquote>
+<p>having an EULA may deter uneducated people from considering a suit</p>
+</blockquote>
+</aside>
+<p>To file a suit, they have to go to lawyers. Lawyers are not uneducated. However, lawyers may feel inclined to help them with the filing even if they fully realize it is futile - they get paid anyway.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/6</link>
+        <pubDate>Tue, 12 Jun 2018 17:08:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <p>Even if useless, having an EULA may deter uneducated people from considering a suit. That’s my hope. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/5</link>
+        <pubDate>Sun, 10 Jun 2018 00:30:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="5891">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/p/9de0a6/40.png" class="avatar"> Paul1970:</div>
+<blockquote>
+<p>so I’ll stick with the EULA</p>
+</blockquote>
+</aside>
+<p>Again, comforting but useless as way of preventing lawsuits from irrational actors.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/4</link>
+        <pubDate>Sun, 10 Jun 2018 00:22:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="5891">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>you still would have to hire a lawyer to respond</p>
+</blockquote>
+</aside>
+<p>Yes, that’s the bit that worries me - I don’t have money to hire a lawyer to even just stave off a suit, so I was hoping my EULA would be enough to deflect against that from even occurring.</p>
+<p>But your other statements make a lot of sense, so I’ll stick with the EULA and just have warnings before anything potentially damaging gets done (“Sure you want to delete [blah]?”).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/3</link>
+        <pubDate>Sat, 09 Jun 2018 23:39:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p>The short answer is: don’t worry about it.</p>
+<p>The longer answer is: this is more about of your perception of risk than real risk.</p>
+<p>You also have to distinguish “someone sues you” vs. “someone sues you successfully” vs. “someone sues you successfully and gets awarded big damages”.</p>
+<p>I’ve been participating in forums like this (i.e. where owners of small software businesses hang out) and not once I’ve read a story of some small company selling $20/month software being sued by a customer, much less successfully.</p>
+<p>The chance of being sued when you barely making a living wage from your company is slim because most actors are rational. Google and Microsoft have pending suits against them at all times because they have money. Lots of it. You don’t so there’s little point in me suing you if even if I win, I won’t get enough from you to cover the cost of suing you.</p>
+<p>Note that nothing can protect you from being sued. I could file the most frivolous lawsuit and you still would have to hire a lawyer to respond to it.</p>
+<p>The chances of someone winning “this software did something wrong” are none. Again there’s a lot of software out there and not once I’ve read a story of someone succeeding in that.</p>
+<p>In a suit it’s their burden to demonstrate with “preponderance of the evidence” that your software did something bad and good luck with that.</p>
+<p>Finally, damages are not arbitrary. In order to squeeze money from you they would have to show that the’ve suffered quantifiable losses as a direct result of your software. Again, good luck with that.</p>
+<p>BTW: eula in practice makes not a lick of difference. You can’t indemnify against the bad stuff (“this software might erase your hard-drive and transfer all your money to my bank account; click here if you agree”) and there’s no need to indemnify against the common stuff because the law already has standard as to what is and isn’t bad.</p>
+<p>At the same time there are plenty of people that will tell you to double down on all sorts of protections (like eula’s, LLCs, insurance) because “better safe than sorry” is comforting, even if statistically extremely unlikely.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/2</link>
+        <pubDate>Sat, 09 Jun 2018 20:45:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+      <item>
+        <title>Protecting yourself against liability?</title>
+        <dc:creator><![CDATA[Paul1970]]></dc:creator>
+        <description><![CDATA[
+            <p>I live in Australia, and plan on releasing a product aimed at business users (such as self-employed tax agents, and also contractors) in the coming months. I’m concerned about liability against me (getting sued) if something goes “wrong” with my app (example: they delete something with it, that they needed for their work).</p>
+<p>Will my EULA be enough to indemnify and protect me against such claims? The user is required to click “I understand and agree to the above EULA” before the app will run, with this button NOT having the focus by default, so they will have to actively click it and can’t claim they hit Space or Enter on it by mistake. Maybe I should make them type “I agree” instead?</p>
+<p>Or is it best to get some sort of insurance? If so, what type? I don’t want to ruin my life if a lawsuit is brought against me. I’m a sole trader, not a registered company.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891/1</link>
+        <pubDate>Sat, 09 Jun 2018 02:32:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5891-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/protecting-yourself-against-liability/5891.rss">Protecting yourself against liability?</source>
+      </item>
+  </channel>
+</rss>

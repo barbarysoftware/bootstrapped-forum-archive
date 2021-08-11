@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pool: Front/Backend Stack</title>
+    <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018</link>
+    <description>I&#39;m mainly a C++, C#, and Objective-C/Swift developer but I&#39;ve also built websites with JQuery and PHP. I&#39;m now analyzing web technologies and looking for the &quot;perfect&quot; stack, unfortunately there is no such thing and the choices are mind boggling.
+
+It will be interesting to hear the other members about the web technology choices they&#39;ve made. Here is the setup I have in mind right now:
+
+ - Frontend: JQuery + Bootstrap
+ - Backend: Java + Spring
+ - As an alternative for RIA: Java + Vaadin for FE &amp; BE
+
+What is your front/backend stack?
+
+Cheers</description>
+    
+    <lastBuildDate>Tue, 12 May 2015 07:52:15 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[DarkFlib]]></dc:creator>
+        <description><![CDATA[
+            <p>My current stack:</p>
+<p>CDN77 (cdn) + Mailgun (mail sending/receiving)<br>
+Vultr VPS + debian<br>
+Nginx + pushstream module<br>
+php-fpm / hhvm<br>
+Slim framework<br>
+RabbitMQ<br>
+Redis<br>
+Riak</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/20</link>
+        <pubDate>Tue, 12 May 2015 07:52:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[OliverAdria]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Frontend:</strong> Bootstrap, jQuery, Angular<br>
+<strong>Backend:</strong> Apache, MySQL, File Caching, PHP / Laravel</p>
+<p>It’s a simple website and since there’s no huge data crunching involved, so the above is fine. I would like to move to redis for caching, but I’d have to upgrade to a dedicated server (currently simple hosting package) at my current webhost. I recently re-coded from Laravel 4 to Laravel 5 and had to restructure the folders, etc, and that was fine, and there were no changes involved in the frontend. Angular I use mostly for the administration interface, because loading pages via Angular should be a headache SEO-wise.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/19</link>
+        <pubDate>Thu, 07 May 2015 04:46:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="16" data-topic="3018">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/sapiensworks/40/2941_1.png" class="avatar"> sapiensworks:</div>
+<blockquote>
+<p>No offence, but this obsolete BS annoys me. Unless you’re running your very own Windows server and you need to have a very valid reason for that, there are no licensing costs.</p>
+</blockquote>
+</aside>
+<p>I agree with this. I run a full Windows stack and have never purchased a Windows license or SQL Server license. I hear the other day that 20% of client VMs running in Azure are running Linux, so while still a minority that is a lot of Linux that Microsoft is hosting now.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/18</link>
+        <pubDate>Thu, 07 May 2015 02:43:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[kir]]></dc:creator>
+        <description><![CDATA[
+            <p>My project is an old one, still pretty much alive.</p>
+<p><strong>Backend</strong>: Ruby on Rails, 3.2.x, MySQL, Sphinx for search, Memcached<br>
+<strong>Frontend</strong>: PrototypeJS + vanilla Javascript (no JQuery)</p>
+<p>If I start today, it would be all different, of course.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/17</link>
+        <pubDate>Wed, 06 May 2015 16:49:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>if you build a business around technology that you know will be replaced in a year or so, you’re consciously wasting money</p>
+</blockquote>
+<p>Considering the speed at which things move today, everything is kinda obsolete in 1-2 years . Angular V2 is basically a new framework, V1 will still be supported for some years.</p>
+<blockquote>
+<p>BTW there are many (better in my opinion) options you can use. Ember, react to name most popular ones.</p>
+</blockquote>
+<p>Before I’ve settled on angular I’ve used knockout.js and toyed with Ember. There’s no contest. For a backend developer like me, angular is the most elegant and clean (despite its Wtfs). React is like KO.js more of a view model binder i.e the V of MVC/MVVM . React can be used with angular as the rendering component.</p>
+<blockquote>
+<p>Thanks for the update on this. It’s interesting. Is Bizspark free for a lifetime?</p>
+</blockquote>
+<p>No, only for 3 years. And to make it more clear, those 150$ credit are for Azure hosting even if you run your own vm with ruby/php. You can run a complete LAMP stack on it (self managed though) never touching a MS tech and you pay less for 3 years.</p>
+<blockquote>
+<p>with zero licensing costs, much flexibility, independence (cheap vps) than vendor lock in technologies controlled by one corporation and worry later about unexpected costs.</p>
+</blockquote>
+<p>No offence, but this obsolete BS annoys me. Unless you’re running your very own Windows server and you need to have a very valid reason for that, there are no licensing costs. Flexibility? Can you switch in  heartbeat from a php app to a ruby one? No. Can you run php/ruby and a lot of things on windows? Yes. Do you have to run things on windows? No.</p>
+<p>How about cheap VPS? You can find as low as 15$ or an average for 30-45$ for somethig with 1-2 GB ram and 1-2 vCPU. When I’ve last used a win vps (with Liquid web) they had the same price 100$ (it was some years ago) for both Linux and Win Vps. And with  the next <a href="http://asp.net" rel="nofollow noopener">asp.net</a> more and more hosts will offer .net hosting (not windows!).</p>
+<p>Vendor lock in? .net started as closed source, in time they open up more and more. Now, it’s completely OSS . Do you think they’ll go back to closed source? Why on earth would they do that? As long as there is OSS, MS needs to keep OSS in order to compete.</p>
+<p>I’m really tired about this kind of nonsense, from the early 2000s. I mean no disrespect, but people who don’t know the <strong>current</strong> .net world state shouldn’t say their opinion about a stack they know little about. I’m saying that as a senior .net developer (web apps) who started as a php developer and had his fun with the LAMP stack (hint: I don’t want to go back).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/16</link>
+        <pubDate>Wed, 06 May 2015 15:56:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[kgiszczak]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="14" data-topic="3018">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/sapiensworks/40/2941_1.png" class="avatar"> sapiensworks:</div>
+<blockquote>
+<p>Why do you have to rewrite the app?  You can still use v1 (I’m sure they will support it for a while)</p>
+</blockquote>
+</aside>
+<p>Sooner or later you will have to do it so why bother at all. If it’s a hobby project then it’s not a problem, but if you build a business around technology that you know will be replaced in a year or so, you’re consciously wasting money. And we’re not talking about upgrading one version to another here. Angular 2 is completely different framework so you will have to learn everything from scratch.<br>
+BTW there are many (better in my opinion) options you can use. Ember, react to name most popular ones.</p>
+<aside class="quote" data-post="14" data-topic="3018">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/sapiensworks/40/2941_1.png" class="avatar"> sapiensworks:</div>
+<blockquote>
+<p>I’m paying 0$ (as Bizspark member) for Azure hosting (2 vms + 3 sql server dbs, besides countless NoSql storage tables and queues) . Azure supports continuous deployment from source.  The only thing I’d like to see from Azure is official Postgres hosting but this is highly unlikely . Oh and I’m using a lot of .net OSS both from MS and others .</p>
+</blockquote>
+</aside>
+<p>Thanks for the update on this. It’s interesting. Is Bizspark free for a lifetime?</p>
+<p>Frankly I would rather use ruby/python/php with zero licensing costs, much flexibility, independence (cheap vps) than vendor lock in technologies controlled by one corporation and worry later about unexpected costs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/15</link>
+        <pubDate>Wed, 06 May 2015 14:32:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I would avoid angular. They are working on version 2 of the framework which is completely different then v1, so be ready to rewrite your application when they release it.</p>
+</blockquote>
+<p>Why do you have to rewrite the app?  You can still use v1 (I’m sure they will support it for a while)</p>
+<blockquote>
+<p>Microsoft is risky imho (especially for startup without a lot of cash) they opensourcing theirs technologies lately (and generally changing their ways when it comes to open source) but still deployment might be a problem</p>
+</blockquote>
+<p>I’m paying <strong>0$</strong> (as Bizspark member) for Azure hosting (2 vms + 3 sql server dbs, besides countless NoSql storage tables and queues) . Azure supports continuous deployment from source.  The only thing I’d like to see from Azure is official Postgres hosting but this is highly unlikely . Oh and I’m using a lot of .net OSS both from MS and others .</p>
+<p>In fairness, today the only reason to use ruby/php instead of .net is that you know/like those languages . Cost, vendor lock in, productivity are no longer valid reasons to disregard .net.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/14</link>
+        <pubDate>Tue, 05 May 2015 18:38:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[kgiszczak]]></dc:creator>
+        <description><![CDATA[
+            <p>It depends what you’re building of course, but for classic CRUD application I would use:</p>
+<p>Backend: Ruby on Rails or Django depending on what your language preferences are<br>
+Frontend: jQuery for basic work with HTML, if you need something more robust: ember or react<br>
+I would avoid angular. They are working on version 2 of the framework which is completely different then v1, so be ready to rewrite your application when they release it.<br>
+Database: PostgreSQL - the best database there is<br>
+Queue: Redis<br>
+Search index: Elasticsearch</p>
+<p>This is a basic stack I use  for my projects. It works perfectly.</p>
+<p>Java is overkill for bootstrapped business in my opinion. It’s good when you have a traction and need performance, but when you’re just starting you will lost a lot of time configuring it instead of working on application.</p>
+<p>Microsoft is risky imho (especially for startup without a lot of cash) they opensourcing theirs technologies lately (and generally changing their ways when it comes to open source) but still  deployment might be a problem and they have a history of screwing developers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/13</link>
+        <pubDate>Tue, 05 May 2015 16:44:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s pretty much official that the next .Net will run on linux and mac, I mean really, visual studio will run on linux. Mono already uses parts of .net . Anyway, as someone who has around 10 (give or take) open source libraries for .net  I’d say open source is quite strong in .net world.</p>
+<p>If I’d see a reason for someone not to use C# is because they like another language, but the open source argument should stay in 2007.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/12</link>
+        <pubDate>Mon, 04 May 2015 13:10:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[Cosmin]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I would like to go C# / <a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a> as I started my career as a Windows developer and I like C#. However I’ve learned to appreciate the independence open source technologies and multi-platform development gives me (ex. Qt, Java).</p>
+<p>Yes, I know <a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a> has gone the open source route recently but when will it be production-ready on Apache (not considering Mono)? Not soon I guess, and Linux will probably always be a second class citizen for <a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a>.</p>
+<p>I’ve finished my 5-year Bizspark program a few years ago since I’ve started with Bizspark in 2007 with my BatchPhoto application.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/11</link>
+        <pubDate>Mon, 04 May 2015 06:50:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[cpursley]]></dc:creator>
+        <description><![CDATA[
+            <p>If I were to start a new product today, it would be all JavaScript. Node (with hapijs) on the backend and Angular (or perhaps React) on the front end. One thing that I’ve realized bootstrapping a SaaS application - between business and marketing context switching, keeping up with multiple programing languages is difficult.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/10</link>
+        <pubDate>Fri, 01 May 2015 15:28:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Frontend: JQuery + Bootstrap<br>
+Backend: Scala + Lift</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/9</link>
+        <pubDate>Thu, 30 Apr 2015 09:41:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[saltvedt]]></dc:creator>
+        <description><![CDATA[
+            <p>Everything below (except Ansible) are leading technologies in their respective fields, and they work very well together.</p>
+<p><strong>Server:</strong> Heroku, or a Ubuntu server provisioned by Ansible<br>
+<strong>Framework:</strong> Ruby on Rails<br>
+<strong>Database:</strong> PostgreSQL<br>
+<strong>Caching/Jobs:</strong> Redis / Resque<br>
+<strong>CSS framework:</strong> Bootstrap<br>
+<strong>Javascript framework:</strong> AngularJS / JQuery</p>
+<p>Perfect? No, and even though the above can handle a wide variety of use cases you should try to choose the best tool for the job. That being said, if I were starting from scratch <em>today</em> I would still chose the same stack.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/8</link>
+        <pubDate>Wed, 29 Apr 2015 21:17:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[akevon]]></dc:creator>
+        <description><![CDATA[
+            <p>The overwhelming amount of languages, technologies, frameworks, and other development tools available today makes us always wonder if there’s a better way, an easier way, a faster way.</p>
+<p>I find that it’s good to allocate a fraction of your time to learning and keeping up with the new stuff, but I only allow minor increments and adjustments to my technology stack because often times they aren’t quite mature, don’t have sufficient developer/community support, and by chasing for new miracle cures you can quickly find yourself up sh*t creek without a paddle.</p>
+<p>But to stay on topic, this is my preferred cocktail:</p>
+<ul>
+<li>LAMP</li>
+<li>Symfony</li>
+<li>Bootstrap + jQuery</li>
+<li>Vagrant (for dev environments)</li>
+<li>PHPStorm with xdebug</li>
+</ul>
+<p>It’s what I know, it works great, and allows me to produce very high quality products in record time. At the end of the day, sticking to what you’ve mastered is almost always the best choice, although personally I wouldn’t trade PHP for any other language when it comes to back-end web dev.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/7</link>
+        <pubDate>Wed, 29 Apr 2015 05:59:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>My app is pretty much built on the .NET stack, <a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a> MVC. Lots of jQuery bits of bootstrap, all hosted on Azure with BizSpark. To me this stack works so well I can’t imagine why anyone would choose anything else <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/6</link>
+        <pubDate>Tue, 28 Apr 2015 23:31:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[sapiensworks]]></dc:creator>
+        <description><![CDATA[
+            <p>If you already know c# go for <a href="http://asp.net" rel="nofollow noopener">asp.net</a> . As you’ve stated, the perfect stack doesn’t exist, although for me, the perfect stack is <a href="http://asp.net" rel="nofollow noopener">asp.net</a> based for backend and angularjs + bootstrap for UI.</p>
+<p>My experience with java is very limited but I hated every interaction with it. I’m amazed  there are C# devs preferring Java to C# in 2015. Backend with .net is let’s say… my expertise, so I’d be happy to answer any question you might have about it.</p>
+<p>Btw, if you build a startup (saas, platform like) hosted on Azure, you can apply for Bizspark and not only get all MS software free for 3 years but you can also get 150$ Azure hosting credit, thus your hosting expenses for 3 years will be either $0 or at least $150 less.</p>
+<p>My Saas is Bizspark member and $150 allows for a lot of functionality especially when beginning. If you are so successful and you’ll need more hosting power, you’ll still get a lower bill. To give you a small taste, I’m paying $0 and I host 2 webservers, 2 background workers (as webjobs) and 2 standard Sql db on a plan that supports 5 SSL certs and continuous deployment from source.</p>
+<p>You can benefit from all that even if you go the Java route, but, you’ll get more value as a .net app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/5</link>
+        <pubDate>Tue, 28 Apr 2015 21:37:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, using Spring. Angular is more an experiment at this point. JQuery does most of the work.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/4</link>
+        <pubDate>Fri, 24 Apr 2015 13:11:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[Cosmin]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="3018">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Bootstrap+JQuery+Angular on FE, Java on BE.</p>
+</blockquote>
+</aside>
+<p>Cool, this is the stack I have in mind right now (except Angular). On the backend do you use plain JPS/Servlets or you also use Spring or a similar framework?</p>
+<p>How is Angular helping you out on the frontend?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/3</link>
+        <pubDate>Fri, 24 Apr 2015 12:35:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3018">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/cosmin/40/3198_1.png" class="avatar"> Cosmin:</div>
+<blockquote>
+<p>What do you think about Vaadin?</p>
+</blockquote>
+</aside>
+<p>It is even heavier than GWT.</p>
+<p>I’ve been in your place some 5 years ago, and I tried to use GWT. Did not work very well. Currently I’m using Bootstrap+JQuery+Angular on FE, Java on BE.</p>
+<p>Framework/stack, after all, is just a detail. Market fit and marketing are way harder.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/2</link>
+        <pubDate>Fri, 24 Apr 2015 12:03:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+      <item>
+        <title>Pool: Front/Backend Stack</title>
+        <dc:creator><![CDATA[Cosmin]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m mainly a C++, C#, and Objective-C/Swift developer but I’ve also built websites with JQuery and PHP. I’m now analyzing web technologies and looking for the “perfect” stack, unfortunately there is no such thing and the choices are mind boggling.</p>
+<p>It will be interesting to hear the other members about the web technology choices they’ve made. Here is the setup I have in mind right now:</p>
+<ul>
+<li>Frontend: JQuery + Bootstrap</li>
+<li>Backend: Java + Spring</li>
+<li>As an alternative for RIA: Java + Vaadin for FE &amp; BE</li>
+</ul>
+<p>What is your front/backend stack?</p>
+<p>Cheers</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018/1</link>
+        <pubDate>Fri, 24 Apr 2015 08:25:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3018-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/pool-front-backend-stack/3018.rss">Pool: Front/Backend Stack</source>
+      </item>
+  </channel>
+</rss>

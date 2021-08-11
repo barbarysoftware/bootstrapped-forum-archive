@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Production-grade SaaS infrastructure for $200/month - Interesting Links - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Here&amp;#39;s an article I stumbled upon that describes an infrastructure stack for a new SaaS product: 
+
+
+
+
+
+Before you can launch a new service, you need infrastructure. You want reliability, scalability, and many other -ilit&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="4791.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Production-grade SaaS infrastructure for $200/month&#39;" href="4791.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/production-grade-saas-infrastructure-for-200-month/4791" />
+<meta property="og:title" content="Production-grade SaaS infrastructure for $200/month" />
+<meta name="twitter:title" content="Production-grade SaaS infrastructure for $200/month" />
+<meta property="og:description" content="Here’s an article I stumbled upon that describes an infrastructure stack for a new SaaS product:  https://medium.freecodecamp.com/how-your-startup-can-leverage-production-grade-infrastructure-for-less-than-200-month-15c3724038b4#.jlhxhbb65   Before you can launch a new service, you need infrastructure. You want reliability, scalability, and many other -ilities. But you don’t want to break the bank.    I’ve gone through the process of launching several new services over the past few years. Each t..." />
+<meta name="twitter:description" content="Here’s an article I stumbled upon that describes an infrastructure stack for a new SaaS product:  https://medium.freecodecamp.com/how-your-startup-can-leverage-production-grade-infrastructure-for-less-than-200-month-15c3724038b4#.jlhxhbb65   Before you can launch a new service, you need infrastructure. You want reliability, scalability, and many other -ilities. But you don’t want to break the bank.    I’ve gone through the process of launching several new services over the past few years. Each t..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="3 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="17 ❤" />
+<meta property="article:published_time" content="2017-02-16T10:03:38+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="4791%3Fpage=2.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="4791.html">Production-grade SaaS infrastructure for $200/month</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/interesting-links.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #AB9364'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Interesting Links</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-16T10:03:38Z' class='post-time'>
+                February 16, 2017, 10:03am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-16T10:03:38Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Here’s an article I stumbled upon that describes an infrastructure stack for a new SaaS product:</p>
+<p><a href="https://medium.freecodecamp.com/how-your-startup-can-leverage-production-grade-infrastructure-for-less-than-200-month-15c3724038b4#.jlhxhbb65" class="onebox" target="_blank">https://medium.freecodecamp.com/how-your-startup-can-leverage-production-grade-infrastructure-for-less-than-200-month-15c3724038b4#.jlhxhbb65</a></p>
+<blockquote>
+<p>Before you can launch a new service, you need infrastructure. You want reliability, scalability, and many other -ilities. But you don’t want to break the bank.</p>
+</blockquote>
+<blockquote>
+<p>I’ve gone through the process of launching several new services over the past few years. Each time, I’ve explored the field of options.</p>
+</blockquote>
+<blockquote>
+<p>The goal of this article is to help you focus on the value that your solution provides to your users, while minimizing the time and money spent geeking out on infrastructure.</p>
+</blockquote>
+<p>The choices are pretty good, I think.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ezekg.html'><span itemprop='name'>ezekg</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-02-16T14:48:47Z'>
+              <time itemprop='dateModified' datetime='2017-02-16T14:50:40Z' class='post-time'>
+                February 16, 2017,  2:50pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Good stuff. It looks pretty close to my setup:</p>
+<ul>
+<li>Back-end: Heroku (Rails)</li>
+<li>Front-end: Netlify/GitHub Pages</li>
+<li>Database: Heroku Postgres</li>
+<li>Background jobs: Heroku Redis + Sidekiq</li>
+<li>Transactional email: SendGrid (heard mixed opinions, but been great for every project I’ve used them for)</li>
+<li>Logging: Papertrail</li>
+<li>Monitoring: Raygun (over Sentry, since they actually don’t have a free tier on Heroku’s add-on marketplace)</li>
+<li>Uptime: Apex Ping (over Uptimerobot, as Ping also gives you a status page)</li>
+<li>SSL: Lets Encrypt</li>
+</ul>
+<p>Edit: <a href="https://www.librato.com/" rel="nofollow noopener">Librato</a> looks awesome, but not sure I see the benefit if you’re on Heroku.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/maximus.html'><span itemprop='name'>maximus</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-02-16T18:25:50Z'>
+              <time itemprop='dateModified' datetime='2017-02-17T14:18:12Z' class='post-time'>
+                February 17, 2017,  2:18pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Lets see…</p>
+<ul>
+<li>Back-end and Front-end: Chicago VPS ($20/month) or AWS (a lot)</li>
+<li>Database: Postgres (free) or Postgres on RDS ($150+/month)</li>
+<li>K/V storage: Redis (free) or AWS Elasticache ($100+/month)</li>
+<li>Background jobs: java apps deployed as background services (free)</li>
+<li>Transnational email: Office365 ($5/user ~ $30/month total)</li>
+<li>Log collection: Home grown based on elk stack (free)</li>
+<li>Monitoring: Home grown based on elk stack + home grown service registry (free)</li>
+<li>Uptime: Uptimerobot (free)</li>
+<li>SSL: Lets Encrypt (free)<br>
+…<br>
+from $50/month to sky’s the limit</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T03:03:54Z' class='post-time'>
+                February 17, 2017,  3:03am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T03:03:54Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Good list.</p>
+<p>Having said that, for a bootstrapped system this is not cheap, and most of advanced properties (load-balancing, hot-standby, etc) are probably not required during the first year.</p>
+<p>It is enough just to have the ability to upgrade in the architecture - when (and if) the time comes.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/dtrejo.html'><span itemprop='name'>dtrejo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T03:22:12Z' class='post-time'>
+                February 17, 2017,  3:22am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T03:22:12Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Pud’s 2011 distrokid setup: <a href="http://pud.com/post/9582597828/why-must-you-laugh-at-my-back-end" rel="nofollow noopener">http://pud.com/post/9582597828/why-must-you-laugh-at-my-back-end</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Serge.html'><span itemprop='name'>Serge</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T03:44:20Z' class='post-time'>
+                February 17, 2017,  3:44am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T03:44:20Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Way to complicated… my head hurts… lol</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aeden.html'><span itemprop='name'>aeden</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T08:06:32Z' class='post-time'>
+                February 17, 2017,  8:06am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T08:06:32Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>There are costs associated with operating those home grown solutions, as well as operating your own postgres database, that make them non-free. It’s too easy to think that operations is free and that the only cost is the server (virtual or otherwise) and the software cost, especially when you’re operating something that is not critical to keeping your business operating. This is a dangerous mindset and I for one would prefer we start considering the real costs of operating our systems.</p>
+<p>And I say this as someone who has operated my own infrastructure many times: it always turns out to be more expensive than I estimated coming in because of people costs and other operating expenses.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-02-17T08:25:03Z'>
+              <time itemprop='dateModified' datetime='2017-02-17T08:25:31Z' class='post-time'>
+                February 17, 2017,  8:25am
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>CFML…wow, I didn’t know that was still around.</p>
+<p>I like the approach espoused in that post, though. It follows the principle of “use the dev stack you know well, even if not trendy.” Which is why my new SaaS product is using boring old Java on the web server.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T13:15:36Z' class='post-time'>
+                February 17, 2017,  1:15pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T13:15:36Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hmmm… I use Digital Ocean for $20 a month.<br>
+So far no capacity issues. I think I can just spin that droplet up with more capacity if needed.</p>
+<p>I guess our programmer may have spent more time on setup using plain vanilla  LAMP. Not sure.</p>
+<p>I think its seductively easy to <strong>scale prematurely</strong>, thinking " if I build capacity for success, that’s one less obstacle to success". But capacity was never going to be your biggest problem. You can BUY capacity if you are successful.  But success (customers, $) needs to be earned.</p>
+<p>-Clay</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grujicd.html'><span itemprop='name'>grujicd</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T13:29:18Z' class='post-time'>
+                February 17, 2017,  1:29pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T13:29:18Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>As far as I understood, linked article was not about scaling, i.e. handling hundreds of customers at once. That would be premature optimization. Instead, it’s about reliability, to get as much uptime and uninterrupted service as possible by using redundant services. It might apply even if you only have handful of customers.</p>
+<p>My products are not Saas, and can live if marketing site is down for few hours per year. I even ok with (good) shared hosting. Also, it depends on nature of Saas application, how mission critical it is for customers.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-02-17T13:53:40Z'>
+              <time itemprop='dateModified' datetime='2017-02-17T13:57:26Z' class='post-time'>
+                February 17, 2017,  1:57pm
+              </time>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Good point.<br>
+I’d argue that spending $2K/year is also premature if you don’t have any paying customers.</p>
+<p>Do you know that very high uptime is your biggest constraint?<br>
+(i.e., is $200/m a better expenditure than, say, Adwords)?<br>
+Then, yes, this makes good sense.<br>
+I know i’ve spent way too much time solving problems I THINK my customers have and missing ones they I should be working on.</p>
+<p>Now, if you do know that high uptime is critical so success (or at least important to paying (or revenue generating) customers, then, yes, this seems to make sense.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/maximus.html'><span itemprop='name'>maximus</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T14:22:58Z' class='post-time'>
+                February 17, 2017,  2:22pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T14:22:58Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Automation helps a lot: provisioning, deployment, backup, disaster recovery, monitoring.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aeden.html'><span itemprop='name'>aeden</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T14:39:55Z' class='post-time'>
+                February 17, 2017,  2:39pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T14:39:55Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I totally agree, as long as the configuration, ongoing verification, and maintenance of the automation is factored in. Simple things like responding to CVEs and upgrading systems in a timely fashion can quickly suck up hundreds of hours in a year.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T16:38:34Z' class='post-time'>
+                February 17, 2017,  4:38pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T16:38:34Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="7" data-topic="4791">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/aeden/40/1319_1.png" class="avatar"> aeden:</div>
+<blockquote>
+<p>There are costs associated with operating those home grown solutions, as well as operating your own postgres database, that make them non-free.</p>
+</blockquote>
+</aside>
+<p>In the early days of a SaaS the time of the founder is essentially free.</p>
+<p>Even if this time is released to be spend on, say, marketing - it is not clear that it will ever be more profitable this way, because the founder may not be efficient in the marketing yet. (And because the SaaS may never be profitable at all, of course).</p>
+<p>And $2400/yr are very real money.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/ezekg.html'><span itemprop='name'>ezekg</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T18:07:11Z' class='post-time'>
+                February 17, 2017,  6:07pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T18:07:11Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I agree, $2,400 is real money. But almost everything in the article has lower tiers than what’s used in the article, so I’m using essentially the same thing and I’m paying about $40/mo for all of it. With Heroku, scaling the tools is painless if it’s ever needed. Really the only things I’m paying for are a standard dyno and Postgres database, everything else is on free tiers until the need arises.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Salman.html'><span itemprop='name'>Salman</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-02-17T20:23:40Z'>
+              <time itemprop='dateModified' datetime='2017-02-17T20:23:50Z' class='post-time'>
+                February 17, 2017,  8:23pm
+              </time>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>For me the key was to learn how to automative your hosting infra, and to make deployment to both staging and production as easy as possible.  Once that is in place, you can confidently start building out your product.   If you go with DO or AWS or Azure is besides the point for many types of SaaS apps.</p>
+<p>Now depending on your budget, type of app, and how serious you are, you can pay $20 to $250/month <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T22:15:42Z' class='post-time'>
+                February 17, 2017, 10:15pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T22:15:42Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="15" data-topic="4791">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ezekg/40/3616_1.png" class="avatar"> ezekg:</div>
+<blockquote>
+<p>But almost everything in the article has lower tiers than what’s used in the article, so I’m using essentially the same thing and I’m paying about $40/mo for all of it.</p>
+</blockquote>
+</aside>
+<p>I checked Heroku free tier, it is a toy of a server (512M). I’m from Java world, and that thing could barely launch HelloWorld.java. <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>However, a some $20 VPS (2G-4G) should be able to host a single app server + single DB good - which is enough until The Growth happens, and only at that point it is time to add another VPS to have a cluster of apps servers and migrate DB to a replicated setup. Hopefully there are already paying customers who will cover the costs.</p>
+<p>That is, of course, if we’re bootstrapping. If on the other hand, we’re “serious” about it, then why not, let’s throw some money at it, because we must be in a real business if we spend the money like that, right? <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/dgrigg'><span itemprop='name'>dgrigg</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-02-18T16:16:44Z'>
+              <time itemprop='dateModified' datetime='2017-02-18T16:17:32Z' class='post-time'>
+                February 18, 2017,  4:17pm
+              </time>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It’s a little bit of putting the cart before the horse. If you make some smart decisions when first building your service you should be able to reasonably scale it as you grow. I have read more than a few examples of startups that planned for huge growth, spent a lot of time and money solving scale problems they expected to have only to never experience those problems and running out of money.</p>
+<p>The first version of the service I developed was absolute bare bones. Everything was stored in a single database included sessions and job queues. As demand grew it was easy to move sessions out to their own storage and eventually job queue and email processing also. To start it was running on a dirt cheap vps, then over to digital ocean with dedicated resources. As need grew I have increased spend to keep up. Thankfully I leverage a framework that made it easy to grow on demand with plugging in better options as needed.</p>
+<p>Always plan ahead but don’t waste valuable resources executing those plans until you need to.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/shantnu'><span itemprop='name'>shantnu</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-18T20:24:13Z' class='post-time'>
+                February 18, 2017,  8:24pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-18T20:24:13Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="17" data-topic="4791">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I checked Heroku free tier, it is a toy of a server (512M). I’m from Java world, and that thing could barely launch HelloWorld.java. <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+</blockquote>
+</aside>
+<p>From what I’ve seen Heroku is very popular with the Rails crowd. Does anyone outside that community use it (in a serious way, not one guy hosting a Django app on it)?</p>
+<p>From what I’ve heard, they charge for every extra, and the costs really add up.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Salman.html'><span itemprop='name'>Salman</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4791.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-19T01:26:38Z' class='post-time'>
+                February 19, 2017,  1:26am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-19T01:26:38Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I was using it for a short time during development in a hybrid rails + playframework (scala) app.  I ended up going with ec2 because I wanted more control and also didn’t want to depend on 3rd parties for core infra like memcached.</p>
+        </div>
+
+        <meta itemprop='headline' content='Production-grade SaaS infrastructure for $200/month'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="4791%3Fpage=2.html">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

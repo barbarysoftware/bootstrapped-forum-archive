@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+    <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817</link>
+    <description>I&#39;ve been having something of a rant based on my experiences of the last few days. 
+
+http://www.rachelandrew.co.uk/archives/2013/12/12/a-hostile-environment-payments-the-pci-dss-and-uk-digital-businesses/
+
+Also, an interesting article from Makeshift about trying to build a Gumroad competitor hosted in the UK: 
+
+http://writing.makeshift.io/pieces/things-we-learnt-trying-and-failing-to-build-an-e-commerce-platform-for-selling-digital-goods
+
+It&#39;s all probably a bit UK-specific, but it hits up against stuff that I keep pondering in terms of how we end up being exporters, and international businesses despite being tiny companies. Certainly in the UK no-one really is set up to deal with a business the size of ours that has so many customers outside of the UK. The banks, HMRC etc. assume that exporter == massive business, with the infrastructure to cope with that. So many of the annoying things I end up on the phone dealing with track back to that core issue.
+
+I guess related, but have any of you had experience of setting up bank accounts in countries that you are not domiciled? As we have this issue, and also travel a lot I could see a benefit in having our Euro account actually located in the Eurozone, and a US hosted USD account - but I can also imagine that making us look very interesting to the tax man as people do that sort of thing for tax avoidance purposes, rather than nonsense avoidance purposes.</description>
+    
+    <lastBuildDate>Fri, 10 Jan 2014 18:02:40 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah I already knew about that - I think I have a slide in my workshop that has a moan about it and we’ve already made sure our systems can cope with the change! I know so much boring stuff about VAT.</p>
+<p>Glad you are enjoying the book!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/11</link>
+        <pubDate>Fri, 10 Jan 2014 18:02:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[rwillmer]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey, Rachel, get ready for some more excitement on 01 Jan 2015 (12 months time…)</p>
+<p>The EU has decided that it’s all too simple, so they’re changing the rules on B2C sales for digital services (including ebooks).</p>
+<p>From 01 Jan 2015, for sales in this B2C category to customers in the EU, you will need to charge them the VAT rate applicable in <em>their</em> country, not yours. And then submit a VAT return with a breakdown by country.</p>
+<p>Rachel</p>
+<p>P.S. Thoroughly enjoying the Side Project book!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/10</link>
+        <pubDate>Fri, 10 Jan 2014 15:25:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>I am based in Canada but do most of my business with US based companies. On the banking side I have setup a US fund account with my Canadian bank and then I have any US companies either wire into that account or send cheques I can deposit and then convert to Canadian currency as needed (always fun trying to win with exchange rates). I am also using Stripe for my SAAS (<a href="http://pageproofer.com" rel="nofollow noopener">pageproofer.com</a>) and have it setup for both Canadian and US customers. Stripe allows you to use different accounts for different currencies which makes it super convenient. For the article you posted it looks like Stripe wasn’t an option, which is unfortunate.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/9</link>
+        <pubDate>Thu, 09 Jan 2014 03:36:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I avoid many of these headaches by using a third-party payment processor. (FastSpring, in my case). Yes, they take a cut of every sale. No, I don’t have to worry about collecting and paying VAT to 28 different EU countries.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/8</link>
+        <pubDate>Sun, 15 Dec 2013 00:33:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[jimm]]></dc:creator>
+        <description><![CDATA[
+            <p>Hmmm. Business opportunity (for masochists)?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/7</link>
+        <pubDate>Fri, 13 Dec 2013 19:59:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah it’s really the worst part. There should be some kind of threshold where if you’re under X employee’s or revenue you don’t have to do all this crap. Imagine how much more more taxes we could generate by selling more if we weren’t burdened with all this paperwork.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/6</link>
+        <pubDate>Fri, 13 Dec 2013 17:15:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>We have the EU VAT Report. If I sell to someone in an EU country other than the UK and they have a valid VAT number I don’t have to charge them the VAT. However every 3 months I have to prepare a report including all of their VAT numbers and the amount of the purchase in GBP (despite the fact the transaction is in Euro) and submit it via an arcane system to Her Majesty’s Revenue and Customs.</p>
+<p>It is for this sort of excitement that I am in business.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/5</link>
+        <pubDate>Fri, 13 Dec 2013 16:45:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Semi-related right now I’m having to build a sales tax report so that we can more easily report the tax we collect for each US state we do business in. This is the most complicated thing I’ve ever had to build <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/4</link>
+        <pubDate>Fri, 13 Dec 2013 14:30:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, I’ve been paying $25 to Wells Fargo for years under some PCI something or other. I gave up forever ago trying to figure it all out. They seem happy taking $25 as some punishment and I’ve never had any other trouble once I agreed to the extortion.</p>
+<p>That was under Authorize, I still have that account open for now in case we need to refund anyone, but soon I’ll be closing it since we moved to stripe.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/3</link>
+        <pubDate>Fri, 13 Dec 2013 14:02:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[louis]]></dc:creator>
+        <description><![CDATA[
+            <p>Don’t get me started on this. We use Sagepay + Barclays Merchant Services and have the same issues. I’ve just started updating our SAQ today and I’m already sick of it… and I haven’t even got to the part of paying them for the privilege!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/2</link>
+        <pubDate>Fri, 13 Dec 2013 07:49:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+      <item>
+        <title>Payments, the PCI DSS and being teeny tiny international businesses</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been having something of a rant based on my experiences of the last few days.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.rachelandrew.co.uk/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://www.rachelandrew.co.uk/archives/2013/12/12/a-hostile-environment-payments-the-pci-dss-and-uk-digital-businesses/" target="_blank">The site of Rachel Andrew, writer, speaker and web developer</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/460;"><img src="http://rachelandrew.co.uk/images/fb_image.jpg" class="thumbnail" width="690" height="460"></div>
+
+<h3><a href="https://www.rachelandrew.co.uk/archives/2013/12/12/a-hostile-environment-payments-the-pci-dss-and-uk-digital-businesses/" target="_blank">A hostile environment: payments, the PCI DSS and UK digital businesses</a></h3>
+
+<p>I believe that the payments and PCI DSS compliance landscape in the UK is hostile to small digital businesses. I’d like to see more transparency from the companies and wonder if we can work together to encourage that?</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Also, an interesting article from Makeshift about trying to build a Gumroad competitor hosted in the UK:</p>
+<p><a href="http://writing.makeshift.io/pieces/things-we-learnt-trying-and-failing-to-build-an-e-commerce-platform-for-selling-digital-goods" class="onebox" target="_blank">http://writing.makeshift.io/pieces/things-we-learnt-trying-and-failing-to-build-an-e-commerce-platform-for-selling-digital-goods</a></p>
+<p>It’s all probably a bit UK-specific, but it hits up against stuff that I keep pondering in terms of how we end up being exporters, and international businesses despite being tiny companies. Certainly in the UK no-one really is set up to deal with a business the size of ours that has so many customers outside of the UK. The banks, HMRC etc. assume that exporter == massive business, with the infrastructure to cope with that. So many of the annoying things I end up on the phone dealing with track back to that core issue.</p>
+<p>I guess related, but have any of you had experience of setting up bank accounts in countries that you are not domiciled? As we have this issue, and also travel a lot I could see a benefit in having our Euro account actually located in the Eurozone, and a US hosted USD account - but I can also imagine that making us look very interesting to the tax man as people do that sort of thing for tax avoidance purposes, rather than nonsense avoidance purposes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817/1</link>
+        <pubDate>Fri, 13 Dec 2013 07:17:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-817-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/payments-the-pci-dss-and-being-teeny-tiny-international-businesses/817.rss">Payments, the PCI DSS and being teeny tiny international businesses</source>
+      </item>
+  </channel>
+</rss>

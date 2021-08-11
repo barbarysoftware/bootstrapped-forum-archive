@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Handling offline payments in Stripe</title>
+    <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781</link>
+    <description>Hey everyone,
+
+I use Stripe to handle all my credit card processing requirements however I need a way to handle payments from customers who can&#39;t use a credit card. After doing some digging around I think I have found a suitable work around:
+
+https://inside.recruiterbox.com/handling-offline-payments-with-stripe-816f58207a7a#.59q1swusv
+
+It&#39;s not something I would want to do frequently but for one off&#39;s it seems alright. 
+
+Does anyone have a better method for handling offline payments when Stripe is involved?</description>
+    
+    <lastBuildDate>Thu, 23 Nov 2017 04:17:35 +0000</lastBuildDate>
+    <category>Interesting Links</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p>What about a Borderless account? Gives you bank accounts in GBP, Euro, USD &amp; AUD. <a href="https://transferwise.com/gb/borderless" rel="nofollow noopener">https://transferwise.com/gb/borderless</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/10</link>
+        <pubDate>Thu, 23 Nov 2017 04:17:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[etd]]></dc:creator>
+        <description><![CDATA[
+            <p>Stripe are already accepting bank transfers as payments <a href="https://stripe.com/blog/accept-ach-payments" rel="nofollow noopener">in the US</a>, hopefully they’ll extend support to other countries at some point.</p>
+<p>In the UK you can use GoCardless maybe in Canada there is another provider?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/9</link>
+        <pubDate>Fri, 17 Feb 2017 09:29:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the suggestion but I need to handle non credit card transactions. Stripe has me covered for the cc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/8</link>
+        <pubDate>Thu, 16 Feb 2017 13:21:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>Hes not talking about taking cc over phone - its about getting payment via cheque / wire transfers etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/7</link>
+        <pubDate>Thu, 16 Feb 2017 09:28:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[julienma]]></dc:creator>
+        <description><![CDATA[
+            <p>Would Square be a solution? They have a really easy solution for offline payements, with a small card reader to plug on your phone: <a href="https://squareup.com/pos/payments" rel="nofollow noopener">https://squareup.com/pos/payments</a>.<br>
+Not linked to Striped, but you can reconsolidate money after.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/6</link>
+        <pubDate>Thu, 16 Feb 2017 03:21:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks. That was my thought process, it’s only a few requests right now so manual is fine.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/5</link>
+        <pubDate>Wed, 15 Feb 2017 00:34:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>If you’re selling to businesses offline payment is pretty important though there are well known examples that don’t provide it of course. We’ve built everything out custom since it was all done before Stripe <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> but this method above looks ok. Just setup a simple way to track those for now and you can always build something more complex later.</p>
+<p>For reference about 50% of HelpSpot customers pay by bank transfer for check.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/4</link>
+        <pubDate>Tue, 14 Feb 2017 21:35:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Not a significant number so my proposition has been they would need to select an annual plan to reduce the amount of manual work needed. Essentially it’s something I would only offer for large corporate accounts.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/3</link>
+        <pubDate>Tue, 14 Feb 2017 12:34:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4781">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dgrigg/40/75_1.png" class="avatar"> dgrigg:</div>
+<blockquote>
+<p>I need a way to handle payments from customers who can’t use a credit card</p>
+</blockquote>
+</aside>
+<p>Do you have a significant number of would-be customers wanting offline payments? If not, I’d highly recommend not doing it.</p>
+<p>Adding offline payments might add a couple of sales per month while significantly complicating your payment processing. Meanwhile you are using up the time you could have spent doing much higher ROI improvements (like adding PayPal support, if you haven’t added it yet).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/2</link>
+        <pubDate>Tue, 14 Feb 2017 08:27:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+      <item>
+        <title>Handling offline payments in Stripe</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey everyone,</p>
+<p>I use Stripe to handle all my credit card processing requirements however I need a way to handle payments from customers who can’t use a credit card. After doing some digging around I think I have found a suitable work around:</p>
+<p><a href="https://inside.recruiterbox.com/handling-offline-payments-with-stripe-816f58207a7a#.59q1swusv" class="onebox" target="_blank" rel="nofollow noopener">https://inside.recruiterbox.com/handling-offline-payments-with-stripe-816f58207a7a#.59q1swusv</a></p>
+<p>It’s not something I would want to do frequently but for one off’s it seems alright.</p>
+<p>Does anyone have a better method for handling offline payments when Stripe is involved?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781/1</link>
+        <pubDate>Mon, 13 Feb 2017 17:42:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4781-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/handling-offline-payments-in-stripe/4781.rss">Handling offline payments in Stripe</source>
+      </item>
+  </channel>
+</rss>

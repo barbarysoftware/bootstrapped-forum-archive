@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Operations nerds - anyone interested in talking about infrastructure? - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Our product isn’t SaaS, however we have a fair bit of infrastructure supporting Perch. For example we serve hosted demos, have the site and associated payment process/license validation, host our own support and so on. I’m currently in the middle of a process of moving everything off a scrappy collection of virtual servers, all managed differently, to a new infrastructure that I am keeping consistent using Puppet.  We’re also doing things like splitting the marketing website from all of the busi...">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="320.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Operations nerds - anyone interested in talking about infrastructure?&#39;" href="320.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320" />
+<meta property="og:title" content="Operations nerds - anyone interested in talking about infrastructure?" />
+<meta name="twitter:title" content="Operations nerds - anyone interested in talking about infrastructure?" />
+<meta property="og:description" content="Our product isn’t SaaS, however we have a fair bit of infrastructure supporting Perch. For example we serve hosted demos, have the site and associated payment process/license validation, host our own support and so on. I’m currently in the middle of a process of moving everything off a scrappy collection of virtual servers, all managed differently, to a new infrastructure that I am keeping consistent using Puppet.  We’re also doing things like splitting the marketing website from all of the busi..." />
+<meta name="twitter:description" content="Our product isn’t SaaS, however we have a fair bit of infrastructure supporting Perch. For example we serve hosted demos, have the site and associated payment process/license validation, host our own support and so on. I’m currently in the middle of a process of moving everything off a scrappy collection of virtual servers, all managed differently, to a new infrastructure that I am keeping consistent using Puppet.  We’re also doing things like splitting the marketing website from all of the busi..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="4 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="8 ❤" />
+<meta property="article:published_time" content="2013-08-08T06:44:19+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="320.html">Operations nerds - anyone interested in talking about infrastructure?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rachelandrew'><span itemprop='name'>rachelandrew</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-08T06:44:19Z' class='post-time'>
+                August 8, 2013,  6:44am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-08T06:44:19Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Our product isn’t SaaS, however we have a fair bit of infrastructure supporting Perch. For example we serve hosted demos, have the site and associated payment process/license validation, host our own support and so on. I’m currently in the middle of a process of moving everything off a scrappy collection of virtual servers, all managed differently, to a new infrastructure that I am keeping consistent using Puppet.</p>
+<p>We’re also doing things like splitting the marketing website from all of the business functions, it’s currently essentially what we launched with over four years ago which makes it really difficult to do stuff like A/B Testing of landing page conversions and so on as touching the site is a bit scary as we don’t have a sane deployment method.</p>
+<p>I’m something of an old school sysadmin, so I’ve had to learn lots of new tools recently as part of trying to sort our systems out. I’d be happy to share what I’ve learned and would love to know what other people are doing, especially in terms of automation, deployment, monitoring and security.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/imsickofmaps'><span itemprop='name'>imsickofmaps</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-08T07:10:02Z' class='post-time'>
+                August 8, 2013,  7:10am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-08T07:10:02Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>o/</p>
+<p>We use Chef not puppet but as far as I’m concerned the key thing is infrastructure-as-code not what the code is.</p>
+<p>I don’t really use Chef for even half its power at all but its place in our set of tools has been awesome.</p>
+<p>We use Vagrant to have the same OS as our servers at Hetzner, which runs the system’s Chef recipes every time we boot our laptops. Then I use Fabric (a python-based tool) to run tasks against the servers from inside the VM like <code>staging bootstrap</code> (rsync’s recipes and makes sure the environment is up to date) then <code>staging deploy</code> (which rsync’s the code, updates configs and restarts services). Using rsync means I don’t end up with stuff on the servers that shouldn’t be there (the biggest problem with people using git for deployment).</p>
+<p>From a business sense I put this in the same category as test-driven-development. It’s an overhead initially to get it set up, but once its done its a massive liberator. I can essentially think of something, build it and deploy it against the real data on our site in minutes not hours. If I screw up, I just revert the commit and redeploy.</p>
+<p>Also, I have 8 low powered vm’s on Hetzner (we use Riak as our datastore) and it costs me approx 100 Euro’s in total. When servers go “funny” (technical term for “I rebooted and it didn’t solve the problem”), I just remove it from the cluster and blow it up and create another one. 15 mins instead of 30 minutes of trying to even understand the root cause before you can even work out if its solvable.</p>
+<p>The other thing I’d recommend is <a href="https://pushover.net/">Pushover</a>. It lets you wire up a whole bunch of events in your app to trigger push notifications on your phone. For example I have notifications for new orders, deploys finishing, net new support tickets because all those things are important to me.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rachelandrew'><span itemprop='name'>rachelandrew</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-08T07:24:15Z' class='post-time'>
+                August 8, 2013,  7:24am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-08T07:24:15Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I looked at both Chef and Puppet and Puppet just seemed to sit better with my brain! However infrastructure as code has been a huge revelation to me. I’m using Vagrant as well - as an aside, for anyone who wants a simple intro to Vagrant and also uses PHP, have a look at <a href="https://puphpet.com/">PuPHPet</a>.</p>
+<p>I also think this stuff can be a huge liberator, and really fits well with most of our situations as tiny teams trying to do it all. There is obviously an overhead at first, but knowing your infrastructure is backed up in Git, as code and that you can recreate any part of it on a new box easily, is very nice.</p>
+<p>Thanks for the link to Pushover, haven’t come across that and it looks useful.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cemhurturk.html'><span itemprop='name'>cemhurturk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2013-08-08T09:02:34Z'>
+              <time itemprop='dateModified' datetime='2013-08-09T08:48:19Z' class='post-time'>
+                August 9, 2013,  8:48am
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>At <a href="http://sendloop.com/" rel="nofollow noopener">Sendloop</a>, we use Virtualbox instances which is exactly the same installation of our production servers. However, I guess it’s time to switch to Vagrant sometime in the near future.</p>
+<p>In addition, we use Git mainly for deployment with complex hook scripts. For database, we use MySQL database servers. Because Sendloop has a huge load (appr. 10 million emails are sent every day through Sendloop servers which means 100+ million transaction load on MySQL servers), we split users across multiple MySQL servers. I know this is a very old technique but it works <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/noel.html'><span itemprop='name'>noel</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-08T12:59:35Z' class='post-time'>
+                August 8, 2013, 12:59pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-08T12:59:35Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We have an almost identical setup to <a class="mention" href="https://discuss.bootstrapped.fm/u/imsickofmaps">@imsickofmaps</a>: Chef, Vagrant, and rsync. I don’t love Chef, but it gets the job done. My main Chef tip is to just run Chef Solo. Chef Solo is the simple system – you upload the scripts to the server, run them, and away you go. The creators of Chef are trying to sell their mindbogglingly complicated hosted solution, so the docs hardly mention Chef Solo.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/radiac.html'><span itemprop='name'>radiac</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-08T13:44:11Z' class='post-time'>
+                August 8, 2013,  1:44pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-08T13:44:11Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve been looking at moving from custom scripts to puppet or chef; I’ve only skim-read the docs so far, but the recommended pull model of agent/master (or chef’s server/nodes) strikes me as overcomplicated, and a bit less secure and reliable than pushing updates. I’m thinking of doing something similar to <a class="mention" href="../../u/noel.html">@noel</a>, pushing and applying puppet manifests using fabric - am I just being paranoid, or missing something?</p>
+<p>Out of interest, what do people use for monitoring?</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/casey.html'><span itemprop='name'>casey</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2013-08-08T14:16:27Z'>
+              <time itemprop='dateModified' datetime='2013-08-08T14:25:43Z' class='post-time'>
+                August 8, 2013,  2:25pm
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m in the same boat as radiac, I think. We only have 10ish physical servers and I get by with my own (really basic) scripts. I only set up 1 or 2 new hosts a year so I’ve been putting off improving our process.</p>
+<p>Lately I’ve been looking through the Ansible docs and it seems nice.</p>
+<p>The usual nagios for monitoring.  I also really like Munin for graphing trends. It does a lot out of the box with a very easy setup and you can whip up a plugin to graph something new in a few minutes. For performance monitoring, New Relic is awesome for Rails and well worth the $.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bradleyboy.html'><span itemprop='name'>bradleyboy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2013-08-08T15:43:49Z'>
+              <time itemprop='dateModified' datetime='2013-08-08T15:44:52Z' class='post-time'>
+                August 8, 2013,  3:44pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Like many of the replies above, we spent years living on a cobbled together “script”, which was a text file full of bash commands to run when adding a new server to our cluster. It took time and was not the sort of thing you wanted to have to do under pressure. Chef always melted my brain when trying to learn it, but I finally forced myself a few years ago and am happy I did. We use Joyent to manage our 5 server cluster for <a href="http://SlideShowPro.com" rel="nofollow noopener">SlideShowPro.com</a>, and adding a new box is a single command from the terminal thanks to Chef + Joyent’s CLI tools. And all those tools are wrapped in our own repo, so anyone can do this once they’ve git cloned.</p>
+<p>Working with a small team for all these years, automation has become an addiction of mine. We’re now almost fully automated in our development environment and production release workflow for Koken. If you are setting up a new development machine, you check out the repo and then run a single command to install all the dev tools and local server configurations to get you up and running. Need to push a new release? Again, that is a single terminal command that packages the release, pushes it to the server, updates release notes, etc. Like I said, I’m addicted <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"> It’s an investment of time upfront, but the peace of mind that comes later is well worth it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rachelandrew'><span itemprop='name'>rachelandrew</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-09T05:44:54Z' class='post-time'>
+                August 9, 2013,  5:44am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-09T05:44:54Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A lot of people use Puppet masterless and sync manifests via Git etc. I’ve gone for a standard Puppetmaster setup, I intended to run masterless but the more I read the more sense it made to run a puppetmaster, and it is less complicated than it looks once you get it going.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cemhurturk.html'><span itemprop='name'>cemhurturk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2013-08-09T06:51:46Z'>
+              <time itemprop='dateModified' datetime='2013-08-09T06:53:09Z' class='post-time'>
+                August 9, 2013,  6:53am
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>In addition to my original post, we use Pingdom for server uptime monitoring, <a href="http://Cockpito.com" rel="nofollow noopener">Cockpito.com</a> for in-app metric monitoring, Sendloop Engage feature for user tracking and event-driven messaging.</p>
+<p>Deployment is not automated, we use Git for deployment mainly but it’s supported with some custom scripts.</p>
+<p>We also use Bugsnag for fatal error detection and notification.</p>
+<p>As a side note, I will definitely take a look at Puppet for automation.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/imsickofmaps'><span itemprop='name'>imsickofmaps</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-09T08:47:20Z' class='post-time'>
+                August 9, 2013,  8:47am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-09T08:47:20Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="6" data-topic="320">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/radiac/40/2472_1.png" class="avatar"> radiac:</div>
+<blockquote>
+<p>Out of interest, what do people use for monitoring?</p>
+</blockquote>
+</aside>
+<p>We use NewRelic’s free monitoring. If you can put up with their sales people emailing you to upgrade all the time it’s great. Funny thing is, I intend to use NewRelic once I can justify the expense but the more they email the more I just want to abuse the free-tier.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cemhurturk.html'><span itemprop='name'>cemhurturk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-09T08:53:41Z' class='post-time'>
+                August 9, 2013,  8:53am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-09T08:53:41Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>You may also try <a href="http://copperegg.com/" rel="nofollow noopener">CopperEgg</a> which is similar to NewRelic but cheaper.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pellisuk.html'><span itemprop='name'>pellisuk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-09T08:56:02Z' class='post-time'>
+                August 9, 2013,  8:56am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-09T08:56:02Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>In my day job (DevOps) we are using Chef &amp; Vagrant to manage our AWS servers. We host our own chef server &amp; repo. It’s doing a good job reducing the amount of repetitive tasks we have. In my bootstrapping I’m still using hosted web space but I’ve found FTPloy to be very useful. Anything that is pushed to my Bitbucket master branch is deployed to the server, staging for test can be done by pushing to a different branch.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/wamberg.html'><span itemprop='name'>wamberg</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-09T16:43:03Z' class='post-time'>
+                August 9, 2013,  4:43pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-09T16:43:03Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’d like to throw <a href="http://saltstack.com/community.html" rel="nofollow noopener">SaltStack</a> into the mix for infrastructure management options. It seems like a lot of people have trouble getting the hang of Chef; I’m one of those people. I tried Salt after yet another Chef recipe upgrade broke my will. Here’s why I’m sticking with Salt.</p>
+<p>Salt just works better for me. It might have something to do with my Python background. While Salt is written in Python, I haven’t found myself writing any Python to set up a machine. The <a href="http://docs.saltstack.com/topics/tutorials/starting_states.html" rel="nofollow noopener">Salt States</a> are written in YAML. YAML has its own problems but I’ll take it over Ruby any day. For example, it has been immensely more simple for me to set up nginx and uwsgi servers in Salt with YAML and Jinja templates. I’ve also had more success doing git-based deployments.</p>
+<p>Beyond States (Recipes in Chef), I found the client/server setup so much easier with Salt. My Chef server always had memory problems. I’m sure this has more to do with my administration ability than Chef but I couldn’t keep the Chef server running without a beam process grabbing all the memory and taking down my infrastructure-house of cards. Even when my Chef server was up and running, I felt like I was tied to Chef’s web interface to management my nodes. I don’t feel the same way with Salt. For example, in Salt, <a href="http://docs.saltstack.com/topics/configuration.html#key-management" rel="nofollow noopener">managing minion access to the server is a few terminal commands</a>.</p>
+<p>One issue is that the Salt States I write will only work on Ubuntu Linux machines. Maybe there are guidelines to writing Salt States that are more portable. One of the benefits of Chef (and Puppet, I don’t have any personal experience with it though) is that your recipe should work on a variety of Linux distros. This makes my States less likely to be useful for the devops community if I were to share them. My experience with Chef recipes though is that they don’t always work in every distro anyway. I seemed to have a penchant for finding a Chef recipe that was written by a RedHat sysadmin and never tested in Ubuntu.</p>
+<p>If you’re having trouble with your current infrastructure manager, give Salt a shot.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/dennis'><span itemprop='name'>dennis</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-10T17:28:59Z' class='post-time'>
+                August 10, 2013,  5:28pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-10T17:28:59Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We use dedicated servers/racks hosted by Hetzner for our TestRail Hosted infrastructure and our websites. We prefer dedicated machines as they offer much better performance compared to cloud offerings like AWS in our experience. The hardware side is completely managed by Hetzner and they are flexible enough to configure private switches/networks, have API-switchable failover IPs, can install BBUs etc. We currently manage our ~20 servers with a homegrown set of shell scripts + Subversion for configuration management, which has been working well for us.</p>
+<p>That said, provisioning new machines is more work than it should be and we plan to switch to one of the available configuration management tools. We briefly looked into using Chef, Puppet or Ansible, and having tested Ansible as part of some smaller projects with Vagrant, I think we will go with this tool. I especially like the fact that Ansible doesn’t require you to install an agent on the managed servers and that it uses simple SSH connections. Does anyone have experience using Ansible for their production systems here?</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/smtm.html'><span itemprop='name'>smtm</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-29T20:48:20Z' class='post-time'>
+                November 29, 2013,  8:48pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-29T20:48:20Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>What do you use to manage the traffic distribution to the cluster at Hetzner? A separate machine with a loadbalancer or some other setup?</p>
+<p>I just moved into Hetzner from shared hosting with my hotel management rails app. Initially I built the boxes with vagrant, puppet on my local machine and deployed that to Hetzner. Now I am going with vhosts, but they don’t support a failover ips for those at Hetzner. So I am looking for alternatives</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/starr'><span itemprop='name'>starr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-30T04:24:54Z' class='post-time'>
+                November 30, 2013,  4:24am
+              </time>
+              <meta itemprop='dateModified' content='2013-11-30T04:24:54Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If you happen to be using ruby &amp; rails you might be interested in my service <a href="http://honeybadger.io" rel="nofollow noopener">honeybadger.io</a>. We’re working to give devs a complete monitoring solution that doesn’t cost an arm and a leg.</p>
+<p>Sorry for the blatant plug. I figure I’m allowed one every 20 posts.  <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/starr'><span itemprop='name'>starr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-30T04:27:55Z' class='post-time'>
+                November 30, 2013,  4:27am
+              </time>
+              <meta itemprop='dateModified' content='2013-11-30T04:27:55Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Our ops guy recently switched from chef to ansible and is swearing by it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/dennis'><span itemprop='name'>dennis</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-12T16:03:35Z' class='post-time'>
+                December 12, 2013,  4:03pm
+              </time>
+              <meta itemprop='dateModified' content='2013-12-12T16:03:35Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We use dedicated pairs of routers with HAProxy + Pacemaker/Corosync for failover. You can use Hetzner’s failover nets to automatically reroute traffic when you switch the master via Corosync.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/dennis'><span itemprop='name'>dennis</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="320.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-12T16:05:02Z' class='post-time'>
+                December 12, 2013,  4:05pm
+              </time>
+              <meta itemprop='dateModified' content='2013-12-12T16:05:02Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We also migrated our homegrown solution to Ansible recently and really like it. The nice thing about Ansible is that it doesn’t require any agent/service installations and works just via SSH. We also use it to provision our Vagrant dev machines.</p>
+        </div>
+
+        <meta itemprop='headline' content='Operations nerds - anyone interested in talking about infrastructure?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

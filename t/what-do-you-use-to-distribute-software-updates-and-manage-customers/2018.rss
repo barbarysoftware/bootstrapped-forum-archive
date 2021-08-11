@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What do you use to distribute software updates and manage customers?</title>
+    <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018</link>
+    <description>Hey everyone, 
+
+First, I want to say that I love this place. I find a lot of useful information around the forum and I try helping others, whenever I can. 
+
+On to the problem: 
+
+We&#39;re a small company that creates [OpenCart](http://opencart.com) plugins. 
+
+There is an OpenCart marketplace, much like the Wordpress plugin directory, but with both paid and free plugins. We&#39;re selling our plugins there, but OpenCart are supporting the &quot;lifetime license&quot; policy. Purchase something on the OpenCart marketplace and you can basically enslave the developers—support and updates for all eternity. If they provide it, that is. After 3 years on the market and numerous attempts to put some limits on this, we decided that we&#39;re going on our own with the premium plugins. 
+
+So, now we need something like a CRM. We figured it has to allow us do the following:
+
+* process payments, preferably through PayPal
+* set up subscriptions as well as one-time purchases
+* set up discounts on both one-time purchases and subscriptions
+* collect and export customer emails
+* send software updates to the customers or, in the best case scenario, allow us to host the updates in a kind of membership area which customers can access at any time
+* limit the time that a customer&#39;s account is allowed to receive updates
+
+I already tried bootstrapping this with Wordpress plugins, but it doesn&#39;t seem to turn out as we want it.
+
+We want a system that limits support and updates to 1 year after purchase. After that period, customers will be allowed to subscribe to future updates, which will also include maintenance.
+
+I hope this makes any sense. 
+
+How do you guys handle this? I&#39;d appreciate any input, because, currently, I don&#39;t even know what I&#39;m looking for. A WP shopping cart? A CRM?</description>
+    
+    <lastBuildDate>Thu, 11 Sep 2014 16:39:28 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What do you use to distribute software updates and manage customers?</title>
+        <dc:creator><![CDATA[sansmagicc]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, Gumroad is nice, but we’ve reached the place where we want to offer discounts for the first year of the subscription, ability for people to switch from a pre-paid plan to a subscription and so on. And Gumroad can’t do these things.</p>
+<p>Besides, I suspect that their “Give me your credit card number” overlay is scaring people away. We’ve been getting the “What is Gumroad?” question for quite a while. This is still a hypothesis. It will become clear whether this was the problem when we switch to something else.</p>
+<p>I’m currently trying out EDD. It seems quite versatile and I think it can be the solution for future projects, too.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/7</link>
+        <pubDate>Thu, 11 Sep 2014 16:39:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2018-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018.rss">What do you use to distribute software updates and manage customers?</source>
+      </item>
+      <item>
+        <title>What do you use to distribute software updates and manage customers?</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m glad you mentioned that about Gumroad – I was about to suggest it.  It’s a GREAT way to start simple with digital downloads, but it sounds like you’ve outgrown it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/6</link>
+        <pubDate>Wed, 10 Sep 2014 13:03:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2018-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018.rss">What do you use to distribute software updates and manage customers?</source>
+      </item>
+      <item>
+        <title>What do you use to distribute software updates and manage customers?</title>
+        <dc:creator><![CDATA[sansmagicc]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/coreysnipes">@coreysnipes</a> Right, it sounds like that to me. Custom building will defintely be our last option, if all else fails. We try to spend development time on the products, rather than custom building something to help sell the products. On the other hand, I’m quite certain we’re not the only ones with this kind of problem, so if we end up building something like that, it might become the next product. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Thank you guys for sharing. I was looking at Easy Digital Downloads a while ago, but discarded it. I don’t remember what was the reason back then, but I will give it a try again.</p>
+<blockquote>
+<p>It’s targeted at WP developers though. Don’t know if you can adapt it easily for OpenCart.</p>
+</blockquote>
+<p>The website that we want to use to sell the plugins is built with WP. So, basically, I think we’re looking for something to allow us to sell products via WP or for another third-party service to host the download and process payments like <a href="http://gumroad.com" rel="nofollow noopener">Gumroad</a>. We’re currently using Gumroad, but aren’t happy with it. It isn’t versatile enough.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/5</link>
+        <pubDate>Mon, 08 Sep 2014 11:36:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2018-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018.rss">What do you use to distribute software updates and manage customers?</source>
+      </item>
+      <item>
+        <title>What do you use to distribute software updates and manage customers?</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 on taking a look at EDD. With some add-ons, it might work really well for this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/4</link>
+        <pubDate>Sat, 06 Sep 2014 05:51:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2018-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018.rss">What do you use to distribute software updates and manage customers?</source>
+      </item>
+      <item>
+        <title>What do you use to distribute software updates and manage customers?</title>
+        <dc:creator><![CDATA[daverodenbaugh]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m using <a href="http://easydigitaldownloads.com" rel="nofollow noopener">Easy Digital Downloads</a> and their Software Licensing add-on to handle this for my WordPress premium plugins.  It works great.  Does everything you want above.</p>
+<p>It’s targeted at WP developers though.  Don’t know if you can adapt it easily for OpenCart.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/3</link>
+        <pubDate>Fri, 05 Sep 2014 16:14:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2018-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018.rss">What do you use to distribute software updates and manage customers?</source>
+      </item>
+      <item>
+        <title>What do you use to distribute software updates and manage customers?</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>To me, this sounds like custom billing &amp; fulfillment stuff, built into the main website. (Using addons plus custom coding to tune it just-so, if the main site is WP or Drupal or some CMS like that.)  I’m not aware of anything obvious you’re missing, at least from the point of view of a web development shop.</p>
+<p>Downloadables aren’t really my area though – I’m interested to hear what others are using.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/2</link>
+        <pubDate>Fri, 05 Sep 2014 15:52:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2018-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018.rss">What do you use to distribute software updates and manage customers?</source>
+      </item>
+      <item>
+        <title>What do you use to distribute software updates and manage customers?</title>
+        <dc:creator><![CDATA[sansmagicc]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey everyone,</p>
+<p>First, I want to say that I love this place. I find a lot of useful information around the forum and I try helping others, whenever I can.</p>
+<p>On to the problem:</p>
+<p>We’re a small company that creates <a href="http://opencart.com" rel="nofollow noopener">OpenCart</a> plugins.</p>
+<p>There is an OpenCart marketplace, much like the Wordpress plugin directory, but with both paid and free plugins. We’re selling our plugins there, but OpenCart are supporting the “lifetime license” policy. Purchase something on the OpenCart marketplace and you can basically enslave the developers—support and updates for all eternity. If they provide it, that is. After 3 years on the market and numerous attempts to put some limits on this, we decided that we’re going on our own with the premium plugins.</p>
+<p>So, now we need something like a CRM. We figured it has to allow us do the following:</p>
+<ul>
+<li>process payments, preferably through PayPal</li>
+<li>set up subscriptions as well as one-time purchases</li>
+<li>set up discounts on both one-time purchases and subscriptions</li>
+<li>collect and export customer emails</li>
+<li>send software updates to the customers or, in the best case scenario, allow us to host the updates in a kind of membership area which customers can access at any time</li>
+<li>limit the time that a customer’s account is allowed to receive updates</li>
+</ul>
+<p>I already tried bootstrapping this with Wordpress plugins, but it doesn’t seem to turn out as we want it.</p>
+<p>We want a system that limits support and updates to 1 year after purchase. After that period, customers will be allowed to subscribe to future updates, which will also include maintenance.</p>
+<p>I hope this makes any sense.</p>
+<p>How do you guys handle this? I’d appreciate any input, because, currently, I don’t even know what I’m looking for. A WP shopping cart? A CRM?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018/1</link>
+        <pubDate>Fri, 05 Sep 2014 14:53:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2018-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-distribute-software-updates-and-manage-customers/2018.rss">What do you use to distribute software updates and manage customers?</source>
+      </item>
+  </channel>
+</rss>

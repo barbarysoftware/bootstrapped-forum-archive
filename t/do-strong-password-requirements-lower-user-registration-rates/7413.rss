@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Do strong password requirements lower user registration rates?</title>
+    <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413</link>
+    <description>Hi everybody,
+
+It is easy to understant that having strong passwords is always better. Yet, do strong password requirements lower the conversion rate of products that need registration? 
+
+While googling I could not find data supported evidence, although the discussion about this being counterproductive [is not new](https://security.stackexchange.com/questions/32222/are-password-complexity-rules-counterproductive).
+
+It would be great if you share your own experiences.
+
+My name is James and I&#39;m from Barcelona. I&#39;m working on a project. I hope to present it here soon. So far, bootstrapped has helped me on several issues already. I like that bootstrapped is an enjoyable to read solution-oriented community.</description>
+    
+    <lastBuildDate>Fri, 26 Feb 2021 15:07:19 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/suther">@suther</a></p>
+<p>Don’t <em>only</em> use exclusion lists. Use them in addition to:</p>
+<ol>
+<li>Min length checking.</li>
+<li>Max length checking (again, verify the hashing algorithm you’re using – do the legwork).</li>
+<li>Brute force checking.</li>
+<li>Checking against “common names” (i.e. your company name, product name, the customer’s name / email, etc.).</li>
+</ol>
+<p>Long story short, <a href="https://pages.nist.gov/800-63-3/sp800-63b.html">follow the NIST advice</a>. And absolutely <strong>do not</strong> do pseudo-science “complexity checking”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/12</link>
+        <pubDate>Thu, 25 Feb 2021 22:16:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>I think password length and complexity is overrated for most logins.  Just block the account after 3 failed login attempts for 5 minutes, after 10 for 50 minutes, …<br>
+Then you can’t brute force the passwords.<br>
+(And make sure you use a good hash to store the pw hash on disk/db)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/11</link>
+        <pubDate>Thu, 25 Feb 2021 21:55:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[suther]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice, but isn’t it to weak to only use those lists?</p>
+<p>For exame: If I use a simple password like “one2three4five6seven” it’s not at the list, but easy to guess by brute force.</p>
+<p>How would you prevent this?<br>
+Maybe the solution is doing both… set requirement for an password scheme, AND check against those lists?!?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/10</link>
+        <pubDate>Thu, 25 Feb 2021 21:39:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-username="jwr" data-post="5" data-topic="7413">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jwr/40/4806_2.png" class="avatar"> jwr:</div>
+<blockquote>
+<blockquote>
+<p>earance on a blacklist of compromised values, the subscriber SHALL be required to choose a different memorized secret. No other complexity requirements for memorized secrets SHOULD be imposed. A rationale for this is presented in Appendix A Strength of Memorized Secrets.</p>
+</blockquote>
+<p>In other words, NIST</p>
+</blockquote>
+</aside>
+<p>Yes, a 10 char limit is dumb. There’s a ton of cargo-cult behavior in password systems. The NIST reference is a good set of guideline (though they have some backwards advice too – in particular recommending SMS as a viable 2FA source – <strong>it’s not</strong>).</p>
+<p>That being said, this…</p>
+<blockquote>
+<p>Whether you transmit and compute the hash of 10 characters or 1024 characters makes no discernible difference whatsoever!</p>
+</blockquote>
+<p>…is  incorrect. It depends on the hashing algorithm you use. So, yes, there <em>should</em> be a password limit. Not 10 chars (again, just dumb), but if you’re using bcrypt as the hashing algorithm, then you should limit passwords to 72 bytes (not <em>characters</em>, but <em>bytes</em>).</p>
+<p>See here for the discussion related to bcrypt:</p>
+<aside class="onebox stackexchange">
+  <header class="source">
+      <a href="https://security.stackexchange.com/questions/39849/does-bcrypt-have-a-maximum-password-length/184090#184090" target="_blank" rel="noopener">security.stackexchange.com</a>
+  </header>
+  <article class="onebox-body">
+      <a href="https://security.stackexchange.com/users/3874/ian-boyd" target="_blank" rel="noopener">
+    <img alt="Ian Boyd" src="https://www.gravatar.com/avatar/4b534325156758d6592fb624d7b60e22?s=128&amp;d=identicon&amp;r=PG" class="thumbnail onebox-avatar" width="128" height="128">
+  </a>
+<h4>
+  <a href="https://security.stackexchange.com/questions/39849/does-bcrypt-have-a-maximum-password-length/184090#184090" target="_blank" rel="noopener">Does bcrypt have a maximum password length?</a>
+</h4>
+
+<div class="tags">
+  <strong>passwords, bcrypt, python</strong>
+</div>
+
+<div class="date">
+  
+  answered by
+  <a href="https://security.stackexchange.com/users/3874/ian-boyd" target="_blank" rel="noopener">
+    Ian Boyd
+  </a>
+  on <a href="https://security.stackexchange.com/questions/39849/does-bcrypt-have-a-maximum-password-length/184090#184090" target="_blank" rel="noopener">06:07PM - 19 Apr 18 UTC</a>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>If you’re using another hashing algorithm, research the details.</p>
+<p>Also, to expand on your answer earlier (<a href="https://pages.nist.gov/800-63-3/sp800-63b.html">the NIST recommendations</a>), <a href="https://haveibeenpwned.com/Passwords" class="inline-onebox">Have I Been Pwned: Pwned Passwords</a> is a good resource for a set of “[… exclusion] list of compromised values […]”. You can host it locally or use the API to access it remotely.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/9</link>
+        <pubDate>Mon, 15 Feb 2021 18:24:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="Casey7" data-post="7" data-topic="7413">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://avatars.discourse-cdn.com/v4/letter/c/48db29/40.png" class="avatar"> Casey7:</div>
+<blockquote>
+<p>web apps that don’t allow passwords more than 10 characters</p>
+</blockquote>
+</aside>
+<p>Yes, that’s completely idiotic. Especially since the password length doesn’t matter: any barely competent software will hash it to a fixed-length hash that will get stored. Whether you transmit and compute the hash of 10 characters or 1024 characters makes no discernible difference whatsoever!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/8</link>
+        <pubDate>Fri, 12 Feb 2021 09:15:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[Casey7]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d like to use this as a chance to highlight aps that limit the length of passwords to a really small number of characters.  I’ve run into a few web apps that don’t allow passwords more than 10 characters.  All passwords should allow a minimum of the length password managers generate by default (16 or more characters).  Preferably, many more.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/7</link>
+        <pubDate>Thu, 11 Feb 2021 03:53:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[james_9090]]></dc:creator>
+        <description><![CDATA[
+            <p>Wonderful answer. This is just what is was looking for: common sense, practical, and secure. And tested!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/6</link>
+        <pubDate>Sat, 06 Feb 2021 19:25:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve recently had to rework my password system, and while trying to fend off various bizarre requirements from clients (corporate/medical markets) I found the NIST Digital Identity Guidelines (specifically, NIST SP 800-63B). These are very reasonable and well researched, and while NIST is not a worldwide standard, it’s at least something to reference, even if you are not in the US.</p>
+<blockquote>
+<p>5.1.1.1  Memorized Secret Authenticators<br>
+Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber. Memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric. If the CSP or verifier disallows a chosen memorized secret based on its appearance on a blacklist of compromised values, the subscriber SHALL be required to choose a different memorized secret. No other complexity requirements for memorized secrets SHOULD be imposed. A rationale for this is presented in Appendix A Strength of Memorized Secrets.</p>
+</blockquote>
+<p>In other words, NIST suggests using a blacklist of commonly used and compromised passwords, but strongly discourages using complexity rules.</p>
+<p>Search for NIST SP 800-63B to find the documents.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/5</link>
+        <pubDate>Mon, 01 Feb 2021 14:04:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="james_9090" data-post="1" data-topic="7413">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/james_9090/40/5457_2.png" class="avatar"> james_9090:</div>
+<blockquote>
+<p>It is easy to understant that having strong passwords is always better. Yet, do strong password requirements lower the conversion rate of products that need registration?</p>
+</blockquote>
+</aside>
+<p>Depends on why you introduce the password requirement. Is it for security? Or to prevent non tech-savvy people from using your services? Lowering conversion rates can be helpful sometimes if you don’t want helpless customers, who will abuse your support.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/4</link>
+        <pubDate>Mon, 25 Jan 2021 10:23:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[o7n]]></dc:creator>
+        <description><![CDATA[
+            <p>When I am forced to use a password that I cannot remember, it will prevent me from coming back sometimes. I try to log in from my phone while I stored the password in the browser (or nowhere) and when I cannot log in, I sometimes give up. Of course this depends on the kind of service a lot, but if you’re a content provider with a freemium offering, you might be missing out on me getting a paid subscription after a few months.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/3</link>
+        <pubDate>Thu, 21 Jan 2021 08:15:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[pier]]></dc:creator>
+        <description><![CDATA[
+            <p>Hola James! (I’m from Mallorca)</p>
+<p>The StackExchange link discusses password complexity rules but I don’t think that entirely applies to password length.</p>
+<p>As a user I get annoyed when registration forms ask me anything other than having a minimum length. Eg: don’t use spaces, don’t use more than 12 characters, don’t use that character, etc.</p>
+<p>Personally, I would find it hard to believe that simple password length would lower registration rates, although it’s my subjective opinion.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/2</link>
+        <pubDate>Tue, 19 Jan 2021 19:47:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+      <item>
+        <title>Do strong password requirements lower user registration rates?</title>
+        <dc:creator><![CDATA[james_9090]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everybody,</p>
+<p>It is easy to understant that having strong passwords is always better. Yet, do strong password requirements lower the conversion rate of products that need registration?</p>
+<p>While googling I could not find data supported evidence, although the discussion about this being counterproductive <a href="https://security.stackexchange.com/questions/32222/are-password-complexity-rules-counterproductive">is not new</a>.</p>
+<p>It would be great if you share your own experiences.</p>
+<p>My name is James and I’m from Barcelona. I’m working on a project. I hope to present it here soon. So far, bootstrapped has helped me on several issues already. I like that bootstrapped is an enjoyable to read solution-oriented community.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413/1</link>
+        <pubDate>Sun, 17 Jan 2021 18:48:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7413-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/do-strong-password-requirements-lower-user-registration-rates/7413.rss">Do strong password requirements lower user registration rates?</source>
+      </item>
+  </channel>
+</rss>

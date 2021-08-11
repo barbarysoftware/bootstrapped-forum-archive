@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How did you make the jump to high availability? - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="My saas business is starting to get traction (it&amp;#39;s generating enough on which to live comfortably), and I&amp;#39;ve also had a few availability incidents caused by my old VPS provider (Backbone AG - I ditched them a few weeks a&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="4656.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;How did you make the jump to high availability?&#39;" href="4656.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656" />
+<meta property="og:title" content="How did you make the jump to high availability?" />
+<meta name="twitter:title" content="How did you make the jump to high availability?" />
+<meta property="og:description" content="My saas business is starting to get traction (it’s generating enough on which to live comfortably), and I’ve also had a few availability incidents caused by my old VPS provider (Backbone AG - I ditched them a few weeks ago, and I suppose everyone else did too because they sent around emails last week saying they were quitting the VPS business).  I’m using python + postgres (so there isn’t really a “works straight out of the box” middleware solution to pool connections and handle failover). I’m a..." />
+<meta name="twitter:description" content="My saas business is starting to get traction (it’s generating enough on which to live comfortably), and I’ve also had a few availability incidents caused by my old VPS provider (Backbone AG - I ditched them a few weeks ago, and I suppose everyone else did too because they sent around emails last week saying they were quitting the VPS business).  I’m using python + postgres (so there isn’t really a “works straight out of the box” middleware solution to pool connections and handle failover). I’m a..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="10 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="13 ❤" />
+<meta property="article:published_time" content="2016-12-31T20:56:43+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="4656%3Fpage=2.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="4656.html">How did you make the jump to high availability?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Incertitude.html'><span itemprop='name'>Incertitude</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-31T20:56:43Z' class='post-time'>
+                December 31, 2016,  8:56pm
+              </time>
+              <meta itemprop='dateModified' content='2016-12-31T20:56:43Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My saas business is starting to get traction (it’s generating enough on which to live comfortably), and I’ve also had a few availability incidents caused by my old VPS provider (Backbone AG - I ditched them a few weeks ago, and I suppose everyone else did too because they sent around emails last week saying they were quitting the VPS business).</p>
+<p>I’m using python + postgres (so there isn’t really a “works straight out of the box” middleware solution to pool connections and handle failover). I’m also having trouble finding a good infrastructure engineer who has set up HA postgres before. The one who had promised to do it flaked on me just before christmas, and I’ve had a couple of others take a serious look at it and tell me “nah, too hard” … not to mention the dozens who have said “haven’t ever done it but I once did this thing with Galera…”.</p>
+<p>I could of course go with a managed DB, but then for network latency I’ve generally got to be in the same datacenter and the big ones (AWS, Azure…) cost a mint for commodity VPSes. My current server bill at Linode is 15% of what it would be at Azure. Call me cheap, but a managed DB also seems to cost $3-5k per annum more than knowing how to do it yourself on a few commodity VPSes, plus you don’t have the knowledge either. Not to mention lock in - call me paranoid, but my experience with Azure and Backbone so far makes me really like the idea of being able to reprovision the application quickly at another provider.</p>
+<p>So for those of you who have implemented HA on your Saas:</p>
+<ol>
+<li>What stack did you use?</li>
+<li>Was there open source middleware + configuration recipes already available?</li>
+<li>Did you get outside help, and was it useful?</li>
+<li>What were the unforseen pitfalls?</li>
+<li>How did it all work out?</li>
+<li>Any HA-related advice at this stage in the journey?</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anthonyfranco.html'><span itemprop='name'>anthonyfranco</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-31T22:20:14Z' class='post-time'>
+                December 31, 2016, 10:20pm
+              </time>
+              <meta itemprop='dateModified' content='2016-12-31T22:20:14Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think postgres just came out with a native replication solution, so you might want to look into that.</p>
+<p>For me, I have a Rails + MySQL app. Using master-master replication I always have a hot spare server available.</p>
+<p>I then use the failover service that my DNS provider has. When it detects my main server is down it automatically switches the DNS to the backup server.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/garrettdimon.html'><span itemprop='name'>garrettdimon</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-31T23:42:29Z' class='post-time'>
+                December 31, 2016, 11:42pm
+              </time>
+              <meta itemprop='dateModified' content='2016-12-31T23:42:29Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The biggest thing I’d advise is to be really sure it’s worth it. Downtime sucks, but introducing a more complicated architecture can bring its own growing pains and lead to more downtime until you get everything tweaked just right.</p>
+<p>We were running Rails, but we tried Rackspace and Linode. In both cases we were pretty happy. This article kind of outlines how we progressed. <a href="https://startingandsustaining.com/chapter-11-servers-architecture-48a01ae1fd7d#.r6zk5gaf9" rel="nofollow noopener">https://startingandsustaining.com/chapter-11-servers-architecture-48a01ae1fd7d#.r6zk5gaf9</a> Ultimately, Linode was significantly cheaper and easier to work with. Their node balancers were also better for us.</p>
+<p>The biggest problem we found was that the standard load balancers through Rackspace and Linode were both less than perfect in terms of configuration and upgrades. With Rackspace, we ended up spinning up our own load balancers. Linode’s were good enough for us, but they weren’t stellar.</p>
+<p>We got outside help. We found a good sys admin and paid him up front for the migration work and then kept him on retainer for $200/mo for a couple of hours of work whether we used him or not. That was priceless. Any time there was a significant vulnerability or upgrade, he was on top of it, and we didn’t even have to worry.</p>
+<p>The un-forseen pitfalls were mainly that moving to a higher availability architecture meant a lot of configuration changes and several of those required extensive testing and debugging to get right. So it was painful to be sure.</p>
+<p>The article above pretty well details how I’d do it over again. It worked well, but it wasn’t without its challenges. Maintaining a parallel staging environment that mimics production as much as possible was a huge help. It cost a little more, but it made it drastically easier to test and make architectural changes. We even maintained a load balancer in front of a single web server for staging so that it matched the production configuration more closely.</p>
+<p>Our biggest lesson was that even if you make the application servers redundant, the load balancer and DB can still be a single point of failure. Ultimately, it was a lot better and made it easier to update the web and application servers with minimal downtime, but we didn’t do any kind of auto-failover for the database. About once or twice a year, we’d be down for 5 minutes to update and reboot the database server, but that was more than acceptable in our case since usage was very low on the weekends.</p>
+<p>My biggest advice would be to make sure it’s really necessary and not to do it just to aim for 5 9’s. Unless it’s a chronic problem that’s affecting customers, you can spend a lot of effort chasing only moderate improvements.</p>
+<p>There’s a slightly dated but still relevant article from Signal vs. Noise that articulates this a little better:<br>
+<a href="https://signalvnoise.com/archives2/dont_scale_99999_uptime_is_for_walmart.php" class="onebox" target="_blank" rel="nofollow noopener">https://signalvnoise.com/archives2/dont_scale_99999_uptime_is_for_walmart.php</a></p>
+<p>Hope that helps. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/aeden.html'><span itemprop='name'>aeden</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-01T08:27:48Z' class='post-time'>
+                January 1, 2017,  8:27am
+              </time>
+              <meta itemprop='dateModified' content='2017-01-01T08:27:48Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ll second what <a class="mention" href="../../u/garrettdimon.html">@garrettdimon</a> said: make sure it is really necessary before making the leap to HA. You may be better off focusing on Mean Time To Recovery (MTTR) first. This could mean a hot standby so that if one VPS fails you can fail over to another quickly. Alternatively it could mean having the means to stand up a new VPS somewhere quickly (with reliable configuration management scripts ready to handle the stand up with minimal effort).</p>
+<p>We ended up spending a lot of time over the past year working on HA for our web systems, and we’re still not at the point where it can happen automatically with Postgres.</p>
+<p>For the web we use Anycast inside our data center and blue/green deploys. Thus when a node is being deployed it stops broadcasting BGP during the deploy, and then announces itself again once the deploy is complete. The benefits of doing this is that it allows us to not need any sort of load balancing outside of BGP routing.</p>
+<p>For Postgres, we tried out several different tools, from pgpool, to carp, and now we are trying keepalived. HA at the database layer is by far the most difficult part of the HA stack. At this point we can perform manual failovers, which is much better than where we were in the past, but we are still aiming to get to automatic failovers.</p>
+<p>If you integrate with <em>any</em> third-party services, especially if you are dependent on them, make sure to consider that as well. All the HA in the world doesn’t do a bit of good if some third-party service you depend on goes down. Also keep in mind that true HA means distributing across multiple data centers as well, which adds yet another layer of complexity.</p>
+<p>Anyhow, back to the original point, as Garrett said: don’t do it if you don’t <em>really</em> need it. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/craigvn'><span itemprop='name'>craigvn</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-01T11:12:07Z'>
+              <time itemprop='dateModified' datetime='2017-01-01T11:14:19Z' class='post-time'>
+                January 1, 2017, 11:14am
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I run my app in Azure, I have about 4 web servers, one SQL Azure database, Redis caching and a few other services. Price is around $800 per month. I could go cheap and install in on some cheap VPS, but I value the reliability. And the cost is not exponential, if I double, triple in size the hosting won’t do the same.</p>
+<p>But it depend’s a lot on the product you are offering. If I am down for 30 minutes that is a big deal, down for a few hours would be terrible. It needs to be self managed so I can sleep knowing my overseas users will always be up when I am down.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/fideloper'><span itemprop='name'>fideloper</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-01T16:33:38Z' class='post-time'>
+                January 1, 2017,  4:33pm
+              </time>
+              <meta itemprop='dateModified' content='2017-01-01T16:33:38Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve always avoided PG because it’s high availability options always seemed so poor (or rather, overly complex). I’ve yet to find a cogent guide on it (where as with MySQL you can replicating to a replica data really quickly). Maybe <a class="mention" href="../../u/aeden.html">@aeden</a> can point us in the direction of some resources?</p>
+<p>That being said regular maintenance and automation around any database tech is harder. If it comes down to paying a person for their time or paying for a hosted database, I’d likely go with the hosted database (up to your and your needs of course).</p>
+<p>The Mean Time To Recovery idea is pretty appealing. Generally I at least have some Ansible roles or similar setup so I can duplicate an application server quickly even if I don’t have a hot standby around (this has saved my bacon before <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> ).</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-02T17:16:20Z'>
+              <time itemprop='dateModified' datetime='2017-01-02T18:24:17Z' class='post-time'>
+                January 2, 2017,  6:24pm
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="4" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/aeden/40/1319_1.png" class="avatar"> aeden:</div>
+<blockquote>
+<p>You may be better off focusing on Mean Time To Recovery (MTTR) first</p>
+</blockquote>
+</aside>
+<p>+1</p>
+<p>I’m working for large corps, and even them, with all their money and resources, prefer not to do master-master HA for databases. Instead, they have three-nines SLA (about 8.5 hours downtime a year). Applications and middleware have measures to gracefully degrade when the DB is not available - usually keeping mostly-static data (e.g. product catalogue) in a distributed cache and have cache-for-availability records (i.e. hit DB, but if it is not available, return the last known record from cache - with a warning that it may be stale).</p>
+<p>The only place I’ve seen a HA DB was a large bank, its central customer records store. And it had to use HP NonStop – a huge, expensive, hardware-supported high availability platform, with a specially designed DB.</p>
+<p>I’m not a DBA, but as far as I understand it, <strong>master-master</strong> is not really a complete solution for HA unless both masters conform to distributed transactions protocol, which I doubt is the case for MySQL or even Postgres. MySQL replication seems to based on binary log transfer, and then what happens if a record commited on Master A gets rejected on Master B due to other updates made recently? I expect the servers now out of sync - hopelessly.</p>
+<p>A severed link between two masters can also create an out-of-sync configuration which may or may be not corrected when the link is back up.</p>
+<p>Really, master-master is more for performance than for HA, I think.</p>
+<p>I believe <strong>Master-Hot Standby</strong> is a more reliable (because it is simpler) design – all requests are handled by Master A, and replicated to Master B, but only when Master A has an issue the requests flow is redirected fully to Master B. Master A then should be stopped, investigated, possibly wiped out, and become a standby Master for B. That all can be automated, tho the initial state transfer from the new Master to the new standby can take time.</p>
+<p>The mentioned above HA DB for a bank was master-standby, BTW. It says something, eh? (It is using the hardware interruption to stop-and-resume the clients requests, so the downtime is sub-second and clients won’t notice the failures, but still.)</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-02T17:29:29Z'>
+              <time itemprop='dateModified' datetime='2017-01-02T17:33:35Z' class='post-time'>
+                January 2, 2017,  5:33pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="3" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/garrettdimon/40/3456_1.png" class="avatar"> garrettdimon:</div>
+<blockquote>
+<p>The article above pretty well details how I’d do it over again</p>
+</blockquote>
+</aside>
+<p>+1 I believe this is pretty much the best design reasonable money can buy.</p>
+<p>Only one comment - load balancer (LB) can be a device or DNS records. If it is a device (just as you said in your post, but not in the article) it is a single-point of failure.</p>
+<p>For HA purposes a set of DNS records with short TTL and a watchdog (2+) that updates DNS when an app server goes down may be a better solution.</p>
+<p>A device tho has a faster reaction time when a server stops responding - the traffic is routed to healthy nodes almost instantly vs 60s at least for DNS.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stympy.html'><span itemprop='name'>stympy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-02T17:31:49Z'>
+              <time itemprop='dateModified' datetime='2017-01-02T17:47:20Z' class='post-time'>
+                January 2, 2017,  5:47pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Postgres replication isn’t too bad, actually.  Here’s the documentation for it:</p>
+<p><a href="https://www.postgresql.org/docs/9.6/static/warm-standby.html" class="onebox" target="_blank" rel="nofollow noopener">https://www.postgresql.org/docs/9.6/static/warm-standby.html</a></p>
+<p>Basically what you do is set up the leader to log the WALs (same as the binlog in mysql) and grant permission to a replicator user. You then set up one or more followers with a backup from the master (using pg_basebackup) and a recovery.conf (which can be created by pg_basebackup) that points the follower to the leader. The final step is to set up archive_command on the leader and a restore_command on the follower to archive the WAL segments so that they can be accessed by the follower in case it gets too far behind the leader.  At Honeybadger we use <a href="https://github.com/wal-e/wal-e" rel="nofollow noopener">wal-e</a> for this, as it saves the WAL segments to s3 we can recover in another datacenter if necessary.</p>
+<p>As for postgres HA, that is a bit more complicated. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> We are moving to <a href="https://github.com/zalando/patroni" rel="nofollow noopener">Patroni</a> for this. It runs postgres instances for you, using etcd/consul/zookeeper to store information about the leader and followers, and updating individual postgres instances as necessary when the leader fails.  To handle failover for the clients talking to the leader, we use <a href="https://github.com/hashicorp/consul-template" rel="nofollow noopener">consul-template</a> to rewrite the configuration file for <a href="https://pgbouncer.github.io" rel="nofollow noopener">pgbouncer</a> which is running along-side the application.  Each application points to the pgbouncer on localhost rather than to the leader itself.</p>
+<p>Regarding HA in general: as others have said, it’s a tough nut to truly crack. Getting to a place where you can recover from downtime within minutes with human intervention is a great milestone to achieve in your pursuit of minimal downtime. Once you get there, you’ll have a good idea of what you’ll need to have in place to be able to more fully automate recovery from various types of failure.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-02T17:35:33Z'>
+              <time itemprop='dateModified' datetime='2017-01-02T18:23:25Z' class='post-time'>
+                January 2, 2017,  6:23pm
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="9" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stympy/40/1388_1.png" class="avatar"> stympy:</div>
+<blockquote>
+<p>Postgres replication isn’t too bad, actually</p>
+</blockquote>
+</aside>
+<p>I believe, it is since version 9. Before that the replication was really quite cumbersome and there was a number of third-party tools, each with their own quirks.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stympy.html'><span itemprop='name'>stympy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-02T17:37:34Z' class='post-time'>
+                January 2, 2017,  5:37pm
+              </time>
+              <meta itemprop='dateModified' content='2017-01-02T17:37:34Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Ah, yes, before version 9 it was a nightmare. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Incertitude.html'><span itemprop='name'>Incertitude</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-03T09:05:17Z' class='post-time'>
+                January 3, 2017,  9:05am
+              </time>
+              <meta itemprop='dateModified' content='2017-01-03T09:05:17Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I guess I should make it clear that I’m not looking for five 9s, but rather than ability to get on a plane or drive somewhere without phone reception as a one-man operation. If something goes down during that time, I would want automated failover. This is easy enough for the filesystem and application servers, but much less easy for the DB compared to manual intervention.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/maximus.html'><span itemprop='name'>maximus</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-07T21:05:11Z' class='post-time'>
+                January 7, 2017,  9:05pm
+              </time>
+              <meta itemprop='dateModified' content='2017-01-07T21:05:11Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If you really need HA and want to sleep at night, nothing beats managed AWS (or Azure) services.</p>
+<p>The absolutely minimum config would be:</p>
+<ol>
+<li>Two VPS instances in different zones, behind the load balancer. You can also choose pre-built managed stacks such as Elastic Beanstalk.</li>
+<li>Managed load balancer, such as ELB. HAProxy is better than ELB but it becomes a single point of failure.</li>
+<li>Managed database service, such as RDS. Preferable with automatic multi zone master-slave replication.</li>
+<li>Managed cache service with persistent cache store, such as ElasticCache Redis. Preferable with automatic multi zone master-slave replication.</li>
+<li>Managed DNS service, such as Route53.</li>
+</ol>
+<p>Expect to pay between $500 and $2000 / month depending on instance type and additional services.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stympy.html'><span itemprop='name'>stympy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-07T21:45:29Z'>
+              <time itemprop='dateModified' datetime='2017-01-07T21:45:38Z' class='post-time'>
+                January 7, 2017,  9:45pm
+              </time>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>HAProxy doesn’t have to be a SPOF if you run it on two instances in different AZs, each with its own EIP, Route 53 health check, and Route 53 record.  You can then create an autoscaling group with an AMI that has code to attempt to assume the EIPs at boot.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/intelligentcoder'><span itemprop='name'>intelligentcoder</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-08T04:02:34Z' class='post-time'>
+                January 8, 2017,  4:02am
+              </time>
+              <meta itemprop='dateModified' content='2017-01-08T04:02:34Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m in a similar situation where I feel like I can’t go out without my phone because I’m the only one responsible for keeping my app online. It was fine to have outages when I had 20 clients, but now that there are hundreds of clients using the app everyday, I can’t have outages without pissing some people off.</p>
+<p>I’ve been trying to solve this for a couple of years, and I’ve learned that the only real solution is to hire someone that can cover for you when you are not available. Unfortunately, that is not always an option for bootstrappers like us. I could hire someone, but at the moment I’m okay with being on call 24/7 in order to maximize my profits. My plan is to hire someone when I start to feel burnout symptoms.</p>
+<p>In the meantime, I’ve been relatively successful with HA without spending lots of money (under $400). I have 2 dedicated servers in different data centers on different regions and a cheaper VPS. Each of the dedicated servers are powerful enough to host the application and database on its own and would be able to handle at least 5x the current load.</p>
+<p>One dedicated server is the primary and the other one is a hot backup. I use <a href="http://totaluptime.com" rel="nofollow noopener">totaluptime.com</a> to failover the application if the primary is unreachable for 30 seconds. This has worked flawlessly at the application level.</p>
+<p>For the database, I use a MongoDB replica set (3 members), one on each server. The automatic failover works well most of the time. There were 2 or 3 times where it didn’t work as expected and I had to intervene. The downfall is that I had to get really comfortable with managing and securing a MongoDB replica set, this is time I should have spent on the product or on marketing. By the end of this year I want to move it to Mongo Atlas, which is not expensive IMO.</p>
+<p>As I said, even with the relative success, I would only feel comfortable going completely offline if I had a dev ops person that could cover for me.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="3" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Incertitude.html'><span itemprop='name'>Incertitude</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-08T06:41:48Z' class='post-time'>
+                January 8, 2017,  6:41am
+              </time>
+              <meta itemprop='dateModified' content='2017-01-08T06:41:48Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for that; apart from the tech stack it closely describes my situation … except that I’d like to hire someone before I start feeling burned out <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-08T09:33:38Z'>
+              <time itemprop='dateModified' datetime='2017-01-08T12:40:59Z' class='post-time'>
+                January 8, 2017, 12:40pm
+              </time>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="15" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/intelligentcoder/40/3416_1.png" class="avatar"> intelligentcoder:</div>
+<blockquote>
+<p>I’m in a similar situation where I feel like I can’t go out without my phone because I’m the only one responsible for keeping my app online. It was fine to have outages when I had 20 clients, but now that there are hundreds of clients using the app everyday, I can’t have outages without pissing some people off.</p>
+</blockquote>
+</aside>
+<p>Two stories:</p>
+<ol>
+<li>
+<p>I pay a sys admin for a few hours work per month (on a retainer). I found him via Upwork and pay US$30/hour. It took a while to find the right person, but well worth the money.</p>
+</li>
+<li>
+<p>A friend of mine runs a 1-person SaaS site that does website monitoring. It needs to have very good uptime. The same friend drove a car from Germany to Mongolia. He could do that because outages are so infrequent. He achieved great uptime by relentlessly improving the infrastructure after every outage so that the cause of the outage was very unlikely to happen again.</p>
+</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/craigvn'><span itemprop='name'>craigvn</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-08T21:34:37Z' class='post-time'>
+                January 8, 2017,  9:34pm
+              </time>
+              <meta itemprop='dateModified' content='2017-01-08T21:34:37Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is pretty much where I am at. You are not going to get HA for $30, or even $100, a month.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-09T19:48:25Z' class='post-time'>
+                January 9, 2017,  7:48pm
+              </time>
+              <meta itemprop='dateModified' content='2017-01-09T19:48:25Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="15" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/intelligentcoder/40/3416_1.png" class="avatar"> intelligentcoder:</div>
+<blockquote>
+<p>I use a MongoDB replica set</p>
+</blockquote>
+</aside>
+<p>That’s cheating <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> document-oriented DBs are so much easier to clusterize.</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/jitbit'><span itemprop='name'>jitbit</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4656.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-11T17:52:01Z'>
+              <time itemprop='dateModified' datetime='2017-01-11T17:58:42Z' class='post-time'>
+                January 11, 2017,  5:58pm
+              </time>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A bit late to the show, but here’s my 2 cents.</p>
+<p>(mostly aws-related and pretty trivial, sorry)</p>
+<p><strong>Backup from the outside</strong>. For example, backing up a database using the actual DB-server affects <em>your server’s</em> performance. OTOH, taking a snapshot of your EBS-drive uses <em>Amazon’s</em> resources. Snapshotting even uses a separate physical network-card on the storage-server (the one that hosts your EBS disks), and does not exhaust your own disk-speed/iops-credits/bandwidth/cpu at all, it literally does not touch your server. The procedure is smart enough to backup only the diff-ed data, so it’s ridiculously fast (100gb drive in 5 seconds, not bad huh). Taking a snapshot is a free operation, Amazon offers an API for this, so you basically can take a snapshot every minute (!) who cares! Just make sure to clean them up once in a while, because $$$</p>
+<p><strong>Keep a stopped copy of all servers</strong> - in AWS, a “server” is just a line in some config file somewhere (when it’s not running), it’s free to keep one. If something goes wrong with the hardware - you don’t have to shutdown of “force-stop” the frozen machine, and wait until it responds… Just cut the EBS disks, throw them at a new server, launch. 10 seconds. We even keep a script for that.</p>
+<p>PS. handy stuff: <a href="https://github.com/colinbjohnson/aws-missing-tools" rel="nofollow noopener">https://github.com/colinbjohnson/aws-missing-tools</a> (especially the “ec2-automate-backup” bit)</p>
+        </div>
+
+        <meta itemprop='headline' content='How did you make the jump to high availability?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="4656%3Fpage=2.html">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

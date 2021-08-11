@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Link: Multi-Tenant Database Architecture</title>
+    <link>https://discuss.bootstrapped.fm/t/link-multi-tenant-database-architecture/55</link>
+    <description>[http://msdn.microsoft.com/en-us/library/aa479086.aspx][1]
+
+I get questions like this a lot from people starting out designing their SaaS app. It came up again tonight so I thought we&#39;d make a new category on here for Useful Links and I&#39;d post this one up.
+
+It&#39;s the best overview of the primary options for multi-tenant database layouts that I&#39;ve seen.
+
+
+  [1]: http://msdn.microsoft.com/en-us/library/aa479086.aspx</description>
+    
+    <lastBuildDate>Mon, 05 Aug 2013 17:17:23 +0000</lastBuildDate>
+    <category>Interesting Links</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/link-multi-tenant-database-architecture/55.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Link: Multi-Tenant Database Architecture</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>Just a note, if you decide on going with a seperate schema approach and are a Rails developer you should take a look at the discourse architecture.  They use postgres which allows you to do this:</p>
+<p><a href="https://github.com/discourse/discourse/tree/master/vendor/gems/rails_multisite" class="onebox" target="_blank" rel="nofollow noopener">https://github.com/discourse/discourse/tree/master/vendor/gems/rails_multisite</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/link-multi-tenant-database-architecture/55/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/link-multi-tenant-database-architecture/55/2</link>
+        <pubDate>Mon, 05 Aug 2013 17:17:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-55-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/link-multi-tenant-database-architecture/55.rss">Link: Multi-Tenant Database Architecture</source>
+      </item>
+      <item>
+        <title>Link: Multi-Tenant Database Architecture</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://msdn.microsoft.com/en-us/library/aa479086.aspx">http://msdn.microsoft.com/en-us/library/aa479086.aspx</a></p>
+<p>I get questions like this a lot from people starting out designing their SaaS app. It came up again tonight so I thought we’d make a new category on here for Useful Links and I’d post this one up.</p>
+<p>It’s the best overview of the primary options for multi-tenant database layouts that I’ve seen.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/link-multi-tenant-database-architecture/55/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/link-multi-tenant-database-architecture/55/1</link>
+        <pubDate>Thu, 01 Aug 2013 02:56:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-55-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/link-multi-tenant-database-architecture/55.rss">Link: Multi-Tenant Database Architecture</source>
+      </item>
+  </channel>
+</rss>

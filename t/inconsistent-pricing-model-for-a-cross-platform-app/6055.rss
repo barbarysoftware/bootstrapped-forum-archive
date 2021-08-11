@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Inconsistent pricing model for a cross-platform app</title>
+    <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055</link>
+    <description>I&#39;m working on a desktop+mobile app without a backend and trying to come up an easy-to-understand recurring revenue model. I would use a Sketch-like (get a license + a year of app updates) subscription everywhere because it&#39;s user-friendly (you own the app) but it&#39;s not possible on iOS, Android, and in the Mac App Store.
+
+Having desktop apps with a Sketch-like subscription and mobile ones with a regular subscription would be mildly confusing but this means ignoring the Mac App Store (~~though I don&#39;t know if it&#39;s worth it to be there in the first place~~ UPD: I asked around and it&#39;s 40-60% of revenue for the developers who sell both there and on their sites).
+
+Selling Mac+Windows licenses from our site with a Sketch-like subscription **but** Mac App Store licenses with a regular subscription could be really confusing. Plus I&#39;m not sure how to convert MAS licenses to Windows if a customer asks for it.
+
+I&#39;ve seen Agenda&#39;s &quot;cash cow&quot; model but its implementation sounds nightmarish:
+https://medium.com/@drewmccormack/a-cash-cow-is-on-the-agenda-138a11995595
+
+Paid version upgrades every couple of years are still a viable option but it means really high app&#39;s price and rushed feature development.
+
+Am I overthinking it? Would appreciate any advice – be it from experience or a user&#39;s perspective.</description>
+    
+    <lastBuildDate>Mon, 19 Nov 2018 18:40:47 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://nativeconnect.app/blog/pricing/" rel="nofollow noopener">A good overview</a> of all possible pricing models for desktop apps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/10</link>
+        <pubDate>Mon, 19 Nov 2018 18:40:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Transmit returned to the Mac App Store with a subscription. The choice is $24.99 yearly there or $45 one-time directly from the developer’s site:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://panic.com/blog/transmit-5-on-the-mac-app-store/" target="_blank" rel="nofollow noopener">panic.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:132/56;"><img src="https://panic.com/blog/wp-content/uploads/2018/11/wwdc2018panic-2.jpg" class="thumbnail"></div>
+
+<h3><a href="https://panic.com/blog/transmit-5-on-the-mac-app-store/" target="_blank" rel="nofollow noopener">Panic Blog  » Transmit 5 on the Mac App Store</a></h3>
+
+<p>It's back. Learn all about Transmit 5 in the Mac App Store: why we returned, and how it's different.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/9</link>
+        <pubDate>Thu, 15 Nov 2018 21:37:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s a personal wiki, so mostly B2C. So far I’m thinking about $15-19/yr on desktop and $6-8/yr on iOS/Android. My reasoning goes like this:</p>
+<ul>
+<li>it’s somewhat close to <a href="https://bear.app" rel="nofollow noopener">Bear</a> ($15/yr) and <a href="https://agenda.com" rel="nofollow noopener">Agenda</a> ($25/yr), both have free versions (iOS+Mac)</li>
+<li>there’s <a href="https://www.notion.so" rel="nofollow noopener">Notion</a> for $48/yr (or $5/mo) which is really powerful (including collaboration)</li>
+<li>the non-subscription B2C competitors are priced $40-60 on Mac and $7-15 on iOS</li>
+<li>there are also old-school but free and open-source wikis/outliners, though they don’t have mobile versions</li>
+</ul>
+<p>The only expensive B2C “competitors” that I’ve seen are:</p>
+<ul>
+<li>
+<a href="https://ulysses.app" rel="nofollow noopener">Ulysses</a> that switched to $40/yr and produced a huge backslash because it was $70 upfront before</li>
+<li>
+<a href="https://www.inkdrop.info" rel="nofollow noopener">Inkdrop</a> charging <a href="https://blog.inkdrop.info/why-inkdrop-is-a-subscription-app-beda29c507d5" rel="nofollow noopener">$50/yr</a> to programmers</li>
+</ul>
+<aside class="quote no-group" data-post="7" data-topic="6055">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/julienma/40/3619_1.png" class="avatar"> julienma:</div>
+<blockquote>
+<p>I think Apple users are less price-sensitive, which means if we had to choose one type of users to test subscriptions on, we’d choose them</p>
+</blockquote>
+</aside>
+<p>Yes, Mac hardware is crazy expensive after all. But I want to both leave Apple’s gilded cage and diversify beyond the wealthy market of tech professionals/entrepreneurs. So it seems like every $5 count and I’m trying to find the price that can work for most people who pay for software from their own pockets.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/8</link>
+        <pubDate>Thu, 25 Oct 2018 18:11:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[julienma]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/ivm">@ivm</a> is it a B2B or B2C app?<br>
+The price point which seems ok probably depends on that.</p>
+<aside class="quote no-group" data-post="1" data-topic="6055">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ivm/40/3798_1.png" class="avatar"> ivm:</div>
+<blockquote>
+<p>I would use a Sketch-like (get a license + a year of app updates) subscription everywhere because it’s user-friendly (you own the app)</p>
+</blockquote>
+</aside>
+<p>For what it matters, we’re about to switch to this pricing for <a href="https://cashnotify.com" rel="nofollow noopener">CashNotify</a>.</p>
+<p>If we ever sell on the MAS at some point — can’t now because of sandboxing — our reasoning is the following:</p>
+<ul>
+<li>we’d like to test “real” monthly or yearly subscriptions</li>
+<li>I think Apple users are less price-sensitive, which means if we had to choose one type of users to test subscriptions on, we’d choose them</li>
+<li>so, we’d probably go with a subscription on the MAS</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/7</link>
+        <pubDate>Thu, 25 Oct 2018 17:21:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="6055">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/n/3bc359/40.png" class="avatar"> nordbad:</div>
+<blockquote>
+<p>In general subscription based pricing is only justified by users for apps with a server side component. For a client side apps there is no good enough rationale to pay monthly.</p>
+</blockquote>
+</aside>
+<p>I think that checking for the backend is a developer’s approach. As a user, I dislike expensive subscriptions with or without justification but I’m fine with cheap ones: $40/yr for Ulysses feels like too much but Bear’s $15/yr is totally fine.</p>
+<p>At the same time, I feel uneasy about paying $30-80 upfront for an app (or $10+ for a mobile app) because sometimes it seems really useful during the trial period but I end up barely using it. It’s even worse when there’s no trial period.</p>
+<aside class="quote no-group" data-post="5" data-topic="6055">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/n/3bc359/40.png" class="avatar"> nordbad:</div>
+<blockquote>
+<p>So you are either developing in traditional way and do not use Apple major crowd. This way you can charge more without getting angry ratings.<br>
+On the other hand you can put a much lower price and get some users from App Store.</p>
+</blockquote>
+</aside>
+<p>That’s why I think that a $10-20/yr subscription is a sweet spot for an app of medium complexity without a backend: it’s a “much lower price” for people who are used to cheap apps but also not a money-grab for people who hate subscriptions.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/6</link>
+        <pubDate>Wed, 24 Oct 2018 13:19:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[nordbad]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting idea about feature upgrades.</p>
+<p>IMHO the amount of additional work for this business model does not significantly increase the revenue, comparing with traditional “pay for a new version” model.<br>
+Still it is also important to advertise (in app or outside) new features to existing users.</p>
+<p>We also struggle with the same questions.<br>
+Currently decided to sell MacOS version only on a website.</p>
+<p>Here are some ideas.<br>
+In general subscription based pricing is only justified by users for apps with a server side component. For a client side apps there is no good enough rationale to pay monthly.</p>
+<p>Big players can switch to subscription models because they have big user base. New players simply cannot afford to loose potential users. They have to offer a good price and at least a potentially good product.</p>
+<p>We tend to forget that traditional model with perpetual usage and upfront payment is still great for customers. The problem here is that people are now used to pay cents for software.</p>
+<p>So you are either developing in traditional way and do not use Apple major crowd. This way you can charge more without getting angry ratings.<br>
+On the other hand you can put a much lower price and get some users from App Store.</p>
+<p>Combining two models for a new product is really questionable.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/5</link>
+        <pubDate>Wed, 24 Oct 2018 12:25:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Our current app isn’t sold on the App Store at all because of the sandboxing restrictions. But overall, I don’t like its inflexibility combined with the 30% cut (we use FastSpring that takes only 9%).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/4</link>
+        <pubDate>Tue, 23 Oct 2018 13:40:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[duncanawoods]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Ivan,</p>
+<p>Interesting read! Out of interest, why do you support paddle purchases in addition of the macos store?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/3</link>
+        <pubDate>Tue, 23 Oct 2018 10:07:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh, Panic actually did it on return to the Mac App Store. They don’t have a link to it anywhere on their site, so I guess it’s a viable option to get additional revenue without confusing people coming to your site.</p>
+<aside class="onebox twitterstatus">
+  <header class="source">
+      <a href="https://twitter.com/panic/status/1003767158701056000" target="_blank" rel="nofollow noopener">twitter.com</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://pbs.twimg.com/profile_images/711393354198573057/E1PDi1-R_400x400.jpg" class="thumbnail onebox-avatar" width="400" height="400">
+<h4>
+  <a href="https://twitter.com/panic/status/1003767158701056000" target="_blank" rel="nofollow noopener">
+    Panic Inc (panic)
+  </a>
+</h4>
+
+<div class="tweet">🧞‍♂️ Our idea: Transmit 5 on the Mac App Store will be a subscription, while Transmit 5 direct from us will remain a one-time purchase. The choice is yours! Think Transmit 5 is too expensive or need it briefly? Subscribe. Hate subscriptions and prefer to own apps? Buy from us.</div>
+
+<div class="date">
+  <a href="https://twitter.com/panic/status/1003767158701056000" target="_blank" rel="nofollow noopener">10:35 PM - 4 Jun 2018</a>
+    <span class="like"><i class="fa fa-heart"></i> 340</span>
+    <span class="retweet"><i class="fa fa-retweet"></i> 80</span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/2</link>
+        <pubDate>Sun, 21 Oct 2018 18:35:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+      <item>
+        <title>Inconsistent pricing model for a cross-platform app</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m working on a desktop+mobile app without a backend and trying to come up an easy-to-understand recurring revenue model. I would use a Sketch-like (get a license + a year of app updates) subscription everywhere because it’s user-friendly (you own the app) but it’s not possible on iOS, Android, and in the Mac App Store.</p>
+<p>Having desktop apps with a Sketch-like subscription and mobile ones with a regular subscription would be mildly confusing but this means ignoring the Mac App Store (<s>though I don’t know if it’s worth it to be there in the first place</s> UPD: I asked around and it’s 40-60% of revenue for the developers who sell both there and on their sites).</p>
+<p>Selling Mac+Windows licenses from our site with a Sketch-like subscription <strong>but</strong> Mac App Store licenses with a regular subscription could be really confusing. Plus I’m not sure how to convert MAS licenses to Windows if a customer asks for it.</p>
+<p>I’ve seen Agenda’s “cash cow” model but its implementation sounds nightmarish:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://cdn-static-1.medium.com/_/fp/icons/favicon-rebrand-medium.3Y6xpZ-0FSdWDnPM3hSBIA.ico" class="site-icon" width="32" height="32">
+      <a href="https://medium.com/@drewmccormack/a-cash-cow-is-on-the-agenda-138a11995595" target="_blank" title="02:37PM - 15 January 2018" rel="nofollow noopener">Medium – 15 Jan 18</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/346;"><img src="https://cdn-images-1.medium.com/max/1200/1*jh26Ni8-c6cwAaZk6Lt4jA.jpeg" class="thumbnail"></div>
+
+<h3><a href="https://medium.com/@drewmccormack/a-cash-cow-is-on-the-agenda-138a11995595" target="_blank" rel="nofollow noopener">A ‘Cash Cow’ is on the Agenda – Drew McCormack – Medium</a></h3>
+
+<p>TLDR; The note taking app Agenda is launching with a new sales model for Mac apps.</p>
+
+  <p><span class="label1">Reading time: 8 min read</span>
+    </p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>Paid version upgrades every couple of years are still a viable option but it means really high app’s price and rushed feature development.</p>
+<p>Am I overthinking it? Would appreciate any advice – be it from experience or a user’s perspective.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055/1</link>
+        <pubDate>Sun, 21 Oct 2018 17:42:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6055-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/inconsistent-pricing-model-for-a-cross-platform-app/6055.rss">Inconsistent pricing model for a cross-platform app</source>
+      </item>
+  </channel>
+</rss>

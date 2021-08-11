@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+    <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264</link>
+    <description>I&#39;ve been stuck in the rut for a very long time, failing to finish and ship my own projects. A rough estimate, I&#39;ve a handful of incomplete person projects the last few years. Have been doing alright with client work, so it&#39;s mostly problems with focus and discipline. Hopefully this is starting to change:
+
+I just shipped [IP Sidekick](https://ipsidekick.com) ~2 weeks ago. It&#39;s a geolocation API, i.e it returns physical location information given an IP address. I plan to add more bits of data to it to stand out from the crowd. For example. This is the output that you get:
+
+	$ curl https://ipsidekick.com/17.142.160.59
+
+	{
+	  &quot;countryCode&quot;:&quot;US&quot;,
+	  &quot;ip&quot;:&quot;17.142.160.59&quot;,
+	  &quot;gmtOffset&quot;:&quot;GMT-7:00&quot;,
+	  &quot;country&quot;:&quot;United States&quot;,
+	  &quot;timeZoneName&quot;:&quot;America/Los_Angeles&quot;,
+	  &quot;holiday&quot;:&quot;Independence Day&quot;
+	}
+
+It includes the public holiday of the location for today.
+
+Feedback welcome!
+
+Also game if you want to talk about motivation and focus :)</description>
+    
+    <lastBuildDate>Thu, 07 Sep 2017 14:16:06 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[thebearmaster]]></dc:creator>
+        <description><![CDATA[
+            <p>I see, thanks for sharing your thought process. Looking forward to any updates you may share in the future!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/16</link>
+        <pubDate>Thu, 07 Sep 2017 14:16:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s a combination of research on competition, gut feel and a desire to carve out a different niche.</p>
+<p>There has been numerous geolocation services that has come and gone over the years. Some pretty big ones are still operating, so the market is definitely there. I think there’s room for one that is has a different take, hence the angle on attaching results other than the typical country/city/lat-long.</p>
+<p>I could have and probably should have done more research, but I wanted to ship something (to get out of my rut) and this seems small enough to be able to ship quickly enough (and thankfully it did!)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/15</link>
+        <pubDate>Thu, 07 Sep 2017 07:04:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[thebearmaster]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/hboon">@hboon</a>, good to run into a fellow mobile developer outside the mobile echo chamber!</p>
+<p>I’ve recently put all my development efforts on the shelf and started scouring for details on pre-build validation strategies, particularly whatever updates I might have missed since 2012-13. Have you embarked on this project based on your own exercise to validate pain, commercial demand etc prior to building?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/14</link>
+        <pubDate>Wed, 06 Sep 2017 20:21:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="11" data-topic="5264">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>First, nobody reads docs. If your pricing page says “84K/day”, everyone normal assumes it is what it is, and not “yeah but we do not enforce it”.</p>
+<p>Second, if you do not enforce it, why mislead people anyway? Describe it is as it is. And what does it mean “planning to send an alert”? OK, you alerted me and I don’t give a damn and use some 400K a day. What are you to do? Enforce it? Then you are enforcing it, or planning to - and saying otherwise in the docs would be a lie. Letting me have it? Well, then you’re open to abuse big time.</p>
+</blockquote>
+</aside>
+<p>If no one reads the site/docs, then they wouldn’t read 84K/day too <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> But I understand your point though. I definitely want to make it as simple and as clear as possible.</p>
+<p>Not enforced as in it’s a soft limit during runtime, so it doesn’t bomb and return a <code>429</code> status code immediately when the user runs too many queries. Instead the user get a notification after the fact and be asked to upgrade if this looks like a pattern. If they don’t, the API key gets blocked. It might sound vague but the idea is rare spikes are fine and wouldn’t cause a problem for API clients operationally. Of course a consumption-based plan would work too if we provide the right knobs like auto top up.</p>
+<p>I’m definitely exploring pricing though so all feedback are much appreciated.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/13</link>
+        <pubDate>Fri, 01 Sep 2017 15:22:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="5264">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/t/3bc359/40.png" class="avatar"> Tom_Hammond:</div>
+<blockquote>
+<p>Experian’s</p>
+</blockquote>
+</aside>
+<p>Thanks for the tip. Looks very interesting!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/12</link>
+        <pubDate>Fri, 01 Sep 2017 15:14:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="5264">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/hboon/40/1376_1.png" class="avatar"> hboon:</div>
+<blockquote>
+<p>If it continues to work this way and I lay it out in the site/docs, would it be better?</p>
+</blockquote>
+</aside>
+<p>I’d say no, it wouldn’t be better.</p>
+<p>First, nobody reads docs. If your pricing page says “84K/day”, everyone normal assumes it is what it is, and not “yeah but we do not enforce it”.</p>
+<p>Second, if you do not enforce it, why mislead people anyway? Describe it is as it is. And what does it mean “planning to send an alert”? OK, you alerted me and I don’t give a damn and use some 400K a day. What are you to do? Enforce it? Then you are enforcing it, or planning to - and saying otherwise in the docs would be a lie. Letting me have it? Well, then you’re open to abuse big time.</p>
+<p>Third, the issue of weekdays/weekends still stands - average weekend traffic can be 10x smaller (or larger) than the weekday one; A fixed per day ratio just doesn’t make much sense, IMHO.</p>
+<p>A “$100 per 2.5M” price tag also allows new consumers to ramp up the usage gradually. There are smaller guys who will find $100/mo price too high - simply because their traffic is just too low still. But they may grow bigger (good luck to them!) eventually. The “$100 per 2.5M” would allow them to spend these $100 over a year or two at first, and then over shorter and shorter duration - and that would be fine with them because that would mean their traffic is growing too.</p>
+<p>(Having said that, I’m very far from the pricing in the geo-tagging industry, so all my logic can be flawed at lot)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/11</link>
+        <pubDate>Thu, 31 Aug 2017 23:12:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[Tom_Hammond]]></dc:creator>
+        <description><![CDATA[
+            <p>So definitely a unique case for my company - TheoremReach. We basically partner with mobile app developers to allow them to monetize their users by completing surveys in exchange for in-app content.</p>
+<p>We collect a user’s zip code, and then from that extrapolate to city, state, dma, etc. and we allow market researchers to target by whatever demographic regions they want (since they may want to talk to X people in the Chicago DMA or Y people in the city of Cedar Rapids, IA, etc.).</p>
+<p>Something that would be truly valuable is if you could get access to Experian’s credit checking details. They have a ridiculously expensive (unless you’re doing it en masse) API that let’s you send in like name, address, email and phone number and they attempt to match it in their system. Then return you income level, estimated credit score, and a slew of other things. I’ve wanted to use it for one of my startups by price has prevented us from doing that - they wanted to charge $1 per lookup unless we purchased 100k lookups for $0.10 each. And the prices go down from there. It’d be very interesting if you could basically purchase in bulk and then re-sell for like $0.25/lookup. I think they also have income by zip and other stuff as well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/10</link>
+        <pubDate>Thu, 31 Aug 2017 13:03:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="5264">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>What I don’t like is the daily limits. It would make me nervous. Granted, the per day limit of 84K is rather high (for me), but I’d rather have a fixed block of 2.5M requests for $100. If one day I spend 200K, and another day 20K - it still works, I won’t get DoS on 200K day. And if I’m getting closer to the block limit too soon, I’d expect to get a email warning me, and then auto-renew if I don’t do anything.</p>
+</blockquote>
+</aside>
+<p>Thanks!</p>
+<p>For paid plans, the system doesn’t enforce limits at the moment, partly because I haven’t implement it and also because I am thinking of just recording it and sending an email alert after the fact to avoid issues similar to what you described. If it continues to work this way and I lay it out in the site/docs, would it be better?</p>
+<p>Re average income: I’m quite keen on adding more data to the results. Eg. One of the things I am toying with adding an (approximate) currency exchange rate based on what the API client sends (e.g <code>"US"</code>) and the result might be <code>1.3</code> if the user is detected as in Singapore, so sites can display an approximate price before hitting the checkout flow. There’s quite a few interesting pieces of information that’s possible though, some more useful for websites, some probably more for backend, like batch processing (like average income or flags indicating the IP is that of a proxy or it’s a bad IP, in terms of trust/fraud).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/9</link>
+        <pubDate>Thu, 31 Aug 2017 06:17:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>The real power of MaxMind’s service is getting to zip code, dma, msa, county, city, state, etc. I would need far more granular data than what you currently offer and I can more or less get for free.</p>
+</blockquote>
+<p>Thanks for the feedback.</p>
+<p>If it’s convenient, could you share what you use for zip code, DMA/MSA and city/state?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/8</link>
+        <pubDate>Thu, 31 Aug 2017 06:07:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="5264">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/t/3bc359/40.png" class="avatar"> Tom_Hammond:</div>
+<blockquote>
+<p>The real power of MaxMind’s service is getting to zip code, dma, msa, county, city, state, etc.</p>
+</blockquote>
+</aside>
+<p>And this: <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<blockquote>
+<p><strong>Average Income (US Only)</strong> 	The weighted average income in US dollars per person for the zip code(s) associated with the IP address.</p>
+</blockquote>
+<p>I do not think OP should try and catch-up with MaxMind. But I’m pretty sure it is possible to collect information of average income per area not only from US, but from other major countries - and this information can be interesting to someone providing flexible prices or upsells.</p>
+<p>What I don’t like is the daily limits. It would make me nervous. Granted, the per day limit of 84K is rather high (for me), but I’d rather have a fixed block of 2.5M requests for $100. If one day I spend 200K, and another day 20K - it still works, I won’t get DoS on 200K day. And if I’m getting closer to the block limit too soon, I’d expect to get a email warning me, and then auto-renew if I don’t do anything.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/7</link>
+        <pubDate>Wed, 30 Aug 2017 22:06:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[Tom_Hammond]]></dc:creator>
+        <description><![CDATA[
+            <p>Your data isn’t really valuable. I can use Rails GeoIP with MaxMind’s free version of the data and get by in most cases without even needing a web request.</p>
+<p>The real power of MaxMind’s service is getting to zip code, dma, msa, county, city, state, etc.  I would need far more granular data than what you currently offer and I can more or less get for free.</p>
+<p>If you could get that all, it’s definitely interesting. I think your pricing would need to significantly change though - especially for enterprise customers if you want to attract away from MaxMind.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/6</link>
+        <pubDate>Wed, 30 Aug 2017 19:58:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah. Thanks for suggesting WP Simple Pay. I thought of building a WP plugin but didn’t have a good idea where to start. Partnering with some one/them sounds much better.</p>
+<p>Thanks for taking the time. Much appreciated.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/5</link>
+        <pubDate>Mon, 28 Aug 2017 15:13:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>OK but $100 I can get 1 million credit lookups on maxmind. That would do me ages.</p>
+<p>I use it for to track the country locations of users who sign up to one of my sites, so I can spot fraud.</p>
+<p>I would also use a product like this to regionalise prices on my sofware site <a href="http://wordcleaner.com" rel="nofollow noopener">wordcleaner.com</a> so I could show a £ price to customers in the UK etc.</p>
+<p>Maybe look to do a partnership with <a href="https://wpsimplepay.com/" rel="nofollow noopener">https://wpsimplepay.com/</a> to let users target prices to a region?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/4</link>
+        <pubDate>Mon, 28 Aug 2017 15:07:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t intend to compete solely by price. But Maxmind is $0.0001/request. Assuming 1 req/s, that would be 86,400/day and 2,592,000/month. So if you run 1 req/s, Maxmind will cost $259.2.</p>
+<p>Naturally, it will cost less if you run fewer requests. But like I said, not competing solely by price <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>If it’s convenient, can you share what you use the geolocation service for?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/3</link>
+        <pubDate>Mon, 28 Aug 2017 15:02:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>I use <a href="https://www.maxmind.com/en/geoip2-precision-country-service" rel="nofollow noopener">https://www.maxmind.com/en/geoip2-precision-country-service</a> for this. They are an established company and seem to be ten times cheaper than your service.</p>
+<p>So why would I use your service? Just being honest. You don’t say where you get the data from, how do I know it is accurate? At the very least you should display the visitors location info on the homepage to demo the product.</p>
+<p>Your free plan is generous but you run the risk of just getting lots of free users on your service.</p>
+<p>You need more plans, free or $100 does not make sense. Also you should have a credits option like maxmind does.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/2</link>
+        <pubDate>Mon, 28 Aug 2017 14:44:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+      <item>
+        <title>Finally Launch Something for Myself (again): IP Sidekick</title>
+        <dc:creator><![CDATA[hboon]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been stuck in the rut for a very long time, failing to finish and ship my own projects. A rough estimate, I’ve a handful of incomplete person projects the last few years. Have been doing alright with client work, so it’s mostly problems with focus and discipline. Hopefully this is starting to change:</p>
+<p>I just shipped <a href="https://ipsidekick.com" rel="nofollow noopener">IP Sidekick</a> ~2 weeks ago. It’s a geolocation API, i.e it returns physical location information given an IP address. I plan to add more bits of data to it to stand out from the crowd. For example. This is the output that you get:</p>
+<pre><code>$ curl https://ipsidekick.com/17.142.160.59
+
+{
+  "countryCode":"US",
+  "ip":"17.142.160.59",
+  "gmtOffset":"GMT-7:00",
+  "country":"United States",
+  "timeZoneName":"America/Los_Angeles",
+  "holiday":"Independence Day"
+}
+</code></pre>
+<p>It includes the public holiday of the location for today.</p>
+<p>Feedback welcome!</p>
+<p>Also game if you want to talk about motivation and focus <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264/1</link>
+        <pubDate>Mon, 28 Aug 2017 13:55:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5264-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/finally-launch-something-for-myself-again-ip-sidekick/5264.rss">Finally Launch Something for Myself (again): IP Sidekick</source>
+      </item>
+  </channel>
+</rss>

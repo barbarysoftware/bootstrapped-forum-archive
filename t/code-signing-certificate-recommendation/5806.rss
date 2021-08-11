@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Code signing certificate recommendation</title>
+    <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806</link>
+    <description>Which code signing certificate do you use/recommend for signing desktop software?
+
+All that I am looking for from the certificate is avoiding the warning message Windows would otherwise display while installing the software,
+
+Thanks.</description>
+    
+    <lastBuildDate>Wed, 28 Aug 2019 10:00:04 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[kalpeshpatel]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="5806" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4795_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Re: EV vs OV.</p>
+<p>Wyatt is for EV, and it makes sense… but also costs a lot more. For a software with no revenue yet the difference is important.</p>
+<p>Folks, in your experience - how quickly OV is getting trusted by Smart Screen?</p>
+</blockquote>
+</aside>
+<p>The main difference between the OV and EV Code signing is, OV code signing do not offer the Two-Factor Authentication and EV Code signing offers it.</p>
+<p>The benefit of the Two-factor Authentication is, the user can only sign the software code if he/she has the USB device that contains the encrypted token &amp; private key.</p>
+<p>OV code signing issuance is about 3 days and EV Code Signing Issuance is about 5 days.</p>
+<p>Being a Software consultant, I always prefer best things and I found Comodo’s Code Sign Certificate is a good option. Less in price, quick on issuance and support, and perfect for any mobile or desktop devices. One can get the Comodo Code Signing Certificate from CodeSigningStore.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/28</link>
+        <pubDate>Wed, 28 Aug 2019 10:00:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, the easiest is just to pick up the phone and give them a call. Don’t mention anything about certificates - it just confuses matters!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/27</link>
+        <pubDate>Tue, 16 Apr 2019 19:13:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="23" data-topic="5806">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andrewr/40/4800_2.png" class="avatar"> AndrewR:</div>
+<blockquote>
+<p>Then they needed to validate my accountant who (you guessed it) wasn’t in the free online CPA directory they used.</p>
+</blockquote>
+</aside>
+<p>I’m in this phase right now. <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=9" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>Contact D&amp;B you say? Hmm… will try.</p>
+<p><strong>Update</strong> - I called D&amp;B, they were a bit confused about the certificate thing, but we started the process of adding my company to their directory. They say should be done and verified by Monday.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/26</link>
+        <pubDate>Tue, 16 Apr 2019 15:44:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[AndrewR]]></dc:creator>
+        <description><![CDATA[
+            <p>I figured that out eventually! It would have helped if Sectigo suggested that rather than requesting letters from the accountant.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/25</link>
+        <pubDate>Tue, 16 Apr 2019 08:15:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p>I had a similar experience here in New Zealand. Easiest is to contact Dunn and Bradstreet and get them to update my info – a couple of minutes.</p>
+<p>I had always assumed that D&amp;B was USA-only and would therefore be a huge challenge to deal with, however I’ve discovered that they actually have offices in many countries – even New Zealand!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/24</link>
+        <pubDate>Tue, 16 Apr 2019 02:58:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[AndrewR]]></dc:creator>
+        <description><![CDATA[
+            <p>I renewed my code signing certificate a few months back and got an EV certificate. The validation process was a pain.</p>
+<p>Despite the hundreds of dollars Sectigo (via KSoftware) charge, they would not pay $30 or whatever for the official company information. Instead they used the free Dunn and Bradstreet (now Illion) listing which was incomplete.</p>
+<p>They asked for a letter from my accountant to validate the missing information. Then they needed to validate my accountant who (you guessed it) wasn’t in the free online CPA directory they used. So my accountant had another CPA who was in the directory write the letter. Then they wanted to validate the signature on the letter - but this had now run into Christmas and everyone had gone on holiday.</p>
+<p>At this point I decided to contact Illion to find out if they could update their listing to include the required information. Sure, they said, just send us a request via email.</p>
+<p>So I sent an email, they updated their listing (I don’t know what validation they do) and Sectigo were happy and issued the certificate.</p>
+<p>I was impressed how fast the dongle was delivered once the validation was done. It would have only been a day or 2 for delivery to Australia.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/23</link>
+        <pubDate>Tue, 16 Apr 2019 00:21:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the idea. I’ll check with Sectigo if they’re OK with notarized papers from bank.</p>
+<p>I was hoping I’m already in DUNS, given that government of Canada shares those records with interested businesses, but DUNS search UI just searches forever - no way to tell if it found me or not. Gonna try later again.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/22</link>
+        <pubDate>Tue, 02 Apr 2019 12:54:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Don’t know about Canada and Sectigo, but I verified address by providing Visa Business card listing, and public company registration and tax records. Serbia, 4-5 years ago. When I extended certificate few months ago, business was already in DUNS database and that was enough. Don’t know how it ended up in DUNS, maybe they scrape public records.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/21</link>
+        <pubDate>Tue, 02 Apr 2019 11:23:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Alright, I’ve bought an OV cert from KSign.</p>
+<p>They redirected me to a company called SECTIGO which supposed to verify my business info.</p>
+<blockquote>
+<p>Your order is awaiting for physical address and phone number verification.</p>
+</blockquote>
+<p>This company suggested getting an accreditation at BBB or similar organization. OK, can do. However, the membership in BBB is $500+/yr. That’s more than the cert itself.</p>
+<p>Before I drop this half-grand for membership I truly do not need, maybe there are less expensive ways to confirm the business info?</p>
+<p>Any hints?</p>
+<p>P.S. To be more specific, the business is in Canada.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/20</link>
+        <pubDate>Tue, 02 Apr 2019 03:05:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="18" data-topic="5806" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/photawe/40/4181_1.png" class="avatar"> photawe:</div>
+<blockquote>
+<p><a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> Is that time-dependent or number-of-downloads dependent?</p>
+</blockquote>
+</aside>
+<p>Hard for me to tell, I’m afraid, because I’ve only been through this process twice.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/19</link>
+        <pubDate>Tue, 24 Apr 2018 12:35:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> Is that time-dependent or number-of-downloads dependent?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/18</link>
+        <pubDate>Tue, 24 Apr 2018 11:43:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <p>Ouch, got it, thanks!<br>
+Now I’m curious: if I make an app, sign it with non-EV certificate, use Desktop Bridge to publish it on Microsoft Store, would that still show the SmartScreen warning?<br>
+I did a bit of search on google, and so far I’m not sure what the answer would be.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/17</link>
+        <pubDate>Tue, 24 Apr 2018 11:42:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="15" data-topic="5806">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/p/b487fb/40.png" class="avatar"> photawe:</div>
+<blockquote>
+<p>Having said that, please note that getting rid of the “warning” message will not get be as easy as you think.</p>
+</blockquote>
+</aside>
+<p>Right, that’s Microsoft Smart Screen. Hence my advice to ditch old style code-signing certificates and jump to something that solves the whole problem (EV code-signing certs).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/16</link>
+        <pubDate>Tue, 24 Apr 2018 10:29:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[photawe]]></dc:creator>
+        <description><![CDATA[
+            <p>I recommend/use Comodo.</p>
+<p>Having said that, please note that getting rid of the “warning” message will not get be as easy as you think.<br>
+In fact, I’m going through the same process myself - even though you sign your app, Windows Defender on Win10 will still consider it “bad”, and by default will warn users not to install it.</p>
+<p>You will need to use something like Desktop Bridge, and then add your app to the Windows Store - I’m in the process or learning how to do it. Doesn’t seem like a very complicated process, but still - it will set you back a few days.</p>
+<p>To get you started:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://mva.microsoft.com/Storage/public/images/favicon.ico" class="site-icon" width="128" height="128">
+      <a href="https://mva.microsoft.com/en-US/training-courses/developers-guide-to-the-desktop-bridge-17373?l=IiLpU1WhD_706218965" target="_blank" rel="nofollow noopener">Microsoft Virtual Academy</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://mva.microsoft.com/Storage/public/images/MVA-share-logo.png" class="thumbnail onebox-avatar" width="283" height="283">
+
+<h3><a href="https://mva.microsoft.com/en-US/training-courses/developers-guide-to-the-desktop-bridge-17373?l=IiLpU1WhD_706218965" target="_blank" rel="nofollow noopener">Developer's Guide to the Desktop Bridge</a></h3>
+
+<p>Use the Desktop Bridge platform and tooling to bring existing PC software to the Universal Windows Platform and the Windows Store.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<a href="https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root" class="onebox" target="_blank" rel="nofollow noopener">https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root</a></p>
+<p>P.S. When signing your app with the certificate, I recommend you sign all you .EXEs, and then sign the setup kit.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/15</link>
+        <pubDate>Mon, 23 Apr 2018 22:17:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="5806">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Do you have to insert the dongle every time you prepare the installation package?</p>
+</blockquote>
+</aside>
+<p>Yep. Or just leave it in. In our setup, we have a dev-server machine with the dongle plugged in it that builds and signs the “release” builds as just another step in the process. This way our developers (who have permission to make release builds) can run the builds on that dev-server without needing access to the dongle itself.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/14</link>
+        <pubDate>Mon, 23 Apr 2018 13:54:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="12" data-topic="5806">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/wyattoday/40/3755_1.png" class="avatar"> wyattoday:</div>
+<blockquote>
+<p>Also, EV Code-signing certs (which are different than EV SSL certs) require a second factor of authentication (usually a dongle).</p>
+</blockquote>
+</aside>
+<p>How does it work for the builds? Do you have to insert the dongle every time you prepare the installation package?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/13</link>
+        <pubDate>Mon, 23 Apr 2018 13:05:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s unlikely. It would require Microsoft to revoke Symantec from the trusted CA’s in their Authenticode system. So, it’s not up to Google at all. And Microsoft has make no announcement suggesting that would happen. Also, EV Code-signing certs (which are different than EV SSL certs) require a second factor of authentication (usually a dongle). Meaning EV certs cannot be spoofed or stolen (or mis-issued) without that second factor.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/12</link>
+        <pubDate>Mon, 23 Apr 2018 11:54:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[AndyDentPerth]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there any chance the Google crackdown on Symantec as a root CA is also going to affect desktop signing? Most recent article I found explaining this was <a href="https://www.theregister.co.uk/2018/02/07/beware_the_coming_chrome_certificate_apocalypse/" rel="nofollow noopener">The Register on Feb 7th 2018</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/11</link>
+        <pubDate>Sat, 21 Apr 2018 16:00:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="5806">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4092_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>how quickly OV is getting trusted by Smart Screen?</p>
+</blockquote>
+</aside>
+<p>It took a couple of weeks for me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/10</link>
+        <pubDate>Fri, 20 Apr 2018 07:29:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Re: EV vs OV.</p>
+<p>Wyatt is for EV, and it makes sense… but also costs a lot more. For a software with no revenue yet the difference is important.</p>
+<p>Folks, in your experience - how quickly OV is getting trusted by Smart Screen?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/9</link>
+        <pubDate>Thu, 19 Apr 2018 17:28:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ll go against the grain and say you should shell out the extra cash an buy an EV code-signing cert/dongle. Yes, it will cost more in the short term but you have the added benefit of automatically being trusted by Microsoft’s smart screen.</p>
+<p>We use Digicert’s EV cert and we’re happy with it: <a href="https://www.digicert.com/code-signing/ev-code-signing/" rel="nofollow noopener">https://www.digicert.com/code-signing/ev-code-signing/</a></p>
+<p>More information about that here:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.digicert.com/wp-content/uploads/2017/02/cropped-logo-32x32.png" class="site-icon" width="32" height="32">
+      <a href="https://www.digicert.com/blog/ms-smartscreen-application-reputation/" target="_blank" title="10:07AM - 03 September 2014" rel="nofollow noopener">DigiCert – 3 Sep 14</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/476;"><img src="https://www.digicert.com//wp-content/uploads/2014/07/shutterstock_520693948.jpg" class="thumbnail"></div>
+
+<h3><a href="https://www.digicert.com/blog/ms-smartscreen-application-reputation/" target="_blank" rel="nofollow noopener">MS SmartScreen and Application Reputation | DigiCert Blog</a></h3>
+
+<p>EV Code Signing Certificates, along with MS SmartScreen technology, protect users from downloading infected applications and malware.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://blogs.msdn.microsoft.com/ie/wp-content/themes/microsoft-msdn/images/favicon-msdn.png" class="site-icon" width="16" height="16">
+      <a href="https://blogs.msdn.microsoft.com/ie/2012/08/14/microsoft-smartscreen-extended-validation-ev-code-signing-certificates/" target="_blank" rel="nofollow noopener">IEBlog</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://blogs.msdn.microsoft.com/ie/2012/08/14/microsoft-smartscreen-extended-validation-ev-code-signing-certificates/" target="_blank" rel="nofollow noopener">Microsoft SmartScreen &amp; Extended Validation (EV) Code Signing Certificates</a></h3>
+
+<p>Today two Certificate Authorities (CAs), Symantec and DigiCert, announced the introduction of EV code signing certificates. Their announcement is a positive development for users and businesses because it helps both sides reduce fraud and increase...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>If being trusted by smart screen isn’t important to you, then yeah, go with whatever is cheapest.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/8</link>
+        <pubDate>Wed, 18 Apr 2018 18:01:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Another vote for both KSign. Btw. they’re Comodo reseller, so Comodo is doing verification part and delivers certificate. I also recommend purchasing max available duration. However, if money is tight, renewal process is a bit less demanding than first purchase. At least in my case they found company record in some DUNS database, and all that I had to is answer some automatic call.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/7</link>
+        <pubDate>Wed, 18 Apr 2018 10:39:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Another vote for KSoftware. As <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> says, get a longer duration one to reduce the hassle of yearly renewals.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/6</link>
+        <pubDate>Mon, 16 Apr 2018 22:14:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I use ksign. I recommend buying a certificate with the maximum possible duration, as it can be a real pain each time to acquire, no matter who the provider is.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/5</link>
+        <pubDate>Sun, 15 Apr 2018 12:30:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+      <item>
+        <title>Code signing certificate recommendation</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 for KSign. We use them as well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806/4</link>
+        <pubDate>Sun, 15 Apr 2018 00:56:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5806-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/code-signing-certificate-recommendation/5806.rss">Code signing certificate recommendation</source>
+      </item>
+  </channel>
+</rss>

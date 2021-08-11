@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Windows app code signing in 2016</title>
+    <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750</link>
+    <description>Microsoft announced that starting from January 1, 2016, software signed with certificates which use SHA-1 algorithm will no longer be treated as digitally signed. Meaning it will display various warnings when you try to install such software. Older builds, timestamped before 1st January will continue to work.
+
+I&#39;ll link to discussion on BOS about this subject:
+
+http://discuss.joelonsoftware.com/default.asp?biz.5.861916.16
+
+However I don&#39;t see that it&#39;s enforced yet. Tried to install new release of CCProxy on Win 8.1 and Win 10 and it works without any warnings. I can see digital signature, that it&#39;s SHA-1 and timestamped in 2016 and there are no problems yet. Does anyone else see this issue with new builds and SHA-1?</description>
+    
+    <lastBuildDate>Wed, 10 Feb 2016 00:50:16 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Mark_Nemtsas]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a Comodo certificate issued in mid-2015.  It supports both algorithms.  The only real extra step I needed to take was to create a PFX file for the newer versions of SignTool to work with.  Comodo automagically installed my certificate when I purchased it and I’d never needed the PFX file before.  There’s a short write up of the process I followed to get dual signing working <a href="http://www.whatmarkdid.com/software/windows-app-code-signing/" rel="nofollow noopener">here</a>.</p>
+<p>For those who use InnoSetup they introduced Dual Signing of installers / uninstallers in version 5.5.8 which was released about 4 weeks ago.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/32</link>
+        <pubDate>Wed, 10 Feb 2016 00:50:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-32</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>AFAIK the reputation is collected per-certificate, not for individual files. Each new version of my programs is published under a new file name (e.g. SoftwareName_setup_a.b.c.d.exe). The “not commonly downloaded” warning lasted only for a short period of time, when a certificate was just issued. Nothing changed when I added sha-256 signature in addition to sha-1. Tested on Windows XP, 7, 8, 10 with all latest updates.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/31</link>
+        <pubDate>Thu, 04 Feb 2016 18:02:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe we should share our downloads to help each other get our reputation up…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/30</link>
+        <pubDate>Fri, 29 Jan 2016 10:23:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I expect they use a hash of the file contents to determine what is a unique file. I would be very surprised if they pay attention to the file name.</p>
+<p>A few other people have mentioned smartscreen suddenly popping up when you change your cert, but that it then usually goes away in a few hours or days (depending on how many people download your stuff perhaps).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/29</link>
+        <pubDate>Thu, 28 Jan 2016 08:15:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Yep, there must be a URL out there that describes all the inputs to the similarity score.</p>
+<p>In my case, all files are named the same: <code>setup.exe</code>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/28</link>
+        <pubDate>Wed, 27 Jan 2016 12:15:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>I didn’t wrote it clearly. I’m putting version number as part of file name. Therefore each new release appears as a new file name. I have no idea how MS determines what’s new file, whether they disregard numbers from file name or not.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/27</link>
+        <pubDate>Wed, 27 Jan 2016 12:01:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t. Not anywhere in the signature-related bits anyway. I’m assuming the content of the actual app is ignored anyway, otherwise this “reputation” would be getting trashed on every release (I aim for fortnightly/monthly releases).</p>
+<p>Sounds like it could be a possible problem though, given what MS say about comparing the text portions of the signature.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/26</link>
+        <pubDate>Wed, 27 Jan 2016 11:45:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Do you put version name in downloaded file? I do, and that proved useful over the years when I want to point customer to specific version for whatever reason. However I made that decision almost a decade ago when there were no drawbacks for that. Now I wonder if it’s a problem whenever there’s a new download with different version number.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/25</link>
+        <pubDate>Wed, 27 Jan 2016 11:06:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Anyone else been having problems since signing with their new SHA-256 certs?</p>
+<p>Both IE (SmartScreen) and Chrome (whatever it uses) now warn me the software isn’t downloaded often and may be malware yadda yadda.</p>
+<p>I never got this with my previous SHA1 certs, including when I originally started signing a couple of years ago.</p>
+<p>I’m wondering if I’m not signing the software correctly, but the details appear under Windows “Digital Signatures” ok, the only difference being a missing support email address in the new version (I can’t remember how I provided that in the first place).</p>
+<p>I’ve spoken to the ever-helpful Mitchell at K Software who said it probably needs downloading a few times and then it will be trusted… it’s just that as this didn’t happen when first signing under SHA1 I’m a bit nervous something is not quite right…</p>
+<p>The software itself works fine once all the “Run anyway” hoops are jumped through.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/24</link>
+        <pubDate>Wed, 27 Jan 2016 10:45:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>With some help from Mitchell Vincent of <a href="http://ksoftware.net">ksoftware.net</a> I written up what I think you need to know about SHA1/SHA2 and code signing:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=32" class="site-icon" width="32" height="32">
+      <a href="https://successfulsoftware.net/2016/01/22/software-sha1-sha2-digital-certificates/" target="_blank" title="08:49PM - 22 January 2016" rel="nofollow noopener">Successful Software – 22 Jan 16</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:439/292;"><img src="https://successfulsoftware.files.wordpress.com/2016/01/digital-certificate-sha11.jpg?fit=440%2C330" class="thumbnail"></div>
+
+<h3><a href="https://successfulsoftware.net/2016/01/22/software-sha1-sha2-digital-certificates/" target="_blank" rel="nofollow noopener">What every software vendor needs to know about SHA1/SHA2 and digital...</a></h3>
+
+<p>TL;DR : If you digitally sign your software you need to make sure you have an SHA2 certificate and use it to dual sign your software with both SHA1 and SHA2 digests. Digital certificates are used t…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/23</link>
+        <pubDate>Fri, 22 Jan 2016 20:52:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p>I just tried my cert out I got from Ksoft in June 2013 (5-yr cert) and it does both SHA1 &amp; SHA256 (you need to timestamp it for SHA256) so don’t panic until you’re totally sure.</p>
+<p>I used this to sign the SHA256 (the <code>/debug</code> flag gives you a verbose output. See <a href="http://stackoverflow.com/a/23051949/492" rel="nofollow noopener">http://stackoverflow.com/a/23051949/492</a></p>
+<p><code>"C:\Program Files (x86)\Windows Kits\10\bin\x64\signtool.exe" sign /debug /fd sha256 /f "C:\....certificat.pfx" /p password /tr http://timestamp.geotrust.com/tsa /v file.dll</code></p>
+<p>+1 for Ksoft, I remember them being good to deal with.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/22</link>
+        <pubDate>Thu, 21 Jan 2016 11:26:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Some more info from KSoftware here:<br>
+<a href="http://support.ksoftware.net/support/solutions/articles/215805-the-truth-about-sha1-sha256-and-code-signing-certificates-" class="onebox" target="_blank">http://support.ksoftware.net/support/solutions/articles/215805-the-truth-about-sha1-sha256-and-code-signing-certificates-</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/21</link>
+        <pubDate>Thu, 21 Jan 2016 10:11:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="19" data-topic="3750" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dmitry/40/3673_1.png" class="avatar"> Dmitry:</div>
+<blockquote>
+<p>Had anyone seen those warnings? Just tried old (sha1 signed) and new downloads (both sha1 and sha256) on Windows 10 with all updates, but neither of install packages issued warning for me…</p>
+</blockquote>
+</aside>
+<p>The warnings are scheduled to start in January, 2017.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/20</link>
+        <pubDate>Sun, 17 Jan 2016 17:24:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>Had anyone seen those warnings? Just tried old (sha1 signed) and new downloads (both sha1 and sha256) on Windows 10 with all updates, but neither of install packages issued warning for me…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/19</link>
+        <pubDate>Sun, 17 Jan 2016 16:14:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[tonyedgecombe]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not sure how you’d check, presumably an old download would show the scary warning.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/18</link>
+        <pubDate>Wed, 13 Jan 2016 07:45:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Victory]]></dc:creator>
+        <description><![CDATA[
+            <p>Has anybody found a way to sign installer “msi” files using sha2 certificate so that they are fine both on newer versions of the Windows as well as on XP &amp; Vista?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/17</link>
+        <pubDate>Tue, 12 Jan 2016 23:18:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>Good question - I assume not but have to check.</p>
+<p>In fact how do you check that!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/16</link>
+        <pubDate>Tue, 12 Jan 2016 14:08:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[tonyedgecombe]]></dc:creator>
+        <description><![CDATA[
+            <p>Rhino,</p>
+<p>Did they revoke the old certificate afterwards? If so did that mean any old downloads needed to be re-signed to avoid a scary warning?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/15</link>
+        <pubDate>Mon, 11 Jan 2016 11:14:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>I had a cert from Comodo via KSoftware with almost a year to run.</p>
+<p><strong>Comodo will re-issue them for free</strong> - <a href="https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/973/102/important-change-announcement---deprecation-of-sha-1" rel="nofollow noopener">https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/973/102/important-change-announcement---deprecation-of-sha-1</a></p>
+<p>Had to contact KSoftware to get this done and Mitchell organised it with no problems.</p>
+<p><strong>Highly recomend KSoftware for certificates</strong>, used them for over 6 years now.</p>
+<p><a href="http://www.ksoftware.net/" class="onebox" target="_blank" rel="nofollow noopener">http://www.ksoftware.net/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/14</link>
+        <pubDate>Mon, 11 Jan 2016 09:35:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>I mean, you sure that MS means THIS algorithm, not the one inside the certificate?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/13</link>
+        <pubDate>Sun, 10 Jan 2016 17:13:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>In addition to the “/fd sha256” parameter, “/td sha256” should also be added to make timestamp digest sha256 too.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/12</link>
+        <pubDate>Sun, 10 Jan 2016 09:44:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Gareth]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/jitbit">@jitbit</a>, yes, on Windows 10. Not sure about earlier versions of Windows:<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/d/def459f93dcd81832f72aedc44ece692b26945c6.png" data-download-href="/uploads/short-url/vOlwb8EvLXqEb5kJWH5JZhR56wC.png?dl=1" title="shadetails.png"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/d/def459f93dcd81832f72aedc44ece692b26945c6.png" alt data-base62-sha1="vOlwb8EvLXqEb5kJWH5JZhR56wC" width="384" height="500" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/d/def459f93dcd81832f72aedc44ece692b26945c6_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">shadetails.png</span><span class="informations">405×527 8.29 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/11</link>
+        <pubDate>Thu, 07 Jan 2016 16:35:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Wait a second. “Digest Algorithm”? You sure about this? <a class="mention" href="/u/gareth">@Gareth</a></p>
+<p>I think you have to click “view certificate” - “details” and see “Singature algorithm” and “signature hash algorithm”</p>
+<p>PS. side note: Joel’s forum is still alive? I guess that’s even bigger news hahah <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/10</link>
+        <pubDate>Thu, 07 Jan 2016 10:29:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Victory]]></dc:creator>
+        <description><![CDATA[
+            <p>The two commands in Gareth’s post were very helpful. With those, I was able to dual sign the “exe” file using a sha2 certificate.</p>
+<p>However, that approach does not work for “msi” files. It gives the error “Multiple signature support is not implemented for this filetype”.  Searching for this, I reached <a href="http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx#How_to_handle_MSI_files" rel="nofollow noopener">this link</a>.</p>
+<p>That article does mention a way to dual sign the msi files. But, the example command there ends with “foo.exe” and not an msi file, making me not trust it fully!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/9</link>
+        <pubDate>Thu, 07 Jan 2016 00:05:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+      <item>
+        <title>Windows app code signing in 2016</title>
+        <dc:creator><![CDATA[Ger]]></dc:creator>
+        <description><![CDATA[
+            <p>My certificate was due Feb 6 2016, so I needed a new one anyway. Surprisingly the validation process was very fast this time, only a few days and no need to supply them with additional proof as in previous times. Only an automated phone call procedure by Comodo this time was required.</p>
+<p>As both grujicd and me learned: use the latest signtool!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750/8</link>
+        <pubDate>Wed, 06 Jan 2016 14:11:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3750-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/windows-app-code-signing-in-2016/3750.rss">Windows app code signing in 2016</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hello, i am 16 y/o startupper and I am living in the battlefield</title>
+    <link>https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945</link>
+    <description>Hello!
+
+I am Stas Prisiazhnuk, 16 years old guy from Donetsk, Ukraine. Yep, we have war here.
+
+To collect payments now you have to create personal website and integrate api there or send your card/PayPal number to customer.
+
+I am working on service, where regular people can create a payment form in a click and get simple link to it. Collect donations, sell stuff in social networks or send invoices right to customer. Do everything you want with it.
+
+I&#39;ve created prototype for tests and feedback. Feel free to try it! persollo.com</description>
+    
+    <lastBuildDate>Sat, 04 Apr 2015 17:35:58 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hello, i am 16 y/o startupper and I am living in the battlefield</title>
+        <dc:creator><![CDATA[iStasiik]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for your feedback!</p>
+<ol>
+<li>
+<p>No, whole system looks smth like this: person is selling smth or collecting donations. He doesn’t have personal website, but he wants to create payment form to get money. He creates form and copy link to it. Now he can share this link in any way. For example, he can collect donations for poor children in Twitter. So he posts this link and other people pay him through it. Collector does the work without having the customer think about it.</p>
+</li>
+<li>
+</li>
+</ol>
+<p>2.1. Of course, we understand it. So now  we are going to work with our partners - processing centre and Raifaizen bank. We will send them card holders info without seeing it, right from user side. They do rest of the work and transfer money to every single country.</p>
+<p>2.2. We are going to get PCI DSS certificate of 2 Level before launching. Otherwise our processing centre just wouldn’t start working with us.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945/3</link>
+        <pubDate>Sat, 04 Apr 2015 17:35:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2945-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945.rss">Hello, i am 16 y/o startupper and I am living in the battlefield</source>
+      </item>
+      <item>
+        <title>Hello, i am 16 y/o startupper and I am living in the battlefield</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="2945">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/i/278dde/40.png" class="avatar"> iStasiik:</div>
+<blockquote>
+<p>people can create a payment form in a click and get simple link to it</p>
+</blockquote>
+</aside>
+<p>Is it for ad-hoc payment? I.e. A wants to send some money to B, but B doesn’t have a business site?</p>
+<ol>
+<li>How is it going to be different from Paypal?</li>
+<li>Any services that involve monetary transactions are going to be under attack from two directions:<br>
+2.1 Government regulators (I do understand that the local government you have now is dealing with more pressing issues – but the compliance with the regulations will be required at your connection points, i.e. where you talk to the outside banking system).<br>
+2.2 Fraudsters and other criminals who always look for ways to launder the money. It is because of this you get 2.1.</li>
+</ol>
+<p>May be you could consider to re-target your application to run over e-currencies? I mean, I’d like to use Bitcoin for some of my transactions, but the complexity of its use stops me. If there were a simplification layer on top of it, on the other hand, I might have tried. (The bitcoin exchange rate fluctuations is not very important here, because Bitcoin is just a media in this case).</p>
+<p>I.e. become a “Paypal for Bitcoin”.</p>
+<p>Just my CAD 0.02.</p>
+<p>Good luck to you!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945/2</link>
+        <pubDate>Sat, 04 Apr 2015 14:15:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2945-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945.rss">Hello, i am 16 y/o startupper and I am living in the battlefield</source>
+      </item>
+      <item>
+        <title>Hello, i am 16 y/o startupper and I am living in the battlefield</title>
+        <dc:creator><![CDATA[iStasiik]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello!</p>
+<p>I am Stas Prisiazhnuk, 16 years old guy from Donetsk, Ukraine. Yep, we have war here.</p>
+<p>To collect payments now you have to create personal website and integrate api there or send your card/PayPal number to customer.</p>
+<p>I am working on service, where regular people can create a payment form in a click and get simple link to it. Collect donations, sell stuff in social networks or send invoices right to customer. Do everything you want with it.</p>
+<p>I’ve created prototype for tests and feedback. Feel free to try it! <a href="http://persollo.com" rel="nofollow noopener">persollo.com</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945/1</link>
+        <pubDate>Sat, 04 Apr 2015 10:24:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2945-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hello-i-am-16-y-o-startupper-and-i-am-living-in-the-battlefield/2945.rss">Hello, i am 16 y/o startupper and I am living in the battlefield</source>
+      </item>
+  </channel>
+</rss>

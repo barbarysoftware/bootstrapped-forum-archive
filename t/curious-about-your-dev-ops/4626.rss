@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Curious about your Dev Ops</title>
+    <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626</link>
+    <description>Just provisionned a new server on Linode and got my 20$ ! ... Thanks guys... was a Digital Ocean fan but will try Linode this time... 
+
+Are you guys managing your own servers? Using consoles like Laravel Forge... Do you run your own email servers?
+
+I have a tendency to go deep on these, configuring Nginx and stuff... The advantage is knowing what is happening on the back end... but eats up a lot of time... It also cheap... and I am cheap... lol 
+
+What are bootstrapers doing?</description>
+    
+    <lastBuildDate>Fri, 06 Jan 2017 14:29:37 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>In our case it is actually 2 steps:</p>
+<ol>
+<li>Terraform builds infrastructure: EC2 instances, security groups, ELBs, Route53, S3, VPS, ElasticCache, ElasticFS, RDS,SES,creates SSL certificates, etc…</li>
+<li>Custom script, executed from Jenkins, ssh to environment and deploys build artifacts and configuration files.</li>
+</ol>
+<p>The nice thing about Terraform is that you can use it to upgrade or downgrade existing live environment.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/41">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/41</link>
+        <pubDate>Fri, 06 Jan 2017 14:29:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-41</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>For sending emails we just use our Office 365 subscription. Or SES, if software is installed on servers managed by customer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/40">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/40</link>
+        <pubDate>Fri, 06 Jan 2017 14:22:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-40</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>I use both mailgun and amazon SES.  Mailgun is great for creating lists and sending out to the list.  With amazon SES you have to send out the emails to your list members manually.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/39">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/39</link>
+        <pubDate>Thu, 05 Jan 2017 20:21:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-39</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[fideloper]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s great, especially for AWS.</p>
+<p>Don’t get confused tho, it’s job is to setup infrastructure in AWS, not decide how you run your apps. Comparing terraform to docker is apples and oranges. (Apologies if I’m misinterpreting your question).</p>
+<p>A typical workflow might be:</p>
+<ol>
+<li>Terraform build infrastructure</li>
+<li>Ansible (or chef or puppet or whatever) provisions servers (possibly ones created or setup by terraform)</li>
+<li>Some automated deployment deploys to web servers</li>
+</ol>
+<p>Steps 2/3 there could change or be replaced by a socket based setup, but you may still decide to use terraform to setup the infrastructure, potentially even if using ECS.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/38">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/38</link>
+        <pubDate>Thu, 05 Jan 2017 18:00:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-38</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="36" data-topic="4626">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/maximus/40/3510_1.png" class="avatar"> maximus:</div>
+<blockquote>
+<p>Recently started to use <a href="https://www.terraform.io/" rel="nofollow noopener">https://www.terraform.io/</a> for AWS provisioning.</p>
+</blockquote>
+</aside>
+<p>I’ve been reading about this a bit, but haven’t had a chance to use it. How’s it been working for you with AWS? Curious how this would compare to using Docker up on AWS (and locally for a dev environment)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/37">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/37</link>
+        <pubDate>Thu, 05 Jan 2017 16:39:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-37</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>We often use <a href="https://www.chicagovps.net/" rel="nofollow noopener">https://www.chicagovps.net/</a>. Very cheap: a barebone Linux box with 8GB RAM and and SSD - 20$ per month. So far - they have been reliable.</p>
+<p>We are running a dedicated DEV server which handles build/provisioning/deployment. Stack: typical combination of git/jenkins/nexus/custom shell scripts.</p>
+<p>When clients ask we deploy to AWS, usually some sort of t2.</p>
+<p>Recently started to use <a href="https://www.terraform.io/" rel="nofollow noopener">https://www.terraform.io/</a> for AWS provisioning.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/36</link>
+        <pubDate>Thu, 05 Jan 2017 14:38:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-36</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="34" data-topic="4626">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/serge/40/2473_1.png" class="avatar"> Serge:</div>
+<blockquote>
+<p>Ok then, why bother while bootstrapping…</p>
+</blockquote>
+</aside>
+<p>Yea good question.</p>
+<p>For me it’s always been that DigitalOcean/Heroku/etc… stop being cost &amp; time effective for me once I get to a certain scale (traffic/usage volumes).</p>
+<p>So now I’m locked into their infrastructures and I need to un-bolt all of it and migrate over to something that can handle it. For me that’s always been AWS.</p>
+<p>That migration has always felt like such a painful waste of time (I typically do my own DevOps as well). I’d rather be driving more visitors into my product, or out sailing in the Bay <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>So my solution, now, has just been to start somewhere that can handle the load “i hope” to get with my product(s).</p>
+<p>This approach may not work for anyone else, but it’s been working for me…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/35</link>
+        <pubDate>Wed, 04 Jan 2017 17:12:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-35</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok then, why bother while bootstrapping… None of my DigitalOcean instances have been any trouble with any thing I threw at them including database…</p>
+<p>There are some large sites that run on those do and linode instances… without all of this massaging… and as soon as you start using those AWS services, it’s easy to get locked in…</p>
+<p>I dunno… Maybe it’s because I am ok with doing my own devops…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/34</link>
+        <pubDate>Wed, 04 Jan 2017 17:06:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-34</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="32" data-topic="4626">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/fideloper/40/1329_1.png" class="avatar"> fideloper:</div>
+<blockquote>
+<p>They work on a system of CPU credits and don’t usually make sense to use with an active database</p>
+</blockquote>
+</aside>
+<p>Yea, you really don’t want to install your own DB on here, you want to use their RDS instances for anything DB related. They are pre-installed, fully managed, Database instances. Makes life easy <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>If you did want to install your own DB (and why would you for a “getting started” bootstrapped product?) then you need to pick an instance type that works best for that specific use-case.</p>
+<p>t2’s (and AWS in general) are great, cheap, little virtual servers that can serve up your bootstrapped products web traffic without issue.</p>
+<p>AWS makes it trivial and cost effective to scale up when you need to, but stay cost sensitive when starting out.</p>
+<p>At least, that’s been my experience…</p>
+<p>You can ignore the whole CPU credits thing (and the likes) under this use-case, t2’s provide a base line that is sufficient for almost all needs when you’re bootstrapping a product.</p>
+<p>I’ve found that you need to pay attention to that stuff when you are “pushing the envelope.” A problem we all hopefully have at some point <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>My experience with them has been scaling up to over 100k visitors/day on AWS instances without issue.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/33</link>
+        <pubDate>Wed, 04 Jan 2017 16:59:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-33</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[fideloper]]></dc:creator>
+        <description><![CDATA[
+            <p>Your mileage will vary, but watch out for t2 instance types. They work on a system of CPU credits and don’t usually make sense to use with an active database (you can/will run out of credits quickly) or other periodic CPU-intensive tasks that may eat credits away quicker than they are replenished.</p>
+<p>We use(d) a lot of t2.micro instances - aside from having to keep an eye on CPU usage, we found that nano/micro instances more often have issues. These either clear up in ~30m on their own, or you need to spin up new instances to replace them. t2.medium instances have yet to have such an issue (knock on wood). I think they cram a lot of micro/nano instances into each physical host - you may get more noisy neighbor issues aside from the instances failing more often.</p>
+<p>(This is in the us-east-1 region, you may experience otherwise in other regions).</p>
+<p>Just our experience - That all may be totally OK for you if you’re using  multiple instances behind an LB and have automation in place to replace a server quickly.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/32</link>
+        <pubDate>Wed, 04 Jan 2017 15:44:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-32</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh the sail servers… lol I was thinking of EC2 instances… now, those I just discovered… thanks… I am so entrenched in my digitalocean/linode that I did not think they had such a service… I will check it out for sure… they have a free month offer so I will spin up a server to play with it…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/31</link>
+        <pubDate>Wed, 04 Jan 2017 03:22:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <p>Well <a class="mention" href="/u/serge">@Serge</a>, i guess… <img src="https://emoji.discourse-cdn.com/twitter/confused.png?v=5" title=":confused:" class="emoji" alt=":confused:"></p>
+<p>But I mean you control your outbound traffic, are you really going to not know that your fetching over 1TB of data for $5/month?</p>
+<p><a href="https://amazonlightsail.com/" class="onebox" target="_blank" rel="nofollow noopener">https://amazonlightsail.com/</a></p>
+<blockquote>
+<ul>
+<li>Outbound data transfer in excess of your plan’s data transfer quota is subject to overage charges. Please see FAQ for more detail</li>
+</ul>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/30</link>
+        <pubDate>Tue, 03 Jan 2017 21:24:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>I was always scared of the unlimited potential cost of something I do in AWS… If they had like a 20$ month capped offering I would be fine but you pay for every byte… scary…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/29</link>
+        <pubDate>Tue, 03 Jan 2017 20:27:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <p>So I’m a big fan of AWS EC2 instances.</p>
+<p>Right now you can get a nano instance for ~$4.25/month and it’s trivial to scale up when you need to.</p>
+<p>I too use Linode for certain things, like dev/test environments, but AWS for production has always done me well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/28</link>
+        <pubDate>Tue, 03 Jan 2017 19:47:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree, if the cert lasts 90 days and something happens where the CA dries up you have a window to get a new one purchased and installed without interruption.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/27</link>
+        <pubDate>Thu, 29 Dec 2016 00:53:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Then you buy one and install it… lol I don’t see it as a big deal and besides, I like the idea…</p>
+<p>If wikipedia can survive on donation when they are full of shit, why not that?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/26</link>
+        <pubDate>Wed, 28 Dec 2016 21:51:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="24" data-topic="4626">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/serge/40/2473_1.png" class="avatar"> Serge:</div>
+<blockquote>
+<p>take a look at who is behind Letencrypt…</p>
+</blockquote>
+</aside>
+<p>Who? I do not see anyone with endless pockets. Am I looking at a wrong place?</p>
+<p>I see Corp sponsors, but their total pay is a few million dollars a year (assuming they do not pay above the required membership level). That doesn’t feel enough to run a large CA.</p>
+<p>And they already ask for donations. What if their donation goals are not met? What services will be scaled down or shut down?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/25</link>
+        <pubDate>Wed, 28 Dec 2016 20:15:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Lol… Yes, it is free like in Open Source…</p>
+<p>They are not going broke anytime soon… take a look at who is behind Letencrypt…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/24</link>
+        <pubDate>Wed, 28 Dec 2016 18:49:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="12" data-topic="4626">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/timbowhite/40/3565_1.png" class="avatar"> timbowhite:</div>
+<blockquote>
+<p>LetsEncrypt</p>
+</blockquote>
+</aside>
+<p>CA running on donations? <img src="https://emoji.discourse-cdn.com/twitter/scream_cat.png?v=5" title=":scream_cat:" class="emoji" alt=":scream_cat:"> I’d rather not use them <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/22</link>
+        <pubDate>Wed, 28 Dec 2016 00:17:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting discussion on SAAS security in other thread…</p>
+<p>All ties in to this DevOps thread… Laravel Forge does part of the work… I wonder how the load balancer set-up is made… basically a load balancer with only one server downstream is really a reverse proxy…</p>
+<p>Maybe Its just me… but I hate not understanding what is going on… Maybe I am just a control freak…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/20</link>
+        <pubDate>Sun, 25 Dec 2016 22:01:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[timbowhite]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>The big problem is that you have no control over your maximum expenses (you can’t set a hard limit).</p>
+</blockquote>
+<p>Definitely. I think the other big problem with AWS is vendor lock-in.  If your core architecture is based on particular AWS services, it’ll be a big PITA to ever transition away. (Note this applies more to AWS services like S3 or Lambda, than others like EC2).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/19</link>
+        <pubDate>Wed, 21 Dec 2016 10:13:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[peter_backx]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m a bit of a lurker here, but this is a topic I care a lot about <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>For my personal, small projects, I use Digital Ocean. The fact that you know exactly what you are going to pay is very reassuring.</p>
+<p>For business, I prefer AWS because of all its supporting services and it usually gets you more for the same amount of money.</p>
+<p>The big problem is that you have no control over your maximum expenses (you can’t set a hard limit). So if you do something stupid, you’ll be punished. If you go AWS, start small, get used to the environment and how billing works. Everything costs money, every byte processed, transferred and stored and then some. But if you have time to figure it all out, you can get discounts (eg for EC2 there are reserved and spot instances)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/18</link>
+        <pubDate>Wed, 21 Dec 2016 08:20:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>I always was afraid of cost with EC2… but it seems to be the best solution for sure… I must say that Digitalocean has been very good with me… Tried Linode because of the podcast… will see how it goes… just hosting a few blogs on that machine… 20$ month, not much to loose… will see how it goes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/17</link>
+        <pubDate>Wed, 21 Dec 2016 03:42:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Been there, done that in the past… what a pain… both local and colo servers… Nan… not critical enough…</p>
+<p>Was reading their recount of the ddos attacks they had last xmas… and man, given the size of their business they were pretty much caught off guard… They had no headroom, their dns got swamped…really… in 2016 … Its like they did not expect that at all… Now they are now fixing all this…</p>
+<p>I dunno… I still like the romantic view of the decentralized web… but it requires giants with giant means to keep it running… lol</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/16</link>
+        <pubDate>Wed, 21 Dec 2016 03:39:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+      <item>
+        <title>Curious about your Dev Ops</title>
+        <dc:creator><![CDATA[timbowhite]]></dc:creator>
+        <description><![CDATA[
+            <p><code>Appart from running on metal, there is not much you can do about such laxism...</code></p>
+<p>Right. If security is a big deal to your business, you should be running your own hardware either on-site, or in a colocation inside a locked cage, preferable with a couple of guards with guns standing outside it <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626/15</link>
+        <pubDate>Tue, 20 Dec 2016 20:31:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4626-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/curious-about-your-dev-ops/4626.rss">Curious about your Dev Ops</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Changing prices to better reflect value provided</title>
+    <link>https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184</link>
+    <description>On Friday we launched new plans for DNSimple, along with a number of new features, some of which are only available in certain plans. I just wanted to give a brief write up of what went right so far and what didn&#39;t.
+
+**What worked?**
+
+Launching anything feels good - this was over a year-and-a-half in the making, so getting it out the door was a big milestone for the team.
+
+The switch to the new pricing system and the activation of the new features was quite smooth, technically. I think that the fact that we had been testing those features and the pricing changes by dark launching them early was a big factor in that.
+
+General feedback from customers is positive. The plans were designed to ease the pain of switching for the majority of our customers, and did so by giving many customers a better deal.
+
+**What didn&#39;t work?**
+
+Customers with lots of domains got scared because their pricing would go up fairly significantly. I planned for this by preparing plans specifically for resellers, but they had to contact us to get more info. I probably could have published the reseller plans on the site, but on the other hand having conversations with these customers has been valuable.
+
+We have some customers who had *really* good deals, especially those from early on in the life of DNSimple. I&#39;m not sure at this point how things will work out with these customers because I&#39;m still talking to the ones that spoke up first. It&#39;s tough because we announced a one-year grandfather period, which means customers will need to make a choice at some point, and that choice could mean finding another provider.
+
+In the first version of [the blog post I wrote][1] did not explain why we were making the change. An trusted friend and advisor of mine brought this up and helped me work through an explanation that makes it clear why this step is necessary (which you can find below the New Plans section).
+
+There was also confusion around the introduction of the term &quot;zones&quot; (versus domains). That was pretty easy to fix as we just switched back to using the term domains on the pricing page.
+
+**Conclusion**
+
+Anyhow, that&#39;s my story for the moment. Ultimately whether or not this will be a good decision will become evident after months, if not years, but I do believe it will prove to be the right choice.
+
+I&#39;ll be happy to answer questions if you are considering doing something similar, or if you&#39;re just curious.
+
+  [1]: http://blog.dnsimple.com/2015/06/multiple-accounts-new-plans-and-new-features/</description>
+    
+    <lastBuildDate>Tue, 09 Jun 2015 06:33:28 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Changing prices to better reflect value provided</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="3184">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>So… why is the change and how you came up with this particular pricing?</p>
+</blockquote>
+</aside>
+<p>Our original plans were based on the number of domains you had in your account. The tiers were:</p>
+<ul>
+<li>Bronze: up to 2 domains, for $5 per month</li>
+<li>Silver: up to 10 domains for $8 per month</li>
+<li>Gold: up to 50 domains for $18 per month</li>
+<li>Platinum: up to 500 domains for $50 per month (and $0.10 per domain thereafter)</li>
+</ul>
+<p>This pricing worked for a long time, but it also meant that someone with only one or two really critical domains would be paying a very small amount but expected a large amount of value (in the form of uptime, DDoS defense, support, SLA, etc). Essentially the old plan did not allow us to bring more value to the customers with a desire to pay for that additional value. The new pricing is designed to fix this issue and allow us to segment business-level customers who have higher value requirements from non-business customers who do not necessarily share the same requirements.</p>
+<aside class="quote" data-post="2" data-topic="3184">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>BTW, why you decided to grandfather only for one year? Do those customers cost more than they pay?</p>
+</blockquote>
+</aside>
+<p>The reason we decided to grandfather for only 1 year is because the new plans are structured quite differently from the old plans. If we were to keep the old plans indefinitely and start offering new features, how would that work with the old plans? Would they just keep getting all of the new features? Would they get none of the new features?</p>
+<p>There is also an added overhead of managing old plan types and servicing customers who are on these old plan types.</p>
+<aside class="quote" data-post="2" data-topic="3184">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Oh, and this one: “Estimate your cost… Sorry, calculator is broken at this moment!”  Why is that? Why did you release the new prices with the broken calculator?</p>
+</blockquote>
+</aside>
+<p>The error message occurs when there is a transient error. The calculator is not essential to the new pricing, which is why we launched without it and added it in after the fact.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184/3</link>
+        <pubDate>Tue, 09 Jun 2015 06:33:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3184-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184.rss">Changing prices to better reflect value provided</source>
+      </item>
+      <item>
+        <title>Changing prices to better reflect value provided</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I understand you’re tired and all after that big change, but you have made a yet another mistake <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>You assumed that all the local readers are very familiar with DNSimple and its past and new plans, how they are different and why was the change.</p>
+<p>So… why is the change and how you came up with this particular pricing?</p>
+<p>BTW, why you decided to grandfather only for one year? Do those customers cost more than they pay?</p>
+<p>Oh, and this one: “Estimate your cost… Sorry, calculator is broken at this moment!” <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"> Why is that? Why did you release the new prices with the broken calculator?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184/2</link>
+        <pubDate>Tue, 09 Jun 2015 02:38:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3184-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184.rss">Changing prices to better reflect value provided</source>
+      </item>
+      <item>
+        <title>Changing prices to better reflect value provided</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>On Friday we launched new plans for DNSimple, along with a number of new features, some of which are only available in certain plans. I just wanted to give a brief write up of what went right so far and what didn’t.</p>
+<p><strong>What worked?</strong></p>
+<p>Launching anything feels good - this was over a year-and-a-half in the making, so getting it out the door was a big milestone for the team.</p>
+<p>The switch to the new pricing system and the activation of the new features was quite smooth, technically. I think that the fact that we had been testing those features and the pricing changes by dark launching them early was a big factor in that.</p>
+<p>General feedback from customers is positive. The plans were designed to ease the pain of switching for the majority of our customers, and did so by giving many customers a better deal.</p>
+<p><strong>What didn’t work?</strong></p>
+<p>Customers with lots of domains got scared because their pricing would go up fairly significantly. I planned for this by preparing plans specifically for resellers, but they had to contact us to get more info. I probably could have published the reseller plans on the site, but on the other hand having conversations with these customers has been valuable.</p>
+<p>We have some customers who had <em>really</em> good deals, especially those from early on in the life of DNSimple. I’m not sure at this point how things will work out with these customers because I’m still talking to the ones that spoke up first. It’s tough because we announced a one-year grandfather period, which means customers will need to make a choice at some point, and that choice could mean finding another provider.</p>
+<p>In the first version of <a href="http://blog.dnsimple.com/2015/06/multiple-accounts-new-plans-and-new-features/" rel="nofollow noopener">the blog post I wrote</a> did not explain why we were making the change. An trusted friend and advisor of mine brought this up and helped me work through an explanation that makes it clear why this step is necessary (which you can find below the New Plans section).</p>
+<p>There was also confusion around the introduction of the term “zones” (versus domains). That was pretty easy to fix as we just switched back to using the term domains on the pricing page.</p>
+<p><strong>Conclusion</strong></p>
+<p>Anyhow, that’s my story for the moment. Ultimately whether or not this will be a good decision will become evident after months, if not years, but I do believe it will prove to be the right choice.</p>
+<p>I’ll be happy to answer questions if you are considering doing something similar, or if you’re just curious.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184/1</link>
+        <pubDate>Mon, 08 Jun 2015 12:41:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3184-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-prices-to-better-reflect-value-provided/3184.rss">Changing prices to better reflect value provided</source>
+      </item>
+  </channel>
+</rss>

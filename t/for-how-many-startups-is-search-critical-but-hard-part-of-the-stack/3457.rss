@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>For how many startups, is search critical but hard part of the stack?</title>
+    <link>https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457</link>
+    <description>I am considering jumping into consulting/product company focusing on search technology (specifically Apache Solr as first step). I want to know how many startups see Search as important to their stack and how many of those struggle with actually getting it going, at least beyond &quot;put words in, getting something back&quot; (npmjs!). 
+
+Differently from others, I am less interested in being your &quot;only/primary&quot; consultant and am a lot more interested in helping companies to quickly understand the value of search in their stack, seeing how their data can be searched and - paying me for - getting them off the ground quickly. This would involve things like training internal team to understand Search concept/implementation issues and doing initial POVs with their own data.
+
+The product part is - mostly - freemium SAAS to answer ongoing question easier, help troubleshoot installations, etc. I already have the basic information service available at solr-start.com but there is 10 times more stuff that will be when I make the jump. Others are being quite successful with quepid.com which is similar but different to my own ideas.
+
+There may even be a &quot;Search Academy&quot; in the books, for later.
+
+Tell me your search stories... :-)</description>
+    
+    <lastBuildDate>Tue, 08 Sep 2015 05:03:43 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>For how many startups, is search critical but hard part of the stack?</title>
+        <dc:creator><![CDATA[akshatjiwan]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="3457">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/arafalov/40/3094_1.png" class="avatar"> arafalov:</div>
+<blockquote>
+<p>I am hoping to have a single-niche focus</p>
+</blockquote>
+</aside>
+<p>From what I’ve seen I feel that even some basic search functionality would be pretty useful in the internal applications for many organizations, which are usually neglected. This approach gives you two advantages right off the bat:-</p>
+<ol>
+<li>
+<p>It can be a  good entry point from where you can then evaluate if search could help them in their core products as well.</p>
+</li>
+<li>
+<p>It would work well with your idea of training the internal team.</p>
+</li>
+</ol>
+<p>But the downside is you need to have an “insider” who can tell you how things currently are so you can help them improve it.</p>
+<p>Also if you have some contacts with non tech people  your service can be of much more use to them. Lawyers, teachers and  people in  other professions who they deal with lots of documents on a daily basis can benefit from it. Although good luck trying to convince them!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457/4</link>
+        <pubDate>Tue, 08 Sep 2015 05:03:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3457-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457.rss">For how many startups, is search critical but hard part of the stack?</source>
+      </item>
+      <item>
+        <title>For how many startups, is search critical but hard part of the stack?</title>
+        <dc:creator><![CDATA[arafalov]]></dc:creator>
+        <description><![CDATA[
+            <p>Got books <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"> . One a while ago from Packt, one in works for O’Reilly. Both are about Solr.</p>
+<p>As to pure-play I am hoping to have a single-niche focus but multiple overlapping approaches with products and services and consulting. At least, that’s the dream.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457/3</link>
+        <pubDate>Fri, 04 Sep 2015 01:48:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3457-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457.rss">For how many startups, is search critical but hard part of the stack?</source>
+      </item>
+      <item>
+        <title>For how many startups, is search critical but hard part of the stack?</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>I set up Solr on a project a few years ago; it was pretty straightforward, and we ended up using it for a lot of things, as the project didn’t have a traditional database.  Maybe it would have been harder for people not familiar with Java and other backend technologies?  Other projects haven’t needed Solr as the SQL/noSQL databases provided good enough search functionality.</p>
+<p>Certainly you can use your knowledge to write a book, etc. and gain some authority.  I would be worried about the size of the market for a pure-play search company, but you shouldn’t hesitate to prove me wrong.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457/2</link>
+        <pubDate>Fri, 04 Sep 2015 01:28:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3457-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457.rss">For how many startups, is search critical but hard part of the stack?</source>
+      </item>
+      <item>
+        <title>For how many startups, is search critical but hard part of the stack?</title>
+        <dc:creator><![CDATA[arafalov]]></dc:creator>
+        <description><![CDATA[
+            <p>I am considering jumping into consulting/product company focusing on search technology (specifically Apache Solr as first step). I want to know how many startups see Search as important to their stack and how many of those struggle with actually getting it going, at least beyond “put words in, getting something back” (npmjs!).</p>
+<p>Differently from others, I am less interested in being your “only/primary” consultant and am a lot more interested in helping companies to quickly understand the value of search in their stack, seeing how their data can be searched and - paying me for - getting them off the ground quickly. This would involve things like training internal team to understand Search concept/implementation issues and doing initial POVs with their own data.</p>
+<p>The product part is - mostly - freemium SAAS to answer ongoing question easier, help troubleshoot installations, etc. I already have the basic information service available at <a href="http://solr-start.com" rel="nofollow noopener">solr-start.com</a> but there is 10 times more stuff that will be when I make the jump. Others are being quite successful with <a href="http://quepid.com" rel="nofollow noopener">quepid.com</a> which is similar but different to my own ideas.</p>
+<p>There may even be a “Search Academy” in the books, for later.</p>
+<p>Tell me your search stories… <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457/1</link>
+        <pubDate>Thu, 03 Sep 2015 17:05:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3457-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/for-how-many-startups-is-search-critical-but-hard-part-of-the-stack/3457.rss">For how many startups, is search critical but hard part of the stack?</source>
+      </item>
+  </channel>
+</rss>

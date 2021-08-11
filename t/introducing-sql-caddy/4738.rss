@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Introducing Sql Caddy</title>
+    <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738</link>
+    <description>Hello all,
+Looking for feedback on our new product, Sql Caddy, a tool intended to help enterprise and consulting application support, development and power users with database information to improve query development.
+
+Please take a look at [SqlCaddy.com](http://SqlCaddy.com) and let us know what you think.
+
+Thank you.
+Tom @ Sql Caddy</description>
+    
+    <lastBuildDate>Wed, 08 Feb 2017 15:16:57 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[TomAtSqlCaddy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks again for the feedback and working through this with us.  It is much appreciated.  We are obviously sending the wrong message.</p>
+<p>The tool isn’t directed at strict software developers that work on one or a few applications or database administrators.  It is more for an analyst or application support role or possibly developer that works with multiple or even many applications with back end databases they did not build.  They use the database to understand the application for support, fixing issues, or writing reports, possibly code.</p>
+<p>There may be a team that doesn’t want to waste re-writing the same queries over and over and need to share them or to bring new or junior members up to speed.  The individual may support enough applications that they can not remember the details of all of them, but want to be able to instantly retrieve work they’ve done in the past rather than re-writing the query every time.  Or they may be doing a project to replace or re-write an application they’ve not worked with before and need to understand what is there.  You can take hours asking users a thousand questions to try to understand and get part of the answer.  This tool doesn’t necessarily replace that process, but it can very quickly add significant time-savings and value to it.</p>
+<p>I think many software professionals working for businesses that have 3rd party and custom applications driven by a database understand the value of the technical makeup of these databases and how much it can help you implement, upgrade and support these systems.  Our tool is intended to provide significant help with the process of discovering and retaining that technical information about the database.</p>
+<p>How about this…</p>
+<p>Get rid of “write queries, we can help”, I believe this is misleading, making people think we are trying to help with the actual typing of the query when we are really trying to help with the information you need to develop the query.</p>
+<p>Add something like this…</p>
+<p>Find and share sql queries</p>
+<p>A tool for software analysts and application support professionals to find, organize and share sql query code.</p>
+<p>Do you spend time writing sql that you know has been written before?<br>
+Do you spend time hunting for relationship, join, table or field details in unknown databases with less than perfect design?<br>
+Does your team write different versions of the same sql query over and over?<br>
+Do you spend time hunting through databases, sql scripts, code, spreadsheets or Access files for sql code?</p>
+<p>If you answered yes to any of these questions, Sql Caddy can help you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/13</link>
+        <pubDate>Wed, 08 Feb 2017 15:16:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>As stated by the previous comments… I too fail to see the benefits for me… I am a developer and deal with the typical developer queries…</p>
+<p>I looked at it an thought dba tool? Newbie tool? Not sure but I did not click on any features that would make me, the developer want to buy it.</p>
+<p>Instead of listing what it does, you should instead list what it solves…</p>
+<p>Just my 2 cents.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/12</link>
+        <pubDate>Wed, 08 Feb 2017 01:11:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>We do have a generic query parser, which automatically identifies relationships, and fields, and what not. At this point parser is not looking at foreign/primary key constraints at all. We even have a visual query builder for this sort of things. But it is us.</p>
+<p>Now, if I’m a “power user”, in order to write a “query” I should have at least a basic knowledge about the schema (even less than perfect). I want to discover objects and fields, I want to see the data, I want to clean the data, de-normalize, normalize, etc. Actual “query” is a distant target.</p>
+<p>Again, I don’t want to discourage you. The product looks good. If you can find a customer - great and I wish you all the best.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/11</link>
+        <pubDate>Mon, 06 Feb 2017 22:09:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[TomAtSqlCaddy]]></dc:creator>
+        <description><![CDATA[
+            <p>Maximus - Thank you for the feedback.  I agree, there are a lot of tools similar to yours and that would be a difficult market to break into.  I may not be looking hard enough, but does your product or any of the others locate relationships based on the sql queries or are they strictly based on foreign key constraints?  Our application is intended to help with databases that have less than perfect schema.  To uncover domain knowledge automatically from query code instead of the database design.  We are also targeting business power users, application support or consultants that have to reverse engineer unknown databases, again with less than perfect design.  Where the other tools appear to target database professionals?</p>
+<p>rfctr - Thank you for the feedback.  Those that we are trying to target do write queries often, but it obviously wouldn’t be their entire job.  Maybe we can come up with more broad descriptions of their job that includes writing queries.</p>
+<p>All - We are working on a better message that describes the problem more than the features.  Still not there yet, but here are some more thoughts…</p>
+<p>Problem to solve - Time spent acquiring information and knowledge of unknown database-driven software applications with less than perfect construction.  There is valuable application, data and domain information in the sql code and activity that occurs between the software and database, but it is often time-consuming and difficult to retrieve.</p>
+<p>Our solution - Collect, breakdown, store and catalog query details for instant retrieval to unlock the schema, domain and software information within.</p>
+<p>Customer - Anyone wanting to catalog query work for future reference to reduce duplication of effort.  Anyone seeking “domain knowledge” or to understand the inner workings of unknown third-party or custom software applications driven by back-end databases that have less than perfect design.</p>
+<p>This could include Business IT Application Support, Software Application Consultants, Business power users writing queries or exploring databases.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/10</link>
+        <pubDate>Mon, 06 Feb 2017 21:16:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Anyone who writes many queries or has to discover the relationships, fields and tables in databases consistently</p>
+</blockquote>
+<p>I doubt anyone describes their work as “I write queries”.</p>
+<p>I believe your wording should be updated to speak the way your target users talk - not “write a query”, but “find a record/user/offer/… in database”, and so on.</p>
+<p>Your site currently describes how to do something, but not what a prospect would be doing (better).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/7</link>
+        <pubDate>Wed, 01 Feb 2017 20:40:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>Don’t want to discourage you, but you are in a crowded market.</p>
+<p>Many moons ago we released similar product: <a href="https://www.toolsverse.com/products/data-explorer" rel="nofollow noopener">https://www.toolsverse.com/products/data-explorer</a>.</p>
+<p>It got us where we are now but I wouldn’t say it is a runway success in terms of sales.</p>
+<p>Unless it solves a real pain point(s) - there are too many alternatives, so no one is actively looking for a replacement.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/6</link>
+        <pubDate>Wed, 01 Feb 2017 13:44:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[TomAtSqlCaddy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback, I also feel like we are heavy on features and need to better state the benefits.  We are trying to reduce the amount of time spent sifting through databases and sql scripts to write queries.  We built it based on experience of having to do just that.  Anyone who writes many queries or has to discover the relationships, fields and tables in databases consistently would benefit from this application.</p>
+<p>Thanks again.  We will continue to try to improve our message.  It has been a challenge to try to explain.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/5</link>
+        <pubDate>Wed, 01 Feb 2017 12:46:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[dtrejo]]></dc:creator>
+        <description><![CDATA[
+            <p>Seems like it would be useful if I were using sql more right now.</p>
+<p>Your sales page has a lot of features on it. What are the problems it solves? Why did you build it? What are the benefits of using sqlcaddy over… nothing/phpmyadmin/etc? Who needs it the most? only data engineers, analysts, engineers, data scientists, or someone else?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/4</link>
+        <pubDate>Tue, 31 Jan 2017 23:32:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[TomAtSqlCaddy]]></dc:creator>
+        <description><![CDATA[
+            <p>I meant “S” not Service.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/3</link>
+        <pubDate>Tue, 31 Jan 2017 21:01:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[TomAtSqlCaddy]]></dc:creator>
+        <description><![CDATA[
+            <p>Steve,<br>
+I believe you may have edited the post to insert the hyperlink, thank you!  Now there is a typo at the beginning.  Can you remove the Service?  I tried but then it wants me to remove the link and I’d rather keep it.  <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Thanks again!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/2</link>
+        <pubDate>Tue, 31 Jan 2017 20:57:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+      <item>
+        <title>Introducing Sql Caddy</title>
+        <dc:creator><![CDATA[TomAtSqlCaddy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello all,<br>
+Looking for feedback on our new product, Sql Caddy, a tool intended to help enterprise and consulting application support, development and power users with database information to improve query development.</p>
+<p>Please take a look at <a href="http://SqlCaddy.com" rel="nofollow noopener">SqlCaddy.com</a> and let us know what you think.</p>
+<p>Thank you.<br>
+Tom @ Sql Caddy</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738/1</link>
+        <pubDate>Tue, 31 Jan 2017 18:19:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4738-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-sql-caddy/4738.rss">Introducing Sql Caddy</source>
+      </item>
+  </channel>
+</rss>

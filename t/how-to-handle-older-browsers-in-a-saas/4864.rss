@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to handle older browsers in a SaaS?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864</link>
+    <description>The private beta of my product works well on IE9 but falls apart on IE8.
+
+* Should I just accept that, and let people stuck on older browsers get by as best they can? 
+* Or should I detect on the server that the user has an unsupported browser and send them a special ultra-simple &quot;sorry you can&#39;t&quot; page? 
+* Or should I lift my game and make sure IE8 users get some joy? 
+* Or is there a better strategy?</description>
+    
+    <lastBuildDate>Sun, 11 Jun 2017 17:27:36 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to handle older browsers in a SaaS?</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>I assume you have some sort of “old browser compatible” marketing page, right?</p>
+<p>I think your MARKETING has to be available on even older browsers (in at least some limited way - like a single landing page.  And you can also measure how many people land there.</p>
+<p>Our signup page supports older browsers, but our app does not. So:</p>
+<ol>
+<li>We can measure how many truly interested customers are on older browsers.</li>
+<li>We get their login o we can track how many then just use an appropriate browser.</li>
+</ol>
+<p>So, I have a funnel in Mixpanel and I can see that only 2.33% of our users Login…unsupported…  and then of those 70% eventually login successfully.  So we are losing about  .33% of users due to browser incompatibility.  Not ideal, but almost insignificant. And that <strong>problem will get smaller</strong> over time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/9</link>
+        <pubDate>Sun, 11 Jun 2017 17:27:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4864-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss">How to handle older browsers in a SaaS?</source>
+      </item>
+      <item>
+        <title>How to handle older browsers in a SaaS?</title>
+        <dc:creator><![CDATA[pauldwaite]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4864">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>should I detect on the server that the user has an unsupported browser</p>
+</blockquote>
+</aside>
+<p>Small point, but if you’re just focusing on older versions of Internet Explorer (i.e. 9 or older), you might want to detect them using <a href="https://msdn.microsoft.com/en-us/library/ms537512(VS.85).aspx" rel="nofollow noopener">conditional comments</a>, an Internet Explorer-only HTML extension.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/8</link>
+        <pubDate>Mon, 20 Mar 2017 16:01:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4864-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss">How to handle older browsers in a SaaS?</source>
+      </item>
+      <item>
+        <title>How to handle older browsers in a SaaS?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="4864">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>So I’ve added into my issue tracker to “do something about older browsers”,</p>
+</blockquote>
+</aside>
+<p>Even this is too much!</p>
+<aside class="quote" data-post="6" data-topic="4864">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>but for now I’m ignoring the issue altogether.</p>
+</blockquote>
+</aside>
+<p>Good choice. Keep it this way.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/7</link>
+        <pubDate>Fri, 17 Mar 2017 19:31:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4864-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss">How to handle older browsers in a SaaS?</source>
+      </item>
+      <item>
+        <title>How to handle older browsers in a SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4864">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/slybridges/40/3690_1.png" class="avatar"> SlyBridges:</div>
+<blockquote>
+<p>Personally, if you’re just launching I wouldn’t bother at this stage. Use your time where it has the most impact.</p>
+</blockquote>
+</aside>
+<p>This advice I like! So I’ve added into my issue tracker to “do something about older browsers”, but for now I’m ignoring the issue altogether.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/6</link>
+        <pubDate>Fri, 17 Mar 2017 18:37:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4864-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss">How to handle older browsers in a SaaS?</source>
+      </item>
+      <item>
+        <title>How to handle older browsers in a SaaS?</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p>My SaaS serves a few thousand users per day, as it’s used by my clients, and my clients’ clients as well. I’ve been ignoring old browsers (including IE 10) for a couple of years and never had any complaints. And even if anyone complained, I would keep ignoring it as a matter of principle.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/5</link>
+        <pubDate>Fri, 17 Mar 2017 17:45:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4864-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss">How to handle older browsers in a SaaS?</source>
+      </item>
+      <item>
+        <title>How to handle older browsers in a SaaS?</title>
+        <dc:creator><![CDATA[SlyBridges]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/grujicd">@grujicd</a> that the answer will depend on your target audience.</p>
+<p>If you’re targeting B2C and especially a tech savvy young crowd, I wouldn’t bother.<br>
+If you’re targeting B2B, you may want to have a look at your stats and maybe make plans for being compatible with older browsers. Personally, if you’re just launching I wouldn’t bother at this stage. Use your time where it has the most impact.</p>
+<p>What I would recommend you to do no matter your audience:</p>
+<ul>
+<li>have your homepage / landing page  compatible with all browsers (even if you don’t have all features on older browsers, you should still be able to display a minimal version)</li>
+<li>display a message advising to upgrade on all your pages that are known to have some incompatibility. <a href="http://browser-update.org" rel="nofollow noopener">http://browser-update.org</a> is great for that.</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/4</link>
+        <pubDate>Fri, 17 Mar 2017 09:33:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4864-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss">How to handle older browsers in a SaaS?</source>
+      </item>
+      <item>
+        <title>How to handle older browsers in a SaaS?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4864">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Or should I detect on the server that the user has an unsupported browser and send them a special ultra-simple “sorry you can’t” page?</p>
+</blockquote>
+</aside>
+<p>This. Unless you are unusual circumstance it is probably &lt; 5% of users. I haven’t supported IE8 for several years and never had anyone complain. If I notice anyone using IE I tell them to use Chrome.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/3</link>
+        <pubDate>Fri, 17 Mar 2017 01:02:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4864-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss">How to handle older browsers in a SaaS?</source>
+      </item>
+      <item>
+        <title>How to handle older browsers in a SaaS?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Do you have stats you can work with? In my case, since start of 2017, only IE 11 has significant usage. Older versions are around 0.3% each, or let’s say 1% total. I simply would not notice if they all just bounce of my home page.</p>
+<p>Only problem you might have is if you work with B2B, and big customer shows up with IE8 requirement. Not very likely since it’s no longer supported by Microsoft. And even then you can state although you have no problems with them using IE8 for their mission critical ActiveX app, they can install Chrome or FF for your app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/2</link>
+        <pubDate>Thu, 16 Mar 2017 21:55:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4864-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss">How to handle older browsers in a SaaS?</source>
+      </item>
+      <item>
+        <title>How to handle older browsers in a SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>The private beta of my product works well on IE9 but falls apart on IE8.</p>
+<ul>
+<li>Should I just accept that, and let people stuck on older browsers get by as best they can?</li>
+<li>Or should I detect on the server that the user has an unsupported browser and send them a special ultra-simple “sorry you can’t” page?</li>
+<li>Or should I lift my game and make sure IE8 users get some joy?</li>
+<li>Or is there a better strategy?</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864/1</link>
+        <pubDate>Thu, 16 Mar 2017 20:22:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4864-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-handle-older-browsers-in-a-saas/4864.rss">How to handle older browsers in a SaaS?</source>
+      </item>
+  </channel>
+</rss>

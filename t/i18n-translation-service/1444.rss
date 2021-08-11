@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>i18n (Translation) service</title>
+    <link>https://discuss.bootstrapped.fm/t/i18n-translation-service/1444</link>
+    <description>Anyone know of a good translation (in18n)service for Rails &amp; IOS language/locale files.(B2B App) Requirements for the service: Upload de.yml and en.yml and get the file back in the original sequence- so most of the context can be preserved. Download ideally via CLI and no clunky browser download.
+
+A web interface to have discussions with the translator about usage of phrases and the context they appear in the app, where one could post a link or a screenshot to the screen as used in the app. That should be persisted with the original language file (useful later as a reference for other languages). 
+
+Ideally also a marketplace of translators - annotating specific skills of industry vocabulary...</description>
+    
+    <lastBuildDate>Mon, 07 Apr 2014 09:38:05 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/i18n-translation-service/1444.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>i18n (Translation) service</title>
+        <dc:creator><![CDATA[lucaspiller]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ve used <a href="http://www.localeapp.com" rel="nofollow noopener">www.localeapp.com</a> at my last company (employed) and it worked well. They provide the interface to translate it, and a separate translation service which was reasonably priced. The translation service wasn’t great, but I think the issue is that some things don’t translate well without context. E.g. Spanish has different words for search, as in searching a website and being searched at airport security. Without seeing the usage of the phrase in the application, it is hard to know which translation is correct.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i18n-translation-service/1444/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i18n-translation-service/1444/3</link>
+        <pubDate>Mon, 07 Apr 2014 09:38:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1444-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i18n-translation-service/1444.rss">i18n (Translation) service</source>
+      </item>
+      <item>
+        <title>i18n (Translation) service</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I use <a href="http://www.getlocalization.com/">http://www.getlocalization.com/</a> for dealing with this - a great, free-ish web-app for translating resource files. It handles YAML files. It has both browser and CLI API. I use curl to get the latest translation bundles as part of the build process.</p>
+<p>What languages do you want to get translated into it? If Italian or Spanish I have an excellent technical translator I can recommend. That is, EN -&gt; IT and EN -&gt; ES</p>
+<p>For other language combinations, <a href="http://odesk.com/">http://odesk.com/</a> is a good source.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i18n-translation-service/1444/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i18n-translation-service/1444/2</link>
+        <pubDate>Wed, 02 Apr 2014 16:15:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1444-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i18n-translation-service/1444.rss">i18n (Translation) service</source>
+      </item>
+      <item>
+        <title>i18n (Translation) service</title>
+        <dc:creator><![CDATA[smtm]]></dc:creator>
+        <description><![CDATA[
+            <p>Anyone know of a good translation (in18n)service for Rails &amp; IOS language/locale files.(B2B App) Requirements for the service: Upload de.yml and en.yml and get the file back in the original sequence- so most of the context can be preserved. Download ideally via CLI and no clunky browser download.</p>
+<p>A web interface to have discussions with the translator about usage of phrases and the context they appear in the app, where one could post a link or a screenshot to the screen as used in the app. That should be persisted with the original language file (useful later as a reference for other languages).</p>
+<p>Ideally also a marketplace of translators - annotating specific skills of industry vocabulary…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i18n-translation-service/1444/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i18n-translation-service/1444/1</link>
+        <pubDate>Wed, 02 Apr 2014 09:21:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1444-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i18n-translation-service/1444.rss">i18n (Translation) service</source>
+      </item>
+  </channel>
+</rss>

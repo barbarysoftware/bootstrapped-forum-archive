@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How do you create dashboards for your customers?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415</link>
+    <description>Hi there,
+
+I am running a saas app and I want my customers to have a dashboard inside their account showing relevant information to them. 
+
+For example how many leads they have generated, emails have been send out, number of clicks on a CTA button etc.  So its a mix of data coming for different areas of the product that I would like to show over time (nice chats, KPIs,...) 
+
+Now I am facing the typical question of &quot;make or buy&quot;:
+
+- Make: I would have to query my databases, possibly aggregate data and collect events across the product. Also I would have to use some chart.js to build the dashboard in the frontend.
+
+- Buy: I have to find a tool/service that collects my data and offers me a good integration API to display it in the customers account dashboard page.
+
+I suppose I am not the only one having a customer facing dashboard. 
+So what solution (make/buy) did you pick for your app and what was the reason? Any recommendations?
+
+Thanks!
+Alex</description>
+    
+    <lastBuildDate>Sat, 06 Jul 2019 13:38:35 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How do you create dashboards for your customers?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>I have dashboards in my system and I always created my own. There are some tools that could be used but they tend to be expensive and not really that easy to seamlessly integrate. They are enterprisey.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/8</link>
+        <pubDate>Sat, 06 Jul 2019 13:38:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6415-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415.rss">How do you create dashboards for your customers?</source>
+      </item>
+      <item>
+        <title>How do you create dashboards for your customers?</title>
+        <dc:creator><![CDATA[julienma]]></dc:creator>
+        <description><![CDATA[
+            <p>Some BI tools like <a href="http://datastudio.google.com">datastudio.google.com</a> or <a href="http://analytics.zoho.com">analytics.zoho.com</a> are dedicated to create dashboards, using various sources of data (incl. from pgsql / mysql).<br>
+They also let you embed their visualizations in html.<br>
+Granted, these are not aimed specifically at SaaS, but that could be a very effort-efficient way to create nice-looking dashboards — at least as a 1st step.</p>
+<p>We wrote a quick introduction to Data Studio if you want to see what it is:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://baguette.engineering/favicon.png" class="site-icon" width="360" height="360">
+      <a href="https://baguette.engineering/blog/what-is-google-data-studio/" target="_blank" title="07:21PM - 30 June 2019">Baguette Engineering – 30 Jun 19</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/431;"><img src="https://baguette.engineering/content/images/2019/06/data-studio-1.jpg" class="thumbnail"></div>
+
+<h3><a href="https://baguette.engineering/blog/what-is-google-data-studio/" target="_blank">What is Google Data Studio?</a></h3>
+
+<p>Data Studio is a powerful tool for turning data into dashboards and reports. It's part of Google's Marketing Platform.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>However, I agree with <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> that there could be value in doing your own dashboard — especially once your idea of what your dashboard should do has matured.</p>
+<p>A good middle-ground could be to use ready-made dashboard themes, where all the visualizations and charts are already done, and you “just” have to plug in your data (which you’ll have to do somehow anyway).</p>
+<p>E.g. Bootstrap proposes a lot of clean templates, in plain html or react / vue / etc.:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon-32x32.png" class="site-icon" width="32" height="32">
+      <a href="https://themes.getbootstrap.com/product-category/admin-dashboard/" target="_blank">Bootstrap Themes</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://themes.getbootstrap.com/product-category/admin-dashboard/" target="_blank">Bootstrap Admin &amp; Dashboard Themes and Templates</a></h3>
+
+<p>Download Bootstrap 4+ Admin &amp; Dashboard themes and templates built or reviewed by the creators of Bootstrap.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>A quick search will give you a lot more options, depending on the CSS framework you’re already using, the price you’re willing to pay, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/7</link>
+        <pubDate>Wed, 03 Jul 2019 08:46:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6415-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415.rss">How do you create dashboards for your customers?</source>
+      </item>
+      <item>
+        <title>How do you create dashboards for your customers?</title>
+        <dc:creator><![CDATA[skmurphy]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry I was not clear: a Trello board is <strong>shared</strong> with the each beta customer and acts as a shared  “dashboard” for new feature development and testing status. I think it’s relevant but not exactly what you were looking for.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/6</link>
+        <pubDate>Tue, 02 Jul 2019 18:52:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6415-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415.rss">How do you create dashboards for your customers?</source>
+      </item>
+      <item>
+        <title>How do you create dashboards for your customers?</title>
+        <dc:creator><![CDATA[AlexHeerens]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, maybe the title was a bit misleading. <img src="https://emoji.discourse-cdn.com/twitter/grimacing.png?v=9" title=":grimacing:" class="emoji" alt=":grimacing:"><br>
+But I don’t need a dashboard about my customers. The customer (my customer) should have a dashboard showing his metics. My app helps sending out voucher codes so my clients want to see how many codes they have send out each day etc. thru my app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/5</link>
+        <pubDate>Tue, 02 Jul 2019 18:48:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6415-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415.rss">How do you create dashboards for your customers?</source>
+      </item>
+      <item>
+        <title>How do you create dashboards for your customers?</title>
+        <dc:creator><![CDATA[skmurphy]]></dc:creator>
+        <description><![CDATA[
+            <p>This may or may not be a relevant answer but <a href="https://www.trafficparrot.com">TrafficParrot</a>  creates a separate Trello board for each beta customer to track the status of major enhancements and new features as they are tested internally, deployed, and then reviewed / evaluated by beta customers to see if they are ready for prime time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/4</link>
+        <pubDate>Tue, 02 Jul 2019 18:22:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6415-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415.rss">How do you create dashboards for your customers?</source>
+      </item>
+      <item>
+        <title>How do you create dashboards for your customers?</title>
+        <dc:creator><![CDATA[AlexHeerens]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Steve,</p>
+<p>thanks for the reply. I found something but it looks a bit enterprise/expensive to me <a href="https://keen.io/">https://keen.io/</a>  Not sure if you could have done your dashboard with their api.</p>
+<p>Would be nice to get some hints from other people. Anyone? <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/3</link>
+        <pubDate>Mon, 01 Jul 2019 16:29:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6415-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415.rss">How do you create dashboards for your customers?</source>
+      </item>
+      <item>
+        <title>How do you create dashboards for your customers?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve created the customer dashboard in Feature Upvote (my B2B SaaS) manually. It could be better (as some customers tell me), but it could be much worse!</p>
+<p>I didn’t even consider buying a ready-made solution because I wasn’t aware that such a thing existed. Do you know anyone? If so, I’m keen to check them out.</p>
+<p>I probably would have built it myself anyway. That’s because it is a key part of our app, and something we want to have fine control over appearance and functionality.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/2</link>
+        <pubDate>Mon, 01 Jul 2019 06:50:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6415-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415.rss">How do you create dashboards for your customers?</source>
+      </item>
+      <item>
+        <title>How do you create dashboards for your customers?</title>
+        <dc:creator><![CDATA[AlexHeerens]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there,</p>
+<p>I am running a saas app and I want my customers to have a dashboard inside their account showing relevant information to them.</p>
+<p>For example how many leads they have generated, emails have been send out, number of clicks on a CTA button etc.  So its a mix of data coming for different areas of the product that I would like to show over time (nice chats, KPIs,…)</p>
+<p>Now I am facing the typical question of “make or buy”:</p>
+<ul>
+<li>
+<p>Make: I would have to query my databases, possibly aggregate data and collect events across the product. Also I would have to use some chart.js to build the dashboard in the frontend.</p>
+</li>
+<li>
+<p>Buy: I have to find a tool/service that collects my data and offers me a good integration API to display it in the customers account dashboard page.</p>
+</li>
+</ul>
+<p>I suppose I am not the only one having a customer facing dashboard.<br>
+So what solution (make/buy) did you pick for your app and what was the reason? Any recommendations?</p>
+<p>Thanks!<br>
+Alex</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415/1</link>
+        <pubDate>Sun, 30 Jun 2019 11:17:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6415-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-do-you-create-dashboards-for-your-customers/6415.rss">How do you create dashboards for your customers?</source>
+      </item>
+  </channel>
+</rss>

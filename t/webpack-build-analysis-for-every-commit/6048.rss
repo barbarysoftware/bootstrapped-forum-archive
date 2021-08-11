@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Webpack build analysis, for every commit</title>
+    <link>https://discuss.bootstrapped.fm/t/webpack-build-analysis-for-every-commit/6048</link>
+    <description>Hi everyone, I&#39;ve got an impending launch coming next week and would love to get any feedback you can throw my way, no matter how nit picky it is!
+
+The general gist of the product is that it&#39;s a tool that ingests your webpack stats and tracks useful information like ultimate asset size, cache busting initially.  There is also lots of opportunity around the tool making useful suggestions to your config etc.. (there is SO MUCH data in that stats file).  The tool also has a companion GitHub App that reports this data directly to your pull requests, so you know exactly how a change is going to affect your asset profile.
+
+https://packtracker.io
+
+I&#39;ll be starting with a closed beta with a small group, and expanding from there (hopefully! :blush:) 
+
+Also including the media and comment for my product hunt post here for feedback as well
+
+[Gallery of Product Hunt screenshots](https://imgur.com/a/ZF172q5)
+
+First Comment:
+
+&gt; Hi everyone! 👋
+&gt;
+&gt; Now that JavaScript is TAKING OVER ALL THE THINGS, we&#39;ve got some really great tools like webpack and the npm registry to help package, bundle, and reuse JavaScript. The combination of these tools is a force to be reckoned with. After working on a few projects that utilized these tools, I saw a gap in the way we were measuring success. Long ago in a land far far away (circa early 2000s web development) we would obsess over the size of the code we were forcing our users to download. Public CDNs and dependency free libraries seem to be becoming the exception as we continue to lean into the lie that bandwidth is cheap and compression is good enough.
+&gt;
+&gt; We&#39;ve traded in our size conscious, delivery performance obsession in for the admittedly high upside of module systems and bundlers. Cleanly separating and re-using our own code, and making it easier than ever to distribute and utilize code as a community.
+&gt;
+&gt; The goal of packtracker.io is to bring a delivery performance benchmark back into your process and consciousness. To make front and center how your use of webpack and npm affect your delivery profile, and to make those optimizations gratifyingly visible. 📉 🎉
+&gt;
+&gt; I&#39;m currently doing a closed beta with a few people that want to get involved, so feel free to request early access if that sounds interesting.
+&gt;
+&gt; Hope you&#39;ll want to help me kick the tires and see if this thing is useful to you!</description>
+    
+    <lastBuildDate>Thu, 18 Oct 2018 16:13:25 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/webpack-build-analysis-for-every-commit/6048.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Webpack build analysis, for every commit</title>
+        <dc:creator><![CDATA[jondavidjohn]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone, I’ve got an impending launch coming next week and would love to get any feedback you can throw my way, no matter how nit picky it is!</p>
+<p>The general gist of the product is that it’s a tool that ingests your webpack stats and tracks useful information like ultimate asset size, cache busting initially.  There is also lots of opportunity around the tool making useful suggestions to your config etc… (there is SO MUCH data in that stats file).  The tool also has a companion GitHub App that reports this data directly to your pull requests, so you know exactly how a change is going to affect your asset profile.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://packtracker.io/media/favicon-32x32.png" class="site-icon" width="16" height="16">
+      <a href="https://packtracker.io" target="_blank" rel="nofollow noopener">packtracker.io</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:116/62;"><img src="https://packtracker.io/media/github-status-twitter.png" class="thumbnail"></div>
+
+<h3><a href="https://packtracker.io" target="_blank" rel="nofollow noopener">Webpack build analysis, for every commit</a></h3>
+
+<p>Your application delivery performance is costing you money. Let us help you speed it up. Gain continuous visibility into your webpack asset builds.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>I’ll be starting with a closed beta with a small group, and expanding from there (hopefully! <img src="https://emoji.discourse-cdn.com/twitter/blush.png?v=6" title=":blush:" class="emoji" alt=":blush:">)</p>
+<p>Also including the media and comment for my product hunt post here for feedback as well</p>
+<p><a href="https://imgur.com/a/ZF172q5" rel="nofollow noopener">Gallery of Product Hunt screenshots</a></p>
+<p>First Comment:</p>
+<blockquote>
+<p>Hi everyone! <img src="https://emoji.discourse-cdn.com/twitter/wave.png?v=6" title=":wave:" class="emoji" alt=":wave:"></p>
+<p>Now that JavaScript is TAKING OVER ALL THE THINGS, we’ve got some really great tools like webpack and the npm registry to help package, bundle, and reuse JavaScript. The combination of these tools is a force to be reckoned with. After working on a few projects that utilized these tools, I saw a gap in the way we were measuring success. Long ago in a land far far away (circa early 2000s web development) we would obsess over the size of the code we were forcing our users to download. Public CDNs and dependency free libraries seem to be becoming the exception as we continue to lean into the lie that bandwidth is cheap and compression is good enough.</p>
+<p>We’ve traded in our size conscious, delivery performance obsession in for the admittedly high upside of module systems and bundlers. Cleanly separating and re-using our own code, and making it easier than ever to distribute and utilize code as a community.</p>
+<p>The goal of <a href="http://packtracker.io" rel="nofollow noopener">packtracker.io</a> is to bring a delivery performance benchmark back into your process and consciousness. To make front and center how your use of webpack and npm affect your delivery profile, and to make those optimizations gratifyingly visible. <img src="https://emoji.discourse-cdn.com/twitter/chart_with_downwards_trend.png?v=6" title=":chart_with_downwards_trend:" class="emoji" alt=":chart_with_downwards_trend:"> <img src="https://emoji.discourse-cdn.com/twitter/tada.png?v=6" title=":tada:" class="emoji" alt=":tada:"></p>
+<p>I’m currently doing a closed beta with a few people that want to get involved, so feel free to request early access if that sounds interesting.</p>
+<p>Hope you’ll want to help me kick the tires and see if this thing is useful to you!</p>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/webpack-build-analysis-for-every-commit/6048/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/webpack-build-analysis-for-every-commit/6048/1</link>
+        <pubDate>Thu, 18 Oct 2018 16:13:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6048-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/webpack-build-analysis-for-every-commit/6048.rss">Webpack build analysis, for every commit</source>
+      </item>
+  </channel>
+</rss>

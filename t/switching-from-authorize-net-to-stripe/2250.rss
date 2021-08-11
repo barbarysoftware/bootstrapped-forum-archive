@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Switching from Authorize.NET to Stripe</title>
+    <link>https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250</link>
+    <description>Found a [great writeup][1] from @aeden on what the process is like to export customer data out of Authorize.NET and into Stripe.
+
+@ian and I talked about this in one of the early episodes of Bootstrapped. Back then, it wasn&#39;t even possible to get Authorize to agree to export any of your CIM data. They were notorious for having tight data lock-in. These days, it still looks like a bit of a pain, but I&#39;m happy it&#39;s at least a viable option now.
+
+
+  [1]: http://blog.dnsimple.com/2014/07/switching-from-authorize-net-to-stripe/</description>
+    
+    <lastBuildDate>Mon, 10 Nov 2014 17:45:14 +0000</lastBuildDate>
+    <category>Interesting Links</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Switching from Authorize.NET to Stripe</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>We’re doing a bit of in-house cleanup as well. I calculated that it would take until the first quarter of 2017 for our customer data to “naturally” be rid of Authorize. That’ll probably cost us tens of thousands of dollars. Need to transfer that CIM data over to Stripe, and get rid of the merchant account altogether.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250/3</link>
+        <pubDate>Mon, 10 Nov 2014 17:45:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2250-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250.rss">Switching from Authorize.NET to Stripe</source>
+      </item>
+      <item>
+        <title>Switching from Authorize.NET to Stripe</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>I finally shut down our <a href="http://Auth.net" rel="nofollow noopener">Auth.net</a> account permanently last month. Was an excellent feeling.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250/2</link>
+        <pubDate>Mon, 10 Nov 2014 17:25:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2250-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250.rss">Switching from Authorize.NET to Stripe</source>
+      </item>
+      <item>
+        <title>Switching from Authorize.NET to Stripe</title>
+        <dc:creator><![CDATA[andrey]]></dc:creator>
+        <description><![CDATA[
+            <p>Found a <a href="http://blog.dnsimple.com/2014/07/switching-from-authorize-net-to-stripe/">great writeup</a> from <a class="mention" href="/u/aeden">@aeden</a> on what the process is like to export customer data out of <a href="http://Authorize.NET">Authorize.NET</a> and into Stripe.</p>
+<p><a class="mention" href="/u/ian">@ian</a> and I talked about this in one of the early episodes of Bootstrapped. Back then, it wasn’t even possible to get Authorize to agree to export any of your CIM data. They were notorious for having tight data lock-in. These days, it still looks like a bit of a pain, but I’m happy it’s at least a viable option now.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250/1</link>
+        <pubDate>Mon, 10 Nov 2014 17:01:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2250-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/switching-from-authorize-net-to-stripe/2250.rss">Switching from Authorize.NET to Stripe</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+    <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698</link>
+    <description>I&#39;m selling Win based desktop utility since 2005. It&#39;s been ok, and since I&#39;m main player in a small niche (MSMQ tools), I could get by without much marketing. I have to work on marketing and sales, no doubt about that, even if I don&#39;t like it much. Btw. MSMQ is messaging broker which ships with Windows and has lousy built-in management console - even most Win developers don&#39;t know about it. I did say it&#39;s small niche.
+
+For multiple reasons, this product is not a good fit for Saas, so I&#39;m stuck with traditional model - paid upgrades for major new releases. In theory, income potential is not THAT different from subscription model - if I release new versions on 2-3 years and make users pay let&#39;s say 40% for upgrades, it could be comparable to some SAAS which bills annually 15-20% of this amount. Plus, I get full license price at time of sale instead of getting it in span of few years.
+
+That&#39;s theory. In practice, I&#39;m not very good with motivating old users to upgrade. If I could get 50% to upgrade, I would be ecstatic. I recently released new version, sent only one email to a list, but just got handful of upgrades. Yes, it was in December when B2B slows down, but I can certainly do better. I set up 30% discount until Feb 7th to add some time pressure but it doesn&#39;t seem to help much. I do plan to send few more emails to existing customers. It&#39;s a no brainer but a question is what to put there and in what frequency.
+
+- Maybe one email per week as this gets close to the end of promotion? Showcase 1-2 of new features in each of these emails?
+- create some video demos of new features and send it to a list. Anyone tried with video? For now I just have new features listed on a page.
+- make some content related to niche, make it primary subject of email, and put upgrade reminder to the bottom?
+
+Additionally, I plan to list 50-100 largest customers and email and follow up manually with them, start some discussion, etc. More or less traditional sales. It&#39;s ok to invest a bit more time in them since they&#39;re most valuable customers, but I&#39;m not sure how successful I&#39;ll be. Should I also send them these automatic emails everyone else will get or handle them separately?
+
+Anyone here dealt successfully with this problem?</description>
+    
+    <lastBuildDate>Tue, 21 Feb 2017 15:12:19 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="28" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>I don’t have upgrade reminder in software itself.</p>
+</blockquote>
+</aside>
+<aside class="quote" data-post="28" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>I have no tracking of how much it’s actually use</p>
+</blockquote>
+</aside>
+<p>Those can both be fixed at the same time. Check with an XML file on your server via http what the latest version is once per week. Then you can look at the access logs for that file to judge how many people are actively using the software each week.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/29</link>
+        <pubDate>Tue, 21 Feb 2017 15:12:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>A quick report on how upgrade promotion went by. In short, it didn’t went that good. There were handful of upgrades but not that much, i.e. not even close to justify time spent on new version. I sent two “educational” mails first, highlighting most important stuff from new version. These emails got around 20% open rate, but only 6% clicked. Third email was time limit reminder, and although it had lower open rate at 17%, it had 10% clickthrough rate. But only 0.6% of list made upgrade after that email. In total, I only converted 1-2% of customer base in these 2 months since new release. And those were mostly 1-2 license orders, not big customers. Reasons of failure, for everyone to learn:</p>
+<ul>
+<li>I don’t have upgrade reminder in software itself. This is key problem. This is B2B software and many emails I have belong to accounting or purchase departments, or even third party resellers. I have no way of contacting end users who actually use software and would be interested in upgrade. They’ll probably find about new version organically in next months/years, but I can’t throw marketing material at them.</li>
+<li>As discussed before, this is a tool for declining market. It could very well be that users who purchased it 7-8 years ago don’t use MSMQ any more and don’t need tool for it. I have no tracking of how much it’s actually used. It’s possible that let’s say only 20-30% of customers still use it.</li>
+<li>Previous version is already good enough for many users. Tough to fight that.</li>
+</ul>
+<p>On a positive side, I cleaned up customer list so at least I know who big customers are and can contact them via one on one personal emails. For these cases, I can search through emails and dig if I was contacted by end users and email them instead of purchasing departments. We’ll see how that goes.<br>
+Also, I expect that upgrades will trickle in next few years, so in the end it could be worth it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/28</link>
+        <pubDate>Mon, 20 Feb 2017 09:58:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m considering to segment my mailing list.</p>
+<p>Those who purchased 1 or 2 licenses are often consultants, smaller business, more price sensitive and they might perform impulse purchases after few “7 more days”, “24h until end of discount” emails. Since licensing situation is clear and simple for them I can also send Buy links to make upgrade as easy as possible.</p>
+<p>Larger customers have complicated licensing situation, usually with multiple purchases at different times and I can’t create simple Buy button for them. And, as we discussed here, they’re not that price sensitive so it’s even better if I don’t push time limited discount but let them purchase later, after multiple educational mails.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/27</link>
+        <pubDate>Wed, 18 Jan 2017 22:33:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="18" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>I’m not even sure how much B2B users care about these discounts, at least in my case where it’s not super pricey software.</p>
+</blockquote>
+</aside>
+<p>From my experience - very little.</p>
+<p>It is not their money, after all. The question of price comes up only when it starts to affect budgets, and for a product under $1k it is simply not possible.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/26</link>
+        <pubDate>Wed, 18 Jan 2017 21:22:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="17" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>Your keenest users are the ones who are likely to upgrade first. So why not get them to pay full upgrade price and then offer a discount later on to the less keen ones</p>
+</blockquote>
+</aside>
+<p>Good point… I’ll have to see if I can find the right balance between making this easy to execute and maximising revenue.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/25</link>
+        <pubDate>Wed, 18 Jan 2017 09:37:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="23" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>But in that sort of arrangement, in my experience, you usually have to pay ~25% maintenance per year. Not just pay for major upgrades.</p>
+</blockquote>
+</aside>
+<p>You’re right, it’s usually like that. But in most cases it’s not a full subscription, you can continue to use software if you don’t pay, you just don’t get access to new releases. And it usually applies to more complex packages where you expect there will be improvements, fixes and complex support within a year. Simpler off the shelf utilities usually can’t justify that model, or at least couldn’t until few years ago when industry started moving to subscriptions.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/24</link>
+        <pubDate>Tue, 17 Jan 2017 23:58:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="21" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>“1 years of support and maintenance included”</p>
+</blockquote>
+</aside>
+<p>But in that sort of arrangement, in my experience, you usually have to pay ~25% maintenance per year. Not just pay for major upgrades.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/23</link>
+        <pubDate>Tue, 17 Jan 2017 23:29:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="20" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/f/35a633/40.png" class="avatar"> fatalerror:</div>
+<blockquote>
+<p>Is selling a subscription license instead of a perpetual license the answer?</p>
+</blockquote>
+</aside>
+<p>Maybe it would be better to open new discussion for that subject? More people will notice it that way.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/22</link>
+        <pubDate>Tue, 17 Jan 2017 23:29:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="19" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>That seems unusually generous.</p>
+</blockquote>
+</aside>
+<p>Actually, it’s not that generous in B2B world. It’s usually worded “1 years of support and maintenance included”. Difference between me and big boys is that I provide minor upgrades (4.0 -&gt; 4.1) and support without time limits (because I can’t sleep if customer has a problem, and it’s very rare anyway), while big companies push hard every year for extension of support and maintenance contracts and don’t give you anything unless you keep purchasing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/21</link>
+        <pubDate>Tue, 17 Jan 2017 23:26:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[fatalerror]]></dc:creator>
+        <description><![CDATA[
+            <p>I haven’t released my application yet but I have been thinking about this. Is selling a subscription license instead of a perpetual license the answer? I was going to sell both but make the subscription cheaper then the perpetual license to discourage people purchasing a perpetual license. What do you think?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/20</link>
+        <pubDate>Tue, 17 Jan 2017 23:02:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="18" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>“free major upgrades within first 12 months”</p>
+</blockquote>
+</aside>
+<p>That seems unusually generous. I only offer free major upgrades if purchased within 3 months (which is, perhaps, unusually stingey!). But obviously that isn’t something you can change retrospectively. Maybe at the next major version?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/19</link>
+        <pubDate>Tue, 17 Jan 2017 22:39:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not even sure how much B2B users care about these discounts, at least in my case where it’s not super pricey software. That’s why I’m still thinking about should I push discount aspect or not in following emails? Those motivated by pricing will check pricing page anyway, notice discount and act on it. For those that don’t care - isn’t it better idea to let them upgrade on their own pace after promotion period?</p>
+<p>Funny thing happened today. One customer complained why didn’t I warn them that update is coming, since they bought previous version recently. They were ok after I pointed them to “free major upgrades within first 12 months” policy. Apparently they didn’t know about it, although it’s listed on Buy page.</p>
+<p>That’s a reminder that what looks glaringly obvious to us is not so to our customers, who spent maybe few minutes on our site, just searching for a way to solve their problem and not looking any further.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/18</link>
+        <pubDate>Tue, 17 Jan 2017 22:31:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="15" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Upgrade before ${emailDate+8 days} for an extra discount</p>
+</blockquote>
+</aside>
+<p>Your keenest users are the ones who are likely to upgrade first. So why not get them to pay full upgrade price and then offer a discount later on to the less keen ones (making sure early upgraders don’t get the discount email)?</p>
+<p>I don’t know which approach works better.</p>
+<p>In theory it should be possible to A/B test the 2 approaches, but it would be fiddly to do.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/17</link>
+        <pubDate>Tue, 17 Jan 2017 22:05:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>My software is B2B, in many cases customers can’t purchase that fast. I do have time limited promotion but it lasts 45 instead of 7 days to reflect that. I did mention this discount in first email after release, but I didn’t mention it in “education” email I sent today. Since I’ll send 2-3 more, I’ll probably mention that later on.</p>
+<p>Another complication for me is that many customers purchased multiple licenses through years, sometimes using resellers, some of them have mix of Standard and Professional licenses, and it’s not unusual that company name was slightly different from order to order. In other words - it’s a mess. I can dig out that info if I manually contact bigger customers, but I can’t automate that for everyone, at least not without much effort nor with 100% precision.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/16</link>
+        <pubDate>Tue, 17 Jan 2017 18:44:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>By coincidence I’ll be releasing version 6 of my product next month. I’m creating a plan for encouraging people to update. Here’s (a part of) my plan so far:</p>
+<ol>
+<li>Create a “what’s new in version 6” web page.</li>
+<li>Send an email to all existing users, saying “There’s a new version. Here’s why you should upgrade. Upgrade before ${emailDate+8 days} for an extra discount”. Each email will have a upgrade link that automatically fills the user’s original order info our web store so that they don’t have to look it up.</li>
+<li>Send a second email 7 days later to people who didn’t upgrade yet saying, “Remember the special upgrade discount ends in 24 hours!” Again, with an upgrade link.</li>
+<li>Update the previous version of my product to gently nag occasionally.</li>
+</ol>
+<p>Step 3 worked very well last time we released a major update. The day I sent that email was the highest revenue I’ve ever had in a single day. It’s a trick I learnt from Patrick McKenzie.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/15</link>
+        <pubDate>Tue, 17 Jan 2017 18:31:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/brbordallo">@brbordallo</a></p>
+<p>This case is not worthwhile for hiring traditional salesman, typical order is few hundred bucks. Sometimes they buy larger number of licenses but that’s not that often. And upgrade brings even smaller revenue. This is typical small fish off the shelf software.</p>
+<p>And I would rather do anything else than talk on phone, that’s one of things I really hate. I 100% know it would be good for business in multiple ways, for instance to learn better what customers need, but since this is my company I choose to enjoy my job rather than hate it, even if it means less money in the end.</p>
+<p>About subscriptions, I really don’t think my software is fit for that model and I would hate to force my users to something which doesn’t make sense just to get more money. And it’s questionable whether it would bring more.</p>
+<p>Now if I add online Saas versions of my tools one day then it will be a different story, but I’m not close to that yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/14</link>
+        <pubDate>Tue, 17 Jan 2017 18:16:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>[quote=“Andy, post:11, topic:4698”]<br>
+IMHO better to have regular emails every 1 or 2 months, than 1 a week and then nothing for ages. Also, I haven’t got time to read a weekly newsletter unless it is something really core to my business. [/quote]</p>
+<p>I really dropped a ball with this, sent one email every 2-3 years. There was a shortage of subjects I could write about for my market, but main issue is I much prefer to code than to deal with marketing. Like most of us here. However I read somewhere that marketing is same thing for humans as programming for computers, so maybe it will be more interesting now <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>And since I started supporting other queuing systems there will be plenty of new things to educate existing customers.</p>
+<aside class="quote" data-post="11" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>My software checks home to see if there is a new version - once a week by default. If there is it prompts them to upgrade.</p>
+</blockquote>
+</aside>
+<p>My doesn’t, that’s one of things from to do list I never got around to implement.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/13</link>
+        <pubDate>Tue, 17 Jan 2017 17:59:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[brbordallo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello <a class="mention" href="/u/grujicd">@grujicd</a>,</p>
+<p>What about offering your solution with licences limited by time? Let’s say 1 year, 2 years, whatever. After that the software stops working and they need to renew the license to continue using it.</p>
+<p>About upselling to your current users, I would try with a salesman, calling to them explaining why they should upgrade (or maybe you can call by yourself).</p>
+<p>Best regards,<br>
+Bart.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/12</link>
+        <pubDate>Tue, 17 Jan 2017 17:39:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>If I could get 50% to upgrade, I would be ecstatic</p>
+</blockquote>
+</aside>
+<p>Me too! I’ve never got anywhere close to that with PerfectTablePlan or Hyper Plan. Although many people only use PerfectTablePlan for their wedding, so a lowish upgrade % is to be expected.</p>
+<p>My software checks home to see if there is a new version - once a week by default. If there is it prompts them to upgrade.</p>
+<p>I also push upgrades in my newsletters.</p>
+<aside class="quote" data-post="1" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>Maybe one email per week as this gets close to the end of promotion?</p>
+</blockquote>
+</aside>
+<p>IMHO better to have regular emails every 1 or 2 months, than 1 a week and then nothing for ages. Also, I haven’t got time to read a weekly newsletter unless it is something really core to my business.</p>
+<p>When I release a major upgrade I email everyone who has purchased in the last 2 years who isn’t eligible for a free upgrade. Not just newsletter subscribers.</p>
+<aside class="quote" data-post="1" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>Additionally, I plan to list 50-100 largest customers and email and follow up manually with them, start some discussion, etc. More or less traditional sales. It’s ok to invest a bit more time in them since they’re most valuable customers, but I’m not sure how successful I’ll be.</p>
+</blockquote>
+</aside>
+<p>Worth a try. But make sure there is something clearly in it for them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/11</link>
+        <pubDate>Tue, 17 Jan 2017 16:09:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, MSMQ is not 100% obsolete yet - existing apps can’t be switched to something else without lot of changes. Also, it still works and is included in latest Windows, it’s just not improved any more. I already had a small survey and have some idea about replacements people start using, but that’s something which I’ll work on in the future.</p>
+<p>Anyway, idea of my question was to see what to do now. I decided to send 3-4 emails in next few weeks. They will be focused on new things in a product and how they benefit users. Each one will highlight one type of benefits. Something like this:</p>
+<ul>
+<li>3 new ways QueueExplorer 4 helps you detect MSMQ problems</li>
+<li>Why is QueueExplorer 4 much faster than before?</li>
+<li>3 ways QueueExplorer 4 makes you more productive with MSMQ</li>
+<li>3 ways QueueExplorer 4 connects better</li>
+</ul>
+<p>If anyone here is interested I can share results afterward. First one is planned for tomorrow.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/10</link>
+        <pubDate>Mon, 16 Jan 2017 16:19:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>It’s abandonware.</p>
+</blockquote>
+</aside>
+<p>Huh. I see.</p>
+<p>Then I would call the folks who upgraded so far and asked them their plans for MSMQ. Maybe you’d get some common motive there.</p>
+<p>Also, since MSMQ itself is on end-of-line list in those companies, maybe it worth to poll them and learn what is the planned replacement?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/9</link>
+        <pubDate>Mon, 16 Jan 2017 15:48:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Sometimes it is just a matter of initiating a right process within. Support person gets the email, puts the tool into EOL warning spreadsheet. Another person reviews it, finds that there is a newer version, fills in a purchase request. Third person marks it against the team budget and fills in the order.</p>
+</blockquote>
+</aside>
+<p>That’s good inside view. I’ll definitely keep this in mind, especially when dealing with larger customers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/8</link>
+        <pubDate>Sun, 15 Jan 2017 20:41:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s a thing with MSMQ, and it’s already more than you need to know <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+It’s abandonware. Yes, it works ok as it did for all these years, but last new features were in Windows Vista. Microsoft moved development to Azure Service Bus, but it’s much more complex thing and not a direct replacement for MSMQ. So MSMQ is still used, and since there are a lot of legacy internal business apps using it there is still a market, just a shrinking one.</p>
+<p>So, no, there are no MSMQ changes that would require new version of QueueExplorer. Sure, there are lot of new features and it’s much better product now, but it could be a case of “already good enough” and “who cares, old one works ok”.</p>
+<p>Btw. QE now supports ActiveMQ as well, but that’s entirely different market where we start from zero and a big unknown. We’ll be in similar boat when we add support for Azure Service Bus in the future.</p>
+<p>Idea is to maximize returns from MSMQ while there’s still a market there.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/7</link>
+        <pubDate>Sun, 15 Jan 2017 20:06:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>Yes, they’re all business users, but my product is small util, relatively simple, not mission critical and doesn’t require much support.</p>
+</blockquote>
+</aside>
+<p>Sometimes it is just a matter of initiating a right process within. Support person gets the email, puts the tool into EOL warning spreadsheet. Another person reviews it, finds that there is a newer version, fills in a purchase request. Third person marks it against the team budget and fills in the order.</p>
+<p>I.e. the necessity to buy may not even exist - and the purchase may still happen.</p>
+<p>Just make it easy to upgrade – it should be a drop-in replacement, otherwise it will involve more people to discuss, and one of them may say “we do not really <em>have</em> to upgrade”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/6</link>
+        <pubDate>Sun, 15 Jan 2017 19:44:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+      <item>
+        <title>Any tips on encouraging users to upgrade (Non Saas desktop software)?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4698">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/grujicd/40/2700_1.png" class="avatar"> grujicd:</div>
+<blockquote>
+<p>What they need to know is - why should they upgrade? What this brings them?</p>
+</blockquote>
+</aside>
+<p>Upgrade is usually a forced thing. You know your product better - what may force them to upgrade?</p>
+<p>Are new versions or features of MSMQ (if any) supported only in the new version of the product? Are there any potential security issues with the old one (say old one only supports SHA1 certs)? Does old version work on Windows 7/8/10?</p>
+<p>If none of these reasons exist, may you should create a new one – by expanding the feature set. There are a few MSMQ tools on the market, maybe you can borrow features from some of them or learn some pains that the biggest customers still have working with MSMQ?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698/5</link>
+        <pubDate>Sun, 15 Jan 2017 19:39:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4698-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-tips-on-encouraging-users-to-upgrade-non-saas-desktop-software/4698.rss">Any tips on encouraging users to upgrade (Non Saas desktop software)?</source>
+      </item>
+  </channel>
+</rss>

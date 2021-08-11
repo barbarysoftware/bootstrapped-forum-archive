@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>User channel conversion metrics</title>
+    <link>https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122</link>
+    <description>I&#39;m currently using google Analytics for a broad overview, but I&#39;m unable to drill it down to different channels. Also, it&#39;s limited because it only allows to set up pages for goals, not actions.
+
+What I basically want is a tool that enables me to see where my users are coming from and how they convert (signups, trial, paid package).
+
+Ultimately, I just want to get an idea which (paid) channels are worth it. 
+
+What are you using, any recommendations?</description>
+    
+    <lastBuildDate>Tue, 27 Jun 2017 21:48:23 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>User channel conversion metrics</title>
+        <dc:creator><![CDATA[jayfk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="5122">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/holger/40/3639_1.png" class="avatar"> holger:</div>
+<blockquote>
+<p>So you have implemented your own tracking of events and such?</p>
+</blockquote>
+</aside>
+<p>Exactly. The only external service I’m currently using is <a href="https://www.profitwell.com/" rel="nofollow noopener">profitwell.com</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/6</link>
+        <pubDate>Tue, 27 Jun 2017 21:48:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5122-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122.rss">User channel conversion metrics</source>
+      </item>
+      <item>
+        <title>User channel conversion metrics</title>
+        <dc:creator><![CDATA[holger]]></dc:creator>
+        <description><![CDATA[
+            <p>So you have implemented your own tracking of events and such?<br>
+Or do you tap in external data (like Google Analytics) somehow?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/5</link>
+        <pubDate>Tue, 27 Jun 2017 09:42:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5122-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122.rss">User channel conversion metrics</source>
+      </item>
+      <item>
+        <title>User channel conversion metrics</title>
+        <dc:creator><![CDATA[jayfk]]></dc:creator>
+        <description><![CDATA[
+            <p>I ended up building my own analytics dashboard. Took me around 8 hours to code and includes all the info I need.</p>
+<p>Actually, it was pretty simple. I’m storing metrics on the server side thanks to Postgres’ JSONField. The dashboard is a dark Bootstrap theme and the charts are from <a href="http://highcharts.com">highcharts.com</a>.</p>
+<p>Here’s a screenshot from my dev environment:<br>
+.<div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/a/ad82ac00367c9a22d711c0c68771efca9f277640.png" data-download-href="/uploads/short-url/oKWz49hrsrE9L7l9iJSpYpE4tkQ.png?dl=1" title="screencapture-localhost-8000-admin-metrics-users-1498490318608.png"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/a/ad82ac00367c9a22d711c0c68771efca9f277640_2_497x500.png" alt data-base62-sha1="oKWz49hrsrE9L7l9iJSpYpE4tkQ" width="497" height="500" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/a/ad82ac00367c9a22d711c0c68771efca9f277640_2_497x500.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/a/ad82ac00367c9a22d711c0c68771efca9f277640_2_745x750.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/a/ad82ac00367c9a22d711c0c68771efca9f277640_2_994x1000.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/a/ad82ac00367c9a22d711c0c68771efca9f277640_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">screencapture-localhost-8000-admin-metrics-users-1498490318608.png</span><span class="informations">3048×3062 539 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/4</link>
+        <pubDate>Mon, 26 Jun 2017 15:33:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5122-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122.rss">User channel conversion metrics</source>
+      </item>
+      <item>
+        <title>User channel conversion metrics</title>
+        <dc:creator><![CDATA[Luis]]></dc:creator>
+        <description><![CDATA[
+            <p>Actually, you can setup Google Analytics goals that get triggered by an event.</p>
+<p><a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/events" rel="nofollow noopener">Documentation on sending events with GA</a></p>
+<p><a href="https://support.google.com/analytics/answer/1032415#goal_configuration_options" rel="nofollow noopener">Documentation on setting up goals</a> (look for event goal details)</p>
+<p>Hope it helps</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/3</link>
+        <pubDate>Fri, 23 Jun 2017 18:11:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5122-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122.rss">User channel conversion metrics</source>
+      </item>
+      <item>
+        <title>User channel conversion metrics</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>There is <a href="https://mixpanel.com/" rel="nofollow noopener">https://mixpanel.com/</a> and <a href="https://heapanalytics.com/" rel="nofollow noopener">https://heapanalytics.com/</a></p>
+<p>Let me know how you get on as I would be curious myself to see that works</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/2</link>
+        <pubDate>Fri, 23 Jun 2017 18:05:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5122-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122.rss">User channel conversion metrics</source>
+      </item>
+      <item>
+        <title>User channel conversion metrics</title>
+        <dc:creator><![CDATA[jayfk]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m currently using google Analytics for a broad overview, but I’m unable to drill it down to different channels. Also, it’s limited because it only allows to set up pages for goals, not actions.</p>
+<p>What I basically want is a tool that enables me to see where my users are coming from and how they convert (signups, trial, paid package).</p>
+<p>Ultimately, I just want to get an idea which (paid) channels are worth it.</p>
+<p>What are you using, any recommendations?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122/1</link>
+        <pubDate>Thu, 22 Jun 2017 10:04:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5122-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/user-channel-conversion-metrics/5122.rss">User channel conversion metrics</source>
+      </item>
+  </channel>
+</rss>

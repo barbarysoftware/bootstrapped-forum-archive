@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Non-SaaS server side products</title>
+    <link>https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316</link>
+    <description>I haven&#39;t had a chance to listen to the &quot;Hate the Saas&quot; episode yet. However, I&#39;ve been working on an idea for a server side product that I would like to deliver as an on-site install instead of SaaS. Besides @ian, does anyone have any opinions on this? 
+
+For this product I think it makes sense because its very data heavy and I don&#39;t think the potential client base would trust it to a SaaS product. Its in the mobile server side tools world (like Parse, ect) and a lot of people have gotten burned by these companies closing their doors lately.
+
+I know the big problem will be dealing with all the different platforms its installed on. One idea might be to just have it target PaaS providers. So they could easily set it up on their own Heroku/Azure/whatever instance.
+
+Do people have concerns about distributing non-compiled source for apps like this?
+
+</description>
+    
+    <lastBuildDate>Fri, 14 Mar 2014 02:10:14 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Non-SaaS server side products</title>
+        <dc:creator><![CDATA[csaba]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ve considered this in detail with a security-sensitive product; issues boil down to: license enforcement, and devops / administration.<br>
+There’s an awesome new tool to solve the second one: by distributing it via docker  ( <a href="http://docker.io" rel="nofollow noopener">docker.io</a> ) images:</p>
+<ul>
+<li>containers have at least 2 specific PaaS providers</li>
+<li>dead-simple deployment story for any linux host</li>
+<li>with minimal configuration (port numbers)</li>
+<li>and minimal virtualization overhead</li>
+</ul>
+<p>Setting up a docker image basically requires pre-configuring a linux host &amp; dropping you app into it; “docker export” gives you a live snapshot of that host, which clients can import to their servers. This is highly malleable to “linux one-liners”, which your clients might appreciate.</p>
+<p>Note, that your target market will be sensitive to choice of virtualization; specifically SMBs usually have a “general devops guy” with linux (and possibly familiarity with docker); while larger enterprises commanding fleets of servers trend towards windows + VMs (YMMV).</p>
+<p>These aren’t mutually exclusive options, but they’re both time liabilities; I’d strongly recommend doing customer development to understand your specific target market prior to committing to either (or, indeed <em>any</em>) solution.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316/4</link>
+        <pubDate>Fri, 14 Mar 2014 02:10:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1316-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316.rss">Non-SaaS server side products</source>
+      </item>
+      <item>
+        <title>Non-SaaS server side products</title>
+        <dc:creator><![CDATA[jacksonh]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah I had considered the VM. Seems like you’d still run into a bunch of integration issues but it would help a lot.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316/3</link>
+        <pubDate>Thu, 13 Mar 2014 19:01:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1316-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316.rss">Non-SaaS server side products</source>
+      </item>
+      <item>
+        <title>Non-SaaS server side products</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <p>Another option is to provide a VM image. You’ll still have the problem of providing updates to the customer but perhaps you could provide a set of provisioning scripts which they can run that updates their VM.</p>
+<p>(forgot to say: I still think this is a really hard way to go but the above suggestion is my least-painful suggestion)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316/2</link>
+        <pubDate>Thu, 13 Mar 2014 17:03:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1316-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316.rss">Non-SaaS server side products</source>
+      </item>
+      <item>
+        <title>Non-SaaS server side products</title>
+        <dc:creator><![CDATA[jacksonh]]></dc:creator>
+        <description><![CDATA[
+            <p>I haven’t had a chance to listen to the “Hate the Saas” episode yet. However, I’ve been working on an idea for a server side product that I would like to deliver as an on-site install instead of SaaS. Besides <a class="mention" href="/u/ian">@ian</a>, does anyone have any opinions on this?</p>
+<p>For this product I think it makes sense because its very data heavy and I don’t think the potential client base would trust it to a SaaS product. Its in the mobile server side tools world (like Parse, ect) and a lot of people have gotten burned by these companies closing their doors lately.</p>
+<p>I know the big problem will be dealing with all the different platforms its installed on. One idea might be to just have it target PaaS providers. So they could easily set it up on their own Heroku/Azure/whatever instance.</p>
+<p>Do people have concerns about distributing non-compiled source for apps like this?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316/1</link>
+        <pubDate>Thu, 13 Mar 2014 15:55:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1316-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/non-saas-server-side-products/1316.rss">Non-SaaS server side products</source>
+      </item>
+  </channel>
+</rss>

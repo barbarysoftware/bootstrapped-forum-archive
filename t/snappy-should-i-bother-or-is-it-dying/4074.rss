@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Snappy: Should I bother or is it dying?</title>
+    <link>https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074</link>
+    <description>I&#39;m well aware that Ian sold Snappy, and perhaps doesn&#39;t have a visibility into the current state of the project, but well, I&#39;m signing up for Snappy and I&#39;m puzzled.
+
+There are a few issues I&#39;m facing that tell me that there is not enough development efforts invested into Snappy.
+
+For example:
+
+**Widget is lacking configuration options**
+
+More than a year ago I signed up for the first time. It did not work out for non-Snappy related reasons, but one particular issue I remember is that their widget did not support opening in a Contact mode. That looked strange to me -- any new project would have their knowledge base empty, and to work out that very knowledge base I need to collect the questions from users, i.e. let them send me messages. Instead, the widget was opening into a blank white page (where KB supposed to be), and only a very attention-to-detail-oriented (i.e. extinct) user would notice a small link on the bottom that opens the Contact Us form.
+
+OK, that was a long time ago, the project was new, nobody&#39;s perfect.
+
+Now for a different project I&#39;m signing up for Snappy again, and I see the very same issue still persist. Still no way to open the widget in a Contact Us mode. Hmm... I would expect it fixed over that time... OK.
+
+**API is not CORS-compatible**
+
+Fine, I build my own form, attach a AJAX script to it that does the same thing that Snappy&#39;s own does. Turns out that their API endpoint doesn&#39;t support CORS -- i.e. I cannot submit an API call (well, at least /contact; did not tried other) from any web page. Only widget can do that (it is loaded from *.besnappy.com domain, so the same origin applies). And it is not a security thing, because I can easily submit requests from command line, or SoapUI -- it is just an incomplete API implementation (at least so I was told by folks who do public APIs in corps).
+
+Again, I would have expected the API polished over so long time. Speaking of which, [their API documentation](https://github.com/BeSnappy/api-docs) is updated 2 years ago. Hmm...
+
+**Javascript Errors on main interface**
+
+And the last straw is the JS errors I&#39;m getting in their interface. I do not remember them during the last time! Now almost every time I remove a test ticket, I&#39;m getting JS errors:
+
+![|690x451](upload://fb7j9M0kVywQiswXf50VQKPn70z.jpg)
+
+**So, is Snappy dying?**
+
+Should I spend time to continue integrating with it, or should I look elsewhere?
+
+Any opinion or recent experience?</description>
+    
+    <lastBuildDate>Fri, 20 May 2016 20:28:59 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Snappy: Should I bother or is it dying?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="4074">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/s/47e85d/40.png" class="avatar"> SnappyPat:</div>
+<blockquote>
+<p>but trust me, we are</p>
+</blockquote>
+</aside>
+<p>Thanks, that’s what I wanted to hear.</p>
+<p>I’ll stick with Snappy then - there are no showstoppers for me now.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074/3</link>
+        <pubDate>Fri, 20 May 2016 20:28:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4074-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074.rss">Snappy: Should I bother or is it dying?</source>
+      </item>
+      <item>
+        <title>Snappy: Should I bother or is it dying?</title>
+        <dc:creator><![CDATA[SnappyPat]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi!  One of the Snappy developers here … so I’ll try to keep opinions out of it (yes, you should use Snappy! haha) and address your concerns.</p>
+<p>We are actively working on Snappy.  In the near future (weeks, not months) we’ll be setting up a beta site at <a href="http://beta.besnappy.com" rel="nofollow noopener">beta.besnappy.com</a> with all of our recent changes, looking for user feedback before we roll them out to everyone.</p>
+<p>These changes include a massively cleaned-up JavaScript codebase (we spent a lot of time getting rid of CoffeeScript and going back to pure JS to make our lives easier, and your errors less frequent), a re-designed UI and the option for a WYSIWYG editor (Markdown will <strong>not</strong> be removed, it’ll be a user config option to choose).</p>
+<p>We do realize the widget lacks options - we’ve been focusing on the main application UI recently, but extended functionality for the widget, mobile apps (iOS and Android) and more extensive triggers are all in our pipeline.</p>
+<p>I can certainly understand how you could get the impression that we aren’t working much on it - but trust me, we are.  We are hoping that the new UI and web app features coming soon will be a delight for everyone and remove a lot of nagging issues that eat up a lot of our time, so we can get back to focusing on adding features our users want as opposed to fire-fighting issues that cause our users pain.</p>
+<p>We are also more than happy to take any feedback on features you’d like to see in the future - we build for our users, it’s easy to move things up the priority list if you ask for them! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Thanks,<br>
+Team Snappy</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074/2</link>
+        <pubDate>Fri, 20 May 2016 20:20:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4074-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074.rss">Snappy: Should I bother or is it dying?</source>
+      </item>
+      <item>
+        <title>Snappy: Should I bother or is it dying?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m well aware that Ian sold Snappy, and perhaps doesn’t have a visibility into the current state of the project, but well, I’m signing up for Snappy and I’m puzzled.</p>
+<p>There are a few issues I’m facing that tell me that there is not enough development efforts invested into Snappy.</p>
+<p>For example:</p>
+<p><strong>Widget is lacking configuration options</strong></p>
+<p>More than a year ago I signed up for the first time. It did not work out for non-Snappy related reasons, but one particular issue I remember is that their widget did not support opening in a Contact mode. That looked strange to me – any new project would have their knowledge base empty, and to work out that very knowledge base I need to collect the questions from users, i.e. let them send me messages. Instead, the widget was opening into a blank white page (where KB supposed to be), and only a very attention-to-detail-oriented (i.e. extinct) user would notice a small link on the bottom that opens the Contact Us form.</p>
+<p>OK, that was a long time ago, the project was new, nobody’s perfect.</p>
+<p>Now for a different project I’m signing up for Snappy again, and I see the very same issue still persist. Still no way to open the widget in a Contact Us mode. Hmm… I would expect it fixed over that time… OK.</p>
+<p><strong>API is not CORS-compatible</strong></p>
+<p>Fine, I build my own form, attach a AJAX script to it that does the same thing that Snappy’s own does. Turns out that their API endpoint doesn’t support CORS – i.e. I cannot submit an API call (well, at least /contact; did not tried other) from any web page. Only widget can do that (it is loaded from *.besnappy.com domain, so the same origin applies). And it is not a security thing, because I can easily submit requests from command line, or SoapUI – it is just an incomplete API implementation (at least so I was told by folks who do public APIs in corps).</p>
+<p>Again, I would have expected the API polished over so long time. Speaking of which, <a href="https://github.com/BeSnappy/api-docs">their API documentation</a> is updated 2 years ago. Hmm…</p>
+<p><strong>Javascript Errors on main interface</strong></p>
+<p>And the last straw is the JS errors I’m getting in their interface. I do not remember them during the last time! Now almost every time I remove a test ticket, I’m getting JS errors:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/6/6a6257986e2065d84395fc950d1d677811ae4577.jpg" data-download-href="/uploads/short-url/fb7j9M0kVywQiswXf50VQKPn70z.jpg?dl=1" title="SnappyErrors.jpg"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/6/6a6257986e2065d84395fc950d1d677811ae4577.jpg" alt data-base62-sha1="fb7j9M0kVywQiswXf50VQKPn70z" width="690" height="451" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/6/6a6257986e2065d84395fc950d1d677811ae4577_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">SnappyErrors.jpg</span><span class="informations">1012×662 184 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><strong>So, is Snappy dying?</strong></p>
+<p>Should I spend time to continue integrating with it, or should I look elsewhere?</p>
+<p>Any opinion or recent experience?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074/1</link>
+        <pubDate>Fri, 20 May 2016 01:08:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4074-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/snappy-should-i-bother-or-is-it-dying/4074.rss">Snappy: Should I bother or is it dying?</source>
+      </item>
+  </channel>
+</rss>

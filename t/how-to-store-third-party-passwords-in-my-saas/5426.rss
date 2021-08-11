@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to store third-party passwords in my SaaS?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426</link>
+    <description>I&#39;m adding JIRA integration to Feature Upvote. To do this, we need the user to supply us with credentials for a JIRA account. This includes a username and password. We need to store these in our database.
+
+Now, normally I&#39;d never store a password in a database table in way that it could be read or decrypted. But I&#39;m a bit puzzled how to do this when I require the decrypted password for my SaaS to access Jira on behalf of the customer.
+
+How have you handled this?</description>
+    
+    <lastBuildDate>Fri, 03 Nov 2017 10:17:16 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to store third-party passwords in my SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/glenscott">@glenscott</a> and <a class="mention" href="/u/stympy">@stympy</a>. Between these two approaches, I should be able to solve this adequately.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426/4</link>
+        <pubDate>Fri, 03 Nov 2017 10:17:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5426-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426.rss">How to store third-party passwords in my SaaS?</source>
+      </item>
+      <item>
+        <title>How to store third-party passwords in my SaaS?</title>
+        <dc:creator><![CDATA[stympy]]></dc:creator>
+        <description><![CDATA[
+            <p>When we implemented JIRA support in <a href="https://www.honeybadger.io" rel="nofollow noopener">Honeybadger</a>, JIRA didn’t offer OAuth… we had to store usernames and passwords in our database.  Since we use Postgres, we use the pgp_pub_encrypt_bytea and pgp_pub_decrypt_bytea functions of the <a href="https://www.postgresql.org/docs/current/static/pgcrypto.html" rel="nofollow noopener">pg_crypto extension</a> to encrypt and decrypt that data.  If you have to have access to the plaintext version of the password at some point (e.g., when interacting with their API), it’s the best you can do.  Just be sure not to store the private key with the rest of the database data. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426/3</link>
+        <pubDate>Thu, 02 Nov 2017 18:41:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5426-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426.rss">How to store third-party passwords in my SaaS?</source>
+      </item>
+      <item>
+        <title>How to store third-party passwords in my SaaS?</title>
+        <dc:creator><![CDATA[glenscott]]></dc:creator>
+        <description><![CDATA[
+            <p>Don’t store third party passwords at all.  Instead, utilise the service’s APIs to integrate with your SaaS.</p>
+<p>For example, Jira has an API and it has support for OAuth authentication (<a href="https://developer.atlassian.com/cloud/jira/platform/jira-rest-api-oauth-authentication/" rel="nofollow noopener">https://developer.atlassian.com/cloud/jira/platform/jira-rest-api-oauth-authentication/</a>).  In this model, the user grants your SaaS (a <em>consumer</em> in OAuth parlance) access to their Jira account (a <em>resource</em>).  Usernames and passwords never are seen or required by your SaaS, but instead after the user authenticates, you will get an <em>access token</em> which you can store and use for subsequent API requests.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426/2</link>
+        <pubDate>Thu, 02 Nov 2017 15:31:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5426-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426.rss">How to store third-party passwords in my SaaS?</source>
+      </item>
+      <item>
+        <title>How to store third-party passwords in my SaaS?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m adding JIRA integration to Feature Upvote. To do this, we need the user to supply us with credentials for a JIRA account. This includes a username and password. We need to store these in our database.</p>
+<p>Now, normally I’d never store a password in a database table in way that it could be read or decrypted. But I’m a bit puzzled how to do this when I require the decrypted password for my SaaS to access Jira on behalf of the customer.</p>
+<p>How have you handled this?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426/1</link>
+        <pubDate>Thu, 02 Nov 2017 15:20:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5426-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-store-third-party-passwords-in-my-saas/5426.rss">How to store third-party passwords in my SaaS?</source>
+      </item>
+  </channel>
+</rss>

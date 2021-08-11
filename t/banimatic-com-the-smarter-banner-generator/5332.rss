@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Banimatic.com - The Smarter Banner Generator</title>
+    <link>https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332</link>
+    <description>Recently I started learning JavaScript ES6 with the intent of using it to build SPA applications (Vue.js in particular) and figured out that the best way to learn something is by trying to create something. 
+
+I sometimes use Google AdWords banner generator, but find it very basic, therefore I thought about creating something better.
+
+Now I just finished [Banimatic.com](https://www.banimatic.com/) - smarter banner generator, which generates banners based on the URL supplied. Generated banners are customizable - you can switch off and remove any part of the banner, or change it the way you need it to be. They can also be animated and exports to HTML or png files. I always like products that are simple to use, but gets the job done, this was my main goal with this product too.
+
+Any feedback is welcome.</description>
+    
+    <lastBuildDate>Mon, 02 Oct 2017 07:16:11 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Banimatic.com - The Smarter Banner Generator</title>
+        <dc:creator><![CDATA[maheshj]]></dc:creator>
+        <description><![CDATA[
+            <p>Cool. Just some thoughts…</p>
+<ol>
+<li>Yes, you should definitely consider improving the layout to reduce the noise. Like I said earlier, the goal is to help the user focus on your product as much as possible and see the benefit at the earliest</li>
+<li>You can show the same in the copyright message below the text input - “Any images/assets extracted from the website are subject to copyright restrictions…”. My point about showing a dialog helps. You can show the dialog only if you are able to extract images (and you can show it just once)</li>
+<li>Separate buttons make them visible to the user upfront. So he knows what he can do immediately (again reducing the friction to try it). That’s really important here and you don’t need to have big buttons. Smaller buttons will do. I do see your point about large banners. It might make sense to have the buttons at the top of the image so that the user doesn’t have to scroll down to modify/download.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/6</link>
+        <pubDate>Mon, 02 Oct 2017 07:16:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5332-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332.rss">Banimatic.com - The Smarter Banner Generator</source>
+      </item>
+      <item>
+        <title>Banimatic.com - The Smarter Banner Generator</title>
+        <dc:creator><![CDATA[RaimisJ]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for feedback.</p>
+<ol>
+<li>
+<p>I fixed the “keyboard enter” problem already, it was indeed really easy to fix. I just did not notice this problem.</p>
+</li>
+<li>
+<p>The current layout was done as it was easy to do this with the framework I am working with. I might change it in the future.</p>
+</li>
+<li>
+<p>Copyright message is only shown if there are images that can be used for the banner. If no images are found - no message is shown. Therefore, this cannot be shown in advance (e.g. just below input field).</p>
+</li>
+<li>
+<p>The point about gradient and font choices is indeed valid as I am not a designer. I would need a separate person do this job if this succeeds. Note, that fonts can easily be changed, by just entering the font name.</p>
+</li>
+<li>
+<p>Separate buttons take extra space, while overlay buttons do not. Large banners (300x600), take even more space, so having separate buttons would eat up space even more.</p>
+</li>
+<li>
+<p>This is on my to-do list too.</p>
+</li>
+</ol>
+<p>I agree with most of the points. However, this is not my first product. I have made few more, that was not needed by anyone. So, now I always try doing something in the least amount of time and work required.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/5</link>
+        <pubDate>Mon, 02 Oct 2017 06:43:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5332-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332.rss">Banimatic.com - The Smarter Banner Generator</source>
+      </item>
+      <item>
+        <title>Banimatic.com - The Smarter Banner Generator</title>
+        <dc:creator><![CDATA[maheshj]]></dc:creator>
+        <description><![CDATA[
+            <p>This is really cool. Congrats on launching <a class="mention" href="/u/raimisj">@RaimisJ</a>.</p>
+<p>I understand your approach about not putting in more work without gaining more traction, but when it comes to UX improvements, small things might go a long way. For example, I found the following problems, which could be fixed easily…</p>
+<ol>
+<li>I entered the website and hit “enter” on my keyboard but nothing happened. I had to click on the “Generate” button for it to start working</li>
+<li>The pencils background looks ok on the home page, but is very distracting on the results page. I want to keep my focus on the newly created banners but the background image is getting in the way</li>
+<li>The copyright message at the bottom right can be moved to the home page, just below the input field, so that it doesn’t create a distraction. The other way could be to show a dialog on the results page as soon as it loads. Something like “Hurray! Your banners are ready. We took the images from your website to create these banners. They might be subject to copyright and you should get the required permissions from the copyright owner”.</li>
+<li>The gradient backgrounds and font choices look a little old school (this will probably not be a small change)</li>
+<li>Instead of showing the message at the bottom left about moving the mouse over the banner for settings, you can just put the download and settings button below each banner. The goal is to reduce distractions as much as possible</li>
+<li>It might be better to have a two column layout with the “edit banner info” on the left and the generated banners on the right. Users can understand upfront what all aspects he/she can customize</li>
+</ol>
+<p>The point I’m trying to make is your MVP should focus on showing the benefit to the user as soon as possible, and your design is already doing it. I feel that the above points could be some minor work to improve the possibility of getting feedback and gaining more traction. Hope this helps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/4</link>
+        <pubDate>Sun, 01 Oct 2017 09:17:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5332-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332.rss">Banimatic.com - The Smarter Banner Generator</source>
+      </item>
+      <item>
+        <title>Banimatic.com - The Smarter Banner Generator</title>
+        <dc:creator><![CDATA[RaimisJ]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for feedback. Your suggestions are already in my “to do” list (more layouts and etc.). As this is MVP, I do not want to put any more work without the product gaining more traction in the first place.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/3</link>
+        <pubDate>Thu, 28 Sep 2017 08:48:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5332-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332.rss">Banimatic.com - The Smarter Banner Generator</source>
+      </item>
+      <item>
+        <title>Banimatic.com - The Smarter Banner Generator</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice! I got mostly similar results from 99designs competition once. <img src="https://emoji.discourse-cdn.com/twitter/sweat.png?v=5" title=":sweat:" class="emoji" alt=":sweat:"></p>
+<p>The background gradients, fonts, and spacings need some improvement. I would also add more layouts. Maybe take a look at top brands’ banners on <a href="https://moat.com/" rel="nofollow noopener">https://moat.com/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/2</link>
+        <pubDate>Wed, 27 Sep 2017 17:57:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5332-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332.rss">Banimatic.com - The Smarter Banner Generator</source>
+      </item>
+      <item>
+        <title>Banimatic.com - The Smarter Banner Generator</title>
+        <dc:creator><![CDATA[RaimisJ]]></dc:creator>
+        <description><![CDATA[
+            <p>Recently I started learning JavaScript ES6 with the intent of using it to build SPA applications (Vue.js in particular) and figured out that the best way to learn something is by trying to create something.</p>
+<p>I sometimes use Google AdWords banner generator, but find it very basic, therefore I thought about creating something better.</p>
+<p>Now I just finished <a href="https://www.banimatic.com/" rel="nofollow noopener">Banimatic.com</a> - smarter banner generator, which generates banners based on the URL supplied. Generated banners are customizable - you can switch off and remove any part of the banner, or change it the way you need it to be. They can also be animated and exports to HTML or png files. I always like products that are simple to use, but gets the job done, this was my main goal with this product too.</p>
+<p>Any feedback is welcome.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332/1</link>
+        <pubDate>Wed, 27 Sep 2017 15:27:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5332-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/banimatic-com-the-smarter-banner-generator/5332.rss">Banimatic.com - The Smarter Banner Generator</source>
+      </item>
+  </channel>
+</rss>

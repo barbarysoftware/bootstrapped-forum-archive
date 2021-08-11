@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What do you use to manage your business website?</title>
+    <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624</link>
+    <description>Regarding this (http://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/6) thread, what software do you use to manage your business website? Are you using a custom-made website with something like ASP.NET, PHP or Ruby on Rails? Do you use a &quot;standard&quot; CMS like Joomla!, Drupal or Wordpress? Do you use static html pages?
+
+Personally I&#39;m using Joomla! but, after a security hole that allowed someone to upload files to my server, I&#39;m thinking about changing to another CMS. I like using CMS because it&#39;s easy to manage and change content, and it&#39;s also easy to find good looking templates (I&#39;m really not a good designer).</description>
+    
+    <lastBuildDate>Tue, 01 Dec 2015 08:05:07 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What do you use to manage your business website?</title>
+        <dc:creator><![CDATA[michael]]></dc:creator>
+        <description><![CDATA[
+            <p>I use and still prefer static HTML with some blocks written on PHP. This gives full control and allows almost anything. For example, I can insert any block on any page, add dynamic elements, etc.</p>
+<p>A small part of the site (blog/news section) is built on Wordpress.</p>
+<p>I thought about building the entire site on Wordpress but refused the idea. There were several reasons.</p>
+<p>Every time I see a paid Wordpress template it looks overdesigned (it contains a lot of blocks, elements, and other stuff). So I afraid that I cannot easily adapt it to my needs and instead of getting a flexibility I’ll get a series of compromises.</p>
+<p>I tried several free Wordpress templates, just as a private experiment, to see how they can work, but all of these templates did not leave any good impression.</p>
+<p>Furthermore, if you wish to customize something in Wordpress, you have to write a plugin. For example, from time to time, I want to show a holiday discount block on some pages. I don’t know how to do this in Wordpress, but it’s just a line of code in PHP (include(‘block.html’)), and all I have to do is to modify the ‘block.html’. It’s easy, and I should not spend time to learn new skills for utilitarian needs. It is better to focus on SEO, product and other things that matter.</p>
+<p>I’m ahead of redesigning my website to make it responsive. So, finally I decided to continue using the existing model: static HTML (with a design based on Bootstrap), and small PHP blocks that cover all my needs. And, of course, a Wordpress driven news section, that uses the same design.</p>
+<p>At the end - completely agree with <a class="mention" href="/u/scojo">@scojo</a>:</p>
+<blockquote>
+<p>Your marketing site is not where you want to spend time learning technology. It’s about copy and actions and marketing (go figure).</p>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/8</link>
+        <pubDate>Tue, 01 Dec 2015 07:44:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3624-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624.rss">What do you use to manage your business website?</source>
+      </item>
+      <item>
+        <title>What do you use to manage your business website?</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Used Wordpress at first. Then got paranoid about security one night and ripped Wordpress out and replaced with my own little home grown php/markdown solution in a few hours.</p>
+<p>What I’m thinking about using in the future is one of these new flat file CMS solutions like <a href="https://github.com/getgrav/grav" rel="nofollow noopener">https://github.com/getgrav/grav</a></p>
+<p>I also increasingly like the idea that <a class="mention" href="/u/ian">@ian</a> mentioned once of a paid service that maintained and updated your marketing site for you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/7</link>
+        <pubDate>Sun, 29 Nov 2015 17:00:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3624-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624.rss">What do you use to manage your business website?</source>
+      </item>
+      <item>
+        <title>What do you use to manage your business website?</title>
+        <dc:creator><![CDATA[Victory]]></dc:creator>
+        <description><![CDATA[
+            <p>Our website started as a static html website. One of the factors that steered our choice that way was an advice I happened to read from one of these micro-isv folks saying something to the effect “You don’t need a CMS; just go for html/css”. The advice was probably fine for the time when it was written, but, I would say that is not a generally good advice for current times.<br>
+Recently, we moved to Wordpress and it has definitely been a good thing for us.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/6</link>
+        <pubDate>Sat, 28 Nov 2015 17:37:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3624-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624.rss">What do you use to manage your business website?</source>
+      </item>
+      <item>
+        <title>What do you use to manage your business website?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>I think there are two options:</p>
+<ul>
+<li>WordPress</li>
+<li>something you know REALLY well</li>
+</ul>
+<p>Don’t do something cause its new or cool or others use it. Your marketing site is not where you want to spend time learning technology. It’s about copy and actions and marketing (go figure).</p>
+<p>My first app, I used a custom <a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a> website. Since i didnt know php I was afraid of WordPress. I think that was a mistake. My current app is done with WordPress.  Like people have said, if you know something really well, it may make sense to do what you know. Otherwise I would default to WP. There are great themes and it gets you running quickly.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/5</link>
+        <pubDate>Sat, 28 Nov 2015 17:07:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3624-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624.rss">What do you use to manage your business website?</source>
+      </item>
+      <item>
+        <title>What do you use to manage your business website?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>In 2008 when I started I went total static. Speed and reliability, I told myself, can’t be beaten. But having to manage HTML by hand was painful.</p>
+<p>In 2013 I moved everything to WordPress, hosted on WPEngine. Which solved some problems but created others. If I wanted to alter our home page layout for marketing reasons, I needed the help of a WordPress person. Adding database-driven stuff meant extending WordPress. I felt hamstrung.</p>
+<p>A few months ago (2015), I moved everything to be a Java web app, using Tomcat and MySQL. Finally I feel like I have good control and flexibility.</p>
+<p>In hindsight I should have used this option from the beginning. Because Java web apps in Tomcat is something I did as an overpaid consultant for so many years, I can code this stuff in my sleep. That is, it is flexible, powerful, fast, and I know the technology well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/4</link>
+        <pubDate>Wed, 25 Nov 2015 10:15:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3624-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624.rss">What do you use to manage your business website?</source>
+      </item>
+      <item>
+        <title>What do you use to manage your business website?</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a> + AngularJS because that’s what I know. I’ve been working with .NET since version 1; it wouldn’t make sense to spend time learning something new when I also have to do support, marketing, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/3</link>
+        <pubDate>Wed, 25 Nov 2015 03:17:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3624-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624.rss">What do you use to manage your business website?</source>
+      </item>
+      <item>
+        <title>What do you use to manage your business website?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>I am currently using a custom <a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a> website, but if I did it again I would use a Wordpress site.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/2</link>
+        <pubDate>Tue, 24 Nov 2015 23:47:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3624-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624.rss">What do you use to manage your business website?</source>
+      </item>
+      <item>
+        <title>What do you use to manage your business website?</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Regarding this (<a href="http://discuss.bootstrapped.fm/t/where-do-you-host-your-business-web-site/3623/6">Where do you host your business web site?</a>) thread, what software do you use to manage your business website? Are you using a custom-made website with something like <a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a>, PHP or Ruby on Rails? Do you use a “standard” CMS like Joomla!, Drupal or Wordpress? Do you use static html pages?</p>
+<p>Personally I’m using Joomla! but, after a security hole that allowed someone to upload files to my server, I’m thinking about changing to another CMS. I like using CMS because it’s easy to manage and change content, and it’s also easy to find good looking templates (I’m really not a good designer).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624/1</link>
+        <pubDate>Tue, 24 Nov 2015 20:36:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3624-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-do-you-use-to-manage-your-business-website/3624.rss">What do you use to manage your business website?</source>
+      </item>
+  </channel>
+</rss>

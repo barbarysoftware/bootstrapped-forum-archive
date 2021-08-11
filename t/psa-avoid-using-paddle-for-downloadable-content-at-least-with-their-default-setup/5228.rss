@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>PSA: Avoid using Paddle for downloadable content, at least with their default setup</title>
+    <link>https://discuss.bootstrapped.fm/t/psa-avoid-using-paddle-for-downloadable-content-at-least-with-their-default-setup/5228</link>
+    <description>I&#39;ve been looking into places to sell downloadable content that will handle sales tax, VAT MOSS etc. One place I considered is Paddle. Conclusion: Paddle may be fine for software licensing, but it&#39;s insecure or painful for downloadable content.
+
+The UI for customers was pretty nice, but there were two problems:
+
+1. You can trivially derive download URL from store URL. That means anyone can download content for free without paying, from any Paddle store. They do this deliberately they claim because mostly they sell software, which needs licenses to activate, but for a PDF this isn&#39;t really acceptable. They suggested setting up a webhook for fulfillment, in direct contradiction to their marketing copy about how they&#39;ll host stuff and make it super easy.
+
+2. I used credit card from major bank in US for test transaction. It worked... but after an hour the US bank called me, texted me, and emailed me about &quot;potential fraud&quot;, since it was transaction with UK company. I&#39;ve had this happen before when e.g. purchasing a flight from British Airways. It&#39;s not really Paddle&#39;s fault as such, but the experience for my customers will be bad it seems. And Paddle could solve this, by having US credit card processing merchant account.</description>
+    
+    <lastBuildDate>Thu, 17 Aug 2017 11:44:14 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/psa-avoid-using-paddle-for-downloadable-content-at-least-with-their-default-setup/5228.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>PSA: Avoid using Paddle for downloadable content, at least with their default setup</title>
+        <dc:creator><![CDATA[itamarst]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been looking into places to sell downloadable content that will handle sales tax, VAT MOSS etc. One place I considered is Paddle. Conclusion: Paddle may be fine for software licensing, but it’s insecure or painful for downloadable content.</p>
+<p>The UI for customers was pretty nice, but there were two problems:</p>
+<ol>
+<li>
+<p>You can trivially derive download URL from store URL. That means anyone can download content for free without paying, from any Paddle store. They do this deliberately they claim because mostly they sell software, which needs licenses to activate, but for a PDF this isn’t really acceptable. They suggested setting up a webhook for fulfillment, in direct contradiction to their marketing copy about how they’ll host stuff and make it super easy.</p>
+</li>
+<li>
+<p>I used credit card from major bank in US for test transaction. It worked… but after an hour the US bank called me, texted me, and emailed me about “potential fraud”, since it was transaction with UK company. I’ve had this happen before when e.g. purchasing a flight from British Airways. It’s not really Paddle’s fault as such, but the experience for my customers will be bad it seems. And Paddle could solve this, by having US credit card processing merchant account.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/psa-avoid-using-paddle-for-downloadable-content-at-least-with-their-default-setup/5228/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/psa-avoid-using-paddle-for-downloadable-content-at-least-with-their-default-setup/5228/1</link>
+        <pubDate>Thu, 17 Aug 2017 11:44:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5228-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/psa-avoid-using-paddle-for-downloadable-content-at-least-with-their-default-setup/5228.rss">PSA: Avoid using Paddle for downloadable content, at least with their default setup</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Discuss @ Bootstrapped.fm Search</ShortName>
+  <Description>Search for posts on Discuss @ Bootstrapped.fm</Description>
+  <Tags>discourse forum</Tags>
+    <Image type="image/png">https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png</Image>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://discuss.bootstrapped.fm/opensearch.xml"/>
+  <Url type="text/html" template="https://discuss.bootstrapped.fm/search?q={searchTerms}"/>
+  <Query role="example" searchTerms="search term"/>
+</OpenSearchDescription>

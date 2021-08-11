@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Accidental chargebacks</title>
+    <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170</link>
+    <description>Hey all, I&#39;m wondering if any of you have had to deal with this, and how best to handle these situations.
+
+Here&#39;s the situation: customer buys product with credit card (for about $400). When the credit card bill comes in they don&#39;t recognize the charge, or the person viewing the bill is not the same person who made the purchase, or there has been unrelated fraud on the card at around the same time. The net result is they issue a chargeback with their credit card company even though they are happy customers. Now you get in touch with the customer and they tell you sorry a thousand times and they want to resolve it.
+
+How best to proceed?
+
+Braintree gave me the option of disputing the chargeback. Since I had an email from the actual customer saying the chargeback was a mistake I disputed it and included the email as evidence. How could I lose? Well I don&#39;t know how, but I *did* lose! 
+
+I had two such accidental chargebacks this Spring. Now that I lost one (second one is pending) I am thinking disputing may not have been the best move. Next time that happens I&#39;ll just let the chargeback slide and ask the customer to re-pay.
+
+Has anybody out there experienced something like this? Did you dispute? Did you win?</description>
+    
+    <lastBuildDate>Sun, 31 Jan 2016 08:56:39 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p>I recall a while ago I got an email fro ma vendor reminding me that the credit card charge would appear soon and what it would look like on my statement. I thought that was a good idea, both in terms of avoiding confusion but also as a “remember me?”</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/11</link>
+        <pubDate>Sun, 31 Jan 2016 08:56:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[Matrix23]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s a very big amount to have a chargeback, We have a new way to prevent that…<br>
+If interested PM me. I am more than willing to share…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/10</link>
+        <pubDate>Mon, 08 Jun 2015 16:09:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>If this is happening once or twice a year, I’d say, let it ride, ask the customer to repay, and spend your precious time on other things.</p>
+<p>If it happens often enough, then it is worth spending time creating a system to reduce the occurrence.</p>
+<p>In FastSpring’s case (the payment processor I’ve been using for seven years), they seem to sometimes send an email to my customers telling them, “hey remember us? you bought Poker Copilot via us? so remember that there is a $89 charge on your credit card with the description FASTSPRING…”</p>
+<p>That seems to do the job.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/9</link>
+        <pubDate>Sun, 07 Jun 2015 23:43:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[rfunduk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="3170">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/oliver/40/34_1.png" class="avatar"> Oliver:</div>
+<blockquote>
+<p>Yep that’s what I figured would work. The customer said she would do that. I can’t know for sure if she did, and who she talked to but in any case it wasn’t enough. Now I sent her out to call again, we’ll see what happens.</p>
+</blockquote>
+</aside>
+<p>Remember that nothing you or the customer do will just magically let your payment processor know the dispute was dropped. You still need to provide all the evidence (the customer saying it was a mistake, and preferably some logs showing that the service was still being used/etc).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/8</link>
+        <pubDate>Thu, 04 Jun 2015 19:28:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="3170">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfunduk/40/3004_1.png" class="avatar"> rfunduk:</div>
+<blockquote>
+<p>The most important thing you should always do in this situation to avoid losing the dispute is to have the customer call their bank and tell them they want to drop it.</p>
+</blockquote>
+</aside>
+<p>Yep that’s what I figured would work. The customer said she would do that. I can’t know for sure if she did, and who she talked to but in any case it wasn’t enough. Now I sent her out to call again, we’ll see what happens.</p>
+<aside class="quote" data-post="6" data-topic="3170">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/daverodenbaugh/40/2988_1.png" class="avatar"> daverodenbaugh:</div>
+<blockquote>
+<p>Chargebacks suck!  I have tried fighting them HARD with all kinds of documentation when they happen the handful of times they did.  I always lose. Every.  Single.  Time.  No matter what I provide.  Haven’t found the “magic doc” that gets me the money, ever.  Hate, hate, HATE chargebacks.</p>
+</blockquote>
+</aside>
+<p>Your anger is somehow soothing… (sorry!) I find it really frustrating that the card company can just reach back into your bank account and take the money away based on very little (or no) evidence. Then trying to get the money back is a completely lopsided fight.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/7</link>
+        <pubDate>Thu, 04 Jun 2015 19:14:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[daverodenbaugh]]></dc:creator>
+        <description><![CDATA[
+            <p>Chargebacks suck!  I have tried fighting them HARD with all kinds of documentation when they happen the handful of times they did.  I always lose. Every.  Single.  Time.  No matter what I provide.  Haven’t found the “magic doc” that gets me the money, ever.  Hate, hate, HATE chargebacks.</p>
+<p>Now, I just resolve the chargeback immediately (accepting “liability”, which just sticks in my craw something awful) and try contacting the customer to see if I can have a direct conversation with them.  Talking to the payment company is less productive than talking to a wall.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/6</link>
+        <pubDate>Thu, 04 Jun 2015 15:23:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="3170">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/oliver/40/34_1.png" class="avatar"> Oliver:</div>
+<blockquote>
+<p>When the credit card bill comes in they don’t recognize the charge</p>
+</blockquote>
+</aside>
+<p>I have had a similar situation. The customer contacted the bank and had the chargeback reversed.</p>
+<p>Whether you win or lose chargeback disputes seems entirely random.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/5</link>
+        <pubDate>Thu, 04 Jun 2015 07:57:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[rfunduk]]></dc:creator>
+        <description><![CDATA[
+            <p>The problem with that is that you don’t really want chargebacks on your account at all. If it’s just once in a blue moon then ok you can just eat the $15-$25 fee (depending on processor/country) and call it a cost of doing business. But IMO it would definitely be much better long term to resolve them properly.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/4</link>
+        <pubDate>Wed, 03 Jun 2015 22:59:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>I had exactly this situation a few weeks back. I just cancelled their subscription and they repurchased using a different credit card.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/3</link>
+        <pubDate>Wed, 03 Jun 2015 21:14:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[rfunduk]]></dc:creator>
+        <description><![CDATA[
+            <p>The most important thing you should always do in this situation to avoid losing the dispute is to have the customer call their bank and tell them they want to drop it.</p>
+<p>They should just call the exact same number or whatever they initially contacted and explain/etc. Then you should do what you’ve already described, submit evidence to Braintree that explains the user considers it a mistake and wants to drop the dispute (email threads and whatnot are good), and also consider other kinds of evidence like logs of the user logging in and using your service/etc since the dispute date (eg business as usual, the user clearly knows they are paying for this service).</p>
+<p>(source: I work with Stripe on developer/integration support)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/2</link>
+        <pubDate>Wed, 03 Jun 2015 19:20:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+      <item>
+        <title>Accidental chargebacks</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey all, I’m wondering if any of you have had to deal with this, and how best to handle these situations.</p>
+<p>Here’s the situation: customer buys product with credit card (for about $400). When the credit card bill comes in they don’t recognize the charge, or the person viewing the bill is not the same person who made the purchase, or there has been unrelated fraud on the card at around the same time. The net result is they issue a chargeback with their credit card company even though they are happy customers. Now you get in touch with the customer and they tell you sorry a thousand times and they want to resolve it.</p>
+<p>How best to proceed?</p>
+<p>Braintree gave me the option of disputing the chargeback. Since I had an email from the actual customer saying the chargeback was a mistake I disputed it and included the email as evidence. How could I lose? Well I don’t know how, but I <em>did</em> lose!</p>
+<p>I had two such accidental chargebacks this Spring. Now that I lost one (second one is pending) I am thinking disputing may not have been the best move. Next time that happens I’ll just let the chargeback slide and ask the customer to re-pay.</p>
+<p>Has anybody out there experienced something like this? Did you dispute? Did you win?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170/1</link>
+        <pubDate>Wed, 03 Jun 2015 18:17:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3170-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/accidental-chargebacks/3170.rss">Accidental chargebacks</source>
+      </item>
+  </channel>
+</rss>

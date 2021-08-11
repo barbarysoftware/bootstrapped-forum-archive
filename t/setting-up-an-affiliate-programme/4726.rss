@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Setting up an affiliate programme</title>
+    <link>https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726</link>
+    <description>I&#39;ve been approached by a complimentary software vendor to set up an affiliate agreement. They send visitors to me, if they purchase the affiliate gets a payment.
+
+How do I actually set this up technically?
+
+I&#39;m currently an E-Junkie user, so could use their programme, but:
+
+- They appear to require the affiliate to link to an E-Junkie URL. This looks unprofessional, hampers brand and also SEO
+- Can only use E-Junkie payment mechanisms (not Stripe)
+
+I could track visits on GA, but purchase tracking isn&#39;t very reliable because... Paypal.
+
+I don&#39;t need an affiliate network, I need the mechanisms to track this in a reliable way. Has anyone done anything similar?</description>
+    
+    <lastBuildDate>Tue, 11 Apr 2017 13:23:09 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Setting up an affiliate programme</title>
+        <dc:creator><![CDATA[Virgil]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="4726">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>First, adding an affiliates program is probably not worth your time and effort. Very few people will ever deliver you many sales, and some who do will do it via scummy techniques.</p>
+</blockquote>
+</aside>
+<p>Well, if it doesn’t work for you, it doesn’t mean it won’t work for others.</p>
+<p>There are 3 things you need to make it work really well:</p>
+<ol>
+<li>
+<p>Allow only influencers, people who have an engaged audience. You can easily look over their blog and social media accounts. If they just started a blog or they don’t have an audience, don’t allow them.</p>
+</li>
+<li>
+<p>Pay someone to do contact bloggers and influencers on a monthly basis. Offer 2 way incentives, money + discount to their audience…much easier to get them on-board. Build a relationship with a few trusted bloggers in your niche and you’ll</p>
+</li>
+<li>
+<p>Not all markets are good for aff marketing. If you are selling something to marketers, 20-70% of sales can come just from the affiliate program, because they know how to promote your product.</p>
+</li>
+</ol>
+<p>This can be automated about 90%.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/6</link>
+        <pubDate>Tue, 11 Apr 2017 13:23:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4726-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726.rss">Setting up an affiliate programme</source>
+      </item>
+      <item>
+        <title>Setting up an affiliate programme</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>That sounds promising, assuming I can set that on the buy-now button and it’s passed via E-Junkie.</p>
+<p>Doing it this way, I wouldn’t need to use GA at all, just look at the Paypal logs (assuming the custom variable is included there).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/5</link>
+        <pubDate>Thu, 26 Jan 2017 16:53:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4726-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726.rss">Setting up an affiliate programme</source>
+      </item>
+      <item>
+        <title>Setting up an affiliate programme</title>
+        <dc:creator><![CDATA[peter_backx]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4726">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/gravelld/40/2416_1.png" class="avatar"> gravelld:</div>
+<blockquote>
+<p>The trouble is, it doesn’t necessarily happen with Paypal. Unless there’s something I’ve missed, you rely on the customer clicking a link at the end of the process to go back to your site.</p>
+</blockquote>
+</aside>
+<p>PayPal allows you to set a “custom” variable when starting the payment. You could put the affiliate attribution cookie in there and you’ll get it back when PayPal calls your site to acknowledge the payment.</p>
+<p><a href="https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/#payment-transaction-variables" class="onebox" target="_blank" rel="nofollow noopener">https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/#payment-transaction-variables</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/4</link>
+        <pubDate>Thu, 26 Jan 2017 12:29:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4726-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726.rss">Setting up an affiliate programme</source>
+      </item>
+      <item>
+        <title>Setting up an affiliate programme</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Steve, thanks for this.</p>
+<blockquote>
+<p>Affiliate tracking is typically done by having a URL parameter with the referrer id, which on page requests you convert to a cookie. On your store, upon successful sale, check if the cookie is present, and if so, record that the affiliate got you a sale.</p>
+</blockquote>
+<blockquote>
+<p>Even if E-Junkie, PayPal, etc handle your payment processing, <strong>as long as your purchase process ends with the customer on a URL on your domain</strong>, this will work.</p>
+</blockquote>
+<p>The trouble is, it doesn’t necessarily happen with Paypal. Unless there’s something I’ve missed, you rely on the customer clicking a link at the end of the process to go back to your site. I’ve always under-reported Paypal sales in GA as a result (and also double or triple reported sometimes, because the same link goes into the purchase email, and people click the link again later, sometimes many months later).</p>
+<p>This is described here: <a href="http://www.practicalecommerce.com/articles/91286-Google-Analytics-How-to-Track-PayPal-Transactions" rel="nofollow noopener">http://www.practicalecommerce.com/articles/91286-Google-Analytics-How-to-Track-PayPal-Transactions</a></p>
+<p>Have there been developments in this area?</p>
+<p>More broadly, this is an interesting topic…</p>
+<p>I’m not really setting up a broad affiliate programme; more a complimentary piece of software/service approached me to set this up. So I wonder if this might be a bit more targeted and hopefully glean better results than a broad affiliate programme. For example, for your business, let’s say a playing card manufacturer approached you to place an affiliate link on their website. Thoughts?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/3</link>
+        <pubDate>Thu, 26 Jan 2017 10:31:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4726-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726.rss">Setting up an affiliate programme</source>
+      </item>
+      <item>
+        <title>Setting up an affiliate programme</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I set up a similar affiliate program last year.</p>
+<p>First, adding an affiliates program is probably not worth your time and effort. Very few people will ever deliver you many sales, and some who do will do it via scummy techniques.</p>
+<p>But moving on to actually answer your question…</p>
+<p>Affiliate tracking is typically done by having a URL parameter with the referrer id, which on page requests you convert to a cookie. On your store, upon successful sale, check if the cookie is present, and if so, record that the affiliate got you a sale.</p>
+<p>Even if E-Junkie, PayPal, etc handle your payment processing, as long as your purchase process ends with the customer on a URL on your domain, this will work.</p>
+<p>eg Your affiliate links to <a href="http://example.com?ref=123">example.com?ref=123</a>. On your server, on receiving a page request, check for the ref parameter, and turn into a long-lived cookie.</p>
+<ul>
+<li>A cookie expiry date of today+180 days is fair.</li>
+<li>In the case of two affiliates sending you the same customer, it is preferable to let the first person wins. This means that you should only set the affiliate cookie if it isn’t already set.</li>
+<li>Be generous if you want people to actually send you traffic. Consider offering between 30% and 50% of the refund price.</li>
+<li>Don’t pay out until your refund period is over plus a small buffer - this helps reduce fraud problems.</li>
+<li>Don’t pay out until the affiliate has sent you at least two or three paying customers - this prevents people from using the affiliate program to get themselves a discount on their own purchase of your product.</li>
+</ul>
+<p>If you want to see my affiliate system take a look at <a href="https://pokercopilot.com/affiliate">https://pokercopilot.com/affiliate</a>. Feel free to sign up to see how I’ve done it. It won’t do any damage.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/2</link>
+        <pubDate>Wed, 25 Jan 2017 13:10:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4726-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726.rss">Setting up an affiliate programme</source>
+      </item>
+      <item>
+        <title>Setting up an affiliate programme</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been approached by a complimentary software vendor to set up an affiliate agreement. They send visitors to me, if they purchase the affiliate gets a payment.</p>
+<p>How do I actually set this up technically?</p>
+<p>I’m currently an E-Junkie user, so could use their programme, but:</p>
+<ul>
+<li>They appear to require the affiliate to link to an E-Junkie URL. This looks unprofessional, hampers brand and also SEO</li>
+<li>Can only use E-Junkie payment mechanisms (not Stripe)</li>
+</ul>
+<p>I could track visits on GA, but purchase tracking isn’t very reliable because… Paypal.</p>
+<p>I don’t need an affiliate network, I need the mechanisms to track this in a reliable way. Has anyone done anything similar?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726/1</link>
+        <pubDate>Wed, 25 Jan 2017 10:24:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4726-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/setting-up-an-affiliate-programme/4726.rss">Setting up an affiliate programme</source>
+      </item>
+  </channel>
+</rss>

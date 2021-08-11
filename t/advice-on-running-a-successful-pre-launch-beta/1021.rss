@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Advice on Running a Successful Pre-Launch Beta</title>
+    <link>https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021</link>
+    <description>I&#39;m curious from those of you with established products (or many products in beta) how you ran a successful beta test. A few questions I personally have:
+
+- When in the product development cycle do you think is the time to launch a beta?
+- How did you find beta testers?
+- How many beta testers did you need to start getting effective feedback?
+- How did you elicit feedback from your testers?
+- Any other advice?</description>
+    
+    <lastBuildDate>Sat, 08 Feb 2014 21:00:09 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Advice on Running a Successful Pre-Launch Beta</title>
+        <dc:creator><![CDATA[mikeleeorg]]></dc:creator>
+        <description><![CDATA[
+            <p>Aside from all the good advice others have given here, I would also suggest using an analytics tool like <a href="https://heapanalytics.com/" rel="nofollow noopener">Heap</a> to track your beta testers. This software continuously tracks all behaviors on your site using JavaScript (e.g. it tracks all the DOM events that JavaScript can track), then lets you query that data later. This way, you don’t have to pre-determine what actions to track. Just add this script and run reports on the data after your beta test.</p>
+<p>The benefits here include giving you info that you might not otherwise get from talking to your beta testers. What people say is very different than what they actually do.</p>
+<p>BTW, I’m not sure this would be a good tool to use with your live, production site though. Tracking all of a user’s behaviors via JavaScript is bound to cause some performance issues, especially if your app is JavaScript intensive.</p>
+<p>Packages that generate heat-map analytics, such as <a href="http://www.crazyegg.com/" rel="nofollow noopener">CrazyEgg</a> and <a href="http://www.clicktale.com/" rel="nofollow noopener">ClickTale</a>, may also be useful. These all fall under the guise of monitoring objective behavioral data vs interviewing for subjective experiential feedback (both of which can be valuable).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/7</link>
+        <pubDate>Sat, 08 Feb 2014 21:00:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1021-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021.rss">Advice on Running a Successful Pre-Launch Beta</source>
+      </item>
+      <item>
+        <title>Advice on Running a Successful Pre-Launch Beta</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>I ran a small beta for my SAAS product (<a href="http://www.pageproofer.com" rel="nofollow noopener">www.pageproofer.com</a>) with a handful of customers from my consulting business. The people I asked to be testers were in the target audience for the product and I knew they would give honest open feedback about their experience. I had them go through the entire on boarding process to make sure everything was solid (from experience and working to functionality). They used PageProofer on real projects so they quickly found any issues and also quickly saw the benefit (and became paying customers). During the testing phase they had a free account with no limitations.</p>
+<p>I kept tabs on how often they were using the service and then email or call to find our how it was going, in addition to them sending in feedback via email or Pageproofer (I used my own SAAS to track issues and manage feedback in the development of it).</p>
+<p>If you have the option I would highly recommend a very targeted beta over a general public one.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/6</link>
+        <pubDate>Sat, 08 Feb 2014 13:57:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1021-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021.rss">Advice on Running a Successful Pre-Launch Beta</source>
+      </item>
+      <item>
+        <title>Advice on Running a Successful Pre-Launch Beta</title>
+        <dc:creator><![CDATA[jimm]]></dc:creator>
+        <description><![CDATA[
+            <p>This may be a silly question, but should you be charging customers who are trying an, as yet, unlaunched product in beta test mode? If only to validate that they’ll pay for it, or is this merely testing the features?  Or asked differently, Is charging during beta testing a bad idea?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/5</link>
+        <pubDate>Sat, 08 Feb 2014 02:37:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1021-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021.rss">Advice on Running a Successful Pre-Launch Beta</source>
+      </item>
+      <item>
+        <title>Advice on Running a Successful Pre-Launch Beta</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, I find the beta is almost more about marketing than the actual feedback loop. A big list is good marketing wise, but 5-10 people actually using your beta product for real work will provide better feedback than 2000 others who are just kicking the tires and leaving.</p>
+<p>However, if you hook the app up to something like Bugsnag or Honeybadger then at least those tire kicking people are generating actual bugs which you can fix before real customers see them. They may also be useful in testing onboarding a bit and things like that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/4</link>
+        <pubDate>Thu, 23 Jan 2014 21:31:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1021-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021.rss">Advice on Running a Successful Pre-Launch Beta</source>
+      </item>
+      <item>
+        <title>Advice on Running a Successful Pre-Launch Beta</title>
+        <dc:creator><![CDATA[syneryder]]></dc:creator>
+        <description><![CDATA[
+            <p>Obligatory self-promotion link to a beta postmortem I wrote in 2004:</p>
+<p><a href="http://www.namesuppressed.com/syneryder/2004/betapostmortem.shtml" class="onebox" target="_blank" rel="nofollow noopener">http://www.namesuppressed.com/syneryder/2004/betapostmortem.shtml</a></p>
+<p>Most of it is outdated, but a key takeaway is that I could only keep the attention of testers for about a week.  So I’d only push out a beta when you have a near-final version.  This is for client-side consumer apps though - if you’re doing something SaaS-like that people use regularly, maybe you can involve testers earlier.</p>
+<p>I found that only 10% - 15% of my testers were good at filing bug reports &amp; giving feedback.  To find testers, whenever someone showed the slightest bit of interest (eg emailing me with an idea for a product or new feature), I’d send them a link to my beta-test signup form.  Best to collect a database of interested people as early as possible.</p>
+<p>Recently I’ve tried an Adwords campaign to recruit beta testers, I think it was converting at 10% CTR and resulting in a $10 acquisition cost per tester.  The landing page wasn’t much different from a LaunchRock email signup page.  That product hasn’t gone into beta yet though, so I can’t comment on the quality of the testers.  If you’re paying that much per signup though, <a href="http://www.usertesting.com/" rel="nofollow noopener">UserTesting</a> might be a better alternative (and be sure to look in <a href="http://www.appsumo.com/" rel="nofollow noopener">AppSumo</a> for a substantial discount).</p>
+<p>For mobile apps, <a href="http://www.testflightapp.com" rel="nofollow noopener">TestFlight</a> is cool, but I’ve had some problems with people (even close friends) freaking out at installing TestFlight on their iPhones, because of the scary Installing Profile dialogs.  I’ve been focusing on Android testing first so I don’t use up my limited iOS test device numbers on unreliable testers.</p>
+<p>One last tip: I had a lot of luck with giving a discount code to all my beta testers to share with their friends at launch.  That got all the beta testers acting as evangelists for the product and kickstarted word of mouth.  (Beta testers all got freebies, of course.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/3</link>
+        <pubDate>Thu, 23 Jan 2014 13:54:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1021-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021.rss">Advice on Running a Successful Pre-Launch Beta</source>
+      </item>
+      <item>
+        <title>Advice on Running a Successful Pre-Launch Beta</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>Betas are hard. Finding people isn’t usually the difficult bit, but finding people who will actually bother to test and give feedback is nigh on impossible.</p>
+<p>Years ago I used to be involved with the Macromedia beta programmes, and they had incentives for people who submitted the most issues, and also a private mailing list for testers and that seemed to work well in that people were essentially competing to find issues. I think that sort of thing only really works for established products. I’d like to implement something similar for Perch at some point.</p>
+<p>Rather than a regular beta have you considered looking at a “slow launch” and essentially handholding your first few users through the onboarding process? That way they get extra attention as they start to use your app, and you get the feedback from them as you see the issues they run into. I heard Rob Walling talk about his slow launch for his product Drip on <a href="http://www.startupsfortherestofus.com/episodes/episode-158-the-reunion-show">Startups for the Rest Of Us</a> and then interviewed him about it for my <a href="http://www.rachelandrew.co.uk/books/the-profitable-side-project">recent book</a>. I think it might be a better approach for a lot of startups, as actually getting engaged beta testers is just really hard.</p>
+<p>The advantage of the slow launch approach is these are people who actually want to use your product, rather than people who just want in on a beta in order to have a look at this new thing but are not really customers. You want feedback from people who will be willing to actually give you money.</p>
+<p>There is an almost 10 year old Joel on Software post about <a href="http://www.joelonsoftware.com/articles/BetaTest.html">Running a Beta</a>, most of those tips still pretty much hold true today.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/2</link>
+        <pubDate>Sat, 18 Jan 2014 08:03:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1021-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021.rss">Advice on Running a Successful Pre-Launch Beta</source>
+      </item>
+      <item>
+        <title>Advice on Running a Successful Pre-Launch Beta</title>
+        <dc:creator><![CDATA[marcelosomers]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m curious from those of you with established products (or many products in beta) how you ran a successful beta test. A few questions I personally have:</p>
+<ul>
+<li>When in the product development cycle do you think is the time to launch a beta?</li>
+<li>How did you find beta testers?</li>
+<li>How many beta testers did you need to start getting effective feedback?</li>
+<li>How did you elicit feedback from your testers?</li>
+<li>Any other advice?</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021/1</link>
+        <pubDate>Sat, 18 Jan 2014 01:56:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1021-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/advice-on-running-a-successful-pre-launch-beta/1021.rss">Advice on Running a Successful Pre-Launch Beta</source>
+      </item>
+  </channel>
+</rss>

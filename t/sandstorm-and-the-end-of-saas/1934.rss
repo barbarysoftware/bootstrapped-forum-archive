@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sandstorm and the end of SaaS?</title>
+    <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934</link>
+    <description>Continuing the discussion from [Monetizing Open Source](http://discuss.bootstrapped.fm/t/monetizing-open-source/45/2):
+
+[quote=&quot;ian, post:2, topic:45, full:true&quot;]
+First off, the company that builds a really slick system for making hosting of on-premise oriented apps easy is going to make a fortune.
+[/quote]
+
+Have you seen this? https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform
+
+It&#39;s currently geared towards &quot;personal&quot; apps, and not business, but they&#39;ve indicated that they are looking at business uses as well (see the section at the bottom on &quot;enterprise tools&quot;).
+
+I&#39;ve seen a few such platforms go by over the years but this one is the most impressive. The fact that just about any existing web-app can be ported with minimal modifications is very compelling. I&#39;m certainly rooting for them and contributed to their campaign because I think it (or something like it) is the future.
+
+On the flip side, I can&#39;t help but wonder about the effect of a platform like Sandstorm on those of us who run a SaaS for a living. I wonder if one day there will be another great migration of applications to self-hosted apps, just like there was one from desktop to SaaS.
+
+What do you all think?
+</description>
+    
+    <lastBuildDate>Tue, 19 Aug 2014 17:13:51 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="13" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kentonv/40/2482_1.png" class="avatar"> kentonv:</div>
+<blockquote>
+<p>With the Powerbox, when an app asks for permission to talk to the outside world, that permission can actually be fulfilled by another app mocking the APIs.</p>
+</blockquote>
+</aside>
+<p>That’s an interesting concept. I though hardly can imagine successfully mocking an API of something like Google Docs.</p>
+<p>I may be not the right target audience, but I do not feel any urge to bind all with one ring.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/14</link>
+        <pubDate>Tue, 19 Aug 2014 17:13:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[kentonv]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="rfctr" data-post="9" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/4795_2.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I do not believe that “data portability and inter-app communication” between totally different application would magically appear just by co-location.</p>
+</blockquote>
+</aside>
+<p>No magic. Co-location helps, but there’s a lot more Sandstorm does to enable this. This blog post discusses some details:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://sandstorm.io/news/2014-08-11-roundcube" target="_blank">sandstorm.io</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:400/489;"><img src="https://sandstorm.io/images/sandcat.png" class="thumbnail" width="400" height="489"></div>
+
+<h3><a href="https://sandstorm.io/news/2014-08-11-roundcube" target="_blank">Roundcube; and avoiding walled gardens</a></h3>
+
+<p>Real-time collaborative web productivity suite behind the firewall.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>With the Powerbox, when an app asks for permission to talk to the outside world, that permission can actually be fulfilled by another app mocking the APIs. You’d be surprised how much interoperability can be achieved through that, without the first app even knowing what is happening.</p>
+<aside class="quote no-group" data-username="misterparker" data-post="12" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/misterparker/40/1326_2.png" class="avatar"> misterparker:</div>
+<blockquote>
+<p>One time purchases can be good, but recurring revenue is much more sustainable, and what makes building a Saas so appealing.</p>
+</blockquote>
+</aside>
+<p>Then the app store can support subscription pricing.</p>
+<aside class="quote no-group" data-username="misterparker" data-post="12" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/misterparker/40/1326_2.png" class="avatar"> misterparker:</div>
+<blockquote>
+<p>But what about apps that are collaborative, you then have to open your computer to outside traffic in order for collaborators to interface with your locally hosted version of the web app?</p>
+</blockquote>
+</aside>
+<p>You don’t normally run Sandstorm on your desktop. You can do that if you want, but most users will probably prefer to subscribe to a shared host in the cloud, or run it on DigitalOcean or some such.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/13</link>
+        <pubDate>Mon, 18 Aug 2014 18:21:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[misterparker]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kentonv/40/2482_1.png" class="avatar"> kentonv:</div>
+<blockquote>
+<p>Hopefully, it just means you start selling your software on the Sandstorm app store and stop carrying a pager.</p>
+</blockquote>
+</aside>
+<p>One time purchases can be good, but recurring revenue is much more sustainable, and what makes building a Saas so appealing.</p>
+<p>I personally am not in favor of this model for web apps. I think there may be a niche market for certain apps that fit the bill. But what about apps that are collaborative, you then have to open your computer to outside traffic in order for collaborators to interface with your locally hosted version of the web app? I just dont think all Saas apps can be compared to books, or one-time purchase-able goods. They are utility services, and because of that, they will (likely) always depend on a central server system.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/12</link>
+        <pubDate>Mon, 18 Aug 2014 16:54:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/oliver/40/34_1.png" class="avatar"> Oliver:</div>
+<blockquote>
+<p>Probably not. Sandstorm is open source. If they manage to gain traction and involve a good outside developer community then the failure of the company would not result in the failure of the platform.</p>
+</blockquote>
+</aside>
+<p>This is a big if. Probably less than 1% of open source projects get to this stage.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/11</link>
+        <pubDate>Sun, 17 Aug 2014 22:41:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>but then it is only a matter of how interested NSA is in you; if they are, you own box is not going to help you. If they are not, cloud is just fine.</p>
+</blockquote>
+</aside>
+<p>The NSA? I’m not worried about them. I’m far more worried about my data being spread to dozens of different services, each one potentially under attack by some cracker looking to gain access to a bunch of sellable personal info. There are enough break-ins on servers that we can all be pretty sure we have no idea where all our data is by now.</p>
+<p>And even without that, spreading my data to all these different services just makes me uncomfortable. I feel like I’ve lost control of it all. It’s all in the hands of other people, who may or may not be scrupulous, who may or may not be there tomorrow.</p>
+<aside class="quote" data-post="9" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>“what if Sandstorm stops supporting its platform?”. That would be an impact across all the applications in a company.</p>
+</blockquote>
+</aside>
+<p>Probably not. Sandstorm is open source. If they manage to gain traction and involve a good outside developer community then the failure of the company would not result in the failure of the platform. Much like Wordpress won’t suddenly stop functioning if Automattic closes its doors tomorrow.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/10</link>
+        <pubDate>Sun, 17 Aug 2014 21:51:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/oliver/40/34_1.png" class="avatar"> Oliver:</div>
+<blockquote>
+<p>I think you might have missed the point of Sandstorm.</p>
+<p>There are a few problems with “each application on its domain” platform: privacy, data portability, inter-app communication. But the main one for me is if a company decides to shut down a product you are SOL. (Think Google Reader, but there are countless examples.)</p>
+</blockquote>
+</aside>
+<p>I did not miss those points. I just belong to a group that do not believe those points are important enough.</p>
+<p>I do not believe that “data portability and inter-app communication” between totally different application would magically appear just by co-location.</p>
+<p>Privacy on my own box may be higher than in a Google cloud, but then it is only a matter of how interested NSA is in you; if they are, you own box is not going to help you. If they are not, cloud is just fine.</p>
+<p>Re: end-of-life. A valid concern, but not a huge concern. Companies have people and strategies to mitigate it. Migrating to Sandstorm adds a concern “what if Sandstorm stops supporting its platform?”. That would be an impact across all the applications in a company.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/9</link>
+        <pubDate>Sun, 17 Aug 2014 12:18:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[perceptec]]></dc:creator>
+        <description><![CDATA[
+            <p>Predicting the end of anything is a shaky proposition at best, but there certainly is a class of customers that has to be dragged kicking and screaming into the BYOD/SaaS age. Some may never be, and some have very sensible reasons for that.</p>
+<p>But I think the real lesson for entrepreneurs is that these customers have certain needs, and are more than happy to pay in the most boring, predictable, and lucrative fashion to see that these are met. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/8</link>
+        <pubDate>Tue, 12 Aug 2014 17:15:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>This platform already exist today, and it is called Internet. Only instead of application names it has domain names.</p>
+</blockquote>
+</aside>
+<p>I think you might have missed the point of Sandstorm.</p>
+<p>There are a few problems with “each application on its domain” platform: privacy, data portability, inter-app communication. But the main one for me is if a company decides to shut down a product you are SOL. (Think Google Reader, but there are countless examples.)</p>
+<p>Personally I’ve been bitten by this several times. I used to take my notes on a service called “<a href="http://Luminotes.com" rel="nofollow noopener">Luminotes.com</a>”. It was fantastic, dead simple, allowed cross-note linking, and it was open source. Unfortunately the service shut down (the author got hired somewhere). So I moved over to <a href="http://catch.com" rel="nofollow noopener">catch.com</a>. It was OKish, but then it shut down too (not profitable enough).</p>
+<p>You might ask why I didn’t just run my own instance of Luminotes since it’s open source. I tried but it had tons of dependencies and needed to run on its own server. This made it impractical. Had Sandstorm existed back in the Luminotes days, and had the author (or someone) created a port for it then I would probably still be using it. Instead the project died silently despite my efforts to rally a community around it.</p>
+<aside class="quote" data-post="5" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kentonv/40/2482_1.png" class="avatar"> kentonv:</div>
+<blockquote>
+<p>I agree normal consumer users don’t care about servers. Ultimately such people will only be attracted to Sandstorm if it has apps that they need and can’t get elsewhere.</p>
+</blockquote>
+</aside>
+<p>I think the mere mention of the word “server” will put off most consumers. Even if there are good apps, average joe won’t touch it if it sounds even remotely “techie”. Sandstorm’s challenge after a beta period aimed at geeks will be to provide an excellent products and UX and message so that A. Joe comes onboard without feeling out of his element.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/7</link>
+        <pubDate>Mon, 11 Aug 2014 19:28:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Sandstorm makes running your own personal server as easy as running your phone. You can install apps like e-mail, document editors, blogging software, and more, using a simple app-store-like interface. No config files, no command lines; everything is done through your web browser.</p>
+</blockquote>
+<p>This platform already exist today, and it is called Internet. Only instead of application names it has domain names.</p>
+<p>As for backup and other operational things, I always assume the SaaS owner cares about that. Sandstorm, in fact, adds a level of complexity for me, because I have to <em>think</em> about those things, while I’d rather prefer not.</p>
+<p>Re: Enterprises: very few developers comprehend the full range of issues operations personnel faces. They are living in a highly heterogeneous environment where a Perl script can co-exist with a clustered Oracle OSB applications. The most recent spark of interest for a potentially unified platform I’ve seen in them was <a href="https://www.docker.com/" rel="nofollow noopener">Docker</a>, but even then they are highly skeptical (this is their mode by default).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/6</link>
+        <pubDate>Mon, 11 Aug 2014 02:04:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[kentonv]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ian/40/3579_1.png" class="avatar"> ian:</div>
+<blockquote>
+<p>Normal people don’t want or care about servers. So that limits its scope to geeks.</p>
+</blockquote>
+</aside>
+<p>I agree normal consumer users don’t care about servers. Ultimately such people will only be attracted to Sandstorm if it has apps that they need and can’t get elsewhere. That is likely to happen eventually (since Sandstorm works well for apps that would have trouble monetizing as SaaS), but first someone needs to write/port these apps. Those people are geeks. Hence the current pitch is aimed at geeks.</p>
+<p>But I agree that enterprise will be an easier sell than general consumers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/5</link>
+        <pubDate>Sun, 10 Aug 2014 22:54:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>This is very different than what I was talking about. It’s cool, but this line here “on servers you control” is really all you need to know. Normal people don’t want or care about servers. So that limits its scope to geeks. Which geeks are big and all, but still people in general aren’t interested in how things such as this work and get wired together.</p>
+<p>Possibly this could be the foundation of the service I was talking about if it’s designed that way, so a company could use this to build the service I want potentially. That could be interesting, though anything built to be completely generic is iffy to me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/4</link>
+        <pubDate>Sun, 10 Aug 2014 21:56:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[kentonv]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/oliver/40/34_1.png" class="avatar"> Oliver:</div>
+<blockquote>
+<p>I’m certainly rooting for them and contributed to their campaign</p>
+</blockquote>
+</aside>
+<p>Thank you!</p>
+<aside class="quote" data-post="1" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/oliver/40/34_1.png" class="avatar"> Oliver:</div>
+<blockquote>
+<p>I can’t help but wonder about the effect of a platform like Sandstorm on those of us who run a SaaS for a living.</p>
+</blockquote>
+</aside>
+<p>Hopefully, it just means you start selling your software on the Sandstorm app store and stop carrying a pager. <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<aside class="quote" data-post="2" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/aeden/40/1319_1.png" class="avatar"> aeden:</div>
+<blockquote>
+<p>Until these systems can be operated without any intervention, and that means not just easy installation but also  automated backup and recovery and mechanisms for self-healing, then they will likely not replace SaaS. SaaS is more than just running software, it’s also about operations, on-demand customer support, and the like, all spread out across a collection of customers, thus taking advantage of value of scale.</p>
+</blockquote>
+</aside>
+<p>With Sandstorm you would have the option of self-hosting <em>or</em> subscribing to a hosting provider that does all that stuff automatically. You can even switch from one to the other later as your needs change.</p>
+<aside class="quote" data-post="2" data-topic="1934">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/aeden/40/1319_1.png" class="avatar"> aeden:</div>
+<blockquote>
+<p>One other note: when something does go wrong on one of these systems, who is going to be sued? Enterprises are in the business of reducing risk, which often means being able to have someone to blame when things go wrong. In an environment where you are responsible for the data, who’s to blame when data gets corrupted or lost?</p>
+</blockquote>
+</aside>
+<p>20-30 years ago, people claimed that businesses would <em>never</em> use open source software for exactly this reason.</p>
+<p>The reality is often the reverse: Many companies like open source software because they have more control over it. If it doesn’t suit their needs in some small way, they can fix that. Whereas with proprietary software, you’re just one of many customers; who knows if they’ll listen to your bug report / feature request?</p>
+<p>Similarly, many companies are uncomfortable with SaaS because they feel they have no control over it. If the service goes down, they most certainly can’t sue over it, because the ToS or service contract probably already specifies compensation for failure to meet SLA, and it’s likely nothing more than a refund (if that). Even if it is actually less risky, it <em>feels</em> more risky, especially to whatever executive is putting their career on the line by choosing to go with SaaS. Moreover, if some aspect of the service doesn’t meet the company’s needs, it’s much harder for the company to customize it.</p>
+<p>Granted, there are trade-offs and many companies do in fact prefer to let someone else run their infrastructure for them, but it’s not a clear-cut decision by any means. In any case, Sandstorm will support both models.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/3</link>
+        <pubDate>Sun, 10 Aug 2014 20:07:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>On the flip side, I can’t help but wonder about the effect of a platform like Sandstorm on those of us who run a SaaS for a living. I wonder if one day there will be another great migration of applications to self-hosted apps, just like there was one from desktop to SaaS.</p>
+</blockquote>
+<p>Until these systems can be operated without any intervention, and that means not just easy installation but also  automated backup and recovery and mechanisms for self-healing, then they will likely not replace SaaS. SaaS is more than just running software, it’s also about operations, on-demand customer support, and the like, all spread out across a collection of customers, thus taking advantage of value of scale.</p>
+<p>One other note: when something does go wrong on one of these systems, who is going to be sued? Enterprises are in the business of reducing risk, which often means being able to have someone to blame when things go wrong. In an environment where you are responsible for the data, who’s to blame when data gets corrupted or lost?</p>
+<p>This is not to say that there is no place for self-hosted apps, rather it is to say that being able to self-host is just another option (as it has always been) next to SaaS.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/2</link>
+        <pubDate>Sun, 10 Aug 2014 13:29:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+      <item>
+        <title>Sandstorm and the end of SaaS?</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <p>Continuing the discussion from <a href="http://discuss.bootstrapped.fm/t/monetizing-open-source/45/2">Monetizing Open Source</a>:</p>
+<aside class="quote" data-post="2" data-topic="45" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ian/40/3579_1.png" class="avatar"><a href="http://discuss.bootstrapped.fm/t/monetizing-open-source/45/2">Monetizing Open Source</a>
+</div>
+<blockquote>
+<p>First off, the company that builds a really slick system for making hosting of on-premise oriented apps easy is going to make a fortune.</p>
+</blockquote>
+</aside>
+<p>Have you seen this? <a href="https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform" rel="nofollow noopener">https://www.indiegogo.com/projects/sandstorm-io-personal-cloud-platform</a></p>
+<p>It’s currently geared towards “personal” apps, and not business, but they’ve indicated that they are looking at business uses as well (see the section at the bottom on “enterprise tools”).</p>
+<p>I’ve seen a few such platforms go by over the years but this one is the most impressive. The fact that just about any existing web-app can be ported with minimal modifications is very compelling. I’m certainly rooting for them and contributed to their campaign because I think it (or something like it) is the future.</p>
+<p>On the flip side, I can’t help but wonder about the effect of a platform like Sandstorm on those of us who run a SaaS for a living. I wonder if one day there will be another great migration of applications to self-hosted apps, just like there was one from desktop to SaaS.</p>
+<p>What do you all think?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934/1</link>
+        <pubDate>Sun, 10 Aug 2014 02:00:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1934-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/sandstorm-and-the-end-of-saas/1934.rss">Sandstorm and the end of SaaS?</source>
+      </item>
+  </channel>
+</rss>

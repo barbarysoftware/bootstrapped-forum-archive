@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Any entrepreneur dealing with multiple Stripe accounts?</title>
+    <link>https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006</link>
+    <description>Hey Bootstrapped!
+
+If you&#39;re an entrepreneur using **multiple Stripe accounts**, possibly because you&#39;re running multiple businesses in parallel, then I need your help.
+
+We have just released the [public beta of CashNotify v2](http://changelog.cashnotify.com/get-the-v2-beta-now-22538), which supports multiple Stripe accounts, and we&#39;d like to get as much feedbacks as possible. 
+Specifically, we want to make sure it&#39;s working fine with as much Stripe setups as possible (1/10/100+ accounts, direct or connected accounts, etc.).
+
+![](https://cloud.headwayapp.co/changelogs_images/images/big/000/004/040-bb77871a9ac27b1bfcc137464ed92d9e2cc019fa.png)
+
+If you&#39;re interested in having a unified view on all your Stripe accounts, directly from your Mac&#39;s menubar, then stress this beta and tell me how it behaves :)
+
+Get the v2 Beta here: http://changelog.cashnotify.com/get-the-v2-beta-now-22538
+
+Thanks
+Julien</description>
+    
+    <lastBuildDate>Thu, 11 May 2017 10:48:16 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Any entrepreneur dealing with multiple Stripe accounts?</title>
+        <dc:creator><![CDATA[julienma]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Brian,<br>
+We’ll probably make it cross-platform (Mac &amp; Win) eventually, but have made no plan yet for iOS or Android support.</p>
+<p>We would be highly interested in making it a SaaS, but this is really not our focus right now, because:</p>
+<ul>
+<li>the whole point of the app is to give instant notifications without having to open a browser, and having it always run in the background. Even though most entrepreneurs might have their browser opened 24/7, I myself like the idea of splitting my concerns, and have apps dedicated to my business (I’m using desktop apps for github notifications, stripe notifications, slack, trello, etc.) to make sure these information are not lost amongst dozens of other tabs in my browser (obviously, this is where a mobile app would shine. Maybe after we have a confirmation this is what customers expect).</li>
+<li>this would imply recurring costs for our customers, which I don’t believe is a good fit for an app like this, where the value highly depends on the customer’s activity (i.e. we can’t do anything if customer has no charge on stripe).</li>
+<li>and this is a whole other level of complexity, involving servers and sync and security, whereas today (with a desktop app) we have almost none of that.</li>
+</ul>
+<p>To be clear: CashNotify works well with only 1 Stripe accounts.<br>
+But now that it supports multiple accounts, its complexity increased, and we’d like to get the maximum amount of feedbacks to make sure it works perfect.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006/3</link>
+        <pubDate>Thu, 11 May 2017 10:48:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5006-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006.rss">Any entrepreneur dealing with multiple Stripe accounts?</source>
+      </item>
+      <item>
+        <title>Any entrepreneur dealing with multiple Stripe accounts?</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>I have multiple accounts but I don’t use my macbook much. Any plans for iPhone app version? Or could you just make it a web app and cross platform?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006/2</link>
+        <pubDate>Thu, 11 May 2017 07:43:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5006-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006.rss">Any entrepreneur dealing with multiple Stripe accounts?</source>
+      </item>
+      <item>
+        <title>Any entrepreneur dealing with multiple Stripe accounts?</title>
+        <dc:creator><![CDATA[julienma]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Bootstrapped!</p>
+<p>If you’re an entrepreneur using <strong>multiple Stripe accounts</strong>, possibly because you’re running multiple businesses in parallel, then I need your help.</p>
+<p>We have just released the <a href="http://changelog.cashnotify.com/get-the-v2-beta-now-22538">public beta of CashNotify v2</a>, which supports multiple Stripe accounts, and we’d like to get as much feedbacks as possible.<br>
+Specifically, we want to make sure it’s working fine with as much Stripe setups as possible (1/10/100+ accounts, direct or connected accounts, etc.).</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://cloud.headwayapp.co/changelogs_images/images/big/000/004/040-bb77871a9ac27b1bfcc137464ed92d9e2cc019fa.png" title="040-bb77871a9ac27b1bfcc137464ed92d9e2cc019fa.png"><img src="https://cloud.headwayapp.co/changelogs_images/images/big/000/004/040-bb77871a9ac27b1bfcc137464ed92d9e2cc019fa.png" alt width="466" height="500"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">040-bb77871a9ac27b1bfcc137464ed92d9e2cc019fa.png</span><span class="informations">1024×1098</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>If you’re interested in having a unified view on all your Stripe accounts, directly from your Mac’s menubar, then stress this beta and tell me how it behaves <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Get the v2 Beta here: <a href="http://changelog.cashnotify.com/get-the-v2-beta-now-22538">http://changelog.cashnotify.com/get-the-v2-beta-now-22538</a></p>
+<p>Thanks<br>
+Julien</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006/1</link>
+        <pubDate>Wed, 10 May 2017 17:57:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5006-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-entrepreneur-dealing-with-multiple-stripe-accounts/5006.rss">Any entrepreneur dealing with multiple Stripe accounts?</source>
+      </item>
+  </channel>
+</rss>

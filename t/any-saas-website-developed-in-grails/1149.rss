@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Any saas website developed in Grails?</title>
+    <link>https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149</link>
+    <description>Hi everybody,
+
+It seems that a lot of Saas websites developed by bootstrappers are using Ruby on Rails. Wondering why it is?
+Anyone using or seen a Saas website in Groovy/Grails? 
+
+Thanks
+/Fab</description>
+    
+    <lastBuildDate>Fri, 21 Feb 2014 23:31:30 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Any saas website developed in Grails?</title>
+        <dc:creator><![CDATA[fredguth]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t see myself as a developer. I graduated in Computer Engineering, but didn’t program for 15 years.<br>
+I have always been much more a business person, someone that could translate “business talk” to programmers. That being said… 2 years ago I realised it was getting difficult to do it well because of the technological gap from what I had learned in college to what people use now.</p>
+<p>Then I decided to learn Ruby on Rails and I loved it.  I can’t talk about the elegance of the language as <a class="mention" href="/u/andycroll">@andycroll</a> have said. Nor can I compare it with other frameworks as <a class="mention" href="/u/eliotsykes">@eliotsykes</a> did. But what I can say is that RnR has a community that makes it very easy to develop a web app. There are online courses (I love codeschool), every question I had I found an answer in StackOverflow and there are a lot of libraries that solve most of the common tasks a SaaS app deal with.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/8</link>
+        <pubDate>Fri, 21 Feb 2014 23:31:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1149-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149.rss">Any saas website developed in Grails?</source>
+      </item>
+      <item>
+        <title>Any saas website developed in Grails?</title>
+        <dc:creator><![CDATA[tomeast]]></dc:creator>
+        <description><![CDATA[
+            <p>Rails certainly seems to be the default route these days. I’m using Grails for a few startup side projects (none that have gained any real traction - yet). I find that it works well and I can run low traffic applications from a Linode instance. For the last couple of applications I’ve used Groovy + Spring Boot and I’ve been happy with it so far.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/7</link>
+        <pubDate>Sun, 16 Feb 2014 05:09:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1149-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149.rss">Any saas website developed in Grails?</source>
+      </item>
+      <item>
+        <title>Any saas website developed in Grails?</title>
+        <dc:creator><![CDATA[fabdan1]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everybody. When I will be at the point of developing, I guess I will have to really list pros/cons of either framework which means I will have to get a closer look at how Rails work.<br>
+But for now, I have yet to select an idea…</p>
+<p>/Fab</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/6</link>
+        <pubDate>Fri, 07 Feb 2014 23:12:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1149-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149.rss">Any saas website developed in Grails?</source>
+      </item>
+      <item>
+        <title>Any saas website developed in Grails?</title>
+        <dc:creator><![CDATA[eliotsykes]]></dc:creator>
+        <description><![CDATA[
+            <p>I work with both Rails and Grails. I don’t know any SaaS applications that are Grails-backed, I expect there are some though.</p>
+<p>Here’s how I see the comparison between Rails and Grails. Please take this with a pinch of salt as all of the fun stuff I’ve worked on (my own projects) has been with Rails (by choice), whereas the day-job projects I’ve freelanced on in the last few years have been Grails projects.</p>
+<p>In other words, the positive associations I have with Rails are more plentiful than the ones I have with Grails.</p>
+<p>Compared to Rails developers, the Grails developers tend to command a slightly higher day rate where I am (London, UK) but they’re in the same ball park.</p>
+<p>Many more companies appear to be hiring for Rails devs, especially startups. Saying that, Grails developers can always find work around here as there are not enough of them either, though your options for employers are a bit more limited.</p>
+<p>There is a good open source community around Grails, but Rails, to me at least, feels ahead of it in terms of libraries that exist to get stuff done and how active and large it is.</p>
+<p>For example, Grails only recently got an asset pipeline equivalent and it is not part of Grails core, if I recall correctly, its a plugin.</p>
+<p>So Groovy (the language used by Grails) is dependent on Java. I used to be a fan of Java. Not so much anymore. Reasons include the main implementation is backed and directed by Oracle, Java doesn’t have a great security reputation (admittedly that’s more for the desktop), and startup times for your app are relatively slow, meaning your code-feedback iterations feel snail-paced if you’re working on something that needs a server restart.</p>
+<p>Rails has Grails beat by a long way in terms of online documentation, blog posts, discussions, StackOverflow Q&amp;A, and screencast tutorials (e.g. Railscasts).</p>
+<p>The accelerated learning programming schools that are popping up (e.g. Makers Academy, <a href="http://Bloc.io" rel="nofollow noopener">Bloc.io</a>) all seem to be devoted to Rails. None run Grails courses as far as I’m aware. I’m assuming that means more junior developers are joining the profession with Rails skills vs Grails.</p>
+<p>I think all of these factors mean that you’d need a good reason to use Grails over Rails, e.g. you already have a lot of Java developers in your team who would find it more palatable to use Grails.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/5</link>
+        <pubDate>Fri, 07 Feb 2014 13:51:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1149-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149.rss">Any saas website developed in Grails?</source>
+      </item>
+      <item>
+        <title>Any saas website developed in Grails?</title>
+        <dc:creator><![CDATA[andycroll]]></dc:creator>
+        <description><![CDATA[
+            <p>As a (Ruby &amp;) Rails guy, the very function of the framework is to build web application that read and write from a database, but not be a CMS… which means it’s right in the wheelhouse of most bootstrappy applications.</p>
+<p>Also many developers really like Ruby as a language: lack of brackets, a sense of elegance of the code and these days deploying a Rails app is not the nightmare it used to be!</p>
+<p>It’s my preferred ‘hammer’ for most web application ‘nails’ but Django (for Python) or one of the PHP frameworks can do exactly the same job for you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/4</link>
+        <pubDate>Fri, 07 Feb 2014 11:00:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1149-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149.rss">Any saas website developed in Grails?</source>
+      </item>
+      <item>
+        <title>Any saas website developed in Grails?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/fabdan1">@fabdan1</a> Ruben of <a href="http://Bidsketch.com" rel="nofollow noopener">Bidsketch.com</a> tried to use Groovy, but found it hard to find programmers for it.</p>
+<p>You don’t have to use RoR, but if you want to outsource development, you’d be better off using one of the  more popular ones.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/3</link>
+        <pubDate>Fri, 07 Feb 2014 09:49:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1149-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149.rss">Any saas website developed in Grails?</source>
+      </item>
+      <item>
+        <title>Any saas website developed in Grails?</title>
+        <dc:creator><![CDATA[seb]]></dc:creator>
+        <description><![CDATA[
+            <p>A big ecosystem of libraries. Example: Devise gem: a complete login system with forgot-password, tokens, etc. etc. functionality. Many SaaS software use Rails, so a lot of common functionality eventually is extracted into a library. Large eco-system of additional services around Rails. Highly standardized, easy to onboard new programmers.  Well understood, for every problem there’s a stackoverflow answer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/2</link>
+        <pubDate>Fri, 07 Feb 2014 05:31:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1149-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149.rss">Any saas website developed in Grails?</source>
+      </item>
+      <item>
+        <title>Any saas website developed in Grails?</title>
+        <dc:creator><![CDATA[fabdan1]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everybody,</p>
+<p>It seems that a lot of Saas websites developed by bootstrappers are using Ruby on Rails. Wondering why it is?<br>
+Anyone using or seen a Saas website in Groovy/Grails?</p>
+<p>Thanks<br>
+/Fab</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149/1</link>
+        <pubDate>Fri, 07 Feb 2014 02:54:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1149-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/any-saas-website-developed-in-grails/1149.rss">Any saas website developed in Grails?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Are there good &quot;Payout&quot; Gateways? How to send money to users</title>
+    <link>https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854</link>
+    <description>Hey all, I&#39;m wondering what people use to send money to users. Is there anything out there that can handle receiving money a la Stripe / Braintree, but also make payments out to other people? Some example use cases:
+
+* An affiliate program that makes monthly payouts to affiliates. 
+* A marketplace that handles both buyers and sellers.</description>
+    
+    <lastBuildDate>Wed, 15 Mar 2017 13:53:18 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Are there good &quot;Payout&quot; Gateways? How to send money to users</title>
+        <dc:creator><![CDATA[Tom_Hammond]]></dc:creator>
+        <description><![CDATA[
+            <p>If it’s us only, dwolla has a great system.</p>
+<p>Paypal also let’s you send payments, and you can do it en masse.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854/3</link>
+        <pubDate>Wed, 15 Mar 2017 13:53:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4854-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854.rss">Are there good &quot;Payout&quot; Gateways? How to send money to users</source>
+      </item>
+      <item>
+        <title>Are there good &quot;Payout&quot; Gateways? How to send money to users</title>
+        <dc:creator><![CDATA[ezekg]]></dc:creator>
+        <description><![CDATA[
+            <p>You can do that with <a href="https://stripe.com/connect" rel="nofollow noopener">Stripe Connect</a>, even down to taking a % from payments before transferring to the seller’s account. I believe you can either manage seller accounts yourself (getting all the needed info manually), or connect pre-existing Stripe accounts to your application.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854/2</link>
+        <pubDate>Fri, 10 Mar 2017 13:56:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4854-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854.rss">Are there good &quot;Payout&quot; Gateways? How to send money to users</source>
+      </item>
+      <item>
+        <title>Are there good &quot;Payout&quot; Gateways? How to send money to users</title>
+        <dc:creator><![CDATA[GSto]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey all, I’m wondering what people use to send money to users. Is there anything out there that can handle receiving money a la Stripe / Braintree, but also make payments out to other people? Some example use cases:</p>
+<ul>
+<li>An affiliate program that makes monthly payouts to affiliates.</li>
+<li>A marketplace that handles both buyers and sellers.</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854/1</link>
+        <pubDate>Fri, 10 Mar 2017 12:58:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4854-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/are-there-good-payout-gateways-how-to-send-money-to-users/4854.rss">Are there good &quot;Payout&quot; Gateways? How to send money to users</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Please validate my saas idea</title>
+    <link>https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405</link>
+    <description>Hello! My name is Alex, i&#39;m a developer from Berlin, Germany, I&#39;ve been trying to start my own small saas startup for pretty much long time, failed couple times and decided to do everything properly time and start with idea validation :)
+
+Unfortunately i am very bad at generating ideas, even those which should be &quot;scratch-your-own-itch&quot; but here is a one that i would personally pay for.
+
+While i was developing my previous products i come across a problem that i want to know about certain events happening in my system. **For example a scenario**:
+- User signs up for my app
+- I want to send event to somewhere with json payload of user details
+- I want to be able to see this json somewhere
+- I want to setup a dashboard with simple metrics and graph where i would see how many people signed up for my service.
+
+**Another scenario**:
+- User decides to pay for my app
+- Transaction happens
+- Payment gateway notifies my app about created transaction
+- I want to immediately get push notification about this
+- If transaction fails i want to get an sms or some kind of alert
+
+**Idea**
+Service that provides API for pushing different kinds of events, libraries for most of popular programming languages and potentially integration in wordpress/spotify.
+Service allows to create graphs and dashboards and display events in them.
+Service also allows to create custom alerts and reports.
+
+**Competitors**
+Of course you most probably already thought about GA/Mixpanel/Geckoboard/Graphly/Kissmetrics.
+Some of the service do have some/most of the functionality i described, but i want to aim to cover an audience of people that do not need complex things, who only started working on their product and not willing to pay 30-100 USD per month for such a functionality. 
+
+Would love to hear any feedback on the things i wrote in above. Thanks in advance :slight_smile:
+
+P.S I&#39;m actively looking for someone with a business idea of a small/medium size startup, ideally in Germany who in its turn is looking for technical co founder.</description>
+    
+    <lastBuildDate>Wed, 07 Dec 2016 22:32:40 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Please validate my saas idea</title>
+        <dc:creator><![CDATA[Signupper]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4405">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/a/b9e5f3/40.png" class="avatar"> alexgor:</div>
+<blockquote>
+<p>who only started working on their product</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/rfctr">@rfctr</a> covered a lot of good points.</p>
+<p>I don’t think competing with the above companies on price alone is a good enough differentiating factor. Mixpanel offers a free plan. It will be difficult to undercut that. Once a company outgrows the free plan, it will likely no longer be as price sensitive.</p>
+<p>If you want to compete in this space, you will need to differentiate somehow from the rest. Unfortunately I am blanking for concrete ideas right now.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405/3</link>
+        <pubDate>Wed, 07 Dec 2016 22:32:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4405-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405.rss">Please validate my saas idea</source>
+      </item>
+      <item>
+        <title>Please validate my saas idea</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4405">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/a/b9e5f3/40.png" class="avatar"> alexgor:</div>
+<blockquote>
+<p>who only started working on their product and not willing to pay 30-100 USD per month for such a functionality.</p>
+</blockquote>
+</aside>
+<p>How then you’re going to cover your costs? A service like that is expected to be redundant, i.e. clustered. Double hardware costs right from the bat.</p>
+<p>I used to have the very same idea a few years ago, even had a prototype, but lost the interest for it. But the idea is still valid, IMHO: many smaller SaaS have some unique metrics (e.g.: queue size) which are hard to measure with the bigger, more rigid, monitoring systems.</p>
+<p>It has downsides, too: you essentially need to keep time series database, and SQL queries for time ranges are inefficient, because you need to do range + aggregate, e.g. show 100 aggregate points for a range having 100k.</p>
+<p>What I want to mention is this: do not limit yourself to cheap beginner startups. The very same need exists in large enterprises, too. In my group we’re looking for a simple dashboard software that we can deploy without much troubles and populate with a few data sources from our systems. The metrics are partially standard (response time, error rate), partially custom to our application (transaction count per source application, SLA for particular LOBs…). We do not only need those for ourselves, but more to give it as a page(s) to our business groups so they could always see that our system is healthy (or not). That would save us a lot of time and efforts.</p>
+<p>There are systems that allow to collect and work with events (event streaming) very easily, with powerful query languages, but all of them (that we seen) are lacking modern web UI.</p>
+<p>If we’d see a simple to integrate on-premises dashboard with easy to configure nice graphs, our budget for it is about $8k without much of approvals.</p>
+<p>Just a food for thought.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405/2</link>
+        <pubDate>Wed, 28 Sep 2016 00:58:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4405-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405.rss">Please validate my saas idea</source>
+      </item>
+      <item>
+        <title>Please validate my saas idea</title>
+        <dc:creator><![CDATA[alexgor]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello! My name is Alex, i’m a developer from Berlin, Germany, I’ve been trying to start my own small saas startup for pretty much long time, failed couple times and decided to do everything properly time and start with idea validation <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Unfortunately i am very bad at generating ideas, even those which should be “scratch-your-own-itch” but here is a one that i would personally pay for.</p>
+<p>While i was developing my previous products i come across a problem that i want to know about certain events happening in my system. <strong>For example a scenario</strong>:</p>
+<ul>
+<li>User signs up for my app</li>
+<li>I want to send event to somewhere with json payload of user details</li>
+<li>I want to be able to see this json somewhere</li>
+<li>I want to setup a dashboard with simple metrics and graph where i would see how many people signed up for my service.</li>
+</ul>
+<p><strong>Another scenario</strong>:</p>
+<ul>
+<li>User decides to pay for my app</li>
+<li>Transaction happens</li>
+<li>Payment gateway notifies my app about created transaction</li>
+<li>I want to immediately get push notification about this</li>
+<li>If transaction fails i want to get an sms or some kind of alert</li>
+</ul>
+<p><strong>Idea</strong><br>
+Service that provides API for pushing different kinds of events, libraries for most of popular programming languages and potentially integration in wordpress/spotify.<br>
+Service allows to create graphs and dashboards and display events in them.<br>
+Service also allows to create custom alerts and reports.</p>
+<p><strong>Competitors</strong><br>
+Of course you most probably already thought about GA/Mixpanel/Geckoboard/Graphly/Kissmetrics.<br>
+Some of the service do have some/most of the functionality i described, but i want to aim to cover an audience of people that do not need complex things, who only started working on their product and not willing to pay 30-100 USD per month for such a functionality.</p>
+<p>Would love to hear any feedback on the things i wrote in above. Thanks in advance <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>P.S I’m actively looking for someone with a business idea of a small/medium size startup, ideally in Germany who in its turn is looking for technical co founder.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405/1</link>
+        <pubDate>Tue, 27 Sep 2016 14:06:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4405-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-saas-idea/4405.rss">Please validate my saas idea</source>
+      </item>
+  </channel>
+</rss>

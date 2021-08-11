@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How my SaaS was used by a spammer</title>
+    <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357</link>
+    <description>A large part of running a SaaS is spotting and blocking attempts to either hack your server or use your server as a spam vector.
+
+The methods the bad guys try are surprising.
+
+Here&#39;s an attack I encountered in the last few days:
+
+1. Bad Person (hereafter known as BP) creates an account on my SaaS app.
+2. BP sets their display name on my SaaS app to &quot;Great bargains at bargainsgalore.com&quot;
+3. BP uses our &quot;invite your team&quot; feature to invite one person, called Spam Victim (SV). This causes my SaaS to send an invite to SV. Normally it would read &quot;Hi, Jo Smith has invited your to join their Feature Upvote account.&quot; In this case it reads &quot;Hi, Great bargains at bargainsgalore.com has invited to join their Feature Upvote account&quot;.
+4. BP deletes invited user
+5. BP waits a few seconds
+6. BP goes to step 3
+
+I&#39;m guessing that BP expects some email clients to linkify the email, even though my SaaS is careful to escape the user-contributed content.
+
+Steps 3 to 6 were clearly automated as they were repeated at the rate of 10 emails/minute. I detected this after 1,000 emails had been systematically sent.
+
+I then deleted the account. Two days later, the same thing happened but wth a slower rate of about 6 emails/minute.
+
+---
+
+I&#39;ve now added some mitigation for this. I won&#39;t say exactly what I did (in case BP and their ilk are reading!), but here&#39;s some possible approaches I considered:
+
+* Change the invite email to not include any user-contributed content
+* Add reCAPTCHA
+* Throttle or block by IP address
+* Stop trial accounts from sending invites
+* Blacklist domains known to be used in this attack
+* Limit trial accounts to triggering a very small number of emails
+
+---
+What annoys me about this is the time and energy spent fighting this issue is time and energy no longer available for product development or marketing.
+
+Our forum software indicates something similar has been discussed before: https://discuss.bootstrapped.fm/t/saas-trial-abuse-from-botnets-spammers/3752. It includes this wisdom:
+
+&gt; It’s important to strike a good balance between making the life of spammers difficult with keeping the real users from being annoyed by false positives.</description>
+    
+    <lastBuildDate>Wed, 29 May 2019 15:34:15 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How my SaaS was used by a spammer</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m looking at my SaaS now trying to find ways in which it could be abused…</p>
+<p>But, whatever you do, please do not add the horrible reCAPTCHA thing. It provides an abysmal experience for users and does not work against determined attackers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/9</link>
+        <pubDate>Wed, 29 May 2019 15:34:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6357-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss">How my SaaS was used by a spammer</source>
+      </item>
+      <item>
+        <title>How my SaaS was used by a spammer</title>
+        <dc:creator><![CDATA[davedevelopment]]></dc:creator>
+        <description><![CDATA[
+            <p>I feel your pain on this, we have lots of checks in place for various abuses of our system, mostly all hand coded after we notice patterns in behaviour.</p>
+<p>It gets me down having to spend so much time on it, but I try and remember the plenty of fish founder saying somewhere that in the early days, the thing that set POF apart from the rest and what he considered to be a key to their success, was that they were the best at keeping out the fakers and the scammers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/8</link>
+        <pubDate>Wed, 22 May 2019 11:23:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6357-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss">How my SaaS was used by a spammer</source>
+      </item>
+      <item>
+        <title>How my SaaS was used by a spammer</title>
+        <dc:creator><![CDATA[grujicd]]></dc:creator>
+        <description><![CDATA[
+            <p>These are all good suggestions, but it’s a shame you have to deal with it in the first place. On the other hand, if you ran a physical store, you’d have to deal with locks, alarms, surveillance cameras, stolen goods, etc. So fight with malicious users/visitors is a fact of life.</p>
+<p>IMO the biggest problem here is your email could end up flagged as a spam source. Even if you’re using outsourced mail sender, they could kick you out because of these problems.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/7</link>
+        <pubDate>Tue, 21 May 2019 20:43:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6357-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss">How my SaaS was used by a spammer</source>
+      </item>
+      <item>
+        <title>How my SaaS was used by a spammer</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="6357">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>BP deletes invited user</p>
+</blockquote>
+</aside>
+<p>They delete it to get back within the number of allowed invites? Then not letting them to delete the invite for say 3 days would make it harder to abuse.</p>
+<p>I’d also add a “Think it is spam? Click here” button to the email. If any invited user clicks, I’d shadow-block sending more emails and flag it for a manual review. If the review confirms spamming, I’d let it stay in the shadow-blocking state - they wasted my energy, I waste theirs.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/6</link>
+        <pubDate>Tue, 21 May 2019 20:23:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6357-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss">How my SaaS was used by a spammer</source>
+      </item>
+      <item>
+        <title>How my SaaS was used by a spammer</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Andy, it was the fear of problems like these that kept me away from developing a SaaS product for so many years!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/5</link>
+        <pubDate>Mon, 20 May 2019 19:07:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6357-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss">How my SaaS was used by a spammer</source>
+      </item>
+      <item>
+        <title>How my SaaS was used by a spammer</title>
+        <dc:creator><![CDATA[syneryder]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been seeing that on another SaaS that I (used to be) a customer of.  They sent an email when someone liked your post, so naturally you’d click on the user profile to see who was interested in what you’d written… only to discover it was a spam account who had added spam text to their user profile. They were obviously free accounts, so preventing free/trial accounts from liking or sending email would probably help to prevent it… at least until the spammers start hijacking accounts…</p>
+<p>I get dozens of spam attempts every day through my website (even to advertise the comment spam bots they’re using), and I can say that Google’s reCAPTCHA is useless, there is already software that can bypass it. IP blacklists have not been helpful either.  What has worked for me is logging every attempt &amp; searching for patterns (thinking: what do they <em>have</em> to include to achieve their goal?) and hand-writing filters to catch those.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/4</link>
+        <pubDate>Mon, 20 May 2019 19:07:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6357-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss">How my SaaS was used by a spammer</source>
+      </item>
+      <item>
+        <title>How my SaaS was used by a spammer</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Desktop software does have some advantages. ;0)</p>
+<p>–<br>
+Andy Brice<br>
+<a href="https://www.hyperplan.com" class="onebox" target="_blank">https://www.hyperplan.com</a><br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.perfecttableplan.com/favicon.ico" class="site-icon" width="16" height="16">
+      <a href="https://www.perfecttableplan.com" target="_blank">perfecttableplan.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:128/80;"><img src="https://www.perfecttableplan.com/meta.jpg" class="thumbnail"></div>
+
+<h3><a href="https://www.perfecttableplan.com" target="_blank">Table Plan software - perfect table seating for weddings and events</a></h3>
+
+<p>Perfect Table Plan - software for table plans. Design and print a table seating plan for your wedding or event on your PC or Mac. Download a free trial now.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=32" class="site-icon" width="16" height="16">
+      <a href="https://successfulsoftware.net/" target="_blank">Successful Software</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=200&amp;amp;ts=1558369598" class="thumbnail onebox-avatar" width="60" height="60">
+
+<h3><a href="https://successfulsoftware.net/" target="_blank">Successful Software</a></h3>
+
+<p>...requires more than just good programming.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/3</link>
+        <pubDate>Mon, 20 May 2019 16:26:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6357-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss">How my SaaS was used by a spammer</source>
+      </item>
+      <item>
+        <title>How my SaaS was used by a spammer</title>
+        <dc:creator><![CDATA[marya]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the informative post!</p>
+<p>I haven’t experienced an issue quite like this yet, but I’ve definitely had to deal with “abuse” issues on my website. And yeah, it is so frustrating to spend time on crap like this, rather than spending it on, well, basically <strong>anything</strong> else. You have my sympathy!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/2</link>
+        <pubDate>Mon, 20 May 2019 01:25:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6357-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss">How my SaaS was used by a spammer</source>
+      </item>
+      <item>
+        <title>How my SaaS was used by a spammer</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>A large part of running a SaaS is spotting and blocking attempts to either hack your server or use your server as a spam vector.</p>
+<p>The methods the bad guys try are surprising.</p>
+<p>Here’s an attack I encountered in the last few days:</p>
+<ol>
+<li>Bad Person (hereafter known as BP) creates an account on my SaaS app.</li>
+<li>BP sets their display name on my SaaS app to “Great bargains at <a href="http://bargainsgalore.com">bargainsgalore.com</a>”</li>
+<li>BP uses our “invite your team” feature to invite one person, called Spam Victim (SV). This causes my SaaS to send an invite to SV. Normally it would read “Hi, Jo Smith has invited your to join their Feature Upvote account.” In this case it reads “Hi, Great bargains at <a href="http://bargainsgalore.com">bargainsgalore.com</a> has invited to join their Feature Upvote account”.</li>
+<li>BP deletes invited user</li>
+<li>BP waits a few seconds</li>
+<li>BP goes to step 3</li>
+</ol>
+<p>I’m guessing that BP expects some email clients to linkify the email, even though my SaaS is careful to escape the user-contributed content.</p>
+<p>Steps 3 to 6 were clearly automated as they were repeated at the rate of 10 emails/minute. I detected this after 1,000 emails had been systematically sent.</p>
+<p>I then deleted the account. Two days later, the same thing happened but wth a slower rate of about 6 emails/minute.</p>
+<hr>
+<p>I’ve now added some mitigation for this. I won’t say exactly what I did (in case BP and their ilk are reading!), but here’s some possible approaches I considered:</p>
+<ul>
+<li>Change the invite email to not include any user-contributed content</li>
+<li>Add reCAPTCHA</li>
+<li>Throttle or block by IP address</li>
+<li>Stop trial accounts from sending invites</li>
+<li>Blacklist domains known to be used in this attack</li>
+<li>Limit trial accounts to triggering a very small number of emails</li>
+</ul>
+<hr>
+<p>What annoys me about this is the time and energy spent fighting this issue is time and energy no longer available for product development or marketing.</p>
+<p>Our forum software indicates something similar has been discussed before: <a href="https://discuss.bootstrapped.fm/t/saas-trial-abuse-from-botnets-spammers/3752" class="inline-onebox">SaaS trial abuse from botnets/spammers</a>. It includes this wisdom:</p>
+<blockquote>
+<p>It’s important to strike a good balance between making the life of spammers difficult with keeping the real users from being annoyed by false positives.</p>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357/1</link>
+        <pubDate>Sun, 19 May 2019 15:22:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6357-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357.rss">How my SaaS was used by a spammer</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to properly calculate landing page sign-up rates?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032</link>
+    <description>I&#39;m using Google Analytics on my landing page. I&#39;m trying to calculate our sign-up rate (sign-ups to the number of visitors). The only thing is we get a lot of visits to the landing page from existing customers who are logging in. It seems like my sign-up rate calculations should exclude visits from existing customers logging in.
+
+If a user signed up within a particular month or visited without signing up or logging in, we should probably count them in the visitor denominator of our sign-up rate calculation. If all they&#39;ve done is log in, we should exclude them from the visitor denominator.
+
+How have you calculated your sign-up rates? How have you excluded visits from existing customers?
+
+Thanks in advance!</description>
+    
+    <lastBuildDate>Wed, 26 Sep 2018 22:41:09 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to properly calculate landing page sign-up rates?</title>
+        <dc:creator><![CDATA[Krit]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Hao!</p>
+<p>I tried using New Visitors the other day and realized there’s a small issue there that assumes most sign-ups come from new visitors. I dug into our GA and found around 5% of sign-ups came from returning visitors. Returning visitors can also be “double-counted” if they’re new and returned for the month.</p>
+<p>I think New Visitors is probably my best bet though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/5</link>
+        <pubDate>Wed, 26 Sep 2018 22:41:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6032-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032.rss">How to properly calculate landing page sign-up rates?</source>
+      </item>
+      <item>
+        <title>How to properly calculate landing page sign-up rates?</title>
+        <dc:creator><![CDATA[howwhowhen]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, that’s exactly what I mean. Let us know what kind of signup rate you’re getting.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/4</link>
+        <pubDate>Wed, 26 Sep 2018 22:05:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6032-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032.rss">How to properly calculate landing page sign-up rates?</source>
+      </item>
+      <item>
+        <title>How to properly calculate landing page sign-up rates?</title>
+        <dc:creator><![CDATA[Krit]]></dc:creator>
+        <description><![CDATA[
+            <p>Ahh gotcha, thanks. You’re suggesting using New Visitors to calculate sign-up rates, correct?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/3</link>
+        <pubDate>Wed, 26 Sep 2018 21:48:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6032-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032.rss">How to properly calculate landing page sign-up rates?</source>
+      </item>
+      <item>
+        <title>How to properly calculate landing page sign-up rates?</title>
+        <dc:creator><![CDATA[howwhowhen]]></dc:creator>
+        <description><![CDATA[
+            <p>I think they give you the number of new visits as well as total views. That would probably be a better number to use for calculating your signup rate.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/2</link>
+        <pubDate>Wed, 26 Sep 2018 19:33:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6032-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032.rss">How to properly calculate landing page sign-up rates?</source>
+      </item>
+      <item>
+        <title>How to properly calculate landing page sign-up rates?</title>
+        <dc:creator><![CDATA[Krit]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m using Google Analytics on my landing page. I’m trying to calculate our sign-up rate (sign-ups to the number of visitors). The only thing is we get a lot of visits to the landing page from existing customers who are logging in. It seems like my sign-up rate calculations should exclude visits from existing customers logging in.</p>
+<p>If a user signed up within a particular month or visited without signing up or logging in, we should probably count them in the visitor denominator of our sign-up rate calculation. If all they’ve done is log in, we should exclude them from the visitor denominator.</p>
+<p>How have you calculated your sign-up rates? How have you excluded visits from existing customers?</p>
+<p>Thanks in advance!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032/1</link>
+        <pubDate>Wed, 26 Sep 2018 13:01:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6032-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-properly-calculate-landing-page-sign-up-rates/6032.rss">How to properly calculate landing page sign-up rates?</source>
+      </item>
+  </channel>
+</rss>

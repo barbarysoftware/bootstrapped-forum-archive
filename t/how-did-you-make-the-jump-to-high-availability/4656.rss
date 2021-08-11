@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How did you make the jump to high availability?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656</link>
+    <description>My saas business is starting to get traction (it&#39;s generating enough on which to live comfortably), and I&#39;ve also had a few availability incidents caused by my old VPS provider (Backbone AG - I ditched them a few weeks ago, and I suppose everyone else did too because they sent around emails last week saying they were quitting the VPS business).
+
+I&#39;m using python + postgres (so there isn&#39;t really a &quot;works straight out of the box&quot; middleware solution to pool connections and handle failover). I&#39;m also having trouble finding a good infrastructure engineer who has set up HA postgres before. The one who had promised to do it flaked on me just before christmas, and I&#39;ve had a couple of others take a serious look at it and tell me &quot;nah, too hard&quot; ... not to mention the dozens who have said &quot;haven&#39;t ever done it but I once did this thing with Galera...&quot;.
+
+I could of course go with a managed DB, but then for network latency I&#39;ve generally got to be in the same datacenter and the big ones (AWS, Azure...) cost a mint for commodity VPSes. My current server bill at Linode is 15% of what it would be at Azure. Call me cheap, but a managed DB also seems to cost $3-5k per annum more than knowing how to do it yourself on a few commodity VPSes, plus you don&#39;t have the knowledge either. Not to mention lock in - call me paranoid, but my experience with Azure and Backbone so far makes me really like the idea of being able to reprovision the application quickly at another provider.
+
+So for those of you who have implemented HA on your Saas:
+
+1. What stack did you use?
+2. Was there open source middleware + configuration recipes already available?
+3. Did you get outside help, and was it useful?
+4. What were the unforseen pitfalls?
+5. How did it all work out?
+6. Any HA-related advice at this stage in the journey?</description>
+    
+    <lastBuildDate>Sun, 26 Feb 2017 17:50:17 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="33" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/serge/40/2473_1.png" class="avatar"> Serge:</div>
+<blockquote>
+<p>Really… they had a backup that failed and no one checked? Lol… I would fire his ass in 5 seconds flat…</p>
+</blockquote>
+</aside>
+<p>That (5s) wouldn’t be wise. You’re in a middle of a crisis and you need every pair of hands, <em>especially</em> those familiar with the backups.</p>
+<p>When the crisis is over, <em>then</em> you fire them. And maybe this is what has happen, we do not know.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/34</link>
+        <pubDate>Sun, 26 Feb 2017 17:50:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-34</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[Serge]]></dc:creator>
+        <description><![CDATA[
+            <p>Really… they had a backup that failed and no one checked? Lol… I would fire his ass in 5 seconds flat…</p>
+<p>Their original plan was sound, poor execution… People that do this stuff should give a shit… If you have a backup process and you don’t check it end to end in a staging environment on a regular basis you deserve being handed your own ass in a little box…</p>
+<p>Most of those plans fail because people get complacent … hell, the stuff works most of the time, at least enough to put you to sleep and give you this false sense of confidence… it is living on borrowed time. Paranoia should be a daily thing even when all is well…</p>
+<p>They lost me when I read their S3 bucket was empty and it was a surprise to them… really… Thank god for Github…</p>
+<p>And I don’t think it’s rocket science… you just need to execute a reasonable plan with care… the with care here is the most important part… lol</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/33</link>
+        <pubDate>Sun, 26 Feb 2017 15:55:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-33</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="31" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>I was 21 and I deleted the company’s CRM database</p>
+</blockquote>
+</aside>
+<p>I crashed Siebel (sales system) of a major telecom, blocking their sales nation-wide. Two times in row within 30 minutes.</p>
+<p>However, I was not to blame because a) someone else provided me with PROD URL instead of SFT b) PROD Siebel was not fortified against wide ad-hoc searches and went OOM.</p>
+<p>I actually did not know about the accidents until much later in the day.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/32</link>
+        <pubDate>Thu, 23 Feb 2017 16:54:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-32</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>My first such disaster: I was 21 and I deleted the company’s CRM database. The boss was out for the day. A co-worker let me fret for hours before he revealed that the database was safely backed up.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/31</link>
+        <pubDate>Thu, 23 Feb 2017 11:32:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[rwillmer]]></dc:creator>
+        <description><![CDATA[
+            <p>They were surprisingly calm about getting the problem fixed. They chose to do it with full transparency, including a live stream of their discussions and choices, and a public Google doc. Kudos to them for doing that!</p>
+<p>I did something similar in my first job many many years ago, and never forgot that “oh hell what did I just do?” feeling. <a href="https://www.quora.com/What-is-a-coders-worst-nightmare/answer/Rachel-Willmer" rel="nofollow noopener">https://www.quora.com/What-is-a-coders-worst-nightmare/answer/Rachel-Willmer</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/30</link>
+        <pubDate>Thu, 23 Feb 2017 09:18:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="28" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rwillmer/40/1302_1.png" class="avatar"> rwillmer:</div>
+<blockquote>
+<p>Postmortem on the database outage of January 31 2017</p>
+</blockquote>
+</aside>
+<p>Oh, this is a ready-to-use horror movie scenario!</p>
+<p>I could feel with my own skin how the nameless engineer first broke sweat when they realized the files being deleted are from <em>PROD</em> database, and how this state was turning into a hopeless haze as each next safety measure turned out to be a dud. Progressive steps into despair and madness.</p>
+<p>Too bad too few people can truly understand the events, so it can’t become a blockbuster.</p>
+<p>(Of course I may just be not suited for this line of work, and the engineers could have been cold, calculating and efficient in their fight for recovery.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/29</link>
+        <pubDate>Thu, 23 Feb 2017 02:14:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[rwillmer]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 for everyone that said "don’t do HA, do ‘high-enough availability’, totally agree.</p>
+<p>(I’m a bootstrapper currently doing contract DevOps for a rather large multinational. True HA on master-master databases is a hard problem, and expensive. You either lose out on speed, to ensure consistency, or risk data conflicts when mutually-incompatible data is written in two different places at the same time)</p>
+<p>Use AWS or similar where possible; let them solve the hard problems.</p>
+<p>The other comment I’d add, is whatever system you go with, don’t forget to test it. Make sure that you’ve run through the disaster recovery scenario, and followed a documented recovery plan, at least once and preferably multiple times before you need it for a real situation.</p>
+<p>Don’t be like Gitlab; they recently lost 6 hours of production data affecting 5k projects. With this immortal quote as part of the post-mortem “So in other words, out of 5 backup/replication techniques deployed none are working reliably or set up in the first place”</p>
+<p>This post-mortem is well worth reading, if you’re interested in this stuff.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://about.gitlab.com/ico/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/" target="_blank" rel="nofollow noopener">GitLab</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/483;"><img src="https://about.gitlab.com/images/blogimages/gitlab-blog-cover.png" class="thumbnail"></div>
+
+<h3><a href="https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/" target="_blank" rel="nofollow noopener">Postmortem of database outage of January 31</a></h3>
+
+<p>Postmortem on the database outage of January 31 2017 with the lessons we learned.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/28</link>
+        <pubDate>Tue, 21 Feb 2017 07:58:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <p>So at that point it’s up to you to handle how’d you’d like to recover and reset up the old master. For example, the old masters region could still be down. But they make it pretty trivial to get a new DB instance back up and replicated with your new master DB’s data. A few button clicks on their dashboard and it building/replicating.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/27</link>
+        <pubDate>Fri, 13 Jan 2017 16:44:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="25" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chris/40/3594_1.png" class="avatar"> Chris:</div>
+<blockquote>
+<p>“Amazon RDS automatically provisions and maintains a synchronous standby replica in a different Availability Zone.”</p>
+</blockquote>
+</aside>
+<p>What happens with the old master when it fails and the standby becomes the new master?</p>
+<p>Do you need to intervene and rebuild it manually, or Amazon will create a new instance for you? (I doubt it - will be a performance hit to transfer the state to a new standby).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/26</link>
+        <pubDate>Fri, 13 Jan 2017 01:56:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="24" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>You mean “master-standby” then, right? I.e. the updates are only go to one DB.</p>
+<p>Yeah, not bad.</p>
+</blockquote>
+</aside>
+<p>Exactly, thanks for the clairification.</p>
+<p><em>“Amazon RDS automatically provisions and maintains a synchronous standby replica in a different Availability Zone.”</em></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/25</link>
+        <pubDate>Thu, 12 Jan 2017 18:57:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="21" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chris/40/3594_1.png" class="avatar"> Chris:</div>
+<blockquote>
+<p>Meaning, I have 2 master databases (1 replicating to the other)</p>
+</blockquote>
+</aside>
+<p>You mean “master-standby” then, right? I.e. the updates are only go to one DB.</p>
+<p>Yeah, not bad.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/24</link>
+        <pubDate>Thu, 12 Jan 2017 14:29:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="22" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/fideloper/40/1329_1.png" class="avatar"> fideloper:</div>
+<blockquote>
+<p>backing up the disk can give you a corrupt or incomplete db backup</p>
+</blockquote>
+</aside>
+<p>Yeah. But most DB-engines have some kind of “check-db” command that restores the integrity after a disaster. You might lose a record or two, but it’s mostly ok. It also depends on the DB engine. MySQL can be sensitive to this, Postgress is better, SQL Server is literally invincible (handles physical corruption, transaction-log deletion, sudden power-offs etc.)</p>
+<p>You have to weigh the options of course. I meant backing up for huge disasters here, like “server blew up” disaster. Or “Hurrcane Sandy destroyed datacenter” disaster… For regular annoyances, like “user X accidentally deleted his own data” - we have DB transaction logs and “point-in-time” recovery</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/23</link>
+        <pubDate>Thu, 12 Jan 2017 10:44:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[fideloper]]></dc:creator>
+        <description><![CDATA[
+            <p>Love this, with the one caveat that backing up a database by backing up the disk can (if anyone knows better Lmk!) give you a corrupt or incomplete db backup depending on what operations were taking place in the DB at the time of the backup.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/22</link>
+        <pubDate>Wed, 11 Jan 2017 22:49:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/i/b2d939/40.png" class="avatar"> Incertitude:</div>
+<blockquote>
+<p>I could of course go with a managed DB, but then for network latency I’ve generally got to be in the same datacenter and the big ones (AWS, Azure…) cost a mint for commodity VPSes. My current server bill at Linode is 15% of what it would be at Azure. Call me cheap, but a managed DB also seems to cost $3-5k per annum more than knowing how to do it yourself on a few commodity VPSes, plus you don’t have the knowledge either. Not to mention lock in - call me paranoid, but my experience with Azure and Backbone so far makes me really like the idea of being able to reprovision the application quickly at another provider.</p>
+</blockquote>
+</aside>
+<p>I’d have to echo those who mention AWS in this thread.</p>
+<p>I have “high enough” availability with their almost default settings for their Multi-AZ RDS instances. Meaning, I have 2 master databases (1 replicating to the other) in 2 separate physical regions/networks.</p>
+<p>If 1 goes down, they (meaning AWS) automatically switch over to the db in the other region.</p>
+<p>Read more here: <a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html" rel="nofollow noopener">http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html</a></p>
+<p>For this, with a moderate DB server on one of my products I paid $65.47 last month:</p>
+<p><em>“$0.088 per RDS db.t2.small Multi-AZ instance hour (or partial hour) running MySQL / 744 Hrs / $65.47”</em></p>
+<p>This by no means “cost me a mint” and I could even go cheaper (i.e. a smaller RDS instance). Also @ $65.47 / month that’s about $786 per annum, a far cry from you $3-$5k estimate.</p>
+<p>Sure, you could scream “lock-in!” by using AWS and their HA systems, whatever…</p>
+<p>When I get big enough and have a large tech staff, I can have them spin their wheels and solve that problem for me. For now, I want to focus on Product + Customers, not trivial things like this that have been solved for a reasonable price by others.</p>
+<p>…just my $0.02</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/21</link>
+        <pubDate>Wed, 11 Jan 2017 18:34:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>A bit late to the show, but here’s my 2 cents.</p>
+<p>(mostly aws-related and pretty trivial, sorry)</p>
+<p><strong>Backup from the outside</strong>. For example, backing up a database using the actual DB-server affects <em>your server’s</em> performance. OTOH, taking a snapshot of your EBS-drive uses <em>Amazon’s</em> resources. Snapshotting even uses a separate physical network-card on the storage-server (the one that hosts your EBS disks), and does not exhaust your own disk-speed/iops-credits/bandwidth/cpu at all, it literally does not touch your server. The procedure is smart enough to backup only the diff-ed data, so it’s ridiculously fast (100gb drive in 5 seconds, not bad huh). Taking a snapshot is a free operation, Amazon offers an API for this, so you basically can take a snapshot every minute (!) who cares! Just make sure to clean them up once in a while, because $$$</p>
+<p><strong>Keep a stopped copy of all servers</strong> - in AWS, a “server” is just a line in some config file somewhere (when it’s not running), it’s free to keep one. If something goes wrong with the hardware - you don’t have to shutdown of “force-stop” the frozen machine, and wait until it responds… Just cut the EBS disks, throw them at a new server, launch. 10 seconds. We even keep a script for that.</p>
+<p>PS. handy stuff: <a href="https://github.com/colinbjohnson/aws-missing-tools" rel="nofollow noopener">https://github.com/colinbjohnson/aws-missing-tools</a> (especially the “ec2-automate-backup” bit)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/20</link>
+        <pubDate>Wed, 11 Jan 2017 17:52:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="15" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/intelligentcoder/40/3416_1.png" class="avatar"> intelligentcoder:</div>
+<blockquote>
+<p>I use a MongoDB replica set</p>
+</blockquote>
+</aside>
+<p>That’s cheating <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> document-oriented DBs are so much easier to clusterize.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/19</link>
+        <pubDate>Mon, 09 Jan 2017 19:48:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>This is pretty much where I am at. You are not going to get HA for $30, or even $100, a month.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/18</link>
+        <pubDate>Sun, 08 Jan 2017 21:34:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="15" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/intelligentcoder/40/3416_1.png" class="avatar"> intelligentcoder:</div>
+<blockquote>
+<p>I’m in a similar situation where I feel like I can’t go out without my phone because I’m the only one responsible for keeping my app online. It was fine to have outages when I had 20 clients, but now that there are hundreds of clients using the app everyday, I can’t have outages without pissing some people off.</p>
+</blockquote>
+</aside>
+<p>Two stories:</p>
+<ol>
+<li>
+<p>I pay a sys admin for a few hours work per month (on a retainer). I found him via Upwork and pay US$30/hour. It took a while to find the right person, but well worth the money.</p>
+</li>
+<li>
+<p>A friend of mine runs a 1-person SaaS site that does website monitoring. It needs to have very good uptime. The same friend drove a car from Germany to Mongolia. He could do that because outages are so infrequent. He achieved great uptime by relentlessly improving the infrastructure after every outage so that the cause of the outage was very unlikely to happen again.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/17</link>
+        <pubDate>Sun, 08 Jan 2017 09:33:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for that; apart from the tech stack it closely describes my situation … except that I’d like to hire someone before I start feeling burned out <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/16</link>
+        <pubDate>Sun, 08 Jan 2017 06:41:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m in a similar situation where I feel like I can’t go out without my phone because I’m the only one responsible for keeping my app online. It was fine to have outages when I had 20 clients, but now that there are hundreds of clients using the app everyday, I can’t have outages without pissing some people off.</p>
+<p>I’ve been trying to solve this for a couple of years, and I’ve learned that the only real solution is to hire someone that can cover for you when you are not available. Unfortunately, that is not always an option for bootstrappers like us. I could hire someone, but at the moment I’m okay with being on call 24/7 in order to maximize my profits. My plan is to hire someone when I start to feel burnout symptoms.</p>
+<p>In the meantime, I’ve been relatively successful with HA without spending lots of money (under $400). I have 2 dedicated servers in different data centers on different regions and a cheaper VPS. Each of the dedicated servers are powerful enough to host the application and database on its own and would be able to handle at least 5x the current load.</p>
+<p>One dedicated server is the primary and the other one is a hot backup. I use <a href="http://totaluptime.com" rel="nofollow noopener">totaluptime.com</a> to failover the application if the primary is unreachable for 30 seconds. This has worked flawlessly at the application level.</p>
+<p>For the database, I use a MongoDB replica set (3 members), one on each server. The automatic failover works well most of the time. There were 2 or 3 times where it didn’t work as expected and I had to intervene. The downfall is that I had to get really comfortable with managing and securing a MongoDB replica set, this is time I should have spent on the product or on marketing. By the end of this year I want to move it to Mongo Atlas, which is not expensive IMO.</p>
+<p>As I said, even with the relative success, I would only feel comfortable going completely offline if I had a dev ops person that could cover for me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/15</link>
+        <pubDate>Sun, 08 Jan 2017 04:02:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[stympy]]></dc:creator>
+        <description><![CDATA[
+            <p>HAProxy doesn’t have to be a SPOF if you run it on two instances in different AZs, each with its own EIP, Route 53 health check, and Route 53 record.  You can then create an autoscaling group with an AMI that has code to attempt to assume the EIPs at boot.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/14</link>
+        <pubDate>Sat, 07 Jan 2017 21:45:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>If you really need HA and want to sleep at night, nothing beats managed AWS (or Azure) services.</p>
+<p>The absolutely minimum config would be:</p>
+<ol>
+<li>Two VPS instances in different zones, behind the load balancer. You can also choose pre-built managed stacks such as Elastic Beanstalk.</li>
+<li>Managed load balancer, such as ELB. HAProxy is better than ELB but it becomes a single point of failure.</li>
+<li>Managed database service, such as RDS. Preferable with automatic multi zone master-slave replication.</li>
+<li>Managed cache service with persistent cache store, such as ElasticCache Redis. Preferable with automatic multi zone master-slave replication.</li>
+<li>Managed DNS service, such as Route53.</li>
+</ol>
+<p>Expect to pay between $500 and $2000 / month depending on instance type and additional services.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/13</link>
+        <pubDate>Sat, 07 Jan 2017 21:05:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <p>I guess I should make it clear that I’m not looking for five 9s, but rather than ability to get on a plane or drive somewhere without phone reception as a one-man operation. If something goes down during that time, I would want automated failover. This is easy enough for the filesystem and application servers, but much less easy for the DB compared to manual intervention.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/12</link>
+        <pubDate>Tue, 03 Jan 2017 09:05:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[stympy]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah, yes, before version 9 it was a nightmare. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/11</link>
+        <pubDate>Mon, 02 Jan 2017 17:37:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+      <item>
+        <title>How did you make the jump to high availability?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="4656">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stympy/40/1388_1.png" class="avatar"> stympy:</div>
+<blockquote>
+<p>Postgres replication isn’t too bad, actually</p>
+</blockquote>
+</aside>
+<p>I believe, it is since version 9. Before that the replication was really quite cumbersome and there was a number of third-party tools, each with their own quirks.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656/10</link>
+        <pubDate>Mon, 02 Jan 2017 17:35:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4656-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-did-you-make-the-jump-to-high-availability/4656.rss">How did you make the jump to high availability?</source>
+      </item>
+  </channel>
+</rss>

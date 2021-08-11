@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Validating with payment form</title>
+    <link>https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088</link>
+    <description>I&#39;m sorting through a new Saas product and I&#39;ve generally made the mistake of building too much in the past (I&#39;m a developer by trade). I&#39;m trying to the prudent thing here and make sure I&#39;m not wasting my time again. 
+
+I have a landing page for my new product worked out and plan to do some content marketing around it in the coming weeks. However, while the product is ready, I&#39;ve rather not go all the way down the path with Stripe (or equivalent) just yet if I don&#39;t have to. 
+
+Have y&#39;all found any good ways to get payment info for a subscription product without doing a full integration? Really, just for the purpose of knowing people WILL pay for it.
+
+Side note: I&#39;ve integrated Stripe in to several other products, so do know the LOE. I&#39;d to just drop something simple in to stand-in for now. Ie. Gumroad subscriptions, but unsure how that would translate to connecting it to accounts in the app.</description>
+    
+    <lastBuildDate>Thu, 02 Oct 2014 01:30:06 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Validating with payment form</title>
+        <dc:creator><![CDATA[brandonhilkert]]></dc:creator>
+        <description><![CDATA[
+            <p>You can use checkout, but AFAIK you have to do some backend stuff to create the customer and attach them to the subscription. I think for now, at least, I’m going to do it manually after I on-board a few.</p>
+<p>Worst case, no on-boarding happens and I don’t waste any time with billing!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/8</link>
+        <pubDate>Thu, 02 Oct 2014 01:30:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2088-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088.rss">Validating with payment form</source>
+      </item>
+      <item>
+        <title>Validating with payment form</title>
+        <dc:creator><![CDATA[tdavies]]></dc:creator>
+        <description><![CDATA[
+            <p>You mentioned Stripe but have you considered just using Stripe Checkout: <a href="https://stripe.com/checkout" rel="nofollow noopener">https://stripe.com/checkout</a></p>
+<p>I believe you can just drop in their form and optionally turn that into a subscription or just a one time payment without writing any integration code.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/7</link>
+        <pubDate>Thu, 02 Oct 2014 01:13:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2088-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088.rss">Validating with payment form</source>
+      </item>
+      <item>
+        <title>Validating with payment form</title>
+        <dc:creator><![CDATA[paulyoder]]></dc:creator>
+        <description><![CDATA[
+            <p>I highly recommend getting paying customers as soon as possible so you can validate your product quicker.</p>
+<p>I think the fastest way to take payments from customers is to setup a Stripe account but don’t integrate it with your product yet. Then you can manually setup customers in Stripe and call them up to enter their CC details into Stripe as well (therefore you won’t have to worry about PCI compliance). And finally you can setup the customer within Stripe on a monthly subscription, and Stripe will take care of charging the customer every month.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/6</link>
+        <pubDate>Mon, 29 Sep 2014 18:32:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2088-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088.rss">Validating with payment form</source>
+      </item>
+      <item>
+        <title>Validating with payment form</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>Very good point.  It simplifies your app &amp; server infrastructure, but you do still need to be careful about how you handle that data.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/5</link>
+        <pubDate>Mon, 29 Sep 2014 11:00:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2088-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088.rss">Validating with payment form</source>
+      </item>
+      <item>
+        <title>Validating with payment form</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>Taking card data over the phone exposes you to PCI DSS compliance as well - in fact potentially more so that taking it via Stripe as you do actually store and handle the data:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.pcicomplianceguide.org/wp-content/uploads/2016/05/pci-guide-icon-1-32x32.png" class="site-icon" width="32" height="32">
+      <a href="https://www.pcicomplianceguide.org/faq/" target="_blank">PCI Compliance Guide</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:300/223;"><img src="https://www.pcicomplianceguide.org/wp-content/uploads/2014/03/PCI-3.0-SAQ-Chart-300x223.jpg" class="thumbnail" width="300" height="223"></div>
+
+<h3><a href="https://www.pcicomplianceguide.org/faq/" target="_blank">PCI Compliance Guide Frequently Asked Questions | PCI DSS FAQs</a></h3>
+
+<p>PCI DSS details security requirements for businesses that store, process or transmit cardholder data. Review frequently asked questions on PCI compliance.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/4</link>
+        <pubDate>Mon, 29 Sep 2014 09:45:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2088-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088.rss">Validating with payment form</source>
+      </item>
+      <item>
+        <title>Validating with payment form</title>
+        <dc:creator><![CDATA[brandonhilkert]]></dc:creator>
+        <description><![CDATA[
+            <p>hey <a class="mention" href="/u/coreysnipes">@coreysnipes</a>, that makes a lot of sense. Perhaps that’s the better approach now. Thanks for the feedback, I really appreciate it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/3</link>
+        <pubDate>Sun, 28 Sep 2014 12:43:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2088-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088.rss">Validating with payment form</source>
+      </item>
+      <item>
+        <title>Validating with payment form</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d recommend against collecting payment now (to use later), as it exposes you to PCI compliance responsibilities.  It’s easy enough to fly under the radar on a new business, but I prefer to just keep that data somewhere else (as Stripe allows you to do).</p>
+<p>What if you instead just put your first users in some kind of unpaid trial?  For the first 30 or 60 days, or however long you want to do your analysis.  If they bother to create an account (without payment info, but with other contact info) that’s a good sign.</p>
+<p>That’ll give you a chance to follow up with all of those initial users personally, which looks good to them and will give you a ton of useful feedback about the early product.  It’s easy enough at that point to say “looks like you’ve been getting good value from our product for 2 months now, can we sign you up for a subscription next week?”</p>
+<p>You can take the CC info over the phone and sign them up yourself through the Stripe admin, as I recall, and then you can build the payment integration when that manual process starts to be a pain.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/2</link>
+        <pubDate>Sun, 28 Sep 2014 02:14:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2088-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088.rss">Validating with payment form</source>
+      </item>
+      <item>
+        <title>Validating with payment form</title>
+        <dc:creator><![CDATA[brandonhilkert]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m sorting through a new Saas product and I’ve generally made the mistake of building too much in the past (I’m a developer by trade). I’m trying to the prudent thing here and make sure I’m not wasting my time again.</p>
+<p>I have a landing page for my new product worked out and plan to do some content marketing around it in the coming weeks. However, while the product is ready, I’ve rather not go all the way down the path with Stripe (or equivalent) just yet if I don’t have to.</p>
+<p>Have y’all found any good ways to get payment info for a subscription product without doing a full integration? Really, just for the purpose of knowing people WILL pay for it.</p>
+<p>Side note: I’ve integrated Stripe in to several other products, so do know the LOE. I’d to just drop something simple in to stand-in for now. Ie. Gumroad subscriptions, but unsure how that would translate to connecting it to accounts in the app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088/1</link>
+        <pubDate>Sat, 27 Sep 2014 19:59:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2088-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/validating-with-payment-form/2088.rss">Validating with payment form</source>
+      </item>
+  </channel>
+</rss>

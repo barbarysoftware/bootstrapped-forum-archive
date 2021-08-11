@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Concierge and covering yourself</title>
+    <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381</link>
+    <description>So I want to offer a concierge service for new users of my proposal software. One option is for them to be able to submit one of their proposals and I&#39;ll get it written up and formatted in the app to lower onboarding friction.
+
+My lofi approach is to just create a mailto link in their dashboard and let them email their pdf to me. 
+
+I&#39;ll then be saving their proposal to my laptop and perhaps in the future outsource this to a PA. For that reason I want my users to scrub out any sensitive client info before submitting and know I wont be held responsible for any loss / theft etc.
+
+Because I&#39;m trying to keep things simple i dont want to create a db record for an &#39;Agree to terms&#39; checkbox.
+
+I was thinking of simply specifying in the mailto link, a predefined email body containing some &#39;We will not be held responsible for any. loss or damage..&quot; legalese speak. 
+
+Would this be enough? Is there a better way? Any nicer way of saying the above (it is for onboarding after all) ???</description>
+    
+    <lastBuildDate>Tue, 09 Dec 2014 14:50:40 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[Robodisco]]></dc:creator>
+        <description><![CDATA[
+            <p>Cheers mate. Dont worry I wont “quote you on it” <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I’m actually rolling direct uploads for official release.</p>
+<p>Adam</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/15</link>
+        <pubDate>Tue, 09 Dec 2014 14:50:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[jnye131]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/robodisco">@Robodisco</a> sadly I had very little to do with the implementation - but I was involved in discussions around what solution to use. I know that the legal department were happy with dropbox (please do your own due diligence here though).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/14</link>
+        <pubDate>Tue, 09 Dec 2014 11:10:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[Robodisco]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/steve">@steve</a> for mentioning that. Yes uploading to my system seems to be the best possible solution to this. Though I may use email for my first 5 beta users just to get this thing out of the door.</p>
+<p><a class="mention" href="/u/jnye131">@jnye131</a> thats interesting - could be good enough for my early beta stage for first few customers. I looked at the docs briefly. Can you confirm is it just a case of dropping in the javascript tag to get it working?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/13</link>
+        <pubDate>Sun, 07 Dec 2014 13:00:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[jnye131]]></dc:creator>
+        <description><![CDATA[
+            <p>We do something similar in the day job - and use the Dropbox API and application folders to save sensitive documents - it’s encrypted, complies with safe harbour legislation. Worth looking into.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/12</link>
+        <pubDate>Sat, 06 Dec 2014 22:38:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="2381">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/robodisco/40/2674_1.png" class="avatar"> Robodisco:</div>
+<blockquote>
+<p>My lofi approach is to just create a mailto link in their dashboard and let them email their pdf to me.</p>
+</blockquote>
+</aside>
+<p>Just in case you don’t know, email works on a ‘store and forward’ mechanism.  Any system which handles the email could read the contents.  So if you are concerned about the client’s information, you may want to have them upload the PDF directly to your system.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/11</link>
+        <pubDate>Sat, 06 Dec 2014 19:01:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[Robodisco]]></dc:creator>
+        <description><![CDATA[
+            <p>Cheers Andy. Im on mac so ill rummage through settings and get it going.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/10</link>
+        <pubDate>Sat, 06 Dec 2014 14:31:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="2381">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/robodisco/40/2674_1.png" class="avatar"> Robodisco:</div>
+<blockquote>
+<p>I’ll look into encrypting my harddrive.</p>
+</blockquote>
+</aside>
+<p>Mac OS X has a built in encryption option.</p>
+<p>So do some versions of Windows ( BitLocker IIRC).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/9</link>
+        <pubDate>Sat, 06 Dec 2014 10:58:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[Robodisco]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andy">@Andy</a> <a class="mention" href="/u/coreysnipes">@coreysnipes</a> <a class="mention" href="/u/kalenjordan">@kalenjordan</a></p>
+<p>I’ll look into encrypting my harddrive.</p>
+<p>And your right - all things point to lofi just being counterproductive - sending wrong trust signals, exposing me to potential lawsuits regardless of terms. Best to just use ssl and store securely.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/8</link>
+        <pubDate>Sat, 06 Dec 2014 03:21:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>I will say that the fact that you’re worrying about this is a good sign.  It’s good that you care.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/7</link>
+        <pubDate>Fri, 05 Dec 2014 22:35:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/andy">@Andy</a> on this.  Give them a secure channel to submit that stuff, store it securely, and take on that responsibility.  Otherwise you raise questions about whether they should be trusting you to provide the service at all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/6</link>
+        <pubDate>Fri, 05 Dec 2014 20:29:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="2381">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/robodisco/40/2674_1.png" class="avatar"> Robodisco:</div>
+<blockquote>
+<p>I want my users to scrub out any sensitive client info</p>
+</blockquote>
+</aside>
+<p>I think that rather defeats the whole object. It might also send out the message that you aren’t to be trusted.</p>
+<aside class="quote" data-post="1" data-topic="2381">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/robodisco/40/2674_1.png" class="avatar"> Robodisco:</div>
+<blockquote>
+<p>'We will not be held responsible for any. loss or damage…" legalese speak.</p>
+</blockquote>
+</aside>
+<p>IMO If you are running a professional service you need to take responsibility for their data. Its not hard to get them to submit their document securely via SSL and encrypt your harddisk, is it?</p>
+<p>If you are negligent with their information, I think you will probably be liable, no matter what terms and conditions they have signed (under English law anyway).</p>
+<p>If you have a limited company, it gives you some protection from being sued personally.</p>
+<p>IANAL. Usual caveats apply.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/5</link>
+        <pubDate>Fri, 05 Dec 2014 17:12:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[Robodisco]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/ideasasylum">@ideasasylum</a> and <a class="mention" href="/u/kalenjordan">@kalenjordan</a></p>
+<p>Re: scrubbing being coutner productive to onboarding</p>
+<p>Yes I agree. I’d rather they just send as is.</p>
+<p>Re: My server and terms and conditions should already be secure and lock tight</p>
+<p>They are but their client proposals are being sent to me as an individual via email which are then downloaded to my local machine. It just feels like a gray area.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/4</link>
+        <pubDate>Fri, 05 Dec 2014 14:58:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey man - nice idea!  Seems kind of like fundmentally more of a legal question than an onboarding question though.  I’m not a lawyer or anything but my thoughts on that is that if you have proposal software, they’re already going to be storing all of their proposal information in your system, so you’re going to need to work out the privacy concerns around that at some point anyways.</p>
+<p>So I would say don’t complicate the process of having them send you a proposal.  Just have them send it to you as-is so that it will be quick for them.</p>
+<p>For people who are more privacy-conscious for whatever reason, they will probably just scrub it themselves without you even asking.</p>
+<p>I have a similar situation for my app - I get access to my customers’ backend sometimes to help to install my extension.  Haven’t had any issues so far (famous last words).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/3</link>
+        <pubDate>Fri, 05 Dec 2014 14:06:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[ideasasylum]]></dc:creator>
+        <description><![CDATA[
+            <p>It sounds like maybe Wufoo or TypeForm could make the experience a little nicer.</p>
+<p>I wouldn’t get them to strip out sensitive data — it creates work for them (twice! Once to strip it out and again to put it back in the app) and they are already trusting you with their complete proposal details. Assuming you have access to the server from your laptop, there’s no logical difference between that and having the file locally on your drive. You need to take precautions either way (disk encryption, primarily).</p>
+<p>Edited to add: since they are customers, they’ve already agree to T&amp;C’s which should cover the manual case too</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/2</link>
+        <pubDate>Fri, 05 Dec 2014 13:18:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+      <item>
+        <title>Concierge and covering yourself</title>
+        <dc:creator><![CDATA[Robodisco]]></dc:creator>
+        <description><![CDATA[
+            <p>So I want to offer a concierge service for new users of my proposal software. One option is for them to be able to submit one of their proposals and I’ll get it written up and formatted in the app to lower onboarding friction.</p>
+<p>My lofi approach is to just create a mailto link in their dashboard and let them email their pdf to me.</p>
+<p>I’ll then be saving their proposal to my laptop and perhaps in the future outsource this to a PA. For that reason I want my users to scrub out any sensitive client info before submitting and know I wont be held responsible for any loss / theft etc.</p>
+<p>Because I’m trying to keep things simple i dont want to create a db record for an ‘Agree to terms’ checkbox.</p>
+<p>I was thinking of simply specifying in the mailto link, a predefined email body containing some 'We will not be held responsible for any. loss or damage…" legalese speak.</p>
+<p>Would this be enough? Is there a better way? Any nicer way of saying the above (it is for onboarding after all) ???</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381/1</link>
+        <pubDate>Fri, 05 Dec 2014 08:28:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2381-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/concierge-and-covering-yourself/2381.rss">Concierge and covering yourself</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Help with the QA Process - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Hey guys, 
+
+I&amp;#39;m hoping someone can steer me in the right direction.  
+
+My SaaS product launched a couple months ago... 
+
+I have a test server setup where new commits go before they go live. Currently, it is on me to go t&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="2400.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Help with the QA Process&#39;" href="2400.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/help-with-the-qa-process/2400" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/help-with-the-qa-process/2400" />
+<meta property="og:title" content="Help with the QA Process" />
+<meta name="twitter:title" content="Help with the QA Process" />
+<meta property="og:description" content="Hey guys,  I’m hoping someone can steer me in the right direction.  My SaaS product launched a couple months ago…  I have a test server setup where new commits go before they go live. Currently, it is on me to go through and test new things. However, there are instances where one new thing seems to work fine, but it will break something else. I also don’t want to spend my time doing this.  We don’t have unit testing or anything like that in place. I don’t have any formal use cases or anything li..." />
+<meta name="twitter:description" content="Hey guys,  I’m hoping someone can steer me in the right direction.  My SaaS product launched a couple months ago…  I have a test server setup where new commits go before they go live. Currently, it is on me to go through and test new things. However, there are instances where one new thing seems to work fine, but it will break something else. I also don’t want to spend my time doing this.  We don’t have unit testing or anything like that in place. I don’t have any formal use cases or anything li..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="4 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="10 ❤" />
+<meta property="article:published_time" content="2014-12-09T18:14:29+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="2400.html">Help with the QA Process</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JustinMcGill.html'><span itemprop='name'>JustinMcGill</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-09T18:14:29Z' class='post-time'>
+                December 9, 2014,  6:14pm
+              </time>
+              <meta itemprop='dateModified' content='2014-12-09T18:14:29Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hey guys,</p>
+<p>I’m hoping someone can steer me in the right direction.</p>
+<p>My SaaS product launched a couple months ago…</p>
+<p>I have a test server setup where new commits go before they go live. Currently, it is on me to go through and test new things. However, there are instances where one new thing seems to work fine, but it will break something else. I also don’t want to spend my time doing this.</p>
+<p>We don’t have unit testing or anything like that in place. I don’t have any formal use cases or anything like that written up.</p>
+<p>I have a job post up on oDesk for some QA testers and I’ve gotten over 100 different applications, but I haven’t managed a QA process before. I am wondering what advice the community has for something like this?</p>
+<p>Should I write the test cases myself when I add tickets to <a href="http://Sprint.ly" rel="nofollow noopener">Sprint.ly</a> or should I have a lead QA guy review the tickets and prepare the case studies.</p>
+<p>Do I hire multiple QA testers and have them all test the same things to make sure it goes through a few layers before getting pushed or do I have them all test different things? Having everything go through a few layers I think would help me to weed out poor QA testers.</p>
+<p>Is there any software specifically for this type of process? I don’t want to use JIRA (I want to stick with <a href="http://Sprint.ly" rel="nofollow noopener">Sprint.ly</a> as I just moved there from Codebase). I also don’t want any enterprise level software. Am I better off just setting up a spreadsheet for this instead and sharing it with the QA testers?</p>
+<p>What qualifications should I look for in a QA tester? Should they have some level of programming experience? I have to sort through quite a few applicants…</p>
+<p>Any guidance here would be much appreciated!</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/kalenjordan'><span itemprop='name'>kalenjordan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-10T01:39:38Z' class='post-time'>
+                December 10, 2014,  1:39am
+              </time>
+              <meta itemprop='dateModified' content='2014-12-10T01:39:38Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’d be curious to know more in depth an example of the type of thing that breaks after something else is fixed.</p>
+<p>I tend to believe that the best place to invest time is in writing clean, maintainable code in the first place as much as possible.</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/pwim'><span itemprop='name'>pwim</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-10T01:51:57Z' class='post-time'>
+                December 10, 2014,  1:51am
+              </time>
+              <meta itemprop='dateModified' content='2014-12-10T01:51:57Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="1" data-topic="2400">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/justinmcgill/40/3709_1.png" class="avatar"> JustinMcGill:</div>
+<blockquote>
+<p>We don’t have unit testing or anything like that in place. I don’t have any formal use cases or anything like that written up.</p>
+</blockquote>
+</aside>
+<p>Without having detailed scenarios describing how the system is supposed to work, I don’t think you’ll have any luck with outsourcing QA. Without these scenarios, the people you hire through a site like oDesk aren’t likely to do more than stick random text into your different form fields and see if something crashes.</p>
+<p>Rather than investing in hiring and onboarding an external QA person, I think you would be better served in writing integration tests. With integration tests, you simulate the series of actions a user goes through on your site, and put assertions about the results. In the Ruby on Rails world, we use <a href="http://www.rubydoc.info/github/jnicklas/capybara" rel="nofollow noopener">Capybara</a> to do this, but your framework probably has an analogous solution. Once you learn how to write these integration tests, the effort involved in creating a new test is roughly equivalent to the effort it would take to describe to an outsourced QA person the scenario you want them to test; however, it has the advantage of being a one time cost, whereas with a QA person you’d need to have them go through the scenario each time you want to deploy a new version. Without having integration tests, you’ll be playing whack-a-mole each time you find and fix a bug, so I think it is worth investing in it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Rhino.html'><span itemprop='name'>Rhino</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-10T10:19:43Z' class='post-time'>
+                December 10, 2014, 10:19am
+              </time>
+              <meta itemprop='dateModified' content='2014-12-10T10:19:43Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>As you’ve identified - I think in most cases to be able to successfully pick someone on the likes of oDesk (never mind even managing the job) you need to have a reasonable idea about how to do the job yourself.</p>
+<p>So in your case what about using a outsourcing company that specialises in QA testing? They should already have experienced staff and procedures in place and should be able to help you prepare test plans etc.</p>
+<p>Andy has written up his experiences here<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=32" class="site-icon" width="32" height="32">
+      <a href="https://successfulsoftware.net/2009/12/09/outsourcing-software-testing/" target="_blank" title="11:09PM - 09 December 2009">Successful Software – 9 Dec 09</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:200/115;"><img src="https://i1.wp.com/successfulsoftware.wordpress.com/files/2009/12/1_029_nc.jpg?fit=440%2C330" class="thumbnail" width="200" height="115"></div>
+
+<h3><a href="https://successfulsoftware.net/2009/12/09/outsourcing-software-testing/" target="_blank">Outsourcing software testing</a></h3>
+
+<p>Every time I write a post for this blog I carefully check it for typos. I then get my wife to proof-read it. She always finds at least one typo. Often there will be whole words missing that my brai…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>I can personally recommend TestLab2 one of the companies he mentions - <a href="http://www.testlab2.com/">http://www.testlab2.com/</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Rhino.html'><span itemprop='name'>Rhino</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-10T10:20:52Z' class='post-time'>
+                December 10, 2014, 10:20am
+              </time>
+              <meta itemprop='dateModified' content='2014-12-10T10:20:52Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Unit/integration/ui tests - these are a good idea for sure, but can’t capture everything.</p>
+<p>An example - some UI feature that makes perfect sense to you but is confusing to everyone else should be flagged by a good QA person.</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/pwim'><span itemprop='name'>pwim</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-10T11:09:20Z' class='post-time'>
+                December 10, 2014, 11:09am
+              </time>
+              <meta itemprop='dateModified' content='2014-12-10T11:09:20Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That’s true - you can’t catch UX issues with automated testing.</p>
+<p>If you’re looking to test the user experience of your product though, I think the best way of doing that is to have actual customers test it for you. Mention to a couple of your power-user customers that you’re launching a new feature, and would like to have them try it out before you launch it. Assuming they agree, ideally you meet with them in person, say over coffee. Then present them with a scenario, that describes their goal but not how they accomplish it (for instance if you added an invoicing feature to a time tracking app, “you want to invoice a customer for the hours you tracked over the last month”). By going directly to the customer, it’s a win all around: you get better feedback than outsourcing and the customer gets to feel involved in the evolution of the product.</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Rhino.html'><span itemprop='name'>Rhino</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-10T11:41:18Z' class='post-time'>
+                December 10, 2014, 11:41am
+              </time>
+              <meta itemprop='dateModified' content='2014-12-10T11:41:18Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Come on! In a non trivial bit of software have you never caused a bug by fixing something else? No “quick little change” that caused unforeseen problems elsewhere?</p>
+<p>            <a href="https://imgur.com/r/funny/HTisMpC" target="_blank" rel="nofollow ugc noopener" class="onebox">
+              <img src="https://i.imgur.com/HTisMpC.jpg?fb" title="99 little bugs in the code..." alt="Imgur" height="315" width="600">
+            </a>
+</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JustinMcGill.html'><span itemprop='name'>JustinMcGill</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-10T13:04:35Z' class='post-time'>
+                December 10, 2014,  1:04pm
+              </time>
+              <meta itemprop='dateModified' content='2014-12-10T13:04:35Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Very helpful - thank you!</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/kalenjordan'><span itemprop='name'>kalenjordan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-10T14:41:56Z' class='post-time'>
+                December 10, 2014,  2:41pm
+              </time>
+              <meta itemprop='dateModified' content='2014-12-10T14:41:56Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Haha totally man.  I’ve definitely done that my fair share of times and continue to do so on a regular basis!  Sometimes when I write comments from my phone I don’t have the typing bandwidth to properly frame my comments.  I really wish they would put “sent from phone” or something like that in the signature so I didn’t come out looking like a complete toolbag.</p>
+<p>I’m not suggesting that looking into automated testing (AT) is a bad idea.  Personally I don’t do much AT.  I’ve done some back in the day and the conclusion that I ended up coming to personally was that it was a better use of my time to focus on code quality.</p>
+<p>I could go into a lot of detail around that if you were curious, but I’m guessing you’re not <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I’m guessing that most people would say AT is a must for any project these days, and I’m probably in the minority of people who isn’t on that bandwagon yet.  That said, I do believe that there are certain types of problems that lend themselves much better to AT.  For example I remember hearing about how Facebook has a lot of AT around their news feed privacy settings.</p>
+<p>There are just so many different permutations of options, it’s the kind of problem where you could <em>very easily</em> make a small fix that accidentally broke something else in some other privacy setting.</p>
+<p>I actually have a few areas of my app which I’ve been considering doing some AT around.</p>
+<p>But the reason why I was curious to know more in depth about the actual case where something was broken by accident is because I’ve been in work environments before where we tried to slap AT on top of a lot of technical debt just due to unmaintainable code, and IMO that isn’t going to help much.</p>
+<p>Obvoiusly we’re all human and we all make mistakes all the time.  I just think that certain types of mistakes may be better addressed outside of AT.</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anton_gogolev.html'><span itemprop='name'>anton_gogolev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-11T13:09:28Z' class='post-time'>
+                December 11, 2014,  1:09pm
+              </time>
+              <meta itemprop='dateModified' content='2014-12-11T13:09:28Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="https://discuss.bootstrapped.fm/u/justinmcgill">@JustinMcGill</a> We sometimes use a so-called Staged Rollout, when we divert (on a load balancer) a small percentage of users to a new version of a web application and monitor where and what is failing. Over time, we increase the percentage.</p>
+<p>This has proven to be very valuable, because in case of a major malfunction we can always just remove the server with the updated application from the LB and things will return to normal in no time.</p>
+<p>Of course, this can be very hard to implement in certain scenarios. There are a lot of things to consider, particularly concerning shared state (database schema and data, sessions, etc.)</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jadb.html'><span itemprop='name'>jadb</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-11T13:45:42Z' class='post-time'>
+                December 11, 2014,  1:45pm
+              </time>
+              <meta itemprop='dateModified' content='2014-12-11T13:45:42Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="https://discuss.bootstrapped.fm/u/justinmcgill">@JustinMcGill</a> - here’s something I had read back in 2013 about declining jobs:</p>
+<blockquote>
+<h3>5. Quality Assurance Specialist and Managers</h3>
+<p>Hiring professionals in the Dice survey placed Quality Assurance (QA) on the “low priority” side of the ledger. Do not expect this to change. These days, the tech industry seems to be following Google’s lead and turning everyone into beta testers. Users are the ultimate quality assurance staff - and they don’t get paid!</p>
+</blockquote>
+<p>(<a href="http://readwrite.com/2013/05/01/10-technology-skills-no-longer-in-demand" rel="nofollow noopener">source</a>)</p>
+<p>For our own applications, we run suites of unit &amp; acceptance tests (automated on each commit/pull request/merge), deploy only from CI server (using CircleCI) and keeping the GUI/browser tests very scarce (probably once every 60 days).</p>
+<p>For the problems that do slip (because they do no matter what we’ve tried), they aren’t usually ‘major’ and users report them or we catch them in our logs (those are another important part of QA IMO).</p>
+<p>Hoping that helps.</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jadb.html'><span itemprop='name'>jadb</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-11T13:51:06Z' class='post-time'>
+                December 11, 2014,  1:51pm
+              </time>
+              <meta itemprop='dateModified' content='2014-12-11T13:51:06Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>so-called Staged Rollout, when we divert (on a load balancer) a small percentage of users to a new version of a web application and monitor where and what is failing</p>
+</blockquote>
+<p>Doing that can be costly on different fronts - why not use feature toggling?</p>
+<p>From <a href="http://en.wikipedia.org/wiki/Feature_toggle" rel="nofollow noopener">wikipedia</a>:</p>
+<blockquote>
+<p>Feature Toggle is a technique in software development that attempts to provide an alternative to maintaining multiple source code branches, called feature branches.</p>
+</blockquote>
+<blockquote>
+<p>Continuous release and continuous deployment enables you to have quick feedback about your coding. This requires you to integrate your changes as early as possible. Feature branches introduce a by-pass to this process. Feature toggles brings you back to the track, but the execution paths of your feature is still “dead” and “untested”, if a toggle is “off”. But the effort is low to enable the new execution paths just by setting a toggle to “on”.</p>
+</blockquote>
+<p>If you are using PHP, here’s a library I had released some time ago: <a href="https://github.com/jadb/feature_toggle" rel="nofollow noopener">jadb/feature_toggle</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/danielstudds'><span itemprop='name'>danielstudds</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-11T16:40:40Z' class='post-time'>
+                December 11, 2014,  4:40pm
+              </time>
+              <meta itemprop='dateModified' content='2014-12-11T16:40:40Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I recently hired a QA on oDesk, and it’s working great.</p>
+<p>I have no specs. I have no test cases. I threw the app and some product demo vids to the tester, and she started testing and raising defects. We have a call about once a week where she asks any questions, and we tic tac back and forth on email during the week. I’m very, very happy with how it’s going.</p>
+<p>Now, automated testing is awesome! I do have a bunch of unit tests, and a couple of automated end-to-end tests, but I’ve got a complex app with a lot of edge cases, and I know that I’m gonna miss some either first or second or third time around. So a second set of eyes is brilliant.</p>
+<p>Code quality is also awesome! But on the other hand, so is shipping something, Pareto principle and all.</p>
+<p>So, down to brass tacks. How did I find this amazing QA?</p>
+<p>Two weird tricks:</p>
+<ol>
+<li>I went through a few hundred profiles to find good candidates.</li>
+<li>I got them to record screen casts of bugs in a demo app.</li>
+</ol>
+<p>I think those are the key points, but here’s the full process I followed (in brief.)</p>
+<ol>
+<li>I put a bunch of effort in to the job ad, to make it sound appealing.</li>
+<li>I spent a couple of hours searching for and inviting good candidates (I ended up hiring one of these).</li>
+<li>Narrowed it down to only 5/5 English and independent contractors</li>
+<li>Further screened applicants using a few questions in the job ad. (I have opinions about testing, I looked for people with matching opinions. This works less well if you don’t have opinions.)</li>
+<li>Put up a demo app with some hilarious defects. Employed candidates for an hour at their going rate to find defects. They needed to write up a defect report, and record a screencast with a voiceover.</li>
+</ol>
+<p>The screen casts are golden. It let me see the quality of their work, and hear the quality of their English, without leaving the comfort of my browser.</p>
+<p>I probably put about half a day of effort into preparing the process, but it’s paid dividends.</p>
+<p>Good luck!</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="5" />
+           <span class='post-likes'>5 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JustinMcGill.html'><span itemprop='name'>JustinMcGill</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-11T17:46:18Z' class='post-time'>
+                December 11, 2014,  5:46pm
+              </time>
+              <meta itemprop='dateModified' content='2014-12-11T17:46:18Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks so much for this breakdown <a class="mention" href="https://discuss.bootstrapped.fm/u/danielstudds">@danielstudds</a>. This is a huge help!</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/kalenjordan'><span itemprop='name'>kalenjordan</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="2400.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-12-12T12:38:44Z' class='post-time'>
+                December 12, 2014, 12:38pm
+              </time>
+              <meta itemprop='dateModified' content='2014-12-12T12:38:44Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Wow fantastic process!  Thanks for documenting. Nicely done!</p>
+        </div>
+
+        <meta itemprop='headline' content='Help with the QA Process'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Please validate my idea</title>
+    <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393</link>
+    <description>Hi,
+
+I am thinking about implementing customer support which automatically syncs with Github/Gitlab/any other bug tracking software. The idea is to separate customer issues from internal issues and provide sync between the issues.
+
+**Flow:** Customer reports an issue -&gt; Project manager discusses the issue with customer and creates related issue in internal bug tracker (just pushing the button) -&gt; Customer notified about issue progress (state of internal issue synced with customer issue). Internal issues are not visible to Customer.
+
+The market is (as I think): web studios / web agencies / small software companies.
+
+Please advice - do you think there is a market interested in the idea?
+
+Also maybe you can suggest some web resources where I can find and contact web studios (agencies/companies).
+
+Thanks!</description>
+    
+    <lastBuildDate>Thu, 29 Sep 2016 07:58:06 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Please validate my idea</title>
+        <dc:creator><![CDATA[kirill_salykin]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rfctr">@rfctr</a> <a class="mention" href="/u/jitbit">@jitbit</a> <a class="mention" href="/u/dgrigg">@dgrigg</a> thanks for your replies! I have a lot to think about.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/9</link>
+        <pubDate>Thu, 29 Sep 2016 07:58:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4393-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss">Please validate my idea</source>
+      </item>
+      <item>
+        <title>Please validate my idea</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>The idea sounds interesting from a development perspective but I’m not sure your target market would go for it. I have been marketing to that target market for the past few years and one thing I have learned is that it is difficult to get them to change processes they have in place, even when those processes are very inefficient, especially around customer/team communication. The key selling point has to be something that they can instantly recognize the benefit for themselves and their bottom line.</p>
+<p>Having said that, there is certainly a decent market to go after. Dig around on the internet and you can quickly find lists of web agencies/studios to contact. It’s a lot of manual lifting but the info is there to be had. Cold calling is helping, especially at the start. The one interesting thing I have seen in this market is that because people move around so much, if they find a service/tool they like they tend to bring that with them when they transition to a new company. I have a number of customers who have ‘taken’ my saas (<a href="https://pageproofer.com" rel="nofollow noopener">https://pageproofer.com</a>) with them when they move around.</p>
+<p>The best advice I can give is find some agencies/studios and reach out to them with the idea to see if there is any interest before going to far.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/8</link>
+        <pubDate>Wed, 28 Sep 2016 14:44:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4393-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss">Please validate my idea</source>
+      </item>
+      <item>
+        <title>Please validate my idea</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>It really is a viable idea BUT</p>
+<p>First of all, most helpdesk software apps already do that. It’s just not marketed loudly and not on the surface. [shamelss plug] for example, <a href="https://www.jitbit.com/helpdesk/" rel="nofollow noopener">our app</a> has integrations with JIRA/Github/Bitbucket/etc. And also Trello/Asana whatever.</p>
+<p>Second of all - these days, with things like IFFT, Zapier and SaaSler, when people with literally no programming experience can connect two different apps together (like Trello goes to Github, then Github goes to Basecamp, then Basecamp triggers some Invoicing app etc etc etc) - the “integration product” niche is kinda shrinking.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/7</link>
+        <pubDate>Wed, 28 Sep 2016 14:24:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4393-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss">Please validate my idea</source>
+      </item>
+      <item>
+        <title>Please validate my idea</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="4393">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kirill_salykin/40/2914_1.png" class="avatar"> kirill_salykin:</div>
+<blockquote>
+<p>I was thinking about completely separate tickets (not just comments), so customer cant see internal issue.<br>
+Treat it like back end and front end.</p>
+</blockquote>
+</aside>
+<p>Even that is easily achievable by having a “public” flag for an issue. I just noticed that even JIRA has it.</p>
+<aside class="quote" data-post="5" data-topic="4393">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kirill_salykin/40/2914_1.png" class="avatar"> kirill_salykin:</div>
+<blockquote>
+<p>I am also very concerned about the market size</p>
+</blockquote>
+</aside>
+<p>I’m afraid there’s simply no market. I believe you’ve found a good programming task (being there; google TD2JIRA) and are excited about it; but <strong>that task is not a viable business</strong>.</p>
+<p>P.S. The integrations like that, if someone needs it, are, IMHO, easier to handle with writing a Zapier plugin nowadays.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/6</link>
+        <pubDate>Wed, 28 Sep 2016 01:17:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4393-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss">Please validate my idea</source>
+      </item>
+      <item>
+        <title>Please validate my idea</title>
+        <dc:creator><![CDATA[kirill_salykin]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your reply.</p>
+<p>I was thinking about completely separate tickets (not just comments), so customer cant see internal issue.<br>
+Treat it like back end and front end.</p>
+<p>I am also very concerned about the market size, maybe you could give couple advices how to check or measure it?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/5</link>
+        <pubDate>Mon, 26 Sep 2016 08:31:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4393-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss">Please validate my idea</source>
+      </item>
+      <item>
+        <title>Please validate my idea</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4393">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kirill_salykin/40/2914_1.png" class="avatar"> kirill_salykin:</div>
+<blockquote>
+<p>The idea is to separate customer issues from internal issues and provide sync between the issues.</p>
+</blockquote>
+</aside>
+<p>I’m not a big expert in agencies task trackers, but in those I’ve seen (only 2, frankly) each comment/update could be marked as public (=customer sees it); by default they are internal, I guess.</p>
+<p>That simple tweak eliminates the need in complex syncing between two different task/bug tracking applications.</p>
+<p>In short, I do not believe this idea has a market.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/4</link>
+        <pubDate>Thu, 22 Sep 2016 23:24:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4393-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss">Please validate my idea</source>
+      </item>
+      <item>
+        <title>Please validate my idea</title>
+        <dc:creator><![CDATA[kirill_salykin]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your reply.</p>
+<p>I was thinking about different customers: customers who orders web application implementation in web agency.<br>
+I guess <a href="https://www.uservoice.com/" rel="nofollow noopener">https://www.uservoice.com/</a> works a bit differently.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/3</link>
+        <pubDate>Thu, 22 Sep 2016 20:41:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4393-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss">Please validate my idea</source>
+      </item>
+      <item>
+        <title>Please validate my idea</title>
+        <dc:creator><![CDATA[shanelabs]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Kirill - I like the idea, thanks for sharing. The main concern I would have is figuring out the size of the studio/agency that is your ideal customer. Too small and they can just communicate to customers via email. Too large and they probably don’t care to take bug reports / feature requests.</p>
+<p>I know from the feature request aspect, one of your competitors would be <a href="https://www.uservoice.com/" rel="nofollow noopener">https://www.uservoice.com/</a> - That’s great in that it validates your idea. How would you be different than them?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/2</link>
+        <pubDate>Thu, 22 Sep 2016 20:22:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4393-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss">Please validate my idea</source>
+      </item>
+      <item>
+        <title>Please validate my idea</title>
+        <dc:creator><![CDATA[kirill_salykin]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>I am thinking about implementing customer support which automatically syncs with Github/Gitlab/any other bug tracking software. The idea is to separate customer issues from internal issues and provide sync between the issues.</p>
+<p><strong>Flow:</strong> Customer reports an issue -&gt; Project manager discusses the issue with customer and creates related issue in internal bug tracker (just pushing the button) -&gt; Customer notified about issue progress (state of internal issue synced with customer issue). Internal issues are not visible to Customer.</p>
+<p>The market is (as I think): web studios / web agencies / small software companies.</p>
+<p>Please advice - do you think there is a market interested in the idea?</p>
+<p>Also maybe you can suggest some web resources where I can find and contact web studios (agencies/companies).</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393/1</link>
+        <pubDate>Thu, 22 Sep 2016 19:52:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4393-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4393.rss">Please validate my idea</source>
+      </item>
+  </channel>
+</rss>

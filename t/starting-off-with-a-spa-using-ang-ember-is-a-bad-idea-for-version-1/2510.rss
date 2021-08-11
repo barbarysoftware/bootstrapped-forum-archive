@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+    <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510</link>
+    <description>With all the hype around SPA (single page applications) I always think to myself that people who start off going with a very fancy UI using ember/angular are really shooting themselves in the foot because the amount of time it takes to build a SPA is orders of magnitude higher than going with html with a sprinkle of jquery.
+
+Do you guys agree?   The only time I would say go with a SPA is if your major differentiator is going to be a better UI experience and with that you feel going with a SPA is the killer feature.
+
+Once you have traction and paying customers, you can then look at the pros/cons of going with improving your UI.</description>
+    
+    <lastBuildDate>Fri, 09 Jan 2015 15:11:29 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>I think this is generally sound advice, it’s hard to argue with.</p>
+<p>That said, I built the UI portion of bliss in a language and framework I didn’t already know - Scala and Lift. Yeah, there was a learning curve, but the bits of Lift in particular that made developing a web app about 10x faster than the alternatives in J2EE… that partially made up for it, AND I learned me some Scala.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/17</link>
+        <pubDate>Fri, 09 Jan 2015 15:11:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="15" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/johnf/40/1193_1.png" class="avatar"> johnf:</div>
+<blockquote>
+<p>So sure, you do have to write if(something == nothing ) then {fail} on the server and then someplace in the html write something like  in the client.</p>
+</blockquote>
+</aside>
+<p>That’s what I was referring to.  There are other advantages and disadvantages, as you point out, but you can’t avoid validation on the server.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/16</link>
+        <pubDate>Fri, 09 Jan 2015 13:00:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="davidw" data-post="13" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/davidw/40/3888_2.png" class="avatar"> davidw:</div>
+<blockquote>
+<p>No, validation is not optional server side - it must happen there too.  Otherwise your user can just look at the parameters they are sending, and craft their own message with curl or whatever.  So it has to happen server side.  What’s optional is adding it client side so that it’s quicker/cleaner/nicer for the UI, but at that point you’ve just doubled your work.</p>
+</blockquote>
+</aside>
+<p>Haha maybe I’m explaining this poorly.  Have you written a SPA before?</p>
+<p>In a plain old form submission app you submit details, then validate the details, then in the case of a validation error return the form the user submitted (so you can sync state) AND the validation details.</p>
+<p>In a SPA you you submit details, then validate the details, then in case of error YOU DONT have to return the form data the user submitted (state is already synced because you never left! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> ) AND the validation details.</p>
+<p>You know all that code you have to write to make sure the form the user submitted is the form they get after a validation error?  You know when you have to set the dropdown value to what the user wants to change it to and not whats in the database?  If there are errors, show this message here and blah blah.  You don’t want them to do the same form tweaks twice right?</p>
+<p>Well all that with a SPA isn’t necessary…  does that make sense?</p>
+<p>Ok so more specifically addressing the “doubling” comment this is probably from a misunderstanding on how to take advantage of modern frameworks to assist in keeping server and client logic in sync and maybe just a lack of experience in writing SPAs.</p>
+<p>So sure, you do have to write if(something == nothing ) then {fail} on the server and then someplace in the html write something like  in the client. However, because you know this is a SPA problem, what you really want to do is have a html view engine/renderer that can take the model as defined in your server logic and then output the required html automatically for you in the front end.  Every web framework has a way to do this.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/RobinMalfait/Laravel-auto-form-generator" target="_blank">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars3.githubusercontent.com/u/1834413?s=400&amp;v=4" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/RobinMalfait/Laravel-auto-form-generator" target="_blank">RobinMalfait/Laravel-auto-form-generator</a></h3>
+
+<p>Laravel automatic form generator. Contribute to RobinMalfait/Laravel-auto-form-generator development by creating an account on GitHub.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><a href="http://lostechies.com/jimmybogard/2014/07/22/conventional-html-in-asp-net-mvc-replacing-form-helpers/" class="onebox" target="_blank">http://lostechies.com/jimmybogard/2014/07/22/conventional-html-in-asp-net-mvc-replacing-form-helpers/</a></p>
+<p>Sorry, is this getting ranty?</p>
+<p>Can we prefix further comments with people’s experience level in these frameworks?  I just feel like people who have never painted a house before are starting to talk about what brushes to use. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/15</link>
+        <pubDate>Thu, 08 Jan 2015 22:27:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>This is all irrelevant <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>You should only start your first product with a language/tech you know. Anything else is insane. The ONLY exception would be if your idea truly requires some special language/tech to even be possible. That pretty much applies to nobody on this board.</p>
+<p>I’ve made this mistake myself though. We did SPA with Snappy and it cost us tons of extra time and money because none of us knew much about it (and it was pretty new really a few years ago). We would have got it up and running way faster and better with only a few mostly irrelevant downsides by just doing it in a more traditional way.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/14</link>
+        <pubDate>Thu, 08 Jan 2015 22:25:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/johnf/40/1193_1.png" class="avatar"> johnf:</div>
+<blockquote>
+<p>That whole quote was about the code that synchronizes a virgin form with what the user enters and ties all that up with the validation messages don’t have to be written because you never actually leave the form via post submission.  Validation can still occur server side but all you have to return are the validation messages and SPA framework will tie everything together.</p>
+</blockquote>
+</aside>
+<p>No, validation is not optional server side - it <em>must</em> happen there too.  Otherwise your user can just look at the parameters they are sending, and craft their own message with curl or whatever.  So it has to happen server side.  What’s optional is adding it client side so that it’s quicker/cleaner/nicer for the UI, but at that point you’ve just doubled your work.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/13</link>
+        <pubDate>Thu, 08 Jan 2015 20:43:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/salman/40/1206_1.png" class="avatar"> Salman:</div>
+<blockquote>
+<p>When building a SPA you def. will add more UI sugar since you have so much more control, and with that your timelines and shipping dates will get stretched out.</p>
+</blockquote>
+</aside>
+<p>So the major point is if you decide to spend more time working with the UI you’ll be spending more working with the UI?  Fair enough. ;p</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/12</link>
+        <pubDate>Thu, 08 Jan 2015 20:42:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[Richard]]></dc:creator>
+        <description><![CDATA[
+            <p>My opinion: it depends.</p>
+<p>I’ve built both. I’d still use both methods depending on what I’m making. If the app is likely to become sophisticated, SPA immediately.</p>
+<p>If your app is something where most of the value can be realised in text, and slickness is a nice-to-have, then yup, a HTML app with some jQuery will do fine.</p>
+<p>What frustrated me with a HTML-first app was that it felt like we were continually working towards something but making it <em>really nice</em> was going to take far too much rework. Going direct to SPA, slower initially but it just feels designed properly. There’s space to refactor without starting from scratch. There’s no upper limit on how nice I can make it. I don’t build to save myself time now, I build so I hate my life less in 5 years time. It’s possible I’m prematurely optimising <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Build half an SPA, not a half-assed MPA. (With apologies to DHH.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/11</link>
+        <pubDate>Thu, 08 Jan 2015 20:06:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/johnf/40/1193_1.png" class="avatar"> johnf:</div>
+<blockquote>
+<p>Haha, so wouldn’t the fact you are totally new at angular and SPAs make the effort 2-3x harder and really had nothing to do with SPAs?</p>
+</blockquote>
+</aside>
+<p>That could be true, but from the open source code bases that I have seen there is allot of work going into designing the UI.  When building a SPA you def. will add more UI sugar since you have so much more control, and with that your timelines and shipping dates will get stretched out.   That’s basically the point I am making.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/10</link>
+        <pubDate>Thu, 08 Jan 2015 19:52:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/davidw/40/3888_1.png" class="avatar"> davidw:</div>
+<blockquote>
+<p>You’re not neglecting to do that on the server as well as the client, right?  It seems to me this kind of application pretty much forces you to duplicate that work,</p>
+</blockquote>
+</aside>
+<p>That whole quote was about the code that synchronizes a virgin form with what the user enters and ties all that up with the validation messages don’t have to be written because you never actually leave the form via post submission.  Validation can still occur server side but all you have to return are the validation messages and SPA framework will tie everything together.</p>
+<aside class="quote" data-post="8" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/salman/40/1206_1.png" class="avatar"> Salman:</div>
+<blockquote>
+<p>cheddarapp and he regretted going with backbone</p>
+</blockquote>
+</aside>
+<p>Well right, backbone is pretty much a framework for writing your own SPA framework.</p>
+<aside class="quote" data-post="8" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/salman/40/1206_1.png" class="avatar"> Salman:</div>
+<blockquote>
+<p>I am currently getting into angular</p>
+</blockquote>
+</aside>
+<p>Haha, so wouldn’t the fact you are totally new at angular and SPAs make the effort 2-3x harder and really had nothing to do with SPAs?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/9</link>
+        <pubDate>Thu, 08 Jan 2015 17:37:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>There are multiple areas where your application gets complicated.  Just take a look at the source code for discourse, specifically the UI side of things.  You have hundreds of javascript files, controllers, views, components, libraries, etc. etc.   Ofcourse there are advantages to all of this, but it sure does complicate the application.  On the server side you have to architecture things differently also.</p>
+<p>I do agree there is allot of benefit in a SPA, it also helps you be mobile friendly since your back-end is pretty much an API.</p>
+<p>But the reality of it is, most apps that I have seen did not start with a SPA (and never migrated to one either).  I remember reading a post by the developer who made cheddarapp and he regretted going with backbone b/c it took much longer to add new features.</p>
+<p>I guess what I am saying is, as a developer I also get caught up in the ‘whats new’ and cool and spend/waste allot of time learning and adapting but at the end of the day it is about shipping a product and more often that not having a SPA isn’t a deal breaker.  What I am arguing is you should think long and hard about going that route, especially for version 1.</p>
+<p>I am currently getting into angular and I just thought I would ask others if they feel the same in case I make the mistake myself <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">  (or get convinced it is a good idea)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/8</link>
+        <pubDate>Thu, 08 Jan 2015 16:08:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/johnf/40/1193_1.png" class="avatar"> johnf:</div>
+<blockquote>
+<p>You know all that code you have to write when a user submits a form and validation triggers and you have to send back the form with a message and oh god I’m already bored now.  Well that with a SPA is so much easier.</p>
+</blockquote>
+</aside>
+<p>You’re not neglecting to do that on the server as well as the client, right?  It seems to me this kind of application pretty much forces you to duplicate that work, or keep it on the server in any case, because you can’t really trust what’s coming from the client.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/7</link>
+        <pubDate>Thu, 08 Jan 2015 14:25:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/salman/40/1206_1.png" class="avatar"> Salman:</div>
+<blockquote>
+<p>but you also agreed with my points</p>
+</blockquote>
+</aside>
+<p>I don’t think I ever said it would take longer, just that it doesn’t matter if it did.</p>
+<aside class="quote" data-post="4" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/salman/40/1206_1.png" class="avatar"> Salman:</div>
+<blockquote>
+<p>faster you can validate your idea the better</p>
+</blockquote>
+</aside>
+<p>Is this your first saas?</p>
+<p>You should “validate” (which is one of those “bootstrapper ecosystem” words we use before we figured out “validation”  has been called market research for hundreds of years) before you even write a line of code.</p>
+<p>Generally speaking you should figure out of if you have a market, and then if you can reach that market and finally get that market to take an action (sign up for a newsletter) before you start developing anything.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/6</link>
+        <pubDate>Thu, 08 Jan 2015 12:33:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m way faster in angular than anything else, because that’s where I’ve spent all my time for the past two years. I think this is very much a matter of what tools you’re most familiar with.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/5</link>
+        <pubDate>Thu, 08 Jan 2015 10:46:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>I understand what you are saying, but you also agreed with my points <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"><br>
+Some people want to combine having fun and making a profit, and the faster you can validate your idea the better.  If my premise of it taking longer (maybe not orders of magnitude, but I would say it could take 2-3x longer) is correct, then it might not be a good idea after all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/4</link>
+        <pubDate>Thu, 08 Jan 2015 03:37:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="2510">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/salman/40/1206_1.png" class="avatar"> Salman:</div>
+<blockquote>
+<p>SPA is orders of magnitude higher than going with html with a sprinkle of</p>
+</blockquote>
+</aside>
+<p>Did you mean to use “orders” as in the plural here?</p>
+<p>Are you saying that if I think a app will take 400 hours it will actually take 40,000 (2 orders of magnitude bigger) hours at the very least?  <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I’m on my 4th angular project, 3rd saas application, and 2nd 100% full spa app from a combination of a full time job, freelancing and soloprenuering.  I’ve also written tons of jquery/jquery UI and knockout and fiddled with react and ember.  At this point you could say I’m very proficient at SPA’ing.</p>
+<p>The big benefit to SPAs is anything more complicated than basic CRUD grids and forms becomes so much easier to do without writing bespoke jquery or javascript.  Anything wizardy is so smooth with a SPA app over plain old server refreshing.</p>
+<p>The con of course is you have to write a little more code… well that depends… hmm. Actually it could be less.  You know all that code you have to write when a user submits a form and validation triggers and you have to send back the form with a message and oh god I’m already bored now.  Well that with a SPA is so much easier.</p>
+<p>Actually you know what, who cares if its 20% slower of even 50%.  SPA’s are slick apps which are fun to write.</p>
+<p>I should write about this angle more, but in general I think we, as a bootstrapper community, are making technical decisions trying to optimize some edge case that could have a negative effect on the mental health of the bootstrapping programmer.</p>
+<p>Look if you want to learn a new technology and be super cool about your tech stack and make a full SPA because and that will make you feel GOOD about what you are working on BUT it will take twice as long, well fuck it, take twice as long.  If you’re a decent programmer you are not going to be heading towards financial oblivion and don’t have any deadlines you have to make.  Well thats assuming you don’t quit your job way too early like I did, whoops…</p>
+<p><strong>Optimize the beginning stages of a saas for personal happiness.</strong> Once you have customers emailing you dumb support questions and your growth rate is a half a point of nothing and you have no idea why you just spend a year of your life building some glorified todo list thing you can still look back at the code and say “man, I learned a lot and that was FUN”.</p>
+<p>Building the product is the funnest part of SAAS, why would you rush that just so you can get to the un-fun parts sooner?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/3</link>
+        <pubDate>Thu, 08 Jan 2015 02:44:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>I would say it depends on how much experience you have with the tools and how much longer you think it will take. You need to remember changing later will be much more difficult.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/2</link>
+        <pubDate>Wed, 07 Jan 2015 23:56:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+      <item>
+        <title>Starting off with a SPA using ang/ember is a bad idea for version 1</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>With all the hype around SPA (single page applications) I always think to myself that people who start off going with a very fancy UI using ember/angular are really shooting themselves in the foot because the amount of time it takes to build a SPA is orders of magnitude higher than going with html with a sprinkle of jquery.</p>
+<p>Do you guys agree?   The only time I would say go with a SPA is if your major differentiator is going to be a better UI experience and with that you feel going with a SPA is the killer feature.</p>
+<p>Once you have traction and paying customers, you can then look at the pros/cons of going with improving your UI.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510/1</link>
+        <pubDate>Wed, 07 Jan 2015 22:45:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2510-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/starting-off-with-a-spa-using-ang-ember-is-a-bad-idea-for-version-1/2510.rss">Starting off with a SPA using ang/ember is a bad idea for version 1</source>
+      </item>
+  </channel>
+</rss>

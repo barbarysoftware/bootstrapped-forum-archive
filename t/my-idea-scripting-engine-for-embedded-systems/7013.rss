@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>My idea: scripting engine for embedded systems</title>
+    <link>https://discuss.bootstrapped.fm/t/my-idea-scripting-engine-for-embedded-systems/7013</link>
+    <description>My product is a virtual machine (VM) for embedded systems (think Arduino or mbed) and
+the respective compiler suite. It enables a faster development cycle, simplifies 
+remote management and adds support for scripting.
+
+The potential customers are companies in IoT, smart metering, transportation, robotics
+and industrial automation. These form a quite diverse set, but nonetheless share common
+pain points: long development cycles, products are hard to maintain, even harder to debug
+in the field, and their firmware rarely is updated.
+
+The VM, I plan to distribute as an open source library with a dual license, GPL v3 and
+commercial. The latter allows customers to integrate the VM in their products without
+having to release their source code.
+
+The compiler, on the other hand is closed source, and has an evaluation period after
+which a user license is required. Since the compiler is required to use the VM, I am
+assuming that customers who see value in using the VM, will buy compiler licenses even
+if they are also opening their source code 
+
+I know that:
+ 1) I am trying to sell to technically minded customers
+ 2) Part of the product is open source 
+
+As for 1), I suspect it will be hard but this is the area I work in, and that gives me confidence about the value the product is bringing. 
+
+And for 2), I am using open source as a way to distribute and market the product. For the potential customers I am considering, the alternative is to do in-person demos and sales. Which is not feasible for me (too expensive, too risky).
+
+That being said, I would like to have your comments on the idea.</description>
+    
+    <lastBuildDate>Tue, 28 Jul 2020 07:51:14 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/my-idea-scripting-engine-for-embedded-systems/7013.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>My idea: scripting engine for embedded systems</title>
+        <dc:creator><![CDATA[ngoncalves]]></dc:creator>
+        <description><![CDATA[
+            <p>My product is a virtual machine (VM) for embedded systems (think Arduino or mbed) and<br>
+the respective compiler suite. It enables a faster development cycle, simplifies<br>
+remote management and adds support for scripting.</p>
+<p>The potential customers are companies in IoT, smart metering, transportation, robotics<br>
+and industrial automation. These form a quite diverse set, but nonetheless share common<br>
+pain points: long development cycles, products are hard to maintain, even harder to debug<br>
+in the field, and their firmware rarely is updated.</p>
+<p>The VM, I plan to distribute as an open source library with a dual license, GPL v3 and<br>
+commercial. The latter allows customers to integrate the VM in their products without<br>
+having to release their source code.</p>
+<p>The compiler, on the other hand is closed source, and has an evaluation period after<br>
+which a user license is required. Since the compiler is required to use the VM, I am<br>
+assuming that customers who see value in using the VM, will buy compiler licenses even<br>
+if they are also opening their source code</p>
+<p>I know that:</p>
+<ol>
+<li>I am trying to sell to technically minded customers</li>
+<li>Part of the product is open source</li>
+</ol>
+<p>As for 1), I suspect it will be hard but this is the area I work in, and that gives me confidence about the value the product is bringing.</p>
+<p>And for 2), I am using open source as a way to distribute and market the product. For the potential customers I am considering, the alternative is to do in-person demos and sales. Which is not feasible for me (too expensive, too risky).</p>
+<p>That being said, I would like to have your comments on the idea.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-idea-scripting-engine-for-embedded-systems/7013/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-idea-scripting-engine-for-embedded-systems/7013/1</link>
+        <pubDate>Tue, 28 Jul 2020 07:51:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7013-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-idea-scripting-engine-for-embedded-systems/7013.rss">My idea: scripting engine for embedded systems</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Best practices for account cancellation</title>
+    <link>https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228</link>
+    <description>If you have a SAAS with monthly subscriptions (mine uses laravel and stripe), what are you doing when someone cancels an account? Do you let them keep access until the current subscription month is up? do you cancel right away and refund the money back? 
+
+If you do let the account run to the end of the paid subscription, how are you handling that from a code standpoint? If you are issuing refunds for time not used, how are you going about that?
+
+Any ideas around this would be helpful.
+
+Thanks!</description>
+    
+    <lastBuildDate>Mon, 24 Feb 2014 16:45:39 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Best practices for account cancellation</title>
+        <dc:creator><![CDATA[cityzen]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the info. I did it the same basic way you all are handling it. When I send the request to Stripe to cancel, I save the period end date and query that on login. Easy enough, just one of those details I never really considered until I was trying to implement it in a rush on Friday.</p>
+<p>Agreed about leaving user data intact but inactive, at least for a certain amount of time.</p>
+<p>Appreciate the feedback.</p>
+<p>Mike</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/6</link>
+        <pubDate>Mon, 24 Feb 2014 16:45:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1228-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228.rss">Best practices for account cancellation</source>
+      </item>
+      <item>
+        <title>Best practices for account cancellation</title>
+        <dc:creator><![CDATA[camdez]]></dc:creator>
+        <description><![CDATA[
+            <p>I can’t speak for all subscription payment platforms, but I’ve used <a href="https://spreedly.com/subscriptions" rel="nofollow noopener">Spreedly</a> and I can tell you how I implemented it there: Spreedly has a web hook mechanism whereby you can provide an HTTP endpoint that Spreedly will post to whenever subscription details change. One of the parameters that gets posted to you is the end date for the subscription. So I persist that date and check against it on user login. That saves having to make a request to the payment provider at login time, which is (relatively speaking) slow and possibly unreliable.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/5</link>
+        <pubDate>Mon, 24 Feb 2014 14:47:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1228-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228.rss">Best practices for account cancellation</source>
+      </item>
+      <item>
+        <title>Best practices for account cancellation</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>We get the cancellation date from our billing software via an API - every time a user logs in, we query the billing software to check the user’s plan, billing status etc so this means we don’t need to do anything more in the application outside of the ordinary.</p>
+<p>When a client cancels, leave their account in place (but set to inactive) for a while as they may come back unless they explicitly ask for deletion of data or they choose to delete their own account (which they can do via the app) - sometimes people cancel and then realise they actually do need your service or they cancel, try something else and realise you are actually better than the alternatives etc.</p>
+<p>When they cancel, in the cancellation email let them know if they do come back they won’t have to start again for x months and that can be a great way of getting them to come back if their new solution doesn’t meet their needs - at some point you need to make the decision to remove the data and it does depend on the type and size of data but I would never delete it all there and then.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/4</link>
+        <pubDate>Mon, 24 Feb 2014 14:31:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1228-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228.rss">Best practices for account cancellation</source>
+      </item>
+      <item>
+        <title>Best practices for account cancellation</title>
+        <dc:creator><![CDATA[cityzen]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the reply. You’re not missing anything, I was just curious how people handle this in terms of setting a cancellation date (end of the current billing cycle) and then what happens to the user’s data. I am using laravel’s Auth::attempt method and it looks like I can extend that fairly easily. Mainly I want to avoid baking in unnecessary stripe API calls and filters if possible.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/3</link>
+        <pubDate>Mon, 24 Feb 2014 14:12:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1228-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228.rss">Best practices for account cancellation</source>
+      </item>
+      <item>
+        <title>Best practices for account cancellation</title>
+        <dc:creator><![CDATA[natural]]></dc:creator>
+        <description><![CDATA[
+            <p>Default behaviour is they run until their subscription is up but if they moan about it then just refund them for the whole month there and then as the last thing you want is a chargeback - its a pain but protecting merchant status is more important than a few whiny customers.</p>
+<p>Not sure I understand the question about code - why would they be any different to any other client? Login, check if valid - if not then error message, if yes then give access? Am I missing something?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/2</link>
+        <pubDate>Sun, 23 Feb 2014 20:28:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1228-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228.rss">Best practices for account cancellation</source>
+      </item>
+      <item>
+        <title>Best practices for account cancellation</title>
+        <dc:creator><![CDATA[cityzen]]></dc:creator>
+        <description><![CDATA[
+            <p>If you have a SAAS with monthly subscriptions (mine uses laravel and stripe), what are you doing when someone cancels an account? Do you let them keep access until the current subscription month is up? do you cancel right away and refund the money back?</p>
+<p>If you do let the account run to the end of the paid subscription, how are you handling that from a code standpoint? If you are issuing refunds for time not used, how are you going about that?</p>
+<p>Any ideas around this would be helpful.</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228/1</link>
+        <pubDate>Sun, 23 Feb 2014 17:33:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1228-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/best-practices-for-account-cancellation/1228.rss">Best practices for account cancellation</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Mini-rant about Stripe and EU VAT</title>
+    <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466</link>
+    <description>I&#39;ve been investigating changing from FastSpring to Stripe for payment processing. Stripe&#39;s basic examples are elegant, and easy to implement, but...they seem to pretend the whole EU VAT issue doesn&#39;t exist. 
+
+I wrote to Stripe asking if they could point me toward an example workflow of using Stripe that handles EU VAT. Their response was a combination of &quot;we don&#39;t offer that feature&quot; and &quot;that is something your developer can take care of.&quot;
+
+Unfortunately here in the Spain we can&#39;t be so cavalier towards the need to have a workable solution for determining the user&#39;s country and collecting the corresponding VAT.
+
+If anyone does have an ideal workflow for using Stripe AND dealing with VAT, I&#39;d be happy to hear about it!</description>
+    
+    <lastBuildDate>Wed, 15 May 2019 13:20:30 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Other than time expended (three hours and counting), not a great deal I suppose…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/26</link>
+        <pubDate>Wed, 15 May 2019 13:20:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="23" data-topic="3466">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/gravelld/40/4644_2.png" class="avatar"> gravelld:</div>
+<blockquote>
+<p>Something like Quaderno solves EU VAT, but not, it seems, SCA (at least my web searching didn’t turn anything up).</p>
+</blockquote>
+</aside>
+<p>I recently asked Quaderno about their support for SCA. Their answer:</p>
+<blockquote>
+<p>we are currently preparing our checkout for SCA, and it will be ready this summer</p>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/25</link>
+        <pubDate>Tue, 14 May 2019 14:15:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[sabine]]></dc:creator>
+        <description><![CDATA[
+            <p>Which issues does it create for you if you use Stripe Customer Intents API?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/24</link>
+        <pubDate>Tue, 14 May 2019 13:35:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Stripe’s refusal to support EU VAT properly is beginning to box us into a corner.</p>
+<p>I’ve been looking at SCA, and it turns out Stripe Checkout supports it. Great. But not so great: Checkout doesn’t support EU VAT information collection (address and so on).</p>
+<p>Something like Quaderno solves EU VAT, but not, it seems, SCA (at least my web searching didn’t turn anything up).</p>
+<p>So the only way is to use the Stripe Customer Intents API.</p>
+<p>It feels like each new regulatory requirement narrows the field of options. I hope we don’t eventually run out of options to take payments!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/23</link>
+        <pubDate>Tue, 14 May 2019 13:17:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>When I check my Fastspring payments, the currency conversion cost is surprisingly low (less than 1%).  I get paid directly in euro, and Fastspring says that it depends on the banks how the currency conversion costs are.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/22</link>
+        <pubDate>Fri, 10 May 2019 14:38:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="20" data-topic="3466">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Quaderno does a great job of this.</p>
+</blockquote>
+</aside>
+<p>Interesting — I looked closely at their service in 2016, and determined that it doesn’t solve all problems correctly, and introduces some new problems that I didn’t have before. Wrote some integration code, discovered a number of issues, and figured that all in all, it wasn’t worth the effort of maintaining an integration.</p>
+<p>Things must have improved since then.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/21</link>
+        <pubDate>Thu, 09 May 2019 17:53:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>when you say “EU VAT”, do you mean selling to individuals (VAT MOSS)?</p>
+</blockquote>
+<p>When I started this thread in 2015, I was selling to consumers. So yes, I mean to individuals.</p>
+<aside class="quote no-group" data-post="19" data-topic="3466">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jwr/40/4806_2.png" class="avatar"> jwr:</div>
+<blockquote>
+<p>as I couldn’t find any online service that would issue correct invoices.</p>
+</blockquote>
+</aside>
+<p>Quaderno does a great job of this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/20</link>
+        <pubDate>Thu, 09 May 2019 16:26:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[jwr]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve just discovered this discussion and I’m curious — when you say “EU VAT”, do you mean selling to individuals (VAT MOSS)?</p>
+<p>Selling to businesses is fairly straightforward (reverse charge), and mostly involves making sure that your invoices have the right numbers and the right incantations (Poland is annoyingly strict as to invoices). I use Braintree and my own invoicing system, as I couldn’t find any online service that would issue correct invoices.</p>
+<p>VAT MOSS is a catastrophe and I haven’t found anyone who manages it for you correctly. Everything I looked at was either outright incorrect or skimmed over details. It’s one of the main reasons why I do not sell B2C subscriptions, only B2B.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/19</link>
+        <pubDate>Tue, 07 May 2019 21:09:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="17" data-topic="3466">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/michael_king/40/4811_2.png" class="avatar"> Michael_King:</div>
+<blockquote>
+<p>when I asked Fastspring what their actual currency fees were - they would not tell me, nor would 2checkout - these companies are ripping their customers off on exchange rates</p>
+</blockquote>
+</aside>
+<p>I recommend checking out Paddle as an alternative to FastSpring and 2checkout. Especially if you are in the UK or the Eurozone.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/18</link>
+        <pubDate>Mon, 06 May 2019 13:22:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[Michael_King]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="3466">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>A + B + C + D together mean that 70% of my sales incur a 3.7% currency conversion fee + 4.9% FastSpring commission + US$0.95 FastSpring commission + a vague, variable currency conversion fee = roughly 12% of the pre-tax price.</p>
+</blockquote>
+</aside>
+<p>when I asked Fastspring what their actual currency fees were - they would not tell me, nor would 2checkout - these companies are ripping their customers off on exchange rates… no wonder they didn’t want to say. I am using revolut to handle the banking / currency conversions all at midmarket rates - no margin just a modest monthly fee. Sell in USD /EUR and convert back to GBP at no markup.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/17</link>
+        <pubDate>Mon, 06 May 2019 12:30:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[Michael_King]]></dc:creator>
+        <description><![CDATA[
+            <p>18 months later and Stripe check out is still not VAT aware. Its a useless tool for anyone selling to more than one country. Such a shame the rest of it is great. Steve the tip on Quaderno was a lifesaver for me and its just what I needed. Txs</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/16</link>
+        <pubDate>Mon, 06 May 2019 12:23:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Stripe + Quaderno. Quaderno’s VAT-aware checkout offers what Stripe should be offering.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/15</link>
+        <pubDate>Wed, 13 Dec 2017 10:49:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[bootStrapr]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steve , old 2015 thread , but was curious what VAT + payment processing setup you ended up with ?<br>
+Thanks</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/14</link>
+        <pubDate>Wed, 13 Dec 2017 10:22:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[PPG]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello, Steve! Stripe is indeed a pretty good option, given the simple &amp; easy to integrate service, but it tends to lack in terms of more advanced features and benefits for business management. If you are looking for a long-term efficient solution we suggest you take a look at what other companies in this industry can offer you and pick the most balanced service for you.<br>
+A good example of such providers is <a href="https://payproglobal.com/" rel="nofollow noopener">PayPro Global</a> – a truly global ecommerce solution designed especially for software, online services and digital products vendors. Our services &amp; API completely cover the new EU VAT regulations and we have automated a lot of the time-consuming financial aspects of online sales. We understand the extra hassle these aspects generate and so we’re offering all our customers reliable tools and specialized support to successfully manage them.<br>
+If this sounds like an interesting alternative for your business we’d be happy to take our discussion further so don’t hesitate to contact us.<br>
+Good luck!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/13</link>
+        <pubDate>Tue, 06 Oct 2015 14:54:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Quaderno looks really good.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/12</link>
+        <pubDate>Sun, 13 Sep 2015 12:54:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steve! I built <a href="https://quaderno.io/stripe-vat-invoicing/" rel="nofollow noopener">Quaderno</a> to deal with this issue. It’s a billing API on top of some popular gateways like Stripe, Braintree or PayPal. You just need to connect your Stripe account and every time you get paid, we automatically create and send a valid VAT invoice to your customer.</p>
+<p>We’re also based in Spain and we sell digital products, so we know pretty well <a href="https://quaderno.io/resources/eu-vat-course/" rel="nofollow noopener">how taxes work in the EU</a>. Let me know if you have any questions. Happy to help.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/11</link>
+        <pubDate>Fri, 11 Sep 2015 17:47:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[allan_jardine]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve taken more or less the same approach as <a class="mention" href="/u/mcasas">@mcasas</a> - I’ve got a custom user registration and billing details system that will record the purchaser details and then calculate the correct total before displaying that to them and letting them pay by PayPal or Stripe.</p>
+<p>A few disadvantages:</p>
+<ul>
+<li>Its bit of work to set it setup</li>
+<li>Legally you need to advertise the price, including VAT, to the user - but how you can do this before you have the information required to know what VAT rate to charge them, and if they even need to pay VAT I have absolutely no idea. I show a “VAT will be added at checkout if applicable” message and then clearly show the price at checkout before any card information is entered.</li>
+<li>Needing to know the VAT rates of all member states. This one drives me crazy. There should be an official EU API published for this. Technically if you charge the wrong rate there can be an “unlimited fine” (likely you’ll just need to pay the difference, but still…) so if a member state changes and I don’t realise… There are unofficial APIs but there needs to be a central one. Its crazy that there isn’t. I’ve ask HMRC’s API team about it here in the UK and they didn’t sound too interested.</li>
+<li>If your product falls into a reduced rate or super reduced rate (unlikely, but possible) you need to know about that. Only want of knowing that is to read through the VAT guidelines for member states and each one is different.</li>
+</ul>
+<p>VAT is an absolute mess imho.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/10</link>
+        <pubDate>Fri, 11 Sep 2015 12:44:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/george_palmer">@george_palmer</a></p>
+<p>Looks really good. I valued your VAT guides.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/9</link>
+        <pubDate>Thu, 10 Sep 2015 22:03:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Even if I lose the pleasure of having another company take care of all the VAT hassles.</p>
+</blockquote>
+<p>Well, this is one of my “internal discussions”… Handling VAT is a bit messy, and external companies like FastSpring or Avangate do all the hard work for you… But, on the other side, if you build it “handmade”, using Stripe or another payment processor, there is more work but you can do more customization… But, on the other side, “full-stack” payment companies are more used to this processes, and they know problems, tips and tricks that you still don’t know…</p>
+<p>It’s difficult, it’s really difficult to take a decision…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/8</link>
+        <pubDate>Thu, 10 Sep 2015 19:45:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the responses.</p>
+<p>The reason why I’m considering changing from FastSpring:<br>
+A) they only track payments in USD.<br>
+B) 70% of my customers are in the eurozone.<br>
+C) I’m in the eurozone.<br>
+D) The currency conversion rates used by FastSpring are high, almost punitively so.</p>
+<p>A + B + C + D together mean that 70% of my sales incur a 3.7% currency conversion fee + 4.9% FastSpring commission + US$0.95 FastSpring commission + a vague, variable currency conversion fee = roughly 12% of the pre-tax price.</p>
+<p>So I’m thinking it is time to fix that leak in my company’s sales. Even if I lose the pleasure of having another company take care of all the VAT hassles.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/7</link>
+        <pubDate>Thu, 10 Sep 2015 16:10:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[buggy]]></dc:creator>
+        <description><![CDATA[
+            <p>Online taxes are definitely a pain and getting worse. Australia is going to apply GST (our VAT) to intangibles (downloads, software, content, services, etc) and abolish the GST free threshold for overseas purchases from 1 July 2017. Suppliers will become liable for collecting 10% GST on items sold to consumers but not businesses (which is odd because businesses normally pay and claim back GST)</p>
+<p>Depending on what I read you may be exempt if your turnover is less than $70k/year (which is the threshold for GST registration here) but that applies to your total business so if you’re over that and you make one sale into Australia you become liable for GST.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/6</link>
+        <pubDate>Wed, 09 Sep 2015 13:23:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[moritz]]></dc:creator>
+        <description><![CDATA[
+            <p>I handle it by declaring all prices “Tax included”. Which means that the invoices will always total to the same amount, no matter where the customer is located.</p>
+<p>Based on the origin and VAT ID of the customer there is some VAT included on the invoice or not. The invoices are generated by <a href="http://octobat.com" rel="nofollow noopener">octobat.com</a> and they handle all the european VAT rates out of the box.</p>
+<p>For sure this means that the final price and income (after tax) vary from customer to customer. This system works however well for me because more than 90% of my customers are businesses outside the EU. And out of the ones located in the EU, only 2-3 are in the same country and do actually need to pay VAT.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/5</link>
+        <pubDate>Wed, 09 Sep 2015 08:26:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>And if they have a VAT ID and are in the same country as you, you do have to charge VAT (which they can claim back).</p>
+<p>VAT is such a mess! I am more than happy to let Avangate handle it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/4</link>
+        <pubDate>Wed, 09 Sep 2015 07:57:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[george_palmer]]></dc:creator>
+        <description><![CDATA[
+            <p>Bit of a shameless plug but if you’re looking to handle EU VAT with Stripe this is something <a href="https://www.sendowl.com/" rel="nofollow noopener">SendOwl</a> handles out the box.  Whether it’ll fit into your needs will depend on what you’re looking to sell/give access to/your buyer flow.  But any questions do please let me know.</p>
+<p>Our guide on EU VAT management can be found <a href="http://help.sendowl.com/article/30-eu-vat-management" rel="nofollow noopener">here</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/3</link>
+        <pubDate>Wed, 09 Sep 2015 07:27:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+      <item>
+        <title>Mini-rant about Stripe and EU VAT</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steve,</p>
+<p>I’m also from Spain, and I’ll use Stripe for my software. Currently, my software is targeted to the local market, so I’ve build it only for charging to spanish users, but I’ve designed all the workflow for international users.</p>
+<p>IMHO, the best workflow is: User enters payment details (name, address, country, etc), you validate it, calculate the final price, and then the Stripe payment form is shown.</p>
+<p>The important part is calculating the final price. As you may know, you have to charge VAT to all EU residents that haven’t a VAT Id. Also, for validating how much VAT you have to charge, you need at least two “proofs of origin”. They can be the address, the IP (using geolocation), the credit card number, among others. I’ve used the customer’s address and the computer IP. As you may know, you can’t have the credit card number, because if this number “touches” your server, you must comply the PCI regulations.</p>
+<p>Now you have the customer address (country) and his IP. If the IP belongs to the same country as the address, you only have to lookup to a DB table storing the country and the VAT % to apply to the price and calculate the final price.</p>
+<p>If the customer has a VAT Id, you should validate it using the VIES VAT Validation service (<a href="http://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl" rel="nofollow noopener">http://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl</a>), or something similar. If the validation is correct, you have to apply a VAT of 0% (AFAIK, in the invoice must appear the 0% VAT line).</p>
+<p>And that’s all! It seems a lot of work but, IMO, it’s not so hard… The hard thing is to “imagine” the correct workflow and understand VAT rules. But because in Spain entrepreneurs should always charge and declare VAT, we are used to this! <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I hope this helps you. And if you have any suggestion about how to improve the workflow, please share with us! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466/2</link>
+        <pubDate>Tue, 08 Sep 2015 21:37:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3466-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mini-rant-about-stripe-and-eu-vat/3466.rss">Mini-rant about Stripe and EU VAT</source>
+      </item>
+  </channel>
+</rss>

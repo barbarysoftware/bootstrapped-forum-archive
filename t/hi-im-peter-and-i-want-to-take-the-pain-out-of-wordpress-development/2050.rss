@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+    <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050</link>
+    <description>Hey boostrappers
+
+I&#39;m new here and wanted to take a short moment to introduce myself!
+
+I&#39;m a PHP (mainly) developer from Denmark. I&#39;m super passionate about Laravel and PHP in general. I run a freelance business, I write articles for sites like Tuts+ and from time to time I work on my own products as well. This leads me to the product I&#39;m currently working on: [WP Pusher][1].
+
+Being a WordPress developer for at least 5 years, I know the pain of developing themes and plugins for clients. The workflow is just horrible. When client is on some sort of cheap shared hosting, you&#39;re forced to use good ol&#39; FTP, manually syncing files etc. I wanted to solve that problem, so I build a service that allows your themes and plugins to be updated directly from Github. This can even be done automatically on every push, by enabling push-to-deploy. This allows you to have a solid workflow, using versioning control and stuff like that. I think I&#39;m on to something and I&#39;m really excited about the project.
+
+It&#39;s consists a two parts: a SaaS app, with a control panel, and a WordPress plugin that is installed on every site who needs to be managed. I&#39;m really new to the whole world of SaaS apps, so I&#39;ll probably ask you guys for feedback on the product, the landing page, the pricing model etc. whenever I&#39;m a little further in the process. Right now I have like half a landing page and a prototype.
+
+Anyways, I just wanted to say &#39;Hi&#39; and I love the forum and the podcast! I&#39;m currently traveling around SE Asia and I&#39;m currently sitting in a co-working space in Chiang Mai, Thailand working on [WP Pusher][2]!
+
+Thanks for having me on the board, take care!
+
+
+  [1]: http://wppusher.com/
+  [2]: http://wppusher.com/</description>
+    
+    <lastBuildDate>Tue, 18 Apr 2017 10:58:06 +0000</lastBuildDate>
+    <category>Introductions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey man! Shoot me an email at <a href="mailto:peter@suhm.dk">peter@suhm.dk</a> or I’ll get in touch with you when I’m back again this weekend. Maybe you can test it out and we can talk about the possibilities for your specific use case!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/24</link>
+        <pubDate>Tue, 23 Sep 2014 11:01:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey! Sorry I haven’t been responsive here. I’m backpacking Thailand this week and haven’t had much online time.</p>
+<p>Just wanted to quickly answer you question. My product is very different, since it’s only for Wordpress, and works by extending core wordpress functionality. The services you link to and all other I’ve seen requires that you give them access to your server. After that, their remote scripts will perform some kind of magic on you server on deploy <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> Anyways, I don’t like the idea of giving someone else an FTP or ssh access to something as important as my server. That’s why I decided to build something else! Hope it makes sense, otherwise I’ll be happy to explain it more in depth when I’m back this weekend!</p>
+<p>Thank you guys so much for your constructive feedback!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/23</link>
+        <pubDate>Tue, 23 Sep 2014 11:00:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[shanelabs]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Peter - just wanted to chime in since I’m your target market (I run the wordress plugin <a href="http://www.ampedsense.com" rel="nofollow noopener">AmpedSense</a>).</p>
+<p>One of the difficulties about selling a plugin outside of the wordpress plugin directory is the inability to push updates easily, so you’re definitely hitting something here with me. Although the more I look into your service, the more I realize it’s not for me, as I’d hate to ask my customer to install 2 plugins (mine and the updater).</p>
+<p>What would be interesting to me is if there was a module I could embed into my plugin that could take care of updating itself. Who knows if that’s even possible, but thought my perspective might help…</p>
+<p>Thanks for sharing, and good luck!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/22</link>
+        <pubDate>Tue, 23 Sep 2014 06:16:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="20" data-topic="2050">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/bradt/40/3964_1.png" class="avatar"> bradt:</div>
+<blockquote>
+<p>But is your integration with WordPress a big advantage over those other services?</p>
+</blockquote>
+</aside>
+<p>Right question.</p>
+<p>How does that deployment to WP works again? Despite I have a WP site for about a year, I still have no clue how can I deploy my posts/pages from a VCS.</p>
+<p>I would be reluctant to give another service an access to my FTP (and other services do need it, it seems). On the other hand, is WP-specific API a big improvement? More secure or more reliable? I do not know – and I need to be educated even before I consider ANY of these services.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/21</link>
+        <pubDate>Mon, 22 Sep 2014 21:26:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[bradt]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="19" data-topic="2050">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/shantnu/40/2752_1.png" class="avatar"> shantnu:</div>
+<blockquote>
+<p>The rest is all marketing.</p>
+</blockquote>
+</aside>
+<p>I disagree. When marketing to developers, you need a great product that distinguishes itself from competitors. <a href="http://dploy.io" rel="nofollow noopener">dploy.io</a> and Deploy are great products, very polished, and are backed by large companies. They will outspend you to acquire a customer. You don’t want to go head to head with them.</p>
+<p>It would be a lot better to target a niche within the deployment space. You’re already targeting WordPress, which is a great start. But is your integration with WordPress a big advantage over those other services?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/20</link>
+        <pubDate>Mon, 22 Sep 2014 12:56:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="18" data-topic="2050">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/bradt/40/3964_1.png" class="avatar"> bradt:</div>
+<blockquote>
+<p>How is your SaaS better than <a href="http://dploy.io" rel="nofollow noopener">dploy.io</a> and Deploy? What’s your competitive advantage?</p>
+</blockquote>
+</aside>
+<p>Competition proves that there is a market, one that pays.</p>
+<p>The rest is all marketing. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/19</link>
+        <pubDate>Mon, 22 Sep 2014 08:12:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[bradt]]></dc:creator>
+        <description><![CDATA[
+            <p>How is your SaaS better than <a href="http://dploy.io" rel="nofollow noopener">dploy.io</a> and <a href="http://deployhq.com" rel="nofollow noopener">Deploy</a>? What’s your competitive advantage?</p>
+<p><a href="https://deliciousbrains.com/wp-migrate-db-pro/" rel="nofollow noopener">My business</a> is a WordPress deployment tool, so I’m swimming in the same pool here.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/18</link>
+        <pubDate>Sun, 21 Sep 2014 13:59:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ll consider that! Thank you! <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/17</link>
+        <pubDate>Fri, 19 Sep 2014 02:09:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>There is one thing I’m considering to implement for my product – a “foot in the door” type tier. Your Personal tier may be used by people who work in WP ecosystem for their own blogs (professional sites and such). They may not want to pay for it. If you though allow them to use that tier for free, they may learn the product, love it and take this useful habit to the client’s sites or to the agencies where they work. Yeah, I guess it is freemium, but in this case it makes sense, IMHO.</p>
+<p>I’m going to give my folks 2 free services (2 is minimum for my product, 1 doesn’t make sense).</p>
+<p>If I were you, I’d probably made Personal (1 user, 1 site).</p>
+<p>Just my last $0.02.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/16</link>
+        <pubDate>Fri, 19 Sep 2014 01:22:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>Wow, so many things to consider! I can’t thank you enough for your help!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/15</link>
+        <pubDate>Thu, 18 Sep 2014 02:16:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p>In the enterprise plan:</p>
+<blockquote>
+<p>??? users</p>
+</blockquote>
+<p>Make sure you put a number there, or something similar.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/14</link>
+        <pubDate>Wed, 17 Sep 2014 19:52:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Cool. I think 4 tiers is 1 too much, but hey, better than one. The team (agency?) price is too small comparing to the personal one… feels cheap to me.</p>
+<p>Also, I think it is backwards in terms of usage. Why unlimited sites, when the more sites they have the more value they get? For “Freelancer” they have 1 user, but unlimited sites = unlimited load to your servers, and all for $12?</p>
+<p>I would limit the number of sites per tier.</p>
+<p>Freelancer with up to say 10 sites.<br>
+Agency with up to say 100.</p>
+<p>Extra sites can be bought separately.</p>
+<p>Now I have a trouble visualizing the overall picture. Why there is your server in the picture if you have a plugin installed on WP? Who talks to Github? Your server does?</p>
+<p>May be you should have a diagram explaining how it works.</p>
+<p>Also, this wording: “Unfortunately, this is not the case with some of the similar products out there.” – bad idea, IMHO. Blackmouthing your competitors sends a bad message, and also reminds the prospects that <em>there are</em> some competitors, may be they should check them out first?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/13</link>
+        <pubDate>Wed, 17 Sep 2014 18:00:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>I added price tiers and did some tweaks after your feedback! It’s really really helpful! I’m gonna read more on the subject, and work on making the page longer and better - between the coding of course <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/12</link>
+        <pubDate>Wed, 17 Sep 2014 11:14:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you so much, it’s really great advice! <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/11</link>
+        <pubDate>Wed, 17 Sep 2014 02:44:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Also, you page structure is backwards.</p>
+<p>The classical structure is AIDA – Attention (H1), Interest (describe pain and your cure for it), Desire (make the visitors imagine all the magical things that will happen if they buy – money, success, sex, health, respect, whatnot), Action (Buy button).</p>
+<p>You have Sign Up (Action) right after Attention. The momentum is not built yet!</p>
+<p>Sign Up button is so small as if you do NOT want me to find it and sign up. Make it big and yellow or orange – these are the colours that stimulate for actions.</p>
+<p>Here’s a cool guide on writing long copy materials shared by folks at Bootstrapped With Kids podcast, helped me a lot: <a href="http://nettrafficmachine.com/tools/12steps.pdf" rel="nofollow noopener">http://nettrafficmachine.com/tools/12steps.pdf</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/10</link>
+        <pubDate>Tue, 16 Sep 2014 13:57:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="2050">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/petersuhm/40/2514_1.png" class="avatar"> petersuhm:</div>
+<blockquote>
+<p>I updated the text now</p>
+</blockquote>
+</aside>
+<p>It looks better. The first statement in the sub-header is redundant now (“Take the pain out of WordPress development.”) - it just repeats what the main header says.</p>
+<p>Also, while main header seems more to the point now (though I’d make it even bigger <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> ), it still doesn’t specifically says what exactly “pain” it removes. Don’t be afraid to add some more words, this is the most important part in grabbing attention. “Pain-free deployment of WordPress themes and plugins directly from GitHub!” – this is better, IMHO. Or “Forget FTP! Deploy your WordPress themes and plugins directly from GitHub!” – more action-focused.</p>
+<p>P.S. I strongly support any normalization of WP deployment process. So far the whole WP eco-system looks like a mess to me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/9</link>
+        <pubDate>Tue, 16 Sep 2014 13:49:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>I updated the text now. I need to think a little bit about how to make the tiers!</p>
+<p>I’ll ask you guys for more concrete feedback whenever I’m a little further.</p>
+<p>Thanks,</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/8</link>
+        <pubDate>Tue, 16 Sep 2014 03:00:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks a lot! It feels quite like a dream at the moment <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/7</link>
+        <pubDate>Tue, 16 Sep 2014 02:37:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks a lot, that’s great advice! Really useful and actionable! <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/6</link>
+        <pubDate>Tue, 16 Sep 2014 02:36:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome Peter!  Glad to see you’re living the Tropical MBA dream.  I look forward to hearing about your progress.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/5</link>
+        <pubDate>Mon, 15 Sep 2014 12:30:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Your home/landing page is not explaining what you do very well. In first 15 seconds or so I couldn’t understand what problem you solve. Only because I read your post before I knew it. Specifically, your H1 header must both identify the problem and offer a solution. Do all WP developers know what push-to-deploy means? I doubt it. I’d reword it into more plain terms, e.g. “Deploy your WordPress code directly from Git repositories” or something like this.</p>
+<p>P.S. And make H1 twice as big.</p>
+<p>P.P.S. Monthly and annual prices are not different tiers, this is the same tier with discount. You should come up with the classical 3 tiers <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> placing $7 as the lowest (and offer no support for it), say $49 for standard and $490 for say a team version.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/4</link>
+        <pubDate>Mon, 15 Sep 2014 11:43:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey and thank you for your reply and feedback!</p>
+<p>Hmm. It’s a good question that I’ll definately consider! I’m just trying to think what I pay for similar services right now. Pricing stuff like this is difficult and I’m a total n00b. Actually, I’d probably pay a lot more myself, but you know, trying to be conservative. My service is somehow kinda similar to <a href="https://forge.laravel.com/" rel="nofollow noopener">https://forge.laravel.com/</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/3</link>
+        <pubDate>Mon, 15 Sep 2014 09:20:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p>Sounds like a great idea. I’m not a professional WP developer, only a hobbyist, but I would have done more WP development if I had access to something like this.</p>
+<p>You are charging $7/month. Is that enough to cover your expenses and save you from what <a class="mention" href="/u/patio11">@patio11</a> calls really difficult clients?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/2</link>
+        <pubDate>Mon, 15 Sep 2014 08:57:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+      <item>
+        <title>Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</title>
+        <dc:creator><![CDATA[petersuhm]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey boostrappers</p>
+<p>I’m new here and wanted to take a short moment to introduce myself!</p>
+<p>I’m a PHP (mainly) developer from Denmark. I’m super passionate about Laravel and PHP in general. I run a freelance business, I write articles for sites like Tuts+ and from time to time I work on my own products as well. This leads me to the product I’m currently working on: <a href="http://wppusher.com/" rel="nofollow noopener">WP Pusher</a>.</p>
+<p>Being a WordPress developer for at least 5 years, I know the pain of developing themes and plugins for clients. The workflow is just horrible. When client is on some sort of cheap shared hosting, you’re forced to use good ol’ FTP, manually syncing files etc. I wanted to solve that problem, so I build a service that allows your themes and plugins to be updated directly from Github. This can even be done automatically on every push, by enabling push-to-deploy. This allows you to have a solid workflow, using versioning control and stuff like that. I think I’m on to something and I’m really excited about the project.</p>
+<p>It’s consists a two parts: a SaaS app, with a control panel, and a WordPress plugin that is installed on every site who needs to be managed. I’m really new to the whole world of SaaS apps, so I’ll probably ask you guys for feedback on the product, the landing page, the pricing model etc. whenever I’m a little further in the process. Right now I have like half a landing page and a prototype.</p>
+<p>Anyways, I just wanted to say ‘Hi’ and I love the forum and the podcast! I’m currently traveling around SE Asia and I’m currently sitting in a co-working space in Chiang Mai, Thailand working on <a href="http://wppusher.com/" rel="nofollow noopener">WP Pusher</a>!</p>
+<p>Thanks for having me on the board, take care!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050/1</link>
+        <pubDate>Mon, 15 Sep 2014 04:24:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2050-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hi-im-peter-and-i-want-to-take-the-pain-out-of-wordpress-development/2050.rss">Hi, I&#39;m Peter and I want to take the pain out of WordPress development!</source>
+      </item>
+  </channel>
+</rss>

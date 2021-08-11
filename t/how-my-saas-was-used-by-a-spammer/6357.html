@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How my SaaS was used by a spammer - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="A large part of running a SaaS is spotting and blocking attempts to either hack your server or use your server as a spam vector. 
+The methods the bad guys try are surprising. 
+Here’s an attack I encountered in the last f&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="6357.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;How my SaaS was used by a spammer&#39;" href="6357.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/how-my-saas-was-used-by-a-spammer/6357" />
+<meta property="og:title" content="How my SaaS was used by a spammer" />
+<meta name="twitter:title" content="How my SaaS was used by a spammer" />
+<meta property="og:description" content="A large part of running a SaaS is spotting and blocking attempts to either hack your server or use your server as a spam vector.  The methods the bad guys try are surprising.  Here’s an attack I encountered in the last few days:   Bad Person (hereafter known as BP) creates an account on my SaaS app. BP sets their display name on my SaaS app to “Great bargains at bargainsgalore.com” BP uses our “invite your team” feature to invite one person, called Spam Victim (SV). This causes my SaaS to send a..." />
+<meta name="twitter:description" content="A large part of running a SaaS is spotting and blocking attempts to either hack your server or use your server as a spam vector.  The methods the bad guys try are surprising.  Here’s an attack I encountered in the last few days:   Bad Person (hereafter known as BP) creates an account on my SaaS app. BP sets their display name on my SaaS app to “Great bargains at bargainsgalore.com” BP uses our “invite your team” feature to invite one person, called Spam Victim (SV). This causes my SaaS to send a..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="14 ❤" />
+<meta property="article:published_time" content="2019-05-19T15:22:19+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="6357.html">How my SaaS was used by a spammer</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6357.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-05-19T15:22:19Z'>
+              <time itemprop='dateModified' datetime='2019-05-19T15:25:04Z' class='post-time'>
+                May 19, 2019,  3:25pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A large part of running a SaaS is spotting and blocking attempts to either hack your server or use your server as a spam vector.</p>
+<p>The methods the bad guys try are surprising.</p>
+<p>Here’s an attack I encountered in the last few days:</p>
+<ol>
+<li>Bad Person (hereafter known as BP) creates an account on my SaaS app.</li>
+<li>BP sets their display name on my SaaS app to “Great bargains at <a href="http://bargainsgalore.com">bargainsgalore.com</a>”</li>
+<li>BP uses our “invite your team” feature to invite one person, called Spam Victim (SV). This causes my SaaS to send an invite to SV. Normally it would read “Hi, Jo Smith has invited your to join their Feature Upvote account.” In this case it reads “Hi, Great bargains at <a href="http://bargainsgalore.com">bargainsgalore.com</a> has invited to join their Feature Upvote account”.</li>
+<li>BP deletes invited user</li>
+<li>BP waits a few seconds</li>
+<li>BP goes to step 3</li>
+</ol>
+<p>I’m guessing that BP expects some email clients to linkify the email, even though my SaaS is careful to escape the user-contributed content.</p>
+<p>Steps 3 to 6 were clearly automated as they were repeated at the rate of 10 emails/minute. I detected this after 1,000 emails had been systematically sent.</p>
+<p>I then deleted the account. Two days later, the same thing happened but wth a slower rate of about 6 emails/minute.</p>
+<hr>
+<p>I’ve now added some mitigation for this. I won’t say exactly what I did (in case BP and their ilk are reading!), but here’s some possible approaches I considered:</p>
+<ul>
+<li>Change the invite email to not include any user-contributed content</li>
+<li>Add reCAPTCHA</li>
+<li>Throttle or block by IP address</li>
+<li>Stop trial accounts from sending invites</li>
+<li>Blacklist domains known to be used in this attack</li>
+<li>Limit trial accounts to triggering a very small number of emails</li>
+</ul>
+<hr>
+<p>What annoys me about this is the time and energy spent fighting this issue is time and energy no longer available for product development or marketing.</p>
+<p>Our forum software indicates something similar has been discussed before: <a href="../saas-trial-abuse-from-botnets-spammers/3752.html" class="inline-onebox">SaaS trial abuse from botnets/spammers</a>. It includes this wisdom:</p>
+<blockquote>
+<p>It’s important to strike a good balance between making the life of spammers difficult with keeping the real users from being annoyed by false positives.</p>
+</blockquote>
+        </div>
+
+        <meta itemprop='headline' content='How my SaaS was used by a spammer'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="8" />
+           <span class='post-likes'>8 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/marya.html'><span itemprop='name'>marya</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6357.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-20T01:25:11Z' class='post-time'>
+                May 20, 2019,  1:25am
+              </time>
+              <meta itemprop='dateModified' content='2019-05-20T01:25:11Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the informative post!</p>
+<p>I haven’t experienced an issue quite like this yet, but I’ve definitely had to deal with “abuse” issues on my website. And yeah, it is so frustrating to spend time on crap like this, rather than spending it on, well, basically <strong>anything</strong> else. You have my sympathy!</p>
+        </div>
+
+        <meta itemprop='headline' content='How my SaaS was used by a spammer'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Andy.html'><span itemprop='name'>Andy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6357.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-20T16:26:39Z' class='post-time'>
+                May 20, 2019,  4:26pm
+              </time>
+              <meta itemprop='dateModified' content='2019-05-20T16:26:39Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Desktop software does have some advantages. ;0)</p>
+<p>–<br>
+Andy Brice<br>
+<a href="https://www.hyperplan.com" class="onebox" target="_blank">https://www.hyperplan.com</a><br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.perfecttableplan.com/favicon.ico" class="site-icon" width="16" height="16">
+      <a href="https://www.perfecttableplan.com" target="_blank">perfecttableplan.com</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:128/80;"><img src="https://www.perfecttableplan.com/meta.jpg" class="thumbnail"></div>
+
+<h3><a href="https://www.perfecttableplan.com" target="_blank">Table Plan software - perfect table seating for weddings and events</a></h3>
+
+<p>Perfect Table Plan - software for table plans. Design and print a table seating plan for your wedding or event on your PC or Mac. Download a free trial now.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=32" class="site-icon" width="16" height="16">
+      <a href="https://successfulsoftware.net/" target="_blank">Successful Software</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=200&amp;amp;ts=1558369598" class="thumbnail onebox-avatar" width="60" height="60">
+
+<h3><a href="https://successfulsoftware.net/" target="_blank">Successful Software</a></h3>
+
+<p>...requires more than just good programming.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+        </div>
+
+        <meta itemprop='headline' content='How my SaaS was used by a spammer'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/syneryder'><span itemprop='name'>syneryder</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6357.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-20T19:07:09Z' class='post-time'>
+                May 20, 2019,  7:07pm
+              </time>
+              <meta itemprop='dateModified' content='2019-05-20T19:07:09Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve been seeing that on another SaaS that I (used to be) a customer of.  They sent an email when someone liked your post, so naturally you’d click on the user profile to see who was interested in what you’d written… only to discover it was a spam account who had added spam text to their user profile. They were obviously free accounts, so preventing free/trial accounts from liking or sending email would probably help to prevent it… at least until the spammers start hijacking accounts…</p>
+<p>I get dozens of spam attempts every day through my website (even to advertise the comment spam bots they’re using), and I can say that Google’s reCAPTCHA is useless, there is already software that can bypass it. IP blacklists have not been helpful either.  What has worked for me is logging every attempt &amp; searching for patterns (thinking: what do they <em>have</em> to include to achieve their goal?) and hand-writing filters to catch those.</p>
+        </div>
+
+        <meta itemprop='headline' content='How my SaaS was used by a spammer'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6357.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-20T19:07:41Z' class='post-time'>
+                May 20, 2019,  7:07pm
+              </time>
+              <meta itemprop='dateModified' content='2019-05-20T19:07:41Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Andy, it was the fear of problems like these that kept me away from developing a SaaS product for so many years!</p>
+        </div>
+
+        <meta itemprop='headline' content='How my SaaS was used by a spammer'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6357.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-05-21T20:23:42Z'>
+              <time itemprop='dateModified' datetime='2019-05-21T20:24:22Z' class='post-time'>
+                May 21, 2019,  8:24pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="1" data-topic="6357">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_2.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>BP deletes invited user</p>
+</blockquote>
+</aside>
+<p>They delete it to get back within the number of allowed invites? Then not letting them to delete the invite for say 3 days would make it harder to abuse.</p>
+<p>I’d also add a “Think it is spam? Click here” button to the email. If any invited user clicks, I’d shadow-block sending more emails and flag it for a manual review. If the review confirms spamming, I’d let it stay in the shadow-blocking state - they wasted my energy, I waste theirs.</p>
+        </div>
+
+        <meta itemprop='headline' content='How my SaaS was used by a spammer'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/grujicd.html'><span itemprop='name'>grujicd</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6357.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-21T20:43:51Z' class='post-time'>
+                May 21, 2019,  8:43pm
+              </time>
+              <meta itemprop='dateModified' content='2019-05-21T20:43:51Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>These are all good suggestions, but it’s a shame you have to deal with it in the first place. On the other hand, if you ran a physical store, you’d have to deal with locks, alarms, surveillance cameras, stolen goods, etc. So fight with malicious users/visitors is a fact of life.</p>
+<p>IMO the biggest problem here is your email could end up flagged as a spam source. Even if you’re using outsourced mail sender, they could kick you out because of these problems.</p>
+        </div>
+
+        <meta itemprop='headline' content='How my SaaS was used by a spammer'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/davedevelopment.html'><span itemprop='name'>davedevelopment</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6357.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-22T11:23:24Z' class='post-time'>
+                May 22, 2019, 11:23am
+              </time>
+              <meta itemprop='dateModified' content='2019-05-22T11:23:24Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I feel your pain on this, we have lots of checks in place for various abuses of our system, mostly all hand coded after we notice patterns in behaviour.</p>
+<p>It gets me down having to spend so much time on it, but I try and remember the plenty of fish founder saying somewhere that in the early days, the thing that set POF apart from the rest and what he considered to be a key to their success, was that they were the best at keeping out the fakers and the scammers.</p>
+        </div>
+
+        <meta itemprop='headline' content='How my SaaS was used by a spammer'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jwr.html'><span itemprop='name'>jwr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="6357.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-29T15:34:15Z' class='post-time'>
+                May 29, 2019,  3:34pm
+              </time>
+              <meta itemprop='dateModified' content='2019-05-29T15:34:15Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m looking at my SaaS now trying to find ways in which it could be abused…</p>
+<p>But, whatever you do, please do not add the horrible reCAPTCHA thing. It provides an abysmal experience for users and does not work against determined attackers.</p>
+        </div>
+
+        <meta itemprop='headline' content='How my SaaS was used by a spammer'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Got tips for authentication for in-house web-apps</title>
+    <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974</link>
+    <description>My company (http://pokercopilot.com/) finally has two people...I&#39;m moving some of my custom apps I built for internal management to the web...so we need authentication. I don&#39;t want to do this stuff myself...it is so easy to get wrong...what do you use for authentication your company&#39;s internal web apps?
+
+We use Google Apps for email, and I&#39;m considering using oAuth so that we can use the existing auth credentials we use with Google Apps. Does that make sense for now and for the future, if we grow a bit more?
+
+</description>
+    
+    <lastBuildDate>Sat, 25 Jan 2014 18:00:16 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe I’m being a bad programmer these days but I always keep picking the easy hack versus the long term play.</p>
+<p>I’d rather have the technical debt and work on something customer facing then over-code a solution I don’t need yet you know?</p>
+<p>I guess if people were sending me password reset requests every week I’d think differently though but for the most part my hacky solution that took 30 minutes is working just fine. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/10</link>
+        <pubDate>Sat, 25 Jan 2014 18:00:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Good point John…</p>
+<p>It’s two people <em>for now</em>. I’m thinking ahead a little. However I think what you said is wise.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/9</link>
+        <pubDate>Tue, 21 Jan 2014 00:28:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <p>I wouldn’t over engineer a authentication solution for two people.  Hard code the values and be done with it.</p>
+<p>I guess this is a pretty personal decision though, whether its worth the engineering time for just two logins.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/8</link>
+        <pubDate>Sun, 19 Jan 2014 22:39:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[ashimali]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steve, In my last client project we used Spring Security with OAuth as the provider. <a href="http://projects.spring.io/spring-security-oauth/" rel="nofollow noopener">http://projects.spring.io/spring-security-oauth/</a>. It was a Grails app, so wiring the same into a vanilla Java servlet app would be more work <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> However Spring security gives you all the stuff you’d expect, login, roles, password reset etc. (Not that you would use those aspects if doing OAuth). However note the roles, so you can easily implement not just authentication but authorisation.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/7</link>
+        <pubDate>Fri, 17 Jan 2014 19:47:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Backend is Apache Tomcat + Java Servlets</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/6</link>
+        <pubDate>Fri, 17 Jan 2014 12:13:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[Oliver]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/jacob">@jacob</a> OAuth is an open standard, and it is widely used. So even if OP moves away from Google Apps they’ll be fine.</p>
+<p>What is your backend built with? You can almost certainly find good open source libraries that will give you all sorts of options out of the box. I know Node JS / Express JS has some good ones. I’m sure RoR does too.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/5</link>
+        <pubDate>Mon, 13 Jan 2014 00:18:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting.</p>
+<p>Persona though is only an authentication system, i.e. tells you who the user is, while OAuth is originally an authorization system, i.e. tells you what the user can do (rights can be granted by the other users, e.g. “see this picture of mine”). For a richer collaboration scenarios OAuth seems a better choice.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/4</link>
+        <pubDate>Sun, 12 Jan 2014 20:45:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[jacob]]></dc:creator>
+        <description><![CDATA[
+            <p>As you are already invested in Google Apps, OAuth seems like the best choice.</p>
+<p>However, if you want to maintain the freedom to (one day) move away from Google, consider <a href="https://login.persona.org/about" rel="nofollow noopener">Mozilla Persona</a>.</p>
+<p>I’ve used Persona for a number of projects, and found it very robust and pleasant in everyday use. It’s easy to integrate, and you can even run your own <a href="https://developer.mozilla.org/en-US/Persona/Identity_Provider_Overview" rel="nofollow noopener">identity provider</a> service.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/3</link>
+        <pubDate>Sun, 12 Jan 2014 20:26:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>OAuth seems a mainstream now. I have used oAuth for a (now defunct) SaaS and was able to accept credentials from Google, Facebook, Live and Yahoo with almost no customization per provider.</p>
+<p>And it removes the necessity for a user to create and remember the credentials.</p>
+<p>So yes, I’d say go for oAuth.</p>
+<p>P.S. OpenID used to be the first choice, but oAuth caught up, and OpenID got lost in a sea of incompatible extensions.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/2</link>
+        <pubDate>Sun, 12 Jan 2014 17:37:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+      <item>
+        <title>Got tips for authentication for in-house web-apps</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>My company (<a href="http://pokercopilot.com/">http://pokercopilot.com/</a>) finally has two people…I’m moving some of my custom apps I built for internal management to the web…so we need authentication. I don’t want to do this stuff myself…it is so easy to get wrong…what do you use for authentication your company’s internal web apps?</p>
+<p>We use Google Apps for email, and I’m considering using oAuth so that we can use the existing auth credentials we use with Google Apps. Does that make sense for now and for the future, if we grow a bit more?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974/1</link>
+        <pubDate>Sun, 12 Jan 2014 12:57:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-974-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/got-tips-for-authentication-for-in-house-web-apps/974.rss">Got tips for authentication for in-house web-apps</source>
+      </item>
+  </channel>
+</rss>

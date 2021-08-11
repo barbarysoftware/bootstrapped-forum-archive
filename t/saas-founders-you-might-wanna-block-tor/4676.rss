@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SaaS founders: you might wanna block Tor</title>
+    <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676</link>
+    <description>Hi.
+
+We just detected a whole network of spamming/abusing bots who use Tor exit nodes to sign up for fake trial accounts - in Saas apps that have some inbound/outbound email functionality (like webmail services, helpdesk apps, email marketing apps etc.)
+
+I&#39;m talking **tens of thousands** of fake user accounts and trials.
+
+Anyways... Long story short you might want to block Tor exit nodes from accessing your website or at least your landing pages/signup forms. **At best they will ruin your metrics**. There&#39;are no paying customers there anyway.
+
+If you&#39;re using a CDN - it probably has a a built-in way to do this. If not - you can quickly detect a tor-node IP by running a special DNS query, just google for examples in php/ruby/whatever.
+
+PS. their intent is still unclear to me, seems like they&#39;re building a massive network of fake email addresses, probably used for  fake social profiles used n click-fraud. Just my guess....</description>
+    
+    <lastBuildDate>Sun, 15 Jan 2017 19:05:22 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="13" data-topic="4676">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chris/40/3594_1.png" class="avatar"> Chris:</div>
+<blockquote>
+<p>The strategy is about adding an input field into the form that: shouldn’t be visible by the real usersshould be left empty by the real userswill most be filled by spam bots</p>
+</blockquote>
+</aside>
+<p>Some people are just crazy resourceful. I’m jealous.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/14</link>
+        <pubDate>Sun, 15 Jan 2017 19:05:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="4676">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>This ban is a business decision, not a technical one. Running a business sometimes requires you dump the idealistic shit and make a friggin decision.</p>
+</blockquote>
+</aside>
+<p>So we had something similar not too long ago. Came in one morning and had something like 10k form submissions <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> haha</p>
+<p>Basically, our bad. We just did a horrible job on that form and left it abusable.</p>
+<p>We made a business decision, too. We fixed the form. Took about 45 minutes or so. We used this: <a href="https://github.com/markets/invisible_captcha" rel="nofollow noopener">https://github.com/markets/invisible_captcha</a> and it’s 100% fixed the problem ever since.</p>
+<blockquote>
+<p>It is based on the honeypot strategy to provide a better user experience. It also provides a time-sensitive form submission.</p>
+</blockquote>
+<blockquote>
+<p>Background</p>
+</blockquote>
+<blockquote>
+<p>The strategy is about adding an input field into the form that:</p>
+</blockquote>
+<blockquote>
+<p>shouldn’t be visible by the real users<br>
+should be left empty by the real users<br>
+will most be filled by spam bots</p>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/13</link>
+        <pubDate>Fri, 13 Jan 2017 16:55:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[Anderson_Dadario]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4676">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>We just detected a whole network of spamming/abusing bots who use Tor exit nodes to sign up for fake trial accounts - in Saas apps that have some inbound/outbound email functionality (like webmail services, helpdesk apps, email marketing apps etc.)</p>
+</blockquote>
+</aside>
+<p>That’s a problem of your SaaS, not of Tor users.<br>
+Automated sign ups can happen inside or outside Tor.</p>
+<p>Next time put a captcha in the sign up form.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/12</link>
+        <pubDate>Thu, 12 Jan 2017 13:11:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[davedevelopment]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="4676">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>This ban is a business decision, not a technical one. Running a business sometimes requires you dump the idealistic shit and make a friggin decision. So I’d rather block TOR/China/Egypt/Morocco/Ukraine/whatever for a month or two and let them abuse my less protected competitors instead and forget about me, then I’ll lift this ban. Probably <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>Similar boat here, we don’t block outright, but we have background jobs that check each registration and flag those from TOR, known proxies, too many registrations from the same IP in X days etc. At the minute, the flagging restricts access to certain parts of the site but we’re thinking of moving it towards a full shadow ban.</p>
+<p>We’ve had very few false positives and it has helped us fight spammers and scammers significantly.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/11</link>
+        <pubDate>Thu, 12 Jan 2017 13:07:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="9" data-topic="4676">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chris/40/3594_1.png" class="avatar"> Chris:</div>
+<blockquote>
+<p>You really need to “fix your app to not be trivially abuseable”</p>
+</blockquote>
+</aside>
+<p>I agree. And I’m already doing that on the background - limiting the number of users you can add in a trial account, limiting the inbound email rate for trial accounts etc-blah-blah…</p>
+<p>But these attacks still ruin my metrics. They distort my conversion rates. They make my AB-tests useless. I need to tell a legitimate user from an abuser <strong>at the signup page</strong> even before it gets into the app. Otherwise I’m unable to make informed decisions.</p>
+<p><strong>This ban is a business decision</strong>, not a technical one. Running a business sometimes requires you dump the idealistic shit and make a friggin decision. So I’d rather block TOR/China/Egypt/Morocco/Ukraine/whatever for a month or two and let them abuse my less protected competitors instead and forget about me, then I’ll lift this ban. Probably <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>And before making that decision I checked the logs and the order history. No one ever buys my software from these locations, and certainly not from TOR. I’m selling b2b enterprise software, where people do the shopping from their corp. networks. Trust me, banning Tor has NO effect on the sales. Zero. Zilch. Nada.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/10</link>
+        <pubDate>Wed, 11 Jan 2017 17:20:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="4676">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>Instead of hiring 10 developers and 5 sysadmins work for a 2 months to make your app invincible - you can spend your money&amp; resources on… say, doubling your signups or conversion rates - and just ban TOR/China/Morocco/Egypt/[whatever destination you never had your B2B customers coming from] that annoys you</p>
+</blockquote>
+</aside>
+<p>Hmmmm. Not trying to be rude or anything, just want to provide some help here (hopefully i can be successful at this, apologies if I’m not), but…</p>
+<p>That is limited thinking.</p>
+<p>You’ve already convinced yourself that stopping the abuse on your system takes an insurmountable amount of work + expense ( 10 devs, 5 sysadmins over 2 months ). Sure, sure… it was “just a figure of speech” to convey a point. I get it. But… in the end it’s really not.</p>
+<p>This is you setting in stone that there is no other way to stop “the opportunity to abuse the application” as <a class="mention" href="/u/rfctr">@rfctr</a> put it.</p>
+<p>Regardless of what IP ranges you ban, you’ll still have this problem. You really need to “fix your app to not be trivially abuseable” as <a class="mention" href="/u/mpalmer">@mpalmer</a> states.</p>
+<p>THAT is the solution to your problem. Take our advise for what it’s worth to you (if anything at all), but at least be open enough to the idea that you have not yet learned what you don’t yet know.</p>
+<p>Hope that wasn’t offensive, but instead helpful in some way <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/9</link>
+        <pubDate>Wed, 11 Jan 2017 16:50:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="4676">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>In a small company you don’t have time for huge projects that have small impact.</p>
+</blockquote>
+</aside>
+<p>That is true.</p>
+<p>However, as it was mentioned, the “simply ban them” doesn’t actually solve anything, because the problem is not the source of the traffic, but the opportunity to abuse the application in particular way. If that opportunity exists, the abuse traffic will come one way or another.</p>
+<p>The “ban them” can only help for a short time, when the attack has already started and you need to buy a time to apply some fix that makes the abuse harder to implement.</p>
+<p>But eventually you’ll have to think on how to make it worthless (or at least worth less) for spammers to create an account in your application.</p>
+<p>And it doesn’t have to be a large project. Smaller measures may eliminate 99% of abuse. Recently I heard somewhere how a SaaS doesn’t allow to import a list of emails for explicit reason to prevent spamming. Something like this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/8</link>
+        <pubDate>Mon, 09 Jan 2017 19:38:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree, China was just a (bad) example.</p>
+<p>What I meant to say was: In a small company you don’t have time for huge projects that have small impact. In a small company you literally can’t measure a 10% increase.</p>
+<p>Instead of hiring 10 developers and 5 sysadmins work for a 2 months to make your app invincible - you can spend your money&amp; resources on… say, doubling your signups or conversion rates - and just ban TOR/China/Morocco/Egypt/[whatever destination you never had your B2B customers coming from] that annoys you</p>
+<p>Once I get to the scale of Facebook… (well, ok, not Facebook… lets say… Trello?) then I’ll worry about TOR</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/7</link>
+        <pubDate>Mon, 09 Jan 2017 15:52:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4676">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>Or you could just ban China.</p>
+</blockquote>
+</aside>
+<p>According to various sources, China is only 6th as the source of web attacks (6%).</p>
+<p>First one is US (20%). Let’s ban US.</p>
+<p>(Of course, I realize that the attacks are proxied and the source IP hence is not correlating to the real source country of the attack. Even less point in banning China then.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/6</link>
+        <pubDate>Mon, 09 Jan 2017 15:31:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[mpalmer]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s actually an excellent comparison: yes, you could block potentially hundreds of millions of potential customers, or you could fix your app to not be trivially abuseable.  I encourage all my competitors to block China (and Tor).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/5</link>
+        <pubDate>Mon, 09 Jan 2017 06:15:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, yeah…</p>
+<p>Banning TOR is like banning China. Of course, instead of banning China you could come up with some really intelligent intrusion prevention system, also find a smart way to qualify your trial accounts so all the “noise” doesn’t distort your metrics, probably use a neural network to find patterns among legit uses so you can quickly detect non-legit uses of your app…</p>
+<p>Or you could just ban China.</p>
+<p>PS you have a point though</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/4</link>
+        <pubDate>Sun, 08 Jan 2017 23:43:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[mpalmer]]></dc:creator>
+        <description><![CDATA[
+            <p>Rather than block Tor, you might want to consider making your service less abuseable.  Tor is far from the only way that a miscreant can obfuscate their actual IP address, and it isn’t even the easiest to use – there’s (still!) no shortage of open HTTP proxies, and trivially exploitable routers and IoT devices are out there in droves.  If your service is abuseable, it will be abused, even if you block Tor, so you’d do better to fix your app than disadvantage people with a legitimate desire to mask their address in a futile attempt to stop abuse.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/3</link>
+        <pubDate>Sun, 08 Jan 2017 23:03:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[rbur0425]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting…I bet they are trying to exploit the PHP mail service that was just found to be exploitable.  Make sure your servers are upgraded.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/2</link>
+        <pubDate>Fri, 06 Jan 2017 21:36:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+      <item>
+        <title>SaaS founders: you might wanna block Tor</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi.</p>
+<p>We just detected a whole network of spamming/abusing bots who use Tor exit nodes to sign up for fake trial accounts - in Saas apps that have some inbound/outbound email functionality (like webmail services, helpdesk apps, email marketing apps etc.)</p>
+<p>I’m talking <strong>tens of thousands</strong> of fake user accounts and trials.</p>
+<p>Anyways… Long story short you might want to block Tor exit nodes from accessing your website or at least your landing pages/signup forms. <strong>At best they will ruin your metrics</strong>. There’are no paying customers there anyway.</p>
+<p>If you’re using a CDN - it probably has a a built-in way to do this. If not - you can quickly detect a tor-node IP by running a special DNS query, just google for examples in php/ruby/whatever.</p>
+<p>PS. their intent is still unclear to me, seems like they’re building a massive network of fake email addresses, probably used for  fake social profiles used n click-fraud. Just my guess…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676/1</link>
+        <pubDate>Fri, 06 Jan 2017 21:20:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4676-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-founders-you-might-wanna-block-tor/4676.rss">SaaS founders: you might wanna block Tor</source>
+      </item>
+  </channel>
+</rss>

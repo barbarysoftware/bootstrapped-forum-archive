@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Easy Data Transform</title>
+    <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434</link>
+    <description>I have been working on a new product:
+https://successfulsoftware.net/2019/07/19/easy-data-transform/
+
+You might find it useful if you have table or list data to merge, filter, deduplicate or otherwise manipulate. Currently it is free.
+
+If you try it, I would be interested to hear how you get on.
+
+I would also be interested to hear if anyone has experience in this or related markets.</description>
+    
+    <lastBuildDate>Thu, 13 Feb 2020 10:20:16 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="RaminZaghi" data-post="29" data-topic="6434">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/raminzaghi/40/5070_2.png" class="avatar"> RaminZaghi:</div>
+<blockquote>
+<p>Here is an idea, let customers buy the basic product at a one time fixed price or even free and give them a number of “credit points”. Then assign credit points to different “paid” functionalities and reduce customer’s credit points each time they use a paid function.</p>
+</blockquote>
+</aside>
+<p>Sounds complicated. And hard to enforce with desktop software, where you might not always have an Internet connection. I am trying hard to keep everything simple, both for my sake and for the customers’ sake. Also in line with the ‘Easy’ positioning.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/30</link>
+        <pubDate>Thu, 13 Feb 2020 10:20:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[RaminZaghi]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s great to hear your experience <a class="mention" href="/u/andy">@Andy</a></p>
+<p>So I wonder whether there is any evidence that doing both is a bad practice? Starting the customer on a lower one time price and then encouraging a subscription for a subset of features; or somehow implementing something similar to the “free to play with in-app purchase” model which is popular in the games industry!?</p>
+<p>Here is an idea, let customers buy the basic product at a one time fixed price or even free and give them a number of “credit points”. Then assign credit points to different “paid” functionalities and reduce customer’s credit points each time they use a paid function.</p>
+<p>Just like how mobile network operators work, after a while you can show the more frequent users that they are just better off with a subscription that ends up cheaper for them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/29</link>
+        <pubDate>Thu, 13 Feb 2020 09:50:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>BTW I got quite a lot of resistance to a yearly sub. So I switched back to the trusted one-time fee (+paid major upgrades). I may try to reintroduce subscriptions further down the line.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/28</link>
+        <pubDate>Thu, 13 Feb 2020 09:12:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>FYI I just released v1.1.0 and this includes a Javascript transform type. So you can now write your own custom transforms in Javascript.</p>
+<p>Currently I am not exposing any application objects to the Javascript engine. But you can use standard Javascript functions for maths,  date etc. Javascript is one of my least favourite languages, but this new feature does add a lot of flexibility. It is also surprisingly fast (simple Javscript transform to multiply 2 columns took 0.03 seconds on a 100k row dataset).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/27</link>
+        <pubDate>Thu, 13 Feb 2020 09:08:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="24" data-topic="6434" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dmitry/40/3673_2.png" class="avatar"> Dmitry:</div>
+<blockquote>
+<p>And even after you build that feature they still need to “think more” and disappear</p>
+</blockquote>
+</aside>
+<p>People liek this are often all talk.</p>
+<p>I usually tell people they should base their purchasing decision on what the software does now.</p>
+<p>If I think something is a good idea or if lots of people ask for it, I might implement it. But not just to get 1 or 2 sales.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/26</link>
+        <pubDate>Thu, 26 Dec 2019 20:51:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>A mistake I’ve made perhaps twice… I learnt the hard way to ignore comments like “if you add this thing then I’ll buy your software and so will five of my buddies”</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/25</link>
+        <pubDate>Thu, 26 Dec 2019 14:28:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>And even after you build that feature they still need to “think more” and disappear <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/24</link>
+        <pubDate>Thu, 26 Dec 2019 14:19:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve had this, people happy to pay $19/mth, but only if I spend 30 hours to build a new feature for them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/23</link>
+        <pubDate>Thu, 26 Dec 2019 00:21:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="21" data-topic="6434">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dmitry/40/3673_2.png" class="avatar"> Dmitry:</div>
+<blockquote>
+<p>his is interesting. Does it come from the past experience with another product?</p>
+</blockquote>
+</aside>
+<p>Yes. My experience with desktop software <a href="https://www.perfecttableplan.com/">https://www.perfecttableplan.com/</a> is also that customers who pay the least often make the most support requests.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/22</link>
+        <pubDate>Mon, 23 Dec 2019 16:44:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="19" data-topic="6434">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/4401_2.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>Not planning to have a monthly subscription. I’m not really interested in customers who are going to use it for a month or two (possibly needing plenty of support) and then cancel</p>
+</blockquote>
+</aside>
+<p>This is interesting. Does it come from the past experience with another product?<br>
+I have SaaS, and cheap monthly plans definitely create problems: higher infrastructure costs to host them, and lots of support tickets (why people who pay less tend to have lots of questions?). However, they pay money so it’s sort of OK. I probably should think of allowing only 6 or 12 month payments for cheap plans and see how it goes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/21</link>
+        <pubDate>Mon, 23 Dec 2019 10:14:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Congratulations on releasing the paid version, Andy!</p>
+<p>Looking forward to see how it goes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/20</link>
+        <pubDate>Sat, 21 Dec 2019 06:50:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Adobe and others have blazes a trial for subscription desktop software. I think it is the way the world is heading. It certainly has advantages for the vendor.</p>
+<p>When the subscription expires, you can no longer output data. So you can see your lovely transformed data. But you can’t do anything with it. &gt;o)</p>
+<p>Not planning to have a monthly subscription. I’m not really interested in customers who are going to use it for a month or two (possibly needing plenty of support) and then cancel. Another company is welcome to them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/19</link>
+        <pubDate>Fri, 20 Dec 2019 15:48:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>Congrats on the release! The subscription idea for desktop software is interesting. What happens when the subscription expires, the software will not launch? What about monthly plans?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/18</link>
+        <pubDate>Fri, 20 Dec 2019 15:05:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>After a lot of work, Easy Data Transform v1.0.0 is finally available!<br>
+<a href="https://www.easydatatransform.com/" class="onebox" target="_blank">https://www.easydatatransform.com/</a></p>
+<p>It is no longer free, now it is out of beta. But it has a 7 (non-consecutive) day fully-functional trial.</p>
+<p>A 1 year subscription is $99+tax. But you get a 25% discount if you purchase in the next 7 days using this link:<br>
+<a href="https://secure.2checkout.com/order/checkout.php?PRODS=27569543&amp;QTY=1&amp;CART=1&amp;CARD=1&amp;COUPON=LAUNCH" class="onebox" target="_blank">https://secure.2checkout.com/order/checkout.php?PRODS=27569543&amp;QTY=1&amp;CART=1&amp;CARD=1&amp;COUPON=LAUNCH</a></p>
+<p>Any feedback would be very welcome.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/17</link>
+        <pubDate>Fri, 20 Dec 2019 14:21:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Steve_Metivier]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/andy">@Andy</a>, use USD, since everyone will know what it is. It’s just a little friction in the flow…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/16</link>
+        <pubDate>Wed, 31 Jul 2019 20:34:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="14" data-topic="6434">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v4/letter/f/35a633/40.png" class="avatar"> fatalerror:</div>
+<blockquote>
+<p>Usually it is straight forward but when it gets a bit more complex they need help.</p>
+</blockquote>
+</aside>
+<p>Feel free to point them at EasyDataTransform. ;0)</p>
+<aside class="quote no-group" data-post="14" data-topic="6434">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v4/letter/f/35a633/40.png" class="avatar"> fatalerror:</div>
+<blockquote>
+<p>I am aiming for international. When you click ‘Buy Now’ it takes you to the payment provider purchase page which should be in the users local currency. Should I remove the ‘AUD’ next to the price on my site?</p>
+</blockquote>
+</aside>
+<p>I think showing your price in AUD is a mistake. It could be having a significant impact on your conversion rate.</p>
+<p>A bet a lot of your target audience outside Aus have no idea what ‘AUD’ means. Even if they do, they probably have no idea what the exchange rate is.</p>
+<p>I recommend you either show them a price in their local currency or you price in USD (which everyone knows). Obviously pricing in USD means that you are subject to currency fluctuations.</p>
+<p>It isn’t that hard to put in some Javascript that looks up their country from their IP and shows a price in their local currency.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/15</link>
+        <pubDate>Thu, 25 Jul 2019 10:47:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[fatalerror]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andy">@andy</a> Initially when getting started users want to import trades from their broker and not enter them manually. If there isn’t already an existing template for their broker in the program they need to do some CSV manipulation in the importer to make the program understand the data. Usually it is straight forward but when it gets a bit more complex they need help.</p>
+<p>I am aiming for international. When you click ‘Buy Now’ it takes you to the payment provider purchase page which should be in the users local currency. Should I remove the ‘AUD’ next to the price on my site?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/14</link>
+        <pubDate>Thu, 25 Jul 2019 09:31:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/fatalerror">@fatalerror</a><br>
+Thanks. I spent a long time thinking about it. But I need to do more usability testing to improve that first few minutes with the software.</p>
+<p>Do your users do a lot of CSV/XLSX manipulation?</p>
+<p>BTW Why is your product only priced in AUD? Are you only aiming at Australian customers?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/13</link>
+        <pubDate>Thu, 25 Jul 2019 07:22:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[fatalerror]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Andy,</p>
+<p>I really like this idea. I had to implement CSV data import functionality for my program <a href="https://www.stockportfolioorganizer.com">https://www.stockportfolioorganizer.com</a> and ended up creating a combination of a dialog with options and for more advanced manipulation small JavaScript code snippets that can change values. I think your idea is far more intuitive and easier for users.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/12</link>
+        <pubDate>Thu, 25 Jul 2019 03:47:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hyper Plan is very much still for sale. In fact it recently got a spiffy new website.<br>
+<a href="https://www.hyperplan.com" class="onebox" target="_blank">https://www.hyperplan.com</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/11</link>
+        <pubDate>Tue, 23 Jul 2019 14:39:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>I think there will be a lot of niches…</p>
+<p>What’s the status of HyperPlan (sorry if I missed some news)?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/10</link>
+        <pubDate>Tue, 23 Jul 2019 14:08:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I just get an idea for a product and it burns a hole into my brain, until I do something about it. Hopefully I will be able to find a niche within this market. Part of the reason I am doing an extended beta is try to try and find out more about the market.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/9</link>
+        <pubDate>Mon, 22 Jul 2019 13:41:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Andy, I’m interested as to why your two most recent (AFAIK) product launches have been horizontal? Seems quite a difficult thing to do for a small company.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/8</link>
+        <pubDate>Mon, 22 Jul 2019 09:02:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>Might be of interest, further down the line.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/7</link>
+        <pubDate>Mon, 22 Jul 2019 07:30:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+      <item>
+        <title>Easy Data Transform</title>
+        <dc:creator><![CDATA[Atanas_Walker]]></dc:creator>
+        <description><![CDATA[
+            <p>Connectors to data sources, encryption/decryption/compression, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/easy-data-transform/6434/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/easy-data-transform/6434/6</link>
+        <pubDate>Sat, 20 Jul 2019 14:01:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6434-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/easy-data-transform/6434.rss">Easy Data Transform</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Amazon&#39;s Elastic Beanstalk...wow</title>
+    <link>https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833</link>
+    <description>A few days ago I moved a Tomcat-hosted web app from my own server to Amazon&#39;s Elastic Beanstalk. Have you used this? 
+
+I&#39;m still staggered by how easy it was. All I had to do was upload the WAR file that contains the web app. And...done!
+
+Now I&#39;m asking myself why I&#39;ve been running my own Linux server to host my web apps.
+
+</description>
+    
+    <lastBuildDate>Fri, 18 Jul 2014 15:59:44 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Amazon&#39;s Elastic Beanstalk...wow</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>Yep, <a href="http://www.onemusicapi.com" rel="nofollow noopener">OneMusicAPI</a> runs on EB. Just recently we migrated from horizontally scaling T1.micro instances to a T2.small instance. The difference in performance is enormous… we haven’t scaled out once and CPU usage is 5-10%, so we’re looking at going back to T2.micro and see how that goes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833/4</link>
+        <pubDate>Fri, 18 Jul 2014 15:59:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1833-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833.rss">Amazon&#39;s Elastic Beanstalk...wow</source>
+      </item>
+      <item>
+        <title>Amazon&#39;s Elastic Beanstalk...wow</title>
+        <dc:creator><![CDATA[thenrich]]></dc:creator>
+        <description><![CDATA[
+            <p>Elastic Beanstalk works pretty well for one my client’s Django applications. As long as EB supports the stack you’re using, it really does make deployments significantly easier. For more complicated setups beyond what EB supports, I use OpsWorks which gives more control, but is also has much slower deployments.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833/3</link>
+        <pubDate>Fri, 18 Jul 2014 13:31:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1833-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833.rss">Amazon&#39;s Elastic Beanstalk...wow</source>
+      </item>
+      <item>
+        <title>Amazon&#39;s Elastic Beanstalk...wow</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>After I stopped running my own servers &amp;  moved everything to Amazon AWS, I haven’t looked back.  One of the people in my mastermind group moved his SaaS app from a pile of MediaTemple servers to AWS.  He now uses Amazon’s tools for load monitoring &amp; scaling (auto-provisioning servers), and he’s THRILLED.  He now has a zero-human-involvement scaling mechanism that works, and is saving several hundred dollars a month in hosting fees.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833/2</link>
+        <pubDate>Fri, 18 Jul 2014 12:55:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1833-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833.rss">Amazon&#39;s Elastic Beanstalk...wow</source>
+      </item>
+      <item>
+        <title>Amazon&#39;s Elastic Beanstalk...wow</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>A few days ago I moved a Tomcat-hosted web app from my own server to Amazon’s Elastic Beanstalk. Have you used this?</p>
+<p>I’m still staggered by how easy it was. All I had to do was upload the WAR file that contains the web app. And…done!</p>
+<p>Now I’m asking myself why I’ve been running my own Linux server to host my web apps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833/1</link>
+        <pubDate>Fri, 18 Jul 2014 09:47:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1833-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/amazons-elastic-beanstalk-wow/1833.rss">Amazon&#39;s Elastic Beanstalk...wow</source>
+      </item>
+  </channel>
+</rss>

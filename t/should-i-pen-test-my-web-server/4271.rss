@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Should I pen test my web server?</title>
+    <link>https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271</link>
+    <description>Overnight the monitoring on my AWS-based website sent me a spate of emails. In the morning I took a look at the logs to find someone had tried to hack my site. I guess it was a script that looks for a bunch of common security holes.
+
+As far as I can tell, the would-be intruder was unsuccessful. But I can&#39;t really tell.
+
+This got me thinking: should I be getting a pro to do some penetration testing on my site? 
+
+Do any of you use such a service? Do you think it is worthwhile doing? If so how and when?</description>
+    
+    <lastBuildDate>Fri, 13 Jan 2017 09:30:05 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Should I pen test my web server?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="4271">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chris/40/3594_1.png" class="avatar"> Chris:</div>
+<blockquote>
+<p>What did you end up doing about this?</p>
+</blockquote>
+</aside>
+<p>I ended up doing nothing… <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/5</link>
+        <pubDate>Fri, 13 Jan 2017 09:30:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4271-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271.rss">Should I pen test my web server?</source>
+      </item>
+      <item>
+        <title>Should I pen test my web server?</title>
+        <dc:creator><![CDATA[Chris]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4271">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>This got me thinking: should I be getting a pro to do some penetration testing on my site?</p>
+</blockquote>
+</aside>
+<p>What did you end up doing about this?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/4</link>
+        <pubDate>Thu, 12 Jan 2017 19:02:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4271-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271.rss">Should I pen test my web server?</source>
+      </item>
+      <item>
+        <title>Should I pen test my web server?</title>
+        <dc:creator><![CDATA[Anderson_Dadario]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Steve,</p>
+<p>It’s tough to put something in the internet without knowing the risks. That’s the information security challenge but manual penetration tests are expensive for us bootstrappers, although very good to find complex flaws in web apps, servers, etc. Ideally it should be performed before pushing a new version to production and after deploy too because scanners got updated and may find vulnerabilities that wasn’t possible before.</p>
+<p>If you haven’t been hacked, I recommend you to at least run security scanners before attackers, for that you can use the free account on Gauntlet (<a href="http://gauntlet.io" rel="nofollow noopener">gauntlet.io</a>). It’s only one part of the security that you should be doing, but feel free to ask me for more information. I’m too lazy to answer it all here as it’s something really long to write. However I did write part of it in here (<a href="http://dadario.com.br/security-for-building-modern-web-apps/" rel="nofollow noopener">dadario.com.br/security-for-building-modern-web-apps/</a>)</p>
+<p>Cheers</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/3</link>
+        <pubDate>Thu, 12 Jan 2017 10:41:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4271-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271.rss">Should I pen test my web server?</source>
+      </item>
+      <item>
+        <title>Should I pen test my web server?</title>
+        <dc:creator><![CDATA[etd]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevemcleod">@SteveMcLeod</a> I used to do pentesting for a living, the answer is: it depends on the types of data you’re storing. If it’s something very valuable like your client’s “account balances”, PII, etc. Then it won’t hurt, it will be a small assessment (1 or 2 days) and won’t be very expensive (~£1000/day). If you want an introduction with someone serious, I’m happy to connect you.</p>
+<p>If your server is mainly static, I’m not sure if you’ll get much out of it. Make sure no unnecessary ports are open (you can use <a href="http://nmap.org" rel="nofollow noopener">nmap</a> for that), and you can also scan the web server with something like: <a href="https://cirt.net/Nikto2" rel="nofollow noopener">nikto</a> or <a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project" rel="nofollow noopener">ZAP</a>.</p>
+<p>There are some open-source tools you can use to do lightweight scanning like [i] and resources w/ AWS best practices [ii].</p>
+<p>So the takeaways: a) do it if what you’re protecting is valuable (to your business or to your client’s). b) there are options for DIY’ing it, but you’re probably better off paying a pro to spend a couple of days looking at it.</p>
+<p>HTH,<br>
+Daniel</p>
+<p>p.s. happy to expand on any particular point.</p>
+<p>[i]<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://assets-cdn.github.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://github.com/cloudsploit/scans" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars1.githubusercontent.com/u/12823256?s=400&amp;v=4" class="thumbnail onebox-avatar" width="252" height="252">
+
+<h3><a href="https://github.com/cloudsploit/scans" target="_blank" rel="nofollow noopener">cloudsploit/scans</a></h3>
+
+<p>scans - AWS security scanning checks</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>[ii]<br>
+<a href="http://media.amazonwebservices.com/AWS_Security_Best_Practices.pdf" class="onebox" target="_blank" rel="nofollow noopener">http://media.amazonwebservices.com/AWS_Security_Best_Practices.pdf</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/2</link>
+        <pubDate>Wed, 10 Aug 2016 12:51:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4271-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271.rss">Should I pen test my web server?</source>
+      </item>
+      <item>
+        <title>Should I pen test my web server?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Overnight the monitoring on my AWS-based website sent me a spate of emails. In the morning I took a look at the logs to find someone had tried to hack my site. I guess it was a script that looks for a bunch of common security holes.</p>
+<p>As far as I can tell, the would-be intruder was unsuccessful. But I can’t really tell.</p>
+<p>This got me thinking: should I be getting a pro to do some penetration testing on my site?</p>
+<p>Do any of you use such a service? Do you think it is worthwhile doing? If so how and when?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271/1</link>
+        <pubDate>Wed, 10 Aug 2016 09:16:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4271-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/should-i-pen-test-my-web-server/4271.rss">Should I pen test my web server?</source>
+      </item>
+  </channel>
+</rss>

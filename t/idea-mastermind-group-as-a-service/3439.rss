@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Idea: Mastermind group as a service</title>
+    <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439</link>
+    <description>**The Problem:** 
+
+As a founder it&#39;s hard to keep motivated and make the best decisions when the only people you have to talk to on a regular basis are mom, pop &amp; friends who are not really into &quot;the scene&quot;.
+
+**The Solution: A Mastermind Group**
+
+Mastermind groups offer a combination of brainstorming, education, peer accountability and support in a group setting to sharpen your business and personal skills. A mastermind group helps you and your mastermind group members achieve success.
+
+This sounds great right? But how do you set this up, how do you keep it going, how do you track it?
+
+**The Idea**
+
+That&#39;s where mastermind.io comes in. You can bring your own already existing mastermind group OR you can join and get auto matched with new members who are in the same stage of building a business as you. Either way, mastermind.io brings you plenty of value.
+
+You already know the benefits, so here are some of the features:
+
+ - Bring an existing group, or get auto matched into a new one
+ - Set a schedule that everyone aggress on
+ - We will send you an email 24 &amp; 1 hour before your scheduled session
+ - We&#39;ll send you a text message 5 mins before the session start
+ - We provide a web interface for your mastermind with built in audio &amp; real-time note sharing
+ - If you can&#39;t attend by web, you can dial in to a conference line
+ - Our system can auto dial out to your phone at the start of the conference
+ - All sessions &amp; notes are recorded &amp; searchable
+ - If you miss session you can play it back at a later date
+ - Your group has an you@mastermind.io email address to distribute messages to all members during the week for continual inspiration and advice
+
+**Revenue**
+
+Monthly plan.
+
+**Feedback**
+
+Would you pay for this? All feedback welcome!</description>
+    
+    <lastBuildDate>Mon, 02 May 2016 15:07:48 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Idea: Mastermind group as a service</title>
+        <dc:creator><![CDATA[Ken]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/michaeljamescalkins">@michaeljamescalkins</a> it’s funny, you’ve reminded me that I really need to update that landing page. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Thanks for the reminder!</p>
+<p>In talking with my customers, it’s been overwhelmingly clear that many entrepreneurs agree with you. But it’s not that black and white in deciding which features to offer.</p>
+<p>Specifically:</p>
+<p><strong>Scheduling</strong>: At first, I hoped I could code this problem away for my customers.</p>
+<p>Last year, when I launched MastermindJam, I started working on an extensive scheduling tool with a simple UI. I built an API integration with a fantastic service that helps suggest ideal meeting times across time zones and disparate calendar tools, built that into an app that I’d link up to my onboarding and badda-bing, badda-boom you have a few ideal times to choose from.</p>
+<p>But…</p>
+<p>Before I put the final touches on the code, before I launched this fantastic tool, I decided to poll my customers. See if such a thing would even be <em>useful</em>.</p>
+<p>When I asked people—paying customers— what kind of tools I could offer that would help them schedule meetings, the overwhelming response I get back from customers was “Look, I’m running a $10M/yr business: I can schedule a meeting. Especially if it’s for something as important as my mastermind group meeting. When it’s important, you MAKE the time.” Okay, fine, I get that. Personally, I kind of agree with that sentiment, really.</p>
+<p>Yeah, yeah, I know what you’re thinking: why didn’t you ask this question <em>before</em> you started coding?! Great point. And a lesson I haven’t repeated since.</p>
+<p>Since then, I’ve watched a lot of groups schedule their first meeting. I’ve observed that many of my groups (let’s say 30-40%) have a tremendous amount of trouble coming to consensus on the timing of their very first meeting.</p>
+<p>So there’s clearly a disconnect between what the customer wants in this respect vs. what they <em>need</em>.</p>
+<p>To combat this, the first email which introduces new group members to one another now shows a simple calendar to let people see at-a-glance how their availability preferences overlap.</p>
+<p>If that simple availability overview doesn’t help enough, I suggest they use a tool like Doodle or GroupAgree or <a href="http://Vyte.in" rel="nofollow noopener">Vyte.in</a> or WorldTimeBuddy to get in sync (there are a myriad of tools that solve this problem). Some groups have even used a Google Sheet spreadsheet to coordinate availability (which, to me, seems like too much tool for such a simple problem) but, hey, to each their own.</p>
+<p>And, that’s really the extent of the simple scheduling tools.</p>
+<p>I mention all of this to illustrate that a good number of people starting mastermind groups do experience scheduling hurdles.</p>
+<p>Next, after each group is formed I send out brief, conversational training emails with suggestions on how to get started, how to coordinate the first meeting, how best to structure the agenda of the first meeting, how the agenda for the second and subsequent meeting should differ from the first, and so forth. And from there, I’m just available if any groups need assistance.</p>
+<p><strong>Reminders</strong> There are no reminders (yet). Back when I started, in my hubris of coding up a bunch of stuff before talking to customers, I built tech around making reminders a core part of the value of the system; including a Twilio based-SMS reminder system, and I built a slack-based chat bot. When I talk with customers about this, I get an overwhelming “meh” in response, so I never launched those tools either. More wasted time.</p>
+<p><strong>Slack Group</strong> There is a MastermindJam slack group, but I’ve never invited a single customer into it. Why? Because unless there is a certain member count to these slack groups, they become sad ghost towns with little engagement. I’m really on the fence about this one, because I think there is a lot of value in small group discussions. And, since during my onboarding I collect over thirty facets of data about each entrepreneur, with nearly 500 customers in the system today, I can segment them into really tightly targeted private channels within slack.</p>
+<p>And there’s another advantage of slack, which is similar to the advantage that comes with a private login-protected discussion forum…</p>
+<p>Privacy.</p>
+<p><strong>Forum</strong> A private, login-protected, non-Google indexable discussion forum is nothing like Reddit. Nothing like this forum here on <a href="http://discuss.Bootstrapped.fm" rel="nofollow noopener">discuss.Bootstrapped.fm</a>. Because it’s private.</p>
+<p>Entrepreneurs who are working on a side hustle hoping to leave their day gig don’t want to post something too revealing about their secret quest for freedom in a public, indexable forum like this.</p>
+<p>If such a post is discovered by their boss, it becomes your letter of resignation.</p>
+<p>No one wants to get escorted to the door of their day job for some offhanded remark they made in a progress/accountability thread on these public bootstrapped forums. But, it can happen.</p>
+<p>Not so with a slack group, and not so with a private forum.</p>
+<p>All that said: there already exist many really great private discussion forums and slack groups where you can talk business without being under the watchful eye of Sauron—er, Google*—and I’m not sure the world needs one more.</p>
+<p><strong>Video Courses</strong> I’ve had many customers ask for these, so I’m making them. Period.</p>
+<p>Just very simple, short courses that are available if needed. There’s over 1,300 people who paid $49 for one of the leading mastermind group video courses on Udemy (and it’s one of dozens on that platform alone), so someone, somewhere is interested in buying a video course on getting the most out of their mastermind group (even if that someone is not you or anyone else on this forum).</p>
+<p>All of these things are optional, really. Take what helps you, and use it to grow your business, leave aside all the rest.</p>
+<p>My struggle from day one has been to offer the right cocktail of value to my customers in this space.</p>
+<p>As in all products, there is no one-size-fits-all mastermind group program that will satisfy everyone, but I just honestly hope that the customers who trusted my product to get them into a mastermind group have found that trust well-placed, and have gotten real value out of their group.</p>
+<p><em>* I, for one, welcome our new Google overlords.</em></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/9</link>
+        <pubDate>Sun, 01 May 2016 03:20:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3439-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss">Idea: Mastermind group as a service</source>
+      </item>
+      <item>
+        <title>Idea: Mastermind group as a service</title>
+        <dc:creator><![CDATA[startrinity]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/jv2222">@jv2222</a>,  the problem you stated does not exist for me. I can run business on my own, no need to talk to anyone. Sometimes I ask non-techical questions to my wife about pricing, it is enough. This website already connects entrepreneurs, for free.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/8</link>
+        <pubDate>Mon, 04 Apr 2016 18:35:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3439-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss">Idea: Mastermind group as a service</source>
+      </item>
+      <item>
+        <title>Idea: Mastermind group as a service</title>
+        <dc:creator><![CDATA[michaeljamescalkins]]></dc:creator>
+        <description><![CDATA[
+            <p>No I don’t like the schedules.</p>
+<p>I do like the idea of connecting with other ambitious people though.</p>
+<p>I’d recommend an alternative approach that I’d actually really like:</p>
+<ul>
+<li>Video recordings where you talk about your progress, no longer than one or two minutes</li>
+<li>Combination of reddit and chat maybe, probably would have to be focused on your goals or something</li>
+<li>Progress timeline where you can upload images of progress so other can see</li>
+</ul>
+<p>From one of the competitors above: <a href="https://mastermindjam.com/">https://mastermindjam.com/</a><br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/6/69951204e0c2c6ca868f2c1a7ab2ff22510fa249.png" data-download-href="/uploads/short-url/f41w0nD1D4DgqilQyP4P5kyLQPT.png?dl=1" title="MastermindJam_-_Join_a_Mastermind_Group_🔊.png"><img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/6/69951204e0c2c6ca868f2c1a7ab2ff22510fa249_2_690x370.png" alt data-base62-sha1="f41w0nD1D4DgqilQyP4P5kyLQPT" width="690" height="370" srcset="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/6/69951204e0c2c6ca868f2c1a7ab2ff22510fa249_2_690x370.png, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/6/69951204e0c2c6ca868f2c1a7ab2ff22510fa249_2_1035x555.png 1.5x, https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/6/69951204e0c2c6ca868f2c1a7ab2ff22510fa249.png 2x" data-small-upload="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/6/69951204e0c2c6ca868f2c1a7ab2ff22510fa249_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">MastermindJam_-_Join_a_Mastermind_Group_🔊.png</span><span class="informations">1213×652 93.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/7</link>
+        <pubDate>Sat, 02 Apr 2016 00:38:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3439-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss">Idea: Mastermind group as a service</source>
+      </item>
+      <item>
+        <title>Idea: Mastermind group as a service</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="3439">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/dgrigg/40/75_1.png" class="avatar"> dgrigg:</div>
+<blockquote>
+<p>The concept was great but I found the wheels on group started falling off. It was very difficult to keep everyone tied in and engaged. After a while it started stagnanting.</p>
+</blockquote>
+</aside>
+<p>That’s been my problem with every focussed business group- paid or free. After a  time, people lose interest.</p>
+<p>Excepting present group, as this is a more free form discussion site.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/6</link>
+        <pubDate>Mon, 12 Oct 2015 10:47:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3439-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss">Idea: Mastermind group as a service</source>
+      </item>
+      <item>
+        <title>Idea: Mastermind group as a service</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Brennan Dunn launched something similar, <a href="https://thefreelancersguild.com/" rel="nofollow noopener">https://thefreelancersguild.com/</a>. I was a member for about six months. Weekly video hangouts, some material from Brennan to work through and discuss. Grouped up with like minded freelancers/founders. The concept was great but I found the wheels on group started falling off. It was very difficult to keep everyone tied in and engaged. After a while it started stagnanting.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/5</link>
+        <pubDate>Sun, 11 Oct 2015 12:44:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3439-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss">Idea: Mastermind group as a service</source>
+      </item>
+      <item>
+        <title>Idea: Mastermind group as a service</title>
+        <dc:creator><![CDATA[kadavy]]></dc:creator>
+        <description><![CDATA[
+            <p>When I saw the title of this, I immediately imagined that it would be useful to be able to conduct the sessions without a care, and have someone else review them, take notes, and summarize the learnings, goals, etc…</p>
+<p>To me, that would be the MVP…the customer just has to conduct sessions on Hangouts on Air, and provide the link to the recording.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/4</link>
+        <pubDate>Fri, 09 Oct 2015 20:36:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3439-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss">Idea: Mastermind group as a service</source>
+      </item>
+      <item>
+        <title>Idea: Mastermind group as a service</title>
+        <dc:creator><![CDATA[Kevin]]></dc:creator>
+        <description><![CDATA[
+            <p>Ken Wallace from the <a href="http://nightsandweekendspodcast.com/" rel="nofollow noopener">http://nightsandweekendspodcast.com/</a> has launched a similar product <a href="https://mastermindjam.com/" rel="nofollow noopener">https://mastermindjam.com/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/3</link>
+        <pubDate>Tue, 01 Sep 2015 10:01:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3439-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss">Idea: Mastermind group as a service</source>
+      </item>
+      <item>
+        <title>Idea: Mastermind group as a service</title>
+        <dc:creator><![CDATA[mpalmer]]></dc:creator>
+        <description><![CDATA[
+            <p>For what it’s worth, I might be inclined to pay for something like this.  The biggest drawback/thing that would turn me off would be the general clusterfudge that is multi-person phone/videoconferences that aren’t strongly moderated.  Some sort of coaching/assistance to get the meetings “well tuned” (say, helping the organiser to learn how to moderate well) would make me look more positively at the service.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/2</link>
+        <pubDate>Sat, 29 Aug 2015 05:54:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3439-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss">Idea: Mastermind group as a service</source>
+      </item>
+      <item>
+        <title>Idea: Mastermind group as a service</title>
+        <dc:creator><![CDATA[jv2222]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>The Problem:</strong></p>
+<p>As a founder it’s hard to keep motivated and make the best decisions when the only people you have to talk to on a regular basis are mom, pop &amp; friends who are not really into “the scene”.</p>
+<p><strong>The Solution: A Mastermind Group</strong></p>
+<p>Mastermind groups offer a combination of brainstorming, education, peer accountability and support in a group setting to sharpen your business and personal skills. A mastermind group helps you and your mastermind group members achieve success.</p>
+<p>This sounds great right? But how do you set this up, how do you keep it going, how do you track it?</p>
+<p><strong>The Idea</strong></p>
+<p>That’s where <a href="http://mastermind.io" rel="nofollow noopener">mastermind.io</a> comes in. You can bring your own already existing mastermind group OR you can join and get auto matched with new members who are in the same stage of building a business as you. Either way, <a href="http://mastermind.io" rel="nofollow noopener">mastermind.io</a> brings you plenty of value.</p>
+<p>You already know the benefits, so here are some of the features:</p>
+<ul>
+<li>Bring an existing group, or get auto matched into a new one</li>
+<li>Set a schedule that everyone aggress on</li>
+<li>We will send you an email 24 &amp; 1 hour before your scheduled session</li>
+<li>We’ll send you a text message 5 mins before the session start</li>
+<li>We provide a web interface for your mastermind with built in audio &amp; real-time note sharing</li>
+<li>If you can’t attend by web, you can dial in to a conference line</li>
+<li>Our system can auto dial out to your phone at the start of the conference</li>
+<li>All sessions &amp; notes are recorded &amp; searchable</li>
+<li>If you miss session you can play it back at a later date</li>
+<li>Your group has an <a href="mailto:you@mastermind.io">you@mastermind.io</a> email address to distribute messages to all members during the week for continual inspiration and advice</li>
+</ul>
+<p><strong>Revenue</strong></p>
+<p>Monthly plan.</p>
+<p><strong>Feedback</strong></p>
+<p>Would you pay for this? All feedback welcome!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439/1</link>
+        <pubDate>Sat, 29 Aug 2015 01:48:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3439-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mastermind-group-as-a-service/3439.rss">Idea: Mastermind group as a service</source>
+      </item>
+  </channel>
+</rss>

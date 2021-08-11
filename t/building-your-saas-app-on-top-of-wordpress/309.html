@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Building Your Saas App On Top of WordPress? - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Yep, I went there.  :slight_smile:  Let’s hope this doesn’t start a religious war.  So, SmallSpec is at the very-rough-internal-prototype stage.  My plan has been to develop the product in ASP.NET MVC (Razor), primarily because that stack is in my own personal wheelhouse enough that I can actually review and vouch for the code, even if I didn’t write it myself (which I haven’t, and probably won’t).  But then I got to thinking - if I’m willing to cut the umbilical enough to not write the code, ma...">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="309.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Building Your Saas App On Top of WordPress?&#39;" href="309.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/building-your-saas-app-on-top-of-wordpress/309" />
+<meta property="og:title" content="Building Your Saas App On Top of WordPress?" />
+<meta name="twitter:title" content="Building Your Saas App On Top of WordPress?" />
+<meta property="og:description" content="Yep, I went there.  🙂  Let’s hope this doesn’t start a religious war.  So, SmallSpec is at the very-rough-internal-prototype stage.  My plan has been to develop the product in ASP.NET MVC (Razor), primarily because that stack is in my own personal wheelhouse enough that I can actually review and vouch for the code, even if I didn’t write it myself (which I haven’t, and probably won’t).  But then I got to thinking - if I’m willing to cut the umbilical enough to not write the code, ma..." />
+<meta name="twitter:description" content="Yep, I went there.  🙂  Let’s hope this doesn’t start a religious war.  So, SmallSpec is at the very-rough-internal-prototype stage.  My plan has been to develop the product in ASP.NET MVC (Razor), primarily because that stack is in my own personal wheelhouse enough that I can actually review and vouch for the code, even if I didn’t write it myself (which I haven’t, and probably won’t).  But then I got to thinking - if I’m willing to cut the umbilical enough to not write the code, ma..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="9 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="50 ❤" />
+<meta property="article:published_time" content="2013-08-07T17:24:49+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="309%3Fpage=2.html">
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="309.html">Building Your Saas App On Top of WordPress?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Christopher.html'><span itemprop='name'>Christopher</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-07T17:24:49Z' class='post-time'>
+                August 7, 2013,  5:24pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-07T17:24:49Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yep, I went there.  <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">  Let’s hope this doesn’t start a religious war.</p>
+<p>So, <a href="http://www.smallspec.com" rel="nofollow noopener">SmallSpec</a> is at the very-rough-internal-prototype stage.  My plan has been to develop the product in <a href="http://ASP.NET" rel="nofollow noopener">ASP.NET</a> MVC (Razor), primarily because that stack is in my own personal wheelhouse enough that I can actually review and vouch for the code, even if I didn’t write it myself (which I haven’t, and probably won’t).</p>
+<p>But then I got to thinking - if I’m willing to cut the umbilical enough to not write the code, maybe it would be OK for me to not even understand the code?  Maybe it would be OK for me to be purely a businessman on this one, and not be an engineer at all?  It’s still early enough that I could scrap the work we’ve done and go a different direction if there were sufficient benefit to doing so.</p>
+<p>And that sort of thinking led me to wonder if it was possible/wise/manageable to build my Saas app on top of WordPress?</p>
+<p>The pros, as I see them, are that there’s already a sound membership/user/authentication system in place.  There’s already a sound system in place for plug-ins and extensions.  There’s already a sound system in place for theme-ing (which might come in handy for letting customers theme their spec sites for visiting clients).</p>
+<p>But what I don’t know is whether or not all that equates to being a good place to bolt an app onto.</p>
+<p>The cons - well, con - is that I have a deeply-held, seething hatred of WordPress.  Every.  Single.  Time.  I try to do anything with WP it seems 10x more difficult and 10x less obvious than it needs to be, despite everyone else marveling at how simple and obvious everything is in WP.  But hey, if I’m not building it, maybe my personal struggles with WP are moot.</p>
+<p>So, questions for discussion:</p>
+<p>Have any of you built your Saas app on top of WP?<br>
+How did you do it without customizing any WP core code?<br>
+What kid of troubles did you encounter?<br>
+What were the primary benefits (as you see them)?<br>
+Would you do it again?</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/imsickofmaps'><span itemprop='name'>imsickofmaps</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-07T17:51:35Z' class='post-time'>
+                August 7, 2013,  5:51pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-07T17:51:35Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><img src="https://discuss.bootstrapped.fm/uploads/bootstrapped/3/080259adb837efac.gif" width="167" height="167"> </p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="16" />
+           <span class='post-likes'>16 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/ericbarnes'><span itemprop='name'>ericbarnes</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-07T17:54:24Z' class='post-time'>
+                August 7, 2013,  5:54pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-07T17:54:24Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="1" data-topic="309">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/christopher/40/1284_1.png" class="avatar"> Christopher:</div>
+<blockquote>
+<p>I have a deeply-held, seething hatred of WordPress</p>
+</blockquote>
+</aside>
+<p>Sums it up. <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>People seem to be successful building themes, plugins, and such. Just not something I would ever have any interest pursuing.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/steve228uk.html'><span itemprop='name'>steve228uk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-07T18:44:18Z' class='post-time'>
+                August 7, 2013,  6:44pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-07T18:44:18Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve just seen <a href="http://seshn.com/" rel="nofollow noopener">http://seshn.com/</a> which is built on WP, seems to do a good job but not sure I’d ever built something other than a little brochure site or a blog on top of it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IvanDevelop.html'><span itemprop='name'>IvanDevelop</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-07T18:46:45Z' class='post-time'>
+                August 7, 2013,  6:46pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-07T18:46:45Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I know that <a href="http://www.happytables.com/" rel="nofollow noopener">Happy Tables</a> has grown a pretty successful Saas Business on top of WoorPress but I would recommend something like Laravel. With the number of packages out there you can have the equivalent functionality of a standard WordPress install and a lot more flexibility pretty fast.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/douggdev.html'><span itemprop='name'>douggdev</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-07T18:51:21Z' class='post-time'>
+                August 7, 2013,  6:51pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-07T18:51:21Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I just can’t imagine building/maintaining anything except a small blog type on Wordpress.</p>
+<p>It does what it is supposed to well.  Content editors find it easy to use.</p>
+<p>I think you would tear through all of the efficiency advantages of the user management quickly, and be left with a bear to build off of.  Would you want to work with a heavily customized Wordpress install for the next few years?</p>
+<p>I think it would be pretty rough.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rtablada'><span itemprop='name'>rtablada</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-07T18:56:33Z' class='post-time'>
+                August 7, 2013,  6:56pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-07T18:56:33Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><em>Keep in mind that I have been burned out of any relationship with WP after working for a design firm’s designer</em></p>
+<p>WP is a bloated system for building SaaS apps. Not to mention that they are going through a serious refactor in terms of what WP is (framework vs CRM vs Blog vs ???). Sure it is popular, but it has very few benefits.</p>
+<p>The company I worked for hacked together a Social Network for a school using WP, but to do it required massive amounts of 3rd abandonware plugins.</p>
+<p>This on top of the fact that most updates to WP core have no update path when you hack at it and will likely break the plugin infrastructure you have laid on top of the system.</p>
+<p>In terms of speed, WP uses a bloated data store that overly abstracts database infrastructure and you’ll often find yourself running raw PDO or bringing in a different ORM.</p>
+<p>So, all this to say: if you are going to build out a new admin panel, a new ORM, forego themes, etc: just build it on an MVC like Laravel, Rails, Express, Meteor, etc. All you get with WP is a bunch of bloat and security bugs that you won’t have a good way to upgrade out of once you start fiddling around.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Christopher.html'><span itemprop='name'>Christopher</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-07T20:50:23Z' class='post-time'>
+                August 7, 2013,  8:50pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-07T20:50:23Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Wow, seems to be unanimous.  I do know of 1 guy who has successfully built a Saas app on top of WP and seems to be happy with it.  But perhaps he is uniquely qualified to travel that road.  The consensus seems to be that for most of us it isn’t a great idea.</p>
+<p>Thanks for the feedback!</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/ian'><span itemprop='name'>ian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-07T20:55:17Z' class='post-time'>
+                August 7, 2013,  8:55pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-07T20:55:17Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I do think you have to be careful in that a forum full of dev’s is always going to tell you to write new code <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>That said, it does come with a lot of overhead. You can probably get about the same effect starting with a good framework and using a lot of OS/Commercial plugins/modules to wire it up. Then if you later have to refactor it’ll be much easier than pulling it out of WP.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/tnorthcutt'><span itemprop='name'>tnorthcutt</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-08T02:17:37Z' class='post-time'>
+                August 8, 2013,  2:17am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-08T02:17:37Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’d suggest talking to people who have built on top of WP (Noel Tock, who built Happy Tables, being one), and see what their experience has been. It’s quite possible that it’s a Bad Idea that just happens to work fine. It’s also possible that it’s a Bad Idea, period. I submit that you won’t know until you talk to more people who have been there, done that.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/knight.html'><span itemprop='name'>knight</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-08T02:25:12Z' class='post-time'>
+                August 8, 2013,  2:25am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-08T02:25:12Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>You can search online how “hellobar” launch on top of WordPress as a SAAS service, it really depends individual need.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/patpohler.html'><span itemprop='name'>patpohler</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-08T15:09:47Z' class='post-time'>
+                August 8, 2013,  3:09pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-08T15:09:47Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hey Christopher, I like how you’re thinking, I believe it’s important as an engineer to force yourself to think business focused instead of falling back on developer-line of thinking.</p>
+<p>I tried that once with a Q&amp;A / Stack Exchange type site for pilots. I was in the early beta before Area51 and when they changed the model I decided to switch to an open source Q&amp;A site platform.</p>
+<p>At the time I was a .NET dev so choosing the Django/Python platform was strategic in a way, I wanted to focus on building the community rather than mucking around in the code. It worked for a while, but I soon I ran into a brick wall because at some point I wanted to push new features out to help grow the site, but I choose a platform I didn’t really want to work with (I’d rather have worked with Ruby I think at the time).</p>
+<p>Anyway I how you’re willing to put yourself in a businesses only role, but be careful because as a dev you’re going to want to add functionality so there will be a time were you’ll want to dive into the code and hack out a feature. This is a good thing, after-all it’s your strongest skill.</p>
+<p>CMSs are great for rapid prototypes, but you will run into deployment and scaling issues. The way they’re structured a lot of CMSs co-mingle data and structure in a way that makes it difficult to migrate across multiple environments. Build your rapid prototype in a framework you’re strongest in (or a framework you really want to work with) and really force yourself to push out a quick prototype that gives your users the minimal feature set and launch it. Then add features after you launch.</p>
+<p>Good luck! I love the idea and it looks you can dogfood your SaaS as you build it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Christopher.html'><span itemprop='name'>Christopher</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2013-08-08T15:59:50Z'>
+              <time itemprop='dateModified' datetime='2013-08-08T16:02:33Z' class='post-time'>
+                August 8, 2013,  4:02pm
+              </time>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>I’d suggest talking to people who have built on top of WP (Noel Tock,<br>
+who built Happy Tables, being one), and see what their experience has<br>
+been.</p>
+</blockquote>
+<p>I’ve done a bit of that, but the few folks I’ve talked to have built easy-site-builder type Saas apps on top of WP, which isn’t exactly a stretch for the platform.  At that point you’re just using WP as a plug-in delivery system for whatever vertical market you’re targeting.</p>
+<p>The more I think about it, the more I think that SmallSpec is a bad fit for WP.  Now, if I ever get around to reviving my own vertical-market-easy-site-builder idea, WP might be a choice to think about, but until then…probably not.</p>
+<blockquote>
+<p>Anyway I how you’re willing to put yourself in a businesses only role,<br>
+but be careful because as a dev you’re going to want to add<br>
+functionality so there will be a time were you’ll want to dive into<br>
+the code and hack out a feature. This is a good thing, after-all it’s<br>
+your strongest skill.</p>
+</blockquote>
+<p>I’m probably in the minority on this, but I’d be perfectly happy to never write a line of code again, and just design/PM all my projects from here on out.  All the joy that coding used to bring me has been gone for quite some time, I’m afraid.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rtablada'><span itemprop='name'>rtablada</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-12T05:13:24Z' class='post-time'>
+                August 12, 2013,  5:13am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-12T05:13:24Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Not to sway you too much on this train, but Laravel is a great platform for SaaS apps. I’ve been working to release or help to release some off the shelf solutions that help build the marketing solutions quick and easy.</p>
+<p>Right now, I’ve got a full featured SaaS app one production DB, then on my marketing site, I use sqlite DB instances with <a href="http://github.com/rtablada/laravel-faq">Laravel FAQ</a> for my FAQ CMS and <a href="http://github.com/wardrobecms/core">WardrobeCMS/Core</a> for the news and updates blog.</p>
+<p>It’s working really well. Gives a great platform and I love that while it is completely modular, I have a single codebase that is super readable and fast.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/schutzsmith.html'><span itemprop='name'>schutzsmith</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-30T02:23:25Z' class='post-time'>
+                August 30, 2013,  2:23am
+              </time>
+              <meta itemprop='dateModified' content='2013-08-30T02:23:25Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Build with what you know.</p>
+<p>I’ve built on CakePHP, CodeIgniter, Drupal, Wordpress, Lasso, Coldfusion, and even way back when I was guilty of a few apps for telecom built in Perl.  The big distraction is that as developers, we see a shiny new thing and flock to it.  If you can learn it soon, great! But, usually the reality is that it seems to me that its more important to build your idea quickly so as to not lose momentum. I speak from experience, having literally lost over $80k last year paying developers to do 2 projects in Code Igniter that could have easily been made in a few weeks on Wordpress or Drupal.</p>
+<p>Of course in the end it’s different for everybody, but it seems the focus should be on making the most money possible and spending the least to get there.</p>
+<p><a class="mention" href="https://discuss.bootstrapped.fm/u/christopher">@Christopher</a>, if you can build it in Wordpress, then do it. Laugh all the way to the bank later on, because the reality is that users don’t care what you built it with as long as it runs fast and accomplishes what they want.</p>
+<p>Best of luck!</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/ryanbattles'><span itemprop='name'>ryanbattles</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2013-08-30T13:55:43Z'>
+              <time itemprop='dateModified' datetime='2013-08-30T13:57:46Z' class='post-time'>
+                August 30, 2013,  1:57pm
+              </time>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I recently had a very similar debate when it came to deciding what to power <a href="http://Harpoonapp.com" rel="nofollow noopener">Harpoonapp.com</a> with. I’m not very familiar with Wordpress, but I am very familiar with ExpressionEngine, and basically you can interchange the two for the purpose of this question. I have built a few membership sites in the past with ExpressionEngine, some with paid membership, a couple of job boards, and for the most part, I did it for the reasons you mention, existing auth system, gui wrapper for the database, existing plugins, etc.</p>
+<p>When I sat down to write Harpoon, I initially built the prototype in EE, and was able to do it in about 4 hours.  It felt good, but I knew it wasn’t scalable. Assuming the app takes off and needs to scale, the data tables are not optimized (normalized) properly because I am fitting things into the EE ecosystem. There is also a lot more processing needed to parse a given URL, so keeping things light was going to be difficult, especially if I want to make it AJAX-driven with a lot of requests happening in the background.</p>
+<p>My biggest reason for not going with straight PHP or a framework? Lack of knowledge. It was comfortable to use EE, I had done it for dozens of sites before, I could build sites with it in my sleep. Laravel and Rails were scary, I was nervous I wouldn’t really know what I was doing, and it would take me years to build it in my free time.</p>
+<p>I eventually decided to just dive in come hell or high water, and learn Laravel (BTW, I am a front-end dev for the most part).</p>
+<p>I was pleasantly surprised by the documentation, and while I’m still learning a lot, I feel like I’m over that initial hump and it is just a matter of researching, practice, and bug-hunting from here on out.</p>
+<p>So, in the end, I’m glad I decided to use a framework over a CMS, even though it is taking longer, I have the confidence that it will scale, I’m learning a new skill, and fighting off Alzheimer’s <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">  And who knows, perhaps four years from now I can say that I build Laravel apps in my sleep (wouldn’t that be nice).</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/dennisfield.html'><span itemprop='name'>dennisfield</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-30T17:41:45Z' class='post-time'>
+                August 30, 2013,  5:41pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-30T17:41:45Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is a great discussion. We recently chose to build our product with ExpressionEngine. We did that for some of the same reasons Ryan mentioned above. The ability for EE to handle some of the things we knew we were going to need pretty easily out of the box as well as the bonus of being familiar with the platform made it a appropriate choice for us.</p>
+<p>How this plays out in the long term? Only time will tell. Our product is primarily focussed on community engagement with some additional features for collaboration. So as the product stands right now, ExpressionEngine has worked out great.</p>
+<p>I want to also point out that this is our first product, and that too drove some of the decisions to use a platform we were familiar with as we transitioned into building products.</p>
+<p>I guess in the end the perspective we took was. “Lets see how things go and get a base prototype up. If we get enough people behind this product that warrants us to look at the technology in more detail, I guess it is a good problem to have.”</p>
+<p>I will say that some days I feel like we should have built Frettie with something more like Laravel, but I am more proud of the fact that we shipped something that users are using today and for our first product, that is great motivation to keep moving forward.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/schutzsmith.html'><span itemprop='name'>schutzsmith</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-08-30T20:49:11Z' class='post-time'>
+                August 30, 2013,  8:49pm
+              </time>
+              <meta itemprop='dateModified' content='2013-08-30T20:49:11Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>BTW, I just wanted to mention that I never considered building on top of Wordpress until <a href="http://wpengine.com" rel="nofollow noopener">WP Engine</a> and <a href="http://page.ly" rel="nofollow noopener">Page.ly</a> came along. Both offer super fast load times for their hosted Wordpress sites. (not a sales pitch)</p>
+<p>We build everything on WP Engine and there is no way we’d be able to pull off some of the stuff we’re doing without their infrastructure in place.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rtablada'><span itemprop='name'>rtablada</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-09-03T19:28:01Z' class='post-time'>
+                September 3, 2013,  7:28pm
+              </time>
+              <meta itemprop='dateModified' content='2013-09-03T19:28:01Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think that one of the things to mention with a CMS based service is to consider what you are building. Envato builds a news site on a CMS and I find that to be a good fit.</p>
+<p>If you are building more of a “application” experience, I usually find frameworks (laravel, code igniter, rails, sinatra, express, Django) to be a better starting point.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Christopher.html'><span itemprop='name'>Christopher</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="309.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-09-04T18:51:41Z' class='post-time'>
+                September 4, 2013,  6:51pm
+              </time>
+              <meta itemprop='dateModified' content='2013-09-04T18:51:41Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I just interviewed someone for my podcast today who launched a product built on WP.  Granted, the product is a vertical-market site-builder that basically puts WP on rails and strips it down so that even the lowest common denominator user can manage it.</p>
+<p>That makes more sense to me than building something that is not-a-site-builder.  WP and I have been getting along better lately, but it still scares me a bit.</p>
+        </div>
+
+        <meta itemprop='headline' content='Building Your Saas App On Top of WordPress?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="309%3Fpage=2.html">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

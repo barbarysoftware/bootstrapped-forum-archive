@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Simple app (fast development) or Powerful app (slow development)?</title>
+    <link>https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191</link>
+    <description>Of course it depends on the specifics, but I was wondering if anyone who has been through this before has any war stories or generic pearls of wisdom that might help me make a decision. I&#39;m rather going round in circles....
+
+I have read all the 37 signals &#39;simplicity is best&#39; stuff and it&#39;s very seductive. But frankly I (and everyone I have suggested Basecamp to) find their offerings over-simple and lowest common denominator. They don&#39;t work for us.
+
+My proposed app is a self-funded SAAS project management app for a niche in the construction industry which involves Hierarchical Bills of Materials (BOMs), Project Costing, Procurement Management, Change Orders etc. Target users are technically unsophisticated but they are frustrated with current offerings for their niche, which are over-simple and inflexible. More conventional and powerful project management systems don&#39;t work for them either.
+
+Here is the dilemma. Is it better to:
+
+A. Implement a very simplified BOM methodology which does not strictly model the real world.
+Pros:
+App is initially easy to understand and use and perhaps more generic &amp; flexible. Much quicker to develop.
+Cons:
+Inherently limited in functionality as the projects it is used to manage become bigger and more complex. Difficult to build in deep/powerful features later.
+
+or
+
+B. Implement the BOM strictly like the real world with all its inherent complexities.
+Pros:
+Much better foundation for long term growth in powerful/deep features. More robust data model can handle real world changes etc.
+Cons:
+Probably 5 times more work to build. More difficult for users to understand and learn.
+
+Of course one could say &#39;Build it simple to start with and then add complexity later.&#39; Perhaps I&#39;m wrong, but I see these two paths as mutually exclusive because to achieve &#39;A&#39; involves structural compromises which in order to achieve &#39;B&#39; later are likely to make changes in data architecture (to a live system) a complex nightmare.
+
+Any comments?</description>
+    
+    <lastBuildDate>Wed, 09 Aug 2017 21:43:34 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Simple app (fast development) or Powerful app (slow development)?</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <p>My advice is to follow the “fast development” approach. Especially if you are “one man business” and you’re just starting. I did that years ago when starting my own software business and this was absolutely right choice.</p>
+<p>Programming: implement features as fast as possible, and only implement what needed right now (do not build “cores” that are “extensible” and “future proof”). Implement in the simplest way possible. Yes, you will have so called “technical debt” that builds up while you develop this way. Yes, one time you will realize the debt is too big that it makes it hard (impossible) to maintain the software and add new features. But when this time comes, you should already have good understanding on what users need, and have enough money and experience to rewrite (refactor) the software the good way.</p>
+<p>Same goes for the feature set. Implement only the vital features and some features that you feel important. No fine tuning, no premature optimization, no rare edge case handling or situation-specific (less than 1% users) features.</p>
+<p>Fast approach is also good for the situation when the product didn’t work out. In this case, you have wasted less time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/7</link>
+        <pubDate>Wed, 09 Aug 2017 21:43:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5191-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191.rss">Simple app (fast development) or Powerful app (slow development)?</source>
+      </item>
+      <item>
+        <title>Simple app (fast development) or Powerful app (slow development)?</title>
+        <dc:creator><![CDATA[willcom]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="5191">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/m/ecccb3/40.png" class="avatar"> MichaelQ:</div>
+<blockquote>
+<p>The users <strong>seemed</strong> to be happy with it (as far as it went) but I <strong>feel</strong> that it could do so much more and be worth a lot more to them. I think if they could see how much money a more developed version could save them, they would <strong>probably</strong> agree. But they don’t know what can be done yet.</p>
+</blockquote>
+</aside>
+<p>If there is a way to validate these assumptions then it’s always worth doing so I think. I’m constantly fighting and failing to beat the urge to build based on what I think users will want and almost always regret not validating first. I know all the lean startup talk can be tedious to hear, let alone practice, but there is some merit to it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/6</link>
+        <pubDate>Mon, 07 Aug 2017 23:34:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5191-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191.rss">Simple app (fast development) or Powerful app (slow development)?</source>
+      </item>
+      <item>
+        <title>Simple app (fast development) or Powerful app (slow development)?</title>
+        <dc:creator><![CDATA[MichaelQ]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks.</p>
+<p>The more I think about it the more I think you are dead right. Quick and dirty is not the way to go. Build it right but do a simplified user interface which can be expanded later.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/5</link>
+        <pubDate>Tue, 01 Aug 2017 10:40:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5191-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191.rss">Simple app (fast development) or Powerful app (slow development)?</source>
+      </item>
+      <item>
+        <title>Simple app (fast development) or Powerful app (slow development)?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5191">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/m/ecccb3/40.png" class="avatar"> MichaelQ:</div>
+<blockquote>
+<p>Target users are technically unsophisticated but they are frustrated with current offerings for their niche, which are over-simple and inflexible.</p>
+</blockquote>
+</aside>
+<p>If what you just said is true, then you do not have a choice but implement a powerful version.</p>
+<p>At the same time, you probably cannot just dump the full power of your application onto the “unsophisticated” users’ heads.</p>
+<p>You may try and make UI hide the complexity for first time users. Hide the more advanced sections and only open them when user requests advanced features. The underlying model would be the complex one but look simplish to the user; you just provide a set of reasonable defaults.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/4</link>
+        <pubDate>Tue, 01 Aug 2017 03:11:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5191-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191.rss">Simple app (fast development) or Powerful app (slow development)?</source>
+      </item>
+      <item>
+        <title>Simple app (fast development) or Powerful app (slow development)?</title>
+        <dc:creator><![CDATA[MichaelQ]]></dc:creator>
+        <description><![CDATA[
+            <p>I already built a simple desktop version which for reasons I wont bore you with, can’t be developed any more. So now I want to redo it for the web, The users seemed to be happy with it (as far as it went) but I feel that it could do so much more and be worth a lot more to them. I think if they could see how much money a more developed version could save them, they would probably agree. But they don’t know what can be done yet.</p>
+<p>This is something I am funding myself, in my own time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/3</link>
+        <pubDate>Mon, 31 Jul 2017 19:01:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5191-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191.rss">Simple app (fast development) or Powerful app (slow development)?</source>
+      </item>
+      <item>
+        <title>Simple app (fast development) or Powerful app (slow development)?</title>
+        <dc:creator><![CDATA[Virgil]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been in the same situation like you, build it simple and fast but hard to improve, or build it slowly but with a good foundation making it easy to add new features.</p>
+<p>I chose the slow way, but I’m not sure if I did the right thing. I spent 3x times more than it should and now on the sales part, the users don’t care that your product is powerful “under the hood”  and has a few more features, they seem to care more about solving their biggest issue they have on that matter, not even extra features.</p>
+<p>Are you 100% that this product will work? If I had to do it again I would have started with a simple version, learn more about what users really need, get people to use your product and launch a new, better version based on what you learned.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/2</link>
+        <pubDate>Mon, 31 Jul 2017 18:43:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5191-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191.rss">Simple app (fast development) or Powerful app (slow development)?</source>
+      </item>
+      <item>
+        <title>Simple app (fast development) or Powerful app (slow development)?</title>
+        <dc:creator><![CDATA[MichaelQ]]></dc:creator>
+        <description><![CDATA[
+            <p>Of course it depends on the specifics, but I was wondering if anyone who has been through this before has any war stories or generic pearls of wisdom that might help me make a decision. I’m rather going round in circles…</p>
+<p>I have read all the 37 signals ‘simplicity is best’ stuff and it’s very seductive. But frankly I (and everyone I have suggested Basecamp to) find their offerings over-simple and lowest common denominator. They don’t work for us.</p>
+<p>My proposed app is a self-funded SAAS project management app for a niche in the construction industry which involves Hierarchical Bills of Materials (BOMs), Project Costing, Procurement Management, Change Orders etc. Target users are technically unsophisticated but they are frustrated with current offerings for their niche, which are over-simple and inflexible. More conventional and powerful project management systems don’t work for them either.</p>
+<p>Here is the dilemma. Is it better to:</p>
+<p>A. Implement a very simplified BOM methodology which does not strictly model the real world.<br>
+Pros:<br>
+App is initially easy to understand and use and perhaps more generic &amp; flexible. Much quicker to develop.<br>
+Cons:<br>
+Inherently limited in functionality as the projects it is used to manage become bigger and more complex. Difficult to build in deep/powerful features later.</p>
+<p>or</p>
+<p>B. Implement the BOM strictly like the real world with all its inherent complexities.<br>
+Pros:<br>
+Much better foundation for long term growth in powerful/deep features. More robust data model can handle real world changes etc.<br>
+Cons:<br>
+Probably 5 times more work to build. More difficult for users to understand and learn.</p>
+<p>Of course one could say ‘Build it simple to start with and then add complexity later.’ Perhaps I’m wrong, but I see these two paths as mutually exclusive because to achieve ‘A’ involves structural compromises which in order to achieve ‘B’ later are likely to make changes in data architecture (to a live system) a complex nightmare.</p>
+<p>Any comments?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191/1</link>
+        <pubDate>Mon, 31 Jul 2017 15:31:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5191-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/simple-app-fast-development-or-powerful-app-slow-development/5191.rss">Simple app (fast development) or Powerful app (slow development)?</source>
+      </item>
+  </channel>
+</rss>

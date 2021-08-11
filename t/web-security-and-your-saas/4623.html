@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Security and your SaaS - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="I&amp;#39;m coding my new product (a SaaS aimed at business customers), and as I progress, I&amp;#39;m aware that I&amp;#39;m probably introducing many security holes. I&amp;#39;m reading up on the state of the art of web security holes and I get a bit&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="4623.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Web Security and your SaaS&#39;" href="4623.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/web-security-and-your-saas/4623" />
+<meta property="og:title" content="Web Security and your SaaS" />
+<meta name="twitter:title" content="Web Security and your SaaS" />
+<meta property="og:description" content="I’m coding my new product (a SaaS aimed at business customers), and as I progress, I’m aware that I’m probably introducing many security holes. I’m reading up on the state of the art of web security holes and I get a bit frightened that I only need to make one mistake to make my whole application vulnerable to hacking.  As a one- (or two- or three-) person team, how do you take care of web security? Just do your best and hope you get all the known security holes? Or do you outsource to get secur..." />
+<meta name="twitter:description" content="I’m coding my new product (a SaaS aimed at business customers), and as I progress, I’m aware that I’m probably introducing many security holes. I’m reading up on the state of the art of web security holes and I get a bit frightened that I only need to make one mistake to make my whole application vulnerable to hacking.  As a one- (or two- or three-) person team, how do you take care of web security? Just do your best and hope you get all the known security holes? Or do you outsource to get secur..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="4 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="14 ❤" />
+<meta property="article:published_time" content="2016-12-16T10:02:36+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="4623.html">Web Security and your SaaS</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-16T10:02:36Z' class='post-time'>
+                December 16, 2016, 10:02am
+              </time>
+              <meta itemprop='dateModified' content='2016-12-16T10:02:36Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m coding my new product (a SaaS aimed at business customers), and as I progress, I’m aware that I’m probably introducing many security holes. I’m reading up on the state of the art of web security holes and I get a bit frightened that I only need to make one mistake to make my whole application vulnerable to hacking.</p>
+<p>As a one- (or two- or three-) person team, how do you take care of web security? Just do your best and hope you get all the known security holes? Or do you outsource to get security audits? If so, how do you find someone affordable and good?</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/garrettdimon.html'><span itemprop='name'>garrettdimon</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2016-12-16T11:40:14Z'>
+              <time itemprop='dateModified' datetime='2016-12-16T11:49:44Z' class='post-time'>
+                December 16, 2016, 11:49am
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The main thing is to stay on top of it as best you can. You can hire teams to do security audits, but that can be a costly investment, especially early on. There are also automated tools that you can integrate into your test suite that will look for some of the most common mistakes. For Rails, there’s <a href="http://brakemanscanner.org" rel="nofollow noopener">Brakeman</a> which can also be run using Code Climate. I’d look for similar tools for your platform and add them to your test suite.</p>
+<p>One of the best ways to improve security is to create a bug bounty program and official security page for responsible disclosure. Here’s an <a href="https://sifterapp.com/policies/security/" rel="nofollow noopener">example security page</a> that I created for Sifter. Once you’ve created a page, you can submit to various places that catalog companies that offer bug bounties, and the reports will come in. The good news is that you don’t have to pay cash for bug bounties. Just offering to give people credit on your security page is often enough.</p>
+<ul>
+<li><a href="https://bugcrowd.com/list-of-bug-bounty-programs/" rel="nofollow noopener">BugCrowd</a></li>
+<li><a href="http://bugsheet.com/directory" rel="nofollow noopener">BugSheet</a></li>
+<li><a href="https://hackerone.com" rel="nofollow noopener">HackerOne</a></li>
+</ul>
+<p>Unfortunately, this is a double-edged sword, and it can be time-consuming to sift through the reports because the vast majority of them will be garbage. While there are a lot of really helpful people that will professionally inform you of vulnerabilities and work with you to put the right fix in place, much more are unprofessional, and some even make vague threats demanding that you acknowledge them even if their report is useless or incomplete. So make sure that you launch the security program on a week where you have set aside time to sort through the first wave of reports.</p>
+<p>One other thing that will inevitably happen is that many people will run automated scanners and tools against your site regularly. While the first pass of these tools is likely to uncover some minor issues, they generally can cause a variety of problems from performance to rapid-fire exceptions in your app. In our guidelines, I explicitly stated that any vulnerabilities discovered with the use of automated tools used without advanced coordination with us were not eligible for acknowledgment.</p>
+<p>To that end, it’s helpful to create a very specific set of guidelines about what is and isn’t valid as well. By explicitly stating that things like subdomain sites hosted by 3rd parties are not eligible, you can reduce some of the noise in the reports. This does a couple of things. It helps filter out the lazy people, but it also helps make it clear when you’re communicating with people whether they’re making an effort. With Sifter, 80% of our reports were from people who never even tried to create an account and login to test the application. They just copied and pasted our marketing site URL into their scanner and hoped to find something.</p>
+<p>The best first line of defense is automation in your test suite. A responsible disclosure program is great as well, and simply a good practice, but you’ll want to make sure you’re ready for that first wave. Then, hiring outside professionals to do a security audit on a regular basis would be the next component as soon as you can afford it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="4" />
+           <span class='post-likes'>4 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/brbordallo.html'><span itemprop='name'>brbordallo</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-16T17:13:05Z' class='post-time'>
+                December 16, 2016,  5:13pm
+              </time>
+              <meta itemprop='dateModified' content='2016-12-16T17:13:05Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello <a class="mention" href="https://discuss.bootstrapped.fm/u/stevemcleod">@SteveMcLeod</a>,</p>
+<p>Check out this: <a href="https://se.cr/" rel="nofollow noopener">https://se.cr/</a> I have been in contact with them and use their solution in our project. They have a top team with two engineers from the MIT.</p>
+<p>Let me know if you want any references.</p>
+<p>Bart.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-17T08:47:30Z' class='post-time'>
+                December 17, 2016,  8:47am
+              </time>
+              <meta itemprop='dateModified' content='2016-12-17T08:47:30Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Garrett, thanks for the detailed answer. You should write a book about this SaaS stuff (oh wait, you did!)</p>
+<p>I didn’t think about a bug bounty program, but now I’ll add it to my to-do list.</p>
+<p>I think ideally I’d still find someone to audit the code for security issues, but as you say, it’d be costly.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/cliffordoravec'><span itemprop='name'>cliffordoravec</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-18T00:29:36Z' class='post-time'>
+                December 18, 2016, 12:29am
+              </time>
+              <meta itemprop='dateModified' content='2016-12-18T00:29:36Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>What’s the biggest thing you’re concerned about?</p>
+<p>Is it leaking data across customers, having people access things they shouldn’t be able to (application-specific), or are you concerned about general infrastructure security?  Or is it something else?</p>
+<p>I know these all might be on your list, but I’m curious what context you’re coming from so I could maybe join in the conversation.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/dgrigg'><span itemprop='name'>dgrigg</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-18T00:59:47Z' class='post-time'>
+                December 18, 2016, 12:59am
+              </time>
+              <meta itemprop='dateModified' content='2016-12-18T00:59:47Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Data leaking and access you should be able to write code tests for to ensure it’s secure. If you are using frameworks like Rails, Laravel etc that helps to reduce potential issues with things like sql injections, cross site scripting hacks etc. Server security, open ports, root access that would be my biggest concern where experts could help.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Serge.html'><span itemprop='name'>Serge</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-18T04:00:55Z' class='post-time'>
+                December 18, 2016,  4:00am
+              </time>
+              <meta itemprop='dateModified' content='2016-12-18T04:00:55Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Frameworks help you a lot with regards to the obvious entry points into applications… naturally, you are never immune to coding errors (like showing other customer data in a multi-tennant app… by mistake…). But those, are difficult to catch by reviewing code sometimes… it’s almost like you have to pound the hell out of the app to get some of the fringe cases out…</p>
+<p>Good design is key… and that is also difficult, not to audit but to admit and fix… lol</p>
+<p>Infrastructure wise best practices are plentiful but programming errors are always a possibility…</p>
+<p>I feel your pain… what are you most concerned about?</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2016-12-18T21:09:29Z'>
+              <time itemprop='dateModified' datetime='2016-12-18T22:46:36Z' class='post-time'>
+                December 18, 2016, 10:46pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the reponses.</p>
+<p>My concern is that I’ll do everything right, security-speaking, except I’ll leave one hole, just one hole in my app, and someone will find it and use it to view or delete private customer info. I’m not stressing too much, but it did strike me that this is (or should be) a concern for all new SaaS products.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/dgrigg'><span itemprop='name'>dgrigg</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-18T22:42:35Z' class='post-time'>
+                December 18, 2016, 10:42pm
+              </time>
+              <meta itemprop='dateModified' content='2016-12-18T22:42:35Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That was as big concern of mine. I wrote as many tests as possible to ensure it was secure and then also hammered away with scripted instructions to try and break in various ways to see data I should not. At the end of the day it probably not possible to make something 100% secure if it’s running on the web.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Serge.html'><span itemprop='name'>Serge</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-19T00:58:03Z' class='post-time'>
+                December 19, 2016, 12:58am
+              </time>
+              <meta itemprop='dateModified' content='2016-12-19T00:58:03Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am a firm believer that security and quality must be baked in … at the design stage… Solid design principles should make managing separation much easier… unless you are recycling old code… then again, how you compartmentalize will is key…</p>
+<p>I would never attempt this on an existing platform like Wordpress for example, way too many unknowns… Too much alien code to curate… I like being in control of everything… Otherwise it is very difficult to assert security.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/rfctr'><span itemprop='name'>rfctr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-19T03:47:35Z' class='post-time'>
+                December 19, 2016,  3:47am
+              </time>
+              <meta itemprop='dateModified' content='2016-12-19T03:47:35Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="8" data-topic="4623">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>view or delete private customer info</p>
+</blockquote>
+</aside>
+<p>Re: View - you cannot completely remove this risk. Hence you need to think of the damage control procedures, too.</p>
+<p>Re: Delete - back it up often enough OR implement a session rollback mechanism in your app, and that will be a recoverable situation.</p>
+<p>Re: Costly penetration testing: I shall remind you that not everywhere in the world you have to pay US rate for that job, and the skilled security guys are evenly spread around the world. The only question of course is how to tell a good one from a bad one. Can’t help you with that! <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"> Probably some referrals should work.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/jitbit'><span itemprop='name'>jitbit</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2016-12-19T21:28:37Z'>
+              <time itemprop='dateModified' datetime='2016-12-19T21:36:54Z' class='post-time'>
+                December 19, 2016,  9:36pm
+              </time>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>After running a SaaS for 10 years, here’s what I have to say about security:</p>
+<ol>
+<li>
+<p>Use a web-firewall-enabled CDN. We use Cloudflare. The web-firewall will immediately block all the scans, attacks and kids probing your server for known holes etc. If your customers are using the “<a href="http://cusomerXXX.yoursaasapp.com" rel="nofollow noopener">cusomerXXX.yoursaasapp.com</a>” format for their accounts - you can create those via cloudflare’s API by the way. The $20 a month you spent on cloudflare (or alterntive) - will save you much more on AWS traffic bills, so it’s basically free. They also have a free plan by the way…</p>
+</li>
+<li>
+<p>Run stuff on Windows. Yeah, no kidding. While the consumer side of Windows is full of viruses and malicious tools indeed, on the server side it’s the other way around… 99% websites are based on linux, so 99% of known attacks target *nix-holes. Also, Windows will be more expensive at the beginning but it scales really well. With your 1000th customer - you will still be running the same windows server. Also, .NET is jit-compiled to native code, while all linux stuff is interpreted (python, ruby, php, node.js,  you name it…)</p>
+</li>
+<li>
+<p>The biggest security hole will always be cross-customer isolation. Like, in “DeleteItem.php?ItemID=123” - making sure that that “ItemID” actually belongs to the current customer, not some other customer. Probably, the best way would be to come up with some framework, that intercepts all requests, before they reach business logic, and check, where they belong… (of course, not needed if you spawn a separate DB for every customer)</p>
+</li>
+</ol>
+<p>P.S. once you get “popular” you will get a lot of “white hat hackers” reporting “vulnerabilities” to you, hoping to get paid, even if you don’t have a bug-bounty program. I found, the best way to deal with them is: “thanks-thanks, of course, we will gladly pay you, please provide a formal invoice with your real name and address on it”… You won’t hear form them again hehe</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="5" />
+           <span class='post-likes'>5 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/unboot'><span itemprop='name'>unboot</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-22T20:24:22Z' class='post-time'>
+                December 22, 2016,  8:24pm
+              </time>
+              <meta itemprop='dateModified' content='2016-12-22T20:24:22Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="https://discuss.bootstrapped.fm/u/stevemcleod">@SteveMcLeod</a> A route can be to do as few server management as possible when you are solo.  So instead of using AWS or digital ocean, try:</p>
+<ul>
+<li>Google AppEngine, tech stack is limited, but server security is provided by google</li>
+<li>
+<a href="http://webfaction.com" rel="nofollow noopener">webfaction.com</a> , a kind of managed server from $10.  Great service, especially when you are starting.  Linux stack only.</li>
+</ul>
+<p>When using the above, you don’t have to worry about the server being down, though you still have to worry about your app.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/maximus.html'><span itemprop='name'>maximus</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-23T14:29:32Z' class='post-time'>
+                December 23, 2016,  2:29pm
+              </time>
+              <meta itemprop='dateModified' content='2016-12-23T14:29:32Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>They will hit you from where you don’t expect. Deploying Docker containers - here you go, using Redis - they have a trick for this, using databases - make sure you close all ports, etc.</p>
+<p>Simple, managed stacks, such as Google App Engine, help a lot in terms of security but there’s only so much you can do with them.</p>
+<p>From my experience (unless you are really incompetent) none amount of code reviews and automated pen testing will prevent bad guys from hacking your SaaS one way or another.</p>
+<p>On the other hand, following simple operational rules might:</p>
+<ul>
+<li>only https traffic should be allowed</li>
+<li>install proxy server</li>
+<li>regularly install all security patches</li>
+<li>keep only necessary ports open, close everything else</li>
+<li>read about known exploits in all elements of your stack and make sure you are protected</li>
+<li>enforce strong passwords</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Serge.html'><span itemprop='name'>Serge</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-25T21:42:17Z' class='post-time'>
+                December 25, 2016,  9:42pm
+              </time>
+              <meta itemprop='dateModified' content='2016-12-25T21:42:17Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/maximus.html">@maximus</a></p>
+<p>This ties in nicely to my DevOps post… When you start looking at this from a developer perspective, we tend towards simplicity and want to deploy without having to read how to set-up a linux server for the Nth time (not doing it enough to remember everything)… So we go to things like auto  deployment services (Laravel Forge comes to mind) …</p>
+<p>However, when you start playing with your infrastructure’s configuration for security, those automated solutions soon fail… Your suggestion of a reverse proxy breaks all of those actually.</p>
+<p>A reverse proxy is probably the most effective way to isolate your back end from hackers… putting one dense level of obfuscation to the whole process…</p>
+<p>Now what is a developer to do… hire this out or bite the bullet and learn it with the understanding that you might make a mistake as a newbie … Then again, if you do it yourself you get to learn and can debug if something goes wrong…</p>
+<p>I am trying to figure out a good DevOps workflow right now… including email… I hate relying on the big guys and locked in services like some AWS architectures… I like the idea of being able to replicate it on metal if need be…</p>
+<p>If every one on the internet was nice… it would be much simpler… lol</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Anderson_Dadario.html'><span itemprop='name'>Anderson_Dadario</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-12T10:12:34Z' class='post-time'>
+                January 12, 2017, 10:12am
+              </time>
+              <meta itemprop='dateModified' content='2017-01-12T10:12:34Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I may be late to this party, but I have some contributions to make:</p>
+<ol>
+<li>
+<p>There is no silver bullet approach for security, but even without resources you can do what we call ‘cyber higiene’. Make sure to use strong password and multi-factor authentication in your accounts, such as AWS, GitHub, don’t commit secrets to your public repositories, get informed of cyber attacks (hacker news / reddit/r/netsec), study security (check OWASP projects) and run automated tools at least. There are some recommendations of such tools here, but you can use Gauntlet (<a href="http://gauntlet.io" rel="nofollow noopener">gauntlet.io</a>) to run multiple tools instead of only one, and for free. Disclaimer: I founded it.</p>
+</li>
+<li>
+<p>I recommend you to read ‘Security for building modern web apps’ <a href="http://dadario.com.br/security-for-building-modern-web-apps/" rel="nofollow noopener">dadario.com.br/security-for-building-modern-web-apps/</a> – this post was somewhat popular on /r/netsec and highlights some security topics that you should worry before/during/after developing your web app.</p>
+</li>
+</ol>
+<p>I work on the field (more about me: <a href="http://dadario.com.br" rel="nofollow noopener">dadario.com.br</a>) and if you have any questions I’d love to help.</p>
+<p>– New users can’t post links, so bad.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/maximus.html'><span itemprop='name'>maximus</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="4623.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-05T22:11:44Z' class='post-time'>
+                February 5, 2017, 10:11pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-05T22:11:44Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A short write up of the security measures in our SaaS:</p>
+<p><a href="https://etlworks.com/docs/security/" class="onebox" target="_blank" rel="nofollow noopener">https://etlworks.com/docs/security/</a></p>
+<p>Inspired by “do you have a link or doc that describes your security measures for protecting etlworks as a service and any IP/user/passwords place within?”, typical asked by the potential customer during first 10 minutes of the conversation.</p>
+        </div>
+
+        <meta itemprop='headline' content='Web Security and your SaaS'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

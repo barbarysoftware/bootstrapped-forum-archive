@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Seeking advice: introducing recurring payments</title>
+    <link>https://discuss.bootstrapped.fm/t/seeking-advice-introducing-recurring-payments/1463</link>
+    <description>Hi guys,
+
+I thought I&#39;d ask for a bit of advice on something I&#39;ve been thinking about for a while.
+
+My bootstrapped project, www.LiberWriter.com is primarily about providing a one-time eBook conversion, which is where most of the value is for our customers.
+
+One of the features though, is that we have an on-line editor that we let people continue to access over time, so if they find a typo in their book after 4 months, they can go fix it, generate a new .mobi file, and upload that to Amazon&#39;s KDP.  This is very handy for self-published authors, who often have not extensively edited their books, and works well with the ebook model where you can keep uploading new versions.
+
+A decent number of people take advantage of this, and I&#39;m thinking of how to best handle it, going forward in terms of factoring it into the price of the service.
+
+* Existing users have been promised this feature, so they get grandfathered in.  Costs are fairly minimal for the vast majority of books, which really don&#39;t take up that much disk space.
+* Start charging a small monthly fee after, say, 1 month or 3 months, for storage/access?  I&#39;m worried people would be annoyed by small monthly fees and/or not remember what the charge is for and dispute it.  Also, the mechanics of doing this with my payment provider (Amazon Payments) don&#39;t seem all that clear - they mentioned doing a recurring payment that is authorized for the initial amount (say, $60) and then subsequently only charging $5 a month or whatever it is.  My guess though is that potential customers are going to be scared by whatever language they use on their payments page.
+* Make people pay ahead of time for N months of usage (3 / 6 / 12) and remind them that access is going to be cut off.  Space is not such a pressing problem that we need to start deleting books, so they just lose access, not the book itself, for now.  @patio11 made a good case against this kind of thing for TarSnap here: http://www.kalzumeus.com/2014/04/03/fantasy-tarsnap/ , which is a great read.  However, 1) I&#39;m not handling businesses&#39; super precious backup data, and 2) the actual costs are low enough that I don&#39;t need to wipe books the moment people don&#39;t pay.
+* Just raise prices all around and include the cost of storage/access as part of the initial fee.  This is nice and simple for people, although it tends to be less than optimal for those who pay, have their conversion done and never do any changes.
+
+Thoughts?  Advice?
+
+Thanks!</description>
+    
+    <lastBuildDate>Sat, 05 Apr 2014 10:22:37 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/seeking-advice-introducing-recurring-payments/1463.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Seeking advice: introducing recurring payments</title>
+        <dc:creator><![CDATA[LostMahbles]]></dc:creator>
+        <description><![CDATA[
+            <p>It might make sense to split the offering into two offerings.</p>
+<p>For example, the $60 gets you one book conversion with no future editing capabilities.</p>
+<p>Then, you offer the editing/republishing service for $5/mo/book.</p>
+<p>All existing customers get the editing/republishing service for free for all of their existing books (and either make it free or offer a steep discount for any future books).</p>
+<p>The editing/republishing service then becomes an up-sell during your checkout funnel.</p>
+<p>As for positioning the add-on service, you may want to consider marketing it as something akin to “editorial insurance”.  i.e.  So that you don’t have to spend $60 in 3 months when you find out your editor (really, you) missed an oxford comma on page 76, we’ll offer you the ability to go into our app, edit the book, and republish it.  It costs $5/mo/book.</p>
+<p>You might even be able to get away with offering the same service (editing/republishing) at two different prices depending on the use case.  In other words you can sell the “editorial insurance” to the smaller self-publishers, and for more sophisticated customers, you could offer “version control” or “edition management”, which would cost at least an order of magnitude more.  Obviously, you might need to add a few basic features like exposing historical versions, but for the price, I’m guessing it would be worth it.</p>
+<p>Good luck, it looks great!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/seeking-advice-introducing-recurring-payments/1463/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/seeking-advice-introducing-recurring-payments/1463/2</link>
+        <pubDate>Sat, 05 Apr 2014 10:22:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1463-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/seeking-advice-introducing-recurring-payments/1463.rss">Seeking advice: introducing recurring payments</source>
+      </item>
+      <item>
+        <title>Seeking advice: introducing recurring payments</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi guys,</p>
+<p>I thought I’d ask for a bit of advice on something I’ve been thinking about for a while.</p>
+<p>My bootstrapped project, <a href="http://www.LiberWriter.com" rel="nofollow noopener">www.LiberWriter.com</a> is primarily about providing a one-time eBook conversion, which is where most of the value is for our customers.</p>
+<p>One of the features though, is that we have an on-line editor that we let people continue to access over time, so if they find a typo in their book after 4 months, they can go fix it, generate a new .mobi file, and upload that to Amazon’s KDP.  This is very handy for self-published authors, who often have not extensively edited their books, and works well with the ebook model where you can keep uploading new versions.</p>
+<p>A decent number of people take advantage of this, and I’m thinking of how to best handle it, going forward in terms of factoring it into the price of the service.</p>
+<ul>
+<li>Existing users have been promised this feature, so they get grandfathered in.  Costs are fairly minimal for the vast majority of books, which really don’t take up that much disk space.</li>
+<li>Start charging a small monthly fee after, say, 1 month or 3 months, for storage/access?  I’m worried people would be annoyed by small monthly fees and/or not remember what the charge is for and dispute it.  Also, the mechanics of doing this with my payment provider (Amazon Payments) don’t seem all that clear - they mentioned doing a recurring payment that is authorized for the initial amount (say, $60) and then subsequently only charging $5 a month or whatever it is.  My guess though is that potential customers are going to be scared by whatever language they use on their payments page.</li>
+<li>Make people pay ahead of time for N months of usage (3 / 6 / 12) and remind them that access is going to be cut off.  Space is not such a pressing problem that we need to start deleting books, so they just lose access, not the book itself, for now.  <a class="mention" href="/u/patio11">@patio11</a> made a good case against this kind of thing for TarSnap here: <a href="http://www.kalzumeus.com/2014/04/03/fantasy-tarsnap/" rel="nofollow noopener">http://www.kalzumeus.com/2014/04/03/fantasy-tarsnap/</a> , which is a great read.  However, 1) I’m not handling businesses’ super precious backup data, and 2) the actual costs are low enough that I don’t need to wipe books the moment people don’t pay.</li>
+<li>Just raise prices all around and include the cost of storage/access as part of the initial fee.  This is nice and simple for people, although it tends to be less than optimal for those who pay, have their conversion done and never do any changes.</li>
+</ul>
+<p>Thoughts?  Advice?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/seeking-advice-introducing-recurring-payments/1463/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/seeking-advice-introducing-recurring-payments/1463/1</link>
+        <pubDate>Sat, 05 Apr 2014 08:57:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1463-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/seeking-advice-introducing-recurring-payments/1463.rss">Seeking advice: introducing recurring payments</source>
+      </item>
+  </channel>
+</rss>

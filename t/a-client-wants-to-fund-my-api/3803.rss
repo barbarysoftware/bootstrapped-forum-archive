@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>A client wants to fund my API</title>
+    <link>https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803</link>
+    <description>One of the clients of my SaaS has been asking if I have plans to offer a public API so they can integrate the SaaS data with their in-house system. I&#39;m always putting it off because there aren&#39;t many clients asking for this yet, but it&#39;s definitely something that I want to build at some point.
+
+Yesterday, this client said he&#39;s willing to fund the API development, which I wasn&#39;t expecting (my apps average plan is $40/month). I want to say yes and prioritize the API development because (1) it will be fun and relatively easy, (2) it&#39;s something that I was going to do at some point anyway, and (3) there aren&#39;t any other pressing features that will impact the SaaS in a significant way.
+
+Does any of you have experience with this? I have no idea of how to negotiate a price and how to prevent the client from thinking that he has complete control of how the API is developed. 
+
+Any tips will be appreciated!</description>
+    
+    <lastBuildDate>Sat, 06 Feb 2016 21:13:30 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>A client wants to fund my API</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the replies. I was almost convinced it was a good idea, but now it looks like I’d be better off just building it on my own terms and charging extra for people who want to use it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/6</link>
+        <pubDate>Sat, 06 Feb 2016 21:13:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3803-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803.rss">A client wants to fund my API</source>
+      </item>
+      <item>
+        <title>A client wants to fund my API</title>
+        <dc:creator><![CDATA[Basilakis]]></dc:creator>
+        <description><![CDATA[
+            <p>Do it.</p>
+<p>After you do it, find a way how to make it profitable.<br>
+At the moment, I do charge the access to our API ( as it is also used as CDN, a bit different strategy I suppose ) and I also charge based on the amount of requests, when they take data for use.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/5</link>
+        <pubDate>Fri, 05 Feb 2016 14:10:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3803-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803.rss">A client wants to fund my API</source>
+      </item>
+      <item>
+        <title>A client wants to fund my API</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>I say think about it (as you would do it anyway) with many of the caveats above but…</p>
+<p>Before putting in lots of work into estimates/spec etc chuck out a suitable ballpark figure (1k, 5k, 10k?) and see if they are still keen.</p>
+<p>I’ve lost count of the number of times a customer wanted a feature and said they would be happy to pay but then vanish when its pointed out that it would be several thousand dollars. Many people don’t get the economics of a little change to a $100 app is not a little bit of $100!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/4</link>
+        <pubDate>Thu, 04 Feb 2016 22:05:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3803-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803.rss">A client wants to fund my API</source>
+      </item>
+      <item>
+        <title>A client wants to fund my API</title>
+        <dc:creator><![CDATA[robinwarren]]></dc:creator>
+        <description><![CDATA[
+            <p>I used to work at a software company where we fairly regularly got requests of this nature, ie “We know you said you wouldn’t do this, but can we pay you to?”. For the most part we said no as it was a bad fit for the product. When it was a good fit for the product we usually did it anyway and didn’t charge them. On some occasions we did charge them and it was usually a bad situation. That is probably because those were the situations where we knew it was a reasonable idea for the product but we didn’t really want to do it <em>now</em>. Sometimes we’d do it but not really have the resources to do a good enough job, other times we’d keep putting them off because other priorities popped up.</p>
+<p>It sounds like you may be in a different situation to what we were if there is little pressure on your time and you can easily fit this work in. If you decide to do the work I’d suggest one of two options</p>
+<ol>
+<li>Do it and don’t charge them, the good will you will get will hopefully be worth something.</li>
+<li>Do it and charge them. I’d recommend making sure you get a very solid idea of what they want/expect you to deliver so you don’t end up massively underspeccing what is required. Also, try to be careful that they don’t think they can ‘pay for what they want’ rather than pay to get some feature you control delivered early.</li>
+</ol>
+<p>Only you can know which is the best route forward. My issue with <span class="hashtag">#2</span> is the potential that they end up thinking they should be able to get you to do what they want because they are paying. However, if the cash injection would be useful maybe it’s worth the risk.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/3</link>
+        <pubDate>Thu, 04 Feb 2016 20:03:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3803-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803.rss">A client wants to fund my API</source>
+      </item>
+      <item>
+        <title>A client wants to fund my API</title>
+        <dc:creator><![CDATA[akash]]></dc:creator>
+        <description><![CDATA[
+            <p>Hard to give advice without knowing your business. But here is my experience.</p>
+<p>Two years back, I had 2 customers (out of 300) asking for the API. I built it because it was a cool thing to do. I wanted to build a REST API. Fast forward two years, the API is now defunct and has been a complete waste of time. I could’ve saved a few weeks of development time, had I known better.</p>
+<p>While you may think you are getting a good deal, since the client is funding it, there are a few things to think about.</p>
+<ol>
+<li>
+<p>Opportunity cost - the time spent building your API can be used elsewhere for the benefit of a larger percentage of your customers</p>
+</li>
+<li>
+<p>Ongoing support cost - once you build the API for this customer, how easy would it be to renegade on the deal, if you start to believe that it was a mistake.</p>
+</li>
+<li>
+<p>Distraction - generally an API is built as a stand alone product (unless you build it first and then build your app off it - which is not the case here). This will be a major distraction for you. Building a SaaS business needs laser focus.</p>
+</li>
+</ol>
+<p>Got to fight the “shiny object syndrome” - this is generic advice for all features that you will build for your SaaS. If a large percentage of your customers do not care about a specific feature, it might make more business sense to prioritize on a feature that they do care about.</p>
+<p>About whether the customer has control over the API - if you are paying a company top dollar to do custom work for you, I presume you would expect a degree of control. If nothing else, it might be construed as a promise from your side to continue supporting the API, even if this customer is the only one using it.</p>
+<p>If you still want to build it, I would suggest getting a bunch of your customers to pre-pay for the API (give them a nice discount for it) and only build the API once you have crossed a minimum threshold.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/2</link>
+        <pubDate>Thu, 04 Feb 2016 19:18:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3803-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803.rss">A client wants to fund my API</source>
+      </item>
+      <item>
+        <title>A client wants to fund my API</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p>One of the clients of my SaaS has been asking if I have plans to offer a public API so they can integrate the SaaS data with their in-house system. I’m always putting it off because there aren’t many clients asking for this yet, but it’s definitely something that I want to build at some point.</p>
+<p>Yesterday, this client said he’s willing to fund the API development, which I wasn’t expecting (my apps average plan is $40/month). I want to say yes and prioritize the API development because (1) it will be fun and relatively easy, (2) it’s something that I was going to do at some point anyway, and (3) there aren’t any other pressing features that will impact the SaaS in a significant way.</p>
+<p>Does any of you have experience with this? I have no idea of how to negotiate a price and how to prevent the client from thinking that he has complete control of how the API is developed.</p>
+<p>Any tips will be appreciated!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803/1</link>
+        <pubDate>Thu, 04 Feb 2016 18:22:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3803-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/a-client-wants-to-fund-my-api/3803.rss">A client wants to fund my API</source>
+      </item>
+  </channel>
+</rss>

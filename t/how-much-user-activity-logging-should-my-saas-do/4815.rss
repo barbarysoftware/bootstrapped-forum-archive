@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How much user activity logging should my SaaS do?</title>
+    <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815</link>
+    <description>For those of you actively running a SaaS, can I pick your brains?
+
+I&#39;m currently working on the user sign up/sign in/recover password functionality for [Feature Upvote](http://featureupvote.com/). I&#39;m in danger of over-engineering it. I log every signin failure and success in the application log. I&#39;m recording in the database User table the date/time of the last successful signin and last failed signin, and last modified date.
+
+* Should I be recording all sign ins (or recent sign ins) in the database?
+* Should I be recording IP address and user agent of each sign in?
+
+My product is not dealing with financial data or anything else that is critical. I want to do things well, but I also don&#39;t want to go overboard.
+
+My MySQL user table currently looks like this:
+
+CREATE TABLE user
+(
+    user_id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    email VARCHAR(200) NOT NULL,
+    salted_hash VARCHAR(100) NOT NULL,
+    display_name VARCHAR(200),
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    date_modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_signin_success TIMESTAMP,
+    last_signin_failure TIMESTAMP
+);
+CREATE UNIQUE INDEX user_email_uindex ON user (email);
+
+Any tips from someone who has been down this path already? Anything you really wished you had baked into the user system from the beginning?</description>
+    
+    <lastBuildDate>Tue, 28 Feb 2017 09:09:42 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[Shinamee]]></dc:creator>
+        <description><![CDATA[
+            <p>This can be really tricky but I personally think it all depends on conversion, meaning to say if you strongly believe that those logs/records would be beneficial to your product stats then I would say go for it.</p>
+<p>I have something similar but for deleted item, I need to understand why certain items are being deleted, when and possibly how many during a certain period of time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/23</link>
+        <pubDate>Tue, 28 Feb 2017 09:09:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[AndyDent]]></dc:creator>
+        <description><![CDATA[
+            <p>The VMS approach was to have the delay be random (within bounds) and the triggering threshold random, within small bounds. I think you could also set it so the delay increased exponentially with more failed attempts. I’m remembering settings from 30 years ago here - Digital’s VAX/VMS was the leading mini/mainframe operating system when it came to security and management features back then.</p>
+<p>It’s where most of the security in Windows NT and later came from.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/22</link>
+        <pubDate>Mon, 27 Feb 2017 16:18:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, definitely an audit log storing the IP. One additional thing I do is when someone logs in and it is a new IP (one they haven’t logged in at before) it emails the administrator telling them someone has logged in at a new location. It help keep track of when staff are logging in out of hours at home.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/21</link>
+        <pubDate>Fri, 24 Feb 2017 00:03:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="19" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>Good point - depends on the trade offs per application.</p>
+</blockquote>
+</aside>
+<p>I believe blocking the user after failed logins is suitable for internal networks, where the security team then can proceed and find an app or person who does that - and eliminate it (cause, not person; tho who knows, these are the hard times).</p>
+<p>In internet the find and eliminate part is simply not working, so the blocking backfires.</p>
+<p>For internet I’d rather temporarily (for 5 minutes) block the IP from which we get a few failed attempts. That would make most script attacks on a user much harder to implement, while at the same time would be largely invisible to real users.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/20</link>
+        <pubDate>Thu, 23 Feb 2017 18:48:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>Good point - depends on the trade offs per application. (e.g. pretty sure most banks do this as always have phone/branch banking as backup).</p>
+<p>I guess things like this is why looking for drop in components that implement all the best practices is maybe futile.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/19</link>
+        <pubDate>Thu, 23 Feb 2017 18:01:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[Salman]]></dc:creator>
+        <description><![CDATA[
+            <p>It really depends on what action items you want with this type of logging.</p>
+<p>If you want to see usage patterns, you might use something like mixpanel or statsd (<a href="https://github.com/etsy/statsd" rel="nofollow noopener">https://github.com/etsy/statsd</a>).</p>
+<p>If you are looking to do rate limiting then there is a different approach.</p>
+<p>I was once using this app and I fiddled with the URL i.e. altered the ID in the querystring, and my account was immediately  disabled.  Now that was hard core <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/18</link>
+        <pubDate>Thu, 23 Feb 2017 18:00:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="16" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>when &gt; X could block temporarily or big delay, when &gt; Y then could block for manual review</p>
+</blockquote>
+</aside>
+<p>… which unfortunately creates a door for DoS attack against a particular user - just fail their login repeatedly and they won’t be able to login. <img src="https://emoji.discourse-cdn.com/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/17</link>
+        <pubDate>Thu, 23 Feb 2017 17:43:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>I ask as in addition to ip address throttling and random delay an app I’ve been involved with before kept a count of # failed logins against a username (your [user] table) - when &gt; X could block temporarily or big delay, when &gt; Y then could block for manual review. Reset on successful login.</p>
+<p>(Just doing IP throttling won’t pick up a distributed attack focused against an individual - guess that would be very unlikely for your app but for the work involved for # failed logins might be worth it anyway).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/16</link>
+        <pubDate>Thu, 23 Feb 2017 17:25:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="4815" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>Whats your defense against brute force attacks on username/password (either random guesses against a single login or random guesses against a bunch of passwords)?</p>
+<p>What language &amp; framework are you using? Is there a commonly agreed ‘best way’ to do this in that particular framework?</p>
+</blockquote>
+</aside>
+<p>Hmmm, I neglected to implement a protection against brute force attacks. I guess I should add per IP address throttling.</p>
+<p>I’m using Java + “Java Spark”, which is a very immature web framework, but oh so enjoyably light compared to most Java frameworks. It looks like I’ll have to add sign in throttling myself.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/15</link>
+        <pubDate>Thu, 23 Feb 2017 17:07:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="11" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/clay_nichols/40/2698_1.png" class="avatar"> Clay_Nichols:</div>
+<blockquote>
+<p>FYI, your site did not come up <a href="http://featureupvote.com/">http://featureupvote.com/</a></p>
+</blockquote>
+</aside>
+<p>Thanks for the alert. We’re currently setting up a proper production system. It seems that we’re briefly responding to https only…and even then you’ll get an AWS “Welcome” page… Should be better tomorrow.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/14</link>
+        <pubDate>Thu, 23 Feb 2017 17:03:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[dgrigg]]></dc:creator>
+        <description><![CDATA[
+            <p>Why not save the email as entered but use case insensitive sql for queries. Two versions is redundant. Separate table for audit is the right way to go. Depending on your needs you can even remove old entries to keep it small if needed.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/13</link>
+        <pubDate>Thu, 23 Feb 2017 16:57:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="8" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rhino/40/1254_1.png" class="avatar"> Rhino:</div>
+<blockquote>
+<p>Whats your defense against brute force attacks on username/password (either random guesses against a single login or random guesses against a bunch of passwords)?</p>
+</blockquote>
+</aside>
+<p>Standard practice is to introduce an artificial delay into login. Makes brute-force impractical.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/12</link>
+        <pubDate>Thu, 23 Feb 2017 16:56:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>I vastly overengineered our logging (I use Mixpanel for this).</p>
+<p>Now the approach I take is just enough logging to spot if there is a general issue in an area.<br>
+So if I want to see if users are logging in OK, I might just log the failures (or enough info so that I know the failure %).</p>
+<p>So… I cast a very wide net with very big holes, looking only for the biggest fish to fry.</p>
+<p>(How’s that for a mixed metaphor??)</p>
+<p>FYI, your site did not come up<br>
+<a href="http://featureupvote.com/" class="onebox" target="_blank" rel="nofollow noopener">http://featureupvote.com/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/11</link>
+        <pubDate>Thu, 23 Feb 2017 16:07:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[DLJ]]></dc:creator>
+        <description><![CDATA[
+            <p>Defo use an audit table/audit db.</p>
+<p>keep ‘working’ tables to the bare minimum you can for the app to work.</p>
+<p>I tend to use auth tables with just login id and hash to check against, everything else inc display name gets put in to a profile table.  usually also have a prefs table too.</p>
+<p>if you are using a framework, look in to throttling/blocking login attempts too as Rhino suggested</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/10</link>
+        <pubDate>Thu, 23 Feb 2017 15:49:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all. This is v helpful.</p>
+<p>So I’ll record all user sign ins in an audit trail table. And I’ll add a canonical email field to my user table.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/9</link>
+        <pubDate>Thu, 23 Feb 2017 09:54:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[Rhino]]></dc:creator>
+        <description><![CDATA[
+            <p>Whats your defense against brute force attacks on username/password (either random guesses against a single login or random guesses against a bunch of passwords)?</p>
+<p>What language &amp; framework are you using? Is there a commonly agreed ‘best way’ to do this in that particular framework?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/8</link>
+        <pubDate>Thu, 23 Feb 2017 09:53:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/7cd45c/40.png" class="avatar"> unboot:</div>
+<blockquote>
+<p>But some users/companies prefer emails like: <a href="mailto:S.Smith@example.com">S.Smith@example.com</a>.</p>
+</blockquote>
+</aside>
+<p>Yes, case-aware but case-insensitive.</p>
+<p>For audit purposes, it is also important to save the data exactly as they were entered by the user - in case this minor difference was sufficient to trigger a defect.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/7</link>
+        <pubDate>Thu, 23 Feb 2017 02:06:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>You can do that, obviously.<br>
+But some users/companies prefer emails like: <a href="mailto:S.Smith@example.com">S.Smith@example.com</a>.<br>
+You can then show the original (upcase) email to the user after loging in , for example in the top right corner of your admin panel.  It’s aesthetics / UX mainly.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/6</link>
+        <pubDate>Wed, 22 Feb 2017 22:17:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[kohanz]]></dc:creator>
+        <description><![CDATA[
+            <p>Why not just downcase the original e-mail field when you persist it. Is there a reason to preserve case for e-mails?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/5</link>
+        <pubDate>Wed, 22 Feb 2017 21:53:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4815">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<p>Should I be recording all sign ins (or recent sign ins) in the database?</p>
+</blockquote>
+</aside>
+<p>+1</p>
+<p>Audit table is both a cleaner separation of concerns and more flexible.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/4</link>
+        <pubDate>Wed, 22 Feb 2017 21:19:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,<br>
+not directly related to tracking, but maybe add a column<br>
+canonical_email VARCHAR(200) NOT NULL,<br>
+and make this the downcase of email (and check for uniqueness)</p>
+<p>Otherwise these two “users” can subscribe:</p>
+<p><a href="mailto:Steve@example.com">Steve@example.com</a><br>
+and<br>
+<a href="mailto:steve@example.com">steve@example.com</a></p>
+<p>This can lead to funny situations …</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/3</link>
+        <pubDate>Wed, 22 Feb 2017 21:15:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <ul>
+<li>
+<p>Don’t add last_signin_* fields to the user table</p>
+</li>
+<li>
+<p>Create audit_trail table instead (example below):</p>
+</li>
+</ul>
+<blockquote>
+<p>CREATE TABLE audit_trail<br>
+(<br>
+audit_trail_id serial NOT NULL,<br>
+app_name varchar(256),<br>
+method_name varchar(256) NOT NULL,<br>
+tenant_id int4,<br>
+user_name varchar(64) NOT NULL,<br>
+start_date timestamp,<br>
+end_date timestamp,<br>
+params text,<br>
+result bool,<br>
+host_ip varchar(64),<br>
+client_ip varchar(64),<br>
+exception_info varchar(2000),<br>
+exception_detail text,<br>
+partition_date timestamp NOT NULL,<br>
+CONSTRAINT audit_trail_pkey PRIMARY KEY (audit_trail_id)<br>
+);</p>
+</blockquote>
+<p><strong>Make sure you have all required indexes.</strong></p>
+<ul>
+<li>
+<p>Record all important events, such as sign ins, sign ups, sign in attempts, etc. Simply insert into autit_trail</p>
+</li>
+<li>
+<p>If needed - build autit_trail UI within your app to query events</p>
+</li>
+</ul>
+<p>Example: <a href="https://etlworks.com/docs/#statistics" rel="nofollow noopener">https://etlworks.com/docs/#statistics</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/2</link>
+        <pubDate>Wed, 22 Feb 2017 19:00:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+      <item>
+        <title>How much user activity logging should my SaaS do?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>For those of you actively running a SaaS, can I pick your brains?</p>
+<p>I’m currently working on the user sign up/sign in/recover password functionality for <a href="http://featureupvote.com/">Feature Upvote</a>. I’m in danger of over-engineering it. I log every signin failure and success in the application log. I’m recording in the database User table the date/time of the last successful signin and last failed signin, and last modified date.</p>
+<ul>
+<li>Should I be recording all sign ins (or recent sign ins) in the database?</li>
+<li>Should I be recording IP address and user agent of each sign in?</li>
+</ul>
+<p>My product is not dealing with financial data or anything else that is critical. I want to do things well, but I also don’t want to go overboard.</p>
+<p>My MySQL user table currently looks like this:</p>
+<p>CREATE TABLE user<br>
+(<br>
+user_id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,<br>
+email VARCHAR(200) NOT NULL,<br>
+salted_hash VARCHAR(100) NOT NULL,<br>
+display_name VARCHAR(200),<br>
+date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,<br>
+date_modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP,<br>
+last_signin_success TIMESTAMP,<br>
+last_signin_failure TIMESTAMP<br>
+);<br>
+CREATE UNIQUE INDEX user_email_uindex ON user (email);</p>
+<p>Any tips from someone who has been down this path already? Anything you really wished you had baked into the user system from the beginning?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815/1</link>
+        <pubDate>Wed, 22 Feb 2017 18:17:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4815-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-user-activity-logging-should-my-saas-do/4815.rss">How much user activity logging should my SaaS do?</source>
+      </item>
+  </channel>
+</rss>

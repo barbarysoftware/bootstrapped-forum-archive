@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>US Business Registering for VAT MOSS?</title>
+    <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330</link>
+    <description>Anyone from the US gone down the path of registering with the UK/Ireland/Malta VAT MOSS?
+
+From reading various posts, it appears that anyone in the world selling digital goods to the EU is going to have to deal with VAT now.
+
+In summary, it appears you need to:
+
+ - Capture IP and address of each customer
+ - Handle vetting VAT IDs for businesses via VIES and not charging them VAT
+ - Calculate the VAT rate for each of the 28 EU member states
+ - Submit a payment each quarter to the VAT MOSS you sign up with
+ - Generate VAT invoices that are valid in each of the 28 member states
+
+Some of the wrinkles seem to be (using the UK MOSS as an example):
+
+ - The currency conversion from USD to GBP happens from customer to you at the time of purchase, but quarterly from you to the MOSS. This could lead to either paying out more than you collected for VAT, or paying less.
+ - Paying the UK government from a US bank account - I have no idea how this works. This could be gross.
+ - I haven&#39;t found a resource that spells out what you need to have on invoices for them to be VAT compliant in all member states.
+ - According to research I&#39;ve done, it seems that the ViES API tends to be rather poor in terms of performance and availability
+ - The documentation implies to you have to capture the users IP and address, but they also talk about them being non-contradictory. Do I now have to geo-locate all IPs? If the IP and address don&#39;t agree, what do I do?
+ - VAT rates change over time, so you have to keep up with them
+
+Obviously there are now companies selling services to deal with some issues for you, such as http://www.taxamo.com/.
+
+I&#39;ve had some discussions with people online over at [Hacker News](https://news.ycombinator.com/item?id=8657543). Some are insisting that US businesses don&#39;t need to worry about VAT on eservices, but pretty much everything I&#39;ve seen indicates we definitely do.
+
+Has anyone else dealt with this yet, and do you have any advice?</description>
+    
+    <lastBuildDate>Thu, 15 Sep 2016 07:27:54 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>The EU VAT Action folk are amazing. I’ve been acting as a technical advisor to them, but they are essentially a group of women who have put their lives on hold to campaign for the interests of the smallest businesses.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/40">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/40</link>
+        <pubDate>Mon, 22 Dec 2014 10:42:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-40</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[arad]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, I agree that it’s very unlikely that this is enforceable. Unless there is a trade agreement with the business’s resident country, the EU just doesn’t have the authority to collect taxes from businesses that are located outside of its territories.</p>
+<p>I think this is a wait and see kind of a deal.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/39">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/39</link>
+        <pubDate>Sat, 20 Dec 2014 23:31:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-39</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>I built <a href="https://quaderno.io/stripe-vat-invoicing/" rel="nofollow noopener">https://quaderno.io/stripe-vat-invoicing/</a> to deal with this VAT mess. And if you’re using Stripe subscriptions it’s much easier with our <a href="https://quaderno.io/stripe-vat-subscriptions/" rel="nofollow noopener">javascript library</a>.</p>
+<p>Let me know if you have any questions or comments. Happy to help <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/38">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/38</link>
+        <pubDate>Fri, 19 Dec 2014 17:20:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-38</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>I just can’t understand it - it’s almost as if the law was made by people who have never run a business and have no idea how the internet works.</p>
+<aside class="quote" data-post="36" data-topic="2330">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/shantnu/40/2752_1.png" class="avatar"> shantnu:</div>
+<blockquote>
+<p>By this stage, we have lost the battle, it’s just a case of covering your backside as best you can</p>
+</blockquote>
+</aside>
+<p>There are still optimistic noises coming from <a href="http://euvataction.org/" rel="nofollow noopener">http://euvataction.org/</a> - I haven’t started selling yet, so I’m still in denial, hoping something good will happen before I have to deal with it…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/37">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/37</link>
+        <pubDate>Thu, 18 Dec 2014 18:48:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-37</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="35" data-topic="2330">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/radiac/40/2472_1.png" class="avatar"> radiac:</div>
+<blockquote>
+<p>It’s basically useless, it misses the real problems here.</p>
+</blockquote>
+</aside>
+<p>Of course it is! If you read Vince Cable’s reply to the <a href="http://Change.org" rel="nofollow noopener">Change.org</a> petition, it was basically:</p>
+<blockquote>
+<p>Blah blah blah I dont understand how digital products work.</p>
+</blockquote>
+<p>By this stage, we have lost the battle, it’s just a case of covering your backside as best you can <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Edited to add: That said, it isn’t all bad. <a class="mention" href="/u/rachelandrew">@rachelandrew</a> has some good info on her Github page (<a href="http://rachelandrew.github.io/eu-vat/" rel="nofollow noopener">http://rachelandrew.github.io/eu-vat/</a>) specifically for me <a href="http://rachelandrew.github.io/eu-vat/third-parties.html" rel="nofollow noopener">http://rachelandrew.github.io/eu-vat/third-parties.html</a> (as I sell eBooks).</p>
+<p>At the moment, I sell mainly via Gumroad, who say they are working on a fix for this, and should have one by January. If they don’t, I’ll move to Fastspring or something similar. They already collect Vat for you (by acting as intermediaries), which means you don’t need to register for MOSS (by my understanding).</p>
+<p>I guess it’s different if you run a SAAS, but it should still be doable.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/36</link>
+        <pubDate>Thu, 18 Dec 2014 18:39:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-36</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="34" data-topic="2330">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/shantnu/40/2752_1.png" class="avatar"> shantnu:</div>
+<blockquote>
+<p>For UK businesses, you no longer need to be registered for VAT</p>
+</blockquote>
+</aside>
+<p>That concession is an insult. It’s basically useless, it misses the real problems here.</p>
+<p>I guess it’s useful if you need to compete on price against people who aren’t charging VAT - but presumably all your competitors should be, because they’re subject to the same rules you are.</p>
+<p>The thing is that you still have the administrative headache of needing to register for MOSS and submitting VAT returns for EU sales, and the technical problems of adapting your checkout systems to log the pieces of evidence against every sale (you need to prove your sales to the UK were to the UK).</p>
+<p>You get all of the problems and costs of being VAT registered, but because you’re still not VAT registered for UK sales, you can’t claim back any of the VAT on your expenses - and if your competitors don’t register for UK sales, you’ll have to charge 20% more if you want those savings. If anything this is worse.</p>
+<p>As far as I can tell, the only practical benefit of this is for politicians who can just keep telling people who don’t understand the details “Oh, but it’s ok, we compromised! Everything’s fine now!”</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/35</link>
+        <pubDate>Thu, 18 Dec 2014 17:51:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-35</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p>For UK businesses, you no longer need to be registered for VAT:</p>
+<blockquote>
+<p>Following pressure from business groups and the media, HMRC has<br>
+subsequently agreed that businesses can in fact register for MOSS<br>
+without having to charge VAT on their UK sales, where they are below the<br>
+UK VAT threshold, currently £81,000. So, you can now access the help<br>
+provided by the MOSS system whilst not having to register for and charge<br>
+UK VAT.</p>
+</blockquote>
+<p><a href="http://cleveraccounts.co/blog/vat-changes-supplies-digital-services-eu-countries/" class="onebox" target="_blank">http://cleveraccounts.co/blog/vat-changes-supplies-digital-services-eu-countries/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/34</link>
+        <pubDate>Wed, 17 Dec 2014 18:14:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-34</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>I wrote about the consensus that is building regarding the proof part of this <a href="http://rachelandrew.co.uk/archives/2014/12/08/consensus-and-vatmoss/">http://rachelandrew.co.uk/archives/2014/12/08/consensus-and-vatmoss/</a></p>
+<p>We’re doing billing address (and we’re sanity checking those by using <a href="http://www.postcodeanywhere.co.uk/">http://www.postcodeanywhere.co.uk/</a>).</p>
+<p>Then logging IP, hopefully that gives us two bits of proof. Then we are also storing the bank location as a backup.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/33</link>
+        <pubDate>Wed, 17 Dec 2014 16:08:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-33</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[wbond]]></dc:creator>
+        <description><![CDATA[
+            <p>Was approved by HMRC for MOSS today. They asked one question via email and I was approved in a total of less than 24 hours from original submission.</p>
+<p>I’m working on some VAT ID validation code today and logic to determine rate based on location. I’ll update this thread with a GitHub repo containing a dump of some Python and JS in case others find it useful.</p>
+<p>I also did some work looking into paying the quarter VAT payments to HMRC. It seems most big banks can do international wire transfers to foreign banks, but they usually cost $40-$60 plus currency conversion. It seems there are some third-party services that will do the transfer for much cheaper, such as:</p>
+<ul>
+<li><a href="http://www.usforex.com/our-services/transfer-money/europe" rel="nofollow noopener">http://www.usforex.com/our-services/transfer-money/europe</a></li>
+<li><a href="https://www.xoom.com/united-kingdom/send-money" rel="nofollow noopener">https://www.xoom.com/united-kingdom/send-money</a></li>
+<li><a href="https://transferwise.com/us" rel="nofollow noopener">https://transferwise.com/us</a></li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/32</link>
+        <pubDate>Wed, 17 Dec 2014 14:43:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-32</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[wbond]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, you need two pieces of non-contradicting proof. So that works for one.</p>
+<p>My current plan is to attempt it with geoIP and dropdown. If those don’t match I’ll ask for phone number. Then the billing address I will have as a backup.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/31</link>
+        <pubDate>Tue, 16 Dec 2014 21:38:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="28" data-topic="2330">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/wbond/40/2661_1.png" class="avatar"> wbond:</div>
+<blockquote>
+<p>… 2. A web form input where the customer chooses the country they currently live in</p>
+</blockquote>
+</aside>
+<p>This certainly sounds a lot tidier than IP reverse lookup mapping.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/30</link>
+        <pubDate>Tue, 16 Dec 2014 19:38:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[wbond]]></dc:creator>
+        <description><![CDATA[
+            <p>I just went through the UK VAT MOSS registration process. After entering by business details, they indicated that validation will take one week or longer. Just an FYI for others who are going down this path.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/29</link>
+        <pubDate>Tue, 16 Dec 2014 18:33:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[wbond]]></dc:creator>
+        <description><![CDATA[
+            <p>I finally received a response from the HMRC about my questions regarding proof of place of supply. Desmond Farndell, who is a Senior Policy Adviser at the HMRC indicated that both of the following are perfectly acceptable as evidence for the customers normal place of residence:</p>
+<ol>
+<li>The country calling code from the customer’s phone number (<a href="http://en.wikipedia.org/wiki/List_of_country_calling_codes" rel="nofollow noopener">http://en.wikipedia.org/wiki/List_of_country_calling_codes</a>)</li>
+<li>A web form input where the customer chooses the country they currently live in</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/28</link>
+        <pubDate>Tue, 16 Dec 2014 18:04:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>There is a definite consensus growing among companies who have implemented something, based on the data that it is feasible to get. I did some digging:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://rachelandrew.co.uk/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://rachelandrew.co.uk/archives/2014/12/08/consensus-and-vatmoss/" target="_blank">The site of Rachel Andrew, writer, speaker and web developer</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/460;"><img src="http://rachelandrew.co.uk/images/fb_image.jpg" class="thumbnail" width="690" height="460"></div>
+
+<h3><a href="https://rachelandrew.co.uk/archives/2014/12/08/consensus-and-vatmoss/" target="_blank">Consensus and VATMOSS</a></h3>
+
+<p>With time ticking away before the January 1st deadline for the change in place of supply for EU VAT there are worryingly few third parties coming forward with ways to help people implement the changes.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>What bothers me with Taxamo is that they seem to have aligned themselves with HMRC as if there is no other option and obviously have an interest in making it all seem very difficult and scary. Their suite of tools might be a great option but other than the fact they have implemented an SMS check to confirm a phone registered in that country (which will make for a super checkout experience) they have access to the same data as the rest of us.</p>
+<p>As I mention in my post I think reporting after the fact may well be the most important piece as the important thing is that you can complete the MOSS return correctly - even if you have to stump up some of the VAT yourself.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/27</link>
+        <pubDate>Tue, 09 Dec 2014 06:39:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[wbond]]></dc:creator>
+        <description><![CDATA[
+            <p>My current plan is to make a best effort. If HMRC gives me a hard time I will point to my requests for clarification and what Taxamo is doing. My guess is that they’ll just be happy to have me contributing.</p>
+<p>From looking at Taxamo’s documentation, it seems that the user can state their country of residence. Because of this, for my place of supply proof, my current plan is:</p>
+<ol>
+<li>Geolocate IP</li>
+<li>Collect billing address (even for PayPal)</li>
+<li>If they don’t match, ask the user to state their country of residence.</li>
+</ol>
+<p>If none match, indicate the user what the current information is and ask them to resolve it so two match. It should always be possible for the billing address and country of residence to match even if the user is traveling and their IP is a foreign country.</p>
+<p>This approach should be minimally invasive and should work for both PayPal and credit cards (Stripe, Braintree, etc).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/26</link>
+        <pubDate>Mon, 08 Dec 2014 16:02:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[MarkLittlewood]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Ian, sorry. I am away on long weekend with wife for weddin anniversary. I didn;t get time to update before I left but I wrote this.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://thebln.com/wp-content/themes/bln-corporate/bln_favicon.png" class="site-icon" width="16" height="16">
+      <a href="https://thebln.com/2014/12/vatmoss-vatmess-hmrc-and-julian-huppert-mp-update-microbusiness-update/" target="_blank" title="12:25PM - 05 December 2014">The BLN – 5 Dec 14</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/456;"><img src="https://thebln.com/wp-content/uploads/2014/12/Shawshank-Redemption.jpg" class="thumbnail" width="690" height="456"></div>
+
+<h3><a href="https://thebln.com/2014/12/vatmoss-vatmess-hmrc-and-julian-huppert-mp-update-microbusiness-update/" target="_blank">#VATMOSS #VATMESS, HMRC and Julian Huppert MP. Update. Microbusiness update |...</a></h3>
+
+<p>Who would be an MP? My MP, is currently in parliament trying to pass the bill to put 0.7% of GDP to work supporting less developed countries. I think this is a thing that is important, not just from the perspective of&nbsp;&nbsp;it seeming like a...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Basically, the whole thing seems to be a total mess. Julian Huppert understands the issues but is one voice amongst many MPs. As far as I know he is the only MP who has responded.</p>
+<p>Vince Cable, has responded to the petition at <a href="http://Change.org">Change.org</a> today.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://static.change.org/favicons/favicon-48x48.png" class="site-icon" width="48" height="48">
+      <a href="https://www.change.org/p/vince-cable-mp-uphold-the-vat-exemption-threshold-for-businesses-supplying-digital-products/responses/25596" target="_blank">Change.org</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/414;"><img src="https://assets.change.org/photos/1/wv/ts/UtWVtsZFEbIMRih-1600x900-noPad.jpg?1522322372" class="thumbnail" width="690" height="414"></div>
+
+<h3><a href="https://www.change.org/p/vince-cable-mp-uphold-the-vat-exemption-threshold-for-businesses-supplying-digital-products/responses/25596" target="_blank">Vince Cable MP</a></h3>
+
+<p>The changes to VAT on digital products is not new or sudden - the change was agreed in 2008 and we've done a lot to communicate it to businesses. Regardless, the majority of UK micro-businesses will not be affected.
+
+Here's a breakdown of how the...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Really, really lame but he is a total idiot. No idea why he exists to be honest.</p>
+<p>As the implications for the law are still completely unclear for microbusinesses, I can’t in all honesty suggest you do anything else but wait until the law and its implications are clear and actionable. They simply are not at present.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/25</link>
+        <pubDate>Mon, 08 Dec 2014 15:06:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[allan_jardine]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="14" data-topic="2330">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/wbond/40/2661_1.png" class="avatar"> wbond:</div>
+<blockquote>
+<p><a href="http://ec.europa.eu/taxation_customs/tic/public/vatRates/vatrates.html" rel="nofollow noopener">http://ec.europa.eu/taxation_customs/tic/public/vatRates/vatrates.html</a>.</p>
+</blockquote>
+</aside>
+<p>Brilliant! And also terrifying!</p>
+<p>Looking up a standard rate using that service is actually relatively easy. With bit of scripting it could be pulled out into a useful format.</p>
+<p>However, the terrifying bit is the regional rates. Taking France as an example, in Corsica and Monaco, VAT rates might be different from mainland France.</p>
+<p>There also also a number of areas which have “No Standard Rate” - Lake Lugano in Italy for example. I don’t even know what that means! 0%, or the rate varies depending on the product?</p>
+<p>These are somewhat rhetorical questions here, since I realise we need HMRC’s official viewport - although any thoughts are welcome.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/24</link>
+        <pubDate>Mon, 08 Dec 2014 14:44:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[allan_jardine]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="22" data-topic="2330">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/wbond/40/2661_1.png" class="avatar"> wbond:</div>
+<blockquote>
+<p>I have not heard anything back yet in 24 hours.</p>
+</blockquote>
+</aside>
+<p>Recently I’ve had to wait about 1 month to get a reply from the “written team”. A few months back it was two weeks. So I wouldn’t expect anything too quickly!</p>
+<p><a class="mention" href="/u/marklittlewood">@MarkLittlewood</a> - interested to hear how the meeting went!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/23</link>
+        <pubDate>Mon, 08 Dec 2014 14:29:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[wbond]]></dc:creator>
+        <description><![CDATA[
+            <p>I have an email into the HMRC to clarify how to deal with location issues related to place of supply for web-based businesses. I have not heard anything back yet in 24 hours.</p>
+<p>I also reached out to Braintree Payments, who I am planning on switching over to. They linked me to documentation showing that credit card payments provide a bunch of bank info including “transaction.credit_card_details.country_of_issuance”. <a href="https://developers.braintreepayments.com/javascript+ruby/reference/objects/transaction#transaction.credit-card-details.masked-number" rel="nofollow noopener">https://developers.braintreepayments.com/javascript+ruby/reference/objects/transaction#transaction.credit-card-details.masked-number</a></p>
+<p>Unfortunately I’m only seeing billing country for PayPal payments once the payment is complete. It seems you can set tax rates within PayPal for specific countries, but this doesn’t really help with confirming two pieces of evidence.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/22</link>
+        <pubDate>Thu, 04 Dec 2014 03:39:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>Definitely update us! It’s good to know we have an inside man <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Yeah, really the mess is the problem. We sell a ton to Europe and would probably jump through some reasonable hoops to collect their taxes, but it’s all so convoluted that there’s no where place to go to even understand how to start.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/21</link>
+        <pubDate>Wed, 03 Dec 2014 15:04:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[MarkLittlewood]]></dc:creator>
+        <description><![CDATA[
+            <p>This is all a total mess. The rules are not clear and the advice given by HMRC in the UK is contradictory, non-binding, sometimes illegal (they suggested creating two companies, one domestic and one EU to ‘avoid complications’ for example though when they were challenged on this being Tax Evasion, they neither withdrew the advice or commented on it.</p>
+<p>It is a total and utter mess. I have picked this up with HMRC and my MP, really on behalf of a few others who are utterly confused - this really affects microbusinesses, not ones that are VAT registered and selling to companies but there is no simple clear advice.</p>
+<p>I have beein invited to an HMRC emergency consultation tomorrow morning to discuss. Meanwhile, there is more and more conflicting advice being issued by people, lots of well meaning forums etc being set up to help people through and a ton of advisers and accountants and web developers pitching themselves as the experts to little businesses that can’t afford it. People are also spending money redoing their systems to replace them with other systems that still won’t comply with the laws.</p>
+<p>I will report back on this after that meeting if there is interest but honestly, be really careful before you act. This seems to be as much of a bonanza for consultants as the Y2K bug. There is no clear information. There is an EU directive that is being implemented and interpreted in different ways by different countries. The UK has really screwed this up in implementation.</p>
+<p>One simple example, if your turnover is &lt;£81k in UK, you do not have to be VAT registered. If you sell online and someone wants to buy your digital product in Greece, you have to comply with Greek VAT regulations. The threshold for VAT reg there is £0. Therefore to sell to Greece, you have to be VAT registered in your own country. It is also illegal for you to restrict your trade in another EU country, so in fact if you take the steps that HMRC suggest - check and get proof of country in various ways etc, if you are from Greece, no sale, then you are also acting illegally. If you do sell something in Greece and sign up for VATMOSS, you then have to be VAT registered in UK, complete quarterly tax returns AND charge consumers the VAT (20%) or swallow it yourself.</p>
+<p>Joseph Heller and Franz Kafka got together, dropped some acid and started to write the law.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/20</link>
+        <pubDate>Wed, 03 Dec 2014 14:23:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="18" data-topic="2330">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/masuga/40/2460_1.png" class="avatar"> masuga:</div>
+<blockquote>
+<p>Not sure how this could possibly be enforced on U.S. small business.</p>
+</blockquote>
+</aside>
+<p>According to <a href="http://www.clarejosa.com/vat-moss-webinar-2nd-december-2014/" rel="nofollow noopener">today’s webinar</a>:</p>
+<p>[quote]Since 2003 you had to register for the non-union (EU) VAT scheme. If a<br>
+business is found to not be complying, then HMRC would go through the<br>
+business’s tax authority to reclaim the VAT. This will be enforced more<br>
+strongly. It will level the playing field for EU merchants.[/quote]</p>
+<p>I bet you’re all quaking in your boots.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/19</link>
+        <pubDate>Tue, 02 Dec 2014 22:41:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[wbond]]></dc:creator>
+        <description><![CDATA[
+            <p>I saw a comment from <a class="mention" href="/u/rachelandrew">@rachelandrew</a> on Hacker News that mentioned that UK companies need to present prices for consumers that include VAT. Clearly this does not apply to US businesses.</p>
+<p>The other issues that occurred to me last night is that if you use PayPal or credit card processing for payments, you will now have to pay processing fees on the tax, which can be up to 27% of the purchase.</p>
+<p>I’m considering doing IP geolocation (at the web server level) on my site and pre-selecting a country dropdown for users. I am thinking I will charge an extra 5-10% for EU locations to cover extra processing fees for taxes and to cover the work in filing, absorbing currency rate fluctuations, etc. When users from the EU view their cart, I will pre-populate a VAT line-item based on the country the user selects. If they enter their credit card info and the country from the billing address doesn’t match, I will ask them to self-certify their country of residence.</p>
+<p>This seems about as extensive as can be done from a small business. From all of the reading I have done, technically the VAT on e-Services (VoeS) system has been in place since 2003. So if US businesses haven’t had issues yet, I can’t imagine the EU countries are all of a sudden going to have the resources to start pursuing them. I presuming resources will be used to go after bigger fish.</p>
+<p>Technically you should be able to use a user’s credit card number to detect the issuing bank, but from what I’ve read, the ABA won’t release the credit card IIN numbers unless you are a member of the financial industry or an organization with an IIN yourself. I’ve reached out to their contact to confirm this.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/17</link>
+        <pubDate>Mon, 01 Dec 2014 15:41:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[wbond]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rachelandrew">@rachelandrew</a> I don’t have an issue if you link to my comment, or include the info I found with a note of my contribution. Unfortunately I’ve got enough to get done in the next month in terms of getting my new business website launched that will allow me to deal with these and other issues.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/16</link>
+        <pubDate>Mon, 01 Dec 2014 15:27:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+      <item>
+        <title>US Business Registering for VAT MOSS?</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>any chance you can add this stuff to <a href="http://rachelandrew.github.io/eu-vat/">http://rachelandrew.github.io/eu-vat/</a> ? Probably under Implementation?</p>
+<p>It’s been linked up all over the place and I know it’s getting a lot of traffic because of the amount coming through to my site from it.</p>
+<p>I can add it but if you do it’s be marked as your additions on github <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>The “proof” rules are less simple than you might think however. Take a look at: <a href="http://rachelandrew.co.uk/archives/2014/11/30/how-the-eu-vat-rules-make-eu-startups-and-digital-businesses-uncompetitive-in-a-global-market/">http://rachelandrew.co.uk/archives/2014/11/30/how-the-eu-vat-rules-make-eu-startups-and-digital-businesses-uncompetitive-in-a-global-market/</a></p>
+<p>It’s very unclear right now. That might be less applicable to businesses out of the EU however.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330/15</link>
+        <pubDate>Sun, 30 Nov 2014 20:49:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2330-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/us-business-registering-for-vat-moss/2330.rss">US Business Registering for VAT MOSS?</source>
+      </item>
+  </channel>
+</rss>

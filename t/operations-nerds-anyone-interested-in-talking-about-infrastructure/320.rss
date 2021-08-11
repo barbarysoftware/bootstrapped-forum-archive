@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+    <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320</link>
+    <description>Our product isn&#39;t SaaS, however we have a fair bit of infrastructure supporting Perch. For example we serve hosted demos, have the site and associated payment process/license validation, host our own support and so on. I&#39;m currently in the middle of a process of moving everything off a scrappy collection of virtual servers, all managed differently, to a new infrastructure that I am keeping consistent using Puppet.
+
+We&#39;re also doing things like splitting the marketing website from all of the business functions, it&#39;s currently essentially what we launched with over four years ago which makes it really difficult to do stuff like A/B Testing of landing page conversions and so on as touching the site is a bit scary as we don&#39;t have a sane deployment method.
+
+I&#39;m something of an old school sysadmin, so I&#39;ve had to learn lots of new tools recently as part of trying to sort our systems out. I&#39;d be happy to share what I&#39;ve learned and would love to know what other people are doing, especially in terms of automation, deployment, monitoring and security.</description>
+    
+    <lastBuildDate>Thu, 12 Dec 2013 16:05:02 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[dennis]]></dc:creator>
+        <description><![CDATA[
+            <p>We also migrated our homegrown solution to Ansible recently and really like it. The nice thing about Ansible is that it doesn’t require any agent/service installations and works just via SSH. We also use it to provision our Vagrant dev machines.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/20</link>
+        <pubDate>Thu, 12 Dec 2013 16:05:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[dennis]]></dc:creator>
+        <description><![CDATA[
+            <p>We use dedicated pairs of routers with HAProxy + Pacemaker/Corosync for failover. You can use Hetzner’s failover nets to automatically reroute traffic when you switch the master via Corosync.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/19</link>
+        <pubDate>Thu, 12 Dec 2013 16:03:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[starr]]></dc:creator>
+        <description><![CDATA[
+            <p>Our ops guy recently switched from chef to ansible and is swearing by it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/18</link>
+        <pubDate>Sat, 30 Nov 2013 04:27:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[starr]]></dc:creator>
+        <description><![CDATA[
+            <p>If you happen to be using ruby &amp; rails you might be interested in my service <a href="http://honeybadger.io" rel="nofollow noopener">honeybadger.io</a>. We’re working to give devs a complete monitoring solution that doesn’t cost an arm and a leg.</p>
+<p>Sorry for the blatant plug. I figure I’m allowed one every 20 posts.  <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/17</link>
+        <pubDate>Sat, 30 Nov 2013 04:24:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[smtm]]></dc:creator>
+        <description><![CDATA[
+            <p>What do you use to manage the traffic distribution to the cluster at Hetzner? A separate machine with a loadbalancer or some other setup?</p>
+<p>I just moved into Hetzner from shared hosting with my hotel management rails app. Initially I built the boxes with vagrant, puppet on my local machine and deployed that to Hetzner. Now I am going with vhosts, but they don’t support a failover ips for those at Hetzner. So I am looking for alternatives</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/16</link>
+        <pubDate>Fri, 29 Nov 2013 20:48:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[dennis]]></dc:creator>
+        <description><![CDATA[
+            <p>We use dedicated servers/racks hosted by Hetzner for our TestRail Hosted infrastructure and our websites. We prefer dedicated machines as they offer much better performance compared to cloud offerings like AWS in our experience. The hardware side is completely managed by Hetzner and they are flexible enough to configure private switches/networks, have API-switchable failover IPs, can install BBUs etc. We currently manage our ~20 servers with a homegrown set of shell scripts + Subversion for configuration management, which has been working well for us.</p>
+<p>That said, provisioning new machines is more work than it should be and we plan to switch to one of the available configuration management tools. We briefly looked into using Chef, Puppet or Ansible, and having tested Ansible as part of some smaller projects with Vagrant, I think we will go with this tool. I especially like the fact that Ansible doesn’t require you to install an agent on the managed servers and that it uses simple SSH connections. Does anyone have experience using Ansible for their production systems here?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/15</link>
+        <pubDate>Sat, 10 Aug 2013 17:28:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[wamberg]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d like to throw <a href="http://saltstack.com/community.html" rel="nofollow noopener">SaltStack</a> into the mix for infrastructure management options. It seems like a lot of people have trouble getting the hang of Chef; I’m one of those people. I tried Salt after yet another Chef recipe upgrade broke my will. Here’s why I’m sticking with Salt.</p>
+<p>Salt just works better for me. It might have something to do with my Python background. While Salt is written in Python, I haven’t found myself writing any Python to set up a machine. The <a href="http://docs.saltstack.com/topics/tutorials/starting_states.html" rel="nofollow noopener">Salt States</a> are written in YAML. YAML has its own problems but I’ll take it over Ruby any day. For example, it has been immensely more simple for me to set up nginx and uwsgi servers in Salt with YAML and Jinja templates. I’ve also had more success doing git-based deployments.</p>
+<p>Beyond States (Recipes in Chef), I found the client/server setup so much easier with Salt. My Chef server always had memory problems. I’m sure this has more to do with my administration ability than Chef but I couldn’t keep the Chef server running without a beam process grabbing all the memory and taking down my infrastructure-house of cards. Even when my Chef server was up and running, I felt like I was tied to Chef’s web interface to management my nodes. I don’t feel the same way with Salt. For example, in Salt, <a href="http://docs.saltstack.com/topics/configuration.html#key-management" rel="nofollow noopener">managing minion access to the server is a few terminal commands</a>.</p>
+<p>One issue is that the Salt States I write will only work on Ubuntu Linux machines. Maybe there are guidelines to writing Salt States that are more portable. One of the benefits of Chef (and Puppet, I don’t have any personal experience with it though) is that your recipe should work on a variety of Linux distros. This makes my States less likely to be useful for the devops community if I were to share them. My experience with Chef recipes though is that they don’t always work in every distro anyway. I seemed to have a penchant for finding a Chef recipe that was written by a RedHat sysadmin and never tested in Ubuntu.</p>
+<p>If you’re having trouble with your current infrastructure manager, give Salt a shot.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/14</link>
+        <pubDate>Fri, 09 Aug 2013 16:43:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[pellisuk]]></dc:creator>
+        <description><![CDATA[
+            <p>In my day job (DevOps) we are using Chef &amp; Vagrant to manage our AWS servers. We host our own chef server &amp; repo. It’s doing a good job reducing the amount of repetitive tasks we have. In my bootstrapping I’m still using hosted web space but I’ve found FTPloy to be very useful. Anything that is pushed to my Bitbucket master branch is deployed to the server, staging for test can be done by pushing to a different branch.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/13</link>
+        <pubDate>Fri, 09 Aug 2013 08:56:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[cemhurturk]]></dc:creator>
+        <description><![CDATA[
+            <p>You may also try <a href="http://copperegg.com/" rel="nofollow noopener">CopperEgg</a> which is similar to NewRelic but cheaper.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/12</link>
+        <pubDate>Fri, 09 Aug 2013 08:53:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="6" data-topic="320">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/radiac/40/2472_1.png" class="avatar"> radiac:</div>
+<blockquote>
+<p>Out of interest, what do people use for monitoring?</p>
+</blockquote>
+</aside>
+<p>We use NewRelic’s free monitoring. If you can put up with their sales people emailing you to upgrade all the time it’s great. Funny thing is, I intend to use NewRelic once I can justify the expense but the more they email the more I just want to abuse the free-tier.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/11</link>
+        <pubDate>Fri, 09 Aug 2013 08:47:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[cemhurturk]]></dc:creator>
+        <description><![CDATA[
+            <p>In addition to my original post, we use Pingdom for server uptime monitoring, <a href="http://Cockpito.com" rel="nofollow noopener">Cockpito.com</a> for in-app metric monitoring, Sendloop Engage feature for user tracking and event-driven messaging.</p>
+<p>Deployment is not automated, we use Git for deployment mainly but it’s supported with some custom scripts.</p>
+<p>We also use Bugsnag for fatal error detection and notification.</p>
+<p>As a side note, I will definitely take a look at Puppet for automation.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/10</link>
+        <pubDate>Fri, 09 Aug 2013 06:51:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>A lot of people use Puppet masterless and sync manifests via Git etc. I’ve gone for a standard Puppetmaster setup, I intended to run masterless but the more I read the more sense it made to run a puppetmaster, and it is less complicated than it looks once you get it going.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/9</link>
+        <pubDate>Fri, 09 Aug 2013 05:44:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[bradleyboy]]></dc:creator>
+        <description><![CDATA[
+            <p>Like many of the replies above, we spent years living on a cobbled together “script”, which was a text file full of bash commands to run when adding a new server to our cluster. It took time and was not the sort of thing you wanted to have to do under pressure. Chef always melted my brain when trying to learn it, but I finally forced myself a few years ago and am happy I did. We use Joyent to manage our 5 server cluster for <a href="http://SlideShowPro.com" rel="nofollow noopener">SlideShowPro.com</a>, and adding a new box is a single command from the terminal thanks to Chef + Joyent’s CLI tools. And all those tools are wrapped in our own repo, so anyone can do this once they’ve git cloned.</p>
+<p>Working with a small team for all these years, automation has become an addiction of mine. We’re now almost fully automated in our development environment and production release workflow for Koken. If you are setting up a new development machine, you check out the repo and then run a single command to install all the dev tools and local server configurations to get you up and running. Need to push a new release? Again, that is a single terminal command that packages the release, pushes it to the server, updates release notes, etc. Like I said, I’m addicted <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"> It’s an investment of time upfront, but the peace of mind that comes later is well worth it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/8</link>
+        <pubDate>Thu, 08 Aug 2013 15:43:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[casey]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m in the same boat as radiac, I think. We only have 10ish physical servers and I get by with my own (really basic) scripts. I only set up 1 or 2 new hosts a year so I’ve been putting off improving our process.</p>
+<p>Lately I’ve been looking through the Ansible docs and it seems nice.</p>
+<p>The usual nagios for monitoring.  I also really like Munin for graphing trends. It does a lot out of the box with a very easy setup and you can whip up a plugin to graph something new in a few minutes. For performance monitoring, New Relic is awesome for Rails and well worth the $.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/7</link>
+        <pubDate>Thu, 08 Aug 2013 14:16:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been looking at moving from custom scripts to puppet or chef; I’ve only skim-read the docs so far, but the recommended pull model of agent/master (or chef’s server/nodes) strikes me as overcomplicated, and a bit less secure and reliable than pushing updates. I’m thinking of doing something similar to <a class="mention" href="/u/noel">@noel</a>, pushing and applying puppet manifests using fabric - am I just being paranoid, or missing something?</p>
+<p>Out of interest, what do people use for monitoring?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/6</link>
+        <pubDate>Thu, 08 Aug 2013 13:44:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[noel]]></dc:creator>
+        <description><![CDATA[
+            <p>We have an almost identical setup to <a class="mention" href="/u/imsickofmaps">@imsickofmaps</a>: Chef, Vagrant, and rsync. I don’t love Chef, but it gets the job done. My main Chef tip is to just run Chef Solo. Chef Solo is the simple system – you upload the scripts to the server, run them, and away you go. The creators of Chef are trying to sell their mindbogglingly complicated hosted solution, so the docs hardly mention Chef Solo.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/5</link>
+        <pubDate>Thu, 08 Aug 2013 12:59:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[cemhurturk]]></dc:creator>
+        <description><![CDATA[
+            <p>At <a href="http://sendloop.com/" rel="nofollow noopener">Sendloop</a>, we use Virtualbox instances which is exactly the same installation of our production servers. However, I guess it’s time to switch to Vagrant sometime in the near future.</p>
+<p>In addition, we use Git mainly for deployment with complex hook scripts. For database, we use MySQL database servers. Because Sendloop has a huge load (appr. 10 million emails are sent every day through Sendloop servers which means 100+ million transaction load on MySQL servers), we split users across multiple MySQL servers. I know this is a very old technique but it works <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/4</link>
+        <pubDate>Thu, 08 Aug 2013 09:02:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>I looked at both Chef and Puppet and Puppet just seemed to sit better with my brain! However infrastructure as code has been a huge revelation to me. I’m using Vagrant as well - as an aside, for anyone who wants a simple intro to Vagrant and also uses PHP, have a look at <a href="https://puphpet.com/">PuPHPet</a>.</p>
+<p>I also think this stuff can be a huge liberator, and really fits well with most of our situations as tiny teams trying to do it all. There is obviously an overhead at first, but knowing your infrastructure is backed up in Git, as code and that you can recreate any part of it on a new box easily, is very nice.</p>
+<p>Thanks for the link to Pushover, haven’t come across that and it looks useful.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/3</link>
+        <pubDate>Thu, 08 Aug 2013 07:24:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <p>o/</p>
+<p>We use Chef not puppet but as far as I’m concerned the key thing is infrastructure-as-code not what the code is.</p>
+<p>I don’t really use Chef for even half its power at all but its place in our set of tools has been awesome.</p>
+<p>We use Vagrant to have the same OS as our servers at Hetzner, which runs the system’s Chef recipes every time we boot our laptops. Then I use Fabric (a python-based tool) to run tasks against the servers from inside the VM like <code>staging bootstrap</code> (rsync’s recipes and makes sure the environment is up to date) then <code>staging deploy</code> (which rsync’s the code, updates configs and restarts services). Using rsync means I don’t end up with stuff on the servers that shouldn’t be there (the biggest problem with people using git for deployment).</p>
+<p>From a business sense I put this in the same category as test-driven-development. It’s an overhead initially to get it set up, but once its done its a massive liberator. I can essentially think of something, build it and deploy it against the real data on our site in minutes not hours. If I screw up, I just revert the commit and redeploy.</p>
+<p>Also, I have 8 low powered vm’s on Hetzner (we use Riak as our datastore) and it costs me approx 100 Euro’s in total. When servers go “funny” (technical term for “I rebooted and it didn’t solve the problem”), I just remove it from the cluster and blow it up and create another one. 15 mins instead of 30 minutes of trying to even understand the root cause before you can even work out if its solvable.</p>
+<p>The other thing I’d recommend is <a href="https://pushover.net/">Pushover</a>. It lets you wire up a whole bunch of events in your app to trigger push notifications on your phone. For example I have notifications for new orders, deploys finishing, net new support tickets because all those things are important to me.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/2</link>
+        <pubDate>Thu, 08 Aug 2013 07:10:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+      <item>
+        <title>Operations nerds - anyone interested in talking about infrastructure?</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>Our product isn’t SaaS, however we have a fair bit of infrastructure supporting Perch. For example we serve hosted demos, have the site and associated payment process/license validation, host our own support and so on. I’m currently in the middle of a process of moving everything off a scrappy collection of virtual servers, all managed differently, to a new infrastructure that I am keeping consistent using Puppet.</p>
+<p>We’re also doing things like splitting the marketing website from all of the business functions, it’s currently essentially what we launched with over four years ago which makes it really difficult to do stuff like A/B Testing of landing page conversions and so on as touching the site is a bit scary as we don’t have a sane deployment method.</p>
+<p>I’m something of an old school sysadmin, so I’ve had to learn lots of new tools recently as part of trying to sort our systems out. I’d be happy to share what I’ve learned and would love to know what other people are doing, especially in terms of automation, deployment, monitoring and security.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320/1</link>
+        <pubDate>Thu, 08 Aug 2013 06:44:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-320-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/operations-nerds-anyone-interested-in-talking-about-infrastructure/320.rss">Operations nerds - anyone interested in talking about infrastructure?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>92,000 words on building and launching a SaaS business</title>
+    <link>https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375</link>
+    <description>A few years back, I wrote Starting &amp; Sustaining to help folks build and launch apps with less pain. About a year ago, I published the first edition on Medium for free for anyone to read, and, not too long after that, I begain writing the second edition in the open for anyone to read as well.
+
+The first edition came in at about 36,000 words. After running Sifter for a few more years after that and ultimately selling it, it turns out I had about 92,000 words on SaaS in this second edition. (And that was me trying to keep it short and sweet.) It&#39;s still in the process of being edited, and I&#39;ll need to record the audio book and put together some of the other convenient reference materials, but it&#39;s at a point where I feel comfortable sending people over to read it.
+
+Just visit the [Starting &amp; Sustaining book site](https://startingandsustaining.com/book/), and scroll down to the &quot;Book Progress&quot; section for a full table of contents. I&#39;m hoping to have the for-purchase packages finished up with Kindle, epub, PDF, and audiobook formats ready to go in December, but until then, all the content is there on the site.
+
+There&#39;s also [the complementary podcast](https://startingandsustaining.com/podcast/) where I interview other founders of various types of software businesses and talk about trials and tribulations. The frequency is slowing down a little bit while I&#39;m focusing on finishing up the book, but I&#39;m still aiming to get out at least one a month if not two.
+
+Of course, if anybody has questions (or finds mistakes) please don&#39;t hesitate to reach out.</description>
+    
+    <lastBuildDate>Fri, 20 Oct 2017 13:44:52 +0000</lastBuildDate>
+    <category>Interesting Links</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>92,000 words on building and launching a SaaS business</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s right there on the site. The table of contents is all links to the chapters on the site. Then there’s next/previous chapter links at the end of each chapter.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/8</link>
+        <pubDate>Fri, 20 Oct 2017 13:44:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5375-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375.rss">92,000 words on building and launching a SaaS business</source>
+      </item>
+      <item>
+        <title>92,000 words on building and launching a SaaS business</title>
+        <dc:creator><![CDATA[courtz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5375">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/garrettdimon/40/3456_1.png" class="avatar"> garrettdimon:</div>
+<blockquote>
+<p>A few years back, I wrote Starting &amp; Sustaining to help folks build and launch apps with less pain. About a year ago, I published the first edition on Medium for free for anyone to read, and, not too long after that, I begain writing the second edition in the open for anyone to read as well.</p>
+</blockquote>
+</aside>
+<p>I’d love to take a read. Where do I get it?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/7</link>
+        <pubDate>Fri, 20 Oct 2017 06:47:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5375-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375.rss">92,000 words on building and launching a SaaS business</source>
+      </item>
+      <item>
+        <title>92,000 words on building and launching a SaaS business</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="5375">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/garrettdimon/40/3456_1.png" class="avatar"> garrettdimon:</div>
+<blockquote>
+<p>I’d love to hear more about how things are going. I saw the post on spam. I wonder if you have anything to add to the new chapter in the book about mitigating fraud and spam based on your recent experience?</p>
+</blockquote>
+</aside>
+<p>I think you’ve done a good job in that chapter of describing credit card fraud. BTW Stripe has improved their fraud protection a lot in the last year or so. Their ever-updating <a href="https://stripe.com/docs/disputes/prevention">docs on preventing fraud are a must-read</a> for anyone using Stripe to charge credit cards.</p>
+<p>The chapter you linked doesn’t have much to say about comment spambots. It is probably not so important for most SaaS apps? In any case, from day one, I was logging create date, user agent, and ip address for each bit of user-contributed content. (I recently aded http referrer to that.) I’m glad I was doing that all along - it made it much easier to investigate and solve the comment spam problem.</p>
+<p>I recall <a class="mention" href="/u/jitbit">@jitbit</a> mentioning <a href="http://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852">subdomain spamming</a>. Perhaps that’s worth a mention in your book? At small scale, it is easy to check every single newly created account against this - that’s what I’m currently doing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/6</link>
+        <pubDate>Mon, 16 Oct 2017 14:14:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5375-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375.rss">92,000 words on building and launching a SaaS business</source>
+      </item>
+      <item>
+        <title>92,000 words on building and launching a SaaS business</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, Steve. That’s awesome to hear that it played a role in helping you feel confident enough to give it a shot. Totally made my day to hear that. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I’d love to hear more about how things are going. I saw the post on spam. I wonder if you have anything to add to the new <a href="https://startingandsustaining.com/chapters/evil/" rel="nofollow noopener">chapter in the book about mitigating fraud and spam</a> based on your recent experience?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/5</link>
+        <pubDate>Mon, 16 Oct 2017 13:06:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5375-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375.rss">92,000 words on building and launching a SaaS business</source>
+      </item>
+      <item>
+        <title>92,000 words on building and launching a SaaS business</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>Honestly, I just ask around. With the first edition, I had a friend who was an editor and happened to have enough availability. With this second edition, I just asked other folks who self-published. This time around, using GitHub was central to my writing/editing/publishing process, so I wanted to find an editor comfortable with Git. Brad Frost had written and published <a href="http://atomicdesign.bradfrost.com" rel="nofollow noopener">Atomic Design</a> in the open and used Git, so I just asked him who edited it for him.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/4</link>
+        <pubDate>Mon, 16 Oct 2017 13:01:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5375-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375.rss">92,000 words on building and launching a SaaS business</source>
+      </item>
+      <item>
+        <title>92,000 words on building and launching a SaaS business</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I highly recommend Garrett’s book, Starting &amp; Sustaining. Before starting Feature Upvote I read the first edition. I found it extremely helpful in preparing to create and launch a bootstrapped SaaS into a crowded market.</p>
+<p>Garrett’s success with Sifter, a bug tracking app, is what convinced me it is possible to have a viable product when there is a dominant incumbent.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/3</link>
+        <pubDate>Mon, 16 Oct 2017 09:32:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5375-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375.rss">92,000 words on building and launching a SaaS business</source>
+      </item>
+      <item>
+        <title>92,000 words on building and launching a SaaS business</title>
+        <dc:creator><![CDATA[Leon]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Garrett, I read the first edition and enjoyed it.<br>
+What do you do about editing? Where do you find a suitable editor?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/2</link>
+        <pubDate>Mon, 16 Oct 2017 09:26:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5375-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375.rss">92,000 words on building and launching a SaaS business</source>
+      </item>
+      <item>
+        <title>92,000 words on building and launching a SaaS business</title>
+        <dc:creator><![CDATA[garrettdimon]]></dc:creator>
+        <description><![CDATA[
+            <p>A few years back, I wrote Starting &amp; Sustaining to help folks build and launch apps with less pain. About a year ago, I published the first edition on Medium for free for anyone to read, and, not too long after that, I begain writing the second edition in the open for anyone to read as well.</p>
+<p>The first edition came in at about 36,000 words. After running Sifter for a few more years after that and ultimately selling it, it turns out I had about 92,000 words on SaaS in this second edition. (And that was me trying to keep it short and sweet.) It’s still in the process of being edited, and I’ll need to record the audio book and put together some of the other convenient reference materials, but it’s at a point where I feel comfortable sending people over to read it.</p>
+<p>Just visit the <a href="https://startingandsustaining.com/book/" rel="nofollow noopener">Starting &amp; Sustaining book site</a>, and scroll down to the “Book Progress” section for a full table of contents. I’m hoping to have the for-purchase packages finished up with Kindle, epub, PDF, and audiobook formats ready to go in December, but until then, all the content is there on the site.</p>
+<p>There’s also <a href="https://startingandsustaining.com/podcast/" rel="nofollow noopener">the complementary podcast</a> where I interview other founders of various types of software businesses and talk about trials and tribulations. The frequency is slowing down a little bit while I’m focusing on finishing up the book, but I’m still aiming to get out at least one a month if not two.</p>
+<p>Of course, if anybody has questions (or finds mistakes) please don’t hesitate to reach out.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375/1</link>
+        <pubDate>Mon, 16 Oct 2017 04:12:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5375-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/92-000-words-on-building-and-launching-a-saas-business/5375.rss">92,000 words on building and launching a SaaS business</source>
+      </item>
+  </channel>
+</rss>

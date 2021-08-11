@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Anyone making good money with desktop software?</title>
+    <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304</link>
+    <description>Hello! 
+
+Longtime reader of this board, but this is my first time posting. 
+
+I&#39;m a software developer turned app entrepeneur. During the last five years, things have been going OK. I have managed to create several profitable iOS, Android and macOS apps with decent revenue. Some of them have died a natural death (integrated with other services that are in decline or no longer around) and others I have managed to sell (exit) for decent money (hundreds of thousands, not millions). 
+
+But I&#39;m facing a problem that I haven&#39;t really been able to overcome. Given these smaller projects don&#39;t really move the needle too much anymore, I would like to build out something bigger and more sustainable (e.g. an app or piece of software that can sustain a small team). Most of my apps have been quite profitable, but they all seem to get stuck at the $100-150k revenue mark. There are small bootstrapped companies out there generating millions per year from desktop software, so I&#39;m curious as to how they are approaching things differently. 
+
+To those that are consistently making, say, &gt; $300k a year from an app or desktop solution, can you disclose how you&#39;re doing it / how long you&#39;ve been working on it / which platforms / how hard it was to achieve / etc? Any and all thoughts are much appreciated!
+
+Charles</description>
+    
+    <lastBuildDate>Wed, 27 Sep 2017 12:38:14 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="5304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/andy/40/1198_1.png" class="avatar"> Andy:</div>
+<blockquote>
+<p>If you use a cross platform solution like Qt, you can target both Windows and Mac from a single source base. Your app will never look 100% native, but you can get pretty close, especially on Windows.</p>
+</blockquote>
+</aside>
+<p>I’m looking into Xamarin’s bindings to the native UIs (xwt). Proper architecture (MvvmCross) should make it relatively easy.</p>
+<p>Their tech was mature enough already but Microsoft buying the company is a huge boost to my confidence in the future of Mono. It looks like MS is trying to win the cross-platform tooling battle after loosing the mobile one.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/11</link>
+        <pubDate>Wed, 27 Sep 2017 12:38:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="5304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>On the other hand devs migrated to doing web apps or mobile apps so while there are as many Windows and Mac users today as there were yesterday, the competition pretty much vanished. Very few keep writing desktop apps so there’s a vacuum.</p>
+</blockquote>
+</aside>
+<p>I think that is true. The market for desktop apps has shrunk, but so has the competition. And there is still a sizeable minority that prefer desktop apps. See also:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://secure.gravatar.com/blavatar/948a0589cb38d1d19bd209aa8afb18b6?s=32" class="site-icon" width="32" height="32">
+      <a href="https://successfulsoftware.net/2013/10/28/is-desktop-software-dead/" target="_blank" title="05:36PM - 28 October 2013" rel="nofollow noopener">Successful Software – 28 Oct 13</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:132/200;"><img src="https://successfulsoftware.files.wordpress.com/2013/10/chess-036.jpg?fit=440%2C330" class="thumbnail"></div>
+
+<h3><a href="https://successfulsoftware.net/2013/10/28/is-desktop-software-dead/" target="_blank" rel="nofollow noopener">Is desktop software dead?</a></h3>
+
+<p>It’s rare that I chat to other software developers without someone asking me when I am going to do a web version of my seating planner software. Because the market for desktop is dead, right?…</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>The scariest thing about desktop apps is the ever present threat that Apple or MS will suddenly stop anyone deploying apps on their platform if it isn’t via their horrible app stores. I don’t think that is likely any time soon. But it is still a worry.</p>
+<p>If you use a cross platform solution like Qt, you can target both Windows and Mac from a single source base. Your app will never look 100% native, but you can get pretty close, especially on Windows.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/10</link>
+        <pubDate>Wed, 27 Sep 2017 08:30:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[charles]]></dc:creator>
+        <description><![CDATA[
+            <p>Out of curiosity: do they tend to focus just on Mac, or is it a combination of Mac + Windows? And do they have a small team, or is it just themselves (or two co-founders) and some freelance help?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/9</link>
+        <pubDate>Fri, 22 Sep 2017 19:58:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[charles]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for all the useful answers so far. Looks like focusing on Mac + Windows might be a good idea for a next app, and focus on small (yet not tiny) niche.</p>
+<p>Re selling the apps: I was actually quite lucky on that. I had a lawyer reach out to me about them (he was looking for a yield investment), asking if I was interested in selling, and he offered a great price. But there are players in the market that can probably help facilitate a sale for smaller projects.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/8</link>
+        <pubDate>Fri, 22 Sep 2017 19:55:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[Cosmin]]></dc:creator>
+        <description><![CDATA[
+            <p>I have an Win &amp; Mac app that has surpassed your revenue mark but I’m selling it since 2005. It’s a leader in the batch photo editing niche but I’m not making anything near your 300k per year mark (<a href="http://www.batchphoto.com" rel="nofollow noopener">www.batchphoto.com</a>).</p>
+<p>However all on my iOS apps are way below your revenue mark. An app that generates 100-150k in lifetime revenue is probably in the top 0.1% for iOS and Android apps.</p>
+<p>There are certainly many businesses making millions in revenue yearly but I don’t believe any of them are one man shops. You don’t need 300k per year to hire help, especially if you are not only looking at hiring locally from US, UK.</p>
+<p>How did you sold your apps?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/7</link>
+        <pubDate>Fri, 22 Sep 2017 13:16:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="5304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/c/6f9a4e/40.png" class="avatar"> charles:</div>
+<blockquote>
+<p>To those that are consistently making, say, &gt; $300k a year from an app or desktop solution, can you disclose</p>
+</blockquote>
+</aside>
+<p>I’m pretty sure no-one will answer that directly - people earning that kind of money are unlikely to reveal so in a public forum.</p>
+<p>I know a few people personally who are doing very well from their desktop software. They’ve all been doing it for years, but that is to be expected: success usually does require you to work on it for several years. They are typically in tiny niches that they dominate.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/6</link>
+        <pubDate>Fri, 22 Sep 2017 09:02:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m with <a class="mention" href="/u/jls">@jls</a> on this. The Mac market is small and even if you make something that people love – you’d better know someone. After more than one year our app still has zero reviews from English-speaking Apple-related press. I’ve got only 2 replies from them despite a ton of effort in finding the right reporters, polishing the pitch, and preparing the press kit.</p>
+<p>As I understand it now, a Mac-only app is a burden for reporters because macOS has 10-20% market share (depending on the country). It should be at least bundled with an iOS version to get on Apple-related sites (which is not possible for us). But it’s much better to have a cross-platform software, so it will be attractive for “general tech” sites.</p>
+<p>So I don’t want to make Mac-only apps in future but I believe in desktop apps because many advanced users like me prefer them too.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/5</link>
+        <pubDate>Fri, 22 Sep 2017 03:50:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p>My opinion is opposite to previous replays.</p>
+<p>I don’t believe you need special contacts to succeed in desktop world.</p>
+<p>I don’t think it’s harder to make good solo-developer money with desktop software than with web-based software. Some things are easier and some things are harder.</p>
+<p>For the record, I made more $150k total from my open-source SumatraPDF. Not even by selling it but by merely putting ads on the website.</p>
+<p>So one path to success is: make an app that has very wide appeal and charge a little bit for it. It can be a shallow app (i.e. little functionality, done well) but it must have wide appeal. Preferably do a couple of those until you hit the really profitable one.</p>
+<p>Another option is to make a somewhat-deep app for which you can charge $30+. Not Excel-deep, but file manager-deep. Something that you can work on for a long time and has enough functionality to justify a bigger price tag.</p>
+<p>Aforementioned <a href="https://panic.com" rel="nofollow noopener">https://panic.com</a> has 10+ employees supported largely with 2 apps (transmit (a file manager with cloud support) and coda (a text editor optimized for web dev)).</p>
+<p>There are handful of apps on both mac and windows like transmit and I believe there is market for a couple of more. The problem is deep enough to enable meaningful differentiation.</p>
+<p>The bad thing about desktop software vs web software is that it takes longer to write an app, the distribution is worse.</p>
+<p>On the other hand devs migrated to doing web apps or mobile apps so while there are as many Windows and Mac users today as there were yesterday, the competition pretty much vanished. Very few keep writing desktop apps so there’s a vacuum.</p>
+<p>Furthermore, the category leading apps were written many years ago. That’s an advantage (because of recognition and seo juice) but also a weakness, because you can merely redo an old app with a fresher paint and that’s enough for initial marketing push.</p>
+<p>In my list <a href="https://blog.kowalczyk.info/article/wjRD/solo-founders-with-profitable-businesses-collected-stories.html" rel="nofollow noopener">https://blog.kowalczyk.info/article/wjRD/solo-founders-with-profitable-businesses-collected-stories.html</a> there are few examples of desktop apps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/4</link>
+        <pubDate>Fri, 22 Sep 2017 02:41:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>I would say a lot of us would be delighted with 100k never mind 300k.</p>
+<p>I think it would be very hard to hit these revenue targets with desktop apps. The market is moving towards SAAS more.</p>
+<p>The consumer desktop market is practically zero. If you target business or creative industries you cam get a good nice but it’s difficult to get a smash hit.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/3</link>
+        <pubDate>Thu, 21 Sep 2017 07:22:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[jls]]></dc:creator>
+        <description><![CDATA[
+            <p>Hmm, what I learned during the years in the Mac desktop software market: If you don’t have contacts (preferably by being an ex-Apple employee) don’t expect to make it “big”.</p>
+<p>The companies generating millions of revenue are household names in the Mac market. Omni, Panic, etc. are almost as old as Apple itself. They have contacts to all relevant journalists and to Apple. If you can get the relevant news sites to write about your products and you have enough connections for a feature in Apple’s Mac App Store there’s certainly potential to get millions in revenue. If you can’t … well …</p>
+<p>I think if you want to make it “big” with desktop software you will have to target Windows. The install base is far bigger and supports very profitable niches. You can focus your marketing full on the niche instead of on “people in that niche who are also Mac users”. The drawback is of course that you will have to deal with Windows. Which is a really big drawback in my books.</p>
+<p>(Also finding freelancers/employees is far easier and cheaper if you need windows developers).</p>
+<p>I hope more people can chime in. Because I sincerely hope I’m wrong <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/2</link>
+        <pubDate>Tue, 19 Sep 2017 14:51:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+      <item>
+        <title>Anyone making good money with desktop software?</title>
+        <dc:creator><![CDATA[charles]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello!</p>
+<p>Longtime reader of this board, but this is my first time posting.</p>
+<p>I’m a software developer turned app entrepeneur. During the last five years, things have been going OK. I have managed to create several profitable iOS, Android and macOS apps with decent revenue. Some of them have died a natural death (integrated with other services that are in decline or no longer around) and others I have managed to sell (exit) for decent money (hundreds of thousands, not millions).</p>
+<p>But I’m facing a problem that I haven’t really been able to overcome. Given these smaller projects don’t really move the needle too much anymore, I would like to build out something bigger and more sustainable (e.g. an app or piece of software that can sustain a small team). Most of my apps have been quite profitable, but they all seem to get stuck at the $100-150k revenue mark. There are small bootstrapped companies out there generating millions per year from desktop software, so I’m curious as to how they are approaching things differently.</p>
+<p>To those that are consistently making, say, &gt; $300k a year from an app or desktop solution, can you disclose how you’re doing it / how long you’ve been working on it / which platforms / how hard it was to achieve / etc? Any and all thoughts are much appreciated!</p>
+<p>Charles</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304/1</link>
+        <pubDate>Sat, 16 Sep 2017 18:54:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5304-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/anyone-making-good-money-with-desktop-software/5304.rss">Anyone making good money with desktop software?</source>
+      </item>
+  </channel>
+</rss>

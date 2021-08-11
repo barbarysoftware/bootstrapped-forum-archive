@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Improvements in Support Renewals for a Desktop App</title>
+    <link>https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635</link>
+    <description>Based on the recent post about patio11&#39;s training on emails I thought I&#39;d share my experiences in my quest to improve my customer support renewals for a desktop software product.  It&#39;s along a similar vein to his training and may be of some use to you.  Up until June 2014 my support renewals were sent out manually via a desktop program I&#39;d written years ago.  Emails were plain text, subject line was not optimised, and renewals were only sent out on expiry.  It was kind of a hackish solution but it was working so I ignored it for far too long.
+
+In June 2014 I spent a couple of days automating the process with PHP, CRON, and my in-house email templating system.  The copy was re-written, the subject lines of the emails were developed with best practices gleaned from the web, and the emails themselves and the CTA&#39;s within are much more attractive and obvious.  Emails are now staged, with two reminders prior to expiry and one after expiry.  Time was also spent &#39;one clicking&#39; the support renewal cart process to remove as many cart steps as possible and pre-fill as much customer information as I could.  
+
+Since the implementation I&#39;ve tested various subject lines for conversion as well as continuing to fine-tune the cart process.  All up, it&#39;s been very worthwhile, with conversion rates improving in the order of 80 to 100%.  January this year is approaching double the conversion of the previous 12 months and quadruple the conversion rate of 2011 through 2013.  I&#39;ve probably spent a full week of time on this in the last 6 months, and it&#39;s been time well spent.
+
+&lt;img src=&quot;/uploads/bootstrapped/2772/1ccacdffa69b127b.png&quot; width=&quot;690&quot; height=&quot;380&quot;&gt; 
+
+Lesson learned is don&#39;t ignore these automated processes, especially if you&#39;ve got a large existing user base.  There&#39;s money to be made out of that email list.  I should add to this, I don&#39;t lock users out of the software if they do not renew support.  They are simply not eligible for email support, free upgrades, and don&#39;t get access to some minor online features the software includes.</description>
+    
+    <lastBuildDate>Thu, 21 Jan 2016 10:44:39 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Improvements in Support Renewals for a Desktop App</title>
+        <dc:creator><![CDATA[cadbloke]]></dc:creator>
+        <description><![CDATA[
+            <p>The CTO at one of my clients told me that a disturbing number of enterprise vendors simply don’t send renewal notices, letting support contracts lapse and causing all sort of SLA issues. We’re talking 5 &amp; 6 figure contracts. Dunning and pre-dunning is important, there are a lot of wins in just doing it.</p>
+<p>So far for <a href="http://www.tvcad.tv" rel="nofollow noopener">www.tvcad.tv</a>, my prospects are far more interest in ongoing support than shiny features.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/5</link>
+        <pubDate>Thu, 21 Jan 2016 10:44:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2635-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635.rss">Improvements in Support Renewals for a Desktop App</source>
+      </item>
+      <item>
+        <title>Improvements in Support Renewals for a Desktop App</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Love it!  This is along a very similar vein of the thesis behind my product which is that you can further monetize and existing customer base via emails optimized and sent at the right time to the right customer <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/4</link>
+        <pubDate>Sat, 31 Jan 2015 03:50:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2635-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635.rss">Improvements in Support Renewals for a Desktop App</source>
+      </item>
+      <item>
+        <title>Improvements in Support Renewals for a Desktop App</title>
+        <dc:creator><![CDATA[Mark_Nemtsas]]></dc:creator>
+        <description><![CDATA[
+            <p>Strong call to action in the subject line BEFORE the product name.  “Renew Support Now - Product Name” has been the best performing to date.  The CTA before the product name had a much bigger improvement than varying the CTA itself.  I also saw a decent improvement moving the CTA in the email body high into the content.</p>
+<p>The other area of really good improvement was optimizing the renewal form.  I got it all above the fold and moved the RENEW NOW button to the top of the form above all of the pre-filled order details.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/3</link>
+        <pubDate>Sat, 31 Jan 2015 00:35:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2635-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635.rss">Improvements in Support Renewals for a Desktop App</source>
+      </item>
+      <item>
+        <title>Improvements in Support Renewals for a Desktop App</title>
+        <dc:creator><![CDATA[daverodenbaugh]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Mark,</p>
+<p>Awesome share.  Thanks for posting that!  Can you tell us what headlines you’re using that ended up performing the best and what variants you might have tried?  I have a similar support renewal series and I’m still collecting data on it, but it’s definitely not thrilling me and if you have found some success with certain phrases, I’d love to know what they are if you don’t mind sharing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/2</link>
+        <pubDate>Fri, 30 Jan 2015 19:56:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2635-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635.rss">Improvements in Support Renewals for a Desktop App</source>
+      </item>
+      <item>
+        <title>Improvements in Support Renewals for a Desktop App</title>
+        <dc:creator><![CDATA[Mark_Nemtsas]]></dc:creator>
+        <description><![CDATA[
+            <p>Based on the recent post about patio11’s training on emails I thought I’d share my experiences in my quest to improve my customer support renewals for a desktop software product.  It’s along a similar vein to his training and may be of some use to you.  Up until June 2014 my support renewals were sent out manually via a desktop program I’d written years ago.  Emails were plain text, subject line was not optimised, and renewals were only sent out on expiry.  It was kind of a hackish solution but it was working so I ignored it for far too long.</p>
+<p>In June 2014 I spent a couple of days automating the process with PHP, CRON, and my in-house email templating system.  The copy was re-written, the subject lines of the emails were developed with best practices gleaned from the web, and the emails themselves and the CTA’s within are much more attractive and obvious.  Emails are now staged, with two reminders prior to expiry and one after expiry.  Time was also spent ‘one clicking’ the support renewal cart process to remove as many cart steps as possible and pre-fill as much customer information as I could.</p>
+<p>Since the implementation I’ve tested various subject lines for conversion as well as continuing to fine-tune the cart process.  All up, it’s been very worthwhile, with conversion rates improving in the order of 80 to 100%.  January this year is approaching double the conversion of the previous 12 months and quadruple the conversion rate of 2011 through 2013.  I’ve probably spent a full week of time on this in the last 6 months, and it’s been time well spent.</p>
+<p><img src="/uploads/bootstrapped/2772/1ccacdffa69b127b.png" width="690" height="380"> </p>
+<p>Lesson learned is don’t ignore these automated processes, especially if you’ve got a large existing user base.  There’s money to be made out of that email list.  I should add to this, I don’t lock users out of the software if they do not renew support.  They are simply not eligible for email support, free upgrades, and don’t get access to some minor online features the software includes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635/1</link>
+        <pubDate>Fri, 30 Jan 2015 00:02:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2635-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/improvements-in-support-renewals-for-a-desktop-app/2635.rss">Improvements in Support Renewals for a Desktop App</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to use EV Code Signer</title>
+    <link>https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573</link>
+    <description>I finally got my ev code signer. Its a USB stick.  My Dev is having some issues trying to get everything setup for me to sign the program. We have a chrome based browser and everything is in git. He usually just send me an exe and IDK how to generate the exe myself.  
+
+Is anything I can point him to or any advice on how to sign my program? I am defiantly more of a product manager and a poor cto / dev ops</description>
+    
+    <lastBuildDate>Mon, 12 Apr 2021 16:36:42 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to use EV Code Signer</title>
+        <dc:creator><![CDATA[Chris_Colburn]]></dc:creator>
+        <description><![CDATA[
+            <p>My Dev was able to get it working. Although it took about 6 hours to build on my PC…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573/3</link>
+        <pubDate>Mon, 12 Apr 2021 16:36:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7573-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573.rss">How to use EV Code Signer</source>
+      </item>
+      <item>
+        <title>How to use EV Code Signer</title>
+        <dc:creator><![CDATA[wyattoday]]></dc:creator>
+        <description><![CDATA[
+            <p>Use <a href="https://docs.microsoft.com/en-us/windows/win32/seccrypto/signtool">signtool</a>.</p>
+<p>Here’s a simple example:</p>
+<pre><code class="lang-auto">signtool.exe sign /v /as /fd sha256 /tr http://timestamp.digicert.com /td sha256 /n "[YOUR_EV_CERT_NAME]" "path/to/filename.exe"
+</code></pre>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573/2</link>
+        <pubDate>Fri, 09 Apr 2021 17:18:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7573-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573.rss">How to use EV Code Signer</source>
+      </item>
+      <item>
+        <title>How to use EV Code Signer</title>
+        <dc:creator><![CDATA[Chris_Colburn]]></dc:creator>
+        <description><![CDATA[
+            <p>I finally got my ev code signer. Its a USB stick.  My Dev is having some issues trying to get everything setup for me to sign the program. We have a chrome based browser and everything is in git. He usually just send me an exe and IDK how to generate the exe myself.</p>
+<p>Is anything I can point him to or any advice on how to sign my program? I am defiantly more of a product manager and a poor cto / dev ops</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573/1</link>
+        <pubDate>Tue, 06 Apr 2021 18:05:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7573-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-use-ev-code-signer/7573.rss">How to use EV Code Signer</source>
+      </item>
+  </channel>
+</rss>

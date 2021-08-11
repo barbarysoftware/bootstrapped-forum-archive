@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Writing an eBook about servers - #11 by george_palmer - Show Bootstrapped - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Howdy everyone -  
+
+On my off hours away from UserScape, I&amp;#39;ve been writing my 2nd eBook - Servers for Hackers.  
+
+My first eBook was about Laravel and involved a lot of tweeting and just the Leanpub landing page. 
+
+This &amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Writing an eBook about servers&#39;" href="../1942.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942/11" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942/11" />
+<meta property="og:title" content="Writing an eBook about servers" />
+<meta name="twitter:title" content="Writing an eBook about servers" />
+<meta property="og:description" content="Hey Guys,  Just found this community and been looking through some of the back posts (I’m a bootstrapper of 3.5 years, active in the London community).  Anyway thought I’d jump in on this thread as it’s right in my area…  I run a site called SendOwl which is a platform for you selling your digital goods online.  It works fairly similar to most digital delivery services in that you upload your product and can start selling straight away from anywhere.  Obviously there are differences between all ..." />
+<meta name="twitter:description" content="Hey Guys,  Just found this community and been looking through some of the back posts (I’m a bootstrapper of 3.5 years, active in the London community).  Anyway thought I’d jump in on this thread as it’s right in my area…  I run a site called SendOwl which is a platform for you selling your digital goods online.  It works fairly similar to most digital delivery services in that you upload your product and can start selling straight away from anywhere.  Obviously there are differences between all ..." />
+<meta property="article:published_time" content="2014-08-25T18:36:57+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="../../../index.html">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1942.html">Writing an eBook about servers</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/show-bootstrapped.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F7941D'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Show Bootstrapped</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/fideloper'><span itemprop='name'>fideloper</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2014-08-12T01:00:55Z'>
+              <time itemprop='dateModified' datetime='2014-08-12T01:02:20Z' class='post-time'>
+                August 12, 2014,  1:02am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Howdy everyone -</p>
+<p>On my off hours away from UserScape, I’ve been writing my 2nd eBook - <a href="http://book.serversforhackers.com/" rel="nofollow noopener">Servers for Hackers</a>.</p>
+<p>My first eBook was about Laravel and involved a lot of tweeting and just the Leanpub landing page.</p>
+<p>This time I have a newsletter with 6000+ subscribers and a nicer <a href="http://book.serversforhackers.com/" rel="nofollow noopener">landing page</a> lined up, so I’m hoping to bring more success to this book <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I’ve found that the positive effects of putting in the effort to gain followers based on good content has been tremendous!</p>
+<p><strong>I want to do a two-tiered pricing scheme (book + case studies). I was wondering if any of you authors have found that to be a useful tactic?</strong></p>
+<p>Hopefully this all leads to bigger and better content-based products as well, we’ll see.</p>
+<p>As Bootstrappers and (I’m sure) occasional accidental Sysadmins, I think this book will be really useful for some of you - I was wondering if there were any topics you want/need to learn more about in regards to system administration – hosting your applications, best practices, etc.</p>
+<p>Is there anything that often makes you feel like your pounding your head against a wall? Anything you waste hours Googling about over and over again?</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/danielherken.html'><span itemprop='name'>danielherken</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2014-08-12T07:35:06Z'>
+              <time itemprop='dateModified' datetime='2014-08-12T07:35:48Z' class='post-time'>
+                August 12, 2014,  7:35am
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve used the price tier approch on my book <a href="http://crossbrowserbook.com/" rel="nofollow noopener">http://crossbrowserbook.com/</a> with great success.</p>
+<p>It’s split in “Only the book” and “Book + code examples and walkthroughs”. More than 70% of the customers opted for the "book + " option <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>On the other hand the “For the Team” option was a waste of time today I would do a third option with even more extras.</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/shantnu'><span itemprop='name'>shantnu</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-12T07:57:37Z' class='post-time'>
+                August 12, 2014,  7:57am
+              </time>
+              <meta itemprop='dateModified' content='2014-08-12T07:57:37Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="1" data-topic="1942">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/fideloper/40/1329_1.png" class="avatar"> fideloper:</div>
+<blockquote>
+<p>I was wondering if any of you authors have found that to be a useful tactic?</p>
+</blockquote>
+</aside>
+<p>Yes.</p>
+<p>Another thing that works is Books + videos. It’s easier to learn from videos, and you can charge 2-3 times the book price for them.</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/fideloper'><span itemprop='name'>fideloper</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-12T12:57:20Z' class='post-time'>
+                August 12, 2014, 12:57pm
+              </time>
+              <meta itemprop='dateModified' content='2014-08-12T12:57:20Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Awesome - and in fact I actually have some videos sitting around, I’ve been starting to do a lot of video casting to record these kinds of things too.</p>
+<p>How did you save the video files for getting them to people? Were they actual .mpg style video files that they downloaded?</p>
+<p>Thanks!</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/davedevelopment.html'><span itemprop='name'>davedevelopment</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-12T13:00:13Z' class='post-time'>
+                August 12, 2014,  1:00pm
+              </time>
+              <meta itemprop='dateModified' content='2014-08-12T13:00:13Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="1" data-topic="1942">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/fideloper/40/1329_1.png" class="avatar"> fideloper:</div>
+<blockquote>
+<p>I want to do a two-tiered pricing scheme (book + case studies). I was wondering if any of you authors have found that to be a useful tactic?</p>
+</blockquote>
+</aside>
+<p>Hey Chris! I’m not an author, or even have any of my own products, but I try and learn about this stuff all the time. One thing that caught my eye earlier in the year was some of the talk coming out of microconf, about the <a href="http://www.slideshare.net/ryandelk/micro-conf-final" rel="nofollow noopener">Gumroad guy’s talk</a>, whereby their data suggested pricing tiers of 1x, 2.2x and 5x where particularly successful, so I think you should throw a third tier in to the melting pot <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Good luck!</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/shantnu'><span itemprop='name'>shantnu</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-12T14:29:29Z' class='post-time'>
+                August 12, 2014,  2:29pm
+              </time>
+              <meta itemprop='dateModified' content='2014-08-12T14:29:29Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/fideloper.html">@fideloper</a>, I would use Gumroad. They will handle the payment processing, and send the buyer a link to your books. So all you need to do is create the book packages and upload your books/videos to Gumroad.</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/fideloper'><span itemprop='name'>fideloper</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-12T15:12:14Z' class='post-time'>
+                August 12, 2014,  3:12pm
+              </time>
+              <meta itemprop='dateModified' content='2014-08-12T15:12:14Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I actually started setting up Gumroad but realized Leanpub uses packages now, so I can do a tiered pricing via packages. My landing page would basically be the same no matter what - altho Gumroad might be a little bit nicer.</p>
+<p>I think a lot of the community I’m selling to is used to Leanpub, however - and I like their handling of returns. Do you know if gumroad will handle refunds themselves?</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/kroger.html'><span itemprop='name'>kroger</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-12T15:26:23Z' class='post-time'>
+                August 12, 2014,  3:26pm
+              </time>
+              <meta itemprop='dateModified' content='2014-08-12T15:26:23Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>In Gumroad you need to issue the refund yourself, but it’s as easy as clicking a button on the dashboard. (I wouldn’t worry about it since it’s super easy)</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/fideloper'><span itemprop='name'>fideloper</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-12T16:01:59Z' class='post-time'>
+                August 12, 2014,  4:01pm
+              </time>
+              <meta itemprop='dateModified' content='2014-08-12T16:01:59Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Definitely something to think about then, thank you!</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/brandonhilkert'><span itemprop='name'>brandonhilkert</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-15T23:29:18Z' class='post-time'>
+                August 15, 2014, 11:29pm
+              </time>
+              <meta itemprop='dateModified' content='2014-08-15T23:29:18Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Love the book idea. For <a href="http://brandonhilkert.com/books/build-a-ruby-gem/" rel="nofollow noopener">my book</a>, I use Gumroad and tiered pricing. Both worked incredibly well for me. Ryan, from Gumroad, suggests pricing of 1x/2.2x/5x. I was shocked at how many of the highest priced packages I sold. The revenue from that package far out-weighed the “book-only” package on launch day, despite having significantly fewer purchases.</p>
+<p>Good luck!</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/george_palmer'><span itemprop='name'>george_palmer</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-25T18:36:57Z' class='post-time'>
+                August 25, 2014,  6:36pm
+              </time>
+              <meta itemprop='dateModified' content='2014-08-25T18:36:57Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hey Guys,</p>
+<p>Just found this community and been looking through some of the back posts (I’m a bootstrapper of 3.5 years, active in the London community).  Anyway thought I’d jump in on this thread as it’s right in my area…</p>
+<p>I run a site called <a href="http://www.sendowl.com" rel="nofollow noopener">SendOwl</a> which is a platform for you selling your digital goods online.  It works fairly similar to most digital delivery services in that you upload your product and can start selling straight away from anywhere.  Obviously there are differences between all the solutions out there but to bring out a few highlights of ours compared to the others mentioned here - we support PayPal, have a shopping cart available, have an affiliate system built in and it’s a flat monthly fee (so we don’t penalise success).  Loads more information of the site if you want to have a look.  And obviously we’re bootstrapped <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Chris - by chance I’m actually on your Servers for Hackers newsletter which a friend told me about a few months ago.  Let me tell you you’re onto a great product there.  When setting up SendOwl I had to work this all out myself which took weeks.  I now have a massive wiki page with all my notes and copies of key config files + explanations of why everything is like it is.  I would have much rather bought a book than go through all that research! I did actually debate publishing all this but the very nature of doing so would mean if we’d missed anything, despite our relentless testing, our servers would have been sitting ducks (and I’m sure others in a similar position have too) .  Have you consider launching with some kind of back community so people can feedback on things they’ve found useful/lacking in your first release and share best practices?  If you nail that it could be more valuable than the book and you’ll have a shed load of material to improve on and create a second release or updated versions.  Security is paramount and most bootstrapped companies can’t afford a dedicated SysAdmin.</p>
+<p>George</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../rails-operations-for-bootstrappers-ebook/2388/10.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='http://discuss.bootstrapped.fm/t/rails-operations-for-bootstrappers-ebook/2388/10'>
+                      <span itemprop='name'>Rails Operations for Bootstrappers (ebook)</span>
+                    </a>
+                    <meta itemprop='position' content='2'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/fideloper'><span itemprop='name'>fideloper</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/writing-an-ebook-about-servers/1942">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-10-14T14:09:26Z' class='post-time'>
+                October 14, 2014,  2:09pm
+              </time>
+              <meta itemprop='dateModified' content='2014-10-14T14:09:26Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks everyone here!</p>
+<p>Your feedback was great! <a href="https://book.serversforhackers.com" rel="nofollow noopener">https://book.serversforhackers.com</a> was released last week and did really well! I made the same amount of money on this book in ~ 8 hours that I did in 1.5 years of selling Implementing Laravel (my previous book).</p>
+<p>The tiered pricing was really key. Surprisingly, the $64.99 price point was the highest seller (most volume of sales)! Other things I’ve read said it’s generally where the most revenue comes from, but not necessarily the highest volume of sales. Not so with this book!</p>
+        </div>
+
+        <meta itemprop='headline' content='Writing an eBook about servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../privacy.html' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

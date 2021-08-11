@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The mystery of the Chinese downloads</title>
+    <link>https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107</link>
+    <description>I have been getting mysterious downloads from China for the last 2 years. Apparently [I am not the only one][1].
+
+I blogged about it here: [The mystery of the Chinese downloads][2] .
+
+Anyone else here seeing the same thing?
+
+If anyone has an explanation, I would love to hear it.
+
+  [1]: http://discuss.joelonsoftware.com/default.asp?biz.5.860650.14
+  [2]: http://successfulsoftware.net/2015/05/14/the-mystery-of-the-chinese-downloads/</description>
+    
+    <lastBuildDate>Fri, 15 May 2015 07:20:12 +0000</lastBuildDate>
+    <category>uncategorized</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>The mystery of the Chinese downloads</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="3107">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/steve/40/1204_1.png" class="avatar"> steve:</div>
+<blockquote>
+<p>so it just downloads your software when requested</p>
+</blockquote>
+</aside>
+<p>If you look at the log example in the blog, it is downloading every hour, like clockwork. So I don’t think that explains it.</p>
+<aside class="quote" data-post="2" data-topic="3107">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/steve/40/1204_1.png" class="avatar"> steve:</div>
+<blockquote>
+<p>Have you considered localizing in Traditional and Simplified Chinese</p>
+</blockquote>
+</aside>
+<p>I have seen tables plans done in PerfectTablePlan with Chinese characters. So it is doable.</p>
+<p>Localizing PerfectTablePlan would be a big job. &gt;100 KLOC (lots of GUI), 200 pages of documentation and a sizeable website. Also people would probably expect me to do tech support in Chinese. And I’m not sure Chinese people have really got the hang of paying for software! Currently I have sold the same number of licences to China (pop 1.35 billion) as I have to Monaco (pop 36,000).</p>
+<p>If I was going to localize it, I would do French and German first.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107/4</link>
+        <pubDate>Fri, 15 May 2015 07:20:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3107-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107.rss">The mystery of the Chinese downloads</source>
+      </item>
+      <item>
+        <title>The mystery of the Chinese downloads</title>
+        <dc:creator><![CDATA[Richard]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve wondered similar things. Files served from S3/Cloudfront so haven’t really bothered to block it, but 20% from China and it’s been higher before. The bot/crawler stats show a similar number (22%) so could well be Chinese bots amusing themselves.</p>
+<p>4th of April I had a huge bounce, but Google Analytics says my site had no corresponding bounce so likely a direct download.</p>
+<p>Edit: just added block to China in Cloudfront. Let’s see where else that pops up. I’ve never sold to China so no loss and I’m sure motivated people can get it elsewhere.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107/3</link>
+        <pubDate>Fri, 15 May 2015 06:57:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3107-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107.rss">The mystery of the Chinese downloads</source>
+      </item>
+      <item>
+        <title>The mystery of the Chinese downloads</title>
+        <dc:creator><![CDATA[steve]]></dc:creator>
+        <description><![CDATA[
+            <p>My guess would be it’s some Chinese pirate site which wants to show a large listing of software but not host non-cracked files, so it just downloads your software when requested.</p>
+<p>Have you considered localizing in Traditional and Simplified Chinese (at least the app and enough of the doc to make it usable)?  The Chinese do hold a lot of banquets, large wedding dinners, etc.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107/2</link>
+        <pubDate>Fri, 15 May 2015 00:57:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3107-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107.rss">The mystery of the Chinese downloads</source>
+      </item>
+      <item>
+        <title>The mystery of the Chinese downloads</title>
+        <dc:creator><![CDATA[Andy]]></dc:creator>
+        <description><![CDATA[
+            <p>I have been getting mysterious downloads from China for the last 2 years. Apparently <a href="http://discuss.joelonsoftware.com/default.asp?biz.5.860650.14">I am not the only one</a>.</p>
+<p>I blogged about it here: <a href="http://successfulsoftware.net/2015/05/14/the-mystery-of-the-chinese-downloads/">The mystery of the Chinese downloads</a> .</p>
+<p>Anyone else here seeing the same thing?</p>
+<p>If anyone has an explanation, I would love to hear it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107/1</link>
+        <pubDate>Thu, 14 May 2015 16:08:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3107-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/the-mystery-of-the-chinese-downloads/3107.rss">The mystery of the Chinese downloads</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Menubar app that monitors cronjobs on servers - Show Bootstrapped - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="Hi, 
+I’m currently working on a prototype for a desktop application that makes it easy to monitor cronjobs locally. Beta page is at https://cronbar.io 
+This is an (early) mockup how this might look like: 
+[mockup] 
+My go&amp;hellip;">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="5267.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Menubar app that monitors cronjobs on servers&#39;" href="5267.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/15f7f8b27b6301e08cb91c9c0dab738bf26f6ab9.jpg" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/15f7f8b27b6301e08cb91c9c0dab738bf26f6ab9.jpg" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/menubar-app-that-monitors-cronjobs-on-servers/5267" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/menubar-app-that-monitors-cronjobs-on-servers/5267" />
+<meta property="og:title" content="Menubar app that monitors cronjobs on servers" />
+<meta name="twitter:title" content="Menubar app that monitors cronjobs on servers" />
+<meta property="og:description" content="Hi,  I’m currently working on a prototype for a desktop application that makes it easy to monitor cronjobs locally. Beta page is at https://cronbar.io  This is an (early) mockup how this might look like:    My goal is to make the app super easy to set up and use. You download the app, add a server via SSH -&gt; done.  There are multiple competing products out there. All of them are subscription based SaaS apps:  Cronitor  https://cronitor.io/  Starts at $24/mo.  Healthchecks  https://healthchecks.i..." />
+<meta name="twitter:description" content="Hi,  I’m currently working on a prototype for a desktop application that makes it easy to monitor cronjobs locally. Beta page is at https://cronbar.io  This is an (early) mockup how this might look like:    My goal is to make the app super easy to set up and use. You download the app, add a server via SSH -&gt; done.  There are multiple competing products out there. All of them are subscription based SaaS apps:  Cronitor  https://cronitor.io/  Starts at $24/mo.  Healthchecks  https://healthchecks.i..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2017-08-29T14:03:09+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="5267.html">Menubar app that monitors cronjobs on servers</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/show-bootstrapped.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F7941D'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Show Bootstrapped</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jayfk.html'><span itemprop='name'>jayfk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5267.html">
+
+            <link itemprop="image" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/15f7f8b27b6301e08cb91c9c0dab738bf26f6ab9.jpg">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-08-29T14:03:09Z'>
+              <time itemprop='dateModified' datetime='2017-08-29T14:03:59Z' class='post-time'>
+                August 29, 2017,  2:03pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi,</p>
+<p>I’m currently working on a prototype for a desktop application that makes it easy to monitor cronjobs locally. Beta page is at <a href="https://cronbar.io" rel="nofollow noopener">https://cronbar.io</a></p>
+<p>This is an (early) mockup how this might look like:<br>
+<img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/15f7f8b27b6301e08cb91c9c0dab738bf26f6ab9.jpg" alt="mockup" width="500" height="500"></p>
+<p>My goal is to make the app super easy to set up and use. You download the app, add a server via SSH -&gt; done.</p>
+<p>There are multiple competing products out there. All of them are subscription based SaaS apps:</p>
+<p><strong>Cronitor</strong><br>
+<a href="https://cronitor.io/" class="onebox" target="_blank" rel="nofollow noopener">https://cronitor.io/</a></p>
+<p>Starts at $24/mo.</p>
+<p><strong>Healthchecks</strong><br>
+<a href="https://healthchecks.io" class="onebox" target="_blank" rel="nofollow noopener">https://healthchecks.io</a><br>
+20 checks are free, $5 for unlimited checks</p>
+<p><strong>Dead Man’s Snitch</strong><br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://deadmanssnitch.com/" target="_blank" rel="nofollow noopener">deadmanssnitch.com</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://d1fqvroa87ty8i.cloudfront.net/assets/meta/dms-man-600-77c4c9880c08130e61d2d7c0331da2c4fee395ef5c9d83873e763c0cdb17b5ac.png" class="thumbnail onebox-avatar" width="500" height="500">
+
+<h3><a href="https://deadmanssnitch.com/" target="_blank" rel="nofollow noopener">Dead Man's Snitch — A dead simple cron job monitoring tool.</a></h3>
+
+<p>Dead Man’s Snitch is a cron job monitoring tool that keeps an eye on your periodic processes and notifies you when something doesn’t happen. Daily backups, monthly emails, or cron jobs you need to monitor? Dead Man’s Snitch has you covered.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+Starts at $5 for 3 checks.</p>
+<p><strong>Steward</strong><br>
+<a href="https://steward.io/" class="onebox" target="_blank" rel="nofollow noopener">https://steward.io/</a><br>
+3 checks are free, $5 for 20 jobs</p>
+<p><strong>WDT</strong><br>
+<a href="https://wdt.io/" class="onebox" target="_blank" rel="nofollow noopener">https://wdt.io/</a><br>
+Starts at $3.50 for 4 jobs</p>
+<hr>
+<p>I’m currently evaluating if there’s a market for this type of app. Would you consider using it?</p>
+        </div>
+
+        <meta itemprop='headline' content='Menubar app that monitors cronjobs on servers'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Brian_O_Neill.html'><span itemprop='name'>Brian_O_Neill</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5267.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-29T18:35:10Z' class='post-time'>
+                August 29, 2017,  6:35pm
+              </time>
+              <meta itemprop='dateModified' content='2017-08-29T18:35:10Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I would have no need for the product but I think the design of your site and the app is wonderful so I would go ahead and give it a try.</p>
+<p>With apps like this you really do not know if they will be a success until you try it.</p>
+<p>To me SAAS seems to make more sense as I could get email alerts when something is wrong but having the desktop versions is a good way to differentiate you from the competition.</p>
+        </div>
+
+        <meta itemprop='headline' content='Menubar app that monitors cronjobs on servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/asandvig.html'><span itemprop='name'>asandvig</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5267.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-08-29T23:04:40Z'>
+              <time itemprop='dateModified' datetime='2017-08-29T23:05:12Z' class='post-time'>
+                August 29, 2017, 11:05pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="1" data-topic="5267">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jayfk/40/3819_1.png" class="avatar"> jayfk:</div>
+<blockquote>
+<p>Would you consider using it?</p>
+</blockquote>
+</aside>
+<p>I’m not sure I would use it for my personal projects, but I can see how it might be useful in an enterprise setting or for someone with a larger amount of servers.</p>
+<p>Howwever, for (internal) enterprise use it would need to be something you can install on your own servers which gives you a web page you to see all cron jobs on all (other) servers. Desktop clients are more tricky to scale/distribute in an enterprise environment, desktop app is maybe mostly useful for a single person or a small team.</p>
+<p>I think the app (as it looks from the screenshots) adds a nice convience compared to checking crontab manually via SSH, but for me it’s not a big enough pain that I would pay to have it solved. If I had a larger amount of servers and/or was more heavily relying on cron jobs, it might be a different.</p>
+<p>However, my biggest concern (for me, as a potential user), is not whether I would need tha app or not (as it would probably be quite useful), but whether it actually is easy to set up and use.</p>
+<blockquote>
+<p><em>Cronbar uses SSH to check your servers cronjobs. No clients you need to install. <strong>It just works</strong>.</em></p>
+</blockquote>
+<p>Will this statement be true for my setup, with Cygwin, OpenSSH and key-based login to servers? Will it use Cygwin’s OpenSSH and read ~/.ssh/config from the correct Cygwin home directory?</p>
+<p>On Windows there are multiple ways to set up SSH (Cygwin, PuTTY, MSYS/MinGW, Git, WinSCP, etc.). To actually require “no” setup, one would expect the app to work with the user’s existing SSH tools, whatever they may be.</p>
+<p>If you have actually solved these various SSH setup scenarios it would be a big selling point, so make sure to inform about them on the marketing page.</p>
+        </div>
+
+        <meta itemprop='headline' content='Menubar app that monitors cronjobs on servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jayfk.html'><span itemprop='name'>jayfk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5267.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-30T07:01:38Z' class='post-time'>
+                August 30, 2017,  7:01am
+              </time>
+              <meta itemprop='dateModified' content='2017-08-30T07:01:38Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="3" data-topic="5267">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/asandvig/40/3848_1.png" class="avatar"> asandvig:</div>
+<blockquote>
+<p>Howwever, for (internal) enterprise use it would need to be something you can install on your own servers which gives you a web page you to see all cron jobs on all (other) servers. Desktop clients are more tricky to scale/distribute in an enterprise environment, desktop app is maybe mostly useful for a single person or a small team.</p>
+<p>I think the app (as it looks from the screenshots) adds a nice convience compared to checking crontab manually via SSH, but for me it’s not a big enough pain that I would pay to have it solved. If I had a larger amount of servers and/or was more heavily relying on cron jobs, it might be a different.</p>
+</blockquote>
+</aside>
+<p>These are good points. My main concern is that the market is too small for this kind of app. As you already pointed out it won’t work for larger teams as it’s to hard to make the app distributed. For smaller teams or single devs it might not be a big enough pain point or they just use one of the free alternatives.</p>
+<aside class="quote" data-post="3" data-topic="5267">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/asandvig/40/3848_1.png" class="avatar"> asandvig:</div>
+<blockquote>
+<p>Will this statement be true for my setup, with Cygwin, OpenSSH and key-based login to servers? Will it use Cygwin’s OpenSSH and read ~/.ssh/config from the correct Cygwin home directory?</p>
+</blockquote>
+</aside>
+<p>I need to reconsider my phrasing. <em>It just works</em> refers to the cronjob setup process. If you add/edit/remove one of your cronjobs on your server it will sync automatically with the app. This won’t work with the competing products as they just accept a webhook.</p>
+        </div>
+
+        <meta itemprop='headline' content='Menubar app that monitors cronjobs on servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/hboon.html'><span itemprop='name'>hboon</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5267.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-08-30T08:18:46Z'>
+              <time itemprop='dateModified' datetime='2017-08-30T08:19:08Z' class='post-time'>
+                August 30, 2017,  8:19am
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I don’t know if Server Density supports this but let’s take it as an example since there are conceptual similarities.</p>
+<p>I use Server Density to monitor the services I run. While I occasionally go into their dashboard to verify that my services are up, I rely on their email (and push) notifications to notify me when they are down. I suspect that as the number of services I monitor increases, I will eventually stop checking against the dashboard and rely on the notifications.</p>
+<p>Though it might help if there’s a daily reminder that everything has been running properly the last 24 hours?</p>
+        </div>
+
+        <meta itemprop='headline' content='Menubar app that monitors cronjobs on servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/conradomaggi.html'><span itemprop='name'>conradomaggi</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5267.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-30T13:53:24Z' class='post-time'>
+                August 30, 2017,  1:53pm
+              </time>
+              <meta itemprop='dateModified' content='2017-08-30T13:53:24Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="4" data-topic="5267">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jayfk/40/3819_1.png" class="avatar"> jayfk:</div>
+<blockquote>
+<p>These are good points. My main concern is that the market is too small for this kind of app</p>
+</blockquote>
+</aside>
+<p>I’m building a menu bar app mostly for educational porpuses. I don’t expect to make millions with it. But in my case won’t take too much time to build either.</p>
+<p>Given the limited functionality and the price tag this kind of software usually have (9$-19$) I think it fell inside the “nice tool to have” and not in “this fix a painful problem.” bucket.</p>
+<p>I will give it a try, for $9 or $19 if it saves me from entering into the terminal, type ssh, crontab log, etc. I think is a no brainer for a person managing a few server</p>
+        </div>
+
+        <meta itemprop='headline' content='Menubar app that monitors cronjobs on servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/PovilasKorop.html'><span itemprop='name'>PovilasKorop</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5267.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-31T06:08:51Z' class='post-time'>
+                August 31, 2017,  6:08am
+              </time>
+              <meta itemprop='dateModified' content='2017-08-31T06:08:51Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Specifically for PHP Laravel framework, recently this was launched which is kinda similar. And free.<br>
+<a href="https://horizon.laravel.com/" class="onebox" target="_blank" rel="nofollow noopener">https://horizon.laravel.com/</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Menubar app that monitors cronjobs on servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/watchowl.html'><span itemprop='name'>watchowl</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5267.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-09-03T13:33:51Z'>
+              <time itemprop='dateModified' datetime='2017-09-03T13:35:38Z' class='post-time'>
+                September 3, 2017,  1:35pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I have just built a very similar side project. but it is a SaaS.</p>
+<p>Would love to chat with your privately.</p>
+        </div>
+
+        <meta itemprop='headline' content='Menubar app that monitors cronjobs on servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jayfk.html'><span itemprop='name'>jayfk</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="5267.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-09-04T21:16:47Z'>
+              <time itemprop='dateModified' datetime='2017-09-04T21:36:08Z' class='post-time'>
+                September 4, 2017,  9:36pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve started a little test balloon earlier last week by placing some ads on reddit. Results were not that good, so I won’t go further with this idea.</p>
+        </div>
+
+        <meta itemprop='headline' content='Menubar app that monitors cronjobs on servers'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

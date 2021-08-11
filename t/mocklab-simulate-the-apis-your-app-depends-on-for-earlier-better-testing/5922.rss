@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+    <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922</link>
+    <description>Hi,
+
+[MockLab](http://get.mocklab.io/?utm_source=discuss.bootstrapped.fm&amp;utm_medium=forum&amp;utm_campaign=show-bootstrapped) is a SaaS tool for mocking/simulating APIs, which I’ve been bootstrapping for the last couple of years.
+
+Why would anyone want to mock an API?
+
+A few reasons - often the API you’re building against isn’t ready yet, and you get stuck waiting for a release before you can properly test your app. Or it might not have a stable sandbox. If you’re using a 3rd party API it might cost you money every time you run your tests, and many companies flat out refuse to let you run performance tests against their APIs (including every payment provider except Stripe as far as I can tell).
+
+Finally, mocking APIs allows you to test edge cases and failure modes the real system won’t produce on demand, but probably will in production come Black Friday.
+
+Although MockLab launched about a year ago it’s been somewhat under the radar, with all leads so far coming from [wiremock.org](http://wiremock.org?utm_source=discuss.bootstrapped.fm&amp;utm_medium=forum&amp;utm_campaign=show-bootstrapped) (the OSS tool it’s based on). I’ve been trying to improve the website with a view to getting it in front of a wider audience, so I’d really appreciate any constructive feedback you can give on any part of the experience.
+
+Many thanks,
+Tom</description>
+    
+    <lastBuildDate>Thu, 12 Jul 2018 13:00:26 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="5922">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>Turns out I have to construct all the API myself right?</p>
+</blockquote>
+</aside>
+<p>The majority of my customers are mocking APIs built by other teams in their orgs, or prototyping an API not yet built to share with another team, so building it themselves is their only option.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/12</link>
+        <pubDate>Thu, 12 Jul 2018 13:00:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="5922">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>I thought it simulates actual apps.</p>
+</blockquote>
+</aside>
+<p>I’m about to test the water with this idea. I’ve just published a tutorial about building Paypal sandbox, and if that performs well I’ll build a Paypal API template that you can select when you signup/create a new API.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/11</link>
+        <pubDate>Thu, 12 Jul 2018 12:58:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="5922">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>So it’s just more work compared to registering a dummy trial in the SaaS I’m building integration for.</p>
+</blockquote>
+</aside>
+<p>That’s an amusing and very eye-opening way to look at that! <img src="https://emoji.discourse-cdn.com/twitter/laughing.png?v=5" title=":laughing:" class="emoji" alt=":laughing:"></p>
+<p>Only the happy path is <em>probably</em> the same for all users of a service. And maybe the most common error scenarios.  All the project-specific scenarios (success or failure) you’d have to setup yourself.</p>
+<p>But even a common happy path + common errors is a good starting point for a turn-key mock service.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/10</link>
+        <pubDate>Thu, 12 Jul 2018 12:18:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>I thought it simulates actual apps. Turns out I have to construct all the API myself right? So it’s just more work compared to registering a dummy trial in the SaaS I’m building integration for.</p>
+<p>You need to add “be like salesforce” button <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Sorry if there is one, I just haven’t found it</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/9</link>
+        <pubDate>Wed, 11 Jul 2018 20:01:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <p>Indeed, you’ve hit the nail on the head there.</p>
+<p>I’m probably going to give this a try shortly, starting with the Paypal API. Planning to test the water first with a tutorial blog post, and if that gets some interest build a Paypal API template that can be loaded when you create a new API. I’m hoping this will net me a few more performance tier customers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/8</link>
+        <pubDate>Tue, 10 Jul 2018 18:00:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[gravelld]]></dc:creator>
+        <description><![CDATA[
+            <p>I quite like this idea, I had a similar one many years ago after getting frustrated at my day job when building out integrations.</p>
+<p>The nice thing about this business is that it lends itself to partnership and integration marketing. You could have common “MockKits” for different products which are pre-built mocks for popular integration points.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/7</link>
+        <pubDate>Tue, 10 Jul 2018 14:55:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="5922">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/tomakehurst/40/3350_1.png" class="avatar"> TomAkehurst:</div>
+<blockquote>
+<p>Our customers use it to mock 3rd party APIs like payment gateways that aren’t on their network.</p>
+</blockquote>
+</aside>
+<p>Yep, I realized that after reading closely.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/6</link>
+        <pubDate>Mon, 09 Jul 2018 13:45:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <p>Starter is (by a small margin) most popular plan at the moment, so I guess somebody thinks it’s useful <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Some points about the Performance plan:</p>
+<ol>
+<li>Our customers use it to mock 3rd party APIs like payment gateways that aren’t on their network.</li>
+<li>If you’re on AWS and want low network latency we’ll put the host in the same region as your systems.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/5</link>
+        <pubDate>Mon, 09 Jul 2018 13:44:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <p>Benefits of it being hosted:</p>
+<ol>
+<li>You don’t have to do the following things yourself: building VM(s), deployment/upgrades, SSL certificate management, backups</li>
+<li>Team collaboration</li>
+<li>We keep it alive and healthy for you</li>
+<li>Easier for us to support you</li>
+</ol>
+<p>Incidentally, it’s based on WireMock, which is an OSS library, and is therefore downloadable/installable yourself.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/4</link>
+        <pubDate>Mon, 09 Jul 2018 13:38:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Team work, most likely. Which makes the Starter package (1 user) useless (correction: less appealing).</p>
+<p>I’m also not convinced the Performance plan (presumably aimed at performance/load testing) is useful. Systems installed inside corp network have 100Mbit and 1Gbit channels to them, making the response time very small. I’m not confident that can ever be achieved against a hosted mock backend.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/3</link>
+        <pubDate>Mon, 09 Jul 2018 13:23:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[danielherken]]></dc:creator>
+        <description><![CDATA[
+            <p>Why is this an external SaaS instead of a desktop application / npm package / command line tool? What benefits do I get to let you host instead?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/2</link>
+        <pubDate>Mon, 09 Jul 2018 13:18:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+      <item>
+        <title>MockLab: simulate the APIs your app depends on for earlier, better testing</title>
+        <dc:creator><![CDATA[TomAkehurst]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p><a href="http://get.mocklab.io/?utm_source=discuss.bootstrapped.fm&amp;utm_medium=forum&amp;utm_campaign=show-bootstrapped" rel="nofollow noopener">MockLab</a> is a SaaS tool for mocking/simulating APIs, which I’ve been bootstrapping for the last couple of years.</p>
+<p>Why would anyone want to mock an API?</p>
+<p>A few reasons - often the API you’re building against isn’t ready yet, and you get stuck waiting for a release before you can properly test your app. Or it might not have a stable sandbox. If you’re using a 3rd party API it might cost you money every time you run your tests, and many companies flat out refuse to let you run performance tests against their APIs (including every payment provider except Stripe as far as I can tell).</p>
+<p>Finally, mocking APIs allows you to test edge cases and failure modes the real system won’t produce on demand, but probably will in production come Black Friday.</p>
+<p>Although MockLab launched about a year ago it’s been somewhat under the radar, with all leads so far coming from <a href="http://wiremock.org?utm_source=discuss.bootstrapped.fm&amp;utm_medium=forum&amp;utm_campaign=show-bootstrapped" rel="nofollow noopener">wiremock.org</a> (the OSS tool it’s based on). I’ve been trying to improve the website with a view to getting it in front of a wider audience, so I’d really appreciate any constructive feedback you can give on any part of the experience.</p>
+<p>Many thanks,<br>
+Tom</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922/1</link>
+        <pubDate>Thu, 05 Jul 2018 19:57:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5922-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/mocklab-simulate-the-apis-your-app-depends-on-for-earlier-better-testing/5922.rss">MockLab: simulate the APIs your app depends on for earlier, better testing</source>
+      </item>
+  </channel>
+</rss>

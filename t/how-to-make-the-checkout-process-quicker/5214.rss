@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to make the checkout process quicker</title>
+    <link>https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214</link>
+    <description>At the moment I think the checkout process on my site wordcleaner.com is too complex.
+
+I am using woocommerce, and I think there are too many steps. We are going to release a new version of the software soon so I want to optimise the checkout process. I also don&#39;t like the UI of Woocommerce. 
+
+I like the idea of having an on page checkout. If you look at https://tinypng.com then click the green go pro button, you see how the checkout screen appears.
+
+Woocommerce does have some new reporting tools, and things like coupon support are nice to have, so not sure wherever to switch to another system or hack woo commerce to make it work better.
+
+I looked at services like chargebee etc. but I think they would be overkill for what I need. Ideally, if I could get a simple 1-page checkout with basic reports and coupon support that is probably all I need. 
+
+Would appreciate any suggestions :slight_smile:</description>
+    
+    <lastBuildDate>Thu, 17 Jan 2019 10:18:21 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to make the checkout process quicker</title>
+        <dc:creator><![CDATA[payger]]></dc:creator>
+        <description><![CDATA[
+            <p>Have your tried express checkout buttons yet on your site? What is your experience?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/8</link>
+        <pubDate>Thu, 17 Jan 2019 10:18:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5214-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214.rss">How to make the checkout process quicker</source>
+      </item>
+      <item>
+        <title>How to make the checkout process quicker</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the reference, Steve <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p><a class="mention" href="/u/brian_o_neill">@Brian_O_Neill</a> I think WooCommerce is fine for e-commerce sites, but plain HTML and a modern checkout form would be more suitable for your needs. If you have any questions about Quaderno, just let me know. Happy to help.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/7</link>
+        <pubDate>Thu, 17 Aug 2017 12:40:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5214-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214.rss">How to make the checkout process quicker</source>
+      </item>
+      <item>
+        <title>How to make the checkout process quicker</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback. That’s strange about the checkout being slow I will look into it. Tempted to abandon wordpress and go for a pure html site for speed.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/6</link>
+        <pubDate>Thu, 17 Aug 2017 08:17:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5214-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214.rss">How to make the checkout process quicker</source>
+      </item>
+      <item>
+        <title>How to make the checkout process quicker</title>
+        <dc:creator><![CDATA[yashchandra]]></dc:creator>
+        <description><![CDATA[
+            <p>Woocommerce checkout process can be tweaked so you are taken directly to checkout (skipping the cart). One quick google search shows this tutorial which should work:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://wpbeaches.com/wp-content/uploads/2017/08/cropped-wpb-site-icon-90x90.png" class="site-icon" width="90" height="90">
+      <a href="https://wpbeaches.com/skip-cart-go-straight-to-checkout-page-in-woocommerce/" target="_blank" title="01:10AM - 25 November 2017" rel="nofollow noopener">WP Beaches – 25 Nov 17</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/458;"><img src="https://wpbeaches.com/wp-content/uploads/2015/03/woocommerce-cart.jpg" class="thumbnail"></div>
+
+<h3><a href="https://wpbeaches.com/skip-cart-go-straight-to-checkout-page-in-woocommerce/" target="_blank" rel="nofollow noopener">Skip Cart Page Go Straight to Checkout Page - WooCommerce</a></h3>
+
+<p>WooCommerce workflow can be a little too long for simple products, here’s how to get the product to skip past the cart page and go straight to the checkout page. First uncheck the cart options in WooCommerce Settings -&gt; Products. Then add in your...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/5</link>
+        <pubDate>Wed, 16 Aug 2017 15:09:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5214-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214.rss">How to make the checkout process quicker</source>
+      </item>
+      <item>
+        <title>How to make the checkout process quicker</title>
+        <dc:creator><![CDATA[DiSchwarz]]></dc:creator>
+        <description><![CDATA[
+            <p>Some customers are very cautious when they see a popup or modal screen that asks for credit card details. It is hard to establish the chain of trust when you cannot see the real URL of a real payment processor.</p>
+<p>Personally, I never use credit card on sites that offer a checkout via popup. I am kind of OK to use PayPal on such occasions, but credit card - just never. Who knows where the credit card data might go - would it be just Stripe, a side-loaded script or website database.</p>
+<p>UPDATE: Just tried to make a test purchase on your website wordcleaner . com. For some reason, the purchase workflow is awfully slow for me. When I clicked “Pricing Buy/Now” it took 10 seconds, “Buy Now - $99” took  another 15 seconds which is forever in terms of web speeds. What you can do is to try to improve those times to hundreds of milliseconds (less is better). It should make a big difference on your conversion rates.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/4</link>
+        <pubDate>Tue, 15 Aug 2017 16:49:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5214-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214.rss">How to make the checkout process quicker</source>
+      </item>
+      <item>
+        <title>How to make the checkout process quicker</title>
+        <dc:creator><![CDATA[conradomaggi]]></dc:creator>
+        <description><![CDATA[
+            <p>If you are already running woocommerce I think is going to be faster to add one-page checkout to it and simplify the checkout screen if you need so, rather than starting over.</p>
+<p>One page checkout, even a modal check out is not that hard to implement.</p>
+<p>I’ve my site on top of woocommerce and have built some custom plugins for my needs and pretty happy with it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/3</link>
+        <pubDate>Fri, 11 Aug 2017 17:32:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5214-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214.rss">How to make the checkout process quicker</source>
+      </item>
+      <item>
+        <title>How to make the checkout process quicker</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>It is definitely worth moving away from the antiquated “shopping cart” model to the modern “checkout” model.</p>
+<p>You don’t get much simpler than Stripe Checkout as far as user experience goes. Requires some programming though.</p>
+<p>Quaderno offers a nice Checkout to go on top of Stripe, and incidentally helps with EU VAT issue for you, if that’s pertinent. I’m a big fan of Quaderno.</p>
+<p>Paddle has a slim, quick checkout process AND does coupons, etc, all with a nice dashboard. I’ve heard good things of Paddle with selling digital products. For subscription services I feel they’re not really ready, though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/2</link>
+        <pubDate>Fri, 11 Aug 2017 15:05:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5214-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214.rss">How to make the checkout process quicker</source>
+      </item>
+      <item>
+        <title>How to make the checkout process quicker</title>
+        <dc:creator><![CDATA[Brian_O_Neill]]></dc:creator>
+        <description><![CDATA[
+            <p>At the moment I think the checkout process on my site <a href="http://wordcleaner.com" rel="nofollow noopener">wordcleaner.com</a> is too complex.</p>
+<p>I am using woocommerce, and I think there are too many steps. We are going to release a new version of the software soon so I want to optimise the checkout process. I also don’t like the UI of Woocommerce.</p>
+<p>I like the idea of having an on page checkout. If you look at <a href="https://tinypng.com" rel="nofollow noopener">https://tinypng.com</a> then click the green go pro button, you see how the checkout screen appears.</p>
+<p>Woocommerce does have some new reporting tools, and things like coupon support are nice to have, so not sure wherever to switch to another system or hack woo commerce to make it work better.</p>
+<p>I looked at services like chargebee etc. but I think they would be overkill for what I need. Ideally, if I could get a simple 1-page checkout with basic reports and coupon support that is probably all I need.</p>
+<p>Would appreciate any suggestions <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214/1</link>
+        <pubDate>Fri, 11 Aug 2017 14:34:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5214-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-to-make-the-checkout-process-quicker/5214.rss">How to make the checkout process quicker</source>
+      </item>
+  </channel>
+</rss>

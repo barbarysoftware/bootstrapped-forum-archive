@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>AppFaqs.co - My first SaaS product</title>
+    <link>https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414</link>
+    <description>Happy to be posting about the release of my first fully fledged SaaS app: [AppFaqs.co][1]. I haven&#39;t posted much, but am heavily inspired by all the posts here, keep up the good work. Currently a side project, but I&#39;m hoping it can reach a high enough MRR that I can go full time in the future. 
+
+This initial release took me 54 hours, 20 minutes and 5 seconds to put live, and I&#39;m now working towards acquiring my first ten customers. Anybody have any good reads on that? Should those be coming from my own social circle?
+
+Anyways... would love your feedback and critiques, severe honesty appreciated.
+
+
+  [1]: https://appfaqs.co/</description>
+    
+    <lastBuildDate>Mon, 17 Aug 2015 18:26:54 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>AppFaqs.co - My first SaaS product</title>
+        <dc:creator><![CDATA[msencenb]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>You bring up a great point, and I think answering that question (why shouldn’t I just roll my own) is going to be the most important question I have to answer if I want this to be successful. In these early stages, and by implementing it into my own apps, here is what I’ve got so far. Do any of these resonate with you?</p>
+<ul>
+<li>Implementing an FAQ is not exactly an exciting feature to implement, but it’s very useful from a customer support standpoint. Having a solution already built gives me a better chance of actually implementing an FAQ. Given things like accessibility, loading spinners, error states, font preferences, an auto sizing table view cell, etc I’m looking at a few hours of custom work.</li>
+<li>A lot of my apps don’t have a full blown backend or web presence. To roll a UIWebView to display the FAQ I have to first build the static webpage, go through all the steps above, and then I still am using a webview rather than a snappy native component.</li>
+<li>For freelance clients, I don’t want to provide support for updating an FAQ. The price point is low enough that I think most clients would be ok with it. Plus they get full control over the questions without developer intervention.</li>
+<li>The worst bug I ever put out into the wild was a bug that caused the camera to crash, but only in release mode (the app was useless without the camera). Took a week with an expedited review to get a fix up, and a lot of angry people. Being able to update without an app submission would have made me feel quite a bit better about the situation.</li>
+</ul>
+<p>Are there features that would resonate more strongly? Or a price point that would make this completely worth it? I’m actively recruiting a core group of early users to help decide on the roadmap, feel free to let me know if you want to be part of that group.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/8</link>
+        <pubDate>Mon, 17 Aug 2015 18:26:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3414-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414.rss">AppFaqs.co - My first SaaS product</source>
+      </item>
+      <item>
+        <title>AppFaqs.co - My first SaaS product</title>
+        <dc:creator><![CDATA[Cosmin]]></dc:creator>
+        <description><![CDATA[
+            <p>Congratulations for your first SaaS!</p>
+<p>I’m an iOS developer so I may be part of your target audience.</p>
+<p>Why not use an open source component instead or create a custom component since it’s a trivial feature?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/7</link>
+        <pubDate>Mon, 17 Aug 2015 17:39:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3414-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414.rss">AppFaqs.co - My first SaaS product</source>
+      </item>
+      <item>
+        <title>AppFaqs.co - My first SaaS product</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>It takes roughly 10 minutes per ticket. That may seem high, but it is because all the easier problems are in our FAQ, in our user guide, or the software auto-guides the user where there used to be confusion.</p>
+<p>So now we have only complicated problems remaining as support tickets.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/6</link>
+        <pubDate>Mon, 17 Aug 2015 09:43:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3414-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414.rss">AppFaqs.co - My first SaaS product</source>
+      </item>
+      <item>
+        <title>AppFaqs.co - My first SaaS product</title>
+        <dc:creator><![CDATA[msencenb]]></dc:creator>
+        <description><![CDATA[
+            <p>How long does 3 new tickets per day take you to deal with in a fairly mature product like yours? Are we talking 5 minutes per or 30 seconds?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/5</link>
+        <pubDate>Sun, 16 Aug 2015 17:18:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3414-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414.rss">AppFaqs.co - My first SaaS product</source>
+      </item>
+      <item>
+        <title>AppFaqs.co - My first SaaS product</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>We have an average of three new support tickets per day. Down from a peak of twenty per day, back when the product was not so streamlined, nor so solid.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/4</link>
+        <pubDate>Sun, 16 Aug 2015 16:32:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3414-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414.rss">AppFaqs.co - My first SaaS product</source>
+      </item>
+      <item>
+        <title>AppFaqs.co - My first SaaS product</title>
+        <dc:creator><![CDATA[msencenb]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback and the insight into your first customers Steve. It is super easy to update the FAQ, as in type the updated question into 1 box and click save, which I haven’t showcased much on the homepage.</p>
+<p>Out of curiosity how much support do you do for Poker Copilot a month?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/3</link>
+        <pubDate>Sun, 16 Aug 2015 16:20:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3414-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414.rss">AppFaqs.co - My first SaaS product</source>
+      </item>
+      <item>
+        <title>AppFaqs.co - My first SaaS product</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice. The decision calculus for anyone who makes apps is straight-forward: “Will this save me at least an hour or two of customer support time per month? If so, I should subscribe.”</p>
+<p>As a potential user of this, you should be telling me how easy it is to update the FAQ, including a screenshot. It <em>is</em> easy, right? If not, it should be. Like crazy easy.</p>
+<p>To get initial customers, I’d go to the places where your potential customers hang out. Discussion forums for iOS developers. Answer questions, contribute to conversation, and have one line in your sig hawking your product. Mention it in slightly more detail in your profile page on those discussion forums.</p>
+<p>I used this approach to initially market Poker Copilot (my OS X poker tracking app). Whenever anyone asked on online poker forums about playing poker on Mac I joined in. That got me my first sales, and my first feedback about what essential features were missing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/2</link>
+        <pubDate>Sun, 16 Aug 2015 07:50:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3414-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414.rss">AppFaqs.co - My first SaaS product</source>
+      </item>
+      <item>
+        <title>AppFaqs.co - My first SaaS product</title>
+        <dc:creator><![CDATA[msencenb]]></dc:creator>
+        <description><![CDATA[
+            <p>Happy to be posting about the release of my first fully fledged SaaS app: <a href="https://appfaqs.co/" rel="nofollow noopener">AppFaqs.co</a>. I haven’t posted much, but am heavily inspired by all the posts here, keep up the good work. Currently a side project, but I’m hoping it can reach a high enough MRR that I can go full time in the future.</p>
+<p>This initial release took me 54 hours, 20 minutes and 5 seconds to put live, and I’m now working towards acquiring my first ten customers. Anybody have any good reads on that? Should those be coming from my own social circle?</p>
+<p>Anyways… would love your feedback and critiques, severe honesty appreciated.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414/1</link>
+        <pubDate>Sat, 15 Aug 2015 22:24:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3414-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/appfaqs-co-my-first-saas-product/3414.rss">AppFaqs.co - My first SaaS product</source>
+      </item>
+  </channel>
+</rss>

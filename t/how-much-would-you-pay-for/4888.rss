@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How much would you pay for</title>
+    <link>https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888</link>
+    <description>How much (per month) would you pay for the service, integrated with Stripe, which does the following: 
+
+1. Ability to create customizable (very little) &quot;invoice&quot;: logo, service name, amount, customer name+. 
+2. Ability to create &quot;invoice&quot; programaticaly (API call). 
+3. Ability to embed &quot;invoice&quot; in your SaaS so customer can enter CC info as a part of the subscription process, or change it later as a part of the account management.
+4. Ability to schedule requiring or one time auto-payments for the invoice.
+5. Ability to configure number of auto-retries and intervals between auto-retries if payment fails.   
+6. Ability to send invoice (in opposite to auto-charging) so customer can &quot;pay now&quot;.
+7. Ability to configure web hooks to receive notifications. 
+
+We were looking for ready-to-use service for Integrator, used payfunnels (it supports use-cases 1 and 6) for a while, ended up developing our own. Now I&#39;m thinking about bootstrapping it. 
+
+Advantages: flat and relatively low price, laser focused on seven use-cases above, plug-and-play (zero or almost zero programming), supports esoteric models such as on-premise saas and partner program .
+
+Note: I&#39;m aware about &quot;works with stripe&quot; program and tried quite a few of them (but definitely not all). Most are either expensive or do not really support subscription model without programming. I&#39;m also aware about Stripe subscription API, which is really good but has its own problems.</description>
+    
+    <lastBuildDate>Thu, 30 Mar 2017 13:36:59 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How much would you pay for</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>I think our use-cases (the reason why we created service in a first place) are quite esoteric:</p>
+<ol>
+<li>Regular SaaS - customer subscribes to the service, customer selects plan,  customer enters CC, we charge customer periodically. Customer can manage account right from our SaaS.</li>
+<li>On-premise SaaS - customer does not subscribe through UI (we handle everything manually) but still can change parameters of the account: CC, emails, notifications, etc, we charge customer periodically. Customer can manage account right from our SaaS but they cannot change subscription plan.</li>
+<li>Partner program - partner sells our service, handles installations, support, etc.  Partner charges their clients using whatever the hell the want. We charge partner monthly based on number of sites they installed our software on. No account management within SaaS. For account management partners logins into the separate app.</li>
+</ol>
+<p>None of the existing services support all 3.</p>
+<p>On pricing.</p>
+<p>FastSpring -  as low as $199/month.<br>
+Paddle  - 5% + 50c per transaction.<br>
+Quaderno - not clear how much for requiring payments but it seems the base price is $79/month.</p>
+<p>I was thinking flat $50/month (payed to us) on top of 3% + 30c per transaction (payed to Stripe).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888/5</link>
+        <pubDate>Thu, 30 Mar 2017 13:36:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4888-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888.rss">How much would you pay for</source>
+      </item>
+      <item>
+        <title>How much would you pay for</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d compare the pricing to <a href="https://fastspring.com" rel="nofollow noopener">https://fastspring.com</a> .  They offer most (all?) of your features.  Don’t forget to include the stripe cost with your service when you compare with fastspring, as you don’t need stripe with fastspring.</p>
+<p>Another one to compare with is <a href="https://paddle.com" rel="nofollow noopener">https://paddle.com</a></p>
+<p>And another one:  <a href="https://www.quaderno.io/" rel="nofollow noopener">https://www.quaderno.io/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888/4</link>
+        <pubDate>Thu, 30 Mar 2017 11:07:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4888-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888.rss">How much would you pay for</source>
+      </item>
+      <item>
+        <title>How much would you pay for</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="4888">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/maximus/40/3510_1.png" class="avatar"> maximus:</div>
+<blockquote>
+<p>How much (per month) would you pay for the service</p>
+</blockquote>
+</aside>
+<p>If it was per-transaction pricing, I’d want to pay as little as possible. I realise that’s not overly helpful, but as I’m right now looking for a recurring billing solution, I can assess my actual behaviour, and that is to be very price-sensitive.</p>
+<p>If it was a per-monthly pricing, I’d be worried about being locked into this monthly payment, even if my product doesn’t get much traction. So I’d be wary of signing up for that at all.</p>
+<p>BTW: one item missing from your list which is essential in such a service for those of us living in the European Union is dealing with the EU VAT headaches.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888/2</link>
+        <pubDate>Thu, 30 Mar 2017 08:17:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4888-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888.rss">How much would you pay for</source>
+      </item>
+      <item>
+        <title>How much would you pay for</title>
+        <dc:creator><![CDATA[maximus]]></dc:creator>
+        <description><![CDATA[
+            <p>How much (per month) would you pay for the service, integrated with Stripe, which does the following:</p>
+<ol>
+<li>Ability to create customizable (very little) “invoice”: logo, service name, amount, customer name+.</li>
+<li>Ability to create “invoice” programaticaly (API call).</li>
+<li>Ability to embed “invoice” in your SaaS so customer can enter CC info as a part of the subscription process, or change it later as a part of the account management.</li>
+<li>Ability to schedule requiring or one time auto-payments for the invoice.</li>
+<li>Ability to configure number of auto-retries and intervals between auto-retries if payment fails.</li>
+<li>Ability to send invoice (in opposite to auto-charging) so customer can “pay now”.</li>
+<li>Ability to configure web hooks to receive notifications.</li>
+</ol>
+<p>We were looking for ready-to-use service for Integrator, used payfunnels (it supports use-cases 1 and 6) for a while, ended up developing our own. Now I’m thinking about bootstrapping it.</p>
+<p>Advantages: flat and relatively low price, laser focused on seven use-cases above, plug-and-play (zero or almost zero programming), supports esoteric models such as on-premise saas and partner program .</p>
+<p>Note: I’m aware about “works with stripe” program and tried quite a few of them (but definitely not all). Most are either expensive or do not really support subscription model without programming. I’m also aware about Stripe subscription API, which is really good but has its own problems.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888/1</link>
+        <pubDate>Wed, 29 Mar 2017 20:58:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4888-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/how-much-would-you-pay-for/4888.rss">How much would you pay for</source>
+      </item>
+  </channel>
+</rss>

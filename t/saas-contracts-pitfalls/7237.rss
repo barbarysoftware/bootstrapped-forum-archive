@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SaaS contracts - pitfalls</title>
+    <link>https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237</link>
+    <description>These are some notes I’ve scribbled together after spending many years at a SaaS unicorn, negotiating contracts with other SaaS firms. In my experience, engineers do not negotiate contracts well - I am aware this is a massive and probably incorrect generalisation, but in my view they just find the whole process boring as compared to looking under the hood of some intriguing new tool or software. It usually falls to other folks like in-house legal to assess the contract, and if it’s a small startup, people often sign without a thorough understanding, or rationalise that (a) this is such a small contract, (b) we’re such a small company, or (c) nothing bad is going to happen that needs us to fall back on contract terms.
+
+Often, this is correct. Most situations will not need you to fall back on the contract. But here’s what you should be paying attention to:
+
+1. Auto renewal clauses
+These are hidden in almost all of the SaaS contracts. You sign a 1-year deal, and after the 13th month, your team finds a better tool. But now you are stuck because your old contract automatically renewed for 1 year. This clause generally goes hand in hand with a notice of termination clause, meaning you need to tell them 30 - 60 days in advance before cancelling. 
+
+Small, nice companies often will waive it. Medium size ones might do so too. Big, do no evil companies will enforce it, and if you want to terminate a contract after it has auto-renewed, will force you to pay the full amount or a break-off penalty.
+
+2. Overages
+Pay attention to wording around overage. It’s easy to overshoot SaaS contracts, but what happens when you do? Is your account turned off? Throttled? Do you get informed and if so, when? As it happens or at the end of the month when you get a hefty bill?
+
+Anecdote - A vendor whom we sent logged data from within our product suddenly told us we had sent 30X the agreed limit to them over the last 7 weeks. Naturally, this caused a panicky search on what went wrong on our side. After 6 hours, it was traced to a code change on the vendor side, who then agreed to waive off all extra charges.
+
+Takeaway - Always ask to be informed the moment you overshoot any agreed limit or have the account throttled. This will prevent some nasty invoice shocks.
+
+3. Logo rights
+This is a softer one. Most companies will ask for rights to use your logo and identify you as a customer. This is fine if you are an unknown startup. But let’s say you suddenly go from no-name to unicorn or almost famous status - your name and logo are then worth something. Don’t give it away free. Even if you are a small company, act like a big one, and ask for a discount in exchange for this right. 
+
+4. Payment terms
+Who pays VAT, if you are a startup in Copenhagen or Berlin and your SaaS vendor is in the UK? Or the US? Generally, a vendor should know when to charge you taxes, and you should know how to account for them as input credit or any other way relevant to your country. Standard disclaimer - I am not a tax attorney. Always get a good tax attorney to advise you, they’re cheaper than dealing with government tax notices. Also, when will you pay an invoice? Moment you receive it or 30 days from receipt?  
+
+In these covid times, many vendors have stretched their terms to net 60 or net 90 days - have you renegotiated your contracts? 
+​
+5. Force majeure 
+My previous point about Covid brings us neatly on to this final one. What we’re experiencing,in terms of business disruption, is a force majeure event. (Disclaimer - Lawyers will argue this point. I am not a lawyer. Contract wrangling over what is force majeure is a given, but let’s say this is one and move on) You might have signed up for physical marketing events and campaigns, so what happens to them? Do you get your money back or does your vendor offer you a virtual event in recompense? Is a virtual event worth the same, less or more? 
+
+Pay attention to what your contract says about force majeure. 
+
+If you are a big company guy, none of this will matter much. You’ll have a team of lawyers and contract experts to assist you. But if you are a small business or a startup or just midway there, chances are you or your team are signing contracts yourself. Pay attention to these things. Obligatory plug - I run Crayika, to solve precisely these sort of problems for small and mid size cos. If this is useful, feel free to reach out.</description>
+    
+    <lastBuildDate>Thu, 22 Oct 2020 15:39:14 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SaaS contracts - pitfalls</title>
+        <dc:creator><![CDATA[azerthal]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s a good point. It depends on how substantial your contract is - if it’s a few hundred dollars, you’ll be fine. But the $ amount at stake is higher, you’ll definitely have a different experience.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237/3</link>
+        <pubDate>Thu, 22 Oct 2020 15:39:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7237-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237.rss">SaaS contracts - pitfalls</source>
+      </item>
+      <item>
+        <title>SaaS contracts - pitfalls</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="azerthal" data-post="1" data-topic="7237">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/azerthal/40/5341_2.png" class="avatar"> azerthal:</div>
+<blockquote>
+<p>if you want to terminate a contract after it has auto-renewed, will force you to pay the full amount or a break-off penalty</p>
+</blockquote>
+</aside>
+<p>This can be solved by using a virtual bank card to make payments. Just block this card and no more payments will go through.</p>
+<p>I use plenty of various SaaS and of course I’ve never read any agreements - there are better things to spend my time on. I check pricing, general terms and that’s it. If it’s not clear and I need to read a wall of text - that’s a good reason to steer clear of such a service.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237/2</link>
+        <pubDate>Wed, 21 Oct 2020 18:00:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7237-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237.rss">SaaS contracts - pitfalls</source>
+      </item>
+      <item>
+        <title>SaaS contracts - pitfalls</title>
+        <dc:creator><![CDATA[azerthal]]></dc:creator>
+        <description><![CDATA[
+            <p>These are some notes I’ve scribbled together after spending many years at a SaaS unicorn, negotiating contracts with other SaaS firms. In my experience, engineers do not negotiate contracts well - I am aware this is a massive and probably incorrect generalisation, but in my view they just find the whole process boring as compared to looking under the hood of some intriguing new tool or software. It usually falls to other folks like in-house legal to assess the contract, and if it’s a small startup, people often sign without a thorough understanding, or rationalise that (a) this is such a small contract, (b) we’re such a small company, or © nothing bad is going to happen that needs us to fall back on contract terms.</p>
+<p>Often, this is correct. Most situations will not need you to fall back on the contract. But here’s what you should be paying attention to:</p>
+<ol>
+<li>Auto renewal clauses<br>
+These are hidden in almost all of the SaaS contracts. You sign a 1-year deal, and after the 13th month, your team finds a better tool. But now you are stuck because your old contract automatically renewed for 1 year. This clause generally goes hand in hand with a notice of termination clause, meaning you need to tell them 30 - 60 days in advance before cancelling.</li>
+</ol>
+<p>Small, nice companies often will waive it. Medium size ones might do so too. Big, do no evil companies will enforce it, and if you want to terminate a contract after it has auto-renewed, will force you to pay the full amount or a break-off penalty.</p>
+<ol start="2">
+<li>Overages<br>
+Pay attention to wording around overage. It’s easy to overshoot SaaS contracts, but what happens when you do? Is your account turned off? Throttled? Do you get informed and if so, when? As it happens or at the end of the month when you get a hefty bill?</li>
+</ol>
+<p>Anecdote - A vendor whom we sent logged data from within our product suddenly told us we had sent 30X the agreed limit to them over the last 7 weeks. Naturally, this caused a panicky search on what went wrong on our side. After 6 hours, it was traced to a code change on the vendor side, who then agreed to waive off all extra charges.</p>
+<p>Takeaway - Always ask to be informed the moment you overshoot any agreed limit or have the account throttled. This will prevent some nasty invoice shocks.</p>
+<ol start="3">
+<li>
+<p>Logo rights<br>
+This is a softer one. Most companies will ask for rights to use your logo and identify you as a customer. This is fine if you are an unknown startup. But let’s say you suddenly go from no-name to unicorn or almost famous status - your name and logo are then worth something. Don’t give it away free. Even if you are a small company, act like a big one, and ask for a discount in exchange for this right.</p>
+</li>
+<li>
+<p>Payment terms<br>
+Who pays VAT, if you are a startup in Copenhagen or Berlin and your SaaS vendor is in the UK? Or the US? Generally, a vendor should know when to charge you taxes, and you should know how to account for them as input credit or any other way relevant to your country. Standard disclaimer - I am not a tax attorney. Always get a good tax attorney to advise you, they’re cheaper than dealing with government tax notices. Also, when will you pay an invoice? Moment you receive it or 30 days from receipt?</p>
+</li>
+</ol>
+<p>In these covid times, many vendors have stretched their terms to net 60 or net 90 days - have you renegotiated your contracts?<br>
+​<br>
+5. Force majeure<br>
+My previous point about Covid brings us neatly on to this final one. What we’re experiencing,in terms of business disruption, is a force majeure event. (Disclaimer - Lawyers will argue this point. I am not a lawyer. Contract wrangling over what is force majeure is a given, but let’s say this is one and move on) You might have signed up for physical marketing events and campaigns, so what happens to them? Do you get your money back or does your vendor offer you a virtual event in recompense? Is a virtual event worth the same, less or more?</p>
+<p>Pay attention to what your contract says about force majeure.</p>
+<p>If you are a big company guy, none of this will matter much. You’ll have a team of lawyers and contract experts to assist you. But if you are a small business or a startup or just midway there, chances are you or your team are signing contracts yourself. Pay attention to these things. Obligatory plug - I run Crayika, to solve precisely these sort of problems for small and mid size cos. If this is useful, feel free to reach out.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237/1</link>
+        <pubDate>Sun, 18 Oct 2020 05:55:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7237-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-contracts-pitfalls/7237.rss">SaaS contracts - pitfalls</source>
+      </item>
+  </channel>
+</rss>

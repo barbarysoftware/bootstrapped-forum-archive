@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>My Second Attempt at Getting Into SaaS - Just Launched</title>
+    <link>https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263</link>
+    <description>Hi everyone,
+
+I&#39;ve just launched a (rough) MVP of [TunnelKit](https://tunnelkit.com/?utm_source=bootstrapped&amp;utm_medium=thread&amp;utm_campaign=4), a tool for freelancers and small businesses to give their clients a customized timeline for their project.  This lets clients check on the status of their ongoing projects from wherever they are.
+
+If you&#39;ve ever ordered a pizza online, you might know what I&#39;m talking about.  You often get a little timeline that shows when your pizza is prepared, put in the oven, and on the way.  I&#39;m looking to take this functionality to the small business space, as an easy way to keep your clients up to date.
+
+I&#39;m currently reaching out to some of my connections, who I&#39;ve kept up to date throughout the project, and am running some ads to see if I can gain any useful targeting data.
+
+This forum has a lot of very smart people and great information, and I&#39;d love to get your feedback!</description>
+    
+    <lastBuildDate>Sun, 03 Mar 2019 17:31:41 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>My Second Attempt at Getting Into SaaS - Just Launched</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d suggest aiming more at small businesses and less at freelancers. That’s because small businesses are more likely to spend money and upgrade plans and less likely to churn.</p>
+<p>Regarding pricing, I’d suggest a simple per-timeline pricing. Many SaaS products that start with jumps in quantity levels, like you currently have, eventually switch to a per-quantity pricing model.</p>
+<p>I’d don’t like the idea of a free plan at all - if someone doesn’t want to pay for your product, they are not a customer, and there’s no point giving them the service. If your heart is set on a free plan, reduce it to 1 timeline. For a bootstrapper, Freemium is hard to do well.</p>
+<p>“Don’t leave your clients in the dark” has much room for improvement. Headlines are hard. It tells me nothing. Whereas your subheading is much more informative. Consider making that your headline. “Show your clients what you’re working on with a timeline customized for their project.”</p>
+<p>Naming is also hard. Tunnelkit doesn’t seem like an optimal choice, I’m afraid.</p>
+<p>For the demo, perhaps something more akin to typical freelancer/small business projects? “Content translated” and “Design finalized” are not as interesting as a journey to Mars, but more likely to help people understand how they could use this.</p>
+<p>An idea for differentiating between your “freelancer” plan and “business” plan is custom domain names.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/6</link>
+        <pubDate>Sun, 03 Mar 2019 10:20:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6263-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263.rss">My Second Attempt at Getting Into SaaS - Just Launched</source>
+      </item>
+      <item>
+        <title>My Second Attempt at Getting Into SaaS - Just Launched</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Vlad!  I appreciate the deep look you’ve taken.</p>
+<p>Your points on Incomplete and Complete step terms are great, I think I’m going to use that.</p>
+<p>Freemium sounds like a good idea, too - I might end up dropping the bottom plan (3 timelines) to free, and bringing the next tier’s price down.  I’m sure I’ll be messing with pricing as I talk to more businesses and get more helpful features together.</p>
+<p>Using external signups is a good idea, and I was planning on adding SSO functionality along with multi-user accounts in the future, so I think it’s a worthwhile improvement.</p>
+<p>Your “tunnel” thoughts make sense too.  It originally came from the idea of building a “tunnel” between you and your clients, but it’s a stretch (maybe something involving “pipe” or “pipeline” would be more fitting).</p>
+<p>Thanks again!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/5</link>
+        <pubDate>Sat, 02 Mar 2019 22:02:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6263-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263.rss">My Second Attempt at Getting Into SaaS - Just Launched</source>
+      </item>
+      <item>
+        <title>My Second Attempt at Getting Into SaaS - Just Launched</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I kinda like the idea. Add an API and you can integrate this with so many other processes when they need to add a customer/human notification.</p>
+<aside class="quote no-group" data-post="3" data-topic="6263">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/twilson/40/4771_2.png" class="avatar"> twilson:</div>
+<blockquote>
+<p>I’m looking for general feedback</p>
+</blockquote>
+</aside>
+<p>I don’t like the status “Incomplete” on future steps. I understand that for a programmer it is logical - there are complete steps and incomplete ones, but for a non-tech it, I believe, has a taste of poorly performed job; i.e. someone did a job, but did not complete it as they should. I’d use some more positive status, like “Scheduled”.</p>
+<p>One the same note, “Complete” sounds too dry. How about “Done!” ? Business plans can have the abililty to customize the wording.</p>
+<p>I believe this kind of service, where you do not really know yet how can you use it and figure out the use cases as you go, should be freemium. Let me sign up for free and give me a few free statuses to publish. Let me get a taste of this. Let me hear my customers saying “oh, this is so convenient!”. Then give me the prices.</p>
+<p>3 timelines for $18. Nah. What are they, made of gold?</p>
+<p>Signups should be with Google/Facebook/Twitter buttons. Why should I need to create another login? It is just an impediment for signups.</p>
+<p>Name… also nah, IMHO. A timeline, IMHO, can be think of as a pipe, as milestones, but tunnel? That’s just weird and causes a mild claustrophobia case.</p>
+<p>Icon also doesn’t reflect the idea, but that’s OKish, you can change the icon any time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/4</link>
+        <pubDate>Sat, 02 Mar 2019 20:11:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6263-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263.rss">My Second Attempt at Getting Into SaaS - Just Launched</source>
+      </item>
+      <item>
+        <title>My Second Attempt at Getting Into SaaS - Just Launched</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks!  I’m looking for general feedback, about product features, the pitch, pricing, you name it.</p>
+<p>I get that not asking for something specific doesn’t give you much direction, but if something interests you or jumps out about the product, I’d love to know!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/3</link>
+        <pubDate>Sat, 02 Mar 2019 19:43:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6263-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263.rss">My Second Attempt at Getting Into SaaS - Just Launched</source>
+      </item>
+      <item>
+        <title>My Second Attempt at Getting Into SaaS - Just Launched</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Good luck! What area in particular would you like feedback on?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/2</link>
+        <pubDate>Sat, 02 Mar 2019 10:40:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6263-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263.rss">My Second Attempt at Getting Into SaaS - Just Launched</source>
+      </item>
+      <item>
+        <title>My Second Attempt at Getting Into SaaS - Just Launched</title>
+        <dc:creator><![CDATA[twilson]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>I’ve just launched a (rough) MVP of <a href="https://tunnelkit.com/?utm_source=bootstrapped&amp;utm_medium=thread&amp;utm_campaign=4" rel="nofollow noopener">TunnelKit</a>, a tool for freelancers and small businesses to give their clients a customized timeline for their project.  This lets clients check on the status of their ongoing projects from wherever they are.</p>
+<p>If you’ve ever ordered a pizza online, you might know what I’m talking about.  You often get a little timeline that shows when your pizza is prepared, put in the oven, and on the way.  I’m looking to take this functionality to the small business space, as an easy way to keep your clients up to date.</p>
+<p>I’m currently reaching out to some of my connections, who I’ve kept up to date throughout the project, and am running some ads to see if I can gain any useful targeting data.</p>
+<p>This forum has a lot of very smart people and great information, and I’d love to get your feedback!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263/1</link>
+        <pubDate>Fri, 01 Mar 2019 22:01:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6263-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/my-second-attempt-at-getting-into-saas-just-launched/6263.rss">My Second Attempt at Getting Into SaaS - Just Launched</source>
+      </item>
+  </channel>
+</rss>

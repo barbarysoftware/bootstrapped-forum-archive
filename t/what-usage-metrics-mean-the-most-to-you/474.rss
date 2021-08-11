@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What Usage Metrics Mean The Most To you?</title>
+    <link>https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474</link>
+    <description>I know Mr. @ian has been talking a lot about the metrics he collects with his applications. 
+
+At Cloudmanc Labs we spend tons of time with our metrics. I can&#39;t say we are experts as to how to use our metrics but we try to live by metric driven decision making. We are always looking to refine how we use our metrics. 
+
+After posting my blog posting below (sorry linking back to my site, it seems relevant not shameless). I had a number of people reach out to me and ask about what metrics are important to measure. 
+ 
+http://cloudmanic.com/blog/64/minimum-viable-product-build-measure-repeat
+
+Clearly what is important to measure is very different based on what you are selling. I thought it would be interesting to ask what people are measuring and how it relates to business and product decisions.  
+
+Thanks!</description>
+    
+    <lastBuildDate>Wed, 09 Mar 2016 20:14:25 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What Usage Metrics Mean The Most To you?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah, for early stage startups, most metrics are a waste of time, if not confusing. Talking to your customer will give you more insights than trying to make sense of Google analytics (and crying, as everyone who uses GA ultimately ends up crying, or moving to Clicky etc).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474/5</link>
+        <pubDate>Wed, 09 Mar 2016 20:14:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-474-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474.rss">What Usage Metrics Mean The Most To you?</source>
+      </item>
+      <item>
+        <title>What Usage Metrics Mean The Most To you?</title>
+        <dc:creator><![CDATA[pjc]]></dc:creator>
+        <description><![CDATA[
+            <p>I never look at my metrics (only got Google Analytics installed, and only on my landing page at that). Instead, by doing all the customer support I develop a feel for the next bottleneck in delivering what my customers want. So far just talking to my customers like this has served me well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474/4</link>
+        <pubDate>Wed, 09 Mar 2016 19:42:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-474-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474.rss">What Usage Metrics Mean The Most To you?</source>
+      </item>
+      <item>
+        <title>What Usage Metrics Mean The Most To you?</title>
+        <dc:creator><![CDATA[spicer]]></dc:creator>
+        <description><![CDATA[
+            <p>I will kick things off…</p>
+<p>At Cloudmanic Labs we measure almost everything. We use a combination of our own custom event software, <a href="http://mixpanel.com" rel="nofollow noopener">MixPanel</a>, <a href="https://clicky.com" rel="nofollow noopener">Clicky</a>, and <a href="http://piwik.org/" rel="nofollow noopener">Piwik</a>.</p>
+<p>Both our custom software and MixPanel are most useful for seeing how customer engage with our products. What are they using and what are they not using. Clicky and Piwik are really about measuring marketing efforts (how customers are becoming customers).</p>
+<p>In general our approach is to measure everything. However we only look at 4 metrics per side (apps, and marketing) when making bigger decisions. When we push updates we look at how these metrics change. If we push something and our 4 core metrics go up or down we know we did something right or wrong.</p>
+<p>On the marketing side we measure conversions to app signups, bounce rate, campaign success rate, cross product success rate.</p>
+<p>Each one of our apps has its own core metrics. The core metrics are often around the core feature for using the app. For example with Skyclerk (our accounting application). Ledger Entries Per Month is our biggest metric. If this number does not grow exponentially we know we are doing something wrong. We keep a sharp eye on this number.</p>
+<p>The other two things we do is feature metrics and cohort analysis.</p>
+<p>With feature metrics we keep a sharp eye on each feature we have. If the usage is low we try a few iterations of the feature to try to rule out if the feature is a bad feature or if we did a bad job building. If the numbers stay low we know it is not an important feature. If they start to climb we know it needs more love. We also keep an eye on these feature metrics to know what users really care about and maybe careless about. The core metrics mentioned above are the final deciding metrics when making bigger decisions.</p>
+<p>Lastly, cohort analysis are a big part of our company health measurement. It measures how sticky our applications are. We noticed about a year ago our customer retention was starting to drop fast month over month in some key areas. We guessed our competition was start to out price us. We took action. We then resumed our growth. Had we not watched this we could have fallen into a danger area. Once usage slows revenue overnight can drop fast. Usage is a forward indicator.</p>
+<p>Would love to hear more about what others are doing in this area.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474/2</link>
+        <pubDate>Wed, 28 Aug 2013 21:12:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-474-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474.rss">What Usage Metrics Mean The Most To you?</source>
+      </item>
+      <item>
+        <title>What Usage Metrics Mean The Most To you?</title>
+        <dc:creator><![CDATA[spicer]]></dc:creator>
+        <description><![CDATA[
+            <p>I know Mr. <a class="mention" href="/u/ian">@ian</a> has been talking a lot about the metrics he collects with his applications.</p>
+<p>At Cloudmanc Labs we spend tons of time with our metrics. I can’t say we are experts as to how to use our metrics but we try to live by metric driven decision making. We are always looking to refine how we use our metrics.</p>
+<p>After posting my blog posting below (sorry linking back to my site, it seems relevant not shameless). I had a number of people reach out to me and ask about what metrics are important to measure.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://cloudmanic.com/assets/css/images/favicon.ico" class="site-icon" width="16" height="16">
+      <a href="https://cloudmanic.com/blog/64/minimum-viable-product-build-measure-repeat" target="_blank">Cloudmanic Labs</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://cloudmanic.com/assets/images/avatar_bigger.jpg" class="thumbnail onebox-avatar" width="73" height="73">
+
+<h3><a href="https://cloudmanic.com/blog/64/minimum-viable-product-build-measure-repeat" target="_blank">Minimum Viable Product: Build, Measure, Repeat</a></h3>
+
+<p>Most people building software these days have heard of the Minimum Viable Product (MVP) strategy: construct only what is necessary to get a few users onboard and worry about the rest of the planned f</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Clearly what is important to measure is very different based on what you are selling. I thought it would be interesting to ask what people are measuring and how it relates to business and product decisions.</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474/1</link>
+        <pubDate>Wed, 28 Aug 2013 20:53:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-474-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/what-usage-metrics-mean-the-most-to-you/474.rss">What Usage Metrics Mean The Most To you?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>#153: “What should I do with Saber Feedback?”</title>
+    <link>https://discuss.bootstrapped.fm/t/153-what-should-i-do-with-saber-feedback/7244</link>
+    <description>I seek @freyfogle&#39;s advice on some [Saber Feedback](https://saberfeedback.com/) stuff. We talk about pricing, free plans, legacy framework woes, and database hosting.
+
+We also chat about:
+
+* running  [Geomob](https://thegeomob.com/) as an online conference instead as a COVID alternative to an in-person conference
+* automating away common customer support enquiries
+
+
+&lt;iframe height=&quot;200px&quot; width=&quot;100%&quot; frameborder=&quot;no&quot; scrolling=&quot;no&quot; seamless src=&quot;https://player.simplecast.com/73b07896-452c-4f58-b919-34c3c1fe51ca?dark=false&quot;&gt;&lt;/iframe&gt;
+
+[You can also listen to this episode here](https://bootstrapped.fm/153-what-should-i-do-with-saber-feedback/).</description>
+    
+    <lastBuildDate>Sat, 24 Oct 2020 20:11:44 +0000</lastBuildDate>
+    <category>Bootstrapped Podcast</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/153-what-should-i-do-with-saber-feedback/7244.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>#153: “What should I do with Saber Feedback?”</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>Good advice from <a class="mention" href="/u/freyfogle">@freyfogle</a> !<br>
+Do only what is really necessary.<br>
+Regarding your idea to go to AWS/S3 for storage: If you are afraid your disk goes full with png’s, just buy Linode block storage and attach it to your server.  It’s a bit like a larger disk for your server.  That works well for png’s, but not for the database.<br>
+About ember: Ember is for people who like ember.  If you are not into ember, migrate away.  I would consider this as necessary for you.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/153-what-should-i-do-with-saber-feedback/7244/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/153-what-should-i-do-with-saber-feedback/7244/2</link>
+        <pubDate>Sat, 24 Oct 2020 20:11:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7244-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/153-what-should-i-do-with-saber-feedback/7244.rss">#153: “What should I do with Saber Feedback?”</source>
+      </item>
+      <item>
+        <title>#153: “What should I do with Saber Feedback?”</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>I seek <a class="mention" href="/u/freyfogle">@freyfogle</a>’s advice on some <a href="https://saberfeedback.com/">Saber Feedback</a> stuff. We talk about pricing, free plans, legacy framework woes, and database hosting.</p>
+<p>We also chat about:</p>
+<ul>
+<li>running  <a href="https://thegeomob.com/">Geomob</a> as an online conference instead as a COVID alternative to an in-person conference</li>
+<li>automating away common customer support enquiries</li>
+</ul>
+<iframe height="200px" width="100%" frameborder="no" src="https://player.simplecast.com/73b07896-452c-4f58-b919-34c3c1fe51ca?dark=false"></iframe>
+<p><a href="https://bootstrapped.fm/153-what-should-i-do-with-saber-feedback/">You can also listen to this episode here</a>.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/153-what-should-i-do-with-saber-feedback/7244/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/153-what-should-i-do-with-saber-feedback/7244/1</link>
+        <pubDate>Fri, 23 Oct 2020 10:43:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-7244-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/153-what-should-i-do-with-saber-feedback/7244.rss">#153: “What should I do with Saber Feedback?”</source>
+      </item>
+  </channel>
+</rss>

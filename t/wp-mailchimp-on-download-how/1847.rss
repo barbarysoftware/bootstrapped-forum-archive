@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>WP: Mailchimp on download - how?</title>
+    <link>https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847</link>
+    <description>I&#39;m looking for a WordPress plugin or in fact any way to do the following:
+
+When a visitor clicks on &quot;Download&quot; link on my software to get the free trial, I want the Mailchimp plugin to intercept this click and offer the visitor to subscribe.
+
+Then there are two options, both of which should be available to me:
+
+1. The visitor may skip the subscription and still get the file, OR
+2. The visitor must subscribe to get the file 
+
+I do not care much if the provided email is correct; if option 2 generates too many fake emails, I will address it then.
+
+So, could anyone point me to the right plugin and/or HOWTO?
+
+Thanks!</description>
+    
+    <lastBuildDate>Thu, 24 Jul 2014 23:14:09 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>WP: Mailchimp on download - how?</title>
+        <dc:creator><![CDATA[CasJam]]></dc:creator>
+        <description><![CDATA[
+            <p>You can use Gravity Forms (premium wordpress forms plugin) and then install their mailchimp add-on.</p>
+<p>The form can have an autoreply to the user. In that auto reply, include the download link.</p>
+<p>The form can have a checkbox that when checked, will subscribe the user to your mailchimp list (the gravity forms mailchimp add-on connects your form to your MC list).</p>
+<p>Your copy can say something: enter your email address to receive this cool thing. Check the checkbox if you also want to subscribe to my newsletter (optional).</p>
+<p>They’ll get the autoreply with download link regardless of whether they subscribe or not.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/6</link>
+        <pubDate>Thu, 24 Jul 2014 23:14:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1847-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847.rss">WP: Mailchimp on download - how?</source>
+      </item>
+      <item>
+        <title>WP: Mailchimp on download - how?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>SOLUTION</strong></p>
+<p>Turns out, Mailchimp does support it. The functionality is called “Thank You” page. Essentially, instead of telling the subscribers “Thank you for subscribing!” Mailchimp can redirect them to an arbitrary URL.</p>
+<p><a href="http://kb.mailchimp.com/article/can-i-design-and-host-my-own-thank-you-pages-instead-of-using-mailchimps" rel="nofollow noopener">Here is the Mailchimp’s HOW-TO on thank-you pages</a></p>
+<p>Initially it did not work for me in Wordpress. No matter what I did the Mailchimp form seems not noticed the redirect URL. All other settings were propagated from the Mailchimp account OK.</p>
+<p>After some experiments I uninstalled the default Mailchimp plugin,and installed <a href="http://wordpress.org/plugins/yikes-inc-easy-mailchimp-extender/" rel="nofollow noopener">Easy MailChimp Forms</a> instead, which explicitly states it supports redirects in the description.</p>
+<p>And boom! It works now. Not fully like I planned from the beginning - the form is not a popup, but a widget on the download page, but after I click on download it <strong>both</strong> submits the email <strong>and</strong> redirects to the actual download file.</p>
+<p>The Easy MailChimp Forms has a ton of settings, I’ll play with it some more, but the result is already satisfying.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/5</link>
+        <pubDate>Thu, 24 Jul 2014 02:06:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1847-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847.rss">WP: Mailchimp on download - how?</source>
+      </item>
+      <item>
+        <title>WP: Mailchimp on download - how?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I believe that having download and subscribe in parallel are not the best option for me.</p>
+<p>To know who downloads my trial and be able to contact them later with a question “how did it go?” is an invaluable thing for me at this stage, because downloads are in low numbers and I need to know where do I miss for each of the downloads.</p>
+<p>By providing a way to skip the “registration” I eliminate the only way to know my prospect.</p>
+<p>I also do not want to delay the download by emailing the link. The guys are in the mood to download it and try it right now, why should I wait for them to cool down?</p>
+<p>Plus, I do not want it to be seen as subscription for my blog.</p>
+<p><strong>Re: why I’m trying to do this way of implementation:</strong></p>
+<p>There was a podcast where someone was explaining in detail how much better a subscription converts if right after the click on download a small subscribe form is shown to the visitor.</p>
+<p>The reason was that people are like to be consistent, and when they decided to do download they will continue doing it even if a small obstacle appeared, while they would not subscribe without this trick.</p>
+<p>I wish I could remember what podcast it was…</p>
+<p><strong>Perhaps, a wrong question</strong></p>
+<p>May be instead of looking for ways to integrate Mailchimp widget into this workflow, I should look for plugins that do the downloads with registration.</p>
+<p>I’ll explore this option.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/4</link>
+        <pubDate>Wed, 23 Jul 2014 21:18:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1847-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847.rss">WP: Mailchimp on download - how?</source>
+      </item>
+      <item>
+        <title>WP: Mailchimp on download - how?</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 for <a class="mention" href="/u/buggy">@buggy</a>’s approach.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/3</link>
+        <pubDate>Wed, 23 Jul 2014 18:52:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1847-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847.rss">WP: Mailchimp on download - how?</source>
+      </item>
+      <item>
+        <title>WP: Mailchimp on download - how?</title>
+        <dc:creator><![CDATA[buggy]]></dc:creator>
+        <description><![CDATA[
+            <p>Can’t you just have the “Download” link go to a WordPress page that contains both the Mail Chimp sign up form and a link below it saying “Skip Registration” that links to the real download? For those people who subscribe to your mailing list you can provide the real download link on anything from the <em>Signup “thank you” page</em> to the <em>Final “weclome” email</em> depending on whether you want them to confirm their email before providing it or not.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/2</link>
+        <pubDate>Tue, 22 Jul 2014 06:17:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1847-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847.rss">WP: Mailchimp on download - how?</source>
+      </item>
+      <item>
+        <title>WP: Mailchimp on download - how?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m looking for a WordPress plugin or in fact any way to do the following:</p>
+<p>When a visitor clicks on “Download” link on my software to get the free trial, I want the Mailchimp plugin to intercept this click and offer the visitor to subscribe.</p>
+<p>Then there are two options, both of which should be available to me:</p>
+<ol>
+<li>The visitor may skip the subscription and still get the file, OR</li>
+<li>The visitor must subscribe to get the file</li>
+</ol>
+<p>I do not care much if the provided email is correct; if option 2 generates too many fake emails, I will address it then.</p>
+<p>So, could anyone point me to the right plugin and/or HOWTO?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847/1</link>
+        <pubDate>Tue, 22 Jul 2014 01:59:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1847-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/wp-mailchimp-on-download-how/1847.rss">WP: Mailchimp on download - how?</source>
+      </item>
+  </channel>
+</rss>

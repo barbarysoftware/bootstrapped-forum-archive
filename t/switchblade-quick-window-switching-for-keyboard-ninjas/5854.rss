@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SwitchBlade: Quick Window Switching for Keyboard Ninjas</title>
+    <link>https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854</link>
+    <description>Hey All,
+
+Looking for some feedback on a small desktop application I just soft-launched. The tool is named [SwitchBlade](https://www.switchbladeapp.com/), and it provides a quick way to access all your open windows on Windows. Basically, you press a configurable global hotkey, and a blade appears at the top of the screen, allowing you to quickly search the titles of open windows, select them, and switch to them. Think of it as a fast alternative to Alt-Tab. I view this as an additional tool to use alongside Alt-Tab, not a replacement.
+
+This was a scratch-my-own-itch idea, so I&#39;m interested to see if anyone else finds it useful. I don&#39;t have a strong marketing plan, and I&#39;m not sure one exists for this class of tool. Any ideas there would be helpful.
+
+I&#39;m hoping for feedback on:
+
+1. The website: I built this myself using Bulma as I am not a designer and didn&#39;t want to invest in a contractor on such a small project.
+2. The product itself and any ideas you might have for it. 
+3. Pricing/trial model. I struggled with this a lot but settled on 30-day trial/$19 one-time license fee. The tool is so very simple I have a hard time pricing it higher than this.
+4. Anything else you think I should hear.
+
+Particularly interested in feedback from those who have launched successful desktop products, as this is my first attempt at monetizing an app like this.
+
+The website is at https://www.switchbladeapp.com
+
+Thanks in advance,
+John</description>
+    
+    <lastBuildDate>Tue, 15 May 2018 22:12:06 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SwitchBlade: Quick Window Switching for Keyboard Ninjas</title>
+        <dc:creator><![CDATA[JohnH]]></dc:creator>
+        <description><![CDATA[
+            <p>Good point. That’s an obvious thing it should do that it does not! Thanks for catching that.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/5</link>
+        <pubDate>Tue, 15 May 2018 22:12:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5854-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854.rss">SwitchBlade: Quick Window Switching for Keyboard Ninjas</source>
+      </item>
+      <item>
+        <title>SwitchBlade: Quick Window Switching for Keyboard Ninjas</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey. The app doesn’t automatically start after machine restart.</p>
+<p>I do not remember there was a checkbox “start with Windows”, so I feel I did not uncheck it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/4</link>
+        <pubDate>Mon, 14 May 2018 13:27:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5854-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854.rss">SwitchBlade: Quick Window Switching for Keyboard Ninjas</source>
+      </item>
+      <item>
+        <title>SwitchBlade: Quick Window Switching for Keyboard Ninjas</title>
+        <dc:creator><![CDATA[JohnH]]></dc:creator>
+        <description><![CDATA[
+            <p>Excellent feedback, thank you.</p>
+<ol>
+<li>The half-height screen was to avoid obstructing your work area too much. Maybe an option for that is warranted.</li>
+<li>Yuck, that’s a bug. Will fix.</li>
+<li>The ordering is basically the Z-order and should be similar or identical to Alt-Tab’s sequence. It will feel pretty random, I suspect.</li>
+<li>Interesting idea. I hadn’t thought about that approach.</li>
+</ol>
+<p>As for being useful to you – that’s valuable feedback, as well. I’m like you – I tend to focus on a couple of foreground windows. Occasionally I need to hop over to slack, outlook, or something along those lines, and its faster for me to Alt-f2,type,enter, than it is to search my Alt-Tab history and hope I notice it, or grab the mouse and use that. Admittedly it’s limited in its scope.</p>
+<p>Thanks again!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/3</link>
+        <pubDate>Fri, 11 May 2018 00:11:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5854-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854.rss">SwitchBlade: Quick Window Switching for Keyboard Ninjas</source>
+      </item>
+      <item>
+        <title>SwitchBlade: Quick Window Switching for Keyboard Ninjas</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Gave it a try.</p>
+<p>A few things right away:</p>
+<ol>
+<li>The height of the list is half-screen. Why? I want to see more of my window names at once. My screen is also wide, so may prefer to show them in multiple columns.</li>
+<li>I press Alt-F2. I press down and then TAB again - the focus goes somewhere I cannot readily identify, but if I now press and hold down the list scrolls in loop forever. Weird.</li>
+<li>I understand that the most recently opened windows are at top, but it is not clear where the most-recent list ends, and because of this the order of items is totally unpredictable.</li>
+<li>Some applications have their own Alt-F2 (or any other) quick keys. I suggest that when I press Alt-F2 (or other invoking combination) and then immediately Esc, send Alt-F2 to the current active window because I probably wanted that.</li>
+</ol>
+<p>The price is OK, IMHO. However, I do not yet feel like it improves my performance noticeably. That may be because my work patterns are usually focused on switching between two windows, i.e. Windows Alt-Tab is enough for me. Maybe I’m not the target market.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/2</link>
+        <pubDate>Thu, 10 May 2018 23:59:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5854-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854.rss">SwitchBlade: Quick Window Switching for Keyboard Ninjas</source>
+      </item>
+      <item>
+        <title>SwitchBlade: Quick Window Switching for Keyboard Ninjas</title>
+        <dc:creator><![CDATA[JohnH]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey All,</p>
+<p>Looking for some feedback on a small desktop application I just soft-launched. The tool is named <a href="https://www.switchbladeapp.com/" rel="nofollow noopener">SwitchBlade</a>, and it provides a quick way to access all your open windows on Windows. Basically, you press a configurable global hotkey, and a blade appears at the top of the screen, allowing you to quickly search the titles of open windows, select them, and switch to them. Think of it as a fast alternative to Alt-Tab. I view this as an additional tool to use alongside Alt-Tab, not a replacement.</p>
+<p>This was a scratch-my-own-itch idea, so I’m interested to see if anyone else finds it useful. I don’t have a strong marketing plan, and I’m not sure one exists for this class of tool. Any ideas there would be helpful.</p>
+<p>I’m hoping for feedback on:</p>
+<ol>
+<li>The website: I built this myself using Bulma as I am not a designer and didn’t want to invest in a contractor on such a small project.</li>
+<li>The product itself and any ideas you might have for it.</li>
+<li>Pricing/trial model. I struggled with this a lot but settled on 30-day trial/$19 one-time license fee. The tool is so very simple I have a hard time pricing it higher than this.</li>
+<li>Anything else you think I should hear.</li>
+</ol>
+<p>Particularly interested in feedback from those who have launched successful desktop products, as this is my first attempt at monetizing an app like this.</p>
+<p>The website is at <a href="https://www.switchbladeapp.com" rel="nofollow noopener">https://www.switchbladeapp.com</a></p>
+<p>Thanks in advance,<br>
+John</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854/1</link>
+        <pubDate>Thu, 10 May 2018 21:19:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5854-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/switchblade-quick-window-switching-for-keyboard-ninjas/5854.rss">SwitchBlade: Quick Window Switching for Keyboard Ninjas</source>
+      </item>
+  </channel>
+</rss>

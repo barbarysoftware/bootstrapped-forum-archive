@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hiring on oDesk: let&#39;s share experiences?</title>
+    <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551</link>
+    <description>I&#39;d like to ask for suggestions and to share my experience about hiring on oDesk.
+
+I lack time but have excess funds in my consulting business. I also have a validated idea. So I decided to try and hire a contractor on oDesk to do a prototype.
+
+I have worked with oDesk before. I&#39;ve hired a guy from Philippines in past, and he was reasonably good at some $20/hr, except not very pro-active in communications. I found him by doing a search on oDesk and offering him the job, and he accepted. I recently heard on some podcast (SFROU?) a better process should be used:
+
+1. Post a job
+2. Wait until 10-15 contractors submit their applications
+3. Select 3 
+4. Give those 3 an identical task to perform (**paid** task, this is only fair)
+5. Select 1 who provided best code quality/delivery time combination
+
+Well, sounds reasonable, and so I decided to try this process. 
+
+### Posting the job
+
+That was simple. I described the business context, gave outline of what I want to achieve and explained the process I&#39;m going to follow to hire. 
+
+I also requested submitters to answer a few questions regarding the project, i.e. &quot;What part of the project you expect to take most time?&quot; and a few others. 
+
+&gt; For a large Weblogic farm, I&#39;m looking for a tool that walks over each 
+&gt; domain in the list and records the current configuration values into a 
+&gt; timestamped snapshot (XML). 
+
+&gt; Later the operator may select two of the snapshots and obtain the 
+&gt; difference between the two for troubleshooting or for propagating the 
+&gt; changes into other domains in DEV-DIT-SIT-UAT chain.
+
+&gt; There is no satisfactory API to collect the configuration from a 
+&gt; Weblogic domain, and so the collecting should be done via a web 
+&gt; scrapping. Good news is that all the pages in Weblogic console are built
+&gt;  the same way. In fact, I now have a PoC plain Java utility that does 
+&gt; the collection of _some_ of the configuration entries; that utility can 
+&gt; be used as a reference.
+
+&gt; The end result should be a WAR-deployable UI application that allows to 
+&gt; add/update/delete the Weblogic domains to track, take snapshots on 
+&gt; demand and show the snapshots&#39; diff. 
+
+&gt; I prepared the screens mockups with Bootstrap (attached).
+
+&gt; The main skill for the developer is Java Servlets + UI development. 
+&gt; JSoup is nice to have, Weblogic is nice to have, basic XML is good to 
+&gt; have.
+
+&gt; The work is planned like this:
+
+&gt; 1. I will collect a few of candidates and give each the same **paid** 
+&gt; pilot to do: the minimal functionality that touches all the areas that 
+&gt; needed for completion.
+
+&gt; 2. I will evaluate the results and select one of the candidates for further development.
+
+&gt; 3. The selected individual will be given tasks to continue the project 
+&gt; to the next milestone. The rest would get their earned money (of course)
+&gt;  and a honest feedback.    
+
+### Contractors submit
+
+Almost immediately contractors started to submit.
+
+Few notable things.
+
+First, the range of rates was very large. The minimum was around $9/hr, and the maximum was around $30/hr. oDesk doesn&#39;t allow to specify the target rate, only a range &quot;low, balanced, high&quot;. My target was in 12-20 range, so immediately some of the contractors have to be dismissed (&quot;Hide&quot; button on the oDesk UI).
+
+Second, some of the contractors clearly did not took time to read the job description. Their answers to the posted questions were not fitting at all. For instance, one guy was talking about a &quot;site&quot; while the job is about an intranet web application.
+
+Some other worked around the posted questions by saying &quot;Can be discussed over Skype&quot; for each answer. Those folks I dismissed right away. If one cannot take a minute to answer a few simple questions to get a job, how can I expect a good communication with them *during* the job?
+
+Third, some of the contractors came via &quot;agency&quot;. I&#39;m cautions about those. One thing, I do not want to pay extra for &quot;overheads&quot;. Second, I noticed that some of the agency contractors have a much higher posted rate on profile than on the submission (e.g. 30/hr vs 16/hr). That tells me it could be a bite-and-switch type of operation. 
+
+It looks like the expected way of communication on oDesk is Skype. Almost all contractors immediately give you their skype id.
+
+Nonetheless, in about a day I had 12 candidates within my rate range and matching the basic qualifications.
+
+### Select 3 Of Them
+
+That&#39;s where it got complicated. How exactly I go about selecting 3 &quot;best fitting&quot;?
+
+Conventional wisdom is to do a face-to-face (over Skype) interviews. I had two reasons not to do it though:
+
+- I suck at doing interviews; did it in past and I know this is my weakness; I just cannot &quot;read&quot; people
+- The spelling language of some of the contractors was quite bad (worse than mine) and I only expected the spoken would be worse. But as long as they can deliver the code I did not want to discount them.
+- I simply did not have 12 hours to interview 12 people. Those hours I needed to bill my client.
+
+And so I went with a more formal way. I made a spreadsheet with all the contractors where I listed their rates, ratings on oDesk, number of hours they did on oDesk, my subjective feeling if they &quot;got&quot; the task based on their answers, their familiarity with the technologies I needed, and so on. 
+
+I gave each of the factors a weight and calculated the overall rating. That gave me 3 best candidates. I then reviewed those candidates again to double-check my numbers against my gut feeling and they looked fine -- within the right rate (not too cheap, not too expensive: all 3 was about $12/hr), with the right qualifications and with the right work history.
+
+I hired all three for the test task, giving them the following direction:
+
+&gt;  The results will be evaluated both by code quality and the delivery time. 
+
+&gt; Code quality, in addition to obvious things like being bug-free, includes readability (i.e. self-documenting for future maintenance developers) and use of standard APIs vs DIY implementations.
+
+&quot;Hire&quot; button in oDesk doesn&#39;t close the job, so I could hire them one after another without creating a special test job for them. I set the weekly limit to 40 hours thinking this should be the maximum time a developer should spend on a basic CRUD UI, even with some extra functionality I throwed in.
+
+### Test Task
+
+I figured in the test task I want to see them touching every area that will be required in the real application. So I requested to do:
+
+- Basic CRUD UI
+- Some basic XML work
+- Some use of JSoup library
+- Setting up the build structure
+
+### Early disappointments
+
+Well, things did not go well right from the start.
+
+One guy asked one clarification question, and then just went silent. No further questions, no progress reported. It&#39;s only been 2 days, so I&#39;m giving him a benefit of having a life.
+
+Second guy was clearly confused and sent me a barrage of the questions which made me confused in turn -- what exactly he doesn&#39;t understand? After some 5-6 emails back and forth, we finally cleared his idea. He even has logged some progress. In oDesk the client can see screenshots of what the contractor is doing - the guy has spent 3 hours looking at some code examples. That&#39;s not where I would start doing my task, but hey, everyone has their own style. Will be watching him.
+
+Third contractor, who&#39;s actually a young girl, asked much more pointed questions, and said she&#39;d start working right away. Her estimate was some 40-60 hours. A bit high, I believe, but could be just a safe number for an unfamiliar technology (Weblogic). She seems skilled, I have some hopes for her.
+
+### Late entrants
+
+I did not close the job when I hired those 3 guys, and some more applications were submitted. Most I hid right away (too cheap or too expensive) but one guy caught my attention. He had exactly the right qualifications -- Weblogic experience, scrapping libraries -- and his answers to my questions were much more reasonable than the rest. His rate was about $16, i.e. some 25% higher than other 3 guys.
+
+I sent him a message asking what would be his estimate for the test task. He said 6-8 hours. Wut? Seriously? I have double-checked with him and decided to add him to the test as well. If he&#39;s really that fast, it more than beats his rate increase.
+
+### To Be Continued
+
+That was my notes so far. Should I continue to log the progress? Is it of interest to anyone?</description>
+    
+    <lastBuildDate>Wed, 02 Jul 2014 22:33:29 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="31" data-topic="1551">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/malditojavi/40/2530_1.png" class="avatar"> malditojavi:</div>
+<blockquote>
+<p>I worked +1200 hours in oDesk in 2012.</p>
+</blockquote>
+</aside>
+<p>Interesting write-up. Loved the beard trick! I shall consider to do the same! <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+<p>(I believe in English the “contractor” term is the one who does the work; the one who gives the work then should be “contractee”? Reading about contractor in your post was constantly confusing me.)</p>
+<aside class="quote" data-post="31" data-topic="1551">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/malditojavi/40/2530_1.png" class="avatar"> malditojavi:</div>
+<blockquote>
+<p>That explains a lot that they always try to work as much as time as they can grab from your ‘pocket’.</p>
+</blockquote>
+</aside>
+<p>Probably. But in this case they had to compete against each other during the test task, and the fastest guy won. “Hit the ground running” is what is expected from the contractors.</p>
+<aside class="quote" data-post="33" data-topic="1551">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/danh/40/2422_1.png" class="avatar"> danh:</div>
+<blockquote>
+<p>I just have a hard time letting go of development</p>
+</blockquote>
+</aside>
+<p>I believe this just comes with age.</p>
+<p>In past I was trying to delegate some coding work to others, and found out that a) it is very hard to explain what I want and b) I can do the same work faster.</p>
+<p>Not so nowadays. The folks who were junior developers 10 years ago, when I did my first attempts at delegating, they now are solid senior developers, and they are better at understanding my requests.</p>
+<p>I probably became better at explaining things, too.</p>
+<p>All in all, what couldn’t have worked then, works now.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/34</link>
+        <pubDate>Wed, 02 Jul 2014 22:33:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-34</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[danh]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rfctr">@rfctr</a> Thanks for the detailed notes on your experience.  I really enjoyed reading them.</p>
+<p>I’m a software developer and have hired several contractors on oDesk for non-developer jobs.  I just have a hard time letting go of development, but your experience is making me consider going for it to move things along with a few projects.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/33</link>
+        <pubDate>Wed, 02 Jul 2014 16:29:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-33</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[gavin]]></dc:creator>
+        <description><![CDATA[
+            <p>Appreciate you sharing your experiences <a class="mention" href="/u/malditojavi">@malditojavi</a>.  Given the amount of hours you’ve spent on the platform - what tips would you have to get the best possible work product from someone you hire on oDesk for the fairest price?</p>
+<p>I hire a few projects a quarter on oDesk and I’d like to get better at it.  Sometimes they go smoothly, other times they get sideways really quick.   I’m sure it’s me -  but I’d still like to do a better job at hiring.</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/32</link>
+        <pubDate>Wed, 02 Jul 2014 14:34:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-32</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[malditojavi]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="1551">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Her estimate was some 40-60 hours.<br>
+[/quote] vs [quote=“rfctr, post:1, topic:1551”]<br>
+Late entrants … He said 6-8 hours</p>
+</blockquote>
+</aside>
+<p>Usually, first applicants are those ‘desperated’ (in the good sense of the term) for some good ratings that can help to rank them better in workforce on demand search engines like oDesk. That explains a lot that they always try to work as much as time as they can grab from your ‘pocket’. As soon as they start collecting great feedback, and therefore they rank better for certain keywords/skills, they start caring less about being the first applicants. That’s when they set their sights in getting more income doing the same in less time.</p>
+<p>I know about it because <a href="http://malditointer.net/after-working-1200-hours-in-odesk/" rel="nofollow noopener">I worked +1200 hours in oDesk in 2012</a>. Criterias like ‘worked time last week’ or ‘last active’ are definitely some of the most important factors if your new in the platform. Or at least it used to be like this in 2011-2012.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/31</link>
+        <pubDate>Wed, 02 Jul 2014 10:55:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[blue_love_anna]]></dc:creator>
+        <description><![CDATA[
+            <p>I had a lady on Skype ask me about this. I’m not entirely sure if this is the same thing she talked about, but she told me that the people that she works with are dealing in services like a website, and software development. She introduced herself as Christina from weblogics.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/30</link>
+        <pubDate>Wed, 02 Jul 2014 05:39:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[Lewis]]></dc:creator>
+        <description><![CDATA[
+            <p>Most of what I have learned regarding the cultural differences stems from my own experience. Unfortunately, I don’t know of any good fast resources. I suggest googling with <em>COUNTRY_NAME work culture</em>. It will give you a good starting point and you’ll start to see some common beliefs from one article to the next.</p>
+<p>I just tried <strong>India work culture</strong> and got some good responses. I also tried <strong>Indian yes culture</strong> which gave more information about that specific difference in cultures. Here’s <a href="http://www.eweek.com/c/a/IT-Management/Bridge-Cultural-Differences-for-Better-Business-in-India/" rel="nofollow noopener">an example article regarding India</a>.</p>
+<blockquote>
+<p>The Indian “yes” comes from the desire to please, not the impulse to deceive. But when Yanks are looking for an honest yea or nay and they get an unequivocal yes—which is not followed by results—they often do feel deceived. - See more at: <a href="http://www.eweek.com/c/a/IT-Management/Bridge-Cultural-Differences-for-Better-Business-in-India/#sthash.rvJDC8g6.dpuf" rel="nofollow noopener">http://www.eweek.com/c/a/IT-Management/Bridge-Cultural-Differences-for-Better-Business-in-India/#sthash.rvJDC8g6.dpuf</a></p>
+</blockquote>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/29</link>
+        <pubDate>Thu, 22 May 2014 21:35:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[gavin]]></dc:creator>
+        <description><![CDATA[
+            <p>Not a bad idea.  Any good resources to learn that?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/28</link>
+        <pubDate>Thu, 22 May 2014 15:48:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[gavin]]></dc:creator>
+        <description><![CDATA[
+            <p>Fair enough.  I’ve actually not used anyone from Eastern Europe.  They haven’t applied for any jobs I’ve posted.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/27</link>
+        <pubDate>Thu, 22 May 2014 15:47:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[Lewis]]></dc:creator>
+        <description><![CDATA[
+            <p>Overstating ability can also have a lot to do with culture. For example, it’s common for people in India to say <em>yes</em> and promise things because they don’t want to disappoint the person by saying no. It’s worth learning a bit more about the culture that you might hire from so that you can communicate better.</p>
+<p>Just something worth considering since it is so easy for us to get lost in our own work culture.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/26</link>
+        <pubDate>Thu, 22 May 2014 13:45:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="24" data-topic="1551">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/gavin/40/1211_1.png" class="avatar"> gavin:</div>
+<blockquote>
+<p>they almost always overstate their ability to handle a task, which could be deadlines or skills needed</p>
+</blockquote>
+</aside>
+<p>That could be non-oDesk-specific though. Until my 40ties I was always underestimated my efforts for any given task or project. The folks on oDesk could be just young <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<aside class="quote" data-post="24" data-topic="1551">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/gavin/40/1211_1.png" class="avatar"> gavin:</div>
+<blockquote>
+<p>a few people recommended hiring out of Eastern Europe.  Some of the communication norms are closer to what you and I might expect</p>
+</blockquote>
+</aside>
+<p>Yes, I agree. My hire is actually from the Eastern Europe, and the level of mutual understanding is way higher than with me-vs-Indian or me-vs-Philippino.</p>
+<p>Clarity of English though… well, not so sure. Perhaps the closer to centre of EU, the better becomes the English, but I do not have much experience. My current hire’s English is OK, but my past Philippino contractor was speaking a better one.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/25</link>
+        <pubDate>Thu, 22 May 2014 03:57:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[gavin]]></dc:creator>
+        <description><![CDATA[
+            <p>Fascinating play-by-play, thanks so much for sharing.  In my business I’ve hired a number of oDesk workers to complete html email related tasks. Normally adding Mailchimp Tags to an email or turning a PSD into a template.</p>
+<p>One of the things I’ve noticed about the workers I’ve hired (albeit are on the low pay scale $7-10/hour) is that they almost always overstate their ability to handle a task, which could be deadlines or skills needed.</p>
+<p>HTML email isn’t a complex technical task, but it does require some very specific knowledge about how various email clients render the content differently e.g. Outlook renders all three digit hex codes black so it needs the full six.</p>
+<p>For whatever reason, the people I’ve hired are from Northern India and Pakistan and I’ve had some interesting cultural communication break downs with them.  In one case they were arguing with me via Skype about a font stack in an email that I had to change (they’d reversed the order and spelled font wrong, so instead of Helvetica, Arial, Sans-Serif it was san serif, Arial, Helvetica), but they told me that they’d made the change, when I’d just done it.  I was trying to figure out if I’d confused them in my task, they were trying to save face for having an error.  At the end I left frustrated, not happy.</p>
+<p>I also had a guy go dark on me in the midst of a Skype chat and blow through a deadline because of a family celebration that lasted a few days. He came back later and was very apologetic, but I didn’t use him on my most recent project because of it.</p>
+<p>Overall - they do work for me when I don’t have the time or knowledge to complete it.</p>
+<p>My projects tend to be small, so I do a flat rate price based on what I’d like to pay.  Then it’s up to them to get it done for that price. Personally, I’d rather pay the amount I’ve expected to pay and leave money on the table vs get a huge bill for work that wasn’t worth it.</p>
+<p>I’ve also heard that if cultural differences are an issue, a few people recommended hiring out of Eastern Europe.  Some of the communication norms are closer to what you and I might expect.   The rates are certainly higher, but so is the clarity of their English.</p>
+<p>I’d be curious if anyone has used oDesk to hire a VA? I’ve heard people that do, but it seems like a time intensive process just to do the basic vetting.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/24</link>
+        <pubDate>Wed, 21 May 2014 20:07:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[anthonyfranco]]></dc:creator>
+        <description><![CDATA[
+            <p>No problem. Let us know how it goes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/23</link>
+        <pubDate>Tue, 13 May 2014 22:09:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="21" data-topic="1551">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/anthonyfranco/40/3209_1.png" class="avatar"> anthonyfranco:</div>
+<blockquote>
+<p>The decision was very close, but that we’ve decided to move ahead with a different contractor. However, we’ll consider you in the future when there’s another job opening.</p>
+</blockquote>
+</aside>
+<p>Thanks, I used it verbatim <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I hope you do not mind.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/22</link>
+        <pubDate>Tue, 13 May 2014 13:38:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[anthonyfranco]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve rehired contractors after initially rejecting them. The way you phrase the rejection is important. I basically say something like:</p>
+<blockquote>
+<p>The decision was very close, but that we’ve decided to move ahead with a different contractor. However, we’ll consider you in the future when there’s another job opening.</p>
+</blockquote>
+<p>And if your Mr. D doesn’t work out, you can go to your second choice and say something like “We have a developer position available. We think you’d make a great fit. Are you available to begin working?”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/21</link>
+        <pubDate>Tue, 13 May 2014 08:18:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <h3>Update</h3>
+<p>Now that I have to hire one guy out of 4, this turns out not such a straightforward thing as well.</p>
+<p>See, I essentially need to tell Mr. D. “I want to hire you” and to the rest “Sorry, it did not work out”.</p>
+<p>But I probably shouldn’t do it all in the same time, because what if Mr. D.'s circumstances change and he cannot accept it? If I already told the rest “Sorry…” and I come back with “Actually, the best guy just dropped, so I alas have to hire you” it may not be good for morale. And no matter how I word it, the fact that Mr. A was my second choice would poison the relationship.</p>
+<p>So… if Mr. D for whatever reason declines… I think I will just make a pause and post the job again with the Mr. D’s test task as a foundation.</p>
+<p>I have sent a message to Mr. D, but it is a deep night at his timezone, so I’ll have to wait for another 4-6 hours for the answer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/20</link>
+        <pubDate>Mon, 12 May 2014 23:46:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="18" data-topic="1551">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/tdavies/40/2543_1.png" class="avatar"> tdavies:</div>
+<blockquote>
+<p>Rob walling’s VA course recommends recording a short video for complex tasks.</p>
+</blockquote>
+</aside>
+<p>What Rob does is tasks like “If the buyer wants his money back, login here, put his order # here, run a search, click here and confirm”.</p>
+<p>Development of a new application is something different; I do not have screens to navigate yet.</p>
+<p>I have done what is the closest thing to that – I made mockups in Bootstrap. Those mockups are working, allow to navigate the test UI but do not save the state, of course. Even with this help one of the developers made a pretty mess of navigation.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/19</link>
+        <pubDate>Mon, 12 May 2014 23:39:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[tdavies]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rfctr">@rfctr</a> - Thanks for sharing your experiences.</p>
+<p>Regarding the misunderstanding of requirements - did you try recording a screencast to explain the information?  Rob walling’s VA course recommends recording a short video for complex tasks.  In theory you can explain a lot more of the nuances of the task in a way that would be very difficult to explain by text alone.  You could even walk them through portions of the code or apps they will be integrating with.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/18</link>
+        <pubDate>Mon, 12 May 2014 13:13:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="16" data-topic="1551">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/danielstudds/40/1233_1.png" class="avatar"> danielstudds:</div>
+<blockquote>
+<p>Do you think you could have got a useful idea of capability with a smaller, cheaper task?</p>
+</blockquote>
+</aside>
+<p>In the hindsight, I could have simplified the task by some 20-30%. That though wouldn’t make a 1 hour task; the developer D. would probably do it in 3-4 hours instead. The most complexity was in the spawning a background thread for processing and getting its results safely - and I had to test that part because a developer doing good UI is not necessary good at multi-threading programming.</p>
+<p>In a link above the guy is talking about 1-2 hours task; I reviewed the Rails one, and it is a heavily UI one; yes, it will show if the person can produce the Rails UIs fast, but it wouldn’t help in my case, because UI is the simplest part of it…  I may have extracted the most complex part – the background thread work – as a task. Then again, it would take much longer than 1 hour anyway, but I wouldn’t be able to see all the tricky parts where the background worker has to be interfaced with UI code.</p>
+<p>In short, I think the task was about the right size for <em>my</em> goals.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/17</link>
+        <pubDate>Mon, 12 May 2014 12:24:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>$1.5k is a chunk of change, but less than getting the wrong dev. Unfortunately, not all of us have gut instincts worth listening to!</p>
+<p>Do you think you could have got a useful idea of capability with a smaller, cheaper task? <a href="http://www.donnfelker.com/how-to-hire-outsourced-developers/" rel="nofollow noopener">http://www.donnfelker.com/how-to-hire-outsourced-developers/</a> is talking about a 1hr task, or $50-200 to test 10 developers. Do you feel that would have given you enough insight to narrow down the field?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/16</link>
+        <pubDate>Mon, 12 May 2014 06:31:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <h2>Update After 2 Weeks</h2>
+<p>Well, I’ve got the test task results from all 4 of my contractors, and just completed the code review and testing.</p>
+<h4>Main Takeaway <span class="hashtag">#1:</span> Cheap Folks Are Expensive</h4>
+<p>The results prove something I knew (or thought I knew) - a good developer is 10x times better than an average one, while the rate is usually only moderately higher.</p>
+<p>It certainly works this way for my own contracting practice, where I’m doing a particular standard task in about 1 hour, whereas an offshore vendor estimates it at 1 week; my rate though is only 5-7 times higher.</p>
+<p>It worked this way for my test task too, where a <strong>1.3x</strong> more expensive developer completed the work <strong>6-8x faster</strong>, costing me <strong>5x</strong>(!) less as a result.</p>
+<h4>Main Takeaway <span class="hashtag">#2:</span> The Shortlisting Is Not Working</h4>
+<p>I believe the process I have tried (shortlist developers, give them the same task) is not really helping.</p>
+<p>Its weak point is the shortlisting, where one shall still be using one’s gut feeling to select the most fitting developers. If the gut feeling is involved, it could be just as well used for selecting <strong>one</strong> best developer and save the time and money.</p>
+<h4>Main Takeaway <span class="hashtag">#3:</span> Requirements Are Universally Misunderstood</h4>
+<p>Requirements are not understood by contractors even if spelled out in much details. It takes an experience in the particular business area to read the requirements the same way as you intended.</p>
+<p>For the next hiring I’m going to do an experiment - I will request the contractors to write down the very same requirements in their own words to see how they understand them. Hopefully it may detect some of the mismatches in our understanding and close those gaps before the coding starts.</p>
+<h4>Events Of The Week</h4>
+<h5>Developer A</h5>
+<p><em>Time spent: ~50h. Cost: $561</em></p>
+<p>Even before the week started, I’ve got the first submission from the developer A. He’s the one who was initially confused, but then quickly started to develop pages, according to the screenshots. He’s sent me a package which I was able to start without any trouble.</p>
+<p>Testing though revealed he did not understood some of the requirements explicitly expressed, and some of the requirements implicitly present (e.g. the tool is for enterprise, which means the application cannot expect it can save files into root of C:).</p>
+<p>Main deficiency of his code was the lack of asynchronous processing. The task an operator going to trigger can be long, up to 30 minutes, and the application cannot block the UI for that time, but it was exactly what it did. (This was in fact a common error for all but developer D).</p>
+<p>I have provided him a feedback, asking to implement the async processing to demonstrate how he’d do it. There were a few smaller issues, e.g. lack of support for HTTPS, which I explicitly asked <strong>not to</strong> fix as they were not critical for the test task.</p>
+<p>He enthusiastically started to do the background threading, asking me a few clarification questions from which it was clear he did not do it before, but he was doing fine.</p>
+<p>At the same time he went on and fixed some of the “do not fix” issues. I don’t get it – I clearly said to do it not; I was frowned upon it and was considering to ask him if he understood that this work (and thus pay) was not authorized? But I passed on it, because according to screenshots the overwhelming amount of time was spent on threading.</p>
+<p>At the end of the week he has sent me the updated version. It is OK; the main issue I see after the testing is that the error messages (“connection refused”, …) are lost and never reported to the operator, making the troubleshooting hard. Later I learned it is the same for developers A, B and C.</p>
+<h5>Developer B</h5>
+<p><em>Time spent: ~48h. Cost: $578</em></p>
+<p>This is the girl that I had quite high hopes for. I’m not sure why, but she seems to revisit the same screens and classes again and again, and was pretty late with the submission. On the last Friday (May 9) I have sent a reminder that the deadline is May 10, and she sent me the code on the morning of May 10.</p>
+<p>She did not asked me any questions during the last week. One would think it means that the requirements were clear for her, but the testing shows they were not.</p>
+<p>She made a few mistakes in the areas that were covered in the requirements. In addition, she seems not fully grasp the idea that a web application may be accessed in parallel by many users, and so the sufficient synchronization and protection should be put in place.</p>
+<p>All in all, she did deliver, but her quality just wasn’t good enough for me.</p>
+<h5>Developer C</h5>
+<p><em>Time spent: ~39h. Cost: $468</em></p>
+<p>This guy was late, just like developer B; I had to send a reminder too, and he had delivered late evening on May 10. I suspect he simply did not have time to polish his application as a result.</p>
+<p>His app just did not start. After code review I have found the issue (a library wasn’t included into the package), corrected it and was able to do the testing, but it wasn’t a good start, eh?</p>
+<p>His code issues were almost identical to developer B.</p>
+<p>Same as with developer B, this quality is simply not cutting it.</p>
+<h5>Developer D</h5>
+<p><em>Time spent: ~6:30h. Cost: $108</em></p>
+<p>Yes, it is not a mistake. It is 7 (seven) hours and $108 dollars. This guy rate is about $16, so he’s some 30% more expensive than A, B and C, but geez does he deliver!</p>
+<p>Up to May 8th I though he’s not going to complete it at all. He was silent and no progress was reported in oDesk. Then on May 9th morning he suddenly sent me the package and a request to report 6 hours that he was working offline.</p>
+<p>Huh? Why offline? The whole point of oDesk is that I can check on what my contractors are doing, right?</p>
+<p>Anyway, I took a look at the code and was blown away. I do Java and recently SOA from 1996. That’s almost 20 years already, and I believe I know my platform pretty well. I though would never deliver that much functionality in such short time! Granted, most of it came from the right choice of frameworks, but that’s exactly where the experience shines, right?</p>
+<p>Anyway, I gave him the permission to charge those 6 hours, have ran a test, found a couple of rather minor issues, asked if he could fix it before Monday when I’m going to review it with a stakeholder guy (yeah, I have my future customers right next to me in the office! <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:">) and he did fix those in another 30 minutes of work.</p>
+<p>He has even provided a REST API – something I did not even think to ask (too complex for a test task) but it was on my todo list because it would be very useful in our heavily scripted environment. That IMHO shows that he understands the target environment better than anyone else from the contractors.</p>
+<p>I have two concerns about him though:</p>
+<ol>
+<li>Why offline?! What if this all is a bait-and-switch again? The feedback though is all 5 stars.</li>
+<li>He’s from an area neighboring a freshly minted civil war, and the war may come to his town too. That I cannot control; even if he delivers me a solid application framework, and then will have to stop working due to becoming involved or just because the Internet cease to exist in that area… well, I cannot ask for more.</li>
+</ol>
+<h4>Summary</h4>
+<p>Tomorrow I’ll talk to the stakeholder’s team member, we’ll go through the test tasks. I do not expect him to give me an opinion different from what I have already formed: I’m going to hire the developer D.</p>
+<p>Looking back, I realize that if I would just wait for 3-4 days after the job posting and then selected one and only one, that would be the developer D anyway, because of his rating, his previous experience with Weblogic and with other tools.</p>
+<p>I just spent some 15 hundreds $ to learn that one shall not blindly follow whatever process one heard on Internet, even if it <em>sounds</em> right. What works for one person not necessary works for another.</p>
+<p>Will keep you posted if any major events occur, but otherwise will just work with D. to push for the MVP.</p>
+<p>Thank you for all the comments and shared experiences!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/15</link>
+        <pubDate>Mon, 12 May 2014 04:14:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been trying a similar approach, not overly much success so far.</p>
+<p>Posted the job up using the ‘medium’ range on oDesk ($18-$28), and got about 15 candidates, narrowed it down to three. Gave all three a very small, simple task - simple if you know how to work with the tech (angularjs). Only one was able to complete it. His rate was $15/hour. He followed all the directions, quality was good, everything seemed great. So I hired him to work on a more complex, domain-specific problem. Absolute confusion. Communication was a real problem. After about a week, he started to make some progress. I could have kept him on at that point, but I just didn’t get a good vibe. He’d argue back when asked to do things in a particular way - for example, commit his code regularly.</p>
+<p>Decided to try again, but this time tried with the ‘Experienced’ range ($28-50 I think). A lot more applications, but one really stood out. I liked the tone of his application, and he had relevant domain experience. The rate was high ($45/hr) but I thought it was worth a try. So I sent him the test task. Refused to do it, because it was too simple for him. Well, I can see his point, I’ll let that one through. On to the next task. Had some great chats, seems to really know his stuff, we get along fine. In the end, though, looks like he’s going to knock back the job because he feels he can’t be sufficiently productive because he doesn’t know one of the other libraries I’m using (breezejs, an ER mapper.) D’oh.</p>
+<p>So, now back to the drawing board.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/14</link>
+        <pubDate>Tue, 06 May 2014 08:44:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <p>OTOH, he’s got to always be looking for the next thing, and to try and keep everyone happy - maybe he answers you quickly on others’ time.  I’d try and let him know you noticed it in a tactful way.  If he’s smart, he’ll reduce that kind of thing to a minimum.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/13</link>
+        <pubDate>Mon, 05 May 2014 13:15:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[spoiledtechie]]></dc:creator>
+        <description><![CDATA[
+            <p>Screen shots are great and a much required feature by me if I continue with ODesk.  I look at them periodically, but when I found the first guy cheating them, I looked much deeper.</p>
+<p>There are developers that work for cheap.  Ones that apply too.  But with my startup making the money it currently makes, Im sadly not able to pay much more per hour.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/12</link>
+        <pubDate>Sun, 04 May 2014 22:27:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Reviewing the oDesk screenshots, I noticed that one of my contractors uses Skype to IM with his other employers on my time. He’s not taking a call, just chats over Skype IM. Screenshot caught it 3 times already which means it is a common activity.</p>
+<p>I have mixed feelings about it.</p>
+<p>On one side, this is a time paid by <em>me</em>, and it shouldn’t be spent on anything else, no matter how short. Talking to anyone kills the context, the <em>flow</em> my developer was in, and it costs him time to get back on track.</p>
+<p>On another side, chat is fast. The contractor may just reply in a single sentence and continue doing my job.</p>
+<p>I decided to put up with it for the duration of the test task, but before starting the main job I’ll request that the oDesk logging be disabled before talking to Skype - or the time with such screenshots (some 10 minutes covered by one screenshot) will not be approved from that time on.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/11</link>
+        <pubDate>Sun, 04 May 2014 13:52:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+      <item>
+        <title>Hiring on oDesk: let&#39;s share experiences?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <h2>Update for Week 2</h2>
+<p>My contractors continue surprising me.</p>
+<p>The guy who was asking a lot of questions, despite my skeptics about his abilities, suddenly rushed forward, and installed a brand-new Weblogic domain from 0 to fully configured in less than 4 hours. Keeping in mind he never have seen Weblogic before that was quite a feat. Not only that, but the guy started to do the actual coding and at this point is some 50% through. I already see the working pages on his screenshots.</p>
+<p>He’s spent 16 hours so far, but has proven himself to be a fast learner. He’s worried how other 3 doing, but I told him to not worry about that, that he’s actually “keeping up”. The truth is, he’s the one who’s the closest to the completion. Overall he’s a nice surprise this week.</p>
+<p>The girl started to do the coding too, and in just 2 hours she has the application at almost the same stage where the first guy had it. Granted, she has not started with Weblogic yet, so it may cost her some leading.</p>
+<p>The guy who promised 6-8 hours to complete the task hasn’t started working yet. Hasn’t updated me when he plans to start either (all 3 others did). Could be a possible communication issue. Still, I gave them time till 10th, so I’ll wait.</p>
+<p>The fourth guy sent me a message two days ago that he starts “tomorrow”. Today is “day after tomorrow”, still no activity, and no update on why he did not start. Not a good sign too.</p>
+<h2>More Applicants</h2>
+<p>The job is not closed yet, and I still get some submissions. Some are quite funny. One guy managed to raise all red flags I could think of in just a couple of paragraphs:</p>
+<ul>
+<li>He set his rate to $5/hr</li>
+<li>He refused to answer my job questions, saying “will talk on skype”</li>
+<li>He stated he has “attention to details” and made 3 spelling errors right after that</li>
+<li>He called himself “Senior Developer” with 1 year of C++ and 1 year of Java</li>
+</ul>
+<p>I was considering to send him a message to point those out and advise to correct them, but… that wouldn’t be fair for other hiring folks, would it?</p>
+<h2>To Be Continued</h2>
+<p>Looks like next weekend I shall have at least two of the test tasks completed. Will keep you posted.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551/10</link>
+        <pubDate>Sat, 03 May 2014 01:24:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1551-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/hiring-on-odesk-lets-share-experiences/1551.rss">Hiring on oDesk: let&#39;s share experiences?</source>
+      </item>
+  </channel>
+</rss>

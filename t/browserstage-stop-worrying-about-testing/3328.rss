@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>BrowserStage - Stop Worrying About Testing</title>
+    <link>https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328</link>
+    <description>Hi all,
+
+we are currently playing around with our new productized service offering to help web designers and developers get rid of having to write automated web tests. This was more of an accidental discovery as quite a few potential customers for our software made clear that they would rather not create any automated web tests themself. 
+
+The marketing site, over at [http://www.browserstage.com/service][1], is still fresh but maybe some of you would like to give an opinion? 
+
+Thanks!
+
+
+  [1]: http://www.browserstage.com/service</description>
+    
+    <lastBuildDate>Mon, 27 Jul 2015 06:27:43 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>BrowserStage - Stop Worrying About Testing</title>
+        <dc:creator><![CDATA[danielherken]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes the tests will be run on the iPad as well. You could use the service directly to create the test yourself (<a href="http://www.browserstage.com" rel="nofollow noopener">www.browserstage.com</a>) but it is still in private beta at this moment.</p>
+<p>I’m not quite sure about the pricing yet, I think separating the setup from the maintenance  does not work because the test’s them self are of no use without us running them. We have changed it quite a bit to a model where you are able to build ab a test suite over time. Only talking to more potential customers will really solve this I guess.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/5</link>
+        <pubDate>Mon, 27 Jul 2015 06:27:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3328-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328.rss">BrowserStage - Stop Worrying About Testing</source>
+      </item>
+      <item>
+        <title>BrowserStage - Stop Worrying About Testing</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Do your automated tests run on the ipad as well?<br>
+Do you have a service where we set up our own tests?</p>
+<p>It would also be great if we could start small with a few tests on the most critical areas and see how that goes.</p>
+<p>I think pricing by the # of Test Points would be simplest and still make the cost proportional to the value.<br>
+Another option is you charge the client up front for the Test Setup but it comes with free X months of testing (or reverse that: pay for X months and get free/discounted Test setup.</p>
+<p>Then we’d probably love getting those pretty reports showing “no problems” and hopefully expand.</p>
+<p>It think with any service that requires any work on the user’s end that you have to get them some quick early success or you lose them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/4</link>
+        <pubDate>Fri, 24 Jul 2015 16:26:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3328-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328.rss">BrowserStage - Stop Worrying About Testing</source>
+      </item>
+      <item>
+        <title>BrowserStage - Stop Worrying About Testing</title>
+        <dc:creator><![CDATA[danielherken]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for the feedback!</p>
+<p>You are right pricing is still a much discussed matter. One of the potential clients I talked to recently mentioned that after all Amazon would be a Webshop but testing all of Amazon at this price point would not be possible.</p>
+<p>There are a few other ideas of tiers we are currently evaluating:</p>
+<ul>
+<li>Simply limiting the number of new tests per month</li>
+<li>Limiting the time spent on test cases each month</li>
+<li>Limiting the test run time itself</li>
+</ul>
+<p>Of course the real costs (and value) is in creating the tests not running them as this is more or less automated.</p>
+<p>Who said pricing would be easy? <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/3</link>
+        <pubDate>Thu, 23 Jul 2015 04:26:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3328-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328.rss">BrowserStage - Stop Worrying About Testing</source>
+      </item>
+      <item>
+        <title>BrowserStage - Stop Worrying About Testing</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>There is definitely a need ( I know we have it) especially with continual improvement that development uses these days (daily or weekly updates).</p>
+<p>And I know it’s not cheap to provide. Unfortunately, we’d need the webapp version and that’s just out of our price range.<br>
+I"m a notorious cheapskate, so I may not be typical. I’d  pay maybe $100 a month for that but we honestly have a pretty complicated webapp ( <a href="http://www.MoreSpeech.com" rel="nofollow noopener">http://www.MoreSpeech.com</a> ). The only way I think you could do this economically is to have a lower priced plan with fewer  tests being run. I.e., may $500/m is 8 tests a month.  $100 is one or two tests a month.</p>
+<p><strong>Our solution</strong> to this problem is to have really easy feedback from the users. It takes a screenshot so we can see what’s going on.</p>
+<p>And, of course, we are a single data point.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/2</link>
+        <pubDate>Thu, 23 Jul 2015 02:18:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3328-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328.rss">BrowserStage - Stop Worrying About Testing</source>
+      </item>
+      <item>
+        <title>BrowserStage - Stop Worrying About Testing</title>
+        <dc:creator><![CDATA[danielherken]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>we are currently playing around with our new productized service offering to help web designers and developers get rid of having to write automated web tests. This was more of an accidental discovery as quite a few potential customers for our software made clear that they would rather not create any automated web tests themself.</p>
+<p>The marketing site, over at <a href="http://www.browserstage.com/service" rel="nofollow noopener">http://www.browserstage.com/service</a>, is still fresh but maybe some of you would like to give an opinion?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328/1</link>
+        <pubDate>Wed, 22 Jul 2015 08:17:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3328-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/browserstage-stop-worrying-about-testing/3328.rss">BrowserStage - Stop Worrying About Testing</source>
+      </item>
+  </channel>
+</rss>

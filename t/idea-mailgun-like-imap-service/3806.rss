@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Idea: Mailgun-like IMAP Service</title>
+    <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806</link>
+    <description>I am really hoping this exists but I spent some time this afternoon trying to find it and couldn&#39;t. 
+
+I was thinking mailgun works great when you want to send/receive email from your specific domain and can turn email control for that domain over to them completely. However, I was thinking it would be cool to have a service that will periodically check an IMAP box and then if a message is received, parse it into all of its parts and then send to a URL via JSON or even have a REST interface to retrieve them. I found context.io which is a free service doing this with data-mining by their company for their needs but was thinking something paid that would keep data private might be useful for any company dealing with inbound email in some form.</description>
+    
+    <lastBuildDate>Sat, 20 Feb 2016 10:07:40 +0000</lastBuildDate>
+    <category>Idea Pitches</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[moritz]]></dc:creator>
+        <description><![CDATA[
+            <p>There are SaaS alternatives to Email2DB, for example my product <a href="http://mailparser.io" rel="nofollow noopener">mailparser.io</a> <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/10</link>
+        <pubDate>Sat, 20 Feb 2016 10:07:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[Sergey_Kornilov]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://www.email2db.com/" rel="nofollow noopener">Email2db</a> is doing something similar. This is not a SAAS though but a desktop software.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/9</link>
+        <pubDate>Mon, 15 Feb 2016 15:50:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[dtrejo]]></dc:creator>
+        <description><![CDATA[
+            <p>I think <a href="https://postmarkapp.com/" rel="nofollow noopener">https://postmarkapp.com/</a> does this? Not sure, it’s been a while since I researched it.<br>
+Edit: Look’s like the quora link from earlier answers this well, and postmarkapp is included.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/8</link>
+        <pubDate>Sun, 14 Feb 2016 02:21:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[radiac]]></dc:creator>
+        <description><![CDATA[
+            <p>Could you not just use their MX records on a subdomain, then set up a forwarding rule to deliver inbound mail to your imap box and send a copy to the mailgun subdomain? Ie <code>support@example.com</code> is delivered to the <code>support</code> imap mailbox, and also forwarded to <code>support@mailgun.example.com</code>?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/7</link>
+        <pubDate>Sat, 13 Feb 2016 16:55:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[moritz]]></dc:creator>
+        <description><![CDATA[
+            <p>Also have a look at <a href="https://nylas.com/" rel="nofollow noopener">nylas.com</a>. It’s like a paid version of <a href="http://context.io" rel="nofollow noopener">context.io</a> with the advantage that they don’t data-mine your data.</p>
+<p>I think <a href="http://context.io" rel="nofollow noopener">context.io</a> and <a href="http://nylas.com" rel="nofollow noopener">nylas.com</a> are both great if your app needs to access the inboxes of your users. You can delegate the user authentication to them and don’t need to handle polling over POP or IMAP.</p>
+<p>If it’s however for accessing your own e-mail account through your app, have a look at my Quora answer here: <a href="https://www.quora.com/What-are-alternatives-to-Sendgrids-Parse-API/answer/Moritz-Dausinger" rel="nofollow noopener">https://www.quora.com/What-are-alternatives-to-Sendgrids-Parse-API/answer/Moritz-Dausinger</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/6</link>
+        <pubDate>Thu, 11 Feb 2016 07:59:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[buggy]]></dc:creator>
+        <description><![CDATA[
+            <p>I think Amazon SES does inbound email if that helps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/5</link>
+        <pubDate>Wed, 10 Feb 2016 09:16:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[benk]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m thinking more along the line of a service that a SAAS would use. Let’s say it is for a hypothetical helpdesk where the helpdesk would be constantly checking mailboxes to see if any new messages are present. Instead of maintaining that code, the service would do the work and ping a URL when a new message comes in.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/4</link>
+        <pubDate>Tue, 09 Feb 2016 21:59:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m sure there are lots of services that offer this. One is <a href="https://zapier.com/zapbook/imap/" rel="nofollow noopener">https://zapier.com/zapbook/imap/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/3</link>
+        <pubDate>Tue, 09 Feb 2016 13:20:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Mandrill might do this. They definitely support inbound email. Not sure about imap specifically.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/2</link>
+        <pubDate>Sat, 06 Feb 2016 15:57:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+      <item>
+        <title>Idea: Mailgun-like IMAP Service</title>
+        <dc:creator><![CDATA[benk]]></dc:creator>
+        <description><![CDATA[
+            <p>I am really hoping this exists but I spent some time this afternoon trying to find it and couldn’t.</p>
+<p>I was thinking mailgun works great when you want to send/receive email from your specific domain and can turn email control for that domain over to them completely. However, I was thinking it would be cool to have a service that will periodically check an IMAP box and then if a message is received, parse it into all of its parts and then send to a URL via JSON or even have a REST interface to retrieve them. I found <a href="http://context.io" rel="nofollow noopener">context.io</a> which is a free service doing this with data-mining by their company for their needs but was thinking something paid that would keep data private might be useful for any company dealing with inbound email in some form.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806/1</link>
+        <pubDate>Fri, 05 Feb 2016 22:15:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3806-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/idea-mailgun-like-imap-service/3806.rss">Idea: Mailgun-like IMAP Service</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>New product: WhatTheDeploy - Deploy Tracking</title>
+    <link>https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737</link>
+    <description>A common thread through every place I&#39;ve worked is the following conversation:
+
+**Client/Boss:** &quot;Hey, any idea why our page views dipped in mid-April?&quot;
+
+**Me:** &quot;Hey, guys, did we deploy anything in mid-April?&quot;
+
+**Devs:** &quot;¯\\_(ツ)_/¯&quot;
+
+Then comes the frantic digging through GitHub commits - which don&#39;t always match deploy dates - to try and find a culprit.
+
+After a spate of this conversation at the day job and in a pique of frustration, I started building [WhatTheDeploy][1] - a deploy tracking app that tells you _exactly_ what changes were deployed and shows you what the site looked like at the time. All timestamped, with numbers of relevant commits, all the relevant changes, who contributed and responsive screenshots of N pages of your site.
+
+That&#39;s the core of the idea. Later, I&#39;d like to to look not just at what deployed and how the deploy looked, but what that deploy did - to your metrics, to your error rate, to your customer support inquires, etc. But for now, that&#39;s the idea.
+
+I&#39;ve been working on it nights and weekends for a few weeks now and just launched an early landing page for it yesterday.
+
+The link (in case you missed it earlier): http://www.whatthedeploy.com
+
+
+  [1]: http://www.whatthedeploy.com</description>
+    
+    <lastBuildDate>Sat, 11 Oct 2014 03:18:47 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>New product: WhatTheDeploy - Deploy Tracking</title>
+        <dc:creator><![CDATA[chris_vannoy]]></dc:creator>
+        <description><![CDATA[
+            <p>Quick update on this (I need to write a longer blog post on it at some point):</p>
+<p>In light of a change in my situation, I flipped the beta period open to anyone (<a href="http://beta.whatthedeploy.com" rel="nofollow noopener">http://beta.whatthedeploy.com</a>) and it somehow made it’s way to the front page of Hacker News.</p>
+<p>Thousands of visitors, 40 or so accounts created, 3 sites initiated, zero deploys as yet.</p>
+<p>Likely just lookie-loos, but we’ll see where it goes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/7</link>
+        <pubDate>Sat, 11 Oct 2014 03:18:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1737-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737.rss">New product: WhatTheDeploy - Deploy Tracking</source>
+      </item>
+      <item>
+        <title>New product: WhatTheDeploy - Deploy Tracking</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I believe this is a good free open source product to add to one’s portfolio, but I doubt it can ever be sold.</p>
+<aside class="quote" data-post="5" data-topic="1737">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chris_vannoy/40/1208_1.png" class="avatar"> chris_vannoy:</div>
+<blockquote>
+<p>When did X feature launch?When did that redesign launch?How many times did we deploy last month?</p>
+</blockquote>
+</aside>
+<p>All of those are covered by RM discipline. It is better pro-actively prevent an issue than re-actively trying to fix it.</p>
+<p>How it goes? “There are no technical solutions for organizational dis-functions” or something like this.</p>
+<aside class="quote" data-post="5" data-topic="1737">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chris_vannoy/40/1208_1.png" class="avatar"> chris_vannoy:</div>
+<blockquote>
+<p>Like when analytics dips by 30% after a certain date.</p>
+</blockquote>
+</aside>
+<p>You look at the spreadsheet (Google Sheet) and see the list of deployments and their updated artifacts.</p>
+<p>If you generate such a spreadsheet, it may help… not sure how much though. The biggest pain in RM is preparing for the deployment. No wonder some “agile” teams prefer not to do it at all.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/6</link>
+        <pubDate>Mon, 23 Jun 2014 18:46:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1737-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737.rss">New product: WhatTheDeploy - Deploy Tracking</source>
+      </item>
+      <item>
+        <title>New product: WhatTheDeploy - Deploy Tracking</title>
+        <dc:creator><![CDATA[chris_vannoy]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rfctr">@rfctr</a> Less the immediate breakage. You find that out and fix it real quick. The use case here (one of several) is more subtle breakage. Like when analytics dips by 30% after a certain date.</p>
+<p>Other use cases:</p>
+<p>When did X feature launch?<br>
+When did that redesign launch?<br>
+How many times did we deploy last month?<br>
+Release notes (easy creation of is a later feature idea)</p>
+<p>So on and so forth.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/5</link>
+        <pubDate>Mon, 23 Jun 2014 16:09:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1737-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737.rss">New product: WhatTheDeploy - Deploy Tracking</source>
+      </item>
+      <item>
+        <title>New product: WhatTheDeploy - Deploy Tracking</title>
+        <dc:creator><![CDATA[chris_vannoy]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/shantnu">@shantnu</a> It’s early days. As for GitHub, for who I have in mind, that’s where they’d be. Also handily includes a robust API that lets me do a host of tricks and ease the onboarding.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/4</link>
+        <pubDate>Mon, 23 Jun 2014 16:05:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1737-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737.rss">New product: WhatTheDeploy - Deploy Tracking</source>
+      </item>
+      <item>
+        <title>New product: WhatTheDeploy - Deploy Tracking</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="1737">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/chris_vannoy/40/1208_1.png" class="avatar"> chris_vannoy:</div>
+<blockquote>
+<p>Hey, guys, did we deploy anything in mid-April?</p>
+</blockquote>
+</aside>
+<p>What is that, a Mom’n’Pop shop? Ever heard of Release Management?</p>
+<p>It is fine you’re trying to fix someone’s screw-ups… but if I had this problem I’d invest money into building the proper RM process rather than try and figure out who has pushed something into prod and why – when the damage is already done.</p>
+<p>And the amateurs handling their PROD like this are not going to pay, anyway. They do not care.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/3</link>
+        <pubDate>Sat, 21 Jun 2014 13:12:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1737-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737.rss">New product: WhatTheDeploy - Deploy Tracking</source>
+      </item>
+      <item>
+        <title>New product: WhatTheDeploy - Deploy Tracking</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p>It looks okay, but could you have a few more graphics up? Something that shows visually how the tool will help. You have a image there, but I have no idea what it’s about.</p>
+<p>Also, why just Github? I don’t have any statistics, but do all webby type companies use Github?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/2</link>
+        <pubDate>Sat, 21 Jun 2014 08:56:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1737-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737.rss">New product: WhatTheDeploy - Deploy Tracking</source>
+      </item>
+      <item>
+        <title>New product: WhatTheDeploy - Deploy Tracking</title>
+        <dc:creator><![CDATA[chris_vannoy]]></dc:creator>
+        <description><![CDATA[
+            <p>A common thread through every place I’ve worked is the following conversation:</p>
+<p><strong>Client/Boss:</strong> “Hey, any idea why our page views dipped in mid-April?”</p>
+<p><strong>Me:</strong> “Hey, guys, did we deploy anything in mid-April?”</p>
+<p><strong>Devs:</strong> “¯\<em>(ツ)</em>/¯”</p>
+<p>Then comes the frantic digging through GitHub commits - which don’t always match deploy dates - to try and find a culprit.</p>
+<p>After a spate of this conversation at the day job and in a pique of frustration, I started building <a href="http://www.whatthedeploy.com" rel="nofollow noopener">WhatTheDeploy</a> - a deploy tracking app that tells you <em>exactly</em> what changes were deployed and shows you what the site looked like at the time. All timestamped, with numbers of relevant commits, all the relevant changes, who contributed and responsive screenshots of N pages of your site.</p>
+<p>That’s the core of the idea. Later, I’d like to to look not just at what deployed and how the deploy looked, but what that deploy did - to your metrics, to your error rate, to your customer support inquires, etc. But for now, that’s the idea.</p>
+<p>I’ve been working on it nights and weekends for a few weeks now and just launched an early landing page for it yesterday.</p>
+<p>The link (in case you missed it earlier): <a href="http://www.whatthedeploy.com" rel="nofollow noopener">http://www.whatthedeploy.com</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737/1</link>
+        <pubDate>Fri, 20 Jun 2014 15:33:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1737-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/new-product-whatthedeploy-deploy-tracking/1737.rss">New product: WhatTheDeploy - Deploy Tracking</source>
+      </item>
+  </channel>
+</rss>

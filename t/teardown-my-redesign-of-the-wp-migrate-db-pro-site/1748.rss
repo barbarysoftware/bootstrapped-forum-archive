@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+    <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748</link>
+    <description>Just launched a redesign of https://deliciousbrains.com/wp-migrate-db-pro/ today with lots of the sales page tips I&#39;ve learned over the past 14 months since the last design. I&#39;m looking for feedback and tips on specific things I could add, remove, or change to increase conversions. So, if you could take a look and post your feedback, that would be awesome. I&#39;ll be A/B testing any changes I make and can share the results here. I&#39;m mostly interested in feedback on the following pages:
+
+ - [Main page][1]
+ - [Pricing][2]
+ - Checkout
+
+As a teaser, I&#39;ve recently A/B tested having the most expensive package on the left and the least expensive on the right and it resulted in a 30% improvement in conversions. Huge and unexpected. :)
+
+
+  [1]: https://deliciousbrains.com/wp-migrate-db-pro/
+  [2]: https://deliciousbrains.com/wp-migrate-db-pro/pricing/</description>
+    
+    <lastBuildDate>Tue, 26 Aug 2014 01:17:08 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+        <dc:creator><![CDATA[bradt]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s some A/B testing results:</p>
+<p><a href="/uploads/bootstrapped/2503/debcc087c4e596c7.png"><img src="/uploads/bootstrapped/2503/debcc087c4e596c7.png" width="261" height="500"></a></p>
+<p>I was testing a few different goals here:</p>
+<ol>
+<li>
+<a href="https://help.optimizely.com/hc/en-us/articles/200039915#engagement">Engagement</a> - Optimizely’s default goal</li>
+<li>Pricing Page - to see if the new features page increased click throughs to the pricing page</li>
+<li>Conversions - to see if the new features page increased sales conversions. Unfortunately this one would take another couple of months of running this test to declare a winner and I’m not willing to wait that long.</li>
+</ol>
+<p>The variations:</p>
+<ul>
+<li><a href="https://deliciousbrains.com/wp-migrate-db-pro/?optimizely_disable=true">Original</a></li>
+<li><a href="https://deliciousbrains.com/wp-migrate-db-pro-1/?optimizely_disable=true">New</a></li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/9</link>
+        <pubDate>Tue, 26 Aug 2014 01:17:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1748-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss">Teardown my redesign of the WP Migrate DB Pro site</source>
+      </item>
+      <item>
+        <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+        <dc:creator><![CDATA[bradt]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks a ton for the feedback folks, especially <a class="mention" href="/u/casjam">@CasJam</a> for his comprehensive analysis and detail! I’m currently running an A/B test between my <a href="https://deliciousbrains.com/wp-migrate-db-pro/?optimizely_disable=true" rel="nofollow noopener">original features page</a> and the <a href="https://deliciousbrains.com/wp-migrate-db-pro-1/?optimizely_disable=true" rel="nofollow noopener">new page</a> that incorporates your feedback to see if one drives more people through to the pricing page. I’ll share the results in 2-3 weeks, when the experiment has concluded.</p>
+<p>If there’s anything in the new page that should be fixed, please let me know.</p>
+<p>Once this is done, I’ll be running an experiment on the pricing page for your feedback on that and then the checkout.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/8</link>
+        <pubDate>Tue, 29 Jul 2014 14:04:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1748-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss">Teardown my redesign of the WP Migrate DB Pro site</source>
+      </item>
+      <item>
+        <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+        <dc:creator><![CDATA[perceptec]]></dc:creator>
+        <description><![CDATA[
+            <p>I think <a class="mention" href="/u/johnf">@johnf</a> makes a good point about the headline, and I’d shorten it even further. “One-click” could be the lever.</p>
+<p>And my eye wants to see that headline bold. You have a strong tag in there but the main stylesheet is setting its weight to 200.</p>
+<p>Here’s a quick mockup with a couple of simple changes:</p>
+<p><a href="http://tinypic.com/r/2hcj86e/8" class="onebox" target="_blank" rel="nofollow noopener">http://tinypic.com/r/2hcj86e/8</a></p>
+<p>(I tried to insert it directly but the system said no thanks, noob.)</p>
+<p>This increases the font weight to 700, bold (800 or extra-bold seemed too heavy), decreases the line-height slightly, balances the next section header with the same change, and reduces the padding at the top of that section.</p>
+<p>Just my take on it. Personal tastes vary, of course!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/7</link>
+        <pubDate>Fri, 27 Jun 2014 18:07:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1748-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss">Teardown my redesign of the WP Migrate DB Pro site</source>
+      </item>
+      <item>
+        <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+        <dc:creator><![CDATA[sansmagicc]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/casjam">@CasJam</a>’s has some great points.</p>
+<p>Starting top up, here’s what I have to add:</p>
+<ol>
+<li>I don’t like the way the pink header fades into the blue background of the photo. It’s a clash of colours.</li>
+<li>Can you be even more specific in the main CTA?, i.e.: “Save yourself a lot of time and headaches with WP Migrate DB Pro.” I just tend to run away from “saves time”, “saves money”, because it’s too generic. For example you can say something like: “Save yourself hours of manually copying files between Wordpress installations.” Not brilliant, but I’m trying to illustrate a point here.</li>
+<li>I’d also remove any links besides pricing. You have enough distracting links at the top of the page. And speaking of that, do you need that pink header at all? <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:">
+</li>
+<li>Nothing beats recommendation by real people. Do you have other testimonials? Longer ones? I’m pretty sure that your support inbox contains them. I’d pick 2-3 testimonials where people described at length their personal case and how your plugin helped them and saved them time and money. Then I’d put some of those in the middle of the page, before, well your third CTA. And another portion before the last CTA.</li>
+<li>I also don’t like that the testimonials section is called “customer reviews”. Sounds too distant to me. And yeah, you definitely don’t want anyone clicking on any link before your final CTA.</li>
+<li>You can reduce the number of CTAs and use a brighter colour as <a class="mention" href="/u/casjam">@CasJam</a> suggested. I don’t think you need that many. But you definitely want them to be very very easy to spot.</li>
+<li>One more thing that is a quite broad topic: It’s all features, features, features. Can you turn them into benefits? For example: Why do people need to push and pull databases? This is a feature. I gather it has to do something with keeping your local server and your development server in sync. What is more important to a wordpress developer? Being able to push and pull some databases or seamless sync between local and staging server? I may not be entirely right, because I’m not your target customer, but I think the copy can be improved by parsing it through the “Is it a feature or a benefit?” filter.</li>
+</ol>
+<p>I hope that I helped. It would be really interesting to hear about the results of your A/B tests.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/6</link>
+        <pubDate>Fri, 27 Jun 2014 16:27:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1748-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss">Teardown my redesign of the WP Migrate DB Pro site</source>
+      </item>
+      <item>
+        <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+        <dc:creator><![CDATA[NicheDiver]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice, clean design.  Great notes from <a class="mention" href="/u/casjam">@CasJam</a>.</p>
+<p>I’d also note that on the pricing page you have three CTAs all pulling at me - using the same colors -  when I think you are trying to emphasize the middle one.  On my screen, the “Buy Now” CTAs for two leftmost tiers are below the fold - so immediately my eyes are drawn to the far right CTA since it is the only one I can see on entry.</p>
+<p>I’d consider evening up the columns so there can never be one CTA shown w/o the others.  Also consider changing the color of the CTAs for the two you want to de-emphasize.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/5</link>
+        <pubDate>Wed, 25 Jun 2014 21:40:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1748-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss">Teardown my redesign of the WP Migrate DB Pro site</source>
+      </item>
+      <item>
+        <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+        <dc:creator><![CDATA[CasJam]]></dc:creator>
+        <description><![CDATA[
+            <p>Overall the new site looks great.  I don’t remember what the old one looked like, but this one feels very high-impact overall.  Nice work.</p>
+<p>A few notes.  Some just design details.  Not sure how these might impact conversion…</p>
+<ul>
+<li>
+<p>Top headlines and 2nd lines below them appear as one block of text.  They can be differentiated visually.  Increase the impact of the top headline, and decrease it on the 2nd line (make 2nd line of text smaller, or lighter color).  You did a great job of this further down the page, but could be done better in that top section. <a href="http://d.pr/i/bQOj" rel="nofollow noopener">http://d.pr/i/bQOj</a></p>
+</li>
+<li>
+<p>There isn’t much social proof near the top of the page.  Since your plugin has been around a while, and has become THE tool when it comes to migrations, that needs to be promoted front and center.  Grab 2 of those blue tweets and copy them somewhere near the top.  Or maybe tweak the 2nd headline to something like “Learn why thousands of developers rely on WP Migrate Pro for their migrations”, etc.</p>
+</li>
+<li>
+<p>I’d pick one consistent color, a bright one, and apply it to the primary call-to-action, the “Pricing” links.  Most of the Pricing links are in gray (<a href="http://d.pr/i/173t" rel="nofollow noopener">http://d.pr/i/173t</a>) except for the one at the bottom which is that bright green (<a href="http://d.pr/i/173t" rel="nofollow noopener">http://d.pr/i/173t</a>).  I’d use that green for all of them (or the pink, seen on the next page).  Whichever color you use, apply it only to those CTA’s and no where else (makes them stand out more).</p>
+</li>
+<li>
+<p>Should “Add-ons” come below “More Features” instead of above it?  Add-ons also seems very heavy (bold colors, animation).  Are they that important compared to everything else?</p>
+</li>
+<li>
+<p>“More Features” (<a href="http://d.pr/i/Ye30" rel="nofollow noopener">http://d.pr/i/Ye30</a>) feels a little flat, both visually and in the copy.  I’d give each one an icon to the left of the text.  Maybe focus the copy more why each benefit “matters”… but then again, your audience are devs and they probably get it.</p>
+</li>
+<li>
+<p>“More Customer Reviews” link (<a href="http://d.pr/i/psTr" rel="nofollow noopener">http://d.pr/i/psTr</a>) - The link itself could be a distraction from the path you want users to take (get to the pricing page, then buy).  I’d de-emphasize it (make it smaller).  Also, on that testimonials page, there’s no CTA to take the next step (see pricing).</p>
+</li>
+<li>
+<p>Pricing tiers (<a href="http://d.pr/i/kts2" rel="nofollow noopener">http://d.pr/i/kts2</a>) Looks like you’re trying to nudge people toward the middle plan, but if that’s the case then I’d separate it more.  Make it a bolder color than the others, make it’s font size larger (or make the others smaller).  But is that middle plan the right one to emphasize?</p>
+</li>
+<li>
+<p>“Find a lower price?” (<a href="http://d.pr/i/AIfb" rel="nofollow noopener">http://d.pr/i/AIfb</a>) - I’m not crazy about this piece.  I get what you’re doing, saying there’s no point in waiting. But it also tells me that you do frequently run coupons, and what if you do and I don’t notice it?  I’d remove this and…</p>
+</li>
+<li>
+<p>“Have a coupon code?” link at the top of the purchase form (<a href="http://d.pr/i/6qXQ" rel="nofollow noopener">http://d.pr/i/6qXQ</a>) - This shouldn’t be the very first thing you see.  It should be almost invisible.  Bottom of form, small text, light color.  Those who have a coupon code will hunt for it.  The rest shouldn’t even think about it.  On my forms, I only include this link when I’m actually running a promotion.  Most times it’s not even there.</p>
+</li>
+<li>
+<p>“Seem a little pricey?” (<a href="http://d.pr/i/ENgI" rel="nofollow noopener">http://d.pr/i/ENgI</a>) - I like the whole idea here, except for this headline.  I’d change it to something like “Instant ROI”.  Focus more on the benefit (the ROI) than the friction (too expensive).</p>
+</li>
+</ul>
+<p>Interested to see how the tests go!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/4</link>
+        <pubDate>Wed, 25 Jun 2014 13:43:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1748-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss">Teardown my redesign of the WP Migrate DB Pro site</source>
+      </item>
+      <item>
+        <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+        <dc:creator><![CDATA[johnf]]></dc:creator>
+        <description><![CDATA[
+            <p>Don’t like the hero headline.  Too nebulous and fluffy.  You make migrations beautiful?</p>
+<p>Why not just start out with: Copy your database from one WordPress install<br>
+to another with one click in your dashboard.</p>
+<p>Tell it like it is!</p>
+<p>I found this link the other day and the same thing came up with a bunch of these teardowns:<br>
+<a href="http://unbounce.com/landing-page-examples/22-brutally-honest-landing-page-critiques/" class="onebox" target="_blank" rel="nofollow noopener">http://unbounce.com/landing-page-examples/22-brutally-honest-landing-page-critiques/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/3</link>
+        <pubDate>Wed, 25 Jun 2014 01:41:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1748-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss">Teardown my redesign of the WP Migrate DB Pro site</source>
+      </item>
+      <item>
+        <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+        <dc:creator><![CDATA[jeff]]></dc:creator>
+        <description><![CDATA[
+            <p>Great work, I love it!<br>
+Thr main page:</p>
+<ul>
+<li>Its immediately clear what the tool is and what it does - great;</li>
+<li>I like the section with the customer reviews;</li>
+<li>The “More features” section is too simple…I skipped it while scrolling, because it seems unimportant. Maybe use some icons and colors like the “Addons”. The screenshots above take too much space;</li>
+<li>While the design is a little bit too “clean” for my taste, overall the main page looks really solid and I would say that I am sold :)… if only I was actively using WP.</li>
+</ul>
+<p>The pricing page:</p>
+<ul>
+<li>It’s ok… The “Seem a little pricey?” section is a spot on :)… I thought the same thing when I first saw the prices, but this makes sense (Keep in mind that I am not a WP developer).<br>
+The checkout:</li>
+<li>Looks ok, but maybe the “Order summary” should be at the top of the page… this way I would know why I am entering my details. Right now I have to scroll down (and the page is rather long) to see what I am buying and how I can pay.</li>
+</ul>
+<p>Overall - the main things that make your site look solid to me:</p>
+<ol>
+<li>You can directly name and describe what your tool is and does.</li>
+<li>The customer reviews with the tweeter handles of the reviewers.</li>
+<li>The documentation</li>
+<li>The videos</li>
+</ol>
+<p>Hope this is of some help for you <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/2</link>
+        <pubDate>Tue, 24 Jun 2014 22:14:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1748-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss">Teardown my redesign of the WP Migrate DB Pro site</source>
+      </item>
+      <item>
+        <title>Teardown my redesign of the WP Migrate DB Pro site</title>
+        <dc:creator><![CDATA[bradt]]></dc:creator>
+        <description><![CDATA[
+            <p>Just launched a redesign of <a href="https://deliciousbrains.com/wp-migrate-db-pro/" rel="nofollow noopener">https://deliciousbrains.com/wp-migrate-db-pro/</a> today with lots of the sales page tips I’ve learned over the past 14 months since the last design. I’m looking for feedback and tips on specific things I could add, remove, or change to increase conversions. So, if you could take a look and post your feedback, that would be awesome. I’ll be A/B testing any changes I make and can share the results here. I’m mostly interested in feedback on the following pages:</p>
+<ul>
+<li><a href="https://deliciousbrains.com/wp-migrate-db-pro/" rel="nofollow noopener">Main page</a></li>
+<li><a href="https://deliciousbrains.com/wp-migrate-db-pro/pricing/" rel="nofollow noopener">Pricing</a></li>
+<li>Checkout</li>
+</ul>
+<p>As a teaser, I’ve recently A/B tested having the most expensive package on the left and the least expensive on the right and it resulted in a 30% improvement in conversions. Huge and unexpected. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748/1</link>
+        <pubDate>Tue, 24 Jun 2014 19:06:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1748-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/teardown-my-redesign-of-the-wp-migrate-db-pro-site/1748.rss">Teardown my redesign of the WP Migrate DB Pro site</source>
+      </item>
+  </channel>
+</rss>

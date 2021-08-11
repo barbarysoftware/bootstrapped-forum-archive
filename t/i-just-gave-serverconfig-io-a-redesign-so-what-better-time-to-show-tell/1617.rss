@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+    <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617</link>
+    <description>About a month ago, I was looking for good default settings for web servers, and possibly a calculator. Not only did I not find an online calculator, I was hard pressed to find good default settings for different size web servers. I decided to build one.
+
+[Server Config](http://serverconfig.io/) was born. It is geared towards web developers who don&#39;t know a ton of server configuration. Obviously, each web app is different, but Apache and MySQL defaults leave much to be desired, and they don&#39;t take into account different levels of system memory. 
+
+My near-term goal is to have users generate their settings on Server Config then use Digital Ocean/Rackspace/other&#39;s APIs to create the server for them with those settings. Longer-term I&#39;d like user accounts where users could save their settings.
+
+I&#39;d appreciate very much and advice any of you could give me, from the new design to my plan for the future. Thank you.
+
+- T</description>
+    
+    <lastBuildDate>Sat, 17 May 2014 02:04:05 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[tomboruta]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you all for your input! Bootstrapped forum rocks!</p>
+<p>You all gave me a lot to think about. I posted this on reddit and a few people said they would love something that would speed up their server deployment as they do many per month, but I do agree that that market is not very large. So, I agree that a subscription is probably not the way to go.</p>
+<p>I think my best bet is to keep my current calculator free (to get traffic/links/etc) and then offer a one time purchase of preconfigured images for specific situations, Wordpress Install, Drupal install, etc. To gain more traffic I’ll start a blog on the site with information catered towards users who do not know much about servers.</p>
+<p>Another one-time purchase hand holding book (PDF) might also be a good idea, however, it will have to cover a lot and it will entail lots of command-line usage by the user… not sure how big the market is for something like this.</p>
+<p>Consulting is not really an option right now, as I have a full-time day job, a wife, 2 kids, and a new baby on the way. If I could make enough from other avenues that I would be able to quit my day job, then I would definitely think about consulting.</p>
+<p>Thank you <a class="mention" href="/u/rfctr">@rfctr</a>, <a class="mention" href="/u/shantnu">@shantnu</a>, <a class="mention" href="/u/saltvedt">@saltvedt</a>, and <a class="mention" href="/u/danielstudds">@danielstudds</a> for all your advice. I will keep thinking and experimenting on how to make this successful.</p>
+<ul>
+<li>T</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/11</link>
+        <pubDate>Sat, 17 May 2014 02:04:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <p>So, first up, I can see a plausible product here. Slight twist: it’s not a subscription to config info that gets applied automatically. It’s a retainer for you to maintain their server(s). Productized consulting, perhaps along the lines of what Dan Norris has done with <a href="http://wpcurve.com/" rel="nofollow noopener">WP Curve</a>.</p>
+<p>Secondly, you’ve created a useful tool that can potentially start driving some traffic. Great.</p>
+<p>The essential challenge that I see is that the traffic you’re going to get to <a href="http://serverconfig.io" rel="nofollow noopener">serverconfig.io</a> is not going to be interested in paying you a retainer. Why? Because <a href="http://serverconfig.io" rel="nofollow noopener">serverconfig.io</a>, as it stands, is designed for people like you. People who already understand sys admin. They KNOW they need these settings, they just don’t know what they are. They probably already have their servers up and running, and are now just tuning them.</p>
+<p>You might be able to convert some people who hit your site and think, ok yes I can do this, but <a class="mention" href="/u/tomboruta">@tomboruta</a> can do it as well or better, and I can get on with other stuff, so here’s my credit card number. Perhaps.</p>
+<p>Who is your ideal customer? Will they be able to discover <a href="http://serverconfig.io" rel="nofollow noopener">serverconfig.io</a>?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/10</link>
+        <pubDate>Fri, 16 May 2014 14:48:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m pretty sure a decent PDF with best settings in a few common scenarios could be produced in a weekend, uploaded and linked with … what’s its name? the one-click payment processor for PDFs and other downloadable stuff? I forgot… anyway, the point is: it would validate the market. Or lack thereof.</p>
+<p>Before investing months into building a service… it is better to be sure market is there.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/9</link>
+        <pubDate>Fri, 16 May 2014 12:18:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="1617">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>One server = no subscription = gotta do a single sale.</p>
+</blockquote>
+</aside>
+<p>I agree. Like I know little or nothing about configuring servers. I would never buy a subscription.</p>
+<p>But I would pay for a good hand holding book, that goes step by step and explains everything I’d need to know to be able to do my own thing.</p>
+<p>One time sales are also a good idea. If I need a server tomorrow and don’t have time to go around digging, you could just sell a preconfigured image. That way, you are helping those who want to learn, as well as those who just want to Git-it-done.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/8</link>
+        <pubDate>Fri, 16 May 2014 08:14:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="1617">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/t/91b2a8/40.png" class="avatar"> tomboruta:</div>
+<blockquote>
+<p>Also, I may actually put the “Create Server for you” behind a “Pro” subscription for my site.</p>
+</blockquote>
+</aside>
+<p>I do not want to impose my opinion on this… but I will, because of the kind of a place here is:</p>
+<p>I have to ask you who are your target subscribers?</p>
+<p>Who are those people who apparently configure quite a lot of servers (hence subscription) and at the same time know little about said servers configuration?</p>
+<p>I’m afraid this set would be empty.</p>
+<p>If I were you I’d target people who do not have a clue about server configuration. By necessity, that would be their first and may be the only server configured in a few years. Total newbies.</p>
+<p>One server = no subscription = gotta do a <em>single</em> sale.</p>
+<p>What can you sell them? I’d say a book or rather an online calculator that, given some input in layman’s terms (number of users, …) would calculate them the required configuration for nginx and whatnot, and also recommended the best hosting (with referral, of course).</p>
+<p>Give nothing for free, but post a video how a total dummy is walked hand-holded from a few basic ideas he (scratch it: she; a blonde with long hair and a deep v-neck) had about the future site to a complete configuration for all required applications and a list of best hostings that satisfy the technical and cost requirements.</p>
+<p>May be even better market are the site owners who suddenly face the horror of bad performance. What to do? How to reconfig? I’m losing money on daily basis!!! And here you are, saving the day. After taking the pay, of course.</p>
+<p>Anyway, just my tucents. You may not listen to me, because I so far sold nothing, and all I’m saying could be a total BS, for all I know.</p>
+<p>Good luck!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/7</link>
+        <pubDate>Fri, 16 May 2014 03:39:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[saltvedt]]></dc:creator>
+        <description><![CDATA[
+            <p>This is very similar to <a href="https://puphpet.com/" rel="nofollow noopener">PuPHPet</a>. It’s open source, and I suggest you take the same approach as they do for configuring servers, utilizing a configuration management tool.</p>
+<p>That being said, I don’t think web developers who don’t know a ton about server configuration care much about changing the default settings.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/6</link>
+        <pubDate>Wed, 14 May 2014 20:35:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[tomboruta]]></dc:creator>
+        <description><![CDATA[
+            <p>No, they don’t pay for generic information, but if I save them time by setting up the sever automatically, I think people will pay. Yeah, I was thinking about preconfigured images, or scripts that set the settings for you, or something along those lines. The time-saving stuff would be behind a subscription.</p>
+<p>Hmmm, the help balloons open and close on the same link area (the text &amp; the question mark), do you think I should have it close if you click elsewhere on the page?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/5</link>
+        <pubDate>Wed, 14 May 2014 12:55:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[tomboruta]]></dc:creator>
+        <description><![CDATA[
+            <p>Digital Ocean and others have affiliate programs which can the income revenue for this portion. Also, I may actually put the “Create Server for you” behind a “Pro” subscription for my site.</p>
+<p>So, the front facing calculator and instructions on how to implement the settings would be free, but if you’d like to save your time and have the site do it for you, that’s behind a paywall.</p>
+<p>Also, I would have other things behind the subscription, not just one feature.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/4</link>
+        <pubDate>Wed, 14 May 2014 12:51:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="1617">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>There are certainly money in servers administration,</p>
+</blockquote>
+</aside>
+<p>Do people pay for information like this (generally)? One way would be to sell preconfigured images that you can just download to Digital Ocean or similar. That way, people who know what they are doing can still get the data, others can just use an image that has been pre-optimised.</p>
+<p>Also, minor bug: There is no way to close the help balloon. I just ended up randomly clicking to get rid of it, but that didn’t work everytime.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/3</link>
+        <pubDate>Wed, 14 May 2014 08:06:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="1617">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/t/91b2a8/40.png" class="avatar"> tomboruta:</div>
+<blockquote>
+<p>My near-term goal is to have users generate their settings on Server Config then use Digital Ocean/Rackspace/other’s APIs to create the server for them with those settings.</p>
+</blockquote>
+</aside>
+<p>Hmm… are you expecting them to pay for this?</p>
+<p>There are certainly money in servers administration, but I’m not sure it is the right angle.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/2</link>
+        <pubDate>Wed, 14 May 2014 04:08:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+      <item>
+        <title>I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</title>
+        <dc:creator><![CDATA[tomboruta]]></dc:creator>
+        <description><![CDATA[
+            <p>About a month ago, I was looking for good default settings for web servers, and possibly a calculator. Not only did I not find an online calculator, I was hard pressed to find good default settings for different size web servers. I decided to build one.</p>
+<p><a href="http://serverconfig.io/" rel="nofollow noopener">Server Config</a> was born. It is geared towards web developers who don’t know a ton of server configuration. Obviously, each web app is different, but Apache and MySQL defaults leave much to be desired, and they don’t take into account different levels of system memory.</p>
+<p>My near-term goal is to have users generate their settings on Server Config then use Digital Ocean/Rackspace/other’s APIs to create the server for them with those settings. Longer-term I’d like user accounts where users could save their settings.</p>
+<p>I’d appreciate very much and advice any of you could give me, from the new design to my plan for the future. Thank you.</p>
+<ul>
+<li>T</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617/1</link>
+        <pubDate>Tue, 13 May 2014 22:45:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1617-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/i-just-gave-serverconfig-io-a-redesign-so-what-better-time-to-show-tell/1617.rss">I just gave ServerConfig.io a redesign, so what better time to Show &amp; Tell</source>
+      </item>
+  </channel>
+</rss>

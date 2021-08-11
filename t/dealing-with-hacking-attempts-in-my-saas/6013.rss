@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Dealing with hacking attempts in my SaaS</title>
+    <link>https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013</link>
+    <description>Here&#39;s a snippet of our access logs today:
+
+    172.31.17.65 - - [13/Sep/2018:09:26:45 +0000] &quot;GET /java.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:26:46 +0000] &quot;GET /db_cts.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:26:47 +0000] &quot;GET /logon.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:26:48 +0000] &quot;GET /license.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:26:49 +0000] &quot;GET /hell.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:26:50 +0000] &quot;GET /x.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:03 +0000] &quot;GET /lala.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:10 +0000] &quot;GET /muhstik.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:11 +0000] &quot;GET /muhstiks.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:12 +0000] &quot;GET /lol.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:14 +0000] &quot;GET /uploader.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:15 +0000] &quot;GET /cmx.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:16 +0000] &quot;GET /cmdd.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:19 +0000] &quot;GET /knal.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:19 +0000] &quot;GET /cmd.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+    172.31.17.65 - - [13/Sep/2018:09:27:19 +0000] &quot;GET /shell.php HTTP/1.1&quot; 404 1446 &quot;-&quot; &quot;Mozilla/5.0&quot; &quot;132.232.147.108&quot;
+
+(I&#39;ve truncated the list - it is much longer).
+
+A lot of different php paths are accessed in a short period. I guess someone is running a penetration testing tool on our site.
+
+This happens quite often. 
+
+it doesn&#39;t seem to be doing any real harm, as far as I can tell. However, I still wonder if there is a best practice for handling this type of traffic?
+
+Temporarily blacklisting the IP address is one approach I considered.</description>
+    
+    <lastBuildDate>Sat, 15 Sep 2018 07:45:07 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Dealing with hacking attempts in my SaaS</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all.</p>
+<p>I’m hosting on AWS. I’m using the Java Spark framework.</p>
+<p>My biggest issue with this traffic is that it pollutes the logs with thousands of 404s that have nothing to do with our app. This makes it hard for us to spot the 404s that are a result of our programming errors.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/8</link>
+        <pubDate>Sat, 15 Sep 2018 07:45:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6013-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013.rss">Dealing with hacking attempts in my SaaS</source>
+      </item>
+      <item>
+        <title>Dealing with hacking attempts in my SaaS</title>
+        <dc:creator><![CDATA[mcasas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>I’m not sure, but maybe Fail2Ban can help you blocking all these attempts? Here you can read how to block Apache2 and nginx requests using Fail2Ban: <a href="https://nichteinschalten.de/apache-nginx-404-fail2ban-regex/" rel="nofollow noopener">https://nichteinschalten.de/apache-nginx-404-fail2ban-regex/</a></p>
+<p>P.S.: Where are you hosting your SaaS? A VPS, or something managed like Heroku?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/7</link>
+        <pubDate>Sat, 15 Sep 2018 07:28:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6013-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013.rss">Dealing with hacking attempts in my SaaS</source>
+      </item>
+      <item>
+        <title>Dealing with hacking attempts in my SaaS</title>
+        <dc:creator><![CDATA[crispinheneise]]></dc:creator>
+        <description><![CDATA[
+            <p>What tech stack are you using? Most web frameworks have some good libraries for locking down apps from common attacks.</p>
+<p>For example, Rails has built-in CSRF, SQL injection, CSP, and more. There are also good third-party libraries like <a href="https://brakemanscanner.org/" rel="nofollow noopener">Brakeman</a> that can help scan your app for common vulnerabilities.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/6</link>
+        <pubDate>Fri, 14 Sep 2018 14:18:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6013-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013.rss">Dealing with hacking attempts in my SaaS</source>
+      </item>
+      <item>
+        <title>Dealing with hacking attempts in my SaaS</title>
+        <dc:creator><![CDATA[Virgil]]></dc:creator>
+        <description><![CDATA[
+            <p>I get this daily. I even got a user that signed up and tried lots of SQL injections and XSS attacks. As far as I know, those are hacker bots, once they get your website added to their list will keep trying everything they know.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/5</link>
+        <pubDate>Fri, 14 Sep 2018 02:57:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6013-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013.rss">Dealing with hacking attempts in my SaaS</source>
+      </item>
+      <item>
+        <title>Dealing with hacking attempts in my SaaS</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, that’s some good advice.</p>
+<p>I took a quick look at AWS WAF and it seems to be exactly what I need to deal with the problem.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/4</link>
+        <pubDate>Thu, 13 Sep 2018 13:48:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6013-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013.rss">Dealing with hacking attempts in my SaaS</source>
+      </item>
+      <item>
+        <title>Dealing with hacking attempts in my SaaS</title>
+        <dc:creator><![CDATA[Luis]]></dc:creator>
+        <description><![CDATA[
+            <p>The source ip belongs to the private 20 bit block as described on rfc1918 so it’s useless to block that ip address imho.  Are you already behind a balancer or proxy? You can setup your webserver to log using the “X-Forwarded-For” header that should contain the correct ip address of the remote user. (assuming a correctly configured proxy). Alternatively you’ll have to check the real ip on the proxy’s logs.</p>
+<p>As for the main issue, I also deal with stuff like this on a semi regular basis. I use CSF firewall which you can setup to do some automatic ip banning and also has a deny file where I regularly add these kind of ips which in turn completely blocks access for that ip.<br>
+Other than that, I don’t think there’s much you can do to stop these completely. The best thing to do is make sure you have a well built and secured app and that you thoroughly sanitize all inputs. Also +1 on <a class="mention" href="/u/jitbit">@jitbit</a> 's recommendations.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/3</link>
+        <pubDate>Thu, 13 Sep 2018 11:06:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6013-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013.rss">Dealing with hacking attempts in my SaaS</source>
+      </item>
+      <item>
+        <title>Dealing with hacking attempts in my SaaS</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Someone’s just probing for known vulnerabilities.</p>
+<ol>
+<li>
+<p>Get behind a WAF (web application firewall) that will filter suspicious requests if this bothers you. A CDN provider like CloudFlare or AWS (also have a WAF offering) have this.</p>
+</li>
+<li>
+<p>If you want to build something yourself rather than paying for a cloud offering - having a load-balancer/reverse-proxy in front of your webserver is a good alternative (so hackers will hack this front-server, not the actual production machine). A $3.5/month amazon “lightsail” sever with nginx reverse proxy will do. But i’d stick with the option 1.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/2</link>
+        <pubDate>Thu, 13 Sep 2018 10:40:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6013-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013.rss">Dealing with hacking attempts in my SaaS</source>
+      </item>
+      <item>
+        <title>Dealing with hacking attempts in my SaaS</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s a snippet of our access logs today:</p>
+<pre><code>172.31.17.65 - - [13/Sep/2018:09:26:45 +0000] "GET /java.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:26:46 +0000] "GET /db_cts.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:26:47 +0000] "GET /logon.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:26:48 +0000] "GET /license.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:26:49 +0000] "GET /hell.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:26:50 +0000] "GET /x.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:03 +0000] "GET /lala.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:10 +0000] "GET /muhstik.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:11 +0000] "GET /muhstiks.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:12 +0000] "GET /lol.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:14 +0000] "GET /uploader.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:15 +0000] "GET /cmx.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:16 +0000] "GET /cmdd.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:19 +0000] "GET /knal.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:19 +0000] "GET /cmd.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+172.31.17.65 - - [13/Sep/2018:09:27:19 +0000] "GET /shell.php HTTP/1.1" 404 1446 "-" "Mozilla/5.0" "132.232.147.108"
+</code></pre>
+<p>(I’ve truncated the list - it is much longer).</p>
+<p>A lot of different php paths are accessed in a short period. I guess someone is running a penetration testing tool on our site.</p>
+<p>This happens quite often.</p>
+<p>it doesn’t seem to be doing any real harm, as far as I can tell. However, I still wonder if there is a best practice for handling this type of traffic?</p>
+<p>Temporarily blacklisting the IP address is one approach I considered.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013/1</link>
+        <pubDate>Thu, 13 Sep 2018 10:04:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-6013-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/dealing-with-hacking-attempts-in-my-saas/6013.rss">Dealing with hacking attempts in my SaaS</source>
+      </item>
+  </channel>
+</rss>

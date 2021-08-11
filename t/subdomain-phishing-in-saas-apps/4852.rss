@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Subdomain phishing in SaaS apps</title>
+    <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852</link>
+    <description>Just discovered another spammy/abusive tactic people use on SaaS apps... 
+
+If your app provides subdomains for your customers, like &quot;customerXXX.app.com&quot;, &quot;customerZZZ.app.com&quot; - pay attention to spammers spoofing big company names in that domain, like &quot;skype.app.com&quot; or &quot;quickbooks.app.com&quot; or even &quot;googlechromesupport.app.com&quot; and then sending out phishing emails on their behalf.
+
+just a heads up</description>
+    
+    <lastBuildDate>Tue, 19 Dec 2017 10:24:22 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[Virgil]]></dc:creator>
+        <description><![CDATA[
+            <p>What I do :<br>
+1)On signup I ask for company website<br>
+2) The email address domain should match the company website domain name<br>
+3) I create the subdomain based on that domain. If someone wants to change it, should send a support ticket but it happens rarely</p>
+<p>This mitigates:</p>
+<ol>
+<li>Free email accounts like gmail, yahoo, etc - doesn’t work well with temporary email domains though</li>
+<li>Make sure the email is related to the domain and should also help to avoid this issue as well</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/11</link>
+        <pubDate>Tue, 19 Dec 2017 10:24:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Yep, filtering big company names + some free email hostings works</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/10</link>
+        <pubDate>Mon, 18 Dec 2017 08:56:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/jitbit">@jitbit</a></p>
+<p>This subdomain phishing issue has just started happening to Feature Upvote… did your recommended mitigation technique prove to be good enough?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/9</link>
+        <pubDate>Mon, 18 Dec 2017 07:38:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>One common approach is to place user content on a domain that is different from your content. So if your service is at <a href="http://myservice.com" rel="nofollow noopener">myservice.com</a>, then you could put user content on subdomains under <a href="http://myservice.io" rel="nofollow noopener">myservice.io</a>. This also removes certain risks around cookie access. This is just one mitigation step, and if you have a lot of phishers then other steps may be necessary to reduce their ability and desire to use your system.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/8</link>
+        <pubDate>Fri, 17 Mar 2017 07:26:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>First, this is a recipe for a case when spammers abuse your service, I.e. there is a problem already. If you do not have this problem, you can give them any subdomain they want.</p>
+<p>Second, the verification is only if they want <a href="http://google.myapp.com" rel="nofollow noopener">google.myapp.com</a>. If not, easy: they get <a href="http://trial1234.myapp.com" rel="nofollow noopener">trial1234.myapp.com</a></p>
+<p>(About late edits I made to this post: How the phones these days manage to auto-corrupt your text <em>after</em> your attention already moved to the next word? Spying - I made my peace with, but this is <em>really</em> annoying!)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/7</link>
+        <pubDate>Fri, 10 Mar 2017 21:58:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="4852">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<ul>
+<li>Place a file with specific response to the root of the <a href="http://foo.com" rel="nofollow noopener">foo.com</a> domain</li>
+<li>Or, create a special TXT record in <a href="http://foo.com" rel="nofollow noopener">foo.com</a> DNS</li>
+</ul>
+</blockquote>
+</aside>
+<p>Kinda complicated for a trial, huh? <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/6</link>
+        <pubDate>Fri, 10 Mar 2017 21:43:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="4852">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jitbit/40/1213_1.png" class="avatar"> jitbit:</div>
+<blockquote>
+<p>We added a filter to the trial page that checks for facebook/gmail/quickbooks/etc but not sure that’s going to be enough…</p>
+</blockquote>
+</aside>
+<p>If it is really a problem, you can do the same as DNS registrars and mail providers do:</p>
+<p>If a user requests <a href="http://foo.yourdomain.com" rel="nofollow noopener">foo.yourdomain.com</a>, check if <a href="http://foo.com" rel="nofollow noopener">foo.com</a> (maybe also .org, .net, …) is registered. If yes, request user to do either of:</p>
+<ul>
+<li>Place a file with specific response to the root of the <a href="http://foo.com" rel="nofollow noopener">foo.com</a> domain</li>
+<li>Or, create a special TXT record in <a href="http://foo.com" rel="nofollow noopener">foo.com</a> DNS</li>
+</ul>
+<p>Either of these will provide the user owns the domain.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/5</link>
+        <pubDate>Fri, 10 Mar 2017 18:53:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <p>Might be worth exporting all the subdomain list to a CSV file, then hiring someone on places like Upwork to go through the list, finding any trademarked names.</p>
+<p>Again, a script can only do so much. You could use the human’s input to improve the script for the 2nd round, and so on.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/4</link>
+        <pubDate>Fri, 10 Mar 2017 09:22:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="4852">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<ul>
+<li>Is this happening to jitbit?</li>
+</ul>
+</blockquote>
+</aside>
+<p>Yeah, just found a couple of hundred trial accounts using this tactic…</p>
+<aside class="quote" data-post="2" data-topic="4852">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/stevemcleod/40/2640_1.png" class="avatar"> SteveMcLeod:</div>
+<blockquote>
+<ul>
+<li>What mitigation advice do you have?</li>
+</ul>
+</blockquote>
+</aside>
+<p>We added a filter to the trial page that checks for facebook/gmail/quickbooks/etc but not sure that’s going to be enough…</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/3</link>
+        <pubDate>Thu, 09 Mar 2017 13:54:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this warning. It is remarkably timely for me.</p>
+<p>A couple of questions:</p>
+<ul>
+<li>Is this happening to jitbit?</li>
+<li>What mitigation advice do you have?</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/2</link>
+        <pubDate>Thu, 09 Mar 2017 11:59:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+      <item>
+        <title>Subdomain phishing in SaaS apps</title>
+        <dc:creator><![CDATA[jitbit]]></dc:creator>
+        <description><![CDATA[
+            <p>Just discovered another spammy/abusive tactic people use on SaaS apps…</p>
+<p>If your app provides subdomains for your customers, like “<a href="http://customerXXX.app.com" rel="nofollow noopener">customerXXX.app.com</a>”, “<a href="http://customerZZZ.app.com" rel="nofollow noopener">customerZZZ.app.com</a>” - pay attention to spammers spoofing big company names in that domain, like “<a href="http://skype.app.com" rel="nofollow noopener">skype.app.com</a>” or “<a href="http://quickbooks.app.com" rel="nofollow noopener">quickbooks.app.com</a>” or even “<a href="http://googlechromesupport.app.com" rel="nofollow noopener">googlechromesupport.app.com</a>” and then sending out phishing emails on their behalf.</p>
+<p>just a heads up</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852/1</link>
+        <pubDate>Thu, 09 Mar 2017 11:11:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4852-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/subdomain-phishing-in-saas-apps/4852.rss">Subdomain phishing in SaaS apps</source>
+      </item>
+  </channel>
+</rss>

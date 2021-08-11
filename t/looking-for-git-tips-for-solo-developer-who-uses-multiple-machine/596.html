@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Looking for Git tips for solo developer who uses multiple machine - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="I recently switched to Git from Subversion, mainly because I wanted to have a local copy of my repository so that I could compare with history quickly and without a good Internet connection. I’m having to relearn some habits…  Here’s the situation for which I need tips: I work about half the time in my office on an iMac. I work about half the time at home or on the road on a MacBook Pro. I’ve created a private Git repository on GitHub, and cloned it on both machines.  When I move from working at...">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="596.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Looking for Git tips for solo developer who uses multiple machine&#39;" href="596.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/looking-for-git-tips-for-solo-developer-who-uses-multiple-machine/596" />
+<meta property="og:title" content="Looking for Git tips for solo developer who uses multiple machine" />
+<meta name="twitter:title" content="Looking for Git tips for solo developer who uses multiple machine" />
+<meta property="og:description" content="I recently switched to Git from Subversion, mainly because I wanted to have a local copy of my repository so that I could compare with history quickly and without a good Internet connection. I’m having to relearn some habits…  Here’s the situation for which I need tips: I work about half the time in my office on an iMac. I work about half the time at home or on the road on a MacBook Pro. I’ve created a private Git repository on GitHub, and cloned it on both machines.  When I move from working at..." />
+<meta name="twitter:description" content="I recently switched to Git from Subversion, mainly because I wanted to have a local copy of my repository so that I could compare with history quickly and without a good Internet connection. I’m having to relearn some habits…  Here’s the situation for which I need tips: I work about half the time in my office on an iMac. I work about half the time at home or on the road on a MacBook Pro. I’ve created a private Git repository on GitHub, and cloned it on both machines.  When I move from working at..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="4 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="4 ❤" />
+<meta property="article:published_time" content="2013-10-03T11:56:37+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="https://discuss.bootstrapped.fm/">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="596.html">Looking for Git tips for solo developer who uses multiple machine</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-03T11:56:37Z' class='post-time'>
+                October 3, 2013, 11:56am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-03T11:56:37Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I recently switched to Git from Subversion, mainly because I wanted to have a local copy of my repository so that I could compare with history quickly and without a good Internet connection. I’m having to relearn some habits…</p>
+<p>Here’s the situation for which I need tips: I work about half the time in my office on an iMac. I work about half the time at home or on the road on a MacBook Pro. I’ve created a private Git repository on GitHub, and cloned it on both machines.</p>
+<p>When I move from working at home on a task to working in the office on the same task, I want to easily be able to have the same files in the same state go with me, without having to remember to do a “push”. Does Git accommodate this? Should I get in the habit of automatically pushing after committing?</p>
+<p>I ask because right now I’m in the office, and frustrated that I can’t continue with the task I was doing last night at home, because the current state of the files is not represented in GitHub, because I didn’t “push”.</p>
+<p>And in general, what Git tips do you have that will work with my two computers that are not co-located?</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/steve'><span itemprop='name'>steve</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-03T19:06:57Z' class='post-time'>
+                October 3, 2013,  7:06pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-03T19:06:57Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Pushing after committing would be the easiest solution.  You could look at getting a Git GUI such as Tower or Github’s own Mac app if that would make it easier for you.  Your IDE may have Git/Github integration either directly or through a plugin which might make it even easier.</p>
+<p>Another possibility is investigating keeping your local Git repository in a Dropbox folder or even on a USB drive you carry with you.  I’m not sure of all of the ramifications of those, though.</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/amattn.html'><span itemprop='name'>amattn</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-03T19:38:18Z' class='post-time'>
+                October 3, 2013,  7:38pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-03T19:38:18Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>When I was doing this, I had a <a href="http://gohome.sh" rel="nofollow noopener">gohome.sh</a> script that would attempt to push all known git repos.  I would run this every day before going home.</p>
+<p>In your case, getting in the habit of pushing after every commit, and having a <a href="http://doneForNow.sh" rel="nofollow noopener">doneForNow.sh</a> script that attempts to push before you leave your home desk or before you go to sleep etc.</p>
+<p>As a Last Resort, you can do things like set up BackToMyMac or VNC.  Slightly less bandwidth intensive is to have your entire git repo in a Dropbox or similar sync service.</p>
+<p>I would be careful about automatic sync however.  it’s kind of easy to have dropbox hose a git repo, especially when one is a laptop w/ occasional periods of non-connectivity.  a sane dir structure helps:</p>
+<p>$HOME/Dropbox/imac/repo<br>
+$HOME/Dropbox/laptop/repo</p>
+<p>essentially, both repos are synced to both machines.  On the iMac just work out of the imac dir and push pull as required.</p>
+<p>If you find yourself at the office, temporarily drop into the imac dir and you can do a push.  just make sure to pop out back to the laptop dir, especially if working from a coffee shop or somewhere with no internet.</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/ian'><span itemprop='name'>ian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-03T19:38:25Z' class='post-time'>
+                October 3, 2013,  7:38pm
+              </time>
+              <meta itemprop='dateModified' content='2013-10-03T19:38:25Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yeah, you just have to push. Also, then everything is backed up which is nice. We use Tower which is also nice, some people like the Github mac client. It’s not bad and is one less button push, but lacks some other useful features.</p>
+<p>People do put their code in a dropbox folder, though as is Dropbox sucks a lot of my battery and all that constant checking and uploading of changed states seems like it could cause trouble. I’d also be slightly concerned about the git repo files themselves getting into some odd states if you have one that was synced to dropbox, then work offline on another machine and what happens when they sync up, etc.</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lmea.html'><span itemprop='name'>lmea</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-04T06:44:31Z' class='post-time'>
+                October 4, 2013,  6:44am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-04T06:44:31Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Pushing is most safe way to sync through git, and preparing a <a href="http://doneForNow.sh" rel="nofollow noopener">doneForNow.sh</a> script is a nice way to make it easier to not forget it.</p>
+<p>Git also makes it really easy and fast to manage many different branches (I find it also more reliable than subversion when merging), so it is very convenient to have a branch for ongoing work separated from your ‘master’ branch, where you could commit and push partial work. You may push to the working branch as often as you’d like, and use that for synching between the two machines and then merge into the master branch when done.<br>
+Otherwise you may use single feature branches (i.e. have a branch where you just work on a single feature).</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SteveMcLeod.html'><span itemprop='name'>SteveMcLeod</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-04T10:34:39Z' class='post-time'>
+                October 4, 2013, 10:34am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-04T10:34:39Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="5" data-topic="596">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/lmea/40/1422_1.png" class="avatar"> lmea:</div>
+<blockquote>
+<p><a href="http://doneForNow.sh">doneForNow.sh</a></p>
+</blockquote>
+</aside>
+<p><span class="mention">@Imea</span>,</p>
+<p>Do you by chance have a sample <a href="http://doneForNow.sh">doneForNow.sh</a> script I can use?</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/lmea.html'><span itemprop='name'>lmea</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2013-10-04T14:41:10Z'>
+              <time itemprop='dateModified' datetime='2013-10-04T14:47:22Z' class='post-time'>
+                October 4, 2013,  2:47pm
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I haven’t got one at hand, but I think that something as simple as this may work:</p>
+<pre><code>#!/bin/bash
+# N.B. this script will push all the committed changes to the remote repository
+
+# This is the working copy (on your computer) 
+WORKING_COPY=/home/user/work/project
+
+# The remote name is usually 'origin', probably you won't need to change it
+REMOTE_NAME=origin
+
+# This is the name of the branch on the remote repo 
+# it doesn't need to be equal to the name of the branch on your
+# local repo, but I usually keep the same to make less errors
+# when pushing
+REMOTE_BRANCH=officesync
+
+cd $WORKING_COPY
+git push $REMOTE_NAME $REMOTE_BRANCH
+</code></pre>
+<p>Also you may find useful this script I have to configure the shell prompt <a href="https://gist.github.com/luca/6827108" rel="nofollow noopener">https://gist.github.com/luca/6827108</a><br>
+I use git from the command line and that tells me immediately the branch I’m in and if there’s something to commit ( it puts an asterisk at the end of the branch name )</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/starr'><span itemprop='name'>starr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-07T02:17:17Z' class='post-time'>
+                October 7, 2013,  2:17am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-07T02:17:17Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If you’re on github, you can easily fork the main repo to create your own private remote. Then you can push and pull from that as much as you want without littering up the main repo. Branches are a simpler way to do this, but everybody else will have access to your WIP.</p>
+<p>I don’t think there’s a way to avoid pushing, unless you use some outside tool. Though once you’ve forked the main repo, you can push early and often.</p>
+<p>In my own experience I’ve found that a normal git workflow involves creating a separate little sandbox for your feature, doing lots of little commits and pushing at the end of each coding session. Whereas back in subversion, people would work on big changes locally for a long time before committing.</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JaapRood.html'><span itemprop='name'>JaapRood</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-10-07T11:03:58Z' class='post-time'>
+                October 7, 2013, 11:03am
+              </time>
+              <meta itemprop='dateModified' content='2013-10-07T11:03:58Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Slightly off topic but I think pretty helpful: <a href="http://pcottle.github.io/learnGitBranching/" rel="nofollow noopener">this game to learn Git</a>, and in particular branching. It’s actually a lot of fun and a great way for people who are new to Git to get to grips with it’s concepts. Even when you normally use a GUI, it’s great to know what’s actually going on and what’s actually possible.</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jimm.html'><span itemprop='name'>jimm</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2013-11-21T22:49:54Z'>
+              <time itemprop='dateModified' datetime='2013-12-06T17:33:21Z' class='post-time'>
+                December 6, 2013,  5:33pm
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A simpler solution for you right now sounds like just pushing after a commit. What is the problem doing that? I used to do that but would forget a push at home and be SOL wherever I was working remotely on it, which is not ideal. My solution is below:</p>
+<p>I’ve been working on a side project where I needed to have my project “ejectable” from my work machine. So I just have it on a USB stick.  I basically just carry it with me wherever I go and am able to pop it into whatever computer I want to work on it.  I’ve had 0 problems.</p>
+<p>The only risk is losing the disk, but you should be pushing regularly anyway.</p>
+<p><strong>Update 12/06/2013:</strong></p>
+<p>Just a note on my reasoning. I work a day job that probably wouldn’t like my working on a side project at work.  GIven that I do not use solutions that require me to log into services that clone files locally (i.e. dropbox). The thumbdrive solution works for me and keeps everything in one place.  I can keep it up to date and pop it in at home and push up to a remote vcs.</p>
+<p>I’m not sure this answers the original question 100% but I’ll just throw it out there for anyone bootstrapping with a day job. Good luck!</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/sts.html'><span itemprop='name'>sts</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-22T08:02:03Z' class='post-time'>
+                November 22, 2013,  8:02am
+              </time>
+              <meta itemprop='dateModified' content='2013-11-22T08:02:03Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I just put my files and the git repo in a dropbox folder. That way the files are in the same state all the time on both of my synced machines. I commit and push - to Bitbucket in my case - from both of them. Never had any problems in years.</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/drewm'><span itemprop='name'>drewm</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-24T08:27:16Z' class='post-time'>
+                November 24, 2013,  8:27am
+              </time>
+              <meta itemprop='dateModified' content='2013-11-24T08:27:16Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My solution to this situation was a bit different. I had a big screen, keyboard and mouse and both locations and just carried the MacBook Pro between home and office.</p>
+<p>Syncing is such a PITA. I decided I couldn’t deal with that on a daily basis, so just carried one machine with me everywhere.</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/ian'><span itemprop='name'>ian</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-25T13:44:54Z' class='post-time'>
+                November 25, 2013,  1:44pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-25T13:44:54Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yeah, the laptops are so powerful now that I’ve moved to the one machine solution and just use the Laptop everyone. Simplifies everything. Less stuff, less backups, less things to break, everything is always with you.</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jeremy.html'><span itemprop='name'>jeremy</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-25T15:18:20Z' class='post-time'>
+                November 25, 2013,  3:18pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-25T15:18:20Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I clearly must have been doing something wrong all this time. I’ve been on a laptop since my high school graduation present was an awesome Gateway 2000, 386 75mhz DX4 8MB of RAM and the largest screen you could buy, 10.1 inches. All that for a mere $3,500.</p>
+<p>These days it’s a Macbook Air with 8 gigs of RAM, but it’s almost the same thing.</p>
+<p>For the purposes of this discussion. Even though I’m on a single machine to do all my work and don’t work with a team at this time. I pretty much push every time I commit. And also, my working directory is on dropbox, but that is just for additional backupability. For me to lose all my work, github/my laptop/my time machine/and dropbox would all have to fail simultaneously. Not to mention the deployed code on the servers.</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/albuck.html'><span itemprop='name'>albuck</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-26T17:58:29Z' class='post-time'>
+                November 26, 2013,  5:58pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-26T17:58:29Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think the canonical way to automatically sync two repos is with a commit hook, built into git.  It is very easy to automatically push from local to remote with every commit.  This might be slightly slower, and may litter the repo with too many minor commits.  But as a bullet proof backup, that is the way to go. I can clean up the commit trail later. I haven’t ever implemented the remote hook, as I seem to always remember to do a final push to remote at the end of any coding session. I don’t consider I’m done for the session unless I’ve committed locally and pushed to some remote as a backup.  Belt and suspenders.  I don’t trust any single hard disk.  A couple of weeks ago, I was debugging a WordPress plugin on a VPS, with a local repo on that host.  I would commit and then push to remote at the end of a session.  My “budget” VPS hosting company vanished off the internet without notice recently, but my code was safe.</p>
+<p>I’m pretty cheap, and refuse to pony up for private repos at Github, at least as long as I don’t need any collaboration tools.  For a long time, Assembla was my spot, with unlimited private repos and up to 2GB of storage.  I have 29 private repos there.  Alas, a few months ago they stopped allowing unlimited private repos, though they aren’t throwing existing repos off their service.  I’m migrating to Bitbucket, and “git clone --mirror” is useful for moving a remote repo with all its branches.  I am most comfortable when my repos are backed up on two separate cloud services, and these days there are a lot of free private git repos to chose from:</p>
+<p><a href="https://git.wiki.kernel.org/index.php/GitHosting" rel="nofollow noopener">https://git.wiki.kernel.org/index.php/GitHosting</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cmgmyr.html'><span itemprop='name'>cmgmyr</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="596.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-12-03T01:58:41Z' class='post-time'>
+                December 3, 2013,  1:58am
+              </time>
+              <meta itemprop='dateModified' content='2013-12-03T01:58:41Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>When I was working on Mac and PC at the same time I set up Dropbox to sync everything. This way you can commit code, or not, and all of your environments would be the same. I’ve made a blog post with the steps <a href="http://www.chrisgmyr.com/2012/11/sync-htdocs-and-mysql-data-with-dropbox/" rel="nofollow noopener">here</a>. You can turn off the sync until you are ready to move to the other computer.</p>
+<p>I’ve since moved to a single Mac laptop setup with a larger second monitor. Working on a single computer is a lot easier. I hope the link helped!</p>
+        </div>
+
+        <meta itemprop='headline' content='Looking for Git tips for solo developer who uses multiple machine'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/categories' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/guidelines' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://discuss.bootstrapped.fm/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>

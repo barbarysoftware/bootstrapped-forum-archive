@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Changing payment processors - Subscriptions</title>
+    <link>https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566</link>
+    <description>Hi guys,
+             I am trying to figure out how hard or easy it is to switch payment processors once you start using them and have some recurring payments customers. Eg. FastSpring to Stripe or Stripe to FastSpring
+
+I am assuming once a new customer is entered in the payment processor&#39;s system a new customer record ( with data like name, address, credit card details etc) must be getting saved .
+
+So if you decide to switch provider you might have to download all the customer records and move them to a new provider and this I heard is tricky . The PCI DSS rules or something makes it difficult ?
+
+Has anyone have had any experience with switching payment processors ?
+
+thanks</description>
+    
+    <lastBuildDate>Thu, 28 Dec 2017 15:27:45 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Changing payment processors - Subscriptions</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="5566">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/craigvn/40/2889_1.png" class="avatar"> craigvn:</div>
+<blockquote>
+<p>This is of course slower, but transparent to the users.</p>
+</blockquote>
+</aside>
+<p>This also has an extra benefit of lower risk. If you screw up mapping the subscriptions to the new provider, you can deal with that problem one subscriber at a time instead of finding your whole user base has an issue.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/8</link>
+        <pubDate>Thu, 28 Dec 2017 15:27:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5566-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566.rss">Changing payment processors - Subscriptions</source>
+      </item>
+      <item>
+        <title>Changing payment processors - Subscriptions</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>When we changed payment processors we mainly did it organically. We had both processors running in parallel and if someones credit card expired or some other reason that required them to re-enter their credit card details they would be registered with the new provider. This is of course slower, but transparent to the users. Some of them we did nudge by asking them to re-enter their details when not really required.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/7</link>
+        <pubDate>Wed, 27 Dec 2017 23:56:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5566-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566.rss">Changing payment processors - Subscriptions</source>
+      </item>
+      <item>
+        <title>Changing payment processors - Subscriptions</title>
+        <dc:creator><![CDATA[polimorfico]]></dc:creator>
+        <description><![CDATA[
+            <p>A few months ago we migrated from Braintree to Stripe with no issues. As <a class="mention" href="/u/rfunduk">@rfunduk</a> said, the biggest effort is to map all your current subscriptions in Stripe. But we can do it easily in one day.</p>
+<p>Take into account that FastSpring is not a payment provider like Stripe or Braintree. They are a reseller. You need to check out what payment processor they’re using and how easy is to migrate customers’ records to another processor.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/6</link>
+        <pubDate>Fri, 22 Dec 2017 17:07:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5566-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566.rss">Changing payment processors - Subscriptions</source>
+      </item>
+      <item>
+        <title>Changing payment processors - Subscriptions</title>
+        <dc:creator><![CDATA[rfunduk]]></dc:creator>
+        <description><![CDATA[
+            <p>I worked for Stripe for about a year on ‘Developer Support’ (basically helping people integrate, fix issues, etc) and that team is also responsible for data migrations. While doing that I even moved my (now defunct, for the most part) side project <a href="https://bugrocket.com" rel="nofollow noopener">Bugrocket</a> from Braintree to Stripe.</p>
+<p>So, from the export-from and import-to Stripe perspective, I can give you a pretty detailed breakdown. IMO it’s really very simple and smooth.</p>
+<p>Let’s assume you want to move to Stripe:</p>
+<ol>
+<li>Contact your current payment provider and discuss your intent to move. Provide them with (an HTTPS link to) Stripe’s <a href="https://stripe.com/docs/security/pgp-migration-key" rel="nofollow noopener">Data Migration PGP key</a>. Also contact Stripe and discuss your intent to move. They’ll basically just say cool either have your current provider let us know when the export is ready or let you know and then tell us.</li>
+<li>Your current provider should be essentially creating a CSV or similar file with all of your customer data (not subscription info) and then encrypting it with Stripe’s key. Most providers have their own similar keys and so this should generally be true going Stripe-&gt;somewhere else (eg <a href="https://articles.braintreepayments.com/get-started/data-migration#braintree-public-key" rel="nofollow noopener">here is Braintree’s</a>). Once ready, ideally, they should encrypt credentials which Stripe will use to retrieve the export, from someplace like perhaps an FTP server, also with the data migration key. Sometimes they’ll just provide these (encrypted) credentials to you to avoid having to contact Stripe and have them figure out for whose data these credentials are for.</li>
+<li>Once Stripe has your data they decrypt and just go ahead and create customers in your account as closely matching the data from the export as possible given Stripe’s customer schema. Then they’ll provide you with a mapping of your previous provider IDs to new Stripe customer and/or card IDs.</li>
+<li>Take that mapping, and write some kind of script on your end to look at your customers and re-create their current subscription state in your app on Stripe. I put a <code>payment_provider</code> field on my accounts and set it to <code>braintree</code> and then I just went through each one and made new subscriptions for them on Stripe etc, and set it to <code>stripe</code>. Once everyone is set to <code>stripe</code> you’re done.</li>
+</ol>
+<p>The biggest effort on your part would be step 4 of course. But really it wasn’t that complex to do that myself with my app. The trickiest part was figuring out any mismatches between how Stripe works and the other provider works. Definitely spend some time in the docs before attempting it. You may also want to start using Stripe for new customers <em>before</em> the migration so that you can leisurely convert your old ones over without having to worry about another migration for people who were new between the last one and when you’re ready to switch people over.</p>
+<p>Also worth noting that not all providers are created equal, so sometimes they dig in their heels on some of the stuff in the list above. Like <a href="http://Authorize.net" rel="nofollow noopener">Authorize.net</a>, they refuse(d?) to use Stripe’s GPG key and instead have just some kinda password protected archive. I forget the name but we had quite a few imports from some antiquated provider that insisted on <em>mailing Stripe a CD</em> <img src="https://emoji.discourse-cdn.com/twitter/scream.png?v=5" title=":scream:" class="emoji" alt=":scream:">. PayPal just ignores all attempts at communication for the most part, of course. And so on.</p>
+<p>Still, 99% of the time it’s just a few days long process of coordination, and then a bit of a dev project for you once the card info you need is in your new account.</p>
+<p>I hope that’s useful, and if you have any other questions about data migrations - I’d be happy to help out. As, I’m certain, would the helpful folks over in the Stripe IRC channel (<span class="hashtag">#stripe</span> on Freenode).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/5</link>
+        <pubDate>Wed, 20 Dec 2017 12:53:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5566-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566.rss">Changing payment processors - Subscriptions</source>
+      </item>
+      <item>
+        <title>Changing payment processors - Subscriptions</title>
+        <dc:creator><![CDATA[bootStrapr]]></dc:creator>
+        <description><![CDATA[
+            <p>Great info, thanks for the detailed post !<br>
+Coordinating between the providers must have been a daunting task. Good that support folks Charigify and Stripe agreed to talk to each other directly.</p>
+<p>But since 2014 till date Stripe has grown enormously , wonder if their support is still good ?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/4</link>
+        <pubDate>Tue, 19 Dec 2017 09:38:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5566-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566.rss">Changing payment processors - Subscriptions</source>
+      </item>
+      <item>
+        <title>Changing payment processors - Subscriptions</title>
+        <dc:creator><![CDATA[aeden]]></dc:creator>
+        <description><![CDATA[
+            <p>We migrated from <a href="http://Authorize.net" rel="nofollow noopener">Authorize.net</a> to Stripe several years ago. We worked with <a href="http://Authorize.net" rel="nofollow noopener">Authorize.net</a> and Stripe together to transfer payment details from one payment provider to the other. It wasn’t click-and-done easy, but it also wasn’t much more than wrangling people from both companies to perform the transfer. Here’s the blog post I wrote up when we made the switch: <a href="https://blog.dnsimple.com/2014/07/switching-from-authorize-net-to-stripe/" rel="nofollow noopener">https://blog.dnsimple.com/2014/07/switching-from-authorize-net-to-stripe/</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/3</link>
+        <pubDate>Mon, 18 Dec 2017 13:08:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5566-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566.rss">Changing payment processors - Subscriptions</source>
+      </item>
+      <item>
+        <title>Changing payment processors - Subscriptions</title>
+        <dc:creator><![CDATA[bootStrapr]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah found the link where I read about PCI stuff -</p>
+<p><strong><em>7: Don’t try to change your payment provider</em></strong></p>
+<p><em>Your credit card payment processing provider (credit card clearing) will lock you in. At the time we have started, Stripe was not available in Europe. So we settled with WireCard. Stripe is here now and we considered to switch. But — being PCI compliant — you don’t store your clients credit card credentials yourself. So switching payment gateway means that your clients need to re-enter their credit card credentials. No way.</em></p>
+<p>source: <a href="https://www.reddit.com/r/startups/comments/42xl1x/9_billing_mistakes_to_avoid/?ref=share&amp;ref_source=link" rel="nofollow noopener">https://www.reddit.com/r/startups/comments/42xl1x/9_billing_mistakes_to_avoid/?ref=share&amp;ref_source=link</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/2</link>
+        <pubDate>Mon, 18 Dec 2017 08:11:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5566-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566.rss">Changing payment processors - Subscriptions</source>
+      </item>
+      <item>
+        <title>Changing payment processors - Subscriptions</title>
+        <dc:creator><![CDATA[bootStrapr]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi guys,<br>
+I am trying to figure out how hard or easy it is to switch payment processors once you start using them and have some recurring payments customers. Eg. FastSpring to Stripe or Stripe to FastSpring</p>
+<p>I am assuming once a new customer is entered in the payment processor’s system a new customer record ( with data like name, address, credit card details etc) must be getting saved .</p>
+<p>So if you decide to switch provider you might have to download all the customer records and move them to a new provider and this I heard is tricky . The PCI DSS rules or something makes it difficult ?</p>
+<p>Has anyone have had any experience with switching payment processors ?</p>
+<p>thanks</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566/1</link>
+        <pubDate>Mon, 18 Dec 2017 08:01:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5566-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/changing-payment-processors-subscriptions/5566.rss">Changing payment processors - Subscriptions</source>
+      </item>
+  </channel>
+</rss>

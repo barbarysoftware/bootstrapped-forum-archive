@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Security strategy</title>
+    <link>https://discuss.bootstrapped.fm/t/security-strategy/2298</link>
+    <description>One of the things I&#39;m thinking more about as my app grows is how much time and resources I should put into worrying about security.  
+
+Of course, there are a number of security measures in place already - following best practice around SQL escaping, XSS, etc.
+
+But I&#39;m wondering whether I should pay for some professional penetration testing or some kind of other service.  I talked to a company the other day that said they charge around $8k to $12k for an initial round of penetration testing and an audit.  That&#39;s pretty well outside my budget right now though.
+
+A friend of mine also told me about https://hackerone.com/ which looks interesting.  Maybe putting a bug bounty up for $500 or something would be a good way to get some attention from white hat hackers and potentially discover important security issues faster and cheaper than paying for an audit.
+
+I&#39;m in ecommerce, so there can potentially be more sensitive data that an attacker could access via my app, than, say, a customer support app.
+
+Would love to hear how others have approached this topic.
+
+I did find this other thread on the topic of security, which had some interesting nuggets in it:
+http://discuss.bootstrapped.fm/t/saas-and-security/672
+
+But I thought maybe a separate thread for people to discuss their strategies specifically might be useful.</description>
+    
+    <lastBuildDate>Fri, 21 Nov 2014 14:42:36 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Ya those are great points.  Basically for businesses like us, we should be worried about the automated attacks (wordpress or other open source plugin hacks, heartbleed, password reuse, etc.).</p>
+<p>You’re right that there’s virtually nothing we can do against being attacked an hour after a major vulnerability like heartbleed is found.  Although with managed hosting, those things were patched for me within a day to be sure.</p>
+<p>This is really helpful though because it makes it a little more obvious where to spend time and money.  Like I could probably spend 100s of hours going through all my code line by line to find a vulnerability, or more likely pay someone to peer review my code on an ongoing basis, but the reality is (99.9% of the time) no one is going to care enough about my app to hunt for those vulnerabilities that are specific to my app (that’s not to say that developers should be careless about these things - obviously any professional should care a lot about these things for their own sake and merit).</p>
+<p>Where I should spend my time is probably more two factor auth (prevents password reuse issues), have managed hosting (so that patches are applied quickly), offsite backups.  And probably also (hadn’t thought as much of this up until now) being careful about 3rd party code that I use b/c those could be targeted (and I’m not updating those libraries super regularly).</p>
+<p>And then also at least thinking through what my backup / disaster recovery plan is.</p>
+<p>Thanks again for the feedback!!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/13</link>
+        <pubDate>Fri, 21 Nov 2014 14:42:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/kalenjordan">@kalenjordan</a> you’re right, it is highly unlikely you’ll be targeted if you’re a small, low profile, business like we are here. The problem is that as soon as there’s a big vulnerability out there (read Heartbleed, Shellshock, Winshock, MS14-068, etc), there will be worms/mass scanners exploiting everything that’s exploitable on the Internet.<br>
+As we may not have a quick enough reaction (Shellshock was being exploited one hour after the patch was published!) there’s a big chance we will eventually get hacked. It happened to me in the past: Tiny website I’ve got running for my dad’s local business got compromised due to an exploitable Wordpress plugin that I wasn’t quick enough to patch/disable.</p>
+<p>It could also happen in so many ways: Password reuse (another site gets hacked, our credentials are left in the wild, we’ve been careless enough to reuse credentials, profit!), our hosting provider getting hacked, a partner with too much access getting hacked (e.g. like it happen with Target, compromised through their HVAC provider/partner).</p>
+<p>It is ridiculously scary!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/12</link>
+        <pubDate>Fri, 21 Nov 2014 11:40:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes to public key auth.</p>
+<p>I think one of my larger overarching questions is what is the profile of person that would be interested in hacking an app of my size.  Like I know there are script kiddies that will attack known wordpress vulnerabilities - that makes sense.</p>
+<p>And then on the higher end of things, if you’re a bank or large company where a well-funded hacker would have a lot of financial incentive to hack you, that’s a whole other beast.</p>
+<p>But for people in our space - small, bootstrapped apps - and certainly not all small bootstrapped apps are the same (again I’m in ecommerce so there may be slightly more risk there) - realistically what kind of hacker would potentially want to hack us?</p>
+<p>I suppose it depends entirely on what they stand to gain.  It would be really interesting to be able to see some data on the types of security breaches that small apps like us experience.  I’d imagine it’s 98% wordpress hacks, but who knows maybe I’m wrong.</p>
+<p>That was one of the reasons I asked this here - to see if I could get any of this type of information from other bootstrappers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/11</link>
+        <pubDate>Fri, 21 Nov 2014 04:56:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[pwim]]></dc:creator>
+        <description><![CDATA[
+            <p>Have you turned off password authentication for SSH, only allowing authentication via your SSH key? That’s probably secure enough. To be paranoid, make sure to use a passphrase for your private key, and keep your computer disk encrypted. If you do all that, the chances someone will break into your system via SSH are basically nil, as there are probably other much easier attack vectors.</p>
+<p>True offsite backups, that an attacker can’t get access to by breaking into one part of your system are important to have. There was recently <a href="http://arstechnica.com/security/2014/06/aws-console-breach-leads-to-demise-of-service-with-proven-backup-plan/" rel="nofollow noopener">a report of a worst case scenario</a>, where a business thought they had a proper backup solution, but a hacker managed to gain access to them as well. This isn’t something that I’d worry to much about happening, but I’d still try and have a recovery strategy in place if someone malicious broke into your production servers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/10</link>
+        <pubDate>Fri, 21 Nov 2014 04:37:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s not quite as generic as how to build a reliable car.  More like - I’m at $X income level and in industry Y looking for a practical car (not a race car), and trying to figure out which car to buy and how much insurance to buy on it.</p>
+<p>In other words, there are some specific parameters to my situation, and it’s not completely open ended.</p>
+<p>I’m probably not going to go off and read a bunch of books and become a security expert though.  Kind of looking for a pragmatic direction to take to try and take some reasonable steps without going overboard in either direction.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/9</link>
+        <pubDate>Fri, 21 Nov 2014 03:33:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/pwim">@pwim</a> that’s super helpful.  Interesting to read about the drama you ran into!</p>
+<p>That makes a lot of sense that your’e not going to get very serious researchers for $500.  At first I thought that would be a significant incentive, but perhaps not.</p>
+<p>Yes best practices in place in regard to framework, ongoing patches.  I’ve been setting up two factor where possible.</p>
+<p>One place that I’d like to setup two factor but it seems like it might be prohibitively inefficient is SSH.  I SSH in multiple times per day, and it doesn’t seem like there are two factor options that remember you somehow every 30 days like how google does it.  Any thoughts on that?</p>
+<p>I haven’t setup off-site backups yet - adding that to my list!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/8</link>
+        <pubDate>Fri, 21 Nov 2014 03:27:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[pwim]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d be very careful before using something like HackerOne. I ended up unintentionally creating a bug bounty program by adding a responsible disclosure page to my site, and had a hair-pullingly frustrating experience which I write about in detail in the article <a href="http://www.tokyodev.com/2013/12/03/the-downside-of-thanking-security-contributors/" rel="nofollow noopener">The Downside of Thanking Security Contributors</a>.</p>
+<p>If you do go down the route, I would not have a paid bug bounty program, as I think there will be no discernible difference in the quality of the “security researchers” who try to hack your site for $500 vs free (and the glory of having their name on your site). Real professional researchers charge far more than that, so you’ll probably just end up with script kiddies trying to hack you either way.</p>
+<p>Furthermore, from my experience, the only thing these people will do is go through something like the <a href="https://www.owasp.org/index.php/Top_10_2013-Top_10" rel="nofollow noopener">OWASP Top 10</a>, mostly by trying to put in something that would cause an XSS into every field of your website. On the other hand, assuming you are not a major target yet, I think you are probably less likely to be attacked in a targeted fashion like an XSS would require, but instead have your infrastructure hacked in an automated fashion: think an outdated WordPress install or Ruby on Rails version.</p>
+<p>I’d focus on security best practices instead: using a framework that avoids XSS / SQL injection, patching everything as soon as a security update comes out, keeping offsite backups, using two-factor authentication for every account that supports it, and so on. Eventually you’ll get the point that bringing in  professional help makes sense, but it doesn’t sound like you’re quite there yet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/7</link>
+        <pubDate>Fri, 21 Nov 2014 01:41:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="2298">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kalenjordan/40/2338_1.png" class="avatar"> kalenjordan:</div>
+<blockquote>
+<p>But perhaps there are some general guidelines that people who have dealt with these types of issues before can give.</p>
+</blockquote>
+</aside>
+<p>This question is as generic as “how to build a reliable car”. People spend whole lives working on it, and yet even new cars continue to break down.</p>
+<p>What I may suggest is to read this book. You may start to grasp the scope of the problem, and, after reading it, you may realize that perhaps the only Zen way is to accept that you <strong>will be</strong> attacked and make your peace with it:</p>
+<p><a href="http://www.amazon.com/The-Tangled-Web-Securing-Applications/dp/1593273886" class="onebox" target="_blank" rel="nofollow noopener">http://www.amazon.com/The-Tangled-Web-Securing-Applications/dp/1593273886</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/6</link>
+        <pubDate>Fri, 21 Nov 2014 00:23:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback guys.</p>
+<p><a class="mention" href="/u/coreysnipes">@coreysnipes</a>, I updated the original post with the link <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<aside class="quote" data-post="3" data-topic="2298">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Then don’t worry about it. If you cannot pay for a security audit, likely you’re not valuable enough target yet.</p>
+</blockquote>
+</aside>
+<p>This is <em>basically</em> my current approach, although I’m not exactly “not worry about it” as evidenced by this thread <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I fear that this advice is perhaps overly simplistic.  Just because I couldn’t afford the first guy that I talked to doesn’t mean that I should throw my hands up entirely and not continue to developer a more solid strategy around security.</p>
+<p>I know that there’s no way to give a black/white answer on this.  But perhaps there are some general guidelines that people who have dealt with these types of issues before can give.  For example based on the types of risk factors your app is dealing with (industry, type of data stored, etc.).</p>
+<aside class="quote" data-post="3" data-topic="2298">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>The real alternative to it is to develop a design approach which can be summarized as “do not trust the network”</p>
+</blockquote>
+</aside>
+<p>Ya totally makes sense and certainly one can always be a little bit more careful and security conscious when coding.</p>
+<aside class="quote" data-post="4" data-topic="2298">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mobiplayer/40/1168_1.png" class="avatar"> mobiplayer:</div>
+<blockquote>
+<p>I would recommend at least using a web application firewall</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/mobiplayer">@mobiplayer</a> thanks man.  (side note: you’re the guy from datasnitch!  cool!).  So my server management (<a href="http://serverpilot.io" rel="nofollow noopener">serverpilot.io</a>) does have a firewall baked into their offering.  I’m not exactly sure how it stacks up to the ones you mentioned, but ya this definitely sounds like a good baseline security measure.</p>
+<aside class="quote" data-post="4" data-topic="2298">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mobiplayer/40/1168_1.png" class="avatar"> mobiplayer:</div>
+<blockquote>
+<p>Finally: Change your mindset. You’re going to be hacked, so you better start building with that in mind</p>
+</blockquote>
+</aside>
+<p>I get what you’re saying and it’s helpful to shift my mindset a little bit here.  At the same time, I wonder how likely it is for a (very) small app like mine to get hacked.  Certainly for a company of a certain size, the likelyhood of an attack approaches 100%.  But one of the reasons I posted this question here is because my assumption is that the likelihood of being attacked is much lower in our bootstrapper world.</p>
+<p>Maybe not, not sure.  I’m curious if any of the old timers like <a class="mention" href="/u/ian">@ian</a> have ever been hacked or had to deal with a major security issue.</p>
+<aside class="quote" data-post="4" data-topic="2298">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/mobiplayer/40/1168_1.png" class="avatar"> mobiplayer:</div>
+<blockquote>
+<p>Have you got a DR plan?</p>
+</blockquote>
+</aside>
+<p>That’s a good point.  I think it would be helpful to think a little more in terms of how to react to an attack and have backups in place rather than only thinking about how to prevent one.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/5</link>
+        <pubDate>Thu, 20 Nov 2014 22:59:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>Most of you will know all or part of what I’m going to say, but still needs to be said <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>Security starts before development and should be a process that’s always on. If you code your own software then you have to make sure you follow best practices. If you can re-use code that’s used by more people that probably means it is somehow safe (yeah, actually nothing is safe) and when problems arise, more people will be able to work on a solution.</p>
+<p>As per something more external, I would recommend at least using a web application firewall, that will look for different kind of attacks and stop them before reaching your site. It is offered as a service as well, being the most famous InCapsula (my favourite in terms of WAF offering) and CloudFlare (my favourite in other terms <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:">).</p>
+<p>External audits are fine if you can afford them. There are also more automated audits out there (pentest as a service?), much cheaper but also far less comprehensive.</p>
+<p>Finally: Change your mindset. You’re going to be hacked, so you better start building with that in mind. Move the risk to someone else (e.g. do not process payments yourself or save any customer’s sensitive data). Have you got a DR plan? Because we both know it’s going to happen. Shit always hits the fan. What if the security problem is being blackmailed with the threat of a DDoS?</p>
+<p>It is not an easy subject and there’s no limit on how much you can spend on security, you’ll eventuallyget  hacked.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/4</link>
+        <pubDate>Thu, 20 Nov 2014 17:10:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="2298">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kalenjordan/40/2338_1.png" class="avatar"> kalenjordan:</div>
+<blockquote>
+<p>That’s pretty well outside my budget right now though.</p>
+</blockquote>
+</aside>
+<p>Then don’t worry about it. If you cannot pay for a security audit, likely you’re not valuable enough target yet. Script kiddies may pay a drive-by visit, but that’s all.</p>
+<p>…</p>
+<p>The trouble with audits and bounties is that they have to be repeated again and again and again while the application is being developed. The real alternative to it is to develop a design approach which can be summarized as “do not trust the network”. Check and double-check all the data coming from the other side, making sure they are not coming from a wrong party and in a wrong format.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/3</link>
+        <pubDate>Thu, 20 Nov 2014 15:50:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>I need to figure this out as well.  I think some level of outside assistance is important, if you want it done properly.  And I want it done properly.  Starting with a crowd-sourced solution like Hacker One sounds reasonable to me.</p>
+<p>(Could you re-link that thread?  It didn’t come through in the post.)</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/2</link>
+        <pubDate>Thu, 20 Nov 2014 15:34:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+      <item>
+        <title>Security strategy</title>
+        <dc:creator><![CDATA[kalenjordan]]></dc:creator>
+        <description><![CDATA[
+            <p>One of the things I’m thinking more about as my app grows is how much time and resources I should put into worrying about security.</p>
+<p>Of course, there are a number of security measures in place already - following best practice around SQL escaping, XSS, etc.</p>
+<p>But I’m wondering whether I should pay for some professional penetration testing or some kind of other service.  I talked to a company the other day that said they charge around $8k to $12k for an initial round of penetration testing and an audit.  That’s pretty well outside my budget right now though.</p>
+<p>A friend of mine also told me about <a href="https://hackerone.com/" rel="nofollow noopener">https://hackerone.com/</a> which looks interesting.  Maybe putting a bug bounty up for $500 or something would be a good way to get some attention from white hat hackers and potentially discover important security issues faster and cheaper than paying for an audit.</p>
+<p>I’m in ecommerce, so there can potentially be more sensitive data that an attacker could access via my app, than, say, a customer support app.</p>
+<p>Would love to hear how others have approached this topic.</p>
+<p>I did find this other thread on the topic of security, which had some interesting nuggets in it:<br>
+<aside class="quote" data-post="1" data-topic="672">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.bootstrapped.fm/andrey/40/1196_1.png" class="avatar">
+    <a href="http://discuss.bootstrapped.fm/t/saas-and-security/672?source_topic_id=2298" rel="nofollow noopener">SaaS and security</a> <a class="badge-wrapper  bullet" href="/c/discussions"><span class="badge-category-bg" style="background-color: #92278F;"></span><span class="badge-category clear-badge" title="Discussions is the place where the real conversations happen... jump right in">Discussions</span></a>
+  </div>
+  <blockquote>
+    <a class="mention" href="/users/ian">@ian</a> just posted this in his <a href="https://twitter.com/ianlandsman/" rel="nofollow noopener">twitter stream</a>. I know he's not going to post it on here, so I will. 
+
+[image] 
+
+Just another thing to worry about when you're running a SaaS app.
+  </blockquote>
+</aside>
+</p>
+<p>But I thought maybe a separate thread for people to discuss their strategies specifically might be useful.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/security-strategy/2298/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/security-strategy/2298/1</link>
+        <pubDate>Thu, 20 Nov 2014 02:50:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2298-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/security-strategy/2298.rss">Security strategy</source>
+      </item>
+  </channel>
+</rss>

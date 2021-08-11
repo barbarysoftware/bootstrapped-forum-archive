@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SaaS internationalization</title>
+    <link>https://discuss.bootstrapped.fm/t/saas-internationalization/1449</link>
+    <description>I believe that more than 50% of a SaaS success is in its marketing effort and marketing is very language/culture sensitive. Therefore, it is very reasonable that internationalization shouldn&#39;t be a concern for bootstrapped SaaS businesses. @robwalling was very clear with this point in [Microconf 2013][1] when he said &quot;Don’t internationalize until you max out English / your native market.” I don&#39;t see most bootstrapped SaaS maxing their native markets and internationalization is today a de facto non-issue.
+
+But I still see a missing opportunity here. 
+
+With DotNetInvoice and HitTail, @robwalling (sorry man, but you have all the good examples) demonstrated one can be very successful buying a code and being really good in marketing it. Why the same can not be true with licensing?
+
+Licensing is a very standard practice in the conventional software world.  I can speak for myself that I would be interested in exploring some SaaS products in the brazilian market. Not all products would suit this case, but I can see many that would work. Still, I don&#39;t know any example of someone licensing a SaaS.
+
+Last weekend, [I was talking][2] with @SteveMcLeod  about this. Maybe there were too many caipirinhas involved, but we didn&#39;t find any good reason why this is not possible. What you fellow bootstrappers think? 
+
+
+  [1]: http://www.microconf.com/videos-2013.html
+  [2]: http://discuss.bootstrapped.fm/t/what-about-a-real-life-bootstrapped-meet-ups-category/1440</description>
+    
+    <lastBuildDate>Mon, 07 Apr 2014 13:45:01 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/saas-internationalization/1449.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>SaaS internationalization</title>
+        <dc:creator><![CDATA[ian]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s also a little middle ground here. With Snappy we haven’t fully internationalized it, but we have translated the outbound email templates and FAQ pages. So that those few bits of text are available in about 20 languages. This is for things like navigation elements in the FAQs.</p>
+<p>We actually were able to crowdsource it via <a href="https://www.transifex.com/">https://www.transifex.com/</a> we just pay a $19/month plan to store them and people can translate them. They tend to not do it on their own, but we made a push for it on twitter. Gave everyone a free t-shirt who did one and got all 20 from that.</p>
+<p>So what this allows is a bit broader use of the platform. While we only market and support to English speaking people, many times those people will need to support non-english language users. So now that’s possible.</p>
+<p>Support might be a little bit of a special case, but it’s something to keep an eye out for where you might be able to do some low cost, low time translations to open up your audience a bit without all the trouble and expense of fully internationalizing your app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-internationalization/1449/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-internationalization/1449/7</link>
+        <pubDate>Mon, 07 Apr 2014 13:45:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1449-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-internationalization/1449.rss">SaaS internationalization</source>
+      </item>
+      <item>
+        <title>SaaS internationalization</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="1449">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/lucaspiller/40/1240_1.png" class="avatar"> lucaspiller:</div>
+<blockquote>
+<p>ok Brazil is 200m people vs 40m in Poland, but compared to 1.8b English speakers</p>
+</blockquote>
+</aside>
+<p>Even within the world of English speakers, one needs to care about culture and localisation. For a trivial example, in the US you’d ask for a 9-digit zip code. In Australia it’s a 4-digit postcode. In the US, you can send a marketing email in October with pumpkins and witches and ghosts. In Australia, you can send a marketing email in January for summer.</p>
+<p>These cultural differences are something that a SAAS white-label partner could be more aware of, and thereby hopefully boost sales.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-internationalization/1449/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-internationalization/1449/6</link>
+        <pubDate>Mon, 07 Apr 2014 09:45:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1449-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-internationalization/1449.rss">SaaS internationalization</source>
+      </item>
+      <item>
+        <title>SaaS internationalization</title>
+        <dc:creator><![CDATA[lucaspiller]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="1449">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/fredguth/40/1273_1.png" class="avatar"> fredguth:</div>
+<blockquote>
+<p>Licensing is a very standard practice in the conventional software world.  I can speak for myself that I would be interested in exploring some SaaS products in the brazilian market. Not all products would suit this case, but I can see many that would work. Still, I don’t know any example of someone licensing a SaaS.</p>
+</blockquote>
+</aside>
+<p>I used to work for an enterprise company that pretty much licensed their whole platform out to a company in Australia. Our platform provided value added mobile and SMS services (if anyone wants any advice on anything SMS related, feel free to PM me), so although there wasn’t any internationalisation in terms of translation, we had to integrate with Australian mobile networks.</p>
+<p>The partnership made a lot of sense, as we could offer this as an extra feature to our existing customers in the EU (you can now sell your ringtones to Australians!), and the other company was able to find new customers in Australia to sell the services to. Licensing a SaaS seems a bit one sided though, ok the owner gets more money, but they’ll also have the extra support and maintenance burden from having to deal with the extra customers, as well as any internationalisation overheads.</p>
+<p>Out of interest what sort of products do you think would be a good fit for the Brazilian market? I was wondering the same about some eastern European countries, however the main issues I found were the market was too small (ok Brazil is 200m people vs 40m in Poland, but compared to 1.8b English speakers) and these countries have lower buying power, meaning you can’t charge as much.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-internationalization/1449/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-internationalization/1449/5</link>
+        <pubDate>Mon, 07 Apr 2014 09:13:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1449-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-internationalization/1449.rss">SaaS internationalization</source>
+      </item>
+      <item>
+        <title>SaaS internationalization</title>
+        <dc:creator><![CDATA[fredguth]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/robwalling">@robwalling</a> and <a class="mention" href="/u/craigvn">@craigvn</a>. That is what I was looking for: the product owner perspective.   If I understood right, the idea might work if the international partner:</p>
+<ol>
+<li>has a proven track-record and a previous relationship with you;</li>
+<li>is willing to pay in advance a considerable amount (with existing customers or by himself) just to justify all the hassle of the process;</li>
+<li>is willing to take the product “as is”, fork it, and deal with the translation and possible integration expenses and risks.</li>
+</ol>
+<p>People like this are hard to find, therefore we don’t see many (any?) partnership like this working today. Makes sense.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-internationalization/1449/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-internationalization/1449/4</link>
+        <pubDate>Thu, 03 Apr 2014 14:39:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1449-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-internationalization/1449.rss">SaaS internationalization</source>
+      </item>
+      <item>
+        <title>SaaS internationalization</title>
+        <dc:creator><![CDATA[craigvn]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I have been ask to internationalise as well. In general if someone asks to do it I ask for a commitment from them beforehand. For example if they can get 10 english language speakers in their country to sign up and start using the software and become the testers for the translation I might consider it.</p>
+<p>But normally what they want is for you to do all the work translating (significant) in the off chance they MIGHT use the software and can POSSIBLY get a couple more users. No chance.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-internationalization/1449/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-internationalization/1449/3</link>
+        <pubDate>Thu, 03 Apr 2014 02:07:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1449-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-internationalization/1449.rss">SaaS internationalization</source>
+      </item>
+      <item>
+        <title>SaaS internationalization</title>
+        <dc:creator><![CDATA[robwalling]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been contacted maybe 10 times by people who would like to license a product. The problem I’ve run into is:</p>
+<ol>
+<li>Many of the people are not experienced business people so they are time consuming to work with.</li>
+<li>If they don’t have proven business experience so their odds of success are low</li>
+<li>The legal fees and basic logistics just to get something like this going is expensive from a product owner’s expensive (not to mention time), so there needs to be a guaranteed payment up front to make it worthwhile. The promise of a few extra potential sales doesn’t come close to covering the mindshare and time involved in putting a deal like this together.</li>
+<li>The people who have had existing businesses typically wanted to integrate it into an existing app, so wanted changes to the code, wanted to white label, etc… which is nearly all more time than it’s worth unless it’s going to be your core business.</li>
+</ol>
+<p>So it’s certainly possible, but in my experience as a product owner, partnerships like this most often result in exponentially more time and money spent than you ever receive in return.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-internationalization/1449/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-internationalization/1449/2</link>
+        <pubDate>Thu, 03 Apr 2014 01:48:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1449-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-internationalization/1449.rss">SaaS internationalization</source>
+      </item>
+      <item>
+        <title>SaaS internationalization</title>
+        <dc:creator><![CDATA[fredguth]]></dc:creator>
+        <description><![CDATA[
+            <p>I believe that more than 50% of a SaaS success is in its marketing effort and marketing is very language/culture sensitive. Therefore, it is very reasonable that internationalization shouldn’t be a concern for bootstrapped SaaS businesses. <a class="mention" href="/u/robwalling">@robwalling</a> was very clear with this point in <a href="http://www.microconf.com/videos-2013.html" rel="nofollow noopener">Microconf 2013</a> when he said "Don’t internationalize until you max out English / your native market.” I don’t see most bootstrapped SaaS maxing their native markets and internationalization is today a de facto non-issue.</p>
+<p>But I still see a missing opportunity here.</p>
+<p>With DotNetInvoice and HitTail, <a class="mention" href="/u/robwalling">@robwalling</a> (sorry man, but you have all the good examples) demonstrated one can be very successful buying a code and being really good in marketing it. Why the same can not be true with licensing?</p>
+<p>Licensing is a very standard practice in the conventional software world.  I can speak for myself that I would be interested in exploring some SaaS products in the brazilian market. Not all products would suit this case, but I can see many that would work. Still, I don’t know any example of someone licensing a SaaS.</p>
+<p>Last weekend, <a href="http://discuss.bootstrapped.fm/t/what-about-a-real-life-bootstrapped-meet-ups-category/1440">I was talking</a> with <a class="mention" href="/u/stevemcleod">@SteveMcLeod</a>  about this. Maybe there were too many caipirinhas involved, but we didn’t find any good reason why this is not possible. What you fellow bootstrappers think?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/saas-internationalization/1449/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/saas-internationalization/1449/1</link>
+        <pubDate>Thu, 03 Apr 2014 01:09:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1449-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/saas-internationalization/1449.rss">SaaS internationalization</source>
+      </item>
+  </channel>
+</rss>

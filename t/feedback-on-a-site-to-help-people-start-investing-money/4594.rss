@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Feedback on a site to help people start investing money</title>
+    <link>https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594</link>
+    <description>I recently started working on a tool/app that makes it easier for people to learn how to start investing money. I do this by comparing different investment platforms by risk and returns on a single page. The link is https://senzu.io/investing.
+
+Would love to hear your thoughts on the idea, the problem it&#39;s solving and what improvements you think I can make.
+
+Thanks!</description>
+    
+    <lastBuildDate>Thu, 08 Dec 2016 04:47:48 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Feedback on a site to help people start investing money</title>
+        <dc:creator><![CDATA[Matthew_Hui]]></dc:creator>
+        <description><![CDATA[
+            <p>For robo advisor comparisons we tried to compare similar portfolios on each platform. For example, Betterment allows you to select the % of stocks and % of bonds in your portfolios which is basically your risk score. Wealthfront, Acorns and Wisebanyan allow you to choose as well. The composition we chose for all these portfolios is 90% stock and 10% bonds. While the risk profile is somewhat similar the actual ETFs being bought are different across the different platforms. This affects the returns and fees of each portfolio.</p>
+<p>Wealthfront for example, invests in the Vanguard Energy ETF. If you do not wish to to have this in your portfolio then maybe you want to use a different robo advisor.</p>
+<p>Does that make sense? Maybe this page would clear it up <a href="https://senzu.io/investing/robo-advisors" rel="nofollow noopener">https://senzu.io/investing/robo-advisors</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/5</link>
+        <pubDate>Thu, 08 Dec 2016 04:41:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4594-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594.rss">Feedback on a site to help people start investing money</source>
+      </item>
+      <item>
+        <title>Feedback on a site to help people start investing money</title>
+        <dc:creator><![CDATA[bwhite]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t quite understand what you wrote about the comparison of robo-advisors. They have yielded pretty widely-varied returns, suggesting that the portfolios are substantially different. Are they then still comparable? The general thesis is that returns should be similar when adjusted for risk.</p>
+<p>There could be room for a useful comparison tool to help sift through all the options but with opaque risk numbers and difficulty determining the would-be portfolios, it’s hard for me to understand how this would provide enough of the right sort of information to be helpful.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/4</link>
+        <pubDate>Thu, 08 Dec 2016 04:25:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4594-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594.rss">Feedback on a site to help people start investing money</source>
+      </item>
+      <item>
+        <title>Feedback on a site to help people start investing money</title>
+        <dc:creator><![CDATA[Matthew_Hui]]></dc:creator>
+        <description><![CDATA[
+            <p>Ben, thanks for the feedback. What you see is indeed historical returns and if you hover the returns or other elements in the table you should see a tooltip with more info. Is it not clear that there are tooltips? I’m going to change the label to be Historical Returns instead. All the portfolios being compared for robo-advisors are 90% stock / 10% bonds so they should be comparable.</p>
+<p>Options are greyed out if you do not meet the min investment amount or are not accredited if the option requires accreditation. Eventually I think Senzu will be a business in the space of making personal finance product recommendations and tools for consumers. The problem we are solving right now is consolidating all the many different investment platforms out there and providing a simple tool to compare them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/3</link>
+        <pubDate>Wed, 07 Dec 2016 05:25:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4594-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594.rss">Feedback on a site to help people start investing money</source>
+      </item>
+      <item>
+        <title>Feedback on a site to help people start investing money</title>
+        <dc:creator><![CDATA[bwhite]]></dc:creator>
+        <description><![CDATA[
+            <p>How is it possible to provide an “Estimated Return” for robo-advisors? Are you doing something incredibly clever in which you are forecasting the upcoming returns based on historical information? Presumably not. Did you mean “Historical Return”, then? And each of the robo-advisors you listed offers a wide variety of portfolios with correspondingly various returns. How is it possible to consolidate all that information into a single number? It’s all quite opaque.</p>
+<p>Robo-advisors are generally able to be less risky than peer-to-peer lending. I think this is what you mean when you score the robo-advisors with 6s and 7s on “Risk” but give P2P lending firms 3s. This is backwards from my intuition: I’d guess larger numbers are riskier.</p>
+<p>Why are some of the options greyed out?</p>
+<p>I could see the utility in a page which offers helpful pros and cons of the various popular options. What exactly are you bootstrapping? What problem are you solving?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/2</link>
+        <pubDate>Wed, 07 Dec 2016 04:40:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4594-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594.rss">Feedback on a site to help people start investing money</source>
+      </item>
+      <item>
+        <title>Feedback on a site to help people start investing money</title>
+        <dc:creator><![CDATA[Matthew_Hui]]></dc:creator>
+        <description><![CDATA[
+            <p>I recently started working on a tool/app that makes it easier for people to learn how to start investing money. I do this by comparing different investment platforms by risk and returns on a single page. The link is <a href="https://senzu.io/investing" rel="nofollow noopener">https://senzu.io/investing</a>.</p>
+<p>Would love to hear your thoughts on the idea, the problem it’s solving and what improvements you think I can make.</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594/1</link>
+        <pubDate>Wed, 07 Dec 2016 01:17:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4594-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/feedback-on-a-site-to-help-people-start-investing-money/4594.rss">Feedback on a site to help people start investing money</source>
+      </item>
+  </channel>
+</rss>

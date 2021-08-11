@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Newsletters and Email Courses: Shared Mailing Lists?</title>
+    <link>https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726</link>
+    <description>I&#39;m new to mailing lists but am intrigued by the idea of a regular newsletter and also having email courses. Is it generally better to maintain a separate email list for each thing (newsletter and each individual email course) or is it better to find a way to have just one mailing list and segment it / use groups for specific purposes?
+
+One of the downside to sharing the mailing list for many purposes would be that someone could end up unsubscribing to the whole lot when they might just want to unsubscribe to one aspect. Another would be that it would be more complicated (depending on the mailing service, I suppose) to ensure that people get the correct group addd to their mailing list entry.
+
+One of the upsides to sharing the mailing list *might* be that people may only have to double opt-in once to get on your list, and then if they want to add themselves to additional groups it could just do that and not require them to double opt-in to the new group. However, maybe this isn&#39;t considered best practice... I&#39;m not sure.
+
+The only other potential upsides are potential for more interaction between email courses (maybe not actually possible) and also maybe less organization / moving pieces if you only have one list to worry about.
+
+I&#39;m probably thinking about this too much. :) My grand plan is to have one general purpose mailing list and at least 2-3 email courses (3-10 posts per course, maybe?) that may or may not be related to each other. If this works out for me, I could easily see the number of email courses going up by a lot. Before I spend the time to really dig in and build these first few out I want to make sure I&#39;m not painting myself into a corner.
+
+On the implementation side, I&#39;m currently using MailChimp. I&#39;d love specific guidance for MailChimp but I&#39;d also like general guidance as I&#39;m not completely stuck using MailChimp at this point.
+
+On the MailChimp side, I&#39;ve already discovered that I&#39;ll have to interact with the API if I even want to experiment with groups vs individual mailing lists. I&#39;m not ready to make that commitment unless I know that it is the better way to go.
+
+So I guess a few questions to summarize:
+
+ * Does it make sense to have several independent email courses or should I just focus on one (broad) thing?
+ * Does it make sense to maintain each email course and the newsletter as its own mailing list?
+ * Does another service than MailChimp do what I&#39;m talking about more easily out of the box with less work?
+ * Is there anything else that is obvious but that I&#39;m missing?
+
+Thanks!</description>
+    
+    <lastBuildDate>Sat, 05 Jul 2014 06:02:35 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Newsletters and Email Courses: Shared Mailing Lists?</title>
+        <dc:creator><![CDATA[rachelandrew]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve started using Drip - I’m really impressed with it and will probably move most of the stuff related to my books there.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/8</link>
+        <pubDate>Sat, 05 Jul 2014 06:02:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1726-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726.rss">Newsletters and Email Courses: Shared Mailing Lists?</source>
+      </item>
+      <item>
+        <title>Newsletters and Email Courses: Shared Mailing Lists?</title>
+        <dc:creator><![CDATA[CasJam]]></dc:creator>
+        <description><![CDATA[
+            <p>I just launched a new email course using mailchimp and it was a mess.</p>
+<p>Mailchimp’s autoresponder feature works ok for sending a sequence of emails to new subscribers. But sending a sequence to people who were already on your list is near impossible.</p>
+<p>What I tried to do was send a newsletter to my list telling them that my new course is now available. “Click this link to start it.” That link was SUPPOSED to trigger my autoresponder sequence. Nope. Some people got it. Most didn’t. No idea why.</p>
+<p>Now I’m left manually sending all the lesson links at once to the people who tell me they didn’t receive them. Not ideal.</p>
+<p>I’m in the process of switching to <a href="http://getdrip.com" rel="nofollow noopener">http://getdrip.com</a></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/7</link>
+        <pubDate>Fri, 04 Jul 2014 23:14:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1726-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726.rss">Newsletters and Email Courses: Shared Mailing Lists?</source>
+      </item>
+      <item>
+        <title>Newsletters and Email Courses: Shared Mailing Lists?</title>
+        <dc:creator><![CDATA[uibreakfast]]></dc:creator>
+        <description><![CDATA[
+            <p>Totally agree, it’s a tough choice. And such a pain <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> I keep one large list and use Groups for segmenting (which I know isn’t perfect) — I use one Group with multiple values to filter their “Freebie,” and have a series of autoresponders build upon that.</p>
+<p>I think sending duplicate emails is more evil. As is the inconvenience of sending the same campaign several times.</p>
+<p>And in spite of all MailChimp’s inflexibility, they’re still great and <em>reliable</em> (that’s key to me, not the price or anything).</p>
+<p>My policy is that when something cool comes up, like a course, I send it to old subscribers automatically, because the potential value is more important than the friction of making the same people take active action (subscribe to the new list). You don’t want any conversion rate to be applied there <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/6</link>
+        <pubDate>Mon, 16 Jun 2014 14:14:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1726-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726.rss">Newsletters and Email Courses: Shared Mailing Lists?</source>
+      </item>
+      <item>
+        <title>Newsletters and Email Courses: Shared Mailing Lists?</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d suggest checking out <a href="http://customer.io" rel="nofollow noopener">http://customer.io</a>. It is very flexible in ways that Mailchimp et al are not.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/5</link>
+        <pubDate>Thu, 12 Jun 2014 02:53:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1726-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726.rss">Newsletters and Email Courses: Shared Mailing Lists?</source>
+      </item>
+      <item>
+        <title>Newsletters and Email Courses: Shared Mailing Lists?</title>
+        <dc:creator><![CDATA[ryan]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>Yes, if they unsubscribe, then they’re gone from all segments.</p>
+<p>Unfortunately there isn’t a perfect answer. I probably should have said “if the segments are <strong>very</strong> related”. I would lean toward a single list if the segments are related enough that:</p>
+<ul>
+<li>You’d often want to send the same email to multiple segments.</li>
+<li>If a person unsubscribes, then they likely aren’t interested in any of the segments (since they’re very related).</li>
+</ul>
+<p>MailChimp doesn’t let you send to multiple lists at once / doesn’t remove dups. So, if a majority of your subscribers are actually on all your lists, then they’ll potentially be getting duplicate emails if you ever want to send the same email to everyone.</p>
+<p>MailChimp pricing is based on the number of subscribers. If you have the same subscribers on multiple lists, then you’re essentially paying for these duplicate subscribers.</p>
+<p>All that said, for starting out, it is a lot simpler to just make multiple lists as you need them. Over time, see how related and how many duplicate subscribers you really get. Maybe it ends up not an issue. Or maybe you end up wanting to combine the lists later. It’s pretty easy to combine/manipulate the lists with MailChimp’s export/import tools (don’t use their “combine list” UI because you’ll lose most of your fields. I made a video on combining lists <a href="http://pocketproduct.com/videos/mailchimp/combine-lists.html" rel="nofollow noopener">here</a>).</p>
+<p>I have not yet run any email courses, but I have been setting up for multiple segments and have been looking into this one-or-many list issue a lot.</p>
+<p>In the end, I see MailChimp as a good way to get started. But I’d probably migrate to something else if/when something comes along that is competitive pricing-wise, or my list gets big enough to justify a higher monthly bill.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/4</link>
+        <pubDate>Wed, 11 Jun 2014 20:53:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1726-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726.rss">Newsletters and Email Courses: Shared Mailing Lists?</source>
+      </item>
+      <item>
+        <title>Newsletters and Email Courses: Shared Mailing Lists?</title>
+        <dc:creator><![CDATA[simensen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="1726">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ryan/40/1393_1.png" class="avatar"> ryan:</div>
+<blockquote>
+<p>If these various email courses are related at all, I’d stick with one list. You’ll want to use a custom field in your list for each course to segment with.</p>
+</blockquote>
+</aside>
+<p>Some of the courses may be related. What is your main reason for saying you’d stick with one list? For management purposes? For end-user convenience? Do you manage multiple email courses in this way?</p>
+<p>Is my concern about people unsubscribing all of the lists across the board unfounded? If someone clicks “unsubscribe” if you segment based on field rather than groups, is it all or nothing?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/3</link>
+        <pubDate>Wed, 11 Jun 2014 20:11:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1726-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726.rss">Newsletters and Email Courses: Shared Mailing Lists?</source>
+      </item>
+      <item>
+        <title>Newsletters and Email Courses: Shared Mailing Lists?</title>
+        <dc:creator><![CDATA[ryan]]></dc:creator>
+        <description><![CDATA[
+            <p>There are products like <a href="http://convertkit.com" rel="nofollow noopener">ConvertKit</a> that are made for this. I haven’t used ConvertKit, but it looks pretty slick. If you want to spend the $50/month.</p>
+<p>MailChimp isn’t the best fit, but its low cost and friendly UI led me to make it work, and come up with ways to get around its main limitations.</p>
+<p>It can be a pain to manage multiple segments and email courses. But you can do it with autoresponders.</p>
+<p>If these various email courses are related at all, I’d stick with one list. You’ll want to use a custom field in your list for each course to segment with.</p>
+<p>People can’t subscribe to a second segment without getting an “already subscribed” error. You need to use the API to get around this. Your embedded forms will point at your own server instead of mailchimps (new subscriptions/updates will be routed through your server and then you call MailChimp’s api to subscribe/update existing). I could post some example code to github if anyone is interested. If you’re using wordpress, there is a <a href="http://wordpress.org/plugins/mailchimp-for-wp" rel="nofollow noopener">plugin</a> that gets around this issue, so you don’t have to write/host your own server code.</p>
+<p>Using a single list means you need to use conditions in some of your standard forms, such as the “Confirmation thank you page”. You can then taylor your “thank you” copy based on the segment they signed up for. For example:</p>
+<pre><code>*|IF:COURSE1=yes|*
+Ready to start? Your first lesson will arrive within the hour!
+*|ELSE:|*
+Thank you for signing up!
+*|END:IF|*
+</code></pre>
+<p>I don’t recommend using MailChimp’s Group feature for segmenting. You can’t trigger autoresponders on group changes. So, use a custom field in your list, like “COURSE1”, and when that value changes to “yes”, you can trigger your email course. Your embedded signup form for course1 will set the COURSE1 field to yes.</p>
+<p>Hope that helps,<br>
+Ryan</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/2</link>
+        <pubDate>Wed, 11 Jun 2014 19:06:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1726-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726.rss">Newsletters and Email Courses: Shared Mailing Lists?</source>
+      </item>
+      <item>
+        <title>Newsletters and Email Courses: Shared Mailing Lists?</title>
+        <dc:creator><![CDATA[simensen]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m new to mailing lists but am intrigued by the idea of a regular newsletter and also having email courses. Is it generally better to maintain a separate email list for each thing (newsletter and each individual email course) or is it better to find a way to have just one mailing list and segment it / use groups for specific purposes?</p>
+<p>One of the downside to sharing the mailing list for many purposes would be that someone could end up unsubscribing to the whole lot when they might just want to unsubscribe to one aspect. Another would be that it would be more complicated (depending on the mailing service, I suppose) to ensure that people get the correct group addd to their mailing list entry.</p>
+<p>One of the upsides to sharing the mailing list <em>might</em> be that people may only have to double opt-in once to get on your list, and then if they want to add themselves to additional groups it could just do that and not require them to double opt-in to the new group. However, maybe this isn’t considered best practice… I’m not sure.</p>
+<p>The only other potential upsides are potential for more interaction between email courses (maybe not actually possible) and also maybe less organization / moving pieces if you only have one list to worry about.</p>
+<p>I’m probably thinking about this too much. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> My grand plan is to have one general purpose mailing list and at least 2-3 email courses (3-10 posts per course, maybe?) that may or may not be related to each other. If this works out for me, I could easily see the number of email courses going up by a lot. Before I spend the time to really dig in and build these first few out I want to make sure I’m not painting myself into a corner.</p>
+<p>On the implementation side, I’m currently using MailChimp. I’d love specific guidance for MailChimp but I’d also like general guidance as I’m not completely stuck using MailChimp at this point.</p>
+<p>On the MailChimp side, I’ve already discovered that I’ll have to interact with the API if I even want to experiment with groups vs individual mailing lists. I’m not ready to make that commitment unless I know that it is the better way to go.</p>
+<p>So I guess a few questions to summarize:</p>
+<ul>
+<li>Does it make sense to have several independent email courses or should I just focus on one (broad) thing?</li>
+<li>Does it make sense to maintain each email course and the newsletter as its own mailing list?</li>
+<li>Does another service than MailChimp do what I’m talking about more easily out of the box with less work?</li>
+<li>Is there anything else that is obvious but that I’m missing?</li>
+</ul>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726/1</link>
+        <pubDate>Wed, 11 Jun 2014 17:45:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1726-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/newsletters-and-email-courses-shared-mailing-lists/1726.rss">Newsletters and Email Courses: Shared Mailing Lists?</source>
+      </item>
+  </channel>
+</rss>

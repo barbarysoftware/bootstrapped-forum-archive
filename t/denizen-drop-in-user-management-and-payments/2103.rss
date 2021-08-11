@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Denizen: Drop-in user management and payments</title>
+    <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103</link>
+    <description>Hi bootstrappers,
+
+Since many of you are building SaaS apps, you know that building your core product is only a part of the challenge.
+To actually run the business, your app needs a ton of generic stuff:
+
++ user registration + email verification
++ forgot-my-password emails
++ add/edit credit card
++ change plan
++ payment invoice/receipt emails
++ &quot;your card failed, login and update so we don&#39;t shut down your account&quot; emails (aka &quot;dunning&quot;)
+
+Frameworks like Rails have components to do pieces of this, but nothing comprehensive.
+People using other languages like Go, Node.js, Clojure, or frontend-only stacks are mostly out of luck: They have to roll their own solutions.
+
+As a bootstrapper, I don&#39;t have the team, time, or resources to do the necessary frontend design and backend server juggling to build custom solutions all the time.
+That is to say, I&#39;ve had a lot of promising lil&#39; apps and side projects that I never launched because it was just too much work to put &#39;em online and start charging.
+
+My friend and I have been working for the past several months to try and factor out all of this stuff and &quot;solve it once and for all&quot; = )
+Our solution is similar to Stripe&#39;s &quot;checkout&quot; button: Give folks a single snippet of JavaScript that provides fully styled, responsive forms and the necessary backend machinery.
+You can see more details on our landing page:
+
+https://getdenizen.com/
+
+or this 9-minute zero-to-SaaS app YouTube overview:
+
+https://www.youtube.com/watch?v=y8gQRqQTHGI
+
+The basic idea is that you can either spend $10k + 2 weeks to do this boring stuff custom, or you drop in some JS that solves 95% of what you need and get on with shippin&#39; your core product.
+
+I&#39;d love to hear what ya&#39;ll think: 
+
++ Does this solve a problem you have?
++ Could you ship something faster by using Denizen?
++ Does Denizen let you ship a lil&#39; project that otherwise wouldn&#39;t have been worth the effort?
+
+Are there any features or use cases you&#39;d like Denizen to support?
+
+
+cheers,
+
+kevin</description>
+    
+    <lastBuildDate>Fri, 29 May 2015 02:42:38 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[lynaghk]]></dc:creator>
+        <description><![CDATA[
+            <p>The uptake has been slow: The segment we are targeting are people who want to build a SaaS app but haven’t yet implemented the user management stuff — it turns out these people are very difficult to find = )</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/19</link>
+        <pubDate>Fri, 29 May 2015 02:42:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[buggy]]></dc:creator>
+        <description><![CDATA[
+            <p>I completely forgot about this and was thinking about building something similar myself, though the implementation would have been very different. I’d also be interested to know how this went?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/18</link>
+        <pubDate>Mon, 18 May 2015 23:16:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[courtz]]></dc:creator>
+        <description><![CDATA[
+            <p>Every time I sit down to build something I think of this. For those of us not using Rails with its Rails-kit, it makes total sense I think. An easy way to have get your SAAS app going fast.</p>
+<p>I would do exactly what <a href="http://Customer.io" rel="nofollow noopener">Customer.io</a> does, with its api I can track events and send emails to users. I think it would be good to still keep login and session management within my app, but I’d have an easy REST API which I could do:</p>
+<p>User Management (profile management, CRM type stuff)</p>
+<p>Then i’d add all the stuff included that I know have to pay each individual app for:<br>
+Billing management (chargebee, recurly etc)<br>
+Basic helpdesk (zendesk)<br>
+Drip emails (<a href="http://getdrip.com" rel="nofollow noopener">getdrip.com</a>)</p>
+<p>etc</p>
+<p><strong>So Im curious. How is this going? What does the market think?</strong></p>
+<p>I cant think why it wouldn’t work apart from security concerns? But then if you left session management within the app the dev is building and use Denizon as an extension of the user, its surely a winner!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/17</link>
+        <pubDate>Mon, 18 May 2015 05:38:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[lynaghk]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/rfctr">@rfctr</a>!</p>
+<aside class="quote" data-post="15" data-topic="2103">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>I’m puzzled by the Stripe vendor lock-in though. What if FastSpring is my choice?</p>
+</blockquote>
+</aside>
+<p>Stripe isn’t the best for everyone, but we decided to focus on them first. If Denizen doesn’t get traction on top of Stripe, it’s probably not going to get traction on top of any other payment provider. (Though if we do get traction we’re certainly open to integrating with other provider.)</p>
+<aside class="quote" data-post="15" data-topic="2103">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>There is no charge until a user is charged. Does it mean I can use this solution for a free site forever and for free?</p>
+</blockquote>
+</aside>
+<p>We originally started with per-user charges, but we decided it was confusing and a barrier for potential customers. In response to your question: Yes, you can use Denizen for login and if you don’t charge your users anything we won’t charge you anything. Though if your site has 100k daily visitors we might have to talk =P</p>
+<p>Note that even for a free site, though, you’ll need to connect to a live Stripe account to get production keys.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/16</link>
+        <pubDate>Fri, 17 Oct 2014 19:41:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <p>Good idea, I like it.</p>
+<p>I used OpenId and OAuth in a few of my projects, so I’m aware of convenience of getting rid of user management code.</p>
+<p>I’m puzzled by the Stripe vendor lock-in though. What if FastSpring is my choice?</p>
+<p>I understand all the good vibe about Stripe, but they are not going to stay the best provider for long; they will eventually be bought by some old ugly corporation and will start doing ugly things to their small customers.</p>
+<p>Another puzzlement came from the pricing page. There is no charge until a user is charged. Does it mean I can use this solution for a free site forever and for free? Or, quite opposite, I cannot use this solution for a free site at all (because it requires to enter CC into Stripe)?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/15</link>
+        <pubDate>Fri, 17 Oct 2014 15:54:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[lynaghk]]></dc:creator>
+        <description><![CDATA[
+            <p>Right now you’re going to have to have your own server, yeah.<br>
+You won’t always need to store your own data, though—in the case of the Retouchalot site, they are serving pages based on the login info provided by Denizen. There’s no database for that site, just a stateless web server.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/14</link>
+        <pubDate>Thu, 16 Oct 2014 23:54:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[mmalo]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the quick response Kevin. Yes, I think that answers my question. So the way I’m understanding it is that for a full fledged web application (as opposed to just needing to serve up the right page based on the ‘subscription’) Denizen saves on some of the work but there would still be required the usual solution be built to manage the users’ data etc. on our servers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/13</link>
+        <pubDate>Thu, 16 Oct 2014 22:59:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[lynaghk]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/mmalo">@mmalo</a>,</p>
+<p>No need to apologize for “layman-speak”: One of the reasons we are building Denizen is so that folks can avoid computering-complexity and get on with shippin’ their core business = )</p>
+<p>The primary mechanism Denizen provides is the ability to associate users with Stripe subscriptions.<br>
+For example, you can make a sign up form in one line of HTML that takes peoples credit cards and signs them up to be on, e.g., “The gold plan”.</p>
+<p>All Denizen does is tell <em>your</em> server about this, and so your server is responsible for serving those people the right page.<br>
+Here’s some example code for a tiny server that controls access to static content:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/lynaghk/denizen-demo-compojure" target="_blank">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars0.githubusercontent.com/u/147919?s=400&amp;v=4" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/lynaghk/denizen-demo-compojure" target="_blank">lynaghk/denizen-demo-compojure</a></h3>
+
+<p>Demo Clojure web app using Denizen for user management - lynaghk/denizen-demo-compojure</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>(In the video linked from the README I show how to update the example to accept credit cards.)</p>
+<p>This is how <a href="https://retouchalot.com/">https://retouchalot.com/</a> uses Denizen to sell several levels of Photoshop tutorial videos.</p>
+<p>Does that answer your question?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/12</link>
+        <pubDate>Thu, 16 Oct 2014 22:35:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[mmalo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Kevin,</p>
+<p>I like the idea. One thing comes to mind tho, I’m not a programmer so forgive me if this is a foolish question. It sounds like Denizen just does user access/management and onboarding, would that be correct? So, would be useful to control membership access to static content or apps that dont keep user’s data. What about, for example, a project management app? I imagine in the scenario of custom-building a denizen alternative, there would also be server related stuff to separate users’ data, and create new instances each time someone signs up and that kind of thing. What’s Denizen’s approach to this situation?</p>
+<p>Again, I apologize for my layman-speak.</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/11</link>
+        <pubDate>Thu, 16 Oct 2014 22:05:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/lynaghk">@lynaghk</a> - sorry, I misspoke.  I’d rather do the user management stuff myself, and use a hosted service just for the payment &amp; subscription handling.  I’m already dealing with email deliverablilty, as we generate a ton of system email for different workflow events, reports, etc.   (Not to downplay it – deliverability is super important.)  Password hashing algorithms falls into that bucket of stuff I consider Nice to Have, or rather Something We’ll Deal With When We Get Big.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/10</link>
+        <pubDate>Tue, 07 Oct 2014 02:47:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[lynaghk]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/coreysnipes">@coreysnipes</a> re: keeping all of the data and managing everything within your app, do you mean that you’d rather have full code rather than use a hosted service?</p>
+<p>E.g., the Rails SaaS starter kit: <a href="https://railskits.com/saas/" rel="nofollow noopener">https://railskits.com/saas/</a> ?</p>
+<p>The advantages/tradeoffs of that approach are very different than using a third party hosted service: On one hand, you can do whatever customizations you need and run all of the infrastructure yourself.<br>
+On the other hand, you <em>have</em> to run all of the infrastructure yourself, which means you’ve got to stay on top of password hashing algorithm strengths, email delivery, responsive templates for login forms, &amp;c.</p>
+<p>Or is there another way that a product could deliver this value beyond this hosted vs. do-it-yourself-kit split?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/9</link>
+        <pubDate>Mon, 06 Oct 2014 17:58:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>Stripe-based billing management &amp; reminders would definitely be of value to me (I’m deferring building any of that until I get signup volume at a higher level).  To echo <a class="mention" href="/u/jeff">@jeff</a>… I’d rather keep the user data at home and manage signup/login/password features within my app.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/8</link>
+        <pubDate>Mon, 06 Oct 2014 12:27:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[lynaghk]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/chaddeshon">@chaddeshon</a>, thanks!<br>
+Responses in order:</p>
+<ol>
+<li>Yep, Denizen leverages Stripe subscriptions directly. This means:</li>
+</ol>
+<ul>
+<li>Stripe ensures the card charge succeeds before adding them to the plan</li>
+<li>Your plans can have free trial periods setup automatically through Stripe</li>
+<li>You can use Stripe’s dashboard or API to adjust your customers’ plans as necessary for manual overrides or other special cases</li>
+<li>Stripe add-ons like Baremetrics will work just fine</li>
+</ul>
+<ol start="2">
+<li>
+<p>Right now we are not exposing an API to let your server make notes or store other data on customer objects. If you have a specific use case in mind, I’d love to hear about it via private message / email.</p>
+</li>
+<li>
+<p>No, Denizen currently requires that you have a server. This is because we’re modeling our API on Stripe’s, which uses a shared secret key that only your server should have.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/7</link>
+        <pubDate>Sat, 04 Oct 2014 18:18:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[chaddeshon]]></dc:creator>
+        <description><![CDATA[
+            <p>This looks great. I have searched for and thought about building a service like this several times. I ended up using Memberful, which is working ok, but not perfect.</p>
+<p>I have a couple questions:</p>
+<ol>
+<li>
+<p>Do you use Stripe’s subscription feature or do you manually make the charge every month? If you are using Stripe’s subscription feature then I can use Baremetrics, which would be nice.</p>
+</li>
+<li>
+<p>How does your login piece fit with the rest of my site? Can I store custom data in Denizen (and have the user edit it)?</p>
+</li>
+<li>
+<p>One of the great things about Denizen is that it doesn’t require a server-side component. AngularJS and Firebase is my favorite architecture right now. Can I integrate Denizen login into AnguarlJS/Firebase without having to add a server?</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/6</link>
+        <pubDate>Sat, 04 Oct 2014 00:33:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[lynaghk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="3" data-topic="2103" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/jeff/40/2426_1.png" class="avatar"> jeff:</div>
+<blockquote>
+<p>The main problem with this concept is this:<br>
+Your app goes down, my app goes down.</p>
+</blockquote>
+</aside>
+<p>Hi Jeff,</p>
+<p>I definitely agree—we address this specific issue directly on the landing page.</p>
+<p>Denizen runs on autoscaling servers on EC2 behind a load balancer for zero downtime deployments and redundancy. We’re moving soon to distributing across geographically separate datacenters.</p>
+<p>That said, if your app has high-availability requirements then it’s ultimately your responsibility and third-party services like Denizen may not be suitable.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/5</link>
+        <pubDate>Fri, 03 Oct 2014 15:49:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[lynaghk]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks jyne131!<br>
+We didn’t want to rely on “lock in” to force people to keep using our service—putting the user info in the stripe metadata fields lets our customers easily get their users’ info and move to other products or in-house offerings if they grow beyond what Denizen can provide.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/4</link>
+        <pubDate>Fri, 03 Oct 2014 15:39:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[jeff]]></dc:creator>
+        <description><![CDATA[
+            <p>The main problem with this concept is this:<br>
+Your app goes down, my app goes down.</p>
+<p>I have heard this idea many times before and the aforementioned issue always comes up.</p>
+<blockquote>
+<p>The basic idea is that you can either spend $10k + 2 weeks to do this boring stuff custom</p>
+</blockquote>
+<p>Ignoring the fact that this is not exactly true as there are a lot of available open source solutions (e.g. just googled “user management node.js”), this particular investment would be worth it. Users, their data and the ability to even login is too fundamental to outsource to a third-party, which isn’t an established company (e.g. fb, google, twitter).</p>
+<p>To recap: Yes, it solves a problem, but the solution is too risky. I personally would never consider using third-party service to authenticate my users.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/3</link>
+        <pubDate>Fri, 03 Oct 2014 15:37:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[jnye131]]></dc:creator>
+        <description><![CDATA[
+            <p>Just had a quick look, it looks good.</p>
+<p>I like the user info is stored in the stripe meta fields - that’s a nice touch.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/2</link>
+        <pubDate>Fri, 03 Oct 2014 15:24:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+      <item>
+        <title>Denizen: Drop-in user management and payments</title>
+        <dc:creator><![CDATA[lynaghk]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi bootstrappers,</p>
+<p>Since many of you are building SaaS apps, you know that building your core product is only a part of the challenge.<br>
+To actually run the business, your app needs a ton of generic stuff:</p>
+<ul>
+<li>user registration + email verification</li>
+<li>forgot-my-password emails</li>
+<li>add/edit credit card</li>
+<li>change plan</li>
+<li>payment invoice/receipt emails</li>
+<li>“your card failed, login and update so we don’t shut down your account” emails (aka “dunning”)</li>
+</ul>
+<p>Frameworks like Rails have components to do pieces of this, but nothing comprehensive.<br>
+People using other languages like Go, Node.js, Clojure, or frontend-only stacks are mostly out of luck: They have to roll their own solutions.</p>
+<p>As a bootstrapper, I don’t have the team, time, or resources to do the necessary frontend design and backend server juggling to build custom solutions all the time.<br>
+That is to say, I’ve had a lot of promising lil’ apps and side projects that I never launched because it was just too much work to put 'em online and start charging.</p>
+<p>My friend and I have been working for the past several months to try and factor out all of this stuff and “solve it once and for all” = )<br>
+Our solution is similar to Stripe’s “checkout” button: Give folks a single snippet of JavaScript that provides fully styled, responsive forms and the necessary backend machinery.<br>
+You can see more details on our landing page:</p>
+<p><a href="https://getdenizen.com/" class="onebox" target="_blank" rel="nofollow noopener">https://getdenizen.com/</a></p>
+<p>or this 9-minute zero-to-SaaS app YouTube overview:</p>
+<div class="lazyYT" data-youtube-id="y8gQRqQTHGI" data-youtube-title="9 minute Clojure SaaS app w/ Denizen" data-width="480" data-height="270" data-parameters="feature=oembed&amp;wmode=opaque"></div>
+<p>The basic idea is that you can either spend $10k + 2 weeks to do this boring stuff custom, or you drop in some JS that solves 95% of what you need and get on with shippin’ your core product.</p>
+<p>I’d love to hear what ya’ll think:</p>
+<ul>
+<li>Does this solve a problem you have?</li>
+<li>Could you ship something faster by using Denizen?</li>
+<li>Does Denizen let you ship a lil’ project that otherwise wouldn’t have been worth the effort?</li>
+</ul>
+<p>Are there any features or use cases you’d like Denizen to support?</p>
+<p>cheers,</p>
+<p>kevin</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103/1</link>
+        <pubDate>Thu, 02 Oct 2014 23:08:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2103-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/denizen-drop-in-user-management-and-payments/2103.rss">Denizen: Drop-in user management and payments</source>
+      </item>
+  </channel>
+</rss>

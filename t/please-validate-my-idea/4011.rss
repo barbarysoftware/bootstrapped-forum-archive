@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Please validate my idea!</title>
+    <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011</link>
+    <description>My main SaaS business deals with patient information, and I not only made sure it was HIPAA compliant, but also implemented some additional security features. 
+
+I&#39;m in the process of extracting 2 of these features into a simple API so I can build a product around them. Both are ways to enhance user authentication for SaaS apps:
+
+1) **2-factor authentication as a service**: this one would handle the 2nd authentication step, either using time-based tokens or SMS. I know it&#39;s nothing new, there are a couple of services doing this. I would just try to position it a little bit differently and make it dead simple to implement. 
+
+2) **Suspicious login detection**: this is a simple API call. After you authenticate your user, give me their user id and IP address and I&#39;ll let you know if that login is suspicious based on their login history, geo location and other heuristics. You can choose what to do next. Based on your settings, I can even handle emailing the user with an unlock token or warn them of the unusual activity in their account.
+
+These 2 features could save a few days of development and ongoing maintenance. Would you pay to add this extra layer of security to your SaaS? If so, how much?
+
+Thanks in advance!</description>
+    
+    <lastBuildDate>Sun, 10 Jul 2016 21:10:48 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Please validate my idea!</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>How many customers have you spoken to?</li>
+<li>How many said “Yes” when you asked them to buy it?<br>
+(after they say yes, you can say “it’s not ready yet, but you’ll be the first to know” OR you could use <a href="http://Tilt.com" rel="nofollow noopener">Tilt.com</a> and “charge” them (with hefty discount) but the charge doesn’t go thru until the beta is released.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/6</link>
+        <pubDate>Sun, 10 Jul 2016 21:10:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4011-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011.rss">Please validate my idea!</source>
+      </item>
+      <item>
+        <title>Please validate my idea!</title>
+        <dc:creator><![CDATA[jamieb]]></dc:creator>
+        <description><![CDATA[
+            <p>Greetings</p>
+<ol>
+<li>
+<p>If your customers are running B2C businesses, wouldn’t it make sense for them to integrate with Google/Facebook/Microsoft auth services</p>
+</li>
+<li>
+<p>If your customers are running B2B businesses, they would likely want to integrate with federal ID services like OneLogin. It could make senses to add 2 factor auth as an authentication provider to federal login providers, though as to whether there is a gap there, more research would be required.</p>
+</li>
+<li>
+<p>If you offering two-factor auth via SMS, then there could be a nice revenue model there. Say you could just add a margin on top of SMS wholesale minutes. The user buy packages consisting of a certain number of auth requests.</p>
+</li>
+<li>
+<p>In my opinion, your idea needs to be expanded. A bigger vision needs to be outlined. There is not enough meat in your service.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/5</link>
+        <pubDate>Sun, 10 Jul 2016 05:25:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4011-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011.rss">Please validate my idea!</source>
+      </item>
+      <item>
+        <title>Please validate my idea!</title>
+        <dc:creator><![CDATA[Ken]]></dc:creator>
+        <description><![CDATA[
+            <p>Having had the pleasure of creating systems like these from scratch for a HIPAA-compliant, HITRUST-certified project, I know for a fact I would’ve used services like the two you proposed. We searched high and low for dead simple API-based services, and, at the time (back in 2007) they just did not exist.</p>
+<p>Sorry to say—since we’ve already built all of that infrastructure from scratch—I’m not a potential customer.</p>
+<p>But, I can heartily disagree with Erica’s prior reply, and validate that I would’ve been a customer of API-based microservices like this.</p>
+<p>Yeah, like Erica wrote above, I’m a developer and I can tell you fifteen or so different approaches to doing these kinds of things on my own. But, thinking like a CTO and a business owner instead of a coder for a minute, you realize there is much to gain from avoiding the Not Built Here Syndrome and integrating a few pre-built building blocks where it makes sense. Don’t reinvent wheels, spend your time and brain glucose on something more worth your time.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/4</link>
+        <pubDate>Sun, 01 May 2016 02:16:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4011-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011.rss">Please validate my idea!</source>
+      </item>
+      <item>
+        <title>Please validate my idea!</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="4011">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ericaxu/40/3285_1.png" class="avatar"> ericaxu:</div>
+<blockquote>
+<p>I do not work in this industry, but I were to run a business that operates on sensitive data like this, I think I would spend the extra few days or even weeks and get this right myself. Unless you establish a standard like HTTPS or HIPAA, otherwise the things you mentioned sound easy enough to do.</p>
+</blockquote>
+</aside>
+<p>Thanks for the feedback! I wouldn’t be targeting HIPAA compliant businesses. I think these security measures are becoming expected because the big providers offer them. For example, when you try to access gmail from a different country/state/city, it will either force you to authenticate your phone number, or send you a warning email.</p>
+<p>I think every B2B should be able to offer great security, even when not dealing with patient records or credit cards.</p>
+<aside class="quote" data-post="2" data-topic="4011">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ericaxu/40/3285_1.png" class="avatar"> ericaxu:</div>
+<blockquote>
+<p>If I’m not mistaken, the 2FA part and the data storage part is separate - I can even use Google’s 2FA service and it’s pretty easy to set up.</p>
+</blockquote>
+</aside>
+<p>I didn’t know Google offered 2FA for non-google accounts; I’ll have to look into that. Either way there seems to be a market for it, because <a href="http://authy.com" rel="nofollow noopener">authy.com</a> (owned by Twilio) does it.</p>
+<p>I think the unique feature would be the suspicious login detection, because, AFAIK, no one offers it, and it’s harder to build than 2FA. You need access to an up-to-date geo location database and a relatively smart algorithm to detect it, avoid false positives, etc.</p>
+<p>If my SaaS wasn’t dealing with patient records, I would never have bothered building it, but I would still have liked to have it as an extra security layer if it took me 20 min to setup and a few bucks per month.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/3</link>
+        <pubDate>Sun, 01 May 2016 02:10:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4011-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011.rss">Please validate my idea!</source>
+      </item>
+      <item>
+        <title>Please validate my idea!</title>
+        <dc:creator><![CDATA[ericaxu]]></dc:creator>
+        <description><![CDATA[
+            <p>I do not work in this industry, but I were to run a business that operates on sensitive data like this, I think I would spend the extra few days or even weeks and get this right myself. Unless you establish a standard like HTTPS or HIPAA, otherwise the things you mentioned sound easy enough to do.</p>
+<p>If I’m not mistaken, the 2FA part and the data storage part is separate - I can even use Google’s 2FA service and it’s pretty easy to set up.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/2</link>
+        <pubDate>Sat, 30 Apr 2016 23:12:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4011-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011.rss">Please validate my idea!</source>
+      </item>
+      <item>
+        <title>Please validate my idea!</title>
+        <dc:creator><![CDATA[intelligentcoder]]></dc:creator>
+        <description><![CDATA[
+            <p>My main SaaS business deals with patient information, and I not only made sure it was HIPAA compliant, but also implemented some additional security features.</p>
+<p>I’m in the process of extracting 2 of these features into a simple API so I can build a product around them. Both are ways to enhance user authentication for SaaS apps:</p>
+<ol>
+<li>
+<p><strong>2-factor authentication as a service</strong>: this one would handle the 2nd authentication step, either using time-based tokens or SMS. I know it’s nothing new, there are a couple of services doing this. I would just try to position it a little bit differently and make it dead simple to implement.</p>
+</li>
+<li>
+<p><strong>Suspicious login detection</strong>: this is a simple API call. After you authenticate your user, give me their user id and IP address and I’ll let you know if that login is suspicious based on their login history, geo location and other heuristics. You can choose what to do next. Based on your settings, I can even handle emailing the user with an unlock token or warn them of the unusual activity in their account.</p>
+</li>
+</ol>
+<p>These 2 features could save a few days of development and ongoing maintenance. Would you pay to add this extra layer of security to your SaaS? If so, how much?</p>
+<p>Thanks in advance!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011/1</link>
+        <pubDate>Sat, 30 Apr 2016 23:08:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-4011-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/please-validate-my-idea/4011.rss">Please validate my idea!</source>
+      </item>
+  </channel>
+</rss>

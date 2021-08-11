@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Could you give me feedback on Inlet.io?</title>
+    <link>https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092</link>
+    <description>Hi All,
+
+I recently pushed out a new version of landing page for my soon-to-launch ecommerce app, [Inlet][1]. It&#39;s intended to be a simple way of selling products across multiple payment providers, with current support for stripe and paypal. Currently, there are a few screens on the landing page showing basic functionality. If anyone has got any feedback or questions I&#39;d love to hear from you.
+
+Cheers,
+
+Ian
+
+  [1]: http://inlet.io</description>
+    
+    <lastBuildDate>Mon, 06 Oct 2014 09:30:28 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Could you give me feedback on Inlet.io?</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everyone. I appreciate your time.</p>
+<p>I guess I need to pitch it along the lines of “Give your customers a flexible checkout” or something along those lines, to make it clear why allowing stripe and paypal is a <em>good</em> thing for them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/6</link>
+        <pubDate>Mon, 06 Oct 2014 09:30:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2092-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092.rss">Could you give me feedback on Inlet.io?</source>
+      </item>
+      <item>
+        <title>Could you give me feedback on Inlet.io?</title>
+        <dc:creator><![CDATA[jbcolmenares]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/coreysnipes">@coreysnipes</a> is right. I once setup the payment gateway for a site I was trying to build, and it was a nightmare since it was my first “serious” website ever. I get the point, but you have to make it clear at the landing page. Maybe an example of the code? I agree that the paypal and stripe are too big.</p>
+<p>Target one audience. For the less-technical, I would just say that besides setting everything up, you have two options to choose the provider: paypal and stripe.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/5</link>
+        <pubDate>Sat, 04 Oct 2014 10:16:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2092-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092.rss">Could you give me feedback on Inlet.io?</source>
+      </item>
+      <item>
+        <title>Could you give me feedback on Inlet.io?</title>
+        <dc:creator><![CDATA[chris_vannoy]]></dc:creator>
+        <description><![CDATA[
+            <p>To echo <a class="mention" href="/u/coreysnipes">@coreysnipes</a>, it feels like you really need some more text on there that explains what it does in a bit more detail.</p>
+<p>I get it from what you’re writing here, but there’s no indication of that on-page at the moment.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/4</link>
+        <pubDate>Tue, 30 Sep 2014 15:16:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2092-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092.rss">Could you give me feedback on Inlet.io?</source>
+      </item>
+      <item>
+        <title>Could you give me feedback on Inlet.io?</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Corey. Thanks for checking it out and your feedback, much appreciated. At the moment, the core proposition is “setting up all that payment stuff” for less technical users.</p>
+<p>I’d like to be able to offer several gateway options however so that it appeals to more technical users. Think an api for multiple gateways. The main problem I was attempting to solve originally is a way to easily integrate payment options without having to develop a full fledged commerce layer.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/3</link>
+        <pubDate>Tue, 30 Sep 2014 11:47:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2092-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092.rss">Could you give me feedback on Inlet.io?</source>
+      </item>
+      <item>
+        <title>Could you give me feedback on Inlet.io?</title>
+        <dc:creator><![CDATA[coreysnipes]]></dc:creator>
+        <description><![CDATA[
+            <p>The page has a nice design, and I think showing the checkout page and graph are a good choice.</p>
+<p>The value proposition is unclear to me.  On the page, “stripe + paypal” is so prominent, that it feels like that’s the selling point.  But I don’t understand why I’d want to use both.</p>
+<p>Is this for less-technical sellers who don’t want to have to understand and muck with “all that payment setup stuff”?  If so, I’d focus on the simple checkout &amp; nice reporting.  Stripe + Paypal should be mentioned much smaller &amp; lower.</p>
+<p>Or is it for more technical users who know they need to use multiple payment processors?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/2</link>
+        <pubDate>Tue, 30 Sep 2014 11:22:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2092-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092.rss">Could you give me feedback on Inlet.io?</source>
+      </item>
+      <item>
+        <title>Could you give me feedback on Inlet.io?</title>
+        <dc:creator><![CDATA[iwootten]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi All,</p>
+<p>I recently pushed out a new version of landing page for my soon-to-launch ecommerce app, <a href="http://inlet.io" rel="nofollow noopener">Inlet</a>. It’s intended to be a simple way of selling products across multiple payment providers, with current support for stripe and paypal. Currently, there are a few screens on the landing page showing basic functionality. If anyone has got any feedback or questions I’d love to hear from you.</p>
+<p>Cheers,</p>
+<p>Ian</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092/1</link>
+        <pubDate>Tue, 30 Sep 2014 08:30:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2092-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/could-you-give-me-feedback-on-inlet-io/2092.rss">Could you give me feedback on Inlet.io?</source>
+      </item>
+  </channel>
+</rss>

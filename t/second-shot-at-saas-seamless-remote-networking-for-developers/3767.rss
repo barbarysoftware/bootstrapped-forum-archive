@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Second shot at SaaS: Seamless remote networking for developers</title>
+    <link>https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767</link>
+    <description>Hello fellow bootstrappers :slightly_smiling:
+
+I&#39;m Pedro and I&#39;ve been here before talking about a web/server monitoring service. I received great advice from you and learned a lot on my way. Possible the best lesson was that I struggled to differentiate or add real value to my product. 
+I failed on many other things: Add features without a goal, fail to identify a target market and focus on that, poor marketing skills and in general lacking a clear vision or where I wanted to be. I even left it to rot during too long (and then recovered).
+The best thing about it is that, even though I was very close to, I didn&#39;t surrender from my bootstrapping dreams and I&#39;ve been working on something else. 
+
+I&#39;ve been building a service that again could be aimed at many different markets, but I&#39;m very clear I want to aim it at developers. Developers that need to focus on their application and need to remove all the hurdles networking presents to them. There are many different situations where my new product can help:
+
+1- Seamlessly connect machines from different cloud and hosting providers (e.g. AWS, Azure, Rackspace) as if they were in the same subnet.
+2- That includes your own workstation/laptop at home/office/Starbucks :slightly_smiling: , so you can manage/deploy/whatever in a safe environment, wherever you are.
+3- Simplify connectivity by creating a virtual private network that includes only the machines you&#39;d like to have there, without having to know or worry about firewall management, port opening, or any other of those networking concepts.
+4- All that while your data travels encrypted **end to end**. Again without you having to learn or worry about networking stuff.
+
+If it sounds similar to a VPN is because it is indeed a Virtual Private Network as a Service, but the twist is that it really creates a virtual network where only the machines you choose take part of it. 
+I&#39;m focusing on removing some common hurdles that developers find (VPN configuration, firewall configuration), but the SoftEther software itself is so flexible that you could make 3 or 4 completely different products out of it.
+
+Our service offers a very simple dashboard to create and manage what we call &quot;hubs&quot;. Each hub is a virtual isolated network and in each hub you can create as many users as you need. Your next step after creating a hub is to download the client software and the provided config file to load it on the machine you&#39;d like to join the hub - so you keep access restricted to it. Install the software, load the config file and you&#39;re in. It may take less than a minute to get a machine connected to a hub. Repeat the process on any other machine you&#39;d like to join and enjoy :slightly_smiling:
+
+ Wait, because it only gets better. The software is Open Source and you could just download and replicate my setup if you&#39;re up to that: http://www.softether.org/ if you&#39;ve got the knowledge to get it up and running plus the will and time to maintain it, then my service is not for you. Nevertheless, I invite you all to have a look at the software itself (it is not developed by me or related in any other way to me, apart from the fact that I use it for my service).
+
+I&#39;m at a phase of the project where I can start on-boarding users. I don&#39;t like to call it **beta**, but it is pretty much the current status. I&#39;ve ran my own testing and I&#39;ve got already a list of issues to go through, but I lack real-world testing with real users. Maybe instead of beta we could say this is a minimum viable product.
+
+Other technologies used are Python, Django, Nginx and Gunicorn on the website, and PostgreSQL for the DB. I&#39;ve outsourced the majority of the development on Upwork and created a good relationship with the contractors. These have been a mix of professionals very close to my time zone and one very far. Apart from the obvious schedule issues, the experience has been very positive with all of them. I&#39;ve read some of your experiences with Upwork and it seems to be a bit of a lottery, so I&#39;m really happy to have found the professionals that have worked with me on this one.
+
+Thank you for reading (hope you made it this far :slightly_smiling: ) and here&#39;s the link to the site https://wormhole.network
+
+If you have any comments you&#39;d like to make in private, please hit me up on pedro at wormhole.network ; for anything else please leave a comment here, I would love feedback in general.</description>
+    
+    <lastBuildDate>Mon, 21 Mar 2016 11:49:02 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Second shot at SaaS: Seamless remote networking for developers</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello again bootstrappers,</p>
+<p>I had a growth lower than my initial expectations, but on the positive side I’ve learned a lot (and I got users! yay!).</p>
+<p>I am slightly moving away from the focus on networking and putting the emphasis on the “remote management solution” part. My plan is to be a simpler alternative to Hamachi, with the ability to be integrated with automation systems like Chef or Puppet. For that matter, I’ve created an API to manage Wormhole:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://assets-cdn.github.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://github.com/WormholeNet/api-docs" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars2.githubusercontent.com/u/17097482?s=400&amp;v=4" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/WormholeNet/api-docs" target="_blank" rel="nofollow noopener">WormholeNet/api-docs</a></h3>
+
+<p>api-docs - API documentation</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>I have also been running Facebook, Twitter and Reddit ad campaigns, including one to point to a Medium article I wrote instead of directly to Wormhole. I had disastrous results from Twitter, bad from Facebook and not so bad from Reddit.</p>
+<p>So far the most common feedback is that the product is not fully clear on the landing page and that pricing should be available before signing up.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767/4</link>
+        <pubDate>Mon, 21 Mar 2016 11:49:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3767-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767.rss">Second shot at SaaS: Seamless remote networking for developers</source>
+      </item>
+      <item>
+        <title>Second shot at SaaS: Seamless remote networking for developers</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p>And for something more appealing to a bigger public, I’ve just finished a Docker image for a Minecraft server.</p>
+<p>Just launch it and join with your client. No NAT, firewall, routing or ports to configure anywhere.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://assets-cdn.github.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://github.com/pjperez/docker-whminecraft/" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars1.githubusercontent.com/u/747936?s=400&amp;v=4" class="thumbnail onebox-avatar" width="259" height="259">
+
+<h3><a href="https://github.com/pjperez/docker-whminecraft/" target="_blank" rel="nofollow noopener">pjperez/docker-whminecraft</a></h3>
+
+<p>docker-whminecraft - Docker image that connects to Wormhole's overlay network and starts a Minecraft server</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767/3</link>
+        <pubDate>Sun, 17 Jan 2016 02:25:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3767-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767.rss">Second shot at SaaS: Seamless remote networking for developers</source>
+      </item>
+      <item>
+        <title>Second shot at SaaS: Seamless remote networking for developers</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p>As a way of getting more users interested on Wormhole, I’ve worked on adding Wormhole’s capabilities to Docker, so I’ve created docker-wormhole which is a Docker template that adds overlay private networking to any Docker container. This way you can easily communicate containers on different, remote hosts.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://assets-cdn.github.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://github.com/pjperez/docker-wormhole" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars1.githubusercontent.com/u/747936?s=400&amp;v=4" class="thumbnail onebox-avatar" width="259" height="259">
+
+<h3><a href="https://github.com/pjperez/docker-wormhole" target="_blank" rel="nofollow noopener">pjperez/docker-wormhole</a></h3>
+
+<p>docker-wormhole - Wormhole Docker base image (Based on Ubuntu 14.04)</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>As an example on how to leverage this template, I’ve made an iPerf server and an iPerf client images available for download. You’ll need either a free Wormhole account or your own SoftEther deployment.</p>
+<p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://assets-cdn.github.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://github.com/pjperez/docker-iperfclient" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars1.githubusercontent.com/u/747936?s=400&amp;v=4" class="thumbnail onebox-avatar" width="259" height="259">
+
+<h3><a href="https://github.com/pjperez/docker-iperfclient" target="_blank" rel="nofollow noopener">pjperez/docker-iperfclient</a></h3>
+
+<p>docker-iperfclient - Docker image that connects to Wormhole's overlay network and starts and iPerf client</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://assets-cdn.github.com/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://github.com/pjperez/docker-iperfserver" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars1.githubusercontent.com/u/747936?s=400&amp;v=4" class="thumbnail onebox-avatar" width="259" height="259">
+
+<h3><a href="https://github.com/pjperez/docker-iperfserver" target="_blank" rel="nofollow noopener">pjperez/docker-iperfserver</a></h3>
+
+<p>docker-iperfserver - Docker image that connects to Wormhole's overlay network and starts and iPerf server</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>Hope this sheds some light on what Wormhole can do.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767/2</link>
+        <pubDate>Sat, 16 Jan 2016 14:14:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3767-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767.rss">Second shot at SaaS: Seamless remote networking for developers</source>
+      </item>
+      <item>
+        <title>Second shot at SaaS: Seamless remote networking for developers</title>
+        <dc:creator><![CDATA[mobiplayer]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello fellow bootstrappers <img src="https://emoji.discourse-cdn.com/twitter/slightly_smiling.png?v=5" title=":slightly_smiling:" class="emoji" alt=":slightly_smiling:"></p>
+<p>I’m Pedro and I’ve been here before talking about a web/server monitoring service. I received great advice from you and learned a lot on my way. Possible the best lesson was that I struggled to differentiate or add real value to my product.<br>
+I failed on many other things: Add features without a goal, fail to identify a target market and focus on that, poor marketing skills and in general lacking a clear vision or where I wanted to be. I even left it to rot during too long (and then recovered).<br>
+The best thing about it is that, even though I was very close to, I didn’t surrender from my bootstrapping dreams and I’ve been working on something else.</p>
+<p>I’ve been building a service that again could be aimed at many different markets, but I’m very clear I want to aim it at developers. Developers that need to focus on their application and need to remove all the hurdles networking presents to them. There are many different situations where my new product can help:</p>
+<p>1- Seamlessly connect machines from different cloud and hosting providers (e.g. AWS, Azure, Rackspace) as if they were in the same subnet.<br>
+2- That includes your own workstation/laptop at home/office/Starbucks <img src="https://emoji.discourse-cdn.com/twitter/slightly_smiling.png?v=5" title=":slightly_smiling:" class="emoji" alt=":slightly_smiling:"> , so you can manage/deploy/whatever in a safe environment, wherever you are.<br>
+3- Simplify connectivity by creating a virtual private network that includes only the machines you’d like to have there, without having to know or worry about firewall management, port opening, or any other of those networking concepts.<br>
+4- All that while your data travels encrypted <strong>end to end</strong>. Again without you having to learn or worry about networking stuff.</p>
+<p>If it sounds similar to a VPN is because it is indeed a Virtual Private Network as a Service, but the twist is that it really creates a virtual network where only the machines you choose take part of it.<br>
+I’m focusing on removing some common hurdles that developers find (VPN configuration, firewall configuration), but the SoftEther software itself is so flexible that you could make 3 or 4 completely different products out of it.</p>
+<p>Our service offers a very simple dashboard to create and manage what we call “hubs”. Each hub is a virtual isolated network and in each hub you can create as many users as you need. Your next step after creating a hub is to download the client software and the provided config file to load it on the machine you’d like to join the hub - so you keep access restricted to it. Install the software, load the config file and you’re in. It may take less than a minute to get a machine connected to a hub. Repeat the process on any other machine you’d like to join and enjoy <img src="https://emoji.discourse-cdn.com/twitter/slightly_smiling.png?v=5" title=":slightly_smiling:" class="emoji" alt=":slightly_smiling:"></p>
+<p>Wait, because it only gets better. The software is Open Source and you could just download and replicate my setup if you’re up to that: <a href="http://www.softether.org/" rel="nofollow noopener">http://www.softether.org/</a> if you’ve got the knowledge to get it up and running plus the will and time to maintain it, then my service is not for you. Nevertheless, I invite you all to have a look at the software itself (it is not developed by me or related in any other way to me, apart from the fact that I use it for my service).</p>
+<p>I’m at a phase of the project where I can start on-boarding users. I don’t like to call it <strong>beta</strong>, but it is pretty much the current status. I’ve ran my own testing and I’ve got already a list of issues to go through, but I lack real-world testing with real users. Maybe instead of beta we could say this is a minimum viable product.</p>
+<p>Other technologies used are Python, Django, Nginx and Gunicorn on the website, and PostgreSQL for the DB. I’ve outsourced the majority of the development on Upwork and created a good relationship with the contractors. These have been a mix of professionals very close to my time zone and one very far. Apart from the obvious schedule issues, the experience has been very positive with all of them. I’ve read some of your experiences with Upwork and it seems to be a bit of a lottery, so I’m really happy to have found the professionals that have worked with me on this one.</p>
+<p>Thank you for reading (hope you made it this far <img src="https://emoji.discourse-cdn.com/twitter/slightly_smiling.png?v=5" title=":slightly_smiling:" class="emoji" alt=":slightly_smiling:"> ) and here’s the link to the site <a href="https://wormhole.network" rel="nofollow noopener">https://wormhole.network</a></p>
+<p>If you have any comments you’d like to make in private, please hit me up on pedro at wormhole.network ; for anything else please leave a comment here, I would love feedback in general.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767/1</link>
+        <pubDate>Wed, 13 Jan 2016 08:25:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-3767-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/second-shot-at-saas-seamless-remote-networking-for-developers/3767.rss">Second shot at SaaS: Seamless remote networking for developers</source>
+      </item>
+  </channel>
+</rss>

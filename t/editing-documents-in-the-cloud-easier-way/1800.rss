@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Editing Documents in the Cloud - Easier way?</title>
+    <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800</link>
+    <description>So, I have my current app [sharpplm.com](http://sharpplm.com). 
+
+My users store documents in the system. Being SaaS, the workflow for editing a Word or Excel document is:
+
+ 1. Click link to download the file
+ 2. Open downloaded file
+ 3. Opens in the native app, you make changes, you save it, you close the document
+ 4. Go to Upload new version page in the app
+ 5. Find directory that the downloaded file was saved, then drag-file or upload to the app.
+ 6. Click save on app.
+
+Now, for you and I, this workflow if very doable, but also sort of tedious. It doesn&#39;t work at ALL like it does on your local machine or a network server. But for common folk, that is either a very difficult task (&quot;where did that document go?&quot;) to Support Ticket.
+
+What the workflow should be:
+
+ 1. Click on link. 
+ 2. Opens in the native app, you make changes, you save it, you close the document
+ 3. File gets automatically uploaded to the SaaS app.  
+ 4. Screen refreshes to show your new version.
+
+So, the question is, is there a way to make editing documents that are stored in your SaaS app that simple? Does such a solution exist? 
+
+If not, how would one go about creating such a solution? 
+
+It makes me think I should make this a product itself! Imagine a general plugin/desktop app that your users would download to edit documents more easily. I know Box.com has something like this. And I just noticed Atlassian Confluence product has such a plugin (never used it). 
+
+Thoughts? </description>
+    
+    <lastBuildDate>Mon, 14 Jul 2014 02:18:09 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Editing Documents in the Cloud - Easier way?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>Great things to think about. Thanks for the responses.</p>
+<p>I should have mentioned Sharepoint as another option. But it’s really it’s own product, nothing that would work for an existing SaaS solution. And I totally agree about the user interface, yuck!</p>
+<p>DropBox is a good idea. Does it require your users to have their own dropbox accounts though or just you as the SaaS provider?</p>
+<p>Does anyone else have a SaaS product where their users store documents in it? How do you deal with the interface of download/upload? Do you get any complaints about it?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/9</link>
+        <pubDate>Mon, 14 Jul 2014 02:18:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1800-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss">Editing Documents in the Cloud - Easier way?</source>
+      </item>
+      <item>
+        <title>Editing Documents in the Cloud - Easier way?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="1800">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/scojo/40/1209_1.png" class="avatar"> scojo:</div>
+<blockquote>
+<p>If not, how would one go about creating such a solution?</p>
+</blockquote>
+</aside>
+<p>Hmm…</p>
+<p>You’d have to implement a browser plugin - you need to know where the file was downloaded from.</p>
+<p>Then watch the updates on the file and what process uses it. As long as updates detected <strong>and</strong> the process has exited, you’d know that the file may need to be uploaded back. Popup and ask the user. Got confirmation? Upload.</p>
+<p>Upload is a pain though. There is no standard upload API, so you’d have to support Dropbox, Box, Drive, Live!, Sharepoint, whatnot.</p>
+<p>Need also to support the case when the user closed all the browsers after the download =&gt; you’d need an in-memory watchdog, not only a browser plugin.,</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/8</link>
+        <pubDate>Sun, 13 Jul 2014 03:20:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1800-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss">Editing Documents in the Cloud - Easier way?</source>
+      </item>
+      <item>
+        <title>Editing Documents in the Cloud - Easier way?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="1800">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/scojo/40/1209_1.png" class="avatar"> scojo:</div>
+<blockquote>
+<p>So, the question is, is there a way to make editing documents that are stored in your SaaS app that simple? Does such a solution exist?</p>
+</blockquote>
+</aside>
+<p>Sharepoint, as was already said.</p>
+<p>Its workflow is not very user-friendly though:</p>
+<ul>
+<li>Starting the editing is called “check-out” (whaaaat?)</li>
+<li>User has to select if the file is checked for read-only or edit</li>
+<li>Not all files are supported. When file name is too long, suddenly the file cannot be checked out, but only downloaded for edit. I assume the other users do not see that the file is being edited by someone else, which could introduce concurrent edits.</li>
+</ul>
+<p>What I don’t understand is why the Excel and Word documents cannot be edited via IE right on the server, with multiuser updates?</p>
+<p>Argh, MS Office is such a pain… but that pain will stay with us for long.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/7</link>
+        <pubDate>Sun, 13 Jul 2014 03:14:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1800-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss">Editing Documents in the Cloud - Easier way?</source>
+      </item>
+      <item>
+        <title>Editing Documents in the Cloud - Easier way?</title>
+        <dc:creator><![CDATA[sparkygoblue]]></dc:creator>
+        <description><![CDATA[
+            <p>My app SubmitBox (<a href="http://getsubmitbox.com" rel="nofollow noopener">getsubmitbox.com</a>) basically does what you described but for teachers collecting and editing students’ documents.  As others have suggested, I built SubmitBox on top of Dropbox’s api and later added support for Google Drive.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/6</link>
+        <pubDate>Sat, 12 Jul 2014 22:52:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1800-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss">Editing Documents in the Cloud - Easier way?</source>
+      </item>
+      <item>
+        <title>Editing Documents in the Cloud - Easier way?</title>
+        <dc:creator><![CDATA[danielstudds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="1" data-topic="1800">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/scojo/40/1209_1.png" class="avatar"> scojo:</div>
+<blockquote>
+<p>What the workflow should be:</p>
+<p>Click on link.<br>
+Opens in the native app, you make changes, you save it, you close the document<br>
+File gets automatically uploaded to the SaaS app.<br>
+Screen refreshes to show your new version.</p>
+</blockquote>
+</aside>
+<p>Some sharepoint installations work like this with Word &amp; Excel documents. I think it’s one part Office plugin and one part having a file share that can be seen by both users &amp; the server. So presumably it’s possible. Not sure how much proprietary tech there’d be involved though. As <a class="mention" href="/u/scottradcliff">@scottradcliff</a> has suggested, you could use the dropbox api or similar to achieve the same effect.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/5</link>
+        <pubDate>Sat, 12 Jul 2014 00:25:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1800-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss">Editing Documents in the Cloud - Easier way?</source>
+      </item>
+      <item>
+        <title>Editing Documents in the Cloud - Easier way?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>There are a ton of people that have Word and Excel documents. Most folks outside of the tech world might not even know about Google docs. You can’t ask your customers to change their workflow/patterns that much. At least, it creates more friction if you do.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/4</link>
+        <pubDate>Fri, 11 Jul 2014 17:33:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1800-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss">Editing Documents in the Cloud - Easier way?</source>
+      </item>
+      <item>
+        <title>Editing Documents in the Cloud - Easier way?</title>
+        <dc:creator><![CDATA[scottradcliff]]></dc:creator>
+        <description><![CDATA[
+            <p>Reading through your landing page, it seems to me like the Dropbox API would a good choice. Yes, you become dependent on a third party, but it might help you get to a state where you can contract some systems people that know what they are doing and can build a better experience for you customers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/3</link>
+        <pubDate>Fri, 11 Jul 2014 15:39:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1800-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss">Editing Documents in the Cloud - Easier way?</source>
+      </item>
+      <item>
+        <title>Editing Documents in the Cloud - Easier way?</title>
+        <dc:creator><![CDATA[davidw]]></dc:creator>
+        <description><![CDATA[
+            <p>Why wouldn’t someone just use Google Docs?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/2</link>
+        <pubDate>Fri, 11 Jul 2014 09:03:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1800-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss">Editing Documents in the Cloud - Easier way?</source>
+      </item>
+      <item>
+        <title>Editing Documents in the Cloud - Easier way?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>So, I have my current app <a href="http://sharpplm.com" rel="nofollow noopener">sharpplm.com</a>.</p>
+<p>My users store documents in the system. Being SaaS, the workflow for editing a Word or Excel document is:</p>
+<ol>
+<li>Click link to download the file</li>
+<li>Open downloaded file</li>
+<li>Opens in the native app, you make changes, you save it, you close the document</li>
+<li>Go to Upload new version page in the app</li>
+<li>Find directory that the downloaded file was saved, then drag-file or upload to the app.</li>
+<li>Click save on app.</li>
+</ol>
+<p>Now, for you and I, this workflow if very doable, but also sort of tedious. It doesn’t work at ALL like it does on your local machine or a network server. But for common folk, that is either a very difficult task (“where did that document go?”) to Support Ticket.</p>
+<p>What the workflow should be:</p>
+<ol>
+<li>Click on link.</li>
+<li>Opens in the native app, you make changes, you save it, you close the document</li>
+<li>File gets automatically uploaded to the SaaS app.</li>
+<li>Screen refreshes to show your new version.</li>
+</ol>
+<p>So, the question is, is there a way to make editing documents that are stored in your SaaS app that simple? Does such a solution exist?</p>
+<p>If not, how would one go about creating such a solution?</p>
+<p>It makes me think I should make this a product itself! Imagine a general plugin/desktop app that your users would download to edit documents more easily. I know <a href="http://Box.com" rel="nofollow noopener">Box.com</a> has something like this. And I just noticed Atlassian Confluence product has such a plugin (never used it).</p>
+<p>Thoughts?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800/1</link>
+        <pubDate>Fri, 11 Jul 2014 03:36:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1800-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/editing-documents-in-the-cloud-easier-way/1800.rss">Editing Documents in the Cloud - Easier way?</source>
+      </item>
+  </channel>
+</rss>

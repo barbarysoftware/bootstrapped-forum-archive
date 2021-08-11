@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using a New Hosting Company?</title>
+    <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224</link>
+    <description>I&#39;ve been doing a lot of research into what hosting company I should use for my application, and the one I&#39;m most attracted to is a bit of a newbie. 
+
+The app is based on the Meteor framework (which sits on top of Node), so I was looking for a Node-specific host and came across [Modulus][1]. Their offering is inline with something like a Heroku, where deploys are super easy and things like load balancing are taken care of for you.
+
+For a guy like me who is 100% new to running an app (and doing it solo for now), an offering like Modulus is really interesting. 
+
+My issue (if we can call it that), is that they&#39;re a newer company. I did hop onto their support chat for a few minutes not too long ago and the guy who helped me out was great. They seem serious about building a solid hosting service, and I&#39;m looking at it as a great opportunity to grow my business alongside their own.
+
+Does anyone have experience working with a provider that&#39;s new? Any tips/notes you can offer up?
+
+
+  [1]: http://modulus.io</description>
+    
+    <lastBuildDate>Wed, 07 Aug 2013 19:07:00 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[SteveMcLeod]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/11</link>
+        <pubDate>Tue, 12 Mar 2019 15:35:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="5" data-topic="224">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rglover/40/1442_1.png" class="avatar"> rglover:</div>
+<blockquote>
+<p>Is that a smart strategy? Based on <a class="mention" href="/u/imsickofmaps">@imsickofmaps</a> comment above, it seems really easy to think you need something that you really don’t early on.</p>
+</blockquote>
+</aside>
+<p>I understand the idea of something you wont need until later. But PaaS and IaaS make their business through locking you into their datastores. Many of them have no way to export out your SQL or Mongo, or whatever is hip to use with node these days. Then you are stuck using their slower datastores which are only accessible if you also run your web instances with them too. So it’s not so much “will I need to run Varnish or Memcache or Redis or ___ later,” it is a question of “will I ever outgrow this pricing model?”</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/9</link>
+        <pubDate>Wed, 07 Aug 2013 19:07:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[NicheDiver]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>
+<p>Your backup schedule should depend on how painful it would be if you lost everything since the last backup.  If you can recover from losing a week’s worth of data without breaking a sweat then weekly backups are fine.  If, on the other hand, losing more than an hours worth of data would be a nightmare then you should go hourly.  As far as what is “standard”/safest/most economical - I cannot say.  I’ve fallen into a routine of backing up to a local “grab-n-go” device and haven’t looked into the latest services for such things.</p>
+</li>
+<li>
+<p>Even without reviews from past users you can usually still sniff out problems by digging around.  Fortunately for you this company seems to be very social online so I would recommend stalking them a bit.  For example, go to twitter and search not just their feed but all of twitter for tweets both to and about them.  Do separate searches using their twitter name as, their URL, founder names or anything else you think would lead you to tweets involving this company.  Repeat on other platforms where they engage with users.  Also try obscure search terms in Google that you think unhappy customers might use when complaining. (e.g., Modulus refund, Modulus “not happy”, etc.)  Finally, when all else fails to give you 100% assurance (no such thing), make the leap knowing you did what you could to be informed and if it goes poorly you’ll know you did the best you could with what you knew at the time.</p>
+</li>
+<li>
+<p>I only gave a cursory glance at their homepage so I’m not sure what services they are combining but look at it this way.  Hosting is at the core of what they do.  If there is an outage on their end, all other services tied to that core are rendered useless no mater who is providing them.  If it makes you feel warm and fuzzy, less confused and well taken care of to have them all in one place then there is value in that.</p>
+</li>
+</ol>
+<p>Good luck!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/8</link>
+        <pubDate>Wed, 07 Aug 2013 15:47:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[rglover]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/nichediver">@NicheDiver</a> thank you for the response, gave me a lot to think about. Some follow up questions for you…</p>
+<ol>
+<li>
+<p>Re: backups, how often? I’ve seen everything from hourly to daily recommended. What’s the “standard,” safest, and most economical?</p>
+</li>
+<li>
+<p>Is there anything outside of experience that will really tip me off to their long-term performance? I did some research for reviews, but there isn’t anything comprehensive.</p>
+</li>
+<li>
+<p>The big hook for me is that they offer everything I’ll need in one spot (and it actually works on the first try). As a first timer, this obviously cools my nerves because it means not having to manage and monitor a handful of services. On the flip side, though, it could also mean an outage on their end is 1 to 1 on my own. Is it safe to do everything in one spot? Any reasons to avoid this?</p>
+</li>
+</ol>
+<p>Thanks for your advice <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/7</link>
+        <pubDate>Wed, 07 Aug 2013 14:29:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[NicheDiver]]></dc:creator>
+        <description><![CDATA[
+            <p>I have used “newbie” hosts before and have had both positive and negative experiences with it.  On one hand it’s fun to be the customer of someone that’s hungry and still excited about what they do.  On the other, it can be frustrating to be part of what amounts to an experiment - which is essentially what any new business is.</p>
+<p>Two questions to ask yourself when considering a host that is new.</p>
+<ol>
+<li>
+<p><strong>Will I be able to handle their growing pains?</strong>  Assuming they impress<br>
+others as much as they’ve impressed you they are bound to grow and with that<br>
+comes growing pains.  Now growing pains for a hosting company can<br>
+mean anything from horrible support (where it was once great) to<br>
+extended service outages or lost data.  Not a big deal really - if you are<br>
+prepared to weather it with them or if you have a backup plan for when you decide to bail.</p>
+</li>
+<li>
+<p><strong>Will they be able to handle my growing pains?</strong>  You mentioned you are<br>
+new to running an app so it’s fair to assume you will have your own<br>
+issues sooner or later - most of which won’t be related to hosting -<br>
+but for those that are you need to know if they will be able to<br>
+support you through them.  (Supported technologies, plan upgrade paths, policies on traffic spikes, etc.)</p>
+</li>
+</ol>
+<p>Tips:</p>
+<ul>
+<li>
+<p>Do not rely on their backups. (if that’s a service they provide)<br>
+Always, always, always have your own stored elsewhere.</p>
+</li>
+<li>
+<p>Be overly complimentary of their support staff any time they deserve<br>
+it.  As a new company they will be hypersensitive to customer feedback<br>
+and will certainly go the extra mile for people who don’t treat them<br>
+like crap.</p>
+</li>
+<li>
+<p>Decide what support hours are acceptable to you.  I used to choose<br>
+Australian hosts because they were open when I was working whereas the<br>
+ones here in The United States were closed.  A non-issue now but<br>
+something I remember being a big deal to me before I learned to<br>
+handle most of my own server issues.</p>
+</li>
+</ul>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/6</link>
+        <pubDate>Wed, 07 Aug 2013 05:33:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[rglover]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rtablada">@rtablada</a> I’d considered DO, too, as it came up in a book about the framework I’m working with. My only concern is that I won’t have the chops to manage a 100% custom build out of the gate. My goal is to get it stable on my own and as the product grows, invite someone who does just sysadmin to come in and setup the best solution.</p>
+<p>Is that a smart strategy? Based on <a class="mention" href="/u/imsickofmaps">@imsickofmaps</a> comment above, it seems really easy to <em>think</em> you need something that you really don’t early on.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/5</link>
+        <pubDate>Tue, 06 Aug 2013 14:24:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[rtablada]]></dc:creator>
+        <description><![CDATA[
+            <p>I really like <a href="http://digitalocean.com">Digital Ocean</a> or <a href="https://www.linode.com">Linode</a> even though they are VPS providers. I like this because when you go to add other services, you don’t have to scratch your head and jump to another provider later.</p>
+<p>Being picky, I like the ability to roll my own stack sort of like what <a class="mention" href="/u/imsickofmaps">@imsickofmaps</a> is saying. Coming from my first OS apps being run off of Pagoda Box (a PHP PaaS) I had a terrible time fighting what versions were supported vs my dev environment.</p>
+<p>As far as the pricing goes, DO is going to be far cheaper than even the lowest tier of PaaS systems or darn close. Linode will run you about $10-15 per instance. Both will give you a lot more power and space. The only cost is installing your stack which I assume you probably know from your dev environment.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/4</link>
+        <pubDate>Tue, 06 Aug 2013 00:27:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[rglover]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/imsickofmaps">@imsickofmaps</a> great thoughts, thank you. I’d rather not blow money on early paranoia <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>There’s a tiny bit of “magic” in that you have to convert your app to a raw Node app (using a tool they built specifically for Meteor apps), but nothing so extreme that would warrant a rewrite/refactor.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/3</link>
+        <pubDate>Mon, 05 Aug 2013 16:30:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[imsickofmaps]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve always over-engineered my systems but I’m coming to learn that you need to find the right balance of reliability and simplicity to just get something up and find out if a highly reliable/robust platform is required. Premature scaling and sweating the hosting details has probably killed the cash flow of countless bootstrapped software businesses (not the host they chose being down for a few hours a year).</p>
+<p>However, if you are choosing a newish host though, I wouldn’t pick one that requires you to do something “magic” and therefore become locked in to hours of refactoring if they turn out to be a dud.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/2</link>
+        <pubDate>Mon, 05 Aug 2013 16:05:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+      <item>
+        <title>Using a New Hosting Company?</title>
+        <dc:creator><![CDATA[rglover]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been doing a lot of research into what hosting company I should use for my application, and the one I’m most attracted to is a bit of a newbie.</p>
+<p>The app is based on the Meteor framework (which sits on top of Node), so I was looking for a Node-specific host and came across <a href="http://modulus.io" rel="nofollow noopener">Modulus</a>. Their offering is inline with something like a Heroku, where deploys are super easy and things like load balancing are taken care of for you.</p>
+<p>For a guy like me who is 100% new to running an app (and doing it solo for now), an offering like Modulus is really interesting.</p>
+<p>My issue (if we can call it that), is that they’re a newer company. I did hop onto their support chat for a few minutes not too long ago and the guy who helped me out was great. They seem serious about building a solid hosting service, and I’m looking at it as a great opportunity to grow my business alongside their own.</p>
+<p>Does anyone have experience working with a provider that’s new? Any tips/notes you can offer up?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224/1</link>
+        <pubDate>Mon, 05 Aug 2013 14:57:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-224-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/using-a-new-hosting-company/224.rss">Using a New Hosting Company?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Introducing ApiWithUs</title>
+    <link>https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654</link>
+    <description>Hi everyone, this morning I&#39;ve just released a project I&#39;ve been working on - [ApiWithUs][1]. The app will convert any spreadsheet into a fully-documented REST API. There is a free usage tier, and you can also charge for access to your data (which we take a % of).
+
+The inspiration for this application came from this post by Danielle Morrill of Mattermark: [https://medium.com/@DanielleMorrill/request-for-startup-turn-any-spreadsheet-into-a-rest-api-docs-425718330566][2]
+
+Thoughts? Questions? Suggestions? I&#39;d love any feedback you care to give.
+
+
+  [1]: http://apiwith.us
+  [2]: https://medium.com/@DanielleMorrill/request-for-startup-turn-any-spreadsheet-into-a-rest-api-docs-425718330566</description>
+    
+    <lastBuildDate>Wed, 04 Feb 2015 16:28:53 +0000</lastBuildDate>
+    <category>Show Bootstrapped</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Introducing ApiWithUs</title>
+        <dc:creator><![CDATA[bcwood]]></dc:creator>
+        <description><![CDATA[
+            <p>Neat idea! I’ll just have to work on my graphic design skills <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/7</link>
+        <pubDate>Wed, 04 Feb 2015 16:28:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2654-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654.rss">Introducing ApiWithUs</source>
+      </item>
+      <item>
+        <title>Introducing ApiWithUs</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>I bet you could have a neat logo for that: Icon of a spreadsheet with a circle around it and a “port” showing. Like an API “interface” to a spreadsheet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/6</link>
+        <pubDate>Wed, 04 Feb 2015 16:14:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2654-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654.rss">Introducing ApiWithUs</source>
+      </item>
+      <item>
+        <title>Introducing ApiWithUs</title>
+        <dc:creator><![CDATA[bcwood]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="2654">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/clay_nichols/40/2698_1.png" class="avatar"> Clay_Nichols:</div>
+<blockquote>
+<p>Is the idea that you are providing API access to data in a spreadsheet?</p>
+</blockquote>
+</aside>
+<p>That’s it in a nutshell, yes.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/5</link>
+        <pubDate>Tue, 03 Feb 2015 21:42:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2654-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654.rss">Introducing ApiWithUs</source>
+      </item>
+      <item>
+        <title>Introducing ApiWithUs</title>
+        <dc:creator><![CDATA[Clay_Nichols]]></dc:creator>
+        <description><![CDATA[
+            <p>Using a Spreadsheet as an “interface” for non programmers is a great idea.</p>
+<p>Years ago there was a product called Baler that would compile a spreadsheet into an app (back when apps were called software).</p>
+<p>That let a non-technical person “build” software and distribute it (back when not everyone had a spreadsheet program)</p>
+<p>I looked at the examples but I can’t quite imagine what you might do with this.</p>
+<p>Is the idea that you are providing API access to data in a spreadsheet?<br>
+Maybe a better tag line would be “Turn any spreadsheet into an API/Web-Service”</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/4</link>
+        <pubDate>Tue, 03 Feb 2015 20:08:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2654-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654.rss">Introducing ApiWithUs</source>
+      </item>
+      <item>
+        <title>Introducing ApiWithUs</title>
+        <dc:creator><![CDATA[bcwood]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the response Dave!</p>
+<p>The target market is sort of a tricky one - in general, I imagine “business” type people who are not programmers, but have valuable data locked away in Excel spreadsheets. I see this sort of thing all the time where I work.</p>
+<p>Charging users for access to an API is handled through Stripe. The person who creates the API can decide if they want to charge money. If so, we handle all the details of hooking that up to Stripe and accepting payments from the users. The payments go directly to the owner of the API, minus a 25% cut.</p>
+<p>You’re absolutely correct that I need to start thinking about rate limiting. I’m not sure I want to structure the prices around that, but if nothing else to make sure my server isn’t getting hammered.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/3</link>
+        <pubDate>Tue, 03 Feb 2015 15:40:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2654-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654.rss">Introducing ApiWithUs</source>
+      </item>
+      <item>
+        <title>Introducing ApiWithUs</title>
+        <dc:creator><![CDATA[Dave]]></dc:creator>
+        <description><![CDATA[
+            <p>I think it’s actually a pretty neat idea.</p>
+<p>Who do you see as your target market?</p>
+<p>Your sales copy says that the app is free unless I charge my users. How do you regulate that?<br>
+Also, it if is used for an internal app (e.g. in an enterprise environment) your customer could potentially make hundreds of calls a second to the API and load your servers for no charge.</p>
+<p>Have you considered something like <em>100 API calls per day for free, the $0.01 per call</em> (for example). Or rate limiting the API (<em>10 calls per minute for free, $30/month to remove rate-limiting</em>)?</p>
+<p>I guess the answer to those depends on how you see it being used.</p>
+<p>Overall, I like the site. I especially like the code samples page as it shows how simple it is to call your API compared to trying to parse an Excel document.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/2</link>
+        <pubDate>Tue, 03 Feb 2015 08:40:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2654-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654.rss">Introducing ApiWithUs</source>
+      </item>
+      <item>
+        <title>Introducing ApiWithUs</title>
+        <dc:creator><![CDATA[bcwood]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone, this morning I’ve just released a project I’ve been working on - <a href="http://apiwith.us" rel="nofollow noopener">ApiWithUs</a>. The app will convert any spreadsheet into a fully-documented REST API. There is a free usage tier, and you can also charge for access to your data (which we take a % of).</p>
+<p>The inspiration for this application came from this post by Danielle Morrill of Mattermark: <a href="https://medium.com/@DanielleMorrill/request-for-startup-turn-any-spreadsheet-into-a-rest-api-docs-425718330566" rel="nofollow noopener">https://medium.com/@DanielleMorrill/request-for-startup-turn-any-spreadsheet-into-a-rest-api-docs-425718330566</a></p>
+<p>Thoughts? Questions? Suggestions? I’d love any feedback you care to give.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654/1</link>
+        <pubDate>Mon, 02 Feb 2015 18:21:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-2654-1</guid>
+        <source url="https://discuss.bootstrapped.fm/t/introducing-apiwithus/2654.rss">Introducing ApiWithUs</source>
+      </item>
+  </channel>
+</rss>

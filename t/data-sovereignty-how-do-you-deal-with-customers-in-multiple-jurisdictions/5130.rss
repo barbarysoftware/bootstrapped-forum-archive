@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+    <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130</link>
+    <description>China recently passed a vague &quot;critical infrastructure and Chinese people&#39;s data must be stored in China&quot; law. Russia did that a couple of years ago. The EU originally lead the way with this.
+
+How are you dealing with data sovereignty compliance? I have a market research SaaS product (so reasonably rich, numerous personal details) and I&#39;m looking down the barrel of:
+
+* having to implement some sort of database router in my application to comply with all the research subjects&#39; jurisdictions
+* having databases that do not have the increased protection of only being accessible on internal networks, or alternatively having to layer some sort of API proxy server thingy in front of it
+* stupid latency times
+
+Clearly, the issue of data sovereignty isn&#39;t going away. How is everyone dealing with it?</description>
+    
+    <lastBuildDate>Mon, 03 Jul 2017 22:00:06 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[Dmitry]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="21" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/i/b2d939/40.png" class="avatar"> Incertitude:</div>
+<blockquote>
+<p>my original desire was that any SaaS business owners treating cross-border personal information share tips or experience on how they’re doing it</p>
+</blockquote>
+</aside>
+<p>With regards to Russian laws, as was already stated - the laws are written in obscure way and can be interpreted as government machine wishes.</p>
+<p>Specifically, the law about  “personal information” says that “data should be processed using servers located in Russia”. It does not say that the data has to be processed using servers <strong>only</strong> in Russia. So in order to comply you can, say, mirror data on the Russian server and that would be it. You use Russian servers to process it. Theoretically.</p>
+<p>For Russia I’d say: ignore it as long as you can (for small businesses not involved with politics = forever). When problems arise, and your site is about to be blocked, in case you have significant amount of Russian users to bother - start doing something. Keep in mind that any Russian who purchases foreign services knows ways to visit “blocked” web sites <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Yes, good old “the severity of Russian laws is always compensated by the optionality of their execution”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/26</link>
+        <pubDate>Mon, 03 Jul 2017 22:00:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <p>Citus makes a sharded Postgres db, but designed for situations where you need sharding for performance, rather than data isolation. I don’t want to move to their solution. Instagram rolled their own sharded Postgres db by time/user based primary keys with a little Pg/PSQL, but I believe their shards were located on the same server when they did this? I admit I don’t know how this would work across multiple schemas/servers/datacenters - I’m only just looking that sort of complexity recently.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/25</link>
+        <pubDate>Mon, 03 Jul 2017 20:23:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-25</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe an idea:  use sharding within Postgres to distribute your data.  Not sure how feasible that is.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/24</link>
+        <pubDate>Sun, 02 Jul 2017 20:18:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <p>As you point out, it breaks the relationships stored in the DB. Those relationships are kinda important, because some Chinese and EU clients are subsidiaries of the same parent, and the parent is going to want a global view of things. It also stinks of huge technical debt. (I’m using Postgres).</p>
+<p>A fairly small Chinese VPS cost around $300/month when I last looked a couple of years ago. Hopefully they’ve come down by now; obviously at that price I didn’t look too hard. I don’t know whether the datacenters are generally ISO27001 or not either.</p>
+<p>Maybe it’ll work out that a cron job to extract and <code>scp</code> the data to somewhere in China each day will be acceptable, but that’s not a good solution for when <em>insert country here</em> decides to legislate some stricter requirement.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/23</link>
+        <pubDate>Sat, 01 Jul 2017 19:10:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="21" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/i/b2d939/40.png" class="avatar"> Incertitude:</div>
+<blockquote>
+<p>At this stage, I’m looking at writing a database router for my application, adding a few columns to client profiles to enable them to set data locality preferences, and saving and retrieving the data on a Chinese VPS.</p>
+</blockquote>
+</aside>
+<p>So if an account is marked as Chinese, you essentially use a separate connection pool for it, which is going to Chinese VPS (over a VPN, I assume)?</p>
+<p><strong>It feels like a very good solution to me</strong>.</p>
+<p>It should satisfy any law. It shouldn’t take much work to implement. Exposing to internet is not such a big deal if you only need to open one port, and from known source hosts too. (How much Chinese VPS cost tho?)</p>
+<p>Main issue with such multi-sovereinity SQL databases is that you cannot do a query against a table and get a result for all users; you’d have to send a request to each of the databases and then combine them. So that alone may be a reason to use one of NoSQL databases that allow to do multi-instance queries, but that only works for new projects.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/22</link>
+        <pubDate>Sat, 01 Jul 2017 18:37:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d really like to bring the thread back on track - my original desire was that any SaaS business owners treating cross-border personal information share tips or experience on how they’re doing it, both from legal and technical standpoints. I believe we’ve covered enough justification of why this is worth discussing.</p>
+<p>From here on, if you’d like to debate whether or not you believe data sovereignty is a pertinent issue, or if the issue even exists, I’d kindly ask you to start your own thread.</p>
+<p>Personally, I’m dealing with EU, China, and no-sovereignty-law zones. I’m running everything out of EU datacenters at the moment, and now that China has recently passed their own data sovereignty laws my clients are scrambling to audit their data warehousing and also subcontractors that process personal info. At this stage, I’m looking at writing a database router for my application, adding a few columns to client profiles to enable them to set data locality preferences, and saving and retrieving the data on a Chinese VPS. This is aggravating, because:</p>
+<ol>
+<li>That’s a lot of work, and it’s unclear if I’ll be able to bill it</li>
+<li>Chinese VPSes cost a mint compared to other options</li>
+<li>The db server would be exposed to the internet (yes, I’d shut everything off except opening the db port to the app server IP, but it’s still less secure than in a private network).</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/21</link>
+        <pubDate>Sat, 01 Jul 2017 16:20:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="18" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>Please stop pouring propaganda into a business forum</p>
+</blockquote>
+</aside>
+<p>Uncomfortable truth is not “propaganda” and the business forum discusses politics-related issues right now.</p>
+<p>Let’s skip whataboutism, my statement was related only to the goal of laws like this in Russia.</p>
+<aside class="quote" data-post="18" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/rfctr/40/1192_1.png" class="avatar"> rfctr:</div>
+<blockquote>
+<p>It is enough to have one complain from an unhappy customer, and you’d be banned. Yeah, why worry?</p>
+</blockquote>
+</aside>
+<p>Any significant examples towards non-significant sites?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/20</link>
+        <pubDate>Sat, 01 Jul 2017 15:09:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="14" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>The idea that a Germany has jurisdiction to enforce German business-related laws over company based in US (or Canada, or Peru or Belgium) is ludicrous.</p>
+</blockquote>
+</aside>
+<p>Used to be ludicrous, true - for the physical economy. Not it is hard to tell where the jurisdiction ends, as on the same computer, within the same transaction, you can use services from a few countries at once.</p>
+<p>But that’s not the core of the problem as I understand it:</p>
+<p>Imagine Walmart stores the list of their customers on Amazon servers. Not smart, eh? Amazon has a lot of opportunities to peek in and learn the behaviour, statistics, trends  - and use them against Walmart.</p>
+<p>Now imagine all your country’s population behaviours, connections, intentions and whatnot are stored on servers in a different country. That gives the intelligence of that other country enormous tools for both the analysis and manipulation - with a potential of real-world effect during say election period.</p>
+<p>No sane and strategic-thinking government would permit that.</p>
+<p>Of course, they cannot move all those data to sovereign servers at once - the situation was ignored for far too long. But step by step the laws will be changed to move more and more of the local data to the local servers.</p>
+<p>That is my understanding of the underlying reasons for these laws, anyway.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/19</link>
+        <pubDate>Sat, 01 Jul 2017 14:26:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="17" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ivm/40/3798_1.png" class="avatar"> ivm:</div>
+<blockquote>
+<p>because laws in Russia are written with oppression and bribery in mind</p>
+</blockquote>
+</aside>
+<p><img src="https://emoji.discourse-cdn.com/twitter/roll_eyes.png?v=5" title=":roll_eyes:" class="emoji" alt=":roll_eyes:"> Please stop pouring propaganda into a business forum.</p>
+<p>IT-related laws in Russia are pretty liberal comparing to some other countries. IT for a long time was basically <em>unregulated</em>, because the laws had to catch up.</p>
+<p>Even in the case of personal data laws Russia simply follows the example of “unoppressive” entities such as EU.</p>
+<aside class="quote" data-post="17" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ivm/40/3798_1.png" class="avatar"> ivm:</div>
+<blockquote>
+<p>Don’t worry unless you’re a target due to some political reasons.</p>
+</blockquote>
+</aside>
+<p>And this is just not a wise advise.</p>
+<p>It is enough to have one complain from an unhappy customer, and you’d be banned. Yeah, why worry?</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/18</link>
+        <pubDate>Sat, 01 Jul 2017 14:15:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[ivm]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s a very popular saying in Russia “the severity of Russian laws is always compensated by the optionality of their execution” because laws in Russia are written with oppression and bribery in mind. Don’t worry unless you’re a target due to some political reasons.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/17</link>
+        <pubDate>Sat, 01 Jul 2017 03:56:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/kjk">@kjk</a><br>
+The question of jurisdiction might be different than you think.</p>
+<aside class="quote" data-post="14" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>Even if I sell to Germans, Germany can’t make me put an Impressum information on my website, make me stop selling “Mein Kampf”, make me collect VAT, make me pay German business taxes (all things that German companies must do).</p>
+</blockquote>
+</aside>
+<p>For example for VAT, the customer in the EU must pay VAT. These customers fall under EU jurisdiction. As an US seller, you are merely required to “collect” VAT for EU customers, you as a seller are not required to pay VAT.  But as you have collected it, you must refund it to the EU countries.   There are various agreements between the EU tax authorities and e.g. the IRS.  In practice US companies must collect VAT for EU customers, and many do (as most of the resellers).<br>
+From the point of the EU, the trade between a US seller and a EU customer takes part (at least partially) in the EU, so EU laws apply.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/16</link>
+        <pubDate>Fri, 30 Jun 2017 17:35:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Show me a single case of a fully US based company that was successfully prosecuted by government of a country that is not US for not complying with non-US laws.</p>
+</blockquote>
+<p>Russia vs Linkedin, ruling of August 2016 and appeal of Nov 2016. Here is the court ruling (in russian): <a href="http://www.hldataprotection.com/files/2016/10/2016-06-20_Reshenie_ot_04.08.2016236.pdf" rel="nofollow noopener">http://www.hldataprotection.com/files/2016/10/2016-06-20_Reshenie_ot_04.08.2016236.pdf</a></p>
+<p>The Russian data protection authority, Roskomnadzor, brought the action claiming that LinkedIn violated the data localization requirement in addition to other general Russian data privacy laws. Linkedin does not have a legal entity in Russia. Consequently, Roskomnadzor blocked access to the Linkedin website and Apple + Google removed the app from the Russian version of their app stores.</p>
+<p>What do I win? <img src="https://emoji.discourse-cdn.com/twitter/smiley.png?v=5" title=":smiley:" class="emoji" alt=":smiley:"></p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/15</link>
+        <pubDate>Fri, 30 Jun 2017 09:23:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="10" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/i/b2d939/40.png" class="avatar"> Incertitude:</div>
+<blockquote>
+<p>I really hate the general implication behind the advice that you don’t have to understand the issue when you hire professional services, the lawyer will just make the problem disappear magically. Imagine turning the tables and you saw a business plan that ended with “and then we’ll hire a guy to code everything and that will take care of our product”.</p>
+</blockquote>
+</aside>
+<p>Here’s why I suggested a lawyer: you keep insisting that EU country has jurisdiction over, say, US company.</p>
+<p>That is false and a lawyer would explain the notion of jurisdiction to you. Doing research apparently is not enough.</p>
+<p>Unless I’m totally mis-reading this and the hypothetical company you’re describing has presence in China/Russia/EU/wherever, in which I go back to “moot point” (because at that point you should consult professionals and not strangers on the internet).</p>
+<p>The idea that a Germany has jurisdiction to enforce German business-related laws over company based in US (or Canada, or Peru or Belgium) is ludicrous.</p>
+<p>Even if I sell to Germans, Germany can’t make me put an Impressum information on my website, make me stop selling “Mein Kampf”, make me collect VAT, make me pay German business taxes (all things that German companies must do).</p>
+<p>Or make me comply with their data retention laws.</p>
+<p>If they tried any of that, US government would put them firmly in place (and vice versa, if US tried to make German businesses comply with, say, DMCA, Germany would put them in place).</p>
+<p>I repeat: Germany has no jurisdiction over US business but a clear insanity of such scheme doesn’t seem to stop you from militantly spreading this completely false idea of how law works across borders.</p>
+<p>But hey, I’m easily convinced with facts.</p>
+<p>Show me a single case of a fully US based company that was successfully prosecuted by government of a country that is not US for not complying with non-US laws.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/14</link>
+        <pubDate>Fri, 30 Jun 2017 09:08:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>It is your choice to do business with customers in the EU/Russia and store their data.  In that sense it is your commercial choice to do that.  This then brings in the requirements by law.</p>
+<p>You could also make a different choice: don’t do business with these countries.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/13</link>
+        <pubDate>Fri, 30 Jun 2017 07:36:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>So, as I understand</p>
+</blockquote>
+<p>You don’t understand. It’s not a commercial requirement, it’s a legal requirement. It doesn’t matter how you acquire the data (direct collection or subcontracted processing), these countries deem that their laws apply to any data controller who has personal data on their citizens/residents. Re-read the first post that <a class="mention" href="/u/rfctr">@rfctr</a> made carefully.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/12</link>
+        <pubDate>Fri, 30 Jun 2017 07:30:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>So, as I understand, you need to be compliant with data sovereignty law, because of requirements of your customers.<br>
+That is a requirement that comes out of your commercial relationship with your customers.</p>
+<p>This is different from the direct applicability of EU/Russian law to your business.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/11</link>
+        <pubDate>Fri, 30 Jun 2017 07:26:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>The point is moot for majority of people, especially those in the “bootstrapped business” category that this forum is about … ignore it until your revenues can be significantly impacted by whatever laws Chine/Russia/EU has, at which point you have enough money …</p>
+</blockquote>
+<p>Just no, plain and simple. <a class="mention" href="/u/rfctr">@rfctr</a> is the only one who so far shows understanding of the laws’ scopes, and business problem they present. If your business deals in <strong><em>personal information</em></strong> it is not a moot point. 1.7 billion people currently live in countries with data sovereignty laws, contributing about 40% of the global GDP.</p>
+<blockquote>
+<p>every country of importance will implement similar laws in a foreseeable future, and hence it worth to do a mental experiment now on how to deal with it.</p>
+</blockquote>
+<p>Exactly what I’m getting at, and furthermore it’s not just a mental experiment. As I pointed out originally, you only have the luxury of obscurity when you’re doing small B2C and not storing much personal data. I’m doing B2B and not only are these clients audited by their countries’ data protection authorities every couple of years, but the clients themselves audit their suppliers (me included).</p>
+<blockquote>
+<p>hire a lawyer</p>
+</blockquote>
+<p>I really hate the general implication behind the advice that you don’t have to understand the issue when you hire professional services, the lawyer will just make the problem disappear magically. Imagine turning the tables and you saw a business plan that ended with “and then we’ll hire a guy to code everything and that will take care of our product”.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/10</link>
+        <pubDate>Fri, 30 Jun 2017 07:21:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>When considering if these laws apply, an important question is: who is your user vs who is your customer vs user/citizen data.</p>
+<p>e.g. If you are a US company, have a US customer you fall under US law.  Even if this US customer happens to store EU/Russian user data on your service.  An example could be dropbox where a US person stores an excel sheet with addresses.</p>
+<p>That is different from e.g. Twitter, which itself stores data of EU/Russian customers.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/9</link>
+        <pubDate>Fri, 30 Jun 2017 06:56:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="7" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>people living in Russia/China/${some other totalitarian, censorship-happy country}.</p>
+</blockquote>
+</aside>
+<p>You forgot EU <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>And knowing our friends at NSA, that laws would be first implemented in USA - if not for the fact that all personal data are already stored on US soil, so why bother. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<aside class="quote" data-post="7" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/kjk/40/3801_1.png" class="avatar"> kjk:</div>
+<blockquote>
+<p>So I’m with <a class="mention" href="/u/unboot">@unboot</a>: ignore it until your revenues can be significantly impacted</p>
+</blockquote>
+</aside>
+<p>With that I agree.</p>
+<p>However I’m of opinion that <em>every</em> country of importance will implement similar laws in a foreseeable future, and hence it worth to do a mental experiment now on how to deal with it.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/8</link>
+        <pubDate>Fri, 30 Jun 2017 01:45:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-8</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[kjk]]></dc:creator>
+        <description><![CDATA[
+            <p>The point is moot for majority of people, especially those in the “bootstrapped business” category that this forum is about.</p>
+<p>It only matters if you derive material revenues from people living in Russia/China/${some other totalitarian, censorship-happy country}.</p>
+<p>It also only matters if you’re big enough to get on ${totalitarian government} radar. China and Russia don’t care whether your time tracking application stores the data according to whatever data retention laws they have.</p>
+<p>Russia might censor twitter if people use twitter to complain about their government, but they would shut it down anyway. But they really don’t care about your $10k/month operation with 2 Russian users.</p>
+<p>So I’m with <a class="mention" href="/u/unboot">@unboot</a>: ignore it until your revenues can be significantly impacted by whatever laws Chine/Russia/EU has, at which point you have enough money to hire a lawyer that specializes in those issue and you don’t have to ask random people on the internet.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/7</link>
+        <pubDate>Fri, 30 Jun 2017 00:58:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-7</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="4" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/7cd45c/40.png" class="avatar"> unboot:</div>
+<blockquote>
+<p>you are not subject to e.g. German (or Russian) law.</p>
+</blockquote>
+</aside>
+<p>The lawmakers see it differently. They say “your service is accessible from Russian territory; hence you should comply with Russian laws; if not, you’ll be blocked”.</p>
+<p>Specifically, the personal information of the users should, according to law, be stored on the Russian soil.</p>
+<p>You may argue that this is not a logical thing - and many did argue - but this is the law, and not only Russian law but EU and China laws and probably more to come. There is some necessities for sovereign states to have this under control, and so it will be so, like it or not.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/6</link>
+        <pubDate>Fri, 30 Jun 2017 00:26:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-6</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[rfctr]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="2" data-topic="5130">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://avatars.discourse.org/v2/letter/u/7cd45c/40.png" class="avatar"> unboot:</div>
+<blockquote>
+<p>Have clear terms of service and state the jursidiction(s) you operate under.  It is up to your users to accept these terms, and they have to make sure that they are in compliance with their laws.</p>
+</blockquote>
+</aside>
+<p>In practice, it may work for quite a time.</p>
+<p>However, the services that do not comply with Russian privacy laws got blocked in Russia. The blocking implementation is still crude and caused a lot ridicule for government agency that does it, but there is no doubt they will learn and implement the better mechanisms.</p>
+<p>Note that to the best of my knowledge the Russian laws in particular do not require to store <strong>all</strong> the data on the Russian datacenters; only the personal information (names, contact info). Hence the technical solution could be to have the account information part of your service extracted into a separate micro-service and host it in Russia for citizens of those countries.</p>
+<p>However, I do not know what data are required for local storage in EU or China.</p>
+<p>If I was facing this problem, I’d have a separate server instance in each country that has soverignity laws, and stored all the data for their citizens on their respective server. Of course, it makes some functionality (sharing, collaboration) harder to implement, but… a man gotta do what a man gotta do!</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/5</link>
+        <pubDate>Fri, 30 Jun 2017 00:21:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-5</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p>Regarding your thought that 1. does not work:</p>
+<p>If you offer your service in a specific country, like on a German website or on the German IOS appstore, you will be under German law, even if your company is outside Germany.</p>
+<p>If you offer your service on a .com, being a US business and having US TOS, you are not subject to e.g. German (or Russian) law.<br>
+If an e.g. German company becomes your client, you still operate under US law.  If the German client now uploads citizen data, they are probably in violation of German law.</p>
+<p>The data sovereignty laws apply mostly if you have nexus in a state/country where these laws apply.  For example all big tech companies have offices/staff/advertising in most countries, and so must operate under their laws, even if their data centers/development is somewhere else.  Having nexus is not only about physical presence, but also about if your operations are geared towards a specific jurisdiction.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/4</link>
+        <pubDate>Thu, 29 Jun 2017 13:57:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-4</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[Incertitude]]></dc:creator>
+        <description><![CDATA[
+            <p>1 doesn’t work. You’re still not compliant with their laws; most of the data-sovereignty jurisdictions don’t allow users to sign away the data controller’s obligations. Moreover, if you’re B2B, often you’ll be processing another business’ customer data, and the client will expect you to follow those laws.<br>
+2 Split your app - yeah, work I would rather not have to do but don’t see a way around at the moment.</p>
+<blockquote>
+<p>The problem with this is that you now operate under multiple jurisdictions and need to make sure to follow the law.</p>
+</blockquote>
+<p>^ In the eyes of those laws you already operate under their jurisdiction once you have a citizen/resident’s data, regardless of your decisions about server location.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/3</link>
+        <pubDate>Thu, 29 Jun 2017 05:46:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-3</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+      <item>
+        <title>Data sovereignty - how do you deal with customers in multiple jurisdictions?</title>
+        <dc:creator><![CDATA[unboot]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/incertitude">@Incertitude</a><br>
+I assume most deal with it in the usual way: ignore it.</p>
+<p>There are at least two other ways (we use one):</p>
+<ol>
+<li>Have clear terms of service and state the jursidiction(s) you operate under.  It is up to your users to accept these terms, and they have to make sure that they are in compliance with their laws.</li>
+<li>Split your app.  So have customers from the EU log into EU servers, US into US servers, …  That is relatively easy if your customers don’t interact or share the same data.  The problem with this is that you now operate under multiple jurisdictions and need to make sure to follow the law.</li>
+</ol>
+          <p><a href="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130/2</link>
+        <pubDate>Wed, 28 Jun 2017 22:09:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-5130-2</guid>
+        <source url="https://discuss.bootstrapped.fm/t/data-sovereignty-how-do-you-deal-with-customers-in-multiple-jurisdictions/5130.rss">Data sovereignty - how do you deal with customers in multiple jurisdictions?</source>
+      </item>
+  </channel>
+</rss>

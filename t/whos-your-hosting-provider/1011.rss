@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Who&#39;s your hosting provider?</title>
+    <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011</link>
+    <description>Guys, just wondering who&#39;s your hosting provider, what kind of hosting plan do you use and how are you liking it?
+
+I&#39;m on Site5 right now, switching to VPS, but I&#39;m looking to alternatives for my WP-based website.
+
+</description>
+    
+    <lastBuildDate>Fri, 02 May 2014 13:46:58 +0000</lastBuildDate>
+    <category>Discussions</category>
+    <atom:link href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[chris_vannoy]]></dc:creator>
+        <description><![CDATA[
+            <p>For static sites without SSL, I’ve been <em>extremely</em> happy with <a href="http://www.paperplane.io/" rel="nofollow noopener">http://www.paperplane.io/</a>. For $9/month, you can essentially map as many GitHub repos and Dropbox folders as you’d like to the web. Supports custom DNS as well (ala <a href="http://projects.chrisvannoy.com" rel="nofollow noopener">projects.chrisvannoy.com</a>). Another note: Very much a self-funded/micropreneur outfit themselves.</p>
+<p>For ones where I need SSL, I’m using Amazon S3 with Cloudfront to handle the SSL certificate. <a href="http://www.techrecruiterguides.com" rel="nofollow noopener">www.techrecruiterguides.com</a> is hosted this way.</p>
+<p>For stuff where I actually need a backend: I’ve used Linode pretty extensively (this actually reminds me that I need to shut those down soon), but I also had a time when I spread out image processing workers on as many free services as I could find: Heroku, DotCloud, and AppFog at the time. Heroku’s the only one that still has a free tier (1 dyno) as far as I can tell.</p>
+<p>I also have some smaller stuff on Digital Ocean (my blog, primarily). Day job uses a <em>lot</em> of Microsoft Azure and we’ve been really happy with that as well.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/35</link>
+        <pubDate>Fri, 02 May 2014 13:46:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-35</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[andyjohnson]]></dc:creator>
+        <description><![CDATA[
+            <p>Another vote for <a href="http://www.arcustech.com" title="Arcustech" rel="nofollow noopener">Arcustech</a>. Excellent support from those guys. I also run many of my client sites on <a href="http://www.enginehosting.com" rel="nofollow noopener">EngineHosting</a>, which is run by the same team at Arcustech I believe.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/33</link>
+        <pubDate>Tue, 22 Apr 2014 17:05:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-33</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[ryanbattles]]></dc:creator>
+        <description><![CDATA[
+            <p>Hah, sooo tempting to use my affiliate link here, but I won’t <img src="https://emoji.discourse-cdn.com/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+<p>I honestly have been pleased with A Small Orange for marketing site hosting, and other small sites. Their cheapest shared hosting is $35 a YEAR, and I have not had any issues with them for years. They also offer affordable VPS hosting as well.</p>
+<p>For app hosting, +1 <a class="mention" href="/u/ian">@ian</a>’s recommendation for Arcustech. Seriously great support, especially if you don’t know your SSL from your elbow, their support technicians handle just about anything you need with a simple email request.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/32</link>
+        <pubDate>Tue, 22 Apr 2014 02:02:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-32</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[Ben]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been looking at Fortrabbit closely, anyone had any experience? They’re working on rolling out HHVM support which is intriguing.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/31</link>
+        <pubDate>Mon, 21 Apr 2014 23:21:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-31</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[shantnu]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote" data-post="19" data-topic="1011">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/ken/40/1350_1.png" class="avatar"> Ken:</div>
+<blockquote>
+<p>ManageWP</p>
+</blockquote>
+</aside>
+<p>Thanks, Ken. ManageWP is great. In fact, it is so great it’s making me jealous- why didn’t I think of this idea? And its free for me, as I only manage 3 WP sites</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/30</link>
+        <pubDate>Fri, 24 Jan 2014 22:05:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-30</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[web007]]></dc:creator>
+        <description><![CDATA[
+            <p>Not sure if you realize, but you have to do the same for <a href="http://aws.amazon.com/ec2/faqs/#How_many_instances_can_I_run_in_Amazon_EC2" rel="nofollow noopener">AWS</a> - they just have a higher threshold.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/29</link>
+        <pubDate>Thu, 23 Jan 2014 18:14:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-29</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[rfelix]]></dc:creator>
+        <description><![CDATA[
+            <p>You have to email them and give them reasons why you need more servers? Wow. That’s a total non-starter.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/28</link>
+        <pubDate>Thu, 23 Jan 2014 04:43:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-28</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[rfelix]]></dc:creator>
+        <description><![CDATA[
+            <p>I use Joyent, Linode, MediaTemple and Cleverkite. My favorites are Linode and Cleverkite.</p>
+<p>I have a fair bit of Linode surface area: 2 accounts, with 10 servers between them. For the most part they’ve been solid, but lately (on my most recently added Linode), I had 2 failures in the same week.</p>
+<p>The host that my Linode was on died, so they moved it to another host, which died 2 days later, so they moved me again, and it’s been solid since. Their hardware seems to be flaky in some circumstances. But as with any web host, it’s really the luck of the draw as to which server you’re on, and which hardware is going to fail.</p>
+<p>Anyone can set up a great looking sales page and sell you some servers, but Linode still gets my business because their control panel is awesome. I especially love that when you reboot your Linode, you can watch it boot as if you were at the physical server looking at a monitor (you can watch it detect hardware, run fsck and such), instead of issuing a reboot request and blindly waiting 5 minutes for ssh to come back up.</p>
+<p>They also get my business because their service is great and responsive.</p>
+<p>When searching for hosting, you never really know what you’re getting, so you need a company that stands behind you and doesn’t make you feel helpless when your server is down. You need great support. Linode gets that right. The rest is up to you (when running a prod app, you need redundancy, so one server going down doesn’t necessarily take your app down).</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/27</link>
+        <pubDate>Thu, 23 Jan 2014 04:41:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-27</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[scojo]]></dc:creator>
+        <description><![CDATA[
+            <p>Microsoft has a terrific program in <a href="http://www.microsoft.com/bizspark/" rel="nofollow noopener">BizSpark</a>. It’s pretty easy for product bootstrappers to apply. Through bizspark you get 3 years of free Azure hosting (up to $150/month I think). When I first started, my app was built for a regular server, so I’m hosting everything on one VM instance. You don’t have to code anything special when using VM’s. Windows and Linux are both supported. I also am spinning up a Wordpress website instance. (I don’t have content on it yet.)</p>
+<p>Note: I’m not affiliated with Microsoft, and some things about them I don’t like at all, but it’s hard to beat good/free hosting.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/26</link>
+        <pubDate>Thu, 23 Jan 2014 02:12:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-26</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[UNDRWD]]></dc:creator>
+        <description><![CDATA[
+            <p>For small sites or testing out an idea/app I recommend hostgator as you can quickly get up a site/app with an SSL for $15/mo.</p>
+<p>For VPS and scaling apps I recommend Linode.</p>
+<p>For WP sites WPengine has been great and I highly recommend them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/24</link>
+        <pubDate>Tue, 21 Jan 2014 16:53:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-24</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[jamespanderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Another vote for Linode.  I had an absolutely terrible time with WPEngine a year or so ago, but seem to be in the minority.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/23</link>
+        <pubDate>Mon, 20 Jan 2014 17:07:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-23</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[axelbouaziz]]></dc:creator>
+        <description><![CDATA[
+            <p>We host a lot of products (and clients’ too) under AWS.</p>
+<p>Depending on which type of websites : static, PHP-based (we mainly develop using ZF2)… we rely on different services like EC2, S3, CloudFront… etc.</p>
+<p>Happy to help if you need any help !</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/22</link>
+        <pubDate>Sun, 19 Jan 2014 22:48:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-22</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>Awesome, Daniel! They have a great support team and documentation including a <a href="http://wpengine.com/support/migration-process/" rel="nofollow noopener">migration walkthrough</a>, but let me know if you run into any issues or have any questions and I’d be happy to help where I can.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/21</link>
+        <pubDate>Sat, 18 Jan 2014 23:03:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-21</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[Daniel]]></dc:creator>
+        <description><![CDATA[
+            <p>Yep.  I place my bet on WPEngine + Cloudflare + MaxCDN (free with WPEngine Pro).</p>
+<p>Nice to learn about ManageWP though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/20</link>
+        <pubDate>Sat, 18 Jan 2014 16:54:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-20</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[Ken]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s what I wanted to hear.</p>
+<p>I’ve got my WP sites on my VPS at <a href="http://kickassvps.com/" rel="nofollow noopener">KickAssVPS</a>, and I have a subscription to <a href="https://managewp.com/" rel="nofollow noopener">ManageWP</a>.</p>
+<p>The only reason I have the ManageWP is to provide (A) one easy place to log in and manage all of my WP installs, (B) automate updating of the WP instances and their plugins across all my installs, and © ManageWP does security scans with <a href="http://sucuri.net/" rel="nofollow noopener">Sucuri</a>.</p>
+<p>From what you’re saying, I could move to WPEngine, and get rid of both my VPS host and ManageWP, WPEngine would take care of WP version upgrades (I would still need to do plugins), and they manage security scans for me. Noice.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/19</link>
+        <pubDate>Sat, 18 Jan 2014 15:59:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-19</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[daverodenbaugh]]></dc:creator>
+        <description><![CDATA[
+            <p>Another big +1 for WP Engine here.  Used them for the past 2 years.  They are the most stable , problem free host I’ve used in general but their WP hosting rocks.  Automatic version upgrades.  Security scans.  Fast caching of your site without adding plugins or config.  CDN integration.  Amazing support.  If you need WP hosting, this is all you will ever need.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/18</link>
+        <pubDate>Sat, 18 Jan 2014 15:38:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-18</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[Ken]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m on KickAssVPS, and haven’t had any issues. Their support was very helpful in getting me set up.</p>
+<p>I’ve been thinking of switching, though. I was looking at WPEngine for my Wordpress stuff, Heroku for my meteorjs apps.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/17</link>
+        <pubDate>Sat, 18 Jan 2014 15:36:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-17</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[Daniel]]></dc:creator>
+        <description><![CDATA[
+            <p>You’re going to cash some $$ - I’ll sign up following your affiliate link</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/16</link>
+        <pubDate>Sat, 18 Jan 2014 14:20:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-16</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[ashimali]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with xecretcode re Squarespace if you want to do a marketing or e-commerce site (it’s not the platform for a bespoke web app).</p>
+<p>I put my wife’s business site on there about a year ago (<a href="http://stitchbystitch.eu/" rel="nofollow noopener">http://stitchbystitch.eu/</a>) just using an out of the box template, and I can thoroughly recommend it. Support is really good, the stock templates are responsive and pretty easy to customise if you need to.</p>
+<p>E-commerce support is good as they have Stripe integration, shopping cart and inventory management etc. I haven’t yet moved her product pages (still using paypal button for the moment), but otherwise it’s been great.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/15</link>
+        <pubDate>Fri, 17 Jan 2014 19:31:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-15</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[tnorthcutt]]></dc:creator>
+        <description><![CDATA[
+            <p>Huge +1 for WP Engine. Shameless affiliate link (mods/anybody: if this isn’t kosher, by all means tell me and I’ll remove): <a href="http://brightagency.net/wpengine" rel="nofollow noopener">http://brightagency.net/wpengine</a></p>
+<p>They really are fantastic. Blazing fast, and great support, especially if you ping their support account on twitter: <a href="https://twitter.com/wpesupport" rel="nofollow noopener">https://twitter.com/wpesupport</a></p>
+<p>I do WP development for clients, and at this point I <strong>require</strong> all of my clients to have their site hosted there, whether on their own plan or on our large one. It’s that much of a time and headache saver that I won’t take someone’s money unless they’re willing to move there.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/14</link>
+        <pubDate>Fri, 17 Jan 2014 17:12:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-14</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[scottw]]></dc:creator>
+        <description><![CDATA[
+            <p>A big +1 for WPEngine. Like most great services, they are only expensive if you don’t value your time.</p>
+<p>We are actually moving all of our content out of our main app (rails) and into Wordpress. Before WPEngine we would have never considered this path, but they have been so great with our blogs it is a no brainer.</p>
+<p>You can also save some money by paying for a year in advance.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/13</link>
+        <pubDate>Fri, 17 Jan 2014 15:14:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-13</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[Daniel]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks guys, pretty interesting to read your perspective.</p>
+<p>I’m going to try WPEngine (thanks Ian for pointing that out).  I had a chat with them and their customer support looks fabulous (though Site5’s is amazing too), as well as their features.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/12</link>
+        <pubDate>Fri, 17 Jan 2014 14:44:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-12</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[vbsteven]]></dc:creator>
+        <description><![CDATA[
+            <p>I use <a href="http://hetzner.de" rel="nofollow noopener">hetzner.de</a> for dedicated servers. Heroku for some rails experiments and recently for my day job I’ve been experimenting a lot with AWS and I love it. It might be a bit expensive for bootstrapping a product though.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/11</link>
+        <pubDate>Fri, 17 Jan 2014 10:04:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-11</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[anon3850446]]></dc:creator>
+        <description><![CDATA[
+            <p>After years of coding PHP web sites from scratch, I started using <strong><a href="http://www.squarespace.com" rel="nofollow noopener">SquareSpace</a></strong> and couldn’t be happier. I can prototype a great looking web site in minutes &amp; be ready to accept payment. I develop desktop &amp; mobile apps, so PHP and/or scripting is not required.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/10</link>
+        <pubDate>Fri, 17 Jan 2014 05:36:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-10</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+      <item>
+        <title>Who&#39;s your hosting provider?</title>
+        <dc:creator><![CDATA[manuelflara]]></dc:creator>
+        <description><![CDATA[
+            <p>For cheap, non-business websites I use Dreamhost. Been with them for many years and no major complaints (although their speed is not great). For my business I use a dedicated Hetzner server that is awesome and very affordable (around $90/mo for a very powerful machine), I highly recommend them.</p>
+          <p><a href="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011/9</link>
+        <pubDate>Fri, 17 Jan 2014 04:08:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.bootstrapped.fm-post-1011-9</guid>
+        <source url="https://discuss.bootstrapped.fm/t/whos-your-hosting-provider/1011.rss">Who&#39;s your hosting provider?</source>
+      </item>
+  </channel>
+</rss>

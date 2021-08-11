@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How big of a PITA is HIPAA compliance for a web-based app? - Discussions - Discuss @ Bootstrapped.fm</title>
+    <meta name="description" content="A potential client wants me to build a custom EMR in the form of a SaaS app with the intent to resell it to his colleagues within the same medical specialty.  My research suggests that true HIPAA compliance is near impossible in a web-based app but that doesn’t seem to be stopping a growing number of EMR providers.  If you have experience in this area, what advice would you offer someone with regards to building a HIPAA compliant SaaS app?">
+    <meta name="generator" content="Discourse 2.8.0.beta4 - https://github.com/discourse/discourse version 03896a9c43843208c0a5312ea879fd0971f8d1de">
+<link rel="icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/1/1cd396a8922e3c5965fd3511e0e3bf1a058613cc_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/optimized/2X/4/42d2616574f968a8aa1fc8cf205e9fde4138796a_2_180x180.png">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.bootstrapped.fm","potentialAction":{"@type":"SearchAction","target":"https://discuss.bootstrapped.fm/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="Discuss @ Bootstrapped.fm Search">
+
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_00cc169d582a417941fbaaed911574c1677a5684.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop"  />
+      <link href="https://sjc3.discourse-cdn.com/business6/stylesheets/desktop_theme_13_3ce09201a3ff16a8236f3c74200c9da056c811bf.css?__ws=discuss.bootstrapped.fm" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="13" data-theme-name="material design theme"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <meta id="data-ga-universal-analytics" data-tracking-code="UA-639849-24" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <link rel="preload" href="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js" as="script">
+<script src="https://aws1.discourse-cdn.com/business6/assets/google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.gz.js"></script>
+
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;How big of a PITA is HIPAA compliance for a web-based app?&#39;" href="742.rss" />
+    <meta property="og:site_name" content="Discuss @ Bootstrapped.fm" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/1/1703e686b436ebed2802b18313f7548e60f3d18f.png" />
+<meta property="og:image" content="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/0/01534e37c0e9ff591ae519f69954d5cf41138035.png" />
+<meta property="og:url" content="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742" />
+<meta name="twitter:url" content="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742" />
+<meta property="og:title" content="How big of a PITA is HIPAA compliance for a web-based app?" />
+<meta name="twitter:title" content="How big of a PITA is HIPAA compliance for a web-based app?" />
+<meta property="og:description" content="A potential client wants me to build a custom EMR in the form of a SaaS app with the intent to resell it to his colleagues within the same medical specialty.  My research suggests that true HIPAA compliance is near impossible in a web-based app but that doesn’t seem to be stopping a growing number of EMR providers.  If you have experience in this area, what advice would you offer someone with regards to building a HIPAA compliant SaaS app?" />
+<meta name="twitter:description" content="A potential client wants me to build a custom EMR in the form of a SaaS app with the intent to resell it to his colleagues within the same medical specialty.  My research suggests that true HIPAA compliance is near impossible in a web-based app but that doesn’t seem to be stopping a growing number of EMR providers.  If you have experience in this area, what advice would you offer someone with regards to building a HIPAA compliant SaaS app?" />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="4 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="15 ❤" />
+<meta property="article:published_time" content="2013-11-11T19:23:55+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    
+    <header>
+      <a href="../../index.html">
+          <img src="https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png" alt="Discuss @ Bootstrapped.fm" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="742.html">How big of a PITA is HIPAA compliance for a web-based app?</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/discussions.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #92278F'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/NicheDiver.html'><span itemprop='name'>NicheDiver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-11T19:23:55Z' class='post-time'>
+                November 11, 2013,  7:23pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-11T19:23:55Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A potential client wants me to build a custom EMR in the form of a SaaS app with the intent to resell it to his colleagues within the same medical specialty.  My research suggests that true HIPAA compliance is near impossible in a web-based app but that doesn’t seem to be stopping a growing number of EMR providers.</p>
+<p>If you have experience in this area, what advice would you offer someone with regards to building a HIPAA compliant SaaS app?</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/davidw'><span itemprop='name'>davidw</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-11T20:11:58Z' class='post-time'>
+                November 11, 2013,  8:11pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-11T20:11:58Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It’s all kind of fuzzy from what I can tell, with lots of stuff meant to check off check boxes, as well as CYA type solutions.  I’ve been working on something along these lines and would be happy to let you know what I know via private email.</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/NicheDiver.html'><span itemprop='name'>NicheDiver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-11T20:49:19Z' class='post-time'>
+                November 11, 2013,  8:49pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-11T20:49:19Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks <a class="mention" href="../../u/davidw.html">@davidw</a>, I just sent you an email.  Please consider posting any bits you’re comfortable sharing here as well so that more people can benefit.</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/itengelhardt'><span itemprop='name'>itengelhardt</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-12T16:42:16Z' class='post-time'>
+                November 12, 2013,  4:42pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-12T16:42:16Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Is there an official <a class="mention" href="../../u/patio11.html">@patio11</a> bat signal for this forum?<br>
+I think he can throw in some experience here.</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/patio11'><span itemprop='name'>patio11</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-13T07:26:33Z' class='post-time'>
+                November 13, 2013,  7:26am
+              </time>
+              <meta itemprop='dateModified' content='2013-11-13T07:26:33Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Appointment Reminder sells HIPAA-compliant accounts on a very limited basis, and I hope to make them publicly available in a lower-touch fashion within the next few months.</p>
+<p>Short version: HIPAA-compliant SaaS is possible if you have approximately 2 to 6 weeks of engineering/founder time and about $10,000 to throw at the problem.  You can do it quicker/cheaper but that’s about what it takes to do it right</p>
+<p>Longer version:</p>
+<p>There are about 100 individual checkboxes that you’ll need to hit to be HIPAA compliant.  You’re responsible for them yourself, and by default <em>nobody will check</em> unless complaints are made against you and you are subjected to an audit.  If you are audited, you need to both a) be compliant and b) be able to point to documents providing you are compliant.</p>
+<p>Approximately 90% of the requirements can be satisfied by having good engineering/risk management practices <em>and documenting them</em>.  For example, one requirement is that you need to have a formal policy on use of patient information.  You can bang this out in 20 minutes, save it to Google documents, and then <em>print a copy and sign in</em> to document that you’ve done so in the case that this is ever questioned.  HIPAA doesn’t require any particular level of detail in the policy – I think mine is literally three paragraphs long.</p>
+<p>A preview of coming attractions for bullet points which are going to actually cause you too do a bit of work:</p>
+<ul>
+<li>You will likely have patient data saved on a cloud provider somewhere, for example on a Rackspace VPS.  You will need to talk to their sales team and get a Business Associates Agreement from them.  Most of your  cloud providers will be used to hearing this request.  Some may not be amenable to signing a BAA, in which case you need to either a) move, b) remove their ability to access the data, or c) talk to your legal representative about documenting “X has access to the data but falls under an exception to requiring BAAs.”  Every time we had that happen we explicitly documented multiple parallel reasons why we thought that information was an exception or not a significant risk.  e.g. Lets hypothetically say Twilio gets client phone numbers in the ordinary course of the use of Appointment Reminder.  That is explicitly documented, with notes like "We believe Twilio’s possession of these telephone numbers qualifies under the communications provider exemption in $CITATION.  In the alternative, we believe that Twilio’s possession of these phone numbers incurs no marginal risk to patient privacy versus general industry practices such as making phone calls to cell phones, which has equivalent-or-worse risk of disclosure.  In the alternative, we believe that Twilio’s substantial investments in security (see $CITATION and our discussion of counterparty risks below) are sufficient to mitigate the small risk  of disclosure, especially considering that Twilio does not possess other data about patients which would make the disclosure especially severe.</li>
+<li>You will want to have a BAA written for your own service.  You will get a signed copy of this BAA from every client of your HIPAA-compliant services.  DHS has a template policy which you can use as a base.  Get yours (and your ToS for your service) reviewed by a lawyer, but don’t have them scratch-write it – this will save you several thousand bucks.</li>
+<li>Not actually a HIPAA requirement, but you should get an errors and omissions insurance policy with a data breach rider.  Mine cost about $3k a year for AR at AR’s current level of sales.  That’s close to the floor cost, but in principle, they scale up with revenue.</li>
+<li>You need to do a risk assessment for your application.  For AR this was me basically sitting down and writing for two days about the architecture/use of the application and things which could possibly go wrong.  Next to each thing that could go wrong, I listed things we had done to mitigate the problem and reasons we thought our current level of security was sufficient.  Some of the things line up directly with HIPAA requirements, some don’t.  This was in an Excel file.  I have 3 versions of it: one to share with hospitals under NDA only, one to share with the government if audited, and one for internal use.  Example follows below.</li>
+<li>You need to enforce minimum password lengths and a policy to rotate them occasionally.  This is one of the very few actual code changes AR required.</li>
+<li>HTTPS everywhere.  If you move PII between servers, for example between the web tier and database, that connection should be encrypted as well but for smaller deployments you can sort of handwave it.</li>
+<li>Think carefully about your use of email.  No PII should be going out in email.</li>
+<li>There exists a product which can encrypt e.g. partitions on Linux systems, which you might think of using for your MySQL database.</li>
+</ul>
+<p>I will be happy to share some details of the Appointment Reminder risk assessment <em>privately</em>, for obvious reasons.</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="7" />
+           <span class='post-likes'>7 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../hipaa-compliance/5654/10.html" itemscope itemtype='http://schema.org/DiscussionForumPosting' itemprop='item'>
+                      <meta itemprop='url' content='http://discuss.bootstrapped.fm/t/hipaa-compliance/5654/10'>
+                      <span itemprop='name'>HIPAA Compliance</span>
+                    </a>
+                    <meta itemprop='position' content='1'>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/NicheDiver.html'><span itemprop='name'>NicheDiver</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-13T17:51:54Z' class='post-time'>
+                November 13, 2013,  5:51pm
+              </time>
+              <meta itemprop='dateModified' content='2013-11-13T17:51:54Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Holy spitballs!  Thank you so much!</p>
+<p>Did any part of all this involve hiring a 3rd party to “certify” you and/or AR as being HIPAA Compliant?  I’m having trouble determining if this process is an elaborate and expensive exercise in hoop jumping or if it is actually beneficial at a substantial level.</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/jplewicke.html'><span itemprop='name'>jplewicke</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2013-11-19T02:12:57Z' class='post-time'>
+                November 19, 2013,  2:12am
+              </time>
+              <meta itemprop='dateModified' content='2013-11-19T02:12:57Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>One resource you may find useful for this is <a href="http://www.amazon.com/HIPAA-Roadmap-Business-Associates-step-/dp/1484067010/ref=sr_1_1?ie=UTF8&amp;qid=1384826897&amp;sr=8-1&amp;keywords=hipaa+compliance+business+associates" rel="nofollow noopener">http://www.amazon.com/HIPAA-Roadmap-Business-Associates-step-/dp/1484067010/ref=sr_1_1?ie=UTF8&amp;qid=1384826897&amp;sr=8-1&amp;keywords=hipaa+compliance+business+associates</a> .  It’s a small book which has customizable versions of all the documents you need to be HIPAA compliant, along with some explanations of the process of becoming compliant.</p>
+<p>Even though you probably still want to run this by a lawyer and think carefully about how the security and privacy issues involved line up with your application, having pre-written versions of everything from internal policies to employee training makes the process much less daunting.</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/pjc'><span itemprop='name'>pjc</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-11-09T19:25:16Z' class='post-time'>
+                November 9, 2014,  7:25pm
+              </time>
+              <meta itemprop='dateModified' content='2014-11-09T19:25:16Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Check out <a href="https://www.truevault.com/" rel="nofollow noopener">https://www.truevault.com/</a> for HIPAA compliance as a service.</p>
+<p>(Not involved with this company in any way, just a YCombinator company I find interesting and can be useful info for OP.)</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/johnf'><span itemprop='name'>johnf</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-11-09T19:57:13Z' class='post-time'>
+                November 9, 2014,  7:57pm
+              </time>
+              <meta itemprop='dateModified' content='2014-11-09T19:57:13Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="1" data-topic="742">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nichediver/40/1264_1.png" class="avatar"> NicheDiver:</div>
+<blockquote>
+<p>my research suggests that true HIPAA compliance is near impossible in a web-based app</p>
+</blockquote>
+</aside>
+<p>Citations? I don’t think this is true.</p>
+<aside class="quote" data-post="5" data-topic="742">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/patio11/40/1205_1.png" class="avatar"> patio11:</div>
+<blockquote>
+<p>There exists a product which can encrypt e.g. partitions on Linux systems, which you might think of using for your MySQL database.</p>
+</blockquote>
+</aside>
+<p>I’d upgrade this “might” to a “must” if you are doing any sort of product which requires any sort of searching.  HIPPA requires all PHI data “at rest” be encrypted.</p>
+<p>If you don’t encrypt the entire disk you’ll have to store encrypted strings.  So “NicheDiver” becomes SDFS*(0(*&amp;ELKJLSJDFSD.</p>
+<p>So now try and SELECT * FROM table WHERE LastName like ‘Niche%’.  Its just not going to work. <img src="https://emoji.discourse-cdn.com/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>Also there are some challenges with recording who viewed what data.  Lets say you load a grid of information.  You should store what PHI was on that grid and who viewed it.  A grid of 100 entries becomes 100 inserts.  Something to consider.</p>
+<p>I’d increase patio11’s estimate to 12 weeks to get the basics of an EMR right.   Whereas appointreminder has very limited PHI you’d be literally swimming in it.  You shouldn’t underestimate how much of a BFD it is for somebody to hint the print key on a patients full medical record.</p>
+<aside class="quote" data-post="6" data-topic="742">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/nichediver/40/1264_1.png" class="avatar"> NicheDiver:</div>
+<blockquote>
+<p>Did any part of all this involve hiring a 3rd party to “certify” you and/or AR as being HIPAA Compliant?  I’m having trouble determining if this process is an elaborate and expensive exercise in hoop jumping or if it is actually beneficial at a substantial level.</p>
+</blockquote>
+</aside>
+<p>I’d certify so that if a data breach occurs you can show you made every attempt to verify you did everything right.  There are different levels of fines for being ignorant vs being stupid and it behooves you to try and be ignorant.</p>
+<p>Now all this being said I wouldn’t touch a full on EMR product without significant up-front money.  Worked with HIPPAA twice now as a technologist, once as a bootstrapper and probably wouldn’t touch a EMR like product without the chance of a big upside.  If you’re friends colleagues aren’t willing to write 5 figure checks up front for this EMR I’d pass.</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/davidw'><span itemprop='name'>davidw</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-11-10T10:45:42Z' class='post-time'>
+                November 10, 2014, 10:45am
+              </time>
+              <meta itemprop='dateModified' content='2014-11-10T10:45:42Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="9" data-topic="742">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/johnf/40/1193_1.png" class="avatar"> johnf:</div>
+<blockquote>
+<p>If you don’t encrypt the entire disk you’ll have to store encrypted strings.  So “NicheDiver” becomes SDFS*(0(*&amp;ELKJLSJDFSD.</p>
+<p>So now try and SELECT * FROM table WHERE LastName like ‘Niche%’.  Its just not going to work.</p>
+</blockquote>
+</aside>
+<p>I solved this by creating an encrypted index thing that gets updated when data goes in or out of the table I’m interested in searching.  It’s kind of hacky in some ways, but it means the data spends more time encrypted.  The most frustrating thing about it: I was pleased with myself when it all came together and started functioning.  Management (this is for my consulting job), on the other hand were like “oh, now search and sort finally work - it was about time”.</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/cravelight.html'><span itemprop='name'>cravelight</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-11-11T04:01:58Z' class='post-time'>
+                November 11, 2014,  4:01am
+              </time>
+              <meta itemprop='dateModified' content='2014-11-11T04:01:58Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I have been doing contract development for a software company that sells 2 different EMRs (acquisition nonsense) that together own over 30% of their market. Both products were started by practicing physicians that wanted a product better suited for their specialty.</p>
+<p>In my view HIPAA is not your biggest concern.</p>
+<p>From a cost to build standpoint you are likely to spend a lot of time on Meaningful Use certification, ICD9/10 support, and the nightmarish integration scenarios with 3rd party lab providers, electronic prescription services and drug databases. There are answers to all these things, but if you come from a technology background other than healthcare you might be in for a shock at just how dated some of the “industry standard” solutions are.</p>
+<p>It’s also not a one person effort. An EMR system is much more than an appointment/contact manager on steroids. It’s not the kind of thing you can build on top of WordPress and get 2/3 of the way there. Just the work involved to feed the billing system is noteworthy.  Add in the fact that software mistakes in critical areas can kill someone (ex: drug interactions) it’s really important to get some parts perfect - zero tolerance for bugs.</p>
+<p>All that said, it can be both lucrative and rewarding. If the doctor is willing to stay engaged and fund it for a few years, it could be the opportunity of a lifetime.</p>
+<p>One other note, if you talk to 10 different doctors you’ll yet 10 different versions of <em>how everyone does it</em>. Make sure your test group includes more than just the sponsor’s practice and more than just doctors. The biggest EMR users are nurses and office support staff.</p>
+<p>Have fun!</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2015-01-18T21:26:44Z' class='post-time'>
+                January 18, 2015,  9:26pm
+              </time>
+              <meta itemprop='dateModified' content='2015-01-18T21:26:44Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Patrick,<br>
+Great answer.</p>
+<p>We are trying to avoid HiPPA by not storing or using the user’s full name.<br>
+First name and email address. We have been told by someone-who-should-know at the Veterans Administration that this is fine.</p>
+<p>Any thoughts?</p>
+<p>(And for now, <a href="http://MoreSpeech.com" rel="nofollow noopener">MoreSpeech.com</a> is primarily targeted at Home users. If we get request for Hippa compliant and the above does not satisfy them it I think we’ll offer a much more expensive Hippa compliant version)</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2015-01-18T21:29:33Z' class='post-time'>
+                January 18, 2015,  9:29pm
+              </time>
+              <meta itemprop='dateModified' content='2015-01-18T21:29:33Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>You mean … the Pat Signal?<br>
+</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='https://discuss.bootstrapped.fm/u/johnf'><span itemprop='name'>johnf</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2015-01-19T18:22:01Z' class='post-time'>
+                January 19, 2015,  6:22pm
+              </time>
+              <meta itemprop='dateModified' content='2015-01-19T18:22:01Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote" data-post="12" data-topic="742">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://sjc3.discourse-cdn.com/business6/user_avatar/discuss.bootstrapped.fm/clay_nichols/40/2698_1.png" class="avatar"> Clay_Nichols:</div>
+<blockquote>
+<p>First name and email address. We have been told by someone-who-should-know at the Veterans Administration that this is fine.</p>
+</blockquote>
+</aside>
+<p>Well based on my conversations with a different somehow-who-should-know at the VA email is almost certainly a identifiable field these days.  You get somebody using <a href="mailto:firstname.lastname@gmail.com">firstname.lastname@gmail.com</a> and there you go…</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2015-01-24T16:15:34Z' class='post-time'>
+                January 24, 2015,  4:15pm
+              </time>
+              <meta itemprop='dateModified' content='2015-01-24T16:15:34Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Very good point.<br>
+Sounds like if a hospital wants to subscribe and wants those HIPPA features they’ll need to get our PRO version, which allows you to create an account with a User Name instead of an email address.  (And if we have to I guess we’ll spend $10K worth of effort on filling out paperwork and such.)</p>
+<p>What about encrypting the PID (personally Identifiable Information) (whenever it is “at rest”) : (for us that’s Email as you pointed out).?<br>
+(So the only time you’d see the PID in “cleartext” is in the browser via https. It would be encrypted in the Database.</p>
+<p>My bigger concern is SHOWING that we are HIPPA compliant</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='Bootstrapped.fm'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://aws1.discourse-cdn.com/business6/uploads/bootstrapped/original/2X/e/e604f1b2b8574d12c3667936291430d292fd7aae.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Clay_Nichols.html'><span itemprop='name'>Clay_Nichols</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="https://discuss.bootstrapped.fm/t/how-big-of-a-pita-is-hipaa-compliance-for-a-web-based-app/742">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2015-01-24T16:20:35Z' class='post-time'>
+                January 24, 2015,  4:20pm
+              </time>
+              <meta itemprop='dateModified' content='2015-01-24T16:20:35Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Patrick,</p>
+<p>I’m reposting my suggestion above:</p>
+<p>What if you just encrypt the PID (name, email, phone #, address) when the data is “at rest” (not in an https// window) ?</p>
+<p>And then limit access to the decryption. (Essentially the encrypted PID becomes the focus of the HIPPA rules).</p>
+        </div>
+
+        <meta itemprop='headline' content='How big of a PITA is HIPAA compliance for a web-based app?'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../privacy.html' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    
+    
+  </body>
+  
+</html>
